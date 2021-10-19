@@ -4,6 +4,14 @@ description: Lobby management made easy
 
 # Lobby Manager
 
+{% hint style="info" %}
+This tool simply exposes features present in the API to the inspector.
+
+
+
+This is not required to use these features it is simply a helper tool allowing user's who are more comfortable working with editor inspectors and game object rather than classic C# objects and scripting to make use of the related feature.
+{% endhint %}
+
 ## Introduction
 
 The Lobby Manager ... not to be confused with Steamworks V1 Lobby Manager ... is a tool for creating and managing a specific lobby.&#x20;

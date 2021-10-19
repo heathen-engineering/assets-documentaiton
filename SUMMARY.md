@@ -60,6 +60,7 @@
       * [Utilities](assets/steamworks/coming-soon/api/utilities.md)
       * [Voice](assets/steamworks/coming-soon/api/voice.md)
     * [Components](assets/steamworks/coming-soon/components/README.md)
+      * [Leaderboard Manager](assets/steamworks/coming-soon/components/leaderboard-manager.md)
       * [Lobby Chat Director](assets/steamworks/coming-soon/components/lobby-chat-director.md)
       * [Lobby Manager](assets/steamworks/coming-soon/components/lobby-manager.md)
       * [Overlay Manager](assets/steamworks/coming-soon/components/overlay-manager.md)
