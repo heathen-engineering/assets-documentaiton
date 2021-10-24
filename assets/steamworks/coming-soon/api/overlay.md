@@ -18,7 +18,7 @@ The overlay interface provides simplified access to Steam's overlay features. Th
 
 ## Events
 
-### Game OVerlay Activated
+### Game Overlay Activated
 
 Called when the overlay activates or deactivates.
 

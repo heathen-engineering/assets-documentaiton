@@ -85,7 +85,7 @@
       * [Float Stat](assets/steamworks/coming-soon/objects/float-stat.md)
       * [Int Stat](assets/steamworks/coming-soon/objects/int-stat.md)
       * [Inventory Item](assets/steamworks/coming-soon/objects/inventory-item.md)
-      * [Inventory Manager](assets/steamworks/coming-soon/objects/inventory-manager.md)
+      * [Inventory Settings](assets/steamworks/coming-soon/objects/inventory-settings.md)
       * [Inventory Result](assets/steamworks/coming-soon/objects/inventory-result.md)
       * [Item Details](assets/steamworks/coming-soon/objects/item-details.md)
       * [Item Definition](assets/steamworks/coming-soon/objects/item-definition.md)
