@@ -68,6 +68,7 @@
       * [Steamworks Behaviour](assets/steamworks/coming-soon/components/steamworks-behaviour.md)
       * [Steamworks Creator](assets/steamworks/coming-soon/components/steamworks-creator.md)
       * [Set User Name](assets/steamworks/coming-soon/components/set-user-name.md)
+      * [UGC Query Manager](assets/steamworks/coming-soon/components/ugc-query-manager.md)
       * [Voice Recorder](assets/steamworks/coming-soon/components/voice-recorder.md)
       * [Voice Stream](assets/steamworks/coming-soon/components/voice-stream.md)
     * [Objects](assets/steamworks/coming-soon/objects/README.md)
