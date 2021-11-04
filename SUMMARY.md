@@ -150,6 +150,8 @@
   * [API](assets/ux/untitled/README.md)
     * [Cursors](assets/ux/untitled/cursors.md)
     * [Log](assets/ux/untitled/log.md)
+    * [Scenes](assets/ux/untitled/scenes.md)
+    * [Screenshot](assets/ux/untitled/screenshot.md)
     * [Selection](assets/ux/untitled/selection.md)
     * [Trello](assets/ux/untitled/trello.md)
     * [Windows](assets/ux/untitled/windows.md)

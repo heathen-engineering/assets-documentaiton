@@ -6,6 +6,10 @@ description: Flexable, searchable multi-select system
 
 ## Introduction
 
+```csharp
+public static class API.Selection
+```
+
 Make game objects selectable and searchable with an easy to use and simple interface.
 
 ### What can it do?

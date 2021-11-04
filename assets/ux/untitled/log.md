@@ -6,6 +6,10 @@ description: Better recording for all your log needs
 
 ## Introduction
 
+```csharp
+public static class API.Log
+```
+
 The log interface provides and enhanced system log and can be used on its own or in conjunction with user reporting and feedback systems.
 
 ### What can it do?

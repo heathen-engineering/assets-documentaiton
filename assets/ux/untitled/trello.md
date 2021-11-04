@@ -6,6 +6,10 @@ description: Read and write Trello cards
 
 ## Introduction
 
+```csharp
+public static class API.Trello
+```
+
 A simple Trello interface enabling access to Trello cards.
 
 ### What can it do?
