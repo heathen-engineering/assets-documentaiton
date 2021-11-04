@@ -42,7 +42,7 @@ API.StatsAndAchievements.Server.ClearUserAchievement(user, achievement);
 
 ### Simply C\#
 
-Valve's Steam API is big, powerful and written in C and C++ ... not exsactly friendly to many of the tride and true patterns and structures we use in C#. Heathen's Mid-level API still exploses the traditional methods but also provides C# based alternatives.
+Valve's Steam API is big, powerful and written in C and C++ ... not exsactly friendly to many of the tride and true patterns and structures we use in C#. Heathen's API still exploses the traditional methods but also provides C# based alternatives.
 
 TRADITIONAL
 
@@ -63,7 +63,7 @@ var results = API.StatsAndAchievements.Client.GetAchievementNames();
 
 ### Unity Native
 
-Steam API makes heavy use of callbacks and callresults which is Valve's answer to deligates. In Unity we normaly use UnityEvents (for callbacks) and Actions (for callresults). Heathen's Mid-level API wraps every occasion of callback and callresult with the appropreate Unity native equivlent managing the memory for you.
+Steam API makes heavy use of callbacks and callresults which is Valve's answer to deligates. In Unity we normaly use UnityEvents (for callbacks) and Actions (for callresults). Heathen's API wraps every occasion of callback and callresult with the appropreate Unity native equivlent managing the memory for you.
 
 RAW STEAM API
 
