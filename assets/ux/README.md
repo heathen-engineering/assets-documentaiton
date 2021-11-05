@@ -40,18 +40,22 @@ Foundation is included with all extension packs and is all that is required to u
 In otherwords UX, UI Themes and our uGUI Extensions are standalone and do not require additional purchase.
 {% endhint %}
 
-| Features                                        | Foundation | Complete |
-| ----------------------------------------------- | ---------- | -------- |
-| [System Core](../system-core/)                  | ✔          | ✔        |
-| [Cursor System](cursor-tools.md)                | ✔          | ✔        |
-| [Command System](command-system.md)             | ✔          | ✔        |
-| [Scene Management Tool](scenes-management.md)   | ✔          | ✔        |
-| [Window System](window-tools.md)                |            | ✔        |
-| [Drag and Drop System](drag-and-drop-system.md) |            | ✔        |
-| [Tooltip System](tooltips.md)                   |            | ✔        |
-| [Feedback System](feedback-tools/)              |            | ✔        |
+| Features                                                 | Foundation | Complete |
+| -------------------------------------------------------- | ---------- | -------- |
+| [System Core](../system-core/)                           | ✔          | ✔        |
+| [Cursor System](features/cursor-tools.md)                | ✔          | ✔        |
+| [Command System](features/command-system.md)             | ✔          | ✔        |
+| [Drag and Drop System](features/drag-and-drop-system.md) |            | ✔        |
+| [Interaction Tools](features/interaction-tools.md)       |            | ✔        |
+| [Logging and Feedback Tools](features/feedback-tools.md) |            | ✔        |
+| [Scene Management Tool](features/scenes-management.md)   |            | ✔        |
+| [Screenshot Tool](api/screenshot.md)                     |            | ✔        |
+| [Selection System](features/selection-system.md)         |            | ✔        |
+| [Tooltip System](features/tooltips.md)                   |            | ✔        |
+| [Trello Integration](api/trello.md)                      |            | ✔        |
+| [Window System](features/window-tools.md)                |            | ✔        |
 
-### [uGUI Extras](ugui-extras/)
+### [uGUI Extras](features/ugui-extras/)
 
 {% hint style="warning" %}
 uGUI Extras (and by extension Key Collection) is no longer included in the Complete package.&#x20;
@@ -68,11 +72,11 @@ uGUI Extras contains all the required code to work, you do not need to purchase 
 
 uGUI Extras is an extension of UX Foundation that adds uGUI based tools and controls including:
 
-#### [Key Collection](ugui-extras/key-collection.md)
+#### [Key Collection](features/ugui-extras/key-collection.md)
 
 Formerly known as On-Screen Keyboard this tool helps you create and manage collections of buttons simulating virtual keyboards, alliance computer consoles, in game security pads and much more. The control can handle any string output that Unity is capable of rendering including all human languages and any fictional language that can be expressed as simple characters and or ligatures.
 
-#### [Tree View](ugui-extras/tree-view.md)
+#### [Tree View](features/ugui-extras/tree-view.md)
 
 A simple tool for creating and managing a tree view control where each node in the tree view will be expressed as a uGUI GameObject.
 

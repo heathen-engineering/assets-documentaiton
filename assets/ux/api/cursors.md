@@ -26,7 +26,7 @@ Each cursor state is a [Game Event ](../../system-core/game-events.md)as such ea
 
 ## Concepts
 
-### Cursor State
+### [Cursor State](../objects/cursor-state.md)
 
 A cursor state is a simple Scriptable Object which difines the details of a particular pointer. You can specify the image or an array of images to use, an animation speed if relivent as well as the hot point of the pointer.
 
@@ -88,7 +88,7 @@ API.Cursors.DefaultState = myState;
 
 Or you can use the Cursor Animator or Change Cursor Default State components to set the default currsor state.
 
-### Cursor Animation
+### [Cursor Animation](../objects/cursor-animation.md)
 
 This is the data type of the CursorState.animation attribute and defines the nature of the animation to be used for a given cursor state.
 

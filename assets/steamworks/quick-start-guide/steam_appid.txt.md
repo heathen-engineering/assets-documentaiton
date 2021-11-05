@@ -23,7 +23,7 @@ the steam\_appid.txt is as noted a simple text file that should have nothing in 
 {% hint style="danger" %}
 You should not ship the steam\_appid.txt with your game. You generally want your game to test if it was launched from the Steam Client properly, and if not you want your game to close its self and re-launch from the Steam Client.
 
-This however is not a "security" feature, it simply insures that Steam API can work properly. As you will see with the [Overlay ](../steam\_overlay/)and some other features the game must be launched from the Steam Client to work properly.
+This however is not a "security" feature, it simply insures that Steam API can work properly. As you will see with the [Overlay ](../features/steam\_overlay/)and some other features the game must be launched from the Steam Client to work properly.
 {% endhint %}
 
 ## When to use steam\_appid.txt

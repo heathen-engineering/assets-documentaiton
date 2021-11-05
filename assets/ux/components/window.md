@@ -6,6 +6,10 @@ description: Simple flexable in game windows
 
 ## Introduction
 
+{% hint style="info" %}
+Part of the [Window System](../features/window-tools.md) of the UX Complete asset
+{% endhint %}
+
 The Window component is meant to be applied to a RectTransform game object aka a UI game object and serves as the primary component of the UX Windows system.
 
 ## Definition
