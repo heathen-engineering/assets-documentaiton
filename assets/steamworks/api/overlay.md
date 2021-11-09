@@ -16,6 +16,10 @@ API.Overlay.Client
 
 The overlay interface provides simplified access to Steam's overlay features. The Steam Overlay can be used to show web pages, access friends lists, clans,&#x20;
 
+### Related Componenets
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/components/overlay-manager" %}
+
 ## Events
 
 ### Game Overlay Activated

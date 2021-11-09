@@ -26,11 +26,13 @@ Set and reset Steam Stats and Achievements. Most of the features of the StatsAnd
 
 ### Related Obejcts
 
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/avg-rate-stat" %}
+
 {% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/float-stat" %}
 
 {% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/int-stat" %}
 
-
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/achievement-object" %}
 
 
 

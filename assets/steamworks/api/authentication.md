@@ -16,6 +16,12 @@ The Authenticaiton has both client and server interfaces that are identical. Hea
 
 The Authentication interface can be used to generate and validate session tickets. This is most commonly used with Steam Game Server but can also be used to for inventory varification or other similar verified processes.
 
+### Related Objects
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/authentication-session" %}
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/authentication-ticket" %}
+
 ## How To
 
 ### Get a new ticket

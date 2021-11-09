@@ -24,6 +24,8 @@ Take a look at the Lobby Manager for a tool that can help you manage a specifc u
 
 ### Related Componenets
 
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/components/game-server-browser-manager" %}
+
 {% embed url="https://kb.heathenengineering.com/assets/steamworks/components/lobby-manager" %}
 Simplify Steam Lobbies
 {% endembed %}
