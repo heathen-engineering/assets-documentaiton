@@ -6,7 +6,7 @@ description: This article covers the concepts of Unity target release version.
 
 ## Introduction
 
-This article is not directly released to a Heathen asset but is a common question when asking what version of the engine you should be using.
+This article is not directly related to a Heathen asset but is a common question when asking what version of the engine you should be using.
 
 {% hint style="info" %}
 Heathen always builds its assets to run on the oldest LTS version in active support at the time of that particular release.
