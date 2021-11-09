@@ -63,6 +63,8 @@
       * [Remote Storage (Cloud)](assets/steamworks/features/data-models.md)
       * [Stats](assets/steamworks/features/stats-object.md)
       * [User Generated Content (Workshop)](assets/steamworks/features/user-generated-content-workshop/README.md)
+    * [Developer Articles](assets/steamworks/learning/developer-articles/README.md)
+      * [Multiplayer Steam Games](assets/steamworks/learning/developer-articles/multiplayer-steam-games.md)
     * [Debugging Steam API](assets/steamworks/learning/debugging-steam-api.md)
   * [API](assets/steamworks/api/README.md)
     * [App](assets/steamworks/api/app.md)
