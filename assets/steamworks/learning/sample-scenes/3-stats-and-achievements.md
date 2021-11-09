@@ -13,7 +13,7 @@ This scene demonstrates the use of Steam stats and Steam achievements.
 ### What do I learn?
 
 1. Importing Stats and Achievements
-2. Using Stats and A
+2. Using Stats and Achievements at run time
 3. How to access the Knowledge Base (where you are now)
 4. How to acces the support [Discord ](https://discord.gg/6X3xrRc)
 5. How to leave a review 😉
