@@ -4,6 +4,10 @@ description: The most important part
 
 # Steamworks Behaviour
 
+{% hint style="success" %}
+Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)and [Foundation ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-foundation-202671)asset.
+{% endhint %}
+
 ## Introduction
 
 Steamworks Behaviour replaces the concept of Steam Manager as seen in some of the older Steamworks.NET example scripts. This behaviour object deals with the initalization of the Steam API and operating its main update loop.&#x20;
@@ -19,12 +23,12 @@ This means you should not define this behaviour in a scene that is loaded multip
 
 
 
-You are **STRONGLY** encuraged to use a [bootstrap ](../../../../company/concepts/bootstrap-scene.md)model taking advantage of Unity's multi-scene features. Alternativly you can use the Steamworks Creator behaviour.
+You are **STRONGLY** encuraged to use a [bootstrap ](../../../company/concepts/bootstrap-scene.md)model taking advantage of Unity's multi-scene features. Alternativly you can use the Steamworks Creator behaviour.
 {% endhint %}
 
 ## Use
 
-You should add a Steamworks Behaviour component to a game object in the first scene to be loaded by your game. It is important that this game object is never destroyed as it is operating your Steam API integration. We do recomend you use additive loading and simply never unload your [bootstrapping](../../../../company/concepts/bootstrap-scene.md) scene however you can use the [Do Not Destroy](../../../../company/concepts/bootstrap-scene.md) approch if you are carful to NEVER reload the scene that defined Steamworks Beahviour.
+You should add a Steamworks Behaviour component to a game object in the first scene to be loaded by your game. It is important that this game object is never destroyed as it is operating your Steam API integration. We do recomend you use additive loading and simply never unload your [bootstrapping](../../../company/concepts/bootstrap-scene.md) scene however you can use the [Do Not Destroy](../../../company/concepts/bootstrap-scene.md) approch if you are carful to NEVER reload the scene that defined Steamworks Beahviour.
 
 The Steamworks behaviour is not intended to be a funcitonal componenet that is you will not enteract with this componenet, it exists wholly to initalize, operate and shutdown the Steam API integration according to Unity events. The one exception to this case is when operating a Steam Game Server in a situation where you need to delay API initalizaiton. You can optionally configure your Steam Settings to NOT auto initalize Steam Game Server, in which case you will need to call SteamworksBeahviour.InitalizeGameServer in order to kick off the initalization process.
 

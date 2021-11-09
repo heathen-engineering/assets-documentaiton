@@ -4,6 +4,10 @@ description: When you need it on-demand
 
 # Steamworks Creator
 
+{% hint style="success" %}
+Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)and [Foundation ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-foundation-202671)asset.
+{% endhint %}
+
 ## Introduction
 
 The Steamworks Creator exists to selectivly create a Steamworks Behaviour object for you based on the current state of Steam API initalziation. This componenet can be used in every scene and will test for Steam intialization and if required will create a new Steamworks Behaviour object as required, optionally marking it as Do Not Destroy on Load.

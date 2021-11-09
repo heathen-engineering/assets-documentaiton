@@ -4,6 +4,10 @@ description: Access the Steam Clan aka Steam Group system with Heathen's Steam A
 
 # Clans
 
+{% hint style="success" %}
+Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)asset.
+{% endhint %}
+
 ## Introduction
 
 ```csharp

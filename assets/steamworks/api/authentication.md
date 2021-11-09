@@ -4,6 +4,10 @@ description: Access the Steam authentication system with Heathen's Steam API
 
 # Authentication
 
+{% hint style="success" %}
+Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)asset.
+{% endhint %}
+
 ## Introduction
 
 ```csharp

@@ -4,6 +4,10 @@ description: Access rich presence, user data and more through the Friends interf
 
 # Friends
 
+{% hint style="success" %}
+Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)and [Foundation ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-foundation-202671)asset.
+{% endhint %}
+
 ## Introduction
 
 ```csharp

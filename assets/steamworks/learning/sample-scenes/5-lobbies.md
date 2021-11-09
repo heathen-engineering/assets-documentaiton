@@ -1,5 +1,9 @@
 # 5 Lobbies
 
+{% hint style="success" %}
+Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)asset.
+{% endhint %}
+
 ## Introduction&#x20;
 
 This scene demonstrates the use of Steam Lobbies and Lobby Manage component.

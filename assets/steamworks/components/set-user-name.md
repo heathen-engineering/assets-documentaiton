@@ -1,5 +1,9 @@
 # Set User Name
 
+{% hint style="success" %}
+Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)and [Foundation ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-foundation-202671)asset.
+{% endhint %}
+
 ## Introduction
 
 A simple componenet meant to be attached to a UnityEngine.UI.RawImage

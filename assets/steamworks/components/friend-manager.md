@@ -1,5 +1,9 @@
 # Friend Manager
 
+{% hint style="success" %}
+Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)and [Foundation ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-foundation-202671)asset.
+{% endhint %}
+
 {% hint style="info" %}
 This tool simply exposes common features present in the API to the inspector.
 

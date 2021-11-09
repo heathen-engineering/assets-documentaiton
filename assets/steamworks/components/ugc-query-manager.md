@@ -1,5 +1,9 @@
 # UGC Query Manager
 
+{% hint style="success" %}
+Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)asset.
+{% endhint %}
+
 ## Introduction
 
 Search for and browse Steam Workshop items.

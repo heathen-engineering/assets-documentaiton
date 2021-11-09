@@ -1,5 +1,9 @@
 # Voice Stream
 
+{% hint style="success" %}
+Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)asset.
+{% endhint %}
+
 ## Introduction
 
 Meant to be attached to a game object representing non-local players. It can be used to playback the audio streamed in from those "other" players.

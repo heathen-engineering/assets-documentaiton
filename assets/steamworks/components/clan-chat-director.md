@@ -1,6 +1,8 @@
 # Clan Chat Director
 
-
+{% hint style="success" %}
+Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)asset.
+{% endhint %}
 
 {% hint style="info" %}
 This tool simply exposes features present in the API to the inspector.

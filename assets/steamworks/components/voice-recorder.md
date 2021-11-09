@@ -1,5 +1,9 @@
 # Voice Recorder
 
+{% hint style="success" %}
+Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)asset.
+{% endhint %}
+
 ## Introduction
 
 Meant to be attached to a game object representing the local player. This componenet helps capture voice data from the local user and prepare it for transmission.

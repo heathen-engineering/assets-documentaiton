@@ -4,6 +4,10 @@ description: A quick start guide for those already comfortable with the basics.
 
 # Quick Start Guide
 
+{% hint style="success" %}
+Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)and [Foundation ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-foundation-202671)asset.
+{% endhint %}
+
 ## Steam Settings
 
 Create a new Steam Settings object in your project folder by right clicking in your project tab and selecting\
