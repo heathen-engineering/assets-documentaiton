@@ -24,23 +24,13 @@ This scene demonstrates the use of Steam stats and Steam achievements.
 
 The manage game object has the [Steamworks Behaviour](../../components/steamworks-behaviour.md) component attached and will handle initalization of the Steam API on start up.
 
-### Avatar Image
+### NumWins
 
-Located at Canvas/Info/Border/AvatarImage
+From the Example Steam Settings `[Stat Int] NumWins` this is used by the Add Win button to update the stat value and to display the results
 
-This game object makes use of the [Set User Avatar](../../components/set-user-avatar.md) componenet to set the local user's avatar image to the UnityEngine.UI.RawImage
+### NEW Achievements 0\_4
 
-### uGUI Steam Name
-
-Located at Canvas/Info/UGUI Steam Name
-
-This game object makes use of [UGUI Set User Name](../../components/set-user-name.md) to set the local user's name to a UnityEngine.UI.Text&#x20;
-
-### TMPro Steam Name
-
-Located at Canvas/Info/TMPro Steam Name
-
-This game object makes use of [TMPro Set User Name](../../components/set-user-name.md) to set the local user's name to a TMPro.TextMeshProUGUI
+From the Example Steam Settings `[Ach] NEW_ACHIEVEMENT_0_4` this is used by the Unlock and Reset buttons to modify the achievement.
 
 ### DEMO SCRIPTS
 
