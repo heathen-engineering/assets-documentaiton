@@ -20,6 +20,22 @@ In the most basic since when we (or anyone) says "Steam Game Server" also shorte
 
 ### Networking
 
+{% hint style="warning" %}
+Heathen does not provide networking (HLAPI) tools.
+
+You will need to use a tool like Mirror, MLAPI or FishNetworking, etc. as your networking high level interface.
+
+
+
+Heathen provides access to Steam APIs and does so in a standardized way such that each of the afore mentioned provider's Steam Transports work with Heathen's Steamworks assets
+
+
+
+To make that clear
+
+There is zero customization needed from Heathen to enable you to work with Steam networking. Simply use Mirror, MLAPI, FishNetworking or any other networking highlevel API that has a Steamworks.NET transport.
+{% endhint %}
+
 The main advantage to configuring and initalizing the Steam API on a game server is the ability to use Steam Networking interfaces with it. Valve provides several networking interfaces but two of them in particular are relivent for Unity game developers
 
 Steam Networking
@@ -40,22 +56,6 @@ and&#x20;
 
 Steam Networking Sockets
 
-{% hint style="warning" %}
-Heathen does not provide networking tools.
-
-You will need to use a tool like Mirror, MLAPI or FishNetworking as your networking high level interface.
-
-
-
-Heathen provides access to Steam APIs and does so in a standardized way such that each of the afore mentioned provider's Steam Transports work with Heathen's Steamworks assets
-
-
-
-To make that clear
-
-There is zero customization needed from Heathen to enable you to work with Steam networking. Simply use Mirror, MLAPI, FishNetworking or any other networking highlevel API that has a Steamworks.NET transport.
-{% endhint %}
-
 ### Authentication
 
 The Steam Authentication tools must be used with SGS if you want Steam Game Server Browser to properly list user counts. The [Authenticaiton](../../api/authentication.md) documentaiton can provide more details.
@@ -73,6 +73,24 @@ It is not to say you must use SGS for Stats and Achievements only that you must 
 ### Game Server Browser
 
 Put simply server discovery. Steam Game Servers can be configured to list on Steam's Game Server Browser. This can then be used in or out of game to discover game sessions to play or spectate. See the [Game Server Browser Manager](../../components/game-server-browser-manager.md) document for more information
+
+### Hosting
+
+No
+
+Put simply Valve (Steam) doesn't publicly provide hosting ... yet ...
+
+They have teased that they are looking into it but they are a private company they tease lots of things that never come to pass and sometimes things just come out of the blue and are wonderful.
+
+In short there is no facility at current avialable to you that we are aware where you can host a game server on Valve's servers.
+
+There are great tools available to you though a few are linked below ... we do not sponsor or endorese any of them this is purly to get you started on your own resarch
+
+* [PlayFab](https://playfab.com)
+* [G-Portal](https://www.g-portal.com)
+* [Game Sparks](https://www.gamesparks.com) / [Game Lift](https://aws.amazon.com/gamelift/) / [AWS](https://aws.amazon.com)
+* [Multiplay](https://unity.com/products/multiplay)
+* [Spatial OS](https://ims.improbable.io/products/spatialos)
 
 ## Configuration
 
