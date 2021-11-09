@@ -26,11 +26,11 @@ The hardest part about Steam Inventory is usually setting up your Steam Inventor
 
 The very first thing you should do is import any Steam Inventory Items you already have. You can do this quickly by simply running the simulation (so that Steam API is initalized) and clicking the Import button under the Inventory list in your Steam Settings
 
-![](<../../../../../.gitbook/assets/image (187).png>)
+![](<../../../../.gitbook/assets/image (187).png>)
 
 Once done you will see every item you had defined already in your Steam Developer Portal has been pulled into Unity under your Steam Settings ...&#x20;
 
-![Screen shot of a WIP project with 57 items. You can see here how the Settings object catigorizes the items based on type.](<../../../../../.gitbook/assets/image (169).png>)
+![Screen shot of a WIP project with 57 items. You can see here how the Settings object catigorizes the items based on type.](<../../../../.gitbook/assets/image (169).png>)
 
 ## **Step 2: Defining Items**
 
@@ -38,9 +38,9 @@ Creating new items is quick and easy simply click the "<mark style="color:green;
 
 Every Steam Inventory Schema feature is available but the inspector will hide ones that cannot be used with the currently selected type.
 
-![Normal items can be traded, mareted, sold, etc.](<../../../../../.gitbook/assets/image (166).png>)
+![Normal items can be traded, mareted, sold, etc.](<../../../../.gitbook/assets/image (166).png>)
 
-![Tag Generators only exist to attach to other items as generators](<../../../../../.gitbook/assets/image (177).png>)
+![Tag Generators only exist to attach to other items as generators](<../../../../.gitbook/assets/image (177).png>)
 
 ## **Step 3: Uploading the Schema**
 
@@ -81,7 +81,7 @@ The Inventory Item Defintions stored in your Steam Settings object act as an inv
 
 For developers needing to test, you can use the Steamworks Inspector to inspect, grant and clear items from your inventory. This is particularly useful since you can not use Steam client to view items for a game that is not yet released so the only way to view your items before release is to use our tool.
 
-![](<../../../../../.gitbook/assets/image (159).png>)
+![](<../../../../.gitbook/assets/image (159).png>)
 
 
 

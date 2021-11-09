@@ -8,9 +8,9 @@ This scene demonstrates the use of Steam Leaderboard for setting and reading lea
 
 ### What do I learn?
 
-1. How to set the local user's score for a [Leaderboard](../../objects/leaderboard-object.md)
-2. How to read the local user's score for a [Leaderboard](../../objects/leaderboard-object.md)
-3. How to query entries of other users from a [Leaderboard](../../objects/leaderboard-object.md)
+1. How to set the local user's score for a [Leaderboard](../../objects/leaderboard.md)
+2. How to read the local user's score for a [Leaderboard](../../objects/leaderboard.md)
+3. How to query entries of other users from a [Leaderboard](../../objects/leaderboard.md)
 4. How to access the Knowledge Base (where you are now)
 5. How to acces the support [Discord ](https://discord.gg/6X3xrRc)
 6. How to leave a review 😉

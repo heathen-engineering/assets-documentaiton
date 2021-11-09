@@ -24,7 +24,7 @@ Use the Steam Web API to set trusted leaderboard scores
 
 ## Leaderboard Object
 
-This is a scriptable object used to define the leaderboard in Unity and used within Unity to query the board and access its informaiton. Read more in the [Leaderboard Object](../../objects/leaderboard-object.md) document.
+This is a scriptable object used to define the leaderboard in Unity and used within Unity to query the board and access its informaiton. Read more in the [Leaderboard Object](../objects/leaderboard.md) document.
 
 ### To Create
 
@@ -40,4 +40,4 @@ Why?
 Valve have not provided an offical means to do so through the Steam API.
 {% endhint %}
 
-![](<../../../../.gitbook/assets/image (182).png>)
+![](<../../../.gitbook/assets/image (182).png>)

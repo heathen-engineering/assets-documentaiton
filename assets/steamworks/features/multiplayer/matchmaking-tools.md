@@ -1,9 +1,3 @@
----
-description: >-
-  Search, Join, Configure and Manage Steam lobbies. Matchmaking tools enables
-  player matchmaking, player parties, simple chat and more.
----
-
 # Steam Lobby
 
 ## Introduction

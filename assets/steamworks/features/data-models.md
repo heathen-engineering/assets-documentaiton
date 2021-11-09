@@ -1,9 +1,3 @@
----
-description: >-
-  Understanding Data Models and Steam Remote Storage (aka Steam Cloud) through
-  the Heathen Engineering integration
----
-
 # Remote Storage (Cloud)
 
 ## Introduction

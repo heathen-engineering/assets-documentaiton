@@ -28,6 +28,10 @@ Search For Community Groups
 
 You can list the clan owner, its officers, open the clan chat in overlay or join the clan's chat in game. The most common use game developers look for and the most complex is to join the clan chat in game.
 
+### Related Componenets
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/components/clan-chat-director" %}
+
 ### Related Objects
 
 {% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/clan" %}

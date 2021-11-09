@@ -33,7 +33,7 @@ Leaderboards are ranked lists of players where a player's score determins there 
 ## How To
 
 {% hint style="success" %}
-The [Leaderboard ](../objects/leaderboard-object.md)object provides simplified access to many of the features found here in. Be sure to read the documentiaton for the [Leaderboard ](../objects/leaderboard-object.md)object to understand what options are available to you.
+The [Leaderboard ](../objects/leaderboard.md)object provides simplified access to many of the features found here in. Be sure to read the documentiaton for the [Leaderboard ](../objects/leaderboard.md)object to understand what options are available to you.
 {% endhint %}
 
 ### Add an attachment
@@ -41,7 +41,7 @@ The [Leaderboard ](../objects/leaderboard-object.md)object provides simplified a
 You can attach files to a user's leaderboard entry using the `AttachLeaderboardUGC` option.&#x20;
 
 {% hint style="info" %}
-It is typically easier to add attaches to the local user's entry from teh board its self, that is to use the AttachUGC methods availabel on the [Leaderboard](../objects/leaderboard-object.md) object.
+It is typically easier to add attaches to the local user's entry from teh board its self, that is to use the AttachUGC methods availabel on the [Leaderboard](../objects/leaderboard.md) object.
 {% endhint %}
 
 Attaches a piece of user generated content the current user's entry on a leaderboard.
@@ -69,7 +69,7 @@ In this case we are writing a file up to the user's remote storage, if that writ
 Entries e.g. the records in the board can be queried in several ways.
 
 {% hint style="info" %}
-It is typically easier to get and upload entries from the board its self, that is to use the GetEntries and Upload methods available on the [Leaderboard ](../objects/leaderboard-object.md)object.
+It is typically easier to get and upload entries from the board its self, that is to use the GetEntries and Upload methods available on the [Leaderboard ](../objects/leaderboard.md)object.
 {% endhint %}
 
 #### Download Entries

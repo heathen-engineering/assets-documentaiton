@@ -1,9 +1,3 @@
----
-description: >-
-  Deliver player mods, walkthroughs and more with Steam's User Generated Content
-  System
----
-
 # User Generated Content (Workshop)
 
 ## Introduction

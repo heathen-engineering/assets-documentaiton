@@ -6,7 +6,7 @@
 public class LeaderboardObject : ScriptableObject
 ```
 
-Represents a Steam Leaderboard and is used by the [Steam Settings](steam-settings/) object to initalize the Leaderboard system.
+Represents a Steam Leaderboard and is used by the [Steam Settings](steam-settings.md) object to initalize the Leaderboard system.
 
 You create leaderboard objects through thee Steam Settings object by clicking the <mark style="color:green;">+ New</mark> button in the leaderboards list.
 

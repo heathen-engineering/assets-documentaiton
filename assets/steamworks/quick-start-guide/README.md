@@ -9,7 +9,7 @@ description: A quick start guide for those already comfortable with the basics.
 Create a new Steam Settings object in your project folder by right clicking in your project tab and selecting\
 **Create > Steamworks > Settings**
 
-![](<../../.gitbook/assets/image (158).png>)
+![](<../../../.gitbook/assets/image (158).png>)
 
 ## App Id
 
@@ -27,18 +27,18 @@ Valve issues you an App ID when you pay your application fee. If you dont have y
 
 ## Steamworks Behaviour
 
-Create a [Steamworks Behaviour](broken-reference) object in your [bootstrap scene](../../company/concepts/bootstrap-scene.md) or similarly appropreate location; and drag your Steam Settings object into the provided field.
+Create a [Steamworks Behaviour](broken-reference) object in your [bootstrap scene](../../../company/concepts/bootstrap-scene.md) or similarly appropreate location; and drag your Steam Settings object into the provided field.
 
-![](<../../.gitbook/assets/image (161).png>)
+![](<../../../.gitbook/assets/image (161).png>)
 
 Congratulations, you are now integrated with the Steam APIs. If you run the simulation, you will see that the Steam API initializes and is ready for use.
 
 {% hint style="danger" %}
-[Steamworks Behaviour](components/steamworks-behaviour.md) should be initalized early in your application and never destroyed. It is keenly important that you do not reload the scene that defines the [Steamworks Behaviour](components/steamworks-behaviour.md) as this will cause issues with the Steam API.
+[Steamworks Behaviour](../components/steamworks-behaviour.md) should be initalized early in your application and never destroyed. It is keenly important that you do not reload the scene that defines the [Steamworks Behaviour](../components/steamworks-behaviour.md) as this will cause issues with the Steam API.
 
 
 
-If you need to reload the scene where [Steamworks Behaviour](components/steamworks-behaviour.md) is located or otherwise must use a singel scene architcture you should use the [Steamworks Creator](components/steamworks-creator.md) to insure the Steam API is managed correctly.
+If you need to reload the scene where [Steamworks Behaviour](../components/steamworks-behaviour.md) is located or otherwise must use a singel scene architcture you should use the [Steamworks Creator](../components/steamworks-creator.md) to insure the Steam API is managed correctly.
 {% endhint %}
 
 ##

@@ -22,7 +22,7 @@ You can list the clan owner, its officers, open the clan chat in overlay or join
 
 ### Related Componenets
 
-
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/components/friend-manager" %}
 
 ### Related Objects
 

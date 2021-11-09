@@ -76,4 +76,4 @@ Put simply server discovery. Steam Game Servers can be configured to list on Ste
 
 ## Configuration
 
-To configure a Steam Game Server browser simply set the desired settings in your [Steam Settings](../../objects/steam-settings/#steamsettings.server) object and build a server build. In perticular take note of the [Game Server](../../objects/steam-settings/game-server.md) settings.
+To configure a Steam Game Server browser simply set the desired settings in your [Steam Settings](../../objects/steam-settings.md#steamsettings.server) object and build a server build. In perticular take note of the [Game Server](../../objects/steam-settings/game-server.md) settings.

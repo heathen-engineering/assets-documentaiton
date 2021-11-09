@@ -6,7 +6,7 @@
 public class DownloadableContentObject : ScriptableObject
 ```
 
-Represents a DLC object, this is created by the [Steam Settings](steam-settings/) object when you import DLC data for your app. To learn more see the [Steam Settings](steam-settings/) object documentation.
+Represents a DLC object, this is created by the [Steam Settings](steam-settings.md) object when you import DLC data for your app. To learn more see the [Steam Settings](steam-settings.md) object documentation.
 
 ### Fields and Attributes
 
