@@ -1,11 +1,5 @@
 # Inventory
 
-{% hint style="warning" %}
-Coming Soon
-
-This will be released with Patch 13 and is expected late 2021 to early 2022 as a free update to Steamworks V2
-{% endhint %}
-
 ## Introduction
 
 ```csharp
@@ -48,10 +42,26 @@ The following is from the Steam Documentaiton for the Inventory feature.
 
 See [Steam Inventory Service](https://partner.steamgames.com/doc/features/inventory) for more information.
 
+### Related Objects
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/inventory-item" %}
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/inventory-settings" %}
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/inventory-result" %}
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/item-details" %}
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/item-definition" %}
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/item-property" %}
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/item-tag" %}
+
 ## How To
 
 {% hint style="success" %}
-Methods that impact a user's inventory will typically have a [callback ](../../../company/concepts/callbacks.md)that returns a type of [Inventory Result](../objects/inventory-result.md). In addition the [Item Definitions](../objects/item-definition.md) stored in the active Steam Settings will be updated with the resulting [Item Details](../objects/item-details.md) which be used as a real time view of the current state of the user's inventory.
+Methods that impact a user's inventory will typically have a [callback ](../../../company/concepts/callbacks.md)that returns a type of [Inventory Result](../objects/inventory-result.md). In addition the [Item Definitions](../objects/item-definition.md) stored in the active Steam Settings will be updated with the resulting [Item Details](../objects/item-detail.md) which be used as a real time view of the current state of the user's inventory.
 {% endhint %}
 
 {% hint style="info" %}

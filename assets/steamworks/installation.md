@@ -105,19 +105,19 @@ When completed properly you will see Steamworks.NET in your Package Manager's "I
 
 Heathen Engineering works with the communities of other assets and tools to help insure a smooth and efficent integration between our technologies. In particular Heathen has invested notable effort in the networking transports of the following solutions and works to insure they funciton properly with the Steamworks.NET APIs and with our own Steamworks tools.
 
-### Fish-Net (Beta)
+### FishNetworking (Beta)
 
 > A feature-rich Unity networking solution aimed towards reliability, ease of use, efficiency, and flexibility.Developed by a professional game designer, supported by the community.
 
-The developer of Fish-Net has worked with Heathen Engineering developers to insure its Steam Transport is compatable with Steamworks V2 and with Steamworks.NET in general.
+The developer of FishNetworking has worked with Heathen Engineering developers to insure its Steam Transport is compatable with Steamworks V2 and with Steamworks.NET in general.
 
 #### Requirements
 
-You must install Fish-Net from Git Hub along with its Fishy Steam transport.
+You must install FishNetworking from Git Hub along with its Fishy Steam transport.
 
 #### Installation
 
-Fish-Net is available on git hub and includes documentation for installation there.
+FishNetworking is available on git hub and includes documentation for installation there.
 
 {% embed url="https://github.com/FirstGearGames/FishNet" %}
 

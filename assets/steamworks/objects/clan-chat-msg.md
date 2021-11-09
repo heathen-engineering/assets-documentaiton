@@ -1,7 +1,19 @@
 # Clan Chat Msg
 
-{% hint style="warning" %}
-Coming Soon
+## Definition
 
-This will be released with Patch 13 and is expected late 2021 to early 2022 as a free update to Steamworks V2
-{% endhint %}
+```csharp
+public struct ClanChtMsg
+```
+
+Represents a chat message from the [Clans ](../api/clans.md)interface
+
+### Fields and Attributes
+
+| Type           | Name    | Comment                          |
+| -------------- | ------- | -------------------------------- |
+| ChatRoom       | room    | The room this message relates to |
+| EChatEntryType | type    | The type of chat message         |
+| string         | message | The message                      |
+| UserData       | user    | The user that sent the message   |
+

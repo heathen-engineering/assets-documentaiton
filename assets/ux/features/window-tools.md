@@ -22,7 +22,7 @@ Check out the following articles for more details on specific componenets
 [Border Handle](window-tools.md#border-handles)
 {% endhint %}
 
-![](<../../../.gitbook/assets/image (152).png>)
+![](<../../../.gitbook/assets/image (152) (1).png>)
 
 With this system, you have complete control of your window's features including resize and move handles. You can choose to add a move handle, allowing the window to be dragged around the parent, rather or not it clamps to the parent and rather or not it remains always on top of other windows.
 

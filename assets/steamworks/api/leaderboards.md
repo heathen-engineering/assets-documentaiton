@@ -1,11 +1,5 @@
 # Leaderboards
 
-{% hint style="warning" %}
-Coming Soon
-
-This will be released with Patch 13 and is expected late 2021 to early 2022 as a free update to Steamworks V2
-{% endhint %}
-
 ## Introduction
 
 ```csharp
@@ -28,10 +22,18 @@ For more info on how to use the Steamworks Web API please see the [Web API Overv
 
 Leaderboards are ranked lists of players where a player's score determins there position on the leaderboard. Leaderboards can contain additional data for each entry either as a details array or as an attachment, attachments are useful for playbacks and other large bits of information while details are useful for character builds, player settings, etc.
 
+### Related Objects
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/leaderboard" %}
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/leaderboard-entry" %}
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/rank-change" %}
+
 ## How To
 
 {% hint style="success" %}
-The [Leaderboard ](../objects/leaderboard.md)object provides simplified access to many of the features found here in. Be sure to read the documentiaton for the [Leaderboard ](../objects/leaderboard.md)object to understand what options are available to you.
+The [Leaderboard ](../objects/leaderboard-object.md)object provides simplified access to many of the features found here in. Be sure to read the documentiaton for the [Leaderboard ](../objects/leaderboard-object.md)object to understand what options are available to you.
 {% endhint %}
 
 ### Add an attachment
@@ -39,7 +41,7 @@ The [Leaderboard ](../objects/leaderboard.md)object provides simplified access t
 You can attach files to a user's leaderboard entry using the `AttachLeaderboardUGC` option.&#x20;
 
 {% hint style="info" %}
-It is typically easier to add attaches to the local user's entry from teh board its self, that is to use the AttachUGC methods availabel on the [Leaderboard](../objects/leaderboard.md) object.
+It is typically easier to add attaches to the local user's entry from teh board its self, that is to use the AttachUGC methods availabel on the [Leaderboard](../objects/leaderboard-object.md) object.
 {% endhint %}
 
 Attaches a piece of user generated content the current user's entry on a leaderboard.
@@ -67,7 +69,7 @@ In this case we are writing a file up to the user's remote storage, if that writ
 Entries e.g. the records in the board can be queried in several ways.
 
 {% hint style="info" %}
-It is typically easier to get and upload entries from the board its self, that is to use the GetEntries and Upload methods available on the [Leaderboard ](../objects/leaderboard.md)object.
+It is typically easier to get and upload entries from the board its self, that is to use the GetEntries and Upload methods available on the [Leaderboard ](../objects/leaderboard-object.md)object.
 {% endhint %}
 
 #### Download Entries

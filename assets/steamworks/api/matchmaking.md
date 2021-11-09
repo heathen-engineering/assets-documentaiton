@@ -1,11 +1,5 @@
 # Matchmaking
 
-{% hint style="warning" %}
-Coming Soon
-
-This will be released with Patch 13 and is expected late 2021 to early 2022 as a free update to Steamworks V2
-{% endhint %}
-
 ## Introduction
 
 ```csharp
@@ -27,6 +21,34 @@ Steam Lobby can be used for more than a simple game lobby, depending on your gam
 {% hint style="info" %}
 Take a look at the Lobby Manager for a tool that can help you manage a specifc uses for a Steam Lobby and which can simplify lobby interactions and facilitate lobby UIs.
 {% endhint %}
+
+### Related Componenets
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/components/lobby-manager" %}
+Simplify Steam Lobbies
+{% endembed %}
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/components/lobby-chat-director" %}
+Connect your UI to lobby chat quickly and easily
+{% endembed %}
+
+### Related Objects
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/lobby" %}
+Represents a lobby and  simplifies accessing it members, data, chat and more
+{% endembed %}
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/lobby-chat-msg" %}
+Lobby chat messages made easy
+{% endembed %}
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/lobby-game-server" %}
+How you know where to go
+{% endembed %}
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/lobby-member" %}
+Represents a lobby member and simplies accessing its data
+{% endembed %}
 
 ## Events
 
@@ -65,6 +87,14 @@ If the user outside a game chooses to join, your game will be launched with the 
 Invoked when API.Matchmaking.Client.LeaveLobby is called
 
 ## How To
+
+### Join Lobby
+
+To join a lobby you need to know that lobby's ID and can simply call
+
+```csharp
+API.Matchmaking.Client.JoinLobby(id, callback);
+```
 
 ### Create Lobby
 

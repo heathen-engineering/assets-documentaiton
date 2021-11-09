@@ -1,7 +1,19 @@
 # User Leave Data
 
-{% hint style="warning" %}
-Coming Soon
+## Definition
 
-This will be released with Patch 13 and is expected late 2021 to early 2022 as a free update to Steamworks V2
-{% endhint %}
+```csharp
+public struct UserLeaveData
+```
+
+Used by the [Clans ](../api/clans.md)interface indicating a user leaving a target chat
+
+### Fields and Attributes
+
+| Type     | Name    | Comment     |
+| -------- | ------- | ----------- |
+| ChatRoom | room    | The room    |
+| UserData | user    | The user    |
+| bool     | kicked  | Was kicked? |
+| bool     | dropped | Droped out? |
+

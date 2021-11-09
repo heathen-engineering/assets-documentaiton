@@ -4,12 +4,6 @@ description: Getting to know the UX API
 
 # API
 
-{% hint style="success" %}
-Coming Soon Feature
-
-The API and its interfaces will be ariving in the next UX patch
-{% endhint %}
-
 ## Introduction
 
 The UX API provides low level access to all of Heathen UX's features. API's members are all static classes and are used by higher level game object componenets to deliver the funcitonality of Heathen's UX. The UX API can be used to access features and funcitons of UX without the need of a GameObject reference and can be used to create tailor made systems and managers for your projects.

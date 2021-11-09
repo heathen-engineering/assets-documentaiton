@@ -4,12 +4,6 @@ description: Access rich presence, user data and more through the Friends interf
 
 # Friends
 
-{% hint style="warning" %}
-Coming Soon
-
-This will be released with Patch 13 and is expected late 2021 to early 2022 as a free update to Steamworks V2
-{% endhint %}
-
 ## Introduction
 
 ```csharp
@@ -25,6 +19,14 @@ API.Friends.Client
 ### What can it do?
 
 You can list the clan owner, its officers, open the clan chat in overlay or join the clan's chat in game. The most common use game developers look for and the most complex is to join the clan chat in game.
+
+### Related Componenets
+
+
+
+### Related Objects
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/user-data" %}
 
 ## Events
 

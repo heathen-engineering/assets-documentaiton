@@ -1,7 +1,18 @@
 # DLC Data
 
-{% hint style="warning" %}
-Coming Soon
+## Definition
 
-This will be released with Patch 13 and is expected late 2021 to early 2022 as a free update to Steamworks V2
-{% endhint %}
+```csharp
+public struct DlcData
+```
+
+Used by the App interface to return general DLC information. In general using the Downloadable Content Object is more effective.
+
+### Fields and Attributes
+
+| Type     | Name      | Comment                     |
+| -------- | --------- | --------------------------- |
+| AppId\_t | AppId     | The ID of the DLC           |
+| bool     | Available | Is it available             |
+| string   | Name      | The display name of the DLC |
+

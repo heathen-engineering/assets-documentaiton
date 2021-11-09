@@ -1,11 +1,5 @@
 # Parties
 
-{% hint style="warning" %}
-Coming Soon
-
-This will be released with Patch 13 and is expected late 2021 to early 2022 as a free update to Steamworks V2
-{% endhint %}
-
 ## Introduction
 
 ```csharp
@@ -37,6 +31,12 @@ From Steam's documentation:&#x20;
 > To cancel the beacon - for instance when the party is full and the game begins - call [ISteamParties::DestroyBeacon](https://partner.steamgames.com/doc/api/ISteamParties#DestroyBeacon).\
 > \
 > The client side of this operation - seeing and following beacons - can also be managed by your game. Using [ISteamParties::GetNumActiveBeacons](https://partner.steamgames.com/doc/api/ISteamParties#GetNumActiveBeacons) and [ISteamParties::GetBeaconDetails](https://partner.steamgames.com/doc/api/ISteamParties#GetBeaconDetails), your game can get a list of beacons from other users that are currently active in locations relevant to the current user. If the user desires, call [ISteamParties::JoinParty](https://partner.steamgames.com/doc/api/ISteamParties#JoinParty) to "follow" one of those beacons.
+
+### Related Objects
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/party-beacon-details" %}
+
+
 
 ## Events
 

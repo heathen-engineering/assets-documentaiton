@@ -4,12 +4,6 @@ description: Access the Steam Clan aka Steam Group system with Heathen's Steam A
 
 # Clans
 
-{% hint style="warning" %}
-Coming Soon
-
-This will be released with Patch 13 and is expected late 2021 to early 2022 as a free update to Steamworks V2
-{% endhint %}
-
 ## Introduction
 
 ```csharp
@@ -33,6 +27,12 @@ Search For Community Groups
 ### What can it do?
 
 You can list the clan owner, its officers, open the clan chat in overlay or join the clan's chat in game. The most common use game developers look for and the most complex is to join the clan chat in game.
+
+### Related Objects
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/clan" %}
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/clan-chat-msg" %}
 
 ## How To
 

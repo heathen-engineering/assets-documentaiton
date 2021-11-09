@@ -4,12 +4,6 @@ description: Lobby management made easy
 
 # Lobby Manager
 
-{% hint style="warning" %}
-Coming Soon
-
-This will be released with Patch 13 and is expected late 2021 to early 2022 as a free update to Steamworks V2
-{% endhint %}
-
 {% hint style="info" %}
 This tool simply exposes features present in the API to the inspector.
 
@@ -155,6 +149,22 @@ Searches for lobbies that match the Search Arguments set on the object. This wil
 ```csharp
 public void Join(Lobby lobby);
 ```
+
+```csharp
+public void Join(ulong lobby);
+```
+
+```csharp
+public void Join(string lobbyIdAsString);
+```
+
+{% hint style="warning" %}
+The string paramiter version only exists so that Unity Inspector can work with the method when using Unity Actions (such as button click). Unfortunetly Unity in all of its wizdome decided that ulong and really anything other than float, int and string cannot be used as paramiters for methods.
+
+
+
+You should only use this overload when using Unity Inspector and you should insure that the value is a valid ulong.
+{% endhint %}
 
 Joins the indicated lobby
 

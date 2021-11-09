@@ -4,12 +4,6 @@ description: The Heathen Steam API wrapper
 
 # API
 
-{% hint style="warning" %}
-Coming Soon
-
-This will be released with Patch 13 and is expected late 2021 to early 2022 as a free update to Steamworks V2
-{% endhint %}
-
 ## Introduction
 
 The Heathen API provides access to the full Steam API wrapping every interface with a Unity friendly static class, simplifying use of the raw API without reducing its funcitonality and exposing every callback as a UnityEvent and every callresult as a Unity firendly Action.

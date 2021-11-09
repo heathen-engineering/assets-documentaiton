@@ -1,7 +1,35 @@
 # Avg Rate Stat
 
-{% hint style="warning" %}
-Coming Soon
+## Definition
 
-This will be released with Patch 13 and is expected late 2021 to early 2022 as a free update to Steamworks V2
+```csharp
+public class AvgRateStatObject : StatObject
+```
+
+Represents a AvgRat stat, consult the Steam Documentation for the specific use cases for each of the stat types
+
+{% embed url="https://partner.steamgames.com/doc/features/achievements" %}
+
+### Fields and Attributes
+
+| Type  | Name  | Comment                       |
+| ----- | ----- | ----------------------------- |
+| float | Value | The current value of the stat |
+
+### Methods
+
+{% hint style="danger" %}
+Other methods are available but should not be used and exist only for compatability with the generic StatObject interface.
 {% endhint %}
+
+```csharp
+public void UpdateAvgRateStat(value, length);
+```
+
+Updates the stat
+
+```csharp
+public void StoreStas();
+```
+
+Calls Store Stats on the the Steam API

@@ -4,13 +4,79 @@ description: Defines a Steam Inventory Item
 
 # Item Definition
 
-## Introduction
+## Definition
 
-The Item Definition provides access to core features of Steam Inventory Items. This object is represented as a Scriptable Object within you Steam Settings object and has features of conveance proivdeing short cuts to core funcitons of the Steam Inventory interface.
+```csharp
+public class ItemDefinition : ScriptableObject
+```
 
-## What can it do?
+Represents a Steam Inventory Item of any type. This object contains all the schema data for any possible item. The specifics of each field are defined in [Steam's Inventory Schema documentaiton](https://partner.steamgames.com/doc/features/inventory/schema).
 
-The Item Definition provides easy access to common features of the Steam Inventroy interface. in particular most of the item specific features are accessable directly through the Item Definition object.
+{% embed url="https://partner.steamgames.com/doc/features/inventory/schema" %}
+
+This document will not reiterate the Schema fields those are detailed in Valve's documentation. The fields listed here are in addition to and are used during run time to manage the items owned by the player that this definition represents.
+
+### Fields and Attributes
+
+| Type              | Name          | Comment                                                                                                                                                                                                            |
+| ----------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| SteamItemDef\_t   | Id            | The id of the item and used by most API.Inventory interface features                                                                                                                                               |
+| List\<ItemDetail> | Details       | <p>A list of Steam Item Instance's of this item type owned by the local player.</p><p></p><p>This contains additional data about the item instance including ItemProperty[], dynamic properties and item tags.</p> |
+| long              | TotalQuantity | The sum of the quantities in each Item Detail                                                                                                                                                                      |
+
+### Methods
+
+```csharp
+public bool AddPromoItem(callback);
+```
+
+Grants the item in a one-time promotional to the local user
+
+```csharp
+public ConsumeOrder[] GetConsumeOrders(quantity);
+```
+
+Creates ConsumeOrders which can be used with the Consume method to consume instances of this item if available. This is only needed when consuming more than 1 instance at a time.
+
+```csharp
+public bool Consume(callback);
+```
+
+```csharp
+public bool Consume(order, callback);
+```
+
+Consume 1 or many instances of this item if the player owns them
+
+```csharp
+public bool GetExchangeEntry(quantity, out entries);
+```
+
+Gets a set of ExchangeEntry objects that match the quantity provided if the player's owns them. This can be used with Exchange to "craft" 1 item by exchanging a set of other items.
+
+```csharp
+public void Exchange(exchangeEntries, callback);
+```
+
+Exchanges a set of ExchangeEntry objects to create a new instance of this item.
+
+```csharp
+public void GenerateItem(callback);
+```
+
+Only available to developers, this simply creates a new instance of this item
+
+```csharp
+public void StartPurchase(callback);
+```
+
+If the item is confugred correctly for store purchases this will open the store loading the cart with the indicated number of items to be purcahsed.
+
+```csharp
+public void TriggerDrop(callback);
+```
+
+Triggers a play time drop assuming the player has played long enough and the item is a playtime generator item.
 
 ## How To
 

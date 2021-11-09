@@ -1,7 +1,31 @@
 # Int Stat
 
-{% hint style="warning" %}
-Coming Soon
+## Definition
 
-This will be released with Patch 13 and is expected late 2021 to early 2022 as a free update to Steamworks V2
+```csharp
+public class IntStatObject : StatObject
+```
+
+Represents an int stat, consult the Steam Documentation for the specific use cases for each of the stat types
+
+{% embed url="https://partner.steamgames.com/doc/features/achievements" %}
+
+### Fields and Attributes
+
+| Type | Name  | Comment                      |
+| ---- | ----- | ---------------------------- |
+| int  | Value | Get or set the current value |
+
+### Methods
+
+{% hint style="danger" %}
+Other methods are available but should not be used and exist only for compatability with the generic StatObject interface.
 {% endhint %}
+
+Updates the stat
+
+```csharp
+public void StoreStas();
+```
+
+Calls Store Stats on the the Steam API

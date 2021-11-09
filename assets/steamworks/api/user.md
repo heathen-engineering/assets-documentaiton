@@ -1,7 +1,69 @@
 # User
 
-{% hint style="warning" %}
-Coming Soon
+## Introduction
 
-This will be released with Patch 13 and is expected late 2021 to early 2022 as a free update to Steamworks V2
-{% endhint %}
+```csharp
+public static class API.StatsAndAchievements
+```
+
+All user operations are client specific so you will always be using the form
+
+```csharp
+API.User.Client
+```
+
+### What can it do?
+
+The user interface can be used to modify the local user's rich presence data and read data from other users. In large the features and capabilities of the User interface are available through the related data object
+
+### Related Obejct
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/user-data" %}
+
+## How To
+
+### Get the local user
+
+```csharp
+var user = API.User.Client.Id;
+```
+
+you can also get key data about the local user either from the resulting [User Data](../objects/user-data.md) object as read from ID or directly from the iinterface as shown below
+
+```csharp
+var userLevel = API.User.Client.Level;
+```
+
+```csharp
+var richData = API.User.Client.RichPresence;
+```
+
+```csharp
+var level = API.User.Client.GetGameBadgeLevel(series, foil);
+```
+
+### Get and set rich data
+
+Set the rich presence data for an unsecured game server that the user is playing on. This allows friends to be able to view the game info and join your game.
+
+```csharp
+API.User.Client.AdvertiseGame(serverId, ip, port);
+```
+
+```csharp
+API.User.Client.SetRichPresence(key, value);
+```
+
+```csharp
+API.User.Client.ClearRichPresence();
+```
+
+```csharp
+API.User.Client.GetRichPresence(key);
+```
+
+### Duration Control
+
+Heathen enginering is not and will never support this sort of behaviour. If you need it look else where.
+
+The  same applies for SetDurationControlOnlineState and anything of similar nature.

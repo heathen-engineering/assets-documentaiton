@@ -14,7 +14,7 @@ Available in UX [Complete ](https://assetstore.unity.com/packages/tools/utilitie
 
 The cursor system allows for easy code free context sensitive mouse cursors with support for animation.
 
-![](<../../../.gitbook/assets/image (153).png>)
+![](<../../../.gitbook/assets/image (153) (1).png>)
 
 The Cursor Animator component handles cursor animation, you should only have 1 of these active at any given time.
 
