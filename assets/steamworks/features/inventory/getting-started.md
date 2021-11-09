@@ -30,7 +30,7 @@ The very first thing you should do is import any Steam Inventory Items you alrea
 
 Once done you will see every item you had defined already in your Steam Developer Portal has been pulled into Unity under your Steam Settings ...&#x20;
 
-![Screen shot of a WIP project with 57 items. You can see here how the Settings object catigorizes the items based on type.](<../../../../.gitbook/assets/image (169).png>)
+![Screen shot of a WIP project with 57 items. You can see here how the Settings object catigorizes the items based on type.](<../../../../.gitbook/assets/image (169) (1).png>)
 
 ## **Step 2: Defining Items**
 

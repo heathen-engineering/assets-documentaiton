@@ -8,7 +8,7 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 
 This scene demonstrates the use of Steam Leaderboard for setting and reading leaderboards at run time.
 
-![](<../../../../.gitbook/assets/image (155).png>)
+![](<../../../../.gitbook/assets/image (157).png>)
 
 ### What do I learn?
 
@@ -25,14 +25,20 @@ This scene demonstrates the use of Steam Leaderboard for setting and reading lea
 
 The manage game object has the [Steamworks Behaviour](../../components/steamworks-behaviour.md) component attached and will handle initalization of the Steam API on start up.
 
-### Avatar Image
+### Feet Traveled
 
-Located at Canvas/Info/Border/AvatarImage
-
-This game object makes use of the [Set User Avatar](../../components/set-user-avatar.md) componenet to set the local user's avatar image to the UnityEngine.UI.RawImage
-
-###
+From Example Steam Settings as `[LdrBrd] Feet Traveled` this is used to update the leaderboard score and rank
 
 ### DEMO SCRIPTS
 
 This contains internal demo scripts used in the scene which are all marked as depricated. They simply drive the buttons in the menu nothing more.
+
+The demo script has 2 custom funcitons
+
+1\) Update Score
+
+This simply performs a force update on the leaderboard score based on the value of the InputField
+
+2\) Get Top 10
+
+This queries the board for the top 10 global ranks and prints the results to the console
