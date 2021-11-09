@@ -84,7 +84,9 @@ Each product will have an entry in the Assets, Documentation and Samples folders
   * Samples
     * Steamworks
 
-If you only have 1 Hea
+If you only have 1 Heathen Engineering asset then you are safe to simply remove the whole \_Heathen Engineering folder.
+
+Otherwise you can simply remove the folder corisponding to the product you want to remove.
 
 ## Requirements
 
