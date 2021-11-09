@@ -70,6 +70,22 @@ The .unitypackage available in Steamwork.NET's release folder is rarely up to da
       &#x20;![](<../../.gitbook/assets/image (148).png>)&#x20;
    4. Click Import
 
+## Uninstall
+
+Removing any Heathen Engineering asset is as simple as deleating the folder. Heathen always installs under the `_Heathen Engineering` folder&#x20;
+
+Each product will have an entry in the Assets, Documentation and Samples folders so for example
+
+* \_Heathen Engineering
+  * Assets
+    * Steamworks
+  * Documentation
+    * Steamworks
+  * Samples
+    * Steamworks
+
+If you only have 1 Hea
+
 ## Requirements
 
 ### Unity 2019 LTS or later
