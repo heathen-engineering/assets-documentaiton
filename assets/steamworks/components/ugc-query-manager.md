@@ -8,6 +8,10 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 
 Search for and browse Steam Workshop items.
 
+```csharp
+public class UserGeneratedContentQueryManager : MonoBehaviour
+```
+
 ## Definition
 
 ### Fields and Attributes

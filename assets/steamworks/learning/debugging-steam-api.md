@@ -36,7 +36,7 @@ The reason this happens is that Valve will not release app initalization until e
 
 ## Stats
 
-![](<../../../.gitbook/assets/image (173).png>)
+![](<../../../.gitbook/assets/image (173) (1).png>)
 
 You can use the Stats tab to view and update the value of all registered stats
 
@@ -70,7 +70,7 @@ You can view the subscription status of all DLC in the DLC tab
 
 ## Inventory
 
-![](<../../../.gitbook/assets/image (164).png>)
+![](<../../../.gitbook/assets/image (164) (1).png>)
 
 The inventory tab will display all the items registered to your game and provides tools for clearing and granting each item
 
