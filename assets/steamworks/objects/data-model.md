@@ -40,7 +40,7 @@ You do not need to write any code in the body of the DataModel, the base class w
 
 Once complete you can use your new ScriptableObject to represent the currently loaded copy of this data type and you can use its member funcitons to list the available files of this type as seen on [Steam Remote Storage](../api/remote-storage.md) and to read and write given files.
 
-### Fields and Attributes
+## Fields and Attributes
 
 | Type                 | Name           | Comment                                               |
 | -------------------- | -------------- | ----------------------------------------------------- |
@@ -49,13 +49,17 @@ Once complete you can use your new ScriptableObject to represent the currently l
 | Type                 | DataType       | The underlying data type used by this model           |
 | T                    | data           | The data stored by this model                         |
 
-### Methods
+## Methods
+
+### Refresh
 
 ```csharp
 public void Refresh();
 ```
 
-Reads the list of available files from the [remote storage](../api/remote-storage.md) interface and stores them in teh availabelFiles collection
+Reads the list of available files from the [remote storage](../api/remote-storage.md) interface and stores them in the availabelFiles collection
+
+### Load Data
 
 ```csharp
 public void LoadByteArray(data);
@@ -71,6 +75,8 @@ public void LoadFileAddress(address);
 
 Manually loads data into the model's data field
 
+### Export Data
+
 ```csharp
 public byte[] ToByteArray();
 ```
@@ -82,6 +88,8 @@ public string ToJson();
 ```
 
 Outputs the current data as a JSON string
+
+### Save Data
 
 ```csharp
 public void Save(fileName);

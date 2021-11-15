@@ -8,7 +8,7 @@ public struct ItemDetail
 
 Used by the [Inventory ](../api/inventory.md)interface and in the [Item Definition](item-definition.md) to represent instances of an item.
 
-### Fields and Attributes
+## Fields and Attributes
 
 | Type                   | Name              | Comment                                          |
 | ---------------------- | ----------------- | ------------------------------------------------ |

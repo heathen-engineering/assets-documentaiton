@@ -8,7 +8,7 @@ public class AuthenticationSession
 
 Used by the [Authentication ](../api/authentication.md)interface to represent an active authentication session
 
-### Fields and Attributes
+## Fields and Attributes
 
 | Type                 | Name            | Comment                                                                                   |
 | -------------------- | --------------- | ----------------------------------------------------------------------------------------- |
@@ -20,7 +20,9 @@ Used by the [Authentication ](../api/authentication.md)interface to represent an
 | bool                 | IsBarrowed      | The same as user == gameOwner                                                             |
 | Action               | onStartCallback | the callback invoked when the session has started ... this is used internally             |
 
-### Methods
+## Methods
+
+### End
 
 ```csharp
 public void End();

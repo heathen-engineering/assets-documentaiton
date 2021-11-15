@@ -16,7 +16,7 @@ The simulation must be running (click Play in Unity) in order for this to work&#
 This is becuase the Steam API must be initalized and updating to return results
 {% endhint %}
 
-### Fields and Attributes
+## Fields and Attributes
 
 | Type   | Name               | Comment                                                                        |
 | ------ | ------------------ | ------------------------------------------------------------------------------ |
@@ -26,7 +26,9 @@ This is becuase the Steam API must be initalized and updating to return results
 | string | displayDescription | The display description of the achievement as defined in Steam portal          |
 | bool   | hidden             | Indicates the hidden state of this achievement as defined in Steam portal      |
 
-### Methods
+## Methods
+
+### Unlock
 
 ```csharp
 public void Unlock();
@@ -38,8 +40,10 @@ Unlocks the achievement for the local user. This is the same as&#x20;
 achievement.IsAchieved = true;
 ```
 
+### Clear Achievement
+
 ```csharp
-public void CLearAchievement();
+public void ClearAchievement();
 ```
 
 Clears the achievement state for the local user. This is the same as
@@ -48,17 +52,23 @@ Clears the achievement state for the local user. This is the same as
 achievement.IsAchieved = false;
 ```
 
+### Game Server Unlock
+
 ```csharp
 public void Unlock(CSteamID user);
 ```
 
 Unlocks the achievement for the indicated user. This is only available from Steam Game Servers and only when the indicated user has been authenticated.
 
+### Game Server Clear Achievement
+
 ```csharp
 public void ClearAchievement(CSteamID user);
 ```
 
 Clears the achievement state for the indicated user. This is only available from Steam Game Servers and only when the indicated user has been authenticated.
+
+### Game Server Check Achievement
 
 ```csharp
 public bool GetAchievementStatus(CSteamID user);

@@ -12,7 +12,7 @@ This can update the raw image with the indicated user's avatar and can optionall
 
 ## Definition
 
-### Fields and Attributes
+## Fields and Attributes
 
 | Type     | Name         | Comments                               |
 | -------- | ------------ | -------------------------------------- |
@@ -21,13 +21,15 @@ This can update the raw image with the indicated user's avatar and can optionall
 
 
 
-### Events
+## Events
 
-#### Loaded
+### Loaded
 
 Occurs when the texture is loaded
 
-### Methods
+## Methods
+
+### Load Avatar
 
 ```csharp
 public void LoadAvatar(user);

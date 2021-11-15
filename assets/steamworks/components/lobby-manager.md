@@ -78,7 +78,7 @@ You can learn more about these extension features in the [Lobby](../objects/lobb
 
 ## Definition
 
-### Fields and Attributes
+## Fields and Attributes
 
 | Type                                                                            | Name            | Comment                                                                                                                                      |
 | ------------------------------------------------------------------------------- | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -96,29 +96,39 @@ You can learn more about these extension features in the [Lobby](../objects/lobb
 | bool                                                                            | HasServer       | Returns true if the lobby game server has been set                                                                                           |
 | Lobby Game Server                                                               | GameServer      | Gets details about the lobby game server if set                                                                                              |
 
-### Events
+## Events
 
-#### evtFound
+### evtFound
 
 Occurs when a search for matchming lobbies returns
 
-#### evtJoined
+### evtEnter
 
-Occurs when a lobby is joined
+Occurs when the local user enters a lobby as the result of a create or join request
 
-#### evtCreated
+### evtCreated
 
 Occurs when a lobby is created
 
-#### evtCreateFailed
+### evtCreateFailed
 
 Occurs when an attempt to create a lobby fails
 
-#### evtQuickMatchFailed
+### evtQuickMatchFailed
 
 Occurs when an attempt to find a quick match failed and was not allowed to create a lobby on completion.
 
-### Methods
+### evtUserJoined
+
+Occurs when the local user is a member of a lobby and a new user joins that lobby
+
+### evtUserLeft
+
+Occurs when the local user is a member of a lobby and a fellow member leaves the lobby
+
+## Methods
+
+### Set Type
 
 ```csharp
 public bool SetType(ELobbyType type);
@@ -126,11 +136,15 @@ public bool SetType(ELobbyType type);
 
 Funcitonally the same as setting the Type field. This updates the type of the lobby on Valve's backend and updated the value of DataType. See the [Lobby](../objects/lobby.md) object article for more information on DataType.
 
+### Set Joinable
+
 ```csharp
 public bool SetJoinable(bool makeJoinable);
 ```
 
 Sets the lobby if any, as joinable or not
+
+### Quick Match
 
 ```csharp
 public void QuickMatch(bool createOnFail = true);
@@ -138,17 +152,23 @@ public void QuickMatch(bool createOnFail = true);
 
 Searches for a match based on the Search Arguments set on the object. If a match is found it will join that first lobby. If no match is found and createOnFail is set to true then the process will create a new lobby. If no match is found and createOnFail is set to false then the process will invoke the Quick Match Failed event.
 
+### Create
+
 ```csharp
 public void Create();
 ```
 
 Creates a new lobby with the data found in the Create Argument.
 
+### Search
+
 ```csharp
 public void Search(int maxResults);
 ```
 
 Searches for lobbies that match the Search Arguments set on the object. This will always invoke the evtFound event which will pass in an array of the lobby found if any.
+
+### Join
 
 ```csharp
 public void Join(Lobby lobby);
@@ -172,17 +192,23 @@ You should only use this overload when using Unity Inspector and you should insu
 
 Joins the indicated lobby
 
+### Set Lobby Data
+
 ```csharp
 public bool SetLobbyData(string key, string value);
 ```
 
 If the local user is the owner of the lobby this will set the related metadata field on the lobby. Otherwise this returns false.
 
+### Set Member Data
+
 ```csharp
 public SetLobbyMemberData(string key, string value);
 ```
 
 If in a lobby this will set the user's metadata value corasponding to this key.
+
+### Invite
 
 ```csharp
 public bool Invite(UserData user);

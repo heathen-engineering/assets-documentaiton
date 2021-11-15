@@ -33,7 +33,7 @@ Valve issues you an App ID when you pay your application fee. If you dont have y
 
 Create a [Steamworks Behaviour](broken-reference) object in your [bootstrap scene](../../../company/concepts/bootstrap-scene.md) or similarly appropreate location; and drag your Steam Settings object into the provided field.
 
-![](<../../../.gitbook/assets/image (161).png>)
+![](<../../../.gitbook/assets/image (161) (1).png>)
 
 Congratulations, you are now integrated with the Steam APIs. If you run the simulation, you will see that the Steam API initializes and is ready for use.
 

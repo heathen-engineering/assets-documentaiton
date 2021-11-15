@@ -20,7 +20,7 @@ For smaller groups/clans you can also iterate over the members of the chat howev
 
 ## Definition
 
-### Fields and Attributes
+## Fields and Attributes
 
 |             |               |                                                                                                                                                                                                                            |
 | ----------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -29,21 +29,23 @@ For smaller groups/clans you can also iterate over the members of the chat howev
 | bool        | InRoom        | <p>True if the system has been connected to a room succesfuly.</p><p></p><p>Note it is possible to be removed a room and this not be updated. You should handle errors when attempting to send and adjust accordingly.</p> |
 | ChatRoom    | ChatRoom      | <p>Returns the ChatRoom object that is being operated on if any.</p><p></p><p>If none then this will return a default ChatRoom with an invalid ID</p>                                                                      |
 
-### Events
+## Events
 
-#### evtJoin
+### evtJoin
 
 Occurs when a member joins the room
 
-#### evtRecieved
+### evtRecieved
 
 Occurs when a message is received to this room
 
-#### evtLeave
+### evtLeave
 
 Occurs when a member leaves the room
 
-### Methods
+## Methods
+
+### Join
 
 ```csharp
 public void Join(Clan clan);
@@ -51,17 +53,23 @@ public void Join(Clan clan);
 
 Joins the chat for the indicated clan
 
+### Leave
+
 ```csharp
 public void Leave();
 ```
 
 Leaves the chat if present
 
+### Send
+
 ```csharp
 public bool Send(string message);
 ```
 
 Sends a chat message if present
+
+### Open in Steam
 
 ```csharp
 public void OpenInSteam();

@@ -6,16 +6,6 @@
 Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)asset.
 {% endhint %}
 
-{% hint style="success" %}
-WIP
-
-
-
-This page will discribe the features and use of Steam APIs remote storage tools and how might use that feature in practical sitautions.
-{% endhint %}
-
-
-
 The User Generate Content (UGC) API from Valve is used for a number of features including Leaderboard Details. This section of the Heathen Knowledge Base however deals with the use of UGC for Workshop files.
 
 The typical use case is that you enable your users and or you yourself create workshop files (aka mods) and upload them to Valve's Workshop. These can then be browsed for and subscribed to by players. The system will then download the content that belongs to the subscribed mods and make that available to your game.
@@ -97,7 +87,7 @@ Next you will want to connect UI controls such as a Back and Next button up so t
 Remimber UGC Query doesn't return all the results in one batch. You will be querying "page 1" which will return a subset of items. To fetch the next set e.g. "page 2" you need to incrament the Current Page vlaue of the manager.
 {% endhint %}
 
-![](<../../../../.gitbook/assets/image (160).png>)
+![](<../../../../.gitbook/assets/image (160) (1).png>)
 
 You should do the same for "Set Previous Search Page" so that the user can go back and forth. These methods are safe and will never step to a page that doesn't exist.
 

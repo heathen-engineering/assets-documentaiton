@@ -22,17 +22,23 @@ The clan chat room structure is used by chat specific features of the Clans inte
 
 ## Methods
 
+### Send Message
+
 ```csharp
 public bool SendMessage(string message);
 ```
 
 Attempts to send a message to the chat.
 
+### Open Chat Window
+
 ```csharp
 public bool OpenChatWindowInSteam();
 ```
 
 Opens the clan chat in the Steam UI ... this is generally recomended especially for large clans as opposed to creating an in game clan chat.
+
+### Leave
 
 ```csharp
 public void Leave();

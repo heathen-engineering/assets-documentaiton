@@ -55,7 +55,7 @@ The following are constant strings used internally to manage Heathen standard me
 public struct Lobby : IEquatable<CSteamID>, IEquatable<ulong>
 ```
 
-### Fields and Attributes
+## Fields and Attributes
 
 | Type            | Name               | Notes                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | --------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -77,7 +77,9 @@ public struct Lobby : IEquatable<CSteamID>, IEquatable<ulong>
 | int             | MaxMembers         | gets the max member count and can be used by the owner to change the max member count                                                                                                                                                                                                                                                                                                                                  |
 | string          | \[string key]      | <p>indexer you can use this to access metadata e.g. set or read metadata.</p><p>Only the owner can set metadata</p>                                                                                                                                                                                                                                                                                                    |
 
-### Methods
+## Methods
+
+### this\[string key]
 
 ```csharp
 public string this[string key]
@@ -92,11 +94,15 @@ read and write metadata values on the lobby much as you would access members in 
 
 This will never throw a key not found exception, if a key is not present it will simply return an empty string.
 
+### Set Type
+
 ```csharp
 public bool SetType(type);
 ```
 
 Funcitonally the same as setting the Type field, this only works for the owner of the lobby
+
+### Set Joinable
 
 ```csharp
 public bool SetJoinable(bool makeJoinable);
@@ -104,11 +110,15 @@ public bool SetJoinable(bool makeJoinable);
 
 Sets the lobby as joinable or not. A lobby always starts as joinable, a lobby that is not joinable cannot be joined by anyone not even a friend or an invited user. This can only be used by the owner of the lobby.
 
+### Get Metadata
+
 ```csharp
 Dictionary<string, string> GetMetadata();
 ```
 
 Returns all the metadata for the lobby as a string dictionary. This creates the dictionary each time it is called so cashe the value before use or read the values directly from the lobby such as via the indexer.
+
+### Leave
 
 ```csharp
 public void Leave();
@@ -116,17 +126,23 @@ public void Leave();
 
 Leaves the lobby, if the owner leaves Steam will assigne a new owner.
 
+### Delete Lobby Data
+
 ```csharp
 public bool DeleteLobbyData(string key);
 ```
 
 Removes the indicated metadata entry if present, can only be used by the owner of the lobby
 
+### Invite User to Lobby
+
 ```csharp
 public bool InviteUserToLobby(UserData user);
 ```
 
 Invites the indiated user to the lobby
+
+### Send Chat Message
 
 ```csharp
 public bool SendChatMessage(string message);
@@ -137,6 +153,8 @@ public bool SendChatMessage(byte[] data);
 ```
 
 Sends a message over the Lobby chat system. See the [Lobby Chat Director](../components/lobby-chat-director.md) for more information.
+
+### Set Game Server
 
 ```csharp
 public void SetGameServer(string address, ushort port, CSteamID id);
@@ -152,11 +170,15 @@ public void SetGameServer(CSteamID id);
 
 Sets the Game Server information and causes the EventLobbyGameServer event to be raised on the [Matchmaking ](../api/matchmaking.md)interface and on any attached [Lobby Manager](../components/lobby-manager.md) componenets.
 
+### Kick Member
+
 ```csharp
 public bool KickMember(CSteamID memberId);
 ```
 
 Marks the ID as a member that should be removed from the lobby. This simply sets the ID to a "kick list" on the lobbies metadata and will cause the EventLobbyAskedToLeave event to be raised for the effected user on the event is present on the [Matchmaking](../api/matchmaking.md) interface and [Lobby Manager](../components/lobby-manager.md).
+
+### Kick List Contains
 
 ```csharp
 public bool KickListContains(CSteamID memberID);
@@ -164,11 +186,15 @@ public bool KickListContains(CSteamID memberID);
 
 Does the kick list contain the members ID;
 
+### Remove from Kick List
+
 ```csharp
 public bool RemoveFromKickList(CSteamID memberID);
 ```
 
 Removes a member from the kick list if present
+
+### Clear Kick List
 
 ```csharp
 public bool ClearKickList();
@@ -176,17 +202,23 @@ public bool ClearKickList();
 
 Clears the kick list
 
+### Get Kick List
+
 ```csharp
 public CSteamID[] GetKickList();
 ```
 
 Gets a list of the IDs in the kick list. This must build the array every time its called so cashe the results and only update when needed.
 
+### Set Member Metadata
+
 ```csharp
 public void SetMemberMetadata(string key, string value);
 ```
 
 Set metadata on the local user's LobbyMember
+
+### Get Member Metadata
 
 ```csharp
 public string GetMemberMetadata(string key);

@@ -8,7 +8,7 @@ public class LeaderboardEntry
 
 Represents an entry found on a leaderboard and contains data about that entry such as the user its related to, details and any attachments.
 
-### Fields and Attributes
+## Fields and Attributes
 
 | Type                | Name                 | Notes                                             |
 | ------------------- | -------------------- | ------------------------------------------------- |
@@ -21,13 +21,15 @@ Represents an entry found on a leaderboard and contains data about that entry su
 | bool                | HasCashedUgcFileName | Do we have the file name for this attachment yet  |
 | string              | cashedUgcFileName    | The name for the attachment                       |
 
-### Events
+## Events
 
-#### evtUgcDownloaded
+### evtUgcDownloaded
 
 Occurs when the UGC is downloaded.
 
-### Methods
+## Methods
+
+### Get Attachment
 
 ```csharp
 public void GetAttachedUgc<T>(callback);
@@ -39,11 +41,15 @@ This starts, updats and completes a UGC download if required and returns the res
 
 This will download the UGC attachment if any and invoke the callback with the results when finished.
 
+### Start UGC Download
+
 ```csharp
 public bool StartUgcDownload(priority, callback);
 ```
 
 Starts the process of downloading the UGC attachment if any. Returns false if the attachment handle is invalid e.g. no attachment present
+
+### UGC Download Progress
 
 ```csharp
 public float UgcDownloadProgress();

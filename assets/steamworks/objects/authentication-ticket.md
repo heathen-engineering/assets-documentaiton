@@ -8,7 +8,7 @@ public class AuthenticationTicket
 
 Used by the [Authentication ](../api/authentication.md)interface to represent an active authentication ticket
 
-### Fields and Attributes
+## Fields and Attributes
 
 | Type        | Name           | Comment                                                                                                    |
 | ----------- | -------------- | ---------------------------------------------------------------------------------------------------------- |
@@ -19,7 +19,9 @@ Used by the [Authentication ](../api/authentication.md)interface to represent an
 | uint        | createdOn      | the date this ticekt was created on                                                                        |
 | EResult     | result         | EResult state from the ticket request                                                                      |
 
-### Methods
+## Methods
+
+### Cancel
 
 ```csharp
 public void Cancel();

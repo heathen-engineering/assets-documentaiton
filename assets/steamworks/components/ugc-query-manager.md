@@ -14,7 +14,7 @@ public class UserGeneratedContentQueryManager : MonoBehaviour
 
 ## Definition
 
-### Fields and Attributes
+## Fields and Attributes
 
 | Type                          | Name         | Comments                                        |
 | ----------------------------- | ------------ | ----------------------------------------------- |
@@ -27,21 +27,23 @@ public class UserGeneratedContentQueryManager : MonoBehaviour
 
 
 
-### Events
+## Events
 
-#### Results Returned
+### Results Returned
 
 Occurs when the results are ready
 
-#### Query Prepared
+### Query Prepared
 
 Occurs when the query is ready to return results
 
-#### Results Updated
+### Results Updated
 
 Occurs when the result list is updated
 
-### Methods
+## Methods
+
+### Search All
 
 ```csharp
 public void SearchAll(filter);
@@ -49,11 +51,15 @@ public void SearchAll(filter);
 
 Search for all the items that match the input fiter.
 
+### Prepare Search All
+
 ```csharp
 public void PrepareSearchAll(filter);
 ```
 
 Prepares a search but doesn't execute it
+
+### Search Favorites
 
 ```csharp
 public void SearchFavorites(filter);
@@ -61,11 +67,15 @@ public void SearchFavorites(filter);
 
 Search for favorited items that match the input filter.
 
+### Prepare Search Favorites
+
 ```csharp
 public void PrepareSearchFavorites(filter);
 ```
 
 Prepares a search for favorited items that match the input filter but doens't execute it
+
+### Search Followed
 
 ```csharp
 public void SearchFollowed(filter);
@@ -73,11 +83,15 @@ public void SearchFollowed(filter);
 
 Search for followed items that match the input filter.
 
+### Prepare Search Followed
+
 ```csharp
 public void PrepareSearchFollowed(filter);
 ```
 
 Prepares a search for followed items that match the input filter but doens't execute it
+
+### Execute Search
 
 ```csharp
 public void ExecuteSearch();
@@ -85,17 +99,23 @@ public void ExecuteSearch();
 
 Executes a prepared search
 
+### Set Next Search Page
+
 ```csharp
 public void SetNextSearchPage();
 ```
 
 Moves the page forward and executes the updated query
 
+### Set Previous Search Page
+
 ```csharp
 public void SetPreviousSearchPage();
 ```
 
 Moves the page back and executes the updated query
+
+### Set Search Page
 
 ```csharp
 public void SetSearchPage(page);

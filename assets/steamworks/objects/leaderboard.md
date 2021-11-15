@@ -36,7 +36,7 @@ None is an available but invalid option for both settings
 Why even show it if its invalid, ask Valve, its part of the enums they provide so we expose it.
 {% endhint %}
 
-### Fields and Attributes
+## Fields and Attributes
 
 | Type                    | Name             | Comment                                                              |
 | ----------------------- | ---------------- | -------------------------------------------------------------------- |
@@ -49,7 +49,9 @@ Why even show it if its invalid, ask Valve, its part of the enums they provide s
 | bool                    | Valid            | is the board found and ready for use                                 |
 | int                     | EntryCount       | number of records on this board                                      |
 
-### Methods
+## Methods
+
+### Get User Entries
 
 ```csharp
 public void GetUserEntry(callback);
@@ -63,11 +65,15 @@ public void GetEntries(request, start, end, callback);
 
 Get a range of entries matching the reequest type and range of data
 
+### Register
+
 ```csharp
 public void Register();
 ```
 
 Finds or creates the board according to configuration values. This is handled by the internal system for all boards defined at development time but must be called manually if you define this object at run time.
+
+### Upload Score
 
 ```csharp
 public void UploadScore(score, method, callback);
@@ -78,6 +84,8 @@ public void UploadScore(score, details, method, callback);
 ```
 
 Uploads a given score and optionally includes details
+
+### Attach File
 
 ```csharp
 public void AttachUGC(fileName, jsonObject, encoding, callback);

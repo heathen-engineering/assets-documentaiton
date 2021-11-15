@@ -10,7 +10,7 @@ Meant to be attached to a game object representing non-local players. It can be 
 
 ## Definition
 
-### Fields and Attributes
+## Fields and Attributes
 
 | Type             | Name             | Comments                                                                                                 |
 | ---------------- | ---------------- | -------------------------------------------------------------------------------------------------------- |
@@ -19,16 +19,12 @@ Meant to be attached to a game object representing non-local players. It can be 
 | uint             | customSampleRate | If using a custom sample rate, specify that rate here.                                                   |
 | double           | encodingTime     | <p>The max length of the current streaming clip time. </p><p></p><p>This can be useful for debugging</p> |
 
-### Methods
+## Methods
+
+### Play Voice Data
 
 ```csharp
-public void PlayVoiceData();
+public void PlayVoiceData(buffer);
 ```
 
 Plays a recieved Steamworks Voice package through the output source.
-
-```csharp
-public void StopRecording();
-```
-
-Stops the recording process.

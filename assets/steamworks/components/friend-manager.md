@@ -14,27 +14,29 @@ This is not required to use these features it is simply a helper tool allowing u
 
 ## Definition
 
-### Fields and Attributes
+## Fields and Attributes
 
 | Type | Name                    | Note                                  |
 | ---- | ----------------------- | ------------------------------------- |
 | bool | ListenForFrendsMessages | Should we listen for friend messages? |
 
-### Events
+## Events
 
-#### evtGameConnectedChatMsg
+### evtGameConnectedChatMsg
 
 Received a message from a friend
 
-#### evtRichPresenceUpdated
+### evtRichPresenceUpdated
 
 Received a notfication of rich presence change
 
-#### evtPersonaStateChanged
+### evtPersonaStateChanged
 
 Received a notification of persona state change
 
-### Methods
+## Methods
+
+### Get Friends
 
 ```csharp
 public UserData[] GetFriends(flags);
@@ -42,11 +44,15 @@ public UserData[] GetFriends(flags);
 
 Get lists of user friends, flags can be used to modify what subset is returned
 
+### Get Coplay Friends
+
 ```csharp
 public UserData[] GetCoplayFriends();
 ```
 
 Gets the list of friends the user has recently played with
+
+### Get Friend Message
 
 ```csharp
 public string GetFriendMessage(userId, index, out type);

@@ -20,7 +20,7 @@ Set the user name for a target uGUI Text object
 
 ## Definition
 
-### Fields and Attributes
+## Fields and Attributes
 
 | Type                                      | Name         | Comments                               |
 | ----------------------------------------- | ------------ | -------------------------------------- |
@@ -29,13 +29,15 @@ Set the user name for a target uGUI Text object
 
 
 
-### Events
+## Events
 
-#### Loaded
+### Loaded
 
 Occurs when the texture is loaded
 
-### Methods
+## Methods
+
+### Set Name
 
 ```csharp
 public void SetName(user);

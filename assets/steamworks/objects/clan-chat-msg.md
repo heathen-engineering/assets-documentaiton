@@ -8,7 +8,7 @@ public struct ClanChtMsg
 
 Represents a chat message from the [Clans ](../api/clans.md)interface
 
-### Fields and Attributes
+## Fields and Attributes
 
 | Type           | Name    | Comment                          |
 | -------------- | ------- | -------------------------------- |

@@ -58,10 +58,10 @@ Exposes controls and events for a specific lobby
 
 Exposes controlss and events for the Steam Overlay features
 
-#### Steam System Events
+#### [Steam System Events](steam-system-events.md)
 
 Provides insepctor access to Initalize and Initalization Error events
 
-#### Steam Game Server Events
+#### [Steam Game Server Events](steam-game-server-events.md)
 
 Provides insepctor access to connect, disconnect and failure events for the Steam Game Server system.

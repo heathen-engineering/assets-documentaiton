@@ -22,44 +22,50 @@ Meant to be added to a game object at or near your leaderboard UI, this behaviou
 
 ## Definition
 
-### Fields and Attributes
+## Fields and Attributes
 
 | Type              | Name               | Comment                                       |
 | ----------------- | ------------------ | --------------------------------------------- |
 | LeaderboardObject | leaderboard        | The leaderboard this manager should work with |
 | LeaderboardEntry  | LastKnownUserEntry |                                               |
 
-### Events
+## Events
 
-#### evtUserEntryUpdated
+### evtUserEntryUpdated
 
 Occurs when the local user's last known user entry is updated. This can only be raised by operations ran from within the Leaderboard Manager ... for example if you call the RefreshUserEntry or GetUserEntries. Then it is likely to be raised assuming the local user has an entry however if you manually query the board using API.Leaderboards or other methods it will not be raised.
 
-#### evtQueryCompleted
+### evtQueryCompleted
 
 Occurs when a query for records complets and contains the results of that query
 
-#### evtQueryError
+### evtQueryError
 
 Occurs when a query fails with an error, errors are not generally specified rather it is up to you to check for logicle causes such as the leaderboard being null or not being valid.
 
-#### evtUploadError
+### evtUploadError
 
 Occurs when an attempt to upload scores fails. As with query errors the API doesn't usually provide any additional information. The typical causes are an invalid board or a board that can only be set by the Web API
 
-### Methods
+## Methods
+
+### Refresh User Entry
 
 ```csharp
-public void RefresshUserEntry();
+public void RefreshUserEntry();
 ```
 
 Queries the board for the local user's entry.
+
+### Get Top Entries
 
 ```csharp
 public void GetTopEntries(int count);
 ```
 
 Queries the board for the top X number of entries.
+
+### Get Near by Entries
 
 ```csharp
 public void GetNearbyEntries(int beforeUser, int afterUser);
@@ -71,17 +77,23 @@ Queries the board for entries around the player, before is the number entries be
 Both values should be entered as positive whole numbers.
 {% endhint %}
 
+### Get All Friends entries
+
 ```csharp
 public void GetAllFriendsEntries();
 ```
 
 This will return all entries for all friends that have an entry in this board.
 
+### Get User Entries
+
 ```csharp
 public void GetUserEntries(IEnumerable<UserData> users);
 ```
 
 This will return entries for each of the indicated user's if they have an entry to return.
+
+### Upload Score
 
 ```csharp
 public void UploadScore(int score);

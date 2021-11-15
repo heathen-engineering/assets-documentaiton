@@ -22,19 +22,21 @@ The Lobby Chat Director must be attached to a Lobby Manager. The director simply
 
 ## Definition
 
-### Fields and Attributes
+## Fields and Attributes
 
 |      |          |                                              |
 | ---- | -------- | -------------------------------------------- |
 | bool | HasLobby | True if the parent Lobby Manager has a lobby |
 
-### Events
+## Events
 
-#### evtMessageRecieved
+### evtMessageRecieved
 
 Occurs when a chat message is received on this lobby
 
-### Methods
+## Methods
+
+### Send
 
 ```csharp
 public bool Send(string message);

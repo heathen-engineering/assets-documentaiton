@@ -24,7 +24,7 @@ Everything done in this manage can be done via API.Overlay.
 
 ## Definition
 
-### Fields and Attributes
+## Fields and Attributes
 
 | Type                  | Name                 | Comments                                                                            |
 | --------------------- | -------------------- | ----------------------------------------------------------------------------------- |
@@ -35,21 +35,23 @@ Everything done in this manage can be done via API.Overlay.
 
 
 
-### Events
+## Events
 
-#### evtOverlayActivated
+### evtOverlayActivated
 
 Occurs when the overlay is activated&#x20;
 
-#### evtGameLobbyJoinRequested
+### evtGameLobbyJoinRequested
 
 Called when the user tries to join a lobby from their friends list or from an invite. The game client should attempt to connect to specified lobby when this is received. If the game isn't running yet then the game will be automatically launched with the command line parameter `+connect_lobby <64-bit lobby Steam ID>` instead.
 
-#### evtGameServerChangeRequested
+### evtGameServerChangeRequested
 
 Called when the user tries to join a different game server from their friends list. The game client should attempt to connect to specified server when this is received
 
-### Methods
+## Methods
+
+### Open Overlay
 
 ```csharp
 public void Open(string dialog);

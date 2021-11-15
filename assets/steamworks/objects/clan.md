@@ -21,7 +21,7 @@ ulong clanIdValue = clan;
 Clan clanCopy = clanIdValue;
 ```
 
-### Fields and Attributes
+## Fields and Attributes
 
 | Type        | Name     | Comment                                  |
 | ----------- | -------- | ---------------------------------------- |
@@ -31,7 +31,9 @@ Clan clanCopy = clanIdValue;
 | UserData    | Owner    | Returns the owner of the clan            |
 | UserData\[] | Officers | Returns the list of officers of the clan |
 
-### Methods
+## Methods
+
+### Join Chat
 
 ```csharp
 public void JoinChat(Action<ClanChatRoom, bool> callback);
