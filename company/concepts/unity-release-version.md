@@ -16,14 +16,14 @@ From Q2 2021 to Q2 2022 Heathen will build and release on 2019 LTS\
 From Q2 2022 to Q2 2023 Heathen will build and release on 2020 LTS\
 From Q2 2023 to Q2 2024 Heathen will build and release on 2021 LTS\
 \
-This is due to how Unity runs its LTS support. We will adjust this standard as required to conform to Unity's long term support plan such that Heathen assets are always built to support the oldest version of Unity that Unity its self activly supports.
+This is due to how Unity runs its LTS support. We will adjust this standard as required to conform to Unity's long term support plan such that Heathen assets are always built to support the oldest version of Unity that Unity its self actively supports.
 
-Note that in some cases older versions of Unity might work as we do activly try to avoid using programming features that are engine version specific however we cannot assure or fully support these cases as Unity doesn't fully support the underlying engine and we are ultemtly an extension of Unity's engine.
+Note that in some cases older versions of Unity might work as we do actively try to avoid using programming features that are engine version specific however we cannot assure or fully support these cases as Unity doesn't fully support the underlying engine and we are ultimately an extension of Unity's engine.
 {% endhint %}
 
 ## What
 
-It is Heathen's sugestion that you should be building your project with the intent that it will release on the most recent version on Untiy LTS that is available at the time of its inital release. This requires you to have an understanding of Unity's planned road map which is always subject to change but does follow a rough pattern of releasing the prior year's LTS at the end of Q1 in any given year.
+It is Heathen's suggestion that you should be building your project with the intent that it will release on the most recent version on Unity LTS that is available at the time of its initial release. This requires you to have an understanding of Unity's planned road map which is always subject to change but does follow a rough pattern of releasing the prior year's LTS at the end of Q1 in any given year.
 
 ### Examples
 
@@ -37,13 +37,13 @@ It is Heathen's sugestion that you should be building your project with the inte
 | Q1 2023         | 2021 LTS                                              |
 | Q2 2023         | 2022 LTS                                              |
 
-Hopfully the above pattern is clear. If followed this would insure your project is released on the most recently available version of Unity at the time of that projects inital release giving it the maximum amouint of time under long term support from Unity.
+Hopefully the above pattern is clear. If followed this would insure your project is released on the most recently available version of Unity at the time of that projects initial release giving it the maximum amount of time under long term support from Unity.
 
 ## Why
 
 {% embed url="https://unity3d.com/unity/qa/lts-releases" %}
 
-Unity's stated plan with its major release versions and its support cycle revolves around the pattern of 2 years of on going "long term" support for a version from its inital release. Do keep in mind that this is a guid line not a hard fact, for example 2018 LTS remeained in support longer than expected.
+Unity's stated plan with its major release versions and its support cycle revolves around the pattern of 2 years of on going "long term" support for a version from its initial release. Do keep in mind that this is a guide line not a hard fact, for example 2018 LTS remained in support longer than expected.
 
 If you follow this pattern however you can insure that your released project has 2 years of active and on going maintenance and support backed by Unity being the developer of the underlying engine and that is in general good. It means that any bugs you or your users discover that is an underlying problem with the engine is likely to get fixed by Unity.
 
@@ -52,24 +52,24 @@ If you release on a version that is out of LTS and you or your users discover a 
 ## When
 
 When should you upgrade?\
-Use cases follow ... please remimber these are guide lines, writen here to help you get started on thinking about your project and community. You should consider your own project, your team and your goals.
+Use cases follow; please remember these are guide lines, written here to help you get started on thinking about your project and community. You should consider your own project, your team and your goals.
 
 **Use Case 1**\
 ****My project is nearly complete but is built on an older version of Unity.
 
-This is the use case that our recomendation as stated above attempts to avoid. Ideally you would have been upgrading your project while your project was in acitve development keeping it on the closest available version of the Unity engine to the LTS version you expect to release on.
+This is the use case that our recommendation as stated above attempts to avoid. Ideally you would have been upgrading your project while your project was in active development keeping it on the closest available version of the Unity engine to the LTS version you expect to release on.
 
-Since that is no longer possible you need to do the assesment. Is it more important to you that you have Unity backed LTS and how long do you expect that. Compare that importants with how important it is that you hit your currently planned release date. Note that a major Unity engine update can add a lot of time to development and testing and is likely to push a near by release date back.
+Since that is no longer possible you need to do the assessment. Is it more important to you that you have Unity backed LTS and how long do you expect that. Compare that importance with how important it is that you hit your currently planned release date. Note that a major Unity engine update can add a lot of time to development and testing and is likely to push a near by release date back.
 
 **Use Case 2**\
 My project is in active development but is being built on an older version of Unity.
 
 Why are you on an older version of Unity?
 
-Unless you have a good answer for that whcih is of greater value to you than having LTS and arguably a more efficent and more stable platform to work on then you should probably be upgrading.
+Unless you have a good answer for that which is of greater value to you than having LTS and arguably a more efficient and more stable platform to work on then you should probably be upgrading.
 
 **Use Case 3**\
-My project is already relased on an older version of Unity, I'm doing a patch now, should I upgrade?
+My project is already released on an older version of Unity, I'm doing a patch now, should I upgrade?
 
 Is your patch a major update where your aiming to extend the life of your project?\
 Do you have bugs/issues with the current version?\
@@ -78,17 +78,17 @@ Do you have plans to use features or tools only available in newer versions?
 These are the sorts of questions to be asking your self/team.&#x20;
 
 Question 1:\
-Releasing a major patch with the goal of revitalising your project and extending its long tail is a good time for doing a major update to the engine. This would increase the LTS you have available, improve the longevity of your project by using more modern technology but it may also result in the loss of users that are bound to older machines as newer versions of Unity do tend to raise the minimal requirements.&#x20;
+Releasing a major patch with the goal of revitalizing your project and extending its long tail is a good time for doing a major update to the engine. This would increase the LTS you have available, improve the longevity of your project by using more modern technology but it may also result in the loss of users that are bound to older machines as newer versions of Unity do tend to raise the minimal requirements.&#x20;
 
-In this case you could choose to release your patch as an optional update. With Steam this could be done by maintaining the "legacy" version and releasing a new app ID with the new version that you ask Valve to grant to all owners of the orignial legacy version. You can then delist the legacy version.
+In this case you could choose to release your patch as an optional update. With Steam this could be done by maintaining the "legacy" version and releasing a new app ID with the new version that you ask Valve to grant to all owners of the original legacy version. You can then delist the legacy version.
 
-You see this sort of behaviour with games like Divinity Original Sin. Its original version ran for some time, they released an "Enhanced" edition and delisted the older original version insuring new customers could only buy the new version while old customers could still download the old version.
+You see this sort of behavior with games like Divinity Original Sin. Its original version ran for some time, they released an "Enhanced" edition and delisted the older original version insuring new customers could only buy the new version while old customers could still download the old version.
 
 Question 2:\
-In this case you probably want to upgrade but not nessisarly to the latest possible version assuming you dont want to change the minimal requirements for the game and you want to reduce risk upgrade breaking additional aspects of your game.&#x20;
+In this case you probably want to upgrade but not necessarily to the latest possible version assuming you don't want to change the minimal requirements for the game and you want to reduce risk upgrade breaking additional aspects of your game.&#x20;
 
 In this case we would likely choose to upgrade to the nearest version of Unity that resolves the bug, though we would probably also consider Question 1 and 2 to try and maximize our return on investment.
 
 Question 3:\
-This question is a value assesment, is the new feature worth the time to upgrade and the potential loss of users that are them selves dependent on older versions of Unity due to hardware limitaitons.
+This question is a value assessment, is the new feature worth the time to upgrade and the potential loss of users that are them selves dependent on older versions of Unity due to hardware limitations.
 

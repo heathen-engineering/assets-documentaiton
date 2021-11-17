@@ -32,22 +32,22 @@ It is however possible to browse the workshop in game and Heathen's Steamworks S
 
 #### [UGC Query Manager](../../components/ugc-query-manager.md)
 
-Heathen Engineering has created a componenet to simplify the task of searching and browsing Steam User Generacted Content items. This component can be used to create a query and cycle it over pages.
+Heathen Engineering has created a component to simplify the task of searching and browsing Steam User Generated Content items. This component can be used to create a query and cycle it over pages.
 
 {% hint style="info" %}
-Steam UGC Queries are page based queries that is Steam will return a subset of the matching records aka pages. To read all available records you would need ot iterate over all the avialable pages updating the query to match the requried page each time.
+Steam UGC Queries are page based queries that is Steam will return a subset of the matching records aka pages. To read all available records you would need to iterate over all the available pages updating the query to match the required page each time.
 {% endhint %}
 
 #### [UGC Query](../../objects/ugc-query.md)
 
-The UGC Queryt Manager uses the UGC Query object to perform all of its actions. You can use these same tools to create a completely bespoke (custom) browser experience.&#x20;
+The UGC Query Manager uses the UGC Query object to perform all of its actions. You can use these same tools to create a completely bespoke (custom) browser experience.&#x20;
 
 ## How To
 
 ### In Game Workshop Browser
 
 {% hint style="info" %}
-How you set up the UI is up to you, the [UGC Query Manager](../../components/ugc-query-manager.md) manages the query and its results for you, its up to you to display thouse to the user how you see fit.
+How you set up the UI is up to you, the [UGC Query Manager](../../components/ugc-query-manager.md) manages the query and its results for you, its up to you to display those to the user how you see fit.
 {% endhint %}
 
 #### Step 1
@@ -56,7 +56,7 @@ The first thing you will want to do is add a [UGC Query Manager](../../component
 
 #### Step 2
 
-Create a UI controller that can listen on the Results Changed event of the UGC Query Manager and update your UI accodingly. That is write a new script to manage your brwoser UI and set it up such that it can listen on the [Results Upated](../../components/ugc-query-manager.md#events) event of the manager
+Create a UI controller that can listen on the Results Changed event of the UGC Query Manager and update your UI accordingly. That is write a new script to manage your browser UI and set it up such that it can listen on the [Results Upated](../../components/ugc-query-manager.md#events) event of the manager
 
 PSEDO CODE EXAMPLE
 
@@ -75,7 +75,7 @@ The above assumes you have a reference to your [query manager](../../components/
 
 result will be of type [UGC Read Community Item](../../objects/ugc-read-community-item.md) and contains all the details about that specific item.
 
-Once defined you can refernce this in the Unity Inspector
+Once defined you can reference this in the Unity Inspector
 
 ![](<../../../../.gitbook/assets/image (173).png>)
 
@@ -84,7 +84,7 @@ Once defined you can refernce this in the Unity Inspector
 Next you will want to connect UI controls such as a Back and Next button up so the user can iterate over the query pages.
 
 {% hint style="info" %}
-Remimber UGC Query doesn't return all the results in one batch. You will be querying "page 1" which will return a subset of items. To fetch the next set e.g. "page 2" you need to incrament the Current Page vlaue of the manager.
+Remember UGC Query doesn't return all the results in one batch. You will be querying "page 1" which will return a subset of items. To fetch the next set e.g. "page 2" you need to increment the Current Page value of the manager.
 {% endhint %}
 
 ![](<../../../../.gitbook/assets/image (160) (1).png>)
@@ -93,10 +93,10 @@ You should do the same for "Set Previous Search Page" so that the user can go ba
 
 #### Step 4
 
-Enabling search, you could do this in a few ways but the simplest is to trigger a search on the end edit of an InpuField ... this way when the user finished typing a search string and presses enter it will start the search.
+Enabling search, you could do this in a few ways but the simplest is to trigger a search on the end edit of an InpuField, this way when the user finished typing a search string and presses enter it will start the search.
 
-That said it can be nice to have a Search Button that on click performed the searched using the text contained in the InputField ... the choice is up to you
+That said it can be nice to have a Search Button that on click performed the searched using the text contained in the InputField. The choice is up to you
 
 ![](<../../../../.gitbook/assets/image (172).png>)
 
-Whatever your choice your UI should call the SearchAll method which takes a string as an input paramiters. That string is the filter string used by Valve to narrow results.
+Whatever your choice your UI should call the SearchAll method which takes a string as an input parameters. That string is the filter string used by Valve to narrow results.

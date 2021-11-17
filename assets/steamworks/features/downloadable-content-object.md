@@ -13,12 +13,12 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 {% hint style="warning" %}
 #### Understanding Steam DLC
 
-Its important to understand the proper usage of DLC. Most of this is a matter of configuration in the Steam Developer Portal. Please carfully and fully read the documentaiton for the feature. It can be found here [https://partner.steamgames.com/doc/store/application/dlc](https://partner.steamgames.com/doc/store/application/dlc)
+Its important to understand the proper usage of DLC. Most of this is a matter of configuration in the Steam Developer Portal. Please carefully and fully read the documentation for the feature. It can be found here [https://partner.steamgames.com/doc/store/application/dlc](https://partner.steamgames.com/doc/store/application/dlc)
 {% endhint %}
 
 ![](<../../../.gitbook/assets/image (183).png>)
 
-The [Downloadable Content Object](../objects/downloadable-content.md) helps you track the status of DLC. You can import the DLC you have defined in the Steam Developer Portal for this application by running the simulation such that Steam API is able to intialize and then clicking the Import button on the Steam Settings Downloadable Content list
+The [Downloadable Content Object](../objects/downloadable-content.md) helps you track the status of DLC. You can import the DLC you have defined in the Steam Developer Portal for this application by running the simulation such that Steam API is able to initialize and then clicking the Import button on the Steam Settings Downloadable Content list
 
 ![](<../../../.gitbook/assets/image (157) (1).png>)
 

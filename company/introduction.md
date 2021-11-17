@@ -10,9 +10,9 @@ Heathen Group was founded in 2015 as Heathen Engineering Limited by a small team
 
 Heathen has a particular focus on game software development and related technologies, though its pedigree is largely in the enterprise software sector. Heathen’s unique blend of experiences and understanding straddles multi-media entertainment and enterprise level business and industry with many years of experience in both worlds.
 
-## Our Approch
+## Our Approach
 
-The approach taken by Heathen is simple “eat your own dog food”, Heathen creates technologies and tools that it then exploits to create end-user products such as bespoke client software, games, and assets. The Heathen approach creates a feedback loop where in the use of its technologies and tools enrich its end-user products and the use of its products enrich its technologies and tools.
+The approach taken by Heathen is simple: “eat your own dog food”. Heathen creates technologies and tools that it then exploits to create end-user products such as bespoke client software, games, and assets. The Heathen approach creates a feedback loop where in the use of its technologies and tools enrich its end-user products and the use of its products enrich its technologies and tools.
 
 ## The Group
 
@@ -24,7 +24,7 @@ Heathen Group is one team with many ambitions, these sections help us keep it al
 
 ![](<../.gitbook/assets/Heathen Engineering Banner Black.png>)
 
-Heathen Engineering is the section of Heathen Group that deals with ... well engineering ...&#x20;
+Heathen Engineering is the section of Heathen Group that deals with engineering.
 
 Heathen Engineering creates, maintains and supports all of Heathen Groups technology assets and provides for consulting and development services to our clients.
 

@@ -23,7 +23,7 @@ Is highly important, you should fully read Valve's own documentation around Stea
 >
 > Steam Stats and Achievements provides an easy way for your game to provide persistent, roaming achievement and statistics tracking for your users. The user's data is associated with their Steam account, and each user's achievements and statistics can be formatted and displayed in their Steam Community Profile.
 
-Heathen's Steamworks represents yoru defined Steam Achievements as scriptable objects assoceatted with the [Steam Settings](../objects/steam-settings.md). This allows your unity scripts to reference the achievements as you would any other Unity object e.g. by drag and drop and allows you to perform actions against a given achievement such as to unlock it by calling simple methods on that object.
+Heathen's Steamworks represents your defined Steam Achievements as scriptable objects associated with the [Steam Settings](../objects/steam-settings.md). This allows your unity scripts to reference the achievements as you would any other Unity object e.g. by drag and drop and allows you to perform actions against a given achievement such as to unlock it by calling simple methods on that object.
 
 ## What can it do?
 
@@ -34,7 +34,7 @@ Heathen's Steamworks makes working with Steam Achievements as simple as possible
 Right from the Steam Settings object you import all of the Steam Achievements you defined in Valve's Steam Developer Portal.
 
 {% hint style="info" %}
-You must have the simulation running so the Steam API is initalized and able to talk to Steam client.
+You must have the simulation running so the Steam API is initialized and able to talk to Steam client.
 {% endhint %}
 
 Once done you can find Scriptable Objects for each of the identified achievements nested under your Steam Settings

@@ -17,7 +17,7 @@ These tokens represent license to a thing in your game, and this license can be 
 {% hint style="info" %}
 Ownership of a token represents license of something related to or in your game that is transferable. Your game must read what licenses the current user owns and use that ownership to unlock or grant the related in game effects.
 
-This distinction is important, the Token Type "Iron Sword" for example would not be an iron sword in your game, rather it is a transferable license that indicates that the owner has rights to something ... apparently, an Iron Sword. That right can be transferred to other player's and could in theory be read by other games to grant other in game effects.
+This distinction is important, the Token Type "Iron Sword" for example would not be an iron sword in your game, rather it is a transferable license that indicates that the owner has rights to something , apparently, an Iron Sword. That right can be transferred to other player's and could in theory be read by other games to grant other in game effects.
 
 The Wallet of a player then represents the collection of license a player owns. This is not for example an inventory as we might see in an RPG, but could indicate what your game should populate such an inventory with.
 {% endhint %}

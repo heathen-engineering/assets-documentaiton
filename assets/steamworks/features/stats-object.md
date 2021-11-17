@@ -26,13 +26,13 @@ Stats work much like achievements however they cannot be imported from Valve dir
 
 ![](<../../../.gitbook/assets/image (188).png>)
 
-Once you add a sate you need to provide its API name exsactly as you created it in the Steam Developer Portal.
+Once you add a sate you need to provide its API name exactly as you created it in the Steam Developer Portal.
 
 ![](<../../../.gitbook/assets/image (160).png>)
 
 ## Using Stats
 
-See the [Int Stat Object](../objects/int-stat.md), [Float Stat Object](../objects/float-stat.md) and [Avg Rate Stat Object](../objects/avg-rate-stat.md) for details on how to use each. In general though the process is that you will create a refernnce to the stat in question in one of your game's scripts such as
+See the [Int Stat Object](../objects/int-stat.md), [Float Stat Object](../objects/float-stat.md) and [Avg Rate Stat Object](../objects/avg-rate-stat.md) for details on how to use each. In general though the process is that you will create a reference to the stat in question in one of your game's scripts such as
 
 ```csharp
 public IntStatObject myIntStat;
@@ -48,7 +48,7 @@ You can now drag the desired stat object from your Steam Setting into that slot.
 
 ![](<../../../.gitbook/assets/image (161).png>)
 
-Your script can now perfrom actions in relation to that stat
+Your script can now perform actions in relation to that stat
 
 ```csharp
 // Read the stat value

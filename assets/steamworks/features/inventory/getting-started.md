@@ -24,11 +24,11 @@ You will also need to understand the Steam Inventory Schema, while Heathen's too
 
 The hardest part about Steam Inventory is usually setting up your Steam Inventory Items. Have no feat Heathen is here to help!
 
-The very first thing you should do is import any Steam Inventory Items you already have. You can do this quickly by simply running the simulation (so that Steam API is initalized) and clicking the Import button under the Inventory list in your Steam Settings
+The very first thing you should do is import any Steam Inventory Items you already have. You can do this quickly by simply running the simulation (so that Steam API is initialized) and clicking the Import button under the Inventory list in your Steam Settings
 
 ![](<../../../../.gitbook/assets/image (187).png>)
 
-Once done you will see every item you had defined already in your Steam Developer Portal has been pulled into Unity under your Steam Settings ...&#x20;
+Once done you will see every item you had defined already in your Steam Developer Portal has been pulled into Unity under your Steam Settings:
 
 ![Screen shot of a WIP project with 57 items. You can see here how the Settings object catigorizes the items based on type.](<../../../../.gitbook/assets/image (169) (1).png>)
 
@@ -44,7 +44,7 @@ Every Steam Inventory Schema feature is available but the inspector will hide on
 
 ## **Step 3: Uploading the Schema**
 
-Once you have defined your items you can copy the JSON data that represents the item ... or optionally copy all of the items to your clipboad and past the results into Steam Developer Portals item editor or into a text file to be uploaded later.
+Once you have defined your items you can copy the JSON data that represents the item, or optionally copy all of the items to your clipboard and past the results into Steam Developer Portals item editor or into a text file to be uploaded later.
 
 {% hint style="info" %}
 You can find the Copy JSON button on the Inventory Item object and in the Inventory list of the Steam Settings object.
@@ -69,14 +69,14 @@ On the item it will export only that item's JSON
 }
 ```
 
-Once you have your items you should upload them to the Steam Developer Portal as indicated in Valve's documentaiton. You are safe to edit the schema in its text form if you need/like you can alway reimport them from Steam later.
+Once you have your items you should upload them to the Steam Developer Portal as indicated in Valve's documentation. You are safe to edit the schema in its text form if you need/like you can always reimport them from Steam later.
 
 ## Step 4: Using your items
 
 Now that you have items defined in your Steam Developer Portal, and you have representations of those items in your Unity Project linked with your Steam Settings you can use Heathen's tools to manage the items at both dev time and run time.
 
 {% hint style="info" %}
-The Inventory Item Defintions stored in your Steam Settings object act as an inventory. See the [Inventory Item](../../objects/item-definition.md) documentaiton for more information.
+The Inventory Item Definitions stored in your Steam Settings object act as an inventory. See the [Inventory Item](../../objects/item-definition.md) documentation for more information.
 {% endhint %}
 
 For developers needing to test, you can use the Steamworks Inspector to inspect, grant and clear items from your inventory. This is particularly useful since you can not use Steam client to view items for a game that is not yet released so the only way to view your items before release is to use our tool.

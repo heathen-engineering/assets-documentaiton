@@ -14,7 +14,7 @@ A wrapper around user features such as authentication and user data.
 
 ## Overview
 
-The User static class is primarly used to authenticate the current user against the Arkane backend service.&#x20;
+The User static class is primarily used to authenticate the current user against the Arkane backend service.&#x20;
 
 {% hint style="warning" %}
 You can only perform API actions after a user has been authenticated. The system stores the authenticated user in memory at:

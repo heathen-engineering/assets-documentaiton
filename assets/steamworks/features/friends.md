@@ -15,5 +15,5 @@ WIP
 
 
 
-This page will discribe the features and use of Steam APIs authentication tools and how might use that feature in practical sitautions.
+This page will describe the features and use of Steam APIs authentication tools and how might use that feature in practical situations.
 {% endhint %}

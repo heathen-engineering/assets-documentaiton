@@ -45,7 +45,7 @@ This scene demonstrates the use of Steam Lobbies and Lobby Manage component.
 
 ### Manager
 
-The manage game object has the [Steamworks Behaviour](../../components/steamworks-behaviour.md) component attached and will handle initalization of the Steam API on start up.
+The manage game object has the [Steamworks Behaviour](../../components/steamworks-behaviour.md) component attached and will handle initialization of the Steam API on start up.
 
 The manage also has a [Lobby Manager](../../components/lobby-manager.md) component attached which handles the create, search and join of a lobby.
 
@@ -53,8 +53,8 @@ The manage also has a[ Lobby Chat Director](../../components/lobby-chat-director
 
 ### DEMO SCRIPTS
 
-This contains internal demo scripts used in the scene which are all marked as depricated. They simply drive the buttons in the menu nothing more.
+This contains internal demo scripts used in the scene which are all marked as deprecated. They simply drive the buttons in the menu nothing more.
 
-The only feature of relivence in the demo scripts is a Join method which reads the text in the InputField and hands it off to the [Lobby Manager](../../components/lobby-manager.md) which will attempt to parse the text to a valid Lobby ID and join the lobby if possible.
+The only feature of relevance in the demo scripts is a Join method which reads the text in the InputField and hands it off to the [Lobby Manager](../../components/lobby-manager.md) which will attempt to parse the text to a valid Lobby ID and join the lobby if possible.
 
-It is not a typical use case to type in a lobby ID but is used here to enable developers to test mutliple members joining the same lobby.
+It is not a typical use case to type in a lobby ID but is used here to enable developers to test multiple members joining the same lobby.

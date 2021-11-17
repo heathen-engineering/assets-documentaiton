@@ -23,13 +23,13 @@ This scene demonstrates the use of [UserData ](../../objects/user-data.md)and di
 
 ### Manager
 
-The manage game object has the [Steamworks Behaviour](../../components/steamworks-behaviour.md) component attached and will handle initalization of the Steam API on start up.
+The manage game object has the [Steamworks Behaviour](../../components/steamworks-behaviour.md) component attached and will handle initialization of the Steam API on start up.
 
 ### Avatar Image
 
 Located at Canvas/Info/Border/AvatarImage
 
-This game object makes use of the [Set User Avatar](../../components/set-user-avatar.md) componenet to set the local user's avatar image to the UnityEngine.UI.RawImage
+This game object makes use of the [Set User Avatar](../../components/set-user-avatar.md) component to set the local user's avatar image to the UnityEngine.UI.RawImage
 
 ### uGUI Steam Name
 
@@ -45,4 +45,4 @@ This game object makes use of [TMPro Set User Name](../../components/set-user-na
 
 ### DEMO SCRIPTS
 
-This contains internal demo scripts used in the scene which are all marked as depricated. They simply drive the buttons in the menu nothing more.
+This contains internal demo scripts used in the scene which are all marked as deprecated. They simply drive the buttons in the menu nothing more.

@@ -14,7 +14,7 @@ This simple scene outlines the basic steps to get up and running with Steamworks
 
 1. The required steps to set up a new project to work with Steamworks from scratch
 2. How to access the Knowledge Base (where you are now)
-3. How to acces the support [Discord ](https://discord.gg/6X3xrRc)
+3. How to access the support [Discord ](https://discord.gg/6X3xrRc)
 4. How to leave a review 😉
 
 ## Objects
@@ -25,4 +25,4 @@ The manage game object has the [Steamworks Behaviour](../../components/steamwork
 
 ### DEMO SCRIPTS
 
-This contains internal demo scripts used in the scene which are all marked as depricated. They simply drive the buttons in the menu nothing more.
+This contains internal demo scripts used in the scene which are all marked as deprecated. They simply drive the buttons in the menu nothing more.

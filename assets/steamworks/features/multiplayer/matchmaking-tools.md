@@ -22,7 +22,7 @@ You can read more about Steam's Matchmaking system on Valve's developer document
 
 For more information on lobby types see Valve's documentation [https://partner.steamgames.com/doc/api/ISteamMatchmaking#typedefs](https://partner.steamgames.com/doc/api/ISteamMatchmaking#typedefs)&#x20;
 
-See the [API.Matchmaking](../../api/matchmaking.md#create-lobby) interace for details on creating a lobby. In addition the [Lobby Manager](../../components/lobby-manager.md) tools can help you create, join and manage a lobby for a specific funciton in your game.&#x20;
+See the [API.Matchmaking](../../api/matchmaking.md#create-lobby) interace for details on creating a lobby. In addition the [Lobby Manager](../../components/lobby-manager.md) tools can help you create, join and manage a lobby for a specific function in your game.&#x20;
 
 Lets say for example you use 2 types of lobbies in your game
 
@@ -33,11 +33,11 @@ Lets say for example you use 2 types of lobbies in your game
 
     This would be where you have your player's configure a game play session and wait for competitors to join or similar. This is the most typical use of a lobby and what drives matchmaking in your game.
 
-In the above use case you would attack a [Lobby Manager](../../components/lobby-manager.md) to your Party UI and another to your Session UI. You would configure each accordingly and each can manage its own chat and metadata features. This helps you split funcitonality across concepts unique to your game.
+In the above use case you would attack a [Lobby Manager](../../components/lobby-manager.md) to your Party UI and another to your Session UI. You would configure each accordingly and each can manage its own chat and metadata features. This helps you split functionality across concepts unique to your game.
 
 ### Find and Join Lobbies
 
-The easiest way to search for and join lobbies is through the [Lobby Manager](../../components/lobby-manager.md) tool. Alternativly you can use Heathen's API.Matchmaking directly to easily search for and join lobbies.&#x20;
+The easiest way to search for and join lobbies is through the [Lobby Manager](../../components/lobby-manager.md) tool. Alternatively you can use Heathen's API.Matchmaking directly to easily search for and join lobbies.&#x20;
 
 Aside from browsing for a lobby you can handle invite and joining of lobby invites. Inviting a friends to lobby can be done in a number of ways including from outside of your game via the Steam Friends list.
 
@@ -49,7 +49,7 @@ In this case the accepting user is already in game and so the Game Lobby Join In
 
 #### While out of game
 
-In this case the accepting user is not yet in game and so the Steam client will launch the game and pass as an argument on the command line the lobby connection information. It is up to you to handle this argument, navigate to the appropreate place iin your game e.g. the lobby UI and then join the lobby ID indicated on that argument.
+In this case the accepting user is not yet in game and so the Steam client will launch the game and pass as an argument on the command line the lobby connection information. It is up to you to handle this argument, navigate to the appropriate place iin your game e.g. the lobby UI and then join the lobby ID indicated on that argument.
 
 A crude example follows
 
@@ -85,9 +85,9 @@ if(targetLobby > 0)
 
 ### Using Lobby Chat
 
-Steam's Lobby system includes a simple chat system able to handle text or data. The easiest way to enteract with lobby chat is via the [Lobby Chat Director](../../components/lobby-chat-director.md) which needs to be added to the same object as your [Lobby Manager](../../components/lobby-manager.md).
+Steam's Lobby system includes a simple chat system able to handle text or data. The easiest way to interact with lobby chat is via the [Lobby Chat Director](../../components/lobby-chat-director.md) which needs to be added to the same object as your [Lobby Manager](../../components/lobby-manager.md).
 
-You can also enteract with lobby chat manually through the [API.Matchmaking](../../api/matchmaking.md) interface.
+You can also interact with lobby chat manually through the [API.Matchmaking](../../api/matchmaking.md) interface.
 
 ### Notify "Connect to network"
 

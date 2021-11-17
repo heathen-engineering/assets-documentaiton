@@ -23,7 +23,7 @@ Instead you will need to use a trusted system such as a Web Server or Live Opera
 
 The purpose of the BGSDK kit at runtime in Unity is to simplify the use of these items in game e.g. to easily query what items a user has and relate that to objects in Unity for gameplay/app execution purposes.
 
-BGSDK kit at dev time ... that is within the Unity Editor can be used to perform "trusted" operations such as minting tokens, creating new token and contract types, etc. These operations are made available for testing purposes only and cannot be ran during run time.
+BGSDK kit at dev time, that is within the Unity Editor can be used to perform "trusted" operations such as minting tokens, creating new token and contract types, etc. These operations are made available for testing purposes only and cannot be ran during run time.
 {% endhint %}
 
 Heathen Engineering's BGSDK Foundation allows you to manage in-game items as blockchain assets. It is a complete wrapper around [Venly](https://www.venly.io)'s Web API with regards to client safe operations. The tool simplifies integration with Arkane API exposing all relevant features and functions to C# classes and includes Editor extensions to aid in design and deployment of Contracts and Tokens.
@@ -32,7 +32,7 @@ Heathen Engineering's BGSDK Foundation allows you to manage in-game items as blo
 
 ## Requirements
 
-Please note that you will need to register for an account with [Venly Network](https://www.venly.io) to recieve the required Client ID and Secret used by the kit to connect to the [Venly Network](https://www.venly.io) backend. This must be acquired from [Venly Network](https://www.venly.io) directly.
+Please note that you will need to register for an account with [Venly Network](https://www.venly.io) to receive the required Client ID and Secret used by the kit to connect to the [Venly Network](https://www.venly.io) backend. This must be acquired from [Venly Network](https://www.venly.io) directly.
 
 ## Features
 
@@ -43,7 +43,7 @@ The following tables map the Venly Web API functions to corresponding functions 
 {% hint style="warning" %}
 2021-10-05
 
-The Venly authenitcation methods are temporarly depricated as per Venly request. If you have any questions or need more support around authentication through the Venly APIs please contact Venly.
+The Venly authentication methods are temporarily deprecated as per Venly request. If you have any questions or need more support around authentication through the Venly APIs please contact Venly.
 {% endhint %}
 
 For the Web API the features are covered under the "[How to authenticate](https://docs.venly.io/api/authentication/authentication)" Heathen's wrapper around the web API exposes them as shown below.

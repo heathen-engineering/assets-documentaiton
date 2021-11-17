@@ -45,7 +45,7 @@ Also called the Working Directory it is root of the program as see by the proces
 
 `./` aka the "root" What folder is that?
 
-That folder is known as the Working Folder or Working Directory. In most cases with a Untiy game the working folder / directory will be the same folder your .exe is located in.
+That folder is known as the Working Folder or Working Directory. In most cases with a Unity game the working folder / directory will be the same folder your .exe is located in.
 {% endhint %}
 
 ## When NOT to use stem\_appid.txt

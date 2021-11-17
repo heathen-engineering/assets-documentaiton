@@ -56,7 +56,7 @@ We have a [whole article on this](../../../../company/concepts/unity-release-ver
 
 Installing requirements
 
-Pick a HLAPI you like and go with it, I will use Mirror in the rest of this not because its best or my favourite, etc. but because it’s the most uNET like which many of you will know from past projects and is still quite like all the others.
+Pick a HLAPI you like and go with it, I will use Mirror in the rest of this not because its best or my favorite, etc. but because it’s the most uNET like which many of you will know from past projects and is still quite like all the others.
 
 For all there hemming and hawing about how there HLAPI is the best-ist ever, most are so strikingly similar that if you’re bumping up against there differences in a way that hurts your game you might want to consider a custom solution more specific to your game … its easier than you might think. We might cover that in a later topic.
 
@@ -83,7 +83,7 @@ Keep your product project clean and light.
 
 I personally like to set up 2 projects with each "game project" .
 
-1\) The "production" project will be keep clean and I will only ever install just what it needs that is when I import an asset I will exclude its prefabs, samples, documents, etc. keeping only the fucnitonal parts I need to use.
+1\) The "production" project will be keep clean and I will only ever install just what it needs that is when I import an asset I will exclude its prefabs, samples, documents, etc. keeping only the functional parts I need to use.
 
 
 
@@ -91,24 +91,24 @@ I personally like to set up 2 projects with each "game project" .
 
 
 
-When something is fit for production I simply export it from Sandbox and bring it into Production. This lets me be a messy boy as I design and experiament which I love to do while also keeping the bloat out of the production product.
+When something is fit for production I simply export it from Sandbox and bring it into Production. This lets me be a messy boy as I design and experiment which I love to do while also keeping the bloat out of the production product.
 {% endhint %}
 
 ## Key Concepts
 
 ### Game Scene
 
-You will have a scene that is used during your gameplay. Rather this is loaded by a host preparing a game for connections or a game server depends on your needs and game. What you do want to do is keep this scene light and flexable.
+You will have a scene that is used during your gameplay. Rather this is loaded by a host preparing a game for connections or a game server depends on your needs and game. What you do want to do is keep this scene light and flexible.
 
-Many HLAPIs are able to define Network Objects as part of a scene and initalize them on start up. This can be handy but it can also make debugging a nightmare. Consider at least keeping the scene its self free of any networking concepts then have the server or host as the case may be spawn in the required items as they configure the environment for play.
+Many HLAPIs are able to define Network Objects as part of a scene and initialize them on start up. This can be handy but it can also make debugging a nightmare. Consider at least keeping the scene its self free of any networking concepts then have the server or host as the case may be spawn in the required items as they configure the environment for play.
 
-This may sound like extra work but it keeps the scene small, flexable so you can easily use 1 scene for many session types and makes debugging and troublshooting vastly easier as network only gets involved when you say so.
+This may sound like extra work but it keeps the scene small, flexible so you can easily use 1 scene for many session types and makes debugging and troubleshooting vastly easier as network only gets involved when you say so.
 
 ### Scene Management
 
 Mirror at least and MLAPI I think have a very crude scene management feature.&#x20;
 
-You dont need this, in my experience it only serves to make things more complicated. In reality the network doesn't care what scene is loaded or not or what is active or not. Unity does as that defines what GameObjects are loaded where and which environment settings are active.
+You don't need this, in my experience it only serves to make things more complicated. In reality the network doesn't care what scene is loaded or not or what is active or not. Unity does as that defines what GameObjects are loaded where and which environment settings are active.
 
 We find it best to have the client handle load and unload of scenes as makes since for them. A lot of this comes from the realization that Unity handles multi-scene nicely and that a scene doesn't need to represent a physical area in your game
 
@@ -122,7 +122,7 @@ Keep your PC simple, think of the PC a bit like you might think of Unity's Event
 
 It probably shouldn't be a visual element in your game, rather its there to capture the inputs of the player it represents and sync that over the network and to notify all other players as that input changes.
 
-It makes since to store player specifc values on it but player is not character. In most of our use cases our PC is just an IO sync tool with some state info like what team the player is a part of. We have the PC spawn character controllers as required and these character controlls define the visuals, sync animations, store character health, level, etc.
+It makes since to store player specific values on it but player is not character. In most of our use cases our PC is just an IO sync tool with some state info like what team the player is a part of. We have the PC spawn character controllers as required and these character controls define the visuals, sync animations, store character health, level, etc.
 
 ## The Game Loop
 
@@ -141,7 +141,7 @@ I’ll start with Peer-to-Peer based games and then we can go over the differenc
     Player A calls NM to Start Host and then configures the network environment to suit the desired conditions i.e., loads levels, spawns’ environments, etc.
 4.  When Player A is happy that the network environment is ready for use, they will call SetGameServer on the Steam Lobby providing their own ID as the server information. This will notify all other players that the session is ready to connect to and so each other user will handle that event, navigate to the appropriate scene in your game and call StartClient on the NM
 
-    Typically, as players connect to the host/server they will leave the lobby. You can maintain the lobby for the duration of the session if you like such as to enable dropin players to come in after session start. Do know though that SetGameServer will only invoke its events once per lobby so in short, a Steam Lobby represents a single game session.
+    Typically, as players connect to the host/server they will leave the lobby. You can maintain the lobby for the duration of the session if you like such as to enable droping players to come in after session start. Do know though that SetGameServer will only invoke its events once per lobby so in short, a Steam Lobby represents a single game session.
 5. At some point the session will come to an end. Many games will show a post session UI and here is a good place to invite the players to join a new lobby together such that they might play a second or third session together. You can decide if you keep the same host or not that is up to you. The point is you offer them to join a new lobby or to return to menu or some similar “hay its over now go home”
 
 ### Client Server

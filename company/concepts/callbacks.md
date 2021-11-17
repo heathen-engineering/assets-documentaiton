@@ -73,7 +73,7 @@ if(callback != null)
 
 ## Examples
 
-Callbacks are typically used with asynchronious calls such as calls to web services, other processes or multi-threaded calls. A callback operates much like an event however a callback is for that purpose only where as event is registered to aka "listened to" and may be invoke by any range of processes where a callback is passed into the call that will ultimately invoke it.
+Callbacks are typically used with asynchronous calls such as calls to web services, other processes or multi-threaded calls. A callback operates much like an event however a callback is for that purpose only where as event is registered to aka "listened to" and may be invoke by any range of processes where a callback is passed into the call that will ultimately invoke it.
 
 ### Coroutine Example
 
@@ -96,7 +96,7 @@ StartCoroutine(DoPsedoAsyncWorkInUnity(HandleWorkDone));
 
 Where HandleWorkDone is some function in your code.
 
-### Passing Paramiters
+### Passing Parameters
 
 Callbacks can take up to 16 parameters, for example
 

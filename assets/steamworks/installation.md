@@ -4,14 +4,14 @@ description: Installing Heathen Engineering's Steamworks and related componenets
 
 # Installation
 
-Once you have meet the requirements listed below the only step you need to perfrom is to import the package from Unity into your project.
+Once you have meet the requirements listed below the only step you need to perform is to import the package from Unity into your project.
 
 ## Package Manager Install
 
 {% hint style="info" %}
 Installing Unity Packages via Git URL as we do here requires that you have Git installed. as outlined in [Unity's documentation](https://docs.unity3d.com/Manual/upm-ui-giturl.html).\
 \
-If you dont have it already you can install Git from the following link:
+If you don't have it already you can install Git from the following link:
 
 * [https://git-scm.com/](https://git-scm.com) (classic but less user friendly)
 
@@ -39,9 +39,9 @@ Note that this does NOT mean you will be using Git as a source repo, it is simpl
 {% hint style="danger" %}
 NOT RECOMENDED
 
-This method is not recomended for the following reasons
+This method is not recommended for the following reasons
 
-1. The resulting import is directly in your project and its code can be changed inadvertently ... offten resulting in hard to track down errors
+1. The resulting import is directly in your project and its code can be changed inadvertently, often resulting in hard to track down errors
 2. It requires manual steps that are easy to get wrong even when you have done them 100s of times
 3. It makes it harder to keep your Steamworks.NET install up to date
 {% endhint %}
@@ -49,13 +49,13 @@ This method is not recomended for the following reasons
 {% hint style="danger" %}
 **DO NOT USE THE RELEASE UNITYPACKAGE**
 
-The .unitypackage available in Steamwork.NET's release folder is rarely up to date and offten lacks important parts available from manual download and or the package manager, mainly the assembly defintion file which our and many other assets are dependent on.
+The .unitypackage available in Steamwork.NET's release folder is rarely up to date and often lacks important parts available from manual download and or the package manager, mainly the assembly definition file which our and many other assets are dependent on.
 {% endhint %}
 
 1. Install Steamworks.NET
    1. Navigate to Steamworks.NET's Git repo\
       [https://github.com/rlabrecque/Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET)
-   2. Select the "Code" button drop down in the upeer right and select Download Zip\
+   2. Select the "Code" button drop down in the upper right and select Download Zip\
       or\
       Simply click this link: [https://github.com/rlabrecque/Steamworks.NET/archive/refs/heads/master.zip](https://github.com/rlabrecque/Steamworks.NET/archive/refs/heads/master.zip)
    3. Extract the code to your desktop or other folder location \
@@ -72,7 +72,7 @@ The .unitypackage available in Steamwork.NET's release folder is rarely up to da
 
 ## Uninstall
 
-Removing any Heathen Engineering asset is as simple as deleating the folder. Heathen always installs under the `_Heathen Engineering` folder&#x20;
+Removing any Heathen Engineering asset is as simple as deleting the folder. Heathen always installs under the `_Heathen Engineering` folder&#x20;
 
 Each product will have an entry in the Assets, Documentation and Samples folders so for example
 
@@ -86,7 +86,7 @@ Each product will have an entry in the Assets, Documentation and Samples folders
 
 If you only have 1 Heathen Engineering asset then you are safe to simply remove the whole \_Heathen Engineering folder.
 
-Otherwise you can simply remove the folder corisponding to the product you want to remove.
+Otherwise you can simply remove the folder corresponding to the product you want to remove.
 
 ## Requirements
 
@@ -102,7 +102,7 @@ Older builds of Unity 2019 LTS had a known issue from Unity which would cause UI
 
 ### Steamworks.NET
 
-Heathen's Steamworks is built ontop of Steamworks.NET and is dependent on it. You must install Steamworks.NET including its assembly defintion in order for the Heathen Steamworks asset to work.
+Heathen's Steamworks is built on top of Steamworks.NET and is dependent on it. You must install Steamworks.NET including its assembly definition in order for the Heathen Steamworks asset to work.
 
 #### Steps
 
@@ -115,19 +115,19 @@ Heathen's Steamworks is built ontop of Steamworks.NET and is dependent on it. Yo
    [https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net](https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net)
 6. Click the "Add" button and wait several seconds for the system to download and install the Steamworks.NET package from GitHub.
 
-When completed properly you will see Steamworks.NET in your Package Manager's "In Project" list. You can repeate the above steps to update Steamworks.NET at any time.
+When completed properly you will see Steamworks.NET in your Package Manager's "In Project" list. You can repeat the above steps to update Steamworks.NET at any time.
 
 ![](<../../.gitbook/assets/image (145).png>)
 
 ## Networking Integrations
 
-Heathen Engineering works with the communities of other assets and tools to help insure a smooth and efficent integration between our technologies. In particular Heathen has invested notable effort in the networking transports of the following solutions and works to insure they funciton properly with the Steamworks.NET APIs and with our own Steamworks tools.
+Heathen Engineering works with the communities of other assets and tools to help insure a smooth and efficient integration between our technologies. In particular Heathen has invested notable effort in the networking transports of the following solutions and works to insure they function properly with the Steamworks.NET APIs and with our own Steamworks tools.
 
 ### FishNetworking (Beta)
 
-> A feature-rich Unity networking solution aimed towards reliability, ease of use, efficiency, and flexibility.Developed by a professional game designer, supported by the community.
+> A feature-rich Unity networking solution aimed towards reliability, ease of use, efficiency, and flexibility. Developed by a professional game designer, supported by the community.
 
-The developer of FishNetworking has worked with Heathen Engineering developers to insure its Steam Transport is compatable with Steamworks V2 and with Steamworks.NET in general.
+The developer of FishNetworking has worked with Heathen Engineering developers to insure its Steam Transport is compatible with Steamworks V2 and with Steamworks.NET in general.
 
 #### Requirements
 
@@ -141,9 +141,9 @@ FishNetworking is available on git hub and includes documentation for installati
 
 ### Mirror
 
-Mirror is a community lead project based on Unity's abandoned uNET. Mirror is (in Heathen's openion) the most robust high level networking interface (HLAPI) currently available for Unity and is the main HLAPI used by Heathen Engineering.
+Mirror is a community lead project based on Unity's abandoned uNET. Mirror is (in Heathen's opinion) the most robust high level networking interface (HLAPI) currently available for Unity and is the main HLAPI used by Heathen Engineering.
 
-Mirror has various transports including a Heathen compatable Steam Networking and Steam Sockets transport. Heathen Engineering does not author this transport but does contirbute to its ongoing maintenance insuring proper use of the Steam APIs and compatability with Heathen's Steamworks assets.
+Mirror has various transports including a Heathen compatible Steam Networking and Steam Sockets transport. Heathen Engineering does not author this transport but does contribute to its ongoing maintenance insuring proper use of the Steam APIs and compatibility with Heathen's Steamworks assets.
 
 {% embed url="https://assetstore.unity.com/packages/tools/network/mirror-129321" %}
 
@@ -157,7 +157,7 @@ You must install the base of Mirror first, this can be done either from the Unit
 
 {% embed url="https://github.com/Chykary/FizzySteamworks/" %}
 
-Mirror Community's FizzySteamTransport has been made compatable with our asset and has been updated to support Peer to Peer and Client Server based networking architectures. The steps to install it are as follows.
+Mirror Community's FizzySteamTransport has been made compatible with our asset and has been updated to support Peer to Peer and Client Server based networking architectures. The steps to install it are as follows.
 
 1. Download the FizzySteamTransport from GitHub, you want to download the source code not the release package.\
    [https://github.com/Chykary/FizzySteamworks/archive/refs/heads/master.zip](https://github.com/Chykary/FizzySteamworks/archive/refs/heads/master.zip)
@@ -167,13 +167,13 @@ Mirror Community's FizzySteamTransport has been made compatable with our asset a
 
 MLAPI was originally similar to Mirror in that it was an open source community lead project and had many similarities ot uNET. Unity Technology invested in MLAPI and took over the project a few years ago and have been developing it as the new HLAPI from Unity.&#x20;
 
-MLAPI is far more experiamental and lacks the maturity of other options it does however have more support from Unity its self. Heathen does not use MLAPI in its own projects so canonly provide limited support. We do however contribute to the on going development and maintenance of its community transports including the SteamTransport.
+MLAPI is far more experimental and lacks the maturity of other options it does however have more support from Unity its self. Heathen does not use MLAPI in its own projects so canonly provide limited support. We do however contribute to the on going development and maintenance of its community transports including the SteamTransport.
 
 {% embed url="https://docs-multiplayer.unity3d.com/" %}
 
 #### Requirements
 
-You must install Unity's MLAPI to use its community transports. The above article is the best source to learn how to install and update MLAPI. The notes provided here should work for you though are not keep up to date. Please consult Unity's offical MLAPI documentaiton for any questions or support needs.
+You must install Unity's MLAPI to use its community transports. The above article is the best source to learn how to install and update MLAPI. The notes provided here should work for you though are not keep up to date. Please consult Unity's official MLAPI documentation for any questions or support needs.
 
 **To install MLAPI**
 
@@ -194,8 +194,8 @@ MLAPI has a community transport project similar to other HLAPI frameworks. Hethe
 
 Heathen's SteamNetworking transport for MLAPI is based on the existing SteamP2P transport and updates it to
 
-* Remove dependency on a specifc build of Steamworks.NET
-* Remove use of SteamManager making it compatable with any Steamworks.NET implamentation \
+* Remove dependency on a specific build of Steamworks.NET
+* Remove use of SteamManager making it compatible with any Steamworks.NET implementation \
   Including Heathen's own Steamworks tools.
 * Added support for Client Server architectures by leveraging the Steam Game Server Networking APIs in server builds
 * Improved support for Peer to Peer architectures by correcting use of the Steam Client Networking APIs
@@ -226,18 +226,18 @@ From the same team that brought you Mirror, Mirage Net is a new open source netw
 #### Transport
 
 {% hint style="danger" %}
-This transport is **NOT** compatable with Heathen's Steamworks.
+This transport is **NOT** compatible with Heathen's Steamworks.
 
-This is provided for informational purposes only. You may be able to use this infromation to port the Mirage Net Steam Transport to work with Heathen's Steamworks or to port the Mirror Transport to work with Mirage Net.
+This is provided for informational purposes only. You may be able to use this information to port the Mirage Net Steam Transport to work with Heathen's Steamworks or to port the Mirror Transport to work with Mirage Net.
 
-Heathen Engineering does not provide support for either of these two use cases. **This is wholly for informaitonal purposes only.**
+Heathen Engineering does not provide support for either of these two use cases. **This is wholly for informational purposes only.**
 {% endhint %}
 
 Mirage Net is known to have a Steam Networking Transport based on the Fizzy Steam transport from Mirror. This transport however has not been updated with Heathen's contributions and so has the following major issues
 
 1. It does not make proper use Steam Game Server APIs
 2. It depends on SteamManager
-3. It is not compatable with all versions of Steamworks.NET and cannot be used with Heathen's Steamwroks tools
+3. It is not compatible with all versions of Steamworks.NET and cannot be used with Heathen's Steamworks tools
 
 {% embed url="https://github.com/MirageNet/FizzySteamyMirror" %}
 

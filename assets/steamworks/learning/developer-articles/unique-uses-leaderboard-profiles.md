@@ -6,25 +6,25 @@ description: Public rich profiles available all the time
 
 ## Introduction
 
-Rich public user profiles can be signifigant to social games
+Rich public user profiles can be significant to social games
 
 ![Example of a Dota2 user profile from a random google image](<../../../../.gitbook/assets/image (164).png>)
 
-To be effective these profiles need to always be available any time a player sees another players name so as an offline friend, as an entry in a leaderboard, as a team mate in a match, as an opponit that stomped you in a match, etc. The profile needs to always be accessable to every user that might see it without needing to be a friend or activly in a lobby or server with that player.
+To be effective these profiles need to always be available any time a player sees another players name so as an offline friend, as an entry in a leaderboard, as a team mate in a match, as an opponent that stomped you in a match, etc. The profile needs to always be accessible to every user that might see it without needing to be a friend or actively in a lobby or server with that player.
 
-This means that you cant depend on Steam's rich presence alone though that can be of use ... notice the Main Menu text under that user's name. That is from Steam's rich presence but would only list for people who are you or are your friend.
+This means that you cant depend on Steam's rich presence alone though that can be of use, notice the Main Menu text under that user's name. That is from Steam's rich presence but would only list for people who are you or are your friend.
 
 All of the reset of that data is stored in a profile object, this being DOTA its likely stored on the account after all DOTA has access to so much more than we as regular steam developers do. That said we can do nearly the same using Leaderboards to house profile data.
 
-## Whats unique about it?
+## What's unique about it?
 
 Unique articles are where we share some of the more unusual use case for Steam artifacts that we have come across. As these are not the intended use cases for these artifacts be sure to take it with a grain of salt but as far as we can tell there is no issue with methods discussed in the Unique articles and they might give you some ideas for your own project.
 
-In this case we are talking about using a leaderboard ... typically used for social ranking to house an account profile. Its not a billion miles off in that you can think of your profile as part of your social ranking but it is certenly a stretch of the intended use of a leaderboard.
+In this case we are talking about using a leaderboard, typically used for social ranking to house an account profile. Its not a billion miles off in that you can think of your profile as part of your social ranking but it is certainly a stretch of the intended use of a leaderboard.
 
 ## What is this?
 
-In summary the idea is to create a publicly accessible rich account profile like you would see with DOTA and similar games where user’s can show off there in game accomplishments, favourite builds, top stats and more.
+In summary the idea is to create a publicly accessible rich account profile like you would see with DOTA and similar games where user’s can show off there in game accomplishments, favorite builds, top stats and more.
 
 Leaderboards are used since anyone can query a leaderboard and fetch the data contained in it. Leaderboards can be easily written by anyone and can contain more than just a score and rank. The key to this use case is the use of leaderboard details array and leaderboard attachments.
 
@@ -61,14 +61,14 @@ public struct ProfileDataObject
 }
 ```
 
-As much as is possible try to pack that information into an int\[] with 64 or fewer entries. Of course if your values are already ints then this is very easy ... for example the level value in ProfielDataObject above would be a good candidate as would the GameMode assuming it was an enum ... enums are really just ints with names.
+As much as is possible try to pack that information into an int\[] with 64 or fewer entries. Of course if your values are already ints then this is very easy, for example the level value in ProfielDataObject above would be a good candidate as would the GameMode assuming it was an enum. Enums are really just ints with names.
 
 
 
 Booleans are something we use a lot as game developers and an int can represent 32 of them quite easily. Below I show a bit on how you might pack up to 32 booleans in a single int&#x20;
 
 {% hint style="info" %}
-Yes you can use bit wise operations to do this and yes it is less code to use bitwise and arguably faster operations to execute but bitwise operations tend to make some peoples head smoke and really if your doing this so offten that the performance impact is an issue then you should really be cashing profile results.
+Yes you can use bit wise operations to do this and yes it is less code to use bitwise and arguably faster operations to execute but bitwise operations tend to make some peoples head smoke and really if your doing this so often that the performance impact is an issue then you should really be cashing profile results.
 
 
 
@@ -78,7 +78,7 @@ Yes you can use bit wise operations to do this and yes it is less code to use bi
 
 
 
-You can read more about bitwise operaitons here
+You can read more about bitwise operations here
 
 [https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators)
 {% endhint %}
@@ -147,10 +147,10 @@ player_profile.UploadScore(
         });
 ```
 
-Yes I use a lot of expression there; here is whats happening
+Yes I use a lot of expression there; here is what's happening
 
-1. We simplly upload our score and details with a ForceUpdate upload method
-2. When that compeltes we attach our profile data `myProfileObject` and name it "gamename.profile" you really could name it anything or if you wanted to be extra safe makes it name the string value of a GUID ... those are assured to be unique and the name really doesn't matter for a human.
+1. We simply upload our score and details with a ForceUpdate upload method
+2. When that compeltes we attach our profile data `myProfileObject` and name it "gamename.profile" you really could name it anything or if you wanted to be extra safe makes it name the string value of a GUID. Those are assured to be unique and the name really doesn't matter for a human.
 3. When that completes we check for error but otherwise are done
 
 ### How to read the profile?

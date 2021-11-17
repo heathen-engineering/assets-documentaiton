@@ -6,7 +6,7 @@ description: Understanding the use of anonymous function as it relates to Unity
 
 ## Introduction
 
-Lambda expression or often just called "expression" is a way of creating a function (aka a method) in line in your code. This can be exceedingly useful when the body of the function may vary depending on the use such as when creating predicates for searching lists of things or as the callback to asynchronious calls.
+Lambda expression or often just called "expression" is a way of creating a function (aka a method) in line in your code. This can be exceedingly useful when the body of the function may vary depending on the use such as when creating predicates for searching lists of things or as the callback to asynchronous calls.
 
 ## Learning First
 
@@ -24,7 +24,7 @@ If you want a more primary source of learning around the concept please review s
 
 {% embed url="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-expressions" %}
 
-Lambda expression is simply a tool for creating an anonymous funciton.&#x20;
+Lambda expression is simply a tool for creating an anonymous function.&#x20;
 
 So what does that mean?\
 An anonymous function is a function without a signature (doesn't have a name) it a pointer to some instructions but not a named one in a class object or similar. That is the official definition, however its really just a way to write out a body of instructions and assign that body to something. That something can be a delegate as would be the most common use case but it could be anything that is expecting a body of instructions such as:
@@ -121,7 +121,7 @@ DoSomething((p1, p2) =>
 ```
 
 **So why note just write the method out like that?**\
-Why you would use the expression approach will depend on a few factors mostly when you have a case where data scope is an issue or you have multiple asynchronious calls to account for ... take the following as an example
+Why you would use the expression approach will depend on a few factors mostly when you have a case where data scope is an issue or you have multiple asynchronous calls to account for. Take the following as an example:
 
 {% hint style="info" %}
 This is an abstract example meant to be simple to follow, and to paint a picture, it would not be a common thing to do in a game however there are similar more complex cases you would have in a real world project
@@ -134,7 +134,7 @@ public GameObject FindSomeObject(string targetName)
 }
 ```
 
-Since the predicate delegate only takes 1 parameter being the GameObject its currently testing we cant pass the name in ... which means we need to store it some place it can get to it, so if we wanted to do this with a traditional function we might need to do this.
+Since the predicate delegate only takes 1 parameter being the GameObject its currently testing we cant pass the name in, which means we need to store it some place it can get to it, so if we wanted to do this with a traditional function we might need to do this.
 
 ```csharp
 private string searchName;
@@ -150,13 +150,13 @@ public bool SearchPredicate(GameObject subject)
 }
 ```
 
-This would work okay for a synchronous search like this however is the process we where running was asynchronious we could no longer use a single global variable to store our search name, we could create a lookup or various other methods of associating a thread with the data in question or we could create an anonymous function for each individual search via lambda expression.
+This would work okay for a synchronous search like this however is the process we where running was asynchronous we could no longer use a single global variable to store our search name, we could create a lookup or various other methods of associating a thread with the data in question or we could create an anonymous function for each individual search via lambda expression.
 
 The anonymous function approach is far easier to maintain and doesn't produce any more allocation than many other solutions to this sort of data access problem.
 
 ## Don't Go Crazy
 
-Lambda expression is very handy and can be used in loads of places. Its important though to understand that anonymous functions can create more work for the garbage collector if used incorrectly. It is not true to say you should never use expression ... below are some common uses cases and our assessment of the impact both on system performance and maintainability e.g. your ability to keep your code clean and effective.
+Lambda expression is very handy and can be used in loads of places. Its important though to understand that anonymous functions can create more work for the garbage collector if used incorrectly. It is not true to say you should never use expression. Below are some common uses cases and our assessment of the impact both on system performance and maintainability e.g. your ability to keep your code clean and effective.
 
 ### Field Members
 
@@ -205,7 +205,7 @@ public GameObject FindObjectByName(string name) =>
 This is nearly always best served as an anonymous function (expression). Predicates typically require data that is not going to be in scope of a fixed/named function and these sorts of searches should already be restricted to as needed thus shouldn't be frequent enough in your system to cause a performance problem.
 
 So what do you do when you do have frequent searches?\
-Use a lookup aka an index, if your going be looking up a GameObject by name from some list of GameObjects then index them by name and use a collection control such as Disctionary to more efficiently fetch e.g.&#x20;
+Use a lookup aka an index, if your going be looking up a GameObject by name from some list of GameObjects then index them by name and use a collection control such as Dictionary to more efficiently fetch e.g.&#x20;
 
 ```csharp
 public Dictionary<string, GameObject> goLookup;

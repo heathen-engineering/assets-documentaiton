@@ -28,11 +28,11 @@ The Home page of the inspector displays core values for your user and the app it
 
 ![](<../../../.gitbook/assets/image (151).png>)
 
-If you answered no to any of the above questions your issue is on step 1. That is your not configured correctly to initalize Steam and or you do not have the Steam client up and running with a valid user logged in.
+If you answered no to any of the above questions your issue is on step 1. That is your not configured correctly to initialize Steam and or you do not have the Steam client up and running with a valid user logged in.
 
-If for example you find that the App ID does not match then what you most likely did was to change the App ID in the Steam Settings file but did not fully shut down Unity, Visual Studio and absolutly everything else that might have mouted Unity, Visual Studio or any related process.
+If for example you find that the App ID does not match then what you most likely did was to change the App ID in the Steam Settings file but did not fully shut down Unity, Visual Studio and absolutely everything else that might have mooted Unity, Visual Studio or any related process.
 
-The reason this happens is that Valve will not release app initalization until every process that mounted its handles has closed. This is the single most common issue we have reported.
+The reason this happens is that Valve will not release app initialization until every process that mounted its handles has closed. This is the single most common issue we have reported.
 
 ## Stats
 
@@ -58,9 +58,9 @@ Common issues seen with Leaderboards include
 2. You have the leaderboard set to trusted only
 3. You made changes in Steam Developer Portal and didn't publish them
 
-We do on occasion see leaderboards "break" ... this is typically a problem when you change values on the board or delete a board and make a new one with the same name but differnet settings. In most cases its easiest and best to simply make a new board with a new unique API name.&#x20;
+We do on occasion see leaderboards "break", this is typically a problem when you change values on the board or delete a board and make a new one with the same name but different settings. In most cases its easiest and best to simply make a new board with a new unique API name.&#x20;
 
-If you need to repair a board that is missbehaving you will need to contact Valve's support as these are backend features Heathen can not see nor effect.
+If you need to repair a board that is misbehaving you will need to contact Valve's support as these are backend features Heathen can not see nor effect.
 
 ## Downloadable Content
 

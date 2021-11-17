@@ -7,21 +7,21 @@ description: Understanding the Heathen Asset folder structure
 {% hint style="info" %}
 #### Keep it clean
 
-The whole drive behind this effort is to create cleaner more efficent Unity projects. The idea is you import only what is needed to create your product and omit anything that doesn't need to be compiled into that.
+The whole drive behind this effort is to create cleaner more efficient Unity projects. The idea is you import only what is needed to create your product and omit anything that doesn't need to be compiled into that.
 
-Obviously sample scenes and code are useful for learning but they do not belong in a production project see our [Project Architecture article](concepts/project-architecture.md) for guidance on how you can keep your produciton project clean while having access to a supperior learning environment.
+Obviously sample scenes and code are useful for learning but they do not belong in a production project see our [Project Architecture article](concepts/project-architecture.md) for guidance on how you can keep your production project clean while having access to a superior learning environment.
 {% endhint %}
 
 ## Introduction
 
-All modern Heathen assets follow a standard folder structure that is designed to help you keep your projects lean and efficent.&#x20;
+All modern Heathen assets follow a standard folder structure that is designed to help you keep your projects lean and efficient.&#x20;
 
 {% hint style="warning" %}
-While our assets are not dependent on the location of files; that is you can move things around,;we do use Unity Assembly Definition files.
+While our assets are not dependent on the location of files; that is you can move things around ; we do use Unity Assembly Definition files.
 
 [https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)
 
-As such each folder that contains an Assembly Defintion should keep its strucutre, do not move files in or out of these folder or there children folders or you will cause errors with the resulting assemblies and anything that references them which is most things.
+As such each folder that contains an Assembly Definition should keep its structure, do not move files in or out of these folder or there children folders or you will cause errors with the resulting assemblies and anything that references them which is most things.
 {% endhint %}
 
 ## \_Heathen Engineering
@@ -42,12 +42,12 @@ This folder will contain sub folders for each product you have installed e.g.&#x
 * \_Heathen Engineering/Assets/UX
 * \_Heathen Engineering/Assets/SystemCore
 
-Under each product folder you will find the content of that "Unity Asset" that is all of its required componenets, code, images, models, etc.
+Under each product folder you will find the content of that "Unity Asset", that is all of its required components, code, images, models, etc.
 
 ### Documentation
 
 \_Heathen Engineering/Documentation\
-You should generally omit this folder, it only contains the patch notes for the latest release and a readme.txt for each prodict telling you to come here to find documentation. This is a requirement from Unity Asset Store and not useful to have in your project in most cases.
+You should generally omit this folder, it only contains the patch notes for the latest release and a readme.txt for each product telling you to come here to find documentation. This is a requirement from Unity Asset Store and not useful to have in your project in most cases.
 
 ### Prefabs
 
