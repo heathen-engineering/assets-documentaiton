@@ -4,12 +4,6 @@ description: Discover the features and capabilities of Heathen's Steam API objec
 
 # Objects
 
-{% hint style="warning" %}
-Coming Soon
-
-This will be released with Patch 13 and is expected late 2021 to early 2022 as a free update to Steamworks V2
-{% endhint %}
-
 ## Introduction
 
 The following articles explain in detail the features and capabiliteis of every object in the Heathen Steamworks integration. In most cases you wont need to read these articles as we have provided full comments in code thus intelisince and auto-complete in your IDE of course should provide you with much of the same information you will find here.
