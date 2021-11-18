@@ -22,13 +22,19 @@ Note that this does NOT mean you will be using Git as a source repo, it is simpl
 
 This must be done from the Unity Package Manager to insure that the proper Steamworks.NET assembly definition is installed and present in your project.
 
+{% hint style="success" %}
+Copy this string exsactly
+
+```
+https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net
+```
+{% endhint %}
+
 1. Open the Package Manager
 2. Click the "+" (plus) button located in the upper left of the window
 3. Select the "Add package from git URL..." option\
    ![](<../../.gitbook/assets/image (144).png>)
-4.  Enter the following URL:
-
-    https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net
+4. Paste the string you copied from the <mark style="color:green;">Green note</mark> above into the provided text field
 5. Click the "Add" button and wait several seconds for the system to download and install the Steamworks.NET package from GitHub.
 
 ### Install Heathen's Steamworks from the Package Manager
