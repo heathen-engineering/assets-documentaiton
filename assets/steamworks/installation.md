@@ -23,7 +23,7 @@ Note that this does NOT mean you will be using Git as a source repo, it is simpl
 This must be done from the Unity Package Manager to insure that the proper Steamworks.NET assembly definition is installed and present in your project.
 
 {% hint style="success" %}
-Copy this string exsactly by clicking the "Copy" button located to the right of the code block.
+Copy this string exactly by clicking the "Copy" button located to the right of the code block.
 
 
 
