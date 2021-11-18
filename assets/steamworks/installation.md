@@ -18,21 +18,26 @@ If you don't have it already you can install Git from the following link:
 Note that this does NOT mean you will be using Git as a source repo, it is simply a set of protocols used by Package Manager to download the required code from its target repository.
 {% endhint %}
 
-1. Install Steamworks.NET \
-   This must be done from the Unity Package Manager to insure that the proper Steamworks.NET assembly definition is installed and present in your project.
-   1. Open the Package Manager
-   2. Click the "+" (plus) button located in the upper left of the window
-   3. Select the "Add package from git URL..." option\
-      ![](<../../.gitbook/assets/image (144).png>)
-   4. Enter the following URL:\
-      [https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net](https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net)
-   5. Click the "Add" button and wait several seconds for the system to download and install the Steamworks.NET package from GitHub.
-2. Install Heathen's Steamworks from the Package Manager
-   1. Open the Package Manager
-   2. Select the "My Assets" option&#x20;
-   3. Search for "Steamworks V2"\
-      &#x20;![](<../../.gitbook/assets/image (148).png>)&#x20;
-   4. Click Import
+### Install Steamworks.NET
+
+This must be done from the Unity Package Manager to insure that the proper Steamworks.NET assembly definition is installed and present in your project.
+
+1. Open the Package Manager
+2. Click the "+" (plus) button located in the upper left of the window
+3. Select the "Add package from git URL..." option\
+   ![](<../../.gitbook/assets/image (144).png>)
+4.  Enter the following URL:
+
+    https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net
+5. Click the "Add" button and wait several seconds for the system to download and install the Steamworks.NET package from GitHub.
+
+### Install Heathen's Steamworks from the Package Manager
+
+1. Open the Package Manager
+2. Select the "My Assets" option&#x20;
+3. Search for "Steamworks V2"\
+   &#x20;![](<../../.gitbook/assets/image (148).png>)&#x20;
+4. Click Import
 
 ## Manual Install
 
