@@ -41,7 +41,9 @@ https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks
 4. Paste the string you copied from the <mark style="color:green;">Green note</mark> above into the provided text field
 5. Click the "Add" button and wait several seconds for the system to download and install the Steamworks.NET package from GitHub.
 
-### Install Heathen's Steamworks from the Package Manager
+### Install Heathen's Steamworks&#x20;
+
+from the Package Manager
 
 1. Open the Package Manager
 2. Select the "My Assets" option&#x20;
@@ -67,23 +69,28 @@ This method is not recommended for the following reasons
 The .unitypackage available in Steamwork.NET's release folder is rarely up to date and often lacks important parts available from manual download and or the package manager, mainly the assembly definition file which our and many other assets are dependent on.
 {% endhint %}
 
-1. Install Steamworks.NET
-   1. Navigate to Steamworks.NET's Git repo\
-      [https://github.com/rlabrecque/Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET)
-   2. Select the "Code" button drop down in the upper right and select Download Zip\
-      or\
-      Simply click this link: [https://github.com/rlabrecque/Steamworks.NET/archive/refs/heads/master.zip](https://github.com/rlabrecque/Steamworks.NET/archive/refs/heads/master.zip)
-   3. Extract the code to your desktop or other folder location \
-      Do **NOT** extract it to your Unity Project folder.
-   4. Open the folder and copy the sub folder "com.rlabrecque.steamworks.net"
-   5. Past the copied folder into your Unity project under your Assets folder such that you now have a folder in your project "./Assets/com.rlabrecque.steamworks.net"
-   6. Return to Unity and let it import the assets.
-2. You can now install Heathen's Stemworks from Unity Pacakge Manager
-   1. Open the Package Manager
-   2. Select the "My Assets" option&#x20;
-   3. Search for "Steamworks V2"\
-      &#x20;![](<../../.gitbook/assets/image (148).png>)&#x20;
-   4. Click Import
+### Install Steamworks.NET
+
+1. Navigate to Steamworks.NET's Git repo\
+   [https://github.com/rlabrecque/Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET)
+2. Select the "Code" button drop down in the upper right and select Download Zip\
+   or\
+   Simply click this link: [https://github.com/rlabrecque/Steamworks.NET/archive/refs/heads/master.zip](https://github.com/rlabrecque/Steamworks.NET/archive/refs/heads/master.zip)
+3. Extract the code to your desktop or other folder location \
+   Do **NOT** extract it to your Unity Project folder.
+4. Open the folder and copy the sub folder "com.rlabrecque.steamworks.net"
+5. Past the copied folder into your Unity project under your Assets folder such that you now have a folder in your project "./Assets/com.rlabrecque.steamworks.net"
+6. Return to Unity and let it import the assets.
+
+### Install Heathen's Steamworks
+
+You can now install Heathen's Stemworks from Unity Pacakge Manager
+
+1. Open the Package Manager
+2. Select the "My Assets" option&#x20;
+3. Search for "Steamworks V2"\
+   &#x20;![](<../../.gitbook/assets/image (148).png>)&#x20;
+4. Click Import
 
 ## Uninstall
 
