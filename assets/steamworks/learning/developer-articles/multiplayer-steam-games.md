@@ -8,7 +8,7 @@ James McGhee CEO and founder of Heathen, author of all of Heathen’s coded asse
 
 ### What do I know?
 
-Only what I’ve learned, and I’m here to share that do not dictate what you should do. As to my experience I have worked on Unity creating games and related apps and technology for nearly a decade at the time of this writing. Aside from Unity specific work I am a software engineer with 20-ish years’ experience in the enterprise software engineering sector. I have, I think a good mix of experiences including all aspects of development across a very wide range of applications and industries and I try to bring to bring that to the tools I create and information I share.
+Only what I’ve learned, and I’m here to share that; not dictate what you should do. As to my experience I have worked on Unity creating games and related apps and technology for nearly a decade at the time of this writing. Aside from Unity specific work I am a software engineer with 20-ish years’ experience in the enterprise software engineering sector. I have, I think a good mix of experiences including all aspects of development across a very wide range of applications and industries and I try to bring to bring that to the tools I create and information I share.
 
 ### What is this?
 
@@ -18,7 +18,7 @@ Just me as an individual sharing what I have learned with my fellow developers. 
 
 Let’s start by saying this here:
 
-Creating a game is hard work, creating a multiplayer game is extra hard work, creating a massively multiplayer game is … well you get the idea. If this is your first game or event 5th game, I would personally recommend spending some more time creating smaller stand alone projects you can get done from start to finish. With that out of the way let’s get started.
+Creating a game is hard work, creating a multiplayer game is extra hard work, creating a massively multiplayer game is … well you get the idea. If this is your first game or even 5th game, I would personally recommend spending some more time creating smaller stand alone projects you can get done from start to finish. With that out of the way let’s get started.
 
 ## Terminology
 
@@ -110,13 +110,13 @@ Mirror at least and MLAPI I think have a very crude scene management feature.&#x
 
 You don't need this, in my experience it only serves to make things more complicated. In reality the network doesn't care what scene is loaded or not or what is active or not. Unity does as that defines what GameObjects are loaded where and which environment settings are active.
 
-We find it best to have the client handle load and unload of scenes as makes since for them. A lot of this comes from the realization that Unity handles multi-scene nicely and that a scene doesn't need to represent a physical area in your game
+We find it best to have the client handle load and unload of scenes as makes since for them. A lot of this comes from the realization that Unity handles multi-scene nicely and that a scene doesn't need to represent a physical area in your game so letting a network system which is driven by network visibility drive that makes no since.
 
 [See this article for more](../../../../company/concepts/multi-scene-architecture.md)
 
 See [UX Complete](../../../ux/components/scenes-manager.md) for tools that can help you really leverage the power of Unity's scene system
 
-### Player Controller
+### Player Controller (PC)
 
 Keep your PC simple, think of the PC a bit like you might think of Unity's Event System or Input System.&#x20;
 
