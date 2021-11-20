@@ -64,7 +64,6 @@
       * [Stats](assets/steamworks/features/stats-object.md)
       * [User Generated Content (Workshop)](assets/steamworks/features/user-generated-content-workshop/README.md)
     * [Developer Articles](assets/steamworks/learning/developer-articles/README.md)
-      * [Instruction: uGUI Lobby Browser](assets/steamworks/learning/developer-articles/instruction-ugui-lobby-browser.md)
       * [Multiplayer Steam Games](assets/steamworks/learning/developer-articles/multiplayer-steam-games.md)
       * [Unique Uses: Leaderboard Profiles](assets/steamworks/learning/developer-articles/unique-uses-leaderboard-profiles.md)
     * [Debugging Steam API](assets/steamworks/learning/debugging-steam-api.md)
