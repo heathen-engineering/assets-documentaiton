@@ -22,24 +22,15 @@ Note that this does NOT mean you will be using Git as a source repo, it is simpl
 
 This must be done from the Unity Package Manager to insure that the proper Steamworks.NET assembly definition is installed and present in your project.
 
-{% hint style="success" %}
-Copy this string exactly by clicking the "Copy" button located to the right of the code block.
-
-
-
-```
-https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net
-```
-
-
-{% endhint %}
-
 1. Open the Package Manager
 2. Click the "+" (plus) button located in the upper left of the window
 3. Select the "Add package from git URL..." option\
    ![](<../../.gitbook/assets/image (144).png>)
-4. Paste the string you copied from the <mark style="color:green;">Green note</mark> above into the provided text field
-5. Click the "Add" button and wait several seconds for the system to download and install the Steamworks.NET package from GitHub.
+4. Enter the URL below and press add.
+
+```
+https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net
+```
 
 ### Install Heathen's Steamworks&#x20;
 
@@ -128,14 +119,15 @@ Heathen's Steamworks is built on top of Steamworks.NET and is dependent on it. Y
 
 #### Steps
 
-1. Open Unity 2019 LTS (latest build) or a more recent version of Unity preferably an LTS release
-2. Open the Unity Package Manager
-3. Click the "+" (plus) button located in the upper left of the window
-4. Select the "Add package from git URL..." option\
+1. Open the Package Manager
+2. Click the "+" (plus) button located in the upper left of the window
+3. Select the "Add package from git URL..." option\
    ![](<../../.gitbook/assets/image (144).png>)
-5. Enter the following URL:\
-   [https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net](https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net)
-6. Click the "Add" button and wait several seconds for the system to download and install the Steamworks.NET package from GitHub.
+4. Enter the URL below and press add.
+
+```
+https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net
+```
 
 When completed properly you will see Steamworks.NET in your Package Manager's "In Project" list. You can repeat the above steps to update Steamworks.NET at any time.
 
@@ -181,85 +173,59 @@ You must install the base of Mirror first, this can be done either from the Unit
 
 Mirror Community's FizzySteamTransport has been made compatible with our asset and has been updated to support Peer to Peer and Client Server based networking architectures. The steps to install it are as follows.
 
-1. Download the FizzySteamTransport from GitHub, you want to download the source code not the release package.\
-   [https://github.com/Chykary/FizzySteamworks/archive/refs/heads/master.zip](https://github.com/Chykary/FizzySteamworks/archive/refs/heads/master.zip)
-2. Extract the provided code into your Unity Project
+**To install FizzySteamworks**
 
-### MLAPI
+1. Open Unity 2019 LTS (latest build) or a more recent version of Unity preferably an LTS release
+2. Open the Unity Package Manager
+3. Click the "+" (plus) button located in the upper left of the window
+4. Select the "Add package from git URL..." option\
+   ![](<../../.gitbook/assets/image (144).png>)
+5. Enter the URL below and press the add button:
 
-MLAPI was originally similar to Mirror in that it was an open source community lead project and had many similarities ot uNET. Unity Technology invested in MLAPI and took over the project a few years ago and have been developing it as the new HLAPI from Unity.&#x20;
+```
+https://github.com/Chykary/FizzySteamworks.git?path=/com.mirror.steamworks.net
+```
 
-MLAPI is far more experimental and lacks the maturity of other options it does however have more support from Unity its self. Heathen does not use MLAPI in its own projects so canonly provide limited support. We do however contribute to the on going development and maintenance of its community transports including the SteamTransport.
+### NetCode for GameObjects
+
+NetCode (formerly MLAPI) was originally similar to Mirror in that it was an open source community lead project and had many similarities ot uNET. Unity Technology invested in NetCode and took over the project a few years ago and have been developing it as the new HLAPI from Unity.
 
 {% embed url="https://docs-multiplayer.unity3d.com/" %}
 
 #### Requirements
 
-You must install Unity's MLAPI to use its community transports. The above article is the best source to learn how to install and update MLAPI. The notes provided here should work for you though are not keep up to date. Please consult Unity's official MLAPI documentation for any questions or support needs.
+You must install Unity's NetCode to use its community transports. The above article is the best source to learn how to install and update NetCode. The notes provided here should work for you though are not keep up to date. Please consult Unity's official NetCode documentation for any questions or support needs.
 
-**To install MLAPI**
+**To install NetCode for GameObjects**
 
-1. Open Unity 2019 LTS (latest build) or a more recent version of Unity preferably an LTS release
+1. Open Unity 2020 LTS (latest build) or a more recent version of Unity preferably an LTS release
 2. Open the Unity Package Manager
 3. Click the "+" (plus) button located in the upper left of the window
 4. Select the "Add package from git URL..." option\
    ![](<../../.gitbook/assets/image (144).png>)
-5. Enter the following URL:\
-   [https://github.com/Unity-Technologies/com.unity.multiplayer.mlapi.git?path=/com.unity.multiplayer.mlapi](https://github.com/Unity-Technologies/com.unity.multiplayer.mlapi.git?path=/com.unity.multiplayer.mlapi#release/0.1.0)
-6. Click the "Add" button and wait several seconds for the system to download and install the package from GitHub.
+5. Enter the URL below and press the add button:
+
+```
+com.unity.netcode.gameobjects
+```
 
 #### Transports
 
-{% embed url="https://github.com/JamesMcGhee/multiplayer-community-contributions/tree/main/Transports/com.mlapi.contrib.transport.steamnetworking" %}
+{% embed url="https://github.com/Unity-Technologies/multiplayer-community-contributions/tree/main/Transports/com.community.netcode.transport.steamnetworking" %}
+Steam Networking Transport
+{% endembed %}
 
-MLAPI has a community transport project similar to other HLAPI frameworks. Hethen Engineering has contributed a variation of MLAPI's SteamP2P transport that correct multiple issues with the original transport.
-
-Heathen's SteamNetworking transport for MLAPI is based on the existing SteamP2P transport and updates it to
-
-* Remove dependency on a specific build of Steamworks.NET
-* Remove use of SteamManager making it compatible with any Steamworks.NET implementation \
-  Including Heathen's own Steamworks tools.
-* Added support for Client Server architectures by leveraging the Steam Game Server Networking APIs in server builds
-* Improved support for Peer to Peer architectures by correcting use of the Steam Client Networking APIs
+NetCode for GameObjects has a community transport project similar to other HLAPI frameworks. Hethen Engineering has contributed a transport that is compatable with Steamworks.NET and can be downloaded from Unity's community transports section.
 
 **To install the transport**
 
-1. Open Unity 2019 LTS (latest build) or a more recent version of Unity preferably an LTS release
+1. Open Unity 2020 LTS (latest build) or a more recent version of Unity preferably an LTS release
 2. Open the Unity Package Manager
 3. Click the "+" (plus) button located in the upper left of the window
 4. Select the "Add package from git URL..." option\
    ![](<../../.gitbook/assets/image (144).png>)
-5. Enter the following URL:\
-   [https://github.com/Unity-Technologies/mlapi-community-contributions.git?path=/Transports/com.mlapi.contrib.transport.steamnetworking](https://github.com/Unity-Technologies/mlapi-community-contributions.git?path=/Transports/com.mlapi.contrib.transport.steamnetworking)\
-   Click the "Add" button and wait several seconds for the system to download and install the package from GitHub.
+5. Enter the URL below and press the add button:
 
-### Mirage Net (Informational)
-
-{% hint style="warning" %}
-This entry is here for informational purposes only
-
-Heathen does not directly support Mirage and has not engaged with its community transport project as of yet.
-{% endhint %}
-
-From the same team that brought you Mirror, Mirage Net is a new open source networking framework. The project is not considered as mature as Mirror though it may be of interest to you. As the HLAPI is based on Mirror it should be trivial to port the Mirror based transport to Mirage Net.
-
-{% embed url="https://github.com/MirageNet/Mirage" %}
-
-#### Transport
-
-{% hint style="danger" %}
-This transport is **NOT** compatible with Heathen's Steamworks.
-
-This is provided for informational purposes only. You may be able to use this information to port the Mirage Net Steam Transport to work with Heathen's Steamworks or to port the Mirror Transport to work with Mirage Net.
-
-Heathen Engineering does not provide support for either of these two use cases. **This is wholly for informational purposes only.**
-{% endhint %}
-
-Mirage Net is known to have a Steam Networking Transport based on the Fizzy Steam transport from Mirror. This transport however has not been updated with Heathen's contributions and so has the following major issues
-
-1. It does not make proper use Steam Game Server APIs
-2. It depends on SteamManager
-3. It is not compatible with all versions of Steamworks.NET and cannot be used with Heathen's Steamworks tools
-
-{% embed url="https://github.com/MirageNet/FizzySteamyMirror" %}
-
+```
+https://github.com/Unity-Technologies/mlapi-community-contributions.git?path=/Transports/com.community.netcode.transport.steamnetworking
+```
