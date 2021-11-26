@@ -230,6 +230,42 @@ Callbacks will very, for asynchronous calls where multiple calls can be made at 
 
 For synchronous calls where the scope of dependent data is not a problem your probably best to define it as a fixed / named function. If scope of data is a problem as it often is with a predicate as noted above then treat it like a predicate and make it anonymous (expression).
 
+```csharp
+public void Foo(Action<bool> callback)
+{
+    //DOWORK
+    callback?.Invoke(true);
+}
+```
+
+In this case we define our deligate as an Action of type bool, this means it expects a function that takes 1 paramiter of type bool. you can do this is expression or as a defined method.
+
+```csharp
+private void HandleFoo(bool arg0)
+{
+    if(arg0)
+    {
+        //DOWORK
+    }
+}
+
+// ...
+
+Foo(HandleFoo);
+```
+
+or
+
+```csharp
+Foo((arg0) =>
+{
+    if(arg0)
+    {
+        //DOWORK
+    }
+});
+```
+
 ### Event Handlers
 
 You will rarely if ever use an anonymous function as an event handler. Event handlers persist for long periods of time and may be called multiple times during the session, they also (generally) are synchronous with no data scope issues so are ideal for fixed / named functions and rather bad use cases for anonymous functions.

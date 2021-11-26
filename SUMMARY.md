@@ -62,6 +62,7 @@
       * [Steam Game Server](assets/steamworks/features/multiplayer/game-server-browser.md)
       * [Remote Storage (Cloud)](assets/steamworks/features/data-models.md)
       * [Stats](assets/steamworks/features/stats-object.md)
+      * [Steam User Data](assets/steamworks/learning/core-concepts/steam-user-data.md)
       * [User Generated Content (Workshop)](assets/steamworks/features/user-generated-content-workshop/README.md)
     * [Developer Articles](assets/steamworks/learning/developer-articles/README.md)
       * [Multiplayer Steam Games](assets/steamworks/learning/developer-articles/multiplayer-steam-games.md)

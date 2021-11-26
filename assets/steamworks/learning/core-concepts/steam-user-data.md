@@ -1,0 +1,89 @@
+# Steam User Data
+
+{% hint style="success" %}
+Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)and [Foundation ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-foundation-202671)asset.
+{% endhint %}
+
+## Introduction
+
+The Heathen framework simplifies the concept of Steam User Data in our [UserData](../../objects/user-data.md) object. This object is equatable and comparable to CSteamID and ulong meaning you can convert any CSteamID or ulong value to a UserData object.
+
+```csharp
+UserData user_fromUlong = 1234566;
+UserData user_fromCSteamID = new CSteamID(1234566);
+UserData user = UserData.Get(1234566);
+```
+
+This means you no longer need to "Get" a UserData object as you did in other steam integrations. The UserData object exposes all relivent information about the user in question with simple fields.&#x20;
+
+{% hint style="info" %}
+For full details see [UserData's documentaiton here](../../objects/user-data.md).
+{% endhint %}
+
+## Use Cases
+
+### Local User
+
+The most common use case is to fetch the local user's information. This can be done with a single line call.
+
+```csharp
+using HeathenEngineering.SteamworksIntegration.API;
+
+// ...
+
+var localUser = User.Client.Id;
+```
+
+For example if you wanted to get the local user's name as it appears on Steam.
+
+```csharp
+using HeathenEngineering.SteamworksIntegration.API;
+
+// ...
+
+var userName = User.Client.Id.Name;
+```
+
+### Avatar Image
+
+Unlike previous iterations we only load the image when requested, this save memory usage by only loading avatars that are requested.
+
+```csharp
+using HeathenEngineering.SteamworksIntegration.API;
+
+// ...
+
+if(User.Client.Id.Avatar != null)
+{    
+    // The avatar is already loaded
+}
+else
+{
+    User.Client.Id.LoadAvatar((result) => 
+    {
+        //Result will be the avatar if we could load it else null
+    });
+}
+```
+
+Note the Avatar field checks for loaded avatar images and returnes the matching image if found.
+
+The LoadAvatar method does similar but asynchroniously and will load the image if not found. It does this by taking an Action as a paramiter and invoking it when the image is found or loaded as required.
+
+If your not aware of what a callback is see this [article](../../../../company/concepts/lambda-expressions.md#callbacks).
+
+### Display User information
+
+There are a few pre-made components that can help display common UserData to the screen such as the [Set User Avatar](../../components/set-user-avatar.md) and [Set User Name](../../components/set-user-name.md) componenets. These simply set uGUI RawImage or uGUI Text or TMPro text fields.&#x20;
+
+{% hint style="warning" %}
+These are based on uGUI and saddly Unity has greatly fragmented its UI frameworks with 3 frameworks at current being supported and 1 of them having 2 variations that are "offical".
+
+
+
+We will maintain componenets like this as part of the framework but may need to move them to sample code in the future as Unity continues to framgment UI options. This isn't really a bad thing in that it gives you more options but does mean we cant assume the best or correct way to do a thing regarding UI and so may need to simply guide you on available options.
+
+
+
+This issue has already seen the removeal of Lobby List and other uGUI componenets for other areas of Steam API which have been moved to Sample Code. If you have questions or sugestions please let us know in our [Discord](https://discord.gg/6X3xrRc).
+{% endhint %}
