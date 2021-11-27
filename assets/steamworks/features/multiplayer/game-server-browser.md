@@ -14,6 +14,12 @@ The Steam Game Server concept is offten confused when you first start looking in
 
 {% embed url="https://partner.steamgames.com/doc/features/multiplayer/game_servers" %}
 
+{% hint style="danger" %}
+Please click the link shown above or again here and read Steam's documentaiton on the subject.
+
+[https://partner.steamgames.com/doc/features/multiplayer/game\_servers](https://partner.steamgames.com/doc/features/multiplayer/game\_servers)
+{% endhint %}
+
 In the most basic since when we (or anyone) says "Steam Game Server" also shortened as SGS what they mean is a game server that initializes the Steam API with a Steam Game Server configuration. by doing so the SGS can be browsed for through tools like Steam's Game Server Browser and it can leverage key features of the Steam API directly.
 
 ## What can it do?
@@ -95,3 +101,37 @@ There are great tools available to you though a few are linked below. We do not 
 ## Configuration
 
 To configure a Steam Game Server browser simply set the desired settings in your [Steam Settings](../../objects/steam-settings.md#steamsettings.server) object and build a server build. In particular take note of the [Game Server](../../objects/steam-settings/game-server.md) settings.
+
+## Hosting
+
+{% hint style="warning" %}
+At this time Valve (they build Steam) does not offer hosting you will have to provide for that your self.
+{% endhint %}
+
+### Player Hosted
+
+This means that you ship your server build and let player's host them, them selves. It was a popular method in the past and many games still allow for it especialy if you want to foster a LAN community.
+
+### Bespoke
+
+Abuse of the term but what is meant here is a hosting service provider. These are usually used to let your player's host servers. Micraft, Ark, Conan Exiles, this is a popular model with survival games.
+
+Look for providers like [GPortal](https://www.g-portal.com) to help with this.
+
+### Backend Service Provider
+
+The new traditonal method, using a backend service provider, most if not all of these offer hosting of some sort along with other services.
+
+Look for providers like [PlayFab](https://playfab.com), [GameSparks ](https://www.gamesparks.com)and [Multiplay](https://unity.com/products/multiplay)
+
+### Propritary
+
+There are some options that offer great advatages but that are propritary systems so moving off of them is not really possible at least not without a lot of work. We would only recomend you consider these if your game REALLY needs the advantge they offer and your happy to marry your game to there offerings.
+
+Look at providers like [Improbable](https://ims.improbable.io)
+
+### DIY
+
+Do it your self, not recomended for ... well most people and even large organizaitons. It is exceedingly difficult to host a live service game of any kind without a lot of money and experience and 24hr a day staff.&#x20;
+
+That said it is an option and you can offset some of the cost by using basic hosting services like [Azure](https://azure.microsoft.com), [AWS](https://aws.amazon.com), etc.

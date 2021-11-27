@@ -6,7 +6,13 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 
 ## Introduction
 
-Meant to be added to your Server Browser UI this component simplifies the process of querying Steam Game Servers
+Meant to be added to your Server Browser UI this component simplifies the process of querying Steam Game Servers.
+
+{% hint style="info" %}
+Before you can browse game servers you need to have game servers.
+
+Read [Steam Game Servers](../features/multiplayer/game-server-browser.md) article before continuing
+{% endhint %}
 
 ## Definition
 

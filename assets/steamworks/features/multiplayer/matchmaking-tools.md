@@ -16,6 +16,81 @@ You can read more about Steam's Matchmaking system on Valve's developer document
 
 {% embed url="https://partner.steamgames.com/doc/features/multiplayer#matchmaking" %}
 
+## Matchmaking
+
+It is important to understand that a lobby is not a server browser, it is not designed to list all possible sessions. It is effectivly a chat room and a matchmaking tool.&#x20;
+
+### Can I list all? No
+
+Steam API at most will return 50 lobbies and in most cases that is 49 more lobbies than you need. The lobby query system is designed such that your user discribes they match they want and the Steam API will return the ideal match from the available lobbies.
+
+> What if the exsact match the player wants isn't available or what if they don't know exsactly that they want?
+
+In that case you have two options
+
+### Quick Match
+
+This is the most common approch by modern games. A quick match is where you search for a lobby that matches the desired game well enough and join it, if no ideal match can be found you create a new lobby with the arguments that match the ideal match and continue to look for near matches.
+
+This means that other player's looking for the same match will find your new lobby and join you. Typically a modern game will also be looking for near matches in the background and after some tollerable time will take the nearest match even if its not ideal.
+
+The objective of "Quick Match" in most games is to get the player playing a multiplayer match as soon as possible. Hence "quick" match. It does this by&#x20;
+
+1. Searching for an ideal match
+2. If not found creating an ideal lobby that others can join
+3. If not enough join in a tollerated time joining the next best lobby it can find
+
+### Lobby Browser
+
+Another approch used is to display a list of "near match" lobbies to the user along with a "create lobby" button.
+
+Older games didn't let you create a new lobby until you searched for one. Once the search failed it would display the nearest matches to your search arguments along with a create button. The idea here is a player should first fill up a waiting session or if none suit the player's needs create one of there own.
+
+This model does much the same as Quick Match but lets the player decide what the "nearest match" lobby is. The down side to this is some players will be stubborn and always make there own  lobby increasing the average time to match for all players.
+
+#### How to display lobbies
+
+The [5 Lobbies](../../learning/sample-scenes/5-lobbies.md) sample scene demonstrates browsing for lobbies. If you wanted to do this model the ideal solution is to let the user define there search arguments and return a small number of the lobbies if any that match that say the top 10.&#x20;
+
+You can then do searches that are slightly less strict ... what this means depends on yoru game. For example lets say your game is a classic shooter with modes like CTF, C\&H, KofH and has session sizes of 4v4, 8v8 and 16v16 and maybe also lets your player's pick a map.
+
+Your player may search for CTF 4v4 on map X. You return the top 10 matches that suit that but show the player the top 10 CTF 8v8, top 10 C\&H 4v4, top 10 KofH 4v4, etc. You dont want to flood your player with to many options and you dont want to burry there preference the idea is to show them options in case there ideal match isn't available or in case they didn't think to look for something else.
+
+### I need to list all servers
+
+{% hint style="success" %}
+A lobby is not a server
+
+A lobby is a group of player's looking to play a game together.
+{% endhint %}
+
+Its keenly important that you understand that a lobby is not a server, it is not a networking concept at all. It is a chat room where player's meat and converse to decide what they would like to play together before they go do so.
+
+You can think of it like jumping on Team Speak, or Discord, etc. and rounding up a few friends to go play a game together.
+
+If you want to list a set of available server's then you 1st off need servers. You can look at creating a server build for your game and having it register as a [Steam Game Server](game-server-browser.md).
+
+{% hint style="info" %}
+Learn more [here](game-server-browser.md)
+{% endhint %}
+
+Once you have a server build you need to decide how your going to host it.
+
+1.  Player Hosted
+
+    This is where you ship your server build and let player's host it them selves
+2.  Bespoke
+
+    Services like [G-Portal](https://www.g-portal.com) can be used to host offical, private, etc. ... you see this done a lot with survival games like Minecraft, Conan Exiles, etc.
+3.  Traditional
+
+    Using a service like [PlayFab](https://playfab.com), [GameSparks ](https://www.gamesparks.com)or [Multiplay](https://unity.com/products/multiplay)
+4.  DIY
+
+    Do it your self, if your a glutton for pain or just really like data operations you could of course host your servers your self.
+
+Doing this will let you browse for and display all available (and publicly visiable) stem game servers via a [Steam Game Server Browser](../../components/game-server-browser-manager.md).
+
 ## Use Cases
 
 ### Create a Lobby or Group.
