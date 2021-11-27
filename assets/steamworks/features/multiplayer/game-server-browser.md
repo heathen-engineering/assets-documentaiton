@@ -114,7 +114,7 @@ This means that you ship your server build and let player's host them, them selv
 
 ### Bespoke
 
-Abuse of the term but what is meant here is a hosting service provider. These are usually used to let your player's host servers. Micraft, Ark, Conan Exiles, this is a popular model with survival games.
+Abuse of the term but what is meant here is a hosting service provider. These are usually used to let your player's host servers. Minecraft, Ark, Conan Exiles, this is a popular model with survival games.
 
 Look for providers like [GPortal](https://www.g-portal.com) to help with this.
 
