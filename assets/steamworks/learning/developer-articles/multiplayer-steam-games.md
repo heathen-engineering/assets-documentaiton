@@ -124,6 +124,26 @@ It probably shouldn't be a visual element in your game, rather its there to capt
 
 It makes since to store player specific values on it but player is not character. In most of our use cases our PC is just an IO sync tool with some state info like what team the player is a part of. We have the PC spawn character controllers as required and these character controls define the visuals, sync animations, store character health, level, etc.
 
+### Set Game Server
+
+A feature of Steam's Lobby system. SetGameServer is a method available to you on the [Lobby](../../objects/lobby.md) and through the [Matchmaking ](../../api/matchmaking.md)API. Only the owner of the lobby can call this method.
+
+What it does is when this is called it will cause an event to be raised on all the members of the lobby to notify them that the server's connection information has been set and they can now join to it.
+
+This should be called by the owner of the lobby when the network environment is ready for users to connect to it. E.g. this is called in P2P after the Host has called StartHost and configured the network environment. In Client/Server its called after the owner has allocated a server and configured it.
+
+When this is called the owner can specify a CSteamID representing the steam peer or Steam Game Server.
+
+Users that join the lobby after the event has occured will not get the event raised however they can test if it has already been set via&#x20;
+
+```csharp
+if(lobby.HasServer)
+{
+    NetworkManager.address = lobby.GameServer.id.ToString();
+    NetworkManager.StartClient();
+}
+```
+
 ## The Game Loop
 
 So, remember we are not talking about an Update Loop here we are talking about the human experience of starting your game and cycling through it session by session until the player exits your game.
