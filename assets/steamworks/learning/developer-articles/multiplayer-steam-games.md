@@ -144,6 +144,16 @@ if(lobby.HasServer)
 }
 ```
 
+## Common Mistakes
+
+### Lobby & Networking
+
+A steam Lobby is not a network feature. It has nothing to do with Mirror, MLAPI or any other networking API. It does not effect how you use your networking API and it is not impacted by your networking API. Lobbies can be used for all sorts of non-networking/multiplayer related features.
+
+A lobby typically exists before there is any network session set up and closes when there is.&#x20;
+
+Its the place that player's meet, agree any configurable game rules and use to decide the conditions of the network session. It can also be used to notify the members when the session is ready to connect. Typically when a user connects to a network session they would leave the matchmaking lobby. So you can see that a lobby and network not only aren't the same things but they dont usually coexist.
+
 ## The Game Loop
 
 So, remember we are not talking about an Update Loop here we are talking about the human experience of starting your game and cycling through it session by session until the player exits your game.
