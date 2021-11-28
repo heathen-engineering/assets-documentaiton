@@ -36,9 +36,33 @@ Aka a High-Level Application Program Interface … see what we say HLAPI now. Wh
 
 As noted in HLAPI this stands for Low Level Application Program Interface. When you’re talking about tools like Mirror, MLAPI, etc. they have a concept of a “transport” that is the part of the system that deals with sending and receiving information and handling connections. The interface that transports is built on … that is a LLAPI. In the case of Steam based networking solutions that would be SteamNetworking and SteamNetworkingSockets as the LLAPI that is used to create the various Steam Transports.
 
+### Lobby
+
+This term gets abused so very offten by the developers of networking APIs.
+
+{% hint style="danger" %}
+A lobby is not a networking feature
+{% endhint %}
+
+A lobby is best thought of as a chat room. It exists before there is a network session set up at all, in fact its where your player's will meet to agree what kind of session should be set up. In most cases when the network session comes up and the player's join it, they would leave any matchmaking lobby they are in.
+
+Mirror, Photon and others have a concept of a "Room"
+
+A Room is not a lobby, its a strange concept used by some networking systems as a sort of pore mans matchmaking service. It really doesn't make any since to me as to why you would use such a thing. It seems it would be easier to simply manage your network environment your self but to each there own just understand it is not a lobby and in no way related.
+
 ### NM
 
 Network Manager, most HLAPIs have a concept of a network manager. This is your games main point of interaction with the network at least so far as starting and stopping a connection. The NM would be what references the transport or transports you wish to support and shuttles data between the rest of the HLAPI such as Network Behaviours to and from the LLAPI via those transports e.g., Send/Receive
+
+### Room
+
+We dont use this and dont recomend any one does. Room is a concept seen in Mirror, Photon and a few other networking solutions. Personally I see no reason to use such a thing especially if you have a proper backend service provider like Steam or PlayFab.
+
+A room is a full network connection so really if you can connect to a room why not just go ahead and be connected to your session since you already are.&#x20;
+
+This concept is mostly used by people who let the network manager manage which scene is active, another thing we do not do nore recomend. If you do let your network manager manage your scenes then read up on how "room" works with your API if at all.
+
+If your managing your own scene structure (strongly recomended) then room offers no benifit and can be ignored.
 
 ### Transport
 
