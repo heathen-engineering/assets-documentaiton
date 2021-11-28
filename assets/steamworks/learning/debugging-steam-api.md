@@ -30,7 +30,7 @@ The Home page of the inspector displays core values for your user and the app it
 
 If you answered no to any of the above questions your issue is on step 1. That is your not configured correctly to initialize Steam and or you do not have the Steam client up and running with a valid user logged in.
 
-If for example you find that the App ID does not match then what you most likely did was to change the App ID in the Steam Settings file but did not fully shut down Unity, Visual Studio and absolutely everything else that might have mooted Unity, Visual Studio or any related process.
+If for example you find that the App ID does not match then what you most likely did was to change the App ID in the Steam Settings file but did not fully shut down Unity, Visual Studio and absolutely everything else that might have mounted it; e.g. Unity, Visual Studio or any related process.
 
 The reason this happens is that Valve will not release app initialization until every process that mounted its handles has closed. This is the single most common issue we have reported.
 
