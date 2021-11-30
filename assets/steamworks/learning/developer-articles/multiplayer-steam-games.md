@@ -186,20 +186,54 @@ I’ll start with Peer-to-Peer based games and then we can go over the differenc
 
 ### Peer to Peer
 
-1. Player A starts the game and indicates to your UI that it wants to play a multiplayer match as the host of a session let’s say. This can happen after the player has exhausted a search for an existing game that suits or simply because it wants to be the host that part is up to you.
+1.  Player A starts the game and indicates to your UI that it wants to play a multiplayer match as the host of a session let’s say. This can happen after the player has exhausted a search for an existing game that suits or simply because it wants to be the host that part is up to you.
+
+    In doing this Player A will create a new Lobby typicaly marked as private initally so a few houskeeping things can be done before the new lobby is exposed to the public.
+
+
 2.  Player A configures the conditions of the game they want to host e.g., mode, map, etc. This information will get stored on a Steam Lobby as metadata and used in the matchmaking process e.g., others searching for a game can filter on this information.
 
-    When the player creates the game, they will likely do so as a public lobby and so other players can browse for or quick match on this lobby and join it. As other players roll in the can communicate with each other via the Steam Lobby Chat system to agree on any other terms they need such as what characters each will use or teams, etc. Again, that is specific to your game.
-3.  At some point Player A will decide its time to play the game. Player A may want to lock the Steam Lobby so no one else can join that is an option but the main thing is that Player A starts up the network environment e.g.
+    When the player is ready they can set the lobby type as public, or firend or whatever other option suits there needs.
+
+    Lobby Types
+
+    1. Public = can be viewed by anyone searching
+    2. Friends = only accessable by the player's friends
+    3. Private = only accessable by direct invite
+    4. Inivisible = used as a party or group or to merge two other lobbies
+
+    Which you choose for your lobby or which options you make available to your users is wholly up to you and would depend on what features your game needs.
+
+
+3.  Whatever your choice step 2 you will end up with multiple players in the lobby. These player's can set "metadata" to indicate there state and choices e.g. what character they will play, what mode or map they vote for, etc.
+
+    The owner of the lobby "Player A" can set metadata on the lobby its self. This metadata is visible to all members and everyone searching for lobbies and can be used to filter the search results ... for example the owner might set a metadata field Map = TheBarrens and then other players could search for all lobbies where the session is aimed at playing on TheBarrens.
+
+
+4.  At some point Player A will decide its time to play the game. Player A may want to lock the Steam Lobby so no one else can join that is an option but the main thing is that Player A starts up the network environment e.g.
 
     Player A calls NM to Start Host and then configures the network environment to suit the desired conditions i.e., loads levels, spawns’ environments, etc.
-4.  When Player A is happy that the network environment is ready for use, they will call SetGameServer on the Steam Lobby providing their own ID as the server information. This will notify all other players that the session is ready to connect to and so each other user will handle that event, navigate to the appropriate scene in your game and call StartClient on the NM
 
-    Typically, as players connect to the host/server they will leave the lobby. You can maintain the lobby for the duration of the session if you like such as to enable droping players to come in after session start. Do know though that SetGameServer will only invoke its events once per lobby so in short, a Steam Lobby represents a single game session.
-5. At some point the session will come to an end. Many games will show a post session UI and here is a good place to invite the players to join a new lobby together such that they might play a second or third session together. You can decide if you keep the same host or not that is up to you. The point is you offer them to join a new lobby or to return to menu or some similar “hay its over now go home”
+    Note we do not recomend you let the NM manage your scenes however if you do be aware that the owner of the lobby is now in a network session the other members are not so your UI and other game systems will need to handle this.
+
+    If your managing your own scenes then you could additivly load the game session scene and set it active while still having the game lobby scene be loaded. To learn more about multi-[scene architecture](../../../../company/concepts/multi-scene-architecture.md) see this article.
+
+
+5.  When Player A is happy that the network environment is ready for use, they will call SetGameServer on the Steam Lobby providing their own ID as the server information. This will notify all other players that the session is ready to connect to and so each other user will handle that event, navigate to the appropriate scene in your game and call StartClient on the NM
+
+    Typically, as players connect to the host/server they will leave the lobby. You can maintain the lobby for the duration of the session if you like such as to enable droping players to come in after session start.&#x20;
+
+    Do know though that SetGameServer will only invoke its events once per lobby so in short, a Steam Lobby represents a single game session.
+
+    Also note that if you wanted to support player's joining the session after it has started you can leave the lobby up. When a player joins they should check [lobby.HasServer](../../objects/lobby.md#fields-and-attributes) and if so check the [lobby.GameServer](../../objects/lobby.md#fields-and-attributes) to get the connection information.
+
+
+6. At some point the session will come to an end. Many games will show a post session UI and here is a good place to invite the players to join a new lobby together such that they might play a second or third session together. You can decide if you keep the same host or not that is up to you. The point is you offer them to join a new lobby or to return to menu or some similar “hay its over now go home”
 
 ### Client Server
 
-Really a Client Server game is very much the same as Peer to Peer the only difference is in step 3 and 4. The lobby owner in a Client Server game will need to do something to set up a new server. For example, you could use PlayFab and request the allocation of a new GameServer. PlayFab will respond with connection information, and you can use that on the SetGameServer call
+Really a Client Server game is very much the same as Peer to Peer the only difference is in step 4 and 5. The lobby owner in a Client Server game will need to do something to set up a new server.
 
-Note that Game Servers can be configured as “Steam Game Servers” that is they can log on to steam as a server for your game and will get a CSteamID that be used with SteamNetworking and SteamNetworkingSockets. See the Steam Game Server documentation for more information on SGS.
+&#x20;For example, you could use PlayFab and request the allocation of a new GameServer. PlayFab will respond with connection information, and you can use that to have the owner connect to the server, configure it for play and then call the SetGameServer call to notify the others its ready to join.
+
+Note that Game Servers can be configured as “Steam Game Servers” that is they can log on to steam as a server for your game and will get a CSteamID that be used with SteamNetworking and SteamNetworkingSockets. See the [Steam Game Server](../../features/multiplayer/game-server-browser.md) documentation for more information on SGS.
