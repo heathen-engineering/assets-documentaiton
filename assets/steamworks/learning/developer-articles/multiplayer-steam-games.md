@@ -46,7 +46,9 @@ A lobby is not a networking feature
 
 A lobby is best thought of as a chat room. It exists before there is a network session set up at all, in fact its where your player's will meet to agree what kind of session should be set up. In most cases when the network session comes up and the player's join it, they would leave any matchmaking lobby they are in.
 
-Mirror, Photon and others have a concept of a "Room"
+Lobbies can be used for loads of features that have nothing at all to do with networking or even multiplayer. They are fundamentally just a chat room assoceated with a Steam App that players who are running the same app can join, attach metadata to, search for, etc. This makes lobbies useful for matchmaking, player groups/parties they are used in Steam's remote play feature and through the parties system can be used to invite players to come play the game with you or watch you play the game over Steam Streaming.
+
+Mirror, Photon and others have a concept of a "Room" ... this is not a lobby and not related to lobby.
 
 A Room is not a lobby, its a strange concept used by some networking systems as a sort of pore mans matchmaking service. It really doesn't make any since to me as to why you would use such a thing. It seems it would be easier to simply manage your network environment your self but to each there own just understand it is not a lobby and in no way related.
 
