@@ -24,6 +24,12 @@ Creating a game is hard work, creating a multiplayer game is extra hard work, cr
 
 This is just a list of terms I will use in this article, they are not necessarily the right terms or standard terms, etc. again this is just me sharing info and this section is just meant to help you translate my dribble.
 
+### Client
+
+Client is a term that can mean manythings. In general a "client" is a consumer of some service, a game for example as in the executable you run to play the game ... that is a "Game Client" even if there is no network its still a client. Within a single program such as your game you may have compoennets that are acting as a "client" to other componenets that are acting as a "server" this is actually rather common.
+
+In general networking when we say "Client" we mean that which is connected to a "Server". This gets more complex in P2P where one of the "Clients" is also the "Server" some networking APIs refer to this as "Host" as opposed to "Server" to try and differentiate the concepts.
+
 ### Game Loop
 
 The flow the player takes through the game from start to finish and back to start again. You can think of this as the workflow of playing your game to use a more business style term.
@@ -65,6 +71,20 @@ A room is a full network connection so really if you can connect to a room why n
 This concept is mostly used by people who let the network manager manage which scene is active, another thing we do not do nore recomend. If you do let your network manager manage your scenes then read up on how "room" works with your API if at all.
 
 If your managing your own scene structure (strongly recomended) then room offers no benifit and can be ignored.
+
+### Server
+
+Another offten abused term.
+
+In its simplest form a "server" is anything that serves other things. For example GitBook is a web server, serving your browser with HTML content.
+
+A computer running a server OS used to server other computers with services is also a server
+
+A Unity session that is being connected to by other Unity sessions is a game server
+
+Unity builds can be both servers and clients and most NM's have a concept of "Host" which is exsactly that, it is where your NM is acting as both a client and a server. That is it is asking for content (From its self) and serving that content (to its self and others).
+
+A lobby however is not a server, browsing for lobbies is not a way to make a server list. Server discovery is a concept which Steam handles please see the [Steam Game Server](../../features/multiplayer/game-server-browser.md) and [Game Server Browser](../../components/game-server-browser-manager.md) for more informaiton.
 
 ### Transport
 
