@@ -4,6 +4,12 @@ description: HeathenEngineering.BGSDK.API.User
 
 # User
 
+{% hint style="warning" %}
+2021-10-05
+
+The Venly authentication methods are temporarily deprecated as per Venly request. If you have any questions or need more support around authentication through the Venly APIs please contact Venly.
+{% endhint %}
+
 ```csharp
 HeathenEngineering.BGSDK.API.User
 ```

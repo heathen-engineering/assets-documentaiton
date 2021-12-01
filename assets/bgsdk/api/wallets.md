@@ -14,10 +14,6 @@ A wrapper around token management features.
 
 ## Overview
 
-{% hint style="warning" %}
-These methods should only be called from a server build.
-{% endhint %}
-
 Wallets are the primary means to interact with the Blockchain assets from within your game/app at run time. The typical use case is to fetch the list of wallets owned by the current user, and use these during the execution of your game or app to fetch specifics about the items the current user owns.
 
 {% hint style="info" %}
@@ -31,6 +27,10 @@ The purpose of the BGSDK integration in Unity is to simplify the use of these it
 ## Features
 
 ### Create
+
+{% hint style="warning" %}
+This methods should only be called from a server build.
+{% endhint %}
 
 ```csharp
 public static IEnumerator Create(string pincode, 
@@ -75,6 +75,10 @@ StartCoroutine(API.Server.Wallets.Create(pincode,
 
 ### List
 
+{% hint style="warning" %}
+This methods should only be called from a server build.
+{% endhint %}
+
 ```csharp
 public static IEnumerator List(Action<ListWalletResult> callback);
 ```
@@ -102,6 +106,10 @@ StartCoroutine(API.Server.Wallets.List((requestState) =>
 ```
 
 ### Get
+
+{% hint style="info" %}
+This method is useful on both client and server builds.
+{% endhint %}
 
 ```csharp
 public static IEnumerator Get(string walletId,
@@ -133,6 +141,10 @@ StartCoroutine(API.Server.Wallets.Get(walletId,
 ```
 
 ### Balance
+
+{% hint style="info" %}
+This method is useful on both client and server builds
+{% endhint %}
 
 {% hint style="info" %}
 You will notice two "balance" members in the Wallet API
@@ -184,6 +196,10 @@ StartCoroutine(API.Server.Wallets.NativeBalance(walletId,
 ### Token Balance
 
 {% hint style="info" %}
+This method is useful on both client and server builds
+{% endhint %}
+
+{% hint style="info" %}
 You will notice two "balance" members in the Wallet API
 
 ```csharp
@@ -232,6 +248,10 @@ StartCoroutine(API.Server.Wallets.TokeBalance(walletId,
 
 ### Specific Token Balance
 
+{% hint style="info" %}
+This method is useful on both client and server builds
+{% endhint %}
+
 ```csharp
 public static IEnumerator SpecificTokenBalance(string walletId,
     string tokenAddress,
@@ -264,6 +284,10 @@ StartCoroutine(API.Server.Wallets.NFTs(walletId,
 ```
 
 ### NFTs
+
+{% hint style="info" %}
+This method is useful on both client and server builds
+{% endhint %}
 
 ```csharp
 public static IEnumerator NFTs(string walletId,
@@ -299,6 +323,10 @@ StartCoroutine(API.Server.Wallets.NFTs(walletId,
 ```
 
 ### Update Pincode
+
+{% hint style="warning" %}
+This methods should only be called from a trusted Web Server.
+{% endhint %}
 
 ```csharp
 public static IEnumerator UpdatePincode(string walletId,

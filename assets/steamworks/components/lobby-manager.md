@@ -102,9 +102,13 @@ You can learn more about these extension features in the [Lobby](../objects/lobb
 
 Occurs when a search for matchming lobbies returns
 
-### evtEnter
+### evtEnterSuccess
 
 Occurs when the local user enters a lobby as the result of a create or join request
+
+### evtEnterFailed
+
+Occurs when the local user attempts to enter a lobby but gets an invalid enter responce
 
 ### evtCreated
 
@@ -117,6 +121,26 @@ Occurs when an attempt to create a lobby fails
 ### evtQuickMatchFailed
 
 Occurs when an attempt to find a quick match failed and was not allowed to create a lobby on completion.
+
+### evtQuickMatchFailed
+
+Occurs when a quick match operation ends and the option to create was set to false.
+
+### evtDataUpdated
+
+Occurs when the lobby's metadata is updated
+
+### evtLeave
+
+Occurs when the local user leaves the lobby
+
+### evtAskedToLeave
+
+Occurs when the local user is asked to leave the lobby via the Kick system
+
+### evtGameCreated
+
+Occurs when the lobby owner set's the game server data on the lobby. This is raised on all members but not on the owner of the lobby. As the owner is the one that sets this they already know.
 
 ### evtUserJoined
 
