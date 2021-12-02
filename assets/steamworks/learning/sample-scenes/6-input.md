@@ -123,6 +123,20 @@ In the case of our sample scene we activate the menu when a toggle is true and t
 The saple scene does this in the Update method of the Sample6Behaviour script.
 {% endhint %}
 
+### Run Frame
+
+Because we are manually updating the frame we need to call Run Frame to fetch the latest state for the inputs to the local cashe.
+
+```csharp
+SteamworksIntegration.API.Input.Client.RunFrame();
+```
+
+This needs to be done on every update.
+
+{% hint style="info" %}
+The saple scene does this in the Update method of the Sample6Behaviour script.
+{% endhint %}
+
 ### Getting Input Data
 
 Now that we have an active action set we need to know what actions are active and what the input values are for them.
