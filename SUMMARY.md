@@ -2,7 +2,7 @@
 
 * [Heathen Knowledge Base](README.md)
 
-## General <a href="company" id="company"></a>
+## General <a href="#company" id="company"></a>
 
 * [Introduction](company/introduction.md)
 * [Asset Folder Structure](company/asset-folder-structure.md)
@@ -22,15 +22,22 @@
   * [Armoury](assets/art-assets/art-armoury.md)
   * [Cookery](assets/art-assets/art-cookery.md)
 * [Blockchain Game SDK](assets/bgsdk/README.md)
-  * [Game Architecture](assets/bgsdk/game-architecture.md)
   * [Installation](assets/bgsdk/bgsdk-install.md)
-  * [Getting Started](assets/bgsdk/getting-started.md)
+  * [Learning](assets/bgsdk/learning/README.md)
+    * [Quick Start Guide](assets/bgsdk/learning/getting-started.md)
+    * [Core Concepts](assets/bgsdk/learning/core-concepts/README.md)
+      * [NFTs in Game](assets/bgsdk/learning/core-concepts/nfts-in-game.md)
+      * [Game Architecture](assets/bgsdk/learning/core-concepts/game-architecture.md)
+      * [White Label Wallets](assets/bgsdk/learning/core-concepts/white-label-wallets.md)
   * [API](assets/bgsdk/api/README.md)
     * [Tokens](assets/bgsdk/api/tokens.md)
     * [User](assets/bgsdk/api/user.md)
     * [Wallets](assets/bgsdk/api/wallets.md)
-  * [Artifacts](assets/bgsdk/artifacts/README.md)
+  * [Objects](assets/bgsdk/artifacts/README.md)
+    * [BGSDK Base Result](assets/bgsdk/artifacts/bgsdk-base-result.md)
     * [BGSDK Settings](assets/bgsdk/artifacts/bgsdk-settings.md)
+    * [Token](assets/bgsdk/artifacts/token.md)
+    * [NFT Balance Result](assets/bgsdk/artifacts/nft-balance-result.md)
   * [Examples](assets/bgsdk/examples/README.md)
     * [Authenticate the user](assets/bgsdk/examples/authenticate-the-user.md)
     * [Read the user's wallets](assets/bgsdk/examples/read-the-users-wallets.md)
@@ -47,6 +54,7 @@
       * [3 Stats and Achievements](assets/steamworks/learning/sample-scenes/3-stats-and-achievements.md)
       * [4 Leaderboards](assets/steamworks/learning/sample-scenes/4-leaderboards.md)
       * [5 Lobbies](assets/steamworks/learning/sample-scenes/5-lobbies.md)
+      * [6 Input](assets/steamworks/learning/sample-scenes/6-input.md)
     * [Core Concepts](assets/steamworks/learning/core-concepts/README.md)
       * [steam\_appid.txt](assets/steamworks/quick-start-guide/steam\_appid.txt.md)
       * [Achievements](assets/steamworks/features/achievement-object.md)

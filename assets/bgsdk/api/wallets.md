@@ -35,9 +35,7 @@ This methods should only be called from a server build.
 ```csharp
 public static IEnumerator Create(string pincode, 
     string identifier, 
-    string description, 
-    SecretType chain, 
-    Type type, 
+    SecretType chain,  
     Action<ListWalletResult> callback);
 ```
 
@@ -45,25 +43,21 @@ Creates a new White Label Wallet for the indicated user. This method is capable 
 
 #### Parameters
 
-| Type                      | Name        | Note                                                                                       |
-| ------------------------- | ----------- | ------------------------------------------------------------------------------------------ |
-| string                    | pincode     | <p>Must be a non-empty value</p><p>The pin that will encrypt and decrypt the wallet</p>    |
-| string                    | identifier  | <p>Can be null or empty</p><p>An identifier that can be used to query or group wallets</p> |
-| string                    | description | <p>Can be null or empty</p><p>A description to describe the wallet</p>                     |
-| Wallet.SecretType         | chain       | The blockchain on which to create the wallet                                               |
-| Wallet.Type               | type        | Define if the wallet is recoverable or unrecoverable                                       |
-| Action\<ListWalletResult> | callback    | A method invoked on completion of the process and containing the results of the execution. |
+| Type                      | Name       | Note                                                                                       |
+| ------------------------- | ---------- | ------------------------------------------------------------------------------------------ |
+| string                    | pincode    | <p>Must be a non-empty value</p><p>The pin that will encrypt and decrypt the wallet</p>    |
+| string                    | identifier | <p>Can be null or empty</p><p>An identifier that can be used to query or group wallets</p> |
+| Wallet.SecretType         | chain      | The blockchain on which to create the wallet                                               |
+| Action\<ListWalletResult> | callback   | A method invoked on completion of the process and containing the results of the execution. |
 
 #### Examples
 
 These examples assume you are familiar with the use of Unity Co-routines and the basics of C# in the context of Unity.
 
 ```csharp
-StartCoroutine(API.Server.Wallets.Create(pincode,
+StartCoroutine(Server.Wallets.Create(pincode,
     identifier,
-    description,
-    Wallet.SecretType.MATIC,
-    Wallet.Type.WHITE_LABEL,
+    SecretType.MATIC,
     (requestState) =>
     {
         if (!requestState.hasError)
@@ -96,7 +90,7 @@ Returns the list of wallets owned by the authenticated user if any.
 These examples assume you are familiar with the use of Unity Co-routines and the basics of C# in the context of Unity.
 
 ```csharp
-StartCoroutine(API.Server.Wallets.List((requestState) =>
+StartCoroutine(Server.Wallets.List((requestState) =>
     {
         if (!requestState.hasError)
         {
@@ -130,7 +124,7 @@ Gets a specific or group of wallets from the user queried by ID.
 These examples assume you are familiar with the use of Unity Co-routines and the basics of C# in the context of Unity.
 
 ```csharp
-StartCoroutine(API.Server.Wallets.Get(walletId,
+StartCoroutine(Server.Wallets.Get(walletId,
     (requestState) =>
     {
         if (!requestState.hasError)
@@ -183,7 +177,7 @@ Gets the balance of non fungible tokens in the users wallet.
 These examples assume you are familiar with the use of Unity Co-routines and the basics of C# in the context of Unity.
 
 ```csharp
-StartCoroutine(API.Server.Wallets.NativeBalance(walletId,
+StartCoroutine(Server.Wallets.NativeBalance(walletId,
     (requestState) =>
     {
         if (!requestState.hasError && requestState.success)
@@ -236,7 +230,7 @@ Gets the balance of tokens in the users wallet.
 These examples assume you are familiar with the use of Unity Co-routines and the basics of C# in the context of Unity.
 
 ```csharp
-StartCoroutine(API.Server.Wallets.TokeBalance(walletId,
+StartCoroutine(Server.Wallets.TokeBalance(walletId,
     (requestState) =>
     {
         if (!requestState.hasError && requestState.success)
@@ -273,10 +267,10 @@ Gets the balance of non fungible tokens in the users wallet.
 These examples assume you are familiar with the use of Unity Co-routines and the basics of C# in the context of Unity.
 
 ```csharp
-StartCoroutine(API.Server.Wallets.NFTs(walletId,
+StartCoroutine(Server.Wallets.NFTs(walletId,
     (requestState) =>
     {
-        if (!requestState.hasError && requestState.success)
+        if (!requestState.hasError)
         {
             Debug.Log("Found " + requestState.result.Count + " token types");
         }
@@ -301,18 +295,35 @@ Gets the balance of non fungible tokens in the users wallet.
 
 #### Parameters
 
-| Type                      | Name                       | Note                                                                                        |
-| ------------------------- | -------------------------- | ------------------------------------------------------------------------------------------- |
-| string                    | walletId                   | <p>Must be a non-empty value</p><p>The identifier to fetch a single or group of wallets</p> |
-| List\<string>             | opttionalContractAddresses | When set, the result will only contain tokens of these NFT contract addresses.              |
-| Action\<NFTBalanceResult> | callback                   | A method invoked on completion of the process and containing the results of the execution.  |
+| Type                                                           | Name                       | Note                                                                                        |
+| -------------------------------------------------------------- | -------------------------- | ------------------------------------------------------------------------------------------- |
+| string                                                         | walletAddress              | <p>Must be a non-empty value</p><p>The identifier to fetch a single or group of wallets</p> |
+| List\<string>                                                  | opttionalContractAddresses | When set, the result will only contain tokens of these NFT contract addresses.              |
+| Action<[NFTBalanceResult](../artifacts/nft-balance-result.md)> | callback                   | A method invoked on completion of the process and containing the results of the execution.  |
 
 #### Examples
 
 These examples assume you are familiar with the use of Unity Co-routines and the basics of C# in the context of Unity.
 
+For the Server API&#x20;
+
 ```csharp
-StartCoroutine(API.Server.Wallets.NFTs(walletId,
+StartCoroutine(Server.Wallets.NFTs(walletAddress,
+    null,
+    (requestState) =>
+    {
+        if (!requestState.hasError && requestState.success)
+        {
+            Debug.Log("Found " + requestState.result.Count + " token types");
+        }
+    }));
+```
+
+For the Client API
+
+```csharp
+StartCoroutine(Client.Wallets.NFTs(walletAddress,
+    null,
     (requestState) =>
     {
         if (!requestState.hasError && requestState.success)

@@ -46,7 +46,7 @@ You can now drag the desired stat object from your Steam Setting into that slot.
 
 ![](<../../../.gitbook/assets/image (159).png>)
 
-![](<../../../.gitbook/assets/image (161).png>)
+![](<../../../.gitbook/assets/image (161) (1).png>)
 
 Your script can now perform actions in relation to that stat
 

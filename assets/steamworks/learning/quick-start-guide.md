@@ -17,7 +17,7 @@ Create a new Steam Settings object in your project folder by right clicking in y
 
 ## App Id
 
-Enter your app ID in the Application Id field**.  **If you don't have an application ID just yet that's fine you can work with the test App ID 480 however there will be some limitations.&#x20;
+Enter your app ID in the Application Id field**.**  If you don't have an application ID just yet that's fine you can work with the test App ID 480 however there will be some limitations.&#x20;
 
 {% hint style="info" %}
 You obviously cannot deploy your app without an App ID
@@ -33,7 +33,7 @@ Valve issues you an App ID when you pay your application fee. If you don't have 
 
 Create a [Steamworks Behaviour](broken-reference) object in your [bootstrap scene](../../../company/concepts/bootstrap-scene.md) or similarly appropriate location; and drag your Steam Settings object into the provided field.
 
-![](<../../../.gitbook/assets/image (161) (1).png>)
+![](<../../../.gitbook/assets/image (161) (1) (1).png>)
 
 Congratulations, you are now integrated with the Steam APIs. If you run the simulation, you will see that the Steam API initializes and is ready for use.
 

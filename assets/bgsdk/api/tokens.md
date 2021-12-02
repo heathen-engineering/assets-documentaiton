@@ -16,10 +16,10 @@ A wrapper around token management features.
 These methods can only be called from a server build.
 {% endhint %}
 
-The Token API is primarily used during dev time, that is most of the actions against a token type or "template" will be performed in the Unity Editor while creating your game/app, and can be done through the editor tools as described in the [Getting Started](../getting-started.md) article.&#x20;
+The Token API is primarily used during dev time, that is most of the actions against a token type or "template" will be performed in the Unity Editor while creating your game/app, and can be done through the editor tools as described in the [Getting Started](../learning/getting-started.md) article.&#x20;
 
-{% content-ref url="../getting-started.md" %}
-[getting-started.md](../getting-started.md)
+{% content-ref url="../learning/getting-started.md" %}
+[getting-started.md](../learning/getting-started.md)
 {% endcontent-ref %}
 
 {% hint style="info" %}

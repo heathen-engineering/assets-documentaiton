@@ -12,7 +12,7 @@ Blockchain, NFT, Tokens, there are a lot of buzz words around blockchain technol
 
 ### High Level Architecture
 
-![](<../../.gitbook/assets/image (68).png>)
+![](<../../../../.gitbook/assets/image (68).png>)
 
 {% embed url="https://sketchboard.me/fCFVXoq2HSV#/" %}
 
@@ -22,7 +22,7 @@ Take note of the colours used, these colours will be used in later diagrams to i
 
 ### Handling new users
 
-![](<../../.gitbook/assets/image (69).png>)
+![](<../../../../.gitbook/assets/image (69).png>)
 
 In the above diagram we see the Start labelled in red. This represents a new player starting up your [game client](https://app.gitbook.com/@lodendsg/s/heathen-kb/\~/drafts/-Me0US8BRvMoxjxPDoIz/assets/bgsdk/game-architecture#game-client) and authenticating to your [backend service](https://app.gitbook.com/@lodendsg/s/heathen-kb/\~/drafts/-Me0US8BRvMoxjxPDoIz/assets/bgsdk/game-architecture#backend-service).‌
 
@@ -34,7 +34,7 @@ If the player is an existing player, you would want to query the list of [tokens
 
 ### Linking wallets to users
 
-![](<../../.gitbook/assets/image (70).png>)
+![](<../../../../.gitbook/assets/image (70).png>)
 
 Carrying on from the above diagram [Handling New Users](game-architecture.md#handling-new-users), this diagram shows the [backend service](game-architecture.md#backend-service) calling the Venly Web API to create a new [White Label Wallet](game-architecture.md#white-label-wallet). This process creates a [wallet ](game-architecture.md#wallet)with a given "wallet id". A wallet id is simply a unique string you can use as a key between your user data and Venly wallets.
 
@@ -44,7 +44,7 @@ Its up to you and your [backend service](game-architecture.md#backend-service) t
 
 In game terms this means "dropping" or "spawning" items for the player that are items that exist on the blockchain.
 
-![](<../../.gitbook/assets/image (71).png>)
+![](<../../../../.gitbook/assets/image (71).png>)
 
 Here we see the start as the [Game Client](https://app.gitbook.com/@lodendsg/s/heathen-kb/\~/drafts/-Me0TuLBgO82-XdjPo2j/assets/bgsdk/game-architecture#game-client) notifies the [Game Server](https://app.gitbook.com/@lodendsg/s/heathen-kb/\~/drafts/-Me0TuLBgO82-XdjPo2j/assets/bgsdk/game-architecture#game-server) that some action was performed. This could be for example the player attacking a boss.‌
 
@@ -58,7 +58,7 @@ The [Game Server](https://app.gitbook.com/@lodendsg/s/heathen-kb/\~/drafts/-Me0T
 
 ### Linking Token to GameObject
 
-![](<../../.gitbook/assets/image (72).png>)
+![](<../../../../.gitbook/assets/image (72).png>)
 
 The above diagram starts in our example case with the [Game Server](https://app.gitbook.com/@lodendsg/s/heathen-kb/\~/drafts/-Me0TuLBgO82-XdjPo2j/assets/bgsdk/game-architecture#game-server) notifying the [Game Client](https://app.gitbook.com/@lodendsg/s/heathen-kb/\~/drafts/-Me0TuLBgO82-XdjPo2j/assets/bgsdk/game-architecture#game-client) of a change in inventory state. This would be, for example, the last step as described in the above diagram where we walked through the process of generating an item.‌
 
@@ -127,7 +127,7 @@ A common concept in game design, this may also be referred to as your "Live Ops"
 {% hint style="info" %}
 _**\*Steam as a Backend Service provider**_
 
-While Steam is technically a backend service provider, and that is why we list it here, It does not provide for a Trusted Server and so is not enough for a blockchain enabled game. Steam is often times used in tandem with other Backend Service providers. You can learn more on this subject from our [Steamworks API](../steamworks/)
+While Steam is technically a backend service provider, and that is why we list it here, It does not provide for a Trusted Server and so is not enough for a blockchain enabled game. Steam is often times used in tandem with other Backend Service providers. You can learn more on this subject from our [Steamworks API](../../../steamworks/)
 {% endhint %}
 
 A backend service is going to be key for any game that is blockchain enabled in that you will need a trusted server, and this is a feature often provided for by a backend service provider usually via a feature they would call "Cloud Scripting" or "Web Scripting"‌

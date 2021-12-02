@@ -62,7 +62,7 @@ You are encouraged to read the articles above from Unity Support, where the poli
 
 _No_
 
-The refund system is not designed to run as** **a demo system; this falls outside of the refund policy.&#x20;
+The refund system is not designed to run as **** a demo system; this falls outside of the refund policy.&#x20;
 
 Heathen does provides "lite" versions of our assets for free that you can download and try out in order to determine if you are happy with our coding and architecture style.&#x20;
 
@@ -93,7 +93,7 @@ This can be read in the EU's own FAQ here\
 
 The relevant quote is as follows
 
-> If you purchase **digital content** - such as music or a video online - **you cannot withdraw once downloading or streaming has started**, **if you previously agreed that you would lose your right of withdrawal **by starting the performance**.**
+> If you purchase **digital content** - such as music or a video online - **you cannot withdraw once downloading or streaming has started**, **if you previously agreed that you would lose your right of withdrawal** by starting the performance**.**
 
 By using the Unity Asset Store you have agreed to wave that right, this agreement is located in the Unity Asset Store legal documentation here\
 [https://unity3d.com/legal/as\_terms](https://unity3d.com/legal/as\_terms)
