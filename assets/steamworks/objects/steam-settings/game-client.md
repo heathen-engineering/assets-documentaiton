@@ -13,7 +13,7 @@ public class SteamSettings : ScriptableObject
 }
 ```
 
-### Fields and Attributes
+## Fields and Attributes
 
 {% hint style="info" %}
 Static access fields can also be accessed by reference e.g.
@@ -35,14 +35,27 @@ mySettings.client.inventory
 ```
 {% endhint %}
 
-| Type              | Name      | Comments                            |
-| ----------------- | --------- | ----------------------------------- |
-| InventorySettings | Inventory | Static access to inventory settings |
+| Type                                                      | Name            | Comments                                         |
+| --------------------------------------------------------- | --------------- | ------------------------------------------------ |
+| InventorySettings                                         | Inventory       | Static access to inventory settings              |
+| List<[InputActionSet](../input-action-set.md)>            | actionSets      | collection of sets mapped from Steam Input       |
+| List<[InputActionSetLayer](../input-action-set-layer.md)> | actionSetLayers | collection of set layers mapped from Steam Input |
+| List<[InputAction](../input-action.md)>                   | actions         | collection of actions mapped from Steam Input    |
 
-### Methods
+## Methods
+
+### Initalize
 
 ```csharp
 public void Init();
 ```
 
 Used internally to intialize the client APIs
+
+### Update All Actions
+
+```csharp
+public void UpdateAllActions(InputHandle_t controller);
+```
+
+Used to update all known actions for the indicated controller.

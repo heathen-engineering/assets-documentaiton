@@ -28,7 +28,7 @@ Stats work much like achievements however they cannot be imported from Valve dir
 
 Once you add a sate you need to provide its API name exactly as you created it in the Steam Developer Portal.
 
-![](<../../../.gitbook/assets/image (160).png>)
+![](<../../../.gitbook/assets/image (160) (1).png>)
 
 ## Using Stats
 
@@ -46,7 +46,7 @@ You can now drag the desired stat object from your Steam Setting into that slot.
 
 ![](<../../../.gitbook/assets/image (159).png>)
 
-![](<../../../.gitbook/assets/image (161) (1).png>)
+![](<../../../.gitbook/assets/image (161) (1) (1).png>)
 
 Your script can now perform actions in relation to that stat
 

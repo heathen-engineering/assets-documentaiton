@@ -87,7 +87,7 @@ Next you will want to connect UI controls such as a Back and Next button up so t
 Remember UGC Query doesn't return all the results in one batch. You will be querying "page 1" which will return a subset of items. To fetch the next set e.g. "page 2" you need to increment the Current Page value of the manager.
 {% endhint %}
 
-![](<../../../../.gitbook/assets/image (160) (1).png>)
+![](<../../../../.gitbook/assets/image (160) (1) (1).png>)
 
 You should do the same for "Set Previous Search Page" so that the user can go back and forth. These methods are safe and will never step to a page that doesn't exist.
 
