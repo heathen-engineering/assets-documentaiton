@@ -12,6 +12,20 @@ Search for and browse Steam Workshop items.
 public class UserGeneratedContentQueryManager : MonoBehaviour
 ```
 
+### Related Topics
+
+#### Workshop Browser
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/learning/core-concepts/user-generated-content-workshop" %}
+
+The UGC Workshop article includes a step by step guide on the use of UGC Query Manager to create an [In-Game Workshop browser](../features/user-generated-content-workshop/#in-game-workshop-browser).
+
+#### User Generated Content API
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/api/user-generated-content" %}
+
+The User Generated Content API is the underlying tool set used by the query manager.
+
 ## Definition
 
 ## Fields and Attributes
