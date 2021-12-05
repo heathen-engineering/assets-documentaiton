@@ -32,7 +32,7 @@ An action is ... well the action the player has requested such as jump, walk, sh
 
 Steam Input objects can be created in your [Steam Settings](../../objects/steam-settings.md) object
 
-![](<../../../../.gitbook/assets/image (158).png>)
+![](<../../../../.gitbook/assets/image (158) (1).png>)
 
 ### Analog vs Digital Actions
 

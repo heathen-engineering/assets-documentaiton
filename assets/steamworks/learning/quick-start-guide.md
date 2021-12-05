@@ -13,7 +13,7 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 Create a new Steam Settings object in your project folder by right clicking in your project tab and selecting\
 **Create > Steamworks > Settings**
 
-![](<../../../.gitbook/assets/image (158) (1).png>)
+![](<../../../.gitbook/assets/image (158) (1) (1).png>)
 
 ## App Id
 

@@ -26,7 +26,7 @@ The hardest part about Steam Inventory is usually setting up your Steam Inventor
 
 The very first thing you should do is import any Steam Inventory Items you already have. You can do this quickly by simply running the simulation (so that Steam API is initialized) and clicking the Import button under the Inventory list in your Steam Settings
 
-![](<../../../../.gitbook/assets/image (187).png>)
+![](<../../../../.gitbook/assets/image (187) (1).png>)
 
 Once done you will see every item you had defined already in your Steam Developer Portal has been pulled into Unity under your Steam Settings:
 
