@@ -66,6 +66,9 @@ You can also use these tools to modify and existing file assuming you are its au
 API.UserGeneratedContent.Client.StartItemUpdate(appId, fileId);
 ```
 
+* AddItemKeyValueTag
+* AddItemPreviewFile
+* AddItemPreviewVideo
 * SetItemContent
 * SetItemDescription
 * SetItemMetadata
@@ -77,6 +80,15 @@ API.UserGeneratedContent.Client.StartItemUpdate(appId, fileId);
 * UpdateItemPreviewVideo
 * UpdateItemPreviewFIle
 * UpdateItemPreviewVideo
+* RemoveItemKeyValueTags
+* RemoveItemPreview
+
+For example the folloowing code would update the title and description
+
+```csharp
+API.UserGeneratedContent.Client.SetItemTitle(updateHandle, "title");
+API.UserGeneratedContent.Client.SetItemDescription(updatehandle, "description");
+```
 
 When complete you should submit the update
 
@@ -87,6 +99,99 @@ API.UserGeneratedContent.Client.SubmitItemUpdate(handle, changenote, callback);
 ### Browse Items
 
 The easiest way to handle a UGC / Workshop browser in game is to use the [UGC Query Manager](../components/ugc-query-manager.md). The manager uses the same features present in the interface so it can be done manually.
+
+The remainder of this section talks about manually querying items.
+
+The process is similar in that you would "create" or "start" a query which will give you a `UGCQueryHandle_t` which can then be modified to fine tune your query before submitting it to get the matching records.
+
+To crete the `UGCQueryHandle_t`
+
+```csharp
+//Query all UGC for a particular App ID
+var handle = API.UserGeneratedContent.Client.CreateQueryAllRequest(type,
+                                                                fileType,
+                                                                creatAppId,
+                                                                consumeAppId,
+                                                                page);
+                                                                
+// or
+//Query for specific files by file ID
+var handle = API.UserGeneratedContent.Client.CreateQueryDetailRequest(files);
+
+//or
+//Query for files related to a specific user
+var handle = API.UserGeneratedContent.Client.CreateQueryUserRequest(account,
+                                                                listType,
+                                                                matchType,
+                                                                sortOrder,
+                                                                createAppId,
+                                                                consumeAppId,
+                                                                page);
+```
+
+Once you have created your handle you can modify the way it searches for matching items by calling the following methods.
+
+* AddExcludeTag
+* AddRequiredKeyValueTag
+* AddRequiredTag
+* SetAllowCashedResponse
+* SetCloudFileNameFilter
+* SetLanguage
+* SetMatchAnyTag
+* SetRankedByTrendDays
+* SetReturnAdditionalPreviews
+* SetReturnChildren
+* SetReturnKeyValueTags
+* SetReturnLongDescription
+* SetReturnMetadata
+* SetReturnOnlyIDs
+* SetReturnPlaytimeStats
+* SetReturnTotalOnly
+* SetSearchText
+
+Once you have your query set up you can submit it to fetch the related items. Note the UGC Query system is a page query system. It will never return more than 50 items (determined by Valve) and so you will need to incrament the page in your query handle to fetch each successive set of records.&#x20;
+
+You can see how we implamented paging in the [UGC Query Manager](../components/ugc-query-manager.md) if you wished to do so your self or simply to better understand the system.
+
+```csharp
+//When ready send the query so Valve can process it
+API.UserGeneratedContent.Client.SendQueryUGCRequest(handle, callback);
+```
+
+When the callback is invoked its paramiter will indicate the result state and query handle, assuming the state is eResultOk you can fetch the found items via, the following assumes `param` is the SteamUGCQueryComplete\_t object returned by the SendQueryUGCRequest's callback
+
+```csharp
+//If nothing went wrong
+if(param.m_eResult == EResult.k_EResultOK)
+{
+    //Get the total records found
+    var totalResults = param.m_unTotalMatchingResutls;
+    
+    //Get the number of pages involved
+    var pageCount = (uint)MathF.Clamp((int)matchedRecordCount / 50, 1, int.MaxValue);
+    if(pageCount * 50 < matchedRecordCount)
+        pageCount++;
+    
+    //Get the number of results in this run/page
+    var returned = param.m_unNumResultsReturned;
+    
+    for(int i=0; i < returned; i++)
+    {
+        API.UserGeneratedContent.Client.GetQueryResult(param.m_handle, 
+                                                    (uint)i,
+                                                    out SteamUGCDetails_t detail);
+        
+        //detail now contains all of the data for this item, do with it what you will
+    }
+    
+    //We must release the handle when done reading it
+    API.UserGeneratedContent.Client.ReleaseQueryRequest(param.m_handle);
+}
+```
+
+Getting the next page of data is done the same way, you will need to track what page your on and howmany there are and create a new query updating the page.
+
+Our UGC Query Manager does this fore you. You can simply incrament the page by calling `SetPage` and we will release any existing handle and fetch a new handle for the next page. You will need to re apply any modifications to the query you may have done before executing it again.&#x20;
 
 ### Get Subscribed Items
 
