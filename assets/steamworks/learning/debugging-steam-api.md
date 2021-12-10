@@ -48,7 +48,7 @@ You can use the Achievements tab to view and unlock/reset all registered achieve
 
 ## Leaderboards
 
-![](<../../../.gitbook/assets/image (170) (1).png>)
+![](<../../../.gitbook/assets/image (170) (1) (1).png>)
 
 You can use the Leaderboard's tab to view your score and rank on all registered leaderboards. Leaderboards while one of the simplest aspects of Steam API are also one of the more fragile aspects.
 
@@ -64,7 +64,7 @@ If you need to repair a board that is misbehaving you will need to contact Valve
 
 ## Downloadable Content
 
-![](<../../../.gitbook/assets/image (181).png>)
+![](<../../../.gitbook/assets/image (181) (1).png>)
 
 You can view the subscription status of all DLC in the DLC tab
 

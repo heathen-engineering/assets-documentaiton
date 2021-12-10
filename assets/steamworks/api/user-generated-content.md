@@ -7,6 +7,10 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 ## Introduction
 
 ```csharp
+using API = HeathenEngineering.SteamworksIntegraiton.API;
+```
+
+```csharp
 public static class API.UserGeneratedContent
 ```
 
@@ -14,6 +18,24 @@ Client features are available under the client interface
 
 ```csharp
 API.UserGeneratedContent.Client
+```
+
+You can shorten this name using the [aliasing feature of namespaces and static classes](../../../company/concepts/namespace-and-using.md#aliasing).
+
+```csharp
+using UGC = HeathenEngineering.SteamworksIntegration.API.UserGeneratedContent.Client;
+```
+
+The examples in this article will assume you are using the above so where you see&#x20;
+
+```csharp
+UGC.CreateItem(...
+```
+
+You can understand that is the same as
+
+```csharp
+API.UserGeneratedContent.Client.CreateItem(...
 ```
 
 ### What can it do?
@@ -49,13 +71,13 @@ Creating a new item can be done in one of two ways.
 One liner
 
 ```csharp
-API.UserGeneratedContent.Client.CreateItem(itemdata, callback);
+UGC.CreateItem(itemdata, callback);
 ```
 
 Step by step
 
 ```csharp
-API.UserGeneratedContent.Client.CreateItem(appId, callback);
+UGC.CreateItem(appId, callback);
 ```
 
 This callback will contain a UGCUpdateHandle\_t which can be used by other methods to update key features using the following methods
@@ -63,7 +85,7 @@ This callback will contain a UGCUpdateHandle\_t which can be used by other metho
 You can also use these tools to modify and existing file assuming you are its author
 
 ```csharp
-API.UserGeneratedContent.Client.StartItemUpdate(appId, fileId);
+UGC.StartItemUpdate(appId, fileId);
 ```
 
 * AddItemKeyValueTag
@@ -86,14 +108,14 @@ API.UserGeneratedContent.Client.StartItemUpdate(appId, fileId);
 For example the folloowing code would update the title and description
 
 ```csharp
-API.UserGeneratedContent.Client.SetItemTitle(updateHandle, "title");
-API.UserGeneratedContent.Client.SetItemDescription(updatehandle, "description");
+UGC.SetItemTitle(updateHandle, "title");
+UGC.SetItemDescription(updatehandle, "description");
 ```
 
 When complete you should submit the update
 
 ```csharp
-API.UserGeneratedContent.Client.SubmitItemUpdate(handle, changenote, callback);
+UGC.SubmitItemUpdate(handle, changenote, callback);
 ```
 
 ### Browse Items
@@ -108,25 +130,25 @@ To crete the `UGCQueryHandle_t`
 
 ```csharp
 //Query all UGC for a particular App ID
-var handle = API.UserGeneratedContent.Client.CreateQueryAllRequest(type,
-                                                                fileType,
-                                                                creatAppId,
-                                                                consumeAppId,
-                                                                page);
+var handle = UGC.CreateQueryAllRequest(type,
+                                       fileType,
+                                       creatAppId,
+                                       consumeAppId,
+                                       page);
                                                                 
 // or
 //Query for specific files by file ID
-var handle = API.UserGeneratedContent.Client.CreateQueryDetailRequest(files);
+var handle = UGC.CreateQueryDetailRequest(files);
 
 //or
 //Query for files related to a specific user
-var handle = API.UserGeneratedContent.Client.CreateQueryUserRequest(account,
-                                                                listType,
-                                                                matchType,
-                                                                sortOrder,
-                                                                createAppId,
-                                                                consumeAppId,
-                                                                page);
+var handle = UGC.CreateQueryUserRequest(account,
+                                        listType,
+                                        matchType,
+                                        sortOrder,
+                                        createAppId,
+                                        consumeAppId,
+                                        page);
 ```
 
 Once you have created your handle you can modify the way it searches for matching items by calling the following methods.
@@ -155,7 +177,7 @@ You can see how we implamented paging in the [UGC Query Manager](../components/u
 
 ```csharp
 //When ready send the query so Valve can process it
-API.UserGeneratedContent.Client.SendQueryUGCRequest(handle, callback);
+UGC.SendQueryUGCRequest(handle, callback);
 ```
 
 When the callback is invoked its paramiter will indicate the result state and query handle, assuming the state is eResultOk you can fetch the found items via, the following assumes `param` is the SteamUGCQueryComplete\_t object returned by the SendQueryUGCRequest's callback
@@ -177,15 +199,15 @@ if(param.m_eResult == EResult.k_EResultOK)
     
     for(int i=0; i < returned; i++)
     {
-        API.UserGeneratedContent.Client.GetQueryResult(param.m_handle, 
-                                                    (uint)i,
-                                                    out SteamUGCDetails_t detail);
+        UGC.GetQueryResult(param.m_handle, 
+                           (uint)i,
+                           out SteamUGCDetails_t detail);
         
         //detail now contains all of the data for this item, do with it what you will
     }
     
     //We must release the handle when done reading it
-    API.UserGeneratedContent.Client.ReleaseQueryRequest(param.m_handle);
+    UGC.ReleaseQueryRequest(param.m_handle);
 }
 ```
 
@@ -198,6 +220,6 @@ Our UGC Query Manager does this fore you. You can simply incrament the page by c
 To get the list of subscirbed items e.g. items the user has indicated should be installed
 
 ```csharp
-var results = API.UserGeneratedContent.Client.GetSubscribedItems();
+var results = UGC.GetSubscribedItems();
 ```
 

@@ -29,7 +29,7 @@ Heathen's Steamworks represents your defined Steam Achievements as scriptable ob
 
 Heathen's Steamworks makes working with Steam Achievements as simple as possible.
 
-![](<../../../.gitbook/assets/image (176) (1).png>)
+![](<../../../.gitbook/assets/image (176) (1) (1).png>)
 
 Right from the Steam Settings object you import all of the Steam Achievements you defined in Valve's Steam Developer Portal.
 

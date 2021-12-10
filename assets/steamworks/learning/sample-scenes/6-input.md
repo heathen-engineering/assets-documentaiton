@@ -10,7 +10,7 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 
 This scene demonstrates the use of Steam Input API
 
-![](<../../../../.gitbook/assets/image (170).png>)
+![](<../../../../.gitbook/assets/image (170) (1).png>)
 
 It is important to understand what Steam Input is and how to properly configure it for your game.&#x20;
 

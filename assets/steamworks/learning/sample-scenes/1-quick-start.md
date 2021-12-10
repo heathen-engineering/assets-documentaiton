@@ -8,7 +8,7 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 
 This simple scene outlines the basic steps to get up and running with Steamworks.
 
-![](<../../../../.gitbook/assets/image (156).png>)
+![](<../../../../.gitbook/assets/image (156) (1).png>)
 
 ### What do I learn?
 

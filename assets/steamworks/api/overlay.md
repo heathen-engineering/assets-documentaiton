@@ -7,6 +7,10 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 ## Introduction
 
 ```csharp
+using API = HeathenEngineering.SteamworksIntegraiton.API;
+```
+
+```csharp
 public static class API.Overlay
 ```
 

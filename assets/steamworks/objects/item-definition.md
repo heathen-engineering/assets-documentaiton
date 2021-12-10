@@ -18,11 +18,42 @@ This document will not reiterate the Schema fields those are detailed in Valve's
 
 ## Fields and Attributes
 
-| Type              | Name          | Comment                                                                                                                                                                                                            |
-| ----------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| SteamItemDef\_t   | Id            | The id of the item and used by most API.Inventory interface features                                                                                                                                               |
-| List\<ItemDetail> | Details       | <p>A list of Steam Item Instance's of this item type owned by the local player.</p><p></p><p>This contains additional data about the item instance including ItemProperty[], dynamic properties and item tags.</p> |
-| long              | TotalQuantity | The sum of the quantities in each Item Detail                                                                                                                                                                      |
+| Type                                                 | Name                         | Comment                                                                                                                                                                                                            |
+| ---------------------------------------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| SteamItemDef\_t                                      | Id                           | The id of the item and used by most API.Inventory interface features                                                                                                                                               |
+| List<[ItemDetail](item-details.md)>                  | Details                      | <p>A list of Steam Item Instance's of this item type owned by the local player.</p><p></p><p>This contains additional data about the item instance including ItemProperty[], dynamic properties and item tags.</p> |
+| long                                                 | TotalQuantity                | The sum of the quantities in each Item Detail                                                                                                                                                                      |
+| [InventoryItemType](../enums/inventory-item-type.md) | item\_type                   | The type of item ... used when serializing                                                                                                                                                                         |
+| Language Variant Node                                | item\_name                   | the name of the item ... used when serializing                                                                                                                                                                     |
+| Language Variant Node                                | item\_description            | The description of the item ... used when serializing                                                                                                                                                              |
+| Language Variant Node                                | item\_display\_type          | The display type of the item ... used when serializing                                                                                                                                                             |
+| int                                                  | item\_itemdefid              | The unique ID of this item in this app ... used when serializing                                                                                                                                                   |
+| Bundle                                               | item\_bundle                 | The bundle definition for this item if any ... used when serializing                                                                                                                                               |
+| PromoRule                                            | item\_promo                  | The promotion defintion rules for this item if any ... used when serializing                                                                                                                                       |
+| string                                               | item\_drop\_start\_time      | The item drop start time if this is a promo item ... used when serializing                                                                                                                                         |
+| ExchangeCollection                                   | item\_exchange               | The exchange recipies for this item if any ... used when serializing                                                                                                                                               |
+| Price                                                | item\_price                  | The item price for this item if any ... used when serializing                                                                                                                                                      |
+| Color                                                | item\_background\_color      | The item backaground color ... used when serializing                                                                                                                                                               |
+| Color                                                | item\_name\_color            | The item name color ... used when serialzing                                                                                                                                                                       |
+| string                                               | item\_icon\_url              | The item icon URL if any ... used when serializing                                                                                                                                                                 |
+| string                                               | item\_icon\_url\_large       | The item large icon URL if any ... used when serialzing                                                                                                                                                            |
+| TagCollection                                        | item\_tags                   | The item tag collection if any ... used when serializing                                                                                                                                                           |
+| List\<ItemDefinition>                                | item\_tag\_generators        | The collection of related tag generators for this item if any ... used when serializing                                                                                                                            |
+| string                                               | item\_tag\_generator\_name   | The tag generator name if any ... used when serializing                                                                                                                                                            |
+| List\<string>                                        | item\_store\_tags            | Collection of store tags if any ... used when serializing                                                                                                                                                          |
+| List\<string>                                        | item\_store\_images          | Collection of image URLs for store images if any ... used when serializing                                                                                                                                         |
+| bool                                                 | item\_hidden                 | Is this a hidden item ... used when serializing                                                                                                                                                                    |
+| bool                                                 | item\_store\_hidden          | Is this item hidden in the store ...  used when serializing                                                                                                                                                        |
+| bool                                                 | item\_use\_drop\_limit       | Does this item use drop limit ... use when serializing                                                                                                                                                             |
+| uint                                                 | item\_drop\_limit            | used when serializing                                                                                                                                                                                              |
+| uint                                                 | item\_drop\_interval         | used when serializing                                                                                                                                                                                              |
+| bool                                                 | item\_use\_drop\_window      | used when serializing                                                                                                                                                                                              |
+| uint                                                 | item\_drop\_window           | used when serializing                                                                                                                                                                                              |
+| uint                                                 | item\_drop\_max\_per\_window | used when serializing                                                                                                                                                                                              |
+| bool                                                 | item\_granted\_manually      | used when serializing                                                                                                                                                                                              |
+| bool                                                 | item\_use\_bundle\_price     | used when serializing                                                                                                                                                                                              |
+| bool                                                 | item\_auto\_stack            | used when serializing                                                                                                                                                                                              |
+| ExtendedSchema                                       | item\_extendedSchema         | used when serializing                                                                                                                                                                                              |
 
 ## Methods
 
@@ -54,6 +85,18 @@ public bool Consume(order, callback);
 
 Consume 1 or many instances of this item if the player owns them
 
+### Can Exchange
+
+This method checks if a user can exchange for this item using a specific recipie. You can get the list of available recipies from the ItemDefinition.item\_exchange or you can create the recipie manually if you know the items needed.
+
+{% hint style="info" %}
+This will always return false if the recipie uses tags in any of the required items
+{% endhint %}
+
+```csharp
+public bool CanExchange(ExchangeRecipe, out List<ExchangeEntry>);
+```
+
 ### Get Exchange Entry
 
 ```csharp
@@ -64,8 +107,10 @@ Gets a set of ExchangeEntry objects that match the quantity provided if the play
 
 ### Exchange
 
+Exchanges a collection of ExchangeEntry for this item. The Valve backend will validate and insure that this set of ExchangeEntries satisifies one of the configured excahnge recipies for this item.
+
 ```csharp
-public void Exchange(exchangeEntries, callback);
+public void Exchange(IEnumerable<ExchangeEntry>, callback);
 ```
 
 Exchanges a set of ExchangeEntry objects to create a new instance of this item.
@@ -233,7 +278,32 @@ else
 }
 ```
 
+Exchange for a particular recipie;
+
+In this use case we pick a particular recipie for the item we want to exchange ... lets say we want to exchange 10 gold and 1 gem for a random item. Lets assue our random item is defined as an item generator named randomLoot;
+
+Lets allso assume that the recipie to do this is the first recipie in our randomLoot item.
+
+```csharp
+var recipie = randomLoot.item_exchange.recipie[0];
+
+if(randomLoot.CanExchange(recipie, out List<ExchangeEntry> entries))
+{
+    //This returns true if the local user owns the required items
+    //We can use the output entries to execute the exchange
+    randomLoot.Exchange(entries, (responce) =>
+    {
+        if(responce.result == EResult.k_EResultOK)
+            Debug.Log("Complete");
+        else
+            Debug.LogWarning("Something went wrong ... check the result");
+    });
+}
+```
+
 Exchange 10 iron and 50 gold for 1 ironSword;
+
+In this example we will manually build out the exchange entries checking each one as we go.
 
 ```csharp
 if(iron.GetExchangeEntry(10, out EchangeEntry[] ironEntries))

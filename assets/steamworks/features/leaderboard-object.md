@@ -40,4 +40,4 @@ Why?
 Valve have not provided an official means to do so through the Steam API.
 {% endhint %}
 
-![](<../../../.gitbook/assets/image (182).png>)
+![](<../../../.gitbook/assets/image (182) (1).png>)

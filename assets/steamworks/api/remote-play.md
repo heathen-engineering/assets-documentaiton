@@ -3,6 +3,10 @@
 ## Introduction
 
 ```csharp
+using API = HeathenEngineering.SteamworksIntegraiton.API;
+```
+
+```csharp
 public static class API.RemotePlay
 ```
 

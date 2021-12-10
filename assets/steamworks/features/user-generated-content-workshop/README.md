@@ -97,6 +97,6 @@ Enabling search, you could do this in a few ways but the simplest is to trigger 
 
 That said it can be nice to have a Search Button that on click performed the searched using the text contained in the InputField. The choice is up to you
 
-![](<../../../../.gitbook/assets/image (172).png>)
+![](<../../../../.gitbook/assets/image (172) (1).png>)
 
 Whatever your choice your UI should call the SearchAll method which takes a string as an input parameters. That string is the filter string used by Valve to narrow results.

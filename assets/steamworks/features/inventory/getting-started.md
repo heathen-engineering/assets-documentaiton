@@ -38,9 +38,9 @@ Creating new items is quick and easy simply click the "<mark style="color:green;
 
 Every Steam Inventory Schema feature is available but the inspector will hide ones that cannot be used with the currently selected type.
 
-![Normal items can be traded, mareted, sold, etc.](<../../../../.gitbook/assets/image (166).png>)
+![Normal items can be traded, mareted, sold, etc.](<../../../../.gitbook/assets/image (166) (1).png>)
 
-![Tag Generators only exist to attach to other items as generators](<../../../../.gitbook/assets/image (177).png>)
+![Tag Generators only exist to attach to other items as generators](<../../../../.gitbook/assets/image (177) (1).png>)
 
 ## **Step 3: Uploading the Schema**
 
@@ -81,7 +81,7 @@ The Inventory Item Definitions stored in your Steam Settings object act as an in
 
 For developers needing to test, you can use the Steamworks Inspector to inspect, grant and clear items from your inventory. This is particularly useful since you can not use Steam client to view items for a game that is not yet released so the only way to view your items before release is to use our tool.
 
-![](<../../../../.gitbook/assets/image (159) (1).png>)
+![](<../../../../.gitbook/assets/image (159) (1) (1).png>)
 
 
 
