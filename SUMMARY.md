@@ -64,7 +64,7 @@
     * [Maths](assets/physkit/api/maths.md)
     * [Mesh Tools](assets/physkit/api/mesh-tools.md)
   * [Components](assets/physkit/components/README.md)
-    * [Ballisitic Path](assets/physkit/components/ballisitic-path.md)
+    * [Ballistic Path](assets/physkit/components/ballistic-path.md)
     * [Buoyant Body](assets/physkit/components/buoyant-body.md)
     * [Buoyant Body Drag](assets/physkit/components/buoyant-body-drag.md)
     * [Constant Angular Velocity](assets/physkit/components/constant-angular-velocity.md)

@@ -10,7 +10,7 @@ Available in PhysKit [Complete](https://prf.hn/l/rpoyznk).
 
 ![](<../../../../.gitbook/assets/image (160).png>)
 
-This scene demonstrates the use of [Ballisitics.Raycast](../../api/ballistics.md#raycast) and the [BallisticsPath](../../components/ballisitic-path.md) component to perdict the path a thrown object will take including its bounce.
+This scene demonstrates the use of [Ballisitics.Raycast](../../api/ballistics.md#raycast) and the [BallisticsPath](../../components/ballistic-path.md) component to perdict the path a thrown object will take including its bounce.
 
 The Ballistic raycast method performs raycasts identifying any points of collision and returning the path that will be followed. The Ballistics Path componenet uses the path data to draw a line using Unity's built in line renderer that matchs this path.
 
