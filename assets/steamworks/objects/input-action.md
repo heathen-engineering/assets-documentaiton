@@ -163,7 +163,7 @@ label.Text = names[0];
 
 Input Actions are created as part of your [Steam Settings](steam-settings.md) object
 
-![](<../../../.gitbook/assets/image (160).png>)
+![](<../../../.gitbook/assets/image (160) (1).png>)
 
 ### Set Analog or Digital
 

@@ -8,7 +8,7 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 
 This scene demonstrates the use of Steam Leaderboard for setting and reading leaderboards at run time.
 
-![](<../../../../.gitbook/assets/image (157).png>)
+![](<../../../../.gitbook/assets/image (157) (1).png>)
 
 ### What do I learn?
 

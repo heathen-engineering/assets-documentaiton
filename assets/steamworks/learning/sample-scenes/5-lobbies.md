@@ -81,4 +81,5 @@ It is not a typical use case to type in a lobby ID but is used here to enable de
 
 ![Screen shot of the Example Populate Result List componenet on the Example Browser Game Object](<../../../../.gitbook/assets/image (153).png>)
 
-![Screen shot of the Lobby Display Record template referenced by the Example Browser](<../../../../.gitbook/assets/image (178).png>)
+![Screen shot of the Lobby Display Record template referenced by the Example Browser](<../../../../.gitbook/assets/image (178) (1).png>)
+

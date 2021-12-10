@@ -28,7 +28,7 @@ The [Voice Stream](../../components/voice-recorder.md#evtvoicestream) event gets
 
 ### [Voice Stream](../../components/voice-stream.md)
 
-![](<../../../../.gitbook/assets/image (187).png>)
+![](<../../../../.gitbook/assets/image (187) (1).png>)
 
 The [voice stream componenet](../../components/voice-stream.md) can be used to play back voice data produced by the voice recorded componenet. The intent is that your network system recieving voice data from a Voice Recorded would call the [Play Voice Data method](../../components/voice-stream.md#play-voice-data) on this componenet.
 

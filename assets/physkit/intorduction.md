@@ -34,12 +34,12 @@ Also called a dynamic bone the idea is that a skinned mesh can have extra bones 
 
 This is a common soluition for long flowing hair, dangling tokens on weapons, flexable weapons like whips and flails and soft bits on characters such as long ears, zombie jiblets, big bellies, breast, etc.
 
-![A Verlet Spring Hierarchy assigned to the bones in a pony tial hair mesh](<../../../../.gitbook/assets/image (159).png>)
+![A Verlet Spring Hierarchy assigned to the bones in a pony tial hair mesh](<../../.gitbook/assets/image (159).png>)
 
 ### Joints and Chains
 
 We offten want to add a bit of life to our props and environments. Verlet Spring can be used to drive any hierarchy of transforms working much like a chain of spring joints only with the ability to propigate changes along its length.
 
-![A Verlet Spring Hirarchy simulating a chain whipping around in a circle (1 Verlet Spring Sample scene)](<../../../../.gitbook/assets/image (170).png>)
+![A Verlet Spring Hirarchy simulating a chain whipping around in a circle (1 Verlet Spring Sample scene)](<../../.gitbook/assets/image (170).png>)
 
-![Rolling a ball through a field of a few hundred Verlet Springs](<../../../../.gitbook/assets/image (181).png>)
+![Rolling a ball through a field of a few hundred Verlet Springs](<../../.gitbook/assets/image (181).png>)

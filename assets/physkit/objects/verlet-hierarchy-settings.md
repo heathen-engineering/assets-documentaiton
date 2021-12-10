@@ -10,7 +10,7 @@ Used by the [Verlet Spring](../components/verlet-spring.md) componenet and relat
 
 You can apply settings to a Verlet Hierarchy either as a constant you type into the editor
 
-![example of settings applied as a "constant"](<../../../.gitbook/assets/image (156).png>)
+![example of settings applied as a "constant"](<../../../.gitbook/assets/image (157).png>)
 
 Or you can create settings as Scriptable Objects so you can easily reference those settings on mutliple systems
 
