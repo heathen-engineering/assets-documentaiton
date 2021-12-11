@@ -42,7 +42,7 @@ You can use the Stats tab to view and update the value of all registered stats
 
 ## Achievements
 
-![](<../../../.gitbook/assets/image (179).png>)
+![](<../../../.gitbook/assets/image (179) (1).png>)
 
 You can use the Achievements tab to view and unlock/reset all registered achievements
 
@@ -70,7 +70,7 @@ You can view the subscription status of all DLC in the DLC tab
 
 ## Inventory
 
-![](<../../../.gitbook/assets/image (164) (1).png>)
+![](<../../../.gitbook/assets/image (164) (1) (1).png>)
 
 The inventory tab will display all the items registered to your game and provides tools for clearing and granting each item
 

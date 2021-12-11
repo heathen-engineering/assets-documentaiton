@@ -24,7 +24,7 @@ API.StatsAndAchievements.Client.StoreStats();
 
 Stats work much like achievements however they cannot be imported from Valve directly so you must add your stats to your system manually.
 
-![](<../../../.gitbook/assets/image (188).png>)
+![](<../../../.gitbook/assets/image (188) (1).png>)
 
 Once you add a sate you need to provide its API name exactly as you created it in the Steam Developer Portal.
 
@@ -46,7 +46,7 @@ You can now drag the desired stat object from your Steam Setting into that slot.
 
 ![](<../../../.gitbook/assets/image (159) (1).png>)
 
-![](<../../../.gitbook/assets/image (161) (1) (1).png>)
+![](<../../../.gitbook/assets/image (161) (1) (1) (1).png>)
 
 Your script can now perform actions in relation to that stat
 

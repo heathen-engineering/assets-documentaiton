@@ -5,3 +5,13 @@ Available in PhysKit [Complete](https://prf.hn/l/rpoyznk).
 {% endhint %}
 
 ## Introduction
+
+Effectivly the same as the Attract Effect set to a mode of velocity change
+
+## Angular
+
+Pulls the facing direction toward the origin
+
+## Linear
+
+Pulls the position toward the origin

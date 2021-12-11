@@ -5,3 +5,31 @@ Available in PhysKit [Complete](https://prf.hn/l/rpoyznk).
 {% endhint %}
 
 ## Introduction
+
+![](<../../../.gitbook/assets/image (177).png>)
+
+Modifies the drag effect applied to a body based on the portion of that body that is submerged under a Surface Tool.
+
+## Fields and Attributes
+
+### Surface Linear Drag
+
+The amount of linear drag applied to the portion above the surface line
+
+### Subsurface Linear Drag
+
+The amount of linear drag applied to the portion below the surface line
+
+### Surface Angular Drag
+
+The amount of angular drag applied to the portion above the surface line
+
+### Subsurface Angular Drag
+
+The amount of angular drag applied to the portion below the surface line
+
+## Methods
+
+### Update Drag
+
+Updates the drag according the state of the body. this is called automatically by the attached [Buoyant Body](buoyant-body.md).

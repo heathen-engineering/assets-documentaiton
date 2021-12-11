@@ -13,7 +13,7 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 Create a new Steam Settings object in your project folder by right clicking in your project tab and selecting\
 **Create > Steamworks > Settings**
 
-![](<../../../.gitbook/assets/image (158) (1) (1).png>)
+![](<../../../.gitbook/assets/image (158) (1) (1) (1).png>)
 
 ## App Id
 
@@ -33,7 +33,7 @@ Valve issues you an App ID when you pay your application fee. If you don't have 
 
 Create a [Steamworks Behaviour](broken-reference) object in your [bootstrap scene](../../../company/concepts/bootstrap-scene.md) or similarly appropriate location; and drag your Steam Settings object into the provided field.
 
-![](<../../../.gitbook/assets/image (161) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (161) (1) (1) (1) (1).png>)
 
 Congratulations, you are now integrated with the Steam APIs. If you run the simulation, you will see that the Steam API initializes and is ready for use.
 

@@ -16,12 +16,12 @@ using HeathenEngineering.PhysKit.API;
 
 Used primarly by Force Effect Fields and Recievers this API manages global effects and is not intended for use by the developer.
 
-## Global Fields
+## Global
 
-You can access the active set of global force effect fields via
+You can access the active set of global effect sources via
 
 ```csharp
-API.ForceEffects.GlobalFields;
+API.ForceEffects.Global;
 ```
 
-This is a List of ForceEffectFields
+This is a List of ForceEffectSources that are currently active, ForceEffectSources add and remove them selves from this when enabled / disabled.

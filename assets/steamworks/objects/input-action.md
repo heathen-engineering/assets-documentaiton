@@ -173,4 +173,4 @@ AI represents "Analog Input"
 
 DI represents "Digital Input"
 
-![](<../../../.gitbook/assets/image (161).png>)
+![](<../../../.gitbook/assets/image (161) (1).png>)

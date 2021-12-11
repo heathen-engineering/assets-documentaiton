@@ -34,7 +34,7 @@ Also called a dynamic bone the idea is that a skinned mesh can have extra bones 
 
 This is a common soluition for long flowing hair, dangling tokens on weapons, flexable weapons like whips and flails and soft bits on characters such as long ears, zombie jiblets, big bellies, breast, etc.
 
-![A Verlet Spring Hierarchy assigned to the bones in a pony tial hair mesh](<../../.gitbook/assets/image (159).png>)
+![A Verlet Spring Hierarchy assigned to the bones in a pony tial hair mesh](<../../.gitbook/assets/image (161).png>)
 
 ### Joints and Chains
 
