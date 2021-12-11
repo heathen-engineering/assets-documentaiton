@@ -10,6 +10,12 @@ Available in PhysKit [Complete](https://prf.hn/l/rpoyznk).
 
 A Force Effect Source is a simple component behaviour that discribes the origin of a Force Effect. Two main types of Force Effect Soruces are provided and discribed in the articles below.
 
+### Related Topics
+
+{% embed url="https://kb.heathenengineering.com/assets/physkit/objects/force-effect" %}
+
+{% embed url="https://kb.heathenengineering.com/assets/physkit/components/force-effect-reciever" %}
+
 ## Custom Source
 
 The Force Effect system is highly customizable and extensable ... you can create a custom Force Effect Source by simply deriving from the ForceEffectSource behaviour.

@@ -12,7 +12,9 @@ Added to an object you want to have effected by a Force Effect Source. The recie
 
 ### Related Topics
 
+{% embed url="https://kb.heathenengineering.com/assets/physkit/objects/force-effect" %}
 
+{% embed url="https://kb.heathenengineering.com/assets/physkit/components/force-effect-source" %}
 
 ## Triggers
 

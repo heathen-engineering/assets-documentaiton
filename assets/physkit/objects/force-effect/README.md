@@ -20,6 +20,12 @@ This will create a new Scriptable Object which exposes any of the relivent confi
 
 Each effect has unique uses and configuration and is applied in a unique way ... the following articles discribe the effects included with the kit.
 
+### Related Topics
+
+{% embed url="https://kb.heathenengineering.com/assets/physkit/components/force-effect-source" %}
+
+{% embed url="https://kb.heathenengineering.com/assets/physkit/components/force-effect-reciever" %}
+
 ## Custom Effects
 
 The Force Effect system was designed to be high customizable. You can create your own unique types of Force Effects by creating a script that that derives from the ForceEffect calss.
