@@ -26,7 +26,7 @@ Each board can handle up to 64 details and no more than that
 
 If your marking your board as Create if Missing e.g. you have ticked the box as indiacted above then you should also set the display type and sorting order by selecting the leaderboard in your Steam Settings and editing its values.
 
-![](<../../../.gitbook/assets/image (153) (1) (1).png>)
+![](<../../../.gitbook/assets/image (153) (1) (1) (1).png>)
 
 {% hint style="danger" %}
 None is an available but invalid option for both settings
