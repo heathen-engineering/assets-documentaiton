@@ -57,6 +57,7 @@
     * [Core Concepts](assets/physkit/learning/core-concepts/README.md)
       * [Ballistic Trajectory](assets/physkit/learning/core-concepts/ballistic-trajectory.md)
       * [Buoyancy Tools](assets/physkit/learning/core-concepts/buoyancy-tools.md)
+      * [Force Effect Framework](assets/physkit/learning/core-concepts/force-effect-framework.md)
       * [Physics Data extended](assets/physkit/learning/core-concepts/physics-data-extended.md)
       * [Verlet Integration](assets/physkit/intorduction.md)
   * [API](assets/physkit/api/README.md)
