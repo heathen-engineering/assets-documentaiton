@@ -30,6 +30,104 @@ The Authentication interface can be used to generate and validate session ticket
 
 {% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/authentication-ticket" %}
 
+## Fields and Attributes
+
+### Active Tickets
+
+[Tickets](../objects/authentication-ticket.md) this player has sent out.
+
+```csharp
+public static List<AuthenticationTicket> ActiveTickets;
+```
+
+### Active Sessions
+
+[Sessions](../objects/authentication-session.md) the player has started.
+
+```csharp
+public static List<AuthenticationSession> ActiveSessions;
+```
+
+## Methods
+
+### IsAuthTicketValid
+
+Determins if the provided ticket handle is valid
+
+```csharp
+public static bool IsAuthTicketValid(AuthenticationTicket ticket);
+```
+
+### EncodedAuthTicket
+
+Encodes a ticekt to hex string format
+
+This is most commonly used with web calls such as [https://partner.steamgames.com/doc/webapi/ISteamUserAuth#AuthenticateUserTicket](https://partner.steamgames.com/doc/webapi/ISteamUserAuth#AuthenticateUserTicket)
+
+```csharp
+public static string EncodedAuthTicket(AuthenticationTicket ticket);
+```
+
+### GetAuthSessionTicket
+
+Requests a new Auth Session Ticket
+
+```csharp
+public static void GetAuthSessionTicket(
+        Action<AuthenticationTicket, bool> callback);
+```
+
+### CancelAuthTicket
+
+Cancels the auth ticket rather its client or server based.
+
+```csharp
+public static void CancelAuthTicket(AuthenticationTicket ticket);
+```
+
+### BeginAuthSession
+
+Starts an authorization session with the indicated user given the applied auth ticket
+
+```csharp
+public static void BeginAuthSession(byte[] authTicket, 
+                                CSteamID user, 
+                                Action<AuthenticationSession> callback);
+```
+
+### EndAuthSession
+
+Ends the auth session with the indicated user if any
+
+```csharp
+public static void EndAuthSession(CSteamID user);
+```
+
+### UserHasLicenseForApp
+
+Checks if the user owns a specific piece of Downloadable Content (DLC).
+
+```csharp
+public static EUserHasLicenseForAppResult UserHasLicenseForApp(CSteamID user,
+                                                                AppId_t appId);
+```
+
+### EndAllSessions
+
+Ends all tracked sessions
+
+```csharp
+public static void EndAllSessions();
+```
+
+### CancelAllTickets
+
+Cancels all tracked tickets
+
+```csharp
+public static void CancelAllTickets();
+```
+
 ## How To
 
 ### Get a new ticket
