@@ -20,6 +20,32 @@ The whole of the inventory system is only accessable from the Client API as a re
 API.Inventory.Client
 ```
 
+{% hint style="info" %}
+TIP
+
+\
+Save your self some typing. add this using statement to the top of any script that will need to use this API.
+
+```csharp
+using Inventory = HeathenEngineering.Steamworks.API.Inventory.Client;
+```
+
+\
+You can now access members in this API with a shorter call structure
+
+```csharp
+Inventory.AddPromoItem(item, callback);
+```
+
+
+
+as opposed to the long form:
+
+```csharp
+API.Inventory.Client.AddPromoItem(item, callback);
+```
+{% endhint %}
+
 To work with inventory from the point of view of a server you should use the Steam Web API for inventory.
 
 {% embed url="https://partner.steamgames.com/doc/webapi/IInventoryService" %}
@@ -65,6 +91,468 @@ See [Steam Inventory Service](https://partner.steamgames.com/doc/features/invent
 {% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/item-property" %}
 
 {% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/item-tag" %}
+
+### Understanding Callbacks
+
+A callback is a deligate similar to a UnityEvent, that is its a pointer to a method that will be called at some later point ... in the case of Steam methods it gets called when the process completes.
+
+To learn more please read the article on [Callbacks](../../../company/concepts/callbacks.md) and on [Lambda Expressions](../../../company/concepts/lambda-expressions.md).
+
+## Events
+
+### EventSteamInventoryDefinitionUpdate
+
+Triggered whenever item definitions have been updated, which could be in response to LoadItemDefinitions or any time new item definitions are available (eg, from the dynamic addition of new item types while players are still in-game).
+
+You would add a listener on this event such as:
+
+Assuming a handler in the form of
+
+```csharp
+private void HandleEvent()
+{
+}
+```
+
+Then you would register the event such as:
+
+```csharp
+API.App.Client.EventSteamInventoryDefinitionUpdate.AddListener(HandleEvent);
+```
+
+When you no longer need this handler you should remove it for example when the behviour using it is destroyed
+
+```csharp
+void OnDestroy()
+{
+    API.Inventory.Client.EventSteamInventoryDefinitionUpdate.RemoveListener(HandleEvent);
+}
+```
+
+### EventSteamInventoryResultReady
+
+This is fired whenever an inventory result transitions from k\_EResultPending to any other completed state, see GetResultStatus for the complete list of states. There will always be exactly one callback per handle.
+
+You would add a listener on this event such as:
+
+Assuming a handler in the form of
+
+```csharp
+private void HandleEvent(InventoryResult result)
+{
+}
+```
+
+Then you would register the event such as:
+
+```csharp
+API.App.Client.EventSteamInventoryResultReady.AddListener(HandleEvent);
+```
+
+When you no longer need this handler you should remove it for example when the behviour using it is destroyed
+
+```csharp
+void OnDestroy()
+{
+    API.Inventory.Client.EventSteamInventoryResultReady.RemoveListener(HandleEvent);
+}
+```
+
+## Methods
+
+### AddPromoItem
+
+Grant a specific one-time promotional item to the current user.
+
+This can be safely called from the client because the items it can grant can be locked down via policies in the itemdefs. One of the primary scenarios for this call is to grant an item to users who also own a specific other game. This can be useful if your game has custom UI for showing a specific promo item to the user otherwise if you want to grant multiple promotional items then use AddPromoItems or GrantPromoItems.
+
+Any items that can be granted MUST have a "promo" attribute in their itemdef. That promo item list a set of APPIDs that the user must own to be granted this given item. This version will grant all items that have promo attributes specified for them in the configured item definitions. This allows adding additional promotional items without having to update the game client. For example the following will allow the item to be granted if the user owns either TF2 or SpaceWar.
+
+```csharp
+public static bool AddPromoItem(SteamItemDef_t itemDef, 
+                                Action<InventoryResult> callback)
+```
+
+### AddPromoItems
+
+Grant a specific one-time promotional item to the current user.
+
+This can be safely called from the client because the items it can grant can be locked down via policies in the itemdefs. One of the primary scenarios for this call is to grant an item to users who also own a specific other game. If you want to grant a single promotional item then use AddPromoItem. If you want to grant all possible promo items then use GrantPromoItems.
+
+Any items that can be granted MUST have a "promo" attribute in their itemdef. That promo item list a set of APPIDs that the user must own to be granted this given item. This version will grant all items that have promo attributes specified for them in the configured item definitions. This allows adding additional promotional items without having to update the game client. For example the following will allow the item to be granted if the user owns either TF2 or SpaceWar.
+
+```csharp
+public static bool AddPromoItems(ItemDefinition item, 
+                                Action<InventoryResult> callback)
+```
+
+```csharp
+public static bool AddPromoItems(SteamItemDef_t[] itemDefs, 
+                                Action<InventoryResult> callback)
+```
+
+```csharp
+public static bool AddPromoItems(ItemDefinition[] items, 
+                                Action<InventoryResult> callback)
+```
+
+```csharp
+public static bool AddPromoItems(IEnumerable<SteamItemDef_t> itemDefs, 
+                                Action<InventoryResult> callback)
+```
+
+### CheckResultSteamID
+
+Checks whether an inventory result handle belongs to the specified Steam ID.
+
+{% hint style="warning" %}
+This is important when using [Deserialize Results](inventory.md#undefined), to verify that a remote player is not pretending to have a different user's inventory.
+{% endhint %}
+
+```csharp
+public static bool CheckResultSteamID(SteamInventoryResult_t resultHandle, 
+                                      CSteamID steamIDExpected)
+```
+
+### Consume Item
+
+Consumes items from a user's inventory. If the quantity of the given item goes to zero, it is permanently removed.
+
+{% hint style="danger" %}
+Once an item is removed it cannot be recovered.&#x20;
+
+This is not for the faint of heart - if your game implements item removal at all, a high-friction UI confirmation process is highly recommended.
+{% endhint %}
+
+```csharp
+public static void ConsumeItem(SteamItemInstanceID_t itemConsume, 
+                               uint quantity, 
+                               Action<InventoryResult> callback)
+```
+
+### Deserialize Results
+
+Deserializes a result set and verifies the signature bytes.\
+\
+This call has a potential soft-failure mode where the handle status is set to [k\_EResultExpired](https://partner.steamgames.com/doc/api/steam\_api#k\_EResultExpired). [Get Result Items](inventory.md#get-result-items) will still succeed in this mode. The "expired" result could indicate that the data may be out of date - not just due to timed expiration (one hour), but also because one of the items in the result set may have been traded or consumed since the result set was generated. You could compare the timestamp from [Get Result Timestamp](inventory.md#undefined) to [ISteamUtils::GetServerRealTime](https://partner.steamgames.com/doc/api/ISteamUtils#GetServerRealTime) to determine how old the data is. You could simply ignore the "expired" result code and continue as normal, or you could request the player with expired data to send an updated result set.\
+\
+You should call [Check Result Steam ID](inventory.md#check-result-steam-id) on the result handle when it completes to verify that a remote player is not pretending to have a different user's inventory.
+
+```csharp
+public static void DeserializeResult(byte[] buffer, 
+                                Action<InventoryResult> callback)
+```
+
+### DestroyResult
+
+Destroys a result handle and frees all associated memory.
+
+{% hint style="danger" %}
+This only needs to be called if you are manually handling results ... which should not be happening if your using Heathen's Steamworks.
+
+
+
+This is only provided for completness of the API to enable deep customization for those who wish to do so.
+{% endhint %}
+
+```csharp
+public static void DestroyResult(SteamInventoryResult_t resultHandle)
+```
+
+### ExchangeItems
+
+Grant one item in exchange for a set of other items.
+
+This can be used to implement crafting recipes or transmutations, or items which unpack themselves into other items (e.g., a chest).
+
+The caller of this API passes in the requested item and an array of existing items and quantities to exchange for it. The API currently takes an array of items to generate but at this time the size of that array must be 1 and the quantity of the new item must be 1.
+
+Any items that can be granted MUST have an exchange attribute in their itemdef. The exchange attribute specifies a set of recipes that are valid exchanges for this item. Exchange recipes are evaluated atomically by the Inventory Service; if the supplied components do not match the recipe, or do not contain sufficient quantity, the exchange will fail.
+
+{% hint style="warning" %}
+It is much simpler to handle this feature through the Item Defenition object.
+
+
+
+This is included in the API for completness sake
+{% endhint %}
+
+```csharp
+public static void ExchangeItems(SteamItemDef_t generate, 
+                                SteamItemInstanceID_t[] destroy, 
+                                uint[] destroyQuantity, 
+                                Action<InventoryResult> callback)
+```
+
+### GenerateItems
+
+{% hint style="warning" %}
+For developer use only, this will only work if the authenticated Steam user is a member of the development team for this app.
+{% endhint %}
+
+Grants specific items to the current user, for developers only.
+
+This API is only intended for prototyping - it is only usable by Steam accounts that belong to the publisher group for your game.
+
+```csharp
+public static void GenerateItems(SteamItemDef_t[] itemDefs, 
+                                uint[] quantity, 
+                                Action<InventoryResult> callback)
+```
+
+### GetAllItems
+
+Start retrieving all items in the current users inventory.
+
+{% hint style="info" %}
+Calls to this function are subject to rate limits and may return cached results if called too frequently. It is suggested that you call this function only when you are about to display the user's full inventory, or if you expect that the inventory may have changed.
+{% endhint %}
+
+```csharp
+public static void GetAllItems(Action<InventoryResult> callback = null)
+```
+
+### GetEligiblePromoItemIDs
+
+Request the list of "eligible" promo items that can be manually granted to the given user.
+
+These are promo items of type "manual" that won't be granted automatically. An example usage of this is an item that becomes available every week.
+
+```csharp
+public static void GetEligiblePromoItemDefinitionIDs(CSteamID userId, 
+                                Action<SteamItemDef_t[], bool> callback)
+```
+
+### GetItemDefiinitionIDs
+
+Returns the set of all item definition IDs which are defined in the App Admin panel of the Steamworks website.\
+\
+These item definitions may not necessarily be contiguous integers.\
+\
+This should be called in response to a [SteamInventoryDefinitionUpdate\_t](https://partner.steamgames.com/doc/api/ISteamInventory#SteamInventoryDefinitionUpdate\_t) callback. There is no reason to call this function if your game hardcodes the numeric definition IDs (eg, purple face mask = 20, blue weapon mod = 55) and does not allow for adding new item types without a client patch.
+
+```csharp
+public static bool GetItemDefinitionIDs(out SteamItemDef_t[] results)
+```
+
+### GetItemDefinitionProperty
+
+Gets a property value for a specific item definition.
+
+Note that some properties (for example, "name") may be localized and will depend on the current Steam language settings (see ISteamApps::GetCurrentGameLanguage). Property names are always ASCII alphanumeric and underscores.
+
+```csharp
+public static string GetItemDefinitionProperty(SteamItemDef_t item, 
+                                               string propertyName)
+```
+
+### GetItemDefinitionProperties
+
+Returns a list of the avilable properties on a given item
+
+```csharp
+public static string[] GetItemDefinitionProperties(SteamItemDef_t item)
+```
+
+### GetItemsByID
+
+Gets the state of a subset of the current user's inventory.
+
+```csharp
+public static void GetItemsByID(SteamItemInstanceID_t[] instanceIds, 
+                                Action<InventoryResult> callback = null)
+```
+
+### GetItemPrice
+
+After a successful call to RequestPrices, you can call this method to get the pricing for a specific item definition.
+
+```csharp
+public static bool GetItemPrice(SteamItemDef_t item, 
+                                out ulong currentPrice, 
+                                out ulong basePrice)
+```
+
+### GetItemsWithPrices
+
+After a successful call to RequestPrices, you can call this method to get all the pricing for applicable item definitions.
+
+```csharp
+public static bool GetItemsWithPrices(out SteamItemDef_t[] items, 
+                                out ulong[] currentPrices, 
+                                out ulong[] basePrices)
+```
+
+### GetResultItemProperty
+
+Gets the dynamic properties from an item in an inventory result set.
+
+```csharp
+public static bool GetResultItemProperty(SteamInventoryResult_t resultHandle, 
+                                uint itemIndex, 
+                                string propertyName, 
+                                out string valueBuffer, 
+                                ref uint bufferSize)
+```
+
+### GetResultItems
+
+Get the items associated with an inventory result handle.
+
+```csharp
+public static bool GetResultItems(SteamInventoryResult_t resultHandle, 
+                                SteamItemDetails_t[] items, 
+                                ref uint count)
+```
+
+### GetResultTimestamp
+
+Gets the server time at which the result was generated.
+
+```csharp
+public static DateTime GetResultTimestamp(SteamInventoryResult_t resultHandle)
+```
+
+### GrantPromoItems
+
+Grant all potential one-time promotional items to the current user.
+
+```csharp
+public static bool GrantPromoItems(Action<InventoryResult> callback = null)
+```
+
+### LoadItemDefinitions
+
+Triggers an asynchronous load and refresh of item definitions.
+
+```csharp
+public static bool LoadItemDefinitions()
+```
+
+### RequestPrices
+
+Request prices for all item definitions that can be purchased in the user's local currency. A SteamInventoryRequestPricesResult\_t call result will be returned with the user's local currency code. After that, you can call GetNumItemsWithPrices and GetItemsWithPrices to get prices for all the known item definitions, or GetItemPrice for a specific item definition.
+
+```csharp
+public static void RequestPrices(
+        Action<SteamInventoryRequestPricesResult_t, bool> callback)
+```
+
+### SerializeItemResultsByID
+
+Gets the state of a subset of the current user's inventory and serializes the data.
+
+```csharp
+public static void SerializeItemResultsByID(SteamItemInstanceID_t[] instanceIds, 
+                                Action<byte[]> callback)
+```
+
+### SerializeAllItemResults
+
+Start retrieving all items in the current users inventory and serializes the data.
+
+```csharp
+public static void SerializeAllItemResults(Action<byte[]> callback)
+```
+
+### StartPurchase
+
+Starts the purchase process for the user, given a "shopping cart" of item definitions that the user would like to buy. The user will be prompted in the Steam Overlay to complete the purchase in their local currency, funding their Steam Wallet if necessary, etc.
+
+```csharp
+public static void StartPurchase(SteamItemDef_t[] items, 
+        uint[] quantities, 
+        Action<SteamInventoryStartPurchaseResult_t, bool> callback)
+```
+
+### TransferItemQuantity
+
+Transfer items between stacks within a user's inventory.
+
+```csharp
+public static void TransferItemQuantity(SteamItemInstanceID_t source, 
+        uint quantity, 
+        SteamItemInstanceID_t destination, 
+        Action<InventoryResult> callback)
+```
+
+### TriggerItemDrop
+
+Trigger an item drop if the user has played a long enough period of time.
+
+```csharp
+public static void TriggerItemDrop(SteamItemDef_t item, 
+        Action<InventoryResult> callback)
+```
+
+### StartUpdateProperties
+
+Starts a transaction request to update dynamic properties on items for the current user. This call is rate-limited by user, so property modifications should be batched as much as possible (e.g. at the end of a map or game session). After calling SetProperty or RemoveProperty for all the items that you want to modify, you will need to call SubmitUpdateProperties to send the request to the Steam servers. A SteamInventoryResultReady\_t callback will be fired with the results of the operation.
+
+```csharp
+public static SteamInventoryUpdateHandle_t StartUpdateProperties()
+```
+
+### SubmitUpdateProperties
+
+Submits the transaction request to modify dynamic properties on items for the current user. See StartUpdateProperties.
+
+```csharp
+public static void SubmitUpdateProperties(SteamInventoryUpdateHandle_t handle, 
+        Action<InventoryResult> callback)
+```
+
+### RemoveProperty
+
+Removes a dynamic property for the given item.
+
+```csharp
+public static void RemoveProperty(SteamInventoryUpdateHandle_t handle, 
+                                SteamItemInstanceID_t item, 
+                                string propertyName)
+```
+
+### SetProperty
+
+Sets a dynamic property for the given item. Supported value types are strings, boolean, 64 bit integers, and 32 bit floats.
+
+```csharp
+public static void SetProperty(SteamInventoryUpdateHandle_t handle, 
+                SteamItemInstanceID_t item, 
+                string propertyName, 
+                string data)
+```
+
+```csharp
+public static void SetProperty(SteamInventoryUpdateHandle_t handle, 
+                SteamItemInstanceID_t item, 
+                string propertyName, 
+                bool data)
+```
+
+```csharp
+public static void SetProperty(SteamInventoryUpdateHandle_t handle, 
+                SteamItemInstanceID_t item, 
+                string propertyName, 
+                long data)
+```
+
+```csharp
+public static void SetProperty(SteamInventoryUpdateHandle_t handle, 
+                SteamItemInstanceID_t item, 
+                string propertyName, 
+                float data)
+```
+
+### GetExtendedItemDetail
+
+Constructs an [ItemDetail](../objects/item-details.md) object based on a native SteamItemDetails\_t object and its source result list
+
+```csharp
+public static ItemDetail GetExtendedItemDetail(SteamInventoryResult_t result, 
+                                uint index, 
+                                SteamItemDetails_t detail)
+```
 
 ## How To
 
