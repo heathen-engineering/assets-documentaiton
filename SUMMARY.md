@@ -206,6 +206,7 @@
     * [User Leave Data](assets/steamworks/objects/user-leave-data.md)
     * [User Lobby Leave Data](assets/steamworks/objects/user-lobby-leave-data.md)
     * [Workshop Item Data](assets/steamworks/objects/workshop-item-data.md)
+    * [Workshop Item Data Create Status](assets/steamworks/objects/workshop-item-data-create-status.md)
     * [Workshop Item Key Value Tag](assets/steamworks/objects/workshop-item-key-value-tag.md)
     * [Workshop Item Preview File](assets/steamworks/objects/workshop-item-preview-file.md)
   * [Enums](assets/steamworks/enums/README.md)
