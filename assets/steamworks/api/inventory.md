@@ -117,7 +117,7 @@ private void HandleEvent()
 Then you would register the event such as:
 
 ```csharp
-API.App.Client.EventSteamInventoryDefinitionUpdate.AddListener(HandleEvent);
+API.Inventory.Client.EventSteamInventoryDefinitionUpdate.AddListener(HandleEvent);
 ```
 
 When you no longer need this handler you should remove it for example when the behviour using it is destroyed
@@ -146,7 +146,7 @@ private void HandleEvent(InventoryResult result)
 Then you would register the event such as:
 
 ```csharp
-API.App.Client.EventSteamInventoryResultReady.AddListener(HandleEvent);
+API.Inventory.Client.EventSteamInventoryResultReady.AddListener(HandleEvent);
 ```
 
 When you no longer need this handler you should remove it for example when the behviour using it is destroyed
