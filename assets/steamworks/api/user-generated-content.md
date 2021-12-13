@@ -48,9 +48,19 @@ Create, download, browse and edit Steam UGC files aka Steam Workshop.
 
 ### Related Obejcts
 
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/components/ugc-query-manager" %}
 
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/ugc-query" %}
 
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/ugc-read-community-item" %}
 
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/workshop-item-data" %}
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/workshop-item-data-create-status" %}
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/workshop-item-key-value-tag" %}
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/workshop-item-preview-file" %}
 
 ## Events
 
@@ -68,13 +78,41 @@ Called when a workshop item has been installed or updated
 
 Creating a new item can be done in one of two ways.
 
-One liner
+#### One liner
 
 ```csharp
 UGC.CreateItem(itemdata, callback);
 ```
 
-Step by step
+When using the 1 liner approch you will first create a [Workshop Item Data](../objects/workshop-item-data.md) object. This object defines the item you wish to create e.g. its name, description, content folder, etc.
+
+The callback for this method is a deligate that takes 1 paramiter of type [Workshop Item Data Create Status](../objects/workshop-item-data-create-status.md).
+
+Example:
+
+Assuming a method such as
+
+```csharp
+public void Foo(WorkshopItemDataCreateStats status)
+{
+    if(!status.hasError)
+        //Do Work
+    else
+        //Something bad happened
+}
+```
+
+Then you can call the method such as
+
+```csharp
+UGC.CreateItem(itemdata, Foo);
+```
+
+To learn more about [callbacks](../../../company/concepts/callbacks.md) please read the related article.
+
+The status returned to the callback will indicate the status of the operation. Note that hte operation occurs in two stages. First a blank item is created and then once that has been found successful that blank item will be updated with the content and settings indicated thus it is possible for a blank item to be created but for the update to fail. Please see the [results](../objects/workshop-item-data-create-status.md#createitemresult) in the status object for more details.
+
+#### Step by step
 
 ```csharp
 UGC.CreateItem(appId, callback);
