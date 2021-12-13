@@ -1,5 +1,5 @@
 ---
-description: Advanced physics related tools made easy for the Unity game engine.
+description: Bring life to your game with Heathen's PhysKit.
 ---
 
 # PhysKit
@@ -9,6 +9,36 @@ description: Advanced physics related tools made easy for the Unity game engine.
 ## Asset Store
 
 {% embed url="https://assetstore.unity.com/packages/tools/physics/physkit-complete-122368" %}
+
+{% embed url="https://prf.hn/l/7ADNmyR" %}
+
+## Introuction
+
+![](<../../.gitbook/assets/PhysKitMEDIA (1).png>)
+
+PhysKit is a collection of physics focused APIs, componenets and tools providing stable easy to use solutions to common physics simulation needs.
+
+All PhysKit features are designed to be light weight, modular and work along side Unity's built in tools and features not replace them.
+
+### Key Features
+
+[Verlet Spring](intorduction.md)
+
+Add dynamic physics bsed motion to transforms and armature bones
+
+{% embed url="https://kb.heathenengineering.com/assets/physkit/learning/core-concepts/intorduction" %}
+
+[Ballistics](learning/core-concepts/ballistic-trajectory.md)
+
+Solve, perdict and raycast ballistic (parabolic) trajectory
+
+{% embed url="https://kb.heathenengineering.com/assets/physkit/learning/core-concepts/ballistic-trajectory" %}
+
+[Force Effects](learning/core-concepts/force-effect-framework.md)
+
+Create sphrical gravity, tractor beams, wind fields and more
+
+{% embed url="https://kb.heathenengineering.com/assets/physkit/learning/core-concepts/force-effect-framework" %}
 
 ## Feature Comparison
 
