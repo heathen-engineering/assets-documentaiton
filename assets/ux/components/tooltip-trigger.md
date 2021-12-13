@@ -3,7 +3,7 @@
 ## Introduction
 
 {% hint style="info" %}
-Part of the [Tooltip System](../features/tooltips.md) of the UX Complete asset.
+Part of the [Tooltip System](../learning/core-concepts/tooltips.md) of the UX Complete asset.
 {% endhint %}
 
 A tooltip trigger indicates when a tooltip should be shown and then subsaquently hidden. Tooltip Trigger is available in the following forms

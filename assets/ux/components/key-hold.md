@@ -11,7 +11,7 @@ You can use Action Hold if your using the new Input System
 ## Introduction
 
 {% hint style="info" %}
-Part of the [Interaction Tools](../features/interaction-tools.md) of the UX Complete asset
+Part of the [Interaction Tools](../learning/core-concepts/interaction-tools.md) of the UX Complete asset
 {% endhint %}
 
 Ever play a game that asked you to push an hold a button for some period of time to activate the action?

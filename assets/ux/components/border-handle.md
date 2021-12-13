@@ -7,7 +7,7 @@ description: Get a handle on window size
 ## Introduction
 
 {% hint style="info" %}
-Part of the [Window System](../features/window-tools.md) of the UX Complete asset
+Part of the [Window System](../learning/core-concepts/window-tools.md) of the UX Complete asset
 {% endhint %}
 
 Meant to be added to a Unity uGUI object or similar element on a Window. This expects to be the child of a window and can be at any depth you like. Its rect is what will respond to pointer input annd manage the resize operations of the parent window.

@@ -3,7 +3,7 @@
 ## Introduction
 
 {% hint style="info" %}
-Part of the [Interaction Tools](../features/interaction-tools.md) of the UX Complete asset
+Part of the [Interaction Tools](../learning/core-concepts/interaction-tools.md) of the UX Complete asset
 {% endhint %}
 
 A simple componenet which plays an audio clip when a mouse up is detected. This uses Unity's IPointerUpHandler to detect when a pointer up occurs and what buttons where involved with it if any.

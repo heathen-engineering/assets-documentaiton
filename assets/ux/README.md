@@ -12,7 +12,31 @@ The UX articles are a work in progress and being updated frequently. If you have
 
 ## Introduction
 
+![](<../../.gitbook/assets/Splash Screen.png>)
+
 Heathen’s UX product enable you to deliver a richer, more robust, and more polished experiences to your customers and does so while saving you significant time in development in testing. Heathen’s UX support you and your project with flexible, battle tested tools and systems that are both easy to use and easy to extend and customize. UX is built on top of Heathen’s System Core, comes with full source code, detailed documentation, a large community and of course Heathen’s support and on-going development.
+
+### Key Features
+
+[Drag and Drop](learning/core-concepts/drag-and-drop-system.md)
+
+Create smart drag and drop systems with simple masks and filters code free
+
+[Animated Cursor](learning/core-concepts/cursor-tools.md)
+
+Create context sinsative animated mouse cursors with zero code
+
+[Tooltip System](learning/core-concepts/tooltips.md)
+
+Create tooltips, popups and cascade windows with easy to use triggers
+
+[Window System](learning/core-concepts/window-tools.md)&#x20;
+
+Create UI windows that can be daged, resized, docked and more
+
+[Advanced Log](learning/core-concepts/feedback-tools.md)
+
+Gather detailed data in a serializable formate great for use with tools like Unity's Feedback, Zendesk Unity integration, Trello integraiton and more.
 
 ## UX v2 vs V1
 
@@ -40,22 +64,22 @@ Foundation is included with all extension packs and is all that is required to u
 In otherwords UX, UI Themes and our uGUI Extensions are standalone and do not require additional purchase.
 {% endhint %}
 
-| Features                                                 | Foundation | Complete |
-| -------------------------------------------------------- | ---------- | -------- |
-| [System Core](../system-core/)                           | ✔          | ✔        |
-| [Cursor System](features/cursor-tools.md)                | ✔          | ✔        |
-| [Command System](features/command-system.md)             | ✔          | ✔        |
-| [Drag and Drop System](features/drag-and-drop-system.md) |            | ✔        |
-| [Interaction Tools](features/interaction-tools.md)       |            | ✔        |
-| [Logging and Feedback Tools](features/feedback-tools.md) |            | ✔        |
-| [Scene Management Tool](features/scenes-management.md)   |            | ✔        |
-| [Screenshot Tool](api/screenshot.md)                     |            | ✔        |
-| [Selection System](features/selection-system.md)         |            | ✔        |
-| [Tooltip System](features/tooltips.md)                   |            | ✔        |
-| [Trello Integration](api/trello.md)                      |            | ✔        |
-| [Window System](features/window-tools.md)                |            | ✔        |
+| Features                                                               | Foundation | Complete |
+| ---------------------------------------------------------------------- | ---------- | -------- |
+| [System Core](../system-core/)                                         | ✔          | ✔        |
+| [Cursor System](learning/core-concepts/cursor-tools.md)                | ✔          | ✔        |
+| [Command System](learning/core-concepts/command-system.md)             | ✔          | ✔        |
+| [Drag and Drop System](learning/core-concepts/drag-and-drop-system.md) |            | ✔        |
+| [Interaction Tools](learning/core-concepts/interaction-tools.md)       |            | ✔        |
+| [Logging and Feedback Tools](learning/core-concepts/feedback-tools.md) |            | ✔        |
+| [Scene Management Tool](learning/core-concepts/scenes-management.md)   |            | ✔        |
+| [Screenshot Tool](api/screenshot.md)                                   |            | ✔        |
+| [Selection System](learning/core-concepts/selection-system.md)         |            | ✔        |
+| [Tooltip System](learning/core-concepts/tooltips.md)                   |            | ✔        |
+| [Trello Integration](api/trello.md)                                    |            | ✔        |
+| [Window System](learning/core-concepts/window-tools.md)                |            | ✔        |
 
-### [uGUI Extras](features/ugui-extras/)
+### [uGUI Extras](learning/ugui-extras/)
 
 {% hint style="warning" %}
 uGUI Extras (and by extension Key Collection) is no longer included in the Complete package.&#x20;
@@ -72,11 +96,11 @@ uGUI Extras contains all the required code to work, you do not need to purchase 
 
 uGUI Extras is an extension of UX Foundation that adds uGUI based tools and controls including:
 
-#### [Key Collection](features/ugui-extras/key-collection.md)
+#### [Key Collection](learning/ugui-extras/key-collection.md)
 
 Formerly known as On-Screen Keyboard this tool helps you create and manage collections of buttons simulating virtual keyboards, alliance computer consoles, in game security pads and much more. The control can handle any string output that Unity is capable of rendering including all human languages and any fictional language that can be expressed as simple characters and or ligatures.
 
-#### [Tree View](features/ugui-extras/tree-view.md)
+#### [Tree View](learning/ugui-extras/tree-view.md)
 
 A simple tool for creating and managing a tree view control where each node in the tree view will be expressed as a uGUI GameObject.
 

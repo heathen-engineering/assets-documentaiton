@@ -10,15 +10,15 @@ description: Getting to know the Heathen selection system
 Available in UX [Complete](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)
 {% endhint %}
 
-UX provides an easy to use, flexable, searchable multi-select system. Read more about the [API.Selection](../api/selection.md) interface in its API article.
+UX provides an easy to use, flexable, searchable multi-select system. Read more about the [API.Selection](../../api/selection.md) interface in its API article.
 
 ## Concepts
 
-### [Selectable Object](../components/selectable-object.md)
+### [Selectable Object](../../components/selectable-object.md)
 
-A selectable object is simply any game object which includes the [Selectable Object](../components/selectable-object.md) componenet. This component exposes the [Scriptable Tag](../../system-core/scriptable-tags.md) system, a selection changed event and provides easy access to check for and change the selection state of the object its attached to.
+A selectable object is simply any game object which includes the [Selectable Object](../../components/selectable-object.md) componenet. This component exposes the [Scriptable Tag](../../../system-core/scriptable-tags.md) system, a selection changed event and provides easy access to check for and change the selection state of the object its attached to.
 
-[Selectable Objects](../components/selectable-object.md) at start will register them selves with the [API.Selection](../api/selection.md) interface and deregister them selves on destroy. This means you can search for selectable objects in a more efficent manner than simply searching all game objects. The API.Selection interface also stores a collection of the currently selected Selectable Objects. You can use the API.Selection interface to search all Selectable Objects or limit your search to only those that are selected.
+[Selectable Objects](../../components/selectable-object.md) at start will register them selves with the [API.Selection](../../api/selection.md) interface and deregister them selves on destroy. This means you can search for selectable objects in a more efficent manner than simply searching all game objects. The API.Selection interface also stores a collection of the currently selected Selectable Objects. You can use the API.Selection interface to search all Selectable Objects or limit your search to only those that are selected.
 
 ### Searchable
 

@@ -83,14 +83,14 @@ The above are objects that are always present but there are also objects that ar
 
 Depending on your game there may be more context specific factors to consider when loading or unloading a scene. A simple example might be a game where a player may choose to burn down a forest for example. You could define this area as a single page and handle the forest being burnt or not as a run time process, but this would use clock time unnecessarily. A simpler approach would be to have 2 scenes, 1 for the unburnt forest and 1 for the burnt one. Now your processing is as simple as which should be loaded.&#x20;
 
-## [Scene Manager](../components/scenes-manager.md)
+## [Scene Manager](../../components/scenes-manager.md)
 
-This is a simple tool which simply serves to expose events of the [API.Scenes](../api/scenes.md) interface to the Unity Inspector for easy hookup..
+This is a simple tool which simply serves to expose events of the [API.Scenes](../../api/scenes.md) interface to the Unity Inspector for easy hookup..
 
-![](<../../../.gitbook/assets/image (154) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (154) (1) (1).png>)
 
 {% hint style="info" %}
-You will see the term Bootstrap or Bootstrap Scene used in this and other documents. You can read more on that concept [here](../../../company/concepts/bootstrap-scene.md). Note that the first scene in your game is by definition your bootstrap scene e.g. build index 0 is bootstrap.
+You will see the term Bootstrap or Bootstrap Scene used in this and other documents. You can read more on that concept [here](../../../../company/concepts/bootstrap-scene.md). Note that the first scene in your game is by definition your bootstrap scene e.g. build index 0 is bootstrap.
 {% endhint %}
 
 #### References
@@ -100,19 +100,19 @@ You will see the term Bootstrap or Bootstrap Scene used in this and other docume
 
 _**System Core and thus Game Events are included with UX**_
 
-A [Game Event](../../system-core/game-events.md) is a special type of Scriptable Object that works much like a Unity Event but is defined as part of your game (in your asset folder) and thus always available. In contrast a Unity Event is defined as part of a component on a Game Object and is only available while that object exists in memory.
+A [Game Event](../../../system-core/game-events.md) is a special type of Scriptable Object that works much like a Unity Event but is defined as part of your game (in your asset folder) and thus always available. In contrast a Unity Event is defined as part of a component on a Game Object and is only available while that object exists in memory.
 
-To learn more see [Heathen Engineering's System Core documentation](../../system-core/).
+To learn more see [Heathen Engineering's System Core documentation](../../../system-core/).
 {% endhint %}
 
 The Scenes Manager has three (3) optional references being the&#x20;
 
 * Started\
-  This is a [Game Event](../../system-core/game-events.md) that will be invoked when a scene process has started
+  This is a [Game Event](../../../system-core/game-events.md) that will be invoked when a scene process has started
 * Updated\
-  This is a [Game Event](../../system-core/game-events.md) that will be invoked when a scene process has updated
+  This is a [Game Event](../../../system-core/game-events.md) that will be invoked when a scene process has updated
 * Completed\
-  This is a [Game Event](../../system-core/game-events.md) that will be invoked when a scene process has completed
+  This is a [Game Event](../../../system-core/game-events.md) that will be invoked when a scene process has completed
 
 #### Events
 
@@ -125,8 +125,8 @@ The Scenes Manager has three (3) Unity Events exposed
 * Evt Completed\
   Invoked when a process has completed
 
-## [Scenes Interface](../api/scenes.md)
+## [Scenes Interface](../../api/scenes.md)
 
 {% hint style="success" %}
-Read more about the [API.Scenes](../api/scenes.md) interface in the related API articles.
+Read more about the [API.Scenes](../../api/scenes.md) interface in the related API articles.
 {% endhint %}

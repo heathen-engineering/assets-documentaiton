@@ -7,7 +7,7 @@ description: Boop on demand!
 ## Introduction
 
 {% hint style="info" %}
-Part of the [Interaction Tools](../features/interaction-tools.md) of the UX Complete asset
+Part of the [Interaction Tools](../learning/core-concepts/interaction-tools.md) of the UX Complete asset
 {% endhint %}
 
 A simple component that helps you hook any UnityAction, UnityEvent or other inspector feature up to a Play One Shot method.

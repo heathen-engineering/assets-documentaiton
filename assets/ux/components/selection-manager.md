@@ -3,7 +3,7 @@
 ## Introduction
 
 {% hint style="info" %}
-Part of the [Selection System](../features/selection-system.md) of the UX Complete asset
+Part of the [Selection System](../learning/core-concepts/selection-system.md) of the UX Complete asset
 {% endhint %}
 
 This component simply exposes the selection changed event to the Unity Inspector and a selection of the common selection funcitons.

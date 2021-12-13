@@ -3,7 +3,7 @@
 ## Introduction
 
 {% hint style="info" %}
-Part of the [Window System](../features/window-tools.md) of the UX Complete asset
+Part of the [Window System](../learning/core-concepts/window-tools.md) of the UX Complete asset
 {% endhint %}
 
 Defines the area of the parent RectTransform a window is clamped to

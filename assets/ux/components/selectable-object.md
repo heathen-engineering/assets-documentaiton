@@ -7,7 +7,7 @@ description: 🔎Searchable multi selection system
 ## Introduction
 
 {% hint style="info" %}
-Part of the [Selection System](../features/selection-system.md) of the UX Complete asset
+Part of the [Selection System](../learning/core-concepts/selection-system.md) of the UX Complete asset
 {% endhint %}
 
 Make anything selectable and searchable with a simple easy to use componenet.

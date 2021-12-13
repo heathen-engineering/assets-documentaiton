@@ -12,15 +12,15 @@ Available in UX [Complete](https://assetstore.unity.com/packages/tools/utilities
 
 User eXperience kit helps you gather rich game data in a well formatted log, and then feed that data from within your game tools such as Trello, Zendesk, Unity's User Reporting, etc. and to help you capture and save screenshots for the full screen or sections of the screen.
 
-![](<../../../.gitbook/assets/image (92).png>)
+![](<../../../../.gitbook/assets/image (92).png>)
 
 ## Features
 
-### [Advanced Log](../api/log.md)
+### [Advanced Log](../../api/log.md)
 
 A log system which stores all Debug.Log messages with optional stack trace information, and additional system information generated at run time. The log can be reported as a simple text log or serialized to a JSON object for easier programatic processing.
 
-### [Trello Integration](../api/trello.md)
+### [Trello Integration](../../api/trello.md)
 
 You can use the Trello integration to interact with Trello such as to create cards and upload attachments. Terllo is most useful for production feedback such as gathering feedback from closed testers and QC staff.
 

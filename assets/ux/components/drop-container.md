@@ -3,7 +3,7 @@
 ## Introduction
 
 {% hint style="info" %}
-Part of the [Drag and Drop System](../features/drag-and-drop-system.md) of the UX Complete asset
+Part of the [Drag and Drop System](../learning/core-concepts/drag-and-drop-system.md) of the UX Complete asset
 {% endhint %}
 
 A place to drop your drag items. You can use this componenet to define drop rules restricting the types of Drop Items that can be accepted by this container.

@@ -3,7 +3,7 @@
 ## Introduction
 
 {% hint style="info" %}
-Part of the [Window System](../features/window-tools.md) of the UX Complete asset
+Part of the [Window System](../learning/core-concepts/window-tools.md) of the UX Complete asset
 {% endhint %}
 
 Provided as part of the focus changed event of the [API.Window](../api/windows.md) interface and related componenets.

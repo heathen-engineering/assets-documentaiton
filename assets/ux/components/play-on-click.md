@@ -7,7 +7,7 @@ description: 👉Boop!
 ## Introduction
 
 {% hint style="info" %}
-Part of the [Interaction Tools](../features/interaction-tools.md) of the UX Complete asset
+Part of the [Interaction Tools](../learning/core-concepts/interaction-tools.md) of the UX Complete asset
 {% endhint %}
 
 A simple componenet which plays an audio clip when a click is detected. This uses Unity's IPointerClickHandler to detect when a click occurs and what buttons where involved with it if any.

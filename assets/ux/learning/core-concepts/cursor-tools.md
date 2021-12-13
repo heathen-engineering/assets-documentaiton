@@ -14,22 +14,22 @@ Available in UX [Complete ](https://assetstore.unity.com/packages/tools/utilitie
 
 The cursor system allows for easy code free context sensitive mouse cursors with support for animation.
 
-![](<../../../.gitbook/assets/image (153) (1) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (153) (1) (1) (1) (1).png>)
 
 The Cursor Animator component handles cursor animation, you should only have 1 of these active at any given time.
 
 {% hint style="info" %}
-This component benefits from the [bootstrap](../../../company/concepts/bootstrap-scene.md) concept which you can read more about [here](../../../company/concepts/bootstrap-scene.md)
+This component benefits from the [bootstrap](../../../../company/concepts/bootstrap-scene.md) concept which you can read more about [here](../../../../company/concepts/bootstrap-scene.md)
 {% endhint %}
 
 With an active Cursor System you can effect the state of the pointer by attaching Cursor State components to desired game objects or through code where you want or need a more bespoke solution.
 
 ## Cursor State
 
-A cursor state is a scriptable object derived from [GameEvent](../../system-core/game-events.md)\<bool> which represents a state that the game's pointer can be in.
+A cursor state is a scriptable object derived from [GameEvent](../../../system-core/game-events.md)\<bool> which represents a state that the game's pointer can be in.
 
 {% hint style="info" %}
-Cursor States are [GameEvents](../../system-core/game-events.md) of type bool, meaning that when the state is set or removed it is "invoked" raising the game event and indicating its state. As such you can create an event driven system that responds to states being activated or deactivated by simply adding a listener to the state.
+Cursor States are [GameEvents](../../../system-core/game-events.md) of type bool, meaning that when the state is set or removed it is "invoked" raising the game event and indicating its state. As such you can create an event driven system that responds to states being activated or deactivated by simply adding a listener to the state.
 
 ```csharp
 cursorState.AddListener(HandleThisStateChanged);
@@ -101,19 +101,19 @@ That is if the system is currently holding a state active due to Hold On Mouse D
 
 ## Mouse Over Cursor State
 
-![](<../../../.gitbook/assets/image (99).png>)
+![](<../../../../.gitbook/assets/image (99).png>)
 
 This simple component can be added game objects and will cause the state of the cursor to change when the mouse enters the object. Optionally the state can be set to hold on mouse down, which can be useful of hand grab icons such as might be used for a drag to scroll UI element.
 
 ## Button Cursor State
 
-![](<../../../.gitbook/assets/image (100).png>)
+![](<../../../../.gitbook/assets/image (100).png>)
 
 The button cursor state handles two (2) possible state changes, one for mouse enter similar to the Mousse Over Cursor State and one for On Click. This allows the component to show a 2nd cursor state while the mouse is held down such as highlighted pointer or tapping finger.
 
 ## Change Cursor Default State
 
-![](<../../../.gitbook/assets/image (101).png>)
+![](<../../../../.gitbook/assets/image (101).png>)
 
 The change cursor default state will change the registered default state on enter and exit.
 
@@ -169,7 +169,7 @@ var activeState = CursorSystem.CurrentState;
 
 ### Cursor State Event
 
-The Cursor State object is derived from [GameEvent\<bool>](../../system-core/game-events.md) and so you can define an event driven structure with changes in pointer state.&#x20;
+The Cursor State object is derived from [GameEvent\<bool>](../../../system-core/game-events.md) and so you can define an event driven structure with changes in pointer state.&#x20;
 
 ```csharp
 cursorState.AddListener(HandlerFunction);

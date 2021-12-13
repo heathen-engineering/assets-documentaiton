@@ -3,7 +3,7 @@
 ## Introduction
 
 {% hint style="info" %}
-Part of the [Cursor System](../features/cursor-tools.md) of the UX Foundation and UX Compelete assets
+Part of the [Cursor System](../learning/core-concepts/cursor-tools.md) of the UX Foundation and UX Compelete assets
 {% endhint %}
 
 Indicates the cursor state to be applied when the mouse enteres a RectTransfrom and the state to be applied when the mouse is pressed while over the RectTransform.

@@ -3,7 +3,7 @@
 ## Introduction
 
 {% hint style="info" %}
-Part of the [Drag and Drop System](../features/drag-and-drop-system.md) of the UX Complete asset
+Part of the [Drag and Drop System](../learning/core-concepts/drag-and-drop-system.md) of the UX Complete asset
 {% endhint %}
 
 To be attached to an object that can be dragged, meant for use with the Drag and Drop system. The intent of this componenet is that you add it to the Unity Engine UI object you want to be draggable, it could represent a spell, inventory item, etc.

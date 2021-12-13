@@ -3,7 +3,7 @@
 ## Introduction
 
 {% hint style="info" %}
-Part of the [Interaction Tools](../features/interaction-tools.md) of the UX Complete asset
+Part of the [Interaction Tools](../learning/core-concepts/interaction-tools.md) of the UX Complete asset
 {% endhint %}
 
 A simple component that plays the configured sound when the pointer exits. This uses Unity's IPointerExitHandle.

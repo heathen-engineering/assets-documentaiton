@@ -3,7 +3,7 @@
 ## Introduction
 
 {% hint style="info" %}
-Part of the [Scenes Tools](../features/scenes-management.md) of the UX Complete asset
+Part of the [Scenes Tools](../learning/core-concepts/scenes-management.md) of the UX Complete asset
 {% endhint %}
 
 This componenet simply exposes events and features present on the [API.Scenes](../api/scenes.md) interface to the Unity Inspector for ease of use. This componenet can be used to drive progress bars and other elements that need to respond to scene processing events.

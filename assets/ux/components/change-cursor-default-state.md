@@ -3,7 +3,7 @@
 ## Introduction
 
 {% hint style="info" %}
-Part of the [Cursor System](../features/cursor-tools.md) of the UX Foundation and UX Compelete assets
+Part of the [Cursor System](../learning/core-concepts/cursor-tools.md) of the UX Foundation and UX Compelete assets
 {% endhint %}
 
 Changes the configured Default State for the Cursor system.

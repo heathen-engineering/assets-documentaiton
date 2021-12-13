@@ -18,7 +18,7 @@ Interaction Tools is a collection of simple behaviors that help you deliver a mo
 
 These tools help you create hold event actions for your players and they come in a few flavors. A hold event is when your interface asks the player to click on a GUI element or press a specific button for some duration in order to activate the action.
 
-![](<../../../.gitbook/assets/image (113).png>)
+![](<../../../../.gitbook/assets/image (113).png>)
 
 All hold events let you specify the hold time and rather or not the system should use unscaled time.
 
@@ -57,31 +57,31 @@ This variant uses Unity's IPointer Down, Up and Exit handlers so will respond to
 
 Play On audio tools are simple components which will play an audio clip on the indicated events. This makes for a very simple system for applying UI audio.
 
-![](<../../../.gitbook/assets/image (114).png>)
+![](<../../../../.gitbook/assets/image (114).png>)
 
 Each Play On component takes an Output audio source and a Sound audio clip and can configure the Volume Scale of the clip. The Play On will play the clip through the output source when its engaged. The following variants are available.
 
-#### [Play On Click](../components/play-on-click.md)
+#### [Play On Click](../../components/play-on-click.md)
 
 This plays when the GameObject is clicked (uses iPointerClickHandler). You can configure rather or not the system should monitor left, right and middle clicks.
 
-#### [Play On Demand](../components/play-on-demand.md)
+#### [Play On Demand](../../components/play-on-demand.md)
 
 This plays when its PlayOneShot method is called. This can be used with other tools such as Buttons by attaching the PlayOneShot method to the button's Click event.
 
-#### [Play On Down](../components/play-on-down.md#fields-and-attributes)
+#### [Play On Down](../../components/play-on-down.md#fields-and-attributes)
 
 This plays when the GameObject is pressed (mouse down), (uses iPointerDownHandler). You can configure rather or not the system should monitor left, right and middle clicks.
 
-#### [Play On Enter](../components/play-on-enter.md)
+#### [Play On Enter](../../components/play-on-enter.md)
 
 This plays when the GameObject is entered (uses iPointerEnterHandler).
 
-#### [Play On Exit](../components/play-on-exit.md)
+#### [Play On Exit](../../components/play-on-exit.md)
 
 This plays when the GameObject is exited (uses iPointerExitHandler).
 
-#### [Play On Up](../components/play-on-up.md)
+#### [Play On Up](../../components/play-on-up.md)
 
 This plays when the GameObject is released (mouse up), (uses iPointerUpHandler). You can configure rather or not the system should monitor left, right and middle clicks.
 
