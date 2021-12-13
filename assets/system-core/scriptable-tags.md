@@ -16,7 +16,7 @@ This system works similar to Unity's Tag system only in the case of Scriptable T
 
 ### Scriptable Tag&#x20;
 
-The UX system includes a special Scriptable Object type called Scriptable Tag. Scriptable Tag is an empty Scriptable Object, that is, its a Scriptable Object with no logic and no fields, it exists only to create unique Scriptable Objects in your asset database for use with the Scriptable Tag system such as seen on the Selectable System and Drag and Drop Systems.
+The UX system includes a special Scriptable Object type called Scriptable Tag. Scriptable Tag is an empty Scriptable Object, that is, its a Scriptable Object with no logic and no fields, it exists only to create unique Scriptable Objects in your asset database for use with the Scriptable Tag system such as seen on the [Selectable System](../ux/learning/core-concepts/selection-system.md) and [Drag and Drop Systems](../ux/learning/core-concepts/drag-and-drop-system.md).
 
 ```csharp
 public class ScriptableTag : ScriptableObject
