@@ -20,11 +20,47 @@ The whole of the input system is only accessable from the Client API as a result
 API.Input.Client
 ```
 
+{% hint style="info" %}
+TIP
+
+\
+Save your self some typing. add this using statement to the top of any script that will need to use this API.
+
+```csharp
+using SInput = HeathenEngineering.Steamworks.API.Input.Client;
+```
+
+\
+You can now access members in this API with a shorter call structure
+
+```csharp
+if(SInput.Initalized)
+    //DO WORK
+```
+
+
+
+as opposed to the long form:
+
+```csharp
+if(API.Input.Client.Initalized)
+    //DO WORK
+```
+{% endhint %}
+
 ### What can it do?
 
 Steam Input API is a flexible action-based API that supports all major controller types - Xbox, Playstation, Nintendo Switch Pro, and Steam Controllers.
 
 {% embed url="https://partner.steamgames.com/doc/features/steam_controller" %}
+
+To learn more about Steam Input in Heathen's Steamworks Complete [read this article](../learning/core-concepts/steam-input.md) on the core concept.
+
+## Fields and Attributes
+
+### Initalized
+
+Indicates rather or not the Seam Input API has been initalized. You must initalize the Steam Input API before it can be used. This is handled automatically for you if you have defined Inputs in the Steam Settings object.
 
 ## How To
 
