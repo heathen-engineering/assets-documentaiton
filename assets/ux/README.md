@@ -12,9 +12,11 @@ The UX articles are a work in progress and being updated frequently. If you have
 
 ## Introduction
 
-![](<../../.gitbook/assets/Splash Screen.png>)
+Heathen’s UX product enable you to deliver a richer, more robust, and more polished experiences to your customers and does so while saving you significant time in development in testing.&#x20;
 
-Heathen’s UX product enable you to deliver a richer, more robust, and more polished experiences to your customers and does so while saving you significant time in development in testing. Heathen’s UX support you and your project with flexible, battle tested tools and systems that are both easy to use and easy to extend and customize. UX is built on top of Heathen’s System Core, comes with full source code, detailed documentation, a large community and of course Heathen’s support and on-going development.
+{% embed url="https://youtu.be/uZn9HN1vGmw" %}
+
+Heathen’s UX support you and your project with flexible, battle tested tools and systems that are both easy to use and easy to extend and customize. UX is built on top of Heathen’s System Core, comes with full source code, detailed documentation, a large community and of course Heathen’s support and on-going development.
 
 ### Key Features
 
