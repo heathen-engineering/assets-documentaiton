@@ -11,6 +11,8 @@ description: >-
 
 Verlet is available as a stand alone asset on the Unity Asset Store and as a component of PhyKit Complete
 
+{% embed url="https://www.youtube.com/watch?v=3QOsfJdfPQA" %}
+
 {% embed url="https://assetstore.unity.com/packages/tools/physics/physkit-anibone-173686" %}
 
 Verlet is a component of PhysKit that allows you to quickly and easily apply physics based dynamic animations to armature bones and general transforms. A single script added to a character can control multiple hierarchies, and the easy to use settings system lets you define common configuration settings as scriptable objects for easy referencing.\

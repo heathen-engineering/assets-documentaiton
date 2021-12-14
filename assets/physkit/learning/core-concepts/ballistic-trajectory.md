@@ -8,7 +8,7 @@ Available in PhysKit [Complete](https://prf.hn/l/rpoyznk).
 
 Ballistic trajectory some times refered to a parabolic trajectory is the path a body takes while launched at a particular angle. This accountts for the drop rate applied by gravity, the launch angle and speed of the projectile.
 
-![4 archers using different settings all hitting there target with phsycially simulated arrows](<../../../../.gitbook/assets/Ballistic Basics.png>)
+{% embed url="https://www.youtube.com/watch?v=oQ-OaVW191k" %}
 
 Ballistic trajectoies are usually applied with relativly slow moving or verly long ranged projectiles where the player can see and "feel" the "lob" of the projectile be that a basketball thrown down court, an arrow shot at a target or a grenade bounced off a wall into a room or even an artillary round fired from miles away.
 

@@ -8,6 +8,8 @@ Available in PhysKit [Complete](https://prf.hn/l/rpoyznk).
 
 PhysKit's Force Effect framework is a simple structure that allows the designer to tailor physical environments in editor for quick iteration.
 
+{% embed url="https://www.youtube.com/watch?v=MS-f7LQX5Rw" %}
+
 You can use Force Effects to create global or localized forces the system is composed of three basic parts
 
 ### Force Effects
