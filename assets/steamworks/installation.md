@@ -18,6 +18,17 @@ If you don't have it already you can install Git from the following link:
 Note that this does NOT mean you will be using Git as a source repo, it is simply a set of protocols used by Package Manager to download the required code from its target repository.
 {% endhint %}
 
+{% hint style="warning" %}
+If you get a message to the effect of \
+`No git executable was found`\
+\
+This video might help you get it resolved
+
+[https://youtu.be/F-8A8mJwL\_Y](https://youtu.be/F-8A8mJwL\_Y)
+
+We are not assoceated with the creator we have simply been told that video has helped others with that error.
+{% endhint %}
+
 ### Install Steamworks.NET
 
 This must be done from the Unity Package Manager to insure that the proper Steamworks.NET assembly definition is installed and present in your project.
