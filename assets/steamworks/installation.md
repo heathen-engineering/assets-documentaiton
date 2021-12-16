@@ -27,6 +27,10 @@ This video might help you get it resolved
 [https://youtu.be/F-8A8mJwL\_Y](https://youtu.be/F-8A8mJwL\_Y)
 
 We are not assoceated with the creator we have simply been told that video has helped others with that error.
+
+This thread might also be of help for you
+
+[https://forum.unity.com/threads/no-git-executable-was-found-please-install-git-on-your-system-and-restart-unity.730511/](https://forum.unity.com/threads/no-git-executable-was-found-please-install-git-on-your-system-and-restart-unity.730511/)
 {% endhint %}
 
 ### Install Steamworks.NET
