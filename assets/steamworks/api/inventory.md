@@ -27,14 +27,14 @@ TIP
 Save your self some typing. add this using statement to the top of any script that will need to use this API.
 
 ```csharp
-using Inventory = HeathenEngineering.Steamworks.API.Inventory.Client;
+using InventoryAPI = HeathenEngineering.Steamworks.API.Inventory.Client;
 ```
 
 \
 You can now access members in this API with a shorter call structure
 
 ```csharp
-Inventory.AddPromoItem(item, callback);
+InventoryAPI.AddPromoItem(item, callback);
 ```
 
 
