@@ -16,6 +16,7 @@
   * [Namespace and Using](company/concepts/namespace-and-using.md)
   * [Project Architecture](company/concepts/project-architecture.md)
   * [Unity Release Version](company/concepts/unity-release-version.md)
+  * [Visual Scripting](company/concepts/visual-scripting.md)
 
 ## Assets
 
