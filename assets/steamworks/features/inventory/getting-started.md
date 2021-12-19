@@ -81,7 +81,7 @@ The Inventory Item Definitions stored in your Steam Settings object act as an in
 
 For developers needing to test, you can use the Steamworks Inspector to inspect, grant and clear items from your inventory. This is particularly useful since you can not use Steam client to view items for a game that is not yet released so the only way to view your items before release is to use our tool.
 
-![](<../../../../.gitbook/assets/image (159) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (159) (1) (1) (1).png>)
 
 
 
