@@ -14,7 +14,7 @@ You create leaderboard objects through thee Steam Settings object by clicking th
 
 From the Steam Settings you can mark the leaderboard as create if missing by ticking the toggle to the left of the name.
 
-![](<../../../.gitbook/assets/image (152).png>)
+![](<../../../.gitbook/assets/image (152) (1).png>)
 
 ![](<../../../.gitbook/assets/image (165) (1).png>)
 

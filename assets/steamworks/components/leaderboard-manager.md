@@ -20,32 +20,143 @@ This is not required to use these features it is simply a helper tool allowing u
 
 Meant to be added to a game object at or near your leaderboard UI, this behaviour can help you display leaderboard entries and simplifies the process of uploading scores to a leaderboard.
 
-## Definition
-
-## Fields and Attributes
-
-| Type              | Name               | Comment                                       |
-| ----------------- | ------------------ | --------------------------------------------- |
-| LeaderboardObject | leaderboard        | The leaderboard this manager should work with |
-| LeaderboardEntry  | LastKnownUserEntry |                                               |
-
 ## Events
 
 ### evtUserEntryUpdated
 
 Occurs when the local user's last known user entry is updated. This can only be raised by operations ran from within the Leaderboard Manager ... for example if you call the RefreshUserEntry or GetUserEntries. Then it is likely to be raised assuming the local user has an entry however if you manually query the board using API.Leaderboards or other methods it will not be raised.
 
+You would add a listener on this event such as:
+
+Assuming a handler in the form of
+
+```csharp
+private void HandleEvent(LeaderboardEntry arg0)
+{
+}
+```
+
+Then you would register the event such as:
+
+```csharp
+API.Inventory.Client.evtUserEntryUpdated.AddListener(HandleEvent);
+```
+
+When you no longer need this handler you should remove it for example when the behviour using it is destroyed
+
+```csharp
+void OnDestroy()
+{
+    API.Inventory.Client.evtUserEntryUpdated.RemoveListener(HandleEvent);
+}
+```
+
 ### evtQueryCompleted
 
-Occurs when a query for records complets and contains the results of that query
+Occurs when a query for records complets and contains the results of that query.
+
+You would add a listener on this event such as:
+
+Assuming a handler in the form of
+
+```csharp
+private void HandleEvent(LeaderboardEntry[] arg0)
+{
+}
+```
+
+Then you would register the event such as:
+
+```csharp
+API.Inventory.Client.evtQueryCompleted.AddListener(HandleEvent);
+```
+
+When you no longer need this handler you should remove it for example when the behviour using it is destroyed
+
+```csharp
+void OnDestroy()
+{
+    API.Inventory.Client.evtQueryCompleted.RemoveListener(HandleEvent);
+}
+```
 
 ### evtQueryError
 
 Occurs when a query fails with an error, errors are not generally specified rather it is up to you to check for logicle causes such as the leaderboard being null or not being valid.
 
+You would add a listener on this event such as:
+
+Assuming a handler in the form of
+
+```csharp
+private void HandleEvent()
+{
+}
+```
+
+Then you would register the event such as:
+
+```csharp
+API.Inventory.Client.evtQueryError.AddListener(HandleEvent);
+```
+
+When you no longer need this handler you should remove it for example when the behviour using it is destroyed
+
+```csharp
+void OnDestroy()
+{
+    API.Inventory.Client.evtQueryError.RemoveListener(HandleEvent);
+}
+```
+
 ### evtUploadError
 
-Occurs when an attempt to upload scores fails. As with query errors the API doesn't usually provide any additional information. The typical causes are an invalid board or a board that can only be set by the Web API
+Occurs when an attempt to upload scores fails. As with query errors the API doesn't usually provide any additional information. The typical causes are an invalid board or a board that can only be set by the Web API.
+
+You would add a listener on this event such as:
+
+Assuming a handler in the form of
+
+```csharp
+private void HandleEvent()
+{
+}
+```
+
+Then you would register the event such as:
+
+```csharp
+API.Inventory.Client.evtUploadError.AddListener(HandleEvent);
+```
+
+When you no longer need this handler you should remove it for example when the behviour using it is destroyed
+
+```csharp
+void OnDestroy()
+{
+    API.Inventory.Client.evtUploadError.RemoveListener(HandleEvent);
+}
+```
+
+## Fields and Attributes
+
+### leaderboard
+
+```csharp
+public LeaderboardObject leaderboard
+```
+
+![](<../../../.gitbook/assets/image (152).png>)
+
+Set this to the leaderboard you want this manager to "manage"
+
+### LastKnownUserEntry
+
+```csharp
+public LeaderboardEntry LastKnownUserEntry => get;
+```
+
+The entry for the local user if known, this will be updated any time you recieve informartion from Steam as to the user's current rank/score.
 
 ## Methods
 

@@ -11,7 +11,7 @@ description: >-
 
 Verlet is available as a stand alone asset on the Unity Asset Store and as a component of PhyKit Complete
 
-{% embed url="https://www.youtube.com/watch?v=3QOsfJdfPQA" %}
+{% embed url="https://www.youtube.com/watch?v=cxN90-kkEZ8" %}
 
 {% embed url="https://assetstore.unity.com/packages/tools/physics/physkit-anibone-173686" %}
 
