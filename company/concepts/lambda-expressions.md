@@ -20,7 +20,7 @@ Unity Learn is a site provided by Unity that helps teach various skills around U
 
 ## Understanding
 
-If you want a more primary source of learning around the concept please review sources such as Microsoft's documentation on the subject
+If you want a more primary source of learning around the concept, please review sources such as Microsoft's documentation on the subject
 
 {% embed url="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-expressions" %}
 
@@ -238,7 +238,7 @@ public void Foo(Action<bool> callback)
 }
 ```
 
-In this case we define our deligate as an Action of type bool, this means it expects a function that takes 1 paramiter of type bool. you can do this is expression or as a defined method.
+In this case we define our delegate as an Action of type bool, this means it expects a function that takes 1 parameter of type bool. you can do this is expression or as a defined method.
 
 ```csharp
 private void HandleFoo(bool arg0)

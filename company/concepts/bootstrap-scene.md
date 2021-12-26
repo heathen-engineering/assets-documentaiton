@@ -47,7 +47,7 @@ If you think about the concept of every scene being standalone, what you are say
 * Audio Listener
 * Input Handler / Event System
 
-The above three are the bare bones for rendering, handling input and playing audio. Most games will have several others such as
+The above three are the bare bones for rendering, handling input and playing audio. Most games will have several others such as:
 
 * Error handler\
   A UI used to express errors to the user for a more graceful shutdown in the event of fatal error

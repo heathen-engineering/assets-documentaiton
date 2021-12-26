@@ -8,7 +8,7 @@ description: >-
 
 ## Introduction
 
-This article will touch on the concepts of a callback as it relates to programming in C# for Unity. This article is not intended to be a primary teaching source rather an exploration of the feature as it relates to typical approaches you might see in Unity scripts.&#x20;
+This article will touch on the concepts of a callback as it relates to programming in C# for Unity. This article is not intended to be a primary teaching source, rather an exploration of the feature as it relates to typical approaches you might see in Unity scripts.&#x20;
 
 ## Learning First
 
@@ -22,7 +22,7 @@ Unity Learn is a site provided by Unity that helps teach various skills around U
 
 ## Understanding
 
-If you want a more primary source of learning around the concept please review sources such as Microsoft's documentation on the subject
+If you want a more primary source of learning around the concept, please review sources such as Microsoft's documentation on the subject
 
 {% embed url="https://docs.microsoft.com/en-us/dotnet/api/system.action-1?view=net-5.0" %}
 
@@ -48,7 +48,7 @@ public void Foo3()
 }
 ```
 
-The above code would result in output such as
+The above code would result in output such as:
 
 ```
 Foo1 processing, calling Foo2
@@ -73,7 +73,7 @@ if(callback != null)
 
 ## Examples
 
-Callbacks are typically used with asynchronous calls such as calls to web services, other processes or multi-threaded calls. A callback operates much like an event however a callback is for that purpose only where as event is registered to aka "listened to" and may be invoke by any range of processes where a callback is passed into the call that will ultimately invoke it.
+Callbacks are typically used with asynchronous calls, such as calls to web services, other processes or multi-threaded calls. A callback operates much like an event however a callback is for that purpose only where as event is registered to aka "listened to" and may be invoke by any range of processes where a callback is passed into the call that will ultimately invoke it.
 
 ### Coroutine Example
 

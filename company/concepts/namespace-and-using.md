@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Namespaces are a critically important concept that saddly is ignored by so many Unity developers including Unity its self from time to time. Understanding what a namespace is and why its absolutly critical that you always define your code within a namespace is important not only for your own good but also for anyone that will use your code or who will author code that you use.
+Namespaces are a critically important concept that sadly is ignored by so many Unity developers including Unity its self from time to time. This article will help you understanding what a namespace is and why its absolutely critical that you always define your code within a namespace. The proper use of namespace is important not only for your own good, but also for anyone that will use your code or who will author code that you use.
 
 {% hint style="danger" %}
 There is never an occasion that you can forgo using a namespace
@@ -10,9 +10,9 @@ There is never an occasion that you can forgo using a namespace
 
 ### Why?
 
-The main need in the context of game development is disambiguation ... to make something non-ambiguous.
+The main need in the context of game development is disambiguation (to make something non-ambiguous).
 
-So for example if you created a class such as
+So for example if you created a class such as:
 
 ```csharp
 public class Input
@@ -21,7 +21,7 @@ public class Input
 }
 ```
 
-You can clearly see why this would be bad if you dont use a namespace since this will be ambigious with UnityEngine.Input in any MonoBehaviour&#x20;
+You can clearly see why this would be bad if you don't use a namespace, since this will be ambiguous with UnityEngine.Input in any MonoBehaviour&#x20;
 
 ```csharp
 using UnityEngine;
@@ -44,15 +44,15 @@ Someone makes a class with that name, doesn't put it in a namespace and has now 
 {% endhint %}
 
 {% hint style="info" %}
-You may be thinking ... well just name it unique ...
+You may be thinking 'well just name it unique'
 
 
 
-That is exsactly what a namespace does but in a way more useful than just really long or cryptic/decorated object names.
+That is exactly what a namespace does, but in a way more useful way than just really long or cryptic/decorated object names.
 
 
 
-namespace are used by the IDE and compiler for context, driving autocomplete and other features that guide and speed up your development and reduce logicle errors.
+namespace are used by the IDE and compiler for context, driving autocomplete and other features that guide and speed up your development and reduce logical errors.
 {% endhint %}
 
 Countless others have said it better; just google "Why should I use a namespace" maybe add "in C#" or "in Unity" if you want to narrow those results.
@@ -65,7 +65,7 @@ Countless others have said it better; just google "Why should I use a namespace"
 
 ## Using
 
-Understanding the useing directive and statement can save you a lot of time and headache.
+Understanding the using directive and statement can save you a lot of time and headache.
 
 {% embed url="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-directive" %}
 
@@ -77,7 +77,7 @@ Lets take a look at a common use case for alias use.
 HeathenEngineering.SteamworksIntegration.API.Input
 ```
 
-That is the fully qualified name of a static class in the Steam API. Lets assume your not using alliiases.
+That is the fully qualified name of a static class in the Steam API. Lets assume your not using aliases.
 
 ```csharp
 using UnityEngine;
@@ -86,7 +86,7 @@ using HeathenEngineering.SteamworksIntegraiton.API;
 
 Can you see the issue we are going to have?
 
-The compiler knows both namespaces contain a class `Input` so if you try to call Input the compiler will throw an error and ask you to fully qualify the name ... which is a really long name in the case of Steam API :joy:
+The compiler knows both namespaces contain a class `Input` so if you try to call Input the compiler will throw an error and ask you to fully qualify the name, which is a really long name in the case of Steam API :joy:
 
 ```csharp
 //For the Steam API one
@@ -96,7 +96,7 @@ HeathenEngineering.SteamworksIntegration.API.Input;
 UnityEngine.Input;
 ```
 
-Now the better way ... Aliasing the namespace
+Now the better way: Aliasing the namespace
 
 ```csharp
 using Unity = UnityEngine;
@@ -115,11 +115,11 @@ Unity.Input;
 
 
 
-But wait theres more
+But wait, there's more
 
 Did you know you can use a static class like a namespace and even alias it?
 
-You should if you read the article I linked above but here is an example. In the Steam API all the static classes such as Input have at least 1 sub class ... this is because the API differs for Server and Client ... so to do something you might call
+You should if you read the article I linked above, but here is an example. In the Steam API all the static classes such as Input have at least 1 sub class, this is because the API differs for Server and Client. So to do something you might call:
 
 ```csharp
 Input.Client.GetControllers;
@@ -127,7 +127,7 @@ Input.Client.GetControllers;
 Input.Client.GetAction(...);
 ```
 
-You can see we have to call the subclass Client every time and that is a bit annoying ... so we could  use the Input.Client as a namespace and aliase it
+You can see we have to call the subclass Client every time and that is a bit annoying, so we could  use the Input.Client as a namespace and alias it
 
 ```csharp
 using SteamInput = HeathenEngineering.SteamworksIntegration.API.Input.Client;
@@ -146,9 +146,9 @@ Why not just name it SteamInput to begin with?
 
 
 
-SteamInput wouldn't be unqiue in every game, us using a long namespace with nested static classes insures the name is absolutly unique and there is no ambiguity.
+SteamInput wouldn't be unique in every game, us using a long namespace with nested static classes insures the name is absolutely unique and there is no ambiguity.
 
 
 
-You can then decide what you want to call it in short hand for your script ... and it can have a different aliias in every script if that suits your needs. using this model give you the flexability where as if we didn't use a namespace or used a flat namespace with decorated names you have to take what we give you which way well collide with other tools your using.
+You can then decide what you want to call it in short hand for your script, and it can have a different alias in every script if that suits your needs. using this model give you the flexibility where as if we didn't use a namespace or used a flat namespace with decorated names you have to take what we give you which way well collide with other tools your using.
 {% endhint %}

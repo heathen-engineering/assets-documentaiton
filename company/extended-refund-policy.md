@@ -70,7 +70,7 @@ We provide detailed documentation you can review to determine if the technical c
 
 We also provide assurance that the asset will work with your project, this assurance is backed up by our freely provided support and our general policy to agree to refund requests within 14 days assuming support was unable to resolve issues integrating the asset into your project.&#x20;
 
-### A sale just started can I refund
+### A sale just started, can I refund
 
 _No_
 

@@ -61,7 +61,7 @@ You can find numerous video tutorials on YouTube, many of which dealing specific
 
 ### Dev Time > Run Time
 
-If it can be done at dev time, it is better than doing it at run time. This means if you can do it as a configuration that is saved at development time in the editor, as opposed to it being a process that calculates at run time, that is literally more preformant in that process at run time consume processor time, configurations need to be loaded but that is (most likely) always faster than calculating.
+If it can be done at dev time, it is better than doing it at run time. This means if you can do it as a configuration that is saved at development time in the editor, as opposed to it being a process that calculates at run time, that is literally more performant in that process at run time consume processor time. Configurations need to be loaded but that is (most likely) always faster than calculating.
 
 Unity's examples very often do something like this
 

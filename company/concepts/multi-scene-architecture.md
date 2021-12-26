@@ -18,8 +18,8 @@ To determine what should be loaded when we need to understand the concept of "Sc
 
 ### Efficiency
 
-* More, and smaller scenes are faster to load, easier to unload and offer more granularity in control of what you have loaded, and when. \
-  Compared to having a few large scenes which take longer to load and have to be loaded in the entirety before use.\
+* More and smaller scenes are faster to load, easier to unload and offer more granularity in control of what you have loaded and when. \
+  Compared to having a few large scenes which take longer to load, and have to be loaded in the entirety before use.\
 
 * Common objects that would appear in all scenes can be defined once in one scene that simply persists. \
   Compared to having each individual scene defining these same objects further increasing the work that Unity must do to load initialize and eventually unload a given scene.
@@ -29,15 +29,15 @@ To determine what should be loaded when we need to understand the concept of "Sc
 * Scenes can be broken up by geographic area in your game or event by function, e.g. an environmental set of scenes, a UI/HUD scene, etc. meaning you can load into the editor and work on only the subset of objects relevant to you and your task at the moment.\
   Compared to having a monolithic scene that has everything in it. Slower to load, slower to save, harder to find specific objects needing more use of organizational objects (empty GameObjects acting like folders)\
 
-* Reduce duplication, why should every scene have a camera, HUD, input system, event system, etc. Define these once in a scene that persists as needed.\
+* Reduce duplication. why should every scene have a camera, HUD, input system, event system, etc? Define these once in a scene that persists as needed.\
   Compared to every scene having its own copy, meaning a change to say camera FOV must now be applied to every scene, exponentially increasing your workload and increasing the likelihood you forget one, introducing bugs that aren't easy to detect as they don't throw errors.
 
 ### Design Time Organization
 
 * Breaking up objects across scenes by completed objects away from WIP (work in progress) scenes can help reduce the cost of on going development by reducing the likelihood of introducing bugs into previously completed work. The idea here is your WIP objects that are actively being worked on live in their own scene, so changes to them do not unintentionally impact completed objects in other scenes.\
-  Compared to a monolithic scene structure it's all to common to unintentionally change a structure or disable something for testing of some WIP object, forgetting you did so and that bug slipping through unnoticed for a prolonged period of time causing run on issues in later development.\
+  In a monolithic scene structure, it's all too common to unintentionally change a structure or disable something for testing of some WIP object, forgetting you did so and that bug slipping through unnoticed for a prolonged period of time, thus causing run on issues in later development.\
 
-* When working in a team collaboration is always a point of challenge. Splitting scenes apart based on work delegation can reduce conflicts and greatly simplify change management. This can be coupled with WIP (work in progress) scenes enabling parallel development while minimizing the complexities typical in such cases.\
+* When working in a team, collaboration is always a point of challenge. Splitting scenes apart based on work delegation can reduce conflicts and greatly simplify change management. This can be coupled with WIP (work in progress) scenes enabling parallel development while minimizing the complexities typical in such cases.\
   Compared to a monolithic scene where very often work must be stopped by some team members while others finish some change. A Unity scene is a single file after all, and simultaneous collaboration on a single scene is a challenge even for a vetted engineering team.
 
 ## Determining Scope
