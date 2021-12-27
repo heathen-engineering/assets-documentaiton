@@ -121,6 +121,7 @@
       * [Steam Input](assets/steamworks/learning/core-concepts/steam-input.md)
       * [Steam Inventory](assets/steamworks/features/inventory/README.md)
         * [Getting Started](assets/steamworks/features/inventory/getting-started.md)
+        * [Item Store](assets/steamworks/learning/core-concepts/inventory/item-store.md)
       * [Steam Lobby](assets/steamworks/features/multiplayer/matchmaking-tools.md)
       * [Steam User Data](assets/steamworks/learning/core-concepts/steam-user-data.md)
       * [Steam Voice](assets/steamworks/learning/core-concepts/steam-voice.md)

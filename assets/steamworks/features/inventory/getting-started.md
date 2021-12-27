@@ -22,7 +22,7 @@ You will also need to understand the Steam Inventory Schema, while Heathen's too
 
 ## **Step 1: Set up**
 
-The hardest part about Steam Inventory is usually setting up your Steam Inventory Items. Have no feat Heathen is here to help!
+The hardest part about Steam Inventory is usually setting up your Steam Inventory Items. Have no fret Heathen is here to help!
 
 The very first thing you should do is import any Steam Inventory Items you already have. You can do this quickly by simply running the simulation (so that Steam API is initialized) and clicking the Import button under the Inventory list in your Steam Settings
 
