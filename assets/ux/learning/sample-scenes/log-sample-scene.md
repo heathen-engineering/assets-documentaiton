@@ -6,7 +6,7 @@ Available in UX [Complete](https://prf.hn/l/rpV2JWe)
 
 ## Introduction
 
-![](<../../../../.gitbook/assets/image (180).png>)
+![](<../../../../.gitbook/assets/image (180) (1).png>)
 
 This scene demonstrates the use of Heathens extended system log. Our log system works with Unity's built in log to gather data via simple Debug.Log calls but does so in greater details, gathers additional system informaiton and can package its log as a more human friendly simple text log, as a feedback tool friendly JSON object or as byte\[] for easy transmission over a network.
 
