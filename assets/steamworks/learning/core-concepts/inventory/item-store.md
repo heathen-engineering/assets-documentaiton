@@ -92,4 +92,117 @@ foreach(var itemDefinition in SteamSettings.Client.inventory.items)
 For each item you will need to get some common information.&#x20;
 
 * Item Name\
-  You can find this in item\_name. or by using the DisplayName field of Item Defintion.
+  You can find this in [item\_name](../../../objects/item-definition.md#item\_name). or by using the [DisplayName](../../../objects/item-definition.md#displayname) field of Item Defintion.
+* Item Description\
+  You can find this in [item\_description](../../../objects/item-definition.md#item\_description).
+* Price\
+  This is a tricky one in that Valve doesn't give a good way to identify what currency the user is currently using. You could likely assume based on location however the user's geo tag doesn't always dictate currency. A more common method is to list the USD, EUR or another common price.\
+  If you want to fetch the price in the user's currency see: [Current Price](../../../objects/item-definition.md#currentprice) and [Base Price](../../../objects/item-definition.md#baseprice). You can check if there is a price at all via [Has Price](../../../objects/item-definition.md#hasprice).
+* Images\
+  Several images can be assoceated with an item ... we dont recomend using any of them as they should all be optimized for use in web and thus of pore quality for use in game. but you can read them from the item defintion via
+  * Icon URL\
+    `itemDef.item_icon`\_`url`
+  * Large Icon URL\
+    `itemDef.item_icon_url_large`
+  * Store  Images\
+    `foreach(var imageUrl in itemDef.item_store_images)`
+* Recipies\
+  To detect if this item can be exchanged for and if so what it requries you need to read the [item\_exchange](../../../objects/item-definition.md#item\_exchange).
+
+### Step 3: Start Purchase / Exchange
+
+So now you have your items listed and displaying relivent visuals and information. You now need to respond to use input to start a purchase with real currency or to exchange in-game items aka in-game currency.
+
+You can see a simple working example of this in the Example Item Behaviour.
+
+#### Start Purcahse
+
+```csharp
+public void StartPurchase()
+{
+    itemDefinition.StartPurchase((responce, ioError) =>
+    {
+        if (!ioError)
+        {
+            if (responce.m_result == EResult.k_EResultOK)
+            {
+                Debug.Log("Start purchase completed");
+            }
+            else
+            {
+                Debug.LogError("Unexpected result from Valve: " + responce.m_result);
+            }
+        }
+        else
+        {
+            Debug.LogError("Valve indicated an IO Error occured. i.e. failed to start the process at all.");
+        }
+    });
+}
+```
+
+#### Exchange
+
+```csharp
+public void Exchange()
+{
+    //This assumes the linked item has a recipie
+    if (itemDefinition.CanExchange(itemDefinition.item_exchange.recipe[0], out List<ExchangeEntry> recipie))
+    {
+        //If the user owns the required items to satisfy the recipie defined in the first index of the recipies 
+        //then go ahead and exchange for it
+
+        itemDefinition.Exchange(recipie, (responce) =>
+        {
+            if (responce.result == EResult.k_EResultOK)
+            {
+                Debug.Log("Exchange completed");
+            }
+            else
+            {
+                Debug.LogError("Unexpected result from Valve: " + responce.result);
+            }
+        });
+    }
+    else
+    {
+        Debug.LogWarning("The user does not own the required items to perform this exchange");
+    }
+}
+```
+
+### Step 4: Update
+
+So now you need to insure your UI respond to changes in the inventory rather its a result from a purchase or exchange or some action that happened from outside your game.
+
+Note you dont get clear informaiton in the Client API when a transaction is completed. Start Purcahse simply opens the cart, the user may edit that cart, cancel the transaction, etc. and your game will not know.
+
+Similarly the player may purchase items for your game from outside your game while your game is running. Thus you cannot depend on process flow to know when new items are aquired or not.
+
+In generall you will either use a "refresh" model where you refresh all items at key points such as when opening the inventory screen
+
+```csharp
+API.Inventory.Client.GetAllItems();
+```
+
+and you will update your UI anytime the EventSteamInventoryResultReady is raised.
+
+```csharp
+private void Start()
+{
+    //Update the quantity and exchange button ... we dont use the param but need it for the listener so just pass in default here
+    RefreshItem(default);
+
+    //This occurs for many reasons including any changes or query of any items.
+    //We can use this to refresh the quantity
+    InventoryAPI.EventSteamInventoryResultReady.AddListener(RefreshItem);
+}
+
+private void OnDestroy()
+{
+    //We should always clear listeners that are no longer valid or needed
+    InventoryAPI.EventSteamInventoryResultReady.RemoveListener(RefreshItem);
+}
+```
+
+In short you do not update your UI every frame as that will adversly impact game performance instead you listen for the EventSteamInventoryResultReady event and update your UI with it.
