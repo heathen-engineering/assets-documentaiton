@@ -82,3 +82,16 @@ Items can be made tradeable by players, this allows player's to trade with each 
 
 {% embed url="https://partner.steamgames.com/doc/features/inventory/schema" %}
 
+## Related Objects
+
+### Inventory API
+
+Learn more in our [Inventory API](../../api/inventory.md) documentiaton.
+
+### Item Definition
+
+Defines a Steam Inventory Iitem and provide access to commonly used features as well as the full defintion of the item. Learn more [here](../../objects/item-definition.md).
+
+### Item Detail
+
+And object used to detail an instance of an item in the player's inventory. Learn more [here](../../objects/item-details.md).
