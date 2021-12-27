@@ -196,6 +196,6 @@ Each member of the lobby (other than the owner) will be notified by callback whi
 All members of a lobby should upon joining the lobby register an event handler on the `Lobby.evtGameServerSet` event
 
 ```csharp
-API.Matchmaking.EventLobbyGameCreated.AddListener(HandleGameServerSet);
+API.Matchmaking.Client.EventLobbyGameCreated.AddListener(HandleGameServerSet);
 ```
 {% endhint %}
