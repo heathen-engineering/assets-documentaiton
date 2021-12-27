@@ -12,6 +12,51 @@ Steamworks.NET is a true to form wrapper around Valve's Steam API. This means th
 
 Heathen's API wraps around Steamworks.NET adjusting the design of the interfaces to conform not only to common C# standards but more importantly to Unity's common standards. We have wrapped every Callback with a UnityEvent, we have wrapped every CallResult with an Action, we simplify enumeration to yield .NET collections (typically arrays for sake of performance) and we have wrapped abstract data types such as CSteamID with helpers such as UserData, Clan, etc. to reduce ambiguity and reduce the required steps to access information or perform common operations.
 
+## Namespace
+
+Heathen's Steam API is defined in the namespace
+
+```csharp
+using HeathenEngineering.SteamworksIntegration.API;
+```
+
+Each API has a static class related to it and a sub class for Client and Server if both are supported ... for example.
+
+```csharp
+HeathenEngineering.SteamworksIntegration.API.Input.Client;
+```
+
+The above is the full name of the Input API for the game client. you can shorten this name by using namespace aliases as discribed in this [linked article](../../../company/concepts/namespace-and-using.md#aliasing).
+
+```csharp
+using InputAPI = HeathenEngineering.SteamworksIntegration.API.Input.Client;
+```
+
+here is a comparison on how that would shorten yoru code.
+
+### Traditional using
+
+```csharp
+using HeathenEngineering.SteamworksIntegration.API;
+//...
+//...
+if(Input.Client.Initalized)
+{
+    //DO WORK
+}
+```
+
+### Alias using
+
+```csharp
+using InputAPI = HeathenEngineering.SteamworksIntegration.API.Input.Client;
+//...
+//...
+if(InputAPI.Initalized)
+{
+}
+```
+
 ## Callbacks
 
 On any feature of the Steam API where a SteamCallback handle would have been used aka a CallResult, you will find that we have added an Action\<T,bool> callback parameter.
