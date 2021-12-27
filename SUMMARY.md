@@ -106,6 +106,8 @@
       * [5 Lobbies](assets/steamworks/learning/sample-scenes/5-lobbies.md)
       * [6 Input](assets/steamworks/learning/sample-scenes/6-input.md)
       * [7 Workshop Browser](assets/steamworks/learning/sample-scenes/7-workshop-browser.md)
+      * [8 Inventory](assets/steamworks/learning/sample-scenes/8-inventory.md)
+      * [9 Item Store Tutorial](assets/steamworks/learning/sample-scenes/9-item-store-tutorial.md)
     * [Core Concepts](assets/steamworks/learning/core-concepts/README.md)
       * [steam\_appid.txt](assets/steamworks/quick-start-guide/steam\_appid.txt.md)
       * [Achievements](assets/steamworks/features/achievement-object.md)

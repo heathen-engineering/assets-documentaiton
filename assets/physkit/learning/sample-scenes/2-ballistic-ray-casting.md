@@ -8,7 +8,7 @@ Available in PhysKit [Complete](https://prf.hn/l/rpoyznk).
 
 ## Introduction
 
-![](<../../../../.gitbook/assets/image (162).png>)
+![](<../../../../.gitbook/assets/image (162) (1).png>)
 
 This scene demonstrates the use of [Ballisitics.Raycast](../../api/ballistics.md#raycast) and the [BallisticsPath](../../components/ballistic-path.md) component to perdict the path a thrown object will take including its bounce.
 

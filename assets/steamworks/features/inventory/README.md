@@ -14,7 +14,7 @@ First you should understand what Steam Inventory is and is not, the only real pl
 
 {% embed url="https://partner.steamgames.com/doc/features/inventory" %}
 
-You will also need to understand the Steam Inventory Schema. While Heathen's tools help you define your item definitions in this schema, there will be time when you need to manually edit to take advantage of more complex features or to apply some unique concept specific to your project.
+You will also need to understand the Steam Inventory Schema. While Heathen's tools help you define your item definitions in this schema, there will be a time when you need to manually edit the JSON in order to take advantage of more complex features or to apply some unique concept specific to your project.
 
 {% embed url="https://partner.steamgames.com/doc/features/inventory/schema" %}
 
@@ -84,6 +84,8 @@ Items can be made tradeable by players, this allows player's to trade with each 
 
 ## Related Objects
 
+The following are objects and tools in Steamworks Complete that can help you work with Steam Inventory.
+
 ### Inventory API
 
 Learn more in our [Inventory API](../../api/inventory.md) documentiaton.
@@ -95,6 +97,16 @@ Defines a Steam Inventory Iitem and provide access to commonly used features as 
 ### Item Detail
 
 And object used to detail an instance of an item in the player's inventory. Learn more [here](../../objects/item-details.md).
+
+## Sample Scenes
+
+### 8 Inventory
+
+This scene directs you to the documentaiton here and provides a simple example script that demonstrations the most common features.
+
+### 9 Item Store Tutorial
+
+This scene is meant to be used along with the [Item Store](../../learning/core-concepts/inventory/item-store.md) artcile and demonstrates connecting [Item Defintion](../../objects/item-definition.md) objects to Unity UI.
 
 ## FAQ
 

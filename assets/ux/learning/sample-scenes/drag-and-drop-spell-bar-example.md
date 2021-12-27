@@ -6,7 +6,7 @@ Available in UX [Complete](https://prf.hn/l/rpV2JWe)
 
 ## Introduction
 
-![](<../../../../.gitbook/assets/image (166).png>)
+![](<../../../../.gitbook/assets/image (166) (1).png>)
 
 This scene demonstrates tags and rules similar to the [Drag and Drop (Inventory Exmaple)](drag-and-drop-inventory-example.md) scene with the only signifigant difference being that the behvaiours are set up to emulate a spell book or ability bar.
 
