@@ -108,7 +108,7 @@ This scene directs you to the documentaiton here and provides a simple example s
 
 This scene is meant to be used along with the [Item Store](../../learning/core-concepts/inventory/item-store.md) artcile and demonstrates connecting [Item Defintion](../../objects/item-definition.md) objects to Unity UI.
 
-## FAQ
+## F.A.Q
 
 ### Generating Items
 

@@ -42,6 +42,8 @@ This script will update the quantity owned for each item any time the inventory 
 
 ## Run Time Initalization
 
+This means having your game's logic iterate over Steam Settings and building out the list of items at run time.
+
 {% hint style="danger" %}
 We strongly recomend against run time initalization of Steam Inventory.
 
@@ -206,3 +208,39 @@ private void OnDestroy()
 ```
 
 In short you do not update your UI every frame as that will adversly impact game performance instead you listen for the EventSteamInventoryResultReady event and update your UI with it.
+
+## F.A.Q
+
+### How do I list my items?
+
+By list your items I assume your asking how does your game know what items there are so it can update the UI for them.
+
+This sugests that your planing on a [run time initalization](item-store.md#run-time-initalization), please read that section and understand why its not recomended.
+
+To answer that question in short, you created the items, you already know what they are, you do not need to iterate over a list and have it create the UI at run time. If you want to have it do it at run time for some reason the items you created are defined in your Steam Settings as Scriptable Objects so you simply need to iterate over that list.
+
+### How do I get item price?
+
+In general we avoid showing the price in game or if we must we show a fixed known price as opposed to trying to get the user's local price.
+
+Remimber your user could be anywhere, using any of Steam's supported currencies and its not always possible to know what currency they are using in the Steam client.
+
+That said:
+
+If you want to fetch the price in the user's currency see: [Current Price](../../../objects/item-definition.md#currentprice) and [Base Price](../../../objects/item-definition.md#baseprice). You can check if there is a price at all via [Has Price](../../../objects/item-definition.md#hasprice).
+
+### How do I set up in-game currency?
+
+Your in-game currency would simply be an inventory item. You would then set up "Exchange" recipies for all the items that can be "purchased" for that currency.
+
+In short in-game currency is simply exchanging X items for Y item. See the [Item Defintion Exchange section](../../../objects/item-definition.md#exchange-1) for more details. You can do a lot with exchange well more than would fit in 1 article so be sure to read up in Valve's documetnaiton as well.
+
+### How do get item count?
+
+[Item Defintion's Total Quantity](../../../objects/item-definition.md#totalquantity) indicates the number of this item the player owns.
+
+### How do I refresh the Inventory?
+
+By refresh we assume you mean how to get the current count of the user's inventory.
+
+[Inventory API's Get All Items](../../../api/inventory.md#getallitems) will do that for you calling its callback when the process is complete.
