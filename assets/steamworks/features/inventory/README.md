@@ -128,3 +128,7 @@ The same way you create any Unity UI, the visual and UI aspects of your store ar
 As to starting a purchase from your UI you can use the [Start Purchase](../../objects/item-definition.md#start-purchase) command on the item defintion or the corisponding [Inventory API](../../api/inventory.md#startpurchase) call.
 
 If your exchanging an item or group of items for another item e.g. in-game currency for an in-game item. then use the [Exchange](../../objects/item-definition.md#exchange) feature on the item definition or its corisponding [Inventory API](../../api/inventory.md#exchangeitems) call.
+
+For more details see the [learning article here](../../learning/core-concepts/inventory/item-store.md#introduction).
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/learning/core-concepts/inventory/item-store" %}
