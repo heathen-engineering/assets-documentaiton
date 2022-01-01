@@ -92,6 +92,5 @@ For developers needing to test, you can use the Steamworks Inspector to inspect,
 
 ![](<../../../../.gitbook/assets/image (159) (1) (1) (1).png>)
 
+## F.A.Q
 
-
-{% embed url="https://kb.heathenengineering.com/assets/steamworks/inventory/examples" %}

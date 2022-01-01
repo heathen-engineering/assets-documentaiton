@@ -10,6 +10,15 @@ description: Hands down the larges and most complex of all Steam features
 Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)asset.
 {% endhint %}
 
+{% hint style="warning" %}
+You cannot test Steam Inventory features with App ID 480 aka Spacewars.
+
+\
+In order to test Steam Inventroy features including but not limited to microtransactions, crafting, player inventory, etc. you will need to register your for your own app ID and configure your own Steam Inventory Items.\
+\
+As a result of this limitation from Valve the sample scenes for Inventory cannot be used with App 480 in any funcitonal form.
+{% endhint %}
+
 First you should understand what Steam Inventory is and is not, the only real place to do so is via Valve's documentation and videos on the feature.&#x20;
 
 {% embed url="https://partner.steamgames.com/doc/features/inventory" %}
@@ -141,6 +150,6 @@ As to starting a purchase from your UI you can use the [Start Purchase](../../ob
 
 If your exchanging an item or group of items for another item e.g. in-game currency for an in-game item. then use the [Exchange](../../objects/item-definition.md#exchange) feature on the item definition or its corisponding [Inventory API](../../api/inventory.md#exchangeitems) call.
 
-For more details see the [learning article here](../../learning/core-concepts/inventory/item-store.md#introduction).
+For more details see the [learning article here](./#item-store).
 
 {% embed url="https://kb.heathenengineering.com/assets/steamworks/learning/core-concepts/inventory/item-store" %}

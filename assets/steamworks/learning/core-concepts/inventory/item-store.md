@@ -225,7 +225,9 @@ By list your items I assume your asking how does your game know what items there
 
 This sugests that your planing on a [run time initalization](item-store.md#run-time-initalization), please read that section and understand why its not recomended.
 
-To answer that question in short, you created the items, you already know what they are, you do not need to iterate over a list and have it create the UI at run time. If you want to have it do it at run time for some reason the items you created are defined in your Steam Settings as Scriptable Objects so you simply need to iterate over that list.
+To answer that question in short, you created the items, you already know what they are, you do not need to iterate over a list and have it create the UI at run time. If you want to have it do it at run time for some reason the items you created are defined in your Steam Settings as Scriptable Objects so you simply need to iterate over [that list](../../../objects/steam-settings/game-client/inventory-settings.md).
+
+You could also use the [Inventory Manager](../../../components/inventory-manager.md) to fetch those items, it includes a method to get a sub set of all the items which represent those items that are [valid store items](../../../components/inventory-manager.md#getstoreitems).
 
 ### How do I get item price?
 
@@ -252,3 +254,64 @@ In short in-game currency is simply exchanging X items for Y item. See the [Item
 By refresh we assume you mean how to get the current count of the user's inventory.
 
 [Inventory API's Get All Items](../../../api/inventory.md#getallitems) will do that for you calling its callback when the process is complete.
+
+### How do I test purchasing
+
+This depends somewhat in what you mean by "store purchase". Steam Inventory can be used to drive microtransactions in several different forms. For example you can use the Web API coupled with Steam Inventory to handle transactions your self and grant items.&#x20;
+
+To learn more about your opens read this article
+
+{% embed url="https://partner.steamgames.com/doc/features/microtransactions/implementation" %}
+
+For the sake of simplicity lets assume your using Client API only to Start Purchase on an item. This method doesn't require any Web API or any other systems and is the most common among indies.
+
+{% hint style="warning" %}
+There is no way to perform end-to-end testing of the purchase process using the Client API only.
+{% endhint %}
+
+This is not a problem and we will show why shortly\
+\
+As to why this is true its down to two major factors imposed by Valve.
+
+1. Steam Inventory Items will not display in Steam Client until your game is launched. Thus you cant add them to a cart or even view them in Steam Client's inventory window
+2. Using only the Client API you never "compelte" a transaction you simply load the user's cart and that is the end of your game's involvement. Your now thinking ... how do I know what they purchased ... more on that in a moment.
+
+The following topics in the FAQ should answer all other points
+
+### How do I test StartPurchase
+
+First you define your items and configure your store, this article tells you how to set it up and provides troublshooting instructions
+
+{% embed url="https://partner.steamgames.com/doc/features/inventory/itemstore" %}
+
+Once you have items suitable for the store the only thing you game logic needs to do is call [StartPurchase](../../../objects/item-definition.md#start-purchase) on that item to start a purchase on a single item ... or to gather up an array of items and quantities you want to Start Purcahse on and [use the API](../../../api/inventory.md#startpurchase) to load up the cart with mutliple items.
+
+In either case these methods cant be testing until your game is released **BUT** you dont need to "unit" test them as there is nothing here that you can effect one way or the other. If your item shows up in the store and the user's account is not blocked then this will load the items into the cart and open the Overlay. Your game logic cant do anything here it is out of your hands and not for you to test.
+
+The next logicle question related to this is "How do I know what was purchsed" ... see the question below for that.
+
+### Detecting what was purchased
+
+First understand that your game cannot know ahead of time what if anything was or is being purchased so the question isnt'
+
+"How do I know what was purchased?"&#x20;
+
+the question should be "How do I detect changes to the player's inventory?"
+
+Remimber a lot of things can change the player's inventory most of those things are started and completed outside of your game and dont require your game to even be running. So you need to detect when changes occur in general and not assume its related to some action taken in game such as a purchase.
+
+In short when your game loses and regains focus you will probably want to refresh [all Items](../../../api/inventory.md#getallitems). This will cause the system to iterate over the user's whole inventory anif any changes where detected it will raise the [EventChanged](../../../objects/steam-settings/game-client/inventory-settings.md#eventchanged) on the inventory settings.
+
+you can register a listener on the EventChanged from code such as
+
+```csharp
+SteamSettings.Client.inventory.EventChanged.AddListener(HandleChange);
+```
+
+or you can use the [Inventory Manager](../../../components/inventory-manager.md) to expose the event to the Unity inspector and add a handler to it as you would any other Unity event.
+
+### Testing Inventory Change
+
+So you have set up your inventory items, your going to use full Client API so you cant simulate an end-to-end purchase. Your asking your self ... How do I test my game logic to make sure its handling inventory change corretly?
+
+Use the [Steamworks Inspector](../../debugging-steam-api.md#inventory) and click the "Grant" button beside any of the items, this will cause it to grant you an item which will raise the [EventChanged](../../../objects/steam-settings/game-client/inventory-settings.md) ... you can now observe your game logic and insure its performing as you expected.
