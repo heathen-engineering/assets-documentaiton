@@ -58,18 +58,27 @@ public bool HasPrice => get;
 
 Indicates rather or not this item has a price ... this will always return false until after the system has fully initalized. Initalization occures on initalization of the API and can take a few seconds.
 
+### CurrencyCode
+
+```csharp
+public Currency.Code CurrencyCode => get;
+```
+
+Returns the [currency code](currency.md) used by the local user's currency in Steam. e.g. USD, GBP, EUR, etc.
+
+### CurrencySymbol
+
+```csharp
+public string CurrencySymbol => get;
+```
+
+Returns the sting symbol used by the local user's currency.
+
 ### CurrentPrice
 
 ```csharp
 public ulong CurrentPrice => get;
 ```
-
-{% hint style="warning" %}
-Steam API doesn't give us a reliable way to fetch the user's currency symbole at the moment. You could assume based on location however user's location and Steam currency are not always the same.
-
-\
-Please let Valve know if you need this feature so they can consider adding it in a later update.
-{% endhint %}
 
 The price of the item as a whole number e.g. 1 represents the smallest denominator in the user's currency so 100 would represent 100 cents or 1 dolar in USD ... this will always return false until after the system has fully initalized. Initalization occures on initalization of the API and can take a few seconds.
 
@@ -81,318 +90,193 @@ No price found if this returns 0.
 public ulong BasePrice => get;
 ```
 
-{% hint style="warning" %}
-Steam API doesn't give us a reliable way to fetch the user's currency symbole at the moment. You could assume based on location however user's location and Steam currency are not always the same.
-
-\
-Please let Valve know if you need this feature so they can consider adding it in a later update.
-{% endhint %}
-
 The base price of the item as a whole number e.g. 1 represents the smallest denominator in the user's currency so 100 would represent 100 cents or 1 dolar in USD ... this will always return false until after the system has fully initalized. Initalization occures on initalization of the API and can take a few seconds.
 
 No price found if this returns 0.
 
-### item\_type
+### Type
 
 ```csharp
-public InventoryItemType item_type;
+public InventoryItemType Type => get;
 ```
 
 This indicates the [type](../enums/inventory-item-type.md) of item this definition represents.
 
-### item\_name
+### Name
 
 ```csharp
-public LanguageVariantNode item_name;
+public string Name => get;
 ```
 
-This defines the name paramiter of the item defintion schema. you can return the simple string value via
+Gets  the simple name of the item as defined in your schema. If you need the language based name see [DisplayName](item-definition.md#displayname).
+
+### Description
 
 ```csharp
-var name = itemDef.item_name.GetSimpleValue();
+public string Description => get;
 ```
 
-### item\_description
+Gets the simple description as defined in your schema. If you need the langauge based name you will need to fetch [item defintions](../api/inventory.md#loaditemdefinitions) and [get the description property](../api/inventory.md#getitemdefinitionproperty).
+
+### DisplayType
 
 ```csharp
-public LanguageVariantNode item_description;
+public string DisplayType => get;
 ```
 
-This defines the description paramiter of the item defintion schema. you can return the simple string value via
+Gets the simple display type as defined in your schema. If you need the langauge based name you will need to fetch [item defintions](../api/inventory.md#loaditemdefinitions) and [get the description property](../api/inventory.md#getitemdefinitionproperty).
+
+### Bundle
 
 ```csharp
-var desc = itemDef.item_description.GetSimpleValue();
+public Bundle.Entry[] Bundle => get;
 ```
 
-### item\_display\_type
+Gets the array of Bundle.Entry objects defining the contents of this bundle if any
+
+### PromoRuleOwns
 
 ```csharp
-public LanguageVariantNode item_display_type;
+public AppId_t[] PromoRuleOwns => get;
 ```
 
-This defines the display type paramiter of the item defintion schema. you can return the simple string value via
+Returns the list of app ids that the user must own for this item to be droped as a promo item.
+
+### PromoRuleAchievements
 
 ```csharp
-var desc = itemDef.item_display_type.GetSimpleValue();
+public string[] PromoRuleAchievemets => get;
 ```
 
-### item\_itemdefid
+Returns the list of achievment IDs that the user must have achieved for this item to be droped as a promo item.
+
+### PromoRulePlayed
 
 ```csharp
-public int item_itemdefid;
+public PromoRule.PlayedEntry[] PromoRulePlayed => get;
 ```
 
-The raw value of the item definition id.
+Returns the list of player entries ... indicates the app ID and length of time in min that the player must have played before this item can be droped as a promo.
 
-### item\_bundle
-
-```csharp
-public Bundle item_bundle;
-```
-
-This defines the content of the bundle or generator you can iterate the items contained with in via
+### DropStartTime
 
 ```csharp
-foreach(entry in itemDef.item_bundle.entries)
-{
-    //entry.count indicates how many of
-    //entry.item which indicates which item defintion 
-}
-```
-
-### item\_promo
-
-```csharp
-public PromoRule item_promo;
-```
-
-This defines the rules for this item to be granted to the user as a promotional item. You can iterate the rules via
-
-```csharp
-if(itemDef.item_promo.manual)
-    ;//This item will only be granted when explicitly called to drop
-else
-    ;//This item can be droped any time the following rules are satisfied
-
-//Iterate over the apps the user must own
-foreach(var app in itemDef.item_promo.owns)
-{
-    //app is an AppId_t
-}
-
-//Iterate over the achievement IDs the user must have unlocked
-foreach(var achievement in itemDef.item_promo.achievements)
-{
-    //achievement is the string ID of the achievement
-}
-
-//Iterate over the playTime requriements
-foreach(var played in itemDef.item_promo.played)
-{
-    //played.app indicatess the app that must have been played
-    //played.minutes indicates the length of time that must have been played
-}
-```
-
-### item\_drop\_start\_time
-
-```csharp
-public string item_drop_start_time;
+public string DropStartTime => get;
 ```
 
 The item drop start time if this is a promo item.
 
-### item\_exchange
+### Recipies
 
 ```csharp
-public ExchangeCollection item_exchange;
+public ExchangeRecipe[] Recipies => get;
 ```
 
-This defines the item exchange recipies that can be used to exchange for this item.
+Returns the array of exchange recipies for this item if any
 
-You can iterate over the available recipies via
-
-```csharp
-foreach(var recipie in itemDef.item_exchange.recipie)
-{
-    foreach(var material in recipie)
-    {
-        if(materail.item != null)
-        {
-            //This entry requires a number of this item
-            //material.item.count indicates how many of this item
-        }
-        else
-        {
-            //This entry requires a number of items with this tag
-            //material.tag.name indicates which tag
-            //material.tag.value indicates what tag value
-            //mateiral.tag.count indicates how many items with that tag:value
-        }
-    }
-}
-```
-
-### item\_price
+### BackgroundColor
 
 ```csharp
-public Price item_price;
-```
-
-{% hint style="warning" %}
-This is rarely if ever useful at run time, if you need toget the current store price at run time your better off to use
-
-&#x20;
-
-```csharp
-API.Inventory.Client.GetItemPrice((responce, error) =>
-{
-    
-});
-```
-{% endhint %}
-
-This defines the items pricing if any
-
-Pricing is a complex topic in Valve's Inventory API you can define a price as either a category or a list and you can also define changes in prices within this defintion.
-
-```csharp
-//Is this price valid?
-if(itemDef.item_price.Valid)
-    ;//Yes
-else
-    ;//No
-
-//What type of price is it
-if(itemDef.item_price.useCategroy)
-    ;//Uses price category enumerator
-else
-    ;//Uses a custom defined price list
-    
-//Get the category if any
-ValvePriceCategories category = itemDef.item_price.category;
-
-//Get the price list if any
-var priceList = itemDef.item_price.priceList;
-
-//Check the list version
-Debug.Log("Price list version: " + priceList.version);
-
-//Iterate over the original price values
-foreach(var entry in priceList.values)
-{
-    //entry.currency indicates the currency this entriy is for
-    //entry.value indicates the value as a whole number 
-    //USD:100 indicates 1 US dolar e.g. USD:010 would indicate 10 US cents
-}
-
-//Iterate over the change collection
-foreach(var change in itemDef.item_price.changes)
-{
-    //change.fromData is the date in LINUX Epoc that this started
-    //change.untilData is the date in LINUX Epoc that this ended
-    //change.prices is the price list entries
-    
-    foreach(var entry in change.prices.values)
-    {
-        //entry.currency indicates the currency this entriy is for
-        //entry.value indicates the value as a whole number 
-        //USD:100 indicates 1 US dolar e.g. USD:010 would indicate 10 US cents
-    }
-}
-```
-
-### item\_background\_color
-
-```csharp
-public Color item_background_color;
+public Color BackgroundColor => get;
 ```
 
 The background color used in the Steam Store and marketplace entries if any
 
-### item\_name\_color
+### NameColor
 
 ```csharp
-public Color item_name_color;
+public Color NameColor => get;
 ```
 
 The name color used in the Steam Store and marketplace entries if any
 
-### item\_icon\_url
+### IconUrl
 
 ```csharp
-public string item_icon_url;
+public string IconUrl => get;
 ```
 
 The icon URL for this item if any, this is used by the Steam Store and marketplace entries.
 
-### item\_icon\_url\_large
+### IconUrlLarge
 
 ```csharp
-public string item_icon_url_large;
+public string IconUrlLarge => get;
 ```
 
 The icon URL for this item if any, this is used by the Steam Store and marketplace entries.
 
-### item\_marketable
+### Marketable
 
 ```csharp
-public bool item_marketable;
+public bool Marketable => get;
 ```
 
 Can this item be sold by players on the Steam marketplace.
 
-### item\_tradable
+### Tradable
 
 ```csharp
-public bool item_tradable;
+public bool Tradable => get;
 ```
 
 Can this item be traded between players via the Steam Inventory system.
 
-### item\_tags
+### Tags
 
 ```csharp
-public TagCollection item_tags;
+public ItemTag[] Tags;=> get
 ```
 
-The set of tags related to this item. You can iterate over the tags via
+The set of tags related to this item.
+
+### TagGenerators
 
 ```csharp
-foreach(var entry in itemDef.item_tags.tags)
-{
-    //entry.category the category for this entry e.g. Catagory:Tag
-    //entry.tag the tag value for this entry e.g. Category:Tag
-}
+public ItemDefinition[] TagGenerators => get;
 ```
 
-### Additional Fields
+The array of items used as tag generators related to this item
 
-{% hint style="info" %}
-These will be moved to the above format in documetation soon in the mean time find them listed here.
+### TagGeneratorValueArray
 
-\
-These are typically not used by developers and only serve to help the system generate the JSON defintion files
-{% endhint %}
+```csharp
+public TagGeneratorValue[] TagGeneratorvalueArray => get;
+```
 
-| Type                  | Name                         | Comment                                                                                 |
-| --------------------- | ---------------------------- | --------------------------------------------------------------------------------------- |
-| List\<ItemDefinition> | item\_tag\_generators        | The collection of related tag generators for this item if any ... used when serializing |
-| string                | item\_tag\_generator\_name   | The tag generator name if any ... used when serializing                                 |
-| List\<string>         | item\_store\_tags            | Collection of store tags if any ... used when serializing                               |
-| List\<string>         | item\_store\_images          | Collection of image URLs for store images if any ... used when serializing              |
-| bool                  | item\_hidden                 | Is this a hidden item ... used when serializing                                         |
-| bool                  | item\_store\_hidden          | Is this item hidden in the store ...  used when serializing                             |
-| bool                  | item\_use\_drop\_limit       | Does this item use drop limit ... use when serializing                                  |
-| uint                  | item\_drop\_limit            | used when serializing                                                                   |
-| uint                  | item\_drop\_interval         | used when serializing                                                                   |
-| bool                  | item\_use\_drop\_window      | used when serializing                                                                   |
-| uint                  | item\_drop\_window           | used when serializing                                                                   |
-| uint                  | item\_drop\_max\_per\_window | used when serializing                                                                   |
-| bool                  | item\_granted\_manually      | used when serializing                                                                   |
-| bool                  | item\_use\_bundle\_price     | used when serializing                                                                   |
-| bool                  | item\_auto\_stack            | used when serializing                                                                   |
-| ExtendedSchema        | item\_extendedSchema         | used when serializing                                                                   |
+The array of values that can be generated for this item
+
+### StoreTags
+
+```csharp
+public string[] StoreTags => get;
+```
+
+Returns the array of store tags assigned to this item
+
+### StoreImages
+
+```csharp
+public string[] StoreImages => get;
+```
+
+Returns the array of store images assigned to this item
+
+### Hidden
+
+```csharp
+public bool Hidden => get;
+```
+
+Is this item hidden from the user's inventory
+
+### StoreHidden
+
+```csharp
+public bool StoreHidden => get;
+```
+
+Is this item hidden from the store
 
 ## Methods
 
@@ -473,6 +357,22 @@ public void StartPurchase(callback);
 ```
 
 If the item is confugred correctly for store purchases this will open the store loading the cart with the indicated number of items to be purcahsed.
+
+### CurrentPriceString
+
+```csharp
+public string CurrentPriceString();
+```
+
+This reurnts the culture formated string for the currency assuming it is base 100. This works well for curencies such as USD, EUR, GBP or anything with a "cent" concept but will not work well for currencies that always use whole numbers such as the Yen.
+
+### BasePriceString
+
+```csharp
+public string BasePriceString();
+```
+
+This reurnts the culture formated string for the currency assuming it is base 100. This works well for curencies such as USD, EUR, GBP or anything with a "cent" concept but will not work well for currencies that always use whole numbers such as the Yen.
 
 ### Trigger Drop
 

@@ -178,6 +178,7 @@
     * [Chat Room](assets/steamworks/objects/chat-room.md)
     * [Clan](assets/steamworks/objects/clan.md)
     * [Clan Chat Msg](assets/steamworks/objects/clan-chat-msg.md)
+    * [Currency](assets/steamworks/objects/currency.md)
     * [Data Model](assets/steamworks/objects/data-model.md)
     * [DLC Data](assets/steamworks/objects/dlc-data.md)
     * [Downloadable Content Object](assets/steamworks/objects/downloadable-content.md)

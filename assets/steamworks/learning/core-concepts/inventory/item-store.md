@@ -2,6 +2,15 @@
 
 ## Introduction
 
+{% hint style="warning" %}
+You cannot test Steam Inventory features with App ID 480 aka Spacewars.
+
+\
+In order to test Steam Inventroy features including but not limited to microtransactions, crafting, player inventory, etc. you will need to register your for your own app ID and configure your own Steam Inventory Items.\
+\
+As a result of this limitation from Valve the sample scenes for Inventory cannot be used with App 480 in any funcitonal form.
+{% endhint %}
+
 A common request we see is for an example in-game store or other "MTX" (micro-transcation) example.
 
 Since Valve's Spacewar doesn't have a usable Steam Inventory configuraiton and since your store would be highly dependent on what items you have and how they are configured. The sample scene we have provided (9 Item Store Tutorial) simply contains example scripts based on this article and is meant to be a teaching tool not a funcitonal exmaple.
@@ -98,7 +107,6 @@ For each item you will need to get some common information.&#x20;
 * Item Description\
   You can find this in [item\_description](../../../objects/item-definition.md#item\_description).
 * Price\
-  This is a tricky one in that Valve doesn't give a good way to identify what currency the user is currently using. You could likely assume based on location however the user's geo tag doesn't always dictate currency. A more common method is to list the USD, EUR or another common price.\
   If you want to fetch the price in the user's currency see: [Current Price](../../../objects/item-definition.md#currentprice) and [Base Price](../../../objects/item-definition.md#baseprice). You can check if there is a price at all via [Has Price](../../../objects/item-definition.md#hasprice).
 * Images\
   Several images can be assoceated with an item ... we dont recomend using any of them as they should all be optimized for use in web and thus of pore quality for use in game. but you can read them from the item defintion via
