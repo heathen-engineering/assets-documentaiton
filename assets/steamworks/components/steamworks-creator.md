@@ -53,7 +53,7 @@ This configuration option if set true will cause the creator to mark the resulti
 If not set then the created GameObject will reside in the currently active scene and will be destroyed when that scene is unloaded.&#x20;
 
 {% hint style="danger" %}
-You must not allow a [Steamworks Behaviour](steamworks-behaviour.md) object to be destroyed. Dowing so will cause unperdictable errors with your Steam Integration.
+You must not allow a [Steamworks Behaviour](steamworks-behaviour.md) object to be destroyed. Doing so will cause unperdictable errors with your Steam Integration.
 
 
 

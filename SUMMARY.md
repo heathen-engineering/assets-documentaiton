@@ -204,7 +204,7 @@
     * [Remote Storage File](assets/steamworks/objects/remote-storage-file.md)
     * [Steam Settings](assets/steamworks/objects/steam-settings.md)
       * [Colors](assets/steamworks/objects/steam-settings/colors.md)
-      * [Game Client](assets/steamworks/objects/steam-settings/game-client/README.md)
+      * [Game Client](assets/steamworks/objects/steam-settings/game-client.md)
         * [Inventory Settings](assets/steamworks/objects/steam-settings/game-client/inventory-settings.md)
       * [Game Server](assets/steamworks/objects/steam-settings/game-server.md)
     * [UGC Query](assets/steamworks/objects/ugc-query.md)
