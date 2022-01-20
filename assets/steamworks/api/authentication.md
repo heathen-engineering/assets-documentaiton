@@ -52,42 +52,48 @@ public static List<AuthenticationSession> ActiveSessions;
 
 ### IsAuthTicketValid
 
-Determins if the provided ticket handle is valid
-
 ```csharp
 public static bool IsAuthTicketValid(AuthenticationTicket ticket);
 ```
 
+Determins if the provided ticket handle is valid
+
 ### EncodedAuthTicket
-
-Encodes a ticekt to hex string format
-
-This is most commonly used with web calls such as [https://partner.steamgames.com/doc/webapi/ISteamUserAuth#AuthenticateUserTicket](https://partner.steamgames.com/doc/webapi/ISteamUserAuth#AuthenticateUserTicket)
 
 ```csharp
 public static string EncodedAuthTicket(AuthenticationTicket ticket);
 ```
 
-### GetAuthSessionTicket
+Encodes a ticekt to hex string format
 
-Requests a new Auth Session Ticket
+This is most commonly used with web calls such as [https://partner.steamgames.com/doc/webapi/ISteamUserAuth#AuthenticateUserTicket](https://partner.steamgames.com/doc/webapi/ISteamUserAuth#AuthenticateUserTicket)
+
+### GetAuthSessionTicket
 
 ```csharp
 public static void GetAuthSessionTicket(
         Action<AuthenticationTicket, bool> callback);
 ```
 
-### CancelAuthTicket
+{% hint style="info" %}
+The callback deligate should be in the form of
 
-Cancels the auth ticket rather its client or server based.
+```csharp
+void CallbackHandler(AthentcationTicket result, bool IOError);
+```
+{% endhint %}
+
+Requests a new Auth Session Ticket
+
+### CancelAuthTicket
 
 ```csharp
 public static void CancelAuthTicket(AuthenticationTicket ticket);
 ```
 
-### BeginAuthSession
+Cancels the auth ticket rather its client or server based.
 
-Starts an authorization session with the indicated user given the applied auth ticket
+### BeginAuthSession
 
 ```csharp
 public static void BeginAuthSession(byte[] authTicket, 
@@ -95,38 +101,48 @@ public static void BeginAuthSession(byte[] authTicket,
                                 Action<AuthenticationSession> callback);
 ```
 
-### EndAuthSession
+{% hint style="info" %}
+The callback deligate should be in the form of
 
-Ends the auth session with the indicated user if any
+```csharp
+void CallbackHandler(AuthenticationSession result);
+```
+{% endhint %}
+
+Starts an authorization session with the indicated user given the applied auth ticket
+
+### EndAuthSession
 
 ```csharp
 public static void EndAuthSession(CSteamID user);
 ```
 
-### UserHasLicenseForApp
+Ends the auth session with the indicated user if any
 
-Checks if the user owns a specific piece of Downloadable Content (DLC).
+### UserHasLicenseForApp
 
 ```csharp
 public static EUserHasLicenseForAppResult UserHasLicenseForApp(CSteamID user,
                                                                 AppId_t appId);
 ```
 
-### EndAllSessions
+Checks if the user owns a specific piece of Downloadable Content (DLC).
 
-Ends all tracked sessions
+### EndAllSessions
 
 ```csharp
 public static void EndAllSessions();
 ```
 
-### CancelAllTickets
+Ends all tracked sessions
 
-Cancels all tracked tickets
+### CancelAllTickets
 
 ```csharp
 public static void CancelAllTickets();
 ```
+
+Cancels all tracked tickets
 
 ## How To
 

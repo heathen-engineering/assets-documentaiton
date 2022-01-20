@@ -403,8 +403,6 @@ foreach(var lobby in API.Matchmaking.Client.memberOfLobbies)
 
 ### AddHistoryGame
 
-Adds the game server to the local favorites list or updates the time played of the server if it already exists in the list.
-
 ```csharp
 public static void AddHistoryGame(AppId_t appID, 
                 uint ipAddress, 
@@ -413,9 +411,9 @@ public static void AddHistoryGame(AppId_t appID,
                 DateTime lastPlayedOnServer)
 ```
 
-### AddFavoriteGame
-
 Adds the game server to the local favorites list or updates the time played of the server if it already exists in the list.
+
+### AddFavoriteGame
 
 ```csharp
 public static void AddFavoriteGame(AppId_t appID, 
@@ -424,11 +422,11 @@ public static void AddFavoriteGame(AppId_t appID,
                 ushort queryPort, 
                 DateTime lastPlayedOnServer)
 ```
+
+Adds the game server to the local favorites list or updates the time played of the server if it already exists in the list.
 
 ### AddHistoryGame
 
-Adds the game server to the local favorites list or updates the time played of the server if it already exists in the list.
-
 ```csharp
 public static void AddHistoryGame(AppId_t appID, 
                 string ipAddress, 
@@ -437,9 +435,9 @@ public static void AddHistoryGame(AppId_t appID,
                 DateTime lastPlayedOnServer)
 ```
 
-### AddFavoriteGame
-
 Adds the game server to the local favorites list or updates the time played of the server if it already exists in the list.
+
+### AddFavoriteGame
 
 ```csharp
 public static void AddFavoriteGame(AppId_t appID, 
@@ -449,35 +447,35 @@ public static void AddFavoriteGame(AppId_t appID,
                 DateTime lastPlayedOnServer)
 ```
 
-### AddRequestLobbyListDistanceFilter
+Adds the game server to the local favorites list or updates the time played of the server if it already exists in the list.
 
-Sets the physical distance for which we should search for lobbies, this is based on the users IP address and a IP location map on the Steam backed.
+### AddRequestLobbyListDistanceFilter
 
 ```csharp
 public static void AddRequestLobbyListDistanceFilter(ELobbyDistanceFilter distanceFilter)
 ```
 
-### AddRequestLobbyListFilterSlotsAvailable
+Sets the physical distance for which we should search for lobbies, this is based on the users IP address and a IP location map on the Steam backed.
 
-Filters to only return lobbies with the specified number of open slots available.
+### AddRequestLobbyListFilterSlotsAvailable
 
 ```csharp
 public static void AddRequestLobbyListFilterSlotsAvailable(int slotsAvailable)
 ```
 
+Filters to only return lobbies with the specified number of open slots available.
+
 ### AddRequestLobbyListNearValueFilter
-
-Sorts the results closest to the specified value.
-
-Near filters don't actually filter out values, they just influence how the results are sorted. You can specify multiple near filters, with the first near filter influencing the most, and the last near filter influencing the least.
 
 ```csharp
 public static void AddRequestLobbyListNearValueFilter(string key, int value)
 ```
 
-### AddRequestLobbyListNumericalFilter
+Sorts the results closest to the specified value.
 
-Adds a numerical comparison filter to the next RequestLobbyList call.
+Near filters don't actually filter out values, they just influence how the results are sorted. You can specify multiple near filters, with the first near filter influencing the most, and the last near filter influencing the least.
+
+### AddRequestLobbyListNumericalFilter
 
 ```csharp
 public static void AddRequestLobbyListNumericalFilter(string key, 
@@ -485,17 +483,17 @@ public static void AddRequestLobbyListNumericalFilter(string key,
                                 ELobbyComparison comparison)
 ```
 
-### AddRequestLobbyListResultCountFilter
+Adds a numerical comparison filter to the next RequestLobbyList call.
 
-Sets the maximum number of lobbies to return. The lower the count the faster it is to download the lobby results & details to the client.
+### AddRequestLobbyListResultCountFilter
 
 ```csharp
 public static void AddRequestLobbyListResultCountFilter(int max)
 ```
 
-### AddRequestLobbyListStringFilter
+Sets the maximum number of lobbies to return. The lower the count the faster it is to download the lobby results & details to the client.
 
-Adds a string comparison filter to the next RequestLobbyList call.
+### AddRequestLobbyListStringFilter
 
 ```csharp
 public static void AddRequestLobbyListStringFilter(string key, 
@@ -503,9 +501,9 @@ public static void AddRequestLobbyListStringFilter(string key,
                                 ELobbyComparison comparison)
 ```
 
-### CreateLobby
+Adds a string comparison filter to the next RequestLobbyList call.
 
-Create a new matchmaking lobby.
+### CreateLobby
 
 ```csharp
 public static void CreateLobby(ELobbyType type, 
@@ -513,41 +511,49 @@ public static void CreateLobby(ELobbyType type,
                 Action<Lobby, bool> callback)
 ```
 
-### DeleteLobbyData
+{% hint style="info" %}
+The callback deligate should be in the form of
 
-Removes a metadata key from the lobby.
+```csharp
+void CallbackHandler(Lobby result, bool IOError);
+```
+{% endhint %}
+
+Create a new matchmaking lobby.
+
+### DeleteLobbyData
 
 ```csharp
 public static bool DeleteLobbyData(Lobby lobby, string key)
 ```
 
-### GetFavoriteGame
+Removes a metadata key from the lobby.
 
-Gets the details of the favorite game server by index.
+### GetFavoriteGame
 
 ```csharp
 public static FavoriteGame? GetFavoriteGame(int index)
 ```
 
-### GetFavoriteGames
+Gets the details of the favorite game server by index.
 
-Returns the collection of favorite game entries
+### GetFavoriteGames
 
 ```csharp
 public static FavoriteGame[] GetFavoriteGames()
 ```
 
-### GetFavoriteGameCount
+Returns the collection of favorite game entries
 
-Gets the number of favorite and recent game servers the user has stored locally.
+### GetFavoriteGameCount
 
 ```csharp
 public static int GetFavoriteGameCount()
 ```
 
-### GetLobbyData
+Gets the number of favorite and recent game servers the user has stored locally.
 
-Gets the metadata associated with the specified key from the specified lobby.
+### GetLobbyData
 
 ```csharp
 public static string GetLobbyData(Lobby lobby, string key)
@@ -557,69 +563,69 @@ public static string GetLobbyData(Lobby lobby, string key)
 public static Dictionary<string, string> GetLobbyData(Lobby lobby)
 ```
 
-### GetLobbyGameServer
+Gets the metadata associated with the specified key from the specified lobby.
 
-Gets the details of a game server set in a lobby.
+### GetLobbyGameServer
 
 ```csharp
 public static LobbyGameServer GetLobbyGameServer(Lobby lobby)
 ```
 
+Gets the details of a game server set in a lobby.
+
 ### GetLobbyMembers
-
-Returns a list of user IDs for the members of the indicated lobby
-
-{% hint style="warning" %}
-The current user must be in the lobby to retrieve the Steam IDs of other users in that lobby.
-{% endhint %}
 
 ```csharp
 public static LobbyMember[] GetLobbyMembers(Lobby lobby)
 ```
 
-### GetLobbyMemberLimit
+{% hint style="warning" %}
+The current user must be in the lobby to retrieve the Steam IDs of other users in that lobby.
+{% endhint %}
 
-The current limit on the # of users who can join the lobby.
+Returns a list of user IDs for the members of the indicated lobby
+
+### GetLobbyMemberLimit
 
 ```csharp
 public static int GetLobbyMemberLimit(Lobby lobby)
 ```
 
-### GetLobbyOwner
+The current limit on the # of users who can join the lobby.
 
-Returns the current lobby owner.
+### GetLobbyOwner
 
 ```csharp
 public static CSteamID GetLobbyOwner(Lobby lobby)
 ```
 
-### InviteUserToLobby
+Returns the current lobby owner.
 
-Invite another user to the lobby.
+### InviteUserToLobby
 
 ```csharp
 public static bool InviteUserToLobby(Lobby lobby, UserData user)
 ```
 
-### JoinLobby
+Invite another user to the lobby.
 
-Joins an existing lobby.
+### JoinLobby
 
 ```csharp
 public static void JoinLobby(Lobby lobby, Action<LobbyEnter_t, bool> callback)
 ```
 
-### LeaveLobby
+Joins an existing lobby.
 
-Leave a lobby that the user is currently in; this will take effect immediately on the client side, other users in the lobby will be notified by a LobbyChatUpdate\_t callback.
+### LeaveLobby
 
 ```csharp
 public static void LeaveLobby(Lobby lobby)
 ```
 
-### RemoveFavoriteGame
+Leave a lobby that the user is currently in; this will take effect immediately on the client side, other users in the lobby will be notified by a LobbyChatUpdate\_t callback.
 
-Removes the game server from the local favorites list.
+### RemoveFavoriteGame
 
 ```csharp
 public static bool RemoveFavoriteGame(AppId_t appId, 
@@ -628,9 +634,9 @@ public static bool RemoveFavoriteGame(AppId_t appId,
                 ushort queryPort)
 ```
 
-### RemoveHistoryGame
+Removes the game server from the local favorites list.
 
-Removes the game server from the local history list.
+### RemoveHistoryGame
 
 ```csharp
 public static bool RemoveHistoryGame(AppId_t appId, 
@@ -639,19 +645,25 @@ public static bool RemoveHistoryGame(AppId_t appId,
                 ushort queryPort)
 ```
 
+Removes the game server from the local history list.
+
 ### RequestLobbyData
-
-Refreshes all of the metadata for a lobby that you're not in right now.
-
-{% hint style="info" %}
-If your in the lobby then its data is always up to date
-{% endhint %}
 
 ```csharp
 public static bool RequestLobbyData(Lobby lobby)
 ```
 
+{% hint style="info" %}
+If your in the lobby then its data is always up to date
+{% endhint %}
+
+Refreshes all of the metadata for a lobby that you're not in right now.
+
 ### RequestLobbyList
+
+```csharp
+public static void RequestLobbyList(Action<Lobby[], bool> callback)
+```
 
 Get a filtered list of relevant lobbies.
 
@@ -669,31 +681,34 @@ If AddRequestLobbyListDistanceFilter is not called, k\_ELobbyDistanceFilterDefau
 This will only return lobbies that are not full, and only lobbies that are k\_ELobbyTypePublic or k\_ELobbyTypeInvisible, and are set to joinable with SetLobbyJoinable.
 {% endhint %}
 
-```csharp
-public static void RequestLobbyList(Action<Lobby[], bool> callback)
-```
-
 ### SendLobbyChatMsg
-
-Broadcasts a chat (text or binary data) message to the all of the users in the lobby.
 
 ```csharp
 public static bool SendLobbyChatMsg(Lobby lobby, byte[] messageBody)
 ```
 
+Broadcasts a chat (text or binary data) message to the all of the users in the lobby.
+
 ### SetLobbyData
-
-Sets a key/value pair in the lobby metadata. This can be used to set the the lobby name, current map, game mode, etc.
-
-{% hint style="info" %}
-This can only be set by the owner of the lobby. Lobby members should use SetLobbyMemberData instead.
-{% endhint %}
 
 ```csharp
 public static bool SetLobbyData(Lobby lobby, string key, string value)
 ```
 
+{% hint style="info" %}
+This can only be set by the owner of the lobby. Lobby members should use SetLobbyMemberData instead.
+{% endhint %}
+
+Sets a key/value pair in the lobby metadata. This can be used to set the the lobby name, current map, game mode, etc.
+
 ### SetLobbyGameServer
+
+```csharp
+public static void SetLobbyGameServer(Lobby lobby, 
+                uint ip, 
+                ushort port, 
+                CSteamID gameServerId)
+```
 
 Sets the game server associated with the lobby.
 
@@ -705,106 +720,99 @@ Either the IP/Port or the Steam ID of the game server must be valid, depending o
 
 A LobbyGameCreated\_t callback will be sent to all players in the lobby, usually at this point, the users will join the specified game server.
 
-```csharp
-public static void SetLobbyGameServer(Lobby lobby, 
-                uint ip, 
-                ushort port, 
-                CSteamID gameServerId)
-```
-
 ### SetLobbyJoinable
-
-Sets whether or not a lobby is joinable by other players. This always defaults to enabled for a new lobby.
-
-If joining is disabled, then no players can join, even if they are a friend or have been invited.
 
 ```csharp
 public static bool SetLobbyJoinable(Lobby lobby, bool joinable)
 ```
 
-### GetLobbyMemberData
+Sets whether or not a lobby is joinable by other players. This always defaults to enabled for a new lobby.
 
-Gets per-user metadata from another player in the specified lobby.
+If joining is disabled, then no players can join, even if they are a friend or have been invited.
+
+### GetLobbyMemberData
 
 ```csharp
 public static string GetLobbyMemberData(Lobby lobby, CSteamID member, string key)
 ```
 
-### GetMember
+Gets per-user metadata from another player in the specified lobby.
 
-Get the LobbyMember object for a given user
+### GetMember
 
 ```csharp
 public static bool GetMember(Lobby lobby, CSteamID id, out LobbyMember member)
 ```
 
-### IsAMember
+Get the LobbyMember object for a given user
 
-Checks if a user is a member of this lobby
+### IsAMember
 
 ```csharp
 public static bool IsAMember(Lobby lobby, CSteamID id)
 ```
 
+Checks if a user is a member of this lobby
+
 ### SetLobbyMemberData
-
-Sets per-user metadata for the local user.
-
-Each user in the lobby will be receive notification of the lobby data change via a LobbyDataUpdate\_t callback, and any new users joining will receive any existing data.
 
 ```csharp
 public static void SetLobbyMemberData(Lobby lobby, string key, string value)
 ```
 
-### SetLobbyMemberLimit
+Sets per-user metadata for the local user.
 
-Set the maximum number of players that can join the lobby.
+Each user in the lobby will be receive notification of the lobby data change via a LobbyDataUpdate\_t callback, and any new users joining will receive any existing data.
+
+### SetLobbyMemberLimit
 
 ```csharp
 public static bool SetLobbyMemberLimit(Lobby lobby, int maxMembers)
 ```
 
+Set the maximum number of players that can join the lobby.
+
 ### SetLobbyOwner
-
-Changes who the lobby owner is.
-
-This can only be set by the owner of the lobby. This will trigger a LobbyDataUpdate\_t for all of the users in the lobby, each user should update their local state to reflect the new owner. This is typically accomplished by displaying a crown icon next to the owners name.
 
 ```csharp
 public static bool SetLobbyOwner(Lobby lobby, CSteamID newOwner)
 ```
 
-### SetLobbyType
+Changes who the lobby owner is.
 
-Updates what type of lobby this is.
+This can only be set by the owner of the lobby. This will trigger a LobbyDataUpdate\_t for all of the users in the lobby, each user should update their local state to reflect the new owner. This is typically accomplished by displaying a crown icon next to the owners name.
+
+### SetLobbyType
 
 ```csharp
 public static bool SetLobbyType(Lobby lobby, ELobbyType type)
 ```
 
-### CancelQuery
+Updates what type of lobby this is.
 
-Cancel an outstanding server list request.
+### CancelQuery
 
 ```csharp
 public static void CancelQuery(HServerListRequest request)
 ```
 
-### CancelServerQuery
+Cancel an outstanding server list request.
 
-Cancel an outstanding individual server query.
+### CancelServerQuery
 
 ```csharp
 public static void CancelServerQuery(HServerQuery query)
 ```
 
-### GetServerCount
+Cancel an outstanding individual server query.
 
-Gets the number of servers in the given list.
+### GetServerCount
 
 ```csharp
 public static int GetServerCount(HServerListRequest request)
 ```
+
+Gets the number of servers in the given list.
 
 ### GetServerDetails
 
@@ -823,15 +831,13 @@ public static gameserveritem_t[] GetServerDetails(
 
 ### IsRefreshing
 
-Checks if the server list request is currently refreshing.
-
 ```csharp
 public static bool IsRefreshing(HServerListRequest request)
 ```
 
-### PingServer
+Checks if the server list request is currently refreshing.
 
-Queries an individual game servers directly via IP/Port to request an updated ping time and other details from the server.
+### PingServer
 
 ```csharp
 public static HServerQuery PingServer(uint ip, 
@@ -839,9 +845,9 @@ public static HServerQuery PingServer(uint ip,
                 ISteamMatchmakingPingResponse responce)
 ```
 
-### PlayerDetails
+Queries an individual game servers directly via IP/Port to request an updated ping time and other details from the server.
 
-Queries an individual game servers directly via IP/Port to request the list of players currently playing on the server.
+### PlayerDetails
 
 ```csharp
 public static HServerQuery PlayerDetails(uint ip, 
@@ -849,33 +855,33 @@ public static HServerQuery PlayerDetails(uint ip,
                 ISteamMatchmakingPlayersResponse responce)
 ```
 
-### RefreshQuery
+Queries an individual game servers directly via IP/Port to request the list of players currently playing on the server.
 
-Ping every server in your list again but don't update the list of servers.
+### RefreshQuery
 
 ```csharp
 public static void RefreshQuery(HServerListRequest request)
 ```
 
-### RefreshServer
+Ping every server in your list again but don't update the list of servers.
 
-Refreshes a single server inside of a query.
+### RefreshServer
 
 ```csharp
 public static void RefreshServer(HServerListRequest request, int index)
 ```
 
-### ReleaseRequest
+Refreshes a single server inside of a query.
 
-Releases the asynchronous server list request object and cancels any pending query on it if there's a pending query in progress.
+### ReleaseRequest
 
 ```csharp
 public static void ReleaseRequest(HServerListRequest request)
 ```
 
-### RequestFavoritesServerList
+Releases the asynchronous server list request object and cancels any pending query on it if there's a pending query in progress.
 
-Request a new list of game servers from the 'favorites' server list.
+### RequestFavoritesServerList
 
 ```csharp
 public static HServerListRequest RequestFavoritesServerList(AppId_t appId, 
@@ -883,9 +889,9 @@ public static HServerListRequest RequestFavoritesServerList(AppId_t appId,
                 ISteamMatchmakingServerListResponse pRequestServersResponse)
 ```
 
-### RequestFriendsServerList
+Request a new list of game servers from the 'favorites' server list.
 
-Request a new list of game servers from the 'friends' server list.
+### RequestFriendsServerList
 
 ```csharp
 public static HServerListRequest RequestFriendsServerList(AppId_t appId, 
@@ -893,9 +899,9 @@ public static HServerListRequest RequestFriendsServerList(AppId_t appId,
                 ISteamMatchmakingServerListResponse pRequestServersResponse)
 ```
 
-### RequestHistoryServerList
+Request a new list of game servers from the 'friends' server list.
 
-Request a new list of game servers from the 'history' server list.
+### RequestHistoryServerList
 
 ```csharp
 public static HServerListRequest RequestHistoryServerList(AppId_t appId, 
@@ -903,9 +909,9 @@ public static HServerListRequest RequestHistoryServerList(AppId_t appId,
                 ISteamMatchmakingServerListResponse pRequestServersResponse)
 ```
 
-### RequestInternetServerList
+Request a new list of game servers from the 'history' server list.
 
-Request a new list of game servers from the 'internet' server list.
+### RequestInternetServerList
 
 ```csharp
 public static HServerListRequest RequestInternetServerList(AppId_t appId, 
@@ -913,18 +919,18 @@ public static HServerListRequest RequestInternetServerList(AppId_t appId,
                 ISteamMatchmakingServerListResponse pRequestServersResponse)
 ```
 
-### RequestLANServerList
+Request a new list of game servers from the 'internet' server list.
 
-Request a new list of game servers from the 'LAN' server list.
+### RequestLANServerList
 
 ```csharp
 public static HServerListRequest RequestLANServerList(AppId_t appId,  
                 ISteamMatchmakingServerListResponse pRequestServersResponse)
 ```
 
-### RequestSpectatorServerList
+Request a new list of game servers from the 'LAN' server list.
 
-Request a new list of game servers from the 'favorites' server list.
+### RequestSpectatorServerList
 
 ```csharp
 public static HServerListRequest RequestSpectatorServerList(AppId_t appId, 
@@ -932,9 +938,9 @@ public static HServerListRequest RequestSpectatorServerList(AppId_t appId,
                 ISteamMatchmakingServerListResponse pRequestServersResponse)
 ```
 
-### ServerRules
+Request a new list of game servers from the 'favorites' server list.
 
-Queries an individual game servers directly via IP/Port to request the list of rules that the server is running. (See ISteamGameServer::SetKeyValue to set the rules on the server side.)
+### ServerRules
 
 ```csharp
 public static HServerQuery ServerRules(uint ip, 
@@ -942,13 +948,15 @@ public static HServerQuery ServerRules(uint ip,
                 ISteamMatchmakingRulesResponse responce)
 ```
 
-### LeaveAllLobbies
+Queries an individual game servers directly via IP/Port to request the list of rules that the server is running. (See ISteamGameServer::SetKeyValue to set the rules on the server side.)
 
-Leaves all lobbies the user is a member of if any
+### LeaveAllLobbies
 
 ```csharp
 public static void LeaveAllLobbies()
 ```
+
+Leaves all lobbies the user is a member of if any
 
 ## How To
 
