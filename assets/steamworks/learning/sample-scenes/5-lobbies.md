@@ -8,7 +8,7 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 
 This scene demonstrates the use of Steam Lobbies and Lobby Manage component.
 
-![](<../../../../.gitbook/assets/image (183).png>)
+![](<../../../../.gitbook/assets/image (183) (1).png>)
 
 ### What do I learn?
 

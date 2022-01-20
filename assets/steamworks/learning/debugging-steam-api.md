@@ -64,7 +64,7 @@ If you need to repair a board that is misbehaving you will need to contact Valve
 
 ## Downloadable Content
 
-![](<../../../.gitbook/assets/image (181) (1).png>)
+![](<../../../.gitbook/assets/image (181) (1) (1).png>)
 
 You can view the subscription status of all DLC in the DLC tab
 
