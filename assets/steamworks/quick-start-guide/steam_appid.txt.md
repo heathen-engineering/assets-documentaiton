@@ -6,7 +6,19 @@ description: Understanding the steam_appid.txt when to use it and when not to us
 
 ## Introduction
 
-The steam\_appid.txt is a simple text file that when used would be located in the working directory of your game. This is required to be used anytime the initializing application is not launched from the Steam client.
+The steam\_appid.txt is a simple text file that contains only your app ID when used would be located in the working directory of your game.&#x20;
+
+{% hint style="info" %}
+Example steam\_appid.txt
+
+```
+480
+```
+
+As you can see it is a simple text file that contians nothing but the App ID of your app.
+{% endhint %}
+
+This is required to be used anytime the initializing application is not launched from the Steam client.
 
 {% hint style="warning" %}
 This means that steam\_appid.txt must be used when you are:
