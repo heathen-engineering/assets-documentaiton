@@ -7,7 +7,7 @@ description: Browse and join listed game servers.
 ## Introduction
 
 {% hint style="success" %}
-Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)asset.
+Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/integration/steamworks-v2-complete-190316)asset.
 {% endhint %}
 
 The Steam Game Server concept is offten confused when you first start looking into Steam and its related tools, interfaces and services.&#x20;

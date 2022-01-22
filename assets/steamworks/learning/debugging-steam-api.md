@@ -3,7 +3,7 @@
 ## Introduction
 
 {% hint style="success" %}
-Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)asset.
+Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/integration/steamworks-v2-complete-190316)asset.
 {% endhint %}
 
 Heathen provides a powerful inspector that will show you the states and values of all Steam API artifacts configured for your project. To Access the inspector simply open the Steamworks > Inspector menu.

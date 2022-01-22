@@ -3,7 +3,7 @@
 ## Introduction
 
 {% hint style="success" %}
-Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)asset.
+Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/integration/steamworks-v2-complete-190316)asset.
 {% endhint %}
 
 The User Generate Content (UGC) API from Valve is used for a number of features including Leaderboard Details. This section of the Heathen Knowledge Base however deals with the use of UGC for Workshop files.
