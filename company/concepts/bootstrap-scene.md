@@ -82,16 +82,16 @@ In contrast if you loaded the game scene additively you can choose to activate i
 
 1. Show the loading screen\
    This is a feature of the bootstrap scene and thus always available and unaffected by any load or unload operation
-2. We would disable the game objects of the title scene, we make this easy on our selves by testing them in a root object buy you can use whatever method works for you. Point is they are disabled e.g. not active but are still present
+2. We would disable the game objects of the title scene, we make this easy on our selves by storing them in a root object so we can simply disable 1 thing, but you can use whatever method works for you. Point is they are disabled e.g. not active but are still present
 3. We load the game scene additively and activate it right away\
-   At this point we can close out the loading screen and return control to the user as the game is now playable again
+   At this point we can close out the loading screen and return control to the user as the game is now playable again.&#x20;
 4. We asynchronously unload the title scene\
    This is optional, if your game returns to the title scene often it may actually be more useful to simply disable and re-enable it as opposed to load and unload it. The point is however that you can do this in the background while the player is getting on with playing the game. No need to make them wait for this to be done.
 
 {% hint style="info" %}
-If you have ever created a scene in Unity that creates a lot of objects at run time, you may have noticed that Unity takes a very long time unloading such a scene.
+If you have ever created a scene in Unity that creates a lot of objects at run time, you may have noticed that Unity takes a very long time unloading such a scene. This is due to Unity iterating over the objects.
 
-You can speed this up by destroying objects yourself, especially those objects you created at run time. If you simply spawn all such objects under some given GameObject, yes that does add a layer to the transform hierarchy which can complicate transform operations, but it also means you can destroy all such objects with a single Destroy command so test various options and see what gives you the best results for your game.
+You can speed this up by destroying objects yourself before unloading the scene, especially those objects you created at run time. If you simply spawn all such objects under some given root GameObject, yes that does add a layer to the transform hierarchy which can complicate transform operations, but it also means you can destroy all such objects with a single Destroy command so test various options and see what gives you the best results for your game.
 
 The point here is do not simply rely on Unity's Load and Unload to be the best option for your game. Manually controlling memory is not as hard as you might think and can open a lot of possibilities to you.
 {% endhint %}

@@ -14,13 +14,7 @@ Represents a Steam Inventory Item of any type. This object contains all the sche
 
 {% embed url="https://partner.steamgames.com/doc/features/inventory/schema" %}
 
-{% hint style="danger" %}
-When importing items from Steam API note that Valve omits the bundle node from Items of type 'Generator' thus anytime you import items from Valve the "Items" field on generator type items will be empty and must be set manually before you can export them again.
-
-
-
-This is a deliberate decision from Valve and has been confirmed it is not a bug it is by design. If you (like us) would like it changed then please submit a support ticket to Valve letting them know that this decision adversly impacts you.
-{% endhint %}
+This document will not reiterate the Schema fields those are detailed in Valve's documentation. The fields listed here are in addition to and are used during run time to manage the items owned by the player that this definition represents.
 
 ## Fields and Attributes
 

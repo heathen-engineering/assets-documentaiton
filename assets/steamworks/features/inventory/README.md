@@ -152,20 +152,4 @@ If your exchanging an item or group of items for another item e.g. in-game curre
 
 For more details see the [learning article here](./#item-store).
 
-### Importing Generator Items
-
-You will notice when importing Generator type items that Valve for some reason chose to hide the bundle aka "items" from the import. As such when importing Generator Items the items content will be blanked and you will need to manually redefine its content.
-
-This is a limitation from Valve confirmed with Valve engineers as a deliberate limitation.
-
-> Thanks for the additional context - it helps to see the results you're getting.
->
-> I reached out to an engineer who worked on this API for some background. The GetItemDefinitionProperty API intentionally prevents the client from retrieving the bundle property of generator items. If the games you work with need in-game access to that data, they'll need to either include that information in their game builds or create some other service for retrieving it.
->
-> Best,&#x20;
->
-> Tavish
-
-The above qote is from a Valve support case on this topic. It is not a bug nore a limitation we can effect. If you would like to see this changed you will need to raise it with Valve.
-
 {% embed url="https://kb.heathenengineering.com/assets/steamworks/learning/core-concepts/inventory/item-store" %}
