@@ -160,6 +160,33 @@ Heathen Engineering works with the communities of other assets and tools to help
 
 #### Steam P2P Transport
 
+{% hint style="danger" %}
+This transport is writen to work with Facepunch and doesn't make proper use of the SteamGameServer APIs and so is limited to P2P.\
+\
+If you want to use this transport you will need to port it to use Steamworks.NET which should be trivial.&#x20;
+
+\
+If you wanted to use it with Client/Server architectures then you would need to wrap its calls to use the proper API based on build i.e.
+
+\
+Code writen like this&#x20;
+
+```csharp
+SteamNetworkingUtils.InitRelayNetworkAccess();
+```
+
+\
+should be rewriten to look like this.
+
+```csharp
+#if UNITY_SERVER
+                SteamGameServerNetworkingUtils.InitRelayNetworkAccess();
+#else
+                SteamNetworkingUtils.InitRelayNetworkAccess();
+#endif
+```
+{% endhint %}
+
 {% embed url="https://github.com/nico1207/DarkRift2_Steamworks_P2P_Sockets" %}
 
 ### FishNetworking
