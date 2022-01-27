@@ -47,7 +47,7 @@ Creating new items is quick and easy simply click the "<mark style="color:green;
 
 Every Steam Inventory Schema feature is available but the inspector will hide ones that cannot be used with the currently selected type.
 
-![Normal items can be traded, mareted, sold, etc.](<../../../../.gitbook/assets/image (166) (1) (1) (1).png>)
+![Normal items can be traded, mareted, sold, etc.](<../../../../.gitbook/assets/image (166) (1) (1) (1) (1).png>)
 
 ![Tag Generators only exist to attach to other items as generators](<../../../../.gitbook/assets/image (177) (1).png>)
 

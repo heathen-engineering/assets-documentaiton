@@ -255,6 +255,8 @@
       * [Key Collection](assets/ux/learning/ugui-extras/key-collection.md)
       * [Ligature Tools](assets/ux/learning/ugui-extras/ligature-tools.md)
       * [Tree View Collection](assets/ux/learning/ugui-extras/tree-view.md)
+    * [Enabling New Input System](assets/ux/learning/enabling-new-input-system.md)
+    * [Disabling New Input System](assets/ux/learning/disabling-new-input-system.md)
   * [API](assets/ux/api/README.md)
     * [Cursors](assets/ux/api/cursors.md)
     * [Json](assets/ux/api/json.md)

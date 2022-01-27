@@ -6,7 +6,7 @@ Available in UX [Complete](https://prf.hn/l/rpV2JWe)
 
 ## Introduction
 
-![](<../../../../.gitbook/assets/image (174).png>)
+![](<../../../../.gitbook/assets/image (174) (1).png>)
 
 This scene gives a more practice example of code free drag and drop and shows how to use tags and rules to control what can be draged to where. In this scene each drag item is idetified with a color and a number, each slot has either or both a number and a color.&#x20;
 
@@ -45,7 +45,7 @@ You will find 4 items configured under the \
 Canvas > Background > Inventory \
 Game object. Each item has two "types" assigned. A type is simply a scriptable object and is used like a tag by the drop rules e.g. does the item have this tag, does that allow it or forbid it.
 
-![](<../../../../.gitbook/assets/image (163).png>)
+![](<../../../../.gitbook/assets/image (163) (1).png>)
 
 ### Slots / Containers
 

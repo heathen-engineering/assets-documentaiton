@@ -42,7 +42,7 @@ You can use the Stats tab to view and update the value of all registered stats
 
 ## Achievements
 
-![](<../../../.gitbook/assets/image (179) (1).png>)
+![](<../../../.gitbook/assets/image (179) (1) (1).png>)
 
 You can use the Achievements tab to view and unlock/reset all registered achievements
 
@@ -76,6 +76,6 @@ The inventory tab will display all the items registered to your game and provide
 
 ## Lobbies
 
-![](<../../../.gitbook/assets/image (185).png>)
+![](<../../../.gitbook/assets/image (185) (1).png>)
 
 The lobbies tab will populate a sub page for each detected lobby and will display the list of members and the lobby's metadata.
