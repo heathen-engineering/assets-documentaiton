@@ -644,6 +644,18 @@ The flag paramiter is of type [EFriendFlags](https://partner.steamgames.com/doc/
 var friends = API.Friends.Client.GetFriends(flag);
 ```
 
+For example if you wanted to get the "normal" list of friends as seen in the client friend list you might do.
+
+```csharp
+var friends = API.Friends.Client.GetFriends(EFriendsFlag.k_EFriendFlagImmediate);
+foreach(UserData user in friends)
+{
+    Debug.Log(user.Name + " is my friend.");
+}
+```
+
+
+
 Alternativly friends can be read from a given source. Sources can include groups/clans, chat rooms, lobbies or game servers.
 
 {% hint style="warning" %}
