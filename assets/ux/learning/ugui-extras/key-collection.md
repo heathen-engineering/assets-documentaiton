@@ -7,6 +7,12 @@ description: >-
 
 # Key Collection
 
+{% hint style="info" %}
+This document is written for the upcoming UX V2 asset. UX V2 is currently in preview and only available to Patreons.
+
+UX V2 will replace the current UIX Complete package and its related sub-packages. V2 is a full re-write with all new names however the concepts and funcitonality are relatable between UIX Complete (aka V1) and UX V2.
+{% endhint %}
+
 ## Introduction
 
 ### What
