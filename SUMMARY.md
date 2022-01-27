@@ -14,7 +14,7 @@
   * [Lambda Expressions](company/concepts/lambda-expressions.md)
   * [Multi-Scene Architecture](company/concepts/multi-scene-architecture.md)
   * [Namespace and Using](company/concepts/namespace-and-using.md)
-  * [New Input System](company/concepts/new-input-system.md)
+  * [New Input System](assets/ux/learning/enabling-new-input-system.md)
   * [Project Architecture](company/concepts/project-architecture.md)
   * [Unity Release Version](company/concepts/unity-release-version.md)
   * [Visual Scripting](company/concepts/visual-scripting.md)
