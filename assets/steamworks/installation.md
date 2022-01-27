@@ -152,7 +152,19 @@ When completed properly you will see Steamworks.NET in your Package Manager's "I
 
 Heathen Engineering works with the communities of other assets and tools to help insure a smooth and efficient integration between our technologies. In particular Heathen has invested notable effort in the networking transports of the following solutions and works to insure they function properly with the Steamworks.NET APIs and with our own Steamworks tools.
 
-### FishNetworking (Beta)
+### DarkRift2
+
+{% embed url="https://assetstore.unity.com/packages/tools/network/darkrift-networking-2-pro-95399" %}
+
+> DarkRift takes a code-first approach to cloud based networking to make a super simple and super easy to learn networking solution that can be used for absolutely any type of game.
+
+#### Steam P2P Transport
+
+{% embed url="https://github.com/nico1207/DarkRift2_Steamworks_P2P_Sockets" %}
+
+### FishNetworking
+
+{% embed url="https://assetstore.unity.com/packages/tools/network/fish-net-networking-evolved-207815" %}
 
 > A feature-rich Unity networking solution aimed towards reliability, ease of use, efficiency, and flexibility. Developed by a professional game designer, supported by the community.
 
