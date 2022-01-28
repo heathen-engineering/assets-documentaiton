@@ -24,7 +24,7 @@ API.Parties.Client
 Save yoru self some typing and use a [namespace alias](../../../company/concepts/namespace-and-using.md#aliasing).
 
 ```csharp
-using Parties = HeathenEngineering.SteamworksIntegration.API.Parties.Cliennt;
+using Parties = HeathenEngineering.SteamworksIntegration.API.Parties.Client;
 ```
 {% endhint %}
 

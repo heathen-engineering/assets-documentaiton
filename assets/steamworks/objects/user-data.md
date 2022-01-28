@@ -35,14 +35,6 @@ public struct UserData;
 
 ## Fields and Attributes
 
-### Me
-
-```csharp
-public static UserData Me => get;
-```
-
-This simply returns the local user's UserData and is the same as calling `API.User.Client.Id`
-
 ### cSteamId
 
 ```csharp
@@ -91,10 +83,6 @@ else
 
 ### Name
 
-{% hint style="info" %}
-You can use the [SetUserName](../components/set-user-name.md) component to more easily manage a given user's name. The [SetUserName ](../components/set-user-name.md)componenet will assign a uGUI Text or TMPro Text with the name or nickname of the indicated user and will update it if that name should change.
-{% endhint %}
-
 ```csharp
 public string Name => get;
 ```
@@ -102,10 +90,6 @@ public string Name => get;
 This reads the user's Steam Name
 
 ### Nickname
-
-{% hint style="info" %}
-You can use the [SetUserName](../components/set-user-name.md) component to more easily manage a given user's name. The [SetUserName ](../components/set-user-name.md)componenet will assign a uGUI Text or TMPro Text with the name or nickname of the indicated user and will update it if that name should change.
-{% endhint %}
 
 ```csharp
 public string Nickname => get;
@@ -188,16 +172,6 @@ public bool GetGamePlayed(out FriendGameInfo_t gameInfo);
 ```
 
 Functionally the same as calling `API.Friends.Client.GetFriendGamePlayed(user.cSteamId, out results)`. This returns rather or not the user is in a game and if so the results will be populated with information about that game.
-
-### SendMessage
-
-```csharp
-public bool SendMessage(string message);
-```
-
-Sends the user a message via the Replay To Friend feature.
-
-If this returns false then the current user is rate or chat limited by Valve.
 
 ### Get
 
