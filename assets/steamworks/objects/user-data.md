@@ -35,6 +35,14 @@ public struct UserData;
 
 ## Fields and Attributes
 
+### Me
+
+```csharp
+public static UserData Me => get;
+```
+
+This simply returns the local user's UserData and is the same as calling `API.User.Client.Id`
+
 ### cSteamId
 
 ```csharp
@@ -180,6 +188,16 @@ public bool GetGamePlayed(out FriendGameInfo_t gameInfo);
 ```
 
 Functionally the same as calling `API.Friends.Client.GetFriendGamePlayed(user.cSteamId, out results)`. This returns rather or not the user is in a game and if so the results will be populated with information about that game.
+
+### SendMessage
+
+```csharp
+public bool SendMessage(string message);
+```
+
+Sends the user a message via the Replay To Friend feature.
+
+If this returns false then the current user is rate or chat limited by Valve.
 
 ### Get
 
