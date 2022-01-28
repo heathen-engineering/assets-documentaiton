@@ -83,6 +83,10 @@ else
 
 ### Name
 
+{% hint style="info" %}
+You can use the [SetUserName](../components/set-user-name.md) component to more easily manage a given user's name. The [SetUserName ](../components/set-user-name.md)componenet will assign a uGUI Text or TMPro Text with the name or nickname of the indicated user and will update it if that name should change.
+{% endhint %}
+
 ```csharp
 public string Name => get;
 ```
@@ -90,6 +94,10 @@ public string Name => get;
 This reads the user's Steam Name
 
 ### Nickname
+
+{% hint style="info" %}
+You can use the [SetUserName](../components/set-user-name.md) component to more easily manage a given user's name. The [SetUserName ](../components/set-user-name.md)componenet will assign a uGUI Text or TMPro Text with the name or nickname of the indicated user and will update it if that name should change.
+{% endhint %}
 
 ```csharp
 public string Nickname => get;
