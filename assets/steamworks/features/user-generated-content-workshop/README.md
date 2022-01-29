@@ -100,3 +100,43 @@ That said it can be nice to have a Search Button that on click performed the sea
 ![](<../../../../.gitbook/assets/image (172) (1) (1).png>)
 
 Whatever your choice your UI should call the SearchAll method which takes a string as an input parameters. That string is the filter string used by Valve to narrow results.
+
+### Getting File Details
+
+At various points you may need to get the details of a specific set of published files ... for example if you get the collection of subscribed files.
+
+```csharp
+using UGC = HeathenEngineering.SteamworksIntegration.API.UserGeneratedContent.Client;
+```
+
+```csharp
+var files = UGC.GetSubscribedItems();
+```
+
+You will have an array of PublishedFIleId\_t ... so how do you get detailed information about each of those published files such as name, size, locaiton, etc.?
+
+You do so via the UgcQuery tool.
+
+```csharp
+var query = UgcQuery.Create(files);
+```
+
+This will create a query that reads details for the specific files you pass in. This is refered to as a Detail Query by Valve. To get the results you simply call Execute
+
+```csharp
+query.Execute(HandleQueryResults);
+```
+
+and handle the results
+
+```csharp
+private void HandleQueryResults(UgcQuery query)
+{
+  foreach(var item in query.ResultList)
+  {
+    //Do Work
+  }
+}
+```
+
+To learn more about [UgcQuery see its KB article](../../objects/ugc-query.md).
