@@ -209,7 +209,7 @@
         * [Inventory Settings](assets/steamworks/objects/steam-settings/game-client/inventory-settings.md)
       * [Game Server](assets/steamworks/objects/steam-settings/game-server.md)
     * [UGC Query](assets/steamworks/objects/ugc-query.md)
-    * [UGC Read Community Item](assets/steamworks/objects/ugc-read-community-item.md)
+    * [UGC Community Item](assets/steamworks/objects/ugc-community-item.md)
     * [User Data](assets/steamworks/objects/user-data.md)
     * [User Leave Data](assets/steamworks/objects/user-leave-data.md)
     * [User Lobby Leave Data](assets/steamworks/objects/user-lobby-leave-data.md)

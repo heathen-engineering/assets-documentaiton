@@ -73,7 +73,7 @@ public void HandleResultsChanged()
 
 The above assumes you have a reference to your [query manager](../../components/ugc-query-manager.md) in an attribute named `manager`&#x20;
 
-result will be of type [UGC Read Community Item](../../objects/ugc-read-community-item.md) and contains all the details about that specific item.
+result will be of type [UGC Read Community Item](../../objects/ugc-community-item.md) and contains all the details about that specific item.
 
 Once defined you can reference this in the Unity Inspector
 

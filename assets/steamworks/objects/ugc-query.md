@@ -109,6 +109,16 @@ public uint Page => get;
 
 This indicates the current page the query is reading. Use the SetPage method to update this value and update the query for the desired page.
 
+### ResultList
+
+```csharp
+public List<UGCCommunityItem> ResultsList
+```
+
+This will be populated with the results when the query is exeucted ... assuming there are results to populate.
+
+See [UGCCommunityItem ](ugc-community-item.md)for more info on how to use the items returned.
+
 ## Methods
 
 ### SetLanguage
