@@ -26,6 +26,12 @@ Heathen Engineering's BGSDK Foundation allows you to manage in-game items as blo
 
 {% embed url="https://docs.venly.io/api/" %}
 
+### Playable Demo
+
+{% embed url="https://simmer.io/@Loden/bgsdk-foundation" %}
+Playable Demo using the BGSDK Foundation
+{% endembed %}
+
 ## Requirements
 
 Please note that you will need to register for an account with [Venly Network](https://www.venly.io) to receive the required Client ID and Secret used by the kit to connect to the [Venly Network](https://www.venly.io) backend. This must be acquired from [Venly Network](https://www.venly.io) directly.

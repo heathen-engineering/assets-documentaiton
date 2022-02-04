@@ -10,7 +10,7 @@ Before you get going with the Unity integration, you need to contact Arkane and 
 [https://arkane.network/](https://arkane.network)
 {% endhint %}
 
-## Step 1: Register with Arkane
+## Step 1: Register with Venly
 
 For this step you simply need to contact Arkane and set up an account.&#x20;
 
