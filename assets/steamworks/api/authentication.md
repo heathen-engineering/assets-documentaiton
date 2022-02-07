@@ -64,7 +64,7 @@ Determins if the provided ticket handle is valid
 public static string EncodedAuthTicket(AuthenticationTicket ticket);
 ```
 
-Encodes a ticekt to hex string format
+Encodes a ticket to hex string format
 
 This is most commonly used with web calls such as [https://partner.steamgames.com/doc/webapi/ISteamUserAuth#AuthenticateUserTicket](https://partner.steamgames.com/doc/webapi/ISteamUserAuth#AuthenticateUserTicket)
 
@@ -76,10 +76,10 @@ public static void GetAuthSessionTicket(
 ```
 
 {% hint style="info" %}
-The callback deligate should be in the form of
+The callback delegate should be in the form of
 
 ```csharp
-void CallbackHandler(AthentcationTicket result, bool IOError);
+void CallbackHandler(AuthenticationTicket result, bool IOError);
 ```
 {% endhint %}
 
