@@ -150,5 +150,5 @@ SteamInput wouldn't be unique in every game, us using a long namespace with nest
 
 
 
-You can then decide what you want to call it in short hand for your script, and it can have a different alias in every script if that suits your needs. using this model give you the flexibility where as if we didn't use a namespace or used a flat namespace with decorated names you have to take what we give you which way well collide with other tools your using.
+You can then decide what you want to call it in short hand for your script, and it can have a different alias in every script if that suits your needs. using this model we give you the flexibility. If we didn't use a namespace or used a flat namespace with decorated names, you would have to take what we give you; which may well collide with other tools your using.
 {% endhint %}
