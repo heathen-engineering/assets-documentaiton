@@ -16,6 +16,30 @@ You can read more about Steam's Matchmaking system on Valve's developer document
 
 {% embed url="https://partner.steamgames.com/doc/features/multiplayer#matchmaking" %}
 
+## Key Concepts
+
+### Lobby?
+
+The first an most important thing to understand is that a lobby is not a network feature or concept. That is being in a lobby does not require a network connection, a network connection does not require a lobby. Lobby and Networking are two completly indapendent concepts.&#x20;
+
+Please do not confuse a lobby with anything to do with a network or network conneciton.
+
+### Metadata
+
+Metadata referes to data stored on the lobby or on a lobby member. Put simply its a collection of key value pairs where the key and value are a simple string. So you can think of it much like a&#x20;
+
+```csharp
+Dictionary<string, string>
+```
+
+The metadata stored on the lobby can be seen by anyone able to see the lobby and can be used to  filter results when searching for a lobby using Steam's matchmaking system.
+
+In contrast metadata stored on a lobby member can only be scene by members of the lobby and is used only to share for exmample user configuration.
+
+When metadata is changed the Steam API will raise the lobby data changed event ... that event will indicate what objects data changed by not what data changed so for example if the event indicates the lobby data changed you should check all the lobby metadata where as if it indicated a members data changed you should check that members metadata.
+
+The event in question is exposed on the Lobby Mangaer as [evtDataUpdated ](../../components/lobby-manager.md#evtdataupdated)and in the Matchmaking API as [EventLobbyDataUpdate](../../api/matchmaking.md#eventlobbydataupdate).
+
 ## Matchmaking
 
 It is important to understand that a lobby is not a server browser, it is not designed to list all possible sessions. It is effectivly a chat room and a matchmaking tool.&#x20;
