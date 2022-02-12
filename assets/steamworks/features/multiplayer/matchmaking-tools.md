@@ -40,6 +40,29 @@ When metadata is changed the Steam API will raise the lobby data changed event .
 
 The event in question is exposed on the Lobby Mangaer as [evtDataUpdated ](../../components/lobby-manager.md#evtdataupdated)and in the Matchmaking API as [EventLobbyDataUpdate](../../api/matchmaking.md#eventlobbydataupdate).
 
+
+
+As far as setting metadata you can use the indexers to set metadata for example if you have a `Lobby` in memory such as from the lobby manager.
+
+```csharp
+var lobby = lobbyManager.Lobby;
+```
+
+Then you can set a metadata field on it such as
+
+```csharp
+lobby["thisField"] = "thisValue";
+```
+
+Similarly if you have a `LobbyMember` in memory you can do the same thus
+
+```csharp
+var member = lobby.User;
+member["thisField"] = "thisValue";
+```
+
+To learn more check out the [Lobby](../../objects/lobby.md#introduction) article discribing the features of the lobby strucutre.
+
 ## Matchmaking
 
 It is important to understand that a lobby is not a server browser, it is not designed to list all possible sessions. It is effectivly a chat room and a matchmaking tool.&#x20;
