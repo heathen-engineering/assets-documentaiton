@@ -26,13 +26,13 @@ Each API has a static class related to it and a sub class for Client and Server 
 HeathenEngineering.SteamworksIntegration.API.Input.Client;
 ```
 
-The above is the full name of the Input API for the game client. you can shorten this name by using namespace aliases as discribed in this [linked article](../../../company/concepts/namespace-and-using.md#aliasing).
+The above is the full name of the Input API for the game client. you can shorten this name by using namespace aliases as described in this [linked article](../../../company/concepts/namespace-and-using.md#aliasing).
 
 ```csharp
 using InputAPI = HeathenEngineering.SteamworksIntegration.API.Input.Client;
 ```
 
-here is a comparison on how that would shorten yoru code.
+here is a comparison on how that would shorten your code.
 
 ### Traditional using
 

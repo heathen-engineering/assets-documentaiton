@@ -8,17 +8,17 @@ Available in PhysKit [Complete](https://prf.hn/l/rpoyznk).
 
 ## Introduction
 
-A force effect is a configurable set of rules that discribe the way in which a force will be applied. Force Effects do not discribe the strength of a force or the source of the force only the maths used to apply the force to a body.
+A force effect is a configurable set of rules that describe the way in which a force will be applied. Force Effects do not describe the strength of a force or the source of the force only the maths used to apply the force to a body.
 
 Force Effects can be used to create tractor beams, repulsor bombs, gravity wells and more and Force Effects can be configured to apply to specific or ignore specific subjects. The Force Effect its self is defined as a Scriptable Object in your Asset folder; you can create a new Force Effect configuration via
 
 Create > Physics > Effects
 
-This will create a new Scriptable Object which exposes any of the relivent configuration values for that effect.
+This will create a new Scriptable Object which exposes any of the relevant configuration values for that effect.
 
 ![An example of a wind effect](<../../../../.gitbook/assets/image (158).png>)
 
-Each effect has unique uses and configuration and is applied in a unique way ... the following articles discribe the effects included with the kit.
+Each effect has unique uses and configuration and is applied in a unique way ... the following articles describe the effects included with the kit.
 
 ### Related Topics
 

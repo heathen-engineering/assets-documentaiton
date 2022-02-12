@@ -15,21 +15,21 @@ This scene serves as a simple playground for force effects. You'll find a simple
 1. What is a [Force Effect](../../api/force-effects.md)
 2. What is a [Force Effect Source](../../components/force-effect-source/)
 3. What is a [Force Effect Reciever](../../components/force-effect-reciever.md)&#x20;
-4. Differece between [Force Effect Field](../../components/force-effect-source/force-effect-field.md) and [Force Effect Direction](../../components/force-effect-source/force-effect-direction.md)
+4. Difference between [Force Effect Field](../../components/force-effect-source/force-effect-field.md) and [Force Effect Direction](../../components/force-effect-source/force-effect-direction.md)
 
 ## Objects
 
 ### Weather Vane
 
-A Force Effect Reciever responding only to the global wind effect.
+A Force Effect Receiver responding only to the global wind effect.
 
 ### Wind Field Generator
 
-This is actually a Force Effect Direction set to global and applying the Wind Effect to all recievers
+This is actually a Force Effect Direction set to global and applying the Wind Effect to all receivers
 
 ### Pivot
 
-The pivot game obejct simply rotates at a constnat rate, a child of this object are the 4 Force Effect Fields noted in the UI and represented as spheres rotating around the room.
+The pivot game object simply rotates at a constant rate, a child of this object are the 4 Force Effect Fields noted in the UI and represented as spheres rotating around the room.
 
 ### Balls
 

@@ -6,7 +6,7 @@ Available in PhysKit Verlet and [Complete](https://prf.hn/l/rpoyznk).
 
 ## Introduction
 
-Used by the [Verlet Spring](../components/verlet-spring.md) componenet to define a Verlet hierarchy.
+Used by the [Verlet Spring](../components/verlet-spring.md) component to define a Verlet hierarchy.
 
 ## Fields and Attributes
 
@@ -34,7 +34,7 @@ This will apply the force evenly to all nodes in the hierarchy and is useful for
 public void AddForceAtPosition(float forceMagnitude, Vector3 position);
 ```
 
-This is usefor for postional forces such as explosions.
+This is usefor for positional forces such as explosions.
 
 ### Register Nodes
 
@@ -50,7 +50,7 @@ This simply walks the transform hierarchy of the root attribute and creates [Ver
 public void ResetNodes();
 ```
 
-This is used to put all particles back to there inital states and is called when registering nodes at run time. In general it shouldn't need to be called manually.
+This is used to put all particles back to there initial states and is called when registering nodes at run time. In general it shouldn't need to be called manually.
 
 ### Update
 
@@ -58,6 +58,6 @@ This is used to put all particles back to there inital states and is called when
 public void Update(Vector3 velocity, float time);
 ```
 
-This is called by the Verlet Spring to update the system and generally should't be called manually.
+This is called by the Verlet Spring to update the system and generally shouldn't be called manually.
 
 Note velocity is applied as a global effect scaled by the inert setting value, time is the step in time to be simulated and is typically the Fixed Delta Time but may be scaled to "tighten" the simulation.

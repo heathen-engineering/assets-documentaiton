@@ -26,7 +26,7 @@ This video might help you get it resolved
 
 [https://youtu.be/F-8A8mJwL\_Y](https://youtu.be/F-8A8mJwL\_Y)
 
-We are not assoceated with the creator we have simply been told that video has helped others with that error.
+We are not associated with the creator we have simply been told that video has helped others with that error.
 
 This thread might also be of help for you
 
@@ -90,7 +90,7 @@ The .unitypackage available in Steamwork.NET's release folder is rarely up to da
 
 ### Install Heathen's Steamworks
 
-You can now install Heathen's Stemworks from Unity Pacakge Manager
+You can now install Heathen's Steamworks from Unity Package Manager
 
 1. Open the Package Manager
 2. Select the "My Assets" option&#x20;
@@ -161,7 +161,7 @@ Heathen Engineering works with the communities of other assets and tools to help
 #### Steam P2P Transport
 
 {% hint style="danger" %}
-This transport is writen to work with Facepunch and doesn't make proper use of the SteamGameServer APIs and so is limited to P2P.\
+This transport is written to work with Facepunch and doesn't make proper use of the SteamGameServer APIs and so is limited to P2P.\
 \
 If you want to use this transport you will need to port it to use Steamworks.NET which should be trivial.&#x20;
 
@@ -169,14 +169,14 @@ If you want to use this transport you will need to port it to use Steamworks.NET
 If you wanted to use it with Client/Server architectures then you would need to wrap its calls to use the proper API based on build i.e.
 
 \
-Code writen like this&#x20;
+Code written like this&#x20;
 
 ```csharp
 SteamNetworkingUtils.InitRelayNetworkAccess();
 ```
 
 \
-should be rewriten to look like this.
+should be rewritten to look like this.
 
 ```csharp
 #if UNITY_SERVER
@@ -269,7 +269,7 @@ com.unity.netcode.gameobjects
 Steam Networking Transport
 {% endembed %}
 
-NetCode for GameObjects has a community transport project similar to other HLAPI frameworks. Hethen Engineering has contributed a transport that is compatable with Steamworks.NET and can be downloaded from Unity's community transports section.
+NetCode for GameObjects has a community transport project similar to other HLAPI frameworks. Heathen Engineering has contributed a transport that is compatible with Steamworks.NET and can be downloaded from Unity's community transports section.
 
 **To install the transport**
 

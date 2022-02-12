@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article will walk through the steps to enable and Disable the new Input System and the common troublshooting issues
+This article will walk through the steps to enable and Disable the new Input System and the common troubleshooting issues
 
 ## Enable
 

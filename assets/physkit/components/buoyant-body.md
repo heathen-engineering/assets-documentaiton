@@ -8,13 +8,13 @@ Available in PhysKit [Complete](https://prf.hn/l/rpoyznk).
 
 ![](<../../../.gitbook/assets/image (159) (1).png>)
 
-Used with the Surface Tool componenet to simulate the effect of buoyancy on a rigidbody.
+Used with the Surface Tool component to simulate the effect of buoyancy on a rigidbody.
 
 ### Fields and Attributes
 
-### Buoyany Magnitude
+### Buoyancy Magnitude
 
-Effectivly the gravity applied to the buoyant body, the force of buoyancy is the inverse of this value multiplied by the volume of the subject which is submerged below the surface.&#x20;
+Effectively the gravity applied to the buoyant body, the force of buoyancy is the inverse of this value multiplied by the volume of the subject which is submerged below the surface.&#x20;
 
 ### Active Surface
 
@@ -25,11 +25,11 @@ A reference to the active [Surface Tool](surface-tool.md) this is used to find t
 The [CalculationMode ](../enums/calculation-mode.md)to use when simulating the upward force.&#x20;
 
 * Fast\
-  A basic bounding volume based clacualtion&#x20;
+  A basic bounding volume based calculation&#x20;
 * Simple\
   Same as fast but adds an additional calculation to self right the floating subject
 * Complex\
-  Uses the Physics Data hull and volume information to simualte buoyant force per vertex
+  Uses the Physics Data hull and volume information to simulate buoyant force per vertex
 
 ### Submerged Ratio
 

@@ -7,7 +7,7 @@ Available in PhysKit [Complete](https://prf.hn/l/rpoyznk).
 ## Introduction
 
 {% hint style="info" %}
-Effectivly the inverse of [Attract Effect](attract-effect.md)
+Effectively the inverse of [Attract Effect](attract-effect.md)
 {% endhint %}
 
 A basic configurable effect which applies its force away from the origin of the Force Effect source. The mode by which force is applied is configurable in the settings of the effect.

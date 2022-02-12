@@ -14,7 +14,7 @@ using HeathenEngineering.PhysKit.API;
 
 ### What can it do?
 
-Used primarly by Force Effect Fields and Recievers this API manages global effects and is not intended for use by the developer.
+Used primarily by Force Effect Fields and Receivers this API manages global effects and is not intended for use by the developer.
 
 ## Global
 

@@ -16,7 +16,7 @@ This scene demonstrates the use of [UserData ](../../objects/user-data.md)and di
 2. How to use [Set User Avatar](../../components/set-user-avatar.md)
 3. How to use [Set User Name](../../components/set-user-name.md)
 4. How to access the Knowledge Base (where you are now)
-5. How to acces the support [Discord ](https://discord.gg/6X3xrRc)
+5. How to access the support [Discord ](https://discord.gg/6X3xrRc)
 6. How to leave a review 😉
 
 ## Objects

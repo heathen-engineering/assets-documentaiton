@@ -8,13 +8,13 @@ Available in PhysKit Verlet and [Complete](https://prf.hn/l/rpoyznk).
 
 ![](<../../../.gitbook/assets/image (166) (1) (1) (1).png>)
 
-The Verlet Spring componenet manages hierarchies of transforms integrating Newtonian movement formulas according to the settings applied to each hierarchy.
+The Verlet Spring component manages hierarchies of transforms integrating Newtonian movement formulas according to the settings applied to each hierarchy.
 
-In simpler terms it lets you discribe how a chain of transforms should act physicaly speaking.
+In simpler terms it lets you describe how a chain of transforms should act physically speaking.
 
-Each Verlet Spring componenet can manage any number of hierarchies, each componenet updates all of the hierachies defined in it so you can use this concept to group systems together making it easier to turn them on and off.
+Each Verlet Spring component can manage any number of hierarchies, each component updates all of the hierarchies defined in it so you can use this concept to group systems together making it easier to turn them on and off.
 
-For example you would add a Verlet Spring componenet to a character and then create hierarchies for that characters required parts. Then when that character is disabled its Verlet calculations are also disabled.
+For example you would add a Verlet Spring component to a character and then create hierarchies for that characters required parts. Then when that character is disabled its Verlet calculations are also disabled.
 
 ## Fields and Attributes
 
@@ -26,7 +26,7 @@ public List<VerletHierarchy> transformHierarchies;
 
 The list of [hierarches ](../objects/verlet-hierarchy.md)managed by the spring
 
-You can manaually add hierarchies by first constructing a higharchy and adding it to the list
+You can manually add hierarchies by first constructing a hierarchy and adding it to the list
 
 ```csharp
 var nTree = new VerletHierarchy

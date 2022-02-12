@@ -15,13 +15,13 @@ Each hierarchy in the Verlet Spring has its own configuration set by reference t
 ## What do I Learn?
 
 1. Using [Verlet Spring](../../components/verlet-spring.md) as a "Dynamic Bone" aka "Physics Bone" (skinned mesh)
-2. Setting up Verlet Spring componenets with [referenced configuraiton](../../objects/verlet-hierarchy-settings.md)&#x20;
+2. Setting up Verlet Spring components with [referenced configuraiton](../../objects/verlet-hierarchy-settings.md)&#x20;
 3. Verlet Spring collision simulation
 
 ## Objects
 
 ### Heathens\_Test\_Female\_A
 
-This object implaments the Verlet Spring which has configured 5 hierarchies represening the left and right breast, hair and left and right glute.
+This object implements the Verlet Spring which has configured 5 hierarchies representing the left and right breast, hair and left and right glute.
 
 Colliders have been attached to key points within the bodies transforms to allow the hair to collide with it. Each hierarchy has a configuration referenced to it according to its use and all are simulated in a single update insuring accurate interaction.

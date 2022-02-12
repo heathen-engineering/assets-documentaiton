@@ -8,7 +8,7 @@ Available in PhysKit [Complete](https://prf.hn/l/rpoyznk).
 
 ![](<../../../.gitbook/assets/image (157).png>)
 
-Creates and syncs physics data for an object beyond what is found in Unity's RigidBody. In particular the PhysicsData componenet will inspect all child mesh objects and create a related hull. Hull geometry is then used to calcualte cross section, volumetric density, total volume and more.
+Creates and syncs physics data for an object beyond what is found in Unity's RigidBody. In particular the PhysicsData component will inspect all child mesh objects and create a related hull. Hull geometry is then used to calculate cross section, volumetric density, total volume and more.
 
 ## Fields and Attributes
 
@@ -22,7 +22,7 @@ Only used in editor, when enabled this will cause the gizmo system to drag bound
 public Mesh hullGeometry;
 ```
 
-The hull geometry created by the Physics Data object. This is calcualted from the child meshes of the object or when the Register Geometry method is called.
+The hull geometry created by the Physics Data object. This is calculated from the child meshes of the object or when the Register Geometry method is called.
 
 ### Mass
 
@@ -38,7 +38,7 @@ The mass of the object as seen on the attached rigidbody
 public float LinearDragCoefficient => get;
 ```
 
-The linear drag as seen on the attached rigidbody. This is used to calcualte quadratic drag effects.
+The linear drag as seen on the attached rigidbody. This is used to calculate quadratic drag effects.
 
 ### Angular Drag Coefficient
 
@@ -46,7 +46,7 @@ The linear drag as seen on the attached rigidbody. This is used to calcualte qua
 public float AngularDragCoefficient => get;
 ```
 
-The angular drag as seen on the attached rigidbody. This is used to calcualte quadratic drag effects.
+The angular drag as seen on the attached rigidbody. This is used to calculate quadratic drag effects.
 
 ### Density
 
@@ -62,7 +62,7 @@ The average density of the body e.g. Mass / Volume
 public float volume;
 ```
 
-The volume of the geometry that makes up the body. This is calculated when hull geometry is calcualted.
+The volume of the geometry that makes up the body. This is calculated when hull geometry is calculated.
 
 ### Area
 
@@ -70,7 +70,7 @@ The volume of the geometry that makes up the body. This is calculated when hull 
 public float area;
 ```
 
-The surface area of the hull geometry. This is calcualted when hull geometry is calculated.
+The surface area of the hull geometry. This is calculated when hull geometry is calculated.
 
 ### X Cross Section
 
@@ -78,7 +78,7 @@ The surface area of the hull geometry. This is calcualted when hull geometry is 
 public float xCrossSection;
 ```
 
-The effective cross section as seen from the X axis. This is calcualted when hull geometry is calcualted.
+The effective cross section as seen from the X axis. This is calculated when hull geometry is calculated.
 
 ### Y Cross Section
 
@@ -86,7 +86,7 @@ The effective cross section as seen from the X axis. This is calcualted when hul
 public float yCrossSection;
 ```
 
-The effective cross section as seen from the Y axis. This is calcualted when hull geometry is calcualted.
+The effective cross section as seen from the Y axis. This is calculated when hull geometry is calculated.
 
 ### Z Cross Section
 
@@ -94,7 +94,7 @@ The effective cross section as seen from the Y axis. This is calcualted when hul
 public float zCrossSection;
 ```
 
-The effective cross section as seen from the Z axis. This is calcualted when hull geometry is calcualted.
+The effective cross section as seen from the Z axis. This is calculated when hull geometry is calculated.
 
 ### Linear Heading
 
@@ -102,7 +102,7 @@ The effective cross section as seen from the Z axis. This is calcualted when hul
 public Vector3 LinearHeading => get;
 ```
 
-The direction of travil as seen from the rigidbody.
+The direction of travel as seen from the rigidbody.
 
 ### Linear Speed
 
@@ -110,7 +110,7 @@ The direction of travil as seen from the rigidbody.
 public float LinearSpeed => get;
 ```
 
-The speed of travil as seen from the rigidbody;
+The speed of travel as seen from the rigidbody;
 
 ### Linear Velocity
 
@@ -168,9 +168,9 @@ The attached rigidbody
 public void RegisterGeometry(IEnumerable<MeshFilter> source);
 ```
 
-Calcualtes a hull based on 1 or more MeshFilters and uses the resulting hull to calculate volume, surface area and other related features of the system.
+Calculates a hull based on 1 or more MeshFilters and uses the resulting hull to calculate volume, surface area and other related features of the system.
 
-Note that this does not respect the ignored meshes field. you are expected to hand this metthod only what should be calcualted.
+Note that this does not respect the ignored meshes field. you are expected to hand this method only what should be calculated.
 
 This method is called automatically on awake but can be called manually to force and update or for procedural bodies.
 

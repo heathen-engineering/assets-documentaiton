@@ -30,19 +30,19 @@ Add dynamic physics bsed motion to transforms and armature bones
 
 [Ballistics](learning/core-concepts/ballistic-trajectory.md)
 
-Solve, perdict and raycast ballistic (parabolic) trajectory
+Solve, predict and raycast ballistic (parabolic) trajectory
 
 {% embed url="https://kb.heathenengineering.com/assets/physkit/learning/core-concepts/ballistic-trajectory" %}
 
 [Force Effects](learning/core-concepts/force-effect-framework.md)
 
-Create sphrical gravity, tractor beams, wind fields and more
+Create spherical gravity, tractor beams, wind fields and more
 
 {% embed url="https://kb.heathenengineering.com/assets/physkit/learning/core-concepts/force-effect-framework" %}
 
 ## Feature Comparison
 
-PhysKit is available in two packages as discribed below
+PhysKit is available in two packages as described below
 
 | Feature                                         | Verlet | Complete |
 | ----------------------------------------------- | ------ | -------- |

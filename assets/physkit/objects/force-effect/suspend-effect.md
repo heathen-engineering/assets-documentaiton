@@ -8,10 +8,10 @@ Available in PhysKit [Complete](https://prf.hn/l/rpoyznk).
 
 ## Introduction
 
-Effectivly a damping effect. This effect takes the subject's velocity and scales it by the strength.
+Effectively a damping effect. This effect takes the subject's velocity and scales it by the strength.
 
 {% hint style="info" %}
-Dispite its name you could use this as a magnify effect by setting the source strength > 1
+Despite its name you could use this as a magnify effect by setting the source strength > 1
 {% endhint %}
 
 ## Angular

@@ -22,7 +22,7 @@ You must configure your app to use Steam Input and you must use Valve's concept 
 
 The Input tools provided by Heathen handle the integration with Steam Input in that you can define your sets, layers and actions as part of your Steam Settings object and easily activate them, fetch glyph data for them and of course query there state.
 
-Heathen's tools take Valve's input system a step further and wrap all actions as [GameEvents](../../../system-core/game-events.md) meaning you can handle Steam Input in a loop similar to traditiona UnityEngine.Input or you as events similar to Unity's newer Input System.
+Heathen's tools take Valve's input system a step further and wrap all actions as [GameEvents](../../../system-core/game-events.md) meaning you can handle Steam Input in a loop similar to traditional UnityEngine.Input or you as events similar to Unity's newer Input System.
 
 ### What do I learn?
 
@@ -30,7 +30,7 @@ Heathen's tools take Valve's input system a step further and wrap all actions as
 2. Using [Input](../../api/input.md) API to get button images and names
 3. Using the [InputActionSet](../../objects/input-action-set.md), [InputActionSetLayer ](../../objects/input-action-set-layer.md)and [InputAction ](../../objects/input-action.md)objects
 4. How to access the Knowledge Base (where you are now)
-5. How to acces the support [Discord ](https://discord.gg/6X3xrRc)
+5. How to access the support [Discord ](https://discord.gg/6X3xrRc)
 6. How to leave a review 😉
 
 ### Instructions
@@ -71,5 +71,5 @@ The controls UI uses standard Unity scripts and the [Input Action Glyph](../../c
 
 ### DEMO SCRIPTS
 
-The demo script for this scene operates the Steam Input API by reading data from the atttached [InputAction](../../objects/input-action.md) objects and controls the active action set and layer by using the attached [InputActionSet](../../objects/input-action-set.md) and [InputActionSetLayer ](../../objects/input-action-set-layer.md)objects.&#x20;
+The demo script for this scene operates the Steam Input API by reading data from the attached [InputAction](../../objects/input-action.md) objects and controls the active action set and layer by using the attached [InputActionSet](../../objects/input-action-set.md) and [InputActionSetLayer ](../../objects/input-action-set-layer.md)objects.&#x20;
 

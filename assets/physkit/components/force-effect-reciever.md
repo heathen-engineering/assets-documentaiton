@@ -8,7 +8,7 @@ Available in PhysKit [Complete](https://prf.hn/l/rpoyznk).
 
 ![](<../../../.gitbook/assets/image (188) (1).png>)
 
-Added to an object you want to have effected by a Force Effect Source. The reciever enables this obejct to listen for local and global Force Effects and allows you to configure what effectors will be listened to or ignored.
+Added to an object you want to have effected by a Force Effect Source. The receiver enables this object to listen for local and global Force Effects and allows you to configure what effectors will be listened to or ignored.
 
 ### Related Topics
 
@@ -18,4 +18,4 @@ Added to an object you want to have effected by a Force Effect Source. The recie
 
 ## Triggers
 
-Typically a [Force Effect Soruce](force-effect-source/) will have a trigger collider, the Force Effect Reciever will automatically add and remove [Force Effect Sources](force-effect-source/) that it enters/exits the trigger of.
+Typically a [Force Effect Soruce](force-effect-source/) will have a trigger collider, the Force Effect Receiver will automatically add and remove [Force Effect Sources](force-effect-source/) that it enters/exits the trigger of.

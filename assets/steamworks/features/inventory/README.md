@@ -14,9 +14,9 @@ Available in the Steamworks [Complete](https://assetstore.unity.com/packages/too
 You cannot test Steam Inventory features with App ID 480 aka Spacewars.
 
 \
-In order to test Steam Inventroy features including but not limited to microtransactions, crafting, player inventory, etc. you will need to register your for your own app ID and configure your own Steam Inventory Items.\
+In order to test Steam Inventory features including but not limited to microtransactions, crafting, player inventory, etc. you will need to register your for your own app ID and configure your own Steam Inventory Items.\
 \
-As a result of this limitation from Valve the sample scenes for Inventory cannot be used with App 480 in any funcitonal form.
+As a result of this limitation from Valve the sample scenes for Inventory cannot be used with App 480 in any functional form.
 {% endhint %}
 
 First you should understand what Steam Inventory is and is not, the only real place to do so is via Valve's documentation and videos on the feature.&#x20;

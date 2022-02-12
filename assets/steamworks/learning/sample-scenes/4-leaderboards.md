@@ -27,7 +27,7 @@ This scene demonstrates the use of Steam Leaderboard for setting and reading lea
 
 The manage game object has the [Steamworks Behaviour](../../components/steamworks-behaviour.md) component attached and will handle initialization of the Steam API on start up.
 
-A [Leaderboard Manager](../../components/leaderboard-manager.md) componenet is attached and configured to use the Feet Traveled [Leaderboard Object](../../objects/leaderboard.md).
+A [Leaderboard Manager](../../components/leaderboard-manager.md) component is attached and configured to use the Feet Traveled [Leaderboard Object](../../objects/leaderboard.md).
 
 ### Feet Traveled
 

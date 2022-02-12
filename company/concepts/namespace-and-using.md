@@ -48,11 +48,11 @@ You may be thinking 'well just name it unique'
 
 
 
-That is exactly what a namespace does, but in a way more usefulthan just really long or cryptic/decorated object names.
+That is exactly what a namespace does, but in a way more useful than just really long or cryptic/decorated object names.
 
 
 
-namespaces are used by the IDE and compiler for context, driving autocomplete and other features that guide and speed up your development and reduce logical errors. Namespaces have additional features such as aliasing which given even greater flexability to the developer useing them when compared to long or decorated naming.
+namespaces are used by the IDE and compiler for context, driving autocomplete and other features that guide and speed up your development and reduce logical errors. Namespaces have additional features such as aliasing which given even greater flexibility to the developer using them when compared to long or decorated naming.
 {% endhint %}
 
 Countless others have said it better; just google "Why should I use a namespace" maybe add "in C#" or "in Unity" if you want to narrow those results.

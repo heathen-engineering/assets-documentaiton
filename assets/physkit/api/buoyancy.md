@@ -13,7 +13,7 @@ using HeathenEngineering.PhysKit.API;
 ```
 
 {% hint style="info" %}
-We recomend using aliases to reduce typing and simplify names.
+We recommend using aliases to reduce typing and simplify names.
 
 
 
@@ -30,13 +30,13 @@ API.Ballistics
 
 ### What can it do?
 
-This API is used to calcualte the effective buoyancy force applied to a body given that bodies physics data and information about the environment its in.
+This API is used to calculate the effective buoyancy force applied to a body given that bodies physics data and information about the environment its in.
 
 Put more simply we can use this to make things float.
 
 ## Effect
 
-The main funciton of this API is to calcualte the buoyancy effect. That is to tell us how much force is being applied counter to gravity. Note we dont need to know what direction that is only how strong the effect is we can then use that information along with other physics data to simulate a floating object.
+The main function of this API is to calculate the buoyancy effect. That is to tell us how much force is being applied counter to gravity. Note we don't need to know what direction that is only how strong the effect is we can then use that information along with other physics data to simulate a floating object.
 
 Effect can be calculated in three ways
 
@@ -49,7 +49,7 @@ public static float Effect(
     out float volume) //The dispacement of the surface (volume submerged)
 ```
 
-This is the most complex method and pulls hull information from the provided [PhysicsData](../components/physics-data.md) to test each vertex point giving a resonably accurate estimate on the submerged volume. You can use the submergedPoints returnd and the ratio of the total submerged volume to distribute the applied force across the subject. This is the method used by the [Buoyant Body](../components/buoyant-body.md) when in complex mode.
+This is the most complex method and pulls hull information from the provided [PhysicsData](../components/physics-data.md) to test each vertex point giving a reasonably accurate estimate on the submerged volume. You can use the submergedPoints returned and the ratio of the total submerged volume to distribute the applied force across the subject. This is the method used by the [Buoyant Body](../components/buoyant-body.md) when in complex mode.
 
 A simpler and generally more stable method for most use cases is:
 

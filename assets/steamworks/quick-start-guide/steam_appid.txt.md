@@ -15,7 +15,7 @@ Example steam\_appid.txt
 480
 ```
 
-As you can see it is a simple text file that contians nothing but the App ID of your app.
+As you can see it is a simple text file that contains nothing but the App ID of your app.
 {% endhint %}
 
 This is required to be used anytime the initializing application is not launched from the Steam client.

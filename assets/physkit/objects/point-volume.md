@@ -6,7 +6,7 @@ Available in PhysKit [Complete](https://prf.hn/l/rpoyznk).
 
 ## Introduction
 
-stores mesh data used by the buyancy system.
+stores mesh data used by the buoyancy system.
 
 ## Fields and Attributes
 

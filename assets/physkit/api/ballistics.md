@@ -13,7 +13,7 @@ using HeathenEngineering.PhysKit.API;
 ```
 
 {% hint style="info" %}
-We recomend using aliases to reduce typing and simplify names.
+We recommend using aliases to reduce typing and simplify names.
 
 
 
@@ -33,11 +33,11 @@ This interface uses features derived from Forrest The Woods by Forrest Thomas Sm
 
 ### What can it do?
 
-Used to solve for balistic (parabolic) trajectory solutions such as throwing a ball, shooting a cannon, etc. The features of this API can be used to find the proper angle to aim at to hit a given target or to find the velocity to launch a projectile at to achieve a desired arc
+Used to solve for ballistic (parabolic) trajectory solutions such as throwing a ball, shooting a cannon, etc. The features of this API can be used to find the proper angle to aim at to hit a given target or to find the velocity to launch a projectile at to achieve a desired arc
 
 ## Max Range
 
-The first step is typically to detrermin if the target is within range at all. We can find the max range of a ballistic system with
+The first step is typically to determine if the target is within range at all. We can find the max range of a ballistic system with
 
 ```csharp
 public static float MaxRange(
@@ -48,7 +48,7 @@ public static float MaxRange(
 
 ## Solution
 
-The main feature of the Ballisitcs API is the Solution method which comes in several overloads to meet any need.
+The main feature of the Ballistics API is the Solution method which comes in several overloads to meet any need.
 
 ### Simple Trajectory
 
@@ -81,7 +81,7 @@ The same as the previous overload only this overload takes a `targetVelocity` an
 
 ### Variable Trajectory
 
-While the above solution are simple we offten want to tailor the visuals of a parabolic trajectory such that the angle is not to high or flat and that the projectile has a fixed linear speed as if fired strait at the target. This is the more common solution for simulating say a bow shot where the archer will optimize flight time and range for the target.
+While the above solution are simple we often want to tailor the visuals of a parabolic trajectory such that the angle is not to high or flat and that the projectile has a fixed linear speed as if fired strait at the target. This is the more common solution for simulating say a bow shot where the archer will optimize flight time and range for the target.
 
 ```csharp
 public static bool Solution(
@@ -108,7 +108,7 @@ public static bool Solution(
     out Vector3 impactPoint) //Perdicted impact point 
 ```
 
-These overloads return a boolean indicating rather or not a solution was found. If a solution was found then the firingVelocity and gravity output paramiters will be populated.&#x20;
+These overloads return a boolean indicating rather or not a solution was found. If a solution was found then the firingVelocity and gravity output parameters will be populated.&#x20;
 
 ### Fixed Time
 
@@ -122,13 +122,13 @@ public static Vector3 Solution(
     float flightTime) //The desired flight time
 ```
 
-This overload outputs a velocity vector. If you need to know the rotaiton the object should be on you can do&#x20;
+This overload outputs a velocity vector. If you need to know the rotation the object should be on you can do&#x20;
 
 ```csharp
 var rotation = Quaternion.LookRotation(solution) * Vector3.Forward;
 ```
 
-### Fixed Anlge
+### Fixed Angle
 
 Some use cases require that you launch the projectile from a given angle and so you need to know what "speed" to launch the projectile at.
 
@@ -162,9 +162,9 @@ This can be used test for collision, draw trajectory arcs, plan for bounces, etc
 
 ## Flight Time
 
-Estimating flight time can be done with the projectiles velocity, the hight difference it must travel from start to end and the effect of gravity.
+Estimating flight time can be done with the projectiles velocity, the height difference it must travel from start to end and the effect of gravity.
 
-Note that this is an esitmate assuming the projectile wiill travil the full the length of a typical trajectory.
+Note that this is an estimate assuming the projectile will travel the full the length of a typical trajectory.
 
 ```csharp
 public static float FlightTime(

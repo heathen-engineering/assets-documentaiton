@@ -8,7 +8,7 @@ Available in PhysKit [Complete](https://prf.hn/l/rpoyznk).
 
 ## Introduction
 
-A Force Effect Source is a simple component behaviour that discribes the origin of a Force Effect. Two main types of Force Effect Soruces are provided and discribed in the articles below.
+A Force Effect Source is a simple component behavior that describes the origin of a Force Effect. Two main types of Force Effect Sources are provided and described in the articles below.
 
 ### Related Topics
 
@@ -18,7 +18,7 @@ A Force Effect Source is a simple component behaviour that discribes the origin 
 
 ## Custom Source
 
-The Force Effect system is highly customizable and extensable ... you can create a custom Force Effect Source by simply deriving from the ForceEffectSource behaviour.
+The Force Effect system is highly customizable and extensible ... you can create a custom Force Effect Source by simply deriving from the ForceEffectSource behavior.
 
 ```csharp
 public class CustomEffectSource : ForceEffectSource
@@ -33,15 +33,15 @@ public class CustomEffectSource : ForceEffectSource
 }
 ```
 
-The only requried feature is the AddForce method which takes 4 paramiters
+The only required feature is the AddForce method which takes 4 parameters
 
 ### Subject
 
-This is the [Physics Data](../physics-data.md) of the reciever a powerful feature that discribes all physical aspects of the subject
+This is the [Physics Data](../physics-data.md) of the receiver a powerful feature that describes all physical aspects of the subject
 
-### Sinsativity
+### Sensitivity
 
-This discribes the sinsativity of the object to any effect and is a simple scalar e.g. 0 means you can ignore the effect any non-zero value should be used to scale the effect.
+This describes the sensitivity of the object to any effect and is a simple scalar e.g. 0 means you can ignore the effect any non-zero value should be used to scale the effect.
 
 ### Use Angular
 
@@ -49,15 +49,15 @@ Is the subject listening for angular effects, if false you should not operate th
 
 ### Use Linear
 
-Is the subejct listening for linear effects, if false you should not operate the effects linear methods
+Is the subject listening for linear effects, if false you should not operate the effects linear methods
 
 ## Custom Effect Tips
 
 ### Global
 
-We offten want to apply an effect globally to all listeners that would have it. To do so we need to add the effect to the API.ForceEffect.GlobalEffects list ... and we need to remove the effect when its no longer applicable.
+We often want to apply an effect globally to all listeners that would have it. To do so we need to add the effect to the API.ForceEffect.GlobalEffects list ... and we need to remove the effect when its no longer applicable.
 
-The approch Heathen uses is to expose an Is Global field
+The approach Heathen uses is to expose an Is Global field
 
 ```csharp
 [SerializeField]

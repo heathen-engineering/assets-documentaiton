@@ -8,11 +8,11 @@ Available in PhysKit [Complete](https://prf.hn/l/rpoyznk).
 
 ![](<../../../.gitbook/assets/image (155).png>)
 
-An add on for Unity's Line Renderer this componenet can simulate the ballistic trajectory defined by its launch settings and optionally calculate collision and bounces.
+An add on for Unity's Line Renderer this component can simulate the ballistic trajectory defined by its launch settings and optionally calculate collision and bounces.
 
-This componenet on its own is useful for common cases such as showing the path of a grenade, arrow, thrown object like a basketball, etc.
+This component on its own is useful for common cases such as showing the path of a grenade, arrow, thrown object like a basketball, etc.
 
-This componenet is also an excelent demonstration of the [API.Ballistic.Raycast](../api/ballistics.md#raycast) feature.
+This component is also an excellent demonstration of the [API.Ballistic.Raycast](../api/ballistics.md#raycast) feature.
 
 ## Fields and Attributes
 
@@ -32,7 +32,7 @@ The velocity of the projectile
 
 Should the simulation be ran on the OnStart event from Unity
 
-### Continious Run
+### Continuous Run
 
 Should the simulation be updated ever frame
 
@@ -50,11 +50,11 @@ How far should the simulation test
 
 ### Max Bounces
 
-How many bounces should be calculated, 0 to disable bounce calcualtion
+How many bounces should be calculated, 0 to disable bounce calculation
 
 ### Bounce Damping
 
-How much velocity should be reduced per bounce ... this is a crude simulation of Unity's "bouncyness" it will not map 1 to 1 in most cases but is a fair aproximation.
+How much velocity should be reduced per bounce ... this is a crude simulation of Unity's "bounciness" it will not map 1 to 1 in most cases but is a fair approximation.
 
 ### Trajectory
 
@@ -68,4 +68,4 @@ A list of RaycastHit values for each impact point if any
 
 ### Simulate
 
-Call this method to update the simulation, if you have set this Continious Run this will be called automatically on LateUpdate.
+Call this method to update the simulation, if you have set this Continuous Run this will be called automatically on LateUpdate.

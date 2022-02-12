@@ -21,7 +21,7 @@ This simple scene outlines the basic steps to get up and running with Steamworks
 
 ### Manager
 
-The manage game object has the [Steamworks Behaviour](../../components/steamworks-behaviour.md) component attached and will handle initalization of the Steam API on start up.
+The manage game object has the [Steamworks Behaviour](../../components/steamworks-behaviour.md) component attached and will handle initialization of the Steam API on start up.
 
 ### DEMO SCRIPTS
 

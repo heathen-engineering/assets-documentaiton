@@ -10,7 +10,7 @@ Available in PhysKit [Complete](https://prf.hn/l/rpoyznk).
 
 Applies a [Force Effect](../../objects/force-effect/) either as a global effect or as a triggered effect. One or more effects can be added and will be applied to any [Force Effect Reciever](../force-effect-reciever.md) that is effected by this field.
 
-Force Effect Fields act as a sphere of influence for the given [Force Effect](../../objects/force-effect/) and when non-global discribe the falloff of the effect as a distance from the origin.
+Force Effect Fields act as a sphere of influence for the given [Force Effect](../../objects/force-effect/) and when non-global describe the falloff of the effect as a distance from the origin.
 
 ## Trigger
 

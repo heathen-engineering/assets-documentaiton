@@ -2,7 +2,7 @@
 
 ## Introduction
 
-White Label Wallet is the core feature for integrating blockchain with your game or app. This is a standard blockchain wallet which can have a native balance and hold various NFTs. It is refered to as a White Label Wallet because its owned by your app not the user. This means your game can freely add and remove tokens from this wallet without needing involve the user.
+White Label Wallet is the core feature for integrating blockchain with your game or app. This is a standard blockchain wallet which can have a native balance and hold various NFTs. It is referred to as a White Label Wallet because its owned by your app not the user. This means your game can freely add and remove tokens from this wallet without needing involve the user.
 
 You can think of a White Label Wallet like an inventory in a typical game. You could have a White Label Wallet for each player, character on a player's account, you could also have White Label Wallets to represent guild banks and so on.
 
@@ -12,9 +12,9 @@ You can think of a White Label Wallet like an inventory in a typical game. You c
 
 The act of creating a White Label Wallet is best done by your Trusted Web Server ... so for example if your game uses PlayFab you would write a Cloud Script to call the Venly Web API to create the wallet.
 
-You can also use the BGSDK Server API to create the wallet from your game server. Note that its up to you to assoceate the wallet's ID with the user, character or whatever else this wallet is related to.
+You can also use the BGSDK Server API to create the wallet from your game server. Note that its up to you to associate the wallet's ID with the user, character or whatever else this wallet is related to.
 
-In general we dont recomend having the game server create wallets, its better if the game server stays focused on the game and you let your Web Server deal with the APIs.
+In general we don't recommend having the game server create wallets, its better if the game server stays focused on the game and you let your Web Server deal with the APIs.
 
 ### Server API
 
@@ -35,7 +35,7 @@ StartCoroutine(Server.Wallets.Create(pincode,
 
 The main thing your game will be doing with NFTs is seeing what NFTs the user owns and applying that information to your game. To do so you will need to know the address of the wallet you want to read from.
 
-As noted in the above Creating a Wallet section you should have assoceated the wallet with your user's account, or character profile or whatever this wallet represents in your game's world. Once you have that address you can query it for NFTs with the Client API.
+As noted in the above Creating a Wallet section you should have associated the wallet with your user's account, or character profile or whatever this wallet represents in your game's world. Once you have that address you can query it for NFTs with the Client API.
 
 ```csharp
 StartCoroutine(Client.Wallets.NFTs(walletAddress,
@@ -67,4 +67,4 @@ foreach(var token in walletItems result)
 // ...
 ```
 
-tokenType is an [Engine.Token](../../artifacts/token.md), that scriptable object your BGSDK Settings object is managing for you. You now Know the user owns one of these and you can of course count how many they own if that is relivent for your game.
+tokenType is an [Engine.Token](../../artifacts/token.md), that scriptable object your BGSDK Settings object is managing for you. You now Know the user owns one of these and you can of course count how many they own if that is relevant for your game.

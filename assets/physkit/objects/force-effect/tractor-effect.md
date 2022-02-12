@@ -6,7 +6,7 @@ Available in PhysKit [Complete](https://prf.hn/l/rpoyznk).
 
 ## Introduction
 
-Effectivly the same as the Attract Effect set to a mode of velocity change
+Effectively the same as the Attract Effect set to a mode of velocity change
 
 ## Angular
 

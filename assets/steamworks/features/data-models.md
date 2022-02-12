@@ -161,7 +161,7 @@ CloudAPI.FileWriteAsync("TheFileName", data, (result, hasError) =>
 
 ## Data Model
 
-The Data Model concept is a tool that helps you manage each type of save file your game works with. To get started you would first need to create the "structure" of your file as a serializable object. This can be a class or structure ... in general you should always use a structure unless your object specificly needs features of C# class not avilable to C# structures.
+The Data Model concept is a tool that helps you manage each type of save file your game works with. To get started you would first need to create the "structure" of your file as a serializable object. This can be a class or structure ... in general you should always use a structure unless your object specifically needs features of C# class not available to C# structures.
 
 ### Creating a model
 
@@ -185,7 +185,7 @@ public class SaveProfileDataModel : DataModel<SaveProfile>
 { }
 ```
 
-Note that we do not need to write any code in the body of the SaveProfileDataModel class, everything is implamented for you by the DataModel\<T> base class.
+Note that we do not need to write any code in the body of the SaveProfileDataModel class, everything is implemented for you by the DataModel\<T> base class.
 
 Once this is done you can create a Scriptable Object in your project's asset folder by right clicking and selecting `Create > My Data > Save Profile` . You can use this new object to assign an extension. This extension will be added to the end of the file name if missing and is how the DataModel knows which files belong to it.
 

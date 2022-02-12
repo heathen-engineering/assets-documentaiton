@@ -6,7 +6,7 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 
 ## Introduction&#x20;
 
-This scene is meant to be used in conjunciton with the learning article [Item Store](../core-concepts/inventory/item-store.md). It provides a crude example of an in-game item store where the developer has defined each item's UI element and linked it with the related [Item Defintion](../../objects/item-definition.md).
+This scene is meant to be used in conjunction with the learning article [Item Store](../core-concepts/inventory/item-store.md). It provides a crude example of an in-game item store where the developer has defined each item's UI element and linked it with the related [Item Defintion](../../objects/item-definition.md).
 
 ![](<../../../../.gitbook/assets/image (162).png>)
 
@@ -16,14 +16,14 @@ This scene is meant to be used in conjunciton with the learning article [Item St
 2. Using [Item Definition](../../objects/item-definition.md) and Unity uGUI to represent a store item.
 3. Responding to changes in the user's inventory.
 4. How to access the Knowledge Base (where you are now)
-5. How to acces the support [Discord ](https://discord.gg/6X3xrRc)
+5. How to access the support [Discord ](https://discord.gg/6X3xrRc)
 6. How to leave a review 😉
 
 ## Objects
 
 ### Example Item Behaviour
 
-This is a crude script serving as an example of how you might control a Unity UI object based on the informaiton in a given Item Defintion.
+This is a crude script serving as an example of how you might control a Unity UI object based on the information in a given Item Definition.
 
 Using this we update a UI Text label indicating how many of the given item the user owns
 

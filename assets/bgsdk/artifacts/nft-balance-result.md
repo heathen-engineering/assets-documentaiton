@@ -22,4 +22,4 @@ The typical use case is that you need to match a token owned by a user to some g
 var myTokenType = result[0].TokenType;
 ```
 
-When you call Token Type the system will inspect the data stored in the result to determin the token type ID, it will then check your current BGSDK Settings object and find the token definition that has a matching type ID if any. If none is found it will return null.
+When you call Token Type the system will inspect the data stored in the result to determine the token type ID, it will then check your current BGSDK Settings object and find the token definition that has a matching type ID if any. If none is found it will return null.

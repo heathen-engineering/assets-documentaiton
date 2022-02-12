@@ -10,7 +10,7 @@ description: Browse and join listed game servers.
 Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/integration/steamworks-v2-complete-190316)asset.
 {% endhint %}
 
-The Steam Game Server concept is offten confused when you first start looking into Steam and its related tools, interfaces and services.&#x20;
+The Steam Game Server concept is often confused when you first start looking into Steam and its related tools, interfaces and services.&#x20;
 
 {% embed url="https://partner.steamgames.com/doc/features/multiplayer/game_servers" %}
 
@@ -110,7 +110,7 @@ At this time Valve (they build Steam) does not offer hosting you will have to pr
 
 ### Player Hosted
 
-This means that you ship your server build and let player's host them, them selves. It was a popular method in the past and many games still allow for it especialy if you want to foster a LAN community.
+This means that you ship your server build and let player's host them, them selves. It was a popular method in the past and many games still allow for it especially if you want to foster a LAN community.
 
 ### Bespoke
 
@@ -120,18 +120,18 @@ Look for providers like [GPortal](https://www.g-portal.com) to help with this.
 
 ### Backend Service Provider
 
-The new traditonal method, using a backend service provider, most if not all of these offer hosting of some sort along with other services.
+The new traditional method, using a backend service provider, most if not all of these offer hosting of some sort along with other services.
 
 Look for providers like [PlayFab](https://playfab.com), [GameSparks ](https://www.gamesparks.com)and [Multiplay](https://unity.com/products/multiplay)
 
-### Propritary
+### Proprietary
 
-There are some options that offer great advatages but that are propritary systems so moving off of them is not really possible at least not without a lot of work. We would only recomend you consider these if your game REALLY needs the advantge they offer and your happy to marry your game to there offerings.
+There are some options that offer great advantages but that are proprietary systems so moving off of them is not really possible at least not without a lot of work. We would only recommend you consider these if your game REALLY needs the advantage they offer and your happy to marry your game to there offerings.
 
 Look at providers like [Improbable](https://ims.improbable.io)
 
 ### DIY
 
-Do it your self, not recomended for ... well most people and even large organizaitons. It is exceedingly difficult to host a live service game of any kind without a lot of money and experience and 24hr a day staff.&#x20;
+Do it your self, not recommended for ... well most people and even large organizations. It is exceedingly difficult to host a live service game of any kind without a lot of money and experience and 24hr a day staff.&#x20;
 
 That said it is an option and you can offset some of the cost by using basic hosting services like [Azure](https://azure.microsoft.com), [AWS](https://aws.amazon.com), etc.
