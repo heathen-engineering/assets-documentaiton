@@ -14,7 +14,7 @@ using API = HeathenEngineering.SteamworksIntegraiton.API;
 public static class API.Screenshots
 ```
 
-The whole of the screenshot system is only accessable from the Client API as a result you will always be using the form:
+The whole of the screenshot system is only accessible from the Client API as a result you will always be using the form:
 
 ```csharp
 API.Screenshots.Client
@@ -22,7 +22,7 @@ API.Screenshots.Client
 
 ### What can it do?
 
-Take screenshots ... that is the main funciton hence the name
+Take screenshots ... that is the main function hence the name
 
 The main reason to use this is if your handling your own advanced screenshot features ... as is all the rage these days.
 
@@ -42,9 +42,9 @@ A screenshot has been requested by the user from the Steam screenshot hotkey. Th
 
 ### Hook Screenshots
 
-Ever wanted to do a fancy screenshot mode for your game, so every screenshot a player takes looks perfect and bug free and is effectivly free marketing?
+Ever wanted to do a fancy screenshot mode for your game, so every screenshot a player takes looks perfect and bug free and is effectively free marketing?
 
-Well the first trick is to actually create such a system, that is left up to you but we recomend using tools like Time Line Director, Cinamachine, Post Processing Volumes, etc.
+Well the first trick is to actually create such a system, that is left up to you but we recommend using tools like Time Line Director, Cinamachine, Post Processing Volumes, etc.
 
 Next you need to catch the user's request to take a screenshot and trigger your system as opposed to letting the overlay or similar capture the screen.
 
@@ -52,7 +52,7 @@ Next you need to catch the user's request to take a screenshot and trigger your 
 API.Screenshots.Client.IsScreenshotHooked = true;
 ```
 
-once done Steam will no longer take screenshots when the user presses the configured screenshot button instead the EventScreenshotRequested event will trigger so you should register to that and act accordignly.
+once done Steam will no longer take screenshots when the user presses the configured screenshot button instead the EventScreenshotRequested event will trigger so you should register to that and act accordingly.
 
 ```csharp
 API.Screenshots.Client.EventScreenshotRequested.AddListener(HandleScreenshot);
@@ -82,7 +82,7 @@ API.Screenshots.Client.TagUser(handle, user);
 
 ### Take Screenshots
 
-Alternativly you could request Steam to take a screenshot at key points in your game.
+Alternatively you could request Steam to take a screenshot at key points in your game.
 
 ```csharp
 var handle = API.Screenshots.Client.TriggerScreenshot();

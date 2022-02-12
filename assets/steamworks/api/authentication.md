@@ -18,11 +18,11 @@ using API = HeathenEngineering.SteamworksIntegraiton.API;
 public static class API.Authentication
 ```
 
-The Authenticaiton has both client and server interfaces that are identical. Heathen's Steam API wrapps these in a single call which will call the appropreate client or server interface for you based on the build type in Unity.
+The Authentication has both client and server interfaces that are identical. Heathen's Steam API wrap's these in a single call which will call the appropriate client or server interface for you based on the build type in Unity.
 
 ### What can it do?
 
-The Authentication interface can be used to generate and validate session tickets. This is most commonly used with Steam Game Server but can also be used to for inventory varification or other similar verified processes.
+The Authentication interface can be used to generate and validate session tickets. This is most commonly used with Steam Game Server but can also be used to for inventory verification or other similar verified processes.
 
 ### Related Objects
 
@@ -56,7 +56,7 @@ public static List<AuthenticationSession> ActiveSessions;
 public static bool IsAuthTicketValid(AuthenticationTicket ticket);
 ```
 
-Determins if the provided ticket handle is valid
+Determines if the provided ticket handle is valid
 
 ### EncodedAuthTicket
 

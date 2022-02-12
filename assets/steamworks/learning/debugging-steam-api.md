@@ -20,7 +20,7 @@ The inspector's data only populate while the simulation is running.
 
 The Home page of the inspector displays core values for your user and the app its self. This is the first place you should check, and you should do the following
 
-1. Is the Initalization Satus = Initalized?
+1. Is the Initialization Status = Initialized?
 2. Is the Listed App ID what I expect it to be?
 3. Is the Reported App ID the same as the Listed App ID
 4. Is the steam\_appid.txt the same as the Listed App ID

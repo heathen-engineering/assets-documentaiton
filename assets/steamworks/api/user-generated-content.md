@@ -66,7 +66,7 @@ Create, download, browse and edit Steam UGC files aka Steam Workshop.
 
 ### Item Downloaded
 
-Occures when a UGC item is downloaded
+Occurs when a UGC item is downloaded
 
 ### Workshop Item Installed
 
@@ -84,9 +84,9 @@ Creating a new item can be done in one of two ways.
 UGC.CreateItem(itemdata, callback);
 ```
 
-When using the 1 liner approch you will first create a [Workshop Item Data](../objects/workshop-item-data.md) object. This object defines the item you wish to create e.g. its name, description, content folder, etc.
+When using the 1 liner approach you will first create a [Workshop Item Data](../objects/workshop-item-data.md) object. This object defines the item you wish to create e.g. its name, description, content folder, etc.
 
-The callback for this method is a deligate that takes 1 paramiter of type [Workshop Item Data Create Status](../objects/workshop-item-data-create-status.md).
+The callback for this method is a delegate that takes 1 parameter of type [Workshop Item Data Create Status](../objects/workshop-item-data-create-status.md).
 
 Example:
 
@@ -110,7 +110,7 @@ UGC.CreateItem(itemdata, Foo);
 
 To learn more about [callbacks](../../../company/concepts/callbacks.md) please read the related article.
 
-The status returned to the callback will indicate the status of the operation. Note that hte operation occurs in two stages. First a blank item is created and then once that has been found successful that blank item will be updated with the content and settings indicated thus it is possible for a blank item to be created but for the update to fail. Please see the [results](../objects/workshop-item-data-create-status.md#createitemresult) in the status object for more details.
+The status returned to the callback will indicate the status of the operation. Note that the operation occurs in two stages. First a blank item is created and then once that has been found successful that blank item will be updated with the content and settings indicated thus it is possible for a blank item to be created but for the update to fail. Please see the [results](../objects/workshop-item-data-create-status.md#createitemresult) in the status object for more details.
 
 #### Step by step
 
@@ -143,7 +143,7 @@ UGC.StartItemUpdate(appId, fileId);
 * RemoveItemKeyValueTags
 * RemoveItemPreview
 
-For example the folloowing code would update the title and description
+For example the following code would update the title and description
 
 ```csharp
 UGC.SetItemTitle(updateHandle, "title");
@@ -209,16 +209,16 @@ Once you have created your handle you can modify the way it searches for matchin
 * SetReturnTotalOnly
 * SetSearchText
 
-Once you have your query set up you can submit it to fetch the related items. Note the UGC Query system is a page query system. It will never return more than 50 items (determined by Valve) and so you will need to incrament the page in your query handle to fetch each successive set of records.&#x20;
+Once you have your query set up you can submit it to fetch the related items. Note the UGC Query system is a page query system. It will never return more than 50 items (determined by Valve) and so you will need to increment the page in your query handle to fetch each successive set of records.&#x20;
 
-You can see how we implamented paging in the [UGC Query Manager](../components/ugc-query-manager.md) if you wished to do so your self or simply to better understand the system.
+You can see how we implemented paging in the [UGC Query Manager](../components/ugc-query-manager.md) if you wished to do so your self or simply to better understand the system.
 
 ```csharp
 //When ready send the query so Valve can process it
 UGC.SendQueryUGCRequest(handle, callback);
 ```
 
-When the callback is invoked its paramiter will indicate the result state and query handle, assuming the state is eResultOk you can fetch the found items via, the following assumes `param` is the SteamUGCQueryComplete\_t object returned by the SendQueryUGCRequest's callback
+When the callback is invoked its parameter will indicate the result state and query handle, assuming the state is eResultOk you can fetch the found items via, the following assumes `param` is the SteamUGCQueryComplete\_t object returned by the SendQueryUGCRequest's callback
 
 ```csharp
 //If nothing went wrong

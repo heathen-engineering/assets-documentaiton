@@ -26,7 +26,7 @@ This is just a list of terms I will use in this article, they are not necessaril
 
 ### Client
 
-Client is a term that can mean manythings. In general a "client" is a consumer of some service, a game for example as in the executable you run to play the game ... that is a "Game Client" even if there is no network its still a client. Within a single program such as your game you may have compoennets that are acting as a "client" to other componenets that are acting as a "server" this is actually rather common.
+Client is a term that can mean many things. In general a "client" is a consumer of some service, a game for example as in the executable you run to play the game ... that is a "Game Client" even if there is no network its still a client. Within a single program such as your game you may have components that are acting as a "client" to other components that are acting as a "server" this is actually rather common.
 
 In general networking when we say "Client" we mean that which is connected to a "Server". This gets more complex in P2P where one of the "Clients" is also the "Server" some networking APIs refer to this as "Host" as opposed to "Server" to try and differentiate the concepts.
 
@@ -44,7 +44,7 @@ As noted in HLAPI this stands for Low Level Application Program Interface. When 
 
 ### Lobby
 
-This term gets abused so very offten by the developers of networking APIs.
+This term gets abused so very often by the developers of networking APIs.
 
 {% hint style="danger" %}
 A lobby is not a networking feature
@@ -52,7 +52,7 @@ A lobby is not a networking feature
 
 A lobby is best thought of as a chat room. It exists before there is a network session set up at all, in fact its where your player's will meet to agree what kind of session should be set up. In most cases when the network session comes up and the player's join it, they would leave any matchmaking lobby they are in.
 
-Lobbies can be used for loads of features that have nothing at all to do with networking or even multiplayer. They are fundamentally just a chat room assoceated with a Steam App that players who are running the same app can join, attach metadata to, search for, etc. This makes lobbies useful for matchmaking, player groups/parties they are used in Steam's remote play feature and through the parties system can be used to invite players to come play the game with you or watch you play the game over Steam Streaming.
+Lobbies can be used for loads of features that have nothing at all to do with networking or even multiplayer. They are fundamentally just a chat room associated with a Steam App that players who are running the same app can join, attach metadata to, search for, etc. This makes lobbies useful for matchmaking, player groups/parties they are used in Steam's remote play feature and through the parties system can be used to invite players to come play the game with you or watch you play the game over Steam Streaming.
 
 Mirror, Photon and others have a concept of a "Room" ... this is not a lobby and not related to lobby.
 
@@ -64,17 +64,17 @@ Network Manager, most HLAPIs have a concept of a network manager. This is your g
 
 ### Room
 
-We dont use this and dont recomend any one does. Room is a concept seen in Mirror, Photon and a few other networking solutions. Personally I see no reason to use such a thing especially if you have a proper backend service provider like Steam or PlayFab.
+We don't use this and don't recommend any one does. Room is a concept seen in Mirror, Photon and a few other networking solutions. Personally I see no reason to use such a thing especially if you have a proper backend service provider like Steam or PlayFab.
 
 A room is a full network connection so really if you can connect to a room why not just go ahead and be connected to your session since you already are.&#x20;
 
-This concept is mostly used by people who let the network manager manage which scene is active, another thing we do not do nore recomend. If you do let your network manager manage your scenes then read up on how "room" works with your API if at all.
+This concept is mostly used by people who let the network manager manage which scene is active, another thing we do not do not recommend. If you do let your network manager manage your scenes then read up on how "room" works with your API if at all.
 
-If your managing your own scene structure (strongly recomended) then room offers no benifit and can be ignored.
+If your managing your own scene structure (strongly recommended) then room offers no benefit and can be ignored.
 
 ### Server
 
-Another offten abused term.
+Another often abused term.
 
 In its simplest form a "server" is anything that serves other things. For example GitBook is a web server, serving your browser with HTML content.
 
@@ -82,9 +82,9 @@ A computer running a server OS used to server other computers with services is a
 
 A Unity session that is being connected to by other Unity sessions is a game server
 
-Unity builds can be both servers and clients and most NM's have a concept of "Host" which is exsactly that, it is where your NM is acting as both a client and a server. That is it is asking for content (From its self) and serving that content (to its self and others).
+Unity builds can be both servers and clients and most NM's have a concept of "Host" which is exactly that, it is where your NM is acting as both a client and a server. That is it is asking for content (From its self) and serving that content (to its self and others).
 
-A lobby however is not a server, browsing for lobbies is not a way to make a server list. Server discovery is a concept which Steam handles please see the [Steam Game Server](../../features/multiplayer/game-server-browser.md) and [Game Server Browser](../../components/game-server-browser-manager.md) for more informaiton.
+A lobby however is not a server, browsing for lobbies is not a way to make a server list. Server discovery is a concept which Steam handles please see the [Steam Game Server](../../features/multiplayer/game-server-browser.md) and [Game Server Browser](../../components/game-server-browser-manager.md) for more information.
 
 ### Transport
 
@@ -180,7 +180,7 @@ This should be called by the owner of the lobby when the network environment is 
 
 When this is called the owner can specify a CSteamID representing the steam peer or Steam Game Server.
 
-Users that join the lobby after the event has occured will not get the event raised however they can test if it has already been set via&#x20;
+Users that join the lobby after the event has occurred will not get the event raised however they can test if it has already been set via&#x20;
 
 ```csharp
 if(lobby.HasServer)
@@ -198,7 +198,7 @@ A steam Lobby is not a network feature. It has nothing to do with Mirror, MLAPI 
 
 A lobby typically exists before there is any network session set up and closes when there is.&#x20;
 
-Its the place that player's meet, agree any configurable game rules and use to decide the conditions of the network session. It can also be used to notify the members when the session is ready to connect. Typically when a user connects to a network session they would leave the matchmaking lobby. So you can see that a lobby and network not only aren't the same things but they dont usually coexist.
+Its the place that player's meet, agree any configurable game rules and use to decide the conditions of the network session. It can also be used to notify the members when the session is ready to connect. Typically when a user connects to a network session they would leave the matchmaking lobby. So you can see that a lobby and network not only aren't the same things but they don't usually coexist.
 
 ## The Game Loop
 
@@ -210,7 +210,7 @@ I’ll start with Peer-to-Peer based games and then we can go over the differenc
 
 1.  Player A starts the game and indicates to your UI that it wants to play a multiplayer match as the host of a session let’s say. This can happen after the player has exhausted a search for an existing game that suits or simply because it wants to be the host that part is up to you.
 
-    In doing this Player A will create a new Lobby typicaly marked as private initally so a few houskeeping things can be done before the new lobby is exposed to the public.
+    In doing this Player A will create a new Lobby typically marked as private initially so a few housekeeping things can be done before the new lobby is exposed to the public.
 
 
 2.  Player A configures the conditions of the game they want to host e.g., mode, map, etc. This information will get stored on a Steam Lobby as metadata and used in the matchmaking process e.g., others searching for a game can filter on this information.
@@ -220,9 +220,9 @@ I’ll start with Peer-to-Peer based games and then we can go over the differenc
     Lobby Types
 
     1. Public = can be viewed by anyone searching
-    2. Friends = only accessable by the player's friends
-    3. Private = only accessable by direct invite
-    4. Inivisible = used as a party or group or to merge two other lobbies
+    2. Friends = only accessible by the player's friends
+    3. Private = only accessible by direct invite
+    4. Invisible = used as a party or group or to merge two other lobbies
 
     Which you choose for your lobby or which options you make available to your users is wholly up to you and would depend on what features your game needs.
 
@@ -236,14 +236,14 @@ I’ll start with Peer-to-Peer based games and then we can go over the differenc
 
     Player A calls NM to Start Host and then configures the network environment to suit the desired conditions i.e., loads levels, spawns’ environments, etc.
 
-    Note we do not recomend you let the NM manage your scenes however if you do be aware that the owner of the lobby is now in a network session the other members are not so your UI and other game systems will need to handle this.
+    Note we do not recommend you let the NM manage your scenes however if you do be aware that the owner of the lobby is now in a network session the other members are not so your UI and other game systems will need to handle this.
 
-    If your managing your own scenes then you could additivly load the game session scene and set it active while still having the game lobby scene be loaded. To learn more about multi-[scene architecture](../../../../company/concepts/multi-scene-architecture.md) see this article.
+    If your managing your own scenes then you could additively load the game session scene and set it active while still having the game lobby scene be loaded. To learn more about multi-[scene architecture](../../../../company/concepts/multi-scene-architecture.md) see this article.
 
 
 5.  When Player A is happy that the network environment is ready for use, they will call SetGameServer on the Steam Lobby providing their own ID as the server information. This will notify all other players that the session is ready to connect to and so each other user will handle that event, navigate to the appropriate scene in your game and call StartClient on the NM
 
-    Typically, as players connect to the host/server they will leave the lobby. You can maintain the lobby for the duration of the session if you like such as to enable droping players to come in after session start.&#x20;
+    Typically, as players connect to the host/server they will leave the lobby. You can maintain the lobby for the duration of the session if you like such as to enable dropping players to come in after session start.&#x20;
 
     Do know though that SetGameServer will only invoke its events once per lobby so in short, a Steam Lobby represents a single game session.
 

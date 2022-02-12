@@ -18,7 +18,7 @@ using API = HeathenEngineering.SteamworksIntegraiton.API;
 public static class API.Friends
 ```
 
-The whole of the friends system is only accessable from the Client API as a result you will always be using the form:
+The whole of the friends system is only accessible from the Client API as a result you will always be using the form:
 
 ```csharp
 API.Friends.Client
@@ -38,7 +38,7 @@ You can list the clan owner, its officers, open the clan chat in overlay or join
 
 ## Events
 
-The following events are available on this interface, events are exposed for each of the availabel "callbacks" in the Steam API for the underlying Steam interface.
+The following events are available on this interface, events are exposed for each of the available "callbacks" in the Steam API for the underlying Steam interface.
 
 ### Game Connected Friend Chat Msg
 
@@ -81,7 +81,7 @@ private void HandleUpdate(FriendRichPresenceUpdate_t update)
 
 ### Persona State Change
 
-Called whenever a friends' status changes. This differs from the Friend Rich Presence Update in that it deals with persona information not presence information e.g. avatar image and name primarly.
+Called whenever a friends' status changes. This differs from the Friend Rich Presence Update in that it deals with persona information not presence information e.g. avatar image and name primarily.
 
 ```csharp
 API.Friends.Client.EventPersonaStateChange.AddListener(HandleChange);
@@ -97,7 +97,7 @@ private void HandleChange(PersonaStateChange_t change)
 }
 ```
 
-You can use `change.m_nChangeFlags` to determin what changed about the given user. Note that when Heathen's system detects this event regarding a Persona Change Avatar we automatically create a corisponding Texture2D and assoceate it with the user in question, thus user.Avatar should already be prepared when you recieve this event.
+You can use `change.m_nChangeFlags` to determine what changed about the given user. Note that when Heathen's system detects this event regarding a Persona Change Avatar we automatically create a corresponding Texture2D and associate it with the user in question, thus user.Avatar should already be prepared when you receive this event.
 
 ## Fields and Attributes
 
@@ -107,7 +107,7 @@ You can use `change.m_nChangeFlags` to determin what changed about the given use
 public static bool ListenForFriendsMessages { get; set; }
 ```
 
-Gets or sets the listen for frineds messages. When this is set true you should handle the "Game Connected Friend Chat Msg" event to read incoming messages from friends.
+Gets or sets the listen for friends messages. When this is set true you should handle the "Game Connected Friend Chat Msg" event to read incoming messages from friends.
 
 ### PersonaName
 
@@ -174,7 +174,7 @@ Gets the number of players that the current user has recently played with, acros
 public static UserData[] GetCoplayFriends()
 ```
 
-Get the list of players the current useer has recently played with across all games
+Get the list of players the current user has recently played with across all games
 
 ### GetFollowerCount
 
@@ -274,7 +274,7 @@ Gets the data from a Steam friends message.
 public static string GetFriendPersonaName(UserData userId)
 ```
 
-You really shouldn't need to use this as its the same as simply reading userId.Name however it is maintained to be compatable with Steamworks.NET sample code.
+You really shouldn't need to use this as its the same as simply reading userId.Name however it is maintained to be compatible with Steamworks.NET sample code.
 
 ### GetFriendPersonaNameHistory
 
@@ -546,7 +546,7 @@ Checks if the value has all of the flags indicated set
 
 ### Manage Rich Presence
 
-Rich Presence is a powerful social system for full details please read the feature documentiaton linked below
+Rich Presence is a powerful social system for full details please read the feature documentation linked below
 
 {% embed url="https://partner.steamgames.com/doc/features/enhancedrichpresence" %}
 
@@ -584,12 +584,12 @@ API.Friends.Client.GetFriendRichPresnece(user);
 
 ### Get Friends
 
-It is offten forgot that Steam is a social network. There are multiple groupings of a user's friends that can be read and listed for various uses.
+It is often forgot that Steam is a social network. There are multiple groupings of a user's friends that can be read and listed for various uses.
 
-For general use the GetFriends method will return a simple array of UserData representing each friend by its type. This method takes a "flag" representing the type of freind list to return. The options of flags are as follows.
+For general use the GetFriends method will return a simple array of UserData representing each friend by its type. This method takes a "flag" representing the type of friend list to return. The options of flags are as follows.
 
 {% hint style="info" %}
-The flag paramiter is of type [EFriendFlags](https://partner.steamgames.com/doc/api/ISteamFriends#EFriendFlags) defined in the Steamworks namespace.
+The flag parameter is of type [EFriendFlags](https://partner.steamgames.com/doc/api/ISteamFriends#EFriendFlags) defined in the Steamworks namespace.
 {% endhint %}
 
 * None\
@@ -602,7 +602,7 @@ The flag paramiter is of type [EFriendFlags](https://partner.steamgames.com/doc/
 *   Friendship Requested\
     `EFriendFlags.k_EFriendFlagFriendshipRequested`
 
-    User that have sent a freind invite to the current user
+    User that have sent a friend invite to the current user
 *   Immediate\
     `EFriendFlags.k_EFriendFlagImmediate`
 
@@ -656,7 +656,7 @@ foreach(UserData user in friends)
 
 
 
-Alternativly friends can be read from a given source. Sources can include groups/clans, chat rooms, lobbies or game servers.
+Alternatively friends can be read from a given source. Sources can include groups/clans, chat rooms, lobbies or game servers.
 
 {% hint style="warning" %}
 Large Steam groups cannot be iterated by the local user
@@ -678,7 +678,7 @@ If you need to set a given user as a played with friend you can call
 API.Friends.Client.SetPlayedWith(user);
 ```
 
-In most cases all of the information you need about a user (or friend) is provided in the UserData returned by these calls. In some cases you may need specific data not accessable through UserData.
+In most cases all of the information you need about a user (or friend) is provided in the UserData returned by these calls. In some cases you may need specific data not accessible through UserData.
 
 #### Get Coplay Game
 
@@ -726,7 +726,7 @@ API.Friends.Client.InviteUserToGame(user, connectionString);
 
 When you invite a user in this way if they are not yet in game; when they accept the invite Steam will launch the game with the connection string provided in the commandline. If the user is already in game then the API will raise the `API.Friends.Client.EventGameRichPresenceJoinRequested` event.
 
-Finally you can invite friends to join a specific lobby through the Lobby object its self. This assumes you have your Lobby as priovded by the API.Matchmaking system.
+Finally you can invite friends to join a specific lobby through the Lobby object its self. This assumes you have your Lobby as provided by the API.Matchmaking system.
 
 ```
 lobby.InviteUserToLobby(user);
@@ -742,7 +742,7 @@ API.Friends.Client.ListenForFriendsMessages = true;
 
 Setting this value to value will disable the system, this can be enabled and disabled at will.
 
-Once enabled the API.Friends.Client.EventGameConnectedFriendChatMsg event will be raised any time a new message is recieved. The event will contain information about the message which can be used to present the message to a Chat UI.
+Once enabled the API.Friends.Client.EventGameConnectedFriendChatMsg event will be raised any time a new message is received. The event will contain information about the message which can be used to present the message to a Chat UI.
 
 Example Chat Message Handler
 
@@ -757,7 +757,7 @@ private void HandleFriendChatMsg(UserData sender,
 }
 ```
 
-To send a responce to a given player e.g. to send a chat message your self use
+To send a response to a given player e.g. to send a chat message your self use
 
 ```
 API.Friends.Client.ReplyToFriendMessage(user, message);
@@ -774,7 +774,7 @@ API.Friends.Client.SetPersonaName(name, callback);
 You can get the persona state for the local users via
 
 {% hint style="info" %}
-UserData objects can be used to fetch persona state, name and other information typically in a simpler mathod than using the Friends interface directly.
+UserData objects can be used to fetch persona state, name and other information typically in a simpler method than using the Friends interface directly.
 {% endhint %}
 
 ```csharp
@@ -789,9 +789,9 @@ var state = API.Friends.Client.GetFriendPersonaState(user);
 
 ### Requesting User Information
 
-In most cases this is not nessisary, Steam will generally already have the information for users that the local user "knows" including:
+In most cases this is not necessary, Steam will generally already have the information for users that the local user "knows" including:
 
-* Freinds
+* Friends
 * Members of shared lobbies
 * Members of shared game servers
 * Members of shared clans/groups (some limitations on large groups)

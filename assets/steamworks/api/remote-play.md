@@ -10,7 +10,7 @@ using API = HeathenEngineering.SteamworksIntegraiton.API;
 public static class API.RemotePlay
 ```
 
-The whole of the remote play system is only accessable from the Client API as a result you will always be using the form:
+The whole of the remote play system is only accessible from the Client API as a result you will always be using the form:
 
 ```csharp
 API.RemotePlay.Client
@@ -82,7 +82,7 @@ var resolution = API.RemotePlay.Client.GetSessionClientResolution(session);
 
 ### Send Invite
 
-Inviite a friend to join the game using remote play together
+Invite a friend to join the game using remote play together
 
 ```csharp
 if(API.RemotePlayClient.SendInvite(user))

@@ -14,7 +14,7 @@ using API = HeathenEngineering.SteamworksIntegraiton.API;
 public static class API.Inventory
 ```
 
-The whole of the inventory system is only accessable from the Client API as a result you will always be using the form:
+The whole of the inventory system is only accessible from the Client API as a result you will always be using the form:
 
 ```csharp
 API.Inventory.Client
@@ -60,7 +60,7 @@ For more info on how to use the Steamworks Web API please see the [Web API Overv
 
 The Steam Inventory Service is a set of features that allow a game to enable persistent player inventories without having to run special servers to manage users or items.
 
-The following is from the Steam Documentaiton for the Inventory feature.
+The following is from the Steam Documentation for the Inventory feature.
 
 > The Inventory Service can be used in two ways - either server-less or with the addition of a trusted server that knows game state.\
 > \
@@ -94,7 +94,7 @@ See [Steam Inventory Service](https://partner.steamgames.com/doc/features/invent
 
 ### Understanding Callbacks
 
-A callback is a deligate similar to a UnityEvent, that is its a pointer to a method that will be called at some later point ... in the case of Steam methods it gets called when the process completes.
+A callback is a delegate similar to a UnityEvent, that is its a pointer to a method that will be called at some later point ... in the case of Steam methods it gets called when the process completes.
 
 To learn more please read the article on [Callbacks](../../../company/concepts/callbacks.md) and on [Lambda Expressions](../../../company/concepts/lambda-expressions.md).
 
@@ -120,7 +120,7 @@ Then you would register the event such as:
 API.Inventory.Client.EventSteamInventoryDefinitionUpdate.AddListener(HandleEvent);
 ```
 
-When you no longer need this handler you should remove it for example when the behviour using it is destroyed
+When you no longer need this handler you should remove it for example when the behavior using it is destroyed
 
 ```csharp
 void OnDestroy()
@@ -149,7 +149,7 @@ Then you would register the event such as:
 API.Inventory.Client.EventSteamInventoryResultReady.AddListener(HandleEvent);
 ```
 
-When you no longer need this handler you should remove it for example when the behviour using it is destroyed
+When you no longer need this handler you should remove it for example when the behavior using it is destroyed
 
 ```csharp
 void OnDestroy()
@@ -640,7 +640,7 @@ This only needs to be called if you are manually handling results ... which shou
 
 
 
-This is only provided for completness of the API to enable deep customization for those who wish to do so.
+This is only provided for completeness of the API to enable deep customization for those who wish to do so.
 {% endhint %}
 
 ```
@@ -658,11 +658,11 @@ The caller of this API passes in the requested item and an array of existing ite
 Any items that can be granted MUST have an exchange attribute in their itemdef. The exchange attribute specifies a set of recipes that are valid exchanges for this item. Exchange recipes are evaluated atomically by the Inventory Service; if the supplied components do not match the recipe, or do not contain sufficient quantity, the exchange will fail.
 
 {% hint style="warning" %}
-It is much simpler to handle this feature through the Item Defenition object.
+It is much simpler to handle this feature through the Item Definition object.
 
 
 
-This is included in the API for completness sake
+This is included in the API for completeness sake
 {% endhint %}
 
 ```csharp
@@ -722,14 +722,14 @@ API.Inventory.Client.GetItemDefinitionIDs(out SteamItemDef_t[] results);
 
 ### Get Result Items
 
-Get the items assoceated with an inventory result handle.
+Get the items associated with an inventory result handle.
 
 {% hint style="danger" %}
 You should never need to call this method if your using Heathen's Steamworks&#x20;
 
 
 
-This method is included for completness of the interface.
+This method is included for completeness of the interface.
 {% endhint %}
 
 ```
@@ -745,7 +745,7 @@ This should never need to be called if your Heathen's Steamworks.
 
 
 
-This method is included for completness of the interface.
+This method is included for completeness of the interface.
 {% endhint %}
 
 ### Grant Promo Items

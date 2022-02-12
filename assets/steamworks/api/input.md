@@ -14,7 +14,7 @@ using API = HeathenEngineering.SteamworksIntegraiton.API;
 public static class API.Input
 ```
 
-The whole of the input system is only accessable from the Client API as a result you will always be using the form:
+The whole of the input system is only accessible from the Client API as a result you will always be using the form:
 
 ```csharp
 API.Input.Client
@@ -58,9 +58,9 @@ To learn more about Steam Input in Heathen's Steamworks Complete [read this arti
 
 ## Fields and Attributes
 
-### Initalized
+### Initialized
 
-Indicates rather or not the Seam Input API has been initalized. You must initalize the Steam Input API before it can be used. This is handled automatically for you if you have defined Inputs in the Steam Settings object.
+Indicates rather or not the Seam Input API has been initialized. You must initialize the Steam Input API before it can be used. This is handled automatically for you if you have defined Inputs in the Steam Settings object.
 
 ## How To
 
@@ -240,9 +240,9 @@ Returns the localized string for the specified origin.
 var originName = API.Input.Client.GetStringForActionOrigin(origin);
 ```
 
-### Initalize the Input System
+### Initialize the Input System
 
-This must be called before using API.Interface. It takes a single paramiter `explicitlyCallRunFrame` which if true would require you to call `RunFrame()` to synchronize the state data.
+This must be called before using API.Interface. It takes a single parameter `explicitlyCallRunFrame` which if true would require you to call `RunFrame()` to synchronize the state data.
 
 ```csharp
 API.Input.Client.Init(explicitlyCallRunFrame);
@@ -250,7 +250,7 @@ API.Input.Client.Init(explicitlyCallRunFrame);
 
 ### Run Frame
 
-If you chose to initalize with explicitly run frame enabled you should call this before testing for input. In most cases you will initalize `API.Input.Client.Init(false);` and so this will be called for you each Update via the `Steamworks Behaviour`.
+If you chose to initialize with explicitly run frame enabled you should call this before testing for input. In most cases you will initialize `API.Input.Client.Init(false);` and so this will be called for you each Update via the `Steamworks Behaviour`.
 
 ```
 API.Input.Client.RunFrame();

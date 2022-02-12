@@ -26,7 +26,7 @@ Server features are available under the server interface
 API.StatsAndAchievements.Server
 ```
 
-All features availabel to 1 are present in the other with some minor exceptions. The only notable difference is that Server related calls required you to provide the CSteamID of the user to be adjusted and will only work when that user is authenticated to the Steam Game Server that calls the method.
+All features available to 1 are present in the other with some minor exceptions. The only notable difference is that Server related calls required you to provide the CSteamID of the user to be adjusted and will only work when that user is authenticated to the Steam Game Server that calls the method.
 
 ### What can it do?
 
@@ -66,7 +66,7 @@ Invoked when the user's achievements are stored to Steam's backend
 
 ### Clear Achievements and Stats
 
-You can clear achievemnts either by using the interface
+You can clear achievements either by using the interface
 
 ```csharp
 API.StatsAndAchievements.Client.ClearAChievement(name);
@@ -74,7 +74,7 @@ API.StatsAndAchievements.Client.ClearAChievement(name);
 
 or by using the [Achievement Object](../objects/achievement-object.md) directly
 
-Reseting a stat is as simple as setting its value, see the [Int Stat](../objects/int-stat.md) and [Float Stat](../objects/float-stat.md) object for details
+Resetting a stat is as simple as setting its value, see the [Int Stat](../objects/int-stat.md) and [Float Stat](../objects/float-stat.md) object for details
 
 You can optionally reset all stats and achievements
 

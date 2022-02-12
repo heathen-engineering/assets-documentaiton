@@ -14,7 +14,7 @@ using API = HeathenEngineering.SteamworksIntegraiton.API;
 public static class API.RemoteStorage
 ```
 
-The whole of the remote storage system is only accessable from the Client API as a result you will always be using the form:
+The whole of the remote storage system is only accessible from the Client API as a result you will always be using the form:
 
 ```csharp
 API.RemoteStorage.Client
@@ -48,7 +48,7 @@ if(API.RemoteStorage.Client.IsEnabled)
 
 ### What can it do?
 
-Remote storage is primarly used to save game data and other user specific information to a cloud storage area. This insures that data is available wherever the player chooses to play.
+Remote storage is primarily used to save game data and other user specific information to a cloud storage area. This insures that data is available wherever the player chooses to play.
 
 The API makes it easy to read and write files to and from Steam Remote Storage aka Steam Cloud save.
 
@@ -58,7 +58,7 @@ The API makes it easy to read and write files to and from Steam Remote Storage a
 
 ### Understanding Callbacks
 
-A callback is a deligate similar to a UnityEvent, that is its a pointer to a method that will be called at some later point ... in the case of Steam methods it gets called when the process completes.
+A callback is a delegate similar to a UnityEvent, that is its a pointer to a method that will be called at some later point ... in the case of Steam methods it gets called when the process completes.
 
 To learn more please read the article on [Callbacks](../../../company/concepts/callbacks.md) and on [Lambda Expressions](../../../company/concepts/lambda-expressions.md).
 
@@ -84,7 +84,7 @@ Then you would register the event such as:
 API.Inventory.Client.EventLocalFileChange.AddListener(HandleEvent);
 ```
 
-When you no longer need this handler you should remove it for example when the behviour using it is destroyed
+When you no longer need this handler you should remove it for example when the behavior using it is destroyed
 
 ```csharp
 void OnDestroy()
@@ -362,7 +362,7 @@ Gets the number of bytes available, and used on the users Steam Cloud storage.
 public static ERemoteStoragePlatform GetSyncPlatforms(string file)
 ```
 
-Obtains the platforms that the specified file will syncronize to.
+Obtains the platforms that the specified file will synchronize to.
 
 ### GetUGCDetails
 
@@ -398,7 +398,7 @@ Files default to [k\_ERemoteStoragePlatformAll](https://partner.steamgames.com/d
 public static void UGCDownload(UGCHandle_t handle, uint priority, Action<RemoteStorageDownloadUGCResult_t, bool> callback)
 ```
 
-Undocumented, assumed to be depricated.
+Undocumented, assumed to be deprecated.
 
 ### UGCDownloadToLocation
 
@@ -406,7 +406,7 @@ Undocumented, assumed to be depricated.
 public static void UGCDownloadToLocation(UGCHandle_t handle, string location, uint priority, Action<RemoteStorageDownloadUGCResult_t, bool> callback)
 ```
 
-Undocumented, assumed to be depricated.
+Undocumented, assumed to be deprecated.
 
 ### UGCRead
 
@@ -414,4 +414,4 @@ Undocumented, assumed to be depricated.
 public static byte[] UGCRead(UGCHandle_t handle)
 ```
 
-Undocumented, assumed to be depricated.
+Undocumented, assumed to be deprecated.

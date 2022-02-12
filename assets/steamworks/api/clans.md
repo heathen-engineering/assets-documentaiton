@@ -18,14 +18,14 @@ using API = HeathenEngineering.SteamworksIntegraiton.API;
 public static class API.Clans
 ```
 
-The whole of the clans system is only accessable from the Client API as a result you will always be using the form:
+The whole of the clans system is only accessible from the Client API as a result you will always be using the form:
 
 ```csharp
 API.Clans.Client
 ```
 
 {% hint style="info" %}
-Save yoru self some typing and use a [namespace alias](../../../company/concepts/namespace-and-using.md#aliasing).
+Save your self some typing and use a [namespace alias](../../../company/concepts/namespace-and-using.md#aliasing).
 
 ```csharp
 using Clans = HeathenEngineering.SteamworksIntegration.API.Clans.Client;
@@ -44,7 +44,7 @@ Search For Community Groups
 
 You can list the clan owner, its officers, open the clan chat in overlay or join the clan's chat in game. The most common use game developers look for and the most complex is to join the clan chat in game.
 
-### Related Componenets
+### Related Components
 
 {% embed url="https://kb.heathenengineering.com/assets/steamworks/components/clan-chat-director" %}
 
@@ -123,7 +123,7 @@ public void HandleEvent(UserLeaveData arg)
 public static ChatRoom[] JoinedChatRooms = get;
 ```
 
-This is provdided for debugging purposes and generally shouldn't be used
+This is provided for debugging purposes and generally shouldn't be used
 
 ## Methods
 
@@ -236,7 +236,7 @@ public static string GetChatMessage(ChatRoom clanChat,
                                         out CSteamID chatter)
 ```
 
-You generally do not need to call this if your using thhe [EventChatMessageReceievd ](clans.md#eventchatmessagerecieved)or the [ClanChatDirector](../components/clan-chat-director.md).
+You generally do not need to call this if your using the [EventChatMessageReceievd ](clans.md#eventchatmessagerecieved)or the [ClanChatDirector](../components/clan-chat-director.md).
 
 This gets the data regarding a specific chat message in given clan chat room.
 
@@ -395,7 +395,7 @@ Refresh the Steam Group activity data or get the data from groups other than one
 
 ### Create a Clan / Group
 
-This cannot be done from within the Steam API at current you can however direct your player's to the approprete location in Steam to create there own clans.
+This cannot be done from within the Steam API at current you can however direct your player's to the appropriate location in Steam to create there own clans.
 
 > [https://steamcommunity.com/actions/GroupCreate](https://steamcommunity.com/actions/GroupCreate)
 

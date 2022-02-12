@@ -14,7 +14,7 @@ using API = HeathenEngineering.SteamworksIntegraiton.API;
 public static class API.Overlay
 ```
 
-The whole of the overlay system is only accessable from the Client API as a result you will always be using the form:
+The whole of the overlay system is only accessible from the Client API as a result you will always be using the form:
 
 ```csharp
 API.Overlay.Client
@@ -36,7 +36,7 @@ Called when the overlay activates or deactivates.
 
 ### Game Server Change Requested
 
-Called when the user tries to join a different game server from there friens list while the game is running.
+Called when the user tries to join a different game server from there friends list while the game is running.
 
 ### Game Lobby Join Requested
 
@@ -99,7 +99,7 @@ API.Overlay.Client.Activate(dialog);
 API.Overlay.Client.ActivateInviteDialog(lobbyId);
 ```
 
-#### To a game connnection
+#### To a game connection
 
 ```csharp
 API.Overlay.Client.ActivateInviteDialog(connectionInfo);

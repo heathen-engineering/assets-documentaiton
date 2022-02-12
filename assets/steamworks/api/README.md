@@ -6,9 +6,9 @@ description: The Heathen Steam API wrapper
 
 ## Introduction
 
-The Heathen API provides access to the full Steam API wrapping every interface with a Unity friendly static class, simplifying use of the raw API without reducing its funcitonality and exposing every callback as a UnityEvent and every callresult as a Unity firendly Action.
+The Heathen API provides access to the full Steam API wrapping every interface with a Unity friendly static class, simplifying use of the raw API without reducing its functionality and exposing every callback as a UnityEvent and every callresult as a Unity firendly Action.
 
-We have wrapped every interface (except Networking interfaces) and copied its relivent documentaiton meaning you can now explore Valve's own documentaiton in yoru IDE via intellisense, take full advantage of auto complete and sugestions and explore the full API via the object explorer.&#x20;
+We have wrapped every interface (except Networking interfaces) and copied its relevant documentation meaning you can now explore Valve's own documentation in your IDE via intelligence, take full advantage of auto complete and suggestions and explore the full API via the object explorer.&#x20;
 
 {% hint style="info" %}
 Why not wrap the networking interfaces?
@@ -20,7 +20,7 @@ We feel networking is best served working directly against the API with no "midd
 
 No
 
-We are still built on top of Steamworks.NET something we feel strongly about as it provides an unadultrated view of the Steam API making it possible for you to leverage decades of community guides, sample code, the offical Steam Developer forums and support channels from Valve, etc.
+We are still built on top of Steamworks.NET something we feel strongly about as it provides an unadulterated view of the Steam API making it possible for you to leverage decades of community guides, sample code, the official Steam Developer forums and support channels from Valve, etc.
 
 Heathen's API does wrap the raw Steam API up as an extension to Steamworks.NET making it not just C# friendly but more Unity native. You could say what Facepunch does for a C# programmer Heathen does for a Unity programmer, Unity designer, C# programmer, C/C++ programmer, etc.
 
@@ -42,7 +42,7 @@ API.StatsAndAchievements.Server.ClearUserAchievement(user, achievement);
 
 ### Simply C\#
 
-Valve's Steam API is big, powerful and written in C and C++ ... not exsactly friendly to many of the tride and true patterns and structures we use in C#. Heathen's API still exploses the traditional methods but also provides C# based alternatives.
+Valve's Steam API is big, powerful and written in C and C++ ... not exactly friendly to many of the tried and true patterns and structures we use in C#. Heathen's API still exposes the traditional methods but also provides C# based alternatives.
 
 TRADITIONAL
 
@@ -63,7 +63,7 @@ var results = API.StatsAndAchievements.Client.GetAchievementNames();
 
 ### Unity Native
 
-Steam API makes heavy use of callbacks and callresults which is Valve's answer to deligates. In Unity we normaly use UnityEvents (for callbacks) and Actions (for callresults). Heathen's API wraps every occasion of callback and callresult with the appropreate Unity native equivlent managing the memory for you.
+Steam API makes heavy use of callbacks and callresults which is Valve's answer to delegates. In Unity we normally use UnityEvents (for callbacks) and Actions (for callresults). Heathen's API wraps every occasion of callback and callresult with the appropriate Unity native equivalent managing the memory for you.
 
 RAW STEAM API
 

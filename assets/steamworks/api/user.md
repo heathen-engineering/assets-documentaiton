@@ -36,7 +36,7 @@ The user interface can be used to modify the local user's rich presence data and
 var user = API.User.Client.Id;
 ```
 
-you can also get key data about the local user either from the resulting [User Data](../objects/user-data.md) object as read from ID or directly from the iinterface as shown below
+you can also get key data about the local user either from the resulting [User Data](../objects/user-data.md) object as read from ID or directly from the interface as shown below
 
 ```csharp
 var userLevel = API.User.Client.Level;
@@ -72,6 +72,6 @@ API.User.Client.GetRichPresence(key);
 
 ### Duration Control
 
-Heathen enginering is not and will never support this sort of behaviour. If you need it look else where.
+Heathen engineering is not and will never support this sort of behaviour. If you need it look else where.
 
 The  same applies for SetDurationControlOnlineState and anything of similar nature.

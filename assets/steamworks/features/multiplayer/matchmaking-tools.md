@@ -20,13 +20,13 @@ You can read more about Steam's Matchmaking system on Valve's developer document
 
 ### Lobby?
 
-The first and most important thing to understand is that a lobby is not a network feature or concept. That is being in a lobby does not require a network connection, a network connection does not require a lobby. Lobby and Networking are two completly indapendent concepts.&#x20;
+The first and most important thing to understand is that a lobby is not a network feature or concept. That is being in a lobby does not require a network connection, a network connection does not require a lobby. Lobby and Networking are two completely independent concepts.&#x20;
 
-Please do not confuse a lobby with anything to do with a network or network conneciton.
+Please do not confuse a lobby with anything to do with a network or network connection.
 
 ### Metadata
 
-Metadata referes to data stored on the lobby or on a lobby member. Put simply its a collection of key value pairs where the key and value are a simple string. So you can think of it much like a&#x20;
+Metadata refers to data stored on the lobby or on a lobby member. Put simply its a collection of key value pairs where the key and value are a simple string. So you can think of it much like a&#x20;
 
 ```csharp
 Dictionary<string, string>
@@ -38,7 +38,7 @@ In contrast metadata stored on a lobby member can only be seen by members of the
 
 When metadata is changed the Steam API will raise the lobby data changed event ... that event will indicate what object's data changed by not what data field changed so for example if the event indicates the lobby data changed you should check all the lobby metadata where as if it indicated a members data changed you should check that members metadata.
 
-The event in question is exposed on the Lobby Mangaer as [evtDataUpdated ](../../components/lobby-manager.md#evtdataupdated)and in the Matchmaking API as [EventLobbyDataUpdate](../../api/matchmaking.md#eventlobbydataupdate).
+The event in question is exposed on the Lobby Manager as [evtDataUpdated ](../../components/lobby-manager.md#evtdataupdated)and in the Matchmaking API as [EventLobbyDataUpdate](../../api/matchmaking.md#eventlobbydataupdate).
 
 
 
@@ -61,35 +61,35 @@ var member = lobby.User;
 member["thisField"] = "thisValue";
 ```
 
-To learn more check out the [Lobby](../../objects/lobby.md#introduction) article discribing the features of the lobby strucutre.
+To learn more check out the [Lobby](../../objects/lobby.md#introduction) article describing the features of the lobby structure.
 
 ## Matchmaking
 
-It is important to understand that a lobby is not a server browser, it is not designed to list all possible sessions. It is effectivly a chat room and a matchmaking tool.&#x20;
+It is important to understand that a lobby is not a server browser, it is not designed to list all possible sessions. It is effectively a chat room and a matchmaking tool.&#x20;
 
 ### Can I list all? No
 
-Steam API at most will return 50 lobbies and in most cases that is 49 more lobbies than you need. The lobby query system is designed such that your user discribes they match they want and the Steam API will return the ideal match from the available lobbies.
+Steam API at most will return 50 lobbies and in most cases that is 49 more lobbies than you need. The lobby query system is designed such that your user describes they match they want and the Steam API will return the ideal match from the available lobbies.
 
-> What if the exsact match the player wants isn't available or what if they don't know exsactly that they want?
+> What if the exact match the player wants isn't available or what if they don't know exactly that they want?
 
 In that case you have two options
 
 ### Quick Match
 
-This is the most common approch by modern games. A quick match is where you search for a lobby that matches the desired game well enough and join it, if no ideal match can be found you create a new lobby with the arguments that match the ideal match and continue to look for near matches.
+This is the most common approach by modern games. A quick match is where you search for a lobby that matches the desired game well enough and join it, if no ideal match can be found you create a new lobby with the arguments that match the ideal match and continue to look for near matches.
 
-This means that other player's looking for the same match will find your new lobby and join you. Typically a modern game will also be looking for near matches in the background and after some tollerable time will take the nearest match even if its not ideal.
+This means that other player's looking for the same match will find your new lobby and join you. Typically a modern game will also be looking for near matches in the background and after some tolerable time will take the nearest match even if its not ideal.
 
 The objective of "Quick Match" in most games is to get the player playing a multiplayer match as soon as possible. Hence "quick" match. It does this by&#x20;
 
 1. Searching for an ideal match
 2. If not found creating an ideal lobby that others can join
-3. If not enough join in a tollerated time joining the next best lobby it can find
+3. If not enough join in a tolerated time joining the next best lobby it can find
 
 ### Lobby Browser
 
-Another approch used is to display a list of "near match" lobbies to the user along with a "create lobby" button.
+Another approach used is to display a list of "near match" lobbies to the user along with a "create lobby" button.
 
 Older games didn't let you create a new lobby until you searched for one. Once the search failed it would display the nearest matches to your search arguments along with a create button. The idea here is a player should first fill up a waiting session or if none suit the player's needs create one of there own.
 
@@ -99,9 +99,9 @@ This model does much the same as Quick Match but lets the player decide what the
 
 The [5 Lobbies](../../learning/sample-scenes/5-lobbies.md) sample scene demonstrates browsing for lobbies. If you wanted to do this model the ideal solution is to let the user define there search arguments and return a small number of the lobbies if any that match that say the top 10.&#x20;
 
-You can then do searches that are slightly less strict ... what this means depends on yoru game. For example lets say your game is a classic shooter with modes like CTF, C\&H, KofH and has session sizes of 4v4, 8v8 and 16v16 and maybe also lets your player's pick a map.
+You can then do searches that are slightly less strict ... what this means depends on your game. For example lets say your game is a classic shooter with modes like CTF, C\&H, KofH and has session sizes of 4v4, 8v8 and 16v16 and maybe also lets your player's pick a map.
 
-Your player may search for CTF 4v4 on map X. You return the top 10 matches that suit that but show the player the top 10 CTF 8v8, top 10 C\&H 4v4, top 10 KofH 4v4, etc. You dont want to flood your player with to many options and you dont want to burry there preference the idea is to show them options in case there ideal match isn't available or in case they didn't think to look for something else.
+Your player may search for CTF 4v4 on map X. You return the top 10 matches that suit that but show the player the top 10 CTF 8v8, top 10 C\&H 4v4, top 10 KofH 4v4, etc. You don't want to flood your player with to many options and you dont want to burry there preference the idea is to show them options in case there ideal match isn't available or in case they didn't think to look for something else.
 
 ### I need to list all servers
 
@@ -128,7 +128,7 @@ Once you have a server build you need to decide how your going to host it.
     This is where you ship your server build and let player's host it them selves
 2.  Bespoke
 
-    Services like [G-Portal](https://www.g-portal.com) can be used to host offical, private, etc. ... you see this done a lot with survival games like Minecraft, Conan Exiles, etc.
+    Services like [G-Portal](https://www.g-portal.com) can be used to host official, private, etc. ... you see this done a lot with survival games like Minecraft, Conan Exiles, etc.
 3.  Traditional
 
     Using a service like [PlayFab](https://playfab.com), [GameSparks ](https://www.gamesparks.com)or [Multiplay](https://unity.com/products/multiplay)
@@ -136,7 +136,7 @@ Once you have a server build you need to decide how your going to host it.
 
     Do it your self, if your a glutton for pain or just really like data operations you could of course host your servers your self.
 
-Doing this will let you browse for and display all available (and publicly visiable) stem game servers via a [Steam Game Server Browser](../../components/game-server-browser-manager.md).
+Doing this will let you browse for and display all available (and publicly visible) stem game servers via a [Steam Game Server Browser](../../components/game-server-browser-manager.md).
 
 ## Use Cases
 
@@ -144,7 +144,7 @@ Doing this will let you browse for and display all available (and publicly visia
 
 For more information on lobby types see Valve's documentation [https://partner.steamgames.com/doc/api/ISteamMatchmaking#typedefs](https://partner.steamgames.com/doc/api/ISteamMatchmaking#typedefs)&#x20;
 
-See the [API.Matchmaking](../../api/matchmaking.md#create-lobby) interace for details on creating a lobby. In addition the [Lobby Manager](../../components/lobby-manager.md) tools can help you create, join and manage a lobby for a specific function in your game.&#x20;
+See the [API.Matchmaking](../../api/matchmaking.md#create-lobby) interface for details on creating a lobby. In addition the [Lobby Manager](../../components/lobby-manager.md) tools can help you create, join and manage a lobby for a specific function in your game.&#x20;
 
 Lets say for example you use 2 types of lobbies in your game
 
@@ -171,7 +171,7 @@ In this case the accepting user is already in game and so the Game Lobby Join In
 
 #### While out of game
 
-In this case the accepting user is not yet in game and so the Steam client will launch the game and pass as an argument on the command line the lobby connection information. It is up to you to handle this argument, navigate to the appropriate place iin your game e.g. the lobby UI and then join the lobby ID indicated on that argument.
+In this case the accepting user is not yet in game and so the Steam client will launch the game and pass as an argument on the command line the lobby connection information. It is up to you to handle this argument, navigate to the appropriate place in your game e.g. the lobby UI and then join the lobby ID indicated on that argument.
 
 A crude example follows
 

@@ -14,14 +14,14 @@ using API = HeathenEngineering.SteamworksIntegraiton.API;
 public static class API.Parties
 ```
 
-The whole of the parties system is only accessable from the Client API as a result you will always be using the form:
+The whole of the parties system is only accessible from the Client API as a result you will always be using the form:
 
 ```csharp
 API.Parties.Client
 ```
 
 {% hint style="info" %}
-Save yoru self some typing and use a [namespace alias](../../../company/concepts/namespace-and-using.md#aliasing).
+Save your self some typing and use a [namespace alias](../../../company/concepts/namespace-and-using.md#aliasing).
 
 ```csharp
 using Parties = HeathenEngineering.SteamworksIntegration.API.Parties.Client;
@@ -36,7 +36,7 @@ You can attach metadata to a beacon similar to the metadata concept with [Steam 
 
 
 
-Its always wise to review the source documentaiton for any API:
+Its always wise to review the source documentation for any API:
 
 From Steam's documentation:&#x20;
 
@@ -68,7 +68,7 @@ From Steam's documentation:&#x20;
 public static ReservationNotificationCallbackEvent EventReservationNotificationCallback
 ```
 
-Called when a user joins your party. You should call the OnReservationCompleted method to notify Steam that the user has joined successfuly.
+Called when a user joins your party. You should call the OnReservationCompleted method to notify Steam that the user has joined successfully.
 
 The handler for this event would look like this
 
@@ -111,7 +111,7 @@ You can get a list of the beacons this user can see by calling [List Beacons](pa
 public static AvailableBeaconLocationsUpdatedEvent EventAvailableBeaconLocationsUpdated
 ```
 
-Notification that thhe list of available locateions for the posting of a beacon has been updated.
+Notification that the list of available locations for the posting of a beacon has been updated.
 
 The handler for this event would look like this.
 
@@ -150,7 +150,7 @@ The list of reservations that you have been notified about but that have not yet
 public static SteamPartyBeaconLocation_t[] GetAvailableBeaconLocations()
 ```
 
-Gets a list of the availabel beacon locations, these are the locations where you can create a beacon for users to join.
+Gets a list of the available beacon locations, these are the locations where you can create a beacon for users to join.
 
 You would generally use this in conjunction with Create Beacon to create a new beacon.
 
@@ -171,7 +171,7 @@ Creates a beacon at the location indicated.
 * location\
   This is the location you wish to create this beacon on
 * connectionString\
-  This is the connection string assoceated with the beacon and will be used to launch the game when a user follows this beacon.
+  This is the connection string associated with the beacon and will be used to launch the game when a user follows this beacon.
 * metadata\
   This is additional data that can be added to a beacon ... you can fetch the metadata for a beacon by calling GetBeaconDetails
 * callback\
@@ -204,7 +204,7 @@ False when no matching beacon was found for this user and no action was taken
 
 This should be called when a user joins from a beacon to notify Steam that the reservation has been completed.
 
-The Steamworks Complete system will track all open reservations so its possible to complete a reservation knowing only the user's ID. It is more efficent however to pass in both the beacon and user as this saves the system from needing to look up the related beacons.
+The Steamworks Complete system will track all open reservations so its possible to complete a reservation knowing only the user's ID. It is more efficient however to pass in both the beacon and user as this saves the system from needing to look up the related beacons.
 
 ### ChangeNumberOpenSlots
 
@@ -219,7 +219,7 @@ This should be used if a user joins your session through other matchmaking solut
 * beacon\
   The beacon to be updated
 * openSlots\
-  The reamining open slots
+  The remaining open slots
 * callback\
   An action/method to be invoked when completed
 
@@ -238,7 +238,7 @@ public void HandleCallback(ChangeNumOpenSlotsCallback_t arg, bool IOError)
 public static bool DestroyBeacon(PartyBeaconID_t beacon)
 ```
 
-This will destroy the beacon and stop showing it. Any users already in flight may still arive and expect to join.
+This will destroy the beacon and stop showing it. Any users already in flight may still arrive and expect to join.
 
 ### GetBeacons
 
@@ -263,7 +263,7 @@ public static void JoinParty(PartyBeaconID_t beacon,
         Action<JoinPartyCallback_t, bool> callback)
 ```
 
-Used when the user is in game and has a beacon they would like to join. Call this and Steam will makes the nessisary reservation and pull back the connection data in teh resulting callback.
+Used when the user is in game and has a beacon they would like to join. Call this and Steam will makes the necessary reservation and pull back the connection data in the resulting callback.
 
 * beacon\
   The beacon to join
@@ -320,7 +320,7 @@ The system will automatically track your created beacons in the [MyBeacons](part
 
 The connectionString should be the data you want the user to use to connect to your party. When a user joins your party from outside the game this will be passed in as Valve launches your game. If the user joins form within the game it will be provided to them in the JoinParty callback.
 
-Your game needs to handle this connectionString and take nessisary actions. For example if this connectionString is the CSteamID of a P2P connection they should join then your game should navigate to the proper scene and then connect to that CSteamID. What this is will depend very much on how your game defines a party i.e. is it a game server, a P2P host, a lobby, etc.
+Your game needs to handle this connectionString and take necessary actions. For example if this connectionString is the CSteamID of a P2P connection they should join then your game should navigate to the proper scene and then connect to that CSteamID. What this is will depend very much on how your game defines a party i.e. is it a game server, a P2P host, a lobby, etc.
 
 ### Complete Reservation
 

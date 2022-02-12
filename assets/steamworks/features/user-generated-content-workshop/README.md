@@ -113,7 +113,7 @@ using UGC = HeathenEngineering.SteamworksIntegration.API.UserGeneratedContent.Cl
 var files = UGC.GetSubscribedItems();
 ```
 
-You will have an array of PublishedFIleId\_t ... so how do you get detailed information about each of those published files such as name, size, locaiton, etc.?
+You will have an array of PublishedFIleId\_t ... so how do you get detailed information about each of those published files such as name, size, location, etc.?
 
 You do so via the UgcQuery tool.
 
@@ -121,7 +121,7 @@ You do so via the UgcQuery tool.
 var query = UgcQuery.Create(files);
 ```
 
-This will create a query that reads details for the specific files you pass in. This is refered to as a Detail Query by Valve. To get the results you simply call Execute
+This will create a query that reads details for the specific files you pass in. This is referred to as a Detail Query by Valve. To get the results you simply call Execute
 
 ```csharp
 query.Execute(HandleQueryResults);

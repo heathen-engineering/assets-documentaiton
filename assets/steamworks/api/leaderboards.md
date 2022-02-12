@@ -14,7 +14,7 @@ using API = HeathenEngineering.SteamworksIntegraiton.API;
 public static class API.Leaderboards
 ```
 
-The whole of the leaderboard system is only accessable from the Client API as a result you will always be using the form:
+The whole of the leaderboard system is only accessible from the Client API as a result you will always be using the form:
 
 ```csharp
 API.Leaderboard.Client
@@ -28,7 +28,7 @@ For more info on how to use the Steamworks Web API please see the [Web API Overv
 
 ### What can it do?
 
-Leaderboards are ranked lists of players where a player's score determins there position on the leaderboard. Leaderboards can contain additional data for each entry either as a details array or as an attachment, attachments are useful for playbacks and other large bits of information while details are useful for character builds, player settings, etc.
+Leaderboards are ranked lists of players where a player's score determines there position on the leaderboard. Leaderboards can contain additional data for each entry either as a details array or as an attachment, attachments are useful for playbacks and other large bits of information while details are useful for character builds, player settings, etc.
 
 ### Related Objects
 
@@ -48,7 +48,7 @@ Represents an entry in a leaderboard such as the local user or the results of a 
 Rank change data such as used by the Leaderboard Manager to indicate the user's rank changed
 {% endembed %}
 
-## Fields and Attributs
+## Fields and Attributes
 
 ### RequestTimeout
 
@@ -202,7 +202,7 @@ void CallbackHandler(LeaderboardFindResult_t result, bool IOError);
 ```
 {% endhint %}
 
-The [Steamworks Behaviour](../components/steamworks-behaviour.md) will call this for you as it initalizes the Steam Settings and the boards you have defined within. You only need to call this your self if you are creating a build at run time manually and not using the [Leaderboard Object](../objects/leaderboard.md).
+The [Steamworks Behaviour](../components/steamworks-behaviour.md) will call this for you as it initializes the Steam Settings and the boards you have defined within. You only need to call this your self if you are creating a build at run time manually and not using the [Leaderboard Object](../objects/leaderboard.md).
 
 ### GetDisplayType
 
@@ -247,7 +247,7 @@ public static void UploadScore(SteamLeaderboard_t leaderboard,
 ```
 
 {% hint style="info" %}
-The callback deligate should be in the form of
+The callback delegate should be in the form of
 
 ```csharp
 void CallbackHandler(LeaderboardScoreUploaded_t result, bool IOError);
@@ -259,7 +259,7 @@ Uploads a score and optionally details for the user to the target leaderboard.
 ## How To
 
 {% hint style="success" %}
-The [Leaderboard ](../objects/leaderboard.md)object provides simplified access to many of the features found here in. Be sure to read the documentiaton for the [Leaderboard ](../objects/leaderboard.md)object to understand what options are available to you.
+The [Leaderboard ](../objects/leaderboard.md)object provides simplified access to many of the features found here in. Be sure to read the documentation for the [Leaderboard ](../objects/leaderboard.md)object to understand what options are available to you.
 {% endhint %}
 
 ### Add an attachment
@@ -300,13 +300,13 @@ It is typically easier to get and upload entries from the board its self, that i
 
 #### Download Entries
 
-Fetches a series of leaderboard entries for a specified leaderboard. You can ask for more entries than exist, then this will return as many as do exist. The request type indicates how the range should be applied, see [Valve's documentaiton](https://partner.steamgames.com/doc/api/ISteamUserStats#ELeaderboardDataRequest) for more informaiton.
+Fetches a series of leaderboard entries for a specified leaderboard. You can ask for more entries than exist, then this will return as many as do exist. The request type indicates how the range should be applied, see [Valve's documentaiton](https://partner.steamgames.com/doc/api/ISteamUserStats#ELeaderboardDataRequest) for more information.
 
 ```csharp
 API.Leaderboards.Client.DownloadEntries(board, request, start, end, callback);
 ```
 
-Alternativly you can download the entries for a given set of users. This fetches leaderboard entries for an arbitrary set of users on a specified leaderboard. A maximum of 100 users can be downloaded at a time, with only one outstanding call at a time. If a user doesn't have an entry on the specified leaderboard, they won't be included in the result.
+Alternatively you can download the entries for a given set of users. This fetches leaderboard entries for an arbitrary set of users on a specified leaderboard. A maximum of 100 users can be downloaded at a time, with only one outstanding call at a time. If a user doesn't have an entry on the specified leaderboard, they won't be included in the result.
 
 ```csharp
 API.Leaderboards.Client.DownloadEntries(board, users, callback);
@@ -325,7 +325,7 @@ My uploaded score only appears when I use the Force Update option
 
 
 
-The most common cause of this is that you have the sort order on your board backwards frrom what you intend it to be. Please carfully read the [documentation on the Sort Method option for Leaderboards](https://partner.steamgames.com/doc/api/ISteamUserStats#ELeaderboardSortMethod).&#x20;
+The most common cause of this is that you have the sort order on your board backwards from what you intend it to be. Please carefully read the [documentation on the Sort Method option for Leaderboards](https://partner.steamgames.com/doc/api/ISteamUserStats#ELeaderboardSortMethod).&#x20;
 
 
 

@@ -14,7 +14,7 @@ using API = HeathenEngineering.SteamworksIntegraiton.API;
 public static class API.Matchmaking
 ```
 
-The whole of the matchmaking system is only accessable from the Client API as a result you will always be using the form:
+The whole of the matchmaking system is only accessible from the Client API as a result you will always be using the form:
 
 ```csharp
 API.Matchmaking.Client
@@ -48,15 +48,15 @@ var data = API.Matchmaking.Client.GetLobbydata(lobby);
 
 ### What can it do?
 
-The matchmaking system is fundamentally a system for getting player's together in order to play games. The main feature of the sytem is the Steam Lobby. Steam Lobbies can be searched for based on the metadata of a lobby, they can be advertised via Party Beacons, on the friends list and direct invites can be sent to targeted players.
+The matchmaking system is fundamentally a system for getting player's together in order to play games. The main feature of the system is the Steam Lobby. Steam Lobbies can be searched for based on the metadata of a lobby, they can be advertised via Party Beacons, on the friends list and direct invites can be sent to targeted players.
 
 Steam Lobby can be used for more than a simple game lobby, depending on your games specific needs they can provide for teams, party/groups, session merging and more. Valve allows a user to be a member of 1 "normal" lobby and up to 2 additional "invisible" lobbies. Each lobby has its own set of metadata for the lobby its self and for each of its members and each lobby includes a simple chat system.
 
 {% hint style="info" %}
-Take a look at the Lobby Manager for a tool that can help you manage a specifc uses for a Steam Lobby and which can simplify lobby interactions and facilitate lobby UIs.
+Take a look at the Lobby Manager for a tool that can help you manage a specific uses for a Steam Lobby and which can simplify lobby interactions and facilitate lobby UIs.
 {% endhint %}
 
-### Related Componenets
+### Related Components
 
 {% embed url="https://kb.heathenengineering.com/assets/steamworks/components/game-server-browser-manager" %}
 
@@ -83,14 +83,14 @@ How you know where to go
 {% endembed %}
 
 {% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/lobby-member" %}
-Represents a lobby member and simplies accessing its data
+Represents a lobby member and simples accessing its data
 {% endembed %}
 
 ## Events
 
 ### EventLobbyEnterSuccess
 
-Occurs when a lobby enter callback is recieved and the responce code is a success
+Occurs when a lobby enter callback is received and the response code is a success
 
 You would add a listener on this event such as:
 
@@ -108,7 +108,7 @@ Then you would register the event such as:
 API.Matchmaking.Client.EventLobbyEnterSuccess.AddListener(HandleEvent);
 ```
 
-When you no longer need this handler you should remove it for example when the behviour using it is destroyed
+When you no longer need this handler you should remove it for example when the behavior using it is destroyed
 
 ```csharp
 void OnDestroy()
@@ -119,7 +119,7 @@ void OnDestroy()
 
 ### EventLobbyEnterFailed
 
-Occurs when a lobby enter callback is received and the responce code is not a success.
+Occurs when a lobby enter callback is received and the response code is not a success.
 
 You would add a listener on this event such as:
 
@@ -137,7 +137,7 @@ Then you would register the event such as:
 API.Matchmaking.Client.EventLobbyEnterFailed.AddListener(HandleEvent);
 ```
 
-When you no longer need this handler you should remove it for example when the behviour using it is destroyed
+When you no longer need this handler you should remove it for example when the behavior using it is destroyed
 
 ```csharp
 void OnDestroy()
@@ -166,7 +166,7 @@ Then you would register the event such as:
 API.Matchmaking.Client.EventLobbyDataUpdate.AddListener(HandleEvent);
 ```
 
-When you no longer need this handler you should remove it for example when the behviour using it is destroyed
+When you no longer need this handler you should remove it for example when the behavior using it is destroyed
 
 ```csharp
 void OnDestroy()
@@ -195,7 +195,7 @@ Then you would register the event such as:
 API.Matchmaking.Client.LobbyChatMsgEvent.AddListener(HandleEvent);
 ```
 
-When you no longer need this handler you should remove it for example when the behviour using it is destroyed
+When you no longer need this handler you should remove it for example when the behavior using it is destroyed
 
 ```csharp
 void OnDestroy()
@@ -253,7 +253,7 @@ Then you would register the event such as:
 API.Matchmaking.Client.EventLobbyChatUpdate.AddListener(HandleEvent);
 ```
 
-When you no longer need this handler you should remove it for example when the behviour using it is destroyed
+When you no longer need this handler you should remove it for example when the behavior using it is destroyed
 
 ```csharp
 void OnDestroy()
@@ -282,7 +282,7 @@ Then you would register the event such as:
 API.Matchmaking.Client.EventLobbyGameCreated.AddListener(HandleEvent);
 ```
 
-When you no longer need this handler you should remove it for example when the behviour using it is destroyed
+When you no longer need this handler you should remove it for example when the behavior using it is destroyed
 
 ```csharp
 void OnDestroy()
@@ -313,7 +313,7 @@ Then you would register the event such as:
 API.Matchmaking.Client.EventLobbyInvite.AddListener(HandleEvent);
 ```
 
-When you no longer need this handler you should remove it for example when the behviour using it is destroyed
+When you no longer need this handler you should remove it for example when the behavior using it is destroyed
 
 ```csharp
 void OnDestroy()
@@ -342,7 +342,7 @@ Then you would register the event such as:
 API.Matchmaking.Client.EventLobbyLeave.AddListener(HandleEvent);
 ```
 
-When you no longer need this handler you should remove it for example when the behviour using it is destroyed
+When you no longer need this handler you should remove it for example when the behavior using it is destroyed
 
 ```csharp
 void OnDestroy()
@@ -353,7 +353,7 @@ void OnDestroy()
 
 ### EventLobbyAskedToLeave
 
-The local user has been asked to leave a lobby. In general you should handle this event and leave when asked assuming your game has implamented kick lobby.
+The local user has been asked to leave a lobby. In general you should handle this event and leave when asked assuming your game has implemented kick lobby.
 
 You would add a listener on this event such as:
 
@@ -371,7 +371,7 @@ Then you would register the event such as:
 API.Matchmaking.Client.EventLobbyAskedToLeave.AddListener(HandleEvent);
 ```
 
-When you no longer need this handler you should remove it for example when the behviour using it is destroyed
+When you no longer need this handler you should remove it for example when the behavior using it is destroyed
 
 ```csharp
 void OnDestroy()
@@ -980,18 +980,18 @@ This will create a new lobby of the type indicated, the local user will be autom
 
 ### Find a lobby
 
-The Lobby Manager tool can help you create a lobby UI and simplify the various interactions with the lobby system. Alternativly you can search for a lobby manually.
+The Lobby Manager tool can help you create a lobby UI and simplify the various interactions with the lobby system. Alternatively you can search for a lobby manually.
 
-To search manually you will call the various "Add Request" methods to build up your search paramiters those include
+To search manually you will call the various "Add Request" methods to build up your search parameters those include
 
-* Add Request Lobby List DIstance Filter
+* Add Request Lobby List Distance Filter
 * Add Request Lobby List Filter Slots Available
 * Add Request Lobby List Near Value Filter
 * Add Request lobby List Numerical Filter
 * Add Request Lobby list result Count Filter
 * Add Request Lobby List String Filter
 
-When you have built up the desired search paramiters you will need to call&#x20;
+When you have built up the desired search parameters you will need to call&#x20;
 
 ```csharp
 API.Matchmaking.Client.RequestLobbyList(callback);
@@ -1000,9 +1000,9 @@ API.Matchmaking.Client.RequestLobbyList(callback);
 The callback will contain an array of the lobbies found.
 
 {% hint style="warning" %}
-The query paramiters are cleared on each call to Request Lobby List
+The query parameters are cleared on each call to Request Lobby List
 
-There is no way to remove paramiters other than to request the lobby list and then start again from scratch.
+There is no way to remove parameters other than to request the lobby list and then start again from scratch.
 {% endhint %}
 
 {% hint style="info" %}
@@ -1019,7 +1019,7 @@ API.Matchmaking.Client.InviteUserToLobby(lobby, user);
 
 ### Set Lobby Game Server
 
-This sets the game server assoceated with the lobby. When its first set it will raise the Lobby Game Server set event for all members. That event will contain conneciton information or user's can read the conneciton information from the lobby via the `GetLobbyGameServer` feature.
+This sets the game server associated with the lobby. When its first set it will raise the Lobby Game Server set event for all members. That event will contain connection information or user's can read the connection information from the lobby via the `GetLobbyGameServer` feature.
 
 ```csharp
 API.Matchmaking.Client.SetLobbyGameServer(lobby, ip, port, serverId);

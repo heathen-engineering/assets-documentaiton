@@ -18,7 +18,7 @@ using API = HeathenEngineering.SteamworksIntegraiton.API;
 public static class API.App
 ```
 
-The whole of the app system is only accessable from the Client API as a result you will always be using the form:
+The whole of the app system is only accessible from the Client API as a result you will always be using the form:
 
 ```csharp
 API.App.Client
@@ -54,15 +54,15 @@ if(API.App.Client.IsSubscribed)
 
 ### What can it do?
 
-The App interface can be used to varify ownership, check for DLC, VAC Ban and more. The main funciton commonly used in Unity games would be Dlc. You can fetch a list of all DLC, check for ownership of the DLC and more.
+The App interface can be used to verify ownership, check for DLC, VAC Ban and more. The main function commonly used in Unity games would be Dlc. You can fetch a list of all DLC, check for ownership of the DLC and more.
 
-Most of this funcitonality is wrapped up in your SteamSettings making it even easier to leverage.
+Most of this functionality is wrapped up in your SteamSettings making it even easier to leverage.
 
 ## Events
 
 ### EventDlcInstalled
 
-This event is invoked when a DLC is installed and has a single paramiter of type `DlcInstalled_t`. The type `DlcInstalled_t` is defined by [Valve here](https://partner.steamgames.com/doc/api/ISteamApps#DlcInstalled\_t).
+This event is invoked when a DLC is installed and has a single parameter of type `DlcInstalled_t`. The type `DlcInstalled_t` is defined by [Valve here](https://partner.steamgames.com/doc/api/ISteamApps#DlcInstalled\_t).
 
 You would add a listener on this event such as:
 
@@ -80,7 +80,7 @@ Then you would register the event such as:
 API.App.Client.EventDlcInstalled.AddListener(HandleEvent);
 ```
 
-When you no longer need this handler you should remove it for example when the behviour using it is destroyed
+When you no longer need this handler you should remove it for example when the behavior using it is destroyed
 
 ```csharp
 void OnDestroy()
@@ -93,7 +93,7 @@ void OnDestroy()
 
 This event is raised after the user executes a steam URL with command line or query parameters such as \`steam://run/\<appId>?param1=value1; while the game is already running. The new params can be queried with the GetLaunchCommandLine and GetLaunchQueryParam methods.
 
-This event has a single paramiter of type `NewUrlLaunchParameters_t` which is defined by [Valve here](https://partner.steamgames.com/doc/api/ISteamApps#NewUrlLaunchParameters\_t).
+This event has a single parameter of type `NewUrlLaunchParameters_t` which is defined by [Valve here](https://partner.steamgames.com/doc/api/ISteamApps#NewUrlLaunchParameters\_t).
 
 You would add a Listener on this event such as:
 
@@ -111,7 +111,7 @@ Then you would register the event such as:
 API.App.Client.EventNewUrlLaunchParameters.AddListener(HandleEvent);
 ```
 
-When you no longer need this handler you should remove it for example when the behviour using it is destroyed
+When you no longer need this handler you should remove it for example when the behavior using it is destroyed
 
 ```csharp
 void OnDestroy()
@@ -471,7 +471,7 @@ public static bool IsSubscribedApp(AppId_t appId);
 
 ### IsTimedTrial
 
-Is the current license a time trial licnese
+Is the current license a time trial license
 
 ```csharp
 public static bool IsTimedTrial(out uint secondsAllowed, out uint secondsPlayed);
@@ -563,7 +563,7 @@ UserData user = API.App.Client.Owner;
 If the owner doesn't match the current user then you know several things
 
 1. The local user is interested in game and has either barrowed it from a family member, is playing it via a promotion such as a free weekend or is playing it at a Cybercafe
-2. The local user is authenitcated to Steam and has a legit path to play your game
+2. The local user is authenticated to Steam and has a legit path to play your game
 3. The owner of the game has in one way or another promoted your game for you ... you could use that to drive a reward system or simply make note of it for your own marketing&#x20;
 
 ```csharp
@@ -581,7 +581,7 @@ DateTime purchaseDate = API.App.Client.GetEarliestPurchaseTime(API.App.Id);
 
 ### Check for VAC Ban
 
-The App interface can cehck the local user's VAC Ban status via
+The App interface can check the local user's VAC Ban status via
 
 ```csharp
 if(API.App.Client.IsVACBanned)
@@ -599,7 +599,7 @@ foreach(var language in API.App.Client.AvailableLanguages)
 }
 ```
 
-You can also fetch thhe current game language
+You can also fetch the current game language
 
 ```csharp
 string currentLanguage = API.App.CurrentGameLanguage;
@@ -614,7 +614,7 @@ if(API.App.Client.IsBeta)
     Debug.Log("They are helping us test!");
 ```
 
-Alternativly
+Alternatively
 
 ```csharp
 string betaName = API.App.Client.CurrentBetaName;
@@ -636,7 +636,7 @@ foreach(var dlc in API.App.Client.Dlc)
 }
 ```
 
-The returned DownloadableContent objects can further be used to check for ownership and install of a given DLC. Again you would typically do this from your Steam Settings whcih will already have this information to hand but this can be useful when you want or need to check DLC availability at runtime.
+The returned DownloadableContent objects can further be used to check for ownership and install of a given DLC. Again you would typically do this from your Steam Settings which will already have this information to hand but this can be useful when you want or need to check DLC availability at runtime.
 
 ### Check DLC Ownership
 
@@ -719,13 +719,13 @@ You can return the command line the app was launched with&#x20;
 string commandLine = API.App.Client.LaunchCommandLine;
 ```
 
-Getting a specific launch paramiter can be done with :
+Getting a specific launch parameter can be done with :
 
 ```csharp
 string param = API.App.Client.QueryLaunchParam(key);
 ```
 
-While rare it is possible that the user would have tried to relaunch the game with different launch paramiters. You can monitor the new URL launch parameters event to react to this case.
+While rare it is possible that the user would have tried to relaunch the game with different launch parameters. You can monitor the new URL launch parameters event to react to this case.
 
 ```csharp
 API.App.Client.EventNewUrlLaunchParameters.AddListener(HandleNewUrlParams);
@@ -742,7 +742,7 @@ API.App.Client.GetFileDetails(fileName, (results, IOError) =>
 });
 ```
 
-If you detect that an update is needed you can mark the project as corupted forcing Steam client to check for and download the content as needed
+If you detect that an update is needed you can mark the project as corrupted forcing Steam client to check for and download the content as needed
 
 ```csharp
 API.App.Client.MarkContentCorrupt(checkMissingFilesOnly);

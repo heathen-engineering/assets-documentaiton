@@ -16,9 +16,9 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 You cannot test Steam Inventory features with App ID 480 aka Spacewars.
 
 \
-In order to test Steam Inventroy features including but not limited to microtransactions, crafting, player inventory, etc. you will need to register your for your own app ID and configure your own Steam Inventory Items.\
+In order to test Steam Inventory features including but not limited to microtransactions, crafting, player inventory, etc. you will need to register your for your own app ID and configure your own Steam Inventory Items.\
 \
-As a result of this limitation from Valve the sample scenes for Inventory cannot be used with App 480 in any funcitonal form.
+As a result of this limitation from Valve the sample scenes for Inventory cannot be used with App 480 in any functional form.
 {% endhint %}
 
 First, you should understand what Steam Inventory is and is not, the only real place to do so is via Valve's documentation and videos on the feature.&#x20;
@@ -39,7 +39,7 @@ The very first thing you should do is import any Steam Inventory Items you alrea
 
 Once done you will see every item you had defined already in your Steam Developer Portal has been pulled into Unity under your Steam Settings:
 
-![Screen shot of a WIP project with 57 items. You can see here how the Settings object catigorizes the items based on type.](<../../../../.gitbook/assets/image (169) (1).png>)
+![Screen shot of a WIP project with 57 items. You can see here how the Settings object categorizes the items based on type.](<../../../../.gitbook/assets/image (169) (1).png>)
 
 ## **Step 2: Defining Items**
 
@@ -47,7 +47,7 @@ Creating new items is quick and easy simply click the "<mark style="color:green;
 
 Every Steam Inventory Schema feature is available but the inspector will hide ones that cannot be used with the currently selected type.
 
-![Normal items can be traded, mareted, sold, etc.](<../../../../.gitbook/assets/image (166) (1) (1) (1) (1).png>)
+![Normal items can be traded, marketed, sold, etc.](<../../../../.gitbook/assets/image (166) (1) (1) (1) (1).png>)
 
 ![Tag Generators only exist to attach to other items as generators](<../../../../.gitbook/assets/image (177) (1).png>)
 

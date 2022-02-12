@@ -150,7 +150,7 @@ player_profile.UploadScore(
 Yes I use a lot of expression there; here is what's happening
 
 1. We simply upload our score and details with a ForceUpdate upload method
-2. When that compeltes we attach our profile data `myProfileObject` and name it "gamename.profile" you really could name it anything or if you wanted to be extra safe makes it name the string value of a GUID. Those are assured to be unique and the name really doesn't matter for a human.
+2. When that completes we attach our profile data `myProfileObject` and name it "gamename.profile" you really could name it anything or if you wanted to be extra safe makes it name the string value of a GUID. Those are assured to be unique and the name really doesn't matter for a human.
 3. When that completes we check for error but otherwise are done
 
 ### How to read the profile?

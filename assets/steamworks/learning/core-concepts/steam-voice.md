@@ -30,6 +30,6 @@ The [Voice Stream](../../components/voice-recorder.md#evtvoicestream) event gets
 
 ![](<../../../../.gitbook/assets/image (187) (1).png>)
 
-The [voice stream componenet](../../components/voice-stream.md) can be used to play back voice data produced by the voice recorded componenet. The intent is that your network system recieving voice data from a Voice Recorded would call the [Play Voice Data method](../../components/voice-stream.md#play-voice-data) on this componenet.
+The [voice stream componenet](../../components/voice-stream.md) can be used to play back voice data produced by the voice recorded component. The intent is that your network system receiving voice data from a Voice Recorded would call the [Play Voice Data method](../../components/voice-stream.md#play-voice-data) on this component.
 
-Typically you would have one [voice stream componenet](../../components/voice-stream.md) per connected player (excluding the local player) you can attach these voice stream componenets to the player's character or controller such that voice audio can (optionally) be accuratly represented as 3D audio.
+Typically you would have one [voice stream componenet](../../components/voice-stream.md) per connected player (excluding the local player) you can attach these voice stream components to the player's character or controller such that voice audio can (optionally) be accurately represented as 3D audio.
