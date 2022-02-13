@@ -12,9 +12,13 @@ Represents a AvgRat stat, consult the Steam Documentation for the specific use c
 
 ## Fields and Attributes
 
-| Type  | Name  | Comment                       |
-| ----- | ----- | ----------------------------- |
-| float | Value | The current value of the stat |
+### Value
+
+```csharp
+public float Value => get
+```
+
+Reads the current value of the stat
 
 ## Methods
 
