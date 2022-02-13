@@ -12,9 +12,13 @@ Represents an int stat, consult the Steam Documentation for the specific use cas
 
 ## Fields and Attributes
 
-| Type | Name  | Comment                      |
-| ---- | ----- | ---------------------------- |
-| int  | Value | Get or set the current value |
+### Value
+
+```csharp
+public int Value { get; set; }
+```
+
+Reads or writes the value of this stat.
 
 ## Methods
 
@@ -25,7 +29,7 @@ Other methods are available but should not be used and exist only for compatabil
 ### Store Stats
 
 ```csharp
-public void StoreStas();
+public void StoreStats();
 ```
 
 Calls Store Stats on the the Steam API

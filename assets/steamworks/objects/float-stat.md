@@ -12,9 +12,13 @@ Represents a float stat, consult the Steam Documentation for the specific use ca
 
 ## Fields and Attributes
 
-| Type  | Name  | Comment                      |
-| ----- | ----- | ---------------------------- |
-| float | Value | Get or set the current value |
+### Value
+
+```csharp
+public float Value { get; set; }
+```
+
+Reads or writes the value of this stat.
 
 ## Methods
 
@@ -25,7 +29,7 @@ Other methods are available but should not be used and exist only for compatabil
 ### Store Stats
 
 ```csharp
-public void StoreStas();
+public void StoreStats();
 ```
 
 Calls Store Stats on the the Steam API
