@@ -1,3 +1,7 @@
+---
+description: Documentation for the Lobbies sample scene in the Steamworks Complete asset
+---
+
 # 5 Lobbies
 
 {% hint style="success" %}

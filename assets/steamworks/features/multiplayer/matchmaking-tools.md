@@ -1,3 +1,9 @@
+---
+description: >-
+  Understanding what a Steam lobby is and is not, getting started with Steam
+  Lobby
+---
+
 # Steam Lobby
 
 ## Introduction

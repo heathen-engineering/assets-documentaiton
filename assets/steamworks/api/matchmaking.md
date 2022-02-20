@@ -1,3 +1,7 @@
+---
+description: Unity centric wrapper around the ISteamMatchmaking API
+---
+
 # Matchmaking
 
 {% hint style="success" %}
