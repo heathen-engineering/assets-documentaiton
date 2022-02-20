@@ -1,3 +1,9 @@
+---
+description: >-
+  Understanding what a Steam lobby is and is not, getting started with Steam
+  Lobby
+---
+
 # Steam Lobby
 
 ## Introduction
@@ -23,6 +29,35 @@ You can read more about Steam's Matchmaking system on Valve's developer document
 The first and most important thing to understand is that a lobby is not a network feature or concept. That is being in a lobby does not require a network connection, a network connection does not require a lobby. Lobby and Networking are two completely independent concepts.&#x20;
 
 Please do not confuse a lobby with anything to do with a network or network connection.
+
+### Lobby Types
+
+The following explains; as clearly as Steam documentaiton allows, the available lobby types and when and how you might use them.
+
+*   Private
+
+    Classified as a "Normal" lobby by Steam.
+
+    The only way to join a private lobby is to be invited to it via the Lobby.InvitePlayer feature. This can be useful in coop games when your player want to play with a specific friend but doens't want to be bothered by requests to join or public searches.
+
+    This lobby will not appear in searches, it will not appear on the user's friends list or rich presence data.
+*   Friends Only
+
+    Classified as a "Normal" lobby by Steam.
+
+    This lobby can only be joined by friends of the owner or by people directly invited to it. This lobby does appear on the user's friends list but does not appear in lobby lists or searches. This is useful when the player wants friends to be able to dorp in / out but doesn't want be bothered by random players.
+*   Public
+
+    Classified as a "Normal" lobby by Steam.
+
+    This is the typical lobby you will see used in most games. Its the classic "Matchmaking" lobby that appears on the user's friends list and can be searched for and joined by any matching player.
+*   Invisible
+
+    This is the lobby type that Valve/Steam allows a user to be a member of 2 of
+
+    This lobby is not visible in the friends list but can be searched for. That might be confusing at first read.
+
+    A random user can search for this lobby as you would a public lobby but this lobby will not show up on the Steam Friends list hence "invisible"
 
 ### Metadata
 

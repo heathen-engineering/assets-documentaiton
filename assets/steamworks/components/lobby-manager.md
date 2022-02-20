@@ -18,20 +18,28 @@ This is not required to use these features it is simply a helper tool allowing u
 
 ## Introduction
 
+{% hint style="info" %}
+The Lobby Manager is a simple Unity componenet (MonoBehaviour) that simplifies manging a specific lobby. That is this tool does not magically managage all lobbies it only manages the lobby it is connected to.
+
+
+
+You connect a lobby to the LobbyManager by using the LobbyManager to create or join said lobby or by setting the LobbyManager.Lobby field to the lobby you want it to manage.
+{% endhint %}
+
 The Lobby Manager ... not to be confused with Steamworks V1 Lobby Manager ... is a tool for creating and managing a specific lobby.&#x20;
 
 This componenet is meant to be attached to a game object in your matchmaking scene / ui. Your game may have multiple Lobby Managers where each manages a single specific lobby.
 
 ### Steam Lobby
 
-The Steam Lobby feature of the Steam API is a flexable and powerful tool useful for far more than simple matchmaking. We find it best to think of a "lobby" more like a chat room with metadata. It does not have anything to do with networking, it doesn't have to relate to a game session or a game server.
+The [Steam Lobby](../features/multiplayer/matchmaking-tools.md) feature of the Steam API is a flexable and powerful tool useful for far more than simple matchmaking. We find it best to think of a "lobby" more like a chat room with metadata. It does not have anything to do with networking, it doesn't have to relate to a game session or a game server.
 
 Steam allows a player to be apart of up to 3 lobbies but has a few restrictions.
 
-*   The player may only be apart of 1 "normal" lobby.
+*   The player may only be apart of 1 "**normal**" lobby.
 
-    Steam defines a normal lobby as any lobby which is not of type "Invisible"
-*   The player may be apart of up to 2 "invisible" lobbies
+    Steam defines a normal lobby as any lobby which is not of type "**Invisible**"
+*   The player may be apart of up to 2 "**invisible**" lobbies
 
     An inivisible lobby doesn't appear on player's rich presence or Friends list displays (Public and Friend Only do). It is however possible to search for invisible lobbies so you can allow player's to browse for them.&#x20;
 
@@ -41,22 +49,22 @@ The following explains; as clearly as Steam documentaiton allows, the available 
 
 *   Private
 
-    Classified as a "Normal" lobby by Steam.
+    Classified as a "**Normal**" lobby by Steam.
 
     The only way to join a private lobby is to be invited to it via the Lobby.InvitePlayer feature. This can be useful in coop games when your player want to play with a specific friend but doens't want to be bothered by requests to join or public searches.
 
     This lobby will not appear in searches, it will not appear on the user's friends list or rich presence data.
 *   Friends Only
 
-    Classified as a "Normal" lobby by Steam.
+    Classified as a "**Normal**" lobby by Steam.
 
     This lobby can only be joined by friends of the owner or by people directly invited to it. This lobby does appear on the user's friends list but does not appear in lobby lists or searches. This is useful when the player wants friends to be able to dorp in / out but doesn't want be bothered by random players.
 *   Public
 
-    Classified as a "Normal" lobby by Steam.
+    Classified as a "**Normal**" lobby by Steam.
 
     This is the typical lobby you will see used in most games. Its the classic "Matchmaking" lobby that appears on the user's friends list and can be searched for and joined by any matching player.
-*   Invisible
+*   **Invisible**
 
     This is the lobby type that Valve/Steam allows a user to be a member of 2 of
 
@@ -215,6 +223,14 @@ You should only use this overload when using Unity Inspector and you should insu
 {% endhint %}
 
 Joins the indicated lobby
+
+### Leave
+
+```csharp
+public void Leave();
+```
+
+Does what it says on the tin and simply leaves the lobby clearning the managed lobby ID in the process.
 
 ### Set Lobby Data
 
