@@ -1,3 +1,7 @@
+---
+description: Documentation for the Lobbies sample scene in the Steamworks Complete asset
+---
+
 # 5 Lobbies
 
 {% hint style="success" %}
@@ -61,7 +65,7 @@ The manage also has a[ Lobby Chat Director](../../components/lobby-chat-director
 
 ### Example Browser
 
-The Example Browser game object located under the Canvas game object demonstrates a very crude example of a lobby browser. The primary intent here is to give you a production ready UI component for browsing lobbies but to show you how simple it is to make your own.
+The Example Browser game object located under the Canvas game object demonstrates a very crude example of a lobby browser. The primary intent here is **NOT** to give you a production ready UI component for browsing lobbies but to show you how simple it is to make your own.
 
 The Example Browser has a component on it ExamplePopulateResultList this component's source code is in the scene sample code. It simply handles the [evtFound ](../../components/lobby-manager.md#evtfound)event from the [Lobby Manager](../../components/lobby-manager.md) and uses the provided array of [Lobby ](../../objects/lobby.md)objects to populate the UI.
 

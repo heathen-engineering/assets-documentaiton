@@ -3,13 +3,13 @@ description: >-
   Welcome to Heathen Engineering's Knowedge Base where you can find
   documentiaton, articles, tutorials and more for all of Heathen Engineering's
   Games, Assets and Services.
+cover: .gitbook/assets/SocialWall.jpg
+coverY: 0
 ---
 
 # Heathen Knowledge Base
 
 The Heathen Knowledge Base is new and shiny, and not fully populated yet. You will find a lot of empty pages and broken links. If you have any questions please reach out to us on [Discord](https://discord.gg/6X3xrRc)
-
-![](.gitbook/assets/SocialWall.jpg)
 
 {% tabs %}
 {% tab title="Assets" %}

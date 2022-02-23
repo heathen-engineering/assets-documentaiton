@@ -3,6 +3,8 @@ description: >-
   Heathen Engineering’s Steamworks V2 is a set of tools, systems and editor
   extensions designed to make integrating Steam Client API significantly easier,
   faster, and more robust.
+cover: ../../.gitbook/assets/SteamMarketing Inventory hStretch.png
+coverY: 17.4
 ---
 
 # Steamworks
