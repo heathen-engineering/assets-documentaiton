@@ -198,7 +198,7 @@ The easiest way to search for and join lobbies is through the [Lobby Manager](..
 
 Aside from browsing for a lobby you can handle invite and joining of lobby invites. Inviting a friends to lobby can be done in a number of ways including from outside of your game via the Steam Friends list.
 
-Internally to you game you can use the [User Data](../../objects/user-data.md) object to invite a specific player. You would have access to this object from various tools and interfaces including [Friends](../../api/friends.md), [Clans ](../../api/clans.md)and there related chat systems. When you send an invite it is up to that user to accept it and there are multiple use cases for how they might accept the invite
+Internally to you game you can use the [User Data](../../objects/user-data.md) object to invite a specific player. You would have access to this object from various tools and interfaces including [Friends](../../api/friends.client.md), [Clans ](../../api/clans.client.md)and there related chat systems. When you send an invite it is up to that user to accept it and there are multiple use cases for how they might accept the invite
 
 #### While In game
 

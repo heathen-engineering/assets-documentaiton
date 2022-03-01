@@ -2,7 +2,7 @@
 description: Access the Steam App system with Heathen's Steam API
 ---
 
-# App
+# App.Client
 
 {% hint style="success" %}
 Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/integration/steamworks-v2-complete-190316)asset.
@@ -10,47 +10,19 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 
 ## Introduction
 
-```csharp
-using API = HeathenEngineering.SteamworksIntegraiton.API;
-```
+### Namespace
 
 ```csharp
-public static class API.App
+using AppClient = HeathenEngineering.SteamworksIntegraiton.API.App.Client;
 ```
 
-The whole of the app system is only accessible from the Client API as a result you will always be using the form:
+### Definition
 
 ```csharp
-API.App.Client
+public static class App.Client
 ```
 
-{% hint style="info" %}
-TIP
-
-\
-Save your self some typing. add this using statement to the top of any script that will need to use this API.
-
-```csharp
-using App = HeathenEngineering.Steamworks.API.App.Client;
-```
-
-\
-You can now access members in this API with a shorter call structure
-
-```csharp
-if(App.IsSubscribed)
- // Yep
-```
-
-
-
-as opposed to the long form:
-
-```csharp
-if(API.App.Client.IsSubscribed)
-    //Yep
-```
-{% endhint %}
+This leverages the ISteamApp interface from Valve's Steam Client API and exposes every feature of that API in a C# and Unity centric way.
 
 ### What can it do?
 

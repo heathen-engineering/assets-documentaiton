@@ -2,7 +2,7 @@
 description: Access the Steam Clan aka Steam Group system with Heathen's Steam API
 ---
 
-# Clans
+# Clans.Client
 
 {% hint style="success" %}
 Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/integration/steamworks-v2-complete-190316)asset.
@@ -11,28 +11,16 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 ## Introduction
 
 ```csharp
-using API = HeathenEngineering.SteamworksIntegraiton.API;
+using ClansClient = HeathenEngineering.SteamworksIntegraiton.API.Clans.Client;
 ```
 
 ```csharp
-public static class API.Clans
+public static class Clans.Client
 ```
 
-The whole of the clans system is only accessible from the Client API as a result you will always be using the form:
+This leverages features of ISteamFriends, ISteamUser and ISteamUGC to simplify working with Steam "clans" aka "groups" aka "guilds" ... known by a lot of names but these are the "communities" you see in Steam which can have chats, news, etc.
 
-```csharp
-API.Clans.Client
-```
-
-{% hint style="info" %}
-Save your self some typing and use a [namespace alias](../../../company/concepts/namespace-and-using.md#aliasing).
-
-```csharp
-using Clans = HeathenEngineering.SteamworksIntegration.API.Clans.Client;
-```
-{% endhint %}
-
-### What is clan?
+### What is a clan?
 
 Also known as a Community Group, Steam lets user's create there own social groups, these could be groups of active players similar to a guild in an MMO or simply an interest group e.g. a collection of Steam users with similar interests. You can search the existing community groups here:
 
@@ -236,7 +224,7 @@ public static string GetChatMessage(ChatRoom clanChat,
                                         out CSteamID chatter)
 ```
 
-You generally do not need to call this if your using the [EventChatMessageReceievd ](clans.md#eventchatmessagerecieved)or the [ClanChatDirector](../components/clan-chat-director.md).
+You generally do not need to call this if your using the [EventChatMessageReceievd ](clans.client.md#eventchatmessagerecieved)or the [ClanChatDirector](../components/clan-chat-director.md).
 
 This gets the data regarding a specific chat message in given clan chat room.
 

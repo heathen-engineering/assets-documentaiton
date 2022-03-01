@@ -6,7 +6,7 @@
 public struct ClanChtMsg
 ```
 
-Represents a chat message from the [Clans ](../api/clans.md)interface
+Represents a chat message from the [Clans ](../api/clans.client.md)interface
 
 ## Fields and Attributes
 

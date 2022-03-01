@@ -1,4 +1,4 @@
-# Input
+# Input.Client
 
 {% hint style="success" %}
 Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/integration/steamworks-v2-complete-190316)asset.
@@ -7,46 +7,12 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 ## Introduction
 
 ```csharp
-using API = HeathenEngineering.SteamworksIntegraiton.API;
+using SteamInput = HeathenEngineering.SteamworksIntegraiton.API.Input.Client;
 ```
 
 ```csharp
-public static class API.Input
+public static class Input.Client;
 ```
-
-The whole of the input system is only accessible from the Client API as a result you will always be using the form:
-
-```csharp
-API.Input.Client
-```
-
-{% hint style="info" %}
-TIP
-
-\
-Save your self some typing. add this using statement to the top of any script that will need to use this API.
-
-```csharp
-using SInput = HeathenEngineering.Steamworks.API.Input.Client;
-```
-
-\
-You can now access members in this API with a shorter call structure
-
-```csharp
-if(SInput.Initalized)
-    //DO WORK
-```
-
-
-
-as opposed to the long form:
-
-```csharp
-if(API.Input.Client.Initalized)
-    //DO WORK
-```
-{% endhint %}
 
 ### What can it do?
 

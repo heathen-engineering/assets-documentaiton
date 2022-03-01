@@ -26,8 +26,8 @@ Heathen's tools take Valve's input system a step further and wrap all actions as
 
 ### What do I learn?
 
-1. Using steam's [Input](../../api/input.md) API to handle controller input
-2. Using [Input](../../api/input.md) API to get button images and names
+1. Using steam's [Input](../../api/input.client.md) API to handle controller input
+2. Using [Input](../../api/input.client.md) API to get button images and names
 3. Using the [InputActionSet](../../objects/input-action-set.md), [InputActionSetLayer ](../../objects/input-action-set-layer.md)and [InputAction ](../../objects/input-action.md)objects
 4. How to access the Knowledge Base (where you are now)
 5. How to access the support [Discord ](https://discord.gg/6X3xrRc)

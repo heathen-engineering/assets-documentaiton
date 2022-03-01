@@ -2,7 +2,7 @@
 description: Access rich presence, user data and more through the Friends interface
 ---
 
-# Friends
+# Friends.Client
 
 {% hint style="success" %}
 Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/integration/steamworks-v2-complete-190316)and [Foundation ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-foundation-202671)asset.
@@ -11,17 +11,11 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 ## Introduction
 
 ```csharp
-using API = HeathenEngineering.SteamworksIntegraiton.API;
+using FriendsClient = HeathenEngineering.SteamworksIntegraiton.API.Friends.Client;
 ```
 
 ```csharp
-public static class API.Friends
-```
-
-The whole of the friends system is only accessible from the Client API as a result you will always be using the form:
-
-```csharp
-API.Friends.Client
+public static class Friends.Client
 ```
 
 ### What can it do?
@@ -45,7 +39,7 @@ The following events are available on this interface, events are exposed for eac
 Called when chat message has been received from a friend.
 
 {% hint style="info" %}
-See the [Chatting](friends.md#chatting) topic for more details.
+See the [Chatting](friends.client.md#chatting) topic for more details.
 {% endhint %}
 
 ```csharp
@@ -63,7 +57,7 @@ private void HandleMsg(UserData sender, string message, EChatEntryType type)
 
 ### Friend Rich Presence Update
 
-Called when Rich Presence data has been updated for a user, this can happen automatically when friends in the same game update their rich presence, or after a call to [Request User Information](friends.md#requesting-user-information).
+Called when Rich Presence data has been updated for a user, this can happen automatically when friends in the same game update their rich presence, or after a call to [Request User Information](friends.client.md#requesting-user-information).
 
 ```csharp
 API.Friends.Client.EventFriendRichPresenceUpdate.AddListener(HandleUpdate);
@@ -488,7 +482,7 @@ public static void SetListenForFriendsMessages(bool enabled)
 Listens for Steam friends chat messages.
 
 {% hint style="info" %}
-This is done for you when you set the [ListenForFriendsMessages](friends.md#listenforfriendsmessages) field.
+This is done for you when you set the [ListenForFriendsMessages](friends.client.md#listenforfriendsmessages) field.
 {% endhint %}
 
 ### SetPersonaName
