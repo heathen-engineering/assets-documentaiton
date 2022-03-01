@@ -6,7 +6,7 @@
 public struct ItemDetail
 ```
 
-Used by the [Inventory ](../api/inventory.client.md)interface and in the [Item Definition](item-definition.md) to represent instances of an item.
+Used by the [Inventory ](../api/inventory.md)interface and in the [Item Definition](item-definition.md) to represent instances of an item.
 
 ## Fields and Attributes
 

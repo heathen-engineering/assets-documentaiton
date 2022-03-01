@@ -73,7 +73,7 @@ In contrast metadata stored on a lobby member can only be seen by members of the
 
 When metadata is changed the Steam API will raise the lobby data changed event ... that event will indicate what object's data changed by not what data field changed so for example if the event indicates the lobby data changed you should check all the lobby metadata where as if it indicated a members data changed you should check that members metadata.
 
-The event in question is exposed on the Lobby Manager as [evtDataUpdated ](../../components/lobby-manager.md#evtdataupdated)and in the Matchmaking API as [EventLobbyDataUpdate](../../api/matchmaking.client.md#eventlobbydataupdate).
+The event in question is exposed on the Lobby Manager as [evtDataUpdated ](../../components/lobby-manager.md#evtdataupdated)and in the Matchmaking API as [EventLobbyDataUpdate](../../api/matchmaking.md#eventlobbydataupdate).
 
 
 
@@ -179,7 +179,7 @@ Doing this will let you browse for and display all available (and publicly visib
 
 For more information on lobby types see Valve's documentation [https://partner.steamgames.com/doc/api/ISteamMatchmaking#typedefs](https://partner.steamgames.com/doc/api/ISteamMatchmaking#typedefs)&#x20;
 
-See the [API.Matchmaking](../../api/matchmaking.client.md#create-lobby) interface for details on creating a lobby. In addition the [Lobby Manager](../../components/lobby-manager.md) tools can help you create, join and manage a lobby for a specific function in your game.&#x20;
+See the [API.Matchmaking](../../api/matchmaking.md#create-lobby) interface for details on creating a lobby. In addition the [Lobby Manager](../../components/lobby-manager.md) tools can help you create, join and manage a lobby for a specific function in your game.&#x20;
 
 Lets say for example you use 2 types of lobbies in your game
 
@@ -202,7 +202,7 @@ Internally to you game you can use the [User Data](../../objects/user-data.md) o
 
 #### While In game
 
-In this case the accepting user is already in game and so the Game Lobby Join Invite event will be raised on the [Overlay Manger](../../components/overlay-manager.md#events) and its related [API.Overlay](../../api/overlay.client.md#game-lobby-join-requested) interface.
+In this case the accepting user is already in game and so the Game Lobby Join Invite event will be raised on the [Overlay Manger](../../components/overlay-manager.md#events) and its related [API.Overlay](../../api/overlay.md#game-lobby-join-requested) interface.
 
 #### While out of game
 
@@ -244,7 +244,7 @@ if(targetLobby > 0)
 
 Steam's Lobby system includes a simple chat system able to handle text or data. The easiest way to interact with lobby chat is via the [Lobby Chat Director](../../components/lobby-chat-director.md) which needs to be added to the same object as your [Lobby Manager](../../components/lobby-manager.md).
 
-You can also interact with lobby chat manually through the [API.Matchmaking](../../api/matchmaking.client.md) interface.
+You can also interact with lobby chat manually through the [API.Matchmaking](../../api/matchmaking.md) interface.
 
 ### Notify "Connect to network"
 
@@ -272,7 +272,7 @@ When called Valve will record the information on the Steam Lobby metadata as sho
 
 ![](<../../../../.gitbook/assets/image (65).png>)
 
-Each member of the lobby (other than the owner) will be notified by callback which raises the `EventLobbyGameCreated` event located on the [API.Matchmaking](../../api/matchmaking.client.md) interface and exposed through the [Lobby Manager](../../components/lobby-manager.md).&#x20;
+Each member of the lobby (other than the owner) will be notified by callback which raises the `EventLobbyGameCreated` event located on the [API.Matchmaking](../../api/matchmaking.md) interface and exposed through the [Lobby Manager](../../components/lobby-manager.md).&#x20;
 
 {% hint style="warning" %}
 All members of a lobby should upon joining the lobby register an event handler on the `Lobby.evtGameServerSet` event

@@ -7,17 +7,11 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 ## Introduction
 
 ```csharp
-using API = HeathenEngineering.SteamworksIntegraiton.API;
+using Screenshots = HeathenEngineering.SteamworksIntegraiton.API.Screenshots.Client;
 ```
 
 ```csharp
-public static class API.Screenshots
-```
-
-The whole of the screenshot system is only accessible from the Client API as a result you will always be using the form:
-
-```csharp
-API.Screenshots.Client
+public static class Screenshots.Client
 ```
 
 ### What can it do?

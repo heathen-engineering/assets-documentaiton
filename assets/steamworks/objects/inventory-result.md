@@ -6,7 +6,7 @@
 public struct InventoryResult
 ```
 
-Used by the [Inventory ](../api/inventory.client.md)interface to return general inventory information.
+Used by the [Inventory ](../api/inventory.md)interface to return general inventory information.
 
 ## Fields and Attributes
 

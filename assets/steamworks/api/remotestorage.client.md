@@ -1,4 +1,4 @@
-# Remote Storage
+# RemoteStorage.Client
 
 {% hint style="success" %}
 Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/integration/steamworks-v2-complete-190316)asset.
@@ -7,44 +7,12 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 ## Introduction
 
 ```csharp
-using API = HeathenEngineering.SteamworksIntegraiton.API;
+using RemoteStorage = HeathenEngineering.SteamworksIntegraiton.API.RemoteStorage.Client;
 ```
 
 ```csharp
-public static class API.RemoteStorage
+public static class RemoteStorage.Client
 ```
-
-The whole of the remote storage system is only accessible from the Client API as a result you will always be using the form:
-
-```csharp
-API.RemoteStorage.Client
-```
-
-{% hint style="info" %}
-TIP
-
-\
-Save your self some typing. add this using statement to the top of any script that will need to use this API.
-
-```csharp
-using CloudAPI = HeathenEngineering.Steamworks.API.RemoteStorage.Client;
-```
-
-\
-You can now access members in this API with a shorter call structure
-
-```csharp
-if(CloudAPI.IsEnabled)
-```
-
-
-
-as opposed to the long form:
-
-```csharp
-if(API.RemoteStorage.Client.IsEnabled)
-```
-{% endhint %}
 
 ### What can it do?
 

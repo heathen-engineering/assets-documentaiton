@@ -83,15 +83,15 @@ With that out of the way the following sections describe how you would go about 
 API.Inventory.Client.LoadItemDefinitions();
 ```
 
-Read more [here](../../../api/inventory.client.md#loaditemdefinitions).
+Read more [here](../../../api/inventory.md#loaditemdefinitions).
 
-In short this starts the process of loading item definitions from Steam and will trigger the [EventSteamInventoryDefinitionUpdate](../../../api/inventory.client.md#eventsteaminventorydefinitionupdate) to be raised when the definitions are ready.
+In short this starts the process of loading item definitions from Steam and will trigger the [EventSteamInventoryDefinitionUpdate](../../../api/inventory.md#eventsteaminventorydefinitionupdate) to be raised when the definitions are ready.
 
 You would do this as soon as Steam Initializes so you can pull the current item definitions local.
 
 ### Step 2: Iterate and Initialize
 
-Once the [EventSteamInventoryDefinitionUpdate ](../../../api/inventory.client.md#eventsteaminventorydefinitionupdate)has been raised and you have the item definitions local to the user's cash you can walk the items and spawn UI objects to represent each.
+Once the [EventSteamInventoryDefinitionUpdate ](../../../api/inventory.md#eventsteaminventorydefinitionupdate)has been raised and you have the item definitions local to the user's cash you can walk the items and spawn UI objects to represent each.
 
 ```csharp
 foreach(var itemDefinition in SteamSettings.Client.inventory.items)
@@ -253,7 +253,7 @@ In short in-game currency is simply exchanging X items for Y item. See the [Item
 
 By refresh we assume you mean how to get the current count of the user's inventory.
 
-[Inventory API's Get All Items](../../../api/inventory.client.md#getallitems) will do that for you calling its callback when the process is complete.
+[Inventory API's Get All Items](../../../api/inventory.md#getallitems) will do that for you calling its callback when the process is complete.
 
 ### How do I test purchasing
 
@@ -284,7 +284,7 @@ First you define your items and configure your store, this article tells you how
 
 {% embed url="https://partner.steamgames.com/doc/features/inventory/itemstore" %}
 
-Once you have items suitable for the store the only thing you game logic needs to do is call [StartPurchase](../../../objects/item-definition.md#start-purchase) on that item to start a purchase on a single item ... or to gather up an array of items and quantities you want to Start Purchase on and [use the API](../../../api/inventory.client.md#startpurchase) to load up the cart with multiple items.
+Once you have items suitable for the store the only thing you game logic needs to do is call [StartPurchase](../../../objects/item-definition.md#start-purchase) on that item to start a purchase on a single item ... or to gather up an array of items and quantities you want to Start Purchase on and [use the API](../../../api/inventory.md#startpurchase) to load up the cart with multiple items.
 
 In either case these methods cant be testing until your game is released **BUT** you don't need to "unit" test them as there is nothing here that you can effect one way or the other. If your item shows up in the store and the user's account is not blocked then this will load the items into the cart and open the Overlay. Your game logic cant do anything here it is out of your hands and not for you to test.
 
@@ -300,7 +300,7 @@ the question should be "How do I detect changes to the player's inventory?"
 
 Remember a lot of things can change the player's inventory most of those things are started and completed outside of your game and don't require your game to even be running. So you need to detect when changes occur in general and not assume its related to some action taken in game such as a purchase.
 
-In short when your game loses and regains focus you will probably want to refresh [all Items](../../../api/inventory.client.md#getallitems). This will cause the system to iterate over the user's whole inventory and if any changes where detected it will raise the [EventChanged](../../../objects/steam-settings/game-client/inventory-settings.md#eventchanged) on the inventory settings.
+In short when your game loses and regains focus you will probably want to refresh [all Items](../../../api/inventory.md#getallitems). This will cause the system to iterate over the user's whole inventory and if any changes where detected it will raise the [EventChanged](../../../objects/steam-settings/game-client/inventory-settings.md#eventchanged) on the inventory settings.
 
 you can register a listener on the EventChanged from code such as
 

@@ -6,7 +6,7 @@
 public struct RemoteStorageFile
 ```
 
-Used by the [Remote Storage](../api/remote-storage.md) interface to represent a file located on the Steam Remote Stroage system.
+Used by the [Remote Storage](../api/remotestorage.client.md) interface to represent a file located on the Steam Remote Stroage system.
 
 ### Fields and Attributes
 

@@ -1,4 +1,4 @@
-# Parties
+# Parties.Client
 
 {% hint style="success" %}
 Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/integration/steamworks-v2-complete-190316)asset.
@@ -7,26 +7,12 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 ## Introduction
 
 ```csharp
-using API = HeathenEngineering.SteamworksIntegraiton.API;
+using Parties = HeathenEngineering.SteamworksIntegraiton.API.Parties.Client;
 ```
 
 ```csharp
-public static class API.Parties
+public static class Parties.Client
 ```
-
-The whole of the parties system is only accessible from the Client API as a result you will always be using the form:
-
-```csharp
-API.Parties.Client
-```
-
-{% hint style="info" %}
-Save your self some typing and use a [namespace alias](../../../company/concepts/namespace-and-using.md#aliasing).
-
-```csharp
-using Parties = HeathenEngineering.SteamworksIntegration.API.Parties.Client;
-```
-{% endhint %}
 
 ### What can it do?
 
@@ -103,7 +89,7 @@ public void HandleEvent(ActiveBeaconsUpdated_t arg)
 }
 ```
 
-You can get a list of the beacons this user can see by calling [List Beacons](parties.md#list-beacons)
+You can get a list of the beacons this user can see by calling [List Beacons](parties.client.md#list-beacons)
 
 ### Available Beacon Locations Updated
 
@@ -122,7 +108,7 @@ public void HandleEvent(AvailableBeaconLocationsUpdated_t arg)
 }
 ```
 
-You can get a list of available beacon locations by calling [Get Available Beacon Locations](parties.md#get-available-beacon-locations)
+You can get a list of available beacon locations by calling [Get Available Beacon Locations](parties.client.md#get-available-beacon-locations)
 
 ## Fields and Attributes
 
@@ -315,7 +301,7 @@ Parties.ent.CreateBeacon(
 ```
 
 {% hint style="info" %}
-The system will automatically track your created beacons in the [MyBeacons](parties.md#mybeacons) array
+The system will automatically track your created beacons in the [MyBeacons](parties.client.md#mybeacons) array
 {% endhint %}
 
 The connectionString should be the data you want the user to use to connect to your party. When a user joins your party from outside the game this will be passed in as Valve launches your game. If the user joins form within the game it will be provided to them in the JoinParty callback.
@@ -331,7 +317,7 @@ API.Parties.Client.OnReservationCompleted(beacon, user);
 ```
 
 {% hint style="info" %}
-The system will automatically track all pending reservations for you in the [Reservations ](parties.md#reservations)array.
+The system will automatically track all pending reservations for you in the [Reservations ](parties.client.md#reservations)array.
 {% endhint %}
 
 ### Change Slot Count

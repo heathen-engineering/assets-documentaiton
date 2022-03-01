@@ -268,7 +268,7 @@ void OnDestroy()
 
 ### EventLobbyGameCreated
 
-A game server has been set via [Set Lobby Game Server](matchmaking.client.md#undefined) for all of the members of the lobby to join. It's up to the individual clients to take action on this; the typical game behavior is to leave the lobby and connect to the specified game server; but the lobby may stay open throughout the session if desired.
+A game server has been set via [Set Lobby Game Server](matchmaking.md#undefined) for all of the members of the lobby to join. It's up to the individual clients to take action on this; the typical game behavior is to leave the lobby and connect to the specified game server; but the lobby may stay open throughout the session if desired.
 
 You would add a listener on this event such as:
 

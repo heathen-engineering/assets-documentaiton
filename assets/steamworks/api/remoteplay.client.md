@@ -1,19 +1,13 @@
-# Remote Play
+# RemotePlay.Client
 
 ## Introduction
 
 ```csharp
-using API = HeathenEngineering.SteamworksIntegraiton.API;
+using RemotePlay = HeathenEngineering.SteamworksIntegraiton.API.RemotePlay.Client;
 ```
 
 ```csharp
-public static class API.RemotePlay
-```
-
-The whole of the remote play system is only accessible from the Client API as a result you will always be using the form:
-
-```csharp
-API.RemotePlay.Client
+public static class RemotePlay.Client
 ```
 
 ### What can it do?

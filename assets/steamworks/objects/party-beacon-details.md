@@ -6,7 +6,7 @@
 public struct PartyBeaconDetails
 ```
 
-Used by the [Parties ](../api/parties.md)interace and represents a given becons details.
+Used by the [Parties ](../api/parties.client.md)interace and represents a given becons details.
 
 ### Fields and Attributes
 

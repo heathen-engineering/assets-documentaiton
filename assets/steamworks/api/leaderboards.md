@@ -273,7 +273,7 @@ API.Leaderboards.Client.AttachUGC(board, ugc, callback);
 ```
 
 {% hint style="info" %}
-This requies you have a UGCHandle to the file you wish to attach. See the [Remote Storage](remote-storage.md) topic for more information on Shared files.
+This requies you have a UGCHandle to the file you wish to attach. See the [Remote Storage](remotestorage.client.md) topic for more information on Shared files.
 {% endhint %}
 
 Alternativly you can pass in a file name and the byte\[] date you wish to share, our system will then write that information to the user's remote storage, share it and attach that share handle.
