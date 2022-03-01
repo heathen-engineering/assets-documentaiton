@@ -224,7 +224,7 @@ public static string GetChatMessage(ChatRoom clanChat,
                                         out CSteamID chatter)
 ```
 
-You generally do not need to call this if your using the [EventChatMessageReceievd ](clans.client.md#eventchatmessagerecieved)or the [ClanChatDirector](../components/clan-chat-director.md).
+You generally do not need to call this if your using the [EventChatMessageReceievd ](clans.md#eventchatmessagerecieved)or the [ClanChatDirector](../components/clan-chat-director.md).
 
 This gets the data regarding a specific chat message in given clan chat room.
 

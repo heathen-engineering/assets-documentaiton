@@ -12,8 +12,8 @@ This scene demonstrates the use of the [UGC Query Manager](../../components/ugc-
 
 ### What do I learn?
 
-1. Using steam's [Input](../../api/input.client.md) API to handle controller input
-2. Using [Input](../../api/input.client.md) API to get button images and names
+1. Using steam's [Input](../../api/input.md) API to handle controller input
+2. Using [Input](../../api/input.md) API to get button images and names
 3. Using the [UGC Query Manager](../../components/ugc-query-manager.md) to query and iterate over items
 4. How to access the Knowledge Base (where you are now)
 5. How to access the support [Discord ](https://discord.gg/6X3xrRc)

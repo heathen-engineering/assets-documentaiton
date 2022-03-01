@@ -1,4 +1,4 @@
-# Inventory
+# Inventory.Client
 
 {% hint style="success" %}
 Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/integration/steamworks-v2-complete-190316)asset.
@@ -7,44 +7,12 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 ## Introduction
 
 ```csharp
-using API = HeathenEngineering.SteamworksIntegraiton.API;
+using InvClient = HeathenEngineering.SteamworksIntegraiton.API.Inventory.Client;
 ```
 
 ```csharp
-public static class API.Inventory
+public static class Inventory.Client
 ```
-
-The whole of the inventory system is only accessible from the Client API as a result you will always be using the form:
-
-```csharp
-API.Inventory.Client
-```
-
-{% hint style="info" %}
-TIP
-
-\
-Save your self some typing. add this using statement to the top of any script that will need to use this API.
-
-```csharp
-using InventoryAPI = HeathenEngineering.Steamworks.API.Inventory.Client;
-```
-
-\
-You can now access members in this API with a shorter call structure
-
-```csharp
-InventoryAPI.AddPromoItem(item, callback);
-```
-
-
-
-as opposed to the long form:
-
-```csharp
-API.Inventory.Client.AddPromoItem(item, callback);
-```
-{% endhint %}
 
 To work with inventory from the point of view of a server you should use the Steam Web API for inventory.
 
@@ -66,7 +34,7 @@ The following is from the Steam Documentation for the Inventory feature.
 > \
 > Without a game server, the game client can communicate directly to the steam service to retrieve users inventory contents, consume and exchange items, and receive new items granted as an effect of playtime. Users can also purchase items directly from the Item Store, or trade and exchange markets in the Steam community.\
 > \
-> However because the client can't be trusted (and the keys in a client can always be captured by an attacker) you can't give users specific items in this scheme. Rather you select certain items that can be dropped, and configure a drop frequency. At appropriate times, the game client invokes [Trigger Item Drop](inventory.md#undefined). Steam servers manage the playtime and drop frequency per-player. These APIs are called using an internal "Client API Key" that is assumed to be untrusted.\
+> However because the client can't be trusted (and the keys in a client can always be captured by an attacker) you can't give users specific items in this scheme. Rather you select certain items that can be dropped, and configure a drop frequency. At appropriate times, the game client invokes [Trigger Item Drop](inventory.client.md#undefined). Steam servers manage the playtime and drop frequency per-player. These APIs are called using an internal "Client API Key" that is assumed to be untrusted.\
 > \
 > If you have a participating trusted server then you can use a privileged Steam API key on the server and grant explicit items for appropriate situations. It is still important to keep in mind that you can't trust your own clients so you can only do this when the server is the master of the state of the game.\
 > \
@@ -206,7 +174,7 @@ public static bool AddPromoItems(IEnumerable<SteamItemDef_t> itemDefs,
 Checks whether an inventory result handle belongs to the specified Steam ID.
 
 {% hint style="warning" %}
-This is important when using [Deserialize Results](inventory.md#undefined), to verify that a remote player is not pretending to have a different user's inventory.
+This is important when using [Deserialize Results](inventory.client.md#undefined), to verify that a remote player is not pretending to have a different user's inventory.
 {% endhint %}
 
 ```csharp
@@ -234,9 +202,9 @@ public static void ConsumeItem(SteamItemInstanceID_t itemConsume,
 
 Deserializes a result set and verifies the signature bytes.\
 \
-This call has a potential soft-failure mode where the handle status is set to [k\_EResultExpired](https://partner.steamgames.com/doc/api/steam\_api#k\_EResultExpired). [Get Result Items](inventory.md#get-result-items) will still succeed in this mode. The "expired" result could indicate that the data may be out of date - not just due to timed expiration (one hour), but also because one of the items in the result set may have been traded or consumed since the result set was generated. You could compare the timestamp from [Get Result Timestamp](inventory.md#undefined) to [ISteamUtils::GetServerRealTime](https://partner.steamgames.com/doc/api/ISteamUtils#GetServerRealTime) to determine how old the data is. You could simply ignore the "expired" result code and continue as normal, or you could request the player with expired data to send an updated result set.\
+This call has a potential soft-failure mode where the handle status is set to [k\_EResultExpired](https://partner.steamgames.com/doc/api/steam\_api#k\_EResultExpired). [Get Result Items](inventory.client.md#get-result-items) will still succeed in this mode. The "expired" result could indicate that the data may be out of date - not just due to timed expiration (one hour), but also because one of the items in the result set may have been traded or consumed since the result set was generated. You could compare the timestamp from [Get Result Timestamp](inventory.client.md#undefined) to [ISteamUtils::GetServerRealTime](https://partner.steamgames.com/doc/api/ISteamUtils#GetServerRealTime) to determine how old the data is. You could simply ignore the "expired" result code and continue as normal, or you could request the player with expired data to send an updated result set.\
 \
-You should call [Check Result Steam ID](inventory.md#check-result-steam-id) on the result handle when it completes to verify that a remote player is not pretending to have a different user's inventory.
+You should call [Check Result Steam ID](inventory.client.md#check-result-steam-id) on the result handle when it completes to verify that a remote player is not pretending to have a different user's inventory.
 
 ```csharp
 public static void DeserializeResult(byte[] buffer, 
@@ -570,7 +538,7 @@ For example it is possible to consume quantity, add promo items and exchange ite
 
 Grant a specific one-time promotional item to the current user.\
 \
-This can be safely called from the client because the items it can grant can be locked down via policies in the itemdefs. One of the primary scenarios for this call is to grant an item to users who also own a specific other game. This can be useful if your game has custom UI for showing a specific promo item to the user otherwise if you want to grant multiple promotional items then use [Add Promo Items](inventory.md#add-promo-items) or [Grant Prmo Items](inventory.md#undefined).\
+This can be safely called from the client because the items it can grant can be locked down via policies in the itemdefs. One of the primary scenarios for this call is to grant an item to users who also own a specific other game. This can be useful if your game has custom UI for showing a specific promo item to the user otherwise if you want to grant multiple promotional items then use [Add Promo Items](inventory.client.md#add-promo-items) or [Grant Prmo Items](inventory.client.md#undefined).\
 \
 Any items that can be granted MUST have a "promo" attribute in their itemdef. That promo item list a set of APPIDs that the user must own to be granted this given item. This version will grant all items that have promo attributes specified for them in the configured item definitions. This allows adding additional promotional items without having to update the game client. For example the following will allow the item to be granted if the user owns either TF2 or SpaceWar.
 
@@ -582,7 +550,7 @@ API.Inventory.Client.AddPromoItem(item, callback);
 
 Grant a specific one-time promotional item to the current user.\
 \
-This can be safely called from the client because the items it can grant can be locked down via policies in the itemdefs. One of the primary scenarios for this call is to grant an item to users who also own a specific other game. If you want to grant a single promotional item then use [Add Promo Item](inventory.md#add-promo-item). If you want to grant all possible promo items then use [Grant Promo Items](inventory.md#undefined).\
+This can be safely called from the client because the items it can grant can be locked down via policies in the itemdefs. One of the primary scenarios for this call is to grant an item to users who also own a specific other game. If you want to grant a single promotional item then use [Add Promo Item](inventory.client.md#add-promo-item). If you want to grant all possible promo items then use [Grant Promo Items](inventory.client.md#undefined).\
 \
 Any items that can be granted MUST have a "promo" attribute in their itemdef. That promo item list a set of APPIDs that the user must own to be granted this given item. This version will grant all items that have promo attributes specified for them in the configured item definitions. This allows adding additional promotional items without having to update the game client. For example the following will allow the item to be granted if the user owns either TF2 or SpaceWar.
 
@@ -595,7 +563,7 @@ API.Inventory.Client.AddPromoItems(items, callback);
 Checks whether an inventory result handle belongs to the specified Steam ID.
 
 {% hint style="warning" %}
-This is important when using [Deserialize Results](inventory.md#undefined), to verify that a remote player is not pretending to have a different user's inventory.
+This is important when using [Deserialize Results](inventory.client.md#undefined), to verify that a remote player is not pretending to have a different user's inventory.
 {% endhint %}
 
 ```csharp
@@ -623,9 +591,9 @@ API.Inventory.Client.ConsumeItem(item, quantity, callback);
 
 Deserializes a result set and verifies the signature bytes.\
 \
-This call has a potential soft-failure mode where the handle status is set to [k\_EResultExpired](https://partner.steamgames.com/doc/api/steam\_api#k\_EResultExpired). [Get Result Items](inventory.md#get-result-items) will still succeed in this mode. The "expired" result could indicate that the data may be out of date - not just due to timed expiration (one hour), but also because one of the items in the result set may have been traded or consumed since the result set was generated. You could compare the timestamp from [Get Result Timestamp](inventory.md#undefined) to [ISteamUtils::GetServerRealTime](https://partner.steamgames.com/doc/api/ISteamUtils#GetServerRealTime) to determine how old the data is. You could simply ignore the "expired" result code and continue as normal, or you could request the player with expired data to send an updated result set.\
+This call has a potential soft-failure mode where the handle status is set to [k\_EResultExpired](https://partner.steamgames.com/doc/api/steam\_api#k\_EResultExpired). [Get Result Items](inventory.client.md#get-result-items) will still succeed in this mode. The "expired" result could indicate that the data may be out of date - not just due to timed expiration (one hour), but also because one of the items in the result set may have been traded or consumed since the result set was generated. You could compare the timestamp from [Get Result Timestamp](inventory.client.md#undefined) to [ISteamUtils::GetServerRealTime](https://partner.steamgames.com/doc/api/ISteamUtils#GetServerRealTime) to determine how old the data is. You could simply ignore the "expired" result code and continue as normal, or you could request the player with expired data to send an updated result set.\
 \
-You should call [Check Result Steam ID](inventory.md#check-result-steam-id) on the result handle when it completes to verify that a remote player is not pretending to have a different user's inventory.
+You should call [Check Result Steam ID](inventory.client.md#check-result-steam-id) on the result handle when it completes to verify that a remote player is not pretending to have a different user's inventory.
 
 ```
 API.Inventory.Client.DeserializeResult(buffer, callback);
@@ -752,7 +720,7 @@ This method is included for completeness of the interface.
 
 Grant all potential one-time promotional items to the current user.\
 \
-This can be safely called from the client because the items it can grant can be locked down via policies in the itemdefs. One of the primary scenarios for this call is to grant an item to users who also own a specific other game. If you want to grant specific promotional items rather than all of them see: [Add Promo Item](inventory.md#add-promo-item) and [Add Promo Items](inventory.md#add-promo-items).\
+This can be safely called from the client because the items it can grant can be locked down via policies in the itemdefs. One of the primary scenarios for this call is to grant an item to users who also own a specific other game. If you want to grant specific promotional items rather than all of them see: [Add Promo Item](inventory.client.md#add-promo-item) and [Add Promo Items](inventory.client.md#add-promo-items).\
 \
 Any items that can be granted MUST have a "promo" attribute in their itemdef. That promo item list a set of APPIDs that the user must own to be granted this given item. This version will grant all items that have promo attributes specified for them in the configured item definitions. This allows adding additional promotional items without having to update the game client. For example the following will allow the item to be granted if the user owns either TF2 or SpaceWar.
 

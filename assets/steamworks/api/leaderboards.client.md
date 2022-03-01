@@ -1,4 +1,4 @@
-# Leaderboards
+# Leaderboards.Client
 
 {% hint style="success" %}
 Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/integration/steamworks-v2-complete-190316)asset.
@@ -7,17 +7,11 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 ## Introduction
 
 ```csharp
-using API = HeathenEngineering.SteamworksIntegraiton.API;
+using Leaderboards = HeathenEngineering.SteamworksIntegraiton.API.Leaderboards.Client;
 ```
 
 ```csharp
-public static class API.Leaderboards
-```
-
-The whole of the leaderboard system is only accessible from the Client API as a result you will always be using the form:
-
-```csharp
-API.Leaderboard.Client
+public static class Leaderboards.Client;
 ```
 
 To work with leaderboards from the point of view of a server you should use the Steam Web API for leaderboards.

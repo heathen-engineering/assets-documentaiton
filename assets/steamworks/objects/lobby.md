@@ -168,7 +168,7 @@ public void SetGameServer(string address, ushort port);
 public void SetGameServer(CSteamID id);
 ```
 
-Sets the Game Server information and causes the EventLobbyGameServer event to be raised on the [Matchmaking ](../api/matchmaking.md)interface and on any attached [Lobby Manager](../components/lobby-manager.md) componenets.
+Sets the Game Server information and causes the EventLobbyGameServer event to be raised on the [Matchmaking ](../api/matchmaking.client.md)interface and on any attached [Lobby Manager](../components/lobby-manager.md) componenets.
 
 ### Kick Member
 
@@ -176,7 +176,7 @@ Sets the Game Server information and causes the EventLobbyGameServer event to be
 public bool KickMember(CSteamID memberId);
 ```
 
-Marks the ID as a member that should be removed from the lobby. This simply sets the ID to a "kick list" on the lobbies metadata and will cause the EventLobbyAskedToLeave event to be raised for the effected user on the event is present on the [Matchmaking](../api/matchmaking.md) interface and [Lobby Manager](../components/lobby-manager.md).
+Marks the ID as a member that should be removed from the lobby. This simply sets the ID to a "kick list" on the lobbies metadata and will cause the EventLobbyAskedToLeave event to be raised for the effected user on the event is present on the [Matchmaking](../api/matchmaking.client.md) interface and [Lobby Manager](../components/lobby-manager.md).
 
 ### Kick List Contains
 

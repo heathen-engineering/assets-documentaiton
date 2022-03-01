@@ -54,7 +54,7 @@ Returns the quantity of this item the user owns, this is the sum of all quanity 
 public string DisplayName => get;
 ```
 
-This can only be used if you have called [LoadItemDefintions](../api/inventory.md#loaditemdefinitions) from the [Inventory API](../api/inventory.md#introduction). It returns the localized name of the item if any.
+This can only be used if you have called [LoadItemDefintions](../api/inventory.client.md#loaditemdefinitions) from the [Inventory API](../api/inventory.client.md#introduction). It returns the localized name of the item if any.
 
 ### HasPrice
 
@@ -122,7 +122,7 @@ Gets  the simple name of the item as defined in your schema. If you need the lan
 public string Description => get;
 ```
 
-Gets the simple description as defined in your schema. If you need the langauge based name you will need to fetch [item defintions](../api/inventory.md#loaditemdefinitions) and [get the description property](../api/inventory.md#getitemdefinitionproperty).
+Gets the simple description as defined in your schema. If you need the langauge based name you will need to fetch [item defintions](../api/inventory.client.md#loaditemdefinitions) and [get the description property](../api/inventory.client.md#getitemdefinitionproperty).
 
 ### DisplayType
 
@@ -130,7 +130,7 @@ Gets the simple description as defined in your schema. If you need the langauge 
 public string DisplayType => get;
 ```
 
-Gets the simple display type as defined in your schema. If you need the langauge based name you will need to fetch [item defintions](../api/inventory.md#loaditemdefinitions) and [get the description property](../api/inventory.md#getitemdefinitionproperty).
+Gets the simple display type as defined in your schema. If you need the langauge based name you will need to fetch [item defintions](../api/inventory.client.md#loaditemdefinitions) and [get the description property](../api/inventory.client.md#getitemdefinitionproperty).
 
 ### Bundle
 

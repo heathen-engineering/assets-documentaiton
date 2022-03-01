@@ -6,7 +6,7 @@
 public struct UserLeaveData
 ```
 
-Used by the [Clans ](../api/clans.client.md)interface indicating a user leaving a target chat
+Used by the [Clans ](../api/clans.md)interface indicating a user leaving a target chat
 
 ### Fields and Attributes
 

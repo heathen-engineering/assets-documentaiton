@@ -6,7 +6,7 @@
 public struct FavoriteGame
 ```
 
-Used by the [Matchmaking ](../api/matchmaking.md)interface in relation to favorite game servers.
+Used by the [Matchmaking ](../api/matchmaking.client.md)interface in relation to favorite game servers.
 
 ## Fields and Attributes
 
