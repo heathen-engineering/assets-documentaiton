@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Used with the User Generated Content interface for [1 line creation](../api/user-generated-content.md#create-and-update-items) of workshop items as the paramiter in the callback e.g.
+Used with the User Generated Content interface for [1 line creation](../api/usergeneratedcontent.client.md#create-and-update-items) of workshop items as the paramiter in the callback e.g.
 
 ```csharp
 public static bool CreateItem(
@@ -10,7 +10,7 @@ public static bool CreateItem(
         Action<WorkshopItemDataCreateStatus> callback = null)
 ```
 
-This method is part of the [User Generated Content API](../api/user-generated-content.md), you provide it with two paramiters.
+This method is part of the [User Generated Content API](../api/usergeneratedcontent.client.md), you provide it with two paramiters.
 
 ### WorkshopItemData
 
@@ -64,7 +64,7 @@ public string errorMessage;
 
 ### ugcFileId
 
-This is the ID of the UGC file that was created as is used by the [User Generated Content API](../api/user-generated-content.md). This is a nullable value.
+This is the ID of the UGC file that was created as is used by the [User Generated Content API](../api/usergeneratedcontent.client.md). This is a nullable value.
 
 ```csharp
 public PublishedFileId_t? ugcFileId;

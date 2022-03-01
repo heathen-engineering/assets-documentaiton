@@ -1,4 +1,4 @@
-# User Generated Content
+# UserGeneratedContent.Client
 
 {% hint style="success" %}
 Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)asset.
@@ -7,35 +7,11 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 ## Introduction
 
 ```csharp
-using API = HeathenEngineering.SteamworksIntegraiton.API;
+using UGCClient= HeathenEngineering.SteamworksIntegraiton.API.UserGeneratedContent.Client;
 ```
 
 ```csharp
-public static class API.UserGeneratedContent
-```
-
-Client features are available under the client interface
-
-```csharp
-API.UserGeneratedContent.Client
-```
-
-You can shorten this name using the [aliasing feature of namespaces and static classes](../../../company/concepts/namespace-and-using.md#aliasing).
-
-```csharp
-using UGC = HeathenEngineering.SteamworksIntegration.API.UserGeneratedContent.Client;
-```
-
-The examples in this article will assume you are using the above so where you see&#x20;
-
-```csharp
-UGC.CreateItem(...
-```
-
-You can understand that is the same as
-
-```csharp
-API.UserGeneratedContent.Client.CreateItem(...
+public static class UserGeneratedContent.Client
 ```
 
 ### What can it do?

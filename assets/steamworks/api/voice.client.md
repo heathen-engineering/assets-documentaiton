@@ -1,4 +1,4 @@
-# Voice
+# Voice.Client
 
 {% hint style="success" %}
 Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)asset.
@@ -7,17 +7,11 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 ## Introduction
 
 ```csharp
-using API = HeathenEngineering.SteamworksIntegraiton.API;
+using SteamVoice = HeathenEngineering.SteamworksIntegraiton.API.Voice.Client;
 ```
 
 ```csharp
-public static class API.Voice
-```
-
-The whole of the voice system is only accessable from the Client API as a result you will always be using the form:
-
-```csharp
-API.Voice.Client
+public static class Voice.Client
 ```
 
 ### What can it do?

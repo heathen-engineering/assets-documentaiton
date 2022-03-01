@@ -1,4 +1,4 @@
-# Screenshots
+# Screenshots.Client
 
 {% hint style="success" %}
 Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/integration/steamworks-v2-complete-190316)asset.
