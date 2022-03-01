@@ -100,7 +100,7 @@ Clears the achievement state for the local user in client builds (do not pass th
 public bool GetAchievementStatus(CSteamID user);
 ```
 
-Gets the achievement state for this achievement for the indicated user. This is only available from Steam Game Servers and only when the indicated user has been authhenticated and its states requested. See the [API.StatsAndAchievements](../api/stats-and-achievements.md) interface for details
+Gets the achievement state for this achievement for the indicated user. This is only available from Steam Game Servers and only when the indicated user has been authhenticated and its states requested. See the [API.StatsAndAchievements](../api/statsandachievements.client.md) interface for details
 
 ### Store
 

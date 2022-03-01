@@ -10,7 +10,7 @@ public class DataModel<T>: DataModel
 public class DataModel : ScriptableObject
 ```
 
-It is intended that you use this to create your core save files as Scriptable Objects. This makes it trival to query the [Steam Remote Storage](../api/remotestorage.client.md) interface for records of this file type and to load data into a usable point in memory that can easily be referenced by Unity components.
+It is intended that you use this to create your core save files as Scriptable Objects. This makes it trival to query the [Steam Remote Storage](../api/remote-storage.md) interface for records of this file type and to load data into a usable point in memory that can easily be referenced by Unity components.
 
 You would typically start by defaining your underlying data type e.g. a serializable object that represents the data you wish to save
 
@@ -38,7 +38,7 @@ public class CharacterDataModel : DataModel<MyCharacterData>
 You do not need to write any code in the body of the DataModel, the base class will implament everything you need for you.
 {% endhint %}
 
-Once complete you can use your new ScriptableObject to represent the currently loaded copy of this data type and you can use its member funcitons to list the available files of this type as seen on [Steam Remote Storage](../api/remotestorage.client.md) and to read and write given files.
+Once complete you can use your new ScriptableObject to represent the currently loaded copy of this data type and you can use its member funcitons to list the available files of this type as seen on [Steam Remote Storage](../api/remote-storage.md) and to read and write given files.
 
 ## Fields and Attributes
 
@@ -57,7 +57,7 @@ Once complete you can use your new ScriptableObject to represent the currently l
 public void Refresh();
 ```
 
-Reads the list of available files from the [remote storage](../api/remotestorage.client.md) interface and stores them in the availabelFiles collection
+Reads the list of available files from the [remote storage](../api/remote-storage.md) interface and stores them in the availabelFiles collection
 
 ### Load Data
 

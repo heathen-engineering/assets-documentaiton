@@ -89,7 +89,7 @@ public void HandleEvent(ActiveBeaconsUpdated_t arg)
 }
 ```
 
-You can get a list of the beacons this user can see by calling [List Beacons](parties.client.md#list-beacons)
+You can get a list of the beacons this user can see by calling [List Beacons](parties.md#list-beacons)
 
 ### Available Beacon Locations Updated
 
@@ -108,7 +108,7 @@ public void HandleEvent(AvailableBeaconLocationsUpdated_t arg)
 }
 ```
 
-You can get a list of available beacon locations by calling [Get Available Beacon Locations](parties.client.md#get-available-beacon-locations)
+You can get a list of available beacon locations by calling [Get Available Beacon Locations](parties.md#get-available-beacon-locations)
 
 ## Fields and Attributes
 
@@ -301,7 +301,7 @@ Parties.ent.CreateBeacon(
 ```
 
 {% hint style="info" %}
-The system will automatically track your created beacons in the [MyBeacons](parties.client.md#mybeacons) array
+The system will automatically track your created beacons in the [MyBeacons](parties.md#mybeacons) array
 {% endhint %}
 
 The connectionString should be the data you want the user to use to connect to your party. When a user joins your party from outside the game this will be passed in as Valve launches your game. If the user joins form within the game it will be provided to them in the JoinParty callback.
@@ -317,7 +317,7 @@ API.Parties.Client.OnReservationCompleted(beacon, user);
 ```
 
 {% hint style="info" %}
-The system will automatically track all pending reservations for you in the [Reservations ](parties.client.md#reservations)array.
+The system will automatically track all pending reservations for you in the [Reservations ](parties.md#reservations)array.
 {% endhint %}
 
 ### Change Slot Count

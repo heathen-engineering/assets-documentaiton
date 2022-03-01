@@ -1,4 +1,4 @@
-# Stats & Achievements
+# StatsAndAchievements.Client
 
 {% hint style="success" %}
 Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)and [Foundation ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-foundation-202671)asset.
@@ -7,23 +7,11 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 ## Introduction
 
 ```csharp
-using API = HeathenEngineering.SteamworksIntegration.API;
+using StatsClient = HeathenEngineering.SteamworksIntegration.API.StatsAndAchievements.Client;
 ```
 
 ```csharp
-public static class API.StatsAndAchievements
-```
-
-Client features are available under the client interface
-
-```csharp
-API.StatsAndAchievements.Client
-```
-
-Server features are available under the server interface
-
-```csharp
-API.StatsAndAchievements.Server
+public static class StatsAndAchievements.Client
 ```
 
 All features available to 1 are present in the other with some minor exceptions. The only notable difference is that Server related calls required you to provide the CSteamID of the user to be adjusted and will only work when that user is authenticated to the Steam Game Server that calls the method.
@@ -93,3 +81,4 @@ API.StatsAndAchievments.Client.SetStat(value);
 ```csharp
 API.StatsAndAchievements.Client.SetAchievement(achievementName);
 ```
+

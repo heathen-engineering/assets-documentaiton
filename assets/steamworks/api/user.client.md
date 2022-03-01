@@ -1,4 +1,4 @@
-# User
+# User.Client
 
 {% hint style="success" %}
 Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)and [Foundation ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-foundation-202671)asset.
@@ -7,17 +7,11 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 ## Introduction
 
 ```csharp
-using API = HeathenEngineering.SteamworksIntegraiton.API;
+using UserApi = HeathenEngineering.SteamworksIntegraiton.API.User.Client;
 ```
 
 ```csharp
-public static class API.StatsAndAchievements
-```
-
-All user operations are client specific so you will always be using the form
-
-```csharp
-API.User.Client
+public static class User.Client
 ```
 
 ### What can it do?
@@ -31,6 +25,16 @@ The user interface can be used to modify the local user's rich presence data and
 ## How To
 
 ### Get the local user
+
+{% hint style="info" %}
+The simplest way is&#x20;
+
+```csharp
+var myData = UserData.Me;
+```
+{% endhint %}
+
+You can read this from the API as well
 
 ```csharp
 var user = API.User.Client.Id;
