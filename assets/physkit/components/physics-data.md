@@ -6,7 +6,7 @@ Available in PhysKit [Complete](https://prf.hn/l/rpoyznk).
 
 ## Introduction
 
-![](<../../../.gitbook/assets/image (157).png>)
+![](<../../../.gitbook/assets/image (157) (1).png>)
 
 Creates and syncs physics data for an object beyond what is found in Unity's RigidBody. In particular the PhysicsData component will inspect all child mesh objects and create a related hull. Hull geometry is then used to calculate cross section, volumetric density, total volume and more.
 

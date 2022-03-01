@@ -8,7 +8,7 @@ description: Public rich profiles available all the time
 
 Rich public user profiles can be significant to social games
 
-![Example of a Dota2 user profile from a random google image](<../../../../.gitbook/assets/image (164) (1) (1).png>)
+![Example of a Dota2 user profile from a random google image](<../../../../.gitbook/assets/image (164) (1) (1) (1).png>)
 
 To be effective these profiles need to always be available any time a player sees another players name so as an offline friend, as an entry in a leaderboard, as a team mate in a match, as an opponent that stomped you in a match, etc. The profile needs to always be accessible to every user that might see it without needing to be a friend or actively in a lobby or server with that player.
 

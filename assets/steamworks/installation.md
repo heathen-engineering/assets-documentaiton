@@ -4,9 +4,13 @@ description: Installing Heathen Engineering's Steamworks and related componenets
 
 # Installation
 
-Once you have meet the requirements listed below the only step you need to perform is to import the package from Unity into your project.
+## On Import
 
-## Package Manager Install
+When you import Heathen's Steamworks it will test for the presence of Steamworks.NET and if missing it will ask you if you want to install Steamworks.NET.
+
+![](<../../.gitbook/assets/image (163).png>)
+
+When you click yes the system will use Package Manager to install Steamworks.NET from GitHub.&#x20;
 
 {% hint style="info" %}
 Installing Unity Packages via Git URL as we do here requires that you have Git installed. as outlined in [Unity's documentation](https://docs.unity3d.com/Manual/upm-ui-giturl.html).\
@@ -33,6 +37,28 @@ This thread might also be of help for you
 [https://forum.unity.com/threads/no-git-executable-was-found-please-install-git-on-your-system-and-restart-unity.730511/](https://forum.unity.com/threads/no-git-executable-was-found-please-install-git-on-your-system-and-restart-unity.730511/)
 {% endhint %}
 
+When Steamworks.NET is successfuly installed you will see the following messages in your log
+
+![](<../../.gitbook/assets/image (164).png>)
+
+{% hint style="info" %}
+This always installs the latest code available and so the version number you see may very.
+{% endhint %}
+
+### I clicked no now what?
+
+If for whatever reason you clicked no, or if you had an error and needed to install Git, or if you simply want to update Steamworks.NET you can always kick the Steamworks.NET install back off by clicking the `Install Steamworks.NET` button located in the Steamworks menu&#x20;
+
+![](<../../.gitbook/assets/image (167).png>)
+
+And can also be found in the Help section
+
+![](<../../.gitbook/assets/image (157).png>)
+
+## From Package Manager
+
+If you dont like simply pressing buttons you can always install Steamworks.NET from the package manager your self.
+
 ### Install Steamworks.NET
 
 This must be done from the Unity Package Manager to insure that the proper Steamworks.NET assembly definition is installed and present in your project.
@@ -57,7 +83,7 @@ from the Package Manager
    &#x20;![](<../../.gitbook/assets/image (148).png>)&#x20;
 4. Click Import
 
-## Manual Install
+## Manual Import
 
 {% hint style="danger" %}
 NOT RECOMENDED

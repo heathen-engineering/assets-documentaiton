@@ -28,7 +28,7 @@ NOTE
 Usually Unity will do this for you when you install the Input System as done in Step 1 so this should already be done for you.
 {% endhint %}
 
-![](<../../../.gitbook/assets/image (167).png>)
+![](<../../../.gitbook/assets/image (167) (1).png>)
 
 ## Disable
 
@@ -40,7 +40,7 @@ Remove the Input System from the Package Manager ... we like to do this first ev
 
 As noted this will cause two exceptions or more to be thrown ... this is expected and will be resolved in the next step.
 
-![](<../../../.gitbook/assets/image (163).png>)
+![](<../../../.gitbook/assets/image (163) (1).png>)
 
 This happens because your settings still say to use the New Input System ... but you dont have the New Input System installed.
 
