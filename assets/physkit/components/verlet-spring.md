@@ -6,7 +6,7 @@ Available in PhysKit Verlet and [Complete](https://prf.hn/l/rpoyznk).
 
 ## Introduction
 
-![](<../../../.gitbook/assets/image (166) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (166) (1) (1) (1) (1).png>)
 
 The Verlet Spring component manages hierarchies of transforms integrating Newtonian movement formulas according to the settings applied to each hierarchy.
 

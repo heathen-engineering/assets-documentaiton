@@ -45,7 +45,7 @@ You will find 4 items configured under the \
 Canvas > Background > Inventory \
 Game object. Each item has two "types" assigned. A type is simply a scriptable object and is used like a tag by the drop rules e.g. does the item have this tag, does that allow it or forbid it.
 
-![](<../../../../.gitbook/assets/image (163) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (163) (1) (1) (1).png>)
 
 ### Slots / Containers
 

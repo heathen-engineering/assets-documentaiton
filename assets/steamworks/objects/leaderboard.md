@@ -16,7 +16,7 @@ From the Steam Settings you can mark the leaderboard as create if missing by tic
 
 ![](<../../../.gitbook/assets/image (152) (1).png>)
 
-![](<../../../.gitbook/assets/image (165) (1) (1).png>)
+![](<../../../.gitbook/assets/image (165) (1) (1) (1).png>)
 
 You can specify the number of detail entries the board should handle by entering a number in the Details field
 

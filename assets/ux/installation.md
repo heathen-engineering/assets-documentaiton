@@ -18,4 +18,4 @@ In recent updates Unity has changed the process for enabling the "New" input sys
 You must install the Input Package system from the Package Manager your self to get it to work. Our asset is coded to use either the new or the old depending on which is installed. If you set the Project Settings to use the "New" input system without installing it from the Package Manager then you will get compiler errors.&#x20;
 {% endhint %}
 
-![](<../../.gitbook/assets/image (179).png>)
+![](<../../.gitbook/assets/image (179) (1).png>)

@@ -22,18 +22,44 @@ The overlay manager provides access to overlay events such as activated and the 
 
 Everything done in this manage can be done via API.Overlay.
 
-## Definition
-
 ## Fields and Attributes
 
-| Type                  | Name                 | Comments                                                                            |
-| --------------------- | -------------------- | ----------------------------------------------------------------------------------- |
-| ENotificationPosition | NotificationPosition | Updates the notification position used by the Steam Client popup                    |
-| Vector2Int            | NotificationInset    | Updates the pixel offset of the notificaiton positon used by the Steam Client popup |
-| bool                  | IsShowing            | True when the overlay is showing                                                    |
-| bool                  | IsEnabled            | True if the overlay feature of the Steam API is enabled by this user for this app   |
+### NotificationPosition
 
+```csharp
+public ENotificationPosition NotificationPosition { get; set; }
+```
 
+This discribes the position of the notification popups used by Steam client. options include
+
+* k\_EPositionTopLeft
+* k\_EPositionTopRight
+* k\_EPositionBottomLeft
+* k\_EPositionBottomRight
+
+### NotificationInset
+
+```csharp
+public Vector2Int NotificationInset { get; set; }
+```
+
+This discribes the number of pixels to be offset from the indicated Notification Position
+
+### IsShowing
+
+```csharp
+public bool IsShowing => get;
+```
+
+Is the overlay being displayed
+
+### IsEnabled
+
+```csharp
+public bool IsEnabled => get;
+```
+
+Is the overlay enabled i.e. can it be shown
 
 ## Events
 
@@ -41,13 +67,63 @@ Everything done in this manage can be done via API.Overlay.
 
 Occurs when the overlay is activated&#x20;
 
+Example handler
+
+```csharp
+public void HandleEvent(bool arg0)
+{
+    if(arg0)
+        Debug.Log("Overlay is optn");
+    else
+        Debug.Log("Overlay is closed");
+}
+```
+
 ### evtGameLobbyJoinRequested
 
 Called when the user tries to join a lobby from their friends list or from an invite. The game client should attempt to connect to specified lobby when this is received. If the game isn't running yet then the game will be automatically launched with the command line parameter `+connect_lobby <64-bit lobby Steam ID>` instead.
 
+Example handle
+
+```csharp
+public void HandleEvent(GameLobbyJoinRequested_t arg0)
+{
+    //You should join this, the user already clicked accept
+    Lobby lobby = arg0.m_steamIDLobby;
+    //Here is who invited this user
+    UserData fromFriend = arg0.m_steamIDFriend;
+}
+```
+
 ### evtGameServerChangeRequested
 
 Called when the user tries to join a different game server from their friends list. The game client should attempt to connect to specified server when this is received
+
+```csharp
+public void HandleEvent(GameServerChangeRequested_t arg0)
+{
+    //Server address (e.g. "127.0.0.1:27015", "tf2.valvesoftware.com")
+    string serverAddress = arg0.m_rgchServer;
+    //The password if any
+    string password = arg0.m_rgchPassword;
+}
+```
+
+### evtRichPresenceJoinRequested
+
+Called when the user accepts a Rich Precense invite such as API.Friends.Client.InviteToGame(...); This is not an invite to a lobby, this is an invite to a game.
+
+```csharp
+public void HandleEvent(GameRichPresenceJoinRequested_t arg0)
+{
+    //Here is who invited this user
+    UserData fromFriend = arg0.m_steamIDFriend;
+    //Whatever connection string the inviting user passed in
+    string connString = arg0.m_rgchConnect;
+}
+```
+
+
 
 ## Methods
 

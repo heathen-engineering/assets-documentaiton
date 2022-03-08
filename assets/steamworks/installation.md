@@ -4,13 +4,74 @@ description: Installing Heathen Engineering's Steamworks and related componenets
 
 # Installation
 
-## On Import
+{% hint style="info" %}
+When upgrading from Steamworks Foundaiton or Steamworks Complete versions 2.16.0 or earlier you should fully remove your existing install before importing the new Steamworks Foundaiton or Steamworks Complete package.
 
-When you import Heathen's Steamworks it will test for the presence of Steamworks.NET and if missing it will ask you if you want to install Steamworks.NET.
+
+
+This will help insure a clean and efficent install process. This is due to System Core being moved out of Unity Asset Store and into GitHub as a dependency similar to Steamworks.NET. The asset will handle this install process for you but needs any old versions removed first.
+{% endhint %}
+
+## Prerequisites
+
+Heathen's Steamworks assets (both Foundaiton and Complete) will handle the install of all requirements for you. Our asset is also able to handle existing installs of its required componenets. You shouldn't need to do anything other than import our asset.
+
+{% hint style="warning" %}
+#### Legacy Code
+
+
+
+If you have legacy, custom or otherwise not from the original source versions of Steamworks.NET or System Core then Unity will cause merge conflcits when importing our asset.
+
+
+
+You should not be using versions of Steamworks.NET (or System Core) other than the version avialable from its author on GitHub such as would be installed by the Package Manger as discribed below and as installed by our asset on import into a clean project.
+
+
+
+The single most common installation issue is due to having a full or partial install of an old or customized version of Steamworks.NET in your project when importing our asset. Our asset will not attempt to compile until Steamworks.NET is properly installed. It accomplishes this by only compiling when the script define `STEAMWORKS_NET` is defined.
+
+
+
+If you have questions or issues pealse reach out on our [Discord ](https://discord.gg/6X3xrRc)channel
+{% endhint %}
+
+## Install
+
+### Foundation
+
+Steamworks Foundaiton is a freely available "lite" version of Heathen's Steamworks system. It is available on GitHub as is, without warrenty. It is lisensed under the MIT license agreement with a Common Clause condition allowing you to use it for any purpose ... other than releasing a competating Steamworks Integraiton on the Unity Asset Store :sunglasses:
+
+To install Steamworks Foundaiton&#x20;
+
+This must be done from the Unity Package Manager to insure that the proper Steamworks Foundaiton assembly definition is installed and present in your project.
+
+1. Open the Package Manager
+2. Click the "+" (plus) button located in the upper left of the window
+3. Select the "Add package from git URL..." option\
+   ![](<../../.gitbook/assets/image (144).png>)
+4. Enter the URL below and press add.
+
+```
+https://github.com/heathen-engineering/SteamworksFoundation.git?path=/com.heathen.steamworksfoundation
+```
+
+### Complete
+
+Steamworks Complete is a premium asset available on the Unity Asset Store and includes live support, frequent updates and is compatable with various extensions and tools. Steamworks Complete is licnesed under the standard Unity Asset Store End User Agreement and related license as documented by Unity on the Unity Asset Store site.
+
+To install Steamworks Complete simply use the Unity Package Manager\
+
 
 ![](<../../.gitbook/assets/image (163).png>)
 
-When you click yes the system will use Package Manager to install Steamworks.NET from GitHub.&#x20;
+## Import Process
+
+When you import Heathen's Steamworks (Foundation or Complete) it will test for the presence of Steamworks.NET and System Core and if missing it will ask you if you want to install those assets similar to the message shown below.
+
+![](<../../.gitbook/assets/image (163) (1).png>)
+
+When you click yes the system will use Package Manager to install Steamworks.NET and System Core from GitHub.&#x20;
 
 {% hint style="info" %}
 Installing Unity Packages via Git URL as we do here requires that you have Git installed. as outlined in [Unity's documentation](https://docs.unity3d.com/Manual/upm-ui-giturl.html).\
@@ -30,14 +91,18 @@ This video might help you get it resolved
 
 [https://youtu.be/F-8A8mJwL\_Y](https://youtu.be/F-8A8mJwL\_Y)
 
+
+
 We are not associated with the creator we have simply been told that video has helped others with that error.
+
+
 
 This thread might also be of help for you
 
 [https://forum.unity.com/threads/no-git-executable-was-found-please-install-git-on-your-system-and-restart-unity.730511/](https://forum.unity.com/threads/no-git-executable-was-found-please-install-git-on-your-system-and-restart-unity.730511/)
 {% endhint %}
 
-When Steamworks.NET is successfuly installed you will see the following messages in your log
+When Steamworks.NET is successfuly installed you will see messages in your console log similar to the following. These messages indicate what was installed, you can also review these in your Package Manager.
 
 ![](<../../.gitbook/assets/image (164).png>)
 
@@ -47,17 +112,15 @@ This always installs the latest code available and so the version number you see
 
 ### I clicked no now what?
 
-If for whatever reason you clicked no, or if you had an error and needed to install Git, or if you simply want to update Steamworks.NET you can always kick the Steamworks.NET install back off by clicking the `Install Steamworks.NET` button located in the Steamworks menu&#x20;
+If for whatever reason you clicked no, or if you had an error and needed to install Git, or if you simply want to update Steamworks.NET or System Core you can always use the `Help > Heathen > Steamworks` menu entry to update any or all requriements.
 
-![](<../../.gitbook/assets/image (167).png>)
+&#x20;
 
-And can also be found in the Help section
-
-![](<../../.gitbook/assets/image (157).png>)
+![](<../../.gitbook/assets/image (179).png>)
 
 ## From Package Manager
 
-If you dont like simply pressing buttons you can always install Steamworks.NET from the package manager your self.
+If you dont like simply pressing buttons you can always install Steamworks.NET and System Core from the package manager your self.
 
 ### Install Steamworks.NET
 
@@ -73,7 +136,37 @@ This must be done from the Unity Package Manager to insure that the proper Steam
 https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net
 ```
 
-### Install Heathen's Steamworks&#x20;
+### Install System Core
+
+This must be done from the Unity Package Manager to insure that the proper System Core assembly definition is installed and present in your project.
+
+1. Open the Package Manager
+2. Click the "+" (plus) button located in the upper left of the window
+3. Select the "Add package from git URL..." option\
+   ![](<../../.gitbook/assets/image (144).png>)
+4. Enter the URL below and press add.
+
+```
+https://github.com/heathen-engineering/SystemCore.git?path=/com.heathen.systemcore
+```
+
+### Install Heathen's Steamworks
+
+#### For Steamworks Foundaiton
+
+This must be done from the Unity Package Manager to insure that the proper Steamworks Foundaiton assembly definition is installed and present in your project.
+
+1. Open the Package Manager
+2. Click the "+" (plus) button located in the upper left of the window
+3. Select the "Add package from git URL..." option\
+   ![](<../../.gitbook/assets/image (144).png>)
+4. Enter the URL below and press add.
+
+```
+https://github.com/heathen-engineering/SteamworksFoundation.git?path=/com.heathen.steamworksfoundation
+```
+
+#### For Steamworks Complete
 
 from the Package Manager
 
@@ -142,7 +235,7 @@ If you only have 1 Heathen Engineering asset then you are safe to simply remove 
 
 Otherwise you can simply remove the folder corresponding to the product you want to remove.
 
-## Requirements
+## Technical Requirements
 
 ### Unity 2019 LTS or later
 
@@ -173,6 +266,22 @@ https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks
 When completed properly you will see Steamworks.NET in your Package Manager's "In Project" list. You can repeat the above steps to update Steamworks.NET at any time.
 
 ![](<../../.gitbook/assets/image (145).png>)
+
+### Install System Core
+
+This must be done from the Unity Package Manager to insure that the proper System Core assembly definition is installed and present in your project.
+
+1. Open the Package Manager
+2. Click the "+" (plus) button located in the upper left of the window
+3. Select the "Add package from git URL..." option\
+   ![](<../../.gitbook/assets/image (144).png>)
+4. Enter the URL below and press add.
+
+```
+https://github.com/heathen-engineering/SystemCore.git?path=/com.heathen.systemcore
+```
+
+![](<../../.gitbook/assets/image (166).png>)
 
 ## Networking Integrations
 

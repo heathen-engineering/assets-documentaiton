@@ -42,7 +42,7 @@ You can use the Stats tab to view and update the value of all registered stats
 
 ## Achievements
 
-![](<../../../.gitbook/assets/image (179) (1) (1).png>)
+![](<../../../.gitbook/assets/image (179) (1) (1) (1).png>)
 
 You can use the Achievements tab to view and unlock/reset all registered achievements
 

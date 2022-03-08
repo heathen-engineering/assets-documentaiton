@@ -6,7 +6,7 @@ Available in PhysKit [Complete](https://prf.hn/l/rpoyznk).
 
 ## Introduction
 
-![](<../../../../.gitbook/assets/image (180) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (180) (1) (1) (1).png>)
 
 This scene demonstrates the use of the Ballistics API to solve form a desired trajectory and to then apply that result to a physically simulated projectile.
 
