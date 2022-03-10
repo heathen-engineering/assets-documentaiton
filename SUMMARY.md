@@ -23,7 +23,7 @@
 ## Assets
 
 * [Licensing](assets/licensing/README.md)
-  * [Heathen License Agreement](assets/licensing/heathen-license-agreement.md)
+  * [Heathen License Agreement](company/heathen-license-agreement.md)
 * [Art Assets](assets/art-assets/README.md)
   * [Armoury](assets/art-assets/art-armoury.md)
   * [Cookery](assets/art-assets/art-cookery.md)
@@ -230,6 +230,7 @@
     * [Sample Rate Method](assets/steamworks/enums/sample-rate-method.md)
     * [Valve Price Categories](assets/steamworks/enums/valve-price-categories.md)
 * [System Core](assets/system-core/README.md)
+  * [Installation](assets/system-core/installation.md)
   * [Command Line](assets/system-core/command-line.md)
   * [Game Events](assets/system-core/game-events.md)
   * [Scriptable Tags](assets/system-core/scriptable-tags.md)

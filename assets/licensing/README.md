@@ -14,7 +14,7 @@ With GitHub sponsor you can get access to our source repository for Steamworks, 
 
 While your subscribed you get instant live updates, a proper issue tracking system, feedback system and of course all the perks you would expect from any Heathen product e.g. best-in-class support, live community and more.
 
-When you end your subscription you still have whatever you downloaded and yes a [license](heathen-license-agreement.md) to go with it. You can re-sub when you need to catch up on updates or get that sweet sweet priority support ... or maybe you just want to show your support for Heathen.
+When you end your subscription you still have whatever you downloaded and yes a [license](../../company/heathen-license-agreement.md) to go with it. You can re-sub when you need to catch up on updates or get that sweet sweet priority support ... or maybe you just want to show your support for Heathen.
 
 ## Bespoke License
 
