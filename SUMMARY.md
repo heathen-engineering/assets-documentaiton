@@ -18,11 +18,12 @@
   * [Project Architecture](company/concepts/project-architecture.md)
   * [Unity Release Version](company/concepts/unity-release-version.md)
   * [Visual Scripting](company/concepts/visual-scripting.md)
-* [Heathen License Agreement](company/heathen-license-agreement.md)
 * [Package Manager Install](company/package-manager-install.md)
 
 ## Assets
 
+* [Licensing](assets/licensing/README.md)
+  * [Heathen License Agreement](assets/licensing/heathen-license-agreement.md)
 * [Art Assets](assets/art-assets/README.md)
   * [Armoury](assets/art-assets/art-armoury.md)
   * [Cookery](assets/art-assets/art-cookery.md)
