@@ -4,25 +4,6 @@ description: Installing the PhysKit asset from the Unity Asset Store
 
 # Installation
 
-## GitHub Sponsors
-
-{% hint style="success" %}
-Better for us and better for you!
-
-Sponsoring Heathen on GitHub for $10 a month gets you access to the sorce repository for Steamworks, PhysKit and UX Complete.
-
-\
-See why GitHub sponsor is the hands down best way to Do More with Heathen in our [Licensing Article](../licensing/).
-{% endhint %}
-
-## New Installs
-
-For new projects this couldn't be simplier.
-
-Import into Unity as you normally would and it will install all dependencies for you.
-
-## Updating Existing Installs
-
 {% hint style="info" %}
 When upgrading from PhysKit versions 2.16.0 or earlier you should fully remove your existing install before importing the new PhysKit package.
 
@@ -30,30 +11,6 @@ When upgrading from PhysKit versions 2.16.0 or earlier you should fully remove y
 
 This will help insure a clean and efficent install process. This is due to System Core being moved out of Unity Asset Store and into GitHub as a dependency. The asset will handle this install process for you but needs any old versions removed first.
 {% endhint %}
-
-## Import
-
-### GitHub Sponsors
-
-If your a GitHub sponsor you have access to the source repository which you can install from directly in Unity via the Package Manager.
-
-1. Open the Package Manager
-2. Click the "+" (plus) button located in the upper left of the window
-3. Select the "Add package from git URL..." option\
-   ![](<../../.gitbook/assets/image (144).png>)
-4. Enter the URL below and press add.
-
-```
-https://github.com/heathen-engineering/SourceRepo.git?path=/PhysKit/com.heathen.physkit
-```
-
-GitHub will prompt you to login if you haven't already, this is how it checks to make sure your a sponsor and have access to the repo. Once done it will install PhysKit and any required dependencies.
-
-### Unity Asset Store
-
-If you purchased through the Unity Asset Store simply import through Unity's normal method.
-
-Once imported the asset will check for dependencies and if missing it will install them via the Package Manager.
 
 ## Prerequisites
 

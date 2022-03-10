@@ -6,6 +6,15 @@ This license agreement is used as the foundation for bespoke license agreements 
 
 This license does not conflcit with or modify in any way any license you aquired through affiliates or partners such as Unity Asset Store.
 
+The spirit of the license is that (When legitimetly aquired) you have a license that allows you to use Heathen technology and content with out restriction and that mitigates our legal liability\
+\
+These permisions are granted as long as you&#x20;
+
+* Dont try distributing our source code to enable others to circumvent our distribution channels
+* Dont try to claim ownership over our copyrighted material
+
+If you have any questions or concerns dont hesitate to contact us.
+
 ## License
 
 License Agreement Copyright © 2014-2022 Heathen Engineering Limited, an Irish registered corporation #556277 identified in this agreement as (“Heathen”).
