@@ -4,6 +4,25 @@ description: Installing Heathen Engineering's Steamworks and related componenets
 
 # Installation
 
+## GitHub Sponsors
+
+{% hint style="success" %}
+Better for us and better for you!
+
+Sponsoring Heathen on GitHub for $10 a month gets you access to the sorce repository for Steamworks, PhysKit and UX Complete.
+
+\
+See why GitHub sponsor is the hands down best way to Do More with Heathen in our [Licensing Article](../licensing/).
+{% endhint %}
+
+## New Installs
+
+For new projects this couldn't be simplier.
+
+Import into Unity as you normally would and it will install all dependencies for you.
+
+## Updating Existing Installs
+
 {% hint style="info" %}
 When upgrading from Steamworks Foundaiton or Steamworks Complete versions 2.16.0 or earlier you should fully remove your existing install before importing the new Steamworks Foundaiton or Steamworks Complete package.
 
@@ -11,6 +30,48 @@ When upgrading from Steamworks Foundaiton or Steamworks Complete versions 2.16.0
 
 This will help insure a clean and efficent install process. This is due to System Core being moved out of Unity Asset Store and into GitHub as a dependency similar to Steamworks.NET. The asset will handle this install process for you but needs any old versions removed first.
 {% endhint %}
+
+## Import
+
+### GitHub Sponsors
+
+If your a GitHub sponsor you have access to the source repository which you can install from directly in Unity via the Package Manager.
+
+1. Open the Package Manager
+2. Click the "+" (plus) button located in the upper left of the window
+3. Select the "Add package from git URL..." option\
+   ![](<../../.gitbook/assets/image (144).png>)
+4. Enter the URL below and press add.
+
+```
+https://github.com/heathen-engineering/SourceRepo.git?path=/Steamworks/com.heathen.steamworkscomplete
+```
+
+GitHub will prompt you to login if you haven't already, this is how it checks to make sure your a sponsor and have access to the repo. Once done it will install Steamworks and any required dependencies.
+
+### Free Foundation
+
+Steamworks Foundaiton is a freely available "lite" version of Heathen's Steamworks system. It is available on GitHub as is, without warrenty. It is lisensed under the MIT license agreement with a Common Clause condition allowing you to use it for any purpose ... other than releasing a competating Steamworks Integraiton on the Unity Asset Store :sunglasses:
+
+To install Steamworks Foundaiton&#x20;
+
+This must be done from the Unity Package Manager to insure that the proper Steamworks Foundaiton assembly definition is installed and present in your project.
+
+1. Open the Package Manager
+2. Click the "+" (plus) button located in the upper left of the window
+3. Select the "Add package from git URL..." option\
+   ![](<../../.gitbook/assets/image (144).png>)
+4. Enter the URL below and press add.
+
+```
+https://github.com/heathen-engineering/SteamworksFoundation.git?path=/com.heathen.steamworksfoundation
+```
+
+### Unity Asset Store
+
+If you purchased through the Unity Asset Store simply import through Unity's normal method.
+
+Once imported the asset will check for dependencies and if missing it will install them via the Package Manager.
 
 ## Prerequisites
 
@@ -36,36 +97,7 @@ The single most common installation issue is due to having a full or partial ins
 If you have questions or issues pealse reach out on our [Discord ](https://discord.gg/6X3xrRc)channel
 {% endhint %}
 
-## Install
-
-### Foundation
-
-Steamworks Foundaiton is a freely available "lite" version of Heathen's Steamworks system. It is available on GitHub as is, without warrenty. It is lisensed under the MIT license agreement with a Common Clause condition allowing you to use it for any purpose ... other than releasing a competating Steamworks Integraiton on the Unity Asset Store :sunglasses:
-
-To install Steamworks Foundaiton&#x20;
-
-This must be done from the Unity Package Manager to insure that the proper Steamworks Foundaiton assembly definition is installed and present in your project.
-
-1. Open the Package Manager
-2. Click the "+" (plus) button located in the upper left of the window
-3. Select the "Add package from git URL..." option\
-   ![](<../../.gitbook/assets/image (144).png>)
-4. Enter the URL below and press add.
-
-```
-https://github.com/heathen-engineering/SteamworksFoundation.git?path=/com.heathen.steamworksfoundation
-```
-
-### Complete
-
-Steamworks Complete is a premium asset available on the Unity Asset Store and includes live support, frequent updates and is compatable with various extensions and tools. Steamworks Complete is licnesed under the standard Unity Asset Store End User Agreement and related license as documented by Unity on the Unity Asset Store site.
-
-To install Steamworks Complete simply use the Unity Package Manager\
-
-
-![](<../../.gitbook/assets/image (163).png>)
-
-## Import Process
+## Install Process
 
 When you import Heathen's Steamworks (Foundation or Complete) it will test for the presence of Steamworks.NET and System Core and if missing it will ask you if you want to install those assets similar to the message shown below.
 
