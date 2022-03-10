@@ -19,6 +19,7 @@
   * [Unity Release Version](company/concepts/unity-release-version.md)
   * [Visual Scripting](company/concepts/visual-scripting.md)
 * [Heathen License Agreement](company/heathen-license-agreement.md)
+* [Package Manager Install](company/package-manager-install.md)
 
 ## Assets
 

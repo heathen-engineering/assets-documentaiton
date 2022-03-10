@@ -1,0 +1,106 @@
+# Package Manager Install
+
+## What is it
+
+An easy and much more felxable way to install stuff into your Unity Project.
+
+### Why
+
+Its the method used by Unity iinternally, its the method used to install all Unity open source and community contributions and its the method used by many asset developers ... including Heathen.
+
+It has quite a few benifits over the older .unitypackage import method but it does take a bit of learning for users that are new to the concept.
+
+### History
+
+Pack with Unity 2018 Unity started to introduce the concept of the Package Manager.
+
+{% embed url="https://docs.unity3d.com/Manual/upm-ui.html" %}
+
+While in standard Unity fassion the transition away from classic .unitypackage exports to the new Package Mangaer approch has been
+
+* Slow
+* Miss managed
+* Clunky
+* Painful
+* Horrible
+* etc. etc. etc.
+
+In classic Unity fassion the benifits have been ... well nothing short of transending and awe inspiring.
+
+### Yes but WHY
+
+The Package Manager for the first time lets us pull active source ... not a file export ... note a .unitypackage ... that is really just a sorta propritary zip file ... ya its that bad.
+
+Second we can discribe dependencies ... 😍... if your an asset developer creating coded assets this is GOD level awsome.
+
+Finally and one of my favorite features ... no more bloat. Not only can we remove the deep copy of every dependency we might use thus removing the version conflict hell of yester year we can also distribute samples, extensions, demos, etc. as additional downloads. So you no longer need to download 10 gigs of sample content you will never use just to get at the 15mb of code you wanted 🤩💖 ... unless you want to of course ...&#x20;
+
+## Troubleshooting
+
+### No git executable was found
+
+Unity's Package Manager uses git to download and import assets from Git repositories. This is the method used by Unity internally, used for all of Unity's open source and community assets and used by Heathen.
+
+For this to work you must have installed git as per Unity's documentation
+
+{% embed url="https://docs.unity3d.com/Manual/upm-ui-giturl.html" %}
+
+{% hint style="info" %}
+Installing Unity Packages via Git URL as we do here requires that you have Git installed. as outlined in [Unity's documentation](https://docs.unity3d.com/Manual/upm-ui-giturl.html).\
+\
+If you don't have it already you can install Git from the following link:
+
+* [https://git-scm.com/](https://git-scm.com)&#x20;
+
+Note that this does NOT mean you will be using Git as a source repo, it is simply a set of protocols used by Package Manager to download the required code from its target repository.
+{% endhint %}
+
+It is a relativly common problem that Unity isn't able to detect Git once it has been installed. They very first thing you should try is to restart your machine. Saddly Unity doesn't know how to properly read environment variables and so only reads for them once on start up assuming they will never change :joy:
+
+{% hint style="success" %}
+If you run into this issue please let Unity know its a problem for you so they can be aware of the frequency of the problem for users and maybe escalate its importance in there queue.
+{% endhint %}
+
+Assuming a simple restart doesn't resolve the issue for you the most likely issue is a problem with how the envrionment variables where set on Git install ... or rather where not set.
+
+This YouTube video is not sponsored by Heathen but seems to help a lot of people.
+
+{% embed url="https://www.youtube.com/watch?v=F-8A8mJwL_Y" %}
+
+{% hint style="warning" %}
+If you get a message to the effect of \
+`No git executable was found`\
+\
+This video might help you get it resolved
+
+[https://youtu.be/F-8A8mJwL\_Y](https://youtu.be/F-8A8mJwL\_Y)
+
+
+
+We are not associated with the creator we have simply been told that video has helped others with that error.
+
+
+
+This thread might also be of help for you
+
+[https://forum.unity.com/threads/no-git-executable-was-found-please-install-git-on-your-system-and-restart-unity.730511/](https://forum.unity.com/threads/no-git-executable-was-found-please-install-git-on-your-system-and-restart-unity.730511/)
+{% endhint %}
+
+If none of the above works for you then you need to contact Unity's technical support. This is a problem with Unity not with our code and not with anything we can really effect.
+
+
+
+To get you going while you wait on Unity's support to get back to you, you can simply download then Git repository for SystemCore or whatever else you need and install it manually.
+
+{% hint style="danger" %}
+WE DO NOT RECOMEND YOU DO THIS
+
+
+
+Manul instal should be your last resort, it is error prone, can result in Unity making a huge mess when merging assets and generally makes for a bad time.
+
+
+
+That said we do enable you to do this and will do our level best to help you with any issues you run into.
+{% endhint %}
+
