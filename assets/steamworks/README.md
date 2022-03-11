@@ -11,7 +11,18 @@ coverY: 17.4
 
 {% embed url="https://discord.gg/6X3xrRc" %}
 
-## Asset Store
+## GitHub Sponsors
+
+{% hint style="success" %}
+Sponsoring Heathen on GitHub for $10 a month gets you access to the sorce repository for Steamworks, PhysKit and UX Complete.
+
+\
+See why GitHub sponsor is the hands down best way to Do More with Heathen in our [Licensing Article](../licensing/).
+{% endhint %}
+
+### Asset Store
+
+Prefer to shop through Unity's Asset Store we are available there as well.
 
 {% embed url="https://assetstore.unity.com/packages/tools/integration/steamworks-v2-complete-190316" %}
 
