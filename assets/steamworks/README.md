@@ -40,13 +40,19 @@ Modular, extensible, and supported by a large community of fellow developers. He
 
 ## Heathen vs Steamworks.NET
 
-Heathen Engineering's Steamworks Complete (and Foundation) are built on top of Steamworks.NET. The Steamworks.NET project is designed to be a direct 1 to 1 wrapper around Valve's Steam API wrapping the native C and C++ interfaces up in a C# plugin.
+Heathen Engineering's Steamworks Complete (and Foundation) are built on top of [Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET). The [Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET) project is designed to be a direct 1 to 1 wrapper around Valve's Steam API wrapping the native C and C++ interfaces up in a C# plugin.
 
-Steamworks.NET gives the best access to Valve's APIs and does so true to the original, so that the original documentation and decades of community guidance are still applicable. The draw back to Steamworks.NET is that it is true to the original API using programming styles and approaches foreign to most Unity developers and very clunky at best to use in Unity scripting.
+{% hint style="success" %}
+[Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET) is authored by [**Riley Labrecque**](https://github.com/sponsors/rlabrecque) and the only reason our Steam integrations exist.\
+\
+Pop over to his [sponsor page](https://github.com/sponsors/rlabrecque) and buy the man a beer at the very least.
+{% endhint %}
+
+[Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET) gives the best access to Valve's APIs and does so true to the original, so that the original documentation and decades of community guidance are still applicable. The draw back to [Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET) is that it is true to the original API using programming styles and approaches foreign to most Unity developers and very clunky at best to use in Unity scripting.
 
 Heathen has wrapped every relevant interface in Steamworks.NET with our own static [APIs ](api/)delivering a simpler more robust tool set with every drop of power of the source Steam API and with that raw Steam API still available to you.
 
-Heathen Engineering's Steamworks Complete does not replace Steamworks.NET - it builds on top of it and provides you with a set of battle tested and developer approved tools and systems written with Unity in mind.&#x20;
+Heathen Engineering's Steamworks Complete does not replace [Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET) - it builds on top of it and provides you with a set of battle tested and developer approved tools and systems written with Unity in mind.&#x20;
 
 ## Heathen vs Facepunch
 
