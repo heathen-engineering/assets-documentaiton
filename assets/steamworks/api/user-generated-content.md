@@ -536,6 +536,32 @@ void Callback(WorkshoEULAStatus_t responce, bool ioFailure)
 public static bool ShowWorkshopEULA()
 ```
 
+Show the app's latest Workshop EULA to the user in an overlay window, where they can accept it or not
+
+### RemoveAppDependency
+
+```csharp
+public static void RemoveAppDependency(PublishedFileId_t fileId, 
+                AppId_t appId, 
+                Action<RemoveAppDependencyResult_t, bool> callback)
+```
+
+Request the removal of app dependency from a UGC item
+
+### RemoveDependency
+
+```csharp
+public static void RemoveDependency(PublishedFileId_t parentFileId, 
+                PublishedFileId_t childFileId, 
+                Action<RemoveUGCDependencyResult_t, bool> callback)
+```
+
+Request the removal of a dependency from a UGC item
+
+{% hint style="warning" %}
+More methods to be documented
+{% endhint %}
+
 
 
 ## How To
