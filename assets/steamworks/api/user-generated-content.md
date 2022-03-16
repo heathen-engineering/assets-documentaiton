@@ -48,6 +48,496 @@ Occurs when a UGC item is downloaded
 
 Called when a workshop item has been installed or updated
 
+## Methods
+
+### AddAppDependency
+
+```csharp
+public static void AddAppDependency(PublishedFileId_t fileId, 
+                                    AppId_t appId, 
+                                    Action<AddAppDependencyResult_t, bool> callback)
+```
+
+The callback for this method would look like the following.
+
+{% hint style="info" %}
+This is a native callback, details as to the meaning of fields in the AddAppDependencyResult\_t object can be found [here](https://partner.steamgames.com/doc/api/ISteamUGC#AddAppDependencyResult\_t).
+{% endhint %}
+
+```csharp
+void Callback(AddAppDependencyResult_t responce, bool ioError)
+{
+    // Do Work
+}
+```
+
+Adds a dependency between the given item and the appid. This list of dependencies can be retrieved by calling GetAppDependencies. This is a soft-dependency that is displayed on the web. It is up to the application to determine whether the item can actually be used or not.
+
+### AddDependency
+
+```csharp
+public static void AddDependency(PublishedFileId_t parentFileId, 
+                                PublishedFileId_t childFileId, 
+                                Action<AddUGCDependencyResult_t, bool> callback)
+```
+
+{% hint style="info" %}
+This is a native callback, details as to the meaning of fields in the AddUGCDependencyResult\_t object can be found [here](https://partner.steamgames.com/doc/api/ISteamUGC#AddUGCDependencyResult\_t).
+{% endhint %}
+
+```csharp
+void Callback(AddUGCDependencyResult_t responce, bool ioError)
+{
+    // Do Work
+}
+```
+
+Adds a workshop item as a dependency to the specified item. If the nParentPublishedFileID item is of type k\_EWorkshopFileTypeCollection, than the nChildPublishedFileID is simply added to that collection. Otherwise, the dependency is a soft one that is displayed on the web and can be retrieved via the ISteamUGC API using a combination of the m\_unNumChildren member variable of the SteamUGCDetails\_t struct and GetQueryUGCChildren.
+
+### AddExcludedTag
+
+```csharp
+public static bool AddExcludedTag(UGCQueryHandle_t handle, string tagName)
+```
+
+Adds a excluded tag to a pending UGC Query. This will only return UGC without the specified tag.
+
+### AddItemKeyValueTag
+
+```csharp
+public static bool AddItemKeyValueTag(UGCUpdateHandle_t handle, 
+                                string key, string value)
+```
+
+Adds a key-value tag pair to an item. Keys can map to multiple different values (1-to-many relationship). Key names are restricted to alpha-numeric characters and the '\_' character. Both keys and values cannot exceed 255 characters in length. Key-value tags are searchable by exact match only.
+
+### AddItemPreviewFile
+
+```csharp
+public static bool AddItemPreviewFile(UGCUpdateHandle_t handle, 
+                                string previewFile, EItemPreviewType type)
+```
+
+Adds an additional preview file for the item. Then the format of the image should be one that both the web and the application(if necessary) can render, and must be under 1MB.Suggested formats include JPG, PNG and GIF.
+
+### AddItemPreviewVideo
+
+```csharp
+public static bool AddItemPreviewVideo(UGCUpdateHandle_t handle, string videoId)
+```
+
+Adds an additional video preview from YouTube for the item.
+
+### AddItemToFavorites
+
+```csharp
+public static void AddItemToFavorites(AppId_t appId, 
+                PublishedFileId_t fileId, 
+                Action<UserFavoriteItemsListChanged_t, bool> callback)
+```
+
+Adds workshop item to the users favorite list. The callback to this method would look like the following
+
+{% hint style="info" %}
+This is a native Steam API callback you can find more details [here](https://partner.steamgames.com/doc/api/ISteamUGC#UserFavoriteItemsListChanged\_t).
+{% endhint %}
+
+```csharp
+void Callback(UserFavoriteItemsListChanged_t responce, bool ioError)
+{
+    // Do Work
+}
+```
+
+### AddRequiredKeyValueTag
+
+```csharp
+public static bool AddRequiredKeyValueTag(UGCQueryHandle_t handle, 
+                                string key, string value)
+```
+
+Adds a required key-value tag to a pending UGC Query. This will only return workshop items that have a key = pKey and a value = pValue.
+
+### AddRequiredTag
+
+```csharp
+public static bool AddRequiredTag(UGCQueryHandle_t handle, string tagName)
+```
+
+Adds a required tag to a pending UGC Query. This will only return UGC with the specified tag.
+
+### CreateItem
+
+```csharp
+public static bool CreateItem(WorkshopItemData item, 
+                Action<WorkshopItemDataCreateStatus> callback = null)
+```
+
+The first overload handles the creation and update of new items in a single line call. The callback for this overload would look similar to following.
+
+{% hint style="info" %}
+See the [WorkshopItemDataCreateStatus](../objects/workshop-item-data-create-status.md) defintion for more information on what fields it contains.
+{% endhint %}
+
+```csharp
+void Callback(WorkshopItemDataCreateStatus status)
+{
+    //Do Work
+}
+```
+
+The second overload is only creates an empty UGC File. You would then manually start the update process and set each of its fields. This approch is more akin to using the Raw Steam API.
+
+{% hint style="info" %}
+Learn more about manual creation and update of items [here](user-generated-content.md#create-and-update-items).
+{% endhint %}
+
+```csharp
+public static void CreateItem(AppId_t appId, EWorkshopFileType type, 
+                Action<CreateItemResult_t, bool> callback)
+```
+
+The callback for this overload would look similar to the following.
+
+```csharp
+void Callback(CreateItemResult_t responce, bool ioError)
+{
+    // Do Work
+}
+```
+
+This works exsactly the same as the native Steam API callback as documented [here](https://partner.steamgames.com/doc/api/ISteamUGC#CreateItemResult\_t) and uses those native Steam API structures.
+
+### CreateQueryAllRequest
+
+```csharp
+public static UGCQueryHandle_t CreateQueryAllRequest(EUGCQuery queryType, 
+                                EUGCMatchingUGCType matchingFileType, 
+                                AppId_t creatorAppId, 
+                                AppId_t consumerAppId, 
+                                uint page)
+```
+
+{% hint style="info" %}
+The [UGC Query Manager](../components/ugc-query-manager.md) can make working with quires much simpler.
+{% endhint %}
+
+Query for all matching UGC. You can use this to list all of the available UGC for your app. You must release the handle returned by this function by calling WorkshopReleaseQueryRequest when you are done with it!
+
+### CreateQueryDetailsRequest
+
+All of the overloads do the same thing they simply reduce the need for in line conversion when using different types of collecitons.
+
+```csharp
+public static UGCQueryHandle_t CreateQueryDetailsRequest(
+                PublishedFileId_t[] fileIds)
+```
+
+```csharp
+public static UGCQueryHandle_t CreateQueryDetailsRequest(
+                List<PublishedFileId_t> fileIds)
+```
+
+```csharp
+public static UGCQueryHandle_t CreateQueryDetailsRequest(
+                IEnumerable<PublishedFileId_t> fileIds)
+```
+
+{% hint style="info" %}
+The [UGC Query Manager](../components/ugc-query-manager.md) can make working with quires much simpler.
+{% endhint %}
+
+Query for the details of specific workshop items. You must release the handle returned by this function by calling WorkshopReleaseQueryRequest when you are done with it!
+
+### CreateQueryUserRequest
+
+```csharp
+public static UGCQueryHandle_t CreateQueryUserRequest(
+                                AccountID_t accountId, 
+                                EUserUGCList listType, 
+                                EUGCMatchingUGCType matchingType, 
+                                EUserUGCListSortOrder sortOrder, 
+                                AppId_t creatorAppId, 
+                                AppId_t consumerAppId, 
+                                uint page)
+```
+
+Query UGC associated with a user. You can use this to list the UGC the user is subscribed to amongst other things. You must release the handle returned by this function by calling WorkshopReleaseQueryRequest when you are done with it!
+
+### ReleaseQueryRequest
+
+```csharp
+public static bool ReleaseQueryRequest(UGCQueryHandle_t handle)
+```
+
+Frees a UGC query
+
+### DeleteItem
+
+```csharp
+public static void DeleteItem(PublishedFileId_t fileId, 
+                                Action<DeleteItemResult_t, bool> callback)
+```
+
+Requests delete of a UGC item
+
+{% hint style="info" %}
+This is a native callback you can find more details on it [here](https://partner.steamgames.com/doc/api/ISteamUGC#DeleteItemResult\_t).
+{% endhint %}
+
+```csharp
+void Callback(DeleteItemResult_t responce, bool ioFailure)
+{
+    //Do Work
+}
+```
+
+### DownloadItem
+
+```csharp
+public static bool DownloadItem(PublishedFileId_t fileId, bool setHighPriority)
+```
+
+Request download of a UGC item
+
+### GetAppDependencies
+
+```csharp
+public static void GetAppDependencies(PublishedFileId_t fileId, 
+                   Action<GetAppDependenciesResult_t, bool> callback)
+```
+
+Request the app dependencies of a UGC item
+
+### GetItemDownloadInfo
+
+```csharp
+public static bool GetItemDownloadInfo(PublishedFileId_t fileId, 
+                   out float completion)
+```
+
+Request the download informaiton of a UGC item
+
+### GetItemInstallInfo
+
+```csharp
+public static bool GetItemInstallInfo(PublishedFileId_t fileId, 
+                                out ulong sizeOnDisk, 
+                                out string folderPath, 
+                                out DateTime timeStamp)
+```
+
+Request the installation informaiton of a UGC item
+
+### GetItemInstallInfo
+
+```csharp
+public static bool GetItemInstallInfo(PublishedFileId_t fileId, 
+                                out ulong sizeOnDisk, 
+                                out string folderPath, 
+                                uint folderSize, 
+                                out DateTime timeStamp)
+```
+
+Request the installation informaiton of a UGC item
+
+### GetItemState
+
+```csharp
+public static EItemState GetItemState(PublishedFileId_t fileId)
+```
+
+Gets the current state of a workshop item on this client.
+
+### ItemStateHasFlag
+
+```csharp
+public static bool ItemStateHasFlag(EItemState value, EItemState checkflag)
+```
+
+Checks if the 'checkFlag' value is in the 'value'
+
+### ItemStateHasAllFlags
+
+```csharp
+public static bool ItemStateHasAllFlags(EItemState value, 
+                                params EItemState[] checkflags)
+```
+
+Cheks if any of the 'checkflags' values are in the 'value'
+
+### GetItemUpdateProgress
+
+```csharp
+public static EItemUpdateStatus GetItemUpdateProgress(UGCUpdateHandle_t handle, 
+                                out float completion)
+```
+
+Gets the progress of an item update.
+
+### GetNumSubscribedItems
+
+```csharp
+public static uint GetNumSubscribedItems()
+```
+
+Returns the number of subscribed UGC items
+
+### GetQueryAdditionalPreview
+
+```csharp
+public static bool GetQueryAdditionalPreview(UGCQueryHandle_t handle, 
+                                uint index, 
+                                uint previewIndex, 
+                                out string urlOrVideoId, 
+                                uint urlOrVideoSize, 
+                                string fileName, 
+                                uint fileNameSize, 
+                                out EItemPreviewType type)
+```
+
+Request an additional preview for a UGC item
+
+### GetQueryChildren
+
+```csharp
+public static bool GetQueryChildren(UGCQueryHandle_t handle, 
+                                uint index, 
+                                PublishedFileId_t[] fileIds, 
+                                uint maxEntries)
+```
+
+Request the child items of a given UGC item
+
+### GetQueryKeyValueTag
+
+```csharp
+public static bool GetQueryKeyValueTag(UGCQueryHandle_t handle, 
+                                uint index, 
+                                uint keyValueTagIndex, 
+                                out string key, 
+                                string value)
+```
+
+Retrieve the details of a key-value tag associated with an individual workshop item after receiving a querying UGC call result.
+
+### GetQueryMetadata
+
+```csharp
+public static bool GetQueryMetadata(UGCQueryHandle_t handle, 
+                                uint index, 
+                                out string metadata, 
+                                uint size)
+```
+
+Request the metadata of a UGC item
+
+### GetQueryNumAdditionalPreviews
+
+```csharp
+public static uint GetQueryNumAdditionalPreviews(UGCQueryHandle_t handle, 
+                                uint index)
+```
+
+Request the number of previews of a UGC item
+
+### GetQueryNumKValueTags
+
+```csharp
+public static uint GetQueryNumKeyValueTags(UGCQueryHandle_t handle, uint index)
+```
+
+Request the number of key value tags for a UGC item
+
+### GetQuyPreviewURL
+
+```csharp
+public static bool GetQueryPreviewURL(UGCQueryHandle_t handle, 
+                uint index, 
+                out string URL, 
+                uint urlSize)
+```
+
+Get the preview URL of a UGC item
+
+### GetQueryResults
+
+```csharp
+public static bool GetQueryResult(UGCQueryHandle_t handle, 
+                uint index, 
+                out SteamUGCDetails_t details)
+```
+
+Fetch the results of a UGC query
+
+### GetQueryStatistic
+
+```csharp
+public static bool GetQueryStatistic(UGCQueryHandle_t handle, 
+                uint index, 
+                EItemStatistic statType, 
+                out ulong statValue)
+```
+
+Fetch the statistics of a UGC query
+
+### GetSubscribedItems
+
+```csharp
+public static uint GetSubscribedItems(PublishedFileId_t[] fileIDs, 
+                uint maxEntries)
+```
+
+Get the file IDs of all subscribed UGC items up to the array size
+
+### GetSubscribedItems
+
+```csharp
+public static PublishedFileId_t[] GetSubscribedItems()
+```
+
+Returns the list of items the user is subscribed to
+
+### GetUserItemVote
+
+```csharp
+public static void GetUserItemVote(PublishedFileId_t fileId, 
+                Action<GetUserItemVoteResult_t, bool> callback)
+```
+
+Get the item vote value of a UGC item. The callback for this would look like the following
+
+```csharp
+void Callback(GetUserItemVoteResult_t responce, bool ioFailure)
+{
+    // Do Work
+}
+```
+
+### GetWorkshopEULAStatus
+
+```csharp
+public static void GetWorkshopEULAStatus(
+                Action<WorkshopEULAStatus_t, bool> callback)
+```
+
+Asynchronously retrieves data about whether the user accepted the Workshop EULA for the current app. The callback for this method would look like the following.
+
+```csharp
+void Callback(WorkshoEULAStatus_t responce, bool ioFailure)
+{
+    // Do Work
+}
+```
+
+### ShowWorkshopEULA
+
+```csharp
+public static bool ShowWorkshopEULA()
+```
+
+
+
 ## How To
 
 ### Create and Update Items
