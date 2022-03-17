@@ -39,8 +39,8 @@ If yes; then know that those custom installs would have Steamworks.NET artifacts
 #### How to fix
 
 1. Remove the offending files\
-   Steamworks.NET manual installs used to install bits in several different folders (scripts, plugins, examples, etc.)\
-   Many old assets used to burry a copy or customized version of Steamworks.NET in there asset.
+   Steamworks.NET manual installs would have installed bits in several different folders (scripts, plugins, examples, etc.)\
+   Many old assets would have burried a copy or customized version of Steamworks.NET in there asset.
 2. Once you are positive that you fully remove Steamworks.NET and related files from your Assets folder.\
    Remove Steamworks.NET from package manager and then reinstall it
 
