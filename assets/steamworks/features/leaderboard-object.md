@@ -40,12 +40,12 @@ Why?
 Valve have not provided an official means to do so through the Steam API.
 {% endhint %}
 
-![](<../../../.gitbook/assets/image (182) (1).png>)
+![](<../../../.gitbook/assets/image (182) (1) (1).png>)
 
 ## Leaderboard Manager
 
 The leaderboard manager is a simple component that greatly simplifies reading and writing data to and from a given leaderboard and exposes helpful events to the Unity Inspector.
 
-![](<../../../.gitbook/assets/image (181).png>)
+![](<../../../.gitbook/assets/image (181) (1).png>)
 
 You can learn more about the [Leaderboard Manager](../components/leaderboard-manager.md) in its documentation article and by reviewing the [4 Leaderboards](../learning/sample-scenes/4-leaderboards.md) sample scene.

@@ -26,6 +26,6 @@ The Ballistic raycast method performs raycasts identifying any points of collisi
 
 See the DEMO SCRIPTS > Line game object. This uses a Ballistic Path component and a Unity Line Renderer to draw a determined path.
 
-![](<../../../../.gitbook/assets/image (187).png>)
+![](<../../../../.gitbook/assets/image (187) (1).png>)
 
 While this component is available for use and will satisfy many simple use cases it also serves as a demonstration on how to use the Ballistics.Raycast method effectively.

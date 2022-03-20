@@ -6,7 +6,7 @@ Available in PhysKit [Complete](https://prf.hn/l/rpoyznk).
 
 ## Introduction
 
-![](<../../../.gitbook/assets/image (188) (1).png>)
+![](<../../../.gitbook/assets/image (188) (1) (1).png>)
 
 Added to an object you want to have effected by a Force Effect Source. The receiver enables this object to listen for local and global Force Effects and allows you to configure what effectors will be listened to or ignored.
 

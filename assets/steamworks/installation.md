@@ -136,7 +136,7 @@ This thread might also be of help for you
 
 When Steamworks.NET is successfuly installed you will see messages in your console log similar to the following. These messages indicate what was installed, you can also review these in your Package Manager.
 
-![](<../../.gitbook/assets/image (164).png>)
+![](<../../.gitbook/assets/image (164) (1).png>)
 
 {% hint style="info" %}
 This always installs the latest code available and so the version number you see may very.

@@ -6,7 +6,7 @@ Available in UX [Complete](https://prf.hn/l/rpV2JWe) and [Foundaiton](https://pr
 
 ## Introduction
 
-![](<../../../../.gitbook/assets/image (188).png>)
+![](<../../../../.gitbook/assets/image (188) (1).png>)
 
 This scene demonstrates the use of animated and context sinsative cursors. Each box changes the style of the defualt cursor and has several controls which will change the context of the cursor several of which are animated.
 

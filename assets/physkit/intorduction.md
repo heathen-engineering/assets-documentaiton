@@ -44,4 +44,4 @@ We often want to add a bit of life to our props and environments. Verlet Spring 
 
 ![A Verlet Spring Hierarchy simulating a chain whipping around in a circle (1 Verlet Spring Sample scene)](<../../.gitbook/assets/image (170).png>)
 
-![Rolling a ball through a field of a few hundred Verlet Springs](<../../.gitbook/assets/image (181) (1).png>)
+![Rolling a ball through a field of a few hundred Verlet Springs](<../../.gitbook/assets/image (181) (1) (1).png>)

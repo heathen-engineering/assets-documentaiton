@@ -129,13 +129,13 @@ If you need to repair a board that is misbehaving you will need to contact Valve
 
 ## Downloadable Content
 
-![](<../../../.gitbook/assets/image (181) (1) (1).png>)
+![](<../../../.gitbook/assets/image (181) (1) (1) (1).png>)
 
 You can view the subscription status of all DLC in the DLC tab
 
 ## Inventory
 
-![](<../../../.gitbook/assets/image (164) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (164) (1) (1) (1) (1) (1).png>)
 
 The inventory tab will display all the items registered to your game and provides tools for clearing and granting each item
 

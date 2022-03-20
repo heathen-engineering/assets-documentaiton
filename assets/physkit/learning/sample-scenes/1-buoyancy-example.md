@@ -6,7 +6,7 @@ Available in PhysKit [Complete](https://prf.hn/l/rpoyznk).
 
 ## Introduction
 
-![](<../../../../.gitbook/assets/image (175).png>)
+![](<../../../../.gitbook/assets/image (175) (1).png>)
 
 This scene demonstrates the use of the [Buoyancy Body](../../components/buoyant-body.md). [Buoyancy Body Drag](../../components/buoyant-body-drag.md) and [Surface Tool](../../components/surface-tool.md) components. The sample scene uses a custom [Surface Tool](../../components/surface-tool.md) to simulate a crude wave effect to demonstrate how you might connect Surface Tool to whatever water/ocean simulation tool you prefer to use.
 

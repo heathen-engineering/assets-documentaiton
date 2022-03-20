@@ -6,7 +6,7 @@ Available in PhysKit [Complete](https://prf.hn/l/rpoyznk).
 
 ## Introduction
 
-![](<../../../../.gitbook/assets/image (164) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (164) (1) (1) (1).png>)
 
 Calculates a noise pattern similar to that of various wind tools and shaders. This effect uses Quadratic Drag to modify the strength of the effect per subject. ... that is this effect applies more strongly to objects with a higher drag coefficient.
 

@@ -146,7 +146,7 @@ void OnDestroy()
 public LeaderboardObject leaderboard
 ```
 
-![](<../../../.gitbook/assets/image (152).png>)
+![](<../../../.gitbook/assets/image (152) (1).png>)
 
 Set this to the leaderboard you want this manager to "manage"
 
