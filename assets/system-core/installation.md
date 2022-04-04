@@ -1,8 +1,16 @@
 # Installation
 
-System Core is a freely available and is available on GitHub as is, without warrenty. It is lisensed under the MIT license agreement with a Common Clause condition allowing you to use it for any purpose ... other than releasing a competating asset on the Unity Asset Store :sunglasses:
+System Core is a freely available and is available on GitHub as is, without warranty. It is licensed under the MIT license agreement with a Common Clause condition allowing you to use it for any purpose … other than copying or deriving from it and releasing a compilating asset :sunglasses:
 
-To install System Core&#x20;
+{% hint style="success" %}
+You can of course create assets built on top of System Core and release them on the Asset Store. The common clause is simply meant to prevent people from copying or deriving from our code and releasing it as if it was there own.
+{% endhint %}
+
+## Package Manager Installation
+
+{% hint style="info" %}
+Note that various assets are dependent on System Core and may have installed it for you via the Package Manager.
+{% endhint %}
 
 1. Open the Package Manager
 2. Click the "+" (plus) button located in the upper left of the window
