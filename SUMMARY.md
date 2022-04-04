@@ -18,6 +18,10 @@
   * [Project Architecture](company/concepts/project-architecture.md)
   * [Unity Release Version](company/concepts/unity-release-version.md)
   * [Visual Scripting](company/concepts/visual-scripting.md)
+* [Asset Developers](company/asset-developers/README.md)
+  * [Editor Coroutines](company/asset-developers/editor-coroutines.md)
+  * [Package Manger in C#](company/asset-developers/package-manger-in-c.md)
+  * [Session State Values](company/asset-developers/session-state-values.md)
 * [Package Manager Install](company/package-manager-install.md)
 
 ## Assets
@@ -260,6 +264,8 @@
       * [ToggleEventHelper](assets/steamworks/ugui-tools/ui-components/toggleeventhelper.md)
 * [System Core](assets/system-core/README.md)
   * [Installation](assets/system-core/installation.md)
+  * [Learning](assets/system-core/learning/README.md)
+    * [Asset Developers](assets/system-core/learning/asset-developers.md)
   * [Command Line](assets/system-core/command-line.md)
   * [Game Events](assets/system-core/game-events.md)
   * [Scriptable Tags](assets/system-core/scriptable-tags.md)
