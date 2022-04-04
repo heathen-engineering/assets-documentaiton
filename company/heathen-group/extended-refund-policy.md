@@ -22,7 +22,7 @@ This includes conditions that are not in the control of Heathen, such as the arc
 
 #### Requirements
 
-* Your project must be on the latest build of the current legacy LTS release, or a newer LTS release, or the latest non-beta release of Unity; the link below has more information on these versions.\
+* Your project must be on the latest build of the current LTS release, or a newer LTS release, or the latest non-beta release of Unity; the link below has more information on these versions.\
   [https://unity3d.com/unity/qa/lts-releases](https://unity3d.com/unity/qa/lts-releases)\
   At the time of this writing the current legacy LTS is Unity 2019 LTS\
 
@@ -52,7 +52,7 @@ You are encouraged to read the articles above from Unity Support, where the poli
 >   * the asset was not as advertised (including any demo made available);
 >   * the asset is not compatible with the most recent official release of Unity **and** no information was provided at the Unity Asset Store to indicate that the Asset is so incompatible
 >   * The asset includes unauthorized intellectual property
-> * The asset is removed from the Unity Asset Store within 4 weeks of purchase of a license to an asset an where
+> * The asset is removed from the Unity Asset Store within 4 weeks of purchase of a license to an asset and where
 >   * the publisher caused the removal
 >   * Unity removes the Asset because it is or is alleged to be defective, malicious, infringes intellectual property rights of another person, defames, violates a third party's right of publicity or privacy or does not comply with applicable law
 
@@ -76,11 +76,11 @@ _No_
 
 Unity controls sales and does not have a price assurance scheme at the time of this writing. Your welcome to send Unity a support request on the subject.
 
-Do understand that some cutoff point has to exist and traditionally that cut off point is the start of the sale.
+Do understand that some cut-off point has to exist and traditionally that cut off point is the start of the sale.
 
 ### I purchased the asset by mistake
 
-In this case if you have not yet downloaded the asset Unity will typically honor the refund request directly, simply contact there support group. Unity may require a confirmation from Heathen, Heathen will always approve a refund of an asset that has not been downloaded and was purchased within 14 days.
+In this case if you have not yet downloaded the asset Unity will typically honour the refund request directly, simply contact there support group. Unity may require a confirmation from Heathen, Heathen will always approve a refund of an asset that has not been downloaded and was purchased within 14 days.
 
 If you have downloaded the asset then this unfortunately falls outside the refund policy.
 

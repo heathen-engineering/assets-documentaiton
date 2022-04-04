@@ -9,12 +9,12 @@ description: Understanding the Heathen Asset folder structure
 
 The whole drive behind this effort is to create cleaner more efficient Unity projects. The idea is you import only what is needed to create your product and omit anything that doesn't need to be compiled into that.
 
-Obviously sample scenes and code are useful for learning but they do not belong in a production project see our [Project Architecture article](concepts/project-architecture.md) for guidance on how you can keep your production project clean while having access to a superior learning environment.
+Obviously sample scenes and code are useful for learning but they do not belong in a production project see our [Project Architecture article](../concepts/project-architecture.md) for guidance on how you can keep your production project clean while having access to a superior learning environment.
 {% endhint %}
 
 ## Introduction
 
-All modern Heathen assets follow a standard folder structure that is designed to help you keep your projects lean and efficient.&#x20;
+All modern Heathen assets follow a standard folder structure that is designed to help you keep your projects lean and efficient. The idea is that you only import what you need to use, for example in most production projects you would not import the Samples. Prefabs or Documentation folders.
 
 {% hint style="warning" %}
 While our assets are not dependent on the location of files; that is you can move things around ; we do use Unity Assembly Definition files.

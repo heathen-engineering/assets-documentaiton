@@ -5,8 +5,9 @@
 ## General <a href="#company" id="company"></a>
 
 * [Introduction](company/introduction.md)
-* [Asset Folder Structure](company/asset-folder-structure.md)
-* [Asset Refund Policy](company/extended-refund-policy.md)
+* [Heathen Group](company/heathen-group/README.md)
+  * [Asset Refund Policy](company/heathen-group/extended-refund-policy.md)
+  * [Asset Folder Structure](company/heathen-group/asset-folder-structure.md)
 * [General Guides](company/concepts/README.md)
   * [Bootstrap Scene](company/concepts/bootstrap-scene.md)
   * [Callbacks](company/concepts/callbacks.md)
@@ -15,6 +16,7 @@
   * [Multi-Scene Architecture](company/concepts/multi-scene-architecture.md)
   * [Namespace and Using](company/concepts/namespace-and-using.md)
   * [New Input System](assets/ux/learning/enabling-new-input-system.md)
+  * [Package Manager Install](company/concepts/package-manager-install.md)
   * [Project Architecture](company/concepts/project-architecture.md)
   * [Unity Release Version](company/concepts/unity-release-version.md)
   * [Visual Scripting](company/concepts/visual-scripting.md)
@@ -22,7 +24,6 @@
   * [Editor Coroutines](company/asset-developers/editor-coroutines.md)
   * [Package Manger in C#](company/asset-developers/package-manger-in-c.md)
   * [Session State Values](company/asset-developers/session-state-values.md)
-* [Package Manager Install](company/package-manager-install.md)
 
 ## Assets
 
@@ -352,6 +353,5 @@
 ## Services
 
 * [Introduction](services/introduction.md)
-* [Consulting](services/consulting.md)
-* [Development](services/development.md)
+* [Consulting & Contracting](services/consulting.md)
 * [Publishing](services/publishing.md)
