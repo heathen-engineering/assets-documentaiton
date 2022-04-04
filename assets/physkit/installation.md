@@ -6,6 +6,8 @@ description: Installing the PhysKit asset from the Unity Asset Store
 
 ## GitHub Sponsors
 
+{% embed url="https://github.com/sponsors/heathen-engineering" %}
+
 {% hint style="success" %}
 Better for us and better for you!
 

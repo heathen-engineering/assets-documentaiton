@@ -6,6 +6,8 @@ description: User eXperience asset from Heathen Engineering;
 
 ## GitHub Sponsor
 
+{% embed url="https://github.com/sponsors/heathen-engineering" %}
+
 {% hint style="success" %}
 Better for us and better for you!
 

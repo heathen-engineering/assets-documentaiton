@@ -6,8 +6,6 @@ description: Installing Heathen Engineering's Steamworks and related componenets
 
 ## GitHub Sponsors
 
-{% embed url="https://github.com/sponsors/heathen-engineering" %}
-
 {% hint style="success" %}
 Better for us and better for you!
 
