@@ -24,11 +24,36 @@ Import into Unity as you normally would and it will install all dependencies for
 ## Updating Existing Installs
 
 {% hint style="info" %}
-When upgrading from Steamworks Foundaiton or Steamworks Complete versions 2.16.0 or earlier you should fully remove your existing install before importing the new Steamworks Foundaiton or Steamworks Complete package.
+When upgrading from Steamworks Foundation or Steamworks Complete versions 2.16.0 or earlier you should fully remove your existing install before importing the new Steamworks Foundation or Steamworks Complete package.
 
 
 
-This will help insure a clean and efficent install process. This is due to System Core being moved out of Unity Asset Store and into GitHub as a dependency similar to Steamworks.NET. The asset will handle this install process for you but needs any old versions removed first.
+This will help insure a clean and efficient install process. This is due to System Core being moved out of Unity Asset Store and into GitHub as a dependency similar to Steamworks.NET. The asset will handle this install process for you but needs any old versions removed first.
+{% endhint %}
+
+{% hint style="warning" %}
+**How to clean for re-install!**
+
+If for any reason you want or need to clean your project for a fresh reinstall follow these simple steps
+
+
+
+1\) Removal\
+If you installed Steamworks Complete from Unity Asset Store, delete the \_Heathen Engineering folder
+
+If you installed from Package Manager, remove it from Package Manager
+
+2\) Remove Dependencies\
+Remove Steamworks.NET ... if Steamworks Complete is the only Heathen asset you are using you can also remove System Core
+
+3\) Remove Script Defines\
+`HE_SYSCORE`, `HE_STEAMCOMPLET` and `STEAMWORKS_NET` can all be removed from your Player Settings > Script Defines
+
+
+
+You are now ready to reinstall:
+
+The **ONLY** thing you need to install your self is Steamworks Complete, it will handle the install of all other dependencies.
 {% endhint %}
 
 ## Import
