@@ -36,3 +36,20 @@ System Core creates a script define `HE_SYSCORE` when it is installed properly. 
     //System Core is not installed, maybe you should ask them to install it?
 #endif
 ```
+
+## Derived System Core
+
+So you really want to make your own flavour of System Core. No problem, while you cant publish it to complete with System Core proper you can certainly fork and make your own for your own use.
+
+Keep in mind that other assets may be checking for specifically one of Heathen's versions via the Package Manager. An alternative to creating your own version of System Core is to extend System Core.
+
+## System Core Extension
+
+The best method for adding your own spin to things.
+
+This works out better because:
+
+* Other assets dependent on specific versions of System Core wont have issue with your extension like they would with a derivative.
+* Since its an extension you can publish it however you like including for sale ... in fact we encourage that :)
+
+This is simply creating your own asset that is dependent on System Core and extends its classes, interfaces, etc.
