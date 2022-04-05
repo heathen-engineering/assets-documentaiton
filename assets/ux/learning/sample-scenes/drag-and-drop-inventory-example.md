@@ -6,7 +6,7 @@ Available in UX [Complete](https://prf.hn/l/rpV2JWe)
 
 ## Introduction
 
-![](<../../../../.gitbook/assets/image (174) (1).png>)
+![](<../../../../.gitbook/assets/image (174) (1) (1).png>)
 
 This scene gives a more practice example of code free drag and drop and shows how to use tags and rules to control what can be draged to where. In this scene each drag item is idetified with a color and a number, each slot has either or both a number and a color.&#x20;
 

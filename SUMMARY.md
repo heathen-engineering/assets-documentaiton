@@ -256,7 +256,6 @@
       * [FriendIdField](assets/steamworks/ugui-tools/ui-components/friendidfield.md)
       * [FriendIdLabel](assets/steamworks/ugui-tools/ui-components/friendidlabel.md)
       * [FriendList](assets/steamworks/ugui-tools/ui-components/friendlist.md)
-      * [FriendListRecord](assets/steamworks/ugui-tools/ui-components/friendlistrecord.md)
       * [FriendName](assets/steamworks/ugui-tools/ui-components/friendname.md)
       * [FriendProfile](assets/steamworks/ugui-tools/ui-components/friendprofile.md)
       * [LeaderboardResults](assets/steamworks/ugui-tools/ui-components/leaderboardresults.md)

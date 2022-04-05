@@ -40,7 +40,7 @@ public IntStatObject myIntStat;
 
 This will make a new reference slot you can drag and drop your stat into on the Unity inspector for that object.
 
-![](<../../../.gitbook/assets/image (174) (1) (1).png>)
+![](<../../../.gitbook/assets/image (174) (1) (1) (1).png>)
 
 You can now drag the desired stat object from your Steam Setting into that slot.
 
