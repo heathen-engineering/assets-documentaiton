@@ -71,6 +71,8 @@ if(callback != null)
 ```
 {% endhint %}
 
+Methods that take callbacks as parameters can be called using [Lambda Expression. See our article on Lambda Expression as it applies to callbacks here.](lambda-expressions.md#callbacks)
+
 ## Examples
 
 Callbacks are typically used with asynchronous calls, such as calls to web services, other processes or multi-threaded calls. A callback operates much like an event however a callback is for that purpose only where as event is registered to aka "listened to" and may be invoke by any range of processes where a callback is passed into the call that will ultimately invoke it.
