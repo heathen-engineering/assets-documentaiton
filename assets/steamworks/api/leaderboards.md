@@ -250,6 +250,19 @@ void CallbackHandler(LeaderboardScoreUploaded_t result, bool IOError);
 
 Uploads a score and optionally details for the user to the target leaderboard.
 
+#### Parameters
+
+* `SteamLeaderboard_t leaderboard`\
+  The leaderboard to upload the score to
+* `ELeaderboardUploadScoreMethod method`\
+  The method to upload the score with ... see [This Article](https://partner.steamgames.com/doc/api/ISteamUserStats#ELeaderboardUploadScoreMethod) for full details.
+* `int score`\
+  The score to be uploaded
+* `int[] details`\
+  An array of details, this cannot be longer than int\[64]. To read the details you must configure the desired length on your Leaderboard Object e.g. in you Steam Settings you must indicate how many detail entries the board's records will have.
+* `Action<LeaderboardScoreUploaded_t, bool> callback`\
+  A callback that will respond with the result
+
 ## How To
 
 {% hint style="success" %}

@@ -54,16 +54,40 @@ Why even show it if its invalid, ask Valve, its part of the enums they provide s
 ### Get User Entries
 
 ```csharp
-public void GetUserEntry(callback);
+public void GetUserEntry(Action<LeaderboardEntry, bool> callback)
+```
+
+The callback should be in the form of
+
+```csharp
+public void Callback(LeaderbaordEntry result, bool IOError);
 ```
 
 Returns the entry for the local user
 
+### Get Entries
+
 ```csharp
-public void GetEntries(request, start, end, callback);
+public void GetEntries(ELeaderboardDataRequest request, 
+        int start, 
+        int end, 
+        Action<LeaderboardEntry[], bool> callback)
 ```
 
-Get a range of entries matching the reequest type and range of data
+Get a range of entries matching the request type and range of data
+
+```csharp
+public void GetEntries(UserData[] users, 
+        Action<LeaderboardEntry[], bool> callback)
+```
+
+Get the data for the specific set of users
+
+The callback for both overloads should be in the form of
+
+```csharp
+public void Callback(LeaderbaordEntry[] results, bool IOError);
+```
 
 ### Register
 
@@ -76,14 +100,25 @@ Finds or creates the board according to configuration values. This is handled by
 ### Upload Score
 
 ```csharp
-public void UploadScore(score, method, callback);
+public void UploadScore(int score, 
+        ELeaderboardUploadScoreMethod method, 
+        Action<LeaderboardScoreUploaded_t, bool> callback = null)
 ```
 
 ```csharp
-public void UploadScore(score, details, method, callback);
+public void UploadScore(int score, 
+        int[] scoreDetails, 
+        ELeaderboardUploadScoreMethod method, 
+        Action<LeaderboardScoreUploaded_t, bool> callback = null)
 ```
 
-Uploads a given score and optionally includes details
+The callback should be in the form:
+
+```csharp
+public void Callback(LeaderboardScoreUploaded_t result, bool IOError);
+```
+
+Uploads a given score and optionally includes details, you can optionally provide an array of details.
 
 ### Attach File
 
