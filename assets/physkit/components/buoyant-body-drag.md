@@ -6,7 +6,7 @@ Available in PhysKit [Complete](https://prf.hn/l/rpoyznk).
 
 ## Introduction
 
-![](<../../../.gitbook/assets/image (177).png>)
+![](<../../../.gitbook/assets/image (177) (1).png>)
 
 Modifies the drag effect applied to a body based on the portion of that body that is submerged under a Surface Tool.
 

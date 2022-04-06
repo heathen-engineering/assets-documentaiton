@@ -28,7 +28,7 @@ NOTE
 Usually Unity will do this for you when you install the Input System as done in Step 1 so this should already be done for you.
 {% endhint %}
 
-![](<../../../.gitbook/assets/image (167) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (167) (1) (1) (1) (1).png>)
 
 ## Disable
 

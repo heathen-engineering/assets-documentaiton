@@ -20,6 +20,18 @@ For smaller groups/clans you can also iterate over the members of the chat howev
 
 ## Definition
 
+### Namespace
+
+```csharp
+using HeathenEngineering.SteamworksIntegraiton;
+```
+
+### Definition
+
+```csharp
+public class ClanChatDirector : MonoBehaviour;
+```
+
 ## Fields and Attributes
 
 |             |               |                                                                                                                                                                                                                            |

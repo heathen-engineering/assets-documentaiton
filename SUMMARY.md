@@ -8,6 +8,7 @@
 * [Heathen Group](company/heathen-group/README.md)
   * [Asset Refund Policy](company/heathen-group/extended-refund-policy.md)
   * [Asset Folder Structure](company/heathen-group/asset-folder-structure.md)
+  * [Doc Formatting](company/heathen-group/doc-formatting.md)
 * [General Guides](company/concepts/README.md)
   * [Bootstrap Scene](company/concepts/bootstrap-scene.md)
   * [Callbacks](company/concepts/callbacks.md)

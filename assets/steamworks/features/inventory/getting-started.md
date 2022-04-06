@@ -49,7 +49,7 @@ Every Steam Inventory Schema feature is available but the inspector will hide on
 
 ![Normal items can be traded, marketed, sold, etc.](<../../../../.gitbook/assets/image (166) (1) (1) (1) (1) (1).png>)
 
-![Tag Generators only exist to attach to other items as generators](<../../../../.gitbook/assets/image (177) (1).png>)
+![Tag Generators only exist to attach to other items as generators](<../../../../.gitbook/assets/image (177) (1) (1).png>)
 
 ## **Step 3: Uploading the Schema**
 
