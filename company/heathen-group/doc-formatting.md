@@ -234,3 +234,43 @@ See in the above screen grab, how it shows me the comment for the method, lists 
 \
 [Learn More HERE!](https://code.visualstudio.com/docs/editor/intellisense)
 {% endhint %}
+
+## Event Definitions
+
+When defining events we use the same approach, that is we show how the event is declared in code and will describe when it is invoked and what its handler should look like.
+
+For example
+
+```csharp
+public UnityEvent evtSomeEvent;
+```
+
+This means that this object has a standard UnityEvent type event named `evtSomeEvent` below it you should see an example of a handler for this event.
+
+```csharp
+public void HandleSomeEvent()
+{
+    //Do Work
+}
+```
+
+This is meant to show you what a valid event handler would look like, e.g. what parameters are required and what they mean if any.
+
+![](<../../.gitbook/assets/image (178).png>)
+
+{% hint style="info" %}
+Visual Studio Intellisence is your friend!
+
+
+
+See in the above screen grab, we have went to add a listener and typed the desired name of our event handler ... that method doesn't exist yet so Visual Studio suggested completion is offering to create the method for us.
+
+This suggestion comes up when I right click on the red line indicating a problem and then click the light bulb to get suggestions.&#x20;
+
+
+
+A programmer that knows how to use its tools expends FAR less effort than one that doesn't and gets FAR more done. More reason to focus on learning the right way as opposed to "Just make it work"
+
+\
+[Learn More HERE!](https://code.visualstudio.com/docs/editor/intellisense)
+{% endhint %}

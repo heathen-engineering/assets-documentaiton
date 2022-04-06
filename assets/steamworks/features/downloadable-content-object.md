@@ -24,6 +24,6 @@ The [Downloadable Content Object](../objects/downloadable-content.md) helps you 
 
 Once completed all of the DLC registered to your application will be listed under your Steam Settings
 
-![](<../../../.gitbook/assets/image (178) (1) (1).png>)
+![](<../../../.gitbook/assets/image (178) (1) (1) (1).png>)
 
 And can be used to test ownership of the indicated DLC. Please see the [Downloadable Content Object](../objects/downloadable-content.md) for details on the use of the object.
