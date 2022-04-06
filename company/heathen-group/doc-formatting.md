@@ -4,6 +4,14 @@ description: Understanding Heathen documentation formatting.
 
 # Doc Formatting
 
+{% hint style="success" %}
+This standard is newer than some of our articles so some things may not yet be moved over into this format.&#x20;
+
+
+
+If you find something that is missing or confusing let us know we are deeply invested in helping you Do More with Heathen.
+{% endhint %}
+
 ## Overview
 
 Here we will outline the general format to our documents, how to read them and why we do it this way.&#x20;
