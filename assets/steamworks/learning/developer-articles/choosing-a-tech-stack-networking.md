@@ -43,7 +43,7 @@ Low Level Application Program Interface ... in this context we are referring to 
 
 In this context we are referring to part of a networking tech stack that deals with the transmission of data. Many networking stacks are transport agnostic ... meaning you can swap in and out multiple transports. For example Mirror, NetCode and FishNetworking all use such a transport system so you can even at run time swap between TCP, UDP, KCP and SteamNetworking ... why usually to support multi-platform. The real point is the transport is separate from the "HLAPI"
 
-## Options
+## Our Preference
 
 This is wholly our own opinion but for the TL:DR out there (there are lots of you) this is what we feel is the best option and why.
 
@@ -77,21 +77,41 @@ Finally this is a unique option so not really 3rd place rather this is the optio
 
 ## Technology
 
-### FishNetworking
+### [FishNetworking](https://github.com/FirstGearGames/FishNet)
 
 FishNetworking is a newer HLAPI compared to the other options and is very similar sporting that same uNET style structure. As always this also has a ready to use [Steam transport](https://github.com/FirstGearGames/FishySteamworks).
 
-### Mirror
+With this and similar HLAPI there isn't a ton to say that isn't available at the links above, we consider this a viable option and in many cases the best option for your HLAPI.
+
+### [GameLift](https://aws.amazon.com/gamelift/)
+
+From Amazon and built on the AWS platform GameLift is very similar to PlayFab in that its a full service Live Operations solution which pairs nicely with other tools or can function as the core of your stack as noted in the our preference section above.
+
+### [G-Portal](https://www.g-portal.com/business/)
+
+An often overlooked solution by indies but quite common with modern Survival games mil sims. G-Portal is a classic style host, that means it is just server hosting nothing more. That makes it easy for you or your gamers to rent servers for your favourite games. You can use G-Portal to set up dedicated Steam Game Servers or you can leave that to your players to do saving you the costs.
+
+While we haven't used it our selves yet we have reviewed it and plan to use it in upcoming projects. You can see it used in games like Conan Exiles where players can easily stand up a server which will be discoverable via Steam Game Server Browsing. So this is really a great tool when you don't need extra backend services such as you get from PlayFab or GameLift and or you want to keep operations cost to zero.
+
+### [Mirror](https://github.com/vis2k/Mirror)
 
 Mirror is or rather started life as a variant of uNET. When Unity abandoned uNET; Mirror picket it up and ran with it. Pretty easy to use and as is most important it has a ready to use [Steam transport](https://github.com/Chykary/FizzySteamworks/).
 
-### NetCode for GameObjects
+With this and similar HLAPI there isn't a ton to say that isn't available at the links above, we consider this a viable option and in some cases the best option for your HLAPI.
+
+### [Multiplay](https://unity.com/products/multiplay)
+
+More of a partner really than a technology Multiplay are defiantly big boys in the industry. They do not provide for you HLAPI or LLAPI but they do handle those backend services and operations needs.
+
+### [NetCode for GameObjects](https://github.com/Unity-Technologies/com.unity.netcode.gameobjects)
 
 NetCode the HLAPI formerly known as MLAPI related to uNET now owned by Unity
 
 ![](../../../../.gitbook/assets/FacepalmGIF.gif)
 
-Why this one's lineage is well laughable to say the least it also has a [Steam transport](https://github.com/Unity-Technologies/multiplayer-community-contributions/tree/main/Transports/com.community.netcode.transport.steamnetworking).
+While this one's lineage is well laughable to say the least; it also has a [Steam transport](https://github.com/Unity-Technologies/multiplayer-community-contributions/tree/main/Transports/com.community.netcode.transport.steamnetworking).
+
+With this and similar HLAPI there isn't a ton to say that isn't available at the links above, we consider this a viable option and in some cases the best option for your HLAPI.
 
 Why is it funny?
 
@@ -99,13 +119,35 @@ MLAPI was closely related to uNET in form and function … which Unity abandoned
 
 Oh and MLAPI just in and of its self is a LOL … its a HLAPI the name just adds insult … MLAPI was a concept as well actually Unity has a "MLAPI" concept for its DOTS stack … not a tech but a concept like you have HLAPI and LLAPI … so ya the name of this product was a tragedy as is its history.
 
-### Photon
+### [Photon](https://www.photonengine.com)
 
 ![](../../../../.gitbook/assets/NoGodPleaseNoGIF.gif)
 
+Jokes aside, Photon's claim to fame here is&#x20;
+
+1. Early to market\
+   When Photon came on the scene we had RakNet, Steamworks.NET and that was about it in terms of indie frinedly networking bits and neither was a full stack; so for its day ... a god send.
+2. One Stop Shop\
+   Photon everything all in one ... IMO that is a bad thing but its an easy thing I suppose.&#x20;
+
+Why don't we like it
+
+* Quality of service compared to other options is low
+* Feature set compared to other options is low
+* Scalability compared to other options is low
+* Price is high
+* Method of metering price is not indie friendly
+* Tech stack is proprietary so switching has a high dev cost
+
+All that said you can use this along side Steamworks.NET but you will not be using Steam's Networking and you will have many redundant services and features.
+
+### [PlayFab](https://playfab.com)
+
+From Microsoft and built on the Azure platform, PlayFab is a Live Operations provider, it covers all of your backend service needs, hosting and a lot more. It has integrations with Steam and works wonderfully as an add on to any networking stack or as a core component in your networking stack such as seen in our preference section about for the Client Server set up.
+
 ### Steam Networking
 
-Steam Networking Sockets API … is in our opinion the best option for any indie or really any game that is not looking for mutli-platform … and even then with multiplexing … its still the best for your Steam Gamers. Steam Networking is a "LLAPI" in the context of our terms so its not the whole stack ... just the most important part.
+Steam Networking Sockets API … this is a LLAPI, it can  used on its own without a HLAPI if your comfortable doing that or you can (and most do) us it with a HLAPI like FishNetworking or Mirror. Steam's Networking APIs are in our opinion the best option for any indie or really any game that is not looking for mutli-platform … and even then with multiplexing … its still the best for your Steam Gamers. Steam Networking is a "LLAPI" in the context of our terms so its not the whole stack ... just the most important part.
 
 You can read more about Steam's networking tools [here](https://partner.steamgames.com/doc/api/ISteamNetworkingSockets). Don't let your eyes melt out your head the following HLAPIs all have transports for Steam already built for you just plug and play.
 
