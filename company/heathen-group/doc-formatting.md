@@ -148,7 +148,7 @@ Visual Studio can help you identify what is what in its auto complete and sugges
 
 ![](<../../.gitbook/assets/image (167).png>)
 
-Here we see that "example" has a member of type `Attribute` named `attribute` and it has a member of type `Field` named `Field` you can tell not just by the proper syntax formatting (lower case attribute, upper case field) but also by the icon beside them (blue box = attribute) and (Gear = Field)
+Here we see that "example" has a member of type `Attribute` named `attribute` and it has a member of type `Field` named `Field` you can tell not just by the proper syntax formatting (lower case attribute, upper case field) but also by the icon beside them (blue box = attribute) and (Wrench = Field)
 
 ### Field
 
@@ -156,7 +156,7 @@ When defining fields and attributes its first keenly important that you understa
 
 {% embed url="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/fields" %}
 
-A field acts like an attribute in that it can be assigned to using the standard assignment operator `=` and can be read from in the same ... assuming it is accessible. The key difference is that a field's `get` and `set` accessors can have different accessibility, meaning a field can be made read only, or write only by virtue of controlling the accessibility of each. Also of use is that the `get` and `set` of a field are actually methods, so these can run some processing and then return the results as opposed to simply read/write an attribute of the object.
+A field acts like an attribute in that it can be assigned to using the standard assignment operator `=` and can be read from in the same … assuming it is accessible. The key difference is that a field's `get` and `set` accessors can have different accessibility, meaning a field can be made read only, or write only by virtue of controlling the accessibility of each. Also of use is that the `get` and `set` of a field are actually methods, so these can run some processing and then return the results as opposed to simply read/write an attribute of the object.
 
 The definition format we use for a field is as follows.
 
@@ -181,7 +181,7 @@ This would indicate that said field only has an accessible `get` accessor … so
 #### Tips
 
 {% hint style="info" %}
-It is important to know when a member is a Field as opposed to a simple attribute. A field requires additional processing to execute and must process every time its read. As such when using a field multiple times in a frame you should be cashing that fields value.
+It is important to know when a member is a Field as opposed to a simple attribute. A field requires additional processing to execute and must process every time its read. As such when using a field multiple times in a frame you should be cashing that field's value and using the cash not accessing the field every time.
 {% endhint %}
 
 ```csharp
@@ -192,8 +192,8 @@ private void Update()
 }
 ```
 
-A great example of this is Unity's Time.time, Time.deltaTime, etc., these are actually a fields and it must calculate the value every time it is read …\
-That's a lot of time wasted if your reading Time.time multiple times in a frame … save your self and your players pain and just cashed the value at the top of the frame and then use the cashed value all you like.
+A great example of this is Unity's Time.time, Time.deltaTime, etc., these are actually all fields and it must calculate the value every time it is read …\
+That's a lot of time wasted if your reading Time.deltaTime multiple times in a frame … save your self and your players pain and just cash the value at the top of the frame and then use the cashed value all you like.
 
 ```csharp
 private void Update()
@@ -226,11 +226,13 @@ When defining a method we use the same basic concept and show you how we define 
 public void MethodName(int arg0, int[] arg1 = null);
 ```
 
-This again gives you a clear understanding on where you can access the method, what its proper name is, what paramiters it has, what order they are in, what data type they are.
+This again gives you a clear understanding on where you can access the method, what its proper name is, what parameters it has, what order they are in, what data type they are.
 
 Where applicable such as with `int[] arg1 = null` you can see when the parameters is optional due to having a default value.
 
 We will also describe each parameter where it is not obvious due to its name and often times even when it is obvious.
+
+Further you can see the comments for all of methods, fields and attributes in your IDE
 
 ![](<../../.gitbook/assets/image (177).png>)
 
@@ -264,6 +266,8 @@ public void HandleSomeEvent()
 
 This is meant to show you what a valid event handler would look like, e.g. what parameters are required and what they mean if any.
 
+Visual Studio can help you create handlers, actually it can out right create them for you!
+
 ![](<../../.gitbook/assets/image (178).png>)
 
 {% hint style="info" %}
@@ -271,7 +275,7 @@ Visual Studio Intellisence is your friend!
 
 
 
-See in the above screen grab, we have went to add a listener and typed the desired name of our event handler ... that method doesn't exist yet so Visual Studio suggested completion is offering to create the method for us.
+See in the above screen grab, we have went to add a listener and typed the desired name of our event handler … that method doesn't exist yet so Visual Studio suggested completion is offering to create the method for us.
 
 This suggestion comes up when I right click on the red line indicating a problem and then click the light bulb to get suggestions.&#x20;
 
