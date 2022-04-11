@@ -141,6 +141,7 @@
     * [Developer Articles](assets/steamworks/learning/developer-articles/README.md)
       * [Multiplayer Steam Games](assets/steamworks/learning/developer-articles/multiplayer-steam-games.md)
       * [Unique Uses: Leaderboard Profiles](assets/steamworks/learning/developer-articles/unique-uses-leaderboard-profiles.md)
+      * [Choosing a Tech Stack: Networking](assets/steamworks/learning/developer-articles/choosing-a-tech-stack-networking.md)
     * [Debugging Steam API](assets/steamworks/learning/debugging-steam-api.md)
   * [API](assets/steamworks/api/README.md)
     * [App.Client](assets/steamworks/api/app.md)
