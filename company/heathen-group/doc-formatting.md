@@ -146,7 +146,7 @@ This naming convention is Microsoft's standard and the Visual Studio IDE will he
 
 Visual Studio can help you identify what is what in its auto complete and suggestions
 
-![](<../../.gitbook/assets/image (167).png>)
+![](<../../.gitbook/assets/image (167) (1).png>)
 
 Here we see that "example" has a member of type `Attribute` named `attribute` and it has a member of type `Field` named `Field` you can tell not just by the proper syntax formatting (lower case attribute, upper case field) but also by the icon beside them (blue box = attribute) and (Wrench = Field)
 
