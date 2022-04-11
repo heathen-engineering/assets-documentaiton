@@ -156,6 +156,7 @@ Steam API provides all of these and a lot more for you, for free ... well as par
 * Authentication
 * Matchmaking
 * Steam Game Server
+* Server Browser
 * Valve Anti Cheat
 * Steam Micro Transaction (MTX)
 * Remote Play
@@ -168,6 +169,8 @@ Steam API provides all of these and a lot more for you, for free ... well as par
 * Leaderboards
 * User Generated Content (aka Workshop)
 * Community Hub
+* Voice
+* Cloud Saves / Remote Storage
 
 ### Steam Networking
 
