@@ -145,9 +145,35 @@ All that said you can use this along side Steamworks.NET but you will not be usi
 
 From Microsoft and built on the Azure platform, PlayFab is a Live Operations provider, it covers all of your backend service needs, hosting and a lot more. It has integrations with Steam and works wonderfully as an add on to any networking stack or as a core component in your networking stack such as seen in our preference section about for the Client Server set up.
 
+### Steam API
+
+If your even reading this you know the value added here but there are a few parts specific to networking beyond simple LLAPI.
+
+All of these features are well documented throughout this Knowledge Base so we wont detail them again here simply point out those features which are commonly used in multilayer experiences and that some may think they need to pay extra to have via a 3rd party provider.
+
+Steam API provides all of these and a lot more for you, for free ... well as part of that 30% they are going to take anyway!
+
+* Authentication
+* Matchmaking
+* Steam Game Server
+* Valve Anti Cheat
+* Steam Micro Transaction (MTX)
+* Remote Play
+* Parties
+* Broadcasting
+* Lobbies
+* Chats
+* Rich Presence
+* Stats & Achievements
+* Leaderboards
+* User Generated Content (aka Workshop)
+* Community Hub
+
 ### Steam Networking
 
-Steam Networking Sockets API … this is a LLAPI, it can  used on its own without a HLAPI if your comfortable doing that or you can (and most do) us it with a HLAPI like FishNetworking or Mirror. Steam's Networking APIs are in our opinion the best option for any indie or really any game that is not looking for mutli-platform … and even then with multiplexing … its still the best for your Steam Gamers. Steam Networking is a "LLAPI" in the context of our terms so its not the whole stack ... just the most important part.
+This is part of the Steam API we simply call it out on its own here to highlight its claim to fame.
+
+Steam Networking Sockets API … this is a LLAPI, it can be used on its own without a HLAPI if your comfortable doing that or you can (and most do) us it with a HLAPI like FishNetworking or Mirror. Steam's Networking APIs are in our opinion the best option for any indie or really any game that is not looking for mutli-platform … and even then with multiplexing … its still the best for your Steam Gamers. Steam Networking is a "LLAPI" in the context of our terms so its not the whole stack ... just the most important part.
 
 You can read more about Steam's networking tools [here](https://partner.steamgames.com/doc/api/ISteamNetworkingSockets). Don't let your eyes melt out your head the following HLAPIs all have transports for Steam already built for you just plug and play.
 
@@ -156,4 +182,14 @@ You can read more about Steam's networking tools [here](https://partner.steamgam
 * [Mirror](https://github.com/vis2k/Mirror)
 
 Really any HLAPI or Unity Networking package that works with Steamworks.NET (properly) should work out of the box ... see our Installation article for more details.&#x20;
+
+The claims to fame for this one are many and very based on the nature of your game but here are a few key ones we really benefit from in our projects.
+
+* Price Tag = 0.00€ … that's $0.00 or £0.00
+* Quality of Service\
+  Socks runs over Valve's network so in most cases the round trip is notably faster and less error prone than running over the wild wild web i.e. raw TCP/UDP or KCP based transports. When its not faster ... its just as fast.
+* Addresses are CSteamID\
+  When used properly your connecting to CSteamIDs not IP/Port so nothing to leak, nothing to fight. This also means no monkeying around with NAT punch or similar.
+* Integration\
+  As part of the Steam API its trivial to use along side all the rest of Steam's tools and features as described in the Steam API section.
 
