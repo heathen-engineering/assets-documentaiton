@@ -12,7 +12,7 @@ Wood Props includes a set of … you might have guessed it already … wooden pr
 
 The Wood Props package focuses on the most common wooded props seen in various game genre and themes but most prevalent in fantasy and historical games. Heathen always crafts its props to be reflective of the real life counter part, that is the general size and dimensions as well as the construction of the props reflect or are analogous to the real world version.
 
-We keep our props simple but detailed, modifying Heathen assets should be trivial for any who care to and at the same time the assets as they come are ready for production use. We ship our models with preconfigured prefabs ready to be dropped in scene but using the Unity Default Material (white/grey), you can download Built-In, URP or HDRP standard materials free of charge.
+We keep our props simple but detailed, modifying Heathen assets should be trivial for any who care to and at the same time the assets as they come are ready for production use. We ship our models with preconfigured prefabs ready to be dropped in scene but using the Unity Default Material (white/grey), you can download Built-In, URP or HDRP standard materials free of charge. [Learn more here](installation.md)!
 
 ## Content
 
