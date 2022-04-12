@@ -6,6 +6,14 @@ coverY: 73.93356470004957
 
 # Wood Props
 
+## Overview
+
+Wood Props includes a set of … you might have guessed it already … wooden props all of which are  … wait for it … breakable! This asset replaces the older "Heathen Containers Vol 1" and is the first in a series of props assets taken from our own internal requests as well as the requests of you (or customers).
+
+The Wood Props package focuses on the most common wooded props seen in various game genre and themes but most prevalent in fantasy and historical games. Heathen always crafts its props to be reflective of the real life counter part, that is the general size and dimensions as well as the construction of the props reflect or are analogous to the real world version.
+
+We keep our props simple but detailed, modifying Heathen assets should be trivial for any who care to and at the same time the assets as they come are ready for production use. We ship our models with preconfigured prefabs ready to be dropped in scene but using the Unity Default Material (white/grey), you can download Built-In, URP or HDRP standard materials free of charge.
+
 ## Content
 
 * Barrels; one open, one closed, includes stand and lid
