@@ -17,6 +17,22 @@ Sponsoring Heathen on GitHub for $10 a month gets you access to the source repos
 See why GitHub sponsor is the hands down best way to Do More with Heathen in our [Licensing Article](../../../licensing/).
 {% endhint %}
 
+### Import
+
+Import the PhysKit Complete asset first, this is a dependency and provides the logic for breaking the assets and the assets are stored as a "sample" of it.
+
+1. Open the Package Manager
+2. Click the "+" (plus) button located in the upper left of the window
+3. Select the "Add package from git URL..." option\
+   ![](<../../../../.gitbook/assets/image (144).png>)
+4. Enter the URL below and press add.
+
+```
+https://github.com/heathen-engineering/SourceRepo.git?path=/PhysKit/com.heathen.physkit
+```
+
+GitHub will prompt you to login if you haven't already, this is how it checks to make sure your a sponsor and have access to the repo. Once done it will install PhysKit and any required dependencies.
+
 ### Samples
 
 Breakable Wood Props is exposed in the Package Manager under the samples for PhysKit Complete. This is because the breakable feature used in the prefabs is part of PhysKit Complete.
@@ -26,7 +42,16 @@ To install it simply install PhysKit Complete from Package Manager as described 
 {% hint style="success" %}
 This will import the props and the configured prefabs which will be using the default Unity material.
 
-a
+
 
 We do this so that the kit is compatible with all rendering pipelines, you can download and install the materials you like from the following links.
 {% endhint %}
+
+### Materials
+
+The models and prefabs will be imported into your project using the Unity Default Material (white/grey mat); The following links can be used to download free materials as seen in the promotional images.
+
+#### [Download Standard HDRP Materials](https://www.dropbox.com/s/c8pfn9l1bz2jzft/Wood%20Props%20HDRP%20Materials.unitypackage?dl=1)
+
+![Standard HDRP Materials Example](<../../../../.gitbook/assets/WoodBreakableProps (1).png>)
+
