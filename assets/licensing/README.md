@@ -25,7 +25,7 @@ Sponsors starting at the $10 a month tier gain access to our Source Repository.
 * **Managed dependencies: (**_major failing the of Asset Store_**)**\
   On GitHub we distribute through Package Manager, which means we can define dependencies and have them resolve and install for you.
 * **More flexible license: (**_major failing of the Asset Store_**)**\
-  Our license is designed to be friendly to indies.\
+  Our license is designed to be friendly to indies and is yours to keep even if you cancel your sub.\
   Did you hire a contractor?\
   With our license that is no problem your license extends to them while they work for you\
   With Unity Asset Store license that contractor must also license the assets you use.&#x20;
