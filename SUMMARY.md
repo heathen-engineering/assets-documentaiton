@@ -30,13 +30,17 @@
 
 * [Introduction](lore/introduction.md)
 * [Ireland](lore/ireland/README.md)
+  * [Artefacts](lore/ireland/artefacts.md)
   * [Beings](lore/ireland/beings.md)
   * [Characters](lore/ireland/characters.md)
   * [Concepts](lore/ireland/concepts.md)
   * [Events](lore/ireland/events.md)
+  * [Languages](lore/ireland/languages.md)
+  * [Music](lore/ireland/music.md)
   * [Places](lore/ireland/places.md)
   * [Sources](lore/ireland/sources.md)
   * [Stories](lore/ireland/stories.md)
+  * [Styles](lore/ireland/styles.md)
 
 ## Assets
 
