@@ -66,13 +66,13 @@ If you don't have it already you can install Git from the following link:
 Note that this does NOT mean you will be using Git as a source repo, it is simply a set of protocols used by Package Manager to download the required code from its target repository.
 {% endhint %}
 
-It is a relativly common problem that Unity isn't able to detect Git once it has been installed. They very first thing you should try is to restart your machine. Saddly Unity doesn't know how to properly read environment variables and so only reads for them once on start up assuming they will never change :joy:
+It is a relativly common problem that Unity isn't able to detect Git once it has been installed. The very first thing you should try is to \*\***restart your machine**\*\*. Sadly Unity doesn't know how to properly read environment variables and so only reads for them once on start up assuming they will never change :joy:
 
 {% hint style="success" %}
 If you run into this issue please let Unity know its a problem for you so they can be aware of the frequency of the problem for users and maybe escalate its importance in there queue.
 {% endhint %}
 
-Assuming a simple restart doesn't resolve the issue for you the most likely issue is a problem with how the envrionment variables where set on Git install ... or rather where not set.
+Assuming a simple restart doesn't resolve the issue for you the most likely issue is a problem with how the environment variables where set on Git install … or rather where not set.
 
 This YouTube video is not sponsored by Heathen but seems to help a lot of people.
 
