@@ -29,7 +29,7 @@ This is your core Unity Project and the one that will be used to build your fini
 {% hint style="danger" %}
 We _**very strongly**_ recommend you use a build server and never build a release product on a local workstation.
 
-[Unity's Cloud Build](https://unity.com/features/cloud-build) is an easy to use solution that works with [Unity Collab](https://unity.com/unity/features/collaborate) and [Plastic SCM](https://unity.com/products/plastic-scm) source control. There are other options if for some reason you don't want to use Unity services.
+[Unity's Cloud Build](https://unity.com/features/cloud-build) is an easy to use solution that works with [GitHub ](https://unityatscale.com/unity-version-control-guide/how-to-setup-unity-project-on-github/)and [Plastic SCM](https://unity.com/products/plastic-scm) source control. There are other options if for some reason you don't want to use Unity services.
 
 Save your self a lot of time and frustration by using source control and build services.
 {% endhint %}
