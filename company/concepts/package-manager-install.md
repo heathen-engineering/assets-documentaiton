@@ -43,9 +43,9 @@ After you install Git, or if you modify your environment variables, or if any in
 \*\***Restart your machine**\*\*\
 \
 Why?\
-Unity Hub and various other systems use environment variables to know where things are … sadly many of these don't follow the very most basic of good practices and read these values on demand rather they read once on load and cash the results in there own internal memory meaning they don't get the memo when they change … apparently they thing the milliseconds of processing saved is worth the headache this causes.\
+Unity Hub and various other systems use environment variables to know where things are … sadly many of these don't follow the very most basic of good practices and read these values on demand rather they read once on load and cash the results in there own internal memory meaning they don't get the memo when they change … apparently they think the processing saved from reading from cash is worth the headache this causes when they are working on outdated values.\
 \
-While not the only way it is the best, fastest, least error prone way to make sure this issue isn't effecting your … simply fully restart your machine after any change to its environment variables such as installing Git, Visual Studio, updating either or similar software, etc.
+While full restart is not the only way it is the best, fastest, least error prone way to make sure this issue isn't effecting your … simply fully restart your machine after any change to its environment variables such as installing Git, Visual Studio, updating either or similar software, etc.
 {% endhint %}
 
 ### No git executable was found
