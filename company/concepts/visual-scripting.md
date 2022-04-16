@@ -56,6 +56,14 @@ Why?
 
 ## I just want it to work now!
 
+{% hint style="success" %}
+#### I just want know how to make it work!
+
+If you take the time to understand the basics everything else will come faster and easier. The fastest way to reach your goal is to do it the right way first.\
+\
+_Just a little quote form James that I find I use a lot._
+{% endhint %}
+
 So start scripting now. The time you spent reading this far in this document you could have gotten through your first script in the Junior Programmer course I linked above ... assuming you skipped the how to install Unity ... I assume you already know how to install Unity.
 
 The thing to understand is that the "hard" part of learning to script is the programming part, that is learning how to design and implement systems that yield the desired results with minimal resource (CPU, RAM , etc) used.
