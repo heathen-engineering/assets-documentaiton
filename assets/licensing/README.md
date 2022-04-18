@@ -11,7 +11,7 @@ For small teams and indies this is really the best method for you and for Heathe
 {% embed url="https://github.com/sponsors/heathen-engineering" %}
 
 {% hint style="success" %}
-You can cancel your subscription at any time and keep using the assets you installed. Our license does not expire when you cancel your subscription.\
+You can cancel your subscription at any time and keep using the assets you installed. Our [license](../../company/heathen-license-agreement.md) **does not** expire when you cancel your subscription.\
 \
 Cancelling your subscription only removes your ability to access the Source Repository so if later you want or need updates you can simply sub for another month at your leisure.
 {% endhint %}
@@ -36,7 +36,7 @@ Sponsors starting at the $10 a month tier gain access to our Source Repository.
   With our license that is no problem your license extends to them while they work for you\
   With Unity Asset Store license that contractor must also license the assets you use.&#x20;
 * **Gain instant access to all our tools**\
-  **D**iscover more ways to Do More with Heathen. UX for example can improve and benefit just about any project. You probably didn't know we had it, if you did you probably weren't sure how it could help in your project but now its there, part of the sponsorship, take a look and see how you can do more!
+  ****Discover more ways to Do More with Heathen. UX for example can improve and benefit just about any project. You probably didn't know we had it, if you did you probably weren't sure how it could help in your project but now its there, part of the sponsorship, take a look and see how you can do more!
 
 ### What's Included?
 
