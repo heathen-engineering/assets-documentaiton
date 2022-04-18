@@ -10,6 +10,12 @@ For small teams and indies this is really the best method for you and for Heathe
 
 {% embed url="https://github.com/sponsors/heathen-engineering" %}
 
+{% hint style="success" %}
+You can cancel your subscription at any time and keep using the assets you installed. Our license does not expire when you cancel your subscription.\
+\
+Cancelling your subscription only removes your ability to access the Source Repository so if later you want or need updates you can simply sub for another month at your leisure.
+{% endhint %}
+
 Sponsors starting at the $10 a month tier gain access to our Source Repository.
 
 ### How is it Better?
