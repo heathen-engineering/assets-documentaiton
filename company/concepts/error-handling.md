@@ -96,7 +96,7 @@ So why does Unity's examples show the GetComponenet approach?
 We don't know, but assume it's so you don't have the step of dragging and dropping the reference. This means the code example is self contained and doesn't require extra explanation around the use of the inspector. This is just an assumption.
 
 {% hint style="warning" %}
-For note using the "transport" member of a mono behavior is the same as calling GetComponenet\<Transform>() and so takes processing time.
+For note using the "transform" member of a mono behaviour is the same as calling GetComponenet\<Transform>() and so takes processing time.
 
 If you will need the transport more than once then reference it e.g.
 
@@ -107,5 +107,5 @@ private Transform selfTransform;
 
 Now you can reference it at dev time and its always available to you
 
-[HeathenBehaviour ](../../assets/system-core/heathen-behaviour.md)a tool in SystemCore does this for you
+[HeathenBehaviour ](../../assets/system-core/heathen-behaviour.md)a tool in System Core does this for you
 {% endhint %}

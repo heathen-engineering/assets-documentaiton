@@ -160,7 +160,7 @@ Lambda expression is very handy and can be used in loads of places. Its importan
 
 ### Field Members
 
-These are the `get` and `set` you see in C# fields and are perfect use cases for lambda expression with no adverse effects at all as this is not truly an anonymous function its simply a shorter way of expressing the instructions you want to apply there.
+These are the `get` and `set` you see in C# fields and are perfect use cases for lambda expression with no adverse effects at all as this is not truly an anonymous function its simply a shorter way of expressing the instructions you want to apply there. Your compiler will compile this exactly the same as the long form expression.
 
 ```csharp
 private bool thisIsAField;
@@ -203,6 +203,15 @@ public GameObject FindObjectByName(string name) =>
 ### Predicates
 
 This is nearly always best served as an anonymous function (expression). Predicates typically require data that is not going to be in scope of a fixed/named function and these sorts of searches should already be restricted to as needed thus shouldn't be frequent enough in your system to cause a performance problem.
+
+So a predicate ... that is a search argument ... for example
+
+```csharp
+public List<GameObject> objects;
+
+//.. I will use a predicate in teh FirstOrDefault method to find a GO by name
+objects.FirstOrDefault(p => p.name = "thisOne");
+```
 
 So what do you do when you do have frequent searches?\
 Use a lookup aka an index, if your going be looking up a GameObject by name from some list of GameObjects then index them by name and use a collection control such as Dictionary to more efficiently fetch e.g.&#x20;
