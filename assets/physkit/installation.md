@@ -42,7 +42,7 @@ If your a GitHub sponsor you have access to the source repository which you can 
 1. Open the Package Manager
 2. Click the "+" (plus) button located in the upper left of the window
 3. Select the "Add package from git URL..." option\
-   ![](<../../.gitbook/assets/image (144).png>)
+   <img src="../../.gitbook/assets/image (144).png" alt="" data-size="original">
 4. Enter the URL below and press add.
 
 ```
@@ -120,7 +120,7 @@ This thread might also be of help for you
 
 When System Core is successfuly installed you will see messages in your console log similar to the following. These messages indicate what was installed, you can also review these in your Package Manager.
 
-![](<../../.gitbook/assets/image (165).png>)
+![](<../../.gitbook/assets/image (165) (1).png>)
 
 {% hint style="info" %}
 This always installs the latest code available and so the version number you see may very.
@@ -145,7 +145,7 @@ This must be done from the Unity Package Manager to insure that the proper Syste
 1. Open the Package Manager
 2. Click the "+" (plus) button located in the upper left of the window
 3. Select the "Add package from git URL..." option\
-   ![](<../../.gitbook/assets/image (144).png>)
+   <img src="../../.gitbook/assets/image (144).png" alt="" data-size="original">
 4. Enter the URL below and press add.
 
 ```

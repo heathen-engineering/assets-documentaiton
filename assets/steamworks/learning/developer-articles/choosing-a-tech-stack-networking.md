@@ -107,7 +107,7 @@ More of a partner really than a technology Multiplay are defiantly big boys in t
 
 NetCode the HLAPI formerly known as MLAPI related to uNET now owned by Unity
 
-![](../../../../.gitbook/assets/FacepalmGIF.gif)
+<img src="../../../../.gitbook/assets/FacepalmGIF.gif" alt="" data-size="original">
 
 While this one's lineage is well laughable to say the least; it also has a [Steam transport](https://github.com/Unity-Technologies/multiplayer-community-contributions/tree/main/Transports/com.community.netcode.transport.steamnetworking).
 
@@ -121,7 +121,7 @@ Oh and MLAPI just in and of its self is a LOL … its a HLAPI the name just adds
 
 ### [Photon](https://www.photonengine.com)
 
-![](../../../../.gitbook/assets/NoGodPleaseNoGIF.gif)
+<img src="../../../../.gitbook/assets/NoGodPleaseNoGIF.gif" alt="" data-size="original">
 
 Jokes aside, Photon's claim to fame here is&#x20;
 

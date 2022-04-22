@@ -28,7 +28,7 @@ If your a GitHub sponsor you have access to the source repository which you can 
 1. Open the Package Manager
 2. Click the "+" (plus) button located in the upper left of the window
 3. Select the "Add package from git URL..." option\
-   ![](<../../.gitbook/assets/image (144).png>)
+   <img src="../../.gitbook/assets/image (144).png" alt="" data-size="original">
 4. Enter the URL below and press add.
 
 ```

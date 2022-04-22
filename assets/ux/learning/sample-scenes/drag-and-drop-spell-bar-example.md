@@ -33,7 +33,7 @@ You can use any Scriptable Object you would like to represent a type. We have cr
 
 These are Drag and Drop items configured with types similar to the Items in the Inventory exmaple.
 
-![](<../../../../.gitbook/assets/image (165) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (165) (1) (1) (1).png>)
 
 ### Slots
 
