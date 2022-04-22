@@ -310,15 +310,9 @@ Otherwise you can simply remove the folder corresponding to the product you want
 
 ## Technical Requirements
 
-### Unity 2019 LTS or later
+### Unity 2020 LTS or later
 
-Heathen's Steamworks is dependent on features and frameworks of Unity's 2019 LTS. In particular the asset makes use of the UI Toolkit aka UI Elements framework to author custom inspector windows and tools.&#x20;
-
-{% hint style="danger" %}
-Older builds of Unity 2019 LTS had a known issue from Unity which would cause UI Toolkit to crash or otherwise fail. Unity corrected this issue in later 2019 LTS releases.
-
-**You must update Unity 2019 LTS to the current latest build of Unity 2019 LTS before we can provide you with support on this issue.**
-{% endhint %}
+Heathen's Steamworks is dependent on features and frameworks of Unity's 2020 LTS. In particular the asset makes use of the UI Toolkit aka UI Elements framework to author custom inspector windows and tools.&#x20;
 
 ### Steamworks.NET
 
@@ -437,7 +431,7 @@ Mirror Community's FizzySteamTransport has been made compatible with our asset a
 
 **To install FizzySteamworks**
 
-1. Open Unity 2019 LTS (latest build) or a more recent version of Unity preferably an LTS release
+1. Open Unity 2020 LTS (latest build) or a more recent version of Unity preferably an LTS release
 2. Open the Unity Package Manager
 3. Click the "+" (plus) button located in the upper left of the window
 4. Select the "Add package from git URL..." option\
