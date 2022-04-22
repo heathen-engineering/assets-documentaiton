@@ -2,13 +2,13 @@
 
 ## What is it
 
-An easy and much more felxable way to install stuff into your Unity Project.
+An easy and much more flexible way to install stuff into your Unity Project.
 
 ### Why
 
-Its the method used by Unity iinternally, its the method used to install all Unity open source and community contributions and its the method used by many asset developers ... including Heathen.
+Its the method used by Unity internally, its the method used to install all Unity open source and community contributions and its the method used by many asset developers … including Heathen.
 
-It has quite a few benifits over the older .unitypackage import method but it does take a bit of learning for users that are new to the concept.
+It has quite a few benefits over the older .unitypackage import method but it does take a bit of learning for users that are new to the concept.
 
 ### History
 
@@ -16,7 +16,7 @@ Pack with Unity 2018 Unity started to introduce the concept of the Package Manag
 
 {% embed url="https://docs.unity3d.com/Manual/upm-ui.html" %}
 
-While in standard Unity fassion the transition away from classic .unitypackage exports to the new Package Mangaer approch has been
+While in standard Unity fashion the transition away from classic .unitypackage exports to the new Package Manager approach has been
 
 * Slow
 * Miss managed
@@ -25,15 +25,15 @@ While in standard Unity fassion the transition away from classic .unitypackage e
 * Horrible
 * etc. etc. etc.
 
-In classic Unity fassion the benifits have been ... well nothing short of transending and awe inspiring.
+In classic Unity fashion the benefits have been ... well nothing short of transcending and awe inspiring.
 
 ### Yes but WHY
 
-The Package Manager for the first time lets us pull active source ... not a file export ... note a .unitypackage ... that is really just a sorta propritary zip file ... ya its that bad.
+The Package Manager for the first time lets us pull active source ... not a file export ... note a .unitypackage ... that is really just a proprietary zip file ... ya its that bad.
 
-Second we can discribe dependencies ... 😍... if your an asset developer creating coded assets this is GOD level awsome.
+Second we can describe dependencies ... 😍... if your an asset developer creating coded assets this is GOD level awesome.
 
-Finally and one of my favorite features ... no more bloat. Not only can we remove the deep copy of every dependency we might use thus removing the version conflict hell of yester year we can also distribute samples, extensions, demos, etc. as additional downloads. So you no longer need to download 10 gigs of sample content you will never use just to get at the 15mb of code you wanted 🤩💖 ... unless you want to of course ...&#x20;
+Finally and one of my favourite features ... no more bloat. Not only can we remove the deep copy of every dependency we might use thus removing the version conflict hell of yester year we can also distribute samples, extensions, demos, etc. as additional downloads. So you no longer need to download 10 gigs of sample content you will never use just to get at the 15mb of code you wanted 🤩💖 ... unless you want to of course ...&#x20;
 
 ## Troubleshooting
 

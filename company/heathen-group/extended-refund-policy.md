@@ -24,7 +24,7 @@ This includes conditions that are not in the control of Heathen, such as the arc
 
 * Your project must be on the latest build of the current LTS release, or a newer LTS release, or the latest non-beta release of Unity; the link below has more information on these versions.\
   [https://unity3d.com/unity/qa/lts-releases](https://unity3d.com/unity/qa/lts-releases)\
-  At the time of this writing the current legacy LTS is Unity 2019 LTS\
+  At the time of this writing the current legacy LTS is Unity 2020 LTS\
 
 * The issue must be a fault of the asset e.g. limited or hindered functionality as documented for that asset. This does not extend to faults of assets from other publishers.\
 

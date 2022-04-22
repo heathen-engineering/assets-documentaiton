@@ -77,7 +77,7 @@ One of many buzz words, meaning the system picks something on its own each time.
 While this approach can be the bases of an entire game it’s also an effective way to spruce up your title scene, loading screens and any area that would otherwise start to feel stale to your player if left static.
 {% endhint %}
 
-The basic concept is you define your "pages" or "tiles" that is your bite sized chunks of GameObjects that Unity calls scenes to be loaded such that your system can select from a set of viable options, these options informed by player actions or other conditions in the game.
+The basic concept is you define your "pages" or "tiles" that is your bite sized chunks of GameObjects that Unity calls scenes to be loaded such that your system can select from a set of viable options, these options informed by player actions or other conditions in the game or simply  on a loop such that every visit to the title screen shows a different bit of eye candy.
 
 {% hint style="info" %}
 This differs from "procedural" or "random" world creation in that the system does not pre-determine the world state on initial load. Instead as the player progresses through the system adjusts the viable options that can be loaded next, thus the next "pages" loaded are determined not by simple random generation but by the actions the player has taken.
