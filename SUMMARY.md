@@ -31,7 +31,7 @@
 * [Introduction](lore/introduction.md)
 * [Ireland](lore/ireland/README.md)
   * [Artefacts](lore/ireland/artefacts.md)
-  * [Beings](lore/ireland/beings/README.md)
+  * [Beings](lore/ireland/beings.md)
     * [Cannon](lore/ireland/beings/cannon/README.md)
       * [Belgae](lore/ireland/beings/cannon/belgae.md)
       * [Fomorians](lore/ireland/beings/cannon/fomorians.md)
