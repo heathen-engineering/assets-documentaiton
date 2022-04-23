@@ -12,6 +12,7 @@
 * [General Guides](company/concepts/README.md)
   * [Bootstrap Scene](company/concepts/bootstrap-scene.md)
   * [Callbacks](company/concepts/callbacks.md)
+  * [Debugging](company/concepts/debugging.md)
   * [Error Handling](company/concepts/error-handling.md)
   * [IntelliSense](company/concepts/intellisense.md)
   * [Lambda Expressions](company/concepts/lambda-expressions.md)

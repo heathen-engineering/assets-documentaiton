@@ -1,5 +1,5 @@
 ---
-description: Why Visual Studio (and tools like it) are superior IDEs
+description: The only way to code!
 ---
 
 # IntelliSense
