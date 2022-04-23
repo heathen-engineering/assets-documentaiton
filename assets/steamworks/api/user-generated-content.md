@@ -488,15 +488,23 @@ public static uint GetSubscribedItems(PublishedFileId_t[] fileIDs,
                 uint maxEntries)
 ```
 
-Get the file IDs of all subscribed UGC items up to the array size
+Get the file IDs of all subscribed UGC items up to the array size. This is a wrapper around the raw API entry and maintained for backward compatibility.
 
-### GetSubscribedItems
+or
 
 ```csharp
 public static PublishedFileId_t[] GetSubscribedItems()
 ```
 
-Returns the list of items the user is subscribed to
+Returns the list of items the user is subscribed to as a simple array.
+
+or
+
+```csharp
+public static void GetSubscribedItems(Action<List<UGCCommunityItem>> callback)
+```
+
+This will query for the details of the items the user is subscribed to and invoke a callback when those details are returned.
 
 ### GetUserItemVote
 
@@ -558,11 +566,243 @@ public static void RemoveDependency(PublishedFileId_t parentFileId,
 
 Request the removal of a dependency from a UGC item
 
-{% hint style="warning" %}
-More methods to be documented
-{% endhint %}
+### RemoveItemFromFavorites
 
+```csharp
+public static void RemoveItemFromFavorites(AppId_t appId, 
+                PublishedFileId_t fileId, 
+                Action<UserFavoriteItemsListChanged_t, bool> callback)
+```
 
+Request the item be removed from the user's favourites list if present
+
+### RemoveItemKeyValueTags
+
+```csharp
+public static bool RemoveItemKeyValueTags(UGCUpdateHandle_t handle, string key)
+```
+
+Remove UGC Item key value tags
+
+### RemoveItemPreview
+
+```csharp
+public static bool RemoveItemPreview(UGCUpdateHandle_t handle, uint index)
+```
+
+Remove UGC Item Preview&#x20;
+
+### RequestDetails
+
+```csharp
+public static void RequestDetails(PublishedFileId_t fileId, 
+        uint maxAgeSeconds, 
+        Action<SteamUGCRequestUGCDetailsResult_t, bool> callback)
+```
+
+Request details of a given UGC item
+
+### SendQueryUGCRequest
+
+```csharp
+public static void SendQueryUGCRequest(UGCQueryHandle_t handle, 
+                Action<SteamUGCQueryCompleted_t, bool> callback)
+```
+
+Send a UGC query for processing
+
+### SetAllowCashedResponse
+
+```csharp
+public static bool SetAllowCachedResponse(UGCQueryHandle_t handle, 
+                uint maxAgeSeconds)
+```
+
+Set the allow cashed response on Steam
+
+### SetCloudFileNameFilter
+
+```csharp
+public static bool SetCloudFileNameFilter(UGCQueryHandle_t handle, 
+                string fileName)
+```
+
+Set the file name filter value for use with queries
+
+### SetItemContent
+
+```csharp
+```
+
+Sets the folder path that Valve will upload from when submitting an item update
+
+### SetItemDescription
+
+```csharp
+```
+
+Sets the item description of the item when submitting an item update
+
+### SetItemMetadata
+
+```csharp
+```
+
+Sets the item metadata of the item when submitting an item update
+
+### SetItemPreview
+
+### SetItemTags
+
+### SetItemTitle
+
+### SetItemUpdateLanguage
+
+### SetItemVisibility
+
+### SetLanguage
+
+### SetMatchAnyTag
+
+### SetRankedByTrendDays
+
+### SetReturnAdditionalPreviews
+
+### SetReturnChildren
+
+### SetReturnKeyalueTags
+
+### SetReturnLongDescription
+
+### SetReturnMetadata
+
+### SetReturnOnlyIDs
+
+### SetReturnPlaytimeStats
+
+```csharp
+public static bool SetReturnPlaytimeStats(UGCQueryHandle_t handle, uint days)
+```
+
+Set a query to return the playtime stats for related items
+
+### SetReturnTotalOnly
+
+```csharp
+public static bool SetReturnTotalOnly(UGCQueryHandle_t handle, bool totalOnly)
+```
+
+Set a query to only return the total number of files that match the arguments
+
+### SetSearchText
+
+```csharp
+public static bool SetSearchText(UGCQueryHandle_t handle, string text)
+```
+
+Sets the search text used when executing a UGC query
+
+### SetUserItemVote
+
+```csharp
+public static void SetUserItemVote(PublishedFileId_t fileID, 
+                bool voteUp, 
+                Action<SetUserItemVoteResult_t, bool> callback)
+```
+
+Sets the vote value for a given item from this user.
+
+### StartItemUpdate
+
+```csharp
+public static UGCUpdateHandle_t StartItemUpdate(AppId_t appId, 
+                PublishedFileId_t fileID)
+```
+
+Request the start of an item update. This must be called before you set item preview, description, etc.
+
+### StartPlaytimeTracking
+
+```csharp
+public static void StartPlaytimeTracking(PublishedFileId_t[] fileIds, 
+                Action<StartPlaytimeTrackingResult_t, bool> callback)
+```
+
+Start tracking playtime for the indicated items.
+
+### StopPlaytimeTracking
+
+```csharp
+public static void StopPlaytimeTracking(PublishedFileId_t[] fileIds, 
+                Action<StopPlaytimeTrackingResult_t, bool> callback)
+```
+
+Stop tracking playtime for the indicated items.
+
+### StopPlaytimeTrackingForAllItems
+
+```csharp
+public static void StopPlaytimeTrackingForAllItems(
+                Action<StopPlaytimeTrackingResult_t, bool> callback)
+```
+
+Stop tracking playtime for all relevant items
+
+### SubmitItemUpdate
+
+```csharp
+public static void SubmitItemUpdate(UGCUpdateHandle_t handle, 
+                string changeNote, 
+                Action<SubmitItemUpdateResult_t, bool> callback)
+```
+
+Submit an update request committing any changes made since the StartItemUpdate request.
+
+### SubscribeItem
+
+```csharp
+public static void SubscribeItem(PublishedFileId_t fileId, 
+        Action<RemoteStorageSubscribePublishedFileResult_t, bool> callback)
+```
+
+Subscribe to the indicated item
+
+### SuspendDownloads
+
+```csharp
+public static void SuspendDownloads(bool suspend)
+```
+
+Suspend downloads
+
+### UnsubscribeItem
+
+```csharp
+public static void UnsubscribeItem(PublishedFileId_t fileId, 
+        Action<RemoteStorageUnsubscribePublishedFileResult_t, bool> callback)
+```
+
+Unsubscribe to the indicated item
+
+### UpdateItemPreviewFile
+
+```csharp
+public static bool UpdateItemPreviewFile(UGCUpdateHandle_t handle, 
+                uint index, 
+                string file)
+```
+
+Update item preview image file
+
+### UpdateItemPreviewVideo
+
+```csharp
+public static bool UpdateItemPreviewVideo(UGCUpdateHandle_t handle, 
+                uint index, 
+                string videoId)
+```
+
+Update item preview video
 
 ## How To
 
