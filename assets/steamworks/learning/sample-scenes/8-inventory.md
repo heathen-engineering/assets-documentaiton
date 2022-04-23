@@ -8,7 +8,7 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 
 This scene provides example scripts demonstrating the use of [Item Definition](../../objects/item-definition.md). The scene is not functional as Steam Inventory is depend on your App's configuration.
 
-![](<../../../../.gitbook/assets/image (166) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (166) (1) (1) (1).png>)
 
 ### What do I learn?
 

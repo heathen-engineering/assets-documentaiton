@@ -85,7 +85,7 @@ If you have questions or issues pealse reach out on our [Discord ](https://disco
 
 When you import Heathen's Phys Kit it will test for the presence of System Core and if missing it will ask you if you want to install similar to the message shown below.
 
-![](<../../.gitbook/assets/image (189).png>)
+![](<../../.gitbook/assets/image (189) (1).png>)
 
 When you click yes the system will use Package Manager to install System Core from GitHub.&#x20;
 

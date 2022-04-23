@@ -175,7 +175,7 @@ If for whatever reason you clicked no, or if you had an error and needed to inst
 
 &#x20;
 
-![](<../../.gitbook/assets/image (179).png>)
+![](<../../.gitbook/assets/image (179) (1).png>)
 
 ## From Package Manager
 
@@ -348,7 +348,7 @@ This must be done from the Unity Package Manager to insure that the proper Syste
 https://github.com/heathen-engineering/SystemCore.git?path=/com.heathen.systemcore
 ```
 
-![](<../../.gitbook/assets/image (166).png>)
+![](<../../.gitbook/assets/image (166) (1).png>)
 
 ## Networking Integrations
 

@@ -13,6 +13,7 @@
   * [Bootstrap Scene](company/concepts/bootstrap-scene.md)
   * [Callbacks](company/concepts/callbacks.md)
   * [Error Handling](company/concepts/error-handling.md)
+  * [IntelliSense](company/concepts/intellisense.md)
   * [Lambda Expressions](company/concepts/lambda-expressions.md)
   * [Multi-Scene Architecture](company/concepts/multi-scene-architecture.md)
   * [Namespace and Using](company/concepts/namespace-and-using.md)

@@ -35,11 +35,11 @@ The hardest part about Steam Inventory is usually setting up your Steam Inventor
 
 The very first thing you should do is import any Steam Inventory Items you already have. You can do this quickly by simply running the simulation (so that Steam API is initialized) and clicking the Import button under the Inventory list in your Steam Settings
 
-![](<../../../../.gitbook/assets/image (187) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (187) (1) (1) (1) (1).png>)
 
 Once done you will see every item you had defined already in your Steam Developer Portal has been pulled into Unity under your Steam Settings:
 
-![Screen shot of a WIP project with 57 items. You can see here how the Settings object categorizes the items based on type.](<../../../../.gitbook/assets/image (169) (1).png>)
+![Screen shot of a WIP project with 57 items. You can see here how the Settings object categorizes the items based on type.](<../../../../.gitbook/assets/image (169) (1) (1).png>)
 
 ## **Step 2: Defining Items**
 
@@ -47,9 +47,9 @@ Creating new items is quick and easy simply click the "<mark style="color:green;
 
 Every Steam Inventory Schema feature is available but the inspector will hide ones that cannot be used with the currently selected type.
 
-![Normal items can be traded, marketed, sold, etc.](<../../../../.gitbook/assets/image (166) (1) (1) (1) (1) (1).png>)
+![Normal items can be traded, marketed, sold, etc.](<../../../../.gitbook/assets/image (166) (1) (1) (1) (1) (1) (1).png>)
 
-![Tag Generators only exist to attach to other items as generators](<../../../../.gitbook/assets/image (177) (1) (1).png>)
+![Tag Generators only exist to attach to other items as generators](<../../../../.gitbook/assets/image (177) (1) (1) (1).png>)
 
 ## **Step 3: Uploading the Schema**
 

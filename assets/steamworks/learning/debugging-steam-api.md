@@ -91,7 +91,7 @@ The Home page of the inspector displays core values for your user and the app it
 4. Is the steam\_appid.txt the same as the Listed App ID
 5. Is the displayed user me / who I expect it to be
 
-![](<../../../.gitbook/assets/image (151).png>)
+![](<../../../.gitbook/assets/image (151) (1).png>)
 
 If you answered no to any of the above questions your issue is on step 1. That is your not configured correctly to initialize Steam and or you do not have the Steam client up and running with a valid user logged in.
 
@@ -107,13 +107,13 @@ You can use the Stats tab to view and update the value of all registered stats
 
 ## Achievements
 
-![](<../../../.gitbook/assets/image (179) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (179) (1) (1) (1) (1).png>)
 
 You can use the Achievements tab to view and unlock/reset all registered achievements
 
 ## Leaderboards
 
-![](<../../../.gitbook/assets/image (170) (1) (1).png>)
+![](<../../../.gitbook/assets/image (170) (1) (1) (1).png>)
 
 You can use the Leaderboard's tab to view your score and rank on all registered leaderboards. Leaderboards while one of the simplest aspects of Steam API are also one of the more fragile aspects.
 

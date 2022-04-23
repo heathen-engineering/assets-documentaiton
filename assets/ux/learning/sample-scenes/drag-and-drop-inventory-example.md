@@ -55,4 +55,4 @@ and\
 Canvas > Background > Complex Slots\
 Game objects respetivly, each slot is configured with "Filter Types" and "Mask Mode" which effects what items can and cannot be droped on it.
 
-![](<../../../../.gitbook/assets/image (172).png>)
+![](<../../../../.gitbook/assets/image (172) (1).png>)

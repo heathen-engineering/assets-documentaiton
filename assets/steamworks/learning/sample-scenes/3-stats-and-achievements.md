@@ -8,7 +8,7 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 
 This scene demonstrates the use of Steam stats and Steam achievements.
 
-![](<../../../../.gitbook/assets/image (172) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (172) (1) (1) (1) (1).png>)
 
 ### What do I learn?
 
