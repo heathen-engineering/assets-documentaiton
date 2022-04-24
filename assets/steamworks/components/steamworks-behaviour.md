@@ -10,10 +10,10 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 
 ## Introduction
 
-Steamworks Behaviour replaces the concept of Steam Manager as seen in some of the older Steamworks.NET example scripts. This behaviour object deals with the initalization of the Steam API and operating its main update loop.&#x20;
+Steamworks Behaviour replaces the concept of Steam Manager as seen in some of the older Steamworks.NET example scripts. This behaviour object deals with the initialization of the Steam API and operating its main update loop.&#x20;
 
 {% hint style="danger" %}
-Your game should have exsactly one of these behaviours.
+Your game should have exactly one of these behaviours.
 
 Your game should never destroy or reload one of these behaviours.
 
@@ -23,17 +23,17 @@ This means you should not define this behaviour in a scene that is loaded multip
 
 
 
-You are **STRONGLY** encuraged to use a [bootstrap ](../../../company/concepts/bootstrap-scene.md)model taking advantage of Unity's multi-scene features. Alternativly you can use the Steamworks Creator behaviour.
+You are **STRONGLY** encouraged to use a [bootstrap ](../../../company/concepts/bootstrap-scene.md)model taking advantage of Unity's multi-scene features. Alternatively you can use the Steamworks Creator behaviour.
 {% endhint %}
 
 ## Use
 
-You should add a Steamworks Behaviour component to a game object in the first scene to be loaded by your game. It is important that this game object is never destroyed as it is operating your Steam API integration. We do recomend you use additive loading and simply never unload your [bootstrapping](../../../company/concepts/bootstrap-scene.md) scene however you can use the [Do Not Destroy](../../../company/concepts/bootstrap-scene.md) approch if you are carful to NEVER reload the scene that defined Steamworks Beahviour.
+You should add a Steamworks Behaviour component to a game object in the first scene to be loaded by your game. It is important that this game object is never destroyed as it is operating your Steam API integration. We do recommend you use additive loading and simply never unload your [bootstrapping](../../../company/concepts/bootstrap-scene.md) scene however you can use the [Do Not Destroy](../../../company/concepts/bootstrap-scene.md) approach if you are carful to NEVER reload the scene that defined Steamworks Behaviour.
 
-The Steamworks behaviour is not intended to be a funcitonal componenet that is you will not enteract with this componenet, it exists wholly to initalize, operate and shutdown the Steam API integration according to Unity events. The one exception to this case is when operating a Steam Game Server in a situation where you need to delay API initalizaiton. You can optionally configure your Steam Settings to NOT auto initalize Steam Game Server, in which case you will need to call SteamworksBeahviour.InitalizeGameServer in order to kick off the initalization process.
+The Steamworks behaviour is not intended to be a functional component that is you will not interact with this component, it exists wholly to initialize, operate and shutdown the Steam API integration according to Unity events. The one exception to this case is when operating a Steam Game Server in a situation where you need to delay API initialization. You can optionally configure your Steam Settings to NOT auto initialize Steam Game Server, in which case you will need to call SteamworksBeahviour.InitializeGameServer in order to kick off the initialization process.
 
 {% hint style="warning" %}
-This is rare and in general you should be allowing the system to auto initalize.
+This is rare and in general you should be allowing the system to auto initialize.
 {% endhint %}
 
 ```csharp
@@ -56,12 +56,12 @@ Exposes controls and events for a specific lobby
 
 #### [Overlay Manager](overlay-manager.md)
 
-Exposes controlss and events for the Steam Overlay features
+Exposes controls and events for the Steam Overlay features
 
 #### [Steam System Events](steam-system-events.md)
 
-Provides insepctor access to Initalize and Initalization Error events
+Provides inspector access to Initialize and Initialization Error events
 
 #### [Steam Game Server Events](steam-game-server-events.md)
 
-Provides insepctor access to connect, disconnect and failure events for the Steam Game Server system.
+Provides inspector access to connect, disconnect and failure events for the Steam Game Server system.
