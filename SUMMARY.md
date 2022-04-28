@@ -168,6 +168,7 @@
       * [User Generated Content (Workshop)](assets/steamworks/features/user-generated-content-workshop/README.md)
     * [Developer Articles](assets/steamworks/learning/developer-articles/README.md)
       * [Choosing a Tech Stack: Networking](assets/steamworks/learning/developer-articles/choosing-a-tech-stack-networking.md)
+      * [Multi-Platform Project](assets/steamworks/learning/developer-articles/multi-platform-project.md)
       * [Multiplayer Steam Games](assets/steamworks/learning/developer-articles/multiplayer-steam-games.md)
       * [Unique Uses: Leaderboard Profiles](assets/steamworks/learning/developer-articles/unique-uses-leaderboard-profiles.md)
     * [Debugging Steam API](assets/steamworks/learning/debugging-steam-api.md)
