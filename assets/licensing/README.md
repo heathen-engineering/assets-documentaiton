@@ -67,6 +67,12 @@ More information about our consulting and contracting services.
 
 ## Unity Asset Store
 
+{% hint style="info" %}
+We are not leaving the Unity Asset Store.\
+\
+While the Unity Asset Store license, promotional terms, distribution model and structural limitations are problematic. Some users prefer the Unity Asset Store and that is completely fine.&#x20;
+{% endhint %}
+
 The classic approach. Unity Asset Store is a solid, tried and true option, you probably already know about it, and this is how you probably learned about Heathen.
 
 While we think of the Asset Store as less than ideal for a great many reasons we will continue to support it so long its a viable option to deliver a quality product.
@@ -76,7 +82,7 @@ Asset updates on the Unity Asset Store are necessarily slower and have some limi
 
 As far as the licensing terms, refunds, etc. we really cant do anything there its all 100% Unity Technology. When it comes to the Unity Asset Store we are basically a blind vendor, we get a cut of sales but wont even be aware you exist unless you find us to start a conversation.
 
-We of course offer support through our community channel on [Discord](https://discord.gg/6X3xrRc) and we do release updates frequently to the Store so this isn't a bad option its just a bit antiquated and limiting for you and us alike and has basically no flexibility at all.
+We of course offer support through our community channel on [Discord](https://discord.gg/6X3xrRc) and we do release updates monthly to the Store so this isn't a bad option its just a bit antiquated and limiting for you and us alike and has limited or in most cases no flexibility at all so no we cant offer you a discount, we cant let you know what's going on sale or when and we cannot offer custom licensing terms.
 
 ### Sales
 
