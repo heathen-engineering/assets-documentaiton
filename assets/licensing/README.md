@@ -49,6 +49,7 @@ At current the following are present
 * PhysKit Complete
 * Breakables Wood Props
 * UX Complete
+* uGUI Extras (On Screen Keyboard ... and more)
 
 ### The License
 
