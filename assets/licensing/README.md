@@ -1,5 +1,22 @@
 # Licensing
 
+{% hint style="info" %}
+Subscribing to Heathen as a $10 or more [GitHub Sponsor](https://github.com/sponsors/heathen-engineering) is the most cost effective way to get
+
+* Steamworks Complete
+* PhysKit Complete
+* UX Complete
+* uGUI Extras (On Screen Keyboard)
+* Breakables: Wood Props
+
+and the only way to get exclusives like uGUI Tools for Steam.
+
+\
+You can cancel your subscription at any time and keep using the assets you installed. Our [license](../../company/heathen-license-agreement.md) **does not** expire when you cancel your subscription.\
+\
+Cancelling your subscription only removes your ability to access the Source Repository so if later you want or need updates you can simply sub for another month at your leisure.
+{% endhint %}
+
 ## Introduction
 
 You have 3 ways to license Heathen's assets and content described in detail in each section below. In general the best way to license Heathen's Steamworks, PhysKit and UX is to become a GitHub Sponsor.
