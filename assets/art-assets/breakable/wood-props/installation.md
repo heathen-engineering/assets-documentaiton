@@ -51,7 +51,8 @@ We do this so that the kit is compatible with all rendering pipelines, you can d
 
 The models and prefabs will be imported into your project using the Unity Default Material (white/grey mat); The following links can be used to download free materials as seen in the promotional images.
 
-#### [Download Standard HDRP Materials](https://www.dropbox.com/s/c8pfn9l1bz2jzft/Wood%20Props%20HDRP%20Materials.unitypackage?dl=1)
+{% embed url="https://assetstore.unity.com/packages/2d/textures-materials/wood-props-materials-standard-built-in-220518" %}
 
-![Standard HDRP Materials Example](<../../../../.gitbook/assets/WoodBreakableProps (1).png>)
+{% embed url="https://assetstore.unity.com/packages/2d/textures-materials/wood-props-materials-standard-urp-220650" %}
 
+{% embed url="https://assetstore.unity.com/packages/2d/textures-materials/wood-props-materials-standard-hdrp-218315" %}
