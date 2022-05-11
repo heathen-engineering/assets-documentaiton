@@ -1,7 +1,7 @@
 ---
 description: >-
   Heathen Engineering's BGSDK Foundation allows you to manage in-game items as
-  blockchain assets. It is a complete wrapper around Arkane Network's Web API.
+  blockchain assets. It is a complete wrapper around Venly's Web API.
 ---
 
 # Blockchain Game SDK

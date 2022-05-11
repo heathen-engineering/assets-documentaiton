@@ -62,4 +62,4 @@ This depends on your needs, there are cases where your needs align with our asse
 
 On the far other end of that spectrum we also provide full professional services. These are tailored to your needs and can include but are not limited to: exclusivity, IP ownership transfer, service level agreement, maintenance plans, training and on going support, and much more.&#x20;
 
-Our standard day rate is based at 1000€ a manhour day. This rate may be adjusted depending on your needs.
+Our standard day rate is based at 1000€ a manhour day. This rate may be adjusted depending on your needs and the alignment of your request with Heathen's current efforts.

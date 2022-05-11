@@ -1,10 +1,8 @@
 # Table of contents
 
-* [Heathen Knowledge Base](README.md)
-
 ## General <a href="#company" id="company"></a>
 
-* [Introduction](company/introduction.md)
+* [Introduction](README.md)
 * [Heathen Group](company/heathen-group/README.md)
   * [Asset Refund Policy](company/heathen-group/extended-refund-policy.md)
   * [Asset Folder Structure](company/heathen-group/asset-folder-structure.md)
@@ -66,7 +64,7 @@
   * [Learning](assets/bgsdk/learning/README.md)
     * [Quick Start Guide](assets/bgsdk/learning/getting-started.md)
     * [Core Concepts](assets/bgsdk/learning/core-concepts/README.md)
-      * [NFTs in Game](assets/bgsdk/learning/core-concepts/nfts-in-game.md)
+      * [Blockchain & Game](assets/bgsdk/learning/core-concepts/blockchain-and-game.md)
       * [Game Architecture](assets/bgsdk/learning/core-concepts/game-architecture.md)
       * [White Label Wallets](assets/bgsdk/learning/core-concepts/white-label-wallets.md)
   * [API](assets/bgsdk/api/README.md)
