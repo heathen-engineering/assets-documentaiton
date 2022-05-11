@@ -411,7 +411,7 @@ FishNetworking is available on git hub and includes documentation for installati
 
 ### Mirror
 
-Mirror is a community lead project based on Unity's abandoned uNET. Mirror is (in Heathen's opinion) the most robust high level networking interface (HLAPI) currently available for Unity and is the main HLAPI used by Heathen Engineering.
+Mirror is a community lead project based on Unity's abandoned uNET.&#x20;
 
 Mirror has various transports including a Heathen compatible Steam Networking and Steam Sockets transport. Heathen Engineering does not author this transport but does contribute to its ongoing maintenance insuring proper use of the Steam APIs and compatibility with Heathen's Steamworks assets.
 
