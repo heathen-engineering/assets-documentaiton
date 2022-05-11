@@ -64,7 +64,7 @@
   * [Learning](assets/bgsdk/learning/README.md)
     * [Quick Start Guide](assets/bgsdk/learning/getting-started.md)
     * [Core Concepts](assets/bgsdk/learning/core-concepts/README.md)
-      * [Blockchain & Game](assets/bgsdk/learning/core-concepts/blockchain-and-game.md)
+      * [Blockchain & Game](assets/bgsdk/learning/core-concepts/nfts-in-game.md)
       * [Game Architecture](assets/bgsdk/learning/core-concepts/game-architecture.md)
       * [White Label Wallets](assets/bgsdk/learning/core-concepts/white-label-wallets.md)
   * [API](assets/bgsdk/api/README.md)

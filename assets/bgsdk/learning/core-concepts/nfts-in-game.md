@@ -14,7 +14,7 @@ Driving user engagement based on the prospect of profit is gambling and makes it
 
 &#x20;
 
-We as a company are not against gambling, but this article is about Blockchain & Game not Blockchain & Gambling.
+We as a company are not against gambling, but this article is about Blockchain & Game not Blockchain & Gambling. Yes of course a video game can be mixed with elements of gambling e.g. skin trading, world first betting, leaderboard betting, professional gaming, etc. Again that is outside the scope of this document.
 {% endhint %}
 
 ## Introduction
@@ -52,6 +52,52 @@ and
 If NFTs are basically comparable to Inventory items or at best DLC licenses why bother with NFT at all?
 
 In most of the cases we hear pitched around; you shouldn't be considering NFT for that. Minting and transferring NFTs has a cost and complexity that is very often higher than other more traditional solutions for most in-game use cases you may be thinking of.
+
+### Metaverse
+
+So this is another buzz word horribly abused. Lets start by defining the actual word and we will get into what people mean when they say it.
+
+#### Reality ( literal definition )
+
+{% hint style="info" %}
+Meta\
+From Greek, meaning 'with, across or after' \
+Most commonly (till today) used in science to denote position or relationship e.g. metacarpus meaning behind, after or beyond the wrist ... carpus is Greek for wrist
+{% endhint %}
+
+{% hint style="info" %}
+Verse\
+From Latin Vertere meaning to turn or Versus referring to a line or furrow
+{% endhint %}
+
+So we use the word "meta" to mean things beyond the context we are talking in ... "That's so meta" being a term that should mean that topic is beyond this scope. Yes zoomers like to use meta to refer to the most efficient solution to a mechanic but its to late for them :joy: so lets move on
+
+The word verse we use to mean a world, such as the MCU or Marvel Cinematic Universe being shortened to the Marvel verse; and this ties into its original use referring to a line, suggesting or meaning the entirety of a thing.
+
+So if we sit aside the fact that Meta is Greek and Verse Latin and so shouldn't be mixed really … we can say that "Metaverse" should mean "all the **stuff** beyond the entirety of **stuff**" … your head hurt yet about how stupid this term is :smile:
+
+#### Current / Pop Use
+
+It really does depend on who your are talking to since for most groups, companies and people "metaverse" means "buzz word that makes you listen to me"&#x20;
+
+But generally its referring to an echo-system \
+( buzz word for this topic from 3 or 4 generations ago )\
+That is a collection of systems, apps, content, etc. that all work together. For example Unity Asset Store, Unity Assets, Various Unity Communities, Games a Experiences built on Unity ... you could say that is a "metaverse" you probably wouldn't but its no different than what "Meta" aka Facebook are doing.\
+\
+Similarly most social games could be called a "metaverse" in that they are more than just the game its self but include a whole universe of interrelated stuff.
+
+#### Blockchain Use
+
+So how does blockchain fit in?
+
+It doesn't really, well that is its not a requirement for a "metaverse" or "echo system" or to create "synergies" or any of the other buzz words we have used over the years to mean "bunch of stuff working together" … \
+\
+Blockchain at best can be used as the database you use to track who has what licenses to what stuff … so again no different than inventory systems in Steam, PlayFab, GameLift, etc. One advantage blockchain could offer is that you do not require an agreement between game developers in that tokens can be transferred without the approval of developers … so for example your indie game could read a wallet that holds stuff from a Ubisoft game and do something about it. …\
+And that is exactly why this will never become main stream :drum:
+
+You will never see Mast Chief racing against Mario in a Gran Turismo ranked race your playing on your Android cell phone running iOS.
+
+IPs have walled gardens not because they cant work together … they can and it would be easier than not … they have walled gardens to protect there IP and give a reason for you to come to them as opposed to their competitors e.g. exclusivity; thus "metaverse" is just another buzzword that means my brand of walled garden.
 
 ### Ownership of Stuff
 
