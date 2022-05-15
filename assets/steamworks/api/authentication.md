@@ -96,7 +96,7 @@ Cancels the auth ticket rather its client or server based.
 ### BeginAuthSession
 
 ```csharp
-public static void BeginAuthSession(byte[] authTicket, 
+public static EBeginAuthSessionResult BeginAuthSession(byte[] authTicket, 
                                 CSteamID user, 
                                 Action<AuthenticationSession> callback);
 ```
@@ -167,11 +167,23 @@ The act of sending your ticket data to your server or the other client that wish
 When ticket data is recieved you need to begin the auth session with that user and confirm the status of that session.
 
 ```csharp
-API.Authentication.BeginAuthSession(ticket, user, (result, IOError) =>
+var result = API.Authentication.BeginAuthSession(ticket, user, (responce) =>
 {
-    //result is the result and provides information as to the state of teh authenitcaiton.
+    // responce is an AuthenticationSession
+    // You can use this value to understand the state of the session
 });
+
+if(result != EBeginAuthSessionResult.k_EBeginAuthSessionResultOK)
+{
+    // The ticket is not valid,
+    // result is and enum of type EBeginAuthSessionResult
+    // its value indicates what is wrong
+}
 ```
+
+You can find details on the possible values for the EBeginAuthSessionResult result here:
+
+{% embed url="https://partner.steamgames.com/doc/api/steam_api#EBeginAuthSessionResult" %}
 
 ### Ending it
 
