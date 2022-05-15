@@ -11,6 +11,8 @@ coverY: 17.4
 
 {% embed url="https://discord.gg/6X3xrRc" %}
 
+{% embed url="https://www.youtube.com/watch?v=6ujmZI1qUYI" %}
+
 ## GitHub Sponsors
 
 {% hint style="success" %}
