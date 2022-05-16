@@ -51,4 +51,4 @@ This is a second project that should be on the same Unity Version as your Produc
 * Prefabs
 * etc
 
-The idea is that this project is your place of learning, its your messy sandbox where you don't need to be clean or safe. Ideally you wont modify the demos and examples of the assets you import as this project also serves as a clean example&#x20;
+The idea is that this project is your place of learning, its your messy sandbox where you don't need to be clean or safe. Ideally you wont modify the demos and examples of the assets you import as this project also serves as a clean example of those 3rd parties. A place where you can use the original samples as intended by the author.
