@@ -42,6 +42,6 @@ This is a common solution for long flowing hair, dangling tokens on weapons, fle
 
 We often want to add a bit of life to our props and environments. Verlet Spring can be used to drive any hierarchy of transforms working much like a chain of spring joints only with the ability to propagate changes along its length.
 
-![A Verlet Spring Hierarchy simulating a chain whipping around in a circle (1 Verlet Spring Sample scene)](<../../.gitbook/assets/image (170) (1).png>)
+![A Verlet Spring Hierarchy simulating a chain whipping around in a circle (1 Verlet Spring Sample scene)](<../../.gitbook/assets/image (170) (1) (1).png>)
 
 ![Rolling a ball through a field of a few hundred Verlet Springs](<../../.gitbook/assets/image (181) (1) (1).png>)

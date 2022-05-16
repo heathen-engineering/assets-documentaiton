@@ -44,7 +44,7 @@ This will make a new reference slot you can drag and drop your stat into on the 
 
 You can now drag the desired stat object from your Steam Setting into that slot.
 
-![](<../../../.gitbook/assets/image (159) (1) (1).png>)
+![](<../../../.gitbook/assets/image (159) (1) (1) (1).png>)
 
 ![](<../../../.gitbook/assets/image (161) (1) (1) (1) (1) (1).png>)
 

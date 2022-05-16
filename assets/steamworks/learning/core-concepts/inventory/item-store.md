@@ -25,7 +25,7 @@ This article also assumes you already understand how to create UI and behaviours
 
 ## Creating the Store UI
 
-![](<../../../../../.gitbook/assets/image (180) (1).png>)
+![](<../../../../../.gitbook/assets/image (180) (1) (1).png>)
 
 Creating the visuals is up to you, how you do it doesn't really matter and this subject is not impacted at all by Steam API you would do it the same way you would create any UI in your game.
 

@@ -12,6 +12,7 @@
   * [Callbacks](company/concepts/callbacks.md)
   * [Debugging](company/concepts/debugging.md)
   * [Error Handling](company/concepts/error-handling.md)
+  * [Git Control & Unity](company/concepts/git-control-and-unity.md)
   * [IntelliSense](company/concepts/intellisense.md)
   * [Lambda Expressions](company/concepts/lambda-expressions.md)
   * [Multi-Scene Architecture](company/concepts/multi-scene-architecture.md)

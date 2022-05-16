@@ -19,7 +19,7 @@ _(10 USD level or more)._
 If you are a sponsor you can install uGUI Tools from the Package Manager by looking under Steamworks Complete's "Samples"
 {% endhint %}
 
-![](<../../../.gitbook/assets/image (182).png>)
+![](<../../../.gitbook/assets/image (182) (1).png>)
 
 ## Overview
 

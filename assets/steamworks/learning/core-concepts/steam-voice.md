@@ -18,7 +18,7 @@ The [voice recorder componenet](../../components/voice-recorder.md) can be used 
 
 The idea is that you connect the Voice Stream event up to a method that can send that data over your network.
 
-![](<../../../../.gitbook/assets/image (158) (1).png>)
+![](<../../../../.gitbook/assets/image (158) (1) (1).png>)
 
 ```csharp
 voiceRecorded.evtVoiceStream.AddListener(SendVoiceData);

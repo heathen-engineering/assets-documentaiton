@@ -8,7 +8,7 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 
 This scene demonstrates the use of the [UGC Query Manager](../../components/ugc-query-manager.md) to browse for Workshop items in game.
 
-![](<../../../../.gitbook/assets/image (182) (1).png>)
+![](<../../../../.gitbook/assets/image (182) (1) (1).png>)
 
 ### What do I learn?
 

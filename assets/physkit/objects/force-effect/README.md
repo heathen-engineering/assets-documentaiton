@@ -16,7 +16,7 @@ Create > Physics > Effects
 
 This will create a new Scriptable Object which exposes any of the relevant configuration values for that effect.
 
-![An example of a wind effect](<../../../../.gitbook/assets/image (158).png>)
+![An example of a wind effect](<../../../../.gitbook/assets/image (158) (1).png>)
 
 Each effect has unique uses and configuration and is applied in a unique way ... the following articles describe the effects included with the kit.
 

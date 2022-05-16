@@ -39,6 +39,6 @@ You must have the simulation running so the Steam API is initialized and able to
 
 Once done you can find Scriptable Objects for each of the identified achievements nested under your Steam Settings
 
-![](<../../../.gitbook/assets/image (167) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (167) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 You can learn more about the [Achievement Object](../objects/achievement-object.md) in our documentation. Using this object you can reference this achievement in any of your own logic and easily test for unlock and unlock the achievement.

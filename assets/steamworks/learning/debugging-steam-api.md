@@ -113,7 +113,7 @@ You can use the Achievements tab to view and unlock/reset all registered achieve
 
 ## Leaderboards
 
-![](<../../../.gitbook/assets/image (170) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (170) (1) (1) (1) (1).png>)
 
 You can use the Leaderboard's tab to view your score and rank on all registered leaderboards. Leaderboards while one of the simplest aspects of Steam API are also one of the more fragile aspects.
 

@@ -60,13 +60,13 @@ Thus anything that supports it directly is the better option. This means Photon 
 
 ### Client Server&#x20;
 
-Steamworks Networking APIs + ([FishNetworking ](https://github.com/FirstGearGames/FishNet)or [NetCode ](https://github.com/Unity-Technologies/com.unity.netcode.gameobjects)or [Mirror](https://github.com/vis2k/Mirror)) + ([PlayFab ](https://playfab.com)or [GameLift](https://aws.amazon.com/gamelift/) or GPortal)
+Steamworks Networking APIs + ([FishNetworking ](https://github.com/FirstGearGames/FishNet)or [NetCode ](https://github.com/Unity-Technologies/com.unity.netcode.gameobjects)or [Mirror](https://github.com/vis2k/Mirror)) + ([PlayFab ](https://playfab.com/)or [GameLift](https://aws.amazon.com/gamelift/) or GPortal)
 
 As with the above Steamworks Networking APIs are hands down the bet way to talk between two Steam gamers or a Steam Gamer and a Steam Game Server … so the only thing we need to add to make this Client Server … is a hosting provider.
 
 There are 3 main options here
 
-[PlayFab](https://playfab.com)\
+[PlayFab](https://playfab.com/)\
 Microsoft Azure based able to scale well beyond what others can do and drives some of the biggest live ops based games in the industry. The entry point is free and the operations cost low. It has tutorials and instructions for use with Steam and Mirror, etc. so on boarding is easy and its has a native integration with Steam API making it easier to leverage advanced features like trusted stats, achievements and leaderboard, Steam MTX, etc.
 
 [GameLift](https://aws.amazon.com/gamelift/)\
@@ -119,7 +119,7 @@ MLAPI was closely related to uNET in form and function … which Unity abandoned
 
 Oh and MLAPI just in and of its self is a LOL … its a HLAPI the name just adds insult … MLAPI was a concept as well actually Unity has a "MLAPI" concept for its DOTS stack … not a tech but a concept like you have HLAPI and LLAPI … so ya the name of this product was a tragedy as is its history.
 
-### [Photon](https://www.photonengine.com)
+### [Photon](https://www.photonengine.com/)
 
 <img src="../../../../.gitbook/assets/NoGodPleaseNoGIF.gif" alt="" data-size="original">
 
@@ -141,7 +141,7 @@ Why don't we like it
 
 All that said you can use this along side Steamworks.NET but you will not be using Steam's Networking and you will have many redundant services and features.
 
-### [PlayFab](https://playfab.com)
+### [PlayFab](https://playfab.com/)
 
 From Microsoft and built on the Azure platform, PlayFab is a Live Operations provider, it covers all of your backend service needs, hosting and a lot more. It has integrations with Steam and works wonderfully as an add on to any networking stack or as a core component in your networking stack such as seen in our preference section about for the Client Server set up.
 

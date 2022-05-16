@@ -6,7 +6,7 @@ Available in PhysKit [Complete](https://prf.hn/l/rpoyznk).
 
 ## Introduction
 
-![](<../../../.gitbook/assets/image (159) (1).png>)
+![](<../../../.gitbook/assets/image (159) (1) (1).png>)
 
 Used with the Surface Tool component to simulate the effect of buoyancy on a rigidbody.
 

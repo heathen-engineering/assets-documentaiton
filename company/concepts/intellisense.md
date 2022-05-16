@@ -52,13 +52,13 @@ Type the name you want for the handler even though it doesn't exist yet.
 
 Now we have our lovely little red line telling us hay ... this doesn't exist. You can now follow the steps as we have done for every other use case and be presented with several solutions.
 
-![](<../../.gitbook/assets/image (171).png>)
+![](<../../.gitbook/assets/image (171) (1).png>)
 
 #### Step 3
 
 The top solution will be to create a new private method suitable for this event handler. Which I have done and you can see the results below.
 
-![](<../../.gitbook/assets/image (167).png>)
+![](<../../.gitbook/assets/image (167) (1).png>)
 
 
 
@@ -66,7 +66,7 @@ The top solution will be to create a new private method suitable for this event 
 
 If you have ever gotten sample code from me then you know I misspell a lot of things.
 
-![](<../../.gitbook/assets/image (183).png>)
+![](<../../.gitbook/assets/image (183) (1).png>)
 
 How could you possibly know what it should be ... well aside from being better at spelling than me? Use IntelliSense! + a little bit of reading ... its a lot I know but we can do it!
 
@@ -105,7 +105,7 @@ Select the best option. Notice it gives you 4 options
 
 So we want the 4th option, which is to correct my bad spelling
 
-![](<../../.gitbook/assets/image (170).png>)
+![](<../../.gitbook/assets/image (170) (1).png>)
 
 ### Namespaces
 
@@ -143,7 +143,7 @@ Having done so you can see that it has added the namespace I was missing for me 
 
 
 
-![](<../../.gitbook/assets/image (170).png>)
+![](<../../.gitbook/assets/image (170) (1).png>)
 
 ### Parameters
 
@@ -159,7 +159,7 @@ For the first paramiter I can see its of type `Steamworks.ELobbyType` and given 
 
 In fact as I type the opening pram bracket It highlights the enum for me
 
-![](<../../.gitbook/assets/image (168).png>)
+![](<../../.gitbook/assets/image (168) (1).png>)
 
 So I can simply press "Tab" or "Enter" to accept that suggestion and use that enum. I can also see what  the enum does based on the documentation.\
 note in the screen shot

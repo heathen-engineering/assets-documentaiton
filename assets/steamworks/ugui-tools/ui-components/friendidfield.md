@@ -2,7 +2,7 @@
 
 ## Overview
 
-![](<../../../../.gitbook/assets/image (168) (1).png>)
+![](<../../../../.gitbook/assets/image (168) (1) (1).png>)
 
 The Friend ID Field control is meant to be used to display a User's Friend ID in a Read Only Input Field such that users can easily select it and copy and paste the result.
 

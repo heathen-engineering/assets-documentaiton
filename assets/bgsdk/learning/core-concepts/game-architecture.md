@@ -118,11 +118,11 @@ This term is used in the scope of this tool, and with Venly to refer to a wallet
 
 A common concept in game design, this may also be referred to as your "Live Ops" service or "Operations Service" or occasionally "Platform Service". Some examples of popular backend service providers include:
 
-* [Steam](https://store.steampowered.com)\* (Valve)
-* [PlayFab](https://playfab.com) (Microsoft)
+* [Steam](https://store.steampowered.com/)\* (Valve)
+* [PlayFab](https://playfab.com/) (Microsoft)
 * [GameLift](https://aws.amazon.com/gamelift/) (Amazon)
-* [GameSparks](https://www.gamesparks.com)
-* [Firebase ](https://firebase.google.com)(Google)
+* [GameSparks](https://www.gamesparks.com/)
+* [Firebase ](https://firebase.google.com/)(Google)
 
 {% hint style="info" %}
 _**\*Steam as a Backend Service provider**_

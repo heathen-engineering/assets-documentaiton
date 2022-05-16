@@ -28,5 +28,5 @@ We keep our props simple but detailed, modifying Heathen assets should be trivia
 * Weapon rack
 * Antler ... a little extra something 👍
 
-![Image taken in Unity 2019 HDRP with standard shader](<../../../../.gitbook/assets/image (167) (1).png>)
+![Image taken in Unity 2019 HDRP with standard shader](<../../../../.gitbook/assets/image (167) (1) (1).png>)
 

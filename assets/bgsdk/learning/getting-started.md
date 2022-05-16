@@ -7,7 +7,7 @@ description: Quick start guide for Heathen's Blockchain Game SDK
 {% hint style="info" %}
 Before you get going with the Unity integration, you need to contact Arkane and set up your account. From them you will get your **Application ID**, **Client ID** and **Secret** all of which you will need to use the Unity integration.
 
-[https://arkane.network/](https://arkane.network)
+[https://arkane.network/](https://arkane.network/)
 {% endhint %}
 
 ## Step 1: Register with Venly

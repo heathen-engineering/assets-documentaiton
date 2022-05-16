@@ -163,10 +163,10 @@ Once you have a server build you need to decide how your going to host it.
     This is where you ship your server build and let player's host it them selves
 2.  Bespoke
 
-    Services like [G-Portal](https://www.g-portal.com) can be used to host official, private, etc. ... you see this done a lot with survival games like Minecraft, Conan Exiles, etc.
+    Services like [G-Portal](https://www.g-portal.com/) can be used to host official, private, etc. ... you see this done a lot with survival games like Minecraft, Conan Exiles, etc.
 3.  Traditional
 
-    Using a service like [PlayFab](https://playfab.com), [GameSparks ](https://www.gamesparks.com)or [Multiplay](https://unity.com/products/multiplay)
+    Using a service like [PlayFab](https://playfab.com/), [GameSparks ](https://www.gamesparks.com/)or [Multiplay](https://unity.com/products/multiplay)
 4.  DIY
 
     Do it your self, if your a glutton for pain or just really like data operations you could of course host your servers your self.

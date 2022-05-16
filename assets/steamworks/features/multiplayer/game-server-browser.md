@@ -92,9 +92,9 @@ In short there is no facility at current available to you that we are aware wher
 
 There are great tools available to you though a few are linked below. We do not sponsor or endorse any of them, this is purely to get you started on your own research
 
-* [PlayFab](https://playfab.com)
-* [G-Portal](https://www.g-portal.com)
-* [Game Sparks](https://www.gamesparks.com) / [Game Lift](https://aws.amazon.com/gamelift/) / [AWS](https://aws.amazon.com)
+* [PlayFab](https://playfab.com/)
+* [G-Portal](https://www.g-portal.com/)
+* [Game Sparks](https://www.gamesparks.com/) / [Game Lift](https://aws.amazon.com/gamelift/) / [AWS](https://aws.amazon.com/)
 * [Multiplay](https://unity.com/products/multiplay)
 * [Spatial OS](https://ims.improbable.io/products/spatialos)
 
@@ -116,22 +116,22 @@ This means that you ship your server build and let player's host them, them selv
 
 Abuse of the term but what is meant here is a hosting service provider. These are usually used to let your player's host servers. Minecraft, Ark, Conan Exiles, this is a popular model with survival games.
 
-Look for providers like [GPortal](https://www.g-portal.com) to help with this.
+Look for providers like [GPortal](https://www.g-portal.com/) to help with this.
 
 ### Backend Service Provider
 
 The new traditional method, using a backend service provider, most if not all of these offer hosting of some sort along with other services.
 
-Look for providers like [PlayFab](https://playfab.com), [GameSparks ](https://www.gamesparks.com)and [Multiplay](https://unity.com/products/multiplay)
+Look for providers like [PlayFab](https://playfab.com/), [GameSparks ](https://www.gamesparks.com/)and [Multiplay](https://unity.com/products/multiplay)
 
 ### Proprietary
 
 There are some options that offer great advantages but that are proprietary systems so moving off of them is not really possible at least not without a lot of work. We would only recommend you consider these if your game REALLY needs the advantage they offer and your happy to marry your game to there offerings.
 
-Look at providers like [Improbable](https://ims.improbable.io)
+Look at providers like [Improbable](https://ims.improbable.io/)
 
 ### DIY
 
 Do it your self, not recommended for ... well most people and even large organizations. It is exceedingly difficult to host a live service game of any kind without a lot of money and experience and 24hr a day staff.&#x20;
 
-That said it is an option and you can offset some of the cost by using basic hosting services like [Azure](https://azure.microsoft.com), [AWS](https://aws.amazon.com), etc.
+That said it is an option and you can offset some of the cost by using basic hosting services like [Azure](https://azure.microsoft.com/), [AWS](https://aws.amazon.com/), etc.

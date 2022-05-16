@@ -10,7 +10,7 @@ Represents a Steam Leaderboard and is used by the [Steam Settings](steam-setting
 
 You create leaderboard objects through thee Steam Settings object by clicking the <mark style="color:green;">+ New</mark> button in the leaderboards list.
 
-![](<../../../.gitbook/assets/image (184).png>)
+![](<../../../.gitbook/assets/image (184) (1).png>)
 
 From the Steam Settings you can mark the leaderboard as create if missing by ticking the toggle to the left of the name.
 

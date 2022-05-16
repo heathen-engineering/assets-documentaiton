@@ -14,7 +14,7 @@ You can apply settings to a Verlet Hierarchy either as a constant you type into 
 
 Or you can create settings as Scriptable Objects so you can easily reference those settings on multiple systems
 
-![example of settings applied as a referenced settings object](<../../../.gitbook/assets/image (171) (1) (1).png>)
+![example of settings applied as a referenced settings object](<../../../.gitbook/assets/image (171) (1) (1) (1).png>)
 
 You can create a settings object as a scriptable object by right clicking in your project and selecting
 

@@ -22,7 +22,7 @@ The purpose of the BGSDK kit at runtime in Unity is to simplify the use of these
 BGSDK kit at dev time, that is within the Unity Editor can be used to perform "trusted" operations such as minting tokens, creating new token and contract types, etc. These operations are made available for testing purposes only and cannot be ran during run time.
 {% endhint %}
 
-Heathen Engineering's BGSDK Foundation allows you to manage in-game items as blockchain assets. It is a complete wrapper around [Venly](https://www.venly.io)'s Web API with regards to client safe operations. The tool simplifies integration with Arkane API exposing all relevant features and functions to C# classes and includes Editor extensions to aid in design and deployment of Contracts and Tokens.
+Heathen Engineering's BGSDK Foundation allows you to manage in-game items as blockchain assets. It is a complete wrapper around [Venly](https://www.venly.io/)'s Web API with regards to client safe operations. The tool simplifies integration with Arkane API exposing all relevant features and functions to C# classes and includes Editor extensions to aid in design and deployment of Contracts and Tokens.
 
 {% embed url="https://docs.venly.io/api/" %}
 
@@ -34,7 +34,7 @@ Playable Demo using the BGSDK Foundation
 
 ## Requirements
 
-Please note that you will need to register for an account with [Venly Network](https://www.venly.io) to receive the required Client ID and Secret used by the kit to connect to the [Venly Network](https://www.venly.io) backend. This must be acquired from [Venly Network](https://www.venly.io) directly.
+Please note that you will need to register for an account with [Venly Network](https://www.venly.io/) to receive the required Client ID and Secret used by the kit to connect to the [Venly Network](https://www.venly.io/) backend. This must be acquired from [Venly Network](https://www.venly.io/) directly.
 
 ## Features
 

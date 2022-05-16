@@ -94,7 +94,7 @@ Installing Unity Packages via Git URL as we do here requires that you have Git i
 \
 If you don't have it already you can install Git from the following link:
 
-* [https://git-scm.com/](https://git-scm.com)&#x20;
+* [https://git-scm.com/](https://git-scm.com/)&#x20;
 
 Note that this does NOT mean you will be using Git as a source repo, it is simply a set of protocols used by Package Manager to download the required code from its target repository.
 {% endhint %}
@@ -132,7 +132,7 @@ If for whatever reason you clicked no, or if you had an error and needed to inst
 
 &#x20;
 
-![](<../../.gitbook/assets/image (180).png>)
+![](<../../.gitbook/assets/image (180) (1).png>)
 
 ## From Package Manager
 

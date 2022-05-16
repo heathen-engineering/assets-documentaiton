@@ -40,7 +40,7 @@ Why?
 Valve have not provided an official means to do so through the Steam API.
 {% endhint %}
 
-![](<../../../.gitbook/assets/image (182) (1) (1).png>)
+![](<../../../.gitbook/assets/image (182) (1) (1) (1).png>)
 
 A few key features to know about when you create your Leaderboard.
 
