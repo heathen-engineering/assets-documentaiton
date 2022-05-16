@@ -12,7 +12,7 @@ It has quite a few benefits over the older .unitypackage import method but it do
 
 ### History
 
-Pack with Unity 2018 Unity started to introduce the concept of the Package Manager.
+With Unity 2018 Unity started to introduce the concept of the Package Manager.
 
 {% embed url="https://docs.unity3d.com/Manual/upm-ui.html" %}
 
