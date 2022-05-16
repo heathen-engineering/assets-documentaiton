@@ -163,6 +163,46 @@ Returns the uint value of the AccountId.
 
 ## Methods
 
+### ClearRichPresence
+
+```csharp
+public static void ClearRichPresence()
+```
+
+Clears the rich presence data for the local user.
+
+### Get
+
+```csharp
+public static UserData Get( .. );
+```
+
+This method is a static method that can be used to fetch the user data for any given user or for the local user. You can pass in a CSteamID or its ulong equivlent to fetch the user data for other users. If you do not pass in an id this method will return the local user's user data.
+
+### GetGamePlayed
+
+```csharp
+public bool GetGamePlayed(out FriendGameInfo_t gameInfo);
+```
+
+Functionally the same as calling `API.Friends.Client.GetFriendGamePlayed(user.cSteamId, out results)`. This returns rather or not the user is in a game and if so the results will be populated with information about that game.
+
+### InviteToGame
+
+```csharp
+public void InviteToGame(string connectString)
+```
+
+Invites the target user to a game passing in the connection string. This will cause the [GameRichPrecenseJoinRequest](../api/overlay.md#game-rich-presence-join-requested) event to be raised on the invited user if present in game, or will launch the game with the connectionString in the command line if not.
+
+### InviteToLobby
+
+```csharp
+public bool InviteToLobby(Lobby lobby)
+```
+
+Invites the target user to join a specific lobby. This will cause the [GameLobbyJoinRequest ](../api/overlay.md#game-lobby-join-requested)event to be raised on the invited user when accepted if present in game or will launch the game with the lobby ID in the command line if not in game.
+
 ### LoadAvatar
 
 ```csharp
@@ -181,14 +221,6 @@ user.LoadAvatar((result) =>
 });
 ```
 
-### GetGamePlayed
-
-```csharp
-public bool GetGamePlayed(out FriendGameInfo_t gameInfo);
-```
-
-Functionally the same as calling `API.Friends.Client.GetFriendGamePlayed(user.cSteamId, out results)`. This returns rather or not the user is in a game and if so the results will be populated with information about that game.
-
 ### SendMessage
 
 ```csharp
@@ -199,10 +231,10 @@ Sends the user a message via the Replay To Friend feature.
 
 If this returns false then the current user is rate or chat limited by Valve.
 
-### Get
+### SetRichPresence
 
 ```csharp
-public static UserData Get( .. );
+public static bool SetRichPresence(string key, string value)
 ```
 
-This method is a static method that can be used to fetch the user data for any given user or for the local user. You can pass in a CSteamID or its ulong equivlent to fetch the user data for other users. If you do not pass in an id this method will return the local user's user data.
+Sets a rich presence value on the local user.

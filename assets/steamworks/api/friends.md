@@ -292,7 +292,7 @@ public static EPersonaState GetFriendPersonaState(UserData userId)
 
 Gets the current status of the specified user.
 
-### GetFriendRIchPResence
+### GetFriendRichPresence
 
 ```csharp
 public static string GetFriendRichPresence(UserData userId, string key)
