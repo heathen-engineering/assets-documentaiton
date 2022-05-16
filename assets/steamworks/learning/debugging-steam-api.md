@@ -22,6 +22,19 @@ Steam's Documentation has a Debugging article as well ... read it ... its good
 [https://partner.steamgames.com/doc/sdk/api/debugging](https://partner.steamgames.com/doc/sdk/api/debugging)
 {% endhint %}
 
+## Publish Your Changes
+
+When you make any changes in Steam Developer Portal you **must** publish them before they take effect and can be testing in your game
+
+> Use this page to publish all of the metadata that you've used this site to author. You'll need to publish in order to test things like your game **depot configuration**, new builds, or new **achievements** you've added. If your game is not yet set to playable, this action **will not release the game**, but will simply **publish configuration changes you've made**.
+>
+> \
+> The buttons below invoke source control (Perforce) commands - if you have any trouble with these, just let us know.
+
+The above quote is from the publish page as seen below
+
+![The publish page, make sure to publish before you try to test](<../../../.gitbook/assets/image (164).png>)
+
 ## Environment Checks
 
 Having something wrong with your environment (Unity Editor, Steam.exe, Steam User, etc.) can cause odd issues with Steam API ones that are hard to pin down unless you know what to look for.
@@ -135,7 +148,7 @@ You can view the subscription status of all DLC in the DLC tab
 
 ## Inventory
 
-![](<../../../.gitbook/assets/image (164) (1) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (164) (1) (1) (1) (1) (1) (1).png>)
 
 The inventory tab will display all the items registered to your game and provides tools for clearing and granting each item
 

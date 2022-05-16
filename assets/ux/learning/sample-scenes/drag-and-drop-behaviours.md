@@ -6,7 +6,7 @@ Available in UX [Complete](https://prf.hn/l/rpV2JWe)
 
 ## Introduction
 
-![](<../../../../.gitbook/assets/image (164) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (164) (1) (1) (1).png>)
 
 This scene demonstrates the basics of the Drag and Drop system showing off the various drag and drop behaviours.&#x20;
 
