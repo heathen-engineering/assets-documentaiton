@@ -1,3 +1,7 @@
+---
+description: Creating an item store in game and in Steam
+---
+
 # Item Store
 
 ## Introduction
