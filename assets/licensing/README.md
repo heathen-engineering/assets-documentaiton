@@ -25,6 +25,8 @@ You have 3 ways to license Heathen's assets and content described in detail in e
 
 For small teams and indies this is really the best method for you and for Heathen.
 
+{% embed url="https://www.youtube.com/watch?v=k8uBq_BrMgY" %}
+
 {% embed url="https://github.com/sponsors/heathen-engineering" %}
 
 {% hint style="success" %}

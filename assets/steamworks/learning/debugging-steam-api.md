@@ -6,9 +6,7 @@
 Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/integration/steamworks-v2-complete-190316)asset.
 {% endhint %}
 
-Heathen provides a powerful inspector that will show you the states and values of all Steam API artifacts configured for your project. To Access the inspector simply open the Steamworks > Inspector menu.
-
-![Opening the inspector](<../../../.gitbook/assets/image (20).png>)
+Heathen provides a powerful inspector that will show you the states and values of all Steam API artefacts configured for your project. To Access the inspector simply open the **Window > Steamworks Inspector** menu.
 
 {% hint style="warning" %}
 #### IMPORTANT
@@ -47,13 +45,13 @@ Did you **ever** have a manual or custom installation of Steamworks.NET or ever 
 
 That is at any time was there ever a Steamwork.NET in your project that was not from the Package Manager Git URL install?
 
-If yes; then know that those custom installs would have Steamworks.NET artifacts in mutliple folder locations. If that install was present or even partially present from an incomplet attempt to manually remove it then Unity will have ... on install of the proper Steamworks.NET from Package Manager ... attempted to merge the assets and made a complete mess of it.
+If yes; then know that those custom installs would have Steamworks.NET artefacts in multiple folder locations. If that install was present or even partially present from an incomplete attempt to manually remove it then Unity will have ... on install of the proper Steamworks.NET from Package Manager ... attempted to merge the assets and made a complete mess of it.
 
 #### How to fix
 
 1. Remove the offending files\
    Steamworks.NET manual installs would have installed bits in several different folders (scripts, plugins, examples, etc.)\
-   Many old assets would have burried a copy or customized version of Steamworks.NET in there asset.
+   Many old assets would have buried a copy or customized version of Steamworks.NET in there asset.
 2. Once you are positive that you fully remove Steamworks.NET and related files from your Assets folder.\
    Remove Steamworks.NET from package manager and then reinstall it
 
@@ -63,11 +61,11 @@ For some reason some devs like to run Steam.exe as Admin or run Unity Editor as 
 
 Its important that Unity Editor and Steam.exe are running as the same user, which should also be the user that is logged into the OS  in order for Steam API to work properly.
 
-e.g. Do not run either Steam.exe or Unity Editor with elivated or any other non-standard permisions or users. If you do you will have issues.
+e.g. Do not run either Steam.exe or Unity Editor with elevated or any other non-standard permissions or users. If you do you will have issues.
 
 ### Steam User
 
-Valve's Steam has a concept of "limited" users ... when a new user is created it is considered limited until it has spent the equivlent of 5 USD on the Steam store or added 5 USD to the Steam wallet.
+Valve's Steam has a concept of "limited" users ... when a new user is created it is considered limited until it has spent the equivalent of 5 USD on the Steam store or added 5 USD to the Steam wallet.
 
 This applies to dev accounts, publishers, etc. there are no exceptions. So if your account or your test account is new and or has not spent at least 5 USD on Steam odds are its limited by Valve and it will have limited access to Steam API including but not limited to&#x20;
 
@@ -78,7 +76,7 @@ This applies to dev accounts, publishers, etc. there are no exceptions. So if yo
 * Friend limits\
   Typically cant have friends, friend chats, friend invites, etc.
 
-In addition the Steam User your testing the game with MUST own a license to the app to initalize the Steam API. Developer accounts are "supposed" to be granted a dev license to the app ... however we have seen it such that this doesn't happen correctly.
+In addition the Steam User your testing the game with MUST own a license to the app to initialize the Steam API. Developer accounts are "supposed" to be granted a dev license to the app ... however we have seen it such that this doesn't happen correctly.
 
 You can test and modify ownership of the app you are a dev for using Steam's command line as outlined in&#x20;
 
