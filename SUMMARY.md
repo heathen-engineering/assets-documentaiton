@@ -9,7 +9,7 @@
   * [Doc Formatting](company/heathen-group/doc-formatting.md)
 * [General Guides](company/concepts/README.md)
   * [Bootstrap Scene](company/concepts/bootstrap-scene.md)
-  * [Callbacks](company/concepts/callbacks.md)
+  * [Callbacks & Delegates](company/concepts/callbacks.md)
   * [Debugging](company/concepts/debugging.md)
   * [Error Handling](company/concepts/error-handling.md)
   * [Git Control & Unity](company/concepts/git-control-and-unity.md)

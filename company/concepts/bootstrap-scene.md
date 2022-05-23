@@ -19,6 +19,8 @@ _Verb_\
 
 A Bootstrap scene is where we define a simple scene containing only the system level objects of our game. The purpose is to initialize the core systems of a game, to validate the environment and systems are ready to load the game and then to load the main game.
 
+{% embed url="https://www.youtube.com/watch?v=rDNOpask9mQ" %}
+
 {% embed url="https://github.com/heathen-engineering/Examples/tree/main/UnityProjects/Bootstrap%20Scene%20Example%20Project" %}
 Bootstrap Scene Example Project
 {% endembed %}
