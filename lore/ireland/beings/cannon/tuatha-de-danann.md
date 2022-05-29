@@ -25,7 +25,6 @@ These are pending research
 * Cermait
 * Cian
 * Clídna
-* Danu
 * Dagda
 * Delbáeth-Tuirenn
 * Dian Cecht-Miach-Airmed
