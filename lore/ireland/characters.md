@@ -6,3 +6,6 @@ description: >-
 
 # Characters
 
+* Cú Chulainn
+  * demi god
+  * notable irish hero
