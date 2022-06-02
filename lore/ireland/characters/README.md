@@ -15,7 +15,7 @@ description: >-
   \
   Given the nature of this one we need to first pin down if the Morrigan is even a figure from pre-Christian lore of it is a mash up of multiple female figures.\
   \
-  A lot of arm chair scholars draw lines of similarity with Valkyrie, Freja and similar. This seems to be only a surface similarity in that they are all female, associated with battle and have some hand in the selection of those slain in battle. War and Power are generally associated together and Female and choosing in general (fate, selecting the dead, prophecy) are again generally associated concepts in many cultures. I think this is more a common concept among people than it is a link that might aid in discovering more on this character.\
+  A lot of arm chair scholars draw lines of similarity with Valkyrie, Freja and similar. This seems to be only a surface similarity in that they are all female, associated with battle and have some hand in the selection of those slain in battle. War and Power are generally associated together and Female and choosing in general (fate, selecting the dead, prophecy) are again generally associated _concepts_ in many cultures. I think this is more a common concept among people than it is a link that might aid in discovering more on this character.\
   \
   Later works even seem to replace Ériu and or Fótla with Morrigan or variations of that spelling. To me this lands more credit to the notion that Morrigan is either a modern mashup or a term modern or otherwise simply meaning in general "high female figure" or more than one of them
 * Ériu\
