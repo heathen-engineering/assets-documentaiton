@@ -43,7 +43,7 @@
       * [Milesians](lore/ireland/beings/derivative/milesians.md)
       * [Muintir Nemid](lore/ireland/beings/derivative/muintir-nemid.md)
   * [Characters](lore/ireland/characters/README.md)
-    * [Cannon](lore/ireland/characters/cannon/README.md)
+    * [Cannon](lore/ireland/characters/cannon.md)
       * [Érui](lore/ireland/characters/cannon/erui.md)
     * [Derivative](lore/ireland/characters/derivative.md)
   * [Concepts](lore/ireland/concepts.md)
