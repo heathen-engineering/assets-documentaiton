@@ -49,9 +49,16 @@ While all of the examples above are based on blockchain technology, blockchain/N
 Learn more about NFTs in game in our [Non-Fungible Tokens](../tools/non-fungible-tokens-nfts.md) article
 {% endhint %}
 
-In the more modern version players are typically required to "buy in" by purchasing "tokens" or "NFTs" in addition they must also cover a "gas price" as is the nature of blockchain transactions. This adds a number of middlemen to the process and insures players monetize as soon as possible. For note some games do require a "buy in" that are not based on blockchain this is simply purchasing an in-game item.
+In the more modern version players are typically required to "buy in" by purchasing "tokens" or "NFTs" in addition they must also cover a "gas price" as is the nature of blockchain transactions. This adds a number of middlemen to the process and insures players monetize as soon as possible.&#x20;
 
 Play to Earn can be added on to other models. For example Eve On-line's "Pilot License" and World of Warcraft's "WoW Token" enable players a means to inject money into the system and consequently a limited means by which the player can extract wealth from the system.&#x20;
+
+{% hint style="info" %}
+When there is "wealth" that is "real value" in a system markets will appear to exploit it e.g. boosting, gold trading, skin market, etc.&#x20;
+
+\
+In Heathen's opinion you should be working hard to keep the "real value" of your game, items in your game and concepts around your game as close to zero as possible to protect the integrity and your control over your game.
+{% endhint %}
 
 ## Effect on the Player
 

@@ -15,7 +15,7 @@
   * [Git Control & Unity](company/concepts/git-control-and-unity.md)
   * [IntelliSense](company/concepts/intellisense.md)
   * [Lambda Expressions](company/concepts/lambda-expressions.md)
-  * [Monetization](company/concepts/monetization/README.md)
+  * [Monetization](company/concepts/monetization.md)
     * [Models](company/concepts/monetization/models/README.md)
       * [Free to Play](company/concepts/monetization/models/free-to-play.md)
       * [Pay to Play](company/concepts/monetization/models/pay-to-play.md)
