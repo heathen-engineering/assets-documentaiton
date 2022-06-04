@@ -41,42 +41,6 @@ This section goes over some concepts that are just fundamentally harmful to your
 
 ### Play to Earn
 
-This is one of the most problematic we have seen to date.&#x20;
-
-#### Definition:
-
-In this model a player "buys in" in some manner rather that is the purchase of some content or out right a buy in via a NFT or in game currency. That "buy in" is risked through gameplay that may result in a reward or "earning". That is the player can "play to earn", another way to word it is … the player can "wager an ante in a game for a chance of winning a pot".
-
-Is it not clear how this is 100% gambling. Its literally the definition of poker and every other betting game.
-
-#### Why it sucks:
-
-Obvious reason 1
-
-Put very bluntly a "Play to Earn" accordingly to the definitions and regulations in many regions is clearly gambling. We here at Heathen are not pearl clutching "Gambling is bad M-kay" in fact a couple of us have worked in that industry creating gambling games. However, if you want to create a gambling product you must follow the regulations associated with gambling. Attempting to hide gambling within a video game is going to result in huge issues for you and more damage to the industry.
-
-Obvious reason 2
-
-Its at best a pyramid scheme like feature. If this isn't outright illegal in your region yet, it likely will be soon. Even then it is defiantly harmful to your players and over time will result in a very nasty collapse. \
-\
-Well maybe you came up with someway this isn't a closed echo-system pyramid scheme! Willing to bet you just came up with a layered pyramid scheme but lets assume you did. You still have the fundamental issue of associating "real" value with a game system. When "real" value becomes involved the legal risk and exposure you face goes up, and the effect of your game as an entertainment medium is changed. At best a "game" with real value is gambling, at worst its work, in both cases every major nation regulates that tightly.
-
-Obvious reason 3
-
-Lets assume you live in the wild wild west and legal and regulator issues are not a problem. Lets also assume your player base are all well balanced people with no control issues at all. Both impossible fictions but still.
-
-Assuming you are here to learn how to monetize a piece of creative entertainment work, allowing "real value" to creep into your game world is the fastest way to "kill the fun".&#x20;
-
-Now of course gambling games can be said to be fun, that is a since of thrill seeking based on wagering and actually doesn't have as much to do with winning as some think.
-
-The type of fun we refer to in "pure" entertainment sources such as story telling, books, music, movies and video games is quite different. What was once a fun thing one \*wanted\* to do simply to do it ... is now a thing they must do to earn. At best you made your game a job, for most those you made your game a source of further depression.&#x20;
-
-{% hint style="info" %}
-The idea of turning a "game" into "work" happens not just with "Play to Earn" but is also seen with games that reward for every action. When a player is "working" for the next reward they are not "playing" the game they are simply exploiting it as they would an employer for the next payoff.\
-\
-Play to Eran simply dials this effect on up to 11 of out 10.
-{% endhint %}
-
 ### Gacha
 
 Until we saw Play to Earn this was the worst offender. Why is it not as bad as Play to Earn ... well in this model there is at least the guise of play covering up the ante step of betting.
