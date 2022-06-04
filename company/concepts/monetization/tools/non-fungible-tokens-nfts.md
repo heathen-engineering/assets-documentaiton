@@ -10,11 +10,11 @@ Before we go any further, know that NFTs in and of them selves are not a problem
 
 Non-Fungible Token ... dumb choice of wording to mean a serialized ID e.g. a unique ID.
 
-To understand in detail we need dedicated articles so look [here ](blockchain-and-nfts.md)for more. In short though its simply a unique identifiable record in a distributed database. It really amounts to not a lot more than a unique identifier associated with some transactions and maybe some metadata.
+To understand in detail we need dedicated articles so look [here ](non-fungible-tokens-nfts/blockchain-and-nfts.md)for more. In short though its simply a unique identifiable record in a distributed database. It really amounts to not a lot more than a unique identifier associated with some transactions and maybe some metadata.
 
 {% hint style="info" %}
 Heathen builds an integration with Blockchain.\
-There we talk about [ways to use blockchain and NFTs in games](../../../../../assets/bgsdk/learning/core-concepts/nfts-in-game.md).
+There we talk about [ways to use blockchain and NFTs in games](../../../../assets/bgsdk/learning/core-concepts/nfts-in-game.md).
 {% endhint %}
 
 ## How are NFTs used
@@ -22,7 +22,7 @@ There we talk about [ways to use blockchain and NFTs in games](../../../../../as
 NFTs can be used in relation to games in a lot of different ways and some of those ways have nothing to do with monetization. When they are monetization based the NFT is no different than DLC licenses or more frequently simply as digital Items.
 
 {% hint style="info" %}
-Sadly NFTs in games are most commonly used for [Play to Earn monetization models](../../models/play-to-earn.md) which are highly predatory and problematic for the user, the industry and in many cases the companies that try it.
+Sadly NFTs in games are most commonly used for [Play to Earn monetization models](../models/play-to-earn.md) which are highly predatory and problematic for the user, the industry and in many cases the companies that try it.
 {% endhint %}
 
 ### NFT Licenses
