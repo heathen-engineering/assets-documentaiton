@@ -1,5 +1,9 @@
 # Gatcha Mechanics
 
+{% hint style="info" %}
+Work In Progress
+{% endhint %}
+
 ### Gacha
 
 Until we saw Play to Earn this was the worst offender. Why is it not as bad as Play to Earn ... well in this model there is at least the guise of play covering up the ante step of betting.

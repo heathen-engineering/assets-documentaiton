@@ -82,22 +82,22 @@ It really does depend on who your are talking to since for most groups, companie
 
 But generally its referring to an echo-system \
 ( buzz word for this topic from 3 or 4 generations ago )\
-That is a collection of systems, apps, content, etc. that all work together. For example Unity Asset Store, Unity Assets, Various Unity Communities, Games a Experiences built on Unity ... you could say that is a "metaverse" you probably wouldn't but its no different than what "Meta" aka Facebook are doing.\
+That is a collection of systems, apps, content, etc. that all work together. For example Unity Asset Store, Unity Assets, Various Unity Communities, Games as Experiences built on Unity ... you could say that is a "metaverse" you probably wouldn't but its no different than what "Meta" aka Facebook are doing.\
 \
-Similarly most social games could be called a "metaverse" in that they are more than just the game its self but include a whole universe of interrelated stuff.
+Similarly most social games could be called a "metaverse" in that they are more than just the game its self but include a whole universe of interrelated stuff both within the game and under the control of the developer/publisher and outside the game and in the control of the community/public.
 
 #### Blockchain Use
 
 So how does blockchain fit in?
 
-It doesn't really, well that is its not a requirement for a "metaverse" or "echo system" or to create "synergies" or any of the other buzz words we have used over the years to mean "bunch of stuff working together" … \
+It doesn't really, well that is, its not a requirement for a "metaverse" or "echo system" or to create "synergies" or any of the other buzz words we have used over the years to mean "bunch of stuff working together" … \
 \
 Blockchain at best can be used as the database you use to track who has what licenses to what stuff … so again no different than inventory systems in Steam, PlayFab, GameLift, etc. One advantage blockchain could offer is that you do not require an agreement between game developers in that tokens can be transferred without the approval of developers … so for example your indie game could read a wallet that holds stuff from a Ubisoft game and do something about it. …\
 And that is exactly why this will never become main stream :drum:
 
 You will never see Mast Chief racing against Mario in a Gran Turismo ranked race your playing on your Android cell phone running iOS.
 
-IPs have walled gardens not because they cant work together … they can and it would be easier than not … they have walled gardens to protect there IP and give a reason for you to come to them as opposed to their competitors e.g. exclusivity; thus "metaverse" is just another buzzword that means my brand of walled garden.
+IPs have walled gardens not because they cant work together … they can and it would be easier than not ... that is companies go through great lengths spending a lot of money to wall their respective gardens off … they have walled gardens to protect there IP and give a reason for you to come to them as opposed to their competitors e.g. exclusivity; thus "metaverse" is just another buzzword that means my brand of walled garden no different than PSNow, XBox Game Pass, Play Store, etc..
 
 ### Ownership of Stuff
 
@@ -116,6 +116,4 @@ The big red flag to this rather or not your using blockchain … that is this pr
 
 ### Play To Earn
 
-First this concept in and of its self would be highly destructive for most projects adding real monetary value to a game system changes the very nature of that system and how it impacts the user moving away from "fun" and toward "profit". Adding monetary value to activities in your product also makes your project a gambling product as opposed to a game. That is by making the reward of your "game" profit, you have become a gambling product if not always in the legal since then defiantly in the spirit of gambling.
-
-That said gambling is a legitimate industry and if your creating a gambling product then yes this could be an interesting and novel mechanic and the distributed nature of blockchain could allow for a very wide reach. Gambling however is not Heathen's area of interest or expertise and deals with a lot of strict regulation. In Heathen's opinion Pay To Earn either would or should be classified as gambling and thus falls out of scope for our interests and this article.
+We have a new write up on this in our [Monetization ](../../../../company/concepts/monetization/models/play-to-earn.md)section please read more on it there!
