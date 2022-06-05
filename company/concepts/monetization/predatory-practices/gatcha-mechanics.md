@@ -1,16 +1,28 @@
+---
+description: Destroying lives 1 game at a time
+---
+
 # Gatcha Mechanics
 
-{% hint style="info" %}
-Work In Progress
+{% hint style="danger" %}
+Predatory practice when used in monetization
 {% endhint %}
 
-### Gacha
+Gatcha game refers to a game that uses a randomized loot pool or similar mechanics to drive engagement.&#x20;
 
-Until we saw Play to Earn this was the worst offender. Why is it not as bad as Play to Earn ... well in this model there is at least the guise of play covering up the ante step of betting.
+{% hint style="warning" %}
+Is gatcha gambling\
+\
+Yes\
+\
+The system depends on some investment, uses probability to determine reward. A gatcha mechanic is identical to a slot machine or similar pseudo-random gambling machine.
+{% endhint %}
 
-#### Definition & why it sucks
+In short its a slot machine. This comes in a few flavours described below … they are all horrible practices designed to prey on the consumer in basically the same way.&#x20;
 
-In short its a slot machine. This comes in a few flavours described below … they are all horrible practices designed to prey on the consumer in basically the same way.
+{% hint style="info" %}
+If your interested in more information on how a slot machine effects the human mind. A simple google search will return a staggering amount of results.
+{% endhint %}
 
 This model revolves around not allowing the player to simply buy what they want but forcing them to engage in a game of chance to get what they want e.g. randomized loot box, card draw, etc.
 

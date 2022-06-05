@@ -1,3 +1,7 @@
+---
+description: Interesting, so far useless for game ... but interesting.
+---
+
 # Blockchain and NFTs
 
 ## What is Blockchain
