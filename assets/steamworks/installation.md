@@ -128,7 +128,7 @@ If you have questions or issues pealse reach out on our [Discord ](https://disco
 
 When you import Heathen's Steamworks (Foundation or Complete) it will test for the presence of Steamworks.NET and System Core and if missing it will ask you if you want to install those assets similar to the message shown below.
 
-![](<../../.gitbook/assets/image (163) (1).png>)
+![](<../../.gitbook/assets/image (163) (1) (1).png>)
 
 When you click yes the system will use Package Manager to install Steamworks.NET and System Core from GitHub.&#x20;
 

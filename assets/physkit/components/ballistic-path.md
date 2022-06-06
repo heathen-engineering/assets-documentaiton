@@ -6,7 +6,7 @@ Available in PhysKit [Complete](https://prf.hn/l/rpoyznk).
 
 ## Introduction
 
-![](<../../../.gitbook/assets/image (155).png>)
+![](<../../../.gitbook/assets/image (155) (1).png>)
 
 An add on for Unity's Line Renderer this component can simulate the ballistic trajectory defined by its launch settings and optionally calculate collision and bounces.
 
