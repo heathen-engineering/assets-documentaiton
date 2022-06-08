@@ -6,6 +6,17 @@ description: Fair, honest, ethical how to monetize your game
 
 ## Overview
 
+Doing monetization right is key not just for the success of your game but for our industry as a whole. The articles in this section will explore the various tools, methods and options available to you and in particular highlight the major problem areas.
+
+{% hint style="danger" %}
+Heathen is strictly opposed to any form of predatory monetization.
+
+\
+You will find wording and terminology here that calls out bad practices as the bad practices they are. This is meant to help inform you not offend you however we make not apologies for any offence either.
+{% endhint %}
+
+## Anti-Whaling
+
 Predatory monetization practices have been incredibly harmful to our industry.&#x20;
 
 {% hint style="info" %}
@@ -28,3 +39,9 @@ This article will assume you do not actively want to cause harm to others, your 
 While their are plenty who will monetize even in a predatory system and of course a handful of whales can sustain you at least until the lawsuits role in there are more reasons to not suck.
 
 Introducing MTX of any kind will always bring a portion of the player base that flames/trolls with the classic "Pay 2 Win", "Cash Grab", etc. etc. line. The more we see actual pay to win and cash grabs coupled up with increasing reports of little Johnny emptying his mommy's bank account the more your image will tarnish. A simple risk assessment should show you that other options yield similar or even greater potential for profit and lack the stigma and potential regulatory and legal issues.
+
+### But this is how its done in mobile
+
+Because a bad behaviour has been tolerated to date doesn't mean it should continue to be. Frankly there has been little to no respect or care for mobile since its inception. This allowed truly horrible practices to develop unchecked though that is changing. These practices have been drawing increasingly negative attention of government regulation over the past 20 years and that will continue to accelerate.&#x20;
+
+You should simply avoid these practices because they are harmful to the public. If you are incapable of that level of humanity then understand that participating in these practices will only serve to accelerate harsh regulation and is likely to render your product increasingly unfit for distribution in larger and larger markets. The time of predatory monetization isn't quite over but its end is coming and it will bring plenty down with it. Don't get caught up in that, find fair and balanced solutions to monetize your product.
