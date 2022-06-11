@@ -65,6 +65,7 @@
   * [Codex Organization](codex/introduction/codex-organization.md)
 * [Irish](codex/irish/README.md)
   * [Disambiguation](codex/irish/disambiguation/README.md)
+    * [Banshee](codex/irish/disambiguation/banshee.md)
     * [Milesians](codex/irish/disambiguation/milesians.md)
     * [The Morrígan](codex/irish/disambiguation/the-morrigan.md)
     * [Tuatha](codex/irish/disambiguation/tuatha.md)
