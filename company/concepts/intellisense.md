@@ -149,7 +149,7 @@ Having done so you can see that it has added the namespace I was missing for me 
 
 So you where told to call the XXXX method on some object or class, but it requires parameters how are you supposed to know what they are and what they mean?
 
-![](<../../.gitbook/assets/image (169).png>)
+![](<../../.gitbook/assets/image (169) (1).png>)
 
 IntelliSense actually tells you what they are and what they mean as you start typing. See in the screen shot above it has listed all the parameters showing there data type. As I go to enter each one it will show me the code documentation for each parameter.
 
