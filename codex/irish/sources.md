@@ -20,7 +20,7 @@ In particular it is a useful set of place names and annotations that can be used
 
 Note the original does not survive so current versions are adulterated from that original information but the source is from the correct period and seemingly reasonably intact.
 
-## Neolithic and Bronze Age migration to Ireland and establishment of the insular Atlantic genome
+### Neolithic and Bronze Age migration to Ireland and establishment of the insular Atlantic genome
 
 {% embed url="https://doi.org/10.1073/pnas.1518445113" %}
 Citation link
