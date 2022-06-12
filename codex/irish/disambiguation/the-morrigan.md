@@ -1,9 +1,5 @@
----
-description: The great queen?
----
-
 # The Morrígan
 
-This term appears in a few era pseudo-historical works with the earliest references around 800 CE. It translates most commonly to "Great Queen" but is sometimes suggested to mean "Phantom Queen".&#x20;
+The Morrígan as seen in most modern examples comes from a Christian pseudo-History and is a fabrication having some hints of the underlying source but largely existing to supplant the indigenous lore.
 
-If this term or persona was present in traditional Irish folklore (pre-500 CE) it was likely in relation to Goddesses of Sovereignty. The Morrigan in some stories is noted as a "triple goddess" and in others has two sisters sometimes sharing names with Fódla and Banba suggesting the Morrígan may be a stand in or recontextualization of Ériu.
+Likely inspired by [Ériu](../folklore/characters/erui/) and related topics, the Morrígan refers or translates to "Great Queen" or similar. The main references are in regard to the Tuatha Dé Danann in particular with regards to the Milesians. Like most supplanting history/lore content it does have relatable elements to the underlying source but is its self a fiction and seemingly constructed to remove and replace what came before.
