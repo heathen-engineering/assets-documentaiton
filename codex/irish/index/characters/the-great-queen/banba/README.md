@@ -1,6 +1,6 @@
 # Banba
 
-{% hint style="info" %}
-Possibly the personification or aspect of War in relation to the triple goddess she is a member of?
+{% hint style="warning" %}
+Etymology needed to understand this persona's function
 {% endhint %}
 
