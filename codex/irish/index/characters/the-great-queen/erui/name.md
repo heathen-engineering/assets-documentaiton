@@ -7,7 +7,7 @@ description: Other names for Érui
 ## Key Points
 
 * Is the name of the island
-* Seems to mean "fertile" or "abundant" such that the modern Ireland literally means "land of abundance" or "fertile land" ... this is supported by the various names for the island through out history and lore
+* Seems to mean "fertile" or "abundant" such that the modern "Ireland" translates as "land of abundance" or "fertile land" ... this is supported by the various names for the island through out history and lore
 * Historically linked to a town, people and the name of the island via a 2nd century Roman document (Ptolemy's Geography)
 
 ## Variant Names
