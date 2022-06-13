@@ -49,6 +49,12 @@ Citation link
 
 A genetic study used to understand the rough time frames and populations related to the era of lore we are researching.
 
+### Old Irish Online
+
+Academic resource from the University of Texas at Austin Linguistics Research Centre
+
+{% embed url="https://lrc.la.utexas.edu/eieol_master_gloss/iriol/17" %}
+
 ### Proto-Celtic -- English lexicon
 
 A research article found on www.wales.ac.uk associating English terms with Proto-Celtic terms.
