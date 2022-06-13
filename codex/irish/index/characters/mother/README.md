@@ -1,11 +1,14 @@
 # Mother?
 
-{% hint style="danger" %}
-This one has a big shrug emoji for now\
-\
-Terms such "[The Morrígan](../../../disambiguation/the-morrigan.md)" have similarities and in some cases share sister names to [Ériu ](erui/)and so may well be a more modern recontextualization of the [triple goddess](../../../disambiguation/triple-persona.md) ([Ériu](erui/), [Fódla ](fodla/)and [Banba](banba/)).\
-\
-More commonly from a scholarly point of view they are thought of as [sovereignty goddesses](../../../disambiguation/sovereignty-goddess.md) though this concept has tinted a lot of research in a negative or reductionist way.
-{% endhint %}
-
 A [triple goddess](../../../disambiguation/triple-persona.md) and often as a personification for the island it self.
+
+It is a struggle to understand the overall function of this character beyond a general since of it being very important perhaps central.
+
+Érui \
+One part of the entity is the source of the modern name for the island
+
+Fódla\
+Hardly mentioned as a figure of its own but often sited in poems to refer to the island or its people or its leadership.&#x20;
+
+Banba\
+Noted frequently but never really discussed and the etymology like with Fódla is either highly generic or out right missing.
