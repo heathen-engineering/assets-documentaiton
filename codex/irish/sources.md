@@ -20,6 +20,27 @@ In particular it is a useful set of place names and annotations that can be used
 
 Note the original does not survive so current versions are adulterated from that original information but the source is from the correct period and seemingly reasonably intact.
 
+### Lebor Gabála Érenn
+
+"The Book of the Taking of Ireland" also known as "The Book of Invasions"
+
+{% hint style="danger" %}
+This is a text of deliberate miss information\
+\
+Many sources treat this as "historical" or at least accurate folklore. It is however a complete fabrication in the same guise as other pseudo-historical works from the Christian efforts of the middle ages.\
+\
+It is assumed the content is in some level derived from an underlying folklore though it is understood that the intent of the work is to supplant the indigenous culture and tie the heritage of the population to a Christian friendly origin both chronologically and heretically.\
+\
+This work is a compilation or works starting as early as 800 CE and reaching its final form around 1100 CE
+{% endhint %}
+
+This work is based on similar works such as
+
+* St Augustine's De Civitate Cei 413-426 CE
+* Orosius' Historiae Adversum Pagano 417 CE
+* Eusebius' Chronicon translated to Temporum liber 379 CE
+* Isidore of Seville's Etymologia or Originies from around 600 CE
+
 ### Neolithic and Bronze Age migration to Ireland and establishment of the insular Atlantic genome
 
 {% embed url="https://doi.org/10.1073/pnas.1518445113" %}
