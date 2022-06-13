@@ -76,6 +76,7 @@
   * [Index](codex/irish/folklore/README.md)
     * [Concepts](codex/irish/index/concepts.md)
     * [Tuatha](codex/irish/index/tuatha/README.md)
+      * [Fomóire](codex/irish/index/tuatha/fomoire.md)
       * [Research Note](codex/irish/index/tuatha/research-note/README.md)
         * [Hunter Gathers](codex/irish/index/tuatha/research-note/hunter-gathers.md)
         * [Neolithic Farmers](codex/irish/index/tuatha/research-note/neolithic-farmers.md)
