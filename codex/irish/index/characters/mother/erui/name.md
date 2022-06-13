@@ -4,6 +4,22 @@ description: Other names for Érui
 
 # Name
 
+## Pronunciation
+
+### IPA
+
+eː rʲu
+
+### Layman
+
+É = a short e sound
+
+r = a rolled r sound
+
+ui = "ya ew" like sound
+
+"Ah roo" so more akin to Aru spelled phonetically. The assumption of a rolled R in Old Irish is debatable and would need a linguist to help sort out.
+
 ## Key Points
 
 * Is the name of the island

@@ -93,6 +93,7 @@
           * [Appearance](codex/irish/index/characters/mother/erui/appearance.md)
           * [Name](codex/irish/index/characters/mother/erui/name.md)
         * [Fódla](codex/irish/index/characters/mother/fodla/README.md)
+          * [Appearance](codex/irish/index/characters/mother/fodla/appearance.md)
           * [Name](codex/irish/index/characters/mother/fodla/name.md)
     * [Locations](codex/irish/folklore/locations/README.md)
       * [Temair](codex/irish/folklore/locations/temair/README.md)
