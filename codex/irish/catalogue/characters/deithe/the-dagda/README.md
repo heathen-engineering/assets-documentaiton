@@ -6,11 +6,15 @@ description: '"Shining Divinity" aka the Good God'
 
 ### Personal notes
 
+This seems to be a proto-character, that is this character is listed as the father or grandfather of several other characters. How much of this from a medieval obsession with heredity vs sourced from the native lore is not yet known.
+
+This may be the masculine form of the most primal concepts in the folk lore. Generally embodying death, life and knowledge and being the forbearer of higher concepts.
+
 #### General
 
 Often compared to Odin or similar and some variant names include "Ollathair" "All father" which seems more a butchery of "Valfather" which doesn't mean "all father" it means "father of those slain in battle"
 
-This figure seems to be a [triple god](../../../disambiguation/triple-persona.md) or at least appears to have had multiple persona at one point
+This figure seems to be a [triple god](../../../../disambiguation/triple-persona.md) or at least appears to have had multiple persona at one point
 
 In particular "The Dagda" feels more like a title or reverence than the individual, most of the stories are either over embellished (middle ages fairy-tale clumping all the great figures into one) or slanderous (Christian story meant to dog the fairy-tale)
 

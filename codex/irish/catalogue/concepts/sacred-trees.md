@@ -1,0 +1,35 @@
+---
+description: Yes in the least forested land in Europe trees where once sacred.
+---
+
+# Sacred Trees
+
+The sacred trees are just that types of trees seen as sacred and associated with various properties. The trees them selves or rather the type may also be personified as a Déi for example Coll
+
+The trees them selves are seen as sacred and associated with various properties, this ties into the more practical aspects of religion for the Druids.&#x20;
+
+## Darach
+
+Oak
+
+## Fuinseog
+
+Ash
+
+## Úll
+
+Apple
+
+## Coll
+
+Hazel
+
+## Fearnóg
+
+## Ruis
+
+Elder
+
+## Lúr
+
+Yew
