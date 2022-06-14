@@ -57,25 +57,196 @@ public struct Lobby : IEquatable<CSteamID>, IEquatable<ulong>
 
 ## Fields and Attributes
 
-| Type            | Name               | Notes                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| --------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| CSteamID        | id                 | The native id of the lobby                                                                                                                                                                                                                                                                                                                                                                                             |
-| string          | Name               | <p>the name of the lobby if stored in the lobbies metdata else this returns blank.</p><p></p><p>This can be used by the owner of the lobby to set the lobby name</p>                                                                                                                                                                                                                                                   |
-| LobbyMember     | Owner              | <p>Returns the lobby owner's LobbyMember object</p><p></p><p>This can be used by the owner to set a new user as owner</p>                                                                                                                                                                                                                                                                                              |
-| LobbyMember     | User               | Gets the local user's LobbyMember entry                                                                                                                                                                                                                                                                                                                                                                                |
-| LobbyMember\[]  | Members            | Gets an array of all the members in this lobby                                                                                                                                                                                                                                                                                                                                                                         |
-| bool            | IsTypeSet          | Does the system know what type of lobby this is e.g. public, private, friend, etc.                                                                                                                                                                                                                                                                                                                                     |
-| ELobbyType      | Type               | <p>If IsTypeSet is true this will return the type of lobby this is set as.</p><p></p><p>Else this will return Private as a default but is not accurate.</p><p></p><p>Note Steam gives no way to accuratly read lobby type so we depend on the Heathen system setting the Type value.</p><p></p><p>The owner of the lobby can use this to set a new type value changing the lobby type and updating the Type field.</p> |
-| string          | GameVersion        | Gets or sets (owner only) the game version this lobby's owner is running on                                                                                                                                                                                                                                                                                                                                            |
-| bool            | IsOwner            | True if the local user is the owner of the lobby                                                                                                                                                                                                                                                                                                                                                                       |
-| bool            | HasServer          | true if the lobby has game server data set                                                                                                                                                                                                                                                                                                                                                                             |
-| LobbyGameServer | GameServer         | The current set game server data                                                                                                                                                                                                                                                                                                                                                                                       |
-| bool            | AllPlayersReady    | true if all players have indicated they are ready to play                                                                                                                                                                                                                                                                                                                                                              |
-| bool            | AllPlayersNotReady | true if all players have indicated they are not ready to play e.g. all are false                                                                                                                                                                                                                                                                                                                                       |
-| bool            | IsReady            | read and sets the local user's IsReady status                                                                                                                                                                                                                                                                                                                                                                          |
-| bool            | Full               | Is the lobby full e.g. max slots used                                                                                                                                                                                                                                                                                                                                                                                  |
-| int             | MaxMembers         | gets the max member count and can be used by the owner to change the max member count                                                                                                                                                                                                                                                                                                                                  |
-| string          | \[string key]      | <p>indexer you can use this to access metadata e.g. set or read metadata.</p><p>Only the owner can set metadata</p>                                                                                                                                                                                                                                                                                                    |
+### ID
+
+```csharp
+public CSteamID id;
+```
+
+The underlying native ID for this clan
+
+### SteamId
+
+```csharp
+public ulong SteamId { get; set; }
+```
+
+The underlying ulong value of the CSteamID&#x20;
+
+### AccountId
+
+```csharp
+public AccountID_t { get; set; }
+```
+
+The account ID segment of the full CSteamID, to understand more read [this article](../learning/core-concepts/csteamid.md).
+
+### FriendId
+
+```csharp
+public uint FriendId { get; set; }
+```
+
+The underlying uint value of the AccountID\_t segment of the CSteamID, to understand more read [this article](../learning/core-concepts/csteamid.md).
+
+### IsValid
+
+```csharp
+public bool IsValid => get;
+```
+
+This indicates rather or not the underlying CSteamID is of the proper Universe and Type it does not indicate that it is a valid entry. E.g. this tells you if the data is of the right shape ... not that it equates to a valid entry in Steam client.
+
+### Name
+
+```csharp
+public string Name { get; set; }
+```
+
+The name of the lobby if stored in the lobby's metadata. Only the owner of the lobby can set this value.
+
+### Owner
+
+```csharp
+public LobbyMember Owner { get; set; }
+```
+
+The [LobbyMember ](lobby-member.md)data for the owner of the lobby, only the current owner can set this value to some other [LobbyMember](lobby-member.md).
+
+### Me
+
+```csharp
+public LobbyMember User => get;
+```
+
+Returns the local user's [LobbyMember ](lobby-member.md)value for this Lobby.
+
+### Members
+
+```csharp
+public LobbyMember[] Members => get;
+```
+
+{% hint style="warning" %}
+this must create the array each time it is called, so call it once, cash it and use it do not call it multiple times a frame.
+{% endhint %}
+
+Returns an array of all the lobby members.
+
+### IsTypeSet
+
+```csharp
+public bool IsTypeSet => get;
+```
+
+This returns true if the Lobby Type is known
+
+### Type
+
+```csharp
+public ELobbyType Type { get; set; }
+```
+
+Returns the type of the lobby if set, if not set this will default to Private, you can check if the type is set with IsTypeSet. Only the owner of the lobby can set this value.
+
+### GameVersion
+
+```csharp
+public string GameVersion { get; set; }
+```
+
+Gets or sets the version of the game the lobby is configured for ... this should match the owners version. This can only be set by the owner of the lobby.
+
+### IsOwner
+
+```csharp
+public bool IsOwner => get;
+```
+
+Returns true if the local user is the owner of this lobby
+
+### IsGroup
+
+```csharp
+public bool IsGroup => get;
+```
+
+Indicates rather or not this lobby is a party lobby
+
+### HasServer
+
+```csharp
+public bool HasServer => get;
+```
+
+Does this lobby have a game server registered to it
+
+### GameServer
+
+```csharp
+public LobbyGameServer GameServer => get;
+```
+
+Returns the lobby game server data if any
+
+### AllPlayersReady
+
+```csharp
+public bool AllPlayersReady => get;
+```
+
+{% hint style="warning" %}
+This iterates over the Members array
+{% endhint %}
+
+Returns true if all of the players 'IsReady' is true
+
+### AllPlayersNotReady
+
+```csharp
+public bool AllPlayersNotReady => get;
+```
+
+{% hint style="warning" %}
+This iterates over the Members array
+{% endhint %}
+
+Returns true if all of the players 'IsReady' is false
+
+### IsReady
+
+```csharp
+public bool IsReady { get; set; }
+```
+
+Sets the ready flag for this player on this lobby
+
+### Full
+
+```csharp
+public bool Full => get;
+```
+
+Returns true if the lobby is full e.g. has no more open slots
+
+### MaxMembers
+
+```csharp
+public int MaxMembers { get; set; } 
+```
+
+Gets or sets the max members permitted in this lobby, this can only be set by the owner.
+
+### Metadata\[string key]
+
+The owner of the lobby can set the metadata values on the lobby via an index e.g.&#x20;
+
+```csharp
+Lobby mylobby;
+mylobby["Set This Key"] = "To This Value";
+
+string theValue = mylobby["Read This Key"];
+```
 
 ## Methods
 

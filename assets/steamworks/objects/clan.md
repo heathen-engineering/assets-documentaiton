@@ -23,6 +23,48 @@ Clan clanCopy = clanIdValue;
 
 ## Fields and Attributes
 
+### ID
+
+```csharp
+public CSteamID id;
+```
+
+The underlying native ID for this clan
+
+### SteamId
+
+```csharp
+public ulong SteamId { get; set; }
+```
+
+The underlying ulong value of the CSteamID&#x20;
+
+### AccountId
+
+```csharp
+public AccountID_t { get; set; }
+```
+
+The account ID segment of the full CSteamID, to understand more read [this article](../learning/core-concepts/csteamid.md).
+
+### FriendId
+
+```csharp
+public uint FriendId { get; set; }
+```
+
+The underlying uint value of the AccountID\_t segment of the CSteamID, to understand more read [this article](../learning/core-concepts/csteamid.md).
+
+### IsValid
+
+```csharp
+public bool IsValid => get;
+```
+
+This indicates rather or not the underlying CSteamID is of the proper Universe and Type it does not indicate that it is a valid entry. E.g. this tells you if the data is of the right shape ... not that it equates to a valid entry in Steam client.
+
+
+
 | Type        | Name     | Comment                                  |
 | ----------- | -------- | ---------------------------------------- |
 | CSteamID    | id       | The CSteamID of the clan                 |

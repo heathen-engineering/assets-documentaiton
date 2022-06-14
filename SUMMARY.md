@@ -224,6 +224,7 @@
       * [steam\_appid.txt](assets/steamworks/quick-start-guide/steam\_appid.txt.md)
       * [Achievements](assets/steamworks/features/achievement-object.md)
       * [Authentication](assets/steamworks/features/authentication.md)
+      * [CSteamID](assets/steamworks/learning/core-concepts/csteamid.md)
       * [Downloadable Content](assets/steamworks/features/downloadable-content-object.md)
       * [Friends](assets/steamworks/features/friends.md)
       * [Heathen's API](assets/steamworks/api/introduction.md)

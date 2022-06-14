@@ -43,13 +43,45 @@ public static UserData Me => get;
 
 This simply returns the local user's UserData and is the same as calling `API.User.Client.Id`
 
-### cSteamId
+### ID
 
 ```csharp
-public CSteamID cSteamId;
+public CSteamID id;
 ```
 
-This is simply the native CSteamID value as used by Steam's APIs you do not need to read or set this directly as the UserData object is implicitly assignable and convertable to CSteamID and ulong.
+The underlying native ID for this clan
+
+### SteamId
+
+```csharp
+public ulong SteamId { get; set; }
+```
+
+The underlying ulong value of the CSteamID&#x20;
+
+### AccountId
+
+```csharp
+public AccountID_t { get; set; }
+```
+
+The account ID segment of the full CSteamID, to understand more read [this article](../learning/core-concepts/csteamid.md).
+
+### FriendId
+
+```csharp
+public uint FriendId { get; set; }
+```
+
+The underlying uint value of the AccountID\_t segment of the CSteamID, to understand more read [this article](../learning/core-concepts/csteamid.md).
+
+### IsValid
+
+```csharp
+public bool IsValid => get;
+```
+
+This indicates rather or not the underlying CSteamID is of the proper Universe and Type it does not indicate that it is a valid entry. E.g. this tells you if the data is of the right shape ... not that it equates to a valid entry in Steam client.
 
 ### IsMe
 
@@ -58,14 +90,6 @@ public bool IsMe => get;
 ```
 
 This is true if this UserData object is the local user
-
-### SteamId
-
-```csharp
-public ulong SteamId { get; set; }
-```
-
-This gets or sets the ID by its ulong value
 
 ### Avatar
 
