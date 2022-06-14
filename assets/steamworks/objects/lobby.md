@@ -289,6 +289,37 @@ Dictionary<string, string> GetMetadata();
 
 Returns all the metadata for the lobby as a string dictionary. This creates the dictionary each time it is called so cashe the value before use or read the values directly from the lobby such as via the indexer.
 
+### Join
+
+```csharp
+public void Join(Action<LobbyEnter_t, bool> callback);
+```
+
+This attempts to join the player to this lobby. The callback parameter of this event expects a handler method such as
+
+```csharp
+private void Handler(LobbyEnter_t result, bool IOError)
+{
+    //Do Work
+}
+```
+
+This method has several static overloads that can be useful for friend join UI features and similar
+
+```csharp
+public static void Join(string accountId, Action<LobbyEnter_t, bool> callback)
+```
+
+```csharp
+public static void Join(AccountID_t accountId, Action<LobbyEnter_t, bool> callback)
+```
+
+```csharp
+public static void Join(Lobby lobby, Action<LobbyEnter_t, bool> callback)
+```
+
+In all cases these static members fetch the lobby indicated by either an account ID or the Lobby value its self and then attempts to join it. The callback parameter takes the same for as the instanced method.
+
 ### Leave
 
 ```csharp
@@ -296,6 +327,26 @@ public void Leave();
 ```
 
 Leaves the lobby, if the owner leaves Steam will assigne a new owner.
+
+### Get
+
+```csharp
+public static Lobby Get(uint accountId);
+```
+
+```csharp
+public static Lobby Get(AccountId_t accountId);
+```
+
+```csharp
+public static Lobby Get(ulong id);
+```
+
+```csharp
+public static Lobby Get(CSteamID id);
+```
+
+These methods simply return a valid Lobby object representing the lobby indicated by the provided data.
 
 ### Delete Lobby Data
 
