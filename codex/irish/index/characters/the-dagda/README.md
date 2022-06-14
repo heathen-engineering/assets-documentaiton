@@ -14,7 +14,7 @@ This may be the masculine form of the most primal concepts in the folk lore. Gen
 
 Often compared to Odin or similar and some variant names include "Ollathair" "All father" which seems more a butchery of "Valfather" which doesn't mean "all father" it means "father of those slain in battle"
 
-This figure seems to be a [triple god](../../../../disambiguation/triple-persona.md) or at least appears to have had multiple persona at one point
+This figure seems to be a [triple god](../../../disambiguation/triple-persona.md) or at least appears to have had multiple persona at one point
 
 In particular "The Dagda" feels more like a title or reverence than the individual, most of the stories are either over embellished (middle ages fairy-tale clumping all the great figures into one) or slanderous (Christian story meant to dog the fairy-tale)
 

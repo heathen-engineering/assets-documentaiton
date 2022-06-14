@@ -6,7 +6,7 @@ This one ... or 3 ... is younger than Dagda and in a few places is noted as the 
 
 #### General
 
-A [triple goddess](../../../../disambiguation/triple-persona.md) and often as a personification for the island it self.
+A [triple goddess](../../../disambiguation/triple-persona.md) and often as a personification for the island it self.
 
 It is a struggle to understand the overall function of this character beyond a general since of it being very important perhaps central.
 

@@ -4,6 +4,14 @@ description: Where we got our information
 
 # Sources
 
+### A Rosetta Stone for the Prehistoric Solar Calendar? Kerbstone K15 at Knowth, Ireland
+
+{% embed url="https://doi.org/10.2752/175169713X13589680081894" %}
+Citation Link
+{% endembed %}
+
+An analysis of the K15 stone. This is useful in gathering a degree of understanding in what was understood in the era and how that information was disseminated between people and over generations.
+
 ### Celtic Culture: A Historical Encyclopaedia
 
 Written by Koch, John T. 2005 CE; This is an academic source in particular used with regards to the link or relationship between modern, old and proto variants of names and there meanings.
@@ -11,6 +19,12 @@ Written by Koch, John T. 2005 CE; This is an academic source in particular used 
 ### Encyclopaedia of Indo-European Culture
 
 Written by Mallory, J.P. and D.Q. Adams 1997 CE; This is an academic source in particular used with regards to the link or relationship between modern, old and proto variants of names and there meanings.
+
+### Etymology of the months (English, Irish, Scots Gaelic, Manx and Welsh)
+
+{% embed url="https://www.anacreofpints.com/the-months" %}
+
+Used to remove the Roman and Christian names by looking at the names of the months used by other related cultures.
 
 ### Geography
 
@@ -66,3 +80,20 @@ Citation link
 {% endembed %}
 
 From R. Darcy & William Flynn 2008 CE; this is a review of Geography by Claudius Ptolemy attempting to reconcile location names as described by the 2nd century Roman with the modern day Irish map.
+
+### The Prehistoric Solar Calendar: An Out-of-fashion Idea Revisited with New Evidence
+
+{% embed url="https://doi.org/10.2752/175169709X374263" %}
+Citation Link
+{% endembed %}
+
+> An assessment of the geomatical and astronomical achievements of prehistoric Britain&#x20;
+
+An essay looking at the examples of knowledge known for Neolithic and early bronze age peoples in north Europe including Ireland.
+
+### Tufts University
+
+A source for notes from Julies Caesar regarding the Gallic War
+
+{% embed url="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0001:book=6:chapter=1" %}
+
