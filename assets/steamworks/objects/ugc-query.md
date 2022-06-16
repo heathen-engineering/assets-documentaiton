@@ -8,10 +8,72 @@ The intended use is that a query will be created through one of the static Creat
 
 This is used by the [UGC Query Manager](../components/ugc-query-manager.md) which can its self simplify UGC query even further.
 
+## Understanding UGC Queries
+
+As with anything User Generated Content the process of querying records is done in stages. The raw API requires the following steps.
+
+{% hint style="info" %}
+Note our UGC Query tool simplifies this for you but understanding what is happening under the hood can be helpful when debugging.
+{% endhint %}
+
+### Handle
+
+First we have to create a query handle, this is a pointer to a configuration that Valve will use when searching available UGC items. The handle is created as one of 3 types of query handles
+
+* All Request\
+  No base filter these types of queries return all manner of UGC items.\
+  These queries use paging pulling back up to 50 at a time
+* Details Request\
+  These queries take file IDs in as part of the argument and do not using paging. They only return the items you directly ask for.
+* User Request\
+  These queries return items related to a given user such as a friend or your self
+
+{% hint style="success" %}
+You will notice Heathen's UGC Query doesn't ask you what type you want. We can infer what type is needed based on the arguments you pass in on the UgcQuery.Create method.
+{% endhint %}
+
+### Settings
+
+Once you have a handle you can apply various settings to it. For example you can set the language, add tags to filter on, etc. The available settings can be accessed via the methods we discribe below
+
+* [SetLanguage](ugc-query.md#setlanguage)
+* [SetMatchAnyTag](ugc-query.md#setmatchanytag)
+* [SetRankedByTrandDays](ugc-query.md#setrankedbytrenddays)
+* [SetReturnAdditionalPreviews](ugc-query.md#setreturnadditionalpreviews)
+* [SetReturnChildren](ugc-query.md#setreturnchildren)
+* [SetReturnKeyValueTags](ugc-query.md#setreturnkeyvaluetags)
+* [SetReturnLongDescription](ugc-query.md#setreturnlongdescription)
+* [SetReturnMetadata](ugc-query.md#setreturnmetadata)
+* [SetReturnOnlyIDs](ugc-query.md#setreturnonlyids)
+* [SetReturnPlaytimeStats](ugc-query.md#setreturnplaytimestats)
+* [SetReturnTotalOnly](ugc-query.md#setreturntotalonly)
+* [SetSearchText](ugc-query.md#setsearchtext)
+
+### Execution
+
+Finally once we have a handle and have configured it we need to execute the query. Note that query types `All` and `User` have pages so when you execute you may only receive a part of the total count. The [pageCount ](ugc-query.md#pagecount)field will tell you how many pages this query has once it has been executed at least once. You can set the page by simply setting the [Page ](ugc-query.md#page)field or by calling [SetPage](ugc-query.md#setpage). When the page is set the existing handle will be released and a new handle created.
+
+### Release
+
+{% hint style="success" %}
+Note we release the handle for you at the end of each execution. \
+\
+This means you cannot execute the same query twice, but it also means that when you forget to dispose ... Heathen has you covered.\
+\
+What if you want/need to execute the same query twice?\
+You need to rebuild the query to do that and you can do that easily by simply calling the "Create" method again or setting the page value, even if you set it to the same value it will rebuild the same query.
+{% endhint %}
+
+You should have noticed that the UgcQuery is a "Disposable" object. This means it needs to be cleaned up when your done with it and we made that easy to do. You could simply let the .NET garbage collector handle this but its advisable to call it your self&#x20;
+
+`myQuery.Dispose();`
+
+This will release any open handle insure all references are free.
+
 ## Definition
 
 ```csharp
-public class UgcQuery
+public class UgcQuery : IDisposable
 ```
 
 ## Static Methods
@@ -51,7 +113,7 @@ public static UgcQuery Create(IEnumerable<PublishedFileId_t> fileIds);
 
 ### User Query
 
-Returns items relive to the given user account e.g. the favorited files or followed files
+Returns items relive to the given user account e.g. the favourited files or followed files
 
 ```csharp
 public static UgcQuery Create(AccountID_t account, 
@@ -62,8 +124,19 @@ public static UgcQuery Create(AccountID_t account,
                               AppId_t consumerApp)
 ```
 
-* account\
-  This is the user account to search for
+or
+
+```csharp
+public static UgcQuery Create(UserData user, 
+                              EUserUGCList listType, 
+                              EUGCMatchingUGCType matchingType, 
+                              EUserUGCListSortOrder sortOrder, 
+                              AppId_t creatorApp, 
+                              AppId_t consumerApp)
+```
+
+* account or user\
+  This is the user account to search for, we can read the account from the UserData if provided.
 * listType\
   The type of list to return ... see [EUserUGCList ](https://partner.steamgames.com/doc/api/ISteamUGC#EUserUGCList)for more details
 * matchingType\
@@ -104,10 +177,10 @@ The number of pages found for this query. This will be 0 until the query is exeu
 ### Page
 
 ```csharp
-public uint Page => get;
+public uint Page { get; set; }
 ```
 
-This indicates the current page the query is reading. Use the SetPage method to update this value and update the query for the desired page.
+This indicates the current page the query is reading. Setting this value calls the [SetPage ](ugc-query.md#setpage)method.
 
 ### ResultList
 
@@ -169,7 +242,7 @@ public bool SetReturnKeyValueTags(bool enable);
 
 Should the query return key value tags
 
-### SEtReturnLongDescription
+### SetReturnLongDescription
 
 ```csharp
 public bool SetReturnLongDescription(bool enable);
@@ -223,7 +296,7 @@ Sets the search text to be used by the query
 public bool SetNextPage();
 ```
 
-Advances the active page forward by 1 if avialable
+Advances the active page forward by 1 if available
 
 ### SetPreviousPage
 
@@ -247,7 +320,7 @@ Sets the query to the indicated page
 public bool Execute(UnityAction<UgcQuery> callback);
 ```
 
-Executes the given query and registeres a callback to catch its results
+Executes the given query and registers a callback to catch its results
 
 ### ReleaseHandle
 
