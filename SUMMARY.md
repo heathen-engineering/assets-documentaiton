@@ -23,7 +23,6 @@
     * [Models](company/concepts/monetization/models/README.md)
       * [Free](company/concepts/monetization/models/free.md)
       * [Free to Play](company/concepts/monetization/models/free-to-play.md)
-      * [Hybrid](company/concepts/monetization/models/hybrid.md)
       * [Pay to Play](company/concepts/monetization/models/pay-to-play.md)
       * [Play to Earn](company/concepts/monetization/models/play-to-earn.md)
       * [Subscription](company/concepts/monetization/models/subscription.md)
