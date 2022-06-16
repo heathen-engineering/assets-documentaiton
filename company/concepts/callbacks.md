@@ -10,6 +10,8 @@ description: >-
 
 This article will touch on the concepts of a callback as it relates to programming in C# for Unity. This article is not intended to be a primary teaching source, rather an exploration of the feature as it relates to typical approaches you might see in Unity scripts.&#x20;
 
+{% embed url="https://www.youtube.com/watch?v=U-B1PkIS_ug" %}
+
 ## Learning First
 
 While there are many "code free" tools to help prototype, and many would claim fully create a game with no programming required, you and your users will benefit greatly from a basic level of programming skill.  In particular this will be important to achieve a level of quality in terms of your user experience in particular around the use of callbacks, delegates and event driven architectures.
