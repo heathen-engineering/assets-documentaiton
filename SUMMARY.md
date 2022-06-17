@@ -65,6 +65,7 @@
 * [Irish](codex/irish/README.md)
   * [Disambiguation](codex/irish/disambiguation/README.md)
     * [Banshee](codex/irish/disambiguation/banshee.md)
+    * [Celt](codex/irish/disambiguation/celt.md)
     * [Gods and Goddesses](codex/irish/disambiguation/gods-and-goddesses.md)
     * [Lebor Gabála Érenn](codex/irish/disambiguation/lebor-gabala-erenn.md)
     * [Milesians](codex/irish/disambiguation/milesians.md)
