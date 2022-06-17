@@ -8,7 +8,7 @@ How you install depends on how you chose to license Heathen's Steamworks.&#x20;
 
 ## Free users and Sponsors
 
-Heathen offers a free, open source lite version of our Steamworks assets called Steamworks Foundation. Foundation is housed on GitHub and can be installed via the [Unity Package Manager](installation/upm-add-from-git-url.md).
+Heathen offers a free, open source lite version of our Steamworks assets called Steamworks Foundation. Foundation is housed on GitHub and can be installed via the [Unity Package Manager](installation/upm-add-from-git-url.md). Similarly GitHub sponsors have directly access to our Source Repository and so can also install via [Unity Package Manager](installation/upm-add-from-git-url.md).&#x20;
 
 {% embed url="https://kb.heathenengineering.com/assets/steamworks/installation/upm-add-from-git-url" %}
 
