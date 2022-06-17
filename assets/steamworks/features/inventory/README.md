@@ -27,30 +27,6 @@ You will also need to understand the Steam Inventory Schema. While Heathen's too
 
 {% embed url="https://partner.steamgames.com/doc/features/inventory/schema" %}
 
-## What can it do?
-
-### Microtransaction (MTX)
-
-Steam Inventory is the interface and framework you would use to define items for purchase either through the Steam store or through your own store to be managed by Steam.
-
-### Player Economy
-
-Steam Inventory is how you create items that can be traded between players securely both in and out of game and can optionally be put on the "Community Marketplace" for sale by players to players.
-
-### In App Purchase (IAP)
-
-Steam Inventory is the framework you would use to define the items that can be purchased in game and the exchange "recipes" that define how a player can "purchase" an item in game for an in game item e.g. in-game currency, in-game shop, etc.
-
-### Item Collection / Progression
-
-Steam Inventory is the framework you would use to define the items, reagents, crafting "recipes", drop rates and probability tables that drive item collection and item progression game loops in a secure manner
-
-### In-game Economy
-
-Steam Inventory is the framework you would use to define the items, reagents, recipes, drop rates, loot tables, etc. that drive these systems.&#x20;
-
-No Steam Inventory items do not have to be available for sale, trade or community marketing you can hide them in inventory and control every aspect of how they are distributed, consumed and used. It is simply a secure way of defining the clients interaction with the items, the items them selves and related features of those items e.g. generators, drops, exchanges, etc.
-
 ## Required Reading
 
 Steam Inventory can be used for consumables, craftables, player economy (marketplace and trading) and micro transactions. The system is concerned first and foremost with security and this can make it a more cumbersome feature than you need if your not taking advantage of either the player economy or MTX aspects of the system.
