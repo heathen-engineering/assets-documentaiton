@@ -68,7 +68,7 @@ Follow the on screen instructions which are simply having you select a location 
 
 and click `Show in Explorer`
 
-![](<../../.gitbook/assets/image (171).png>)
+![](<../../.gitbook/assets/image (171) (1).png>)
 
 Copy the folder path, you will need it for the next step
 

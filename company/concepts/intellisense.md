@@ -52,7 +52,7 @@ Type the name you want for the handler even though it doesn't exist yet.
 
 Now we have our lovely little red line telling us hay ... this doesn't exist. You can now follow the steps as we have done for every other use case and be presented with several solutions.
 
-![](<../../.gitbook/assets/image (171) (1).png>)
+![](<../../.gitbook/assets/image (171) (1) (1).png>)
 
 #### Step 3
 

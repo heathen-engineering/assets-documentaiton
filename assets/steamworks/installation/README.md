@@ -4,6 +4,16 @@ description: Installing Heathen Engineering's Steamworks and related componenets
 
 # Installation
 
+How you install depends on how you chose to license Heathen's Steamworks.&#x20;
+
+### Free users and Sponsors
+
+Heathen offers a free, open source lite version of our Steamworks assets called Steamworks Foundation. Foundation is housed on GitHub and can be installed via the Unity Package Manager.
+
+### Unity Asset Store
+
+If you purchased on the Unity Asset Store you will use it to import. At the time of this writing that is done through the Unity Package Manager but does import as a lose asset.
+
 ## GitHub Sponsors
 
 {% embed url="https://github.com/sponsors/heathen-engineering" %}
@@ -14,7 +24,7 @@ Better for us and better for you!
 Sponsoring Heathen on GitHub for $10 a month gets you access to the source repository for Steamworks, PhysKit and UX Complete.
 
 \
-See why GitHub sponsor is the hands down best way to Do More with Heathen in our [Licensing Article](../licensing/).
+See why GitHub sponsor is the hands down best way to Do More with Heathen in our [Licensing Article](../../licensing/).
 {% endhint %}
 
 ## New Installs
@@ -67,7 +77,7 @@ If your a GitHub sponsor you have access to the source repository which you can 
 1. Open the Package Manager
 2. Click the "+" (plus) button located in the upper left of the window
 3. Select the "Add package from git URL..." option\
-   <img src="../../.gitbook/assets/image (144).png" alt="" data-size="original">
+   <img src="../../../.gitbook/assets/image (144).png" alt="" data-size="original">
 4. Enter the URL below and press add.
 
 ```
@@ -87,7 +97,7 @@ This must be done from the Unity Package Manager to insure that the proper Steam
 1. Open the Package Manager
 2. Click the "+" (plus) button located in the upper left of the window
 3. Select the "Add package from git URL..." option\
-   <img src="../../.gitbook/assets/image (144).png" alt="" data-size="original">
+   <img src="../../../.gitbook/assets/image (144).png" alt="" data-size="original">
 4. Enter the URL below and press add.
 
 ```
@@ -102,18 +112,18 @@ Once imported the asset will check for dependencies and if missing it will insta
 
 ## Prerequisites
 
-Heathen's Steamworks assets (both Foundaiton and Complete) will handle the install of all requirements for you. Our asset is also able to handle existing installs of its required componenets. You shouldn't need to do anything other than import our asset.
+Heathen's Steamworks assets (both Foundation and Complete) will handle the install of all requirements for you. Our asset is also able to handle existing installs of its required components. You shouldn't need to do anything other than import our asset.
 
 {% hint style="warning" %}
 #### Legacy Code
 
 
 
-If you have legacy, custom or otherwise not from the original source versions of Steamworks.NET or System Core then Unity will cause merge conflcits when importing our asset.
+If you have legacy, custom or otherwise not from the original source versions of Steamworks.NET or System Core then Unity will cause merge conflicts when importing our asset.
 
 
 
-You should not be using versions of Steamworks.NET (or System Core) other than the version avialable from its author on GitHub such as would be installed by the Package Manger as discribed below and as installed by our asset on import into a clean project.
+You should not be using versions of Steamworks.NET (or System Core) other than the version available from its author on GitHub such as would be installed by the Package Manger as described below and as installed by our asset on import into a clean project.
 
 
 
@@ -121,14 +131,14 @@ The single most common installation issue is due to having a full or partial ins
 
 
 
-If you have questions or issues pealse reach out on our [Discord ](https://discord.gg/6X3xrRc)channel
+If you have questions or issues please reach out on our [Discord ](https://discord.gg/6X3xrRc)channel
 {% endhint %}
 
 ## Install Process
 
 When you import Heathen's Steamworks (Foundation or Complete) it will test for the presence of Steamworks.NET and System Core and if missing it will ask you if you want to install those assets similar to the message shown below.
 
-![](<../../.gitbook/assets/image (163) (1) (1).png>)
+![](<../../../.gitbook/assets/image (163) (1) (1).png>)
 
 When you click yes the system will use Package Manager to install Steamworks.NET and System Core from GitHub.&#x20;
 
@@ -163,7 +173,7 @@ This thread might also be of help for you
 
 When Steamworks.NET is successfully installed you will see messages in your console log similar to the following. These messages indicate what was installed, you can also review these in your Package Manager.
 
-![](<../../.gitbook/assets/image (164) (1) (1).png>)
+![](<../../../.gitbook/assets/image (164) (1) (1).png>)
 
 {% hint style="info" %}
 This always installs the latest code available and so the version number you see may very.
@@ -175,7 +185,7 @@ If for whatever reason you clicked no, or if you had an error and needed to inst
 
 &#x20;
 
-![](<../../.gitbook/assets/image (179) (1).png>)
+![](<../../../.gitbook/assets/image (179) (1).png>)
 
 ## From Package Manager
 
@@ -188,7 +198,7 @@ This must be done from the Unity Package Manager to insure that the proper Steam
 1. Open the Package Manager
 2. Click the "+" (plus) button located in the upper left of the window
 3. Select the "Add package from git URL..." option\
-   <img src="../../.gitbook/assets/image (144).png" alt="" data-size="original">
+   <img src="../../../.gitbook/assets/image (144).png" alt="" data-size="original">
 4. Enter the URL below and press add.
 
 ```
@@ -202,7 +212,7 @@ This must be done from the Unity Package Manager to insure that the proper Syste
 1. Open the Package Manager
 2. Click the "+" (plus) button located in the upper left of the window
 3. Select the "Add package from git URL..." option\
-   <img src="../../.gitbook/assets/image (144).png" alt="" data-size="original">
+   <img src="../../../.gitbook/assets/image (144).png" alt="" data-size="original">
 4. Enter the URL below and press add.
 
 ```
@@ -218,7 +228,7 @@ This must be done from the Unity Package Manager to insure that the proper Steam
 1. Open the Package Manager
 2. Click the "+" (plus) button located in the upper left of the window
 3. Select the "Add package from git URL..." option\
-   <img src="../../.gitbook/assets/image (144).png" alt="" data-size="original">
+   <img src="../../../.gitbook/assets/image (144).png" alt="" data-size="original">
 4. Enter the URL below and press add.
 
 ```
@@ -232,7 +242,7 @@ https://github.com/heathen-engineering/SteamworksFoundation.git?path=/com.heathe
 1. Open the Package Manager
 2. Click the "+" (plus) button located in the upper left of the window
 3. Select the "Add package from git URL..." option\
-   <img src="../../.gitbook/assets/image (144).png" alt="" data-size="original">
+   <img src="../../../.gitbook/assets/image (144).png" alt="" data-size="original">
 4. Enter the URL below and press add.
 
 ```
@@ -246,7 +256,7 @@ https://github.com/heathen-engineering/SourceRepo.git?path=/Steamworks/com.heath
 1. Open the Package Manager
 2. Select the "My Assets" option&#x20;
 3. Search for "Steamworks V2"\
-   &#x20;<img src="../../.gitbook/assets/image (148).png" alt="" data-size="original">&#x20;
+   &#x20;<img src="../../../.gitbook/assets/image (148).png" alt="" data-size="original">&#x20;
 4. Click Import
 
 ## Manual Import
@@ -287,7 +297,7 @@ You can now install Heathen's Steamworks from Unity Package Manager
 1. Open the Package Manager
 2. Select the "My Assets" option&#x20;
 3. Search for "Steamworks V2"\
-   &#x20;<img src="../../.gitbook/assets/image (148).png" alt="" data-size="original">&#x20;
+   &#x20;<img src="../../../.gitbook/assets/image (148).png" alt="" data-size="original">&#x20;
 4. Click Import
 
 ## Uninstall
@@ -310,9 +320,9 @@ Otherwise you can simply remove the folder corresponding to the product you want
 
 ## Technical Requirements
 
-### Unity 2020 LTS or later
+### [Unity 2020 LTS or later](https://www.youtube.com/watch?v=u9DzbBHNwtc)
 
-Heathen's Steamworks is dependent on features and frameworks of Unity's 2020 LTS. In particular the asset makes use of the UI Toolkit aka UI Elements framework to author custom inspector windows and tools.&#x20;
+[Heathen's Steamworks is dependent on features and frameworks of Unity's 2020 LTS. In particular the asset makes use of the UI Toolkit aka UI Elements framework to author custom inspector windows and tools. ](https://www.youtube.com/watch?v=u9DzbBHNwtc)
 
 ### Steamworks.NET
 
@@ -323,7 +333,7 @@ Heathen's Steamworks is built on top of Steamworks.NET and is dependent on it. Y
 1. Open the Package Manager
 2. Click the "+" (plus) button located in the upper left of the window
 3. Select the "Add package from git URL..." option\
-   <img src="../../.gitbook/assets/image (144).png" alt="" data-size="original">
+   <img src="../../../.gitbook/assets/image (144).png" alt="" data-size="original">
 4. Enter the URL below and press add.
 
 ```
@@ -332,7 +342,7 @@ https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks
 
 When completed properly you will see Steamworks.NET in your Package Manager's "In Project" list. You can repeat the above steps to update Steamworks.NET at any time.
 
-![](<../../.gitbook/assets/image (145).png>)
+![](<../../../.gitbook/assets/image (145).png>)
 
 ### Install System Core
 
@@ -341,14 +351,14 @@ This must be done from the Unity Package Manager to insure that the proper Syste
 1. Open the Package Manager
 2. Click the "+" (plus) button located in the upper left of the window
 3. Select the "Add package from git URL..." option\
-   <img src="../../.gitbook/assets/image (144).png" alt="" data-size="original">
+   <img src="../../../.gitbook/assets/image (144).png" alt="" data-size="original">
 4. Enter the URL below and press add.
 
 ```
 https://github.com/heathen-engineering/SystemCore.git?path=/com.heathen.systemcore
 ```
 
-![](<../../.gitbook/assets/image (166) (1).png>)
+![](<../../../.gitbook/assets/image (166) (1).png>)
 
 ## Networking Integrations
 
@@ -435,7 +445,7 @@ Mirror Community's FizzySteamTransport has been made compatible with our asset a
 2. Open the Unity Package Manager
 3. Click the "+" (plus) button located in the upper left of the window
 4. Select the "Add package from git URL..." option\
-   <img src="../../.gitbook/assets/image (144).png" alt="" data-size="original">
+   <img src="../../../.gitbook/assets/image (144).png" alt="" data-size="original">
 5. Enter the URL below and press the add button:
 
 ```
@@ -458,7 +468,7 @@ You must install Unity's NetCode to use its community transports. The above arti
 2. Open the Unity Package Manager
 3. Click the "+" (plus) button located in the upper left of the window
 4. Select the "Add package from git URL..." option\
-   <img src="../../.gitbook/assets/image (144).png" alt="" data-size="original">
+   <img src="../../../.gitbook/assets/image (144).png" alt="" data-size="original">
 5. Enter the URL below and press the add button:
 
 ```
@@ -479,7 +489,7 @@ NetCode for GameObjects has a community transport project similar to other HLAPI
 2. Open the Unity Package Manager
 3. Click the "+" (plus) button located in the upper left of the window
 4. Select the "Add package from git URL..." option\
-   <img src="../../.gitbook/assets/image (144).png" alt="" data-size="original">
+   <img src="../../../.gitbook/assets/image (144).png" alt="" data-size="original">
 5. Enter the URL below and press the add button:
 
 ```
@@ -510,7 +520,7 @@ First fully remove any non-package manager installed versions of Steamworks.NET,
 
 So lets say you tried to install, forgot to clean out an old Steamworks.NET or missed a few files or something. To clean this you first should remove the Package Manager version using Package Manager. Next clean out the old offending files and finally reinstall from Package Manager.
 
-So if you have compilation errors or if your Script Defines are a bit of a mess you might need to install these manually from Package Manager ... you can find the process for that [here](installation.md#from-package-manager).
+So if you have compilation errors or if your Script Defines are a bit of a mess you might need to install these manually from Package Manager ... you can find the process for that [here](./#from-package-manager).
 
 ### Script Defines
 
@@ -577,7 +587,7 @@ You have compiler errors in your project preventing our editor script from runni
 
 If its that you have script defines in place for code you don't have installed simply remove the defines.
 
-If its that you have compiler errors and so our scripts are not running, simply install the requirements directly ... you can find instruction on how in [this section](installation.md#from-package-manager).
+If its that you have compiler errors and so our scripts are not running, simply install the requirements directly ... you can find instruction on how in [this section](./#from-package-manager).
 
 ### XXXX is not found
 
@@ -609,4 +619,4 @@ This is a way to split a code base up into assemblies for faster and simpler com
 
 You can view and edit the references a given assembly define has toward other defines in the Unity Inspector for your Assembly Definition.
 
-![](<../../.gitbook/assets/image (165).png>)
+![](<../../../.gitbook/assets/image (165).png>)
