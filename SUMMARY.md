@@ -223,7 +223,7 @@
   * [Enums](assets/physkit/enums/README.md)
     * [Calculation Mode](assets/physkit/enums/calculation-mode.md)
 * [Steamworks](assets/steamworks/README.md)
-  * [Installation](assets/steamworks/installation/README.md)
+  * [Installation](assets/steamworks/installation.md)
     * [Prerequisites](assets/steamworks/installation/prerequisites.md)
     * [UPM Add from Git URL](assets/steamworks/installation/upm-add-from-git-url.md)
     * [UAS Import](assets/steamworks/installation/uas-import.md)
