@@ -250,6 +250,7 @@
       * [Friends](assets/steamworks/features/friends.md)
       * [Heathen's API](assets/steamworks/api/introduction.md)
       * [Leaderboards](assets/steamworks/features/leaderboard-object.md)
+      * [Microtransactions (MTX)](assets/steamworks/learning/core-concepts/microtransactions-mtx.md)
       * [Remote Storage (Steam Cloud)](assets/steamworks/features/data-models.md)
       * [Stats](assets/steamworks/features/stats-object.md)
       * [Steam Groups aka Clans](assets/steamworks/features/clans.md)
