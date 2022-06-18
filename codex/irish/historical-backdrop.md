@@ -94,11 +94,9 @@ Largely WHG and Neolithic farmer suggests a predominance of dark to black hair, 
 
 \~ 2300 BCE
 
-By 2,300 BCE we strong and rapid technological development thanks to the introduction of metallurgy e.g. “bronze age”. As with the previous notable change this appears to be evenly split between “adoption” and “colonization” that is the process while “rapid” in a historical since (few hundred years give or take) was not “overnight” and was not “roving bands of blood thirsty bronze age men ravaging peaceful farmers”.
+By 2,300 BCE we strong and rapid technological development thanks to the introduction of metallurgy e.g. “bronze age”. As with the previous notable change this appears to be evenly split between “adoption” and “colonization” that is the process while “rapid” in a historical since (hundreds of years give or take) was not “overnight” and was not “roving bands of blood thirsty bronze age men ravaging peaceful farmers”.
 
-The genetic record for this period shows a significant change in genetic diversity that is not starkly dissimilar from the modern Irish genome we see today. As such this is viewed as the last “major” genetic event.
-
-The distribution of genetic data for this period is largely Yamnaya (aka Step Herder) ancestry and Eastern Hunter Gatherer suggesting a more signifigant inbound contribution than the previous event on the indigenous population. As noted, this doesn’t appear to be through war as much as population density and natural selection though of course conflict is ever present in human history throughout all ages.
+The genetic record for this period shows a significant change in genetic diversity that is not starkly dissimilar from the modern Irish genome we see today. As such this is viewed as the last “major” genetic event. The distribution of genetic data for this period is largely Yamnaya (aka Step Herder) ancestry which is its self fairly diverse and Eastern Hunter Gatherer. The relatively quick shift in genetic make up suggesting a more significant inbound effect than the previous event had on the indigenous population.&#x20;
 
 Of note we do see a significant climate change in Ireland in the late bronze to early iron age. This event corelates with an increase in production of weapons and other armaments compared to earlier periods suggesting increased tensions between populations. It’s important to remember that during these eras the population was not a unified “Ireland” in fact that doesn’t appear to have ever been a thing. We do know that the geography of the island lends itself to 4 to 5 population groupings but with in each we see independent smaller populations. The political landscape of Ireland for this era is not well understood beyond being complex.
 
@@ -108,7 +106,7 @@ Of note we do see a significant climate change in Ireland in the late bronze to 
 
 This period saw the rapid technological change in Ireland from stone aged farming to bronze age society. Fine bronze and gold smiting works come from this period and the period is occasionally referred to as the first “Irish Golden Age”. For this reason, form the point of view of “Irish Folklore” this is a keenly interesting era as it is in this era that we would see the solidification of that which is distinctly Irish and its export to Irelands trading partners.
 
-The in coming migration for this period is likely the "proto-Celtic" root of Ireland as its these same population centres that would give us the Iron age Celts we think of in popular culture. The preceding Neolithic Farmer genetics seem to be largely replaced by Yamnaya, SHG and EHG genetic traces.
+The in coming migration for this period is likely the "proto-Celtic" root of Ireland as its these same population centres that would give us the Iron age Celts we think of in popular culture. The preceding Neolithic Farmer genetics seem to be largely replaced by Yamnaya, SHG and EHG genetic traces. As noted the current popular opinion is that this shift was a balanced mix of adoption and conquest.&#x20;
 
 #### Phenotypes <a href="#firstheading" id="firstheading"></a>
 
