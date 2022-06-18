@@ -9,3 +9,5 @@ This is a fairly common notion that appears more or less everywhere, every take 
 Among the Celts orders of 3 are very common. The "mother" or "mothers" are a common site on alters and shrines usually represented as 3 figures but can be expressed as 27 (3 \* 3 \* 3).
 
 In many examples of triple gods and goddesses each individual persona represents a key factor or niche such as (War, Industry, Religion), (Creation, Destruction, Preservation), (Past, Present, Future), etc. The unified character of the 3 persona can be presented as a unique 4th character or simply as a summation of the three if presented singularly at all.
+
+In some cases such as Lugh we get notes such as "Three Headed" while others are noted as having "Three Hearts". Other cultures do similar with figures such as "Diana" have a related name that literally means "Three Form Goddess"
