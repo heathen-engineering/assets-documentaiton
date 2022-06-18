@@ -70,9 +70,9 @@ Samples suggest a close resemblance to darker phenotypes still present in Sardin
 
 \~3,500 – 3.000 BCE
 
-During this period we see a significant increase in “Western Hunter Gather” gens in the population. While not definitive this suggests significant pockets of the population existed with minimal cross populating for a time followed by a more open integration in the Middle Neolithic. This also suggests the “Wester Hunter Gather” population didn’t simply “vanish” quickly but rather maintained and apparently prospered sufficiently to contribute a notable amount of genetic data to the general population.
+During this period we see a significant increase in “Western Hunter Gather” gens in the population. This doesn't mean really anything more than to say the “Wester Hunter Gather” population didn’t simply “vanish” quickly but rather maintained and apparently prospered sufficiently to contribute a notable amount of genetic data to the general population.
 
-How this would have affected folklore is completely unknown. “Hunter Gather” populations are generally thought of as more “practical” with regards to social and cultural factors compared to the more sedentary “Farmer” however
+How this would have affected folklore is completely unknown. “Hunter Gather” populations are generally thought of as more “practical” with regards to social and cultural factors compared to the more sedentary “Farmer” however WHG culture and folklore is not well understood at all much less how it might have mixed with new incoming ideas.
 
 #### Phenotypes <a href="#firstheading" id="firstheading"></a>
 
@@ -98,7 +98,7 @@ By 2,300 BCE we strong and rapid technological development thanks to the introdu
 
 The genetic record for this period shows a significant change in genetic diversity that is not starkly dissimilar from the modern Irish genome we see today. As such this is viewed as the last “major” genetic event.
 
-The distribution of genetic data for this period is largely Yamnaya ancestry and Eastern Hunter Gatherer suggesting a more complete supplantation of the indigenous population. As noted, this doesn’t appear to be through war as much as population density and natural selection though of course conflict is ever present in human history throughout all ages.
+The distribution of genetic data for this period is largely Yamnaya (aka Step Herder) ancestry and Eastern Hunter Gatherer suggesting a more signifigant inbound contribution than the previous event on the indigenous population. As noted, this doesn’t appear to be through war as much as population density and natural selection though of course conflict is ever present in human history throughout all ages.
 
 Of note we do see a significant climate change in Ireland in the late bronze to early iron age. This event corelates with an increase in production of weapons and other armaments compared to earlier periods suggesting increased tensions between populations. It’s important to remember that during these eras the population was not a unified “Ireland” in fact that doesn’t appear to have ever been a thing. We do know that the geography of the island lends itself to 4 to 5 population groupings but with in each we see independent smaller populations. The political landscape of Ireland for this era is not well understood beyond being complex.
 
@@ -108,7 +108,7 @@ Of note we do see a significant climate change in Ireland in the late bronze to 
 
 This period saw the rapid technological change in Ireland from stone aged farming to bronze age society. Fine bronze and gold smiting works come from this period and the period is occasionally referred to as the first “Irish Golden Age”. For this reason, form the point of view of “Irish Folklore” this is a keenly interesting era as it is in this era that we would see the solidification of that which is distinctly Irish and its export to Irelands trading partners.
 
-The in coming migration for this period is likely the "proto-Celtic" root of Ireland as its these same population centres that would give us the Iron age Celts we think of in popular culture.
+The in coming migration for this period is likely the "proto-Celtic" root of Ireland as its these same population centres that would give us the Iron age Celts we think of in popular culture. The preceding Neolithic Farmer genetics seem to be largely replaced by Yamnaya, SHG and EHG genetic traces.
 
 #### Phenotypes <a href="#firstheading" id="firstheading"></a>
 
