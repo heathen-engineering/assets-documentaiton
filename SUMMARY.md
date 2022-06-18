@@ -63,6 +63,7 @@
       * [Late Period](codex/introduction/article-design-guide/evolution/late-period.md)
   * [Codex Organization](codex/introduction/codex-organization.md)
 * [Irish](codex/irish/README.md)
+  * [Historical Backdrop](codex/irish/historical-backdrop.md)
   * [Disambiguation](codex/irish/disambiguation/README.md)
     * [Banshee](codex/irish/disambiguation/banshee.md)
     * [Celt](codex/irish/disambiguation/celt.md)
