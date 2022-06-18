@@ -22,17 +22,19 @@ Its worth nothing that when saying numbers of "days" it appears more common to s
 
 This seems to be 8 days not 7 ... possibly a quarter lunar month? (7.375 days). The words we find in related cultures for this literally translates as 8 nights or 8 days.
 
+We do not find any notable recording of a "week" in relation to Irish culture though we do find half month and month as it relates to the moon.
+
 ## Cóicthiges
 
 Similar to the modern English "fortnight"
 
-This is 15 days though not the 14 we use now ... also not 2 weeks ... its 2 weeks less a day but does align better with half a lunar month (14.75 days) so I presume if the month starts on a New moon then 1 Cóichtinges puts us on the Full Moon and 1 more starts the next.
+This is 15 days though not the 14 we use now ... also not 2 weeks ... its 2 weeks less a day assuming 8 day weeks but does align better with half a lunar month (14.75 days) so I presume if the month starts on a New moon then 1 Cóichtinges puts us on the Full Moon and 1 more starts the next.
 
 ## Month
 
 Months are lunar and start with a whole cycle of the moon. There is some disagreement on what phase is the starting phase (New vs Full). Not sure how relevant the specifics of what phase is the start/end as this would at most shift things by 14.5 days. The pattern and effect remains the same as the key points in the year are known to be the two equinox and the shortest and longest days of the year.
 
-While the moon was apparently quite important they understood that the lunar cycle did not align perfectly with the solar cycle. Have a look at the article on [Astronomy ](astronomy.md)for more information.
+While the moon was apparently quite important they understood that the lunar cycle did not align with the solar cycle. Have a look at the article on [Astronomy ](astronomy.md)for more information.
 
 {% hint style="info" %}
 Below we map the modern Georgann months to the Irish month names though these would not align properly every year in that a Celtic month is lunar with leap year patterns that reconcile periodically.
@@ -44,7 +46,7 @@ Still the general notion can be useful when understanding the passage of time, t
 
 November
 
-You might know this word to mean Halloween ... which is Oct ... specifically Oct 31st and at night ... so Nov 1 😉
+You might know this word to mean Halloween ... which is Oct ... specifically Oct 31st and at night ... so Nov 1 to a bronze age Irish person 😉
 
 ### Meán Gheimhridh
 
@@ -108,7 +110,7 @@ July
 
 August
 
-A notable festival Lughnasadh associated with [Lugh ](../../index/characters/lugh.md)and from which the month gets its name.
+A notable festival Lughnasadh associated with [Lugh ](../characters/deithe/lugh/)and from which the month gets its name.
 
 ### Meán Fómhair
 
@@ -122,14 +124,36 @@ End of autumn aka October
 
 ## Seasons
 
+Seasons seem to be much more important than "months"
+
 ### Winter
 
-We start here; roughly Samhain to&#x20;
+We start here; roughly Samhain to Bealtaine
 
 ### Summer
 
-Second half of the year
+Second half of the year so roughly Bealtaine to Samhain
 
 ## Year
 
 At this point it gets more messy. Thanks to the Gallic war and Roman occupation of France we do have some recorded information on how Ireland's Celtic cousins on the mainland did things but we don't have much for the Irish them selves beyond knowing they where aware that lunar and solar cycles do not align and that they would have had various means to reconcile lunar phases with solar ones.
+
+The Year seems to be understood more by its spring and fall equinox and then the longest and shortest days of the solar year.
+
+As far as counting of years the archaeological evidence we have suggests more of a focus on lunar phases
+
+### Metonic Cycle
+
+This is a feature of lunisolar calendars the 19 year Metonic Cycle of the moon ... that is 19 solar years is nearly exactly 235 lunar months
+
+A few "calendar stones" found around Ireland suggest this was used at least in regards to building layout.
+
+### Synodic Month
+
+aka the Lunar month, this is tracking the phases of the moon as observed from earth roughly 29.5 days.
+
+Neolithic Irish where aware that the lunar "year" did not align with the solar year and calculated this on "calendar stones". These stones define the lunar month as 29 days and show the error with the solar year and express the 235 lunar month long Metonic Cycle or so archaeological papers suggest.&#x20;
+
+### Personal Notes
+
+We don't really need to get stuck in the weeds from the point of view of folklore the relevant bit here is that the passage of time was marked more by the moon than the sun, seasons had there place but more roughly (winter / summer) and everything started with the dark and ended in the light. These vague statements we can be pretty sure are accurate as we do have written reference to the same in the late bronze age for related cultures.&#x20;

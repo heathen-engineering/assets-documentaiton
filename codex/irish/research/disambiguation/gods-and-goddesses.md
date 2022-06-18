@@ -6,4 +6,4 @@ Many of the characters identified as gods or goddesses are thought of as having 
 
 This way of seeing ones deities more akin to ancestors is not uncommon, arguably the Abrahamic notion of an omnipotent being is the more unusual take on the topic. You might find it useful to understand the relationship of Japanese Kami to those that follow Shinto or similar surviving nature centric traditions to better understand the relationship of "the people" to the "the deity" and to "nature"
 
-See the [Déithe ](../catalogue/characters/deithe/)section for a collection of known figures
+See the [Déithe ](../../folklore/characters/deithe/)section for a collection of known figures
