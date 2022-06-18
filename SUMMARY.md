@@ -69,6 +69,7 @@
     * [Gods and Goddesses](codex/irish/disambiguation/gods-and-goddesses.md)
     * [Lebor Gabála Érenn](codex/irish/disambiguation/lebor-gabala-erenn.md)
     * [Milesians](codex/irish/disambiguation/milesians.md)
+    * [Mother Goddess](codex/irish/disambiguation/mother-goddess.md)
     * [Sovereignty Goddess](codex/irish/disambiguation/sovereignty-goddess.md)
     * [The Morrígan](codex/irish/disambiguation/the-morrigan.md)
     * [Triple Persona](codex/irish/disambiguation/triple-persona.md)
