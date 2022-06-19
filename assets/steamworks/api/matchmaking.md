@@ -11,7 +11,7 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 ## Introduction
 
 ```csharp
-using API = HeathenEngineering.SteamworksIntegraiton.API;
+using API = HeathenEngineering.SteamworksIntegration.API;
 ```
 
 ```csharp
@@ -31,7 +31,7 @@ TIP
 Save your self some typing. add this using statement to the top of any script that will need to use this API.
 
 ```csharp
-using Matchmaking = HeathenEngineering.Steamworks.API.Matchmaking.Client;
+using Matchmaking = HeathenEngineering.SteamworksIntegration.API.Matchmaking.Client;
 ```
 
 \

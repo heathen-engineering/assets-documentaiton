@@ -11,7 +11,7 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 ## Introduction
 
 ```csharp
-using BigPicture = HeathenEngineering.SteamworksIntegraiton.API.BigPicture.Client;
+using BigPicture = HeathenEngineering.SteamworksIntegration.API.BigPicture.Client;
 ```
 
 ```csharp

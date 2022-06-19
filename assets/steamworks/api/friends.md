@@ -11,7 +11,7 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 ## Introduction
 
 ```csharp
-using FriendsClient = HeathenEngineering.SteamworksIntegraiton.API.Friends.Client;
+using FriendsClient = HeathenEngineering.SteamworksIntegration.API.Friends.Client;
 ```
 
 ```csharp

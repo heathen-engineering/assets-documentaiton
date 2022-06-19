@@ -7,7 +7,7 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 ## Introduction
 
 ```csharp
-using Screenshots = HeathenEngineering.SteamworksIntegraiton.API.Screenshots.Client;
+using Screenshots = HeathenEngineering.SteamworksIntegration.API.Screenshots.Client;
 ```
 
 ```csharp

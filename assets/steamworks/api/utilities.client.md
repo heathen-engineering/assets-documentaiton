@@ -11,7 +11,7 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 ## Introduction
 
 ```csharp
-using SteamUtils = HeathenEngineering.SteamworksIntegraiton.API.Utilities.Client;
+using SteamUtils = HeathenEngineering.SteamworksIntegration.API.Utilities.Client;
 ```
 
 ```csharp

@@ -9,7 +9,7 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 ### Namespace
 
 ```csharp
-using AppWeb = HeathenEngineering.SteamworksIntegraiton.API.App.Web;
+using AppWeb = HeathenEngineering.SteamworksIntegration.API.App.Web;
 ```
 
 ### Definition
