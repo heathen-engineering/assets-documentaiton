@@ -2,7 +2,7 @@
 description: '"Shining Divinity" aka the Good God'
 ---
 
-# The Dagda
+# Dag Dia
 
 ### Personal notes
 
