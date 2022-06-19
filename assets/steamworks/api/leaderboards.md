@@ -7,7 +7,7 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 ## Introduction
 
 ```csharp
-using Leaderboards = HeathenEngineering.SteamworksIntegraiton.API.Leaderboards.Client;
+using Leaderboards = HeathenEngineering.SteamworksIntegration.API.Leaderboards.Client;
 ```
 
 ```csharp

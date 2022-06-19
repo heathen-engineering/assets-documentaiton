@@ -11,7 +11,7 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 ## Introduction
 
 ```csharp
-using ClansClient = HeathenEngineering.SteamworksIntegraiton.API.Clans.Client;
+using ClansClient = HeathenEngineering.SteamworksIntegration.API.Clans.Client;
 ```
 
 ```csharp

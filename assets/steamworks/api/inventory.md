@@ -7,7 +7,7 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 ## Introduction
 
 ```csharp
-using InvClient = HeathenEngineering.SteamworksIntegraiton.API.Inventory.Client;
+using InvClient = HeathenEngineering.SteamworksIntegration.API.Inventory.Client;
 ```
 
 ```csharp

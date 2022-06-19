@@ -7,7 +7,7 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 ## Introduction
 
 ```csharp
-using UGCClient= HeathenEngineering.SteamworksIntegraiton.API.UserGeneratedContent.Client;
+using UGCClient= HeathenEngineering.SteamworksIntegration.API.UserGeneratedContent.Client;
 ```
 
 ```csharp

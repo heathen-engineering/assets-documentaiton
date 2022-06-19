@@ -91,9 +91,16 @@ Citation Link
 
 An essay looking at the examples of knowledge known for Neolithic and early bronze age peoples in north Europe including Ireland.
 
+### The Works of Lucian
+
+Lucian was a satirical writer in the 2nd century CE who wrote about Celtic beliefs. Its from his works that we get a visual description of Ogmios which is believed to be related to Ogma
+
 ### Tufts University
 
 A source for notes from Julies Caesar regarding the Gallic War
 
 {% embed url="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0001:book=6:chapter=1" %}
 
+### University of Wales proto-Celtic lexicon
+
+Used when searching the names of figures and places to understand the etymology behind them.
