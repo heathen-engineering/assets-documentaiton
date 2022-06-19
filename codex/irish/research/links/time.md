@@ -110,7 +110,7 @@ July
 
 August
 
-A notable festival Lughnasadh associated with [Lugh ](../../folklore/characters/deithe/lugh/)and from which the month gets its name.
+A notable festival Lughnasadh associated with [Lugh ](lugh/)and from which the month gets its name.
 
 ### Meán Fómhair
 

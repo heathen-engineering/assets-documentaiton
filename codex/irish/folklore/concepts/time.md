@@ -54,7 +54,7 @@ End of summer
 
 ### Lúnasa
 
-The start of autumn. This month is named after an important festival Lughnasadh associated with [Lugh](../characters/deithe/lugh/).
+The start of autumn. This month is named after an important festival Lughnasadh associated with [Lugh](../../research/links/lugh/).
 
 ### Meán Fómhair
 
