@@ -7,7 +7,7 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 ## Introduction
 
 ```csharp
-using RemoteStorage = HeathenEngineering.SteamworksIntegration.API.RemoteStorage.Client;
+using RemoteStorage = HeathenEngineering.SteamworksIntegraiton.API.RemoteStorage.Client;
 ```
 
 ```csharp

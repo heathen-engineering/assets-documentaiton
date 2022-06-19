@@ -12,7 +12,13 @@ This tool simply exposes common features present in the API to the inspector.
 This is not required to use these features it is simply a helper tool allowing user's who are more comfortable working with editor inspectors and game object rather than classic C# objects and scripting to make use of the related feature.
 {% endhint %}
 
-## Definition
+### Namespace
+
+```csharp
+using HeathenEngineering.SteamworksIntegration;
+```
+
+### Definition
 
 ```csharp
 public class FriendManager : MonoBehaviour

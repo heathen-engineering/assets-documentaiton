@@ -10,7 +10,23 @@ The Input action name simplifies display of a simple single input string for a g
 
 This object has a TMPro and UGUI variant.
 
-## Definition
+### Namespace
+
+```csharp
+using HeathenEngineering.SteamworksIntegration;
+```
+
+### Definition
+
+```csharp
+public class TMProInputActionName : MonoBehaviour
+```
+
+or
+
+```csharp
+public class UGUIInputActionName : MonoBehaviour
+```
 
 ## Fields and Attributes
 

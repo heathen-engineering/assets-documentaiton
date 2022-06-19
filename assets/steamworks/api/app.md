@@ -13,7 +13,7 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 ### Namespace
 
 ```csharp
-using AppClient = HeathenEngineering.SteamworksIntegration.API.App.Client;
+using AppClient = HeathenEngineering.SteamworksIntegraiton.API.App.Client;
 ```
 
 ### Definition
@@ -164,7 +164,7 @@ else
 
 ### Owner
 
-Gets the UserData for the owner of the app, if this is different than the local user then the app is being barrowed.
+Checks if the user has a VAC (Valve Anti Cheat) ban on their account
 
 ```csharp
 public static UserData Owner => get;

@@ -14,7 +14,17 @@ Before you can browse game servers you need to have game servers.
 Read [Steam Game Servers](../features/multiplayer/game-server-browser.md) article before continuing
 {% endhint %}
 
-## Definition
+### Namespace
+
+```csharp
+using HeathenEngineering.SteamworksIntegration;
+```
+
+### Definition
+
+```csharp
+public class GameServerBrowserManager : MonoBehaviour
+```
 
 ## Events
 

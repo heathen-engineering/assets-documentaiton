@@ -8,7 +8,17 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 
 The Input action glyph simplifies display of a simple single input image for a given action. This tool sets the first glyph image mapped to this action to the attached RawImage texture.
 
-## Definition
+### Namespace
+
+```csharp
+using HeathenEngineering.SteamworksIntegration;
+```
+
+### Definition
+
+```csharp
+public class InputActionGlyph : MonoBehaviour
+```
 
 ## Fields and Attributes
 

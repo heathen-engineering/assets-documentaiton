@@ -20,19 +20,44 @@ This is not required to use these features it is simply a helper tool allowing u
 
 The Lobby Chat Director must be attached to a Lobby Manager. The director simply exposes lobby chat features to the Steam Inspector.
 
-## Definition
+### Namespace
 
-## Fields and Attributes
+```csharp
+using HeathenEngineering.SteamworksIntegration;
+```
 
-|      |          |                                              |
-| ---- | -------- | -------------------------------------------- |
-| bool | HasLobby | True if the parent Lobby Manager has a lobby |
+### Definition
+
+```csharp
+public class LobbyChatDirector : MonoBehaviour
+```
 
 ## Events
 
 ### evtMessageRecieved
 
-Occurs when a chat message is received on this lobby
+```csharp
+public LobbyChatMsgEvent evtMessageRecieved
+```
+
+Occurs when a chat message is received on this lobby, The handler for this event would take a form similar to.
+
+Uses the [LobbyChatMsg](../objects/lobby-chat-msg.md) object
+
+```csharp
+private void Handler(LobbyChatMsg arg)
+{
+    //Handle the message
+}
+```
+
+## Fields and Attributes
+
+### HasLobby
+
+```csharp
+public bool HasLobby => get;
+```
 
 ## Methods
 
@@ -58,7 +83,7 @@ The total length of the message regardless of datatype must be less than 4kb in 
 
 ### Simple Chat
 
-The most common use case for Lobby Chat is as a simple text based chat system. In this model your users would typically if not always be sending string data. You would simply listen on the evtMessageRecieved such as&#x20;
+The most common use case for Lobby Chat is as a simple text based chat system. In this model your users would typically if not always be sending string data. You would simply listen on the [evtMessageRecieved ](lobby-chat-director.md#evtmessagerecieved)such as&#x20;
 
 ```csharp
 private void HandleMessage(LobbyChatMsg message)

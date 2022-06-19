@@ -3,7 +3,7 @@
 ## Introduction
 
 ```csharp
-using RemotePlay = HeathenEngineering.SteamworksIntegration.API.RemotePlay.Client;
+using RemotePlay = HeathenEngineering.SteamworksIntegraiton.API.RemotePlay.Client;
 ```
 
 ```csharp

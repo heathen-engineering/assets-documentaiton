@@ -14,9 +14,21 @@ This is not required to use these features it is simply a helper tool allowing u
 
 ## Introduction
 
-The Inventory Manager exposes the evt Changed event to the inspector which will allert you when the local user's inventory has changed.
+The Inventory Manager exposes the Changed event to the inspector which will alert you when the local user's inventory has changed.
 
-This componenet also exposes commonly use fields from the [SteamSettings.Client.inventory](../objects/steam-settings/game-client/inventory-settings.md) settings. This is simply a pass through you do not need to use the Inventory Manager to access these. The purpose of this class is simply to simplify working with the API for user's that are uncomfrotable with Scriptable Objects.
+This component also exposes commonly use fields from the [SteamSettings.Client.inventory](../objects/steam-settings/game-client/inventory-settings.md) settings. This is simply a pass through you do not need to use the Inventory Manager to access these. The purpose of this class is simply to simplify working with the API for user's that are uncomfortable with Scriptable Objects.
+
+### Namespace
+
+```csharp
+using HeathenEngineering.SteamworksIntegration;
+```
+
+### Definition
+
+```csharp
+public class InventoryManager : MonoBehaviour
+```
 
 ## Fields and Attributes
 

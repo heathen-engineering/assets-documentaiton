@@ -7,7 +7,7 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 ## Introduction
 
 ```csharp
-using SteamVoice = HeathenEngineering.SteamworksIntegration.API.Voice.Client;
+using SteamVoice = HeathenEngineering.SteamworksIntegraiton.API.Voice.Client;
 ```
 
 ```csharp

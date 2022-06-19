@@ -23,7 +23,7 @@ For smaller groups/clans you can also iterate over the members of the chat howev
 ### Namespace
 
 ```csharp
-using HeathenEngineering.SteamworksIntegraiton;
+using HeathenEngineering.SteamworksIntegration;
 ```
 
 ### Definition

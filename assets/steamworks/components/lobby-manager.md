@@ -84,7 +84,17 @@ It is possible to get this data out of sync if you use the raw Steam API. Using 
 
 You can learn more about these extension features in the [Lobby](../objects/lobby.md) article.
 
-## Definition
+### Namespace
+
+```csharp
+using HeathenEngineering.SteamworksIntegration;
+```
+
+### Definition
+
+```csharp
+public class LobbyManager : MonoBehaviour
+```
 
 ## Fields and Attributes
 

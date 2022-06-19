@@ -7,7 +7,7 @@ Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/to
 ## Introduction
 
 ```csharp
-using UserApi = HeathenEngineering.SteamworksIntegration.API.User.Client;
+using UserApi = HeathenEngineering.SteamworksIntegraiton.API.User.Client;
 ```
 
 ```csharp

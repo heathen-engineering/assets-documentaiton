@@ -20,6 +20,18 @@ This is not required to use these features it is simply a helper tool allowing u
 
 Meant to be added to a game object at or near your leaderboard UI, this behaviour can help you display leaderboard entries and simplifies the process of uploading scores to a leaderboard.
 
+### Namespace
+
+```csharp
+using HeathenEngineering.SteamworksIntegration;
+```
+
+### Definition
+
+```csharp
+public class LeaderboardManager : MonoBehaviour
+```
+
 ## Events
 
 ### evtUserEntryUpdated
