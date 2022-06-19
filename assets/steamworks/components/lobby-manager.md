@@ -96,77 +96,289 @@ using HeathenEngineering.SteamworksIntegration;
 public class LobbyManager : MonoBehaviour
 ```
 
-## Fields and Attributes
-
-| Type                                                                            | Name            | Comment                                                                                                                                      |
-| ------------------------------------------------------------------------------- | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| ulong                                                                           | lobbyId         | The id of the current lobby if known, ID.Nil if not                                                                                          |
-| Search Arguments                                                                | searchArguments | Defines the arguments to be used for lobby searches                                                                                          |
-| Create Arguments                                                                | createArguments | Defines the arguments to be used when creating a new lobby                                                                                   |
-| Lobby                                                                           | Lobby           | The Heathen Lobby object matching the current lobbyId if any                                                                                 |
-| bool                                                                            | HasLobby        | True if lobbyId is valid and relates to an active Steam Lobby                                                                                |
-| bool                                                                            | IsPlayerOwner   | True if the local user is the owner of the lobby                                                                                             |
-| bool                                                                            | AllPlayersReady | True if all player's have reported ready using the Heathen Ready Check feature. See the [Lobby](../objects/lobby.md) object for more details |
-| bool                                                                            | Full            | True if the lobby member count is or is higher than the lobby member max                                                                     |
-| bool                                                                            | IsTypeSet       | True if the Heathen Type feature is set on this lobby. See the [Lobby ](../objects/lobby.md)object for more details.                         |
-| [ELobbyType](https://partner.steamgames.com/doc/api/ISteamMatchmaking#typedefs) | Type            | Returns the type set in the Heathen Type feature or defaults to priivate if not set. See the Lobby object for more details.                  |
-| int                                                                             | MaxMembers      | Returns the max members allowed in this lobby                                                                                                |
-| bool                                                                            | HasServer       | Returns true if the lobby game server has been set                                                                                           |
-| Lobby Game Server                                                               | GameServer      | Gets details about the lobby game server if set                                                                                              |
-
 ## Events
 
 ### evtFound
 
-Occurs when a search for matchming lobbies returns
+```csharp
+public LobbyDataListEvent evtFound
+```
+
+Occurs when a search for matchmaking lobbies returns. The handler would be similar to the following.
+
+```csharp
+private void Handler(Lobby[] lobbies)
+{
+    //Do work
+}
+```
 
 ### evtEnterSuccess
 
-Occurs when the local user enters a lobby as the result of a create or join request
+```csharp
+public LobbyDataEvent evtEnterSuccess
+```
+
+Occurs when the local user enters a lobby as the result of a create or join request. The handler would be similar to the following.
+
+```csharp
+private void Handler(Lobby lobby)
+{
+    //Do work
+}
+```
 
 ### evtEnterFailed
 
-Occurs when the local user attempts to enter a lobby but gets an invalid enter responce
+```csharp
+public LobbyResponceEvent evtEnterFailed
+```
+
+Occurs when the local user attempts to enter a lobby but gets an invalid enter response. The handler would be similar to the following.
+
+```csharp
+private void Handler(EChatRoomEnterResponse responce)
+{
+    //Do work
+}
+```
 
 ### evtCreated
 
-Occurs when a lobby is created
+```csharp
+public LobbyDataEvent evtCreated
+```
+
+Occurs when a lobby is created. The handler would be similar to the following.
+
+```csharp
+private void Handler(Lobby lobby)
+{
+    //Do work
+}
+```
 
 ### evtCreateFailed
 
-Occurs when an attempt to create a lobby fails
+```csharp
+public UnityEvent evtCreateFailed
+```
+
+Occurs when an attempt to create a lobby fails. The handler would be similar to the following.
+
+```csharp
+private void Handler()
+{
+    //Do work
+}
+```
 
 ### evtQuickMatchFailed
 
-Occurs when an attempt to find a quick match failed and was not allowed to create a lobby on completion.
+```csharp
+public UnityEvent evtQuickMatchFailed
+```
 
-### evtQuickMatchFailed
+Occurs when an attempt to find a quick match failed and was not allowed to create a lobby on completion. The handler would be similar to the following.
 
-Occurs when a quick match operation ends and the option to create was set to false.
+```csharp
+private void Handler()
+{
+    //Do work
+}
+```
 
 ### evtDataUpdated
 
-Occurs when the lobby's metadata is updated
+```csharp
+public LobbyDataUpdateEvent evtDataUpdated
+```
+
+Occurs when the lobby's metadata or the metadata on a lobby member is updated. The handler would be similar to the following.
+
+```csharp
+private void Handler(LobbyDataUpdate_t dataUpdated)
+{
+    if(dataUpdated.m_ulSteamIDLobby == dataUpdated.m_ulSteamIDMember)
+    {
+        //It was lobby data that was updated
+    }
+    else
+    {
+        //It was this member that updated
+        var member = new LobbyMember
+                { 
+                    lobby = dataUpdated.m_ulSteamIDLobby,
+                    user = dataUpdated.m_ulSteamIDMember
+                };
+    }
+}
+```
 
 ### evtLeave
 
-Occurs when the local user leaves the lobby
+```csharp
+public UnityEvent evtLeave
+```
+
+Occurs when the local user leaves the lobby. The handler would be similar to the following.
+
+```csharp
+private void Handler()
+{
+    //Do work
+}
+```
 
 ### evtAskedToLeave
 
-Occurs when the local user is asked to leave the lobby via the Kick system
+```csharp
+public UnityEvent evtAskedToLeave
+```
+
+Occurs when the local user is asked to leave the lobby via the Kick system. The handler would be similar to the following.
+
+```csharp
+private void Handler()
+{
+    //Do work
+}
+```
 
 ### evtGameCreated
 
-Occurs when the lobby owner set's the game server data on the lobby. This is raised on all members but not on the owner of the lobby. As the owner is the one that sets this they already know.
+```csharp
+public GameServerSetEvent evtGameCreated
+```
+
+Occurs when the lobby owner set's the game server data on the lobby. This is raised on all members but not on the owner of the lobby. As the owner is the one that sets this they already know. The handler would be similar to the following.
+
+```csharp
+private void Handler(LobbyGameServer server)
+{
+    //Do work
+}
+```
 
 ### evtUserJoined
 
-Occurs when the local user is a member of a lobby and a new user joins that lobby
+```csharp
+public UserDataEvent evtUserJoined
+```
+
+Occurs when the local user is a member of a lobby and a new user joins that lobby. The handler would be similar to the following.
+
+```csharp
+private void Handler(UserData user)
+{
+    //Do work
+}
+```
 
 ### evtUserLeft
 
-Occurs when the local user is a member of a lobby and a fellow member leaves the lobby
+```csharp
+public UserLeaveEvent evtUserLeft
+```
+
+Occurs when the local user is a member of a lobby and a fellow member leaves the lobby. The handler would be similar to the following.
+
+```csharp
+private void Handler(UserData user)
+{
+    //Do work
+}
+```
+
+## Fields and Attributes
+
+### Lobby
+
+```csharp
+public Lobby Lobby { get; set; }
+```
+
+The lobby the manager is currently managing. This will automatically be updated when you use the lobby manager to create, join or leave a lobby. If you create, join or leave a lobby from outside the manager then you should update this field accordingly.
+
+### HasLobby
+
+```csharp
+public bool HasLobby => get;
+```
+
+True if the manager is managing a lobby, false otherwise.
+
+### IsPlayerOwner
+
+```csharp
+public bool IsPlayerOwner => get;
+```
+
+True if the local user is the owner of the managed lobby, false otherwise.
+
+### AllPlayersReady
+
+```csharp
+public bool AllPlayersReady => get;
+```
+
+True if all members of the lobby have marked them selves as ready, otherwise false.
+
+### IsPlayerReady
+
+```csharp
+public bool IsPlayerReady { get; set; }
+```
+
+Returns true if the player has marked them self as ready on this lobby. This can be set to mark the player as ready or not on this lobby.
+
+### Full
+
+```csharp
+public bool Full => get;
+```
+
+Returns true if the lobby is currently full, false otherwise.
+
+### IsTypeSet
+
+```csharp
+public bool IsTypeSet => get;
+```
+
+Returns true if the lobby type has been recorded on the lobby metadata, false otherwise.
+
+### Type
+
+```csharp
+public ELobbyType Type { get; set; }
+```
+
+Returns the type of lobby this lobby is set to, this is a feature of Heahten's Lobby tools. Valve does not actually expose this so this will only work for lobbies created by Heathen's tools such as the lobby manager or the API.Matchmaking class. This can only be set by the owner of the lobby.
+
+### MaxMembers
+
+```csharp
+public int MaxMembers { get; set; }
+```
+
+Indicates the max number of members that can be in the lobby. This can be set by the owner of the lobby to change the max slots.
+
+### HasServer
+
+```csharp
+public bool HasServer => get;
+```
+
+Returns true if the lobby has had its game server set, false otherwise.
+
+### GameServer
+
+```csharp
+public LobbyGameServer GameServer => get;
+```
+
+Returns data about the game server set on the lobby if any.
 
 ## Methods
 
