@@ -16,6 +16,7 @@
   * [IntelliSense](company/concepts/intellisense.md)
   * [Lambda Expressions](company/concepts/lambda-expressions.md)
   * [Monetization](company/concepts/monetization.md)
+    * [Hall of Shame](company/concepts/monetization/hall-of-shame.md)
     * [Learning](company/concepts/monetization/learning/README.md)
       * [EU Parliament Loot boxes effect on consumers](https://www.europarl.europa.eu/RegData/etudes/STUD/2020/652727/IPOL\_STU\(2020\)652727\_EN.pdf)
       * [EU Unfair commercial practices](https://europa.eu/youreurope/citizens/consumers/unfair-treatment/unfair-commercial-practices/index\_en.htm)

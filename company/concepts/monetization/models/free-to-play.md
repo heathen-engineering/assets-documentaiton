@@ -26,10 +26,6 @@ The main attraction to this model for most indie devs is that "zero barrier to e
 
 F2P still has a stigma especially for games that introduce this model after go live. The general notion is that a F2P game is cheap, cash grab, predatory, etc.. A lot of good work has been done to show that F2P games can be legitimate, non-predatory quality experiences, they are however still the minority and the stigma still exists.&#x20;
 
-### Modern Issues
-
-F2P based games are the pioneers of predatory monetization practices and this stigma has become so associated that for mobile games its simply assumed. Many legacy developers and publishers such as Blizzard, NetEase and similar are taking steps to try and normalize the practice in PC and eventually console gaming.
-
 ## Examples
 
 Tons but here are a few massively popular ones
