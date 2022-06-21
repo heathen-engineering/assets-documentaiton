@@ -34,6 +34,12 @@ Additional regulation and oversight brings complexity, legal exposer and in gene
 
 This article will assume you do not actively want to cause harm to others, your self or the industry. Here we will explore various monetization options, the impact they have on the user, your game and your bottom line. The intent is to help you develop a fair, honest and ethical monetization schema that can deliver you success.
 
+### Morality
+
+A typical argument is that the player is not forced to participate in the game at all much less in its monetization scheme ... by this same logic Ponzi schemes should be legal. Attempting to justify whaling or other predatory practices via the justification that some users can afford it is the "High roller" argument. A High roller is a term from the gaming industry (gambling) and refers to a person that plays at higher than normal stakes. Games designed for high rollers are absolutely legitimate forms of entertainment, in the gaming industry where regulations and oversight are in place to insure fair terms and mitigate harm to the wider public.
+
+The issue with predatory monetization practices is that they have an unacceptably high chance of causing harm to vulnerable persons. What defines "unacceptably high chance" should be clear as a normal functioning human being where its not your regulatory boards will inform you. In general you should make every effort to protect vulnerable persons. The simplest way to do so is simply to keep it to morally tenable forms of monetization. If its not clear what that is, up front and clear pricing, with a max spend that clearly identified and reasonable for the product delivered.
+
 ### More reasons to not suck
 
 While their are plenty who will monetize even in a predatory system and of course a handful of whales can sustain you at least until the lawsuits role in there are more reasons to not suck.

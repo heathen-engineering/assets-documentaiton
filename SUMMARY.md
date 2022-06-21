@@ -24,6 +24,7 @@
       * [Free](company/concepts/monetization/models/free.md)
       * [Free to Play](company/concepts/monetization/models/free-to-play.md)
       * [Pay to Play](company/concepts/monetization/models/pay-to-play.md)
+      * [Pay to Win](company/concepts/monetization/models/pay-to-win.md)
       * [Play to Earn](company/concepts/monetization/models/play-to-earn.md)
       * [Subscription](company/concepts/monetization/models/subscription.md)
     * [Predatory Practices](company/concepts/monetization/predatory-practices/README.md)
