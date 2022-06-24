@@ -4,7 +4,21 @@ Archaeological evidence coupled with annotations from Greek and Roman sources pa
 
 ### Druids
 
-Proto-Celtic "Oak Knower" highlights the importance of trees and the general factor of wisdom.  Not just priests ... but also priests. If we consider three common classes or groups such as Warrior, Druid and Worker then we can reword this to mean (Warrior, Scholar and Worker). Druids defiantly served a religious role but also, poets, healers, architects and generally the wisdom of the tribe. Male and female could be druids, as noted gender segregation seems to be the oddity of Roman, Greek and related cultures and was not a feature of more northern European tribes.
+Proto-Celtic "Oak Knower" highlights the importance of trees and the general factor of wisdom. The concept of Druid is suggested by the Romans to have originated in the north or west and come to the early Celts. This suggests it was a concept of learned class that developed in western or norther proto-Celtic cultures or from earlier cultural groups and would be later adopted by the Celts as the Romans knew them.
+
+Rome and Greece for note had known the Celts for a long time and had be harassed by them for a considerable amount of time. It wasn't until Julius Cesar's time that Rome was finally putting down the core of Celtic culture at least as far as Roman knew it.
+
+The Romans note that people would submit to study them selves or be sent by family. This tells us it is not a hereditary function. We know druid studies included but where not limited to science, philosophy, astronomy, history and religious topics.
+
+We also know that druids voted among them selves to select a chief Druid, this aligning with other Celtic leadership functions favouring choosing the best person for the job as opposed to inheritance of power.
+
+It is also noted that Druids do not write anything down ... seemingly as a matter of custom or tradition however we do have some records in the form of golden hats, calendar stones and other functional yet symbolic artefacts of useful information in particular dealing with measures of time and astronomical events.
+
+Julius notes it could take as long as 20 years to memorize all of the required information to become a Druid, this would also tell us that there are no young Druids
+
+{% hint style="info" %}
+No hard evidence of it, this however does sound a lot like Buddhist Monks or similar where in really anyone may go study. I get the impression by the challenge and the fact Druids didn't seem to make up a large portion of the Celtic population that while many may have chosen to study under Druidic instruction that most who went to learn something didn't go on to become Druids ... similar to many young going to Monks to study but then leaving to pursue other venters after a time.
+{% endhint %}
 
 ### Gender
 

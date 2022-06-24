@@ -2,7 +2,7 @@
 
 ### Gender
 
-Gender does not limit what one can do or must do, their is not overarching concept of matriarchy or patriarchy. Both male and female are represented commonly in all walks and at all strata. Masculine and feminine are present in symbology and aesthetic but are not a point of interest or concern. &#x20;
+Gender has no impact on what one can become, do or aspire to nor what is expected of one. A woman who is wronged or abused is encouraged to seek her own justice or vengeance as would any other person be.
 
 ### Hospitality
 
@@ -10,7 +10,7 @@ Guest must be treated well, offered food, comfort and curtesy.
 
 ### Leadership
 
-Chiefs, kings and other leaders are chosen not strictly by heredity but by whom ever is deemed worthy.
+Leadership is earned by the worthy not inherited by the child
 
 ### Sex
 

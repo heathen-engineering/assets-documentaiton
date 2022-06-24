@@ -123,6 +123,7 @@
       * [The Morrígan](codex/irish/research/disambiguation/the-morrigan.md)
       * [Triple Persona](codex/irish/research/disambiguation/triple-persona.md)
       * [Tuatha Dé](codex/irish/research/disambiguation/tuatha-de.md)
+      * [Wicker Man Sacrafice](codex/irish/research/disambiguation/wicker-man-sacrafice.md)
     * [Links](codex/irish/research/catalogue.md)
       * [Social Factors](codex/irish/research/links/social-factors.md)
       * [Lugh](codex/irish/research/links/lugh/README.md)
