@@ -16,6 +16,12 @@ An analysis of the K15 stone. This is useful in gathering a degree of understand
 
 Written by Koch, John T. 2005 CE; This is an academic source in particular used with regards to the link or relationship between modern, old and proto variants of names and there meanings.
 
+### Celtic Democracy: Appreciating the Role Played by Alliances and Elections in Celtic Political Systems
+
+{% embed url="https://www.jstor.org/stable/41219615" %}
+
+Anecdotal information regarding Celtic governance&#x20;
+
 ### Encyclopaedia of Indo-European Culture
 
 Written by Mallory, J.P. and D.Q. Adams 1997 CE; This is an academic source in particular used with regards to the link or relationship between modern, old and proto variants of names and there meanings.

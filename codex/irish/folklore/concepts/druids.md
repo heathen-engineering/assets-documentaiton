@@ -1,5 +1,5 @@
 ---
-description: Clergy
+description: Clergy literally translates as "Oak knower"
 ---
 
 # Druids
