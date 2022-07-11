@@ -51,28 +51,24 @@ If you need to reload the scene where [Steamworks Behaviour](../components/steam
 This is a good place to start when learning about Steam and multiplayer games
 {% endembed %}
 
-Steam API includes SteamNetworking and SteamNetworkingSocket interfaces. Please note that these interfaces are "LLAPI" or Low Level APIs ... they are not a replacement for uNET, Mirror, Fish Networking, NetCode for GameObjects or any other "HLAPI" aka High Level API.
+{% hint style="success" %}
+Steamworks Complete and whatever HLAPI you chose to work with have no impact on each other at all. You will use Steamworks and your HLAPI of choice exactly the same with as you would without the other.
+{% endhint %}
 
-You can use SteamNetworking or SteamNetworkingSocket with any HLAPI that has integrated with them. For example FishNetworking has a "[Fishy Steamworks](https://github.com/FirstGearGames/FishySteamworks)" transport that allows you to use SteamNetworkingSockets with Fish Networking.&#x20;
+### Do I need Steamworks Complete?
 
-Note that their are no special considerations in how you use Steamworks Complete when using any given HLAPI nor is their any special consideration in how you use the HLAPI you chose when also using Steamworks Complete.
+You do not "require" Steamworks Complete in order to use Mirror, FishNetworking or NetCode for GameObject's or any other Steam transports. Those transports like our self work with Steamworks.NET directly.
 
-To spell that out another way, Steamworks Complete and whatever HLAPI you chose to work with have no impact on each other at all. You will use Steamworks and your HLAPI of choice exactly the same with as you would without the other.
+That said you will need to initialize, configure and manage the Steam API before SteamNetworking interfaces can be used. Our Steamworks Complete and Steamworks Foundation packages make working with Steam API simple and stable. If you do not use Steamworks Complete or Foundation you would need to use the raw Steam API to initialize and configure your Steam API integration your self before your HLAPI could use the Steam transports.
 
-### FAQ
+### Examples?
 
-#### Do I need Steamworks Complete to use (enter HLAPI here)?
-
-You do not "require" Steamworks Complete in order to use Mirror, FishNetworking or NetCode for GameObject's Steam transports. Those transports like our self work with Steamworks.NET directly.
-
-That said you will need to initialize, configure and manage the Steam API before SteamNetworking interfaces and thus those transports will work. Our Steamworks Complete and Steamworks Foundation packages make working with Steam API simple and stable but you could work with the raw Steam API your self if you prefer.
-
-#### Where can I find examples of using Steamworks Complete and (enter HLAPI here)?
+Where can I find examples on using Steamworks Complete and (the HLAPI I chose)?
 
 You cant because their is no need. Both Steamworks Complete and your HLAPI of choice work exactly the same rather or not the other exists. Thus we do not have an example of using (your HLAPI of choice) along side our Steamworks Complete.&#x20;
 
 If you want to see an example of using your HLAPI of choice with your HLAPI's Steam transport then you should contact them. We have links to [Fish Networking, Mirror and NetCode for GameObjects in our articles](../installation/networking-integrations.md) but any HLAPI that works with Steamworks.NET properly will work.
 
-If your looking for examples on how to initialize, configure and use Steam API you will find various samples in the provided [samples scenes](../../physkit/learning/sample-scenes/) and examples throughout our knowledge base.
+If your looking for examples on how to initialize, configure and use Steam API (in general) you will find various samples in the provided [samples scenes](../../physkit/learning/sample-scenes/) and examples throughout our knowledge base.
 
 If your trying to wrap your head around creating a [multiplayer game on the Steam platform](developer-articles/multiplayer-steam-games.md), we have an article for that as well. That article is not specific to any given HLAPI because the HLAPI you choose has no impact on the concepts involved.
