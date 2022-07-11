@@ -53,7 +53,11 @@ This is a good place to start when learning about Steam and multiplayer games
 
 Steam API includes SteamNetworking and SteamNetworkingSocket interfaces. Please note that these interfaces are "LLAPI" or Low Level APIs ... they are not a replacement for uNET, Mirror, Fish Networking, NetCode for GameObjects or any other "HLAPI" aka High Level API.
 
-You can use SteamNetworking or SteamNetworkingSocket with any HLAPI that has a concept of "transport". For example FishNetworking has a "[Fishy Steamworks](https://github.com/FirstGearGames/FishySteamworks)" transport that allows you to use SteamNetworkingSockets with Fish Networking.&#x20;
+You can use SteamNetworking or SteamNetworkingSocket with any HLAPI that has integrated with them. For example FishNetworking has a "[Fishy Steamworks](https://github.com/FirstGearGames/FishySteamworks)" transport that allows you to use SteamNetworkingSockets with Fish Networking.&#x20;
+
+Note that their are no special considerations in how you use Steamworks Complete when using any given HLAPI nor is their any special consideration in how you use the HLAPI you chose when also using Steamworks Complete.
+
+To spell that out another way, Steamworks Complete and whatever HLAPI you chose to work with have no impact on each other at all. You will use Steamworks and your HLAPI of choice exactly the same with as you would without the other.
 
 ### FAQ
 
@@ -61,7 +65,7 @@ You can use SteamNetworking or SteamNetworkingSocket with any HLAPI that has a c
 
 You do not "require" Steamworks Complete in order to use Mirror, FishNetworking or NetCode for GameObject's Steam transports. Those transports like our self work with Steamworks.NET directly.
 
-That said you will need to initialize, configure and manage the Steam API before SteamNetworking interfaces and thus those transports will work. You can do this your self using Steamworks.NET or you can use our Steamworks Complete.
+That said you will need to initialize, configure and manage the Steam API before SteamNetworking interfaces and thus those transports will work. Our Steamworks Complete and Steamworks Foundation packages make working with Steam API simple and stable but you could work with the raw Steam API your self if you prefer.
 
 #### Where can I find examples of using Steamworks Complete and (enter HLAPI here)?
 
