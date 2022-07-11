@@ -45,4 +45,30 @@ Congratulations, you are now integrated with the Steam APIs. If you run the simu
 If you need to reload the scene where [Steamworks Behaviour](../components/steamworks-behaviour.md) is located or otherwise must use a single scene architecture you should use the [Steamworks Creator](../components/steamworks-creator.md) to insure the Steam API is managed correctly.
 {% endhint %}
 
-##
+## Networking
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/learning/developer-articles/multiplayer-steam-games" %}
+This is a good place to start when learning about Steam and multiplayer games
+{% endembed %}
+
+Steam API includes SteamNetworking and SteamNetworkingSocket interfaces. Please note that these interfaces are "LLAPI" or Low Level APIs ... they are not a replacement for uNET, Mirror, Fish Networking, NetCode for GameObjects or any other "HLAPI" aka High Level API.
+
+You can use SteamNetworking or SteamNetworkingSocket with any HLAPI that has a concept of "transport". For example FishNetworking has a "[Fishy Steamworks](https://github.com/FirstGearGames/FishySteamworks)" transport that allows you to use SteamNetworkingSockets with Fish Networking.&#x20;
+
+### FAQ
+
+#### Do I need Steamworks Complete to use (enter HLAPI here)?
+
+You do not "require" Steamworks Complete in order to use Mirror, FishNetworking or NetCode for GameObject's Steam transports. Those transports like our self work with Steamworks.NET directly.
+
+That said you will need to initialize, configure and manage the Steam API before SteamNetworking interfaces and thus those transports will work. You can do this your self using Steamworks.NET or you can use our Steamworks Complete.
+
+#### Where can I find examples of using Steamworks Complete and (enter HLAPI here)?
+
+You cant because their is no need. Both Steamworks Complete and your HLAPI of choice work exactly the same rather or not the other exists. Thus we do not have an example of using (your HLAPI of choice) along side our Steamworks Complete.&#x20;
+
+If you want to see an example of using your HLAPI of choice with your HLAPI's Steam transport then you should contact them. We have links to [Fish Networking, Mirror and NetCode for GameObjects in our articles](../installation/networking-integrations.md) but any HLAPI that works with Steamworks.NET properly will work.
+
+If your looking for examples on how to initialize, configure and use Steam API you will find various samples in the provided [samples scenes](../../physkit/learning/sample-scenes/) and examples throughout our knowledge base.
+
+If your trying to wrap your head around creating a [multiplayer game on the Steam platform](developer-articles/multiplayer-steam-games.md), we have an article for that as well. That article is not specific to any given HLAPI because the HLAPI you choose has no impact on the concepts involved.

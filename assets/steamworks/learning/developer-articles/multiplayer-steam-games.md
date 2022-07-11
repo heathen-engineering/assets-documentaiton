@@ -1,10 +1,19 @@
 # Multiplayer Steam Games
 
+{% hint style="success" %}
+The Networking tool you choose to use does not impact any of the concepts you have here.&#x20;
+
+You can use any networking tool you like, if you want to use the SteamNetworkingSockets interface you should choose a networking tool that has an integration with it.
+
+\
+Fish Networking, Mirror and NetCode for GameObjects all have Steam transports that they or their community author. Heathen **does not** author any of these transports and cannot provide support for them. These transports can be used along side Heathen's Steamworks Complete and Foundation.
+{% endhint %}
+
 ## Introduction
 
 ### Who am I?
 
-James McGhee CEO and founder of Heathen, author of all of Heathen’s coded assets and a contributor to Steamworks.NET, Mirror’s FizzySteamTransport, MLAPI’s Steam Transport and really anything else I can help with.
+James McGhee CEO and founder of Heathen, author of all of Heathen’s coded assets and a contributor to Steamworks.NET, Mirror’s FizzySteamTransport, NetCode for Game Object's Steam Transport and really anything else I can help with.
 
 ### What do I know?
 
