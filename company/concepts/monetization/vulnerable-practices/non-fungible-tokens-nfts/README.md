@@ -8,22 +8,21 @@ description: Sadly abused in every way
 Typically predatory (see [Play to Earn](../../models/play-to-earn.md)) use with caution
 {% endhint %}
 
-Everyone loves to hate NFTs in games at the moment and its important to understand that and understand why.
+{% embed url="https://www.youtube.com/watch?t=216s&v=GzTj60CWhQo" %}
+Video in Portuguese&#x20;
+{% endembed %}
 
-{% hint style="info" %}
-Before we go any further, know that NFTs in and of them selves are not a problem or inherently bad or evil. Just like Loot Boxes can be implemented in a consumer friendly way or as harmful gatcha style exploitative tools. NFTs could be implemented in a positive or negative way. The current animosity toward NFTs is due to the absurd amount of clearly predatory takes on the tool we have seen to date.
-{% endhint %}
+{% embed url="https://docs.google.com/presentation/d/1a8dMxaqyjWl4G6NO7mXF30CICHOJLkJxuP2Xrpky9rA/edit#slide=id.g1368c24f233_0_57" %}
+English Translated Slides
+{% endembed %}
+
+Everyone loves to hate NFTs in games at the moment and its important to understand that and understand why.
 
 ## What is a NFT
 
 Non-Fungible Token ... dumb choice of wording to mean a serialized ID e.g. a unique ID.
 
-To understand in detail we need dedicated articles so look [here ](blockchain-and-nfts.md)for more. In short though its simply a unique identifiable record in a distributed database. It really amounts to not a lot more than a unique identifier associated with some transactions and maybe some metadata.
-
-{% hint style="info" %}
-Heathen builds an integration with Blockchain.\
-There we talk about [ways to use blockchain and NFTs in games](../../../../../assets/bgsdk/learning/core-concepts/nfts-in-game.md).
-{% endhint %}
+To understand in detail we need dedicated articles so look [here ](blockchain-and-nfts.md)for more. In short though its simply a unique identifiable record in a distributed database. It really amounts to not a lot more than a unique identifier associated with some transactions and maybe some metadata depending on the chain and implementation in question.
 
 ## How are NFTs used
 
@@ -38,7 +37,7 @@ Sadly NFTs in games are most commonly used for [Play to Earn monetization models
 {% hint style="success" %}
 In Heathen's humble personal opinion this is at current the best use case for NFTs in game.\
 \
-But still doesn't make practical since with current technologies.
+But still doesn't make practical since with other technologies being vastly superior to Blockchain options.
 {% endhint %}
 
 Put simply this is using NFTs to track ownership of the license of the game, DLC or other licensable content. This is most similar to the concepts you see touted for artists, the massive difference here being a game and its backend systems can make them selves dependent on a valid token where as an offline bit of art or even digital art has no programmatic way to validate.
@@ -48,7 +47,7 @@ This use would see your game require the user to "authenticate" ownership by pro
 That said if your game has a backend service then that backend service already has an account authentication solution and likely already has the ability to transfer ownership of license between accounts. So even this use case doesn't really offer anything that isn't already available. This use for NFTs would mean that players could trade and resale games even outside the developers platform however the need to authenticate means that some platform must still act as a centralized authority defeating the purpose of NFT at all.
 
 {% hint style="info" %}
-Now if your looking to create a backend service; then using blockchain technology internally might be of interest in that it is an interesting way to track and prove validity of transactions. Its not the only way and I question rather its the best way but it is a way that may be worth looking into.
+Now if your looking to create a backend service; then using blockchain technology internally might be of interest in that it is an interesting way to track and prove validity of transactions. Its not the only way and I question rather its the best way but it is "a" way that may be worth looking into.
 {% endhint %}
 
 ### NFT Items
@@ -60,7 +59,7 @@ You could argue that NFTs allow the user to perform transactions outside the con
 {% hint style="info" %}
 As with the above NFT Licensing, if you where a platform provider, using blockchain technology might be interesting in that it could allow transactions outside your platform to still be valid and secure ... theoretically. \
 \
-Blockchain and NFT isn't the only way to do that and I again would question if its the best way to do that but it would be an interesting topic to look into.
+Blockchain and NFT isn't the only way to do that and I again would question if its the best way to do that but it would be an interesting topic to look into. Also by allowing transactions out side of your control cons and other exploits run rampant ... just google NFT theft or scam and read any entry you like.
 {% endhint %}
 
 ### Other concepts
