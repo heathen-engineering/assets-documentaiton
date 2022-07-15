@@ -32,7 +32,7 @@ This componenet is meant to be attached to a game object in your matchmaking sce
 
 ### Steam Lobby
 
-The [Steam Lobby](../features/multiplayer/matchmaking-tools.md) feature of the Steam API is a flexable and powerful tool useful for far more than simple matchmaking. We find it best to think of a "lobby" more like a chat room with metadata. It does not have anything to do with networking, it doesn't have to relate to a game session or a game server.
+The [Steam Lobby](../learning/core-concepts/matchmaking-tools/) feature of the Steam API is a flexable and powerful tool useful for far more than simple matchmaking. We find it best to think of a "lobby" more like a chat room with metadata. It does not have anything to do with networking, it doesn't have to relate to a game session or a game server.
 
 Steam allows a player to be apart of up to 3 lobbies but has a few restrictions.
 
