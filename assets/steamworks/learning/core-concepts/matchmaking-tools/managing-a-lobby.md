@@ -200,3 +200,66 @@ void HandleDataChanged(LobbyDataUpdate_t dataUpdated)
     }
 }
 ```
+
+## Lobby Data
+
+Writing lobby metadata data can only be done by the owner of the lobby. Metadata on the lobby is what is used when searching for a lobby and is what you would use to express configuration and settings of the session the lobby deals with. For example if you wanted to let all users know what map the session will be on then you would set a lobby metadata data field map = X.&#x20;
+
+### Matchmaking API
+
+Use the [SetLobbyData](../../../api/matchmaking.md#setlobbydata) method to apply lobby data. This can only be done if the user is the owner of the lobby.
+
+```csharp
+if(Matchmaking.Client.SetlobbyData(lobby, key, value))
+    ;//Steam took the request
+else
+    ;//Steam said no, your probably not the owner.
+```
+
+### Lobby
+
+Using the lobby object its a step easier and you have a few options
+
+Simple indexer
+
+```csharp
+myLobby["key"] = "value";
+// or
+var theValue = myLobby["key"];
+```
+
+and we have exposed several common fields as fields on the struct
+
+```csharp
+//Name
+myLobby.Name = "New Name"
+// Is the same as
+myLobby["name"] = "New Name";
+
+//Game Version
+myLobby.GameVersion = "v1.24b";
+// is the same as
+myLobby["z_heathenGameVersion"] = "v1.24b";
+
+//IsReady
+myLobby.IsReady = true;
+// Is the same as
+myLobby["z_heathenReady"] = "true";
+
+//IsGroup
+myLobby.IsGroup = true;
+// Is the same as
+myLobby.SetType(ELobbyType.k_ELobbyTypeInvisbile);
+myLobby["z_heathenMode"] = "Group";
+```
+
+### Lobby Manager
+
+The lobby manager lets you use both approaches
+
+```csharp
+lobbyManager.SetLobbyData(key, value);
+// or
+var lobby = lobbyMannager.Lobby;
+lobby["key"] = "value";
+```

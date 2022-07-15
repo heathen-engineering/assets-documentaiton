@@ -73,7 +73,7 @@ In contrast metadata stored on a lobby member can only be seen by members of the
 
 When metadata is changed the Steam API will raise the lobby data changed event ... that event will indicate what object's data changed by not what data field changed so for example if the event indicates the lobby data changed you should check all the lobby metadata where as if it indicated a members data changed you should check that members metadata.
 
-The event in question is exposed on the Lobby Manager as [evtDataUpdated ](../../../components/lobby-manager.md#evtdataupdated)and in the Matchmaking API as [EventLobbyDataUpdate](../../../api/matchmaking.md#eventlobbydataupdate).
+The event in question is exposed on the Lobby Manager as [evtDataUpdated ](../../components/lobby-manager.md#evtdataupdated)and in the Matchmaking API as [EventLobbyDataUpdate](../../api/matchmaking.md#eventlobbydataupdate).
 
 
 
@@ -96,7 +96,7 @@ var member = lobby.User;
 member["thisField"] = "thisValue";
 ```
 
-To learn more check out the [Lobby](../../../objects/lobby.md#introduction) article describing the features of the lobby structure.
+To learn more check out the [Lobby](../../objects/lobby.md#introduction) article describing the features of the lobby structure.
 
 ## Matchmaking
 
@@ -132,7 +132,7 @@ This model does much the same as Quick Match but lets the player decide what the
 
 #### How to display lobbies
 
-The [5 Lobbies](../../sample-scenes/5-lobbies.md) sample scene demonstrates browsing for lobbies. If you wanted to do this model the ideal solution is to let the user define there search arguments and return a small number of the lobbies if any that match that say the top 10.&#x20;
+The [5 Lobbies](../../learning/sample-scenes/5-lobbies.md) sample scene demonstrates browsing for lobbies. If you wanted to do this model the ideal solution is to let the user define there search arguments and return a small number of the lobbies if any that match that say the top 10.&#x20;
 
 You can then do searches that are slightly less strict ... what this means depends on your game. For example lets say your game is a classic shooter with modes like CTF, C\&H, KofH and has session sizes of 4v4, 8v8 and 16v16 and maybe also lets your player's pick a map.
 
@@ -150,10 +150,10 @@ Its keenly important that you understand that a lobby is not a server, it is not
 
 You can think of it like jumping on Team Speak, or Discord, etc. and rounding up a few friends to go play a game together.
 
-If you want to list a set of available server's then you 1st off need servers. You can look at creating a server build for your game and having it register as a [Steam Game Server](../../../features/multiplayer/game-server-browser.md).
+If you want to list a set of available server's then you 1st off need servers. You can look at creating a server build for your game and having it register as a [Steam Game Server](game-server-browser.md).
 
 {% hint style="info" %}
-Learn more [here](../../../features/multiplayer/game-server-browser.md)
+Learn more [here](game-server-browser.md)
 {% endhint %}
 
 Once you have a server build you need to decide how your going to host it.
@@ -171,7 +171,7 @@ Once you have a server build you need to decide how your going to host it.
 
     Do it your self, if your a glutton for pain or just really like data operations you could of course host your servers your self.
 
-Doing this will let you browse for and display all available (and publicly visible) stem game servers via a [Steam Game Server Browser](../../../components/game-server-browser-manager.md).
+Doing this will let you browse for and display all available (and publicly visible) stem game servers via a [Steam Game Server Browser](../../components/game-server-browser-manager.md).
 
 ## Use Cases
 
@@ -179,7 +179,7 @@ Doing this will let you browse for and display all available (and publicly visib
 
 For more information on lobby types see Valve's documentation [https://partner.steamgames.com/doc/api/ISteamMatchmaking#typedefs](https://partner.steamgames.com/doc/api/ISteamMatchmaking#typedefs)&#x20;
 
-See the [API.Matchmaking](../../../api/matchmaking.md#create-lobby) interface for details on creating a lobby. In addition the [Lobby Manager](../../../components/lobby-manager.md) tools can help you create, join and manage a lobby for a specific function in your game.&#x20;
+See the [API.Matchmaking](../../api/matchmaking.md#create-lobby) interface for details on creating a lobby. In addition the [Lobby Manager](../../components/lobby-manager.md) tools can help you create, join and manage a lobby for a specific function in your game.&#x20;
 
 Lets say for example you use 2 types of lobbies in your game
 
@@ -190,19 +190,19 @@ Lets say for example you use 2 types of lobbies in your game
 
     This would be where you have your player's configure a game play session and wait for competitors to join or similar. This is the most typical use of a lobby and what drives matchmaking in your game.
 
-In the above use case you would attack a [Lobby Manager](../../../components/lobby-manager.md) to your Party UI and another to your Session UI. You would configure each accordingly and each can manage its own chat and metadata features. This helps you split functionality across concepts unique to your game.
+In the above use case you would attack a [Lobby Manager](../../components/lobby-manager.md) to your Party UI and another to your Session UI. You would configure each accordingly and each can manage its own chat and metadata features. This helps you split functionality across concepts unique to your game.
 
 ### Find and Join Lobbies
 
-The easiest way to search for and join lobbies is through the [Lobby Manager](../../../components/lobby-manager.md) tool. Alternatively you can use Heathen's API.Matchmaking directly to easily search for and join lobbies.&#x20;
+The easiest way to search for and join lobbies is through the [Lobby Manager](../../components/lobby-manager.md) tool. Alternatively you can use Heathen's API.Matchmaking directly to easily search for and join lobbies.&#x20;
 
 Aside from browsing for a lobby you can handle invite and joining of lobby invites. Inviting a friends to lobby can be done in a number of ways including from outside of your game via the Steam Friends list.
 
-Internally to you game you can use the [User Data](../../../objects/user-data.md) object to invite a specific player. You would have access to this object from various tools and interfaces including [Friends](../../../api/friends.md), [Clans ](../../../api/clans.md)and there related chat systems. When you send an invite it is up to that user to accept it and there are multiple use cases for how they might accept the invite
+Internally to you game you can use the [User Data](../../objects/user-data.md) object to invite a specific player. You would have access to this object from various tools and interfaces including [Friends](../../api/friends.md), [Clans ](../../api/clans.md)and there related chat systems. When you send an invite it is up to that user to accept it and there are multiple use cases for how they might accept the invite
 
 #### While In game
 
-In this case the accepting user is already in game and so the Game Lobby Join Invite event will be raised on the [Overlay Manger](../../../components/overlay-manager.md#events) and its related [API.Overlay](../../../api/overlay.md#game-lobby-join-requested) interface.
+In this case the accepting user is already in game and so the Game Lobby Join Invite event will be raised on the [Overlay Manger](../../components/overlay-manager.md#events) and its related [API.Overlay](../../api/overlay.md#game-lobby-join-requested) interface.
 
 #### While out of game
 
@@ -242,9 +242,9 @@ if(targetLobby > 0)
 
 ### Using Lobby Chat
 
-Steam's Lobby system includes a simple chat system able to handle text or data. The easiest way to interact with lobby chat is via the [Lobby Chat Director](../../../components/lobby-chat-director.md) which needs to be added to the same object as your [Lobby Manager](../../../components/lobby-manager.md).
+Steam's Lobby system includes a simple chat system able to handle text or data. The easiest way to interact with lobby chat is via the [Lobby Chat Director](../../components/lobby-chat-director.md) which needs to be added to the same object as your [Lobby Manager](../../components/lobby-manager.md).
 
-You can also interact with lobby chat manually through the [API.Matchmaking](../../../api/matchmaking.md) interface.
+You can also interact with lobby chat manually through the [API.Matchmaking](../../api/matchmaking.md) interface.
 
 ### Notify "Connect to network"
 
@@ -270,9 +270,9 @@ The SetGameServer method can only be called by the "Owner" of the lobby
 
 When called Valve will record the information on the Steam Lobby metadata as shown below
 
-![](<../../../../../.gitbook/assets/image (65).png>)
+![](<../../../../.gitbook/assets/image (65).png>)
 
-Each member of the lobby (other than the owner) will be notified by callback which raises the `EventLobbyGameCreated` event located on the [API.Matchmaking](../../../api/matchmaking.md) interface and exposed through the [Lobby Manager](../../../components/lobby-manager.md).&#x20;
+Each member of the lobby (other than the owner) will be notified by callback which raises the `EventLobbyGameCreated` event located on the [API.Matchmaking](../../api/matchmaking.md) interface and exposed through the [Lobby Manager](../../components/lobby-manager.md).&#x20;
 
 {% hint style="warning" %}
 All members of a lobby should upon joining the lobby register an event handler on the `Lobby.evtGameServerSet` event
