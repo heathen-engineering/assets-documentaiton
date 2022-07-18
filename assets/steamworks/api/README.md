@@ -8,7 +8,7 @@ description: The Heathen Steam API wrapper
 
 The Heathen API provides access to the full Steam API wrapping every interface with a Unity friendly static class, simplifying use of the raw API without reducing its functionality and exposing every callback as a UnityEvent and every callresult as a Unity firendly Action.
 
-We have wrapped every interface (except Networking interfaces) and copied its relevant documentation meaning you can now explore Valve's own documentation in your IDE via intelligence, take full advantage of auto complete and suggestions and explore the full API via the object explorer.&#x20;
+We have wrapped every interface (except Networking interfaces) and copied its relevant documentation meaning you can now explore Valve's own documentation in your IDE via [IntelliSense](../../../company/concepts/intellisense.md), take full advantage of auto complete and suggestions and explore the full API via the object explorer.&#x20;
 
 {% hint style="info" %}
 Why not wrap the networking interfaces?
@@ -22,7 +22,7 @@ No
 
 We are still built on top of Steamworks.NET something we feel strongly about as it provides an unadulterated view of the Steam API making it possible for you to leverage decades of community guides, sample code, the official Steam Developer forums and support channels from Valve, etc.
 
-Heathen's API does wrap the raw Steam API up as an extension to Steamworks.NET making it not just C# friendly but more Unity native. You could say what Facepunch does for a C# programmer Heathen does for a Unity programmer, Unity designer, C# programmer, C/C++ programmer, etc.
+Heathen's API does wrap the raw Steam API up as an extension to Steamworks.NET making it not just C# friendly but more Unity native. You could say what Facepunch does for a C# programmer Heathen does for a Unity programmer, Unity designer, C# programmer, C/C++ programmer, etc. but we do a lot more on top of that with our components and objects built on top of this layer.
 
 ## Features
 
