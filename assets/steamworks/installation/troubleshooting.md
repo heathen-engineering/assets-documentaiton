@@ -6,29 +6,29 @@ description: So you have a problem
 
 This section will cover the most common installation issues and how to resolve them. Before we get into the common issues and causes here are a few key bits of information.
 
-### Unity Merge
+## Unity Merge
 
 You may know that Unity attempts to merge assets on import.&#x20;
 
-**So what does that mean?**
+### **So what does that mean?**
 
 Every asset in your Unity project has a GUID associated with it, that is a globally unique ID so Unity can know that folder A is the same folder A no matter where you move it or even rename it.
 
-**Why is this relevant?**
+### **Why is this relevant?**
 
 If you have any old or customized versions of System Core, Steamworks.NET, etc. then Unity will attempt to merge the new stuff your installing with the old, even if your doing it from Package Manager. This will break a lot of things and make a huge mess.
 
-**How to prevent the issue?**
+### **How to prevent the issue?**
 
 First fully remove any non-package manager installed versions of Steamworks.NET, System Core or any old Heathen assets ... old Heathen assets would have a copy of System Core in them so remove that.
 
-**How to fix when it goes bad?**
+### **How to fix when it goes bad?**
 
 So lets say you tried to install, forgot to clean out an old Steamworks.NET or missed a few files or something. To clean this you first should remove the Package Manager version using Package Manager. Next clean out the old offending files and finally reinstall from Package Manager.
 
 So if you have compilation errors or if your Script Defines are a bit of a mess you might need to install these manually from Package Manager ... you can find the process for that [here](troubleshooting.md#from-package-manager).
 
-### Script Defines
+## Script Defines
 
 Script defines are used by Unity, Steamworks.NET and Heathen to know what is installed and ready to use and what platform its current set to. These defines are used in code to enable or disable code from compiling under various conditions. This means even with the script files present some code just wont be seen by the compiler unless these defines are set up properly.
 
@@ -38,19 +38,19 @@ Heathen no longer uses global script defines but references all defines as part 
 
 These defines exist only if the related assembly is present. If these defines are not present the code will not compile.
 
-#### STEAMWORKS\_NET
+### STEAMWORKS\_NET
 
 This is the script define set by Steamworks.NET
 
 It indicates that Steamworks.NET is present but does not indicate that it should be complied. That is the presence of the define `DISABLESTEAMWORKS` will still be respected and prevent any compilation of Steamworks dependent code.
 
-#### HE\_SYSCORE
+### HE\_SYSCORE
 
 This is the script define set by System Core
 
 It indicates that System Core is present, System Core is a framework that all Heathen assets are dependent on and must be present for any of the code to compile.
 
-### No git executable was found
+## No git executable was found
 
 This means you have missing components on your machine and Unity Editor cannot use the Package Manager's Add from Git URL.&#x20;
 
@@ -58,7 +58,7 @@ Please read the below article to fix this
 
 {% embed url="https://kb.heathenengineering.com/company/concepts/package-manager-install" %}
 
-### XXXX did not install
+## XXXX did not install
 
 So for example System Core did not install or Steamworks.NET did not install
 
@@ -78,7 +78,7 @@ If its that you have script defines in place for code you don't have installed s
 
 If its that you have compiler errors and so our scripts are not running, simply install the requirements directly ... you can find instruction on how in [this section](troubleshooting.md#from-package-manager).
 
-### XXXX is not found
+## XXXX is not found
 
 So for example SteamSettings is not found in namespace XXXX or otherwise some message indicating that something you know is installed is not visible in code.
 
@@ -109,3 +109,11 @@ This is a way to split a code base up into assemblies for faster and simpler com
 You can view and edit the references a given assembly define has toward other defines in the Unity Inspector for your Assembly Definition.
 
 ![](<../../../.gitbook/assets/image (165).png>)
+
+## Missing namespace
+
+If you have errors coming from Heathen's code to the effect of&#x20;
+
+![Or similar](<../../../.gitbook/assets/image (118).png>)
+
+Then the problem is you either removed Steamworks.NET from the Package Manager or more likely your target platform is not valid. Steamworks.NET will only compile for PC, Mac or Linux ... not Windows Universal or any other platform.

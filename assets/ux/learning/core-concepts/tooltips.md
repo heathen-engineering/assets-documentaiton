@@ -120,7 +120,7 @@ Invoked Tips refers to tips driven by an event system and can be done with eithe
 
 Very often your tips content is rich and needs to perform some run time processing. You could handle this in the "Awake" or "OnEnable" of a custom script such that when the **Tooltip GameObject Trigger** turned the object on your logic ran, and this will work fine but can create several frames where the GameObject is visible but before your process has completed. You may also want to perform calculations to determine what should be turned on if anything and again this works best with an event system as opposed to driving off Unity's OnEnable or similar.
 
-![](<../../../../.gitbook/assets/image (112).png>)
+![](<../../../../.gitbook/assets/image (112) (1).png>)
 
 To accomplish this you only need create a function that you wish to have called by the Invoke and another for the Cancel. Using the Tooltip Game Event Trigger or the Tooltip Unity Event Trigger you can connect your invoke and cancel events to the tooltip trigger. You can see a demonstration of this in the demo scene.
 

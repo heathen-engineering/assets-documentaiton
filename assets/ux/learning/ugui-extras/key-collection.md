@@ -71,7 +71,7 @@ A standard Unity event that is invoked when the user presses a key
 
 ### Key Collection Output Manager
 
-![](<../../../../.gitbook/assets/image (103).png>)
+![](<../../../../.gitbook/assets/image (103) (1).png>)
 
 This component directs the results of key presses according to its configuration. The most common configuration is shown above. When configured for Event System the output manager will monitor the Unity Event system and remember the most recently selected UnityEngine.UI.InputField or TMPro.TextMeshProInputField. When a key is pressed the output will be directed to that most recently focused input field.
 
@@ -111,7 +111,7 @@ Remember the collection is just a GameObject and each key within it is again jus
 
 ### Key Collection Template Manager
 
-![](<../../../../.gitbook/assets/image (109).png>)
+![](<../../../../.gitbook/assets/image (109) (1).png>)
 
 The Key Collection Template Manager allows you to save your configuration as an asset object for easy import into other scenes or projects. With modern versions of Unity, a nested Prefab can do much the same however this tool can be useful for quickly swapping out key templates (the prefab used to generate the keys).
 

@@ -105,7 +105,7 @@ Again, a common term with HLAPIs like Mirror, MLAPI, etc. This is referring to a
 
 Select the proper Unity Version.
 
-We have a [whole article on this](../../../../company/concepts/unity-release-version.md), long story short you should aim to release your project on the most recent LTS available from Unity.
+We have a [whole article on this](../../../../company/concepts/fundamentals/unity-release-version.md), long story short you should aim to release your project on the most recent LTS available from Unity.
 
 ### Step 2
 
@@ -127,7 +127,7 @@ Heathen’s Steamworks (I suggest Complete, but Foundation might do you)
 
 Setting up your Steam project. There are other articles in this section that go over working with Steam API so read those.
 
-As to general project architecture check out [these articles](../../../../company/concepts/bootstrap-scene.md), concepts such as bootstrap scenes can be a big help in really most projects.
+As to general project architecture check out [these articles](../../../../company/concepts/fundamentals/bootstrap-scene.md), concepts such as bootstrap scenes can be a big help in really most projects.
 
 {% hint style="info" %}
 Pro Tip
@@ -167,7 +167,7 @@ You don't need this, in my experience it only serves to make things more complic
 
 We find it best to have the client handle load and unload of scenes as makes since for them. A lot of this comes from the realization that Unity handles multi-scene nicely and that a scene doesn't need to represent a physical area in your game so letting a network system which is driven by network visibility drive that makes no since.
 
-[See this article for more](../../../../company/concepts/multi-scene-architecture.md)
+[See this article for more](../../../../company/concepts/fundamentals/multi-scene-architecture.md)
 
 See [UX Complete](../../../ux/components/scenes-manager.md) for tools that can help you really leverage the power of Unity's scene system
 
@@ -247,7 +247,7 @@ I’ll start with Peer-to-Peer based games and then we can go over the differenc
 
     Note we do not recommend you let the NM manage your scenes however if you do be aware that the owner of the lobby is now in a network session the other members are not so your UI and other game systems will need to handle this.
 
-    If your managing your own scenes then you could additively load the game session scene and set it active while still having the game lobby scene be loaded. To learn more about multi-[scene architecture](../../../../company/concepts/multi-scene-architecture.md) see this article.
+    If your managing your own scenes then you could additively load the game session scene and set it active while still having the game lobby scene be loaded. To learn more about multi-[scene architecture](../../../../company/concepts/fundamentals/multi-scene-architecture.md) see this article.
 
 
 5.  When Player A is happy that the network environment is ready for use, they will call SetGameServer on the Steam Lobby providing their own ID as the server information. This will notify all other players that the session is ready to connect to and so each other user will handle that event, navigate to the appropriate scene in your game and call StartClient on the NM

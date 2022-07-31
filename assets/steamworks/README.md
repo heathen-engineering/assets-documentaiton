@@ -1,8 +1,8 @@
 ---
 description: >-
-  Heathen Engineering’s Steamworks V2 is a set of tools, systems and editor
-  extensions designed to make integrating Steam Client API significantly easier,
-  faster, and more robust.
+  Heathen’s Steamworks is a set of tools, systems and editor extensions designed
+  to make integrating Steam easier, faster, and more robust. Helping you Do More
+  rather your a beginner or a pro.
 cover: ../../.gitbook/assets/SteamMarketing Inventory hStretch.png
 coverY: 17.4
 ---
@@ -16,7 +16,7 @@ coverY: 17.4
 ## GitHub Sponsors
 
 {% hint style="success" %}
-Sponsoring Heathen on GitHub for $10 a month gets you access to the sorce repository for Steamworks, PhysKit and UX Complete.
+Sponsoring Heathen on GitHub for $10 gets you access to the source repository for Steamworks, PhysKit and UX Complete. Keep what you download even after you cancel!
 
 \
 See why GitHub sponsor is the hands down best way to Do More with Heathen in our [Licensing Article](../licensing/).
@@ -34,7 +34,7 @@ Prefer to shop through Unity's Asset Store we are available there as well.
 
 Heathen Engineering’s approach with its Steamworks assets has been to take the strength of Steamworks.NET, and the parody it has with Valve’s original APIs, and extend that with Unity centric tools, editor extensions and more to make Steamworks.NET + Heathen the best possible option for Unity developers looking to integrate with Steam.&#x20;
 
-With Heathen's Steamworks You retain the strength of directly accessing Steam API when and where you may wish, while having the benefit of not just C# focused but Unity focused tools and extensions as well as systems battle tested across many games from many Unity developers. We have wrapped [all relivent Steam interfaces in our API](api/) accounting for every callback and callresult in them, even the undocumented ones. Our knowledge base outlines every available interface, event, attribute, function and feature as well as every tool, system and object we have created on top of them.
+With Heathen's Steamworks You retain the strength of directly accessing Steam API when and where you may wish, while having the benefit of not just C# focused but Unity focused tools and extensions as well as systems battle tested across many games from many Unity developers. We have wrapped [all relevant Steam interfaces in our API](api/) accounting for every callback and callresult in them, even the undocumented ones. Our knowledge base outlines every available interface, event, attribute, function and feature as well as every tool, system and object we have created on top of them.
 
 Whether you're new to Steam, Unity, or game development in general or a seasoned veteran well capable with the Steam APIs, Heathen’s Steamworks can greatly accelerate your project and help you produce a more robust product that better leverages the services offered by Valve. Heathen’s asset does not prevent you from using raw API calls in conjunction with its own extensions and tools. Many features of Steam API can be handled within V2 with little or no coding at all. In the same respect everything is built with respect to the programmer and the need to extend and expand.&#x20;
 
@@ -62,9 +62,9 @@ Facepunch is another C# wrapper just like Steamworks.NET. however unlike Steamwo
 
 Facepunch's stated goal is make a C# focused wrapper that is to exploit / leverage the benefits of C#. This makes most of the code you would need to write shorter / more C# programmer friendly. It however also makes it alien to Valve's documents and its wider community and while Unity uses C# as its main scripting language it does so in a "Unity" way for example C# would use event delegates, in Unity we use UnityEvents.
 
-Heathen Engineering does similar in that we are here to make the Steam API more friendly to a specific audience, only we are Unity centric not simply C# centric. We have wrapped the complexities of Steamworks.NET making it quick and easy to integrate for C# programmers, Unity specific programmers and Unity designers that prefer to use tools like Bolt or work through inspectors to get the job done. We chose to build on top of Steamworks.NET so that for the dev that wants/needs to they can still leverage the decades of community guidance on the source API only needing to convert C/C++ to C#.
+Heathen does similar in that we are here to make the Steam API more friendly to a specific audience, only we are Unity centric not just C# centric. We have wrapped the complexities of Steamworks.NET making it quick and easy to integrate for C# programmers, Unity specific programmers, Unity designers and hobbyist that prefer to use tools like Bolt or work through inspectors to get the job done. We chose to build on top of Steamworks.NET so that for the dev that wants/needs to they can still leverage the decades of community guidance on the source API only needing to convert C/C++ to C#.
 
-Because we are built on top of Steamworks.NET which is its self a true to form wrapper around the native Steam APIs many tools, assets, etc. built for Steamworks.NET or Valve's original Steam API simply work, that is not the case for Facepunch which often requires its own flavor of a tool to work.
+Because we are built on top of Steamworks.NET which is its self a true to form wrapper around the native Steam APIs many tools, assets, etc. built for Steamworks.NET or Valve's original Steam API simply work, that is not the case for Facepunch which often requires its own flavour of a tool to work.
 
 ## Feature Comparison
 

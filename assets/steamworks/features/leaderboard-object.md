@@ -137,7 +137,7 @@ leaderboard.UploadScore(42, method, callback);
 This method requires you to pass in the score, method of upload and provide a callback in the form of `void Callback(LeaderboardScoreUploaded_t result, bool IOError)` that will be invoked when the process is complete.
 
 {% hint style="info" %}
-Callbacks are a common feature of many multi-process systems to include Unity its self.  You can [learn more about them here](../../../company/concepts/callbacks.md).
+Callbacks are a common feature of many multi-process systems to include Unity its self.  You can [learn more about them here](../../../company/concepts/development/callbacks.md).
 {% endhint %}
 
 or

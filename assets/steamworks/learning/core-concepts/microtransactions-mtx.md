@@ -11,7 +11,7 @@ The [Steam Inventory](../../features/inventory/) system can be used for a number
 {% embed url="https://kb.heathenengineering.com/assets/steamworks/learning/core-concepts/inventory" %}
 
 {% hint style="info" %}
-Have a look at our articles on [Monetization ](../../../../company/concepts/monetization.md)before you get started designing your games monetization systems.&#x20;
+Have a look at our articles on [Monetization ](../../../../company/concepts/design/monetization/)before you get started designing your games monetization systems.&#x20;
 
 [https://kb.heathenengineering.com/company/concepts/monetization](https://kb.heathenengineering.com/company/concepts/monetization)
 {% endhint %}

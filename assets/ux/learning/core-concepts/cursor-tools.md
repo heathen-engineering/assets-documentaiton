@@ -19,7 +19,7 @@ The cursor system allows for easy code free context sensitive mouse cursors with
 The Cursor Animator component handles cursor animation, you should only have 1 of these active at any given time.
 
 {% hint style="info" %}
-This component benefits from the [bootstrap](../../../../company/concepts/bootstrap-scene.md) concept which you can read more about [here](../../../../company/concepts/bootstrap-scene.md)
+This component benefits from the [bootstrap](../../../../company/concepts/fundamentals/bootstrap-scene.md) concept which you can read more about [here](../../../../company/concepts/fundamentals/bootstrap-scene.md)
 {% endhint %}
 
 With an active Cursor System you can effect the state of the pointer by attaching Cursor State components to desired game objects or through code where you want or need a more bespoke solution.
@@ -101,7 +101,7 @@ That is if the system is currently holding a state active due to Hold On Mouse D
 
 ## Mouse Over Cursor State
 
-![](<../../../../.gitbook/assets/image (99).png>)
+![](<../../../../.gitbook/assets/image (99) (1).png>)
 
 This simple component can be added game objects and will cause the state of the cursor to change when the mouse enters the object. Optionally the state can be set to hold on mouse down, which can be useful of hand grab icons such as might be used for a drag to scroll UI element.
 
@@ -113,7 +113,7 @@ The button cursor state handles two (2) possible state changes, one for mouse en
 
 ## Change Cursor Default State
 
-![](<../../../../.gitbook/assets/image (101).png>)
+![](<../../../../.gitbook/assets/image (101) (1).png>)
 
 The change cursor default state will change the registered default state on enter and exit.
 

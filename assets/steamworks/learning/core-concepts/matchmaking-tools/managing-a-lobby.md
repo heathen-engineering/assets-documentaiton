@@ -80,7 +80,7 @@ Lobby.Join((result, ioError) =>
 So we do a bit more work here so we can understand if it was a success or not, and if not why not. The [EChatRoomEnterResponce](https://partner.steamgames.com/doc/api/steam\_api#EChatRoomEnterResponse) tells us why.
 
 {% hint style="info" %}
-In our example above we used expression to create an anon method. This is a style choice you can learn more about [expression ](../../../../../company/concepts/lambda-expressions.md)and [anon methods](../../../../../company/concepts/callbacks.md#callback-examples) in our other articles.
+In our example above we used expression to create an anon method. This is a style choice you can learn more about [expression ](../../../../../company/concepts/development/lambda-expressions.md)and [anon methods](../../../../../company/concepts/development/callbacks.md#callback-examples) in our other articles.
 {% endhint %}
 
 ### Lobby Manager

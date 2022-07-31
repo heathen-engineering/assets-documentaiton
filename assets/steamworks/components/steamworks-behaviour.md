@@ -23,12 +23,12 @@ This means you should not define this behaviour in a scene that is loaded multip
 
 
 
-You are **STRONGLY** encouraged to use a [bootstrap ](../../../company/concepts/bootstrap-scene.md)model taking advantage of Unity's multi-scene features. Alternatively you can use the Steamworks Creator behaviour.
+You are **STRONGLY** encouraged to use a [bootstrap ](../../../company/concepts/fundamentals/bootstrap-scene.md)model taking advantage of Unity's multi-scene features. Alternatively you can use the Steamworks Creator behaviour.
 {% endhint %}
 
 ## Use
 
-You should add a Steamworks Behaviour component to a game object in the first scene to be loaded by your game. It is important that this game object is never destroyed as it is operating your Steam API integration. We do recommend you use additive loading and simply never unload your [bootstrapping](../../../company/concepts/bootstrap-scene.md) scene however you can use the [Do Not Destroy](../../../company/concepts/bootstrap-scene.md) approach if you are carful to NEVER reload the scene that defined Steamworks Behaviour.
+You should add a Steamworks Behaviour component to a game object in the first scene to be loaded by your game. It is important that this game object is never destroyed as it is operating your Steam API integration. We do recommend you use additive loading and simply never unload your [bootstrapping](../../../company/concepts/fundamentals/bootstrap-scene.md) scene however you can use the [Do Not Destroy](../../../company/concepts/fundamentals/bootstrap-scene.md) approach if you are carful to NEVER reload the scene that defined Steamworks Behaviour.
 
 The Steamworks behaviour is not intended to be a functional component that is you will not interact with this component, it exists wholly to initialize, operate and shutdown the Steam API integration according to Unity events. The one exception to this case is when operating a Steam Game Server in a situation where you need to delay API initialization. You can optionally configure your Steam Settings to NOT auto initialize Steam Game Server, in which case you will need to call SteamworksBeahviour.InitializeGameServer in order to kick off the initialization process.
 
