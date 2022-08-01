@@ -114,6 +114,6 @@ You can view and edit the references a given assembly define has toward other de
 
 If you have errors coming from Heathen's code to the effect of&#x20;
 
-![Or similar](<../../../.gitbook/assets/image (118).png>)
+![Or similar](<../../../.gitbook/assets/image (122).png>)
 
 Then the problem is you either removed Steamworks.NET from the Package Manager or more likely your target platform is not valid. Steamworks.NET will only compile for PC, Mac or Linux ... not Windows Universal or any other platform.

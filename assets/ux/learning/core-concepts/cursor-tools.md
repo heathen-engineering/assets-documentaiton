@@ -101,7 +101,7 @@ That is if the system is currently holding a state active due to Hold On Mouse D
 
 ## Mouse Over Cursor State
 
-![](<../../../../.gitbook/assets/image (99) (1).png>)
+![](<../../../../.gitbook/assets/image (99).png>)
 
 This simple component can be added game objects and will cause the state of the cursor to change when the mouse enters the object. Optionally the state can be set to hold on mouse down, which can be useful of hand grab icons such as might be used for a drag to scroll UI element.
 
@@ -113,7 +113,7 @@ The button cursor state handles two (2) possible state changes, one for mouse en
 
 ## Change Cursor Default State
 
-![](<../../../../.gitbook/assets/image (101) (1).png>)
+![](<../../../../.gitbook/assets/image (101).png>)
 
 The change cursor default state will change the registered default state on enter and exit.
 

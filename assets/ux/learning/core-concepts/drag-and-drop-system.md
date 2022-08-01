@@ -14,7 +14,7 @@ The drag and drop system makes it easy to create drag-able, intractable elements
 
 ![The Drag Item Componenet](<../../../../.gitbook/assets/image (121).png>)
 
-![The Drop Container Componenet](<../../../../.gitbook/assets/image (122).png>)
+![The Drop Container Componenet](<../../../../.gitbook/assets/image (122) (1).png>)
 
 ## Configuration
 

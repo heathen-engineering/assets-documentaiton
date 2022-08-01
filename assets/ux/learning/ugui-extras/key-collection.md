@@ -101,7 +101,7 @@ When configured for Function the designer can specify a target function via a Un
 
 ### Key Collection Designer
 
-![](<../../../../.gitbook/assets/image (108).png>)
+![](<../../../../.gitbook/assets/image (108) (1).png>)
 
 The Key Collection Designer assists the user in creating a new keyboard from scratch. You can quickly generate common boards such as QWERTY, AZERTY, etc. and then modify the collection from there manually.
 
