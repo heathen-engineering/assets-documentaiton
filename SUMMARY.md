@@ -22,7 +22,7 @@
     * [Unity Release Version](company/concepts/fundamentals/unity-release-version.md)
   * [📐 Design](company/concepts/design/README.md)
     * [▶ Quick Start](company/concepts/design/quick-start.md)
-    * [Learning](company/concepts/design/learning.md)
+    * [Learning](company/concepts/design/monetization/learning/README.md)
     * [🤑 Monetization](company/concepts/design/monetization/README.md)
       * [What not to do](company/concepts/design/monetization/what-not-to-do.md)
       * [Models](company/concepts/design/monetization/models/README.md)

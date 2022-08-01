@@ -7,7 +7,7 @@ description: Resources, articles and more to READ!
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -75,9 +75,9 @@ A major issue with positive or reward mechanics is that the strong motivator ten
 
 Risks with use of negative extrinsic motivators seems more obvious however they tend to be a safer option when compared to positive risks. For example leaderboards, world first and other competitive motivators are fundamentally negative motivators for most player types. This is not to say you are free to use and abuse negative motivations simply that the adverse impact on your game will generally be more manageable then with similar use of positive effects.
 
-## [Monetization](monetization/)
+## [Monetization](../)
 
-In the [Models ](monetization/models/)section we outline the high level monetization structures you can apply to your project while the [Tools](monetization/tools/) section outlines the monetization mechanisms that can be used to exploit those models. We do also document the clearly [predatory practices](monetization/predatory-practices/) seen in our industry as well as those that are [vulnerable to predation](monetization/vulnerable-practices/). In the following sections we will touch on a few key areas to study up and develop your project that aren't often associated with game design.
+In the [Models ](../models/)section we outline the high level monetization structures you can apply to your project while the [Tools](../tools/) section outlines the monetization mechanisms that can be used to exploit those models. We do also document the clearly [predatory practices](../predatory-practices/) seen in our industry as well as those that are [vulnerable to predation](../vulnerable-practices/). In the following sections we will touch on a few key areas to study up and develop your project that aren't often associated with game design.
 
 ## Market Research
 
