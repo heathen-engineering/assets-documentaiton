@@ -21,6 +21,7 @@
     * [Project Architecture](company/concepts/fundamentals/project-architecture.md)
     * [Unity Release Version](company/concepts/fundamentals/unity-release-version.md)
   * [📐 Design](company/concepts/design/README.md)
+    * [▶ Quick Start](company/concepts/design/quick-start.md)
     * [🤑 Monetization](company/concepts/design/monetization/README.md)
       * [What not to do](company/concepts/design/monetization/what-not-to-do.md)
       * [Learning](company/concepts/design/monetization/learning.md)

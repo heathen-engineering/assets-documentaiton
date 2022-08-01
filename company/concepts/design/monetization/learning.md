@@ -18,7 +18,7 @@ The majority of what's available to study... is a study in what not to do. Put v
 
 ### Learning What NOT to do
 
-Looking for out side research on what not to do?
+Looking for outside research sources on what not to do?
 
 Check out the links below&#x20;
 
@@ -53,3 +53,15 @@ Scholarly article
 {% embed url="https://doi.org/10.1016/j.jbusres.2021.11.055" %}
 Behind a pay wall
 {% endembed %}
+
+## Targeting
+
+### What is it?
+
+This is simply defining your target markets aka your "target audience" and for monetization it is next logical step after you understand what your actually building.
+
+## Market Research
+
+### What is it?
+
+Simply researching or gathering information about your target customer's needs, preferences and expectations.
