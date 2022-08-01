@@ -18,7 +18,7 @@ Predatory practice when used in monetization
 
 
 Not clear why?\
-Checkout our [Learning](../learning/) section!
+Checkout our [Learning](../../learning.md) section!
 {% endhint %}
 
 Gatcha game refers to a game that uses a randomized loot pool or similar mechanics to drive engagement.&#x20;
