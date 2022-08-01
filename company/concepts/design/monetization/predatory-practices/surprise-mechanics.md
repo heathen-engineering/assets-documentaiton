@@ -18,7 +18,7 @@ Predatory practice when used in monetization
 
 
 Not clear why?\
-Checkout our [Learning](../learning/) section!
+Checkout our [Learning](../learning.md) section!
 {% endhint %}
 
 While not always represented as a loot box, loot box is a more common term. Surprise mechanics can take any form really, a loot box, pack of cards, bag of tokens, or even a prize lama as seen in Fortnight ... there have been many forms.
