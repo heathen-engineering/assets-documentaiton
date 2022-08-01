@@ -18,7 +18,7 @@ Predatory practice when used in monetization
 
 
 Not clear why?\
-Checkout our [Learning](../learning.md) section!
+Checkout our [Learning](../learning/) section!
 {% endhint %}
 
 A sadly popular tool for marketing teams where in the primary driver for a conversion (sale) is fear. The typical way to inspire this fear is with some since of scarcity. Limited quantity, flash deals, etc..

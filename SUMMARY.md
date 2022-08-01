@@ -24,7 +24,7 @@
     * [▶ Quick Start](company/concepts/design/quick-start.md)
     * [🤑 Monetization](company/concepts/design/monetization/README.md)
       * [What not to do](company/concepts/design/monetization/what-not-to-do.md)
-      * [Learning](company/concepts/design/monetization/learning.md)
+      * [Learning](company/concepts/design/monetization/learning/README.md)
       * [Models](company/concepts/design/monetization/models/README.md)
         * [Free](company/concepts/design/monetization/models/free.md)
         * [Free to Play](company/concepts/design/monetization/models/free-to-play.md)
