@@ -14,45 +14,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction
 
-The majority of what's available to study... is a study in what not to do. Put very bluntly if you require research and development time to understand your monetization model then you have problem gone wrong. Simple easily understood monetization is critically important. One you have selected your simple and clearly understandable monetization [model ](../models/)your next step would be market research to help you understand the appropriate positioning for your project.
-
-### Learning What NOT to do
-
-Looking for outside research sources on what not to do?
-
-Check out the links below&#x20;
-
-<details>
-
-<summary>EU Parliament Loot Boxes Effect on Consumers</summary>
-
-[https://www.europarl.europa.eu/RegData/etudes/STUD/2020/652727/IPOL\_STU(2020)652727\_EN.pdf](https://www.europarl.europa.eu/RegData/etudes/STUD/2020/652727/IPOL\_STU\(2020\)652727\_EN.pdf)
-
-</details>
-
-<details>
-
-<summary>Insert Coin: How the gaming industry exploits consumers using loot boxes</summary>
-
-[https://fil.forbrukerradet.no/wp-content/uploads/2022/05/2022-05-31-insert-coin-publish.pdf](https://fil.forbrukerradet.no/wp-content/uploads/2022/05/2022-05-31-insert-coin-publish.pdf)
-
-</details>
-
-{% embed url="https://www.forbrukerradet.no/siste-nytt/loot-boxes-how-the-gaming-industry-manipulates-and-exploits-consumers/" %}
-New Article
-{% endembed %}
-
-{% embed url="https://europa.eu/youreurope/citizens/consumers/unfair-treatment/unfair-commercial-practices/index_en.htm" %}
-EU regulation
-{% endembed %}
-
-{% embed url="https://link.springer.com/article/10.1007/s10551-021-04970-6" %}
-Scholarly article
-{% endembed %}
-
-{% embed url="https://doi.org/10.1016/j.jbusres.2021.11.055" %}
-Behind a pay wall
-{% endembed %}
+In the [Models ](../models/)section we outline the high level monetization structures you can apply to your project while the [Tools](../tools/) section outlines the monetization mechanisms that can be used to exploit those models. We do also document the clearly [predatory practices](../predatory-practices/) seen in our industry as well as those that are [vulnerable to predation](../vulnerable-practices/).
 
 ## Market Research
 
