@@ -12,13 +12,10 @@ Consider supporting us as a [GitHub Sponsor](../../../become-a-sponsor.md) and g
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
 
+## Introduction
+
 {% hint style="danger" %}
 Predatory practice when used in monetization
-
-
-
-Not clear why?\
-Checkout our [Learning](../learning/) section!
 {% endhint %}
 
 While not always represented as a loot box, loot box is a more common term. Surprise mechanics can take any form really, a loot box, pack of cards, bag of tokens, or even a prize lama as seen in Fortnight ... there have been many forms.

@@ -12,13 +12,10 @@ Consider supporting us as a [GitHub Sponsor](../../../become-a-sponsor.md) and g
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
 
+## Introduction
+
 {% hint style="danger" %}
 Predatory practice when used in monetization
-
-
-
-Not clear why?\
-Checkout our [Learning](../learning/) section!
 {% endhint %}
 
 Gatcha game refers to a game that uses a randomized loot pool or similar mechanics to drive engagement.&#x20;
