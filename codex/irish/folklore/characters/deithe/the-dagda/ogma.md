@@ -4,6 +4,14 @@ description: God of inspiration and strength
 
 # Ogma
 
+{% hint style="success" %}
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../../../../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
+{% endhint %}
+
 ## Overview
 
 When Ogma speaks men listen and are inspired to follow him happily. Associated with eloquence and literature as well as strength and power Ogma is the personification of inspiration. While Ogma can inspire one to willingly follow he may also bind men to him controlling their actions and can create binding tablets. Among his many trades Ogma is also a  guide for the dead providing safe passage to the underworld.

@@ -4,6 +4,14 @@ description: Unity Package Manager Add from Git URL
 
 # UPM Add from Git URL
 
+{% hint style="success" %}
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
+{% endhint %}
+
 ### Free Foundation
 
 Steamworks Foundation is a freely available "lite" version of Heathen's Steamworks system. It is available on GitHub as is, without warranty. It is licensed under the MIT license agreement with a Common Clause condition allowing you to use it for any purpose ... other than releasing a competing Steamworks Integration :sunglasses:

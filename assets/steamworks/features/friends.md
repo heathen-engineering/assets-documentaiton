@@ -4,11 +4,15 @@ description: List your user friends, open chats, send invites and much more!
 
 # Friends
 
-## Introduction
-
 {% hint style="success" %}
-Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/integration/steamworks-v2-complete-190316)asset.
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
+
+## Introduction
 
 The Friends API provides access to all of the user data related features of Steam and is not restricted to users that are the local user's "friends".
 

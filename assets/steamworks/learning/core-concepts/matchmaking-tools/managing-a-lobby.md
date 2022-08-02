@@ -4,7 +4,15 @@ description: Lobby events, what's their and how to use it
 
 # Managing a Lobby
 
-## Overview
+{% hint style="success" %}
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../../../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
+{% endhint %}
+
+## Introduction
 
 Once you understand what a Steam lobby is ... and most importantly what it is not (it is not a networking features); the next questions are usually around how to work with it. Understanding when the user joins or leaves a lobby, when other members join or leave a lobby, when metadata changes on a lobby or any of the lobby members are all common questions addressed here.
 

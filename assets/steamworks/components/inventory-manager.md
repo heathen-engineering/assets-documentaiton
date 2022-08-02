@@ -1,8 +1,14 @@
 # Inventory Manager
 
 {% hint style="success" %}
-Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)asset.
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
+
+## Introduction
 
 {% hint style="info" %}
 This tool simply exposes features present in the API and settings to the inspector.
@@ -11,8 +17,6 @@ This tool simply exposes features present in the API and settings to the inspect
 
 This is not required to use these features it is simply a helper tool allowing user's who are more comfortable working with editor inspectors and game object rather than classic C# objects and scripting to make use of the related feature.
 {% endhint %}
-
-## Introduction
 
 The Inventory Manager exposes the Changed event to the inspector which will alert you when the local user's inventory has changed.
 

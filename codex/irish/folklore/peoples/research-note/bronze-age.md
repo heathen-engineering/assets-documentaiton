@@ -1,5 +1,13 @@
 # Bronze Age
 
+{% hint style="success" %}
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../../../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
+{% endhint %}
+
 A 3rd population with archaeological support is more akin to the modern Irish and appears around 5000 BCE.
 
 As with other immigrations intermixing is indicated, like with the Neolithic Farmers the popular thought at the moment is that this was a sudden shift in terms of technology and culture and resulted in a new age and new people.

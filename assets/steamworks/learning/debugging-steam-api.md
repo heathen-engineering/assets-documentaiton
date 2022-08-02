@@ -1,10 +1,14 @@
 # Debugging Steam API
 
-## Introduction
-
 {% hint style="success" %}
-Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/integration/steamworks-v2-complete-190316)asset.
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
+
+## Introduction
 
 Heathen provides a powerful inspector that will show you the states and values of all Steam API artefacts configured for your project. To Access the inspector simply open the **Window > Steamworks Inspector** menu.
 

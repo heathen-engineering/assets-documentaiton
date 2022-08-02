@@ -4,6 +4,14 @@ description: If you have grapes in it ... it is NOT mead
 
 # Mead
 
+{% hint style="success" %}
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
+{% endhint %}
+
 ### Personal Notes
 
 Mead is a wine like beverage made by the fermentation of honey. It does not have grape wine in it ... if your drinking a wine flavoured with honey some might call it mead ... it is not. That is fermented grape wine that has been flavoured with honey that may or may not its self have been introduced during fermentation.

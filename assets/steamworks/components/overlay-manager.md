@@ -5,8 +5,14 @@ description: The original
 # Overlay Manager
 
 {% hint style="success" %}
-Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)and [Foundation ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-foundation-202671)asset.
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
+
+## Introduction
 
 {% hint style="info" %}
 This tool simply exposes features present in the API to the inspector.
@@ -15,8 +21,6 @@ This tool simply exposes features present in the API to the inspector.
 
 This is not required to use these features it is simply a helper tool allowing user's who are more comfortable working with editor inspectors and game object rather than classic C# objects and scripting to make use of the related feature.
 {% endhint %}
-
-## Introduction
 
 The overlay manager provides access to overlay events such as activated and the lobby and game server join requests as well common methods such as opening the overlay to a target web page.
 

@@ -4,6 +4,14 @@ description: So you have a problem
 
 # Troubleshooting
 
+{% hint style="success" %}
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
+{% endhint %}
+
 This section will cover the most common installation issues and how to resolve them. Before we get into the common issues and causes here are a few key bits of information.
 
 ## Unity Merge

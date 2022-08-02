@@ -5,8 +5,14 @@ description: Lobby management made easy
 # Lobby Manager
 
 {% hint style="success" %}
-Available in the Steamworks [Complete ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)asset.
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
+
+## Introduction
 
 {% hint style="info" %}
 This tool simply exposes features present in the API to the inspector.
@@ -16,23 +22,21 @@ This tool simply exposes features present in the API to the inspector.
 This is not required to use these features it is simply a helper tool allowing user's who are more comfortable working with editor inspectors and game object rather than classic C# objects and scripting to make use of the related feature.
 {% endhint %}
 
-## Introduction
+The Lobby Manager ... not to be confused with Steamworks V1 Lobby Manager ... is a tool for creating and managing a specific lobby.&#x20;
+
+This component is meant to be attached to a game object in your matchmaking scene / ui. Your game may have multiple Lobby Managers where each manages a single specific lobby.
 
 {% hint style="info" %}
-The Lobby Manager is a simple Unity componenet (MonoBehaviour) that simplifies manging a specific lobby. That is this tool does not magically managage all lobbies it only manages the lobby it is connected to.
+The Lobby Manager is a simple Unity component (MonoBehaviour) that simplifies manging a specific lobby. That is this tool does not magically managage all lobbies it only manages the lobby it is connected to.
 
 
 
 You connect a lobby to the LobbyManager by using the LobbyManager to create or join said lobby or by setting the LobbyManager.Lobby field to the lobby you want it to manage.
 {% endhint %}
 
-The Lobby Manager ... not to be confused with Steamworks V1 Lobby Manager ... is a tool for creating and managing a specific lobby.&#x20;
-
-This componenet is meant to be attached to a game object in your matchmaking scene / ui. Your game may have multiple Lobby Managers where each manages a single specific lobby.
-
 ### Steam Lobby
 
-The [Steam Lobby](../features/multiplayer/matchmaking-tools.md) feature of the Steam API is a flexable and powerful tool useful for far more than simple matchmaking. We find it best to think of a "lobby" more like a chat room with metadata. It does not have anything to do with networking, it doesn't have to relate to a game session or a game server.
+The [Steam Lobby](../features/multiplayer/matchmaking-tools.md) feature of the Steam API is a flexible and powerful tool useful for far more than simple matchmaking. We find it best to think of a "lobby" more like a chat room with metadata. It does not have anything to do with networking, it doesn't have to relate to a game session or a game server.
 
 Steam allows a player to be apart of up to 3 lobbies but has a few restrictions.
 
@@ -41,24 +45,24 @@ Steam allows a player to be apart of up to 3 lobbies but has a few restrictions.
     Steam defines a normal lobby as any lobby which is not of type "**Invisible**"
 *   The player may be apart of up to 2 "**invisible**" lobbies
 
-    An inivisible lobby doesn't appear on player's rich presence or Friends list displays (Public and Friend Only do). It is however possible to search for invisible lobbies so you can allow player's to browse for them.&#x20;
+    An indivisible lobby doesn't appear on player's rich presence or Friends list displays (Public and Friend Only do). It is however possible to search for invisible lobbies so you can allow player's to browse for them.&#x20;
 
 ### Lobby Types
 
-The following explains; as clearly as Steam documentaiton allows, the available lobby types and when and how you might use them.
+The following explains; as clearly as Steam documentation allows, the available lobby types and when and how you might use them.
 
 *   Private
 
     Classified as a "**Normal**" lobby by Steam.
 
-    The only way to join a private lobby is to be invited to it via the Lobby.InvitePlayer feature. This can be useful in coop games when your player want to play with a specific friend but doens't want to be bothered by requests to join or public searches.
+    The only way to join a private lobby is to be invited to it via the Lobby.InvitePlayer feature. This can be useful in coop games when your player want to play with a specific friend but doesn't want to be bothered by requests to join or public searches.
 
     This lobby will not appear in searches, it will not appear on the user's friends list or rich presence data.
 *   Friends Only
 
     Classified as a "**Normal**" lobby by Steam.
 
-    This lobby can only be joined by friends of the owner or by people directly invited to it. This lobby does appear on the user's friends list but does not appear in lobby lists or searches. This is useful when the player wants friends to be able to dorp in / out but doesn't want be bothered by random players.
+    This lobby can only be joined by friends of the owner or by people directly invited to it. This lobby does appear on the user's friends list but does not appear in lobby lists or searches. This is useful when the player wants friends to be able to drop in / out but doesn't want be bothered by random players.
 *   Public
 
     Classified as a "**Normal**" lobby by Steam.
@@ -74,7 +78,7 @@ The following explains; as clearly as Steam documentaiton allows, the available 
 
 ### Heathen Constant Data
 
-Steam Lobby is a wonderful tool but it has a few glaring gaps that are offten requested. To support the most commonly requested of these gaps Heathen has developed extensions of Steam Lobby.
+Steam Lobby is a wonderful tool but it has a few glaring gaps that are often requested. To support the most commonly requested of these gaps Heathen has developed extensions of Steam Lobby.
 
 {% hint style="info" %}
 We do this by managing lobby metadata.&#x20;

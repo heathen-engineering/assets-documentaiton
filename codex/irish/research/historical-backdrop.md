@@ -4,6 +4,14 @@ description: Understanding the events that defined the folklore
 
 # Historical Backdrop
 
+{% hint style="success" %}
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
+{% endhint %}
+
 Known population shifts that would have an impact on fundamental folklore and practice. The codex is not meant to be a historical reference, the notes here are only relevant so far as they indicate a pattern of significant change for the people at key points.
 
 It is also useful to understand where people came from as we look to "detangle" period folklore from its modern mutations. We can assist this process by observing related cultures in particular near pear cultures such as the Scottish, Welsh and Gauls for which we often have more information and archaeological evidence available.

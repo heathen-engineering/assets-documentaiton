@@ -4,6 +4,14 @@ description: Understanding the steam_appid.txt when to use it and when not to us
 
 # steam\_appid.txt
 
+{% hint style="success" %}
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
+{% endhint %}
+
 ## Introduction
 
 The steam\_appid.txt is a simple text file that contains only your app ID when used would be located in the working directory of your game.&#x20;

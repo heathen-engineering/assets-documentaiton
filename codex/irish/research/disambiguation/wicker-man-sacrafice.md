@@ -1,5 +1,13 @@
 # Wicker Man Sacrafice
 
+{% hint style="success" %}
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
+{% endhint %}
+
 Julius Caesar claimed that Druids performed human sacrifice frequently though only noted 1 method by which they did so being the "Wicker Man Sacrifice". This notion is echoed by 1 other source writing some time later. Pliny the Elder would further suggest that Druids eat the dead.
 
 In short this seems to be a fabrication, while we do enjoy Caesar's notes we have to remember he was the victorious commander over the Celts. A Commander whose people had been harassed by the Celts for a prolonged time. Roman's and Greeks are known to have a respect for but a generally negative view of Celts.

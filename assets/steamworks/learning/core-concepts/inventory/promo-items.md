@@ -4,6 +4,14 @@ description: Rewarding players with rewarding items
 
 # Promo Items
 
+{% hint style="success" %}
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../../../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
+{% endhint %}
+
 ## Introduction&#x20;
 
 Steam Inventory has a concept of "Promo Items" these are items that can be given to players either on demand or when pre-defined conditions are meet. Promo items are the only way to give users items in game with out the use of a trusted backend server.

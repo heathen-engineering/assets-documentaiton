@@ -1,5 +1,13 @@
 # Triple Persona
 
+{% hint style="success" %}
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
+{% endhint %}
+
 A persona often though not always a deity such as a goddess or god which appears in three forms.&#x20;
 
 This is a fairly common notion that appears more or less everywhere, every take on the notion is a bit different for example (Zeus, Posi den, Hades) are thought of as 3 always separate often antagonistic entities at least to modern story tellers while Diana aka Diva Triformis (three-form goddess) is more often thought of as a single entity with three states or forms.

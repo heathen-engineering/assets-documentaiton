@@ -4,6 +4,14 @@ description: Discover a source of lore and history free and open to all
 
 # Introduction
 
+{% hint style="success" %}
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
+{% endhint %}
+
 ## Overview
 
 Heathen Lore is where we share our research and collections into cultural, historical and generally public domain lore making it freely available to all creators who might have a use for it.

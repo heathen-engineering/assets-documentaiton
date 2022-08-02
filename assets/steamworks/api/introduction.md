@@ -4,6 +4,16 @@ description: Getting started with the Heathen Steam API
 
 # Heathen's API
 
+{% hint style="success" %}
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
+{% endhint %}
+
+## Introduction
+
 Heathen's Steam API is a wrapper around Steamworks.NET which is its self a wrapper around Valve's own Steam API.
 
 Valve's Steam API is written in C/C++ has questionable documentation :wink: and uses programming styles foreign to most Unity developers and even most C# programmers.

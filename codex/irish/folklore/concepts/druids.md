@@ -4,6 +4,14 @@ description: Clergy literally translates as "Oak knower"
 
 # Druids
 
+{% hint style="success" %}
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
+{% endhint %}
+
 Druids are the wise people who dedicated there life to the pursuit and use of knowledge. Any may submit to study to become a druid but the path is not trivial. All information must be memorized with nothing of note committed to writing. Many will go of there own accord or be sent by family to study with the Druids, few would carry this on and become a Druid.
 
 ## Roles

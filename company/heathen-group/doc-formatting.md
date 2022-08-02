@@ -5,11 +5,11 @@ description: Understanding Heathen documentation formatting.
 # Doc Formatting
 
 {% hint style="success" %}
-This standard is newer than some of our articles so some things may not yet be moved over into this format.&#x20;
+#### Like what your seeing?
 
-
-
-If you find something that is missing or confusing let us know we are deeply invested in helping you Do More with Heathen.
+Consider supporting us as a [GitHub Sponsor](../concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
 
 ## Overview

@@ -4,6 +4,14 @@ description: If you don't do this you will have problems
 
 # Prerequisites
 
+{% hint style="success" %}
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
+{% endhint %}
+
 Heathen's Steamworks assets (both Foundation and Complete) will handle the install of all requirements for you. Our asset is also able to handle existing installs of its required components. You shouldn't need to do anything other than import our asset.
 
 {% hint style="warning" %}
