@@ -10,46 +10,10 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction
 
-Its fair to say that most indie games fail due to marketing and in most every case when they succeed its in no small part thanks to marketing. That isn't to say that you can throw everything behind a good marketing strategy and short change the game ... that has worked for some before but we do not condone that behaviour nor is it likely to work for most. Marketing is however as much as we may not want to admit it, an absolutely critical component and one virtually every small shop to include Heathen doesn't do justice.&#x20;
+Its fair to say that most indie games fail due to marketing and in most every case when they succeed its in no small part thanks to marketing.&#x20;
+
+That isn't to say that you can throw everything behind a good marketing strategy and short change the game ... that has worked for some before but we do not condone that behaviour nor is it likely to work for most.&#x20;
+
+Marketing is however, as much as we may not want to admit it, an absolutely critical component and one virtually every small shop to include Heathen often forgets about.&#x20;
 
 This section will approach marketing as an indie, solo or small studio. We will look at the "low hanging fruit" anyone can exploit as well as your options for further investment in your marketing effort.
-
-## It's dangerous to go alone!
-
-Before we get stuck in lets make it very clear.
-
-If you are even a slightly serious about making a living at ... well anything, as a small company then your really should select a marketing partner and doing so sooner is much better than later. This can be accomplished on an indie friendly budget believe it or not.
-
-Odds are you have little or no knowledge when it comes to marketing, or even if you do, you have little or no time you can allocate to it. A marketing partner can help here, either by acting as your fully outsourced marketing department or simply as experienced staff that can work at scale where you cannot.... any everything in between.
-
-### Pricing
-
-Pricing will obviously very from place to place, project to project and month to month so any figures given here are simply to paint a picture of the costs involved.
-
-#### Marketing Strategy
-
-Engaging a professional marketing firm up front to help you define a sound marketing strategy is a no brainer. In our experience this typically costs between €3,000 and €7,000 and results in a few key bits of information.
-
-1. Market Research\
-   Perhaps the most valuable thing to get a hold of an as early in the development process as you can while still being far enough along to inform your partner of what it is exactly you plan to build. This paints a picture for you of who your typical customers are going to be, what they like, what they respond to and what they don't. This can really help you in the later phases of design and development and yes of course is key to all marketing efforts.
-2. Positioning Plan\
-   A plan or strategy more likely to position your product in the target market. This is a plan for establishing soon to be fan base. It can help understand the customer's needs, product price points, quality demands as well as competitors or cooperation opportunities.
-3. Campaign Plan\
-   This is more about execution and would layout goals and objectives, ways of measuring performance as your execution works on them and can help you work out your project budget with regards to your marketing efforts. Here is where you will dial in what and how much you will do marketing wise and what you might expect from it.
-
-#### Campaigns
-
-If this term is new to you, a campaign is simply marketing effort and typically involves the creation of marketing materials sometimes called "collateral", the execution of ads of course and often the engagement of influencers, interviews and or other media (videos, news articles, etc.) depending on the specifics of your strategy.
-
-{% hint style="danger" %}
-Amateur, one off, social media based marketing campaigns cost the same if not more yet basically never yield positive results.\
-\
-Why?\
-Just like visual scripting doesn't make programming easier it just removes the need to type words.\
-DIY marketing tools don't make the professional requirements of sound marketing strategy more layman obtainable it just reduces the technical barriers.
-
-\
-The same goes for fire and forget marketing partners, you don't need help running a Twitter ad, you need a professional partner to help devise a valid strategy and execute on it.
-{% endhint %}
-
-The base price for a well ran campaign will be around €3,000 to €5,000; that is the base e.g. the cost of engaging the marketing team to set up the chips so to speak. The price will go up from that depending on the reach you want to achieve and the length you want to run it. All of this of course should be planned for well in advance with very sound practical reasons for the decisions made in your Marketing Strategy plan.&#x20;
