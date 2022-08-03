@@ -59,6 +59,8 @@
     * [Multi Platform Projects](company/concepts/development/multi-platform-projects.md)
     * [Unity's "New" Input System](company/concepts/development/unitys-new-input-system.md)
   * [💥 Testing](company/concepts/testing.md)
+  * [📣 Marketing](company/concepts/marketing/README.md)
+    * [⚔ Partners](company/concepts/marketing/partners.md)
   * [📆 Release](company/concepts/release.md)
   * [🗺 Live](company/concepts/live.md)
 * [Asset Developers](company/asset-developers/README.md)
