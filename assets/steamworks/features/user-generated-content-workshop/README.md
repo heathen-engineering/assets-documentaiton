@@ -10,29 +10,29 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction
 
-The User Generate Content (UGC) API from Valve is used for a number of features including Leaderboard Details. This section of the Heathen Knowledge Base however deals with the use of UGC for Workshop files.
+The User Generate Content (UGC) API from Valve is used for a number of features including Leaderboard Details, player created mods and optional expansions from the developer such as language packs. This section of the Heathen Knowledge Base however deals with the use of UGC for Workshop files; so player created mods for example.
 
-The typical use case is that you enable your users and or you yourself create workshop files (aka mods) and upload them to Valve's Workshop. These can then be browsed for and subscribed to by players. The system will then download the content that belongs to the subscribed mods and make that available to your game.
+The typical use case is that you enable your users and or you yourself create workshop files (aka mods) and upload them to Valve's Workshop. These can then be browsed for and subscribed to by players right in the Steam client or in your game. The system will then download the content that belongs to the subscribed mods and make that available to your game at run time.
 
 ## Concepts
 
 ### Item File
 
-This is not a single "file" such as a word.doc or folder.zip, instead this is an ID that represents a collection of content on the Steam UGC system and can be browsed for via the Steam Workshop interface. A given Workshop "file" may contain many files, it will have at least a description, name and preview image.
+This is not a single "file" such as a word.doc or folder.zip, instead this is an ID that represents a collection of content on the Steam UGC system and can be browsed for via the Steam Workshop interface. A given Workshop "file" may contain many files, it will have at least a description, name and preview image and when a player "subscribes" to it it will have a content location aka "Content Folder" containing its content.
 
 ### Content Folder
 
-When you create a new UGC item e.g. Workshop entry, you provide several bits of information including a "Content Folder Path". The files in this folder path will be collected by the Steam client, compressed and uploaded to Steam. You **should not** include compressed files such as zip or rar.&#x20;
+When you create a new UGC item e.g. Workshop entry, you provide several bits of information including a "Content Folder Path". The files in this folder path will be collected by the Steam client, compressed and uploaded to Steam. You **should not** include compressed files such as zip or rar. The Steam client will handle reading these files, performing checks to reduce upload and download time for existing files and for compressing where appropriate any files for better performance.
 
 ### Subscription
 
-As with DLC, Apps and Games, when Valve says you are "subscribed" to a thing it means that you have access to it. In the case of Workshop this means its been selected by the user and is or will be downloaded to the user's machine and keep up-to date.
+As with DLC, Apps and Games, when Valve says you are "subscribed" to a thing it means that you have access to it. In the case of Workshop this means its been selected by the user and is or will be downloaded to the user's machine and keep up-to date by the Steam client.
 
 ### Browse the Workshop
 
-While the typical use case is that the user would browse for items in the Steam Client, and this would be Heathen's recommendation as well, the Steam Client's UI is going to be duty built for the task where your game's UI is not.&#x20;
+The typical use case is that the user would browse for items in the Steam Client, and this would be Heathen's recommendation as well. A key point to remember is that the Steam Client's UI is going to be duty built for the task where your in game's UI is not. No matter how wonderful of a UI and UX developer you are Steam client is the native experience, can be had right in the overlay and will always offer a superior user experience in particular one the user already knows.&#x20;
 
-It is however possible to browse the workshop in game and Heathen's Steamworks SDK provides a number of tools to help you with this.
+It is however possible to browse the workshop in game and Heathen's Steamworks provides a number of tools to help you with this such as the [UGC Query Manager](./#ugc-query-manager).
 
 #### [UGC Query Manager](../../components/ugc-query-manager.md)
 

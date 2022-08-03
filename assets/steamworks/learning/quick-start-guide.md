@@ -26,14 +26,14 @@ Enter your app ID in the Application Id field**.**  If you don't have an applica
 {% hint style="info" %}
 You obviously cannot deploy your app without an App ID
 
-You cannot create your own achievements, stats or other artifacts without your own ID
+You cannot create your own achievements, stats or other artefacts without your own ID
 
 
 
 Valve issues you an App ID when you pay your application fee. If you don't have your own ID yet you can use App ID 480 as a test ID. Heathen's samples and demos all use App ID 480.
 {% endhint %}
 
-## Steamworks Behavior
+## Steamworks Behaviour
 
 Create a [Steamworks Behaviour](broken-reference) object in your [bootstrap scene](../../../company/concepts/fundamentals/bootstrap-scene.md) or similarly appropriate location; and drag your Steam Settings object into the provided field.
 
