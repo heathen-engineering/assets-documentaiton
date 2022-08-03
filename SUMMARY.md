@@ -61,6 +61,7 @@
   * [💥 Testing](company/concepts/testing.md)
   * [📣 Marketing](company/concepts/marketing/README.md)
     * [⚔ Partners](company/concepts/marketing/partners.md)
+    * [🤯 Steam Store Page](company/concepts/marketing/steam-store-page.md)
   * [📆 Release](company/concepts/release.md)
   * [🗺 Live](company/concepts/live.md)
 * [Asset Developers](company/asset-developers/README.md)
