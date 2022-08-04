@@ -257,7 +257,7 @@
       * [Friends](assets/steamworks/features/friends.md)
       * [Heathen's API](assets/steamworks/api/introduction.md)
       * [Leaderboards](assets/steamworks/features/leaderboard-object.md)
-      * [Microtransactions (MTX)](assets/steamworks/learning/core-concepts/microtransactions-mtx.md)
+      * [Steam Microtransactions (In-Game Purchases)](assets/steamworks/learning/core-concepts/steam-microtransactions-in-game-purchases.md)
       * [Remote Storage (Steam Cloud)](assets/steamworks/features/data-models.md)
       * [Stats](assets/steamworks/features/stats-object.md)
       * [steam\_appid.txt](assets/steamworks/quick-start-guide/steam\_appid.txt.md)
