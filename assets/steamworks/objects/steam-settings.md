@@ -1,14 +1,26 @@
+---
+description: Configuration and easy access to key artefacts
+---
+
 # Steam Settings
+
+{% hint style="success" %}
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
+{% endhint %}
 
 ## Introduction
 
-SteamSettings is the root of Heathen Engineering's Steamworks tools and systems. The SteamSettings provides access to all core functionalities including stats, achievements, the friends system and the overlay system.
+SteamSettings is the root of Heathen's Steamworks.
 
 {% hint style="info" %}
 You can edit the existing Steam Settings included with the Demo Scenes or create your own Steam Settings in your Project tab by right clicking and selecting **Create > Steamworks > Settings**
 {% endhint %}
 
-SteamSettings inherits from ScriptableObject, which means it can be referenced at development time and across all scenes without the overhead a MonoBehavior brings with it.
+SteamSettings inherits from ScriptableObject, which means it can be referenced at development time and across all scenes without the overhead a MonoBehavior brings with it. In addition the SteamSettings object includes static references to the active Steamworks Behaviour, Client settings DLC, Stats and Achievements and most other referenced artefacts.
 
 There are three ways to interact with and access the most important parts of SteamSettings at runtime.&#x20;
 
@@ -46,48 +58,134 @@ This and its related functionality is stripped out of the compile on client buil
 public class SteamSettings : ScriptableObject
 ```
 
-### Fields and Attributes
+## Fields and Attributes
 
-{% hint style="info" %}
-All static accessors can also be accessed by referene e.g.
-
-```csharp
-mySettings.applicationId
-```
-
-is the same as
+### Current
 
 ```csharp
-SteamSettings.ApplicationId
+public static SteamSettings current;
 ```
-{% endhint %}
 
-| Type                             | Name                      | Comment                                                        |
-| -------------------------------- | ------------------------- | -------------------------------------------------------------- |
-| SteamSettings                    | current                   | Static access to the currently initalized Seam Settings object |
-| AppId\_t                         | ApplicationId             | Static access to the App ID                                    |
-| bool                             | HasInitalizationError     | Static indicates some error on initalization                   |
-| string                           | InitalizationErrorMessage | Static string for the current intialization error if any       |
-| bool                             | Initialized               | Static indicates rather or not the API is initalzied           |
-| GameClient                       | Client                    | Static access the client features                              |
-| GameServer                       | Server                    | Static access to the server features                           |
-| List\<AchievementObjects>        | Achievements              | Static access to the achievements list                         |
-| List\<StatObject>                | Stats                     | Static access to the stat list                                 |
-| List\<DownloadableContentObject> | DLC                       | Static access to the DLC list                                  |
-| List\<LeaderboardObject>         | Leaderboards              | Static access to the Leaderboard list                          |
-|                                  |                           |                                                                |
+A static reference to the currently initialized Steam Settings object.
 
-### Events
+### Behaviour
 
-#### evtSteamInitalized
+```csharp
+public static SteamworksBehaviour behaviour;
+```
 
-occurs when steam initalizes
+A static reference to the Steamworks Behaviour that initialized the Steam API and is managing the Steam update loop.
 
-#### evtSteamInitalizationError
+### Leaderboards
 
-occurs when steam initalization has an error
+```csharp
+public static List<LeaderboardObject> Leaderboards => get;
+```
 
-### Methods
+A static reference to the collection of [leaderboard objects](leaderboard.md) being managed by the system.
+
+### DLC
+
+```csharp
+public static List<DownloadableContentObject> DLC => get;
+```
+
+A static reference to the collection of [downloadable content objects](downloadable-content.md) being managed by the system.
+
+### Stats
+
+```csharp
+public static List<StatObject> Stats => get;
+```
+
+A static reference to the collection of stat objects being managed by the system. This includes both [Int ](int-stat.md)and [Float](float-stat.md) based stats.
+
+### Achievements
+
+```csharp
+public static List<AchievementObject> Achievements => get;
+```
+
+A static reference to the collection of achievement objects being managed by the system.
+
+### Application Id
+
+```csharp
+public static AppId_t ApplicationId => get;
+```
+
+A static reference to the App ID recorded for the active settings object.
+
+### Has Initialization Error
+
+```csharp
+public static bool HasInitalizationError => get;
+```
+
+A static valid indicating rather or not the API experienced an error on initialization.
+
+### Initialization Error Message
+
+```csharp
+public static string InitalizationErrorMessage => get;
+```
+
+If initialization had an error a message will be available in this field indicating what or why.
+
+### Initialized
+
+```csharp
+public static bool Initialized => get;
+```
+
+A static value indicating rather or not the Steam API has been initialized.
+
+### Client
+
+```csharp
+public static GameClient Client => get;
+```
+
+A static reference to the active client tools and features if available. Note it is possible to have this stripped out of compilation for server builds.
+
+### Server
+
+```csharp
+public static GameServer Server => get;
+```
+
+A static reference to the active server tools and features if available. Note it is possible to have this stripped out of compilation for client builds.
+
+## Events
+
+### evtSteamInitalized
+
+occurs when steam initializes, This event handler does not take any arguments
+
+```csharp
+private void HandleSteamInitialized()
+{
+    if(StemSettings.Initialized)
+        ;//Yep
+    else
+        ;//Should never happen but no not working
+}
+```
+
+### evtSteamInitalizationError
+
+occurs when steam initialization has an error, This event handler provides a string message indicating the likely problem or response from Steam.
+
+```csharp
+private void HandleSteamInitializeationError(string errorMessage)
+{
+    //Steam API cannot initalize and the message says why
+}
+```
+
+## Methods
+
+### Create Behaviour
 
 ```csharp
 public void CreateBehaviour(bool doNotDestroy = false);

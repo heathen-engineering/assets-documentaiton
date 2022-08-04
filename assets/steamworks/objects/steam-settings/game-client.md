@@ -1,8 +1,16 @@
 # Game Client
 
+{% hint style="success" %}
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
+{% endhint %}
+
 ## Introduction
 
-accessed from within the SteamSettings this houses client specific features and funcitons
+accessed from within the SteamSettings this houses client specific features and functions
 
 ## Definition
 
@@ -44,13 +52,13 @@ mySettings.client.inventory
 
 ## Methods
 
-### Initalize
+### Initialize
 
 ```csharp
 public void Init();
 ```
 
-Used internally to intialize the client APIs
+Used internally to initialize the client APIs
 
 ### Update All Actions
 

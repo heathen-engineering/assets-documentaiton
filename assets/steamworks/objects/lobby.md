@@ -1,8 +1,16 @@
 # Lobby
 
+{% hint style="success" %}
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
+{% endhint %}
+
 ## Introduction
 
-The Lobby object is a custom CSteamId that carries tools and funcitons unique to the Steam Lobby system.
+The Lobby object is a custom CSteamId that carries tools and functions unique to the Steam Lobby system.
 
 {% hint style="info" %}
 You can convert a Lobby to a ulong or CSteamID or convert a ulong or CSteamID to a Lobby implicitly e.g.
@@ -26,7 +34,7 @@ CSteamID id = myLobby;
 ```
 {% endhint %}
 
-All data is read on demand and is always up todate with the Lobby object. The only information it stores in local memory is the ID of the lobby its operating on.
+All data is read on demand and is always up to date with the Lobby object. The only information it stores in local memory is the ID of the lobby its operating on.
 
 ### Constants
 
