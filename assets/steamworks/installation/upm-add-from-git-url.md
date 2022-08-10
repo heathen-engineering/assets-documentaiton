@@ -32,10 +32,6 @@ https://github.com/heathen-engineering/SteamworksFoundation.git?path=/com.heathe
 
 ### GitHub Sponsors
 
-{% hint style="info" %}
-You must be an active GitHub Sponsor at the $10 level or higher for this to work. You must also be logged into the same GitHub user that sponsored. See our [Package Manager article](../../../company/concepts/fundamentals/package-manager-installs.md#im-a-sponsor-but-cant-install) for troubleshooting tips.
-{% endhint %}
-
 If your a GitHub sponsor you have access to the source repository which you can install from directly in Unity via the Package Manager.
 
 1. Open the Package Manager
