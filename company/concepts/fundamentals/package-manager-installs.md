@@ -123,3 +123,38 @@ Manul instal should be your last resort, it is error prone, can result in Unity 
 That said we do enable you to do this and will do our level best to help you with any issues you run into.
 {% endhint %}
 
+### I'm a Sponsor but cant install
+
+The most common cause of this problem is that you are not logged into GitHub with the same account that sponsored in such a way that UPM is able to access the private repository where Heathen's assets are stored.
+
+For example
+
+1\) You have multiple GitHub accounts and your Windows Credential Manager is using the "other one" as in the one you didn't sponsor with.
+
+2\) Something else is blocking the popup to login from windows
+
+When you first try to add a package using Unity Package Manager from a private or secured repository you should get a popup that look like this
+
+![](<../../../.gitbook/assets/image (5).png>)
+
+It may not have taken focus so look behind other windows. When you find it click the "Sign in with your browser" button ... that will open your default browser, ask you to login or if your already logged in it will show a blank page and that's it. You will now need to restart Unity and try again.
+
+If for some reason you do not get this popup then odds are you already have a GitHub credential stored on your machine. In Windows this is stored via the "Credential Manager" and it may be stored under a few different names
+
+![](<../../../.gitbook/assets/image (3).png>)
+
+![](../../../.gitbook/assets/image.png)
+
+![](<../../../.gitbook/assets/image (4).png>)
+
+The above images all show variations of the credential as used. You should be able to force the popup to show again by simply removing any GitHub related credentials already stored in Windows Credential Manager.
+
+Be sure to restart Unity and Unity Hub and then try again.
+
+For note you can also use command line to update your credentials ... Git is fundamentally a command line based tool
+
+{% embed url="https://www.brianchildress.co/update-git-credentials-command-line/" %}
+
+You can read more on the subject here
+
+{% embed url="https://git-scm.com/docs/gitcredentials" %}
