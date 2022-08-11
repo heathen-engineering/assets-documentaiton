@@ -114,6 +114,31 @@ If for example you find that the App ID does not match then what you most likely
 
 The reason this happens is that Valve will not release app initialization until every process that mounted its handles has closed. This is the single most common issue we have reported.
 
+### Initialization Status
+
+This indicates the status of the Steam API and will have one of the following values
+
+* Idle\
+  This means the API is not, nor has it attempted to initialize. The status will say this anytime the simulation is not running ... that is you must press play for this to work at all.
+* Initializing\
+  This means the API is trying to initialize, this generally happens very fast so you may never see this.
+* Initialized\
+  This means the API is initialized and that the values reported are as reported by the API
+* Error or Failed\
+  This means the API failed to initialize, check your Unity Editor console log for details as to why
+
+### Listed App ID
+
+This is the App ID that appears in the active Steam Settings object. It should match the other listed IDs
+
+### Reported App ID
+
+This is the App ID that Steam API has reported back to us when asked. As far as Steam is concerned this is the App ID you "**are**"
+
+### Steam\_AppId.txt
+
+This is the App ID that is currently recorded in the steam\_appid.txt file
+
 ## Stats
 
 ![](<../../../.gitbook/assets/image (173) (1) (1).png>)
