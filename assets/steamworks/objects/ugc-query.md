@@ -188,11 +188,51 @@ This indicates the current page the query is reading. Setting this value calls t
 public List<UGCCommunityItem> ResultsList
 ```
 
-This will be populated with the results when the query is exeucted ... assuming there are results to populate.
+This will be populated with the results when the query is executed ... assuming there are results to populate.
 
 See [UGCCommunityItem ](ugc-community-item.md)for more info on how to use the items returned.
 
 ## Methods
+
+### AddExcludedTag
+
+```csharp
+public bool AddExcludedTag(string tagName);
+```
+
+Adds a excluded tag to a pending UGC Query. This will only return UGC without the specified tag.
+
+### AddRequiredKeyValueTag
+
+```csharp
+public bool AddRequiredKeyValueTag(string key, string value);
+```
+
+Adds a required key-value tag to a pending UGC Query. This will only return workshop items that have a key = pKey and a value = pValue.
+
+### AddRequiredTag
+
+```csharp
+public bool AddRequiredTag(string tagName)
+```
+
+Adds a required tag to a pending UGC Query. This will only return UGC with the specified tag.
+
+### SetAllowCachedResponce
+
+```csharp
+public bool SetAllowCachedResponse(uint maxAgeSeconds)
+```
+
+Set allow cached response from UGC Query
+
+### SetCloudFileNameFilter
+
+```csharp
+public bool SetCloudFileNameFilter(string fileName)
+```
+
+Set the cloud file name filter value
 
 ### SetLanguage
 
