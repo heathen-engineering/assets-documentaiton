@@ -73,7 +73,7 @@ Lobbies can be used for loads of features that have nothing at all to do with ne
 
 Mirror, Photon and others have a concept of a "Room" ... this is not a lobby and not related to lobby.
 
-A Room is not a lobby, its a strange concept used by some networking systems as a sort of pore mans matchmaking service. It really doesn't make any since to me as to why you would use such a thing. It seems it would be easier to simply manage your network environment your self but to each there own just understand it is not a lobby and in no way related.
+A Room is not a lobby, its a strange concept used by some networking systems as a sort of pore mans matchmaking service. It really doesn't make any sense to me as to why you would use such a thing. It seems it would be easier to simply manage your network environment your self but to each there own just understand it is not a lobby and in no way related.
 
 ### NM
 
@@ -83,7 +83,7 @@ Network Manager, most HLAPIs have a concept of a network manager. This is your g
 
 We don't use this and don't recommend any one does. Room is a concept seen in Mirror, Photon and a few other networking solutions. Personally I see no reason to use such a thing especially if you have a proper backend service provider like Steam or PlayFab.
 
-A room is a full network connection so really if you can connect to a room why not just go ahead and be connected to your session since you already are.&#x20;
+A room is a full network connection so really if you can connect to a room why not just go ahead and be connected to your session sense you already are.&#x20;
 
 This concept is mostly used by people who let the network manager manage which scene is active, another thing we do not do not recommend. If you do let your network manager manage your scenes then read up on how "room" works with your API if at all.
 
@@ -173,7 +173,7 @@ Mirror at least and MLAPI I think have a very crude scene management feature.&#x
 
 You don't need this, in my experience it only serves to make things more complicated. In reality the network doesn't care what scene is loaded or not or what is active or not. Unity does as that defines what GameObjects are loaded where and which environment settings are active.
 
-We find it best to have the client handle load and unload of scenes as makes since for them. A lot of this comes from the realization that Unity handles multi-scene nicely and that a scene doesn't need to represent a physical area in your game so letting a network system which is driven by network visibility drive that makes no since.
+We find it best to have the client handle load and unload of scenes as makes sense for them. A lot of this comes from the realization that Unity handles multi-scene nicely and that a scene doesn't need to represent a physical area in your game so letting a network system which is driven by network visibility drive that makes no sense.
 
 [See this article for more](../../../../company/concepts/fundamentals/multi-scene-architecture.md)
 
@@ -185,7 +185,7 @@ Keep your PC simple, think of the PC a bit like you might think of Unity's Event
 
 It probably shouldn't be a visual element in your game, rather its there to capture the inputs of the player it represents and sync that over the network and to notify all other players as that input changes.
 
-It makes since to store player specific values on it but player is not character. In most of our use cases our PC is just an IO sync tool with some state info like what team the player is a part of. We have the PC spawn character controllers as required and these character controls define the visuals, sync animations, store character health, level, etc.
+It makes sense to store player specific values on it but player is not character. In most of our use cases our PC is just an IO sync tool with some state info like what team the player is a part of. We have the PC spawn character controllers as required and these character controls define the visuals, sync animations, store character health, level, etc.
 
 ### Set Game Server
 
