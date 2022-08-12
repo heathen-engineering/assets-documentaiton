@@ -46,7 +46,7 @@ Heathen no longer uses global script defines but references all defines as part 
 
 These defines exist only if the related assembly is present. If these defines are not present the code will not compile.
 
-### STEAMWORKS\_NET
+### STEAMWORKSNET
 
 This is the script define set by Steamworks.NET
 
@@ -60,9 +60,9 @@ It indicates that System Core is present, System Core is a framework that all He
 
 ## No git executable was found
 
-This means you have missing components on your machine and Unity Editor cannot use the Package Manager's Add from Git URL.&#x20;
-
-Please read the below article to fix this
+{% hint style="info" %}
+Or any other Unity Package Manager related issue
+{% endhint %}
 
 {% embed url="https://kb.heathenengineering.com/company/concepts/package-manager-install" %}
 

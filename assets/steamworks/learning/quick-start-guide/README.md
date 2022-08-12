@@ -7,7 +7,7 @@ description: A quick start guide for those already comfortable with the basics.
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -17,7 +17,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 Create a new Steam Settings object in your project folder by right clicking in your project tab and selecting\
 **Create > Steamworks > Settings**
 
-![](<../../../.gitbook/assets/image (158) (1) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (158) (1) (1) (1) (1).png>)
 
 ## App Id
 
@@ -35,18 +35,18 @@ Valve issues you an App ID when you pay your application fee. If you don't have 
 
 ## Steamworks Behaviour
 
-Create a [Steamworks Behaviour](broken-reference) object in your [bootstrap scene](../../../company/concepts/fundamentals/bootstrap-scene.md) or similarly appropriate location; and drag your Steam Settings object into the provided field.
+Create a [Steamworks Behaviour](broken-reference) object in your [bootstrap scene](../../../../company/concepts/fundamentals/bootstrap-scene.md) or similarly appropriate location; and drag your Steam Settings object into the provided field.
 
-![](<../../../.gitbook/assets/image (161) (1) (1) (1) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (161) (1) (1) (1) (1) (1) (1).png>)
 
 Congratulations, you are now integrated with the Steam APIs. If you run the simulation, you will see that the Steam API initializes and is ready for use.
 
 {% hint style="danger" %}
-[Steamworks Behaviour](../components/steamworks-behaviour.md) should be initialized early in your application and never destroyed. It is keenly important that you do not reload the scene that defines the [Steamworks Behaviour](../components/steamworks-behaviour.md) as this will cause issues with the Steam API.
+[Steamworks Behaviour](../../components/steamworks-behaviour.md) should be initialized early in your application and never destroyed. It is keenly important that you do not reload the scene that defines the [Steamworks Behaviour](../../components/steamworks-behaviour.md) as this will cause issues with the Steam API.
 
 
 
-If you need to reload the scene where [Steamworks Behaviour](../components/steamworks-behaviour.md) is located or otherwise must use a single scene architecture you should use the [Steamworks Creator](../components/steamworks-creator.md) to insure the Steam API is managed correctly.
+If you need to reload the scene where [Steamworks Behaviour](../../components/steamworks-behaviour.md) is located or otherwise must use a single scene architecture you should use the [Steamworks Creator](../../components/steamworks-creator.md) to insure the Steam API is managed correctly.
 {% endhint %}
 
 ## Networking
@@ -71,8 +71,8 @@ Where can I find examples on using Steamworks Complete and (the HLAPI I chose)?
 
 You cant because their is no need. Both Steamworks Complete and your HLAPI of choice work exactly the same rather or not the other exists. Thus we do not have an example of using (your HLAPI of choice) along side our Steamworks Complete.&#x20;
 
-If you want to see an example of using your HLAPI of choice with your HLAPI's Steam transport then you should contact them. We have links to [Fish Networking, Mirror and NetCode for GameObjects in our articles](../installation/networking-integrations.md) but any HLAPI that works with Steamworks.NET properly will work.
+If you want to see an example of using your HLAPI of choice with your HLAPI's Steam transport then you should contact them. We have links to [Fish Networking, Mirror and NetCode for GameObjects in our articles](../../installation/networking-integrations.md) but any HLAPI that works with Steamworks.NET properly will work.
 
-If your looking for examples on how to initialize, configure and use Steam API (in general) you will find various samples in the provided [samples scenes](../../physkit/learning/sample-scenes/) and examples throughout our knowledge base.
+If your looking for examples on how to initialize, configure and use Steam API (in general) you will find various samples in the provided [samples scenes](../../../physkit/learning/sample-scenes/) and examples throughout our knowledge base.
 
-If your trying to wrap your head around creating a [multiplayer game on the Steam platform](developer-articles/multiplayer-steam-games.md), we have an article for that as well. That article is not specific to any given HLAPI because the HLAPI you choose has no impact on the concepts involved.
+If your trying to wrap your head around creating a [multiplayer game on the Steam platform](../developer-articles/multiplayer-steam-games.md), we have an article for that as well. That article is not specific to any given HLAPI because the HLAPI you choose has no impact on the concepts involved.
