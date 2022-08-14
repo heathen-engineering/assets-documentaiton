@@ -143,7 +143,7 @@ If for some reason you do not get this popup then odds are you already have a Gi
 
 ![](<../../../.gitbook/assets/image (3).png>)
 
-![](<../../../.gitbook/assets/image (2).png>)
+![](<../../../.gitbook/assets/image (2) (2).png>)
 
 ![](<../../../.gitbook/assets/image (4).png>)
 
