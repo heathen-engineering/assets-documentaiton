@@ -59,6 +59,7 @@
     * [Multi Platform Projects](company/concepts/development/multi-platform-projects.md)
     * [Unity's "New" Input System](company/concepts/development/unitys-new-input-system.md)
   * [💥 Testing](company/concepts/testing.md)
+  * [🧙♂ Community](company/concepts/community.md)
   * [📣 Marketing](company/concepts/marketing/README.md)
     * [⚔ Partners](company/concepts/marketing/partners.md)
     * [🤯 Steam Store Page](company/concepts/marketing/steam-store-page.md)
