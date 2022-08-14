@@ -1,4 +1,0 @@
-# 🤔 Strategy
-
-## Studio
-
