@@ -10,19 +10,31 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction
 
-Heathen provides a powerful inspector that will show you the states and values of all Steam API artefacts configured for your project. To Access the inspector simply open the **Window > Steamworks Inspector** menu.
-
-{% hint style="warning" %}
-#### IMPORTANT
-
-The inspector's data only populate while the simulation is running.
-{% endhint %}
-
 {% hint style="info" %}
 Steam's Documentation has a Debugging article as well ... read it ... its good
 
 [https://partner.steamgames.com/doc/sdk/api/debugging](https://partner.steamgames.com/doc/sdk/api/debugging)
 {% endhint %}
+
+Follows are a few common issues and solutions as well as additional notes on the debugging tools available to you both from Heathen and Valve.
+
+## Enable Debugging
+
+![Toggle this on](<../../../.gitbook/assets/image (3).png>)
+
+When toggled on Heathen's tools will write additional verbose information in particular around initialization which is the most common point of error. If you have not finished testing and are not building a fully tested, production ready, release build ... then you should have this turned on.
+
+## Steam must be running
+
+Be aware that none of the work done by Steam API is "in" your game, Steam API is an "application program interface" that allows your game to work with features in the Steam client. As a result you **must** have Steam client open, running and logged in to a valid Steam user that owns the app you are trying to work with.
+
+The only exception to this is when using the [Steam Game Server](../features/multiplayer/game-server-browser.md) feature which also limits the functionality of Steam API as there is no client and no user available to do work.
+
+## Running a Build&#x20;
+
+When running a build that was not deployed to Steam and ran from the Steam client you will notice that the game fails to initialize the crashes to desktop possibly attempting to re-launch from Steam client.
+
+This is by design, you must hint to Steam API what the app is, read the [article on steam\_appid.txt](debugging-steam-api.md#steam\_appid.txt) it will explain, why this happens, how to work with it, when you should and when you should not use the feature described.
 
 ## Publish Your Changes
 
@@ -96,7 +108,33 @@ If your build target is set to ANY other build target then the Steamworks.NET as
 
 use `#if DISABLESTEAMWORKS` script define you can add this your self if you like to cause Steam API code to simply not compile. You can use it to strip out your Steam related code if you need.
 
+## Steam Command Line
+
+{% embed url="https://partner.steamgames.com/doc/sdk/api/debugging" %}
+Tools from Valve
+{% endembed %}
+
+> Steam has grown into a large application over the years and provides many separate modules and multiple different ways to debug. This page outlines as many of them as possible to help you get the most out of Steam and Steamworks while keeping headaches to a minimum.\
+> \
+> Steam automatically outputs a number of debug to the `logs` folder, for others you may need to use [Steam Command Line Parameters](https://partner.steamgames.com/doc/sdk/api/debugging#command\_line\_parameters) or [Steam Console Commands](https://partner.steamgames.com/doc/sdk/api/debugging#console\_commands) to enable them.\
+> \
+> Using [ISteamUtils::SetWarningMessageHook](https://partner.steamgames.com/doc/api/ISteamUtils#SetWarningMessageHook) allows a Steamworks application to register a function that allows the Steamworks API to provide human-readable error messages to the application when something goes wrong. Most Steam APIs use it, so be sure to hook it up and look at it any time something goes wrong.
+
 ## Steamworks Inspector
+
+Heathen provides a powerful inspector that will show you the states and values of all Steam API artefacts configured for your project.&#x20;
+
+To Access the inspector simply open the **Window > Steamworks Inspector** menu.
+
+or
+
+![Click the button in Steam Settings](../../../.gitbook/assets/image.png)
+
+{% hint style="warning" %}
+#### IMPORTANT
+
+The inspector's data only populate while the simulation is running.
+{% endhint %}
 
 The Home page of the inspector displays core values for your user and the app its self. This is the first place you should check, and you should do the following
 
@@ -139,19 +177,19 @@ This is the App ID that Steam API has reported back to us when asked. As far as 
 
 This is the App ID that is currently recorded in the steam\_appid.txt file
 
-## Stats
+### Inspecting Stats
 
 ![](<../../../.gitbook/assets/image (173) (1) (1).png>)
 
 You can use the Stats tab to view and update the value of all registered stats
 
-## Achievements
+### Inspecting Achievements
 
 ![](<../../../.gitbook/assets/image (179) (1) (1) (1) (1).png>)
 
 You can use the Achievements tab to view and unlock/reset all registered achievements
 
-## Leaderboards
+### Inspecting Leaderboards
 
 ![](<../../../.gitbook/assets/image (170) (1) (1) (1) (1).png>)
 
@@ -167,19 +205,19 @@ We do on occasion see leaderboards "break", this is typically a problem when you
 
 If you need to repair a board that is misbehaving you will need to contact Valve's support as these are backend features Heathen can not see nor effect.
 
-## Downloadable Content
+### Inspecting Downloadable Content
 
 ![](<../../../.gitbook/assets/image (181) (1) (1) (1).png>)
 
 You can view the subscription status of all DLC in the DLC tab
 
-## Inventory
+### Inspecting Inventory
 
 ![](<../../../.gitbook/assets/image (164) (1) (1) (1) (1) (1) (1).png>)
 
 The inventory tab will display all the items registered to your game and provides tools for clearing and granting each item
 
-## Lobbies
+### Inspecting Lobbies
 
 ![](<../../../.gitbook/assets/image (185) (1).png>)
 

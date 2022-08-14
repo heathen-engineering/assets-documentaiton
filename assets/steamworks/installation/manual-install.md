@@ -99,7 +99,7 @@ Any UPM based asset will be using assembly defines and assembly defines require 
 
 `SystemCore/com.heathen.systemcore`
 
-![](../../../.gitbook/assets/image.png)
+![](<../../../.gitbook/assets/image (1).png>)
 
 #### Steamworks.NET
 
@@ -121,6 +121,6 @@ Do NOT use the zip or unitypackage file you find in Steamwork.NET's release fold
 
 You will notice 2 subfolders `Samples~` and `Tools~` you should remove the `~` character from the end of there name so that Unity can load them in the editor.&#x20;
 
-![](<../../../.gitbook/assets/image (1).png>)
+![](<../../../.gitbook/assets/image (1) (2).png>)
 
 If you do not remove the \~ character from the end of the name of these two folders then they will not appear in Unity Editor.
