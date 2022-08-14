@@ -9,6 +9,10 @@
   * [Doc Formatting](company/heathen-group/doc-formatting.md)
 * [Guides](company/concepts/README.md)
   * [😍 Become a Sponsor](company/concepts/become-a-sponsor.md)
+  * [🤩 Getting Started](company/concepts/getting-started/README.md)
+    * [⚔ Partnerships](company/concepts/getting-started/partnerships/README.md)
+      * [🧙♂ Community](company/concepts/getting-started/partnerships/community.md)
+      * [📣 Marketing](company/concepts/getting-started/partnerships/marketing.md)
   * [🦧 Fundamentals](company/concepts/fundamentals/README.md)
     * [💡 Visual Scripting](company/concepts/fundamentals/visual-scripting.md)
     * [Bootstrap Scene](company/concepts/fundamentals/bootstrap-scene.md)
@@ -20,6 +24,9 @@
     * [Package Manager Installs](company/concepts/fundamentals/package-manager-installs.md)
     * [Project Architecture](company/concepts/fundamentals/project-architecture.md)
     * [Unity Release Version](company/concepts/fundamentals/unity-release-version.md)
+  * [👑 Steam](company/concepts/steam/README.md)
+    * [🗣 Steam Hub](company/concepts/steam/steam-hub.md)
+    * [🤯 Steam Store Page](company/concepts/steam/steam-store-page.md)
   * [📐 Design](company/concepts/design/README.md)
     * [▶ Quick Start](company/concepts/design/quick-start.md)
     * [🤓 Market Research](company/concepts/design/market-research.md)
@@ -60,15 +67,20 @@
     * [Unity's "New" Input System](company/concepts/development/unitys-new-input-system.md)
   * [💥 Testing](company/concepts/testing.md)
   * [🧙♂ Community](company/concepts/community.md)
-  * [📣 Marketing](company/concepts/marketing/README.md)
-    * [⚔ Partners](company/concepts/marketing/partners.md)
-    * [🤯 Steam Store Page](company/concepts/marketing/steam-store-page.md)
+  * [📣 Marketing](company/concepts/marketing.md)
   * [📆 Release](company/concepts/release.md)
   * [🗺 Live](company/concepts/live.md)
 * [Asset Developers](company/asset-developers/README.md)
   * [Editor Coroutines](company/asset-developers/editor-coroutines.md)
   * [Package Manger in C#](company/asset-developers/package-manger-in-c.md)
   * [Session State Values](company/asset-developers/session-state-values.md)
+
+## Services
+
+* [🔎 Who Are We](services/who-are-we.md)
+* [⚔ Solutions](services/solutions/README.md)
+  * [🤔 Strategy](services/solutions/strategy.md)
+* [💶 Pricing](services/pricing.md)
 
 ## Codex
 
@@ -491,9 +503,3 @@
     * [Mask Mode](assets/ux/enums/mask-mode.md)
     * [Recieve Mode](assets/ux/enums/recieve-mode.md)
     * [Window Snap To Location](assets/ux/enums/window-snap-to-location.md)
-
-## Services
-
-* [Introduction](services/introduction.md)
-* [Consulting & Contracting](services/consulting.md)
-* [Publishing](services/publishing.md)

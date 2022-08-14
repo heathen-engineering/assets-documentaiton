@@ -22,7 +22,7 @@ Heathen Group is one team with many ambitions, these sections help us keep it al
 
 ### Heathen Engineering
 
-![](<.gitbook/assets/Heathen Engineering Banner Black.png>)
+![](<.gitbook/assets/Heathen Engineering Banner White.png>)
 
 Heathen Engineering is the section of Heathen Group that deals with engineering.
 
@@ -30,7 +30,7 @@ Heathen Engineering creates, maintains and supports all of Heathen Groups techno
 
 ### Hel House
 
-![](<.gitbook/assets/Hel House Banner Black.png>)
+![](<.gitbook/assets/Hel House Banner White.png>)
 
 Hel House is the section of Heathen Group that deals with publishing and marketing.
 
@@ -38,7 +38,7 @@ Hel House manages all of our digital store fronts, web sites, social networks, p
 
 ### Freki Games
 
-![](<.gitbook/assets/Freki Banner Black.png>)
+![](<.gitbook/assets/Freki Banner White.png>)
 
 Freki Games is the section of Heathen Group that develops our games.
 
