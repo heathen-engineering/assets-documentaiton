@@ -52,19 +52,18 @@ private void HandleEvent(LeaderboardEntry arg0)
 }
 ```
 
-Then you would register the event such as:\
-Assuming `leaderboardManager` is reference to your Leaderboard Manager.
+Then you would register the event such as:
 
 ```csharp
-leaderboardManager.evtUserEntryUpdated.AddListener(HandleEvent);
+API.Inventory.Client.evtUserEntryUpdated.AddListener(HandleEvent);
 ```
 
-When you no longer need this handler you should remove it for example when the behaviour using it is destroyed
+When you no longer need this handler you should remove it for example when the behviour using it is destroyed
 
 ```csharp
 void OnDestroy()
 {
-    leaderboardManager.evtUserEntryUpdated.RemoveListener(HandleEvent);
+    API.Inventory.Client.evtUserEntryUpdated.RemoveListener(HandleEvent);
 }
 ```
 
@@ -82,28 +81,26 @@ private void HandleEvent(LeaderboardEntry[] arg0)
 }
 ```
 
-Then you would register the event such as:\
-Assuming `leaderboardManager` is reference to your Leaderboard Manager.
+Then you would register the event such as:
 
 ```csharp
-leaderboardManager.evtQueryCompleted.AddListener(HandleEvent);
+API.Inventory.Client.evtQueryCompleted.AddListener(HandleEvent);
 ```
 
-When you no longer need this handler you should remove it for example when the behaviour using it is destroyed
+When you no longer need this handler you should remove it for example when the behviour using it is destroyed
 
 ```csharp
 void OnDestroy()
 {
-    leaderboardManager.evtQueryCompleted.RemoveListener(HandleEvent);
+    API.Inventory.Client.evtQueryCompleted.RemoveListener(HandleEvent);
 }
 ```
 
 ### evtQueryError
 
-Occurs when a query fails with an error, errors are not generally specified rather it is up to you to check for logical causes such as the leaderboard being null or not being valid.
+Occurs when a query fails with an error, errors are not generally specified rather it is up to you to check for logicle causes such as the leaderboard being null or not being valid.
 
-You would add a listener on this event such as:\
-Assuming `leaderboardManager` is reference to your Leaderboard Manager.
+You would add a listener on this event such as:
 
 Assuming a handler in the form of
 
@@ -116,15 +113,15 @@ private void HandleEvent()
 Then you would register the event such as:
 
 ```csharp
-leaderboardManager.evtQueryError.AddListener(HandleEvent);
+API.Inventory.Client.evtQueryError.AddListener(HandleEvent);
 ```
 
-When you no longer need this handler you should remove it for example when the behaviour using it is destroyed
+When you no longer need this handler you should remove it for example when the behviour using it is destroyed
 
 ```csharp
 void OnDestroy()
 {
-    leaderboardManager.evtQueryError.RemoveListener(HandleEvent);
+    API.Inventory.Client.evtQueryError.RemoveListener(HandleEvent);
 }
 ```
 
@@ -142,19 +139,18 @@ private void HandleEvent()
 }
 ```
 
-Then you would register the event such as:\
-Assuming `leaderboardManager` is reference to your Leaderboard Manager.
+Then you would register the event such as:
 
 ```csharp
-leaderboardManager.evtUploadError.AddListener(HandleEvent);
+API.Inventory.Client.evtUploadError.AddListener(HandleEvent);
 ```
 
-When you no longer need this handler you should remove it for example when the behaviour using it is destroyed
+When you no longer need this handler you should remove it for example when the behviour using it is destroyed
 
 ```csharp
 void OnDestroy()
 {
-    leaderboardManager.evtUploadError.RemoveListener(HandleEvent);
+    API.Inventory.Client.evtUploadError.RemoveListener(HandleEvent);
 }
 ```
 
