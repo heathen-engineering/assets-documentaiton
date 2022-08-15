@@ -40,6 +40,20 @@ If your going to be buying anything or making any money then you need an account
 
 As a game developer even before you have a game ready to publish you will be creating and using other peoples creations. Making sure your complying with any legal requirements and registering any IP, names, marks, etc. as is required by your local regulations is critical and often overlooked. This is usually something that you Registration and Administration and or Accounting partner may handle ... that is you can usually find a partner that is suitable to advise and guide on all three of these aspects.
 
+### Marketing
+
+Another commonly outsourced aspect of game development as a business especially for small studios and solo developers. Marketing requires time, expertise and scale to be effective. The marketing needs of small indies are quite unique to the needs of other businesses and even other forms of game development (mobile, AA and AAA). Be sure to consider the unique challenges of marketing and understand that developing your marketing strategy should generally happen before production of your game.
+
+Marketing for note involves much more than advertising your game. Your marketing strategy will include an assessment of the market, audience targeting and other factors that will influence your design process and in particular will influence any potential investors. Engaging a professional marketing firm early to help establish a sound marketing strategy doesn't cost as much you might think and will greatly improve your chances of success.
+
+### Community
+
+Community is an ever evolving requirement of game development. In the early days games where a matter of "fire and forget", released into the wild and not so much as a post release update. One way community management via "Blue Posts" ... looking at you Blizzard ... are likewise no longer viable. The current market effectively demands rich community engagement, a happy community can prop up a small scrappy game and a pissed off community can tank a AAA title with ease.
+
+Classically community management has been handled by a "go-to-man" in each studio acting as a sort of "frontman" like one sees with rock bands ... and that is major problem.&#x20;
+
+Good business will tell you that having any system depend on a "go-to-man" is a critical point of failure that will go wrong, its only a matter of time. Treat community and its management as you would any other important part of your business and project and invest in it wisely.&#x20;
+
 ## Production
 
 {% hint style="success" %}
@@ -123,3 +137,37 @@ As with every other aspect of production you cannot cut corners here. You are fa
 {% endhint %}
 
 Localization is perhaps the most commonly outsourced requirement a game will have as it requires local cultural expertise for each local. Localization more so than other aspects simply shouldn't be corner-cut. Pore translation can be offensive and result in harm to your product and company and simply isn't excusable in the modern market. If budget is tight and you cant afford a professional localization of your project, simply skip it. You are better off to have fewer localizations than you are to let auto-translate shoot you in the foot.
+
+## Operations
+
+So much more than keeping the lights on but often thought of that way. Operations covers the factors of ... well, operating whatever it is.
+
+### DevOps
+
+{% hint style="info" %}
+This is actually part of ALM (Application Lifecycle Management) \
+ALM is far to huge of a concept to detail here but something we will start to cover over time.\
+\
+If you have more questions about ALM reach out. Heathen has decades of experience in Enterprise Software Engineering where we lived and breathed this day to day.
+{% endhint %}
+
+DevOps some times confused for ALM or even simply called "source control" encompasses a lot of your day to day operations as a software development house.&#x20;
+
+{% hint style="success" %}
+Make no mistake, if you build video games, rather you like it or not you are a software development business and need to be aware of and conform to that reality.
+{% endhint %}
+
+DevOps is largely an internal process with some tooling sprinkled in so not something you will be outsourcing unless you outsource all of your development. DevOps is however a concept your likely new to, not to mention its parent concept ALM. Finding a consultancy that can help you ramp up on these concepts and tools is key to the healthy operation of your business. No amount of good ideas or even great production will save you if you fail at DevOps.
+
+#### ... **Dramatic** ... so what is it exactly?
+
+DevOps is a collection of practices and the tooling to support them. It defines and enables the creation of your "content" be that source code, art assets, audio files or anything else for that matter. It defines how they will be logged, backed up, reviewed, tested, built and deployed.
+
+In short it defines how you will "operate" your "development" ... hence DevOps.
+
+#### ... wait isn't for code stuff? but I outsourced Engineering
+
+No this is not just for your code monkeys, it covers all of your "dev" so art, audio, testing, design. The entire "production" process as we would typically call it in game development is driven through your DevOps tools according to your DevOps processes.
+
+### LiveOps
+
