@@ -171,3 +171,13 @@ No this is not just for your code monkeys, it covers all of your "dev" so art, a
 
 ### LiveOps
 
+{% hint style="info" %}
+This is again part of ALM (Application Lifecycle Management) \
+ALM is far to huge of a concept to detail here but something we will start to cover over time.\
+\
+If you have more questions about ALM reach out. Heathen has decades of experience in Enterprise Software Engineering where we lived and breathed this day to day.
+{% endhint %}
+
+LiveOps or "Live" "Operations" deals with the processes and tools you employ to operate your released game. What exactly this includes depends on your game and truly standalone games have a very minimal "LiveOps" requirement where something more "live service" such as an MMO or MOBA would have a very complex "LiveOps" requirement.
+
+As with DevOps this is a matter of processes and the tools that enable them so not really something you would "outsource" though consultancy firms can help you understand the concepts and apply them to your specific project.
