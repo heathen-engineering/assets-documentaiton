@@ -1,8 +1,8 @@
 ---
-description: Meet the team
+description: What the hell is Hel House
 ---
 
-# 🔎 Who Are We
+# 🔎 Who Dis ?
 
 ![](<../.gitbook/assets/Hel House Outlines.png>)
 
