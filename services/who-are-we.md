@@ -6,19 +6,15 @@ description: Meet the team
 
 ![](<../.gitbook/assets/Hel House Outlines.png>)
 
-We provide a wide range of service to its clients with decades of experience in software engineering and consulting services. We specialize in Microsoft, Steam and Unity related technologies and have ran project big (multi-million euro) and small (solo indie dev), private and government, across multiple industries.&#x20;
+We provide a wide range of service to our clients with decades of experience in software engineering and consulting services. We specialize in Microsoft, Steam and Unity related technologies and have ran projects big (multi-million euro) and small (solo indie dev), private and government, across multiple industries.&#x20;
 
-Heathen was founded by software engineering professionals with experience in enterprise software engineering, technology and business consulting and of course game and game software development. Heathen's unique blend of experiences and focus on software engineering bring a value to your projects you wont find else where.&#x20;
+Founded by software engineering professionals with experience in enterprise software engineering, technology and business consulting and of course game and game software development. Our unique blend of experiences and focus on sound engineering practice bring a value to your projects you wont find else where.&#x20;
 
 ## Pedigree
 
-### Management
+### Experience
 
-15+ years of experience working for major Microsoft Gold Partners and major technology groups. We have provided design, development and support of enterprise systems such as CRM (Customer Relationship Management) and ERP (Enterprise Resource Planning) systems as well as bespoke and proprietary systems and integration. We have successful projects delivered to major corporations internationally as well as government agencies our team is well versed in application, system and project lifecycle and its nuances across multiple industries and scales of operation. We knows how to bring technologies and professionals together to get the job done.
-
-### Technology
-
-Professional software engineering is the foundation from which we grew. Heathen group is first and for most a software engineering group with a strong focus on game and game software technologies. We develop a number of best in class tools and know how to identify, select and implement the right technologies for the job. We hold our selves, selected technologies and valued partners to a high standard of quality and professionalism rooted in the engineering rigor we are built on. &#x20;
+Leverage our decades of experience working for Microsoft Gold Partners and major technology firms around the world. With successful projects delivered to major corporations as well as government agencies our team is well versed in application, system and project lifecycle and its nuances across multiple industries and scales of operation. Rather its a solo developer creating a passion project or a major corporate of government organization we have the experience and skill to enable you to Do More! We know how to bring technologies and professionals together to get the job done, reach out and Do More today.
 
 ### Unity
 
