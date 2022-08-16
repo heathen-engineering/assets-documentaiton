@@ -78,12 +78,13 @@
 
 ## Hel House Services <a href="#services" id="services"></a>
 
-* [🔎 Who Dis ?](services/who-dis.md)
+* [🔎 Who Dis ?](services/who-are-we.md)
 * [⚔ Solutions](services/solutions.md)
 * [💶 Pricing](services/pricing.md)
 
 ## Heathen Engineering <a href="#assets" id="assets"></a>
 
+* [🤷 Who Dis ?](assets/who-dis.md)
 * [Licensing](assets/licensing/README.md)
   * [Heathen License Agreement](company/heathen-license-agreement.md)
 * [Art Assets](assets/art-assets/README.md)
