@@ -3,10 +3,6 @@
 ## General <a href="#company" id="company"></a>
 
 * [Introduction](README.md)
-* [Heathen Group](company/heathen-group/README.md)
-  * [Asset Refund Policy](company/heathen-group/extended-refund-policy.md)
-  * [Asset Folder Structure](company/heathen-group/asset-folder-structure.md)
-  * [Doc Formatting](company/heathen-group/doc-formatting.md)
 * [Guides](company/concepts/README.md)
   * [😍 Become a Sponsor](company/concepts/become-a-sponsor.md)
   * [🤩 Getting Started](company/concepts/getting-started/README.md)
@@ -76,7 +72,7 @@
   * [Package Manger in C#](company/asset-developers/package-manger-in-c.md)
   * [Session State Values](company/asset-developers/session-state-values.md)
 
-## Hel House Services <a href="#services" id="services"></a>
+## Hel House <a href="#services" id="services"></a>
 
 * [🔎 Who Dis ?](services/who-are-we.md)
 * [⚔ Solutions](services/solutions.md)
@@ -87,6 +83,10 @@
 * [🤷 Who Dis ?](assets/who-dis.md)
 * [Licensing](assets/licensing/README.md)
   * [Heathen License Agreement](company/heathen-license-agreement.md)
+* [General Info](assets/general-info/README.md)
+  * [Asset Refund Policy](assets/general-info/extended-refund-policy.md)
+  * [Asset Folder Structure](assets/general-info/asset-folder-structure.md)
+  * [Doc Formatting](assets/general-info/doc-formatting.md)
 * [Art Assets](assets/art-assets/README.md)
   * [Armoury](assets/art-assets/art-armoury.md)
   * [Breakable](assets/art-assets/breakable/README.md)

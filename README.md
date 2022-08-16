@@ -18,23 +18,21 @@ The approach taken by Heathen is simple: “eat your own dog food”. Heathen cr
 
 ![](<.gitbook/assets/Free Flat Heathen Group Banner.png>)
 
-Heathen Group is one team with many ambitions, these sections help us keep it all organized and on task!
-
-### Heathen Engineering
-
-![](<.gitbook/assets/Heathen Engineering Banner White.png>)
-
-Heathen Engineering is the section of Heathen Group that deals with engineering.
-
-Heathen Engineering creates, maintains and supports all of Heathen Groups technology assets and provides for consulting and development services to our clients.
+Heathen as a group is one team with many ambitions, these sections help us keep it all organized and on task!
 
 ### Hel House
 
 ![](<.gitbook/assets/Hel House Banner White.png>)
 
-Hel House is the section of Heathen Group that deals with publishing and marketing.
+Hel House is the section that deals with Managed Services, that is contracting and consulting services for our clients, managing our partners and functioning as our internal publishing group.
 
-Hel House manages all of our digital store fronts, web sites, social networks, partnerships and provides for publishing services to our clients.
+Hel House manages all of our digital store fronts, web sites, social networks, partnerships and provides managed services to our clients as well.
+
+### Heathen Engineering
+
+![](<.gitbook/assets/Heathen Engineering Banner White.png>)
+
+Heathen Engineering is the section that deals with engineering. Heathen Engineering creates, maintains and supports all of Heathen Groups technology assets and provides for the support and maintenance of those resources.
 
 ### Freki Games
 

@@ -7,7 +7,7 @@ description: Understanding Heathen documentation formatting.
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -119,7 +119,7 @@ This is simply the formal name of the object in question, the full "signature" o
 
 ### Inheritance & Interfaces
 
-Where applicable we will also outline what this object inherits from, this helps you understand how you can use it in the context of Unity and other objects. For example all Unity Components must inherit from `MonoBehaviour` or from a class that its self is derived from `MonoBehaviour`. similarly many tools operate not on a specific class but on an Interface such as [IUserProfile ](../../assets/steamworks/ugui-tools/interfaces/iuserprofile.md)in the [uGUI Tools for Steam](../../assets/steamworks/ugui-tools/), this means any object that implements (inherits) [IUserProfile ](../../assets/steamworks/ugui-tools/interfaces/iuserprofile.md)can be used with it.
+Where applicable we will also outline what this object inherits from, this helps you understand how you can use it in the context of Unity and other objects. For example all Unity Components must inherit from `MonoBehaviour` or from a class that its self is derived from `MonoBehaviour`. similarly many tools operate not on a specific class but on an Interface such as [IUserProfile ](../steamworks/ugui-tools/interfaces/iuserprofile.md)in the [uGUI Tools for Steam](../steamworks/ugui-tools/), this means any object that implements (inherits) [IUserProfile ](../steamworks/ugui-tools/interfaces/iuserprofile.md)can be used with it.
 
 {% hint style="info" %}
 Inheritance and Interface implementation is concept of C# and a matter of general programming, if these concepts are new to you please consult the following articles.\
