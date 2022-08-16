@@ -2,7 +2,7 @@
 description: Heathen what?
 ---
 
-# 🤷 Who Dis ?
+# 🤷 What is Heathen
 
 ![](<../.gitbook/assets/Heathen Engineering\_Full (1).png>)
 

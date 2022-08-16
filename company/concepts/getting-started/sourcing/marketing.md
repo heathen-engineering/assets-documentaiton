@@ -14,11 +14,9 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction
 
-Before we get stuck in lets make it very clear.
-
 If you are even a slightly serious about making a living at ... well anything, as a small company then your really should select a marketing partner and doing so sooner is much better than later. This can be accomplished on an indie friendly budget believe it or not, but it will require a budget.
 
-Odds are you have little or no knowledge when it comes to marketing, or even if you do, you have little or no time you can allocate to it properly. A marketing partner can help here, either by acting as your fully outsourced marketing department or simply as experienced staff that can work at scale where you cannot.... any everything in between.
+Odds are you have little or no knowledge when it comes to marketing, or even if you do, you have little or no time you can allocate to it properly. A marketing partner can help here, either by acting as your fully outsourced marketing department or simply as experienced staff that can work at scale where you cannot.... and everything in between.
 
 ## What to expect
 
@@ -37,20 +35,20 @@ In our experience this typically costs between €3,000 and €7,000 and results
 1. Market Research\
    Perhaps the most valuable thing to get a hold of an as early in the development process as you can while still being far enough along to inform your partner of what it is exactly you plan to build. This paints a picture for you of who your typical customers are going to be, what they like, what they respond to and what they don't. This can really help you in the later phases of design and development and yes of course is key to all marketing efforts.
 2. Positioning Plan\
-   A plan or strategy more likely to position your product in the target market. This is a plan for establishing soon to be fan base. It can help understand the customer's needs, product price points, quality demands as well as competitors or cooperation opportunities.
+   A strategy or approach to position your product in the target market in such a way as to maximize your chances of obtaining your goals. It can help you understand the customer's needs, product price points, quality demands as well as competitors or cooperation opportunities. These factors will likely impact aspects of your release and post release plans.
 3. Campaign Plan\
-   This is more about execution and would layout goals and objectives, ways of measuring performance as your execution works on them and can help you work out your project budget with regards to your marketing efforts. Here is where you will dial in what and how much you will do marketing wise and what you might expect from it.
+   This is more about execution and would layout goals, objectives and ways of measuring performance. This can help you work out your project budget with regards to your marketing efforts. Here is where you will dial in what and how much you will do marketing wise and what you might expect from it.
 
 ### Campaigns
 
-If this term is new to you, a campaign is simply marketing effort and typically involves the creation of marketing materials sometimes called "collateral", the execution of ads of course and often the engagement of influencers, interviews and or other media (videos, news articles, etc.) depending on the specifics of your strategy.
+If this term is new to you, a campaign is simply a marketing effort and typically involves the creation of marketing materials sometimes called "collateral", the execution of ads of course and often the engagement of influencers, interviews and or other media (videos, news articles, etc.) depending on the specifics of your strategy.
 
 {% hint style="danger" %}
-Amateur, one off, social media based marketing campaigns cost the same if not more yet basically never yield positive results.\
+One off, social media based marketing campaigns cost the same if not more yet basically never yield positive results.\
 \
 Why?\
 Just like visual scripting doesn't make programming easier it just removes the need to type words.\
-DIY marketing tools don't make the professional requirements of sound marketing strategy more layman obtainable it just reduces the technical barriers.
+DIY marketing tools don't make the professional requirements of a sound marketing strategy more layman obtainable it just reduces the technical barriers of distributing content.
 
 \
 The same goes for fire and forget marketing partners, you don't need help running a Twitter ad, you need a professional partner to help devise a valid strategy and execute on it.

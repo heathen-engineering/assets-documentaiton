@@ -2,7 +2,7 @@
 description: What the hell is Hel House
 ---
 
-# 🔎 Who Dis ?
+# 🔎 What is Hel House
 
 ![](<../.gitbook/assets/Hel House Outlines.png>)
 
