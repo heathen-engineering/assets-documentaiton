@@ -17,8 +17,14 @@ accessed from within the SteamSettings this houses server specific features and 
 ```csharp
 public class SteamSettings : ScriptableObject
 {
-    public class GameClient;
+    public class GameServer;
 }
+```
+
+A static accessor is available that will access the active server object
+
+```csharp
+SteamSettings.Server
 ```
 
 ### Fields and Attributes
