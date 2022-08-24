@@ -4,11 +4,15 @@ description: Get player feedback with rich game data to help improve your game.
 
 # Logging & Feedback
 
-## Introduction
+{% hint style="success" %}
+#### Like what your seeing?
 
-{% hint style="info" %}
-Available in UX [Complete](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)
+Consider supporting us as a [GitHub Sponsor](../../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
+
+## Introduction
 
 User eXperience kit helps you gather rich game data in a well formatted log, and then feed that data from within your game tools such as Trello, Zendesk, Unity's User Reporting, etc. and to help you capture and save screenshots for the full screen or sections of the screen.
 
@@ -18,7 +22,7 @@ User eXperience kit helps you gather rich game data in a well formatted log, and
 
 ### [Advanced Log](../../api/log.md)
 
-A log system which stores all Debug.Log messages with optional stack trace information, and additional system information generated at run time. The log can be reported as a simple text log or serialized to a JSON object for easier programatic processing.
+A log system which stores all Debug.Log messages with optional stack trace information, and additional system information generated at run time. The log can be reported as a simple text log or serialized to a JSON object for easier programmatic processing.
 
 ### [Trello Integration](../../api/trello.md)
 
@@ -28,7 +32,7 @@ It is possible release with Trello integration but not advised as you risk expos
 
 ### Unity User Reporting
 
-Did you know Unity cloud services includes a flexable and easy to use User Reporting service? This service is well suited to gathering end user feedback and bug reports and can be easyily integrated with the Advanced Log and Screenshot interfaces.
+Did you know Unity cloud services includes a flexible and easy to use User Reporting service? This service is well suited to gathering end user feedback and bug reports and can be easyily integrated with the Advanced Log and Screenshot interfaces.
 
 {% embed url="https://unitytech.github.io/clouddiagnostics/userreporting/UnityCloudDiagnosticsUserReports.html" %}
 

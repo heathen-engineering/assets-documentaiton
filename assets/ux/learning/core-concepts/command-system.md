@@ -6,19 +6,23 @@ description: >-
 
 # Command System
 
-## Introduction
+{% hint style="success" %}
+#### Like what your seeing?
 
-{% hint style="info" %}
-Available in UX [Complete ](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)and [Foundation](https://assetstore.unity.com/packages/tools/utilities/ux-v2-foundation-202671)
+Consider supporting us as a [GitHub Sponsor](../../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
 
-The Command System works with System Core's [GameEvents ](../../../system-core/game-events.md)to enable an easy to use and flexable command system for your next project. Commands can be parsed from string input and used to invoke game events on demand with or without arguments. This can be used for simply player commands such as emotes, chat wisper, help commands, etc. or used to drive more complex systms such as macros and end user scripting.
+## Introduction
+
+The Command System works with System Core's [GameEvents ](../../../system-core/game-events.md)to enable an easy to use and flexible command system for your next project. Commands can be parsed from string input and used to invoke game events on demand with or without arguments. This can be used for simply player commands such as emotes, chat whisper, help commands, etc. or used to drive more complex systems such as macros and end user scripting.
 
 ### How does it work?
 
-Create your commands as [GameEvents ](../../../system-core/game-events.md)in your asset database, the name of the event will be used as its command text. You can use String Game Event to pass the arguments of a command along with it or you can use the Command Director to parse arguuments ahead of time and use more complex or even custom Game Events with detailed paramiters.
+Create your commands as [GameEvents ](../../../system-core/game-events.md)in your asset database, the name of the event will be used as its command text. You can use String Game Event to pass the arguments of a command along with it or you can use the Command Director to parse arguments ahead of time and use more complex or even custom Game Events with detailed parameters.
 
-Once you have your [GameEvents ](../../../system-core/game-events.md)defined you link them to a Command Library this represents the set of commands the system will listen for and defines how the commands will be identified. The Command Library can be used to parse through any text searching for matching commands and optonally invoke any command found. You can also use tools such as the Command Director to pass command data into your own systems where you can perform additional logic such as parsing arguments for more complex commands.
+Once you have your [GameEvents ](../../../system-core/game-events.md)defined you link them to a Command Library this represents the set of commands the system will listen for and defines how the commands will be identified. The Command Library can be used to parse through any text searching for matching commands and optionally invoke any command found. You can also use tools such as the Command Director to pass command data into your own systems where you can perform additional logic such as parsing arguments for more complex commands.
 
 ## Configuration
 
@@ -26,7 +30,7 @@ Step 1 is always to define your commands. A command is simply a [GameEvent](../.
 
 Once you have defined your commands your next step is to reference them in your Command Library. A command library is Scriptable Object that lists all the valid commands and how they should be parsed. You can create a new Command Library in your asset folders by right clicking and selecting **Create > UX > Commands > Library.**
 
-With your library populated your ready to use the system as is, additional tools such as the Command Director are discribed below.
+With your library populated your ready to use the system as is, additional tools such as the Command Director are described below.
 
 ## Command Library
 
@@ -38,13 +42,13 @@ You can create a new Command Library by right clicking in your asset folder and 
 
 Command Library's fields are&#x20;
 
-### Use Case Sinsative Command Names
+### Use Case Sensitive Command Names
 
-As the name sugests if this is true the system will require the case of the input string to match the name of the GameEvents used as commands.
+As the name suggests if this is true the system will require the case of the input string to match the name of the GameEvents used as commands.
 
 ### Command Start String
 
-This is the string that is tested for at the start of input to determin if a command follows. It must be the start of the input string or the input will be ignored e.g.
+This is the string that is tested for at the start of input to determine if a command follows. It must be the start of the input string or the input will be ignored e.g.
 
 ```
 "echo this is my message"
@@ -78,7 +82,7 @@ Command names **can** contain spaces e.g. a GameEvent named "My Command" is a va
 
 ### Developer Commands
 
-A list of [GameEvents ](../../../system-core/game-events.md)representing privledged commands.&#x20;
+A list of [GameEvents ](../../../system-core/game-events.md)representing privileged commands.&#x20;
 
 {% hint style="info" %}
 Note this is not a security features its more akin to splitting out the commands you might use in a developer console such as seen in Skyrim or similar vs commands that work everywhere or in common places such as in a MMO's chat box.
@@ -94,7 +98,7 @@ A list of [GameEvents](../../../system-core/game-events.md) representing regular
 
 This object is simple helper tool that can help you direct input text to the Command Parser and raise an event containing the results of the parse. The main feature of this object is the **Evt Command Found** event this will be invoked with each successful parse and contains details about the command and arguments found, useful for more complex command uses where you need to apply your own logic before the command is invoked.
 
-A typical use case is to use the OnEndEdit of a stanadrad InputField and connect it to the Command Director's `ParseInput` function.&#x20;
+A typical use case is to use the OnEndEdit of a standard InputField and connect it to the Command Director's `ParseInput` function.&#x20;
 
 The fields of the director include
 
@@ -112,13 +116,13 @@ This is an event which is raised when a valid command is parsed
 
 ## Command Data
 
-Command data is the object sent when the Command Directory raises its Evt Command Found. Put more simply its the type of data sent in the paramiter of that event.&#x20;
+Command data is the object sent when the Command Directory raises its Evt Command Found. Put more simply its the type of data sent in the parameter of that event.&#x20;
 
 Command Data has the following fields
 
 ### Is Valid
 
-Indicattes rather or not the command is a valid command
+Indicates rather or not the command is a valid command
 
 ### Command
 
@@ -126,7 +130,7 @@ A reference to the GameEvent the command matched with
 
 ### Arguments
 
-The string following the command text e.g. its arguments. Its up to you to parse this if you want to extract more specific information such as converting it to numbers, spliting multiple paramiters out, etc.
+The string following the command text e.g. its arguments. Its up to you to parse this if you want to extract more specific information such as converting it to numbers, splitting multiple parameters out, etc.
 
 ### Source Text
 
@@ -136,7 +140,7 @@ The string that was parsed to find this information
 
 ### Nested Commands
 
-You can enable nested commands by handling the results of the Command Director and calling it again on the argument string. Depending on your needs you may want to parse the arguments manually e.g. search for occuraces of where a space is followed by the command start string e.g. something similar to
+You can enable nested commands by handling the results of the Command Director and calling it again on the argument string. Depending on your needs you may want to parse the arguments manually e.g. search for occurrences of where a space is followed by the command start string e.g. something similar to
 
 ```csharp
 var commandList = input.Split(", ");
@@ -148,7 +152,7 @@ var commandList = input.Split(", ");
 /macro /targetPet, /e pet
 ```
 
-This sugests a macro system that is able to take as input multiple commands. You can imagin this might let a user create a button that lets the target there own pet and then perform the pet emote. Macro systems typically work by giving the users a set of modular commands such as targeting commands, emotes, etc that they can string together to perfrom more complex actions. In this case macro is a command your system is using to understand that the arguments is such a set of modular commands which are them selves commands the Command Directory can parse for ... once you split them apart as desired.
+This suggests a macro system that is able to take as input multiple commands. You can imagine this might let a user create a button that lets the target there own pet and then perform the pet emote. Macro systems typically work by giving the users a set of modular commands such as targeting commands, emotes, etc that they can string together to perform more complex actions. In this case macro is a command your system is using to understand that the arguments is such a set of modular commands which are them selves commands the Command Directory can parse for ... once you split them apart as desired.
 
 ## Code Examples
 
@@ -195,7 +199,7 @@ The TryCallCommand feature is "smart" that is if it finds a command it will chec
 * BoolGameEvent\
   This will attempt to parse the arguments to a bool
 * DoubleGameEvent\
-  This will attempt to parse the argumetns to a double
+  This will attempt to parse the arguments to a double
 
 Finally you can use the ParseCommand option available on both the Command Library and on the Command Director ... or optionally directly from the CommandData object as a constructor.
 

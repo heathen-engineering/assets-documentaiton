@@ -135,7 +135,7 @@ For example
 
 When you first try to add a package using Unity Package Manager from a private or secured repository you should get a popup that look like this
 
-![](<../../../.gitbook/assets/image (5).png>)
+![](<../../../.gitbook/assets/image (5) (2).png>)
 
 It may not have taken focus so look behind other windows. When you find it click the "Sign in with your browser" button ... that will open your default browser, ask you to login or if your already logged in it will show a blank page and that's it. You will now need to restart Unity and try again.
 

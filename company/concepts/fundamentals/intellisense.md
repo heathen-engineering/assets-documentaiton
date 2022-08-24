@@ -200,7 +200,7 @@ Lets say you where told that you can find a list of your Achievements on the Ste
 
 Start typing, we know its in SteamSettings so lets start there.
 
-![](<../../../.gitbook/assets/image (151).png>)
+![](<../../../.gitbook/assets/image (151) (2).png>)
 
 And the moment we press the `.` as you do in C# to access the properties of an object we are presented with a list of all the members of this object. This list is also smart, so it will take into account the context you are in and what you have recently used and high light that first. I can keep typing if I need to and it will start filtering that list based on the letters I am typing.
 

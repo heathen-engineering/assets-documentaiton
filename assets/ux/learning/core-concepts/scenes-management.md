@@ -6,11 +6,15 @@ description: >-
 
 # Scene Tools
 
-## Introduction
+{% hint style="success" %}
+#### Like what your seeing?
 
-{% hint style="info" %}
-Available in UX [Complete](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)
+Consider supporting us as a [GitHub Sponsor](../../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
+
+## Introduction
 
 The Scenes object helps you manage multi-scene, additive scene game architecture patterns. Multi-scene and additive scene paradigms can significantly improve performance and give you the developer a lot more flexibility in terms of design and architecture decisions; that is it allows you to group your scenes with respect to your games use as opposed to a single scene system where each scene exists on its own in isolation, and as a result must be a large monolithic structure which is slow to load and cumbersome to manage.
 
@@ -18,7 +22,7 @@ The Scenes object helps you manage multi-scene, additive scene game architecture
 
 ### Why Though?
 
-#### Efficency
+#### Efficiency
 
 * More, and smaller scenes are faster to load, easier to unload and offer more granularity in control of what you have loaded, and when. \
   Compared to having a few large scenes which take longer to load and have to be loaded in the entirety before use.\

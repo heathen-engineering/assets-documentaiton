@@ -4,16 +4,20 @@ description: Easily manage in game windows, panels and dialogs.
 
 # Window System
 
-## Introduction
+{% hint style="success" %}
+#### Like what your seeing?
 
-{% hint style="info" %}
-Available in UX [Complete](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)
+Consider supporting us as a [GitHub Sponsor](../../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
+
+## Introduction
 
 The Window system makes it easy to define drag-able, re-sizable and dock-able windows in your game. The simple system can be attached to any Rect Transform and supports all canvas modes and all anchoring types. Window groups can be defined easily by simply parenting them in there own Rect Transforms where windows focus (move to top) and clamp (remain in frame) according to there parent.
 
 {% hint style="info" %}
-Check out the following articles for more details on specific componenets
+Check out the following articles for more details on specific components
 
 [Window](../../components/window.md)
 
@@ -50,7 +54,7 @@ Works great with the [Cursor Tools](cursor-tools.md) Button Cursor State
 
 ![](<../../../../.gitbook/assets/image (86).png>)
 
-Similar to the Move Handle, the Border Handle is intended to be added to a child object of your window, the RectTransform of which will be the clickable area that when click allows the user to drag to resize the window. Border Handles need to be told what part of the border they are on as this effects the drag to resize behavior.
+Similar to the Move Handle, the Border Handle is intended to be added to a child object of your window, the RectTransform of which will be the clickable area that when click allows the user to drag to resize the window. Border Handles need to be told what part of the border they are on as this effects the drag to resize behaviour.
 
 #### Handle Types
 

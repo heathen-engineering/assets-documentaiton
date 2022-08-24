@@ -4,11 +4,15 @@ description: Tools to help your game be more responsive
 
 # Interaction Tools
 
-## Introduction
+{% hint style="success" %}
+#### Like what your seeing?
 
-{% hint style="info" %}
-Available in UX [Complete](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)
+Consider supporting us as a [GitHub Sponsor](../../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
+
+## Introduction
 
 Interaction Tools is a collection of simple behaviors that help you deliver a more responsive user experience quickly, easily and with a high degree of quality.
 

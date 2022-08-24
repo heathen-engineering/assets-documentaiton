@@ -6,11 +6,15 @@ description: >-
 
 # Tooltip System
 
-## Introduction
+{% hint style="success" %}
+#### Like what your seeing?
 
-{% hint style="info" %}
-Available in UX [Complete](https://assetstore.unity.com/packages/tools/utilities/ux-v2-complete-201905)
+Consider supporting us as a [GitHub Sponsor](../../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
+
+## Introduction
 
 The UX Tooltip tools are a simple and flexible approach to driving tooltips in your game. In the simplest form the tool can be thought of as a simple trigger that responds to mouse over event and provides basic feedback to use as a developer, e.g. an event you can listen on an the ability to control delays and similar.
 
@@ -47,7 +51,7 @@ This trigger invoked Unity Events when the trigger states are changed
 This component can be used to persist a tooltip open while the user is interacting with it, regardless of the trigger state. Its a simple helper to the system that opens up a number of possibilities including composite tooltips.
 
 {% hint style="info" %}
-A composit tooltip is the idea that a tooltip is a window of its own that may have information within it that has additional tooltips.
+A composite tooltip is the idea that a tooltip is a window of its own that may have information within it that has additional tooltips.
 
 An example of this can be seen in the demo scene provided with the asset.
 {% endhint %}
@@ -56,9 +60,9 @@ An example of this can be seen in the demo scene provided with the asset.
 
 This is a method on the Window Controller that should be called when the window should open. e.g. it should be called by the Tooltip trigger's Invoked event.
 
-#### Trigger Canceled
+#### Trigger Cancelled
 
-This is a method on the Window Controller that should be called when the window's host trigger has canceled. It will not close the window if the user's pointer is over the window, but does notify the window that the trigger has now entered the canceled state so should close when the user is no longer interacting with it.
+This is a method on the Window Controller that should be called when the window's host trigger has cancelled. It will not close the window if the user's pointer is over the window, but does notify the window that the trigger has now entered the cancelled state so should close when the user is no longer interacting with it.
 
 ## Configuration
 
@@ -72,7 +76,7 @@ This indicates how many seconds the pointer should be over the trigger before th
 
 ### Use Cancel Timer
 
-If true then the `Cancel Delay` time will be used to calculate the canceling of the tooltip. That is when the time in seconds specified in the `Cancel Delay` field has past after the tip has been activated then the cancel events will be invoked and the `IsActive` field will be set to false.
+If true then the `Cancel Delay` time will be used to calculate the cancelling of the tooltip. That is when the time in seconds specified in the `Cancel Delay` field has past after the tip has been activated then the cancel events will be invoked and the `IsActive` field will be set to false.
 
 {% hint style="info" %}
 In the example above the trigger delay is 2 seconds
@@ -82,7 +86,7 @@ The Cancel delay is 5 seconds and the Use Cancel Timer is true
 The result is that the tip will be shown when the user has hovered over the trigger for 2 seconds. It will remain open for up to 5 seconds as long as the user hovers over the trigger. It will close anytime the user moves off the trigger.
 {% endhint %}
 
-### Invoked and Canceled Events
+### Invoked and Cancelled Events
 
 {% hint style="warning" %}
 Not applicable to the **Tooltip Game Object Trigger**
@@ -91,7 +95,7 @@ Not applicable to the **Tooltip Game Object Trigger**
 The invoked event will be invoked when the tip is activated. For the **Tooltip Game Event Trigger** this is a [System Core Game Event](../../../system-core/game-events.md) where the **Tooltip Unity Event Trigger** uses standard Unity Events.
 
 {% hint style="info" %}
-If your using the Window Controller feature you should use either the Tooltip Game Event Trigger or the Tooltip Unity Event Trigger and you should set the events to invoke the Window Controller's Trigger Invoked and Trigger Canceled methods
+If your using the Window Controller feature you should use either the Tooltip Game Event Trigger or the Tooltip Unity Event Trigger and you should set the events to invoke the Window Controller's Trigger Invoked and Trigger Cancelled methods
 {% endhint %}
 
 ## Examples
@@ -99,7 +103,7 @@ If your using the Window Controller feature you should use either the Tooltip Ga
 The tooltip system can in nearly all cases be used with zero code. The following examples describe how to configure various tool tip types in the Unity Editor.
 
 {% hint style="info" %}
-In all cases the tooltip system is handling when to invoke or cancel a tip. The content of the tooltip its self is completely up to you as a developer. Unity provides an array of tools capable of handling anything from 3D content to web based content to simple text. The UX Tooltip system is simply causing an action on the "Invoke" aka "Activation" of the time and the "Canceling" aka "Closing" of the tip.
+In all cases the tooltip system is handling when to invoke or cancel a tip. The content of the tooltip its self is completely up to you as a developer. Unity provides an array of tools capable of handling anything from 3D content to web based content to simple text. The UX Tooltip system is simply causing an action on the "Invoke" aka "Activation" of the time and the "Cancelling" aka "Closing" of the tip.
 {% endhint %}
 
 ### Simple On/Off Tip

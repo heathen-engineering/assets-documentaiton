@@ -16,6 +16,22 @@ Namespaces are a critically important concept that sadly is ignored by so many U
 There is never an occasion that you can forgo using a namespace
 {% endhint %}
 
+## ALWAYS USE A NAMESPACE
+
+{% hint style="danger" %}
+Without exception always define all of your code in a properly formed namespace
+{% endhint %}
+
+{% embed url="https://www.youtube.com/watch?v=LtQs5FzdQ2k" %}
+
+One major issue with learning to program through Unity, is that Unity is absolutely horrible with how it handles its coding style in particular around common conventions like namespace.
+
+{% embed url="https://learn.unity.com/tutorial/namespaces" %}
+
+Strangely Unity considers the use of namespaces as an "intermediate" concept, and only references it as import for code organization. However, this couldn't be further from the truth. Properly formed code is more than just about organizing your class objects, it helps reduce the risk of ambiguity which can result in bugs that don't through errors and can be incredibly difficult to track down even for a skilled engineer.
+
+This topic bares more attention than we will give it here, so just accept that **ALWAYS** using a namespace in **ALL** of your code is an absolute must.
+
 ### Why?
 
 The main need in the context of game development is disambiguation (to make something non-ambiguous).
