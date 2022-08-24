@@ -21,6 +21,12 @@ public class SteamSettings : ScriptableObject
 }
 ```
 
+A static accessor is available that will access the active client object
+
+```csharp
+SteamSettings.Client
+```
+
 ## Fields and Attributes
 
 {% hint style="info" %}

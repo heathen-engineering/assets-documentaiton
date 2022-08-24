@@ -182,3 +182,61 @@ No matter the structure you use, at some point the user will get to the stage of
 ### Gameplay
 
 This is a scene structure wholly unique to your game, the only relevant part here is that if your user exits the gameplay scenes they would be returning to the title.scene, not the bootstrap. Bootstrap is only ever loaded once at the start and never again.
+
+## How To
+
+The whole point of a bootstrap scene is that it validates the status of the environment before trying to load the game. Doing this in such a structured way as noted improves efficiency of your game greatly and allows for a much more graceful handling of any issues. Graceful handling is not just a matter of good user experience it also means you can report issues intelligently and thus it will be easier to handle them when they occur and they will occur.
+
+The typical approach is to create a "bootstrapper" script that will live in your "bootstrap" scene. This script will be responsible for validating whatever it is you need to validate and handling the results of that validation.&#x20;
+
+For a crude example:
+
+{% hint style="success" %}
+This example assumes you are using Steam and have some behaviour in your game called `ErrorController` and some static class or structure in your game called `GameSettings` the idea though should be clear no matter how you handle errors and settings.
+{% endhint %}
+
+{% hint style="warning" %}
+This is a crude example and should not be copy and paste into your production game. \
+This is meant to demonstrate the concept of validating an environment.
+{% endhint %}
+
+```csharp
+public class Bootstrapper : MonoBehaviour
+{
+  public ErrorController errorController;
+  public LoadingScreenController loadingScreen;
+
+  void Start()
+  {
+    GameSettings.MainCamera = Camera.Main;
+    GameSettings.ErrorController = errorController;
+    GameSettings.LoadingScreen = loadingScreen;
+    // ... whever ever else you have
+  }
+
+  void Update()
+  {
+    if(SteamSettings.HasInitalizationError)
+    {
+        errorController.ReportError("An error occured while initalizing Steam API, " 
+        + "this is a required system and so the game must close. "
+        + "If this persists please contact technical support."
+        + "\n\nError Message: "
+        + SteamSettings.InitalizationErrorMessage);
+        Application.Quit();
+    }
+    else if (SteamSettings.Initialized)
+    {
+        //All is well so load the title scene
+        StartCoroutine(LoadTitle());
+    }
+  }
+
+  IEnumerator LoadTitle()
+  {
+    //This should load the title scene async and update UI to reflect status
+    //This should handle any error in loading the title scene, 
+    //report it to the user if it happens and close the app nicely
+  }
+}
+```
