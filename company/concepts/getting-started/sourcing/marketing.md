@@ -20,15 +20,21 @@ Odds are you have little or no knowledge when it comes to marketing, or even if 
 
 ## What to expect
 
-Pricing will obviously very from place to place, project to project and month to month so any figures given here are simply to paint a picture of the costs involved.
+Heathen can be contracted to provide [Managed Services](../../../../services/solutions.md#managed-services), this means we can help you research, select and manage professional partnerships like Marketing firms. You can of course manage this on your own.
 
-### Marketing Strategy
+Pricing will obviously very from place to place, project to project and month to month so any figures given here are simply to paint a picture of the costs involved and what you might get for it.
+
+As with any partner engagement discovery and strategy are the first steps. Before you jump in though look for a partner who is willing to work with you throughout your journey. This is very important, shop around and don't be afraid to say "no thanks"
+
+### Discovery
+
+This is just that initial meeting and the result of filling out any of those "contact us forms" for any given consultant. The first contact your likely to be chatting with is a salesman first and foremost ... so keep that in mind. Firms that deal with partnerships like this want your business so they are likely to say "yes" a lot even though they probably don't fully understand the question or have the skills to deliver on it if they did.
+
+During this initial meeting you should be leading the conversation. Your objective is to "vet" the prospective partner, that means getting a feel for rather or not this company can even meet your needs. Next you need to understand if this partner can meet your budget and timeline, they will be resistant to answering this line of questioning understandably since they cant really "quote" work they haven't designed, let them know your looking for an understanding on the "order of magnitude" this will cost you in both time and money to make sure it suits your budget and project.
+
+### Strategy
 
 Engaging a professional marketing firm up front to help you define a sound marketing strategy is a no brainer and the single most important first step. Before you jump in though look for a partner who is willing to work with you throughout your journey. This is a bit like marriage ... in the 90s, you know a 3 to 5 year commitment 😂 take it seriously, shop around and don't be afraid to say "no thanks"
-
-{% hint style="info" %}
-You can of course change marketing partners mid project even mid campaign but there will be some cost for doing so in terms of lost efficiency. Shop around and when you do engage, engage in small, well defined marketing projects with clear measures of success and failure so you can decide to continue or change tact as required.
-{% endhint %}
 
 In our experience this typically costs between €3,000 and €7,000 and results in a few key bits of information delivered to you.
 

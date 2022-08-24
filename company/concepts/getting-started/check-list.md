@@ -40,46 +40,6 @@ If your going to be buying anything or making any money then you need an account
 
 As a game developer even before you have a game ready to publish you will be creating and using other peoples creations. Making sure your complying with any legal requirements and registering any IP, names, marks, etc. as is required by your local regulations is critical and often overlooked. This is usually something that you Registration and Administration and or Accounting partner may handle ... that is you can usually find a partner that is suitable to advise and guide on all three of these aspects.
 
-### Platform
-
-How will you distribute your product? This is something you should think about early as it will dictate many other aspects of your organization and likely have a significant impact on the design and implementation of any apps/games you create.&#x20;
-
-You will absolutely need to choose a trusted platform or multiple platforms. While it is technically possible to distribute your own games and apps, platforms do much more than just distribution. A key aspect of choosing a platform is the "Trust and Security" aspect. Why should a customer trust your app? How do they know its not malware? Simple, if its on a trusted platform its safe.&#x20;
-
-{% hint style="info" %}
-Examples Trusted Platforms, non-exhaustive (means their are other options)
-
-* PC, Mac, Linux
-  * Steam
-  * GOG
-  * Xbox (yes they have a PC tool ... Sony is working on similar)
-  * Epic Game Store
-* Consoles\
-  Each has its own official store
-* Android and iOS\
-  Each has its own official store
-{% endhint %}
-
-For "PC" games ... that is Windows, Mac and Linux games, the Steam platform is the largest and most dominant by a very long shot. If you plan to release a game on PC then you should plan to release that game on Steam. Steam API is a feature available freely to all Steam games and can add a lot of value to your game for your players. Heathen of course provides great tooling around [Steam API](../../../assets/steamworks/).
-
-Do be carful of the platforms you choose especially if your considering exclusivity.
-
-{% hint style="success" %}
-Our [biased opinion](../../../assets/steamworks/) is that you should treat Steam as your primary platform and then add additional platforms to your supported list as your bandwidth (skill and resource availability) allows.\
-\
-This recommendation applies to console games and "major" mobile games as well. PC is the most "native" platform to any bit of software and Steam is king on PC. Their is little to no reason to not release on Steam and in general your Steam release should be the easiest to accomplish.
-{% endhint %}
-
-{% embed url="https://www.youtube.com/watch?v=uxufgFFC_wU" %}
-Love him or hate him this is not his story. Epic Game Store tends to be a place of forgetting for game releases big and small that is true for indie and AAA. If you got Epic Game Store make sure its not your only platform.
-{% endembed %}
-
-Small studios can often land some much needed funding via exclusive deals however some platforms especially when your available exclusively on them can be harmful to your project and organization. In general PC gamers have an active hate of "exclusivity" to the point that some do track this behaviour and actively avoid developers and publishers that avail of it.
-
-{% embed url="https://store.steampowered.com/curator/34410309-Epic-Games-Sucks/" %}
-A curator that recommends against any game that formerly had Epic Store Exclusivity
-{% endembed %}
-
 ### Marketing
 
 Another commonly outsourced aspect of game development as a business especially for small studios and solo developers. Marketing requires time, expertise and scale to be effective. The marketing needs of small indies are quite unique to the needs of other businesses and even other forms of game development (mobile, AA and AAA). Be sure to consider the unique challenges of marketing and understand that developing your marketing strategy should generally happen before production of your game.
