@@ -34,9 +34,7 @@ Obviously if you try hard enough you can make anything problematic. These are si
 ### Examples
 
 * [Bundles](bundles.md)
-* [Chapters / Episodes](broken-reference)
 * [Expansions](expansions.md)
-* [Seasons](broken-reference)
 * [Subscriptions](subscription.md)
 
 ## :thinking: Risky

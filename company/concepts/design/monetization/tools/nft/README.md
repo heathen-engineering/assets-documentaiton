@@ -2,7 +2,7 @@
 description: Sadly abused in every way
 ---
 
-# 😡 Non-Fungible Tokens (NFTs)
+# 😡 NFT
 
 {% hint style="success" %}
 #### Like what your seeing?
@@ -32,7 +32,7 @@ Everyone loves to hate NFTs in games at the moment and its important to understa
 
 Non-Fungible Token ... dumb choice of wording to mean a serialized ID e.g. a unique ID.
 
-To understand in detail we need dedicated articles so look [here ](blockchain-and-nfts.md)for more. In short though its simply a unique identifiable record in a distributed database. It really amounts to not a lot more than a unique identifier associated with some transactions and maybe some metadata depending on the chain and implementation in question.
+To understand in detail we need dedicated articles so look [here ](blockchain.md)for more. In short though its simply a unique identifiable record in a distributed database. It really amounts to not a lot more than a unique identifier associated with some transactions and maybe some metadata depending on the chain and implementation in question.
 
 ## How are NFTs used
 
