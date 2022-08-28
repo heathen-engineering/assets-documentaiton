@@ -31,7 +31,7 @@ This sub-section is aimed at readers that just don't understand why some practic
 This section ... hopefully ... can be skipped by most people.
 {% endhint %}
 
-Predatory monetization practices have already been incredibly harmful to our industry. The number of regions around the world applying strict regulations around game content and in particular monetization practices. has rapidly expanded thanks largely to predatory loot boxes and variations of gambling mechanics such as [Gatcha mechanics](tools/gatcha-mechanics.md). Unfortunately these regulations are made by people with limited understanding of the industry and in reaction to the consumers … their constituents complaints e.g. reactive governance, this is obviously less than ideal.&#x20;
+Predatory monetization practices have already been incredibly harmful to our industry. The number of regions around the world applying strict regulations around game content and in particular monetization practices. has rapidly expanded thanks largely to predatory loot boxes and variations of gambling mechanics such as [Gatcha mechanics](predatory-practices/gatcha-mechanics.md). Unfortunately these regulations are made by people with limited understanding of the industry and in reaction to the consumers … their constituents complaints e.g. reactive governance, this is obviously less than ideal.&#x20;
 
 {% hint style="info" %}
 The calculation is quite simple;\

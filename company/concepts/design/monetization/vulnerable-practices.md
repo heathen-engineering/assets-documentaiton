@@ -7,7 +7,7 @@ description: When you want to look sus ... 🤔
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -49,3 +49,4 @@ Scholarly article
 {% embed url="https://doi.org/10.1016/j.jbusres.2021.11.055" %}
 Behind a pay wall
 {% endembed %}
+

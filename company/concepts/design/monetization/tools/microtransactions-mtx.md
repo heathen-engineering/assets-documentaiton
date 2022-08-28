@@ -16,7 +16,7 @@ MTX or Microtransactions also some times called a "Cash Shop" is one of the most
 
 ## What NOT to do
 
-### [Premium Currency](../tools/premium-currency.md)
+### [Premium Currency](../vulnerable-practices/premium-currency.md)
 
 This is where you have the player make a "real currency" (rc) purchase to acquire an in-game currency that can then be used in your game to acquire other items or for general use. This mechanism has its supporters and detractors alike.&#x20;
 

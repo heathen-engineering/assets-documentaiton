@@ -19,21 +19,21 @@ These are simply examples of real world games that are successful financially an
 The titles listed here are listed in no particular order and are simply a sample of main stream successful titles that are predatory.
 
 {% embed url="https://diabloimmortal.blizzard.com/en-us/" %}
-Obscured pricing, no spend cap, [premium currency](tools/premium-currency.md), [obfuscate loot boxes](tools/surprise-mechanics.md), [FOMO systems](tools/fear-of-missing-out-fomo.md)
+Obscured pricing, no spend cap, [premium currency](vulnerable-practices/premium-currency.md), [obfuscate loot boxes](predatory-practices/surprise-mechanics.md), [FOMO systems](predatory-practices/fear-of-missing-out-fomo.md)
 {% endembed %}
 
 {% embed url="https://genshin.hoyoverse.com/en/" %}
-No spend cap, [premium currency](tools/premium-currency.md), [loot boxes](tools/surprise-mechanics.md#introduction)
+No spend cap, [premium currency](vulnerable-practices/premium-currency.md), [loot boxes](predatory-practices/surprise-mechanics.md#introduction)
 {% endembed %}
 
 {% embed url="https://www.ea.com/games/apex-legends" %}
-No spend cap, [premium currency](tools/premium-currency.md), [loot boxes](tools/surprise-mechanics.md#introduction)
+No spend cap, [premium currency](vulnerable-practices/premium-currency.md), [loot boxes](predatory-practices/surprise-mechanics.md#introduction)
 {% endembed %}
 
 {% embed url="https://www.rockstargames.com/gta-online" %}
-No spend cap, [premium currency](tools/premium-currency.md), literal casino in game
+No spend cap, [premium currency](vulnerable-practices/premium-currency.md), literal casino in game
 {% endembed %}
 
 {% embed url="https://www.epicgames.com/fortnite/en-US/home" %}
-No spend cap, [premium currency](tools/premium-currency.md), [FOMO systems](tools/fear-of-missing-out-fomo.md)
+No spend cap, [premium currency](vulnerable-practices/premium-currency.md), [FOMO systems](predatory-practices/fear-of-missing-out-fomo.md)
 {% endembed %}
