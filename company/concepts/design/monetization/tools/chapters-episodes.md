@@ -1,4 +1,4 @@
-# Chapters / Episodes
+# 🤑 Chapters / Episodes
 
 {% hint style="success" %}
 #### Like what your seeing?

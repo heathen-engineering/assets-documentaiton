@@ -2,7 +2,7 @@
 description: A method of obscuring value
 ---
 
-# Surprise Mechanics
+# 😡 Surprise Mechanics
 
 {% hint style="success" %}
 #### Like what your seeing?

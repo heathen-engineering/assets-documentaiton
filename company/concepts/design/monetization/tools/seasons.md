@@ -1,4 +1,4 @@
-# Seasons
+# 🤑 Seasons
 
 {% hint style="success" %}
 #### Like what your seeing?

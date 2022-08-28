@@ -2,7 +2,7 @@
 description: Ya but why?
 ---
 
-# Premium Currency
+# 😡 Premium Currency
 
 {% hint style="success" %}
 #### Like what your seeing?
@@ -12,8 +12,10 @@ Consider supporting us as a [GitHub Sponsor](../../../become-a-sponsor.md) and g
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
 
-{% hint style="warning" %}
-Easily abused use with caution
+## Introduction
+
+{% hint style="danger" %}
+Predatory practice when used in monetization
 {% endhint %}
 
 Having the player purchase a premium currency that they can use in game is not in and of its self a predatory practice. Having said that it typically is used to obscure the price of things, force users to spend just a bit more than they need or give them an insignificant amount encouraging them to buy more.

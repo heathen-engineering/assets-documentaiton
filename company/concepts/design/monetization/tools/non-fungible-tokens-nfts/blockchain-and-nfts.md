@@ -2,7 +2,7 @@
 description: Interesting, so far useless for game ... but interesting.
 ---
 
-# Blockchain and NFTs
+# 😡 Blockchain and NFTs
 
 {% hint style="success" %}
 #### Like what your seeing?

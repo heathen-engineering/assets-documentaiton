@@ -2,7 +2,7 @@
 description: Sadly abused in every way
 ---
 
-# Non-Fungible Tokens (NFTs)
+# 😡 Non-Fungible Tokens (NFTs)
 
 {% hint style="success" %}
 #### Like what your seeing?
@@ -12,8 +12,10 @@ Consider supporting us as a [GitHub Sponsor](../../../../become-a-sponsor.md) an
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
 
-{% hint style="warning" %}
-Typically predatory (see [Play to Earn](../../models/play-to-earn.md)) use with caution
+## Introduction
+
+{% hint style="danger" %}
+Predatory in every known use case (see [Play to Earn](../../models/play-to-earn.md))&#x20;
 {% endhint %}
 
 {% embed url="https://www.youtube.com/watch?t=216s&v=GzTj60CWhQo" %}

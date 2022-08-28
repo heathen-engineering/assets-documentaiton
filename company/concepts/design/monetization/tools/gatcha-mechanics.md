@@ -2,7 +2,7 @@
 description: Destroying lives 1 game at a time
 ---
 
-# Gatcha Mechanics
+# 😡 Gatcha Mechanics
 
 {% hint style="success" %}
 #### Like what your seeing?

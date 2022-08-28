@@ -58,7 +58,7 @@ You will notice right away that this is "betting" and a feature of gambling. Thi
 While all of the examples above are based on blockchain technology, blockchain/NFT is not required to implement such a system. For example Steam's community marketplace has in the past been used by CS:GO, Team Fortress and many other games to enable the player base to "cash out". The notable difference here is that the "wealth" of these older games was generated in-game. The publisher only profits from this model when player's buy and sale through the Steam Community Marketplace.
 
 {% hint style="info" %}
-Learn more about NFTs in game in our [Non-Fungible Tokens](../vulnerable-practices/non-fungible-tokens-nfts/) article
+Learn more about NFTs in game in our [Non-Fungible Tokens](../tools/non-fungible-tokens-nfts/) article
 {% endhint %}
 
 In the more modern version players are typically required to "buy in" by purchasing "tokens" or "NFTs" in addition they must also cover a "gas price" as is the nature of blockchain transactions. This adds a number of middlemen to the process and insures players monetize as soon as possible.&#x20;

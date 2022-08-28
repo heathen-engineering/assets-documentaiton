@@ -2,7 +2,7 @@
 description: The backbone of early Steam
 ---
 
-# Bundles
+# 🤑 Bundles
 
 {% hint style="success" %}
 #### Like what your seeing?

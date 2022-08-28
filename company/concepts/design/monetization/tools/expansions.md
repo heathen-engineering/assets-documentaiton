@@ -1,4 +1,4 @@
-# Expansions
+# 🤑 Expansions
 
 {% hint style="success" %}
 #### Like what your seeing?

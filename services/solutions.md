@@ -52,7 +52,7 @@ We have significant experience reviewing, selecting and managing professional se
 
 No matter your needs or budget we feel we can bring real value to you and your project and enable you to Do More!
 
-### Sourcing
+#### Sourcing Solutions
 
 Sourcing partners and contractors to handle aspects of your business or project can be a great solution for many indie and small studios. This lets you keep your internal team focused on the aspects of your business and project that are really important to you and leave the rest to seasoned professionals that have a passion for those other areas.
 

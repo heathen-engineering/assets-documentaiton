@@ -2,7 +2,7 @@
 description: Using fear to drive your sales! 🤏🍆💩
 ---
 
-# Fear of Missing Out (FOMO)
+# 😡 Fear of Missing Out (FOMO)
 
 {% hint style="success" %}
 #### Like what your seeing?
