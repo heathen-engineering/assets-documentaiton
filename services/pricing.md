@@ -18,4 +18,4 @@ This depends on your needs, there are cases where your needs align with our deve
 
 On the far other end of that spectrum we also provide a full range of professional services. These are tailored to your needs and can include but are not limited to: exclusivity, IP ownership transfer, service level agreement, maintenance plans, training and on going support, managed services and much more.&#x20;
 
-In short there are many ways we can engage so we very likely have a solution that can meet your budgetary needs.
+In short there are many ways we can engage so we very likely have a solution that can meet your budgetary needs. Reach out over email or DM on Discord and lets see how we can help you Do More!
