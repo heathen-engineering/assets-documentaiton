@@ -16,7 +16,7 @@ MTX or Microtransactions also some times called a "Cash Shop" is one of the most
 
 ## What NOT to do
 
-### [Premium Currency](../vulnerable-practices/premium-currency.md)
+### [Premium Currency](premium-currency.md)
 
 This is where you have the player make a "real currency" (rc) purchase to acquire an in-game currency that can then be used in your game to acquire other items or for general use. This mechanism has its supporters and detractors alike.&#x20;
 
@@ -24,7 +24,7 @@ This is where you have the player make a "real currency" (rc) purchase to acquir
 {% tab title="Pros" %}
 * Tends to "batch" transactions \
   That is a user buys a lump sum of premium currency and uses that over time in many small transactions. This reduces transaction fees by reducing the number of transactions.\
-  You should be avoiding low cost purchases anyway ... 50c and 99c purchases are designed to manipulate the user into frequent "low friction" spending and runs afoul of the [No Spend Cap](no-spend-cap.md) concept.
+  You should be avoiding low cost purchases anyway ... 50c and 99c purchases are designed to manipulate the user into frequent "low friction" spending and runs afoul of the [No Spend Cap](../tools/no-spend-cap.md) concept.
 * Simplifies promotions\
   You can always "drop" as a promotion some premium currency and know that its of some use and value to every player. In contrast if you "drop" a specific item that the user already owns its of less value. \
   You can use a "dup currency" to solve for this.

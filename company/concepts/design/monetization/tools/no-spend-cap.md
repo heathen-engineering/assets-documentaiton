@@ -13,7 +13,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 {% endhint %}
 
 {% hint style="warning" %}
-Easily abused and hard to avoid given the limitations of [MTX ](microtransactions-mtx.md)store tools.
+Easily abused and hard to avoid given the limitations of [MTX ](../vulnerable-practices/microtransactions-mtx.md)store tools.
 {% endhint %}
 
 No Spend Cap, means a player can in some way spend an infinite (or just ludicrous) amount of money on your game. Typically this happens when your game has a "cash shop" where some or all items are "commodity" that is they are non-unique and have no (or no reasonable) bound or limit on how many a user can buy.
@@ -32,4 +32,4 @@ Want to turn this to a positive ... make sure your "Max Spend" is a fair and rea
 
 ## Cash Shops
 
-Many [Free 2 Play](../models/free-to-play.md) games depend on [MTX](microtransactions-mtx.md) to monetize. Most of the tools we use to create such shops have little to no tooling that would enable us to establish a spend cap and thus we cannot define a true "Max Spend". How you deal with the limitation of your chosen tools will depend on those tools and the nature of your game. You can reduce the negative impact of this be avoiding the sale of consumables and other commodities that the user may want a large amount of. If you only sale "DLC" style items ... that is items that a user can own 1 of, then you can define the max spend. If you need to sale consumables or recurring you'll need to find some way to limit the max number that can be purchased in any given period ... this is effectively a subscription or season even if you guise it as a bundle of consumables.
+Many [Free 2 Play](../models/free-to-play.md) games depend on [MTX](../vulnerable-practices/microtransactions-mtx.md) to monetize. Most of the tools we use to create such shops have little to no tooling that would enable us to establish a spend cap and thus we cannot define a true "Max Spend". How you deal with the limitation of your chosen tools will depend on those tools and the nature of your game. You can reduce the negative impact of this be avoiding the sale of consumables and other commodities that the user may want a large amount of. If you only sale "DLC" style items ... that is items that a user can own 1 of, then you can define the max spend. If you need to sale consumables or recurring you'll need to find some way to limit the max number that can be purchased in any given period ... this is effectively a subscription or season even if you guise it as a bundle of consumables.

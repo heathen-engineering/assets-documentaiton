@@ -12,6 +12,33 @@ Consider supporting us as a [GitHub Sponsor](../../../become-a-sponsor.md) and g
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
 
+## :money\_mouth: Top Pics
+
+Articles with the "money mouth" icon are our top pics for solid, fair, reliable monetization options. These are the methods, tools and practices we recommend you use to monetize your project. So how do we choose them?
+
+Each of these methods can meet the following conditions
+
+{% hint style="info" %}
+Obviously if you try hard enough you can make anything problematic. These are simply tools, practices and methods that are easier to do simple, open, clear and fairly than they are to compound, obscure, manipulate or exploit.
+{% endhint %}
+
+* Simple Product\
+  This means there is no gimmick, no trade in, exchange rate, collect X or match Y it is simply a product.
+* Open Description\
+  This means the user knows exactly in detail what it is they are considering before purchasing. Its not a random chance, its not a "surprise mechanic" it is a clearly labelled product which can be expected to do/be what it says on the tin.
+* Clear Pricing\
+  This means the user can clearly understand what the real cost is, in the real currency they use e.g. not obscured behind premium currency or other such obfuscation methods.
+* Has a Fair "[Max Spend](no-spend-cap.md#max-spend)" \
+  This means a user cannot spend more than X amount and that amount is easily seen and understood by the end user.
+
+### Examples
+
+* [Bundles](bundles.md)
+* [Chapters / Episodes](broken-reference)
+* [Expansions](expansions.md)
+* [Seasons](broken-reference)
+* [Subscriptions](subscription.md)
+
 ## :thinking: Risky
 
 Articles with the :thinking: "thinking" icon describe risky practices and tools. By risky we mean its possible to use them in a fair and reasoned way but they can also be abused to yield a predatory monetization scheme. Its important to understand that most predatory practices aren't (usually) predatory out of malice, its simply easier than you might think to be a problem so we try to help you think more effectively and hopefully avoid becoming part of the problem.
