@@ -215,32 +215,15 @@ In this case the accepting user is not yet in game and so the Steam client will 
 A crude example follows
 
 ```csharp
-// Return the ulong value of the lobby to join if any
-public static ulong GetSteamLobbyInvite()
+Lobby targetLobby = CommandLine.GetSteamLobbyInvite();
+if(targetLobby.IsValid)
 {
-    var args = Environment.GetCommandLineArgs();
-    ulong value = 0;
-    for (int i = 0; i < args.Length; i++)
+    //We should probably navigate to the proper place in game first
+    targetLobby.Join((result, error) =>
     {
-        if (args[i] == CommonCommands.SteamLobbyConnect 
-            && i + 1 < args.Length 
-            && ulong.TryParse(args[i + 1], out value))
-            return value;
-    }
-
-    return value;
-}
-```
-
-Then you can perform the following
-
-```csharp
-var targetLobby = GetSteamLobbyInvite();
-if(targetLobby > 0)
-{
-    //TODO: navigate to the Lobby UI in your game
-    //Join the lobby
-    API.Matchmaking.Client.JoinLobby(targetLobby);
+        if(!error)
+            Debug.Log("We have joined the lobby");
+    });
 }
 ```
 
