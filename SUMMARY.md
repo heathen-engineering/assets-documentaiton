@@ -25,7 +25,7 @@
     * [Package Manager Installs](company/concepts/fundamentals/package-manager-installs.md)
     * [Project Architecture](company/concepts/fundamentals/project-architecture.md)
     * [Unity Release Version](company/concepts/fundamentals/unity-release-version.md)
-  * [👑 Steam](company/concepts/steam/README.md)
+  * [🟦 Steam](company/concepts/steam/README.md)
     * [🗣 Community Hub](company/concepts/steam/steam-hub.md)
     * [🤯 Store Page](company/concepts/marketing/steam-store-page.md)
   * [📐 Design](company/concepts/design/README.md)
