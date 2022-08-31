@@ -26,7 +26,7 @@ So we want this dialog to always appear above all other forms of UI and to be a 
 
 The easiest way to insure this is always available and always on top is to create it in the Bootstrap Scene in its own canvas that is set to Screen and sorted to render above everything else.
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Modal
 

@@ -128,7 +128,7 @@ To Access the inspector simply open the **Window > Steamworks Inspector** menu.
 
 or
 
-![Click the button in Steam Settings](<../../../.gitbook/assets/image (5).png>)
+![Click the button in Steam Settings](<../../../.gitbook/assets/image (5) (3).png>)
 
 {% hint style="warning" %}
 #### IMPORTANT

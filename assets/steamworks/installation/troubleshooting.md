@@ -42,7 +42,7 @@ Script defines are used by Unity, Steamworks.NET and Heathen to know what is ins
 
 Heathen no longer uses global script defines but references all defines as part of the assembly definitions.
 
-![Note the "Version Defines" at the bottom of the inspector window](<../../../.gitbook/assets/image (171).png>)
+![Note the "Version Defines" at the bottom of the inspector window](<../../../.gitbook/assets/image (171) (2).png>)
 
 These defines exist only if the related assembly is present. If these defines are not present the code will not compile.
 
