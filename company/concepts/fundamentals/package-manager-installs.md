@@ -141,11 +141,11 @@ It may not have taken focus so look behind other windows. When you find it click
 
 If for some reason you do not get this popup then odds are you already have a GitHub credential stored on your machine. In Windows this is stored via the "Credential Manager" and it may be stored under a few different names
 
-![](<../../../.gitbook/assets/image (3) (1).png>)
+![](<../../../.gitbook/assets/image (3) (1) (2).png>)
 
 ![](<../../../.gitbook/assets/image (2) (2).png>)
 
-![](<../../../.gitbook/assets/image (4).png>)
+![](<../../../.gitbook/assets/image (4) (2).png>)
 
 The above images all show variations of the credential as used. You should be able to force the popup to show again by simply removing any GitHub related credentials already stored in Windows Credential Manager.
 

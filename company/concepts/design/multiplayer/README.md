@@ -92,7 +92,7 @@ This will cover the very high level "workflow" your player will experience in yo
 
 The diagram below shows a simple by typical workflow for a game. The two "green" blocks indicate the steps effected by networking, this should help you understand that networking is a relatively tiny part of a multiplayer game in terms of user experience ( UX ) features and systems.
 
-![Simplified multiplayer game loop](<../../../../.gitbook/assets/image (98).png>)
+![Simplified multiplayer game loop](<../../../../.gitbook/assets/image (98) (2).png>)
 
 ## Concepts
 

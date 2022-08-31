@@ -2,7 +2,7 @@
 description: Your first, last and best hope of getting a sale
 ---
 
-# 🤯 Steam Store Page
+# 🤯 Store Page
 
 {% hint style="success" %}
 #### Like what your seeing?
