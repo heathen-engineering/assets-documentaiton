@@ -61,6 +61,14 @@ Check out the links below&#x20;
 
 </details>
 
+{% embed url="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8572820/" %}
+Online Gambling Activity, Pay-to-Win Payments, Motivation to Gamble&#x20;
+{% endembed %}
+
+{% hint style="info" %}
+[Boston College Law Review, How Pay-to-Win Makes us Lose: Introducing Minors to Gambling Through Loot Boxes](https://lawdigitalcommons.bc.edu/cgi/viewcontent.cgi?article=3873\&context=bclr)
+{% endhint %}
+
 {% embed url="https://www.forbrukerradet.no/siste-nytt/loot-boxes-how-the-gaming-industry-manipulates-and-exploits-consumers/" %}
 New Article
 {% endembed %}
