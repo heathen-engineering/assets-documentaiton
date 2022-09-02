@@ -23,8 +23,6 @@ Heathen is strictly opposed to any form of predatory monetization.
 You will find wording and terminology here that calls out bad practices as the bad practices they are. This is meant to help inform you not offend you however we make no apologies for any offence either.
 {% endhint %}
 
-In the sub-articles of this section you will find a break down of all major monetization [models](models/), models define high level concepts around when and how you monetize your product such as [PayToPlay](models/pay-to-play.md), [FreeToPlay](models/free-to-play.md), etc. [Tools ](tools/)is the next area of research for you, these deal with specific mechanisms for monetization that can generally be used in any model for example [expansions](tools/expansions.md), [subscriptions](tools/subscription.md), [community marketplaces](vulnerable-practices/community-marketplace.md), etc.&#x20;
-
 ## Anti-Whaling
 
 {% hint style="success" %}

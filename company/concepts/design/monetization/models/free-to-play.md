@@ -18,29 +18,29 @@ If a game is "Free to Play" that doesn't mean the game is "Free" …&#x20;
 
 > boomer says nothing is free zoomer! 😎
 
-It means that the entry point, that is getting started with the game is free-ish e.g. its free to (start) playing. Rather this is done by capping progress, slowing progress, restricting access to content or some other system or limitation, there is always a limitation. Creating games costs money and thus playing them does to, this cannot be avoided.
+It means that the entry point, that is getting started with the game is free-ish. Rather this is done by capping progress, slowing progress, restricting access to content or some other system or limitation. Creating games costs money and thus playing them does to.
 
-Early players jumped into these F2P games thinking they where "[Free](free.md)" games. That is a game that puts zero cost on the consumer. [Free games](free.md) do exist and where becoming more popular at the time likely adding to the confusion.
+Early players jumped into these F2P games thinking they where "Free" games. That is a game that puts zero cost on the consumer. Free games do exist and where becoming more popular at the time likely adding to the confusion.
 
 {% hint style="info" %}
-[Free ](free.md)games still are not free, they simply don't monetize the gamer, they monetize the advertiser or some other external party or are them selves an advertisement for some non-free product or service.\
+Free games still are not free, they simply don't monetize the gamer, they monetize the advertiser or some other external party or are them selves an advertisement for some non-free product or service.\
 \
-Nothing is truly free
+Nothing is free
 {% endhint %}
 
-The main attraction to this model for most indie devs is that "zero barrier to entry" that is any player at any time can try your game out risk free. For an indie reducing that initial risk or "barrier to entry" is an attractive way to grow your player base. For multiplayer games this is even more critical since most multiplayer games are only as fun to paly as their active player base is large.
+The main attraction to this model for most indie devs is that "zero barrier to entry" that is any player at any time can try your game out risk free. For an indie reducing that initial risk or "barrier to entry" is an attractive way to grow your player base.
 
 ### Stigma
 
-F2P still has a stigma especially for games that introduce this model after go live. The general notion is that a F2P game is cheap, cash grab, predatory, etc.. A lot of good work has been done to show that F2P games can be legitimate, non-predatory quality experiences, they are however still the minority and the stigma still exists. This monetization model is a great option but you need to make sure your marketing is "on point" with your game and its monetization. Players will assume the worst.
+F2P still has a stigma especially for games that introduce this model after go live. The general notion is that a F2P game is cheap, cash grab, predatory, etc.. A lot of good work has been done to show that F2P games can be legitimate, non-predatory quality experiences, they are however still the minority and the stigma still exists.&#x20;
 
 ### Modern Issues
 
-F2P based games are the pioneers of predatory monetization practices and this stigma has become so associated that for mobile games its simply assumed. Many legacy developers and publishers such as Blizzard, NetEase and similar are taking steps to try and normalize the practice in PC and eventually console gaming. As a result F2P games that include [MTX ](../vulnerable-practices/microtransactions-mtx.md)monetization tools have a steep uphill battle in terms of user acceptance and good will.
+F2P based games are the pioneers of predatory monetization practices and this stigma has become so associated that for mobile games its simply assumed. Many legacy developers and publishers such as Blizzard, NetEase and similar are taking steps to try and normalize the practice in PC and eventually console gaming.
 
 ## Examples
 
-Tons but here are a few massively popular ones, we are not saying these are good or bad examples of monetization ... simply they are examples.
+Tons but here are a few massively popular ones
 
 ### Defence of the Ancients 2 (DOTA2)
 

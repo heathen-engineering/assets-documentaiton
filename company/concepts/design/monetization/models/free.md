@@ -46,7 +46,7 @@ Simply have ads in your game like a web page would. Its low effort, likely to an
 
 ## Companion Games
 
-Many believe that engagement is the key to a successful game. If you do then you want to find ways to get your gamers engaged and keep them engaged in your world. Companion games are a good way to do that. These are usually small light ... "casual" ... games set in your game world and perhaps even connected to your "main" game in some way.
+Many believe that engagement is the key to a successful game. If you do then you want to find ways to get your gamers engaged and keep them engaged in your world, your IP. Companion games are a good way to do that. These are usually small light ... "casual" ... games set in your game world and perhaps even connected to your "main" game in some way.
 
 Classically you do not monetize the companion game its self and you do make it playable without requiring the "main" game. This companion thus serves as really engaging advertisement for your main game and a means to keep your players engaged when they aren't playing your main game.
 

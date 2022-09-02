@@ -14,15 +14,11 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 The original form of monetization.
 
-Its hard to beat this one ... when it works. The idea is the user pays you money, you provide a product as agreed, user plays said product ... done.
+Its hard to beat this one, user pays you money, you provide a product as agreed, user players said product.
 
 Really this is the golden ideal for consumers, so why does everything else exist?
 
-Pay to play (P2P) simply means you have an up-front, one time defined price that people pay … in order to play your game.&#x20;
-
-### "Pay Once" is dead?
-
-P2P's main issue and reason it needs to leverage additional monetization tools is that its not sustainable as a "one time purchase". There are often arguments on this but the maths for most studios are such that just about any project just isn't viable for a 1 time price ... that's reasonable to ask anyway. In the past a game was a "fire and forget" affair now days even single player standalone games require community management, support, maintenance development and more. Add to that general inflation, that is the $40-$60 price tag was set in an era now long gone. This however doesn't mean that Pay To Play is dead, simply that you need to consider your operations budget and how your going to provide for it. Also you will have an operations cost, that is your game will cost you money to maintain post release, even if its single player and standalone.
+Pay to play (P2P) simply means you have an up-front, one time defined price that people pay … in order to play your game. P2P's main issue is that its not sustainable. There are often arguments on this but the maths for most studios are such that any project over a certain level of ambition just aren't viable for a 1 time price.
 
 ## The Factors
 
@@ -50,7 +46,7 @@ Every game that has a price tag at the register. Most games in the modern age ar
 {% hint style="warning" %}
 A few games attempt to stand on a soap box and say Pay 2 Play and nothing else ... most reverse that within a year or so noting that player exception of on going support and maintenance requires additional revenue.\
 \
-The days of releasing a game and being done with it have been dead and gone for decades at this point. Your game will incur maintenance costs post launch to some degree even as a single player standalone game. You will have on going maintenance costs, support costs, community management costs, etc.
+The days of releasing a game and being done with it have been dead and gone for decades at this point. Your game will incur maintenance costs post launch to some degree.
 {% endhint %}
 
 #### God of War

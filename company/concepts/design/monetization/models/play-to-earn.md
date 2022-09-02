@@ -12,22 +12,19 @@ Consider supporting us as a [GitHub Sponsor](../../../become-a-sponsor.md) and g
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
 
-This is an extremely problematic model. In Heathens professional opinion and should be avoided.
+This is an extremely problematic model. In Heathens professional opinion any non-gambling industry regulated game implementing this should be avoided.
 
-We will do our level best to explore the model and its methods in as objective of a way as possible.
+We will do our level best to explore the model and its methods in as objective of a way as possible keeping our opinions in a separate section if you are interested in them.
 
 ## Definition
 
 A "Play to Earn" (P2E) model is where the player invests some value into the game and by playing the game can earn or lose value.&#x20;
 
-{% hint style="warning" %}
+{% hint style="info" %}
 You will notice right away that this is "betting" and a feature of gambling. This concept is defined as gambling in many regions. It is important to check with your local regulatory boards before going any further.\
 \
 "player invests some value" = player places a bet or "antes up"\
-"playing the game can earn or lose" = win the pot or lose your wager\
-
-
-This model may also be defined as securities fraud depending on the laws and regulations in the user's region and your specific design, documentation and implementation.
+"playing the game can earn or lose" = win the pot or lose your wager
 {% endhint %}
 
 ## Examples
@@ -72,7 +69,7 @@ Play to Earn can be added on to other models. For example Eve On-line's "Pilot L
 When there is "wealth" that is "real value" in a system markets will appear to exploit it e.g. boosting, gold trading, skin market, etc.&#x20;
 
 \
-In Heathen's opinion you should be working hard to keep the "real value" of your game, items in your game and concepts around your game as close to zero as possible to protect the integrity and your control over your game. Factors of [Player Motivation](../../player-motivation.md) also come into play on this topic.
+In Heathen's opinion you should be working hard to keep the "real value" of your game, items in your game and concepts around your game as close to zero as possible to protect the integrity and your control over your game.
 {% endhint %}
 
 ## Effect on the Player
@@ -112,6 +109,8 @@ Assigning "real" value to aspects of or in your game has a number of negative ef
 
 When a hacker hacks a game like Axie Infinity they make $600 million or more and tank entire markets. Thus the attraction to and reward for hacking a little game like Axie is far greater and more valuable for the hacker than to bother with a more secure and larger entity such as Blizzard.&#x20;
 
+
+
 Second is the effect on the games life, assuming your not picked off by a scammer or hacker that tanks your economy: Please read the above section to understand.
 
 In short Play to Earn (P2E) creates a terminal loop. As the system scales it destabilizes, as people begin to leave as a result value begins to drop accelerating the exodus resulting in those that remain shouldering the burden of the lost wealth.&#x20;
@@ -140,13 +139,13 @@ Well maybe you came up with someway this isn't a closed echo-system pyramid sche
 
 Obvious reason 3
 
-Lets assume you live in the wild wild west and legal and regulatory issues are not a problem. Lets also assume your player base are all well balanced people with no control issues at all. Both impossible fictions but still.
+Lets assume you live in the wild wild west and legal and regulator issues are not a problem. Lets also assume your player base are all well balanced people with no control issues at all. Both impossible fictions but still.
 
-Assuming you are here to learn how to monetize a piece of creative entertainment work, allowing "real value" to creep into your game world is the fastest way to "kill the fun", learn a bit about [Player Motivation](../../player-motivation.md) to see why.
+Assuming you are here to learn how to monetize a piece of creative entertainment work, allowing "real value" to creep into your game world is the fastest way to "kill the fun".&#x20;
 
 Now of course gambling games can be said to be fun, that is a since of thrill seeking based on wagering and actually doesn't have as much to do with winning as some think.
 
-The type of fun we refer to in "pure" entertainment sources such as story telling, books, music, movies and video games is quite different. What was once a fun thing one \*wanted\* to do simply to do it ([Intrinsic](../../player-motivation.md#intrinsic)) ... is now a thing they must do to earn ([Extrinsic](../../player-motivation.md#extrinsic)). At best you made your game a job, for most you made your game a source of further depression and anxiety hence tight regulation around the similar Gambling industry.&#x20;
+The type of fun we refer to in "pure" entertainment sources such as story telling, books, music, movies and video games is quite different. What was once a fun thing one \*wanted\* to do simply to do it ... is now a thing they must do to earn. At best you made your game a job, for most those you made your game a source of further depression.&#x20;
 
 {% hint style="info" %}
 The idea of turning a "game" into "work" happens not just with "Play to Earn" but is also seen with games that reward for every action. When a player is "working" for the next reward they are not "playing" the game they are simply exploiting it as they would an employer for the next payoff.\
