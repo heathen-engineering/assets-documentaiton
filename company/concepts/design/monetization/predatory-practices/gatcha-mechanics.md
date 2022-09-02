@@ -25,7 +25,7 @@ Is gatcha gambling\
 \
 Yes\
 \
-The system depends on some investment, uses probability to determine reward. A gatcha mechanic is identical to a slot machine or similar pseudo-random gambling machine.
+The system depends on some investment, uses probability to determine reward. A gatcha mechanic is identical to a slot machine or similar pseudo-random gambling machine. Yes various regions have defined gatcha systems as gambling and regulate them as such.
 {% endhint %}
 
 In short its a slot machine. This comes in a few flavours described below … they are all horrible practices designed to prey on the consumer in basically the same way.&#x20;

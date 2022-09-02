@@ -12,8 +12,6 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 Hands down the best way to monetize your game. This concept calls for you to create additional and usually optional content for your game that the user can then purchase to expand the game for a fee. This model is simple, open, clear and fair and has a tremendous amount of flexibility for you and your consumers. This concept couples nicely with every monetization model and is one of the most consumer friendly concepts available.
 
-Most often thought of as DLCs or in the world of MMOs expansions the implementation of this most commonly a matter of DRM or Digital Rights Management wherein a user buys a DLC/Expansion unlocking access to some content. The content its self typically is already in the game thus preventing player base fragmentation and related issues.
-
 ## DLC
 
 Originally this meant "Downloadable Content" though in the modern world its very rare that anything needs to be "downloaded". In most modern examples the DLC is simply a license that unlocks additional content in the game that is already present. In this form DLC is the original and most literal example of "Expansion".
@@ -57,7 +55,7 @@ We feel this would encourage more new players to join the community and encourag
 This is very much the same model used by many MMOs where a single price tag gets you the base game and all old expansions and you can pay another chunk to get the latest expansion. Or even better the latest expansion always includes the previous. The objective is the same ... do not price players out with a massive "full buy in" insure that new and returning players can fully join your community for a reasonable price. This is also similar to the "Game of the Year" or "Ultimate" editions other games release where they often wrap all older expansions into the base game for a single fee.
 {% endhint %}
 
-## Expansion Bundles
+## Bundles
 
 Bundles are a tool that allow you to "bundle" up multiple expansions and or other items and apply a discount making it more attractive to purchase the bundle than each expansion / item independently.
 

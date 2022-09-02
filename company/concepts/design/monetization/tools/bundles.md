@@ -38,7 +38,7 @@ This is a bundle the user purchases typically before the contents are released a
 
 ### Content Bundles
 
-These can be displayed or called a number of things ... even loot boxes. What separates this from Surprise Mechanics (predatory loot boxes) is knowing exactly what is in side and it being available as a regular product e.g. not time limited or "FOMO" based product. Some classic examples of this would be the "Game of the Year" or "Battle Chest" bundles you often see, these GotY bundles usually include the base game and all its expansions in a single price.
+These can be displayed or called a number of things ... even loot boxes. What separates this from Surprise Mechanics (predatory loot boxes) is knowing exactly what is in side and it being available as a regular product e.g. not time limited or "FOMO" based product. Some classic examples of this would be the "Game of the Year" or "Battle Chest" bundles you often see, these GotY bundles usually include the base game and all its expansions in a single price. You may have also seen "Founders Packs" or "Premium Upgrade" bundles. In all cases these stable valued tools in monetization because they offer a one time purchase of clearly documented products at a clearly documented price.
 
 ### Game Bundles
 

@@ -9,10 +9,12 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 {% endhint %}
 
 {% hint style="warning" %}
-Easily abused and hard to avoid given the limitations of the tools available today.
+Easily abused and hard to avoid problems with given the limitations of the tools available today.
 {% endhint %}
 
-MTX or Microtransactions also some times called a "Cash Shop" is one of the most common methods to monetize a game. Originally associated with [Free 2 Play](../models/free-to-play.md) this practice has founds its way into virtually every monetization model you can think of. In and of its self MTX is just a store and thus neutral. What defines the impact your MTX will have on your company, game and players depends wholly on what you offer for sale and how you offer it for sale.
+MTX or Microtransactions also some times called a "Cash Shop" is one of the most common methods to monetize a game. Originally associated with [Free 2 Play](../models/free-to-play.md) this practice has found its way into virtually every monetization model you can think of. In and of its self MTX is just a store and thus neutral (neither positive or negative). What defines the impact your MTX will have on your company, game and players depends wholly on what you offer for sale and how you offer it for sale.
+
+The most important aspect for any MTX model should be insuring control over the "Max Spend"; that is limiting the maximum amount money a player can spend on your game in any given period to be a fair and transparent value. In most cases health "MTX" is more appropriately done as "Expansion" however some digital stores have limitations that channel subscription, DLC and most other after-purchase transactions through an MTX system.
 
 ## What NOT to do
 
@@ -46,3 +48,9 @@ This is where you have the player make a "real currency" (rc) purchase to acquir
 {% endtabs %}
 
 When its all said and done their is no benefit to Premium Currency that cannot be had more simply and more effectively without the problems Premium Currency brings with it.&#x20;
+
+### [Player Power / Skips](../models/pay-to-win.md)
+
+This is where your getting into [Pay to Win](../models/pay-to-win.md) territory and this will have an adverse impact on [Player Motivations](../../player-motivation.md). Marketing teams can be great but keep them on a short leash when it comes to your Cash Shop. A Cash Shop it much more a game design factor than it is a marketing tool, how your implement your cash shop and the impact it has your players will have a big impact how your players experience your game.
+
+> Yes skips are player power, in short money, time and power are all directly equitable, saving a player time increases their power potential, yes they will spend money for that, no it is not good for your game.
