@@ -44,6 +44,14 @@ Where you go after step 1 depends on the specifics of your concept but is genera
 
 You can find a lot templates and guides on creating a pitch document or presentation online but the following subsections describe the nuts of bolts of what should be included.
 
+{% hint style="info" %}
+I found this some time ago and it really helps me think about a well rounded pitch document.
+
+[https://www.graybeardgames.com/download/diablo\_pitch.pdf](https://www.graybeardgames.com/download/diablo\_pitch.pdf)
+
+Regardless of its authenticity it is a simple, well formed pitch and a solid jumping off point.
+{% endhint %}
+
 ### Introduction
 
 Here you spend no more than 2 short paragraphs hooking your audience, and if you do hook them it will nearly always be in the first 2 to 3 lines. The work you did in step 1 is a fine place to start with  this. If you are going to pitch this to others spend some extra time refining your "Why" answer to really give a good reason why someone else should give a :poop: about your idea.
