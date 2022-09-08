@@ -316,7 +316,7 @@
       * [FriendIdLabel](assets/steamworks/ugui-tools/ui-components/friendidlabel.md)
       * [FriendList](assets/steamworks/ugui-tools/ui-components/friendlist.md)
       * [FriendName](assets/steamworks/ugui-tools/ui-components/friendname.md)
-      * [FriendProfile](assets/steamworks/ugui-tools/ui-components/friendprofile/README.md)
+      * [FriendProfile](assets/steamworks/ugui-tools/ui-components/friendprofile.md)
         * [ImageField](assets/steamworks/ugui-tools/ui-components/friendprofile/imagefield.md)
         * [MessageOptions](assets/steamworks/ugui-tools/ui-components/friendprofile/messageoptions.md)
         * [TextField](assets/steamworks/ugui-tools/ui-components/friendprofile/textfield.md)
