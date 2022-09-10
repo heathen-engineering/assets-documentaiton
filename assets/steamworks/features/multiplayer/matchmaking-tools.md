@@ -227,6 +227,18 @@ if(targetLobby.IsValid)
 }
 ```
 
+### Reading Lobby Data
+
+You can read the metadata of a lobby you have queried for or are a member of without issue. If you wanted to read the data on a lobby you had been invited to its best to join that lobby first.
+
+{% hint style="info" %}
+If you get the lobby join requested event or if you see the lobby invite ID on the command line then you know the user has already "accepted" the invite and you should join said lobby.\
+\
+Thus its best to join the lobby and then read its data as a member.
+{% endhint %}
+
+In the rare case you need to read the data before you join you would first have to [Request the data](../../api/matchmaking.md#requestlobbydata) and wait for the [EventLobbyDataUpdate](../../api/matchmaking.md#eventlobbydataupdate) event to trigger indicated the data had been downloaded.
+
 ### Using Lobby Chat
 
 Steam's Lobby system includes a simple chat system able to handle text or data. The easiest way to interact with lobby chat is via the [Lobby Chat Director](../../components/lobby-chat-director.md) which needs to be added to the same object as your [Lobby Manager](../../components/lobby-manager.md).
