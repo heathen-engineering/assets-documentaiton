@@ -24,7 +24,7 @@ Its important to understand how [publishing works in the game industry](../publi
 
 Heathen can be contracted to provide [Managed Services](../../../../services/solutions.md#managed-services), so reach out and lets have a chat!
 
-As with any partner engagement discovery and strategy are the first steps. Before you jump in though look for a partner who is willing to work with you throughout your journey. This is very important, shop around and don't be afraid to say "no thanks"
+As with any partner engagement discovery and strategy are the first steps. Before you jump in though, look for a partner who is willing to work with you throughout your journey. This is very important, shop around and don't be afraid to say "no thanks"
 
 ### Discovery
 
