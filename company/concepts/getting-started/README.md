@@ -39,28 +39,28 @@ If your even slightly serious about making a go of it as a game developer or gam
 
 ## Hopefuls
 
-So you want to be a professional game developer ... that is great, we need you, don't be dissuaded ... but lets make sure your expectations are rooted in reality.
+So you want to be a professional game developer. that is great, we need you, don't be dissuaded, but lets make sure your expectations are rooted in reality.
 
 You may have been told how easy it is these days, that anyone can do it with minimal learning all by them selves and find success.
 
 {% hint style="warning" %}
-If you where, you where lied to
+If you were, you were lied to
 {% endhint %}
 
 Game development is very challenging.&#x20;
 
-**Before we even get started understand**:
+**Before we even get started, understand**:
 
-Learning is required for any level of success as a dev and or as a studio. \
+Learning is required for any level of success as a dev and/or as a studio. \
 \
 Even a "solo" developer has a rather massive team of support and tooling propping them up. \
 \
-Those "zero budget" games ... that is referring to zero outside investment e.g. "out of pocket" budget not "free" aka "without cost". Game development like every business has costs ... a lot of them... be prepared.
+Those "zero budget" games ... that is referring to zero outside investment e.g. "out of pocket" budget not "free" aka "without cost". Game development like every business has costs, a lot of them. Be prepared.
 
-If your still here, wonderful ... the game industry like any creative industry can be incredibly fulfilling for those with a passion for it.
+If your still here, wonderful! The game industry, like any creative industry can be incredibly fulfilling for those with a passion for it.
 
 {% hint style="success" %}
 Choose a job you love, and you will never have to work a day in your life\
 \
-_Probably **not** said by Confucius ... at least not in so many words ... still true_
+_Probably **not** said by Confucius, at least not in so many words ... still true_
 {% endhint %}

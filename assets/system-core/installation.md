@@ -1,5 +1,15 @@
 # Installation
 
+{% hint style="success" %}
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
+{% endhint %}
+
+## Introduction
+
 System Core is a freely available and is available on GitHub as is, without warranty. It is licensed under the MIT license agreement with a Common Clause condition allowing you to use it for any purpose … other than copying or deriving from it and releasing a compilating asset :sunglasses:
 
 {% hint style="success" %}
@@ -22,4 +32,3 @@ Note that various assets are dependent on System Core and may have installed it 
 https://github.com/heathen-engineering/SystemCore.git?path=/com.heathen.systemcore
 ```
 
-###
