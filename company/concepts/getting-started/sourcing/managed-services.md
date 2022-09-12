@@ -1,3 +1,7 @@
+---
+description: Managing all those services you just sourced
+---
+
 # 🧞♂ Managed Services
 
 {% hint style="success" %}
