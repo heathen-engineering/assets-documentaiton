@@ -41,6 +41,12 @@ Create a [Steamworks Behaviour](broken-reference) object in your [bootstrap scen
 
 Congratulations, you are now integrated with the Steam APIs. If you run the simulation, you will see that the Steam API initializes and is ready for use.
 
+{% hint style="warning" %}
+It is of course up to you to perform any required validation checks ... that is you MUST make sure Steam is finished initializing before you try to use it and that it did in fact initialize without error. \
+\
+The [Steamworks Behaviour](../../components/steamworks-behaviour.md) has events exposed to report initialization or error or you can test via Boolean using [SteamSettings.Initialized](../../objects/steam-settings.md#initialized)
+{% endhint %}
+
 {% hint style="danger" %}
 [Steamworks Behaviour](../../components/steamworks-behaviour.md) should be initialized early in your application and never destroyed. It is keenly important that you do not reload the scene that defines the [Steamworks Behaviour](../../components/steamworks-behaviour.md) as this will cause issues with the Steam API.
 

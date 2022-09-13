@@ -18,22 +18,34 @@ If you designed it or developed it then you cannot adequately test it.
 
 These sections will introduce you to software and game testing concepts and practices to help you deliver a quality product. This is not a topic anyone can afford to cut corners on and is a part of your project that will have time and money costs if you plan on doing it properly.
 
-## Terminology
+## Sourcing
 
-This is a quick and dirty break down of some of the terms we will use in this article. You may have heard other terms and or different definitions ... that's fine. This is here so you can understand what we mean when we say these things.
+Testing is a big topic that even established professional studios find they need to outsource part of in order to deliver on correctly and professionally. Check out our guide on [Sourcing Testing](../getting-started/sourcing/testing.md) for more information. In particular proper testing requires "scale" meaning a small studio or individual simply cannot solve for this requirement without additional support.
 
-### QA (quality assurance)
+## When to Test
 
-Process oriented approach meant to assure quality
+Their are many types of tests that will be ran throughout the development process. When we think of testing as a "Phase" what we are really talking about is the final set of formal testing that when passed marks the end of production and the point your game is "gold" meaning ready for release from a development point of view.
 
-Quality assurance (QA) is the defined practices and processes that govern work from start to finish. In short its the systematic approach you take in the execution of your work to "assure" a given level of "quality". As you might imagine QA is not limited to the testing of your game/app but rather should be a wholistic practice covering the whole company and defining the project its self. We define it here as QA dictates the QC approach you will be using.
+### Dev Testing
 
-### QC (quality control)
+Software engineers and programmers will test constantly while they work and have quite a few tools available to them to help do this in an efficient and timely manner. We don't have full articles on this topic just yet but you can catch up on the fundamentals in our [Debugging](../fundamentals/debugging.md) article.
 
-Product oriented approach meant to identify quality
+### [Formal Tests](writing-formal-tests.md)
 
-Quality control (QC) is what we are focused on in this section. Its the practices, processes and tools used to identify the quality level of the product in question. To grossly over simplify; test game and see if its good enough.
+These should be written as the final steps in [preproduction ](../fundamentals/development-phases.md#preproduction)but will be modified and maintained over the [production ](../fundamentals/development-phases.md#production)cycle. These are the tests that let you know when your project is fit for release. In an ideal world your programmers would use these "formal tests" to know what they need to build and why.
 
-### Test
+### Alpha / Beta Testing
 
-This is a defined process that when executed defines the quality of some unit, function, system or other finite part of the product. A proper test will describe every aspect of the testing process and the expected results for each step. Typically a test is a multi-step process with each step having defined requirements, inputs and expected outputs. You can learn more in the [Writing Test](writing-tests.md) article.
+A highly abused set of terms especially in the game industry. From a software engineering point of view these are old terms from and old approach to software testing that simply meant the first phases of testing being done before the software was "complete" e.g. "Alpha" and the second phase of testing being done after the software was considered all developed e.g. feature complete hence "Beta". Alpha is the first Greek letter e.g. 1st phase and Beta is the second hence 2nd phase. In modern software engineering formal tests are defined before development starts and executed as able throughout the development process where development is not considered complete until all formal tests are "accepted" meaning passed or the failures accepted.
+
+For gamers Alpha and Beta have different meanings ... put bluntly
+
+Alpha referring to early play testing usually limited in scope and with known issues or missing bits.
+
+Beta referring to the last phase of play testing just before the game goes live.
+
+So for modern game development Alpha and Beta are not really practical parts of legitimate testing but they are a good marketing tool. Alpha and Beta test marketing gimmicks can be used to load or stress test for games that require such. For small studios Alpha and Beta may end up being "real tests", In these cases Alpha / Beta are "informal" tests to augment a limited formal testing capacity.
+
+### Public Testing
+
+Related to Alpha and Beta Testing this is more a matter of marketing or community engagement than it is any formal function of most game testing plans. Public Testing can be useful for stress or load testing or with some small studios as an "informal" testing process to shore up limited formal testing capacity. Steam and other platforms make this easy with a ["beta" or "build" opt-in feature](https://partner.steamgames.com/doc/store/testing) for end users.

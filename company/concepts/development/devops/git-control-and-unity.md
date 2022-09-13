@@ -7,7 +7,7 @@ description: Take control of your project
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -50,7 +50,7 @@ Navigate to your organization's home page. This is usually just gethub.com follo
 
 As the owner of an organization you will see a simple green button near the top ladled "New"; click that.
 
-![](<../../../.gitbook/assets/image (183).png>)
+![](<../../../../.gitbook/assets/image (183).png>)
 
 ### Step 3
 
@@ -62,21 +62,21 @@ Heathen usually names this for the projects code name, not the game's name its s
 Be sure to set the `Add .gitignore` field to `Unity` this will give you a handy ignore file to stop Unity from bloating your repository with generated files.
 {% endhint %}
 
-![](<../../../.gitbook/assets/image (158).png>)
+![](<../../../../.gitbook/assets/image (158).png>)
 
 ### Step 4
 
 Open your repository In GitHub Desktop by pressing the Green button and selecting `Open with GitHub Desktop`
 
-![](<../../../.gitbook/assets/image (170).png>)
+![](<../../../../.gitbook/assets/image (170).png>)
 
 Follow the on screen instructions which are simply having you select a location on your local disk to put the repository.
 
-![](<../../../.gitbook/assets/image (159).png>)
+![](<../../../../.gitbook/assets/image (159).png>)
 
 and click `Show in Explorer`
 
-![](<../../../.gitbook/assets/image (171) (1).png>)
+![](<../../../../.gitbook/assets/image (171) (1).png>)
 
 Copy the folder path, you will need it for the next step
 
@@ -86,7 +86,7 @@ Now we create the Unity Project.&#x20;
 
 Open Unity Hub and click new project as you normally would, select your engine version and template if you like. Then select the folder where the project should be placed and paste in the folder path we copied from Step 4 above.
 
-![](<../../../.gitbook/assets/image (182).png>)
+![](<../../../../.gitbook/assets/image (182).png>)
 
 ### Step 6
 
@@ -94,7 +94,7 @@ Now that we have our clean project set up we need to move the .gitignore file in
 
 To do this, open the project folder and navigate up one till you see the .gitignore file
 
-![](<../../../.gitbook/assets/image (167).png>)
+![](<../../../../.gitbook/assets/image (167).png>)
 
 We want to move this into the Unity Project folder, so in my case I would simply drag and drop it in the `A Game` folder.
 
@@ -102,7 +102,7 @@ We want to move this into the Unity Project folder, so in my case I would simply
 
 With that we are done!
 
-![](<../../../.gitbook/assets/image (180).png>)
+![](<../../../../.gitbook/assets/image (180).png>)
 
 You can pop back over to GitHub Desktop and see that it has detected all the changes made by adding the Unity Project.
 
@@ -117,7 +117,7 @@ GitHub works in two stages, commit and then push.
 
 Once complete you can see that your changes appear in the repositor as seen on the web
 
-![](<../../../.gitbook/assets/image (184).png>)
+![](<../../../../.gitbook/assets/image (184).png>)
 
 ## Tips
 
@@ -135,5 +135,5 @@ Well now you do, and they build Visual Studio, the default and hands down best I
 
 Visual Studio will detect that this project is part of a Git repository and will let you work with Git right in your IDE so really you don't require GitHub Desktop but its nice if you want to control more than just your scripts.
 
-![](<../../../.gitbook/assets/image (168).png>)
+![](<../../../../.gitbook/assets/image (168).png>)
 
