@@ -20,7 +20,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 I understand that some people are intimidated by the prospect of learning general scripting and programming.&#x20;
 
-I understand that some people think it will take to long to learn scripting and that somehow visual scripting will make it faster, easier or just somehow better.
+I understand that some people think it will take too long to learn scripting and that somehow visual scripting will make it faster, easier or just somehow better.
 
 My goal with this document is to help people see that learning to write the types of scripts you would need in Unity is easier and far far faster than learning to use Bolt, GameMaker or other visual scripting tools.
 
@@ -64,11 +64,13 @@ Why?
 
 1. The "hard part" to learn is what can be done and how to do it i.e. the "programming" part ... you have to learn the programming part no matter how you program rather its dragging blocks or typing words. all visual scripting does is reduce the things you can do and remove the need to type (most) words. it does not remove or even change the process of learning system design, understand data structures, etc.\
 
-2. You already know more than you think you know when it comes to scripting. When it comes to learning a new node graph editor you know nothing, so you already have a head start on learning scripting.\
+2. You already know more than you think you know when it comes to scripting by virtue of already knowing how to type. \
+   When it comes to learning a new node graph editor you know nothing, so you already have a head start on learning scripting.\
 
 3. There are far more resources, larger communities and far more mature and developed tools, courses, etc. for text based scripting/coding than there is for any flavour of visual scripting tool.\
 
-4. I can tell you from experience that many things are far more complicated in visual scripting nodes than they are in text based script. In some cases its simply not possible to do in visual scripting or cant be done in a way that is functionally performant. Its very common that the "visual" solution is massively less performant than the text alternative  this is due to many reasons that no cannot be compensated for by better node graph editors or better use of them as its fundamentally an issue with how your creating the logic.
+4. I can tell you from experience that many things are far more complicated to do in visual scripting nodes than they are in text based script. In some cases its simply not possible to do in visual scripting or cant be done in a way that is functionally performant. \
+   Its very common that the "visual" solution is massively less performant than the text alternative  this is due to many reasons that no cannot be compensated for by better node graph editors or better use of them as its fundamentally an issue with how your creating the logic.
 
 ## I just want it to work now!
 
