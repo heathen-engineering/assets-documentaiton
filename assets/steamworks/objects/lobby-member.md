@@ -1,5 +1,33 @@
 # Lobby Member
 
+{% hint style="success" %}
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
+{% endhint %}
+
+## Introduction
+
+LobbyMember is a structure that wraps around Lobby and UserData to simplify access to the lobby member metadata and related features for a specific user on a specific lobby. In most cases you would be working with the LobbyMember of the local user and can easily create the LobbyMember by reading it from the related lobby.
+
+```csharp
+//Assuming we have a Lobby named myLobby
+//We can get our LobbyMember by reading the me field
+LobbyMember lobbyMember = myLobby.Me;
+```
+
+The most common thing to do with a LobbyMember is to set the [metadata](../features/multiplayer/matchmaking-tools.md#metadata) of that member.
+
+```csharp
+lobbyMember["fieldName"] = "fieldValue";
+```
+
+{% hint style="info" %}
+You can learn more about Lobby metadata and LobbyMember metadata by reading [this](../features/multiplayer/matchmaking-tools.md#metadata) article.
+{% endhint %}
+
 ## Definition
 
 ```csharp
@@ -47,8 +75,6 @@ which is the same data as
 ```csharp
 var myMember = thisLobby.Members.First(p => p.user = UserData.Me);
 ```
-
-### Fields and Attributes
 
 ### lobby
 
@@ -108,13 +134,17 @@ The read the value as a bool
 
 
 
-### Methods
+## Methods
+
+### this\[string key]
 
 ```csharp
 public string this[string key];
 ```
 
 Can be used to get or set metadata values on this user. Only the user its self can set metadata values.
+
+### Kick
 
 ```csharp
 public void Kick();
