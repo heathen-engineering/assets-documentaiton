@@ -39,18 +39,23 @@ Bootstrap Scene Example Project
 
 While you can use Do Not Destroy On Load with the content of a Bootstrap scene, it's not sufficient to apply Do Not Destroy On Load to objects in a scene that is loaded multiple times, such as a title or main menu scene.
 
-{% hint style="info" %}
-When you load a scene, it loads the data as stored on this disk. So, if you load a scene that had defined an object or objects that you have since marked as Do Not Destroy On Load, Unity will load a new copy of that object or objects with every subsequent load of that scene. For each component on such an object, the OnEnable event will run and after that point Unity will clear the object.
+{% hint style="warning" %}
+Why?\
+Reloading data that is already in memory is a waste of time and increases the chance of an error due to more data and more "moving parts".&#x20;
 
-Even if all the components involved are designed to handle that eventuality of duplicate OnEnable without damaging references, or on going processes, it still consumes processing time and memory unnecessary and slows the loading process.
+
+
+Know that when you reload a scene that had marked some object Do Not Destroy On Load for a moment there is duplicate data in memory, Unity will need to identify the objects by ID and remove the duplicates. In some cases that fact can make a big mess especially when regarding unmanaged memory or multi-process systems, like Steam API and many networking tools.
 {% endhint %}
+
+As such you are advised to put your system level objects in a bootstrap scene, which should be on build index 0 and only ever loaded once. This is whether or not you use Do Not Destroy On Load.
 
 ### Stand Alone Scenes
 
 A common argument is that every scene should be standalone, that is that every scene should be able to be loaded on its own and function without error. The usual argument is that this makes development and unit testing easier in that you can load any scene at any time and play test it without concern of other factors.
 
-{% hint style="info" %}
-Did you know Unity Editor can have multiple scenes loaded at once, thus you can define a Bootstrapper scene and leave it loaded at all times simply swapping out what other scene may be loaded, thus giving you the very same development time capabilities as if every scene had defined every dependency.
+{% hint style="success" %}
+Did you know Unity Editor can have multiple scenes loaded at once? You can define a Bootstrapper scene and leave it loaded at all times simply swapping out what other scene may be loaded, thus giving you the very same development time capabilities as if every scene had defined every dependency.
 
 In this model you use multi-scene additive loaded as opposed to the older single scene approach where on load previous the previous scene is unloaded. This gives greater control and avoids the need to use Do Not Destroy On Load, removes the cost of auto unload which is often a slow process in Unity and allows you to load any scene at any time knowing that because the bootstrap scene is already loaded that its dependents such as cameras are already loaded.
 {% endhint %}
