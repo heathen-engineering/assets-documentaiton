@@ -36,15 +36,19 @@ These should be written as the final steps in [preproduction ](../fundamentals/d
 
 ### Alpha / Beta Testing
 
-A highly abused set of terms especially in the game industry. From a software engineering point of view these are old terms from and old approach to software testing that simply meant the first phases of testing being done before the software was "complete" e.g. "Alpha" and the second phase of testing being done after the software was considered all developed e.g. feature complete hence "Beta". Alpha is the first Greek letter e.g. 1st phase and Beta is the second hence 2nd phase. In modern software engineering formal tests are defined before development starts and executed as able throughout the development process where development is not considered complete until all formal tests are "accepted" meaning passed or the failures accepted.
+A highly abused set of terms especially in the game industry. From a software engineering point of view these are old terms from an old approach to software testing that simply meant the first phases of testing being done typically before the software was "complete" e.g. "Alpha" and the second phase of testing being done after the software was considered all developed e.g. feature complete "Beta".&#x20;
+
+Alpha is the first Greek letter e.g. 1st phase and Beta is the second hence 2nd phase. In modern software engineering formal tests are defined before development starts and executed as able throughout the development process where development is not considered complete until all formal tests are "accepted" meaning passed or the failures accepted.
 
 For gamers Alpha and Beta have different meanings ... put bluntly
 
 Alpha referring to early play testing usually limited in scope and with known issues or missing bits.
 
-Beta referring to the last phase of play testing just before the game goes live.
+Beta referring to the last phase of play testing just before the game goes live, they expect the game is done and nearly bug free by now.
 
 So for modern game development Alpha and Beta are not really practical parts of legitimate testing but they are a good marketing tool. Alpha and Beta test marketing gimmicks can be used to load or stress test for games that require such. For small studios Alpha and Beta may end up being "real tests", In these cases Alpha / Beta are "informal" tests to augment a limited formal testing capacity.
+
+Its worth noting that open Alpha and Beta tests are usually of very little value in terms of testing the software as you will get a lot of "noise" in your reports but not a lot of useful data. With good tracking and feedback tools it can be made more useful so your milage may very.
 
 ### Public Testing
 
