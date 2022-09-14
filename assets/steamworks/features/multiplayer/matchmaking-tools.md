@@ -34,7 +34,7 @@ The first and most important thing to understand is that a lobby is not a networ
 
 Please do not confuse a lobby with anything to do with a network or network connection.
 
-### Lobby Types
+### Types
 
 The following explains; as clearly as Steam documentaiton allows, the available lobby types and when and how you might use them.
 
@@ -62,6 +62,10 @@ The following explains; as clearly as Steam documentaiton allows, the available 
     This lobby is not visible in the friends list but can be searched for. That might be confusing at first read.
 
     A random user can search for this lobby as you would a public lobby but this lobby will not show up on the Steam Friends list hence "invisible"
+
+### Members
+
+Every user that has joined the lobby is identified as a [LobbyMember.](../../objects/lobby-member.md) Each member in a lobby has its own set of metadata which all other members can read but only the member its self can set. To clarify that means you can only set your own lobby member metadata but you can read everyones. You cannot however read lobby member metadata if you are not a member of the lobby.
 
 ### Metadata
 
@@ -99,6 +103,10 @@ member["thisField"] = "thisValue";
 ```
 
 To learn more check out the [Lobby](../../objects/lobby.md#introduction) and [LobbyMember ](../../objects/lobby-member.md)articles describing the features of the lobby and lobbyMember structures.
+
+### Chat
+
+While the developer facing part of the Steam API calls it a "Lobby" the backend of the system calls it a chat, this is because in reality a "Lobby" is just a chat room. This chat room has its own metadata as noted above and each member within it has its own metadata and you can send and receive messages containing byte\[] data between all members without a network connection. Our [Lobby Chat Director](../../components/lobby-chat-director.md) can help you get started.
 
 ## Matchmaking
 
@@ -176,6 +184,87 @@ Once you have a server build you need to decide how your going to host it.
 Doing this will let you browse for and display all available (and publicly visible) stem game servers via a [Steam Game Server Browser](../../components/game-server-browser-manager.md).
 
 ## Use Cases
+
+### Authenticate Users
+
+{% hint style="warning" %}
+Steam Authentication is not used to prove a person is who they say they are. Steam API already does that implicitly so you know if you see them and can be in a lobby with them, then they are in fact who they say they are and do in fact own a license to this app ID.\
+\
+Steam Authentication is used to establish trust between users and other users or between users and Steam Game Servers. In particular it can be used to validate the contents of Steam Inventory and it can be used to check the VAC status of the user in question.
+{% endhint %}
+
+First you need to understand what Steam Authentication is and is not and how it works in general. Please read the Steam Authentication article for more information on that. As to how you can use it with lobby.
+
+The Lobby Chat system can send and receive byte\[] data thus you can send Authentication ticket data over the Lobby Chat system. In most cases we recommend you create a LobbyChatMessage struct for your self so you can know what kind of message has been sent.
+
+```csharp
+[Serializable]
+public struct CustomChatMessage
+{
+    public enum Type
+    {
+        TextMessage,
+        AuthenticationTicket
+    }
+    
+    public Type type;
+    public byte[] data;
+    public string message;
+}
+```
+
+With something like the above you could then send the message as
+
+```csharp
+Authentication.GetAuthSessionTicket((ticket, IOError) =>
+{
+    if(!IOError)
+    {
+        var message = new CustomChatMessage
+        {
+            type = CustomChatMessage.Type.AuthenticationTicket,
+            data = ticket.data
+        };
+        lobbyChatDirector.Send(message);
+    }
+});
+```
+
+This would generate an auth ticket and when done it would send that auth ticket over the lobby chat director. You should handle receiving a chat message in a similar manner.
+
+First make sure you are listening to the message received event
+
+```csharp
+void Start()
+{
+    lobbyChatDirector.evtMessageRecieved.AddListener(HandleChatMessage);
+}
+```
+
+Then in that handler you need to work with the message received
+
+```csharp
+void HandleChatMessage(LobbyChatMsg message)
+{
+    var customChatMessage = message.FromJson<CustomChatMessage>();
+    if(customChatMessage.type == CustomChatMessage.Type.AuthenticationTicket)
+    {
+        //Only the user is the owner do we bother with auth
+        if(lobbyManager.IsPlayerOwner)
+        {
+            var responce = Authentication.BeginAuthSession(
+                customChatMessage.data, 
+                message.sender, 
+                result =>
+                {
+                    //... handle the result
+                }
+        }
+    }
+}
+```
+
+You can learn more about handling the result of a `BeginAuthSession` in our article on [Steam Authentication](../authentication.md#begin-auth-session).
 
 ### Create a Lobby or Group.
 
