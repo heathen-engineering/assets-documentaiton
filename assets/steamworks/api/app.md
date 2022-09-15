@@ -56,7 +56,7 @@ Then you would register the event such as:
 API.App.Client.EventDlcInstalled.AddListener(HandleEvent);
 ```
 
-When you no longer need this handler you should remove it for example when the behavior using it is destroyed
+When you no longer need this handler you should remove it for example when the behaviour using it is destroyed
 
 ```csharp
 void OnDestroy()
@@ -87,12 +87,98 @@ Then you would register the event such as:
 API.App.Client.EventNewUrlLaunchParameters.AddListener(HandleEvent);
 ```
 
-When you no longer need this handler you should remove it for example when the behavior using it is destroyed
+When you no longer need this handler you should remove it for example when the behaviour using it is destroyed
 
 ```csharp
 void OnDestroy()
 {
     API.App.Client.EventNewUrlLaunchParameters.RemoveListener(HandleEvent);
+}
+```
+
+### EventServersConnected
+
+Called when a connections to the Steam back-end has been established. This means the Steam client now has a working connection to the Steam servers. Usually this will have occurred before the game has launched, and should only be seen if the user has dropped connection due to a networking issue or a Steam server update.
+
+Assuming a handler in the form of
+
+```csharp
+private void HandleEvent()
+{
+}
+```
+
+Then you would register the event such as:
+
+```csharp
+API.App.Client.EventServersConnected.AddListener(HandleEvent);
+```
+
+When you no longer need this handler you should remove it for example when the behaviour using it is destroyed
+
+```csharp
+void OnDestroy()
+{
+    API.App.Client.EventServersConnected.RemoveListener(HandleEvent);
+}
+```
+
+### EventServersDisconnected
+
+Called if the client has lost connection to the Steam servers.\
+Real-time services will be disabled until a matching EventServersConnected has been posted.
+
+You can read more about the [EResult data type here](https://partner.steamgames.com/doc/api/steam\_api#EResult).
+
+Assuming a handler in the form of
+
+```csharp
+private void HandleEvent(EResult result)
+{
+}
+```
+
+Then you would register the event such as:
+
+```csharp
+API.App.Client.EventServersDisconnected.AddListener(HandleEvent);
+```
+
+When you no longer need this handler you should remove it for example when the behaviour using it is destroyed
+
+```csharp
+void OnDestroy()
+{
+    API.App.Client.EventServersDisconnected.RemoveListener(HandleEvent);
+}
+```
+
+### EventServersConnectFailure
+
+Called when a connection attempt has failed. This will occur periodically if the Steam client is not connected, and has failed when retrying to establish a connection.
+
+You can read more about the [SteamServerConnectFailure\_t data type here](https://partner.steamgames.com/doc/api/ISteamUser#SteamServerConnectFailure\_t).
+
+Assuming a handler in the form of
+
+```csharp
+private void HandleEvent(SteamServerConnectFailure_t result)
+{
+}
+```
+
+Then you would register the event such as:
+
+```csharp
+API.App.Client.EventServersConnectFailure.AddListener(HandleEvent);
+```
+
+When you no longer need this handler you should remove it for example when the behaviour using it is destroyed
+
+```csharp
+void OnDestroy()
+{
+    API.App.Client.EventServersConnectFailure.RemoveListener(HandleEvent);
 }
 ```
 
