@@ -7,7 +7,7 @@ description: Rewarding players with rewarding items
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -60,13 +60,13 @@ Any item with a "promo" rule defined is a promo item. for example
 }
 ```
 
-The JSON item definition listed above describes an item which is a promo item, that can be granted via a manual [Add Promo Item ](../../api/inventory.md#addpromoitem)call as a 1 time item drop.
+The JSON item definition listed above describes an item which is a promo item, that can be granted via a manual [Add Promo Item ](../../../api/inventory.md#addpromoitem)call as a 1 time item drop.
 
 ## How
 
 How do you give the player the promo items?
 
-With an item defined you can simply call [Add Promo Item](../../api/inventory.md#addpromoitem), This can either be done from the [Inventory API](../../api/inventory.md#add-promo-item) or from the [Item Definition](../../objects/item-definition.md#add-promo-item) object its self.
+With an item defined you can simply call [Add Promo Item](../../../api/inventory.md#addpromoitem), This can either be done from the [Inventory API](../../../api/inventory.md#add-promo-item) or from the [Item Definition](../../../objects/item-definition.md#add-promo-item) object its self.
 
 ## Configuration
 

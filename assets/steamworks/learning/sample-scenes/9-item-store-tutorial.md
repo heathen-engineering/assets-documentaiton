@@ -10,7 +10,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction&#x20;
 
-This scene is meant to be used in conjunction with the learning article [Item Store](../../how-to-and-troubleshooting/inventory/item-store/). It provides a crude example of an in-game item store where the developer has defined each item's UI element and linked it with the related [Item Defintion](../../objects/item-definition.md).
+This scene is meant to be used in conjunction with the learning article [Item Store](../core-concepts/inventory/item-store.md). It provides a crude example of an in-game item store where the developer has defined each item's UI element and linked it with the related [Item Defintion](../../objects/item-definition.md).
 
 ![](<../../../../.gitbook/assets/image (162).png>)
 
