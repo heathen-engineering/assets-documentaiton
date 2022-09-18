@@ -31,7 +31,7 @@ This article will describe the concepts of an item store and cover several commo
 
 ### Assumptions
 
-This article assumes you have defined your items already. If you have questions about that see our [Getting Started](../../../features/inventory/getting-started.md) article.
+This article assumes you have defined your items already. If you have questions about that see our [Getting Started](../getting-started.md) article.
 
 This article also assumes you already understand how to create UI and behaviours in Unity. If you have questions there we strongly recommend you check out [this tutorial](https://learn.unity.com/pathway/junior-programmer). Its short and very useful for every Unity developer.
 
@@ -149,6 +149,8 @@ public void StartPurchase()
             if (responce.m_result == EResult.k_EResultOK)
             {
                 Debug.Log("Start purchase completed");
+                //You should store the order ID if you want to track its completion
+                orderId = responce.m_ulOrderID;
             }
             else
             {
@@ -162,6 +164,8 @@ public void StartPurchase()
     });
 }
 ```
+
+Assuming you want to track the completion of the order you should listen on the Micro Transaction Authorization Response. You can find this on the [Inventory Manager](../../../components/inventory-manager.md#evttransactionresponce) component or directly in the [Inventory API](../../../api/inventory.md#eventsteammicrotransactionauthorizationresponce). In either case this is an event that is raised when the Steam client informs your game of a completed e.g. authorization on a transaction. The event will indicate the app the transaction is for, the order ID of the transaction and rather or not the transaction was authorized.
 
 #### Exchange
 
@@ -235,7 +239,7 @@ In short you do not update your UI every frame as that will adversely impact gam
 
 By list your items I assume your asking how does your game know what items there are so it can update the UI for them.
 
-This suggests that your planning on a [run time initalization](item-store.md#run-time-initalization), please read that section and understand why its not recommended.
+This suggests that your planning on a [run time initalization](./#run-time-initalization), please read that section and understand why its not recommended.
 
 To answer that question in short, you created the items, you already know what they are, you do not need to iterate over a list and have it create the UI at run time. If you want to have it do it at run time for some reason the items you created are defined in your Steam Settings as Scriptable Objects so you simply need to iterate over [that list](../../../objects/steam-settings/game-client/inventory-settings.md).
 
@@ -275,14 +279,15 @@ To learn more about your opens read this article
 
 {% embed url="https://partner.steamgames.com/doc/features/microtransactions/implementation" %}
 
-For the sake of simplicity lets assume your using Client API only to Start Purchase on an item. This method doesn't require any Web API or any other systems and is the most common among indies.
+For the sake of simplicity lets assume your using Client API only to [Start Purchase](../../../objects/item-definition.md#start-purchase) on an item. This method doesn't require any Web API or any other systems and is the most common among indies.
 
-{% hint style="warning" %}
-There is no way to perform end-to-end testing of the purchase process using the Client API only.
+{% hint style="success" %}
+True end to end testing is not possible before release of the app\
+
+
+This is not a problem and we will show why shortly
 {% endhint %}
 
-This is not a problem and we will show why shortly\
-\
 As to why this is true its down to two major factors imposed by Valve.
 
 1. Steam Inventory Items will not display in Steam Client until your game is launched. Thus you cant add them to a cart or even view them in Steam Client's inventory window
@@ -304,7 +309,7 @@ The next logical question related to this is "How do I know what was purchased" 
 
 ### Detecting what was purchased
 
-First understand that your game cannot know ahead of time what if anything was or is being purchased so the question isn't'
+You can listen on an event that indicates when a transaction has been completed and this event will report the transaction ID that was created with the Start Purchase request. See the API.Overlay
 
 "How do I know what was purchased?"&#x20;
 
@@ -326,4 +331,4 @@ or you can use the [Inventory Manager](../../../components/inventory-manager.md)
 
 So you have set up your inventory items, your going to use full Client API so you cant simulate an end-to-end purchase. Your asking your self ... How do I test my game logic to make sure its handling inventory change correctly?
 
-Use the [Steamworks Inspector](../../../how-to-and-troubleshooting/#inventory) and click the "Grant" button beside any of the items, this will cause it to grant you an item which will raise the [EventChanged](../../../objects/steam-settings/game-client/inventory-settings.md) ... you can now observe your game logic and insure its performing as you expected.
+Use the [Steamworks Inspector](../../#inventory) and click the "Grant" button beside any of the items, this will cause it to grant you an item which will raise the [EventChanged](../../../objects/steam-settings/game-client/inventory-settings.md) ... you can now observe your game logic and insure its performing as you expected.

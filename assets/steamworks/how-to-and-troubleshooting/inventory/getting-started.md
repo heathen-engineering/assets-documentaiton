@@ -33,7 +33,7 @@ You will also need to understand the Steam Inventory Schema, while Heathen's too
 
 {% embed url="https://partner.steamgames.com/doc/features/inventory/schema" %}
 
-## **Step 1: Set up**
+## **Set up**
 
 The hardest part about Steam Inventory is usually setting up your Steam Inventory Items. Have no fret Heathen is here to help!
 
@@ -45,7 +45,7 @@ Once done you will see every item you had defined already in your Steam Develope
 
 ![Screen shot of a WIP project with 57 items. You can see here how the Settings object categorizes the items based on type.](<../../../../.gitbook/assets/image (169) (1) (1) (1).png>)
 
-## **Step 2: Defining Items**
+## **Defining Items**
 
 Creating new items is quick and easy simply click the "<mark style="color:green;">+ New</mark>" button in the Inventory list of Steam Settings and a new empty item will be created for you. Select that item and set the values as desired.&#x20;
 
@@ -55,7 +55,7 @@ Every Steam Inventory Schema feature is available but the inspector will hide on
 
 ![Tag Generators only exist to attach to other items as generators](<../../../../.gitbook/assets/image (177) (1) (1) (1).png>)
 
-## **Step 3: Uploading the Schema**
+## **Uploading the Schema**
 
 Once you have defined your items you can copy the JSON data that represents the item, or optionally copy all of the items to your clipboard and past the results into Steam Developer Portals item editor or into a text file to be uploaded later.
 
@@ -84,7 +84,7 @@ On the item it will export only that item's JSON
 
 Once you have your items you should upload them to the Steam Developer Portal as indicated in Valve's documentation. You are safe to edit the schema in its text form if you need/like you can always reimport them from Steam later.
 
-## Step 4: Using your items
+## Using your items
 
 Now that you have items defined in your Steam Developer Portal, and you have representations of those items in your Unity Project linked with your Steam Settings you can use Heathen's tools to manage the items at both dev time and run time.
 
@@ -95,6 +95,3 @@ The Inventory Item Definitions stored in your Steam Settings object act as an in
 For developers needing to test, you can use the Steamworks Inspector to inspect, grant and clear items from your inventory. This is particularly useful since you can not use Steam client to view items for a game that is not yet released so the only way to view your items before release is to use our tool.
 
 ![](<../../../../.gitbook/assets/image (159) (1) (1) (1) (1).png>)
-
-## F.A.Q
-

@@ -130,6 +130,37 @@ void OnDestroy()
 }
 ```
 
+### EventSteamMicroTransactionAuthorizationResponce
+
+This is fired whenever Steam client notifies your game of a MTX transaction completing and includes details about that transaction. You can use this along side the [StartPurchase ](inventory.md#startpurchase)feature to know when a transaction starts and ends.
+
+You would add a listener on this event such as:
+
+Assuming a handler in the form of
+
+```csharp
+private void HandleEvent(AppId_t appId, ulong orderId, bool authorized)
+{
+}
+```
+
+Then you would register the event such as:
+
+```csharp
+API.Inventory.Client.EventSteamMicroTransactionAuthorizationResponce.AddListener(
+                HandleEvent);
+```
+
+When you no longer need this handler you should remove it for example when the behavior using it is destroyed
+
+```csharp
+void OnDestroy()
+{
+    API.Inventory.Client.EventSteamMicroTransactionAuthorizationResponce.RemoveListener(
+                HandleEvent);
+}
+```
+
 ## Methods
 
 ### AddPromoItem

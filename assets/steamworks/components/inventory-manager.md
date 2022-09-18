@@ -34,6 +34,66 @@ using HeathenEngineering.SteamworksIntegration;
 public class InventoryManager : MonoBehaviour
 ```
 
+## Events
+
+### evtChanged
+
+Triggered whenever the local user's inventory is updated from Steam.
+
+You would add a listener on this event such as:
+
+Assuming a handler in the form of
+
+```csharp
+private void HandleEvent(InventoryChangeRecord arg0)
+{
+}
+```
+
+Then you would register the event such as:
+
+```csharp
+inventroyManager.evtChanged.AddListener(HandleEvent);
+```
+
+When you no longer need this handler you should remove it for example when the behviour using it is destroyed
+
+```csharp
+void OnDestroy()
+{
+    inventroyManager.evtChanged.RemoveListener(HandleEvent);
+}
+```
+
+### evtTransactionResponce
+
+This is fired whenever Steam client notifies your game of a MTX transaction completing and includes details about that transaction. You can use this along side the [StartPurchase ](inventory-manager.md#startpurchase)feature to know when a transaction starts and ends.
+
+You would add a listener on this event such as:
+
+Assuming a handler in the form of
+
+```csharp
+private void HandleEvent(AppId_t appId, ulong orderId, bool authorized)
+{
+}
+```
+
+Typically you would use the Unity Editor Inspector to attach a method to this event. You can however do it in code as well such as:
+
+```csharp
+inventroyManager.evtTransactionResponce.AddListener(HandleEvent);
+```
+
+When you no longer need this handler you should remove it for example when the behaviour using it is destroyed
+
+```csharp
+void OnDestroy()
+{
+    inventroyManager.evtTransactionResponce.RemoveListener(HandleEvent);
+}
+```
+
 ## Fields and Attributes
 
 ### CurrencyCode
@@ -59,37 +119,6 @@ public string List<ItemDefinition> Items => get;
 ```
 
 Returns the list of items configured for this app
-
-## Events
-
-### evtChanged
-
-Triggered whenever the local user's inventory is updated from Steam.
-
-You would add a listener on this event such as:
-
-Assuming a handler in the form of
-
-```csharp
-private void HandleEvent(InventoryChangeRecord arg0)
-{
-}
-```
-
-Then you would register the event such as:
-
-```csharp
-SteamSettings.Client.inventory.EventChanged.AddListener(HandleEvent);
-```
-
-When you no longer need this handler you should remove it for example when the behviour using it is destroyed
-
-```csharp
-void OnDestroy()
-{
-    SteamSettings.Client.inventory.EventChanged.RemoveListener(HandleEvent);
-}
-```
 
 ## Methods
 
