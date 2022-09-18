@@ -326,4 +326,4 @@ or you can use the [Inventory Manager](../../../components/inventory-manager.md)
 
 So you have set up your inventory items, your going to use full Client API so you cant simulate an end-to-end purchase. Your asking your self ... How do I test my game logic to make sure its handling inventory change correctly?
 
-Use the [Steamworks Inspector](../../debugging-steam-api.md#inventory) and click the "Grant" button beside any of the items, this will cause it to grant you an item which will raise the [EventChanged](../../../objects/steam-settings/game-client/inventory-settings.md) ... you can now observe your game logic and insure its performing as you expected.
+Use the [Steamworks Inspector](../../../how-to-and-troubleshooting/#inventory) and click the "Grant" button beside any of the items, this will cause it to grant you an item which will raise the [EventChanged](../../../objects/steam-settings/game-client/inventory-settings.md) ... you can now observe your game logic and insure its performing as you expected.

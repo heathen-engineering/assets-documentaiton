@@ -82,7 +82,7 @@ public static bool LoggedOn => get;
 
 Checks if the current user's Steam client is connected to the Steam servers.\
 \
-If it's not then no real-time services provided by the Steamworks API will be enabled. The Steam client will automatically be trying to recreate the connection as often as possible. When the connection is restored a [SteamServersConnected\_t](https://partner.steamgames.com/doc/api/ISteamUser#SteamServersConnected\_t) callback will be posted.\
+If it's not then no real-time services provided by the Steamworks API will be enabled. The Steam client will automatically be trying to recreate the connection as often as possible. When the connection is restored a [EventServersConnected](app.md#eventserversconnected) callback will be posted.\
 \
 You usually don't need to check for this yourself. All of the API calls that rely on this will check internally. Forcefully disabling stuff when the player loses access is usually not a very good experience for the player and you could be preventing them from accessing APIs that do not need a live connection to Steam.
 

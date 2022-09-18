@@ -2,7 +2,7 @@
 description: Understanding the use of anonymous function as it relates to Unity
 ---
 
-# Lambda Expressions
+# 🪶 Lambda Expressions
 
 {% hint style="success" %}
 #### Like what your seeing?

@@ -1,4 +1,8 @@
-# Debugging Steam API
+---
+description: When computer says no!
+---
+
+# How To & Troubleshooting
 
 {% hint style="success" %}
 #### Like what your seeing?
@@ -16,27 +20,29 @@ Steam's Documentation has a Debugging article as well ... read it ... its good
 [https://partner.steamgames.com/doc/sdk/api/debugging](https://partner.steamgames.com/doc/sdk/api/debugging)
 {% endhint %}
 
-Follows are a few common issues and solutions as well as additional notes on the debugging tools available to you both from Heathen and Valve.
+The following articles will help you learn how to perform common tasks and to debug and troubleshoot your Steam API integration. We have created a large array of tools that simplify the use of Steam API including tools like Steamworks Inspector to help you troubleshoot and debug your integration.
 
-## Enable Debugging
+## The Basics
+
+### Enable Debugging
 
 ![Toggle this on](<../../../.gitbook/assets/image (3) (1).png>)
 
 When toggled on Heathen's tools will write additional verbose information in particular around initialization which is the most common point of error. If you have not finished testing and are not building a fully tested, production ready, release build ... then you should have this turned on.
 
-## Steam must be running
+### Steam must be running
 
 Be aware that none of the work done by Steam API is "in" your game, Steam API is an "application program interface" that allows your game to work with features in the Steam client. As a result you **must** have Steam client open, running and logged in to a valid Steam user that owns the app you are trying to work with.
 
 The only exception to this is when using the [Steam Game Server](../features/multiplayer/game-server-browser.md) feature which also limits the functionality of Steam API as there is no client and no user available to do work.
 
-## Running a Build&#x20;
+### Running a Build&#x20;
 
 When running a build that was not deployed to Steam and ran from the Steam client you will notice that the game fails to initialize the crashes to desktop possibly attempting to re-launch from Steam client.
 
-This is by design, you must hint to Steam API what the app is, read the [article on steam\_appid.txt](debugging-steam-api.md#steam\_appid.txt) it will explain, why this happens, how to work with it, when you should and when you should not use the feature described.
+This is by design, you must hint to Steam API what the app is, read the [article on steam\_appid.txt](./#steam\_appid.txt) it will explain, why this happens, how to work with it, when you should and when you should not use the feature described.
 
-## Publish Your Changes
+### Publish Your Changes
 
 When you make any changes in Steam Developer Portal you **must** publish them before they take effect and can be testing in your game
 
@@ -49,7 +55,7 @@ The above quote is from the publish page as seen below
 
 ![The publish page, make sure to publish before you try to test](<../../../.gitbook/assets/image (164).png>)
 
-## Environment Checks
+### Environment Checks
 
 Having something wrong with your environment (Unity Editor, Steam.exe, Steam User, etc.) can cause odd issues with Steam API ones that are hard to pin down unless you know what to look for.
 
@@ -108,7 +114,7 @@ If your build target is set to ANY other build target then the Steamworks.NET as
 
 use `#if DISABLESTEAMWORKS` script define you can add this your self if you like to cause Steam API code to simply not compile. You can use it to strip out your Steam related code if you need.
 
-## Steam Command Line
+### Steam Command Line
 
 {% embed url="https://partner.steamgames.com/doc/sdk/api/debugging" %}
 Tools from Valve

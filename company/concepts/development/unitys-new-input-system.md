@@ -1,4 +1,4 @@
-# Unity's "New" Input System
+# 🎮 Unity's "New" Input System
 
 {% hint style="success" %}
 #### Like what your seeing?
