@@ -34,7 +34,7 @@ When toggled on Heathen's tools will write additional verbose information in par
 
 Be aware that none of the work done by Steam API is "in" your game, Steam API is an "application program interface" that allows your game to work with features in the Steam client. As a result you **must** have Steam client open, running and logged in to a valid Steam user that owns the app you are trying to work with.
 
-The only exception to this is when using the [Steam Game Server](../features/multiplayer/game-server-browser.md) feature which also limits the functionality of Steam API as there is no client and no user available to do work.
+The only exception to this is when using the [Steam Game Server](multiplayer/game-server-browser.md) feature which also limits the functionality of Steam API as there is no client and no user available to do work.
 
 ### Running a Build&#x20;
 

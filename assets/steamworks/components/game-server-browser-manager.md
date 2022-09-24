@@ -15,7 +15,7 @@ Meant to be added to your Server Browser UI this component simplifies the proces
 {% hint style="info" %}
 Before you can browse game servers you need to have game servers.
 
-Read [Steam Game Servers](../features/multiplayer/game-server-browser.md) article before continuing
+Read [Steam Game Servers](../how-to-and-troubleshooting/multiplayer/game-server-browser.md) article before continuing
 {% endhint %}
 
 ### Namespace

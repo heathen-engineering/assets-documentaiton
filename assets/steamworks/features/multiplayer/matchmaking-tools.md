@@ -160,10 +160,10 @@ Its keenly important that you understand that a lobby is not a server, it is not
 
 You can think of it like jumping on Team Speak, or Discord, etc. and rounding up a few friends to go play a game together.
 
-If you want to list a set of available server's then you 1st off need servers. You can look at creating a server build for your game and having it register as a [Steam Game Server](game-server-browser.md).
+If you want to list a set of available server's then you 1st off need servers. You can look at creating a server build for your game and having it register as a [Steam Game Server](../../how-to-and-troubleshooting/multiplayer/game-server-browser.md).
 
 {% hint style="info" %}
-Learn more [here](game-server-browser.md)
+Learn more [here](../../how-to-and-troubleshooting/multiplayer/game-server-browser.md)
 {% endhint %}
 
 Once you have a server build you need to decide how your going to host it.
