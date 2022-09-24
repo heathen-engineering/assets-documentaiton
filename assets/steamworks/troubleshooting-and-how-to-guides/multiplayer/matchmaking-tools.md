@@ -4,7 +4,7 @@ description: >-
   Lobby
 ---
 
-# Steam Lobby
+# Lobby
 
 {% hint style="success" %}
 #### Like what your seeing?
@@ -108,82 +108,263 @@ To learn more check out the [Lobby](../../objects/lobby.md#introduction) and [Lo
 
 While the developer facing part of the Steam API calls it a "Lobby" the backend of the system calls it a chat, this is because in reality a "Lobby" is just a chat room. This chat room has its own metadata as noted above and each member within it has its own metadata and you can send and receive messages containing byte\[] data between all members without a network connection. Our [Lobby Chat Director](../../components/lobby-chat-director.md) can help you get started.
 
-## Matchmaking
+## Working with Lobbies
 
-It is important to understand that a lobby is not a server browser, it is not designed to list all possible sessions. It is effectively a chat room and a matchmaking tool.&#x20;
+You can work with lobby in one of 3 main ways; they (from lowest level to highest)
 
-### Can I list all? No
+### [Raw API](../../api/matchmaking.md)
 
-Steam API at most will return 50 lobbies and in most cases that is 49 more lobbies than you need. The lobby query system is designed such that your user describes they match they want and the Steam API will return the ideal match from the available lobbies.
+All of the functionality of lobby is defined in the [Matchmaking API](../../api/matchmaking.md). No matter how you choose to work with Steam lobbies, its this API that will actually be doing the real work. Using the Matchmaking API requires that you have a level of understanding of the underlying Steam API but it does still simplify working with the API by making it Unity centric, handling boiler plate concepts such as the callbacks and simplifying common concepts in a Unity manager e.g. UnityEvents and Actions, simpler calls, etc..
 
-> What if the exact match the player wants isn't available or what if they don't know exactly that they want?
+### [Lobby object](../../objects/lobby.md)
 
-In that case you have two options
+[Lobby](../../objects/lobby.md) as in the object in Steamworks Complete is a [struct](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct) which wraps around ulong and CSteamID. Fundamentally it acts as a lobby ID and is [implicitly convertible](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions) between ulong and CSteamID meaning you can pass it along as if it where a ulong value or a CSteamID and you can assign it from a ulong value or a CSteamID. Beyond being a fancy wrapper around ulong it also has accessors and methods that make working with a specific lobby very easy. Using the lobby object you very likely wont need to touch the raw API at all.
 
-### Quick Match
+### [Lobby Manager](../../components/lobby-manager.md)
 
-This is the most common approach by modern games. A quick match is where you search for a lobby that matches the desired game well enough and join it, if no ideal match can be found you create a new lobby with the arguments that match the ideal match and continue to look for near matches.
+As the name suggests [this is a tool for managing a lobby](../../components/lobby-manager.md). The lobby manager is the easiest way to manage a lobby and is a [Unity component](https://docs.unity3d.com/ScriptReference/Component.html) ... that is you can add it to a GameObject and configure it in Unity editor. The [Lobby Manager](../../components/lobby-manager.md) does more than simply expose Matchmaking events to the Unity editor it handles common concepts for you and makes it easier to work with a lobby through designer friendly tools such as Bolt and other visual scripting assets.
 
-This means that other player's looking for the same match will find your new lobby and join you. Typically a modern game will also be looking for near matches in the background and after some tolerable time will take the nearest match even if its not ideal.
+## Player Join / Leave
 
-The objective of "Quick Match" in most games is to get the player playing a multiplayer match as soon as possible. Hence "quick" match. It does this by&#x20;
+Your first question when managing a lobby is how to know when the user joins or leaves a lobby and what lobby it was that they joined or left. From low level to high here are the notes!
 
-1. Searching for an ideal match
-2. If not found creating an ideal lobby that others can join
-3. If not enough join in a tolerated time joining the next best lobby it can find
+### Matchmaking API
 
-### Lobby Browser
+[EventLobbyEnterSuccess](../../api/matchmaking.md#eventlobbyentersuccess) and [EventLobbyEventFailed ](../../api/matchmaking.md#eventlobbyenterfailed)are raised when the local user tries and succeeds or fails respectively to enter a lobby. Both events return the [LobbyEnter\_t ](https://partner.steamgames.com/doc/api/ISteamMatchmaking#LobbyEnter\_t)structure provided by Steam API.
 
-Another approach used is to display a list of "near match" lobbies to the user along with a "create lobby" button.
+#### Success
 
-Older games didn't let you create a new lobby until you searched for one. Once the search failed it would display the nearest matches to your search arguments along with a create button. The idea here is a player should first fill up a waiting session or if none suit the player's needs create one of there own.
+```csharp
+void HandleLobbyEnterSuccess(LobbyEnter_t arg)
+{
+    Debug.Log("Success lobby join on lobby ID " + arg.m_ulSteamIDLobby);
+}
+```
 
-This model does much the same as Quick Match but lets the player decide what the "nearest match" lobby is. The down side to this is some players will be stubborn and always make there own  lobby increasing the average time to match for all players.
+#### Failure
 
-#### How to display lobbies
+```csharp
+void HandleLobbyEnterFailed(LobbyEnter_t arg)
+{
+    Debug.Log("Failed lobby join on lobby ID " + arg.m_ulSteamIDLobby);
+}
+```
 
-The [5 Lobbies](../../learning/sample-scenes/5-lobbies.md) sample scene demonstrates browsing for lobbies. If you wanted to do this model the ideal solution is to let the user define there search arguments and return a small number of the lobbies if any that match that say the top 10.&#x20;
+### Lobby
 
-You can then do searches that are slightly less strict ... what this means depends on your game. For example lets say your game is a classic shooter with modes like CTF, C\&H, KofH and has session sizes of 4v4, 8v8 and 16v16 and maybe also lets your player's pick a map.
+The lobby object Join method takes a callback so for example
 
-Your player may search for CTF 4v4 on map X. You return the top 10 matches that suit that but show the player the top 10 CTF 8v8, top 10 C\&H 4v4, top 10 KofH 4v4, etc. You don't want to flood your player with to many options and you dont want to burry there preference the idea is to show them options in case there ideal match isn't available or in case they didn't think to look for something else.
+```csharp
+Lobby lobbyIWantToJoin = lobbyId;
+Lobby.Join((result, ioError) =>
+    {
+        if(!ioError) //Was their an IO error?
+        {
+            //cast the chat room responce to the enum for easier reading
+            var responce = (EChatRoomEnterResponse)result.m_EChatRoomEnterResponse;
 
-### I need to list all servers
+            if (responce == EChatRoomEnterResponse.k_EChatRoomEnterResponseSuccess)
+                ;//We are in all is well
+            else
+            {
+                //Failed
+                if (responce == EChatRoomEnterResponse.k_EChatRoomEnterResponseLimited)
+                    ;//Failed because limited account
+            }
+        }
+        else
+            //Yes thier was an IO error
+    });
+```
 
-{% hint style="success" %}
-A lobby is not a server
-
-A lobby is a group of player's looking to play a game together.
-{% endhint %}
-
-Its keenly important that you understand that a lobby is not a server, it is not a networking concept at all. It is a chat room where player's meat and converse to decide what they would like to play together before they go do so.
-
-You can think of it like jumping on Team Speak, or Discord, etc. and rounding up a few friends to go play a game together.
-
-If you want to list a set of available server's then you 1st off need servers. You can look at creating a server build for your game and having it register as a [Steam Game Server](../../how-to-and-troubleshooting/multiplayer/game-server-browser.md).
+So we do a bit more work here so we can understand if it was a success or not, and if not why not. The [EChatRoomEnterResponce](https://partner.steamgames.com/doc/api/steam\_api#EChatRoomEnterResponse) tells us why.
 
 {% hint style="info" %}
-Learn more [here](../../how-to-and-troubleshooting/multiplayer/game-server-browser.md)
+In our example above we used expression to create an anon method. This is a style choice you can learn more about [expression ](../../../../company/concepts/development/lambda-expressions.md)and [anon methods](../../../../company/concepts/development/callbacks.md#callback-examples) in our other articles.
 {% endhint %}
 
-Once you have a server build you need to decide how your going to host it.
+### Lobby Manager
 
-1.  Player Hosted
+Lobby manager makes this supper easy. Using Lobby Manager you don't need to use any code at all if you don't want. You will see right in the inspector a [evtEnterSuccess ](../../components/lobby-manager.md#evtentersuccess)and an [evtEnterFailed ](../../components/lobby-manager.md#evtenterfailed)event. These work just like the ones on Matchmaking API but of course are accessible from the Unity Editor and only raise for lobbies that where joined through this Lobby Manager.
 
-    This is where you ship your server build and let player's host it them selves
-2.  Bespoke
+The fact that Lobby Manager filters its events to only the events that where ran through it makes it much easier when driving UI elements. Most games will have 2 lobbies, 1 for the session aka "matchmaking" and 1 as a player friend group or party. The Matchmaking API events raise for any event on any lobby that the local user is a member of so if a user is in a session lobby and a party lobby the events will raise for both leaving it up to you to sort out which lobby the event goes to.
 
-    Services like [G-Portal](https://www.g-portal.com/) can be used to host official, private, etc. ... you see this done a lot with survival games like Minecraft, Conan Exiles, etc.
-3.  Traditional
+Lobby Manager only handles events for the lobby that it is "managing" so its filtering the events down for you. Thus when the "evtEnterSuccess" triggers on your MatchmakingObject's LobbyManagaer component you know its related to the matchmaking lobby.
 
-    Using a service like [PlayFab](https://playfab.com/), [GameSparks ](https://www.gamesparks.com/)or [Multiplay](https://unity.com/products/multiplay)
-4.  DIY
+{% hint style="info" %}
+Yes you can of course use the Lobby Manager from code as much or as little as you would like. Doing so is no different than using any other Unity component from code.
+{% endhint %}
 
-    Do it your self, if your a glutton for pain or just really like data operations you could of course host your servers your self.
+## Others Join / Leave
 
-Doing this will let you browse for and display all available (and publicly visible) stem game servers via a [Steam Game Server Browser](../../components/game-server-browser-manager.md).
+This is how do you know when some other player joins or leaves the lobby that your in. In other words how do you know when new "peers" come in or go out of the lobby.
 
-## Use Cases
+### Matchmaking API
+
+This is actually handled via the [EventLobbyChatUpdate ](../../api/matchmaking.md#eventlobbychatupdate)event which is raised any time a chat event occurs ... including when members join or leave.
+
+The handler for this event would look something like this, note the work is done in the [EChatMemberStateChange](https://partner.steamgames.com/doc/api/ISteamMatchmaking#EChatMemberStateChange) data
+
+```csharp
+void HandleChatUpdate(LobbyChatUpdate_t arg)
+{
+    //Check if this is for the lobby we care about
+    if(arg.m_ulSteamIDLobby == Lobby)
+    {
+        //Cast the chat member state to an enum for easy reading
+        var state = (EChatMemberStateChange)arg.m_rgfChatMemberStateChange;
+        if (state == EChatMemberStateChange.k_EChatMemberStateChangeEntered)
+            ;//arg.m_ulSteamIDUserChanged joined
+        else
+            ;//arg.m_ulSteamIDUserChanged left us
+    }
+}
+```
+
+### Lobby object
+
+Their is no way to do this from the lobby object as the lobby object is a struct and doesn't define events.&#x20;
+
+### Lobby Manager
+
+As always the Lobby Manager makes it easier not just by filtering on the lobby for you but also by splitting the event into two. [evtUserJoined ](../../components/lobby-manager.md#evtuserjoined)and [evtUserLeft ](../../components/lobby-manager.md#evtuserleft)invoke when someone joins or leaves respectively. These events are [UserData ](../../objects/user-data.md)events meaning they hand you the [UserData ](../../objects/user-data.md)of the member that joined or left.
+
+```csharp
+void HandleUserJoined(UserData arg)
+{
+    //arg is the user that joined us
+}
+```
+
+```csharp
+void HandleUserLeft(UserData arg)
+{
+    //arg is the user that left us
+}
+```
+
+## Metadata Change
+
+You often need to know when data on the lobby or a given member has changed.
+
+### Matchmaking API
+
+The [EventLobbyDataUpdate ](../../api/matchmaking.md#eventlobbydataupdate)event is raised when any sort of data is updated for the lobby or a member.
+
+```csharp
+void HandleDataChanged(LobbyDataUpdate_t dataUpdated)
+{
+    //Is this a lobby we care about?
+    if(dataUpdated.m_ulSteamIDLobby == Lobby)
+    {
+        if(dataUpdated.m_ulSteamIDLobby == dataUpdated.m_ulSteamIDMember)
+        {
+            //It was lobby data that was updated
+        }
+        else
+        {
+            //It was this member that updated
+            var member = new LobbyMember
+                    { 
+                        lobby = dataUpdated.m_ulSteamIDLobby,
+                        user = dataUpdated.m_ulSteamIDMember
+                    };
+        }
+    }
+}
+```
+
+### Lobby object
+
+This cannot be done from the Lobby object alone as its an event and the struct doesn't have any of the events.
+
+### Lobby Manager
+
+Lobby manager is much like the Matchmaking API for this one and uses the [evtDataUpdated](../../components/lobby-manager.md#evtdataupdated) method to know when any kind of data has changed.
+
+```csharp
+void HandleDataChanged(LobbyDataUpdate_t dataUpdated)
+{
+    if(dataUpdated.m_ulSteamIDLobby == dataUpdated.m_ulSteamIDMember)
+    {
+        //It was lobby data that was updated
+    }
+    else
+    {
+        //It was this member that updated
+        var member = new LobbyMember
+                { 
+                    lobby = dataUpdated.m_ulSteamIDLobby,
+                    user = dataUpdated.m_ulSteamIDMember
+                };
+    }
+}
+```
+
+## Lobby Data
+
+Writing lobby metadata data can only be done by the owner of the lobby. Metadata on the lobby is what is used when searching for a lobby and is what you would use to express configuration and settings of the session the lobby deals with. For example if you wanted to let all users know what map the session will be on then you would set a lobby metadata data field map = X.&#x20;
+
+### Matchmaking API
+
+Use the [SetLobbyData](../../api/matchmaking.md#setlobbydata) method to apply lobby data. This can only be done if the user is the owner of the lobby.
+
+```csharp
+if(Matchmaking.Client.SetlobbyData(lobby, key, value))
+    ;//Steam took the request
+else
+    ;//Steam said no, your probably not the owner.
+```
+
+### Lobby
+
+Using the lobby object its a step easier and you have a few options
+
+Simple indexer
+
+```csharp
+myLobby["key"] = "value";
+// or
+var theValue = myLobby["key"];
+```
+
+and we have exposed several common fields as fields on the struct
+
+```csharp
+//Name
+myLobby.Name = "New Name"
+// Is the same as
+myLobby["name"] = "New Name";
+
+//Game Version
+myLobby.GameVersion = "v1.24b";
+// is the same as
+myLobby["z_heathenGameVersion"] = "v1.24b";
+
+//IsReady
+myLobby.IsReady = true;
+// Is the same as
+myLobby["z_heathenReady"] = "true";
+
+//IsGroup
+myLobby.IsGroup = true;
+// Is the same as
+myLobby.SetType(ELobbyType.k_ELobbyTypeInvisbile);
+myLobby["z_heathenMode"] = "Group";
+```
+
+### Lobby Manager
+
+The lobby manager lets you use both approaches
+
+```csharp
+lobbyManager.SetLobbyData(key, value);
+// or
+var lobby = lobbyMannager.Lobby;
+lobby["key"] = "value";
+```
+
+## General Use Cases
 
 ### Authenticate Users
 
@@ -264,7 +445,7 @@ void HandleChatMessage(LobbyChatMsg message)
 }
 ```
 
-You can learn more about handling the result of a `BeginAuthSession` in our article on [Steam Authentication](../authentication.md#begin-auth-session).
+You can learn more about handling the result of a `BeginAuthSession` in our article on [Steam Authentication](../../features/authentication.md#begin-auth-session).
 
 ### Create a Lobby or Group.
 
@@ -367,3 +548,5 @@ All members of a lobby should upon joining the lobby register an event handler o
 API.Matchmaking.Client.EventLobbyGameCreated.AddListener(HandleGameServerSet);
 ```
 {% endhint %}
+
+##

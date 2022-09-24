@@ -22,4 +22,4 @@ Sadly a great many Unity Asset developers do what Unity Asset developers often d
 SteamManager should not be present much less used in any project
 {% endhint %}
 
-The functionality that SteamManager provided in its original context is handled by Heathen's systems. Please see the [Steamworks Behaviour](../../components/steamworks-behaviour.md) for a similar but quite different approach.
+The functionality that SteamManager provided in its original context is handled by Heathen's systems. Please see the [Steamworks Behaviour](../components/steamworks-behaviour.md) for a similar but quite different approach.

@@ -101,7 +101,7 @@ A Unity session that is being connected to by other Unity sessions is a game ser
 
 Unity builds can be both servers and clients and most NM's have a concept of "Host" which is exactly that, it is where your NM is acting as both a client and a server. That is it is asking for content (From its self) and serving that content (to its self and others).
 
-A lobby however is not a server, browsing for lobbies is not a way to make a server list. Server discovery is a concept which Steam handles please see the [Steam Game Server](../../how-to-and-troubleshooting/multiplayer/game-server-browser.md) and [Game Server Browser](../../components/game-server-browser-manager.md) for more information.
+A lobby however is not a server, browsing for lobbies is not a way to make a server list. Server discovery is a concept which Steam handles please see the [Steam Game Server](../../troubleshooting-and-how-to-guides/multiplayer/game-server-browser.md) and [Game Server Browser](../../components/game-server-browser-manager.md) for more information.
 
 ### Transport
 
@@ -275,4 +275,4 @@ Really a Client Server game is very much the same as Peer to Peer the only diffe
 
 &#x20;For example, you could use PlayFab and request the allocation of a new GameServer. PlayFab will respond with connection information, and you can use that to have the owner connect to the server, configure it for play and then call the SetGameServer call to notify the others its ready to join.
 
-Note that Game Servers can be configured as “Steam Game Servers” that is they can log on to steam as a server for your game and will get a CSteamID that be used with SteamNetworking and SteamNetworkingSockets. See the [Steam Game Server](../../how-to-and-troubleshooting/multiplayer/game-server-browser.md) documentation for more information on SGS.
+Note that Game Servers can be configured as “Steam Game Servers” that is they can log on to steam as a server for your game and will get a CSteamID that be used with SteamNetworking and SteamNetworkingSockets. See the [Steam Game Server](../../troubleshooting-and-how-to-guides/multiplayer/game-server-browser.md) documentation for more information on SGS.

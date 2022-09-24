@@ -46,35 +46,21 @@ To make that clear
 There is zero customization needed from Heathen to enable you to work with Steam networking. Simply use Mirror, MLAPI, FishNetworking or any other networking highlevel API that has a Steamworks.NET transport.
 {% endhint %}
 
-The main advantage to configuring and initializing the Steam API on a game server is the ability to use Steam Networking interfaces with it. Valve provides several networking interfaces but two of them in particular are relevant for Unity game developers
-
-Steam Networking
+The main advantage to configuring and initializing the Steam API on a game server is the ability to use Steam Networking interfaces with it. Valve provides several networking interfaces but main one you should be looking at is the Steam Networking Sockets APIs
 
 {% hint style="success" %}
 This is not limited to P2P games despite what some of the API names suggest
 {% endhint %}
 
-{% hint style="info" %}
-Yes Steam has noted that they would like to deprecate this interface in favor of Steam Networking Sockets. No it has not been removed from the API yet and there is no publicized date for such.
-
-
-
-As a point in note Steam API still has old authentication logic from more than a decade ago in it e.g. they are not likely to ever break your game by removing API features.
-{% endhint %}
-
-and&#x20;
-
-Steam Networking Sockets
-
 ### Authentication
 
-The Steam Authentication tools must be used with SGS if you want Steam Game Server Browser to properly list user counts. The [Authenticaiton](../../api/authentication.md) documentation can provide more details.
+The Steam Authentication tools must be used with SGS if you want Steam Game Server Browser to properly list user counts. The [Authentication](../../api/authentication.md) documentation can provide more details.
 
 ### Stats and Achievements Security
 
 Stats and Achievements can be a great way to develop your game's community and can even serve as a progression system, however, its extremally easy for user's to set stats and achievements them selves without your game at all.
 
-Stats and Achievements can be configured such that they can only be set from Game Servers (GS) or Official Game Servers (Offical GS). This provides a layer of security and makes it feasible to use Stats and Achievements for game play impacting or community impacting features.
+Stats and Achievements can be configured such that they can only be set from Game Servers (GS) or Official Game Servers (Official GS). This provides a layer of security and makes it feasible to use Stats and Achievements for game play impacting or community impacting features.
 
 {% hint style="info" %}
 It is not to say you must use SGS for Stats and Achievements only that you must accept that every client based feature will be exploited by your users.

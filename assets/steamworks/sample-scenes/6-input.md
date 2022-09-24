@@ -3,7 +3,7 @@
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -12,7 +12,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 This scene demonstrates the use of Steam Input API
 
-![](<../../../../.gitbook/assets/image (170) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (170) (1) (1) (1).png>)
 
 It is important to understand what Steam Input is and how to properly configure it for your game.&#x20;
 
@@ -24,13 +24,13 @@ You must configure your app to use Steam Input and you must use Valve's concept 
 
 The Input tools provided by Heathen handle the integration with Steam Input in that you can define your sets, layers and actions as part of your Steam Settings object and easily activate them, fetch glyph data for them and of course query there state.
 
-Heathen's tools take Valve's input system a step further and wrap all actions as [GameEvents](../../../system-core/game-events.md) meaning you can handle Steam Input in a loop similar to traditional UnityEngine.Input or you as events similar to Unity's newer Input System.
+Heathen's tools take Valve's input system a step further and wrap all actions as [GameEvents](../../system-core/game-events.md) meaning you can handle Steam Input in a loop similar to traditional UnityEngine.Input or you as events similar to Unity's newer Input System.
 
 ### What do I learn?
 
-1. Using steam's [Input](../../api/input.md) API to handle controller input
-2. Using [Input](../../api/input.md) API to get button images and names
-3. Using the [InputActionSet](../../objects/input-action-set.md), [InputActionSetLayer ](../../objects/input-action-set-layer.md)and [InputAction ](../../objects/input-action.md)objects
+1. Using steam's [Input](../api/input.md) API to handle controller input
+2. Using [Input](../api/input.md) API to get button images and names
+3. Using the [InputActionSet](../objects/input-action-set.md), [InputActionSetLayer ](../objects/input-action-set-layer.md)and [InputAction ](../objects/input-action.md)objects
 4. How to access the Knowledge Base (where you are now)
 5. How to access the support [Discord ](https://discord.gg/6X3xrRc)
 6. How to leave a review 😉
@@ -65,13 +65,13 @@ The sample scene should clear this when it exits however if you find your Steam 
 
 ### Manager
 
-The manage game object has the [Steamworks Behaviour](../../components/steamworks-behaviour.md) component attached and will handle initialization of the Steam API on start up.
+The manage game object has the [Steamworks Behaviour](../components/steamworks-behaviour.md) component attached and will handle initialization of the Steam API on start up.
 
 ### Controls UI
 
-The controls UI uses standard Unity scripts and the [Input Action Glyph](../../components/input-action-glyph.md) and [Input Action Name](../../components/input-action-name.md) components to display the controls and mapped buttons to the user.
+The controls UI uses standard Unity scripts and the [Input Action Glyph](../components/input-action-glyph.md) and [Input Action Name](../components/input-action-name.md) components to display the controls and mapped buttons to the user.
 
 ### DEMO SCRIPTS
 
-The demo script for this scene operates the Steam Input API by reading data from the attached [InputAction](../../objects/input-action.md) objects and controls the active action set and layer by using the attached [InputActionSet](../../objects/input-action-set.md) and [InputActionSetLayer ](../../objects/input-action-set-layer.md)objects.&#x20;
+The demo script for this scene operates the Steam Input API by reading data from the attached [InputAction](../objects/input-action.md) objects and controls the active action set and layer by using the attached [InputActionSet](../objects/input-action-set.md) and [InputActionSetLayer ](../objects/input-action-set-layer.md)objects.&#x20;
 

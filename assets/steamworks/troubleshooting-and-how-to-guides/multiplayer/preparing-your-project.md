@@ -40,7 +40,7 @@ Heathen’s Steamworks (I suggest Complete, but Foundation might do you)
 
 ## Configuring Steam
 
-Setting up your Steam project. If your going with a P2P model nothing special to be done here but if your going with a Client Server set up and intend to build a [Steam Game Server](game-server-browser.md) you then you also need to configure your Steam App for that.
+Setting up your Steam project. If your going with a P2P model nothing special to be done here but if your going with a Client Server set up and intend to build a [Steam Game Server](game-server-browser.md) you then you also need to configure your Steam App for that. You can read more in Valve's own documentation for Steam Game Server [here](https://partner.steamgames.com/doc/features/multiplayer/game\_servers).
 
 For general understanding of what [P2P ](../../../../company/concepts/design/multiplayer/#peer-to-peer-p2p)vs[ Client/Server](../../../../company/concepts/design/multiplayer/#client-server) is please read our [design article](../../../../company/concepts/design/multiplayer/). Interestingly a lot of people have a miss conception as to what P2P and Client/Server mean ... its wise to click those links and check the terminology.
 

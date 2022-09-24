@@ -30,9 +30,9 @@ Keep in mind you can get instant access and a license to keep forever of Steamwo
 
 ### What about Microtransactions / Cash Shop?
 
-Yes of course, Steam API handles MTX (micro transactions) via the Steam Inventory interface. Heathen's Steamworks Complete has robust tooling around [Steam Inventory](features/inventory/) which can greatly help any developer regardless of skill set.
+Yes of course, Steam API handles MTX (micro transactions) via the Steam Inventory interface. Heathen's Steamworks Complete has robust tooling around [Steam Inventory](troubleshooting-and-how-to-guides/inventory/) which can greatly help any developer regardless of skill set.
 
-> To reiterate as its often hard to believe, yes Steam API does MTX, yes it is [Steam Inventory](features/inventory/) that is used to do that.
+> To reiterate as its often hard to believe, yes Steam API does MTX, yes it is [Steam Inventory](troubleshooting-and-how-to-guides/inventory/) that is used to do that.
 
 ## Can I try before I buy?
 

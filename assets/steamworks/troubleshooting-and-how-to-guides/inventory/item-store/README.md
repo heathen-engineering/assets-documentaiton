@@ -31,7 +31,7 @@ This article will describe the concepts of an item store and cover several commo
 
 ### Assumptions
 
-This article assumes you have defined your items already. If you have questions about that see our [Getting Started](../../../features/inventory/getting-started.md) article.
+This article assumes you have defined your items already. If you have questions about that see our [Getting Started](../getting-started.md) article.
 
 This article also assumes you already understand how to create UI and behaviours in Unity. If you have questions there we strongly recommend you check out [this tutorial](https://learn.unity.com/pathway/junior-programmer). Its short and very useful for every Unity developer.
 
@@ -87,4 +87,4 @@ By refresh we assume you mean how to get the current count of the user's invento
 
 So you have set up your inventory items, your going to use full Client API so you cant simulate an end-to-end purchase. Your asking your self ... How do I test my game logic to make sure its handling inventory change correctly?
 
-Use the [Steamworks Inspector](../../../how-to-and-troubleshooting/#inventory) and click the "Grant" button beside any of the items, this will cause it to grant you an item which will raise the [EventChanged](../../../objects/steam-settings/game-client/inventory-settings.md) ... you can now observe your game logic and insure its performing as you expected.
+Use the [Steamworks Inspector](../../#inventory) and click the "Grant" button beside any of the items, this will cause it to grant you an item which will raise the [EventChanged](../../../objects/steam-settings/game-client/inventory-settings.md) ... you can now observe your game logic and insure its performing as you expected.

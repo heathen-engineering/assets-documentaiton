@@ -3,7 +3,7 @@
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -12,7 +12,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 This scene demonstrates the use of Steam stats and Steam achievements.
 
-![](<../../../../.gitbook/assets/image (172) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (172) (1) (1) (1) (1).png>)
 
 ### What do I learn?
 
@@ -26,7 +26,7 @@ This scene demonstrates the use of Steam stats and Steam achievements.
 
 ### Manager
 
-The manage game object has the [Steamworks Behaviour](../../components/steamworks-behaviour.md) component attached and will handle initialization of the Steam API on start up.
+The manage game object has the [Steamworks Behaviour](../components/steamworks-behaviour.md) component attached and will handle initialization of the Steam API on start up.
 
 ### NumWins
 
