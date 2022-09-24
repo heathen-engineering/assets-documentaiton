@@ -1,5 +1,5 @@
 ---
-description: Hands down the larges and most complex of all Steam features
+description: Hands down the largest and most complex of all Steam features
 ---
 
 # Inventory

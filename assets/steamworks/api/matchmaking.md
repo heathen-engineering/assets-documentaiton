@@ -516,18 +516,18 @@ Adds a string comparison filter to the next RequestLobbyList call.
 ```csharp
 public static void CreateLobby(ELobbyType type, 
                 int maxMembers, 
-                Action<Lobby, bool> callback)
+                Action<EResult, Lobby, bool> callback)
 ```
 
 {% hint style="info" %}
-The callback deligate should be in the form of
+The callback delegate should be in the form of
 
 ```csharp
-void CallbackHandler(Lobby result, bool IOError);
+void CallbackHandler(EResult result, Lobby lobby, bool IOError);
 ```
 {% endhint %}
 
-Create a new matchmaking lobby.
+Create a new lobby and set the max members allowed. The callback will report success or failure and the reason why via the [EResult ](https://partner.steamgames.com/doc/api/steam\_api#EResult)value.
 
 ### DeleteLobbyData
 
