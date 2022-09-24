@@ -165,15 +165,20 @@ private void Handler(Lobby lobby)
 ### evtCreateFailed
 
 ```csharp
-public UnityEvent evtCreateFailed
+public EResultEvent evtCreateFailed
 ```
 
 Occurs when an attempt to create a lobby fails. The handler would be similar to the following.
 
+{% hint style="info" %}
+Learn more about [EResult ](https://partner.steamgames.com/doc/api/steam\_api#EResult)in Valve's documentation [here](https://partner.steamgames.com/doc/api/steam\_api#EResult).
+{% endhint %}
+
 ```csharp
-private void Handler()
+private void Handler(EResult result)
 {
     //Do work
+    Debug.LogError($"Lobby Create failed with error code: {result}");
 }
 ```
 
