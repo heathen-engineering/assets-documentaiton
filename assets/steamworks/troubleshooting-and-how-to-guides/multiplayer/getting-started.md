@@ -2,7 +2,7 @@
 description: On your mark, Get set .... CODE
 ---
 
-# Preparing your Project
+# Getting Started
 
 {% hint style="success" %}
 #### Like what your seeing?
@@ -14,15 +14,27 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction
 
-The following sections break down the major things to get done and in order before you do anything else.
+So you want to build a multiplayer Steam game? We can help!
 
-## Update Unity
+Your first stop should be our [Design article on Multiplayer](../../../../company/concepts/design/multiplayer/) it covers the fundamentals that you'll need to know before you get started. One you have your head wrapped around the concepts and a design in mind come back here and we will get started.
 
-Select the proper Unity Version.
+### Update Unity
 
-We have a [whole article on this](../../../../company/concepts/fundamentals/unity-release-version.md), long story short you should aim to release your project on the most recent LTS available from Unity.
+Select the proper Unity Version, this is much more important than you might think. You should be keeping your Unity Editor up to date with what you anticipate will be the most recent 'LTS' build of Unity at the time you game launches. We have a [whole article on this](../../../../company/concepts/fundamentals/unity-release-version.md), it explains what LTS is, why we have this stance and how to go about it.
 
-## Prerequisites
+### Installing Requirements
+
+You have options in how you deliver a multiplayer experience for your players.&#x20;
+
+#### Local Multiplayer
+
+Local multiplayer is the simplest and least common in the current market especially for PC games. This method doesn't require any additional technology beyond a means to understand when input comes from 1 player vs the others. Steam Input identifies each controller uniquely so this is a trivial matter usually accomplished by asking each player to press a button to "register" and then associating that controller as that player.
+
+#### Remote Play
+
+This is a feature of&#x20;
+
+## Networking
 
 Installing requirements
 

@@ -7,7 +7,7 @@ description: Understanding Steam Leaderboards and the Heathen Engineering tool k
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -28,7 +28,7 @@ Use the Steam Web API to set trusted leaderboard scores
 
 ## Leaderboard Object
 
-This is a scriptable object used to define the leaderboard in Unity and used within Unity to query the board and access its information. Read more in the [Leaderboard Object](../objects/leaderboard.md) document.
+This is a scriptable object used to define the leaderboard in Unity and used within Unity to query the board and access its information. Read more in the [Leaderboard Object](../../objects/leaderboard.md) document.
 
 ### To Create
 
@@ -44,15 +44,15 @@ Why?
 Valve have not provided an official means to do so through the Steam API.
 {% endhint %}
 
-![](<../../../.gitbook/assets/image (182) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (182) (1) (1) (1).png>)
 
 A few key features to know about when you create your Leaderboard.
 
 From the Steam Settings you can mark the leaderboard as create if missing by ticking the toggle to the left of the name. If ticked, the system will search for the board by name, if it is not found it will create the board for you.
 
-![](<../../../.gitbook/assets/image (152) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (152) (1) (1).png>)
 
-![](<../../../.gitbook/assets/image (165) (1) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (165) (1) (1) (1) (1).png>)
 
 You can also specify the number of `Details` entries the board should handle by entering a number in the Details field
 
@@ -64,7 +64,7 @@ Details are a way of storing additional data on a board, you must specify how ma
 
 If your marking your board as Create if Missing e.g. you have ticked the box as indicated above then you should also set the display type and sorting order by selecting the leaderboard in your Steam Settings and editing its values.
 
-![](<../../../.gitbook/assets/image (153) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (153) (1) (1) (1).png>)
 
 {% hint style="danger" %}
 None is an available but invalid option for both settings
@@ -86,7 +86,7 @@ You can upload an array of int values along with the player's score, Steam takes
 
 To read this data make sure you have se the `Details` field as seen in the inspector for you Leaderboard Object. This tells our system how many details it should read from Steam when reading a user's data. If you leave it at 0 we will not try to read detail values, if you enter a value larger than 64 errors will occur.
 
-The details them selves will be provided in the [LeaderboardEntry ](../objects/leaderboard-entry.md)record returned by leaderboard queries.
+The details them selves will be provided in the [LeaderboardEntry ](../../objects/leaderboard-entry.md)record returned by leaderboard queries.
 
 ### Attachments
 
@@ -114,9 +114,9 @@ The above example assumes that `myData` is a JSON serializable object and that c
 
 The leaderboard manager is a simple component that greatly simplifies reading and writing data to and from a given leaderboard and exposes helpful events to the Unity Inspector.
 
-![](<../../../.gitbook/assets/image (181) (1).png>)
+![](<../../../../.gitbook/assets/image (181) (1).png>)
 
-You can learn more about the [Leaderboard Manager](../components/leaderboard-manager.md) in its documentation article and by reviewing the [4 Leaderboards](../sample-scenes/4-leaderboards.md) sample scene.
+You can learn more about the [Leaderboard Manager](../../components/leaderboard-manager.md) in its documentation article and by reviewing the [4 Leaderboards](../../sample-scenes/4-leaderboards.md) sample scene.
 
 ## How To
 
@@ -130,7 +130,7 @@ Upload Method or simply Method
 This is a concept you will see in various places when uploading&#x20;
 {% endhint %}
 
-#### [Leaderboard Object](../objects/leaderboard.md)
+#### [Leaderboard Object](../../objects/leaderboard.md)
 
 The most common is to use the LeaderboardObject its self to upload scores. The LeaderboardObject is a ScriptableObject so you can reference it in any script you like and use it as such:
 
@@ -141,7 +141,7 @@ leaderboard.UploadScore(42, method, callback);
 This method requires you to pass in the score, method of upload and provide a callback in the form of `void Callback(LeaderboardScoreUploaded_t result, bool IOError)` that will be invoked when the process is complete.
 
 {% hint style="info" %}
-Callbacks are a common feature of many multi-process systems to include Unity its self.  You can [learn more about them here](../../../company/concepts/development/callbacks.md).
+Callbacks are a common feature of many multi-process systems to include Unity its self.  You can [learn more about them here](../../../../company/concepts/development/callbacks.md).
 {% endhint %}
 
 or
@@ -152,9 +152,9 @@ leaderboard.UploadScore(42, detailArray, method, callback);
 
 This method works the same as the above but can take a detail array. This would be an array of int values and must not be longer than 64 e.g. `int[64] detailArray` this is commonly used to store additional data about the user's entry.
 
-#### [Leaderboard Manager](../components/leaderboard-manager.md)
+#### [Leaderboard Manager](../../components/leaderboard-manager.md)
 
-You can use the [Leaderboard Manager](../components/leaderboard-manager.md) component;\
+You can use the [Leaderboard Manager](../../components/leaderboard-manager.md) component;\
 This component can be attached to a GameObject to manage a specific leaderboard. Its meant to be used with UI elements or for users that are not comfortable working with Scriptable Objects or the API directly. It serves to simplify the methods and features of the leaderboard system and expose common events to the Unity inspector.
 
 While its not typical you can interact with the Leaderboard Manager from code such as.

@@ -14,18 +14,18 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 public class InputAction : GameEvent<InputActionData>
 ```
 
-Represents a Steam Input Action such as defined in your games [IGA ](../learning/core-concepts/steam-input.md#in-game-action-file)file.
+Represents a Steam Input Action such as defined in your games [IGA ](../troubleshooting-and-how-to-guides/input/setup.md#in-game-action-file)file.
 
 These must be created as part of your [Steam Settings](steam-settings.md) object .
 
 ## Fields and Attributes
 
-| Type                        | Name          | Comment                                                                                                              |
-| --------------------------- | ------------- | -------------------------------------------------------------------------------------------------------------------- |
-| InputActionType             | type          | The type of action (Analog or Digital)                                                                               |
-| string                      | actionName    | The name of the action as it appears in the [IGA](../learning/core-concepts/steam-input.md#in-game-action-file) file |
-| InputAnalogActionHandle\_t  | AnalogHandle  | The native Steam API handle if this is a analog handle and has been resolved.                                        |
-| InputDigitalActionHandle\_t | DigitalHandle | The native Steam API handle if this is a digital handle and has been resolved.                                       |
+| Type                        | Name          | Comment                                                                                                                         |
+| --------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| InputActionType             | type          | The type of action (Analog or Digital)                                                                                          |
+| string                      | actionName    | The name of the action as it appears in the [IGA](../troubleshooting-and-how-to-guides/input/setup.md#in-game-action-file) file |
+| InputAnalogActionHandle\_t  | AnalogHandle  | The native Steam API handle if this is a analog handle and has been resolved.                                                   |
+| InputDigitalActionHandle\_t | DigitalHandle | The native Steam API handle if this is a digital handle and has been resolved.                                                  |
 
 ## Methods
 
