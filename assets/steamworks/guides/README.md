@@ -1,8 +1,8 @@
 ---
-description: When computer says no!
+description: How to .... everything!
 ---
 
-# How To & Troubleshooting
+# Guides
 
 {% hint style="success" %}
 #### Like what your seeing?
