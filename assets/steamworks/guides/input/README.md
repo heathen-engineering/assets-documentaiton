@@ -14,6 +14,6 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction
 
-These articles deal with the Steam Input feature. To learn more about Steam Input check out our [learning articles](../multiplayer/steam-input.md). It is always advised that you first read and understand Valve's own documentation on what the feature is and how its meant to be used. Having this understanding is key, Heathen's Steamworks Complete is a set of tools that makes working with Steam API easier but it is still bound by the limitations Valve lays out in its documents.
+These articles deal with the Steam Input feature. It is always advised that you first read and understand Valve's own documentation on what the feature is and how its meant to be used. Having this understanding is key, Heathen's Steamworks Complete is a set of tools that makes working with Steam API easier but it is still bound by the limitations Valve lays out in its documents.
 
 {% embed url="https://partner.steamgames.com/doc/features/steam_controller" %}

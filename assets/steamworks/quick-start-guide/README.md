@@ -81,4 +81,4 @@ If you want to see an example of using your HLAPI of choice with your HLAPI's St
 
 If your looking for examples on how to initialize, configure and use Steam API (in general) you will find various samples in the provided [samples scenes](../../physkit/learning/sample-scenes/) and examples throughout our knowledge base.
 
-If your trying to wrap your head around creating a [multiplayer game on the Steam platform](../learning/developer-articles/multiplayer-steam-games.md), we have an article for that as well. That article is not specific to any given HLAPI because the HLAPI you choose has no impact on the concepts involved.
+If your trying to wrap your head around creating a [multiplayer game on the Steam platform](broken-reference), we have an article for that as well. That article is not specific to any given HLAPI because the HLAPI you choose has no impact on the concepts involved.

@@ -14,7 +14,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction
 
-This tool helps you manage a shopping cart like behaviour for in-game item shops working with [Steam Inventory](../troubleshooting-and-how-to-guides/inventory/). The tool can be used to add, set, or get items from the cart thus enabling you to add items, adjust the quantity in the cart and has features for reading the estimated total and reporting that as a string for display.
+This tool helps you manage a shopping cart like behaviour for in-game item shops working with [Steam Inventory](../guides/inventory/). The tool can be used to add, set, or get items from the cart thus enabling you to add items, adjust the quantity in the cart and has features for reading the estimated total and reporting that as a string for display.
 
 The core feature of the cart is its ability to manage an order, that is you can call StartPurchase through the cart and it will manage the process through to authorization. The idea is you would use the cart to start the purchase and listen for the result. You game should block further modification to the cart until the order is authorized or cleared.
 

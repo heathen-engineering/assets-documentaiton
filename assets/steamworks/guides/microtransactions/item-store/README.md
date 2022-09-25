@@ -31,7 +31,7 @@ This article will describe the concepts of an item store and cover several commo
 
 ### Assumptions
 
-This article assumes you have defined your items already. If you have questions about that see our [Getting Started](../getting-started.md) article.
+This article assumes you have defined your items already. If you have questions about that see our [Getting Started](../../inventory/getting-started.md) article.
 
 This article also assumes you already understand how to create UI and behaviours in Unity. If you have questions there we strongly recommend you check out [this tutorial](https://learn.unity.com/pathway/junior-programmer). Its short and very useful for every Unity developer.
 

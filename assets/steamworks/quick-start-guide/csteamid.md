@@ -7,16 +7,18 @@ description: Understanding Steam's Unique ID
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
 
 ## Introduction
 
-CSteamID also known simply as "Steam ID" is a ulong value (64 bits) and is used by Steam API to uniquely identify ... well most things.
+CSteamID also known simply as "Steam ID" is a ulong value (64 bits) and is used by Steam API to uniquely identify ... well most things.&#x20;
 
-This value is composed of 3 main parts
+Heathen has created wrap around structures like [UserData ](../objects/user-data.md)and [Lobby ](../objects/lobby.md)that are interchangeable with CSteamID and ulong and provide helpful features unique to each use case of the ID. In most cases you should be using [UserData](../objects/user-data.md), [Lobby](../objects/lobby.md), [Clan](../objects/clan.md), etc. and not needing to bother with the raw CSteamID or its ulong value.
+
+The native CSteamID ulong value is composed of 3 main parts
 
 ### Universe
 
@@ -72,15 +74,15 @@ As noted Steam IDs are used for a lot of different things and each has its own s
 
 Heathen has created a set of wrappers that let you treat each ID as a unique type and simplify working with the features of each unique type. Note each of these are implicitly convertible ... that is you can use them as if they are CSteamID\_t or ulong and you can assign them from CSteamID\_t or ulong. These also have additional handlers to help you work with them as AccountID\_t
 
-### [Clan](../../objects/clan.md)
+### [Clan](../objects/clan.md)
 
 This is for IDs that represent a "clan" or "group"
 
-### [Lobby](../../objects/lobby.md)
+### [Lobby](../objects/lobby.md)
 
 This is for IDs that represent lobbies aka chats
 
-### [UserData](../../objects/user-data.md)
+### [UserData](../objects/user-data.md)
 
 This is for IDs that represent users
 

@@ -14,7 +14,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 public class InputActionSet : ScriptableObject
 ```
 
-Represents a Steam Input Action such as defined in your games [IGA ](../troubleshooting-and-how-to-guides/multiplayer/steam-input.md#in-game-action-file)file.
+Represents a Steam Input Action such as defined in your games [IGA](../guides/input/getting-started.md#in-game-action-file)[ ](broken-reference)file.
 
 These must be created as part of your [Steam Settings](steam-settings.md) object .
 

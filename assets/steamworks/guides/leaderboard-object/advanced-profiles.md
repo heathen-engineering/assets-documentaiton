@@ -2,7 +2,7 @@
 description: Public rich profiles available all the time
 ---
 
-# Unique Uses: Leaderboard Profiles
+# Advanced Profiles
 
 {% hint style="success" %}
 #### Like what your seeing?
@@ -24,15 +24,9 @@ This means that you cant depend on Steam's rich presence alone though that can b
 
 All of the reset of that data is stored in a profile object, this being DOTA its likely stored on the account after all DOTA has access to so much more than we as regular steam developers do. That said we can do nearly the same using Leaderboards to house profile data.
 
-## What's unique about it?
-
-Unique articles are where we share some of the more unusual use case for Steam artifacts that we have come across. As these are not the intended use cases for these artifacts be sure to take it with a grain of salt but as far as we can tell there is no issue with methods discussed in the Unique articles and they might give you some ideas for your own project.
-
-In this case we are talking about using a leaderboard, typically used for social ranking to house an account profile. Its not a billion miles off in that you can think of your profile as part of your social ranking but it is certainly a stretch of the intended use of a leaderboard.
-
 ## What is this?
 
-In summary the idea is to create a publicly accessible rich account profile like you would see with DOTA and similar games where user’s can show off there in game accomplishments, favorite builds, top stats and more.
+In summary the idea is to create a publicly accessible rich account profile like you would see with DOTA and similar games where user’s can show off there in game accomplishments, favourite builds, top stats and more.
 
 Leaderboards are used since anyone can query a leaderboard and fetch the data contained in it. Leaderboards can be easily written by anyone and can contain more than just a score and rank. The key to this use case is the use of leaderboard details array and leaderboard attachments.
 
@@ -73,14 +67,14 @@ As much as is possible try to pack that information into an int\[] with 64 or fe
 
 
 
-Booleans are something we use a lot as game developers and an int can represent 32 of them quite easily. Below I show a bit on how you might pack up to 32 booleans in a single int&#x20;
+Booleans are something we use a lot as game developers and an int can represent 32 of them quite easily. Below I show a bit on how you might pack up to 32 Booleans in a single int&#x20;
 
 {% hint style="info" %}
 Yes you can use bit wise operations to do this and yes it is less code to use bitwise and arguably faster operations to execute but bitwise operations tend to make some peoples head smoke and really if your doing this so often that the performance impact is an issue then you should really be cashing profile results.
 
 
 
-.NET gives use a more scirpter friendly way to monkey with bits that not many seem to know about so I will show that here. You can read more about BitArray here
+.NET gives use a more scripter friendly way to monkey with bits that not many seem to know about so I will show that here. You can read more about BitArray here
 
 [https://docs.microsoft.com/en-us/dotnet/api/system.collections.bitarray?view=net-5.0](https://docs.microsoft.com/en-us/dotnet/api/system.collections.bitarray?view=net-5.0)
 
@@ -119,7 +113,7 @@ bits = new BitArray(new int[]{ details[2] });
 
 ### Why an int array?
 
-Leaderboards store “details” per entry as an int\[] with up to 64 entries. This is fast to read and doesn’t require any serialization so less error prone. You can get clever with this and pack all sorts of data into an int array … for example you can think of an int as 32 booleans for example but what you do with it is up to you.
+Leaderboards store “details” per entry as an int\[] with up to 64 entries. This is fast to read and doesn’t require any serialization so less error prone. You can get clever with this and pack all sorts of data into an int array … for example you can think of an int as 32 Booleans for example but what you do with it is up to you.
 
 ### Why a serializable object?
 

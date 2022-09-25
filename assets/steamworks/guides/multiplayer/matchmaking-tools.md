@@ -445,7 +445,7 @@ void HandleChatMessage(LobbyChatMsg message)
 }
 ```
 
-You can learn more about handling the result of a `BeginAuthSession` in our article on [Steam Authentication](../../features/authentication.md#begin-auth-session).
+You can learn more about handling the result of a `BeginAuthSession` in our article on [Steam Authentication](../authentication.md#begin-auth-session).
 
 ### Create a Lobby or Group.
 

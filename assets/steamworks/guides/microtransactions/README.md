@@ -1,8 +1,8 @@
 ---
-description: Your looking for Steam Inventory
+description: Aka MTX, IAP, In App Purchase, cash shop, etc.
 ---
 
-# Steam Microtransactions (In-Game Purchases)
+# Microtransactions
 
 {% hint style="success" %}
 #### Like what your seeing?
@@ -14,9 +14,9 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction
 
-Steam Microtransactions (In-Game Purchases) are handled via the [Steam Inventory](../../troubleshooting-and-how-to-guides/inventory/) feature. We have multiple articles and a significant number of tools set up around [Steam Inventory](../../troubleshooting-and-how-to-guides/inventory/).
+Steam Microtransactions (In-Game Purchases) are handled via the [Steam Inventory](../inventory/) feature. We have multiple articles and a significant number of tools set up around [Steam Inventory](../inventory/).
 
-The [Steam Inventory](../../troubleshooting-and-how-to-guides/inventory/) system can be used for a number of things not just MTX. If you are interested in using Steam for MTX then it is [Steam Inventory](../../troubleshooting-and-how-to-guides/inventory/) that you will be using to define your items, establish there prices, start purchases and detect what items the user owns.
+The [Steam Inventory](../inventory/) system can be used for a number of things not just MTX. If you are interested in using Steam for MTX then it is [Steam Inventory](../inventory/) that you will be using to define your items, establish there prices, start purchases and detect what items the user owns.
 
 {% embed url="https://kb.heathenengineering.com/assets/steamworks/learning/core-concepts/inventory" %}
 

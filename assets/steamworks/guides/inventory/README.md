@@ -143,7 +143,7 @@ This scene directs you to the documentation here and provides a simple example s
 
 ### 9 Item Store Tutorial
 
-This scene is meant to be used along with the [Item Store](item-store/) article and demonstrates connecting [Item Defintion](../../objects/item-definition.md) objects to Unity UI.
+This scene is meant to be used along with the [Item Store](../microtransactions/item-store/) article and demonstrates connecting [Item Defintion](../../objects/item-definition.md) objects to Unity UI.
 
 ## F.A.Q
 
