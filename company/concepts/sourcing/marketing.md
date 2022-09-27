@@ -7,7 +7,7 @@ description: If you only choose one, choose this one
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -20,7 +20,7 @@ Odds are you have little or no knowledge when it comes to marketing, or even if 
 
 ## What to expect
 
-Heathen can be contracted to provide [Managed Services](../../../../services/solutions.md#managed-services), this means we can help you research, select and manage professional partnerships like Marketing firms. You can of course manage this on your own.
+Heathen can be contracted to provide [Managed Services](../../../services/solutions.md#managed-services), this means we can help you research, select and manage professional partnerships like Marketing firms. You can of course manage this on your own.
 
 Pricing will obviously vary from place to place, project to project and month to month so any figures given here are simply to paint a picture of the costs involved and what you might get for it.
 

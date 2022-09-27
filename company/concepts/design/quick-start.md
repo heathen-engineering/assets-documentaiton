@@ -1,4 +1,4 @@
-# ▶ Quick Start
+# ☝ Quick Start
 
 {% hint style="success" %}
 #### Like what your seeing?
@@ -37,6 +37,16 @@ This isn't the design its self, its you writing down what the design should defi
   In many cases you don't really need to write anything down here if your "What" is within the realm of past experiences or at least things done by others before but you do need to think about how "you" are going to do this.
 * When\
   Not really a matter of dates but rather time, is this a big long running project or a tiny little short thing. This will tie into almost every other factor when considering your design.
+
+To answer these effectively you need to get started on market research sooner than later.
+
+### Market Research
+
+[Read more here](../marketing/market-research.md).
+
+Simply put market research is the researching or gathering of information about your target customer's needs, preferences and expectations. You probably know this term as a feature of marketing and that is true, marketing teams will perform market research to understand a products position in a given market.
+
+Market research is used for more than marketing and should be taken into account when developing and refining your game design.&#x20;
 
 ## Next Steps
 

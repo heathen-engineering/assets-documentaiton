@@ -7,7 +7,7 @@ description: Managing all those services you just sourced
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -26,7 +26,7 @@ Its important to understand how [publishing works in the game industry](../publi
 
 ## What to expect
 
-Heathen can be contracted to provide [Managed Services](../../../../services/solutions.md#managed-services), so reach out and lets have a chat!
+Heathen can be contracted to provide [Managed Services](../../../services/solutions.md#managed-services), so reach out and lets have a chat!
 
 As with any partner engagement discovery and strategy are the first steps. Before you jump in though, look for a partner who is willing to work with you throughout your journey. This is very important, shop around and don't be afraid to say "no thanks"
 

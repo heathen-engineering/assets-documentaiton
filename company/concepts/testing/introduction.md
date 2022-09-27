@@ -20,7 +20,7 @@ These sections will introduce you to software and game testing concepts and prac
 
 ## Sourcing
 
-Testing is a big topic that even established professional studios find they need to outsource part of in order to deliver on correctly and professionally. Check out our guide on [Sourcing Testing](../getting-started/sourcing/testing.md) for more information. In particular proper testing requires "scale" meaning a small studio or individual simply cannot solve for this requirement without additional support.
+Testing is a big topic that even established professional studios find they need to outsource part of in order to deliver on correctly and professionally. Check out our guide on [Sourcing Testing](../sourcing/testing.md) for more information. In particular proper testing requires "scale" meaning a small studio or individual simply cannot solve for this requirement without additional support.
 
 ## When to Test
 

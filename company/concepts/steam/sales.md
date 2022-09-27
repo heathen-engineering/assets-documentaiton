@@ -1,8 +1,8 @@
 ---
-description: As dangerous as they can be helpful
+description: A powerful weapon ... use it wisely
 ---
 
-# ⚠ Publishers
+# 💶 Sales
 
 {% hint style="success" %}
 #### Like what your seeing?
@@ -13,3 +13,5 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 {% endhint %}
 
 ## Introduction
+
+coming soon

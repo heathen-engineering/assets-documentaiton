@@ -18,7 +18,7 @@ Every product on Steam has it's own unique Community Hub. By default a game's Co
 
 {% embed url="https://partner.steamgames.com/doc/features/community" %}
 
-It's through the Community Hub you will communicate with your clients and includes numerous channels to do so. In general your [Community Management team](../getting-started/sourcing/community.md) should treat the Community Hub as the root of your community. This is the generally the first contact you will make with a community member and very often the only channel of contact you will have with most users.
+It's through the Community Hub you will communicate with your clients and includes numerous channels to do so. In general your [Community Management team](../sourcing/community.md) should treat the Community Hub as the root of your community. This is the generally the first contact you will make with a community member and very often the only channel of contact you will have with most users.
 
 ## Announcements
 

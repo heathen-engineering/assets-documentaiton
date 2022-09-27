@@ -42,6 +42,11 @@ As a game developer, even before you have a game ready to publish, you will be c
 
 ### Platform
 
+{% hint style="success" %}
+We strongly recommend Steam as your first and core platform.\
+Steam is the gaming platform for PC, it has a low barrier to entry and your building your game on a PC so its the most native to the project ... there really is no reason to not launch on [Steam](../steam/).
+{% endhint %}
+
 How will you distribute your product? This is something you should think about early. It will dictate many other aspects of your organization, and likely have a significant impact on the design and implementation of any apps/games you create.&#x20;
 
 You will absolutely need to choose a trusted platform or multiple platforms. While it is technically possible to distribute your own games and apps, platforms do much more than just distribution. A key aspect of choosing a platform is the "Trust and Security" aspect. Why should a customer trust your app? How do they know it's not malware? Simple, if it's on a trusted platform it's safe.&#x20;

@@ -7,7 +7,7 @@ description: It's dangerous to go alone take this ⚔️
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -50,7 +50,7 @@ Understand that as much as pop-culture likes to joke about it, managing people i
 
 ## Partners
 
-Finding, selecting and managing partners can be a challenge in and of its self. Depending on your strategy and budget you may need to engage and orchestrate a number of partners to meet your goals. Heathen can be contracted to provide [Managed Services](../../../../services/solutions.md#managed-services). This means we can help you research, select and manage professional partnerships. As with any partner, engagement, discovery, and strategy are the first steps. Before you jump in though, look for a partner who is willing to work with you throughout your journey. This is very important. Shop around and don't be afraid to say "no thanks"
+Finding, selecting and managing partners can be a challenge in and of its self. Depending on your strategy and budget you may need to engage and orchestrate a number of partners to meet your goals. Heathen can be contracted to provide [Managed Services](../../../services/solutions.md#managed-services). This means we can help you research, select and manage professional partnerships. As with any partner, engagement, discovery, and strategy are the first steps. Before you jump in though, look for a partner who is willing to work with you throughout your journey. This is very important. Shop around and don't be afraid to say "no thanks"
 
 ## Considerations
 
@@ -95,7 +95,7 @@ You can of course staff one or more resources to fill this need. These sorts of 
 
 {% hint style="success" %}
 In our biased opinion this is the best method for most indies.\
-This is our recommendation but of course its also [a service we provide](../../../../services/solutions.md) so we are biased.
+This is our recommendation but of course its also [a service we provide](../../../services/solutions.md) so we are biased.
 {% endhint %}
 
 Sometimes called a "Network" or "Publishing Services", its a single company you partner with who will handle all other aspects you require as a single "managed service" hence the term we use. As noted, Heathen provides this service under its Hel House brand. We (and others like us) can engage with you to help you devise a sourcing strategy and to execute on it. That includes all aspects including researching viable options, advising on selection, management of the selected partners, handling of invoicing, dispute management and all other agreed upon functions.

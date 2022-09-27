@@ -10,7 +10,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction
 
-Its fair to say that most indie games fail due to marketing and in most every case when they succeed its in no small part thanks to marketing (and good [Community Management](../community.md)).&#x20;
+Its fair to say that most indie games fail due to marketing and in most every case when they succeed its in no small part thanks to marketing (and good [Community Management](../community/)).&#x20;
 
 That isn't to say that you can throw everything behind a good marketing strategy and short change the game ... that has worked for some before but we do not condone that behaviour nor is it likely to work for most indies as really who has that kind of budget.
 
