@@ -21,7 +21,7 @@ Looking to make a go of it as an Indie Game Dev? be sure to read over out [Indie
 Heathen's Engineering team creates best in class tools and integrations for the Unity game engine. You can find rich and robust documentation and guides for each below.
 
 {% hint style="success" %}
-Consider supporting us as a [GitHub Sponsor](company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](company/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 The Knowledge Base is made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering), become a sponsor today help us Do More for you!
 {% endhint %}

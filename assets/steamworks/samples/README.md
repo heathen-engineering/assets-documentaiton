@@ -1,9 +1,9 @@
-# Sample Scenes
+# Samples
 
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../../../company/concepts/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../../company/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -32,7 +32,7 @@ You should **ALWAYS** treat sample code as a sample that you learn from and use 
 
 As a GitHub Sponsor you will have installed Steamworks Complete via the Unity Package Manager
 
-![](<../../../../.gitbook/assets/image (2).png>)
+![](<../../../.gitbook/assets/image (2).png>)
 
 You can simply select Steamworks Complete in the Unity Package Manager expand the "Samples" drop down and then import the Example Scenes ... this is also where you will find the uGUI Tools
 
