@@ -1,43 +1,37 @@
 ---
-description: Getting to know Heathen Group and its members
+description: Welcome to Heathen's Knowledge Base
+cover: .gitbook/assets/1920x384 DoMore Banner.png
+coverY: 0
 ---
 
 # Introduction
 
-## Getting to Know Us
+Welcome to Heathen's Knowledge Base, a game development resource for professional, armature, hobbies and enthusiast game developers. Within you will find articles, guides, and technical documentation to help you on your quest to become ... well whatever it is your looking to do.
 
-Heathen Group was founded in 2015 as Heathen Engineering Limited by a small team of experienced software engineers and technology consultants. The company’s objective was and is to create and exploit software technologies developing for and supporting both fellow creators and end users such as gamers.
+## Getting Started
 
-Heathen has a particular focus on game software development and related technologies, though its pedigree is largely in the enterprise software sector. Heathen’s unique blend of experiences and understanding straddles multi-media entertainment and enterprise level business and industry with many years of experience in both worlds.
+Not sure where to start? ... [try the beginning](company/concepts/getting-started/)!
 
-## Our Approach
+Our getting started guide will help you break into our general guides which them selves cover everything from the core [fundamentals](company/concepts/fundamentals/) to more advanced topics in [design](company/concepts/design/), [development](company/concepts/development/), [testing](company/concepts/testing/) and more.
 
-The approach taken by Heathen is simple: “eat your own dog food”. Heathen creates technologies and tools that it then exploits to create end-user products such as bespoke client software, games, and assets. The Heathen approach creates a feedback loop where in the use of its technologies and tools enrich its end-user products and the use of its products enrich its technologies and tools.
+Looking to make a go of it as an Indie Game Dev? be sure to read over out [Indie Check List](company/concepts/getting-started/indie-check-list.md).
 
-## The Group
+## Documentation
 
-![](<.gitbook/assets/Free Flat Heathen Group Banner.png>)
+Heathen's Engineering team creates best in class tools and integrations for the Unity game engine. You can find rich and robust documentation and guides for each below.
 
-Heathen as a group is one team with many ambitions, these sections help us keep it all organized and on task!
+{% content-ref url="assets/physkit/" %}
+[physkit](assets/physkit/)
+{% endcontent-ref %}
 
-### Hel House
+{% content-ref url="assets/steamworks/" %}
+[steamworks](assets/steamworks/)
+{% endcontent-ref %}
 
-![](<.gitbook/assets/Hel House Banner White.png>)
+{% content-ref url="assets/system-core/" %}
+[system-core](assets/system-core/)
+{% endcontent-ref %}
 
-Hel House is the section that deals with Managed Services, that is contracting and consulting services for our clients, managing our partners and functioning as our internal publishing group.
-
-Hel House manages all of our digital store fronts, web sites, social networks, partnerships and provides managed services to our clients as well.
-
-### Heathen Engineering
-
-![](<.gitbook/assets/Heathen Engineering Banner White.png>)
-
-Heathen Engineering is the section that deals with engineering. Heathen Engineering creates, maintains and supports all of Heathen Groups technology assets and provides for the support and maintenance of those resources.
-
-### Freki Games
-
-![](<.gitbook/assets/Freki Banner White.png>)
-
-Freki Games is the section of Heathen Group that develops our games.
-
-We have several as of yet unannounced titles, so keep an eye on this one!
+{% content-ref url="assets/ux/" %}
+[ux](assets/ux/)
+{% endcontent-ref %}

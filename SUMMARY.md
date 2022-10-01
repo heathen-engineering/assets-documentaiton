@@ -3,10 +3,11 @@
 ## General <a href="#company" id="company"></a>
 
 * [Introduction](README.md)
+  * [Getting to know us](company/introduction/getting-to-know-us.md)
 * [Guides](company/concepts/README.md)
   * [😍 Become a Sponsor](company/concepts/become-a-sponsor.md)
   * [🤩 Getting Started](company/concepts/getting-started/README.md)
-    * [☑ Check List](company/concepts/getting-started/check-list.md)
+    * [☑ Indie Check List](company/concepts/getting-started/indie-check-list.md)
   * [🦧 Fundamentals](company/concepts/fundamentals/README.md)
     * [💡 Visual Scripting](company/concepts/fundamentals/visual-scripting.md)
     * [Bootstrap Scene](company/concepts/fundamentals/bootstrap-scene.md)
