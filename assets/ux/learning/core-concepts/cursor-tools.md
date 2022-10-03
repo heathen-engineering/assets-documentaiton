@@ -117,7 +117,7 @@ The button cursor state handles two (2) possible state changes, one for mouse en
 
 ## Change Cursor Default State
 
-![](<../../../../.gitbook/assets/image (101).png>)
+![](<../../../../.gitbook/assets/image (101) (1).png>)
 
 The change cursor default state will change the registered default state on enter and exit.
 

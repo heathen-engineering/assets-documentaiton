@@ -99,7 +99,7 @@ Any UPM based asset will be using assembly defines and assembly defines require 
 
 `SystemCore/com.heathen.systemcore`
 
-![](<../../../.gitbook/assets/image (1).png>)
+![](<../../../.gitbook/assets/image (1) (3).png>)
 
 #### Steamworks.NET
 

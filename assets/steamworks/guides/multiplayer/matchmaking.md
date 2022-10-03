@@ -46,7 +46,7 @@ This model does much the same as Quick Match but lets the player decide what the
 
 #### How to display lobbies
 
-The [5 Lobbies](../../samples/5-lobbies.md) sample scene demonstrates browsing for lobbies. If you wanted to do this model the ideal solution is to let the user define there search arguments and return a small number of the lobbies if any that match that say the top 10.&#x20;
+The [5 Lobbies](../../samples/5-lobbies/) sample scene demonstrates browsing for lobbies. If you wanted to do this model the ideal solution is to let the user define there search arguments and return a small number of the lobbies if any that match that say the top 10.&#x20;
 
 You can then do searches that are slightly less strict ... what this means depends on your game. For example lets say your game is a classic shooter with modes like CTF, C\&H, KofH and has session sizes of 4v4, 8v8 and 16v16 and maybe also lets your player's pick a map.
 

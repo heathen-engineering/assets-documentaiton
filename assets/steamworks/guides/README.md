@@ -26,7 +26,7 @@ The following articles will help you learn how to perform common tasks and to de
 
 ### Enable Debugging
 
-![Toggle this on](<../../../.gitbook/assets/image (3) (1).png>)
+![Toggle this on](<../../../.gitbook/assets/image (3) (1) (3).png>)
 
 When toggled on Heathen's tools will write additional verbose information in particular around initialization which is the most common point of error. If you have not finished testing and are not building a fully tested, production ready, release build ... then you should have this turned on.
 
@@ -134,7 +134,7 @@ To Access the inspector simply open the **Window > Steamworks Inspector** menu.
 
 or
 
-![Click the button in Steam Settings](<../../../.gitbook/assets/image (5).png>)
+![Click the button in Steam Settings](<../../../.gitbook/assets/image (5) (3).png>)
 
 {% hint style="warning" %}
 #### IMPORTANT

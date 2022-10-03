@@ -68,7 +68,7 @@ A network topology simply describes how each element on the network talks to the
 
 ### Star Topology
 
-![](<../../../../.gitbook/assets/image (103).png>)
+![](<../../../../.gitbook/assets/image (103) (2).png>)
 
 In this model one of the players acts as the "host" and all other players connect to this host. The host in effect acts like a "server". This model has the advantage of a simple connection graph and is the one most HLAPI's assume you are using. It has the disadvantage that if the host is lost, the whole session is lost. In addition the host is the "server" for all other peers meaning that host client is under considerably more stress than other's. While there are ways to compensate for this drawback that is beyond the scope of this section.
 
