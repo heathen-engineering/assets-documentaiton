@@ -74,7 +74,25 @@ The data type AccountId\_t is a wrapper around the uint primitive type ... that 
 uint unAccountInstance;
 ```
 
-This value is readable on the CSteamID but not documented in Steam. We know that for a "user" the value is default (0) and that for a lobby the value is (393216) but there is no information as to what this means, rather or not it can differ and what it should be for the various other types of CSteamID such as Clan and Clan Chat.
+This value is readable on the CSteamID but not documented in Steam.&#x20;
+
+We know from reviewing the CSteamID struct and its various methods that for Type Clan and GameServer the account instance is set to&#x20;
+
+```csharp
+unAccountInstance = 0u;
+```
+
+For all other types Steam sets the value to&#x20;
+
+```csharp
+unAccountInstance = 1u;
+```
+
+We know from experience that attempting to set a lobby in this way will fail resulting in an invalid lobby. We have deduced that lobbies (seem) to have a constant account instance value of
+
+```csharp
+unAccountInstance = 393216u;
+```
 
 ## Wrappers
 
