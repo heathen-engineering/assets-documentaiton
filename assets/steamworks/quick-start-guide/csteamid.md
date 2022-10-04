@@ -18,7 +18,7 @@ CSteamID also known simply as "Steam ID" is a ulong value (64 bits) and is used 
 
 Heathen has created wrap around structures like [UserData ](../objects/user-data.md)and [Lobby ](../objects/lobby.md)that are interchangeable with CSteamID and ulong and provide helpful features unique to each use case of the ID. In most cases you should be using [UserData](../objects/user-data.md), [Lobby](../objects/lobby.md), [Clan](../objects/clan.md), etc. and not needing to bother with the raw CSteamID or its ulong value.
 
-The native CSteamID ulong value is composed of 3 main parts
+The native CSteamID ulong value is composed of 4 main parts
 
 ### Universe
 
@@ -67,6 +67,14 @@ AccountId_t accountId;
 ```
 
 The data type AccountId\_t is a wrapper around the uint primitive type ... that is it is really a uint value with a few extra features.
+
+### Account Instance
+
+```csharp
+uint unAccountInstance;
+```
+
+This value is readable on the CSteamID but not documented in Steam. We know that for a "user" the value is default (0) and that for a lobby the value is (393216) but there is no information as to what this means, rather or not it can differ and what it should be for the various other types of CSteamID such as Clan and Clan Chat.
 
 ## Wrappers
 
