@@ -12,6 +12,14 @@ Consider supporting us as a [GitHub Sponsor](../../become-a-sponsor.md) and get 
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
 
+<details>
+
+<summary>Search Phrases</summary>
+
+Game Development, Starting Game Development, Getting Started with Game Development, How to become an Indie Game Developer, Unity Game Development, Getting Started with Unity, Indie Game Development
+
+</details>
+
 ## Introduction
 
 Working on your first game?
