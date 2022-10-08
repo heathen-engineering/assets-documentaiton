@@ -1,5 +1,7 @@
 ---
 description: Introducing Heathen
+cover: ../../.gitbook/assets/1920x384 DoMore Banner (1).png
+coverY: 0
 ---
 
 # Getting to know us

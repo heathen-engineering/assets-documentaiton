@@ -1,6 +1,6 @@
 ---
 description: Welcome to Heathen's Knowledge Base
-cover: .gitbook/assets/1920x384 DoMore Banner.png
+cover: .gitbook/assets/1920x384 DoMore Banner (1).png
 coverY: 0
 ---
 

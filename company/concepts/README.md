@@ -2,6 +2,8 @@
 description: >-
   Explore concepts and ideas around Unity development and software engineering
   in general.
+cover: ../../.gitbook/assets/1920x384 DoMore Banner (1).png
+coverY: 0
 ---
 
 # Guides
