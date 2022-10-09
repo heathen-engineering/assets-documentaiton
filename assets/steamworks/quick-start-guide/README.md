@@ -57,9 +57,7 @@ If you need to reload the scene where [Steamworks Behaviour](../components/steam
 
 ## Networking
 
-{% embed url="https://kb.heathenengineering.com/assets/steamworks/learning/developer-articles/multiplayer-steam-games" %}
-This is a good place to start when learning about Steam and multiplayer games
-{% endembed %}
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/guides/multiplayer" %}
 
 {% hint style="success" %}
 Steamworks Complete and whatever HLAPI you chose to work with have no impact on each other at all. You will use Steamworks and your HLAPI of choice exactly the same with as you would without the other.
