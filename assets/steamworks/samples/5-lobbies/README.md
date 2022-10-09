@@ -24,40 +24,6 @@ Unity Asset Store will be updated with the new scenes at a later date.
 
 The 5 Lobbies scene demonstrates a few typical uses of lobbies. In the upper left corner of the screen you will see a "Party UI" where we are using a Lobby Manager, Lobby Chat Director and Set User Avatar tools to drive a fully functional party tool. When the user presses play we perform a Quick Match using another Lobby Manager and along with another Lobby Chat Director we simulate a "Session" or "Matchmaking" lobby complete with chat. When the owner of the session lobby presses the Start Session button we simulate starting up the network session and notifying all members of the lobby.
 
-## Party UI
-
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
-
-At the top left of the screen is our Party UI. The local user's avatar is always shown in the left most slot with party members listed in the 3 smaller slots. Clicking on an empty slot (represented with a + icon) the Invite tool will display
-
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-
-From the invite tool you can select an online friend to invite from a drop down list
-
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
-
-Or you can type in your friends "code" to invite them manually ... note your code is displayed under your name ... you can select and copy and paste this into whatever social chat you like.
-
-<figure><img src="../../../../.gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure>
-
-The party system also demonstrates the built in "ready check" feature of Heathen's Lobby tool. A player can click the Set Ready button to mark them selves as ready or the Set Wait to mark them selves as not ready. The UI will update the thumbs up icon or a grey clock to indicate which users are or are not ready.
-
-Below the user icons is the chat window...
-
-<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
-
-Our using the Lobby Chat Director we have implemented a simple chat system that displays the chatting user's name and icon but in a compact way.
-
-## Session UI
-
-After the party leader ... or if your not in a party a solo player clicks the "Play" button we perform a Quick Match search via the Lobby Manager tool.
-
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-
-If the player is the party leader of a party lobby we go ahead and notify the other members of the party of the new lobby to be joined. We now have a "Session" lobby ... that is a public lobby meant for matchmaking. The party can wait here for other players to join or can go ahead and start the session. Similar to the party UI we have a simple chat system at the bottom edge.
-
-The "owner" of the session lobby has a Start Session button in the middle of the UI. Pressing this will simulate the session starting up and will then notify all members of the resulting connection information.
-
 ## Scripts
 
 Here we will discus the sample scripts.
@@ -108,7 +74,7 @@ Our example party system handles up to 4 players in a party. It indicates which 
 
 The party system features a simple "Invite" UI which can be opened by click any empty slot. The Invite UI displays the local player's "code" ... which is simply the [Account ID](../../quick-start-guide/csteamid.md#account-id) portion of the player's [CSteamID](../../quick-start-guide/csteamid.md). The player can either share this code out and type a friends code into the text box to invite them.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 We have also provided a simple "Friends List" in the drop down button to the right which when expanded will show a list of all the friends that are currently online and when one is selected it will pre-populate the Friend ID field for you.
 

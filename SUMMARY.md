@@ -213,6 +213,8 @@
     * [4 Leaderboards](assets/steamworks/samples/4-leaderboards.md)
     * [5 Lobbies](assets/steamworks/samples/5-lobbies/README.md)
       * [Legacy 5 Lobbies](assets/steamworks/samples/5-lobbies/legacy-5-lobbies.md)
+      * [Party / Group Lobby](assets/steamworks/samples/5-lobbies/party-group-lobby.md)
+      * [Session Lobby](assets/steamworks/samples/5-lobbies/session-lobby.md)
     * [6 Input](assets/steamworks/samples/6-input.md)
     * [7 Workshop Browser](assets/steamworks/samples/7-workshop-browser.md)
     * [8 Inventory](assets/steamworks/samples/8-inventory.md)
