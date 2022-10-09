@@ -116,7 +116,7 @@ The leaderboard manager is a simple component that greatly simplifies reading an
 
 ![](<../../../../.gitbook/assets/image (181) (1).png>)
 
-You can learn more about the [Leaderboard Manager](../../components/leaderboard-manager.md) in its documentation article and by reviewing the [4 Leaderboards](../../samples/4-leaderboards.md) sample scene.
+You can learn more about the [Leaderboard Manager](../../components/leaderboard-manager.md) in its documentation article and by reviewing the [4 Leaderboards](../../samples/leaderboards.md) sample scene.
 
 ## How To
 

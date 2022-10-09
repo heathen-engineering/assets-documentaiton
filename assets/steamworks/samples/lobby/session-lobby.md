@@ -4,6 +4,8 @@ description: Setting up the game
 
 # Session Lobby
 
+<figure><img src="../../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
+
 {% hint style="success" %}
 #### Like what your seeing?
 
@@ -40,7 +42,7 @@ See who the owner of the lobby currently is, this shows a star of the owners por
 
 This is the fun part, having the owner start up a network session, make it ready for players to join and then to notify players that its time to join and how to join.
 
-## Session UI
+## User Interface
 
 After the party leader ... or if your not in a party a solo player clicks the "Play" button we perform a Quick Match search via the Lobby Manager tool.
 
@@ -118,18 +120,30 @@ For the non-owner members of the lobby the process looks like this
 3. The member will call Start Client starting the network process on the address provided by the Evt Game Created event.
 4. The member will unload the Lobby UI scene and can leave the Session Lobby ... at this point the point you are in your network session and Steam Lobby is no longer at play.
 
-## Scripts
+## Authentication
 
-### Session UI Controller
+While not required it is recommended and commonly done, so we demonstrate it in the Practical Use Case scene.  You can learn more about what [Authentication ](../../guides/authentication.md)is in our guide section. As to the use in lobby we demonstrate a common workflow where in the owner "authenticates" each joining member. This allows the owner to verify Valve Anti-Cheat (VAC) and if your using Steam Inventory it would allow the owner to verify ownership of specific inventory items.
 
-{% hint style="info" %}
-Read the SessionUIController.cs script located in the same folder as the scene. It was written to be highly verbose and heavily commented and will guide you through each function and its use.
-{% endhint %}
+The workflow is simple
 
-The Session UI Controller script is very similar to the PartyUIController but demonstrates a more complex use of the lobby chat system and Lobby metadata. At the top of the script you will see we define the ChatMessage and SessionSettings structures.&#x20;
+1. When a user joins the lobby (other than the owner) they will get and send their Authentication ticket data through the Lobby Chat Director.
+2. When a chat message is received, we check if it is a message or if its authentication data. If its authentication data then non-owner user's ignore it. The owner of the lobby will read it and "[Begin Session](../../guides/authentication.md#begin-auth-session)" on that data verifying the user.&#x20;
+   1. If the user is authentication the owner can cash that data to the Lobby Metadata so all other users are aware the user has been authenticated
+   2. If the user fails authentication such as VAC ban the owner can "kick" that user using Heathen's Lobby Kick system.
 
-#### ChatMessage
+## Chat
 
-ChatMessage is a simple serializable struct and is used along with the Lobby Chat Director to send more complex data over the Lobby Chat system than simple text messages. Using this structure we are able to send authentication ticket data via the chat system along with of course simple text messages.
+Lobby chat can be as simple as text messages flying back and forth. That said its far more common to use the Chat system to transport complex serialized data such as authentication tickets. With in the "Practical Use Case Scripts\SessionUIController.cs" you will see a sub structure we use for chat messages that allow for more complex uses of chat.
 
-The most interesting use of this is simply for authentication. When a user joins the lobby they will get and send there [Authentication](../../guides/authentication.md) ticket by creating a new ChatMessage value and storing the ticket data within. The ChatMessage being a serializable type can be handed to the [Lobby Chat Director](../../components/lobby-chat-director.md) which will serialize it and send it over Steam Lobby Chat.
+### ChatMessage
+
+This is a simple serializable structure that helps us send complex data over the lobby chat system and provides us with an easy way to know what that data is and to parse it back. Put more simply when we want to "send" a chat message we create a new ChatMessage object and load it with our data specifying the "type" of message we are sending. When a message is received we use the FromJson feature get our ChatMessage object and we can then act on it accordingly
+
+In the example scene you will that we use ChatMessage to send 3 types of messages
+
+* Authentication\
+  This message type is only used by the owner of the lobby and simply carries the ticket data of a user wishing to be authenticated
+* Text\
+  This message type is used by everyone and is a simple text message from some other player
+* Notification\
+  This message type is used by everyone and is a simple text message that will original from the owner of the lobby but represents a "system notification" or otherwise not a conversation message from a human but a status update about the lobby

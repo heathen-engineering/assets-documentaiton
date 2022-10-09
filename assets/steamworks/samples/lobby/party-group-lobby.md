@@ -4,6 +4,8 @@ description: Bringing friends together
 
 # Party / Group Lobby
 
+<figure><img src="../../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
+
 {% hint style="success" %}
 #### Like what your seeing?
 
@@ -40,9 +42,13 @@ You can leave the lobby any time by clicking leave.
 
 You can chat with members of the lobby using simple text messages.
 
-## Party UI
+## User Interface
 
-At the top left of the screen is our Party UI. The local user's avatar is always shown in the left most slot with party members listed in the 3 smaller slots. Clicking on an empty slot (represented with a + icon) the Invite tool will display
+At the top left of the screen is our Party UI. The local user's avatar is always shown in the left most slot with party members listed in the 3 smaller slots.&#x20;
+
+### Invite Tools
+
+Clicking on an empty slot (represented with a + icon) the Invite tool will display
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -54,10 +60,14 @@ Or you can type in your friends "code" to invite them manually ... note your cod
 
 <figure><img src="../../../../.gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure>
 
+### Ready Check
+
 The party system also demonstrates the built in "ready check" feature of Heathen's Lobby tool. A player can click the Set Ready button to mark them selves as ready or the Set Wait to mark them selves as not ready. The UI will update the thumbs up icon or a grey clock to indicate which users are or are not ready.
+
+### Chat
 
 Below the user icons is the chat window...
 
 <figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-Our using the Lobby Chat Director we have implemented a simple chat system that displays the chatting user's name and icon but in a compact way.
+Using the Lobby Chat Director we have implemented a simple chat system that displays the chatting user's name and icon but in a compact way.
