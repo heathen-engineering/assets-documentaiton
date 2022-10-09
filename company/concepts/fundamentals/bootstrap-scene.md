@@ -4,6 +4,8 @@ description: Understanding the concept of a boostrap scene in Unity
 
 # Bootstraping
 
+<figure><img src="../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
+
 {% hint style="success" %}
 #### Like what your seeing?
 
