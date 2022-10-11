@@ -152,15 +152,83 @@ void OnDestroy()
 
 ### ClearAchievement
 
+```csharp
+public static bool ClearAchievement(string achievementApiName)
+```
+
+Resets the achievement unlock state.
+
 ### GetAchievement
+
+```csharp
+public static bool GetAchievement(string achievementApiName, out bool achieved, out DateTime unlockTime)
+```
+
+or
+
+```csharp
+public static bool GetAchievement(CSteamID userId, string achievementApiName, out bool achieved)
+```
+
+or
+
+```csharp
+public static bool GetAchievement(CSteamID userId, string achievementApiName, out bool achieved, out DateTime unlockTime)
+```
+
+Gets the achievement status and date the achievement was unlocked if at all. This can be done for the local player or for a specific player by providing the player's ID
 
 ### GetAchievementAchievedPercent
 
+```csharp
+public static bool GetAchievementAchievedPercent(string achievementApiName, 
+                                                 out float percent)
+```
+
+Returns the percentage of users who have unlocked the specified achievement
+
 ### GetAchievementDisplayAttribute
+
+```csharp
+public static string GetAchievementDisplayAttribute(string achievementApiName, 
+                                AchievementAttributes attribute)
+```
+
+Get general attributes for an achievement. Currently provides Name, Description and Hidden status
 
 ### GetAchievementIcon
 
+```csharp
+public static void GetAchievementIcon(string achievementApiName, 
+                                Action<Texture2D> callback)
+```
+
+Gets the icon for an achievement
+
+The callback would take the form of
+
+```csharp
+void Callback(Texture2D icon)
+{
+    //DO WORK
+}
+```
+
+### GetAchievementName
+
+```csharp
+public static string GetAchievementName(uint index)
+```
+
+Get the API Name for an achievement index between 0 and [GetNumAchievements](stats-and-achievements.md#getnumachievements)
+
 ### GetAchievementNames
+
+```csharp
+public static string[] GetAchievementNames()
+```
+
+Get a list of all achievement names registered to the app
 
 ### GetGlobalStat
 
