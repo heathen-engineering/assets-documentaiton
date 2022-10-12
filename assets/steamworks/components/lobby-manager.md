@@ -301,6 +301,91 @@ private void Handler(UserData user)
 
 ## Fields and Attributes
 
+### SearchArguments
+
+```csharp
+public SearchArguments searchArguments;
+```
+
+Used with any form of search performed through the Lobby Manager including the [Search](lobby-manager.md#search) and [QuickMatch ](lobby-manager.md#quick-match)methods. This is used to define the "search arguments" e.g. the rules to be tested when searching for lobbies.
+
+The `SearchArguments` data type is an internal class:
+
+```csharp
+[Serializable]
+public class SearchArguments
+{
+    /// <summary>
+    /// If less than or equal to 0 then we wont use the open slot filter
+    /// </summary>
+    public int slots = -1;
+    public ELobbyDistanceFilter distance = ELobbyDistanceFilter.k_ELobbyDistanceFilterDefault;
+    public List<NearFilter> nearValues = new List<NearFilter>();
+    public List<NumericFilter> numericFilters = new List<NumericFilter>();
+    public List<StringFilter> stringFilters = new List<StringFilter>();
+}
+```
+
+The fields of the class are as follows
+
+* slots\
+  If less than or equal to 0 this will be ignored otherwise this will indicate the number of available slots resulting lobbies must have. For example if you wanted to find a lobby for you and 3 friends then you would provide a value of 4 in this field to return only lobbies that had 4 open slots.
+* distance\
+  An enumerator that indicates the max alowed distance between the searching user and the members of the resulting lobbies. For more details on the values see [Valve's documentation on ELobbyDistanceFilter](https://partner.steamgames.com/doc/api/ISteamMatchmaking#ELobbyDistanceFilter), in summary
+  * Close\
+    Only in the same Valve region as this user
+  * Default\
+    In the same or near by Valve region as this user
+  * Far\
+    Up to half a world away&#x20;
+  * World Wide\
+    No filtering at all
+* nearValues\
+  Key value pairs that the system should search for "near by" values for. See [Valve's documentation](https://partner.steamgames.com/doc/api/ISteamMatchmaking#AddRequestLobbyListNearValueFilter) on this feature for more details. In summary this doesn't "filter out" lobbies but rather effects the sorting, the closer a lobby's metadata is to matching this value the higher it will be sorted in the resulting list. This is useful for say "Player Rank" whose min and max player rank is as near the player's actual rank as possible. To do this you could set near values of `minRank = myRank` and `maxRank = myRank` this would not exclude any lobbies in and of its self but would sort lobbies such that top results where nearest "my rank" ... this assumes minRank is the rank of the lowest ranked player in that lobby and maxRank is the rank of the highhest ranked player in that lobby
+* numericFilters\
+  Instructs the search to perform a numeric filtering operation on these fields and can filer by the following methods
+  * Equal to or Less than
+  * Less than
+  * Equal
+  * Greater than
+  * Equal to or Greater thhan
+  * Not Equal
+* stringFilter\
+  Instructs the search to perform a string filtering operation on these fields and can be filtered by the same methods as numeric filters. Valve doesn't explain what the result of each is so test to confirm desired results.
+
+### CreateArguments
+
+```csharp
+public CreateArguments createArguments;
+```
+
+Used by the Lobby Manager any time a lobby is created with it, this would apply to [Create ](lobby-manager.md#create)as well as [QuickMatch ](lobby-manager.md#quick-match)when no lobby is found and create on fail is set to true.
+
+The `CreateArguments` data type is an internal class:
+
+```csharp
+[Serializable]
+public class CreateArguments
+{
+    public string name;
+    public int slots;
+    public ELobbyType type;
+    public List<MetadataTempalate> metadata = new List<MetadataTempalate>();
+}
+```
+
+the fields of the class are as follows
+
+* name\
+  This will be set as metadata on the lobby when created e.g. \
+  `MyLobby["name"] = value;`
+* slots\
+  This is the maximum number of slots this lobby will have ... this is including the owner of the lobby.
+* type\
+  The type of lobby to create, you can learn more about the [available types above](lobby-manager.md#lobby-types).
+* metadata\
+  Metadata fields to be set on the lobby once created. This is a simple string key and string value pairing. Metadata is what is used when "filtering" or "searching" for lobbies.
+
 ### Lobby
 
 ```csharp
