@@ -6,7 +6,7 @@ Designed to simplify the act of querying User Generated Content aka Workshop ite
 
 The intended use is that a query will be created through one of the static Create methods to properly intialize the base query and you can then use simple calls on the object to modiy the query, execute the query and step through query pages.
 
-This is used by the [UGC Query Manager](../components/ugc-query-manager.md) which can its self simplify UGC query even further.
+This is used by the [UGC Query Manager](../unity/components/ugc-query-manager.md) which can its self simplify UGC query even further.
 
 ## Understanding UGC Queries
 

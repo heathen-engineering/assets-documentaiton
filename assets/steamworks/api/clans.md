@@ -57,7 +57,7 @@ public static GameConnectedClanChatMsgEvent EventChatMessageRecieved
 Called when a chat message has been received in a Steam group chat that we are in.
 
 {% hint style="info" %}
-Its generally easier to use the [Clan Chat Director](../components/clan-chat-director.md) than to manually listen on this event.
+Its generally easier to use the [Clan Chat Director](../unity/components/clan-chat-director.md) than to manually listen on this event.
 {% endhint %}
 
 The handler for this event should look like this
@@ -228,7 +228,7 @@ public static string GetChatMessage(ChatRoom clanChat,
                                         out CSteamID chatter)
 ```
 
-You generally do not need to call this if your using the [EventChatMessageReceievd ](clans.md#eventchatmessagerecieved)or the [ClanChatDirector](../components/clan-chat-director.md).
+You generally do not need to call this if your using the [EventChatMessageReceievd ](clans.md#eventchatmessagerecieved)or the [ClanChatDirector](../unity/components/clan-chat-director.md).
 
 This gets the data regarding a specific chat message in given clan chat room.
 

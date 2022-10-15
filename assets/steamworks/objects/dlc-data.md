@@ -6,7 +6,7 @@
 public struct DlcData
 ```
 
-Used by the App interface to return general DLC information. In general using the [Downloadable Content Object](downloadable-content.md) is more effective.
+Used by the App interface to return general DLC information. In general using the [Downloadable Content Object](../unity/scriptable-objects/downloadable-content-object.md) is more effective.
 
 ## Fields and Attributes
 

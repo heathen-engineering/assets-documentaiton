@@ -14,6 +14,18 @@ Consider supporting us as a [GitHub Sponsor](../../company/become-a-sponsor.md) 
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
 
+## Unity or Godot?
+
+Either, Heathen's Steamworks was originally created as a Unity asset however we have ported the free [Foundation ](https://github.com/heathen-engineering/SteamworksFoundation)version to Godot and are in the process of porting the Complete version.
+
+### What Version?
+
+Godot (mono) 3.5 or later. \
+To keep the code base between the two engines as close as possible and thus maintenance costs and bugs in check we use C# thus you need the "mono" version of the engine.
+
+Unity 2020 LTS or later\
+As per Unity's request we maintain all Unity assets on the oldest in support Unity version at current that is 2020 LTS
+
 ## Can this do X
 
 If X is something the Steam API can do then yes.\
@@ -40,9 +52,9 @@ Keep in mind you can get instant access and a license to keep forever of Steamwo
 
 ### What about Microtransactions / Cash Shop?
 
-Yes of course, Steam API handles MTX (micro transactions) via the Steam Inventory interface. Heathen's Steamworks Complete has robust tooling around [Steam Inventory](guides/inventory/) which can greatly help any developer regardless of skill set.
+Yes of course, Steam API handles MTX (micro transactions) via the Steam Inventory interface. Heathen's Steamworks Complete has robust tooling around [Steam Inventory](unity/guides/inventory/) which can greatly help any developer regardless of skill set.
 
-> To reiterate as its often hard to believe, yes Steam API does MTX, yes it is [Steam Inventory](guides/inventory/) that is used to do that.
+> To reiterate as its often hard to believe, yes Steam API does MTX, yes it is [Steam Inventory](unity/guides/inventory/) that is used to do that.
 
 ## Can I try before I buy?
 
@@ -66,7 +78,7 @@ For tools that do integrate with Steam API the relevant information is; Heathen 
 
 How do you know its proper use?
 
-1. Does not embed a copy of Steamworks.NET in its source code. Steamworks.NET should always be installed fresh from GitHub preferably via the Unity Package Manager as described on our [installation page](installation/prerequisites.md#steamworks.net).
+1. Does not embed a copy of Steamworks.NET in its source code. Steamworks.NET should always be installed fresh from GitHub preferably via the Unity Package Manager as described on our [installation page](unity/installation/prerequisites.md#steamworks.net).
 2. Does not make \*\***ANY**\*\* use of SteamManager.cs\
    SteamManager.cs is an example script originally authored by the same developer that authors Steamworks.NET ... you can find its original form [here](https://github.com/rlabrecque/Steamworks.NET-Example). It is meant to be a demonstration of how a programmer would initialize the Steam API ... it is absolutely not meant to be production code. Sadly many samples, examples and even some "assets" are had coded to use it.
 
@@ -78,19 +90,19 @@ This is not something for us or Steamworks.NET to do its something for the netwo
 
 ### Fish Networking?
 
-Yes: You can find more information in the [Networking Integrations](installation/networking-integrations.md) article.
+Yes: You can find more information in the [Networking Integrations](unity/installation/networking-integrations.md) article.
 
 ### Mirage?
 
-Yes: You can find more information in the [Networking Integrations](installation/networking-integrations.md) article.
+Yes: You can find more information in the [Networking Integrations](unity/installation/networking-integrations.md) article.
 
 ### Mirror?
 
-Yes: You can find more information in the [Networking Integrations](installation/networking-integrations.md) article.
+Yes: You can find more information in the [Networking Integrations](unity/installation/networking-integrations.md) article.
 
 ### NetCode for GameObjects?
 
-Yes: You can find more information in the [Networking Integrations](installation/networking-integrations.md) article.
+Yes: You can find more information in the [Networking Integrations](unity/installation/networking-integrations.md) article.
 
 ### Photon (any variation)
 

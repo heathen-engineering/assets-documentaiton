@@ -21,38 +21,29 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 {% embed url="https://discord.gg/6X3xrRc" %}
 
-{% embed url="https://www.youtube.com/watch?v=6ujmZI1qUYI" %}
-
-## GitHub Sponsors
-
-{% hint style="success" %}
-Sponsoring Heathen on GitHub for $10 gets you access to the source repository for Steamworks, PhysKit and UX Complete. Keep what you download even after you cancel!
-
-\
-See why GitHub sponsor is the hands down best way to Do More with Heathen in our [Licensing Article](../licensing/).
-{% endhint %}
-
-### Asset Store
-
-Prefer to shop through Unity's Asset Store we are available there as well.
-
-{% embed url="https://assetstore.unity.com/packages/tools/integration/steamworks-v2-complete-190316" %}
-
 ## Introduction
 
-![](../../.gitbook/assets/SocialImage\_NoMarking.jpg)
+{% hint style="success" %}
+Available for Unity 3D and Godot (mono)\*\
+\
+\* [Foundation](https://github.com/heathen-engineering/SteamworksFoundation) is available for Godot now with Complete in development and coming soon.
+{% endhint %}
 
-Heathen Engineering’s approach with its Steamworks assets has been to take the strength of Steamworks.NET, and the parody it has with Valve’s original APIs, and extend that with Unity centric tools, editor extensions and more to make Steamworks.NET + Heathen the best possible option for Unity developers looking to integrate with Steam.&#x20;
+{% embed url="https://www.youtube.com/watch?v=6ujmZI1qUYI" %}
 
-With Heathen's Steamworks You retain the strength of directly accessing Steam API when and where you may wish, while having the benefit of not just C# focused but Unity focused tools and extensions as well as systems battle tested across many games from many Unity developers. We have wrapped [all relevant Steam interfaces in our API](api/) accounting for every callback and callresult in them, even the undocumented ones. Our knowledge base outlines every available interface, event, attribute, function and feature as well as every tool, system and object we have created on top of them.
+Heathen’s approach is to take the strength of Steamworks.NET, and the parody it has with Valve’s original APIs, and extend that with engine centric tools, editor extensions and more to make Steamworks.NET + Heathen the best possible option for Unity & Godot (mono) developers looking to integrate with Steam.&#x20;
 
-Whether you're new to Steam, Unity, or game development in general or a seasoned veteran well capable with the Steam APIs, Heathen’s Steamworks can greatly accelerate your project and help you produce a more robust product that better leverages the services offered by Valve. Heathen’s asset does not prevent you from using raw API calls in conjunction with its own extensions and tools. Many features of Steam API can be handled within V2 with little or no coding at all. In the same respect everything is built with respect to the programmer and the need to extend and expand.&#x20;
+With Heathen's Steamworks You retain the strength of directly accessing Steam API when and where you may wish, while having the benefit of not just C# focused but engine focused tools and extensions as well as systems battle tested across [many games](https://store.steampowered.com/curator/42461073-made-with-heathen) from many developers. We have wrapped [all relevant Steam interfaces in our API](api/) accounting for every callback and callresult in them, even the undocumented ones. Our knowledge base outlines every available interface, event, attribute, function and feature as well as every tool, system and object we have created on top of them.
 
-Modular, extensible, and supported by a large community of fellow developers. Heathen’s Steamworks V2 is the best solution for Unity developers looking to ship on the Steam platform.
+Whether you're new to Steam, or game development in general or maybe a seasoned veteran well capable with the Steam APIs, Heathen’s Steamworks can greatly accelerate your project and help you produce a more robust product that better leverages the services offered by Valve.&#x20;
+
+Heathen’s asset does not prevent you from using raw API calls in conjunction with its own extensions and tools. Many features of Steam API can be handled within Heathen's tools with little or no coding at all. In the same respect everything is built with respect to the programmer and the need to extend and expand without limitation.&#x20;
+
+Modular, extensible, and supported by a large community of fellow developers. Heathen’s Steamworks is the best solution for Unity & Godot (mono) developers looking to ship on the Steam platform.
 
 ## Heathen vs Steamworks.NET
 
-Heathen Engineering's Steamworks Complete (and Foundation) are built on top of [Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET). The [Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET) project is designed to be a direct 1 to 1 wrapper around Valve's Steam API wrapping the native C and C++ interfaces up in a C# plugin.
+Heathen Engineering's Steamworks are built on top of [Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET). The [Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET) project is designed to be a direct 1 to 1 wrapper around Valve's Steam API wrapping the native C and C++ interfaces up in a C# plugin.
 
 {% hint style="success" %}
 [Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET) is authored by [**Riley Labrecque**](https://github.com/sponsors/rlabrecque) and the only reason our Steam integrations exist.\
@@ -60,11 +51,11 @@ Heathen Engineering's Steamworks Complete (and Foundation) are built on top of [
 Pop over to his [sponsor page](https://github.com/sponsors/rlabrecque) and buy the man a beer at the very least.
 {% endhint %}
 
-[Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET) gives the best access to Valve's APIs and does so true to the original, so that the original documentation and decades of community guidance are still applicable. The draw back to [Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET) is that it is true to the original API using programming styles and approaches foreign to most Unity developers and very clunky at best to use in Unity scripting.
+[Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET) gives the best access to Valve's APIs and does so true to the original, so that the original documentation and decades of community guidance are still applicable. The draw back to [Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET) is that it is true to the original API using programming styles and approaches foreign to most game developers and very clunky at best to use in Unity or Godot scripting.
 
 Heathen has wrapped every relevant interface in Steamworks.NET with our own static [APIs ](api/)delivering a simpler more robust tool set with every drop of power of the source Steam API and with that raw Steam API still available to you.
 
-Heathen Engineering's Steamworks Complete does not replace [Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET) - it builds on top of it and provides you with a set of battle tested and developer approved tools and systems written with Unity in mind.&#x20;
+Heathen's Steamworks does not replace [Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET) - it builds on top of it and provides you with a set of battle tested and developer approved tools and systems written with Unity in mind.&#x20;
 
 ## Heathen vs Facepunch
 
