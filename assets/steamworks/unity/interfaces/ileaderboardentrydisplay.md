@@ -1,4 +1,4 @@
-# Steam Game Server Events
+# ILeaderboardEntryDisplay
 
 <figure><img src="../../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
 
@@ -12,24 +12,14 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction
 
-Exposes Steam Game Server events to the Unity Inspector
+Used by the Leaderboard UI List when instantiating records. This can be inherited from to create custom Leaderboard Entry Display's similar to the Leaderboard Display Entry provided in the asset.
 
-## Definition
+## Fields and Attributes
+
+### Entry
 
 ```csharp
-public class SteamGameServerEvents : MonoBehaviour
+public LeaderboardEntry Entry { get; set; }
 ```
 
-## Events
-
-### evtDisconnected
-
-Occurs when the game server disconnects from the Steam API
-
-### evtConnected
-
-Occurs when the game server connects to Steam API
-
-### evtFailure
-
-Occures when Steam API notifies the game server of a failure
+This will be set by the Leaderboard UI List when instantiating a record and should update the UI elements of the entry accordingly.

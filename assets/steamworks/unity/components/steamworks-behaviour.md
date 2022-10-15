@@ -4,6 +4,8 @@ description: The most important part
 
 # Steamworks Behaviour
 
+<figure><img src="../../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
+
 {% hint style="success" %}
 #### Like what your seeing?
 
@@ -44,28 +46,77 @@ This is rare and in general you should be allowing the system to auto initialize
 steamworksBeahviour.InitalizeGameServer();
 ```
 
-## FAQ
+## Events
 
-### Where are all the events?
+### Evt Steam Initialized
 
-We have created managers and events components which can be used not only to expose events to the Unity inspector but to provide game object based access to various systems.
+```csharp
+public UnityEvent evtSteamInitialized;
+```
 
-#### [Lobby Chat Director](lobby-chat-director.md)
+This is invoked when Steam API is fully initialized and all artifacts are ready for use.
 
-Exposes controls and events for a specific lobby chat
+This event has no parameters, a handler for this event would like:
 
-#### [Lobby Manager](lobby-manager.md)
+```csharp
+public void HandleEvent()
+{
+    //DO WORK
+}
+```
 
-Exposes controls and events for a specific lobby
+### Evt Steam Initialization Error
 
-#### [Overlay Manager](overlay-manager.md)
+```csharp
+public UnityStringEvent evtSteamInitializationError;
+```
 
-Exposes controls and events for the Steam Overlay features
+This is invoked if the Steam API fails to initialize.
 
-#### [Steam System Events](steam-system-events.md)
+This event has 1 parameter of type string which is a message indicating why it failed to initialize. A handler for this event would look like:
 
-Provides inspector access to Initialize and Initialization Error events
+```csharp
+public void HandleEvent(string errorMessage)
+{
+    //DO WORK
+}
+```
 
-#### [Steam Game Server Events](steam-game-server-events.md)
+### Evt Lobby Invite Argument Detected
 
-Provides inspector access to connect, disconnect and failure events for the Steam Game Server system.
+```csharp
+public LobbyDataEvent evtLobbyInviteArgumentDetected;
+```
+
+This is invoked after initialization completes if the system detects a lobby ID was passed in on the command line arguments. This occurs when a user accepted a lobby invite but was not currently playing the game. In that use case Steam will launch the game with the lobby ID on the command line.&#x20;
+
+This event has 1 argument of type [Lobby](../../objects/lobby.md), being the lobby that was passed in on the command line argument and would have a handler that looks like:
+
+```csharp
+public void HandleEvent(Lobby lobby)
+{
+    //DO WORK
+}
+```
+
+## Fields and Attributes
+
+### Settings
+
+```csharp
+public SteamSettings settings;
+```
+
+The [SteamSettings ](../scriptable-objects/steam-settings/)that should be used when initializing the API.
+
+## Methods
+
+### Create If Missing
+
+```csharp
+public static void CreateIfMissing(SteamSettings settings, bool doNotDestroy = false)
+```
+
+A static method that can be used to create a Steamworks Behaviour safely on demand. It is not recommend to do this, you should be using a [Bootstrap scene](../../../../company/concepts/fundamentals/bootstrap-scene.md) where the Steamworks Behaviour is set up at development time.&#x20;
+
+If you choose or simply must use a "late initialization" approach then this method can be used to safely create the Steamworks Behaviour and optionally mark it as Do Not Destroy. Note this will not create anything if a Steamworks Behaviour already exists.

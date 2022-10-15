@@ -4,6 +4,8 @@ description: Simple chat made simple
 
 # Lobby Chat Director
 
+<figure><img src="../../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
+
 {% hint style="success" %}
 #### Like what your seeing?
 

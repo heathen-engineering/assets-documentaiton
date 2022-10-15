@@ -46,7 +46,7 @@ This is the fun part, having the owner start up a network session, make it ready
 
 After the party leader ... or if your not in a party a solo player clicks the "Play" button we perform a Quick Match search via the Lobby Manager tool.
 
-<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 This is a simple process where the system will call `SessionUIController.QuickMatch()` on button press. The QuickMatch function does a few simple checks that are unique to this scene but common for more uses cases.
 
@@ -85,7 +85,7 @@ This happens when we have successfully created a lobby, that is we hit the Play 
 
 ### Start Session
 
-<figure><img src="../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
 
 At some point either determined by your game logic or at the whim of the lobby owner it will be time to "start session" ... that is you will want to start playing the game with the players you have.
 

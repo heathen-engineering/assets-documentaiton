@@ -16,12 +16,6 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction&#x20;
 
-{% hint style="warning" %}
-This sample scene is a Work In Progress (WIP) and is currently only available to [GitHub Sponsors](../../../../../company/become-a-sponsor.md). For Unity Asset Store users the [Legacy 5 Lobbies](broken-reference) article describes the current scene available to you.\
-\
-Unity Asset Store will be updated with the new scenes at a later date.
-{% endhint %}
-
 <figure><img src="../../../../../.gitbook/assets/image (103).png" alt=""><figcaption><p>Practical Use Case scene</p></figcaption></figure>
 
 We provide two sample scenes for Lobby.
