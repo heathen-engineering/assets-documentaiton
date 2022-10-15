@@ -50,7 +50,7 @@ At the top left of the screen is our Party UI. The local user's avatar is always
 
 Clicking on an empty slot (represented with a + icon) the Invite tool will display
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 From the invite tool you can select an online friend to invite from a drop down list
 

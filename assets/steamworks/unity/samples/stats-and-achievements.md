@@ -12,32 +12,42 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction&#x20;
 
-This scene demonstrates the use of Steam stats and Steam achievements.
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-![](<../../../../.gitbook/assets/image (172) (1) (1) (1) (1).png>)
+The Simple Achievements scene demonstrates reading and updating achievements using the AchievementObject. In this scene we use SetAchievementIcon, SetAchievementName and SetAchievementDescription components to populate the UI showing the icon, name and description of each achievement.
 
-### What do I learn?
+## Configuration
 
-1. Importing Stats and Achievements
-2. Using Stats and Achievements at run time
-3. How to access the Knowledge Base (where you are now)
-4. How to access the support [Discord ](https://discord.gg/6X3xrRc)
-5. How to leave a review 😉
+### Set Achievement Icon
 
-## Objects
+Used on the RawImage to load the icon and update it based on changes to the achievement's state such as lock or unlock.
 
-### Manager
+### Set Achievement Name
 
-The manage game object has the [Steamworks Behaviour](../components/steamworks-behaviour.md) component attached and will handle initialization of the Steam API on start up.
+Used on the TextMesh Pro label to set the name of the achievement.
 
-### NumWins
+### Set Achievement Description
 
-From the Example Steam Settings `[Stat Int] NumWins` this is used by the Add Win button to update the stat value and to display the results
+Used on the TextMesage Pro label to set the description on the achievement.
 
-### NEW Achievements 0\_4
+## Setting Value
 
-From the Example Steam Settings `[Ach] NEW_ACHIEVEMENT_0_4` this is used by the Unlock and Reset buttons to modify the achievement.
+Each of the UI elements shown on the screen is actually a Unity UI Toggle, when clicked it will set the value of the IsAchieved on the [AchievementObject ](../scriptable-objects/achievement-object.md)locking or unlocking it.
 
-### DEMO SCRIPTS
+Note in this sample scene we do not call Store to commit the change so the changes wont commit until the app is closed. If you wanted to commit the changes before that you can call the Store method on any [AchievementObject ](../scriptable-objects/achievement-object.md)or StatObject to commit the changes now and this will cause the "popup" from Steam overlay to show if applicable.&#x20;
 
-This contains internal demo scripts used in the scene which are all marked as deprecated. They simply drive the buttons in the menu nothing more.
+Steam Overlay doesn't work nicely in Unity Editor so we do not demonstrate that here.
+
+### What About Stats?
+
+They work much the same way with regards to setting the value, read the documentation on&#x20;
+
+[Int Stat](../scriptable-objects/int-stat.md)
+
+[Float Stat](../scriptable-objects/float-stat.md)
+
+and [Average Rate Stat](../scriptable-objects/avg-rate-stat.md)
+
+to learn more.
+
+Stats do not have icons so there is no icon to load and each type of stat has its own "data type" but otherwise the process is the same, set the Valve of the stat and when ready call Store to commit the changes to the backend.

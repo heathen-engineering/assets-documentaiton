@@ -1,5 +1,7 @@
 # Set User Avatar
 
+
+
 <figure><img src="../../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
 
 {% hint style="success" %}
@@ -12,7 +14,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction
 
-A simple componenet meant to be attached to a UnityEngine.UI.RawImage
+A simple component meant to be attached to a UnityEngine.UI.RawImage
 
 This can update the raw image with the indicated user's avatar and can optionally pull the local user's data on start up.
 

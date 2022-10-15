@@ -12,7 +12,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 The Leaderboard sample scene demonstrates the read, write and display of Leaderboard data. The sample scene doesn't use any custom code and works "code free" using standard Heathen tools.
 
