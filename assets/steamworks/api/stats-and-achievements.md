@@ -491,9 +491,9 @@ You can clear achievements either by using the interface
 API.StatsAndAchievements.Client.ClearAChievement(name);
 ```
 
-or by using the [Achievement Object](../for-unity-game-engine/scriptable-objects/achievement-object.md) directly
+or by using the [Achievement Object](../unity/scriptable-objects/achievement-object.md) directly
 
-Resetting a stat is as simple as setting its value, see the [Int Stat](../for-unity-game-engine/scriptable-objects/int-stat.md) and [Float Stat](../for-unity-game-engine/scriptable-objects/float-stat.md) object for details
+Resetting a stat is as simple as setting its value, see the [Int Stat](../unity/scriptable-objects/int-stat.md) and [Float Stat](../unity/scriptable-objects/float-stat.md) object for details
 
 You can optionally reset all stats and achievements
 

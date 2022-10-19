@@ -200,7 +200,7 @@ void CallbackHandler(LeaderboardFindResult_t result, bool IOError);
 ```
 {% endhint %}
 
-The [Steamworks Behaviour](../for-unity-game-engine/components/steamworks-behaviour.md) will call this for you as it initializes the Steam Settings and the boards you have defined within. You only need to call this your self if you are creating a build at run time manually and not using the [Leaderboard Object](../for-unity-game-engine/scriptable-objects/leaderboard-object.md).
+The [Steamworks Behaviour](../unity/components/steamworks-behaviour.md) will call this for you as it initializes the Steam Settings and the boards you have defined within. You only need to call this your self if you are creating a build at run time manually and not using the [Leaderboard Object](../unity/scriptable-objects/leaderboard-object.md).
 
 ### GetDisplayType
 
@@ -270,7 +270,7 @@ Uploads a score and optionally details for the user to the target leaderboard.
 ## How To
 
 {% hint style="success" %}
-The [Leaderboard ](../for-unity-game-engine/scriptable-objects/leaderboard-object.md)object provides simplified access to many of the features found here in. Be sure to read the documentation for the [Leaderboard ](../for-unity-game-engine/scriptable-objects/leaderboard-object.md)object to understand what options are available to you.
+The [Leaderboard ](../unity/scriptable-objects/leaderboard-object.md)object provides simplified access to many of the features found here in. Be sure to read the documentation for the [Leaderboard ](../unity/scriptable-objects/leaderboard-object.md)object to understand what options are available to you.
 {% endhint %}
 
 ### Add an attachment
@@ -278,7 +278,7 @@ The [Leaderboard ](../for-unity-game-engine/scriptable-objects/leaderboard-objec
 You can attach files to a user's leaderboard entry using the `AttachLeaderboardUGC` option.&#x20;
 
 {% hint style="info" %}
-It is typically easier to add attaches to the local user's entry from teh board its self, that is to use the AttachUGC methods availabel on the [Leaderboard](../for-unity-game-engine/scriptable-objects/leaderboard-object.md) object.
+It is typically easier to add attaches to the local user's entry from teh board its self, that is to use the AttachUGC methods availabel on the [Leaderboard](../unity/scriptable-objects/leaderboard-object.md) object.
 {% endhint %}
 
 Attaches a piece of user generated content the current user's entry on a leaderboard.
@@ -306,7 +306,7 @@ In this case we are writing a file up to the user's remote storage, if that writ
 Entries e.g. the records in the board can be queried in several ways.
 
 {% hint style="info" %}
-It is typically easier to get and upload entries from the board its self, that is to use the GetEntries and Upload methods available on the [Leaderboard ](../for-unity-game-engine/scriptable-objects/leaderboard-object.md)object.
+It is typically easier to get and upload entries from the board its self, that is to use the GetEntries and Upload methods available on the [Leaderboard ](../unity/scriptable-objects/leaderboard-object.md)object.
 {% endhint %}
 
 #### Download Entries

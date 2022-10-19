@@ -560,13 +560,13 @@ public static ItemDetail GetExtendedItemDetail(SteamInventoryResult_t result,
 ## How To
 
 {% hint style="success" %}
-Methods that impact a user's inventory will typically have a [callback ](../../../company/concepts/development/callbacks.md)that returns a type of [Inventory Result](../objects/inventory-result.md). In addition the [Item Definitions](../for-unity-game-engine/scriptable-objects/item-definition.md) stored in the active Steam Settings will be updated with the resulting [Item Details](../objects/item-details.md) which be used as a real time view of the current state of the user's inventory.
+Methods that impact a user's inventory will typically have a [callback ](../../../company/concepts/development/callbacks.md)that returns a type of [Inventory Result](../objects/inventory-result.md). In addition the [Item Definitions](../unity/scriptable-objects/item-definition.md) stored in the active Steam Settings will be updated with the resulting [Item Details](../objects/item-details.md) which be used as a real time view of the current state of the user's inventory.
 {% endhint %}
 
 {% hint style="info" %}
-The [Item Definitions](../for-unity-game-engine/scriptable-objects/item-definition.md) object contains shortcut methods to many of the features found in the API.Inventory interface.
+The [Item Definitions](../unity/scriptable-objects/item-definition.md) object contains shortcut methods to many of the features found in the API.Inventory interface.
 
-For example it is possible to consume quantity, add promo items and exchange items directly from the item its self. Please review the [Item Definition](../for-unity-game-engine/scriptable-objects/item-definition.md) object closely to understand all the options available to you.
+For example it is possible to consume quantity, add promo items and exchange items directly from the item its self. Please review the [Item Definition](../unity/scriptable-objects/item-definition.md) object closely to understand all the options available to you.
 {% endhint %}
 
 ### Add Promo Item

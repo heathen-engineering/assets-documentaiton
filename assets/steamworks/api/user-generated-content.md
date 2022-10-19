@@ -223,7 +223,7 @@ public static UGCQueryHandle_t CreateQueryAllRequest(EUGCQuery queryType,
 ```
 
 {% hint style="info" %}
-The [UGC Query Manager](../for-unity-game-engine/components/ugc-query-manager.md) can make working with quires much simpler.
+The [UGC Query Manager](../unity/components/ugc-query-manager.md) can make working with quires much simpler.
 {% endhint %}
 
 Query for all matching UGC. You can use this to list all of the available UGC for your app. You must release the handle returned by this function by calling WorkshopReleaseQueryRequest when you are done with it!
@@ -248,7 +248,7 @@ public static UGCQueryHandle_t CreateQueryDetailsRequest(
 ```
 
 {% hint style="info" %}
-The [UGC Query Manager](../for-unity-game-engine/components/ugc-query-manager.md) can make working with quires much simpler.
+The [UGC Query Manager](../unity/components/ugc-query-manager.md) can make working with quires much simpler.
 {% endhint %}
 
 Query for the details of specific workshop items. You must release the handle returned by this function by calling WorkshopReleaseQueryRequest when you are done with it!
@@ -894,7 +894,7 @@ UGC.SubmitItemUpdate(handle, changenote, callback);
 
 ### Browse Items
 
-The easiest way to handle a UGC / Workshop browser in game is to use the [UGC Query Manager](../for-unity-game-engine/components/ugc-query-manager.md). The manager uses the same features present in the interface so it can be done manually.
+The easiest way to handle a UGC / Workshop browser in game is to use the [UGC Query Manager](../unity/components/ugc-query-manager.md). The manager uses the same features present in the interface so it can be done manually.
 
 The remainder of this section talks about manually querying items.
 
@@ -947,7 +947,7 @@ Once you have created your handle you can modify the way it searches for matchin
 
 Once you have your query set up you can submit it to fetch the related items. Note the UGC Query system is a page query system. It will never return more than 50 items (determined by Valve) and so you will need to increment the page in your query handle to fetch each successive set of records.&#x20;
 
-You can see how we implemented paging in the [UGC Query Manager](../for-unity-game-engine/components/ugc-query-manager.md) if you wished to do so your self or simply to better understand the system.
+You can see how we implemented paging in the [UGC Query Manager](../unity/components/ugc-query-manager.md) if you wished to do so your self or simply to better understand the system.
 
 ```csharp
 //When ready send the query so Valve can process it

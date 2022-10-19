@@ -65,7 +65,7 @@ The underlying ulong value of the CSteamID&#x20;
 public AccountID_t { get; set; }
 ```
 
-The account ID segment of the full CSteamID, to understand more read [this article](../for-unity-game-engine/quick-start-guide/csteamid.md).
+The account ID segment of the full CSteamID, to understand more read [this article](../guides/csteamid.md).
 
 ### FriendId
 
@@ -73,7 +73,7 @@ The account ID segment of the full CSteamID, to understand more read [this artic
 public uint FriendId { get; set; }
 ```
 
-The underlying uint value of the AccountID\_t segment of the CSteamID, to understand more read [this article](../for-unity-game-engine/quick-start-guide/csteamid.md).
+The underlying uint value of the AccountID\_t segment of the CSteamID, to understand more read [this article](../guides/csteamid.md).
 
 ### IsValid
 
@@ -94,7 +94,7 @@ This is true if this UserData object is the local user
 ### Avatar
 
 {% hint style="info" %}
-You can use the [SetUserAvatar](../for-unity-game-engine/components/set-user-avatar.md) component to more easily manage a given user's avatar texture. The [SetUserAvatar](../for-unity-game-engine/components/set-user-avatar.md) componenet will assign a RawImage with the texture and will monitor Steam API for changes to that avatar thus if that user changes there avatar image it will automatically update the RawImage texture.
+You can use the [SetUserAvatar](../unity/components/set-user-avatar.md) component to more easily manage a given user's avatar texture. The [SetUserAvatar](../unity/components/set-user-avatar.md) componenet will assign a RawImage with the texture and will monitor Steam API for changes to that avatar thus if that user changes there avatar image it will automatically update the RawImage texture.
 {% endhint %}
 
 ```csharp
@@ -116,7 +116,7 @@ else
 ### Name
 
 {% hint style="info" %}
-You can use the [SetUserName](../for-unity-game-engine/components/set-user-name.md) component to more easily manage a given user's name. The [SetUserName ](../for-unity-game-engine/components/set-user-name.md)componenet will assign a uGUI Text or TMPro Text with the name or nickname of the indicated user and will update it if that name should change.
+You can use the [SetUserName](../unity/components/set-user-name.md) component to more easily manage a given user's name. The [SetUserName ](../unity/components/set-user-name.md)componenet will assign a uGUI Text or TMPro Text with the name or nickname of the indicated user and will update it if that name should change.
 {% endhint %}
 
 ```csharp
@@ -128,7 +128,7 @@ This reads the user's Steam Name
 ### Nickname
 
 {% hint style="info" %}
-You can use the [SetUserName](../for-unity-game-engine/components/set-user-name.md) component to more easily manage a given user's name. The [SetUserName ](../for-unity-game-engine/components/set-user-name.md)componenet will assign a uGUI Text or TMPro Text with the name or nickname of the indicated user and will update it if that name should change.
+You can use the [SetUserName](../unity/components/set-user-name.md) component to more easily manage a given user's name. The [SetUserName ](../unity/components/set-user-name.md)componenet will assign a uGUI Text or TMPro Text with the name or nickname of the indicated user and will update it if that name should change.
 {% endhint %}
 
 ```csharp
