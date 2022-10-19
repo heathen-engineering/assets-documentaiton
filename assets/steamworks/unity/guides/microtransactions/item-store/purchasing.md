@@ -1,6 +1,6 @@
 # Purchasing
 
-## Introduction
+<figure><img src="../../../../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 #### Like what your seeing?
@@ -9,6 +9,8 @@ Consider supporting us as a [GitHub Sponsor](../../../../../../company/become-a-
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
+
+## Introduction
 
 So now you have your items listed and displaying relevant visuals and information. You now need to respond to use input to start a purchase with real currency or to exchange in-game items aka in-game currency.
 
