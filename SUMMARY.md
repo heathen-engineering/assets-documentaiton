@@ -196,6 +196,7 @@
         * [Getting Started](assets/steamworks/unity/guides/multiplayer/getting-started.md)
         * [Lobby](assets/steamworks/unity/guides/multiplayer/matchmaking-tools.md)
         * [Matchmaking](assets/steamworks/unity/guides/multiplayer/matchmaking.md)
+        * [Rich Presence](assets/steamworks/unity/guides/multiplayer/rich-presence.md)
         * [Steam Game Server](assets/steamworks/unity/guides/multiplayer/game-server-browser.md)
         * [Terminology](assets/steamworks/unity/guides/multiplayer/terminology.md)
       * [Stats](assets/steamworks/unity/guides/stats-object.md)

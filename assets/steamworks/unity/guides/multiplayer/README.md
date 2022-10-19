@@ -4,6 +4,8 @@ description: Playing with your self is fun, playing with others is even more! ..
 
 # Multiplayer
 
+<figure><img src="../../../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
+
 {% hint style="success" %}
 #### Like what your seeing?
 
