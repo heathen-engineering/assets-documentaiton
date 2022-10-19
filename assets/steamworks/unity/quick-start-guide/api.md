@@ -4,12 +4,12 @@ description: Getting started with the Heathen Steam API
 
 # API
 
-<figure><img src="../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../../company/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../../../company/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -38,7 +38,7 @@ Each API has a static class related to it and a sub class for Client and Server 
 HeathenEngineering.SteamworksIntegration.API.Input.Client;
 ```
 
-The above is the full name of the Input API for the game client. you can shorten this name by using namespace aliases as described in this [linked article](../../../company/concepts/fundamentals/namespace-and-using.md#aliasing).
+The above is the full name of the Input API for the game client. you can shorten this name by using namespace aliases as described in this [linked article](../../../../company/concepts/fundamentals/namespace-and-using.md#aliasing).
 
 ```csharp
 using InputAPI = HeathenEngineering.SteamworksIntegration.API.Input.Client;
