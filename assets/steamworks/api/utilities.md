@@ -46,6 +46,4 @@ API.Utilites.Client
 
 The utilties interface contains misc features that dont fit in well to other interfaces. It can flip images, convert IP addresses frm uint, to string and back again and test Steam client's various modes.
 
-## How To
-
 ###

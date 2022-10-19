@@ -24,7 +24,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 {% embed url="https://partner.steamgames.com/doc/features/steam_controller" %}
 
-To learn more about Steam Input in Heathen's Steamworks Complete [read this article](../unity/guides/input/) on the core concept.
+To learn more about Steam Input in Heathen's Steamworks Complete [read this article](../guides/input/) on the core concept.
 
 ## Fields and Attributes
 

@@ -18,14 +18,14 @@ LobbyMember is a structure that wraps around Lobby and UserData to simplify acce
 LobbyMember lobbyMember = myLobby.Me;
 ```
 
-The most common thing to do with a LobbyMember is to set the [metadata](../unity/guides/multiplayer/matchmaking-tools.md#metadata) of that member.
+The most common thing to do with a LobbyMember is to set the [metadata](../guides/multiplayer/matchmaking-tools.md#metadata) of that member.
 
 ```csharp
 lobbyMember["fieldName"] = "fieldValue";
 ```
 
 {% hint style="info" %}
-You can learn more about Lobby metadata and LobbyMember metadata by reading [this](../unity/guides/multiplayer/matchmaking-tools.md#metadata) article.
+You can learn more about Lobby metadata and LobbyMember metadata by reading [this](../guides/multiplayer/matchmaking-tools.md#metadata) article.
 {% endhint %}
 
 ## Definition
