@@ -71,6 +71,12 @@ Because we are built on top of Steamworks.NET which is its self a true to form w
 
 Steamworks is available in two packages as described below.
 
+{% hint style="info" %}
+The full raw Steam API (in C#) is fully available in all versions via our Steamworks.NET integration.\
+\
+The "Features" shown here are Heathen extensions which make working with the API easier, safer, more robust and more functional but are not \*required\* in order to integration with Steam.&#x20;
+{% endhint %}
+
 | Features                                             | Foundation | Complete |
 | ---------------------------------------------------- | ---------- | -------- |
 | <p>Full API Supported by</p><p>Steamworks.NET</p>    | ✔          | ✔        |
