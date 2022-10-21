@@ -1,7 +1,7 @@
 ---
 description: >-
-  Explore concepts and ideas around Unity development and software engineering
-  in general.
+  Explore concepts and ideas around game development and software engineering in
+  general.
 cover: ../../.gitbook/assets/1920x384 DoMore Banner (1).png
 coverY: 0
 ---
@@ -17,3 +17,4 @@ Consider supporting us as a [GitHub Sponsor](../become-a-sponsor.md) and get ins
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
+
