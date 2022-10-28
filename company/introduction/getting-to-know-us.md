@@ -6,33 +6,37 @@ coverY: 0
 
 # Getting to know us
 
-Heathen Group was founded in 2015 as Heathen Engineering Limited by a small team of experienced software engineers and technology consultants. The company’s objective was and is to create and exploit software technologies developing for and supporting both fellow creators and end users such as gamers.
+Heathen Group was founded in 2015 as Heathen Engineering Limited by a small team of experienced software engineers and technology consultants. The company’s objective was and is to create and exploit software technologies, systems and practices developing for and supporting both fellow creators and end users such as gamers.
+
+The aim of efforts is to enable our selves and our peers to develop a more consumer centric game industry. This requires a high level of technical quality, a required depth of care in user experience and general design and importantly fair, ethical and sustainable monetization systems and practices.
 
 Heathen has a particular focus on game software development and related technologies, though its pedigree is largely in the enterprise software sector. Heathen’s unique blend of experiences and understanding straddles multi-media entertainment and enterprise level business and industry with many years of experience in both worlds.
 
 ## Our Approach
 
-The approach taken by Heathen is simple: “eat your own dog food”. Heathen creates technologies and tools that it then exploits to create end-user products such as bespoke client software, games, and assets. The Heathen approach creates a feedback loop where in the use of its technologies and tools enrich its end-user products and the use of its products enrich its technologies and tools.
+The approach taken by Heathen is simple: “eat your own dog food”. Heathen creates technologies and tools that it then exploits to create end-user products such as bespoke client software, games, and assets. The Heathen approach creates a feedback loop where in the use of its technologies and tools enrich its end-user products and the use of its products enrich its technologies and tools.&#x20;
+
+Every tool, practice or system we produce was born of need in a real project. For tools of wider use we abstract and make them publicly available. Through support and fostering of our developer community we enrich our public offerings making them more robust, more efficient, more valuable and this intern enriches our games and apps and creates opportunity for new ideas, technologies and systems to develop.
 
 ## The Group
 
 ![](<../../.gitbook/assets/Free Flat Heathen Group Banner.png>)
 
-Heathen as a group is one team with many ambitions, these sections help us keep it all organized and on task!
+Heathen as a group is one team with many ambitions, these brands or sections help us keep it all organized and on task!
 
 ### Hel House
 
 ![](<../../.gitbook/assets/Hel House Banner White.png>)
 
-Hel House is the section that deals with Managed Services, that is contracting and consulting services for our clients, managing our partners and functioning as our internal publishing group.
+Hel House is the section that deals with Managed Services, that is contracting and consulting services for our clients, managing our own partners and functioning as our internal publishing group.
 
-Hel House manages all of our digital store fronts, web sites, social networks, partnerships and provides managed services to our clients as well.
+Hel House manages all of our digital store fronts, web sites, social networks, partnerships and provides contracting and managed services to our clients as well.
 
 ### Heathen Engineering
 
 ![](<../../.gitbook/assets/Heathen Engineering Banner White.png>)
 
-Heathen Engineering is the section that deals with engineering. Heathen Engineering creates, maintains and supports all of Heathen Groups technology assets and provides for the support and maintenance of those resources.
+Heathen Engineering is the section that deals with ... well engineering ... hence the name. Heathen Engineering creates, maintains and supports all of Heathen Groups technology assets and provides for the support and maintenance of those resources be that internal or with the wider community.
 
 ### Freki Games
 
