@@ -8,6 +8,10 @@ coverY: 0
 
 Welcome to Heathen's Knowledge Base, a game development resource for professional, armature, hobbies and enthusiast game developers. Within you will find articles, guides, and technical documentation to help you on your quest to become ... well whatever it is your looking to do.
 
+Heathen as a team is focused on consumer centric development, this means a high level of technical quality, a required depth of care in user experience and general design and importantly fair and ethical monetization practices providing sustainability to the developer and value to the end user.&#x20;
+
+Our focus and lofty goals mean we do a whole lot of research and have develop a lot of very useful technologies, tools, systems, guides and practices. This Knowledge Base is where we share what we have grown with our fellow game developers. This resource is available for free to any who have use of it and is supported wholly by the [Heathen GitHub Sponsor](https://github.com/sponsors/heathen-engineering) program, you can learn more in our article on "[Becoming a Sponsor](company/become-a-sponsor.md)".
+
 ## Getting Started
 
 Not sure where to start? ... [try the beginning](company/concepts/getting-started/)!
