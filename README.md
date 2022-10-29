@@ -6,11 +6,15 @@ coverY: 0
 
 # Introduction
 
-Welcome to Heathen's Knowledge Base, a game development resource for professional, armature, hobbies and enthusiast game developers. Within you will find articles, guides, and technical documentation to help you on your quest to become ... well whatever it is your looking to do.
+A game development resource for professional, armature, hobbyist and enthusiast game developers. Within you will find articles, guides, and technical documentation to help you on your quest to **Do More** as a game developer!
 
-Heathen as a team is focused on consumer centric development, this means a high level of technical quality, a required depth of care in user experience and general design and importantly fair and ethical monetization practices providing sustainability to the developer and value to the end user.&#x20;
+Heathen is focused on consumer centric development, this means a high level of technical quality, a required depth of care in the user experience and general design of games and importantly fair, sustainable and ethical monetization practices.&#x20;
 
-Our focus and lofty goals mean we do a whole lot of research and have develop a lot of very useful technologies, tools, systems, guides and practices. This Knowledge Base is where we share what we have grown with our fellow game developers. This resource is available for free to any who have use of it and is supported wholly by the [Heathen GitHub Sponsor](https://github.com/sponsors/heathen-engineering) program, you can learn more in our article on "[Becoming a Sponsor](company/become-a-sponsor.md)".
+Our focus and lofty goals mean we do a whole lot of research and have develop a lot of very useful technologies, tools, systems, guides and practices. This Knowledge Base is where we share what we have grown with our fellow game developers.&#x20;
+
+{% hint style="success" %}
+This resource is available for free to any who have use of it and is supported wholly by the [Heathen GitHub Sponsor](https://github.com/sponsors/heathen-engineering) program, you can learn more about how you can help us Do More in our article on "[Becoming a Sponsor](company/become-a-sponsor.md)".
+{% endhint %}
 
 ## Getting Started
 
