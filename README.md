@@ -22,7 +22,7 @@ Not sure where to start? ... [try the beginning](company/concepts/getting-starte
 
 Our getting started guide will help you break into our general guides which them selves cover everything from the core [fundamentals](company/concepts/fundamentals/) to more advanced topics in [design](company/concepts/design/), [development](company/concepts/development/), [testing](company/concepts/testing/) and more.
 
-Looking to make a go of it as an Indie Game Dev? be sure to read over out [Indie Check List](company/concepts/getting-started/indie-check-list.md).
+Looking to make a living as an Indie Game Dev? be sure to read over our [Indie Check List](company/concepts/getting-started/indie-check-list.md) and when your ready join our [Discord community](https://discord.gg/6X3xrRc).
 
 ## Documentation
 
