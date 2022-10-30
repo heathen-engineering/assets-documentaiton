@@ -119,7 +119,7 @@ This is simply the formal name of the object in question, the full "signature" o
 
 ### Inheritance & Interfaces
 
-Where applicable we will also outline what this object inherits from, this helps you understand how you can use it in the context of Unity and other objects. For example all Unity Components must inherit from `MonoBehaviour` or from a class that its self is derived from `MonoBehaviour`. similarly many tools operate not on a specific class but on an Interface such as [IUserProfile ](../steamworks/unity/ugui-tools/interfaces/iuserprofile.md)in the [uGUI Tools for Steam](../steamworks/unity/ugui-tools/), this means any object that implements (inherits) [IUserProfile ](../steamworks/unity/ugui-tools/interfaces/iuserprofile.md)can be used with it.
+Where applicable we will also outline what this object inherits from, this helps you understand how you can use it in the context of Unity and other objects. For example all Unity Components must inherit from `MonoBehaviour` or from a class that its self is derived from `MonoBehaviour`. similarly many tools operate not on a specific class but on an Interface such as [IUserProfile ](../steamworks/for-unity-game-engine/interfaces/iuserprofile.md)in the [uGUI Tools for Steam](broken-reference), this means any object that implements (inherits) [IUserProfile ](../steamworks/for-unity-game-engine/interfaces/iuserprofile.md)can be used with it.
 
 {% hint style="info" %}
 Inheritance and Interface implementation is concept of C# and a matter of general programming, if these concepts are new to you please consult the following articles.\

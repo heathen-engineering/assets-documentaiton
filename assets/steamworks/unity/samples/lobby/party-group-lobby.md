@@ -18,7 +18,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 Steam lobby can be used for a lot more than just matchmaking. In this part of the sample scene we demonstrate using a Steam lobby as a "party" or "group".
 
-<figure><img src="../../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Features
 
@@ -54,7 +54,7 @@ Clicking on an empty slot (represented with a + icon) the Invite tool will displ
 
 From the invite tool you can select an online friend to invite from a drop down list
 
-<figure><img src="../../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 Or you can type in your friends "code" to invite them manually ... note your code is displayed under your name ... you can select and copy and paste this into whatever social chat you like.
 

@@ -1,5 +1,7 @@
 # Cloud Save
 
+<figure><img src="../../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
+
 {% hint style="success" %}
 #### Like what your seeing?
 
@@ -12,7 +14,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 {% embed url="https://partner.steamgames.com/doc/features/cloud" %}
 
-Quote from Valve's documentiaton
+Quote from Valve's documentation
 
 > The Steam Cloud provides an easy and transparent remote file storage system for your game. Files specified in the Auto-Cloud configuration or written to disk (created, modified, deleted, etc.) using the Cloud API will automatically be replicated to the Steam servers after the game exits.
 >

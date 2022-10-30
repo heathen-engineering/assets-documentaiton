@@ -4,6 +4,8 @@ description: List your user friends, open chats, send invites and much more!
 
 # Friend List
 
+<figure><img src="../../../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
+
 {% hint style="success" %}
 #### Like what your seeing?
 
@@ -16,7 +18,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 {% embed url="https://kb.heathenengineering.com/assets/steamworks/ugui-tools" %}
 
-You can list friends, contacts, groups and other collections of Steam users and user groups using the Friends API or our [uGUI Tools for Steam](../../ugui-tools/).
+You can list friends, contacts, groups and other collections of Steam users and user groups using the Friends API or our [uGUI Tools for Steam](broken-reference).
 
 Its possible to filter these lists by the type of friend on query from Steam and then in your game's logic you can further filter these lists based on users in game, or not in game, online or offline, etc.
 

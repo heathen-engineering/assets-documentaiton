@@ -12,7 +12,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction
 
-A simple implementation of the [ILeaderboardEntryDisplay ](../interfaces/ileaderboardentrydisplay.md)interface.
+A simple implementation of the [ILeaderboardEntryDisplay ](../../unity/interfaces/ileaderboardentrydisplay.md)interface.
 
 ## Fields and Attributes
 
@@ -54,4 +54,4 @@ A TextMesh Pro label reference that will be used to display the record's owner's
 public LeaderboardEntry Entry { get; set; }
 ```
 
-From the [ILeaderboardEntryDisplay ](../interfaces/ileaderboardentrydisplay.md)interface and is used by the [Leaderboard UI List](leaderboard-ui-list.md) to set the entry that this object will represent and thus updating all the UI elements.
+From the [ILeaderboardEntryDisplay ](../../unity/interfaces/ileaderboardentrydisplay.md)interface and is used by the [Leaderboard UI List](leaderboard-ui-list.md) to set the entry that this object will represent and thus updating all the UI elements.

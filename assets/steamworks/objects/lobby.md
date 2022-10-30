@@ -1,4 +1,10 @@
+---
+description: Steam Lobby Functionality in an easy to use struct
+---
+
 # Lobby
+
+<figure><img src="../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 #### Like what your seeing?
@@ -10,7 +16,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction
 
-The Lobby object is a custom CSteamId that carries tools and functions unique to the Steam Lobby system.
+The Lobby object is a custom CSteamId that carries tools and functions unique to the Steam Lobby system. This object is common between both Unity and Godot game engine integrations.
 
 {% hint style="info" %}
 You can convert a Lobby to a ulong or CSteamID or convert a ulong or CSteamID to a Lobby implicitly e.g.
@@ -60,26 +66,34 @@ The following are constant strings used internally to manage Heathen standard me
 ## Definition
 
 ```csharp
-public struct Lobby : IEquatable<CSteamID>, IEquatable<ulong>
+public struct Lobby : IEquatable<CSteamID>, IEquatable<ulong>, IEquatable<Lobby>
 ```
 
 ## Fields and Attributes
 
-### ID
+### All Players Not Ready
 
 ```csharp
-public CSteamID id;
+public bool AllPlayersNotReady => get;
 ```
 
-The underlying native ID for this clan
+{% hint style="warning" %}
+This iterates over the Members array
+{% endhint %}
 
-### SteamId
+Returns true if all of the players 'IsReady' is false
+
+### All Players Ready
 
 ```csharp
-public ulong SteamId { get; set; }
+public bool AllPlayersReady => get;
 ```
 
-The underlying ulong value of the CSteamID&#x20;
+{% hint style="warning" %}
+This iterates over the Members array
+{% endhint %}
+
+Returns true if all of the players 'IsReady' is true
 
 ### AccountId
 
@@ -89,13 +103,93 @@ public AccountID_t { get; set; }
 
 The account ID segment of the full CSteamID, to understand more read [this article](../unity/quick-start-guide/csteamid.md).
 
-### FriendId
+### Friend Id
 
 ```csharp
 public uint FriendId { get; set; }
 ```
 
 The underlying uint value of the AccountID\_t segment of the CSteamID, to understand more read [this article](../unity/quick-start-guide/csteamid.md).
+
+### Full
+
+```csharp
+public bool Full => get;
+```
+
+Returns true if the lobby is full e.g. has no more open slots
+
+### Game Server
+
+```csharp
+public LobbyGameServer GameServer => get;
+```
+
+Returns the lobby game server data if any
+
+### Game Version
+
+```csharp
+public string GameVersion { get; set; }
+```
+
+Gets or sets the version of the game the lobby is configured for ... this should match the owners version. This can only be set by the owner of the lobby.
+
+### Has Server
+
+```csharp
+public bool HasServer => get;
+```
+
+Does this lobby have a game server registered to it
+
+### ID
+
+```csharp
+public CSteamID id;
+```
+
+The underlying native ID for this clan
+
+### IsGroup
+
+```csharp
+public bool IsGroup { get; set; )
+```
+
+Indicates rather or not this lobby is a group (aka party) lobby. When set to true a metadata value \`z\_heathenMode\` will be set to \`Group\` and the lobby type will be set to a invisible.
+
+### IsOwner
+
+```csharp
+public bool IsOwner => get;
+```
+
+Returns true if the local user is the owner of this lobby
+
+### IsReady
+
+```csharp
+public bool IsReady { get; set; }
+```
+
+Sets the ready flag for this player on this lobby
+
+### IsSession
+
+```csharp
+public bool IsSession { get; set; }
+```
+
+Indicates rather or not this lobby is a session lobby. When set to true a metadata value \`z\_heathenMode\` will be set to \`Session\`. Lobby type is not automatic set when writing to this field. Session type lobbies can technically be of any type.
+
+### IsTypeSet
+
+```csharp
+public bool IsTypeSet => get;
+```
+
+This returns true if the Lobby Type is known
 
 ### IsValid
 
@@ -104,22 +198,6 @@ public bool IsValid => get;
 ```
 
 This indicates rather or not the underlying CSteamID is of the proper Universe and Type it does not indicate that it is a valid entry. E.g. this tells you if the data is of the right shape ... not that it equates to a valid entry in Steam client.
-
-### Name
-
-```csharp
-public string Name { get; set; }
-```
-
-The name of the lobby if stored in the lobby's metadata. Only the owner of the lobby can set this value.
-
-### Owner
-
-```csharp
-public LobbyMember Owner { get; set; }
-```
-
-The [LobbyMember ](lobby-member.md)data for the owner of the lobby, only the current owner can set this value to some other [LobbyMember](lobby-member.md).
 
 ### Me
 
@@ -141,13 +219,47 @@ this must create the array each time it is called, so call it once, cash it and 
 
 Returns an array of all the lobby members.
 
-### IsTypeSet
+### Max Members
 
 ```csharp
-public bool IsTypeSet => get;
+public int MaxMembers { get; set; } 
 ```
 
-This returns true if the Lobby Type is known
+Gets or sets the max members permitted in this lobby, this can only be set by the owner.
+
+### Member Count
+
+```csharp
+public int MemberCount => get;
+```
+
+Returns the number of members currently in this lobby
+
+### Name
+
+```csharp
+public string Name { get; set; }
+```
+
+The name of the lobby if stored in the lobby's metadata. Only the owner of the lobby can set this value.
+
+### Owner
+
+```csharp
+public LobbyMember Owner { get; set; }
+```
+
+The [LobbyMember ](lobby-member.md)data for the owner of the lobby, only the current owner can set this value to some other [LobbyMember](lobby-member.md).
+
+
+
+### SteamId
+
+```csharp
+public ulong SteamId { get; set; }
+```
+
+The underlying ulong value of the CSteamID&#x20;
 
 ### Type
 
@@ -156,105 +268,6 @@ public ELobbyType Type { get; set; }
 ```
 
 Returns the type of the lobby if set, if not set this will default to Private, you can check if the type is set with IsTypeSet. Only the owner of the lobby can set this value.
-
-### GameVersion
-
-```csharp
-public string GameVersion { get; set; }
-```
-
-Gets or sets the version of the game the lobby is configured for ... this should match the owners version. This can only be set by the owner of the lobby.
-
-### IsOwner
-
-```csharp
-public bool IsOwner => get;
-```
-
-Returns true if the local user is the owner of this lobby
-
-### IsGroup
-
-```csharp
-public bool IsGroup => get;
-```
-
-Indicates rather or not this lobby is a party lobby
-
-### HasServer
-
-```csharp
-public bool HasServer => get;
-```
-
-Does this lobby have a game server registered to it
-
-### GameServer
-
-```csharp
-public LobbyGameServer GameServer => get;
-```
-
-Returns the lobby game server data if any
-
-### AllPlayersReady
-
-```csharp
-public bool AllPlayersReady => get;
-```
-
-{% hint style="warning" %}
-This iterates over the Members array
-{% endhint %}
-
-Returns true if all of the players 'IsReady' is true
-
-### AllPlayersNotReady
-
-```csharp
-public bool AllPlayersNotReady => get;
-```
-
-{% hint style="warning" %}
-This iterates over the Members array
-{% endhint %}
-
-Returns true if all of the players 'IsReady' is false
-
-### IsReady
-
-```csharp
-public bool IsReady { get; set; }
-```
-
-Sets the ready flag for this player on this lobby
-
-### Full
-
-```csharp
-public bool Full => get;
-```
-
-Returns true if the lobby is full e.g. has no more open slots
-
-### MaxMembers
-
-```csharp
-public int MaxMembers { get; set; } 
-```
-
-Gets or sets the max members permitted in this lobby, this can only be set by the owner.
-
-### Metadata\[string key]
-
-The owner of the lobby can set the metadata values on the lobby via an index e.g.&#x20;
-
-```csharp
-Lobby mylobby;
-mylobby["Set This Key"] = "To This Value";
-
-string theValue = mylobby["Read This Key"];
-```
 
 ## Methods
 
