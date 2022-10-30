@@ -50,7 +50,7 @@ Steam is a streaming tool and platform that requires no additional tools or setu
 
 ## Group Chat
 
-<figure><img src="../../../.gitbook/assets/image (4) (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
 
 Group Chat is a as its name suggests a chat (text and voice) for your game. The feature is under utilized owing largely to how hidden it is. "Group Chat" can be joined from 1 small hyper link on your Community Hub All (home) page located in the upper right of the screen. The feature is part of Steam's "Friend Chat" and has been recently updated. Technically the feature is also available in the Steam API meaning you could show your game's "Group Chat" in game sadly Valve has not updated the Steam API to use the new Friend Chat system so the "Group Chat" you see in game is separate from the one you see in the Steam client never the less it is useful in game as a "Global Chat" in some use cases and useful in Steam client for some communities in particular games with a real-time social element.
 
@@ -62,7 +62,7 @@ Users can link content they have uploaded to their YouTube channels for your gam
 
 To upload videos you need to open Steam, and select `Content` under your profile ... that is click your name as it appears in the main menu and select `Content`
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 From their, select Video and link your YouTube account, you should now be able select and link videos as desired.
 

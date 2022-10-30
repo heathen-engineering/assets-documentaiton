@@ -28,17 +28,17 @@ In the case of this sample we are using the [Evt Steam Initialized](../component
 
 Located on the Canvas > Leaderboard Scroll View GameObject. The[ Leaderboard Manager](../components/leaderboard-manager.md) is responsible for managing a specific leaderboard and facilitates queries against that board.
 
-The 3 buttons arranged above the display area simply call methods on the [Leaderboard Manager](../components/leaderboard-manager.md) to start query processes. The [Leaderboard Manager's Evt Query Completed](../components/leaderboard-manager.md#evtquerycompleted) event will be raised as each query completes and will call the [Leaderboard UI List's Display](../../for-unity-game-engine/ui-components/leaderboard-ui-list.md#display) method causing the results to be displayed in the UI.
+The 3 buttons arranged above the display area simply call methods on the [Leaderboard Manager](../components/leaderboard-manager.md) to start query processes. The [Leaderboard Manager's Evt Query Completed](../components/leaderboard-manager.md#evtquerycompleted) event will be raised as each query completes and will call the [Leaderboard UI List's Display](../components/leaderboard-ui-list.md#display) method causing the results to be displayed in the UI.
 
 ### Leaderboard UI List
 
-Located on the Canvas > Leaderboard Scroll View GameObject. The [Leaderboard UI List](../../for-unity-game-engine/ui-components/leaderboard-ui-list.md) is responsible for consuming query results and displaying the records on the UI.&#x20;
+Located on the Canvas > Leaderboard Scroll View GameObject. The [Leaderboard UI List](../components/leaderboard-ui-list.md) is responsible for consuming query results and displaying the records on the UI.&#x20;
 
-This is done by instantiating the Leaderboard Entry UI Record which uses the [LeaderboardEntryUIRecord](../../for-unity-game-engine/ui-components/leaderboard-entry-ui-record.md) component to set UI elements according to the provided [LeaderboardEntry](../../objects/leaderboard-entry.md) value.&#x20;
+This is done by instantiating the Leaderboard Entry UI Record which uses the [LeaderboardEntryUIRecord](../components/leaderboard-entry-ui-record.md) component to set UI elements according to the provided [LeaderboardEntry](../../objects/leaderboard-entry.md) value.&#x20;
 
 ### Leaderboard Entry UI Record
 
-Located on the Canvas > Leaderboard Scroll View > Template > Leaderboard Entry UI Record GameObject. The [Leaderboard Entry UI Record](../../for-unity-game-engine/ui-components/leaderboard-entry-ui-record.md) is instantiated by the Leaderboard UI List for each record it is provided.
+Located on the Canvas > Leaderboard Scroll View > Template > Leaderboard Entry UI Record GameObject. The [Leaderboard Entry UI Record](../components/leaderboard-entry-ui-record.md) is instantiated by the Leaderboard UI List for each record it is provided.
 
 ## Developer Cheat Box
 

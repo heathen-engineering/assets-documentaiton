@@ -80,7 +80,7 @@ If your not aware of what a callback is see this [article](../../../../../compan
 
 ### Display User information
 
-There are a few pre-made components that can help display common UserData to the screen such as the [Set User Avatar](../../../for-unity-game-engine/ui-components/set-user-avatar.md) and [Set User Name](../../../for-unity-game-engine/ui-components/set-user-name.md) components. These simply set uGUI RawImage or uGUI Text or TMPro text fields.&#x20;
+There are a few pre-made components that can help display common UserData to the screen such as the [Set User Avatar](../../components/set-user-avatar.md) and [Set User Name](../../components/set-user-name.md) components. These simply set uGUI RawImage or uGUI Text or TMPro text fields.&#x20;
 
 {% hint style="warning" %}
 These are based on uGUI and sadly Unity has greatly fragmented its UI frameworks with 3 frameworks at current being supported and 1 of them having 2 variations that are "official".

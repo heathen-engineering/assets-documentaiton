@@ -16,7 +16,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction&#x20;
 
-<figure><img src="../../../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Session Lobby Screen Shot</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Session Lobby Screen Shot</p></figcaption></figure>
 
 The Quick Match Example and Session Lobby sample scenes demonstrate the use of our lobby tools, systems and UI elements.
 
