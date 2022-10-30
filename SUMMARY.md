@@ -181,7 +181,6 @@
       * [Stats and Achievements](assets/steamworks/unity/samples/stats-and-achievements.md)
       * [Leaderboards](assets/steamworks/unity/samples/leaderboards.md)
       * [Lobby](assets/steamworks/unity/samples/lobby/README.md)
-        * [Party / Group Lobby](assets/steamworks/unity/samples/lobby/party-group-lobby.md)
         * [Session Lobby](assets/steamworks/unity/samples/lobby/session-lobby.md)
       * [Input](assets/steamworks/unity/samples/input.md)
       * [Workshop Browser](assets/steamworks/unity/samples/workshop-browser.md)

@@ -62,7 +62,7 @@ Users can link content they have uploaded to their YouTube channels for your gam
 
 To upload videos you need to open Steam, and select `Content` under your profile ... that is click your name as it appears in the main menu and select `Content`
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 From their, select Video and link your YouTube account, you should now be able select and link videos as desired.
 

@@ -67,7 +67,7 @@ The provided prefab implements the [Friend Invite Drop Down](friend-invite-dropd
 
 ### Chat
 
-![](<../../../../.gitbook/assets/image (3) (1).png>)
+![](<../../../../.gitbook/assets/image (3) (4).png>)
 
 When a user is in a party with other player's a simple text based chat interface is displayed. The chat system is used by other tools to notify party members when they should join a specific session lobby. Heathen's session lobby controls will handle this automatically or you can do this your self by prefixing the chat message with \`\[SessionId]\` followed by the ulong id of the session lobby to join
 

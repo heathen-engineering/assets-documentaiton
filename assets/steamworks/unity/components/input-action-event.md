@@ -16,7 +16,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Lets you connect an [InputAction](../scriptable-objects/input-action.md) to a method that takes an [InputActionUpdate ](../../objects/input-action-update.md)value as a parameter in the Unity Editor Inspector similar to the behaviour with a UI Button Click event.
 

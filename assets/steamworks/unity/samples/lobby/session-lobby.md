@@ -18,7 +18,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 This is a simple "matchmaking" lobby, that is its used to gather players together before starting a multiplayer session. This is the most common "primary use case" we see for Steam Lobby.
 
-<figure><img src="../../../../../.gitbook/assets/image (2) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Features
 
