@@ -121,3 +121,5 @@ Anyone can join the GitHub Sponsor program, all sponsors at the $10 monthly tier
 You can thus sub for 10 USD, download what you like, cancel immodesty and go about your business. If you ever need or want another update resub and get another month of live updates.
 
 GitHub Sponsor is the best way to Do More with Heathen rather or not you own some or all of our assets through Unity Asset Store as well. GitHub Sponsor program is \*\***much**\*\* more than just a way to get our assets. It empowers this Knowledge Base, it fuels on going development, new tools, live support and management of the growing community and a lot more.
+
+Learn more about [what the GitHub Sponsor program is here!](../../company/become-a-sponsor.md)

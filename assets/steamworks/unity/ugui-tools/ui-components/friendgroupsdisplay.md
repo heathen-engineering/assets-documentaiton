@@ -4,6 +4,8 @@ description: Funcitonaly similar to Steam Client's Friends List
 
 # FriendGroupsDisplay
 
+<figure><img src="../../../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
+
 {% hint style="success" %}
 #### Like what your seeing?
 
@@ -18,7 +20,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 This control component is focused on emulation of Steam's own Friend List. It will read for and sort the local player's friends into the same list structure see in Steam Client's Friend List i.e. Playing, Online, Offline, any custom groups the player may have, etc.
 
-This can be useful when you want a quick and easy UI element that the player is likely already familure with.&#x20;
+This can be useful when you want a quick and easy UI element that the player is likely already familiar with.&#x20;
 
 ## Inspector Fields
 
@@ -28,7 +30,7 @@ This is a Transform which will be the root of all friends that are currently in 
 
 ### In Other Game Collection
 
-This is a Transform which will be the root of all friends that are current'y in or playing some other game.
+This is a Transform which will be the root of all friends that are currently in or playing some other game.
 
 ### Grouped Collection
 
@@ -36,17 +38,17 @@ This is a Transform which will be the root of any custom groups the player may h
 
 ### Online Collection
 
-This is a Transfrom which will be the root of all friends thatt are currently online.
+This is a Transform which will be the root of all friends that are currently online.
 
 ### Offline Collection
 
-This is a Transform which will be the root of all friends that are cuurrently offline.
+This is a Transform which will be the root of all friends that are currently offline.
 
 ### Group Prefab
 
 This is a template or prefab that will be instantiated for each group found. i.e. Online, Offline, etc.
 
-This GameObject must implament the [FriendGroup](friendgroup.md) component.
+This GameObject must implement the [FriendGroup](friendgroup.md) component.
 
 ## Methods
 
@@ -56,7 +58,7 @@ This GameObject must implament the [FriendGroup](friendgroup.md) component.
 public void Clear()
 ```
 
-This simply destroys all loaded groups and profiles clearing the display. This is always called when the componenet is disabled.
+This simply destroys all loaded groups and profiles clearing the display. This is always called when the component is disabled.
 
 ### UpdateDisplay
 
@@ -64,4 +66,4 @@ This simply destroys all loaded groups and profiles clearing the display. This i
 public void UpdateDisplay()
 ```
 
-This simply rebuilds the display from scratch, that is it will first clear then re-construct the display insuring all elements are uptodate. This is always called when the componenet is enabled.
+This simply rebuilds the display from scratch, that is it will first clear then re-construct the display insuring all elements are UpToDate. This is always called when the component is enabled.
