@@ -88,3 +88,36 @@ We believe you will and should still create bespoke / custom game logic.\
 The purpose of these more elaborate scenes and prefabs are to help guide you in creating your own and to provide suitable options for rapid prototyping. We **DO NOT** recommend you use them un-altered in a production game if only for the "asset flip" issue.
 {% endhint %}
 
+## Major Update F.A.Q
+
+### Will all my code break?
+
+No&#x20;
+
+By in large these changes will not have a syntax change so wont break your current code. In some cases low level names are changing ... Lobby for example is now called LobbyData in order to match the naming convention of other "data" layer objects. This will result in a compiler error for people using Lobby directly but should be trivial to resolve ... in most cases you should be able to right click and take the "Suggested Solution" in your IDE to fix any such cases.
+
+### Will GitHub Sponsors have to pay more?
+
+No
+
+GitHub Sponsors at the $10 have access to our source repository so not only will that price not be effects but you will see these changes happen as they are made and become stable. You are working on the same source repo that our own internal projects work on.
+
+### Will Unity Asset Store users have to pay again and if so how much?
+
+Newer users will get "grandfathered in" with a free upgrade, all other users will get a steep discount on the upgrade.
+
+As to how much that isn't known yet, pricing is assessed based on the asset and state of the market at time of publish. We do not rase prices lightly and will avoid an increase to price if that is viable.
+
+As to the Unity Asset Store "Major Update" and "Upgrade Discount" features:
+
+Unity Asset Store has a feature called "Major Update" where we can give the update to user's who recently purchased the new version for free ... recent is a variable term with Unity but last time we managed 90 days. For other users who purchased V2 some time older than that we can and will offer a big discount for the first several months, that discount will slowly fall off.
+
+### Can Unity Asset Store users get the GitHub download?
+
+Yes
+
+Anyone can join the GitHub Sponsor program, all sponsors at the $10 monthly tier get instant access to our source repository along with the Heathen standard license which is theirs to keep.
+
+You can thus sub for 10 USD, download what you like, cancel immodesty and go about your business. If you ever need or want another update resub and get another month of live updates.
+
+GitHub Sponsor is the best way to Do More with Heathen rather or not you own some or all of our assets through Unity Asset Store as well. GitHub Sponsor program is \*\***much**\*\* more than just a way to get our assets. It empowers this Knowledge Base, it fuels on going development, new tools, live support and management of the growing community and a lot more.
