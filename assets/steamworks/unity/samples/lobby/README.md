@@ -18,7 +18,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction&#x20;
 
-<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption><p>Session Lobby Screen Shot</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Session Lobby Screen Shot</p></figcaption></figure>
 
 The Quick Match Example and Session Lobby sample scenes demonstrate the use of our lobby tools, systems and UI elements.
 
@@ -34,7 +34,7 @@ The Quick Match Example scene simply cant get any simpler. With only 2 functiona
 
 Demonstrates the use of Lobby Manager for a custom session lobby use experience. This scene uses a a single custom script \`SessionLobby\_UIController\` in order to manipulate Heathen's [Lobby Manager](../../components/lobby-manager.md) and UI elements for a bespoke user experience in matchmaking. The purpose of the scene is to get you started with creating your own session lobby user experience.&#x20;
 
-![](<../../../../../.gitbook/assets/image (3) (3).png>)![](<../../../../../.gitbook/assets/image (1).png>)
+![](<../../../../../.gitbook/assets/image (3) (3).png>)![](<../../../../../.gitbook/assets/image (1) (1).png>)
 
 When you press play in this scene it will search for a matching lobby, if none is found it will create a new lobby matching the Create Arguments in the Lobby Manager. While in a lobby the members are displayed along with simple features like "Ready Check", "Leave" and an indication as to which member is the "owner" of the lobby.
 

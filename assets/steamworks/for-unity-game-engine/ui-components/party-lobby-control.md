@@ -16,13 +16,13 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction
 
-Create a party [lobby ](../../unity/guides/multiplayer/matchmaking-tools.md)and its UI fully featured including in game friend invite with ZERO code required.
+Create a party [lobby ](../../unity/guides/multiplayer/matchmaking-tools.md)and its UI fully featured including in game friend invite, chat, and more with ZERO code required.
 
-![](<../../../../.gitbook/assets/image (5).png>)
+![](<../../../../.gitbook/assets/image (5) (4).png>)
 
 The Party Lobby Control is a UI behaviour component that manages a lobby representing a player party and the UI elements associated with that. This sort of "Party UI" is common in most team and  coop games such as MOBAs, Team Shooters, party games and more. One of the most typical examples of a party lobby can seen in DOTA2.
 
-<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>DOTA 2 home screen captured 2022-10-30 by Loden Darkstar</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (3).png" alt=""><figcaption><p>DOTA 2 home screen captured 2022-10-30 by Loden Darkstar</p></figcaption></figure>
 
 The purpose of a "party lobby" also known as a "group lobby" is to gather Friends that wish to play together, most typically in a coop game though you do see Group/Party systems in competitive games as well particularly party games.
 
@@ -73,7 +73,7 @@ When a user is in a party with other player's a simple text based chat interface
 
 A production ready prefab is available and configured with the features displayed above. You can see an example of this prefab in use in the [Quick Match Example](../../unity/samples/lobby/#quick-match-example) scene.
 
-<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Fields and Attributes
 
