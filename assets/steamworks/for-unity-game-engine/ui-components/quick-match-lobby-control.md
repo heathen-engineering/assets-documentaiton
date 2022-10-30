@@ -1,3 +1,7 @@
+---
+description: Code free drag and drop quick match style session lobby tool
+---
+
 # Quick Match Lobby Control
 
 <figure><img src="../../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
