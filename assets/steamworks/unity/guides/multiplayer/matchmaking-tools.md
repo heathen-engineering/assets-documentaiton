@@ -104,7 +104,7 @@ var member = lobby.Me;
 member["thisField"] = "thisValue";
 ```
 
-To learn more check out the [Lobby](../../../objects/lobby.md#introduction) and [LobbyMember ](../../../objects/lobby-member.md)articles describing the features of the lobby and lobbyMember structures.
+To learn more check out the [Lobby](../../../objects/lobby-data.md#introduction) and [LobbyMember ](../../../objects/lobby-member.md)articles describing the features of the lobby and lobbyMember structures.
 
 ### Chat
 
@@ -118,9 +118,9 @@ You can work with lobby in one of 3 main ways; they (from lowest level to highes
 
 All of the functionality of lobby is defined in the [Matchmaking API](../../../api/matchmaking.md). No matter how you choose to work with Steam lobbies, its this API that will actually be doing the real work. Using the Matchmaking API requires that you have a level of understanding of the underlying Steam API but it does still simplify working with the API by making it Unity centric, handling boiler plate concepts such as the callbacks and simplifying common concepts in a Unity manager e.g. UnityEvents and Actions, simpler calls, etc..
 
-### [Lobby object](../../../objects/lobby.md)
+### [Lobby object](../../../objects/lobby-data.md)
 
-[Lobby](../../../objects/lobby.md) as in the object in Steamworks Complete is a [struct](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct) which wraps around ulong and CSteamID. Fundamentally it acts as a lobby ID and is [implicitly convertible](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions) between ulong and CSteamID meaning you can pass it along as if it where a ulong value or a CSteamID and you can assign it from a ulong value or a CSteamID. Beyond being a fancy wrapper around ulong it also has accessors and methods that make working with a specific lobby very easy. Using the lobby object you very likely wont need to touch the raw API at all.
+[Lobby](../../../objects/lobby-data.md) as in the object in Steamworks Complete is a [struct](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct) which wraps around ulong and CSteamID. Fundamentally it acts as a lobby ID and is [implicitly convertible](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions) between ulong and CSteamID meaning you can pass it along as if it where a ulong value or a CSteamID and you can assign it from a ulong value or a CSteamID. Beyond being a fancy wrapper around ulong it also has accessors and methods that make working with a specific lobby very easy. Using the lobby object you very likely wont need to touch the raw API at all.
 
 ### [Lobby Manager](../../components/lobby-manager.md)
 

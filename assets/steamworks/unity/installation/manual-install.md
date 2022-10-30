@@ -113,13 +113,13 @@ Do NOT use the zip or unitypackage file you find in Steamwork.NET's release fold
 
 `Steamworks.NET/com.rlabrecque.steamworks.net/`
 
-![](<../../../../.gitbook/assets/image (6).png>)
+![](<../../../../.gitbook/assets/image (6) (1).png>)
 
 #### Steamworks Complete
 
 `SourceRepo/Steamworks/com.heathen.steamworkscomplete/`&#x20;
 
-![](<../../../../.gitbook/assets/image (7).png>)
+![](<../../../../.gitbook/assets/image (7) (1).png>)
 
 You will notice 2 subfolders `Samples~` and `Tools~` you should remove the `~` character from the end of there name so that Unity can load them in the editor.&#x20;
 

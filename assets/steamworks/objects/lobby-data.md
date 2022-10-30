@@ -2,7 +2,7 @@
 description: Steam Lobby Functionality in an easy to use struct
 ---
 
-# Lobby
+# Lobby Data
 
 <figure><img src="../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
 
@@ -16,7 +16,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction
 
-The Lobby object is a custom CSteamId that carries tools and functions unique to the Steam Lobby system. This object is common between both Unity and Godot game engine integrations.
+The LobbyData object is a custom CSteamId that carries tools and functions unique to the Steam Lobby system. This object is common between both Unity and Godot game engine integrations.
 
 {% hint style="info" %}
 You can convert a Lobby to a ulong or CSteamID or convert a ulong or CSteamID to a Lobby implicitly e.g.
@@ -66,7 +66,7 @@ The following are constant strings used internally to manage Heathen standard me
 ## Definition
 
 ```csharp
-public struct Lobby : IEquatable<CSteamID>, IEquatable<ulong>, IEquatable<Lobby>
+public struct LobbyData : IEquatable<CSteamID>, IEquatable<ulong>, IEquatable<Lobby>
 ```
 
 ## Fields and Attributes

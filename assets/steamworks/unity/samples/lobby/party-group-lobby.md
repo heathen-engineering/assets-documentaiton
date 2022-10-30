@@ -18,7 +18,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 Steam lobby can be used for a lot more than just matchmaking. In this part of the sample scene we demonstrate using a Steam lobby as a "party" or "group".
 
-<figure><img src="../../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Features
 
@@ -50,7 +50,7 @@ At the top left of the screen is our Party UI. The local user's avatar is always
 
 Clicking on an empty slot (represented with a + icon) the Invite tool will display
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 From the invite tool you can select an online friend to invite from a drop down list
 
@@ -68,6 +68,6 @@ The party system also demonstrates the built in "ready check" feature of Heathen
 
 Below the user icons is the chat window...
 
-<figure><img src="../../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 Using the Lobby Chat Director we have implemented a simple chat system that displays the chatting user's name and icon but in a compact way.

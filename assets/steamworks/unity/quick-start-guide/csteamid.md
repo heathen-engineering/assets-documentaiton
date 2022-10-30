@@ -18,7 +18,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 CSteamID also known simply as "Steam ID" is a ulong value (64 bits) and is used by Steam API to uniquely identify ... well most things.&#x20;
 
-Heathen has created wrap around structures like [UserData ](../../objects/user-data.md)and [Lobby ](../../objects/lobby.md)that are interchangeable with CSteamID and ulong and provide helpful features unique to each use case of the ID. In most cases you should be using [UserData](../../objects/user-data.md), [Lobby](../../objects/lobby.md), [Clan](../../objects/clan.md), etc. and not needing to bother with the raw CSteamID or its ulong value.
+Heathen has created wrap around structures like [UserData ](../../objects/user-data.md)and [Lobby ](../../objects/lobby-data.md)that are interchangeable with CSteamID and ulong and provide helpful features unique to each use case of the ID. In most cases you should be using [UserData](../../objects/user-data.md), [Lobby](../../objects/lobby-data.md), [Clan](../../objects/clan.md), etc. and not needing to bother with the raw CSteamID or its ulong value.
 
 The native CSteamID ulong value is composed of 4 main parts
 
@@ -106,7 +106,7 @@ Heathen has created a set of wrappers that let you treat each ID as a unique typ
 
 This is for IDs that represent a "clan" or "group"
 
-### [Lobby](../../objects/lobby.md)
+### [Lobby](../../objects/lobby-data.md)
 
 This is for IDs that represent lobbies aka chats
 
