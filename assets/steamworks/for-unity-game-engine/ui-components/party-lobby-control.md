@@ -24,6 +24,8 @@ The Party Lobby Control is a UI behaviour component that manages a lobby represe
 
 <figure><img src="../../../../.gitbook/assets/image (4) (3).png" alt=""><figcaption><p>DOTA 2 home screen captured 2022-10-30 by Loden Darkstar</p></figcaption></figure>
 
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption><p>Halo Infinite multiplayer mode scree captured 2022-10-30 by Loden Darkstar</p></figcaption></figure>
+
 The purpose of a "party lobby" also known as a "group lobby" is to gather Friends that wish to play together, most typically in a coop game though you do see Group/Party systems in competitive games as well particularly party games.
 
 Party or Group type lobbies differ from Session type lobbies in that they only group a set of friends together. They do not attempt to matchmake or define the state of a "session".
@@ -65,9 +67,13 @@ The provided prefab implements the [Friend Invite Drop Down](friend-invite-dropd
 
 ### Chat
 
-![](<../../../../.gitbook/assets/image (3).png>)
+![](<../../../../.gitbook/assets/image (3) (1).png>)
 
 When a user is in a party with other player's a simple text based chat interface is displayed. The chat system is used by other tools to notify party members when they should join a specific session lobby. Heathen's session lobby controls will handle this automatically or you can do this your self by prefixing the chat message with \`\[SessionId]\` followed by the ulong id of the session lobby to join
+
+### Rich Presence
+
+Optionally sets the \`steam\_player\_group\` and \`steam\_player\_group\_size\` fields in Steam's rich presence updating the Friend List group display.
 
 ## Prefab
 
