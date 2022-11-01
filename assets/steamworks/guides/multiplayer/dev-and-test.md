@@ -83,3 +83,18 @@ This is the point where you integrate the multilayer features you have designed 
 
 The specifics of what you do here will dependent entirely on nature of your game and the results of your technical implementation.&#x20;
 
+## Testing
+
+You should be testing as you go and how you test will depend on which phase your in.
+
+### Design & implementation
+
+During Functional Design and Technical Implementation your using out of the box tools from your HLAPI of choice. So to test simply follow the instructions of your HLAPI in regards to running its sample scenes. This usually means make a build, start it, have it start a session; next run the editor simulation and connect it to that session.
+
+In this phase having 1 dev use 1 machine to test client and host/server is easily doable. Keep in mind this is not "network testing" this is design testing, no network is involved yet. Your simply using a primitive transport like TCP or UDP to fake a connection to your self so you can test ideas and functions using out of the box behaviours.
+
+### Integration
+
+The final phase is integration where you connect your completed and working network architecture to your wider game. Now is when you would switch your transport over to whatever transport you will use in production likely a SteamNetworkingSockets based transport. You would also set up whatever "discovery" or "matchmaking" tooling you want to use ... likely based on Steam Lobby.
+
+With these two things done you can no longer fake a connection, you now require two machines with two unique Steam accounts both licensed for the game in order to test. At this point your performing "real" network testing. That is data is actually traveling over the network subject to latency and all that goes with it.
