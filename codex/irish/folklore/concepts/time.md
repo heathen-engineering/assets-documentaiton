@@ -22,7 +22,11 @@ The period of the day starts with sunset and is followed by the day.
 
 ## Month
 
-Months are lunar and start with a whole cycle of the moon. It is understood that lunar cycles do not aligned with a single solar cycle. A means to reconcile solar and lunar cycles is commonly understood.
+Months are lunar and start with a whole cycle of the moon. It is understood that lunar cycles do not aligned with a single solar cycle. A means to reconcile solar and lunar cycles is commonly understood by people of the era.
+
+### Metonic Cycle
+
+This is a feature of lunisolar calendars the 19 year Metonic Cycle of the moon ... that is 19 solar years is nearly exactly 235 lunar months. Note Metonic Cycle is the modern name for this we are not aware of what if anything this was named by the people of the era.
 
 ### Samhain
 
@@ -62,7 +66,7 @@ End of summer
 
 ### Lúnasa
 
-The start of autumn. This month is named after an important festival Lughnasadh associated with [Lugh](../../research/links/lugh/).
+The start of autumn. This month is named after an important festival Lughnasadh associated with [Lugh](../../research/links/lugh/). This may be a later addition reflecting the importance of Lugh for that place and time.
 
 ### Meán Fómhair
 
@@ -74,7 +78,7 @@ End of autumn&#x20;
 
 ## Seasons
 
-The two main seasons are more important to daily life than the specifics of the month
+The two main seasons are more important to daily life than the specifics of the month. Months where less "months" as we think of them and more a measure of how far into the current half of the year one was.
 
 ### Winter
 
@@ -86,4 +90,4 @@ Second half of the year Bealtaine to Samhain
 
 ## Year
 
-A year is relevant as far as the spring and fall equinox and then the longest and shortest days of the solar year. As the months are lunar a means to reconcile the lunar cycle with the solar is handled as 235 lunar months in 19 solar years.
+A year is relevant as far as the spring and fall equinox and then the longest and shortest days of the solar year. As the months are lunar a means to reconcile the lunar cycle with the solar is handled as 235 lunar months in 19 solar years. This pattern is prevalent on carvings as old as the middle and late stone age though the bronze and into early Iron age, we are quite sure this was common knowledge which suggest the means to measure and use it was also common.

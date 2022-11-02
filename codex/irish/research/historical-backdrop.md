@@ -26,9 +26,9 @@ In short "Irish" as in the people are a unique mix of at least 3 major culture s
 
 \~ 3750 BCE
 
-A migration of peoples described as being sourced from “Near Eastern” genomes appear in this millennium and is associated with the transition from hunter gather into farming. While popular scholar opinion has historically been of this transition being a largely hostile one the evidence presented suggests as is near always the case an even mix of intermingling due to inbound migration and hostile invasion.
+A migration of peoples described as being sourced from “Near Eastern” genomes appear in this millennium and is associated with the transition from hunter gather into farming. While popular scholar opinion has historically been of this transition being a largely hostile one the evidence presented suggests as is near always the case an even mix of intermingling due to inbound migration and hostile acts.
 
-The genome of the preceding “Wester Hunter Gather” population is present in genetic samples from the period. The distribution is measured as such. Keep in mind this refers not to population distribution but rather mix of genetics in the available population. That is people where not “pure” anything.
+The genome of the preceding “Wester Hunter Gather” population is present in genetic samples from the period. The distribution is measured as such. Keep in mind this refers not to population distribution but rather mix of genetics in the available population. That is people where not “pure” anything and the average person was a mix as expressed below.
 
 ### Mesolithic Era
 
@@ -66,6 +66,8 @@ Obviously we have no observation records and genetic data is difficult for sampl
 
 Genetic data changes with persons being a mix dominated primarily by the incumbent “Near Eastern Farming” genes. This suggests the new population arriving and being rather successful (populating more) and while not “insular” they were “genetically” dominate. From our point of view of folklore this suggests that the culture and traditions of the “Near Eastern Farming” population would have been dominant.
 
+That is an assumption though, one can have dominant genetic traits but be a submissive cultural influence. While its probable that the incoming farming culture would have a level of dominance due to greater stability the reality of the time was more likely nuanced and not as "this or that" as we like to think.
+
 #### Phenotypes <a href="#firstheading" id="firstheading"></a>
 
 Samples suggest a close resemblance to darker phenotypes still present in Sardinia
@@ -102,11 +104,11 @@ Largely WHG and Neolithic farmer suggests a predominance of dark to black hair, 
 
 \~ 2300 BCE
 
-By 2,300 BCE we strong and rapid technological development thanks to the introduction of metallurgy e.g. “bronze age”. As with the previous notable change this appears to be evenly split between “adoption” and “colonization” that is the process while “rapid” in a historical since (hundreds of years give or take) was not “overnight” and was not “roving bands of blood thirsty bronze age men ravaging peaceful farmers”.
+By 2,300 BCE we see strong and rapid technological development thanks to the introduction of metallurgy e.g. “bronze age”. As with the previous notable change this appears to be evenly split between “adoption” and “colonization” that is the process while “rapid” in a historical since (hundreds of years give or take) was not “overnight” and was not “roving bands of blood thirsty bronze age men ravaging peaceful farm girls as some poetic interpretations might favour”.
 
 The genetic record for this period shows a significant change in genetic diversity that is not starkly dissimilar from the modern Irish genome we see today. As such this is viewed as the last “major” genetic event. The distribution of genetic data for this period is largely Yamnaya (aka Step Herder) ancestry which is its self fairly diverse and Eastern Hunter Gatherer. The relatively quick shift in genetic make up suggesting a more significant inbound effect than the previous event had on the indigenous population.&#x20;
 
-Of note we do see a significant climate change in Ireland in the late bronze to early iron age. This event corelates with an increase in production of weapons of war and other armaments compared to earlier periods suggesting increased tensions between populations. It’s important to remember that during these eras the population was not a unified “Ireland” in fact that doesn’t appear to have ever been a thing. We do know that the geography of the island lends itself to 4 to 5 population groupings but with in each we see independent smaller populations. The political landscape of Ireland for this era is not well understood beyond being complex.
+Of note we do see a significant climate change in Ireland in the late bronze to early iron age. This event corelates with an increase in production of weapons of war and other armaments compared to earlier periods suggesting increased tensions between populations. It’s important to remember that during these eras the population was not a unified “Ireland” in fact that doesn’t appear to have ever been a thing. We do know that the geography of the island lends itself to 4 to 5 population groupings but with in each we see independent smaller populations. The political landscape of Ireland for this era is not well understood beyond being a complex mesh of multiple often cooperating and often competing groups.
 
 ### Early Bronze Age
 
@@ -133,7 +135,7 @@ From a folklore point of view this period marks the “beginning of the end” o
 
 #### Phenotypes&#x20;
 
-It is over this period that we must have seen the general natural selection for the fairer skin, eye and hair colours that are present today. While several genetic markers are present for fair skin, hair and eye throughout Irelands history its only recently that those traits appear dominant.
+It is over this period that we must have seen the general natural selection for the fairer skin, eye and hair colours that are present today. While several genetic markers are present for fair skin, hair and eye throughout Irelands history its only recently that those traits appear dominant. As to why these traits are dominant here and in other areas its most likely a matter of natural selection. Meaning environmental pleasures favouring those traits in these areas. There is no evidence of a genocide like event or similar.
 
 ### The End
 
@@ -141,7 +143,7 @@ It is over this period that we must have seen the general natural selection for 
 
 By 500 CE Christianity would be well rooted and on its way to dominance. This change would see the supplanting or outright destruction of the previous culturally unique features for one that better aligned with Abrahamic folklore. Much of the stories and ideas of Ireland would be homogenised to be inline with similar Christendom pseudo-histories we see through central and northern Europe as each was converted.
 
-Glancing forward we see multiple significant hostile invasions of Ireland that further sought to suppress, supplant, or destroy the indigenous culture not just its folklore but its people themselves. It is this period from 500 CE forward to the modern day that can be from the point of view of “Irish” folklore described as the “Dark Ages”. In the Late 1800s but more prominently in the early 1900s CE we do see a renewed interest in Irish culture. Sadly, the damage has been done and most of what is known by the popular public is pseudo-history and political propaganda from the Middle Ages known academically to be designed to supplant or remove indigenous traditions, a practice seen and understood with other cultures converted in and around this era.
+Glancing forward we see multiple significant hostile invasions of Ireland that further sought to suppress, supplant, or destroy the indigenous culture not just its folklore but its people themselves. It is this period from 500 CE forward to the modern day that can be from the point of view of “Irish” folklore described as the “Dark Ages”. In the Late 1800s but more prominently in the early 1900s CE we do see a renewed interest in Irish culture. Sadly, the damage has been done and most of what is known by the popular public is pseudo-history and political propaganda from the Middle Ages known academically to be designed to supplant or remove indigenous traditions, a practice seen and understood with other cultures converted in and around this era by Christian and other Abrahamic organizations.
 
 ## What about Red Heads
 
