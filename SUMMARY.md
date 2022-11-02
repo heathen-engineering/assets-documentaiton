@@ -488,7 +488,7 @@
       * [Druids](codex/irish/folklore/concepts/druids.md)
       * [Sociaty](codex/irish/folklore/concepts/sociaty.md)
       * [Patron Gods](codex/irish/folklore/concepts/patrons.md)
-      * [Bile](codex/irish/folklore/concepts/bile.md)
+      * [Bile](codex/irish/folklore/concepts/sacred-trees.md)
       * [Time](codex/irish/folklore/concepts/time.md)
     * [Food](codex/irish/folklore/food/README.md)
       * [Elderberry Capers](codex/irish/folklore/food/elderberry-capers.md)

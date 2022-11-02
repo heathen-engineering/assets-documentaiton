@@ -14,12 +14,12 @@ In short this seems to be a fabrication, while we do enjoy Caesar's notes we hav
 
 ## Practical Issues
 
-The notion of a wicker man as described by Caesar for sacrifice just wouldn't work. Putting a living thing in a wicker cage to burn it a live would work at all seeing how wicker while strong breaks down rapidly when burned. Even if the victim was drugged it still wouldn't be a very effective method.
+The notion of a wicker man as described by Caesar for sacrifice just wouldn't work. Putting a living thing in a wicker cage to burn it a live wouldn't work at all seeing how wicker while strong breaks down rapidly when burned. Even if the victim was drugged it still wouldn't be a very effective method. This would more likely result a in a bunch of badly burnt but still alive people on a pile of smouldering ash.
 
 ## Evidence
 
 Their is none, if Caesar's account is to be believed we should have a fairly large number of charred and manged bodies with a lot of tell tell signs of such a death. Similarly cannibalism does leave evidence its self on the bons of those striped of flesh.
 
-We do know from bog bodies that sacrifices where a thing, frequency cant be attested to but it was likely rather rare considering the human population was not particularly large in these ages an living men are rather valuable, dead ones less so. One thing we do know from the bodies we have is that great care was taken in preparation and in the final act suggesting even that the "victim" was a volunteer working further against Caesar's notes where he suggested prisoners where favoured.
+We do know from bog bodies that sacrifices where a thing, frequency cant be attested to but it was likely rather rare considering the human population was not particularly large in these ages an living men (men is short for human so both male and female) are rather valuable, dead ones less so. One thing we do know from the bodies we have is that great care was taken in preparation and in the final act suggesting even that the "victim" was a volunteer working further against Caesar's notes where he suggested prisoners where favoured.
 
-The note of prisoner is in particular problematic. We do know that Druids where the judges and one of the harshest punishments was to be excluded from religious significant events. For a culture whose primary deity seemed to be a positive association with death the evidence we have and the little we know about Druids suggests that human sacrifice was likely a rare event and that the sacrificed was likely honoured.
+The note of prisoner is in particular problematic. We do know that Druids where the judges and one of the harshest punishments was to be excluded from religious significant events. For a culture whose primary deity seemed to be a positive association with death the evidence we have and the little we know about Druids suggests that human sacrifice was likely a rare event and that the sacrificed was likely honoured. The notion an undesirable person would be included in such an important event seems unlikely.

@@ -22,14 +22,16 @@ This term appears in a few pseudo-historical works and translates as "Peoples of
 
 As to Danann this name is debated and is only seen in later medieval works suggesting it may be a complete fabrication of the time. Alternatively this may be related to a figure "Anu" however this figure is also confused. Part of the problem comes from medieval Christian monks who assume similar sound equates to etymological link and of course the active attempt to obscure the underlying non-Christian roots of this folklore.
 
+No greater harm was ever done to a culture than to be Christianised it would seem.
+
 ### Translation
 
 **Tuath** (singular) or **Tuatha** (plural) means "tribe, folk, people"
 
 **Dé** (genitive) of **Día** and generally means a supernatural or spiritual being or object such as a god, gods, goddess or similar
 
-
-
 You will see Tuatha Dé translated as "Tribes of gods" suggesting more than 1 group of peoples. Note I say peoples here, for a Christian centric view "god" or "gods" has a very different meaning in context to "Dé" or "Díe" see the article on [Gods and Goddesses](gods-and-goddesses.md) for more information.&#x20;
 
 In short we feel a more literal translation might be "the tribes of venerable peoples" or simply "ancestors" in the since of honour and veneration we see in other tribal cultures for those who came before.
+
+An interesting note would be to look at eastern cultural traditions in particular Japan and its shrines and concepts of spirts. Eastern cultures didn't have the mass erasure of the older tribal traditions until much later and never in quite as complete a way.&#x20;
