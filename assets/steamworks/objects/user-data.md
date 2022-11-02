@@ -4,6 +4,16 @@ description: Useing Steam User Data
 
 # User Data
 
+<figure><img src="../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
+
+{% hint style="success" %}
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../../../company/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
+{% endhint %}
+
 ## Introduction
 
 The UserData object provides quick and efficent access to the details and artifacts pertaining to any given user. Heathen's UserData object is interchaingable with CSteamID and ulong and can be created by simply casting or assigning from those values.
@@ -12,6 +22,9 @@ The UserData object provides quick and efficent access to the details and artifa
 UserData user_fromUlong = 1234566;
 UserData user_fromCSteamID = new CSteamID(1234566);
 UserData user = UserData.Get(1234566);
+
+//A static helper to geet the local user's UserData object
+UserData thisUser = UserData.Me;
 ```
 
 The UserData object is a structure and as such is a value type, it only stores the CSteamID of the user it relates to and reads all other information at the time of request from Steam's local cashe. As this object reads from Steam cashe it is possible to try to read data for a user that is not cashed resulting in empty or partial information.

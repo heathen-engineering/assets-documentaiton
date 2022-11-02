@@ -338,6 +338,7 @@
     * [Input Action Update](assets/steamworks/objects/input-action-update.md)
     * [Inventory Result](assets/steamworks/objects/inventory-result.md)
     * [Item Detail](assets/steamworks/objects/item-details.md)
+    * [Leaderboard Data](assets/steamworks/objects/leaderboard-data.md)
     * [Leaderboard Entry](assets/steamworks/objects/leaderboard-entry.md)
     * [Lobby Data](assets/steamworks/objects/lobby-data.md)
     * [Lobby Chat Msg](assets/steamworks/objects/lobby-chat-msg.md)

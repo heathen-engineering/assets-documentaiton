@@ -1,10 +1,20 @@
 # UGC Query
 
+<figure><img src="../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
+
+{% hint style="success" %}
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../../../company/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
+{% endhint %}
+
 ## Introduction
 
 Designed to simplify the act of querying User Generated Content aka Workshop items from Steam this object can be used to create and manage queries.
 
-The intended use is that a query will be created through one of the static Create methods to properly intialize the base query and you can then use simple calls on the object to modiy the query, execute the query and step through query pages.
+The intended use is that a query will be created through one of the static Create methods to properly initialize the base query and you can then use simple calls on the object to modify the query, execute the query and step through query pages.
 
 This is used by the [UGC Query Manager](../unity/components/ugc-query-manager.md) which can its self simplify UGC query even further.
 
@@ -34,7 +44,7 @@ You will notice Heathen's UGC Query doesn't ask you what type you want. We can i
 
 ### Settings
 
-Once you have a handle you can apply various settings to it. For example you can set the language, add tags to filter on, etc. The available settings can be accessed via the methods we discribe below
+Once you have a handle you can apply various settings to it. For example you can set the language, add tags to filter on, etc. The available settings can be accessed via the methods we describe below
 
 * [SetLanguage](ugc-query.md#setlanguage)
 * [SetMatchAnyTag](ugc-query.md#setmatchanytag)

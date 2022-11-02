@@ -1,6 +1,16 @@
 # Data Model
 
-## Definition
+<figure><img src="../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
+
+{% hint style="success" %}
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../../../company/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
+{% endhint %}
+
+## Introduction
 
 ```csharp
 public class DataModel<T>: DataModel
@@ -10,9 +20,9 @@ public class DataModel<T>: DataModel
 public class DataModel : ScriptableObject
 ```
 
-It is intended that you use this to create your core save files as Scriptable Objects. This makes it trival to query the [Steam Remote Storage](../api/remote-storage.md) interface for records of this file type and to load data into a usable point in memory that can easily be referenced by Unity components.
+It is intended that you use this to create your core save files as Scriptable Objects. This makes it trivial to query the [Steam Remote Storage](../api/remote-storage.md) interface for records of this file type and to load data into a usable point in memory that can easily be referenced by Unity components.
 
-You would typically start by defaining your underlying data type e.g. a serializable object that represents the data you wish to save
+You would typically start by defining your underlying data type e.g. a serializable object that represents the data you wish to save
 
 ```csharp
 [Serializable]

@@ -1,5 +1,7 @@
 # Lobby Member
 
+<figure><img src="../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
+
 {% hint style="success" %}
 #### Like what your seeing?
 
@@ -10,7 +12,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction
 
-LobbyMember is a structure that wraps around Lobby and UserData to simplify access to the lobby member metadata and related features for a specific user on a specific lobby. In most cases you would be working with the LobbyMember of the local user and can easily create the LobbyMember by reading it from the related lobby.
+LobbyMember is a structure that wraps around [LobbyData ](lobby-data.md)and [UserData](user-data.md) to simplify access to the lobby member metadata and related features for a specific user on a specific lobby. In most cases you would be working with the LobbyMember of the local user and can easily create the LobbyMember by reading it from the related lobby.
 
 ```csharp
 //Assuming we have a Lobby named myLobby
