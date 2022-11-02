@@ -1,12 +1,22 @@
 # Leaderboard Object
 
-## Definition
+<figure><img src="../../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
+
+{% hint style="success" %}
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../../../../company/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
+{% endhint %}
+
+## Introduction
 
 ```csharp
 public class LeaderboardObject : ScriptableObject
 ```
 
-Represents a Steam Leaderboard and is used by the [Steam Settings](steam-settings/) object to initalize the Leaderboard system.
+Represents a Steam Leaderboard and is used by the [Steam Settings](steam-settings/) object to initalize the Leaderboard system. This is a wrapper around the [LeaderboardData ](../../objects/leaderboard-data.md)object making it a referenceable Unity object.
 
 You create leaderboard objects through thee Steam Settings object by clicking the <mark style="color:green;">+ New</mark> button in the leaderboards list.
 
@@ -24,7 +34,7 @@ You can specify the number of detail entries the board should handle by entering
 Each board can handle up to 64 details and no more than that
 {% endhint %}
 
-If your marking your board as Create if Missing e.g. you have ticked the box as indiacted above then you should also set the display type and sorting order by selecting the leaderboard in your Steam Settings and editing its values.
+If your marking your board as Create if Missing e.g. you have ticked the box as indicated above then you should also set the display type and sorting order by selecting the leaderboard in your Steam Settings and editing its values.
 
 ![](<../../../../.gitbook/assets/image (153) (1) (1) (1).png>)
 
@@ -36,57 +46,210 @@ None is an available but invalid option for both settings
 Why even show it if its invalid, ask Valve, its part of the enums they provide so we expose it.
 {% endhint %}
 
+## Events
+
+### User Entry Updated
+
+```csharp
+public UnityLeaderboardRankUpdateEvent UserEntryUpdated
+```
+
+Invoked when the local user's entry in this board is updated, the handler for this event should take the form of.
+
+```csharp
+void HandleEvent(LeaderboardEntry userEntry)
+{
+    //Do Work
+}
+```
+
 ## Fields and Attributes
 
-| Type                    | Name             | Comment                                                              |
-| ----------------------- | ---------------- | -------------------------------------------------------------------- |
-| bool                    | createIfMissing  | Should the board be created if missing                               |
-| ELeaderboardSortMethod  | sortMethod       | If creating a board what sort methhod should be applied              |
-| ELeaderboardDisplayType | displayType      | If creating a board what display type should it have                 |
-| string                  | leaderboardName  | The name of the board as defined in the Steam Developer Portal       |
-| int                     | maxDetailEntries | How many detail entries should be allowed on entries from this board |
-| SteamLeaderboard\_t     | leaderboardId    |                                                                      |
-| bool                    | Valid            | is the board found and ready for use                                 |
-| int                     | EntryCount       | number of records on this board                                      |
+### Create If Missing
+
+```csharp
+public bool createIfMissing;
+```
+
+If true then when the system loads it will search for this board and if not found it will create a new board with settings matching it.
+
+### Sort Method
+
+```csharp
+public ELeaderboardSortMethod sortMethod;
+```
+
+Defines the [ELeaderboardSortMethod ](https://partner.steamgames.com/doc/api/ISteamUserStats#ELeaderboardSortMethod)to be used \*\*if\*\* this board is created new
+
+### Display Type
+
+```csharp
+public ELeaderboardDisplayType displayType;
+```
+
+Defines the [ELeaderboardDisplayType ](https://partner.steamgames.com/doc/api/ISteamUserStats#ELeaderboardDisplayType)to be used \*\*if\*\* this board is created new
+
+### API Name
+
+```csharp
+public string apiName;
+```
+
+The API name of the board
+
+### Display Name
+
+```csharp
+public string DisplayName => get;
+```
+
+The community display name of the board if any, this is only reinvent for boards created in the Steam Developer Portal and that have been assigned a community name.
+
+### Max Detail Entries
+
+```csharp
+public int maxDetailEntries;
+```
+
+How many detail entries should be allowed on entries from this board, this is used by quires and doesn't prevent you from adding more or fewer. It is only a hint used by query tools to know how many to watch for.
+
+### Data
+
+```csharp
+public LeaderboardData data;
+```
+
+The underlying [LeaderboardData](../../objects/leaderboard-data.md) object, this is what does all the actual work.
+
+### Valid
+
+```csharp
+public bool Valid => get;
+```
+
+True if the board's ID is valid, false otherwise.
+
+### Entry Count
+
+```csharp
+public int EntryCount => get;
+```
+
+Returns the number of records found for this board.
 
 ## Methods
 
-### Get User Entries
+### Get User Entry
 
 ```csharp
-public void GetUserEntry(Action<LeaderboardEntry, bool> callback)
+public void GetUserEntry(int maxDetailEntries, Action<LeaderboardEntry, bool> callback)
 ```
 
-The callback should be in the form of
+Queries for the local user's entry on this board and invokes the callback when and if found.
+
+* maxDetailEntries\
+  This indicates how many if any detail entries should be read for each entry on the board. To understand detail entries better please read the article on [Steam Leaderboards](../guides/leaderboard-object/).
+* callback\
+  A method to be invoked when the process completes
+
+The callback should take the form of
 
 ```csharp
-public void Callback(LeaderbaordEntry result, bool IOError);
+void HandleCallback(LeaderboardEntry result, bool IOError)
+{
+    //Do Work
+}
 ```
 
-Returns the entry for the local user
+### Get Top Entries
+
+```csharp
+public void GetTopEntries(int count, 
+                int maxDetailEntries, 
+                Action<LeaderboardEntry[], bool> callback)
+```
+
+Queries the leaderboard for the top number of entries.
+
+* count\
+  How many top records should be read
+* maxDetailEntries\
+  This indicates how many if any detail entries should be read for each entry on the board. To understand detail entries better please read the article on [Steam Leaderboards](../guides/leaderboard-object/).
+* callback\
+  A method to be invoked when the process completes
+
+The callback should take the form of
+
+```csharp
+void HandleCallback(LeaderboardEntry[] results, bool IOError)
+{
+    //Do Work
+}
+```
+
+### Get All Entries
+
+```csharp
+public void GetAllEntries(int maxDetailEntries, Action<LeaderboardEntry[], bool> callback)
+```
+
+Returns all entries on this board
+
+* maxDetailEntries\
+  This indicates how many if any detail entries should be read for each entry on the board. To understand detail entries better please read the article on [Steam Leaderboards](../guides/leaderboard-object/).
+* callback\
+  A method to be invoked when the process completes
+
+The callback should take the form of
+
+```csharp
+void HandleCallback(LeaderboardEntry[] results, bool IOError)
+{
+    //Do Work
+}
+```
 
 ### Get Entries
 
 ```csharp
 public void GetEntries(ELeaderboardDataRequest request, 
-        int start, 
-        int end, 
-        Action<LeaderboardEntry[], bool> callback)
+                int start, 
+                int end, 
+                int maxDetailEntries, 
+                Action<LeaderboardEntry[], bool> callback)
 ```
 
-Get a range of entries matching the request type and range of data
+* request\
+  The type of query you want to run ... See [ELeaderboardDataRequest ](https://partner.steamgames.com/doc/api/ISteamUserStats#ELeaderboardDataRequest)for details
+* start\
+  The index to start downloading entries.
+* end\
+  The index to stop downloading entries.
+* maxDetailEntries\
+  This indicates how many if any detail entries should be read for each entry on the board. To understand detail entries better please read the article on [Steam Leaderboards](../guides/leaderboard-object/).
+* callback\
+  A method to be invoked when the process completes
 
 ```csharp
 public void GetEntries(UserData[] users, 
-        Action<LeaderboardEntry[], bool> callback)
+                int maxDetailEntries, 
+                Action<LeaderboardEntry[], bool> callback)
 ```
 
-Get the data for the specific set of users
+* users\
+  The set of users you want to read records for.
+* maxDetailEntries\
+  This indicates how many if any detail entries should be read for each entry on the board. To understand detail entries better please read the article on [Steam Leaderboards](../guides/leaderboard-object/).
+* callback\
+  A method to be invoked when the process completes
 
-The callback for both overloads should be in the form of
+The callback should take the form of
 
 ```csharp
-public void Callback(LeaderbaordEntry[] results, bool IOError);
+void HandleCallback(LeaderboardEntry[] results, bool IOError)
+{
+    //Do Work
+}
 ```
 
 ### Register
@@ -101,31 +264,65 @@ Finds or creates the board according to configuration values. This is handled by
 
 ```csharp
 public void UploadScore(int score, 
-        ELeaderboardUploadScoreMethod method, 
-        Action<LeaderboardScoreUploaded_t, bool> callback = null)
+                ELeaderboardUploadScoreMethod method, 
+                Action<LeaderboardScoreUploaded_t, bool> callback = null)
 ```
+
+* score\
+  The score to upload
+* method\
+  The [ELeaderboardUploadScoreMethod ](https://partner.steamgames.com/doc/api/ISteamUserStats#ELeaderboardUploadScoreMethod)to be used on upload
+* callback\
+  A method to be invoked when the process completes
 
 ```csharp
 public void UploadScore(int score, 
-        int[] scoreDetails, 
-        ELeaderboardUploadScoreMethod method, 
-        Action<LeaderboardScoreUploaded_t, bool> callback = null)
+                int[] scoreDetails, 
+                ELeaderboardUploadScoreMethod method, 
+                Action<LeaderboardScoreUploaded_t, bool> callback = null)
 ```
 
-The callback should be in the form:
+* score\
+  The score to upload
+* scoreDetails\
+  Additional details to add to the entry if accepted
+* method\
+  The [ELeaderboardUploadScoreMethod ](https://partner.steamgames.com/doc/api/ISteamUserStats#ELeaderboardUploadScoreMethod)to be used on upload
+* callback\
+  A method to be invoked when the process completes
+
+The callback should take the form of
 
 ```csharp
-public void Callback(LeaderboardScoreUploaded_t result, bool IOError);
+void HandleCallback(LeaderboardScoreUploaded_t result, bool IOError)
+{
+    //Do Work
+}
 ```
 
-Uploads a given score and optionally includes details, you can optionally provide an array of details.
-
-### Attach File
+### Attach UGC
 
 ```csharp
-public void AttachUGC(fileName, jsonObject, encoding, callback);
+public void AttachUGC(string fileName, 
+        object jsonObject, 
+        System.Text.Encoding encoding, 
+        Action<LeaderboardUGCSet_t, bool> callback = null)
 ```
 
-This will save the provided object to Steam Remote Storage by using JsonUtility to serialize it according to the encoding method.&#x20;
+* fileName\
+  The name of the file to be saved, this is only used when created the file and can be removed or changed later without breaking the entry on the board
+* jsonObject\
+  Any "Serializable" object, we use Unity's JsonUtility to serialize your object to JSON for writing.
+* encoding\
+  (optional) the encoding method you want to use, if not provided we will use UTF8
+* callback\
+  A method to be invoked when the process completes
 
-Once saved to Remote Storage it will be shared  yielding a UGC Share File which will be attached to this user's current leaderboard entry.
+The callback should take the form of
+
+```csharp
+void HandleCallback(LeaderboardUGCSet_t result, bool IOError)
+{
+    //Do Work
+}
+```
