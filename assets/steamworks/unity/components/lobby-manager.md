@@ -113,7 +113,7 @@ public LobbyDataListEvent evtFound
 Occurs when a search for matchmaking lobbies returns. The handler would be similar to the following.
 
 ```csharp
-private void Handler(Lobby[] lobbies)
+private void Handler(LobbyData[] lobbies)
 {
     //Do work
 }
@@ -128,7 +128,7 @@ public LobbyDataEvent evtEnterSuccess
 Occurs when the local user enters a lobby as the result of a create or join request. The handler would be similar to the following.
 
 ```csharp
-private void Handler(Lobby lobby)
+private void Handler(LobbyData lobby)
 {
     //Do work
 }
@@ -158,7 +158,7 @@ public LobbyDataEvent evtCreated
 Occurs when a lobby is created. The handler would be similar to the following.
 
 ```csharp
-private void Handler(Lobby lobby)
+private void Handler(LobbyData lobby)
 {
     //Do work
 }
@@ -391,7 +391,7 @@ the fields of the class are as follows
 ### Lobby
 
 ```csharp
-public Lobby Lobby { get; set; }
+public LobbyData Lobby { get; set; }
 ```
 
 The lobby the manager is currently managing. This will automatically be updated when you use the lobby manager to create, join or leave a lobby. If you create, join or leave a lobby from outside the manager then you should update this field accordingly.
@@ -521,7 +521,7 @@ Searches for lobbies that match the Search Arguments set on the object. This wil
 ### Join
 
 ```csharp
-public void Join(Lobby lobby);
+public void Join(LobbyData lobby);
 ```
 
 ```csharp
