@@ -78,9 +78,7 @@ Connect your UI to lobby chat quickly and easily
 
 ### Related Objects
 
-{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/lobby" %}
-Represents a lobby and  simplifies accessing it members, data, chat and more
-{% endembed %}
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/lobby-data" %}
 
 {% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/lobby-chat-msg" %}
 Lobby chat messages made easy
@@ -658,7 +656,7 @@ Removes the game server from the local history list.
 ### RequestLobbyData
 
 ```csharp
-public static bool RequestLobbyData(Lobby lobby)
+public static bool RequestLobbyData(LobbyData lobby)
 ```
 
 {% hint style="info" %}
@@ -670,7 +668,7 @@ Refreshes all of the metadata for a lobby that you're not in right now.
 ### RequestLobbyList
 
 ```csharp
-public static void RequestLobbyList(Action<Lobby[], bool> callback)
+public static void RequestLobbyList(Action<LobbyData[], bool> callback)
 ```
 
 Get a filtered list of relevant lobbies.
@@ -692,7 +690,7 @@ This will only return lobbies that are not full, and only lobbies that are k\_EL
 ### SendLobbyChatMsg
 
 ```csharp
-public static bool SendLobbyChatMsg(Lobby lobby, byte[] messageBody)
+public static bool SendLobbyChatMsg(LobbyData lobby, byte[] messageBody)
 ```
 
 Broadcasts a chat (text or binary data) message to the all of the users in the lobby.
@@ -700,7 +698,7 @@ Broadcasts a chat (text or binary data) message to the all of the users in the l
 ### SetLobbyData
 
 ```csharp
-public static bool SetLobbyData(Lobby lobby, string key, string value)
+public static bool SetLobbyData(LobbyData lobby, string key, string value)
 ```
 
 {% hint style="info" %}
@@ -712,7 +710,7 @@ Sets a key/value pair in the lobby metadata. This can be used to set the the lob
 ### SetLobbyGameServer
 
 ```csharp
-public static void SetLobbyGameServer(Lobby lobby, 
+public static void SetLobbyGameServer(LobbyData lobby, 
                 uint ip, 
                 ushort port, 
                 CSteamID gameServerId)
