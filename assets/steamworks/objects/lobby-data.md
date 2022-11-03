@@ -24,7 +24,7 @@ You can convert a Lobby to a ulong or CSteamID or convert a ulong or CSteamID to
 
 
 ```csharp
-Lobby myLobby = new CSteamID(ulongId);
+LobbyData myLobby = new CSteamID(ulongId);
 ```
 
 or
