@@ -14,7 +14,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 This simple scene outlines the basic steps to get up and running with Steamworks.
 
-![](<../../../../.gitbook/assets/image (156) (1).png>)
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ### What do I learn?
 

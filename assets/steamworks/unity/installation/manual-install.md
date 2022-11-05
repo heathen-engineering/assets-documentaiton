@@ -123,6 +123,6 @@ Do NOT use the zip or unitypackage file you find in Steamwork.NET's release fold
 
 You will notice 2 subfolders `Samples~` and `Tools~` you should remove the `~` character from the end of there name so that Unity can load them in the editor.&#x20;
 
-![](<../../../../.gitbook/assets/image (1) (2).png>)
+![](<../../../../.gitbook/assets/image (1) (2) (1).png>)
 
 If you do not remove the \~ character from the end of the name of these two folders then they will not appear in Unity Editor.
