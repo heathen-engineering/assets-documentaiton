@@ -28,7 +28,7 @@ Screen captures of DOTA 2 "Play DOTA" option is a true example of Steam Lobby us
 
 ### Halo Infinite Example
 
-![](<../../../../.gitbook/assets/image (2).png>)  ![](<../../../../.gitbook/assets/image (5).png>)
+![](<../../../../.gitbook/assets/image (2) (1).png>)  ![](<../../../../.gitbook/assets/image (5).png>)
 
 Screen captures of Halo Infinite's "Quick Play" option is a prime example of a Quick Match Lobby setup. The player hits one button and the system will find an appropriate match based on the player's stats, rather or not they are in a party, geo location, rankings, etc.
 
@@ -58,7 +58,7 @@ Easily access critical information about your Quick Match session for a simple a
 
 A production ready prefab is available and configured with the features displayed above. You can see an example of this prefab in use in the [Quick Match Example](../../unity/samples/lobby/#quick-match-example) scene.
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Events
 

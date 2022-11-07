@@ -18,4 +18,4 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ![](<../../../../../.gitbook/assets/image (175).png>)
 
-This prefab implaments the [FriendGroupDisplay ](../ui-components/friendgroupsdisplay.md)component in a visual style that emulates that of Steam's Friends List.&#x20;
+This prefab implements the [FriendGroupDisplay ](../ui-components/friendgroupsdisplay.md)component in a visual style that emulates that of Steam's Friends List.&#x20;

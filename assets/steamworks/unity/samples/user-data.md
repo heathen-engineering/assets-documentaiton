@@ -12,18 +12,13 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction&#x20;
 
-This scene demonstrates the use of [UserData ](../../objects/user-data.md)and displaying common information such as the user's avatar and name.
+This scene demonstrates the use of [User Data ](../../objects/user-data.md)and displaying common information such as the user's avatar and name.
 
-![](<../../../../.gitbook/assets/image (163) (1) (1) (1) (1) (1) (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (98).png" alt=""><figcaption></figcaption></figure>
 
-### What do I learn?
+This scene exists to draw your attention to the [User Data](../../objects/user-data.md) object. User Data is a struct Heathen has defined to wrap around the native [CSteamID ](../quick-start-guide/csteamid.md)and the primitive ulong data types providing easy access to everything user related.
 
-1. That [User Data](../../objects/user-data.md) exists and can be used to display user information
-2. How to use [Set User Avatar](../components/set-user-avatar.md)
-3. How to use [Set User Name](../components/set-user-name.md)
-4. How to access the Knowledge Base (where you are now)
-5. How to access the support [Discord ](https://discord.gg/6X3xrRc)
-6. How to leave a review 😉
+User Data can be used to read the name, nickname, level, status, friend ID, avatar image, rich presence data and much more about a friend. User Data is interchangeable with CSteamID and ulong and can be used anywhere those data types representing a Steam user are called for.
 
 ## Objects
 
@@ -31,24 +26,10 @@ This scene demonstrates the use of [UserData ](../../objects/user-data.md)and di
 
 The manage game object has the [Steamworks Behaviour](../components/steamworks-behaviour.md) component attached and will handle initialization of the Steam API on start up.
 
-### Avatar Image
+### [Friend Profile](../ugui-tools/prefabs/friend-profile.md)
 
-Located at Canvas/Info/Border/AvatarImage
+Demonstrates the displaying of the local user's data. This prefab uses the[ Friend Profile](../ugui-tools/ui-components/friendprofile/) component script which its self uses [User Data](../../objects/user-data.md) to deliver the required information.
 
-This game object makes use of the [Set User Avatar](../components/set-user-avatar.md) component to set the local user's avatar image to the UnityEngine.UI.RawImage
+### [Friend Group](../ugui-tools/prefabs/friend-groups.md)
 
-### uGUI Steam Name
-
-Located at Canvas/Info/UGUI Steam Name
-
-This game object makes use of [UGUI Set User Name](../components/set-user-name.md) to set the local user's name to a UnityEngine.UI.Text&#x20;
-
-### TMPro Steam Name
-
-Located at Canvas/Info/TMPro Steam Name
-
-This game object makes use of [TMPro Set User Name](../components/set-user-name.md) to set the local user's name to a TMPro.TextMeshProUGUI
-
-### DEMO SCRIPTS
-
-This contains internal demo scripts used in the scene which are all marked as deprecated. They simply drive the buttons in the menu nothing more.
+Demonstrates the display of the user's friend data in a manner similar to Steam's friend list.

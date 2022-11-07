@@ -14,21 +14,26 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 This simple scene outlines the basic steps to get up and running with Steamworks.
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-### What do I learn?
+This is a bare bones scene that does nothing more than initialize the Steam API. The key component in the scene is the [Steamworks Behaviour](../components/steamworks-behaviour.md) located on the Manager game object.
 
-1. The required steps to set up a new project to work with Steamworks from scratch
-2. How to access the Knowledge Base (where you are now)
-3. How to access the support [Discord ](https://discord.gg/6X3xrRc)
-4. How to leave a review 😉
-
-## Objects
+## Game Objects
 
 ### Manager
 
 The manage game object has the [Steamworks Behaviour](../components/steamworks-behaviour.md) component attached and will handle initialization of the Steam API on start up.
 
-### DEMO SCRIPTS
+## Components
 
-This contains internal demo scripts used in the scene which are all marked as deprecated. They simply drive the buttons in the menu nothing more.
+### [Steamworks Behaviour](../components/steamworks-behaviour.md)
+
+The Steamworks Behaviour is the component responsible for initializing and operating the Steam API integration. It is important that this is initialized as soon as possible in your game and is never destroyed or duplicated.
+
+it is \*\***strongly\*\*** recommended to use a [bootstrap design pattern](../../../../company/concepts/fundamentals/bootstrap-scene.md) to insure that Steam API is initialized successful before even your main menu bothers to load.
+
+### [Friend Profile](../ugui-tools/prefabs/friend-profile.md)
+
+![](<../../../../.gitbook/assets/image (2).png>)
+
+The Friend Profile present in the scene is simply here to prove to you that the Steam API is initialized and able to read data. On load it will fetch the local user's data and populate the avatar image, name, status, friend ID and Steam level.

@@ -11,3 +11,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 {% endhint %}
 
 ## Introduction
+
+<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+This prefab implements the [Friend Profile](../ui-components/friendprofile/) component script in a visual style that reflects the Steam client.
