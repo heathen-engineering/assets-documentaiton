@@ -40,12 +40,6 @@ You may be able to get limited information for additional users such as user's f
 
 If you need to request information for a user your local user does not "know" you should call `API.Friends.Client.RequestUserInformation(user, getNameOnly)`. You should avoid doing this if possible, in most cases there is no reason to get a user's information for a user that the local user does not "know".
 
-## Definition
-
-```csharp
-public struct UserData;
-```
-
 ## Fields and Attributes
 
 ### Me

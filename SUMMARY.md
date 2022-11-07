@@ -325,6 +325,7 @@
     * [Utilities.Client](assets/steamworks/api/utilities.client.md)
     * [Voice.Client](assets/steamworks/api/voice.md)
   * [Objects](assets/steamworks/objects/README.md)
+    * [App Data](assets/steamworks/objects/app-data.md)
     * [Authentication Session](assets/steamworks/objects/authentication-session.md)
     * [Authentication Ticket](assets/steamworks/objects/authentication-ticket.md)
     * [Chat Room](assets/steamworks/objects/chat-room.md)
