@@ -92,9 +92,11 @@ The purpose of these more elaborate scenes and prefabs are to help guide you in 
 
 ### Will all my code break?
 
-No&#x20;
+No ... but you will need to update a few things&#x20;
 
-By in large these changes will not have a syntax change so wont break your current code. In some cases low level names are changing ... Lobby for example is now called LobbyData in order to match the naming convention of other "data" layer objects. This will result in a compiler error for people using Lobby directly but should be trivial to resolve ... in most cases you should be able to right click and take the "Suggested Solution" in your IDE to fix any such cases.
+By in large these changes will not have a syntax change so wont break your current logic. In some cases low level names are changing ... Lobby for example is now called LobbyData in order to match the naming convention of other "data" layer objects. This will result in a compiler error for people using Lobby directly but should be trivial to resolve ... in most cases you should be able to right click and take the "Suggested Solution" in your IDE to fix any such cases.
+
+We have also added a new "Data" layer that sits between the Scriptable Objects and the underlying API. This adds more flexability and reduces the bespoke code between objects improving stability and maintainability but does mean the "name" of Stats, Achievements and Leaderboards at least will need to be re-applied in your Steam Settings object
 
 ### Will GitHub Sponsors have to pay more?
 
