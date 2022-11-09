@@ -161,7 +161,7 @@
     * [Calculation Mode](assets/physkit/enums/calculation-mode.md)
 * [Steamworks](assets/steamworks/README.md)
   * [🆕 What's New](assets/steamworks/whats-new.md)
-  * [Architecture](assets/steamworks/architecture.md)
+  * [🧅 Architecture](assets/steamworks/architecture.md)
   * [F.A.Q](assets/steamworks/f.a.q.md)
   * [For Godot Game Engine](assets/steamworks/godot.md)
     * [Installation](assets/steamworks/for-godot-game-engine/installation.md)
