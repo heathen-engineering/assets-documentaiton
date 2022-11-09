@@ -49,7 +49,7 @@ Heathen's Steamworks has tooling for you
 ### Prefabs
 
 _**Unity Only**_\
-Our prefabs use 1 or more of our componenets to give you a production ready workign tool to meet a specific need. From Leaderboard Lists, To Party Lobby we have drag and drop code free, ready role tools to meet many common needs and are adding new one all the time.
+Our prefabs use 1 or more of our components to give you a production ready working tool to meet a specific need. From Leaderboard Lists, To Party Lobby we have drag and drop code free, ready role tools to meet many common needs and are adding new one all the time.
 {% endhint %}
 
 {% hint style="info" %}
