@@ -16,6 +16,8 @@ Our focus and lofty goals mean we do a whole lot of research and have develop a 
 This resource is available for free to any who have use of it and is supported wholly by the [Heathen GitHub Sponsor](https://github.com/sponsors/heathen-engineering) program, you can learn more about how you can help us Do More in our article on "[Becoming a Sponsor](company/become-a-sponsor.md)".
 {% endhint %}
 
+{% embed url="https://ie.trustpilot.com/review/heathen.group" %}
+
 ## Getting Started
 
 Not sure where to start? ... [try the beginning](company/concepts/getting-started/)!
