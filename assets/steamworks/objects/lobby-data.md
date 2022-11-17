@@ -292,7 +292,7 @@ This will never throw a key not found exception, if a key is not present it will
 public bool SetType(type);
 ```
 
-Funcitonally the same as setting the Type field, this only works for the owner of the lobby
+Functionally the same as setting the Type field, this only works for the owner of the lobby
 
 ### Set Joinable
 
@@ -308,7 +308,50 @@ Sets the lobby as joinable or not. A lobby always starts as joinable, a lobby th
 Dictionary<string, string> GetMetadata();
 ```
 
-Returns all the metadata for the lobby as a string dictionary. This creates the dictionary each time it is called so cashe the value before use or read the values directly from the lobby such as via the indexer.
+Returns all the metadata for the lobby as a string dictionary. This creates the dictionary each time it is called so cashé the value before use or read the values directly from the lobby such as via the indexer.
+
+### Create
+
+We have a number of static create methods you can use to quickly create common types of lobbies.
+
+```csharp
+//Create any type of lobby
+public static void Create(ELobbyType type, 
+                          int slots, 
+                          Action<EResult, LobbyData, bool> callback)
+```
+
+```csharp
+//Create an invisible lobby and set the type field to "Group"
+//This allows the LobbyData.GetGroup(...) to find this lobby
+public static void CreateParty(int slots, Action<EResult, LobbyData, bool> callback)
+```
+
+```csharp
+//Create a lobby of any type and set its type field to "Session"
+//This allows the LobbyData.GetSession(...) to find this lobby
+public static void CreateSession(ELobbyType type, 
+                                 int slots, 
+                                 Action<EResult, LobbyData, bool> callback)
+```
+
+```csharp
+//Create a lobby of type Public and set its type field to "Session"
+//This allows the LobbyData.GetSession(...) to find this lobby
+public static void CreatePublicSession(int slots, Action<EResult, LobbyData, bool> callback)
+```
+
+```csharp
+//Create a lobby of type Private and set its type field to "Session"
+//This allows the LobbyData.GetSession(...) to find this lobby
+public static void CreatePrivateSession(int slots, Action<EResult, LobbyData, bool> callback)
+```
+
+```csharp
+//Create a lobby of type Friend Onl and set its type field to "Session"
+//This allows the LobbyData.GetSession(...) to find this lobby
+public static void CreateFriendOnlySession(int slots, Action<EResult, LobbyData, bool> callback)
+```
 
 ### Join
 
@@ -383,7 +426,7 @@ Removes the indicated metadata entry if present, can only be used by the owner o
 public bool InviteUserToLobby(UserData user);
 ```
 
-Invites the indiated user to the lobby
+Invites the indicated user to the lobby
 
 ### Send Chat Message
 
@@ -395,7 +438,13 @@ public bool SendChatMessage(string message);
 public bool SendChatMessage(byte[] data);
 ```
 
-Sends a message over the Lobby chat system. See the [Lobby Chat Director](../unity/components/lobby-chat-director.md) for more information.
+```csharp
+public bool SendChatMessage(object jsonObject);
+```
+
+Sends a message over the Lobby chat system. You can use tools like the [Lobby Chat Director](../unity/components/lobby-chat-director.md) to help you manage incoming chat messages.
+
+Note that Steam's lobby chat sends byte\[] data so it can send more than simple text if you need.
 
 ### Set Game Server
 
