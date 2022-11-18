@@ -259,7 +259,7 @@ The lobby the manager is currently managing. This will automatically be updated 
 public LobbyMember Owner => get;
 ```
 
-Gets the [Lobby Member](../../objects/lobby-member.md) data for the current lobby owner.
+Gets the [Lobby Member](../../objects/lobby-member-data.md) data for the current lobby owner.
 
 ### Me
 
@@ -267,7 +267,7 @@ Gets the [Lobby Member](../../objects/lobby-member.md) data for the current lobb
 public LobbyMember Me => get;
 ```
 
-Gets the local user's [Lobby Member](../../objects/lobby-member.md) data for the current lobby.
+Gets the local user's [Lobby Member](../../objects/lobby-member-data.md) data for the current lobby.
 
 ### HasLobby
 

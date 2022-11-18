@@ -205,7 +205,7 @@ This indicates rather or not the underlying CSteamID is of the proper Universe a
 public LobbyMember User => get;
 ```
 
-Returns the local user's [LobbyMember ](lobby-member.md)value for this Lobby.
+Returns the local user's [LobbyMember ](lobby-member-data.md)value for this Lobby.
 
 ### Members
 
@@ -249,7 +249,7 @@ The name of the lobby if stored in the lobby's metadata. Only the owner of the l
 public LobbyMember Owner { get; set; }
 ```
 
-The [LobbyMember ](lobby-member.md)data for the owner of the lobby, only the current owner can set this value to some other [LobbyMember](lobby-member.md).
+The [LobbyMember ](lobby-member-data.md)data for the owner of the lobby, only the current owner can set this value to some other [LobbyMember](lobby-member-data.md).
 
 
 

@@ -1,4 +1,4 @@
-# Lobby Member
+# Lobby Member Data
 
 <figure><img src="../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
 
@@ -17,7 +17,7 @@ LobbyMember is a structure that wraps around [LobbyData ](lobby-data.md)and [Use
 ```csharp
 //Assuming we have a Lobby named myLobby
 //We can get our LobbyMember by reading the me field
-LobbyMember lobbyMember = myLobby.Me;
+LobbyMemberData lobbyMember = myLobby.Me;
 ```
 
 The most common thing to do with a LobbyMember is to set the [metadata](../unity/guides/multiplayer/matchmaking-tools.md#metadata) of that member.
@@ -33,7 +33,7 @@ You can learn more about Lobby metadata and LobbyMember metadata by reading [thi
 ## Definition
 
 ```csharp
-public struct LobbyManager
+public struct LobbyManagerData
 ```
 
 Represents a user in a given lobby.
@@ -63,7 +63,7 @@ var value = lobbyMember[metadataKey];
 You can get a list of the LobbyMember's in a Lobby or you can create the LobbyMember assuming you know the Lobby ID and the User's ID i.e.
 
 ```csharp
-var myMember = new LobbyMember { lobby = thisLobby, user = UserData.Me };
+var myMember = new LobbyMemberData { lobby = thisLobby, user = UserData.Me };
 ```
 
 Is the exsact same data as
@@ -83,7 +83,7 @@ var myMember = thisLobby.Members.First(p => p.user = UserData.Me);
 The ID of the lobby this member is a member of
 
 ```csharp
-public Lobby lobby;
+public LobbyData lobby;
 ```
 
 ### user
@@ -153,3 +153,24 @@ public void Kick();
 ```
 
 Kick this user from this lobby using the Heathen Kick list
+
+### Get
+
+```csharp
+public static LobbyMemberData Get(LobbyData lobby, UserData user);
+```
+
+This returns a lobby member data object for the indicated user, in the indicated lobby ... this assumes the member is in the lobby it does not test for this.
+
+Generally your better to use
+
+```csharp
+if(lobby.GetMember(UserData user, out LobbyMemberData memberData)
+{
+    //The user is a member of the lobby memberData is valid
+}
+else
+{
+    //The user is not a member of this lobby, member data is not valid
+}
+```

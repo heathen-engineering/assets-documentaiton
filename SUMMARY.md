@@ -345,7 +345,7 @@
     * [Lobby Data](assets/steamworks/objects/lobby-data.md)
     * [Lobby Chat Msg](assets/steamworks/objects/lobby-chat-msg.md)
     * [Lobby Game Server](assets/steamworks/objects/lobby-game-server.md)
-    * [Lobby Member](assets/steamworks/objects/lobby-member.md)
+    * [Lobby Member Data](assets/steamworks/objects/lobby-member-data.md)
     * [Party Beacon Details](assets/steamworks/objects/party-beacon-details.md)
     * [Rank Change](assets/steamworks/objects/rank-change.md)
     * [Remote Storage File](assets/steamworks/objects/remote-storage-file.md)

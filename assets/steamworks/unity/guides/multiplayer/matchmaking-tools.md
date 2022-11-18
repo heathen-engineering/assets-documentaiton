@@ -67,7 +67,7 @@ The following explains; as clearly as Steam documentaiton allows, the available 
 
 ### Members
 
-Every user that has joined the lobby is identified as a [LobbyMember.](../../../objects/lobby-member.md) Each member in a lobby has its own set of metadata which all other members can read but only the member its self can set. To clarify that means you can only set your own lobby member metadata but you can read everyones. You cannot however read lobby member metadata if you are not a member of the lobby.
+Every user that has joined the lobby is identified as a [LobbyMember.](../../../objects/lobby-member-data.md) Each member in a lobby has its own set of metadata which all other members can read but only the member its self can set. To clarify that means you can only set your own lobby member metadata but you can read everyones. You cannot however read lobby member metadata if you are not a member of the lobby.
 
 ### Metadata
 
@@ -104,7 +104,7 @@ var member = lobby.Me;
 member["thisField"] = "thisValue";
 ```
 
-To learn more check out the [Lobby](../../../objects/lobby-data.md#introduction) and [LobbyMember ](../../../objects/lobby-member.md)articles describing the features of the lobby and lobbyMember structures.
+To learn more check out the [Lobby](../../../objects/lobby-data.md#introduction) and [LobbyMember ](../../../objects/lobby-member-data.md)articles describing the features of the lobby and lobbyMember structures.
 
 ### Chat
 
