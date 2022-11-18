@@ -14,9 +14,9 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 With Heathen's Steamworks Complete creating a new workshop item from your game can be done with a [single call to our API](https://kb.heathenengineering.com/assets/steamworks/api/usergeneratedcontent.client#createitem). Understanding what data you need to send to this call is important and the cause of most issues experienced.
 
-## [Workshop Item Data](../../../objects/workshop-item-data.md)
+## [Workshop Item Data](../../../data-layer/workshop-item-data.md)
 
-This is a simple `struct` we created that lets you gather up all of the inputs needed to create a new workshop item. You can find details on the [Workshop Item Data](../../../objects/workshop-item-data.md) object in its article. Here is a list of data you will need in order to create a [Workshop Item Data](../../../objects/workshop-item-data.md) object.
+This is a simple `struct` we created that lets you gather up all of the inputs needed to create a new workshop item. You can find details on the [Workshop Item Data](../../../data-layer/workshop-item-data.md) object in its article. Here is a list of data you will need in order to create a [Workshop Item Data](../../../data-layer/workshop-item-data.md) object.
 
 * **App ID**\
   This will nearly always be your game's App ID and is the ID of the app this item is made to work with. You can read this from our API easily via [App.Client.Id](../../../api/app.md#id).
@@ -52,7 +52,7 @@ In addition to the required fields you have a number of optional fields
 * Key Value Tags\
   Similar to tags this is a collection of "Key:Value" tags, the total length of key + value must be less than 255.
 
-To create the item simply instantiate a new [WorkshopItemData ](../../../objects/workshop-item-data.md)object
+To create the item simply instantiate a new [WorkshopItemData ](../../../data-layer/workshop-item-data.md)object
 
 ```csharp
 var itemData = new WorkshopItemData
@@ -170,9 +170,9 @@ The [EResult ](https://partner.steamgames.com/doc/api/steam\_api#EResult)value r
 1. Create a new empty "file id" \
    This is just what Steam calls the entry for your Workshop item and this step rarely fails. If it does fail it suggests an issue with your app configuration or the user your logged in with.
 2. Set the required values on that new empty "file id"\
-   This is where we set and update the file id created in step 1 with all the data you gave us in the [Workshop Item Data](../../../objects/workshop-item-data.md) object.
+   This is where we set and update the file id created in step 1 with all the data you gave us in the [Workshop Item Data](../../../data-layer/workshop-item-data.md) object.
 
-Nearly 100% of the time the issue is with the data you provided to the [Workshop Item Data](../../../objects/workshop-item-data.md) object. The most common issues are listed below
+Nearly 100% of the time the issue is with the data you provided to the [Workshop Item Data](../../../data-layer/workshop-item-data.md) object. The most common issues are listed below
 
 ### Preview Image
 

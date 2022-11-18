@@ -12,6 +12,12 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction
 
+```csharp
+public struct LeaderboardData : IEquatable<SteamLeaderboard_t>, 
+                                IEquatable<ulong>, 
+                                IEquatable<string>
+```
+
 A simple struct that provides easy access to a given leaderboard's features and data. The structure is convertible to and from the native and primitive data types for a Steam Leaderboard
 
 ```csharp
@@ -327,3 +333,4 @@ void HandleCallback(LeaderboardUGCSet_t result, bool IOError)
     //Do Work
 }
 ```
+

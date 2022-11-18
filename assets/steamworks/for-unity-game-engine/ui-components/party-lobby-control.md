@@ -42,7 +42,7 @@ For example in DOTA 2 up to 5 players can form a group/party, this is a full "te
 
 ### Create
 
-Automatically handles create and exit of a group lobby. You can always fetch the current group lobby from the [Lobby ](../../objects/lobby-data.md)struct.
+Automatically handles create and exit of a group lobby. You can always fetch the current group lobby from the [Lobby ](../../data-layer/lobby-data.md)struct.
 
 ```csharp
 if(Lobby.GroupLobby(out Lobby groupLobby)

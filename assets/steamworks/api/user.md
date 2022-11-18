@@ -148,7 +148,7 @@ You can read this from the API as well
 var user = API.User.Client.Id;
 ```
 
-you can also get key data about the local user either from the resulting [User Data](../objects/user-data.md) object as read from ID or directly from the interface as shown below
+you can also get key data about the local user either from the resulting [User Data](../data-layer/user-data.md) object as read from ID or directly from the interface as shown below
 
 ```csharp
 var userLevel = API.User.Client.Level;

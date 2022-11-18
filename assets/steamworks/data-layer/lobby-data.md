@@ -16,6 +16,12 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction
 
+```csharp
+public struct LobbyData : IEquatable<CSteamID>, 
+                          IEquatable<ulong>, 
+                          IEquatable<LobbyData>
+```
+
 The LobbyData object is a custom CSteamId that carries tools and functions unique to the Steam Lobby system. This object is common between both Unity and Godot game engine integrations.
 
 {% hint style="info" %}
@@ -62,12 +68,6 @@ The following are constant strings used internally to manage Heathen standard me
 * key = z\_heathenMode
 * DataType
 * key = z\_heathenType
-
-## Definition
-
-```csharp
-public struct LobbyData : IEquatable<CSteamID>, IEquatable<ulong>, IEquatable<Lobby>
-```
 
 ## Fields and Attributes
 
@@ -143,15 +143,7 @@ public bool HasServer => get;
 
 Does this lobby have a game server registered to it
 
-### ID
-
-```csharp
-public CSteamID id;
-```
-
-The underlying native ID for this clan
-
-### IsGroup
+### Is Group
 
 ```csharp
 public bool IsGroup { get; set; )
@@ -159,7 +151,7 @@ public bool IsGroup { get; set; )
 
 Indicates rather or not this lobby is a group (aka party) lobby. When set to true a metadata value \`z\_heathenMode\` will be set to \`Group\` and the lobby type will be set to a invisible.
 
-### IsOwner
+### Is Owner
 
 ```csharp
 public bool IsOwner => get;
@@ -411,6 +403,44 @@ public static Lobby Get(CSteamID id);
 ```
 
 These methods simply return a valid Lobby object representing the lobby indicated by the provided data.
+
+### Group Lobby
+
+```csharp
+public static bool GroupLobby(out LobbyData lobby)
+```
+
+Get the group lobby the user is a member of if any
+
+```csharp
+if(LobbyData.GroupLobby(out var lobby))
+{
+    //The user is a member of lobby and it is a group lobby
+}
+else
+{
+    //The user is not in a lobby labeled as a Group lobby
+}
+```
+
+### Session Lobby
+
+```csharp
+public static bool SessionLobby(out LobbyData lobby)
+```
+
+Get the session lobby the user is a member of if any
+
+```csharp
+if(LobbyData.SessionLobby(out var lobby)
+{
+    //The user is a member of lobby and it is a session lobby
+}
+else
+{
+    //The user is not in a lobby labeled as a Session lobby
+}
+```
 
 ### Delete Lobby Data
 

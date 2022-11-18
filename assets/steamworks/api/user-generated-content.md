@@ -820,7 +820,7 @@ Creating a new item can be done in one of two ways.
 UGC.CreateItem(itemdata, callback);
 ```
 
-When using the 1 liner approach you will first create a [Workshop Item Data](../objects/workshop-item-data.md) object. This object defines the item you wish to create e.g. its name, description, content folder, etc.
+When using the 1 liner approach you will first create a [Workshop Item Data](../data-layer/workshop-item-data.md) object. This object defines the item you wish to create e.g. its name, description, content folder, etc.
 
 The callback for this method is a delegate that takes 1 parameter of type [Workshop Item Data Create Status](../objects/workshop-item-data-create-status.md).
 

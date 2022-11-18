@@ -54,7 +54,7 @@ This causes the componenet to grab the local user's ID on startup.
 public bool ShowNickname { get; set; }
 ```
 
-Should the tool show the user's [nickname ](../../objects/user-data.md#nickname)if any or should it always show the Steam User Name.
+Should the tool show the user's [nickname ](../../data-layer/user-data.md#nickname)if any or should it always show the Steam User Name.
 
 ### UserData
 

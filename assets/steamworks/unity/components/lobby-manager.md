@@ -88,7 +88,7 @@ We do this by managing lobby metadata.&#x20;
 It is possible to get this data out of sync if you use the raw Steam API. Using our API wrapper e.g. API.Matchmaking will preserve these values.
 {% endhint %}
 
-You can learn more about these extension features in the [Lobby](../../objects/lobby-data.md) article.
+You can learn more about these extension features in the [Lobby](../../data-layer/lobby-data.md) article.
 
 ### Namespace
 
@@ -484,7 +484,7 @@ Returns data about the game server set on the lobby if any.
 public bool SetType(ELobbyType type);
 ```
 
-Funcitonally the same as setting the Type field. This updates the type of the lobby on Valve's backend and updated the value of DataType. See the [Lobby](../../objects/lobby-data.md) object article for more information on DataType.
+Funcitonally the same as setting the Type field. This updates the type of the lobby on Valve's backend and updated the value of DataType. See the [Lobby](../../data-layer/lobby-data.md) object article for more information on DataType.
 
 ### Set Joinable
 
@@ -608,7 +608,7 @@ To do so, create your Team UI and apply a Lobby Manager to it, this lobby manage
 
 A party lobby is typically of type Invisible, this type of lobby does apper in lobby searches. The simplest way to remove them from a search is to filter on Lobby.DataType aka "z\_heathenType".
 
-To learn more about Heathen Constant Data such as DataType pleaes read the [Lobby ](../../objects/lobby-data.md)object article.
+To learn more about Heathen Constant Data such as DataType pleaes read the [Lobby ](../../data-layer/lobby-data.md)object article.
 
 The DataType matadata value is the enumerator value of each of the Steam [ELobbyTypes](https://partner.steamgames.com/doc/api/ISteamMatchmaking#ELobbyType) e.g.&#x20;
 

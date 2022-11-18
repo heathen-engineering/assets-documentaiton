@@ -90,7 +90,7 @@ public LobbyDataEvent evtLobbyInviteArgumentDetected;
 
 This is invoked after initialization completes if the system detects a lobby ID was passed in on the command line arguments. This occurs when a user accepted a lobby invite but was not currently playing the game. In that use case Steam will launch the game with the lobby ID on the command line.&#x20;
 
-This event has 1 argument of type [Lobby](../../objects/lobby-data.md), being the lobby that was passed in on the command line argument and would have a handler that looks like:
+This event has 1 argument of type [Lobby](../../data-layer/lobby-data.md), being the lobby that was passed in on the command line argument and would have a handler that looks like:
 
 ```csharp
 public void HandleEvent(Lobby lobby)

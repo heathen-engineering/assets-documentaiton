@@ -12,11 +12,11 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction&#x20;
 
-This scene demonstrates the use of [User Data ](../../objects/user-data.md)and displaying common information such as the user's avatar and name.
+This scene demonstrates the use of [User Data ](../../data-layer/user-data.md)and displaying common information such as the user's avatar and name.
 
 <figure><img src="../../../../.gitbook/assets/image (98).png" alt=""><figcaption></figcaption></figure>
 
-This scene exists to draw your attention to the [User Data](../../objects/user-data.md) object. User Data is a struct Heathen has defined to wrap around the native [CSteamID ](../quick-start-guide/csteamid.md)and the primitive ulong data types providing easy access to everything user related.
+This scene exists to draw your attention to the [User Data](../../data-layer/user-data.md) object. User Data is a struct Heathen has defined to wrap around the native [CSteamID ](../quick-start-guide/csteamid.md)and the primitive ulong data types providing easy access to everything user related.
 
 User Data can be used to read the name, nickname, level, status, friend ID, avatar image, rich presence data and much more about a friend. User Data is interchangeable with CSteamID and ulong and can be used anywhere those data types representing a Steam user are called for.
 
@@ -28,7 +28,7 @@ The manage game object has the [Steamworks Behaviour](../components/steamworks-b
 
 ### [Friend Profile](../ugui-tools/prefabs/friend-profile.md)
 
-Demonstrates the displaying of the local user's data. This prefab uses the[ Friend Profile](../ugui-tools/ui-components/friendprofile/) component script which its self uses [User Data](../../objects/user-data.md) to deliver the required information.
+Demonstrates the displaying of the local user's data. This prefab uses the[ Friend Profile](../ugui-tools/ui-components/friendprofile/) component script which its self uses [User Data](../../data-layer/user-data.md) to deliver the required information.
 
 ### [Friend Group](../ugui-tools/prefabs/friend-groups.md)
 

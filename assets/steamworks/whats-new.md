@@ -45,7 +45,7 @@ On release Godot will contain all API and Objects defined for Steamworks Complet
 
 A new \`Data\` object layer is being created to act as a mid level abstraction of Steam API and provide for a common code base between Godot and Unity. These \`Data\` objects such as UserData, LobbyData, AchievementData and more will have engine specific features such as returning avatars, icons, etc. in the engine's native "texture" format but will have identical functionality between the two engines.
 
-Data objects are simple structs that are implicitly convertible with the underlying native data type for example one can convert a ulong value to a [UserData ](objects/user-data.md)object
+Data objects are simple structs that are implicitly convertible with the underlying native data type for example one can convert a ulong value to a [UserData ](data-layer/user-data.md)object
 
 ```csharp
 UserData myFriend = 123456789987;

@@ -67,7 +67,7 @@ The following explains; as clearly as Steam documentaiton allows, the available 
 
 ### Members
 
-Every user that has joined the lobby is identified as a [LobbyMember.](../../../objects/lobby-member-data.md) Each member in a lobby has its own set of metadata which all other members can read but only the member its self can set. To clarify that means you can only set your own lobby member metadata but you can read everyones. You cannot however read lobby member metadata if you are not a member of the lobby.
+Every user that has joined the lobby is identified as a [LobbyMember.](../../../data-layer/lobby-member-data.md) Each member in a lobby has its own set of metadata which all other members can read but only the member its self can set. To clarify that means you can only set your own lobby member metadata but you can read everyones. You cannot however read lobby member metadata if you are not a member of the lobby.
 
 ### Metadata
 
@@ -104,7 +104,7 @@ var member = lobby.Me;
 member["thisField"] = "thisValue";
 ```
 
-To learn more check out the [Lobby](../../../objects/lobby-data.md#introduction) and [LobbyMember ](../../../objects/lobby-member-data.md)articles describing the features of the lobby and lobbyMember structures.
+To learn more check out the [Lobby](../../../data-layer/lobby-data.md#introduction) and [LobbyMember ](../../../data-layer/lobby-member-data.md)articles describing the features of the lobby and lobbyMember structures.
 
 ### Chat
 
@@ -118,9 +118,9 @@ You can work with lobby in one of 3 main ways; they (from lowest level to highes
 
 All of the functionality of lobby is defined in the [Matchmaking API](../../../api/matchmaking.md). No matter how you choose to work with Steam lobbies, its this API that will actually be doing the real work. Using the Matchmaking API requires that you have a level of understanding of the underlying Steam API but it does still simplify working with the API by making it Unity centric, handling boiler plate concepts such as the callbacks and simplifying common concepts in a Unity manager e.g. UnityEvents and Actions, simpler calls, etc..
 
-### [Lobby object](../../../objects/lobby-data.md)
+### [Lobby object](../../../data-layer/lobby-data.md)
 
-[Lobby](../../../objects/lobby-data.md) as in the object in Steamworks Complete is a [struct](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct) which wraps around ulong and CSteamID. Fundamentally it acts as a lobby ID and is [implicitly convertible](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions) between ulong and CSteamID meaning you can pass it along as if it where a ulong value or a CSteamID and you can assign it from a ulong value or a CSteamID. Beyond being a fancy wrapper around ulong it also has accessors and methods that make working with a specific lobby very easy. Using the lobby object you very likely wont need to touch the raw API at all.
+[Lobby](../../../data-layer/lobby-data.md) as in the object in Steamworks Complete is a [struct](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct) which wraps around ulong and CSteamID. Fundamentally it acts as a lobby ID and is [implicitly convertible](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions) between ulong and CSteamID meaning you can pass it along as if it where a ulong value or a CSteamID and you can assign it from a ulong value or a CSteamID. Beyond being a fancy wrapper around ulong it also has accessors and methods that make working with a specific lobby very easy. Using the lobby object you very likely wont need to touch the raw API at all.
 
 ### [Lobby Manager](../../components/lobby-manager.md)
 
@@ -229,7 +229,7 @@ Their is no way to do this from the lobby object as the lobby object is a struct
 
 ### Lobby Manager
 
-As always the Lobby Manager makes it easier not just by filtering on the lobby for you but also by splitting the event into two. [evtUserJoined ](../../components/lobby-manager.md#evtuserjoined)and [evtUserLeft ](../../components/lobby-manager.md#evtuserleft)invoke when someone joins or leaves respectively. These events are [UserData ](../../../objects/user-data.md)events meaning they hand you the [UserData ](../../../objects/user-data.md)of the member that joined or left.
+As always the Lobby Manager makes it easier not just by filtering on the lobby for you but also by splitting the event into two. [evtUserJoined ](../../components/lobby-manager.md#evtuserjoined)and [evtUserLeft ](../../components/lobby-manager.md#evtuserleft)invoke when someone joins or leaves respectively. These events are [UserData ](../../../data-layer/user-data.md)events meaning they hand you the [UserData ](../../../data-layer/user-data.md)of the member that joined or left.
 
 ```csharp
 void HandleUserJoined(UserData arg)
@@ -472,7 +472,7 @@ The easiest way to search for and join lobbies is through the [Lobby Manager](..
 
 Aside from browsing for a lobby you can handle invite and joining of lobby invites. Inviting a friends to lobby can be done in a number of ways including from outside of your game via the Steam Friends list.
 
-Internally to you game you can use the [User Data](../../../objects/user-data.md) object to invite a specific player. You would have access to this object from various tools and interfaces including [Friends](../../../api/friends.md), [Clans ](../../../api/clans.md)and there related chat systems. When you send an invite it is up to that user to accept it and there are multiple use cases for how they might accept the invite
+Internally to you game you can use the [User Data](../../../data-layer/user-data.md) object to invite a specific player. You would have access to this object from various tools and interfaces including [Friends](../../../api/friends.md), [Clans ](../../../api/clans.md)and there related chat systems. When you send an invite it is up to that user to accept it and there are multiple use cases for how they might accept the invite
 
 #### While In game
 

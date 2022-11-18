@@ -18,7 +18,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 CSteamID also known simply as "Steam ID" is a ulong value (64 bits) and is used by Steam API to uniquely identify ... well most things.&#x20;
 
-Heathen has created wrap around structures like [UserData ](../../objects/user-data.md)and [Lobby ](../../objects/lobby-data.md)that are interchangeable with CSteamID and ulong and provide helpful features unique to each use case of the ID. In most cases you should be using [UserData](../../objects/user-data.md), [Lobby](../../objects/lobby-data.md), [Clan](../../objects/clan.md), etc. and not needing to bother with the raw CSteamID or its ulong value.
+Heathen has created wrap around structures like [UserData ](../../data-layer/user-data.md)and [Lobby ](../../data-layer/lobby-data.md)that are interchangeable with CSteamID and ulong and provide helpful features unique to each use case of the ID. In most cases you should be using [UserData](../../data-layer/user-data.md), [Lobby](../../data-layer/lobby-data.md), [Clan](../../data-layer/clan-data.md), etc. and not needing to bother with the raw CSteamID or its ulong value.
 
 The native CSteamID ulong value is composed of 4 main parts
 
@@ -102,15 +102,15 @@ As noted Steam IDs are used for a lot of different things and each has its own s
 
 Heathen has created a set of wrappers that let you treat each ID as a unique type and simplify working with the features of each unique type. Note each of these are implicitly convertible ... that is you can use them as if they are CSteamID\_t or ulong and you can assign them from CSteamID\_t or ulong. These also have additional handlers to help you work with them as AccountID\_t
 
-### [Clan](../../objects/clan.md)
+### [Clan](../../data-layer/clan-data.md)
 
 This is for IDs that represent a "clan" or "group"
 
-### [Lobby](../../objects/lobby-data.md)
+### [Lobby](../../data-layer/lobby-data.md)
 
 This is for IDs that represent lobbies aka chats
 
-### [UserData](../../objects/user-data.md)
+### [UserData](../../data-layer/user-data.md)
 
 This is for IDs that represent users
 
