@@ -157,7 +157,7 @@ void HandleLobbyEnterFailed(LobbyEnter_t arg)
 The lobby object Join method takes a callback so for example
 
 ```csharp
-LobbyData lobbyIWantToJoin = lobbyId;
+Lobby lobbyIWantToJoin = lobbyId;
 Lobby.Join((result, ioError) =>
     {
         if(!ioError) //Was their an IO error?
@@ -345,8 +345,8 @@ myLobby["z_heathenGameVersion"] = "v1.24b";
 
 //IsReady
 myLobby.IsReady = true;
-// Is the same as as setting heathenReady on your lobby member data
-myLobby.Me["z_heathenReady"] = "true";
+// Is the same as
+myLobby["z_heathenReady"] = "true";
 
 //IsGroup
 myLobby.IsGroup = true;
