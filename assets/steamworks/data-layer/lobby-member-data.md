@@ -12,7 +12,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction
 
-LobbyMember is a structure that wraps around [LobbyData ](lobby-data.md)and [UserData](user-data.md) to simplify access to the lobby member metadata and related features for a specific user on a specific lobby. In most cases you would be working with the LobbyMember of the local user and can easily create the LobbyMember by reading it from the related lobby.
+LobbyMemberData is a structure that wraps around [LobbyData ](lobby-data.md)and [UserData](user-data.md) to simplify access to the lobby member metadata and related features for a specific user on a specific lobby. In most cases you would be working with the LobbyMemberData of the local user and can easily create the LobbyMemberData by reading it from the related lobby.
 
 ```csharp
 //Assuming we have a Lobby named myLobby
@@ -20,14 +20,14 @@ LobbyMember is a structure that wraps around [LobbyData ](lobby-data.md)and [Use
 LobbyMemberData lobbyMember = myLobby.Me;
 ```
 
-The most common thing to do with a LobbyMember is to set the [metadata](../unity/guides/multiplayer/matchmaking-tools.md#metadata) of that member.
+The most common thing to do with a LobbyMemberData is to set the [metadata](../unity/guides/multiplayer/matchmaking-tools.md#metadata) of that member.
 
 ```csharp
 lobbyMember["fieldName"] = "fieldValue";
 ```
 
 {% hint style="info" %}
-You can learn more about Lobby metadata and LobbyMember metadata by reading [this](../unity/guides/multiplayer/matchmaking-tools.md#metadata) article.
+You can learn more about Lobby metadata and LobbyMemberData metadata by reading [this](../unity/guides/multiplayer/matchmaking-tools.md#metadata) article.
 {% endhint %}
 
 ## Definition
@@ -39,7 +39,7 @@ public struct LobbyManagerData
 Represents a user in a given lobby.
 
 {% hint style="warning" %}
-This structure does not store any data locally, it is simply a means by which you can simplify the reading and writing of data to and from a LobbyMember ...&#x20;
+This structure does not store any data locally, it is simply a means by which you can simplify the reading and writing of data to and from a LobbyMemberData ...&#x20;
 
 
 
@@ -60,13 +60,13 @@ var value = lobbyMember[metadataKey];
 ```
 {% endhint %}
 
-You can get a list of the LobbyMember's in a Lobby or you can create the LobbyMember assuming you know the Lobby ID and the User's ID i.e.
+You can get a list of the LobbyMemberData's in a Lobby or you can create the LobbyMemberData assuming you know the Lobby ID and the User's ID i.e.
 
 ```csharp
 var myMember = new LobbyMemberData { lobby = thisLobby, user = UserData.Me };
 ```
 
-Is the exsact same data as
+Is the exact same data as
 
 ```csharp
 var myMember = thisLobby.User;
