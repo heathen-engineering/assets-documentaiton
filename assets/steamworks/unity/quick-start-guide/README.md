@@ -14,14 +14,18 @@ Consider supporting us as a [GitHub Sponsor](../../../../company/become-a-sponso
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
 
-## Steam Settings
+## Initalization
+
+You have choices with how you handle initalization, the simples and most commonly used method is to define a Steam Settings object and use the Steamworks Behaviour to initalization and amange your Steam API integration as shown below
+
+### Steam Settings
 
 Create a new Steam Settings object in your project folder by right clicking in your project tab and selecting\
 **Create > Steamworks > Settings**
 
 ![](<../../../../.gitbook/assets/image (158) (1) (1) (1) (1).png>)
 
-## App Id
+### App Id
 
 Enter your app ID in the Application Id field**.**  If you don't have an application ID just yet that's fine you can work with the test App ID 480 however there will be some limitations.&#x20;
 
@@ -35,7 +39,7 @@ You cannot create your own achievements, stats or other artefacts without your o
 Valve issues you an App ID when you pay your application fee. If you don't have your own ID yet you can use App ID 480 as a test ID. Heathen's samples and demos all use App ID 480.
 {% endhint %}
 
-## Steamworks Behaviour
+### Steamworks Behaviour
 
 Create a [Steamworks Behaviour](broken-reference) object in your [bootstrap scene](../../../../company/concepts/fundamentals/bootstrap-scene.md) or similarly appropriate location; and drag your Steam Settings object into the provided field.
 
@@ -49,13 +53,34 @@ It is of course up to you to perform any required validation checks ... that is 
 The [Steamworks Behaviour](../components/steamworks-behaviour.md) has events exposed to report initialization or error or you can test via Boolean using [SteamSettings.Initialized](../scriptable-objects/steam-settings/#initialized)
 {% endhint %}
 
-{% hint style="danger" %}
-[Steamworks Behaviour](../components/steamworks-behaviour.md) should be initialized early in your application and never destroyed. It is keenly important that you do not reload the scene that defines the [Steamworks Behaviour](../components/steamworks-behaviour.md) as this will cause issues with the Steam API.
+## Advanced
 
+### Steam Settings
 
+Steam Settings can be used to initialize the Steam API without using a component script at all. This is useful for people using Unity's Entity Componenet system who do not want to use a component script.
 
-If you need to reload the scene where [Steamworks Behaviour](../components/steamworks-behaviour.md) is located or otherwise must use a single scene architecture you should use the [Steamworks Creator](../components/steamworks-creator.md) to insure the Steam API is managed correctly.
-{% endhint %}
+You will still need a Steam Settings object as this defines your various "artifacts" such as stats, achievements, input fields, inventory items and more. Once defined you can simply call&#x20;
+
+```csharp
+public SteamSettings mySettings;
+mySettings.Intitalize();
+```
+
+This will initialize the Steam API and run its update loop via a background worker. No MonoBehaviour will be involved at all.
+
+### API.App
+
+For users that are allergic to Unity's ScriptableObjects you can use Heathen's API's to initialize and manage the API. The advantage of using Steam Settings is management of your various Steam related artifacts such as Leaderboards, Achievements, etc. however if you wish to go all code and no Unity objects at all ... we have you covered.
+
+```csharp
+//For a client initialization
+API.App.Client.Initialze(AppData appId);
+
+//For a server initialization
+API.App.Server.Initialize(AppData appId, SteamGameServerConfiguraiton config);
+```
+
+You can learn more about [AppData ](../../data-layer/app-data.md)and [SteamGameServerConfiguraiton ](../components/steam-game-server-events.md)in our knowledge base.
 
 ## Networking
 
