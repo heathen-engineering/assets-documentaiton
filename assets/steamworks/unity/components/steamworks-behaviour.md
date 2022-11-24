@@ -16,21 +16,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction
 
-Steamworks Behaviour replaces the concept of Steam Manager as seen in some of the older Steamworks.NET example scripts. This behaviour object deals with the initialization of the Steam API and operating its main update loop.&#x20;
-
-{% hint style="danger" %}
-Your game should have exactly one of these behaviours.
-
-Your game should never destroy or reload one of these behaviours.
-
-
-
-This means you should not define this behaviour in a scene that is loaded multiple times such as a title or menu scene.
-
-
-
-You are **STRONGLY** encouraged to use a [bootstrap ](../../../../company/concepts/fundamentals/bootstrap-scene.md)model taking advantage of Unity's multi-scene features. Alternatively you can use the Steamworks Creator behaviour.
-{% endhint %}
+Steamworks Behaviour simply initializes the Steam API for you and exposes common events to the Unity Inspector. As of version 2.30.12 Steamworks Behaviour no longer runs the callback loop. We have made it such that Steam API can be initialized and ran without using any component scripts. That said most uses cases will greatly benifit from using Steamworks Behaviour in their [bootstrap scene](../../../../company/concepts/fundamentals/bootstrap-scene.md).
 
 ## Use
 
