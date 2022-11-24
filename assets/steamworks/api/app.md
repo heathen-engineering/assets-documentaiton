@@ -4,6 +4,8 @@ description: Access the Steam App system with Heathen's Steam API
 
 # App.Client
 
+<figure><img src="../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
+
 {% hint style="success" %}
 #### Like what your seeing?
 
@@ -26,7 +28,13 @@ using AppClient = HeathenEngineering.SteamworksIntegration.API.App.Client;
 public static class App.Client
 ```
 
-This leverages the ISteamApp interface from Valve's Steam Client API and exposes every feature of that API in a C# and Unity centric way.
+This leverages the ISteamApp interface from Valve's Steam Client API and exposes every feature of that API in a C# and Unity centric way. Beyond a simple API wrapper the App.Client class provides for basic API initalizations and runs the callback update. It is possible to run Steam API without Steamworks Behaviour using only this class.
+
+```csharp
+AppClient.Initialize(AppData appId);
+```
+
+This will cause the client API from Valve's Steam API to be initialized to the App ID provided and will start a background worker to run callbacks for you.
 
 ### What can it do?
 
@@ -183,6 +191,33 @@ void OnDestroy()
 ```
 
 ## Fields and Attributes
+
+### Initialized
+
+This is a global field located on API.App.Initalized and indicates rather or not the system is initialized.
+
+{% hint style="info" %}
+This is \***Not**\* located in the API.App.Client class rather its in the parent API.App class so to access it&#x20;
+
+```csharp
+if(API.App.Initalized)
+    ;//Yes it is initalized
+else
+    ;//No it is not
+```
+{% endhint %}
+
+```csharp
+public static bool API.App.Initalized => get;
+```
+
+### LoggedOn
+
+Indicates rather or not the system is logged on to the Steam backend services. When false this indicates the system is running in "offline mode" and as a result realtime systems like Lobby, parts of Inventory and others will not funciton or will have a limited level of funcitonality.
+
+```csharp
+public static bool LoggedOn => get;
+```
 
 ### IsSubscribed
 
@@ -454,6 +489,14 @@ Debug.Log("Command Line: " + commandLine);
 ```
 
 ## Methods
+
+### Initialize
+
+Initializes the the Steam API for client processing. If your using SteamSettings or SteamworksBehaviour this is done for you. You should only call this if you are not using SteamSettings.Initialize or SteamworksBehaviour.
+
+```csharp
+public static Initialize(AppData appId);
+```
 
 ### IsAppInstalled
 
