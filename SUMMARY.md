@@ -290,6 +290,7 @@
       * [Lobby](assets/steamworks/unity/guides/multiplayer/matchmaking-tools.md)
       * [Matchmaking](assets/steamworks/unity/guides/multiplayer/matchmaking.md)
       * [Rich Presence](assets/steamworks/unity/guides/multiplayer/rich-presence.md)
+      * [Room Systems](assets/steamworks/guides/multiplayer/room-systems.md)
       * [Steam Game Server](assets/steamworks/unity/guides/multiplayer/game-server-browser.md)
       * [Terminology](assets/steamworks/unity/guides/multiplayer/terminology.md)
     * [Running a Build](assets/steamworks/unity/quick-start-guide/running-a-build.md)
