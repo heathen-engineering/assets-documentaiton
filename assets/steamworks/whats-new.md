@@ -41,6 +41,28 @@ On release Godot will contain all API and Objects defined for Steamworks Complet
 
 ## Unity Engine
 
+### DOTs more DOTs
+
+We have adjusted our architecture to no longer be dependent on MonoBehaviour component scripts. This means DOTs users can fully utilize all the power of Heathen's Steamworks Complete without needing to use any MonoBehaviour based components.
+
+We did this by moving the initialization to the API.App static classes and we manage our own background thread which handles updating callbacks and input values for you. This also consaquently means it no longer matters if you destroy the Steamworks Behaviour component all it does any more is kick the process off.
+
+#### So what?
+
+So now you have more options with how you initialize and use Steam API.
+
+1. You can use Steamworks Behaviour as you have traditionally been doing
+2. You can use SteamSettings on its own by simply calling its [Init](unity/scriptable-objects/steam-settings/#init) method.
+3. You can use Heathen's API by calling [App.Client.Initialize](api/app.md#initialize) or [App.Server.Initialize](api/app.server.md#initialize) as appropriate
+
+This then means that
+
+* Steamworks Behaviour while it can be used is no longer required e.g. no requirement for a GameObject + Component script
+* Steamworks Behaviour is no longer fragile, e.g. you can destroy it and not break Steam API
+* You can now force server initialization even in a client build ... just call [App.Server.Initialize](api/app.server.md#initialize) ... really don't recommend you do that but you can
+* Steam API wont be blocked by you blocking the main update loop e.g. Pause, etc. We now run on our own background thread.
+* It also means Godot and Unity will be even more alike, While Unity has the option of Steamworks Behaviour which is a uniquely Unity thing. That behaviour now is pretty hallow and just ends up calling the App APIs we created which are common across all versions.
+
 ### Data Layer
 
 A new \`Data\` object layer is being created to act as a mid level abstraction of Steam API and provide for a common code base between Godot and Unity. These \`Data\` objects such as UserData, LobbyData, AchievementData and more will have engine specific features such as returning avatars, icons, etc. in the engine's native "texture" format but will have identical functionality between the two engines.
@@ -120,7 +142,7 @@ Yes
 
 Anyone can join the GitHub Sponsor program, all sponsors at the $10 monthly tier get instant access to our source repository along with the Heathen standard license which is theirs to keep.
 
-You can thus sub for 10 USD, download what you like, cancel immodesty and go about your business. If you ever need or want another update resub and get another month of live updates.
+You can thus sub for 10 USD, download what you like, cancel right away if you want and go about your business. If you ever need or want another update resub and get another month of live updates.
 
 GitHub Sponsor is the best way to Do More with Heathen rather or not you own some or all of our assets through Unity Asset Store as well. GitHub Sponsor program is \*\***much**\*\* more than just a way to get our assets. It empowers this Knowledge Base, it fuels on going development, new tools, live support and management of the growing community and a lot more.
 

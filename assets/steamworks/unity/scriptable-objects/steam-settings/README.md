@@ -187,6 +187,14 @@ private void HandleSteamInitializeationError(string errorMessage)
 
 ## Methods
 
+### Init
+
+```csharp
+public void Init()
+```
+
+Initializes the Steam API based on the configuration settings defined in the settings object.
+
 ### Create Behaviour
 
 ```csharp
