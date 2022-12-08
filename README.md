@@ -6,7 +6,7 @@ coverY: 0
 
 # Introduction
 
-_****_[_**Steam**_](company/concepts/steam/quick-start.md) _**-**_ [_**PhysKit**_](assets/physkit/) _**-**_ [_**User eXperience**_](assets/ux/) _**-**_ [_**Design**_](company/concepts/design/quick-start.md) _**-**_ [_**Development**_](company/concepts/development/quick-start.md) _**-**_ [_**Marketing**_](company/concepts/marketing/quick-start.md)****
+****[_**Steam**_](company/concepts/steam/quick-start.md) _**-**_ [_**PhysKit**_](assets/physkit/) _**-**_ [_**User eXperience**_](assets/ux/) _**-**_ [_**Design**_](company/concepts/design/quick-start.md) _**-**_ [_**Development**_](company/concepts/development/quick-start.md) _**-**_ [_**Marketing**_](company/concepts/marketing/quick-start.md)_****_
 
 This Knowledge Base is a game development resource for professional, amateur, hobbyist and enthusiast game developers. Within you will find articles, guides, and technical documentation to help you on your quest to **Do More** as a game developer!
 
