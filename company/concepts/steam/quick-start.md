@@ -21,7 +21,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 {% hint style="info" %}
 ### Working in Unity or Godot?
 
-We created the best in class Steam Integration for Unity & are porting to Godot!
+We created the best in class [Steam Integration](../../../assets/steamworks/) for Unity & are porting to Godot!
 
 [Learn More!](../../../assets/steamworks/)
 {% endhint %}

@@ -9,10 +9,10 @@ coverY: 0
 {% hint style="info" %}
 ## Helping you Do More!
 
-__[_Steam_](company/concepts/community/quick-start.md)_,_ [_PhysKit_](assets/physkit/)_,_ [_User eXperience_](assets/ux/)_,_ [_Design_](company/concepts/design/quick-start.md)_, Development, Marketing_
+__[_Steam_](company/concepts/steam/quick-start.md)_,_ [_PhysKit_](assets/physkit/)_,_ [_User eXperience_](assets/ux/)_,_ [_Design_](company/concepts/design/quick-start.md)_,_ [_Development_](company/concepts/development/quick-start.md)_,_ [_Marketing_](company/concepts/marketing/quick-start.md) _and so much more!_
 {% endhint %}
 
-A game development resource for professional, amateur, hobbyist and enthusiast game developers. Within you will find articles, guides, and technical documentation to help you on your quest to **Do More** as a game developer!
+This Knowledge Base is a game development resource for professional, amateur, hobbyist and enthusiast game developers. Within you will find articles, guides, and technical documentation to help you on your quest to **Do More** as a game developer!
 
 Heathen is focused on consumer centric development, this means a high level of technical quality, a required depth of care in the user experience and general design of games and importantly fair, sustainable and ethical monetization practices.&#x20;
 
@@ -21,8 +21,6 @@ Our focus and lofty goals mean we do a whole lot of research and have develop a 
 {% hint style="success" %}
 This resource is available for free to any who have use of it and is supported wholly by the [Heathen GitHub Sponsor](https://github.com/sponsors/heathen-engineering) program, you can learn more about how you can help us Do More in our article on "[Becoming a Sponsor](company/become-a-sponsor.md)".
 {% endhint %}
-
-{% embed url="https://ie.trustpilot.com/review/heathen.group" %}
 
 ## Getting Started
 
