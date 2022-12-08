@@ -25,7 +25,7 @@ Heathen is strictly opposed to any form of predatory monetization.
 You will find wording and terminology here that calls out bad practices as the bad practices they are. This is meant to help inform you not offend you however we make no apologies for any offence either.
 {% endhint %}
 
-In the sub-articles of this section you will find a break down of all major monetization [models](models/), models define high level concepts around when and how you monetize your product such as [PayToPlay](models/pay-to-play.md), [FreeToPlay](models/free-to-play.md), etc. [Tools ](tools/)is the next area of research for you, these deal with specific mechanisms for monetization that can generally be used in any model for example [expansions](tools/expansions.md), [subscriptions](tools/subscription.md), [community marketplaces](tools/community-marketplace.md), etc.&#x20;
+In the sub-articles of this section you will find a break down of all major monetization [models](models/), models define high level concepts around when and how you monetize your product such as [PayToPlay](models/pay-to-play.md), [FreeToPlay](models/free-to-play.md), etc. [Tools ](tools/)is the next area of research for you, these deal with specific mechanisms for monetization that can generally be used in any model for example [expansions](tools/expansions.md), [subscriptions](tools/subscription.md), [community marketplaces](vulnerable-practices/community-marketplace.md), etc.&#x20;
 
 ## Anti-Whaling
 
@@ -35,7 +35,7 @@ This sub-section is aimed at readers that just don't understand why some practic
 This section ... hopefully ... can be skipped by most people.
 {% endhint %}
 
-Predatory monetization practices have already been incredibly harmful to our industry. The number of regions around the world applying strict regulations around game content and in particular monetization practices. has rapidly expanded thanks largely to predatory loot boxes and variations of gambling mechanics such as [Gatcha mechanics](tools/gatcha-mechanics.md). Unfortunately these regulations are made by people with limited understanding of the industry and in reaction to the consumers … their constituents complaints e.g. reactive governance, this is obviously less than ideal.&#x20;
+Predatory monetization practices have already been incredibly harmful to our industry. The number of regions around the world applying strict regulations around game content and in particular monetization practices. has rapidly expanded thanks largely to predatory loot boxes and variations of gambling mechanics such as [Gatcha mechanics](predatory-practices/gatcha-mechanics.md). Unfortunately these regulations are made by people with limited understanding of the industry and in reaction to the consumers … their constituents complaints e.g. reactive governance, this is obviously less than ideal.&#x20;
 
 {% hint style="info" %}
 The calculation is quite simple;\

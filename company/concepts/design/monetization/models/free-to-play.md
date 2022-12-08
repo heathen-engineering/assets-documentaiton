@@ -38,7 +38,7 @@ F2P still has a stigma especially for games that introduce this model after go l
 
 ### Modern Issues
 
-F2P based games are the pioneers of predatory monetization practices and this stigma has become so associated that for mobile games its simply assumed. Many legacy developers and publishers such as Blizzard, NetEase and similar are taking steps to try and normalize the practice in PC and eventually console gaming. As a result F2P games that include [MTX ](../tools/microtransactions-mtx.md)monetization tools have a steep uphill battle in terms of user acceptance and good will.
+F2P based games are the pioneers of predatory monetization practices and this stigma has become so associated that for mobile games its simply assumed. Many legacy developers and publishers such as Blizzard, NetEase and similar are taking steps to try and normalize the practice in PC and eventually console gaming. As a result F2P games that include [MTX ](../vulnerable-practices/microtransactions-mtx.md)monetization tools have a steep uphill battle in terms of user acceptance and good will.
 
 ## Examples
 

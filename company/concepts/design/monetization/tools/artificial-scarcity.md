@@ -24,7 +24,7 @@ Limited digital goods are one of the most blatantly manipulative yet commonly ac
 
 ### So why is this bad?&#x20;
 
-Making something "exclusive" or limited by time, quantity or anything else is simply the a form of [FOMO](fear-of-missing-out-fomo.md). A portion of the consumer base will purchase not because they want it, not because the feel its a good value but because they don't want to miss out on the opportunity. Most of the user's who purchased out of fear will have buyers remorse and will be over all more negative toward your product and future products and towards you and your community/fan base.
+Making something "exclusive" or limited by time, quantity or anything else is simply the a form of [FOMO](../predatory-practices/fear-of-missing-out-fomo.md). A portion of the consumer base will purchase not because they want it, not because the feel its a good value but because they don't want to miss out on the opportunity. Most of the user's who purchased out of fear will have buyers remorse and will be over all more negative toward your product and future products and towards you and your community/fan base.
 
 This is made even more problematic when you then turn around and release the same item with a different name or maybe even as much as a "reskin" down the road as free or paid content else where. Now you have made a portion of your user base feel like suckers and they will become openly hostile toward you, your products and your community. This is not a matter of opinion its easily observed in multiple current real world cases. It is a highly anti-consumer and the consumer is your community, so this is harmful to your single most important resource ... your community.
 

@@ -88,6 +88,6 @@ If your game is on sale be that a custom sale or a general sale then it is more 
 
 ### Relatable to user
 
-[Learn more here](store-page.md)
+[Learn more here](../marketing/steam-store-page.md)
 
-This is a complex one, Steam has a number of mechanisms for categorizing games driven by tags, play time, revie scores and relationships between games found in that sort of backend data. Our article on the [Store Page](store-page.md) may be of use here with regards to tags and page setup.
+This is a complex one, Steam has a number of mechanisms for categorizing games driven by tags, play time, revie scores and relationships between games found in that sort of backend data. Our article on the [Store Page](../marketing/steam-store-page.md) may be of use here with regards to tags and page setup.
