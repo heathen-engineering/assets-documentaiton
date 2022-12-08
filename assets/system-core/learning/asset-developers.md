@@ -23,7 +23,7 @@ This article will help you get started, there isn't much to cover but what there
 
 System Core should only ever be installed via Package Manager! You can check rather System Core is installed and what version is installed using the Package Manager namespace in Unity.
 
-[To learn more, read this article.](../../../company/asset-developers/package-manger-in-c.md)
+[To learn more, read this article.](broken-reference)
 
 ## Conditional Compile
 

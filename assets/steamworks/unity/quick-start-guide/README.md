@@ -9,7 +9,7 @@ description: A quick start guide for those already comfortable with the basics.
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../../../company/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../../../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -41,7 +41,7 @@ Valve issues you an App ID when you pay your application fee. If you don't have 
 
 ### Steamworks Behaviour
 
-Create a [Steamworks Behaviour](broken-reference) object in your [bootstrap scene](../../../../company/concepts/design/bootstrap-scene.md) or similarly appropriate location; and drag your Steam Settings object into the provided field.
+Create a [Steamworks Behaviour](broken-reference) object in your [bootstrap scene](broken-reference) or similarly appropriate location; and drag your Steam Settings object into the provided field.
 
 ![](<../../../../.gitbook/assets/image (161) (1) (1) (1) (1) (1) (1).png>)
 

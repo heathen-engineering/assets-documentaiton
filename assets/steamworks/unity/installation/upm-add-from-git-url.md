@@ -9,7 +9,7 @@ description: Unity Package Manager Add from Git URL
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../../../company/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../../../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -35,7 +35,7 @@ https://github.com/heathen-engineering/SteamworksFoundation.git?path=/com.heathe
 ### GitHub Sponsors
 
 {% hint style="info" %}
-You must be an active GitHub Sponsor at the $10 level or higher for this to work. You must also be logged into the same GitHub user that sponsored. See our [Package Manager article](../../../../company/concepts/fundamentals/package-manager-installs.md#im-a-sponsor-but-cant-install) for troubleshooting tips.
+You must be an active GitHub Sponsor at the $10 level or higher for this to work. You must also be logged into the same GitHub user that sponsored. See our [Package Manager article](broken-reference) for troubleshooting tips.
 {% endhint %}
 
 If your a GitHub sponsor you have access to the source repository which you can install from directly in Unity via the Package Manager.

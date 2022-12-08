@@ -5,7 +5,7 @@
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../../company/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -19,7 +19,7 @@ Our scripts are all C# based\
 Consequently you should be using Godot (mono) or a similarly .NET compatible version of Godot.
 {% endhint %}
 
-Your first stop for getting started as a Steam Developer should be our [Guides on Steam](../../../company/concepts/steam/) its self including its [Quick Start](../../../company/concepts/steam/quick-start.md#introduction) guide. While you can perform very basic functional testing using the "Test App" 480 you really will need to secure your own App ID before you can do anything meaningful with Steam.
+Your first stop for getting started as a Steam Developer should be our [Guides on Steam](broken-reference) its self including its [Quick Start](broken-reference) guide. While you can perform very basic functional testing using the "Test App" 480 you really will need to secure your own App ID before you can do anything meaningful with Steam.
 
 ## Auto Load
 

@@ -9,7 +9,7 @@ description: Understanding Steam Leaderboards and the Heathen Engineering tool k
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../../../../company/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../../../../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -143,7 +143,7 @@ leaderboard.UploadScore(42, method, callback);
 This method requires you to pass in the score, method of upload and provide a callback in the form of `void Callback(LeaderboardScoreUploaded_t result, bool IOError)` that will be invoked when the process is complete.
 
 {% hint style="info" %}
-Callbacks are a common feature of many multi-process systems to include Unity its self.  You can [learn more about them here](../../../../../company/concepts/development/callbacks.md).
+Callbacks are a common feature of many multi-process systems to include Unity its self.  You can [learn more about them here](broken-reference).
 {% endhint %}
 
 or

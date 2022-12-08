@@ -11,7 +11,7 @@ description: Playing with your self is fun, playing with others is even more! ..
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../../../../company/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../../../../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -23,7 +23,7 @@ Let’s start by saying this here:
 Creating a game is hard work, creating a multiplayer game is extra hard work, creating a massively multiplayer game is … well you get the idea. If this is your first game or even 5th game, I would personally recommend spending some more time creating smaller stand alone projects you can get done from start to finish without complexities like multiplayer. With that out of the way let’s get started.
 
 {% hint style="success" %}
-This article covers Steam Multiplayer concepts for more general information on Multiplayer [game design](../../../../../company/concepts/design/) please see our [guide on that topic](../../../../../company/concepts/design/multiplayer/).&#x20;
+This article covers Steam Multiplayer concepts for more general information on Multiplayer [game design](broken-reference) please see our [guide on that topic](broken-reference).&#x20;
 {% endhint %}
 
 {% hint style="info" %}
@@ -63,7 +63,7 @@ You don't need this, in my experience it only serves to make things more complic
 
 We find it best to have the client handle load and unload of scenes as makes sense for them. A lot of this comes from the realization that Unity handles multi-scene nicely and that a scene doesn't need to represent a physical area in your game so letting a network system which is driven by network visibility drive that makes no sense.
 
-[See this article for more](../../../../../company/concepts/design/multi-scene-architecture.md)
+[See this article for more](broken-reference)
 
 See [UX Complete](../../../../ux/components/scenes-manager.md) for tools that can help you really leverage the power of Unity's scene system
 

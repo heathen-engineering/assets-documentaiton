@@ -5,7 +5,7 @@
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../../../../company/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../../../../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -97,7 +97,7 @@ var itemData = new WorkshopItemData
 
 Now that we have our data sorted we can simply call create on the UGC API.&#x20;
 
-You probably noticed its name is very long and a pain to type? We do this so each name is verbose, easily understandable and not likely to be ambiguous. You can however make it easier for yourself in your using statements via an alias. See our [article on Namespaces](../../../../../company/concepts/development/namespace-and-using.md) for more information.
+You probably noticed its name is very long and a pain to type? We do this so each name is verbose, easily understandable and not likely to be ambiguous. You can however make it easier for yourself in your using statements via an alias. See our [article on Namespaces](broken-reference) for more information.
 
 ```csharp
 using UGC = HeathenEngineering.SteamworksIntegration.API.UserGeneratedContent.Client;
@@ -109,7 +109,7 @@ You can now access the UGC API with a much shorter name of `UGC`.
 UGC.CreateItem(itemData);
 ```
 
-Technically that is all that is required to create a workshop item ... however this would make it hard to handle any sort of issue or error so we recommend you provide a callback handler. You can learn more about [callbacks in our article here](../../../../../company/concepts/development/callbacks.md). In the case of CreateItem it takes a callback that has a single parameter of type [WorkshopItemDataCreateStatus](../../../objects/workshop-item-data-create-status.md) and is an ideal candidate for an [anonymous callback as discussed in our article here](../../../../../company/concepts/development/lambda-expressions.md#callbacks).
+Technically that is all that is required to create a workshop item ... however this would make it hard to handle any sort of issue or error so we recommend you provide a callback handler. You can learn more about [callbacks in our article here](broken-reference). In the case of CreateItem it takes a callback that has a single parameter of type [WorkshopItemDataCreateStatus](../../../objects/workshop-item-data-create-status.md) and is an ideal candidate for an [anonymous callback as discussed in our article here](broken-reference).
 
 ```csharp
 UGC.CreateItem(itemData, (result) =>

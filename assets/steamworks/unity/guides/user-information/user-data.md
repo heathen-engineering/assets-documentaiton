@@ -5,7 +5,7 @@
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../../../../company/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../../../../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -76,7 +76,7 @@ Note the Avatar field checks for loaded avatar images and returns the matching i
 
 The LoadAvatar method does similar but asynchronously and will load the image if not found. It does this by taking an Action as a parameter and invoking it when the image is found or loaded as required.
 
-If your not aware of what a callback is see this [article](../../../../../company/concepts/development/lambda-expressions.md#callbacks).
+If your not aware of what a callback is see this [article](broken-reference).
 
 ### Display User information
 

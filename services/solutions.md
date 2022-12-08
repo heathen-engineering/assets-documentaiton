@@ -33,7 +33,7 @@ Our community of a 1000+ developers are largely Steam developers and our technol
 {% hint style="info" %}
 Not sure?
 
-Need to research a bit first? Checkout our [guides section](../company/concepts/) where we cover everything form getting started as a game developer to specific topics like monetization and marketing.\
+Need to research a bit first? Checkout our [guides section](broken-reference) where we cover everything form getting started as a game developer to specific topics like monetization and marketing.\
 \
 We have created and manage a community of indie and small studio developers that can help you find your feet. [Join our Discord](https://discord.gg/6X3xrRc) and join a supportive community of passionate and talented developers.
 {% endhint %}

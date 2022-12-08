@@ -3,7 +3,7 @@
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../../company/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -68,7 +68,7 @@ See [Steam Inventory Service](https://partner.steamgames.com/doc/features/invent
 
 A callback is a delegate similar to a UnityEvent, that is its a pointer to a method that will be called at some later point ... in the case of Steam methods it gets called when the process completes.
 
-To learn more please read the article on [Callbacks](../../../company/concepts/development/callbacks.md) and on [Lambda Expressions](../../../company/concepts/development/lambda-expressions.md).
+To learn more please read the article on [Callbacks](broken-reference) and on [Lambda Expressions](broken-reference).
 
 ## Events
 
@@ -560,7 +560,7 @@ public static ItemDetail GetExtendedItemDetail(SteamInventoryResult_t result,
 ## How To
 
 {% hint style="success" %}
-Methods that impact a user's inventory will typically have a [callback ](../../../company/concepts/development/callbacks.md)that returns a type of [Inventory Result](../objects/inventory-result.md). In addition the [Item Definitions](../unity/scriptable-objects/item-definition.md) stored in the active Steam Settings will be updated with the resulting [Item Details](../objects/item-details.md) which be used as a real time view of the current state of the user's inventory.
+Methods that impact a user's inventory will typically have a [callback ](broken-reference)that returns a type of [Inventory Result](../objects/inventory-result.md). In addition the [Item Definitions](../unity/scriptable-objects/item-definition.md) stored in the active Steam Settings will be updated with the resulting [Item Details](../objects/item-details.md) which be used as a real time view of the current state of the user's inventory.
 {% endhint %}
 
 {% hint style="info" %}
