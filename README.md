@@ -6,7 +6,7 @@ coverY: 0
 
 # Introduction
 
-A game development resource for professional, armature, hobbyist and enthusiast game developers. Within you will find articles, guides, and technical documentation to help you on your quest to **Do More** as a game developer!
+A game development resource for professional, amateur, hobbyist and enthusiast game developers. Within you will find articles, guides, and technical documentation to help you on your quest to **Do More** as a game developer!
 
 Heathen is focused on consumer centric development, this means a high level of technical quality, a required depth of care in the user experience and general design of games and importantly fair, sustainable and ethical monetization practices.&#x20;
 
