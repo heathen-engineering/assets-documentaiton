@@ -4,8 +4,6 @@ description: Understanding the steam_appid.txt when to use it and when not to us
 
 # steam\_appid.txt
 
-
-
 <figure><img src="../../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
 
 {% hint style="success" %}
