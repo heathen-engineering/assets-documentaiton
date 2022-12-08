@@ -4,6 +4,8 @@ description: Have a question? Get an Answer!
 
 # F.A.Q
 
+
+
 <figure><img src="../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
 
 {% hint style="success" %}
@@ -39,7 +41,7 @@ If your [GitHub Subscriber](../../company/become-a-sponsor.md) our uGUI Tools ta
 
 {% hint style="info" %}
 Trying to do everything you can "Code Free" or with "Visual Scripting"?\
-Read our article here on [Visual Scripting](../../company/concepts/fundamentals/visual-scripting.md) and maybe check out the rest of our Guides. Heathen is here to help you Do More and that means more than just selling you best in class Unity assets.
+Read our article here on [Visual Scripting](../../company/concepts/development/visual-scripting.md) and maybe check out the rest of our Guides. Heathen is here to help you Do More and that means more than just selling you best in class Unity assets.
 {% endhint %}
 
 More complex features, and make no mistake Steam API is absolutely huge and has many many features some of which such as Steam Inventory can be incredibly complex ... these more complex features will always require you to "program" the logic that exploits them with respect to your game's needs. Depending on what tooling your using such as Bolt or other "visual scripting" tools you can still do it "Code Free" thanks to our tools and components layers.

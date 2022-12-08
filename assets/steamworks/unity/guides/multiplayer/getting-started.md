@@ -58,7 +58,7 @@ Setting up your Steam project. If your going with a P2P model nothing special to
 
 For general understanding of what [P2P ](../../../../../company/concepts/design/multiplayer/#peer-to-peer-p2p)vs[ Client/Server](../../../../../company/concepts/design/multiplayer/#client-server) is please read our [design article](../../../../../company/concepts/design/multiplayer/). Interestingly a lot of people have a miss conception as to what P2P and Client/Server mean ... its wise to click those links and check the terminology.
 
-As to general project architecture check out [these articles](../../../../../company/concepts/fundamentals/bootstrap-scene.md), concepts such as bootstrap scenes can be a big help in really most projects.
+As to general project architecture check out [these articles](../../../../../company/concepts/design/bootstrap-scene.md), concepts such as bootstrap scenes can be a big help in really most projects.
 
 {% hint style="info" %}
 Pro Tip

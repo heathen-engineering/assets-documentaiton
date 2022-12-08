@@ -2,7 +2,7 @@
 description: Understanding the importance of error handling
 ---
 
-# Error Handling
+# ⁉ Error Handling
 
 <figure><img src="../../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
 

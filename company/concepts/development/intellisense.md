@@ -2,7 +2,7 @@
 description: The only way to code!
 ---
 
-# IntelliSense
+# 🤯 IntelliSense
 
 <figure><img src="../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
 

@@ -30,7 +30,7 @@ The manage game object has the [Steamworks Behaviour](../components/steamworks-b
 
 The Steamworks Behaviour is the component responsible for initializing and operating the Steam API integration. It is important that this is initialized as soon as possible in your game and is never destroyed or duplicated.
 
-it is \*\***strongly\*\*** recommended to use a [bootstrap design pattern](../../../../company/concepts/fundamentals/bootstrap-scene.md) to insure that Steam API is initialized successful before even your main menu bothers to load.
+it is \*\***strongly\*\*** recommended to use a [bootstrap design pattern](../../../../company/concepts/design/bootstrap-scene.md) to insure that Steam API is initialized successful before even your main menu bothers to load.
 
 ### [Friend Profile](../ugui-tools/prefabs/friend-profile.md)
 

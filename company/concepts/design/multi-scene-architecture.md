@@ -4,7 +4,7 @@ description: >-
   engine
 ---
 
-# Multi-Scene Architecture
+# 🤹 Multi-Scene Architecture
 
 <figure><img src="../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
 

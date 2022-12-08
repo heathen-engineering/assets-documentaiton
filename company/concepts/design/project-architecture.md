@@ -2,7 +2,7 @@
 description: Creating a clean and efficent project and experimentation environment
 ---
 
-# Project Architecture
+# 🌐 Project Architecture
 
 <figure><img src="../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
 

@@ -194,7 +194,7 @@ This indicates rather or not the underlying CSteamID is of the proper Universe a
 ### Me
 
 ```csharp
-public LobbyMember User => get;
+public LobbyMemberData User => get;
 ```
 
 Returns the local user's [LobbyMember ](lobby-member-data.md)value for this Lobby.
@@ -202,7 +202,7 @@ Returns the local user's [LobbyMember ](lobby-member-data.md)value for this Lobb
 ### Members
 
 ```csharp
-public LobbyMember[] Members => get;
+public LobbyMemberData[] Members => get;
 ```
 
 {% hint style="warning" %}
@@ -238,7 +238,7 @@ The name of the lobby if stored in the lobby's metadata. Only the owner of the l
 ### Owner
 
 ```csharp
-public LobbyMember Owner { get; set; }
+public LobbyMemberData Owner { get; set; }
 ```
 
 The [LobbyMember ](lobby-member-data.md)data for the owner of the lobby, only the current owner can set this value to some other [LobbyMember](lobby-member-data.md).
@@ -387,19 +387,19 @@ Leaves the lobby, if the owner leaves Steam will assigne a new owner.
 ### Get
 
 ```csharp
-public static Lobby Get(uint accountId);
+public static LobbyData Get(uint accountId);
 ```
 
 ```csharp
-public static Lobby Get(AccountId_t accountId);
+public static LobbyData Get(AccountId_t accountId);
 ```
 
 ```csharp
-public static Lobby Get(ulong id);
+public static LobbyData Get(ulong id);
 ```
 
 ```csharp
-public static Lobby Get(CSteamID id);
+public static LobbyData Get(CSteamID id);
 ```
 
 These methods simply return a valid Lobby object representing the lobby indicated by the provided data.
@@ -553,7 +553,7 @@ public string GetMemberMetadata(CSteamID memberId, string key);
 ```
 
 ```csharp
-public string GetMemberMetadata(LobbyMember member, string key);
+public string GetMemberMetadata(LobbyMemberData member, string key);
 ```
 
 Gets the metadata field for the indiacated user

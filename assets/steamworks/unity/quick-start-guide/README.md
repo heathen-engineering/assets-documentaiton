@@ -41,7 +41,7 @@ Valve issues you an App ID when you pay your application fee. If you don't have 
 
 ### Steamworks Behaviour
 
-Create a [Steamworks Behaviour](broken-reference) object in your [bootstrap scene](../../../../company/concepts/fundamentals/bootstrap-scene.md) or similarly appropriate location; and drag your Steam Settings object into the provided field.
+Create a [Steamworks Behaviour](broken-reference) object in your [bootstrap scene](../../../../company/concepts/design/bootstrap-scene.md) or similarly appropriate location; and drag your Steam Settings object into the provided field.
 
 ![](<../../../../.gitbook/assets/image (161) (1) (1) (1) (1) (1) (1).png>)
 

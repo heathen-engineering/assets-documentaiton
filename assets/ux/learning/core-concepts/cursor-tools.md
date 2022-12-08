@@ -23,7 +23,7 @@ The cursor system allows for easy code free context sensitive mouse cursors with
 The Cursor Animator component handles cursor animation, you should only have 1 of these active at any given time.
 
 {% hint style="info" %}
-This component benefits from the [bootstrap](../../../../company/concepts/fundamentals/bootstrap-scene.md) concept which you can read more about [here](../../../../company/concepts/fundamentals/bootstrap-scene.md)
+This component benefits from the [bootstrap](../../../../company/concepts/design/bootstrap-scene.md) concept which you can read more about [here](../../../../company/concepts/design/bootstrap-scene.md)
 {% endhint %}
 
 With an active Cursor System you can effect the state of the pointer by attaching Cursor State components to desired game objects or through code where you want or need a more bespoke solution.

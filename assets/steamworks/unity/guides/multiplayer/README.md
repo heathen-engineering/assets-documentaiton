@@ -63,7 +63,7 @@ You don't need this, in my experience it only serves to make things more complic
 
 We find it best to have the client handle load and unload of scenes as makes sense for them. A lot of this comes from the realization that Unity handles multi-scene nicely and that a scene doesn't need to represent a physical area in your game so letting a network system which is driven by network visibility drive that makes no sense.
 
-[See this article for more](../../../../../company/concepts/fundamentals/multi-scene-architecture.md)
+[See this article for more](../../../../../company/concepts/design/multi-scene-architecture.md)
 
 See [UX Complete](../../../../ux/components/scenes-manager.md) for tools that can help you really leverage the power of Unity's scene system
 

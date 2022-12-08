@@ -97,7 +97,7 @@ var itemData = new WorkshopItemData
 
 Now that we have our data sorted we can simply call create on the UGC API.&#x20;
 
-You probably noticed its name is very long and a pain to type? We do this so each name is verbose, easily understandable and not likely to be ambiguous. You can however make it easier for yourself in your using statements via an alias. See our [article on Namespaces](../../../../../company/concepts/fundamentals/namespace-and-using.md) for more information.
+You probably noticed its name is very long and a pain to type? We do this so each name is verbose, easily understandable and not likely to be ambiguous. You can however make it easier for yourself in your using statements via an alias. See our [article on Namespaces](../../../../../company/concepts/development/namespace-and-using.md) for more information.
 
 ```csharp
 using UGC = HeathenEngineering.SteamworksIntegration.API.UserGeneratedContent.Client;

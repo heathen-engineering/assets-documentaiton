@@ -28,7 +28,7 @@ Their are many types of tests that will be ran throughout the development proces
 
 ### Dev Testing
 
-Software engineers and programmers will test constantly while they work and have quite a few tools available to them to help do this in an efficient and timely manner. We don't have full articles on this topic just yet but you can catch up on the fundamentals in our [Debugging](../fundamentals/debugging.md) article.
+Software engineers and programmers will test constantly while they work and have quite a few tools available to them to help do this in an efficient and timely manner. We don't have full articles on this topic just yet but you can catch up on the fundamentals in our [Debugging](../development/debugging.md) article.
 
 ### [Formal Tests](writing-formal-tests.md)
 
