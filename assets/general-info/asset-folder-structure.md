@@ -9,7 +9,7 @@ description: Understanding the Heathen Asset folder structure
 
 The whole drive behind this effort is to create cleaner more efficient Unity projects. The idea is you import only what is needed to create your product and omit anything that doesn't need to be compiled into that.
 
-Obviously sample scenes and code are useful for learning but they do not belong in a production project see our [Project Architecture article](broken-reference) for guidance on how you can keep your production project clean while having access to a superior learning environment.
+Obviously sample scenes and code are useful for learning but they do not belong in a production project see our [Project Architecture article](../../company/concepts/design/project-architecture.md) for guidance on how you can keep your production project clean while having access to a superior learning environment.
 {% endhint %}
 
 ## Introduction

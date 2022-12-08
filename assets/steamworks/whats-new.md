@@ -9,7 +9,7 @@ description: Get a peek at what's new and upcoming to Steamworks
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../company/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -146,4 +146,4 @@ You can thus sub for 10 USD, download what you like, cancel right away if you wa
 
 GitHub Sponsor is the best way to Do More with Heathen rather or not you own some or all of our assets through Unity Asset Store as well. GitHub Sponsor program is \*\***much**\*\* more than just a way to get our assets. It empowers this Knowledge Base, it fuels on going development, new tools, live support and management of the growing community and a lot more.
 
-Learn more about [what the GitHub Sponsor program is here!](../../become-a-sponsor.md)
+Learn more about [what the GitHub Sponsor program is here!](../../company/become-a-sponsor.md)

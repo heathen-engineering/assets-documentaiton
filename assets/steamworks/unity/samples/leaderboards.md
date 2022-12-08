@@ -5,7 +5,7 @@
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../../../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../../../company/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -20,7 +20,7 @@ The Leaderboard sample scene demonstrates the read, write and display of Leaderb
 
 ### Steamworks Behaviour
 
-Located on the Manager GameObject in the scene root. [Steamworks Behaviour](../components/steamworks-behaviour.md) is required for the Steam API to work at all. Typically this would be in your [Bootstrap scene](broken-reference) however for the case of these samples which are meant to be ran in editor we place them here.
+Located on the Manager GameObject in the scene root. [Steamworks Behaviour](../components/steamworks-behaviour.md) is required for the Steam API to work at all. Typically this would be in your [Bootstrap scene](../../../../company/concepts/design/bootstrap-scene.md) however for the case of these samples which are meant to be ran in editor we place them here.
 
 In the case of this sample we are using the [Evt Steam Initialized](../components/steamworks-behaviour.md#evt-steam-initialized) event on the behaviour to trigger the initial query on the Leaderboard Manager and refresh the Leaderboard User Entry.
 

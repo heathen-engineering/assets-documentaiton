@@ -9,7 +9,7 @@ description: >-
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../../../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../../../company/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -94,7 +94,7 @@ This is a simple tool which simply serves to expose events of the [API.Scenes](.
 ![](<../../../../.gitbook/assets/image (154) (1) (1) (1).png>)
 
 {% hint style="info" %}
-You will see the term Bootstrap or Bootstrap Scene used in this and other documents. You can read more on that concept [here](broken-reference). Note that the first scene in your game is by definition your bootstrap scene e.g. build index 0 is bootstrap.
+You will see the term Bootstrap or Bootstrap Scene used in this and other documents. You can read more on that concept [here](../../../../company/concepts/design/bootstrap-scene.md). Note that the first scene in your game is by definition your bootstrap scene e.g. build index 0 is bootstrap.
 {% endhint %}
 
 #### References

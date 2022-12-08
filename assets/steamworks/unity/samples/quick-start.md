@@ -5,7 +5,7 @@
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../../../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../../../company/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -30,7 +30,7 @@ The manage game object has the [Steamworks Behaviour](../components/steamworks-b
 
 The Steamworks Behaviour is the component responsible for initializing and operating the Steam API integration. It is important that this is initialized as soon as possible in your game and is never destroyed or duplicated.
 
-it is \*\***strongly\*\*** recommended to use a [bootstrap design pattern](broken-reference) to insure that Steam API is initialized successful before even your main menu bothers to load.
+it is \*\***strongly\*\*** recommended to use a [bootstrap design pattern](../../../../company/concepts/design/bootstrap-scene.md) to insure that Steam API is initialized successful before even your main menu bothers to load.
 
 ### [Friend Profile](../ugui-tools/prefabs/friend-profile.md)
 

@@ -9,18 +9,18 @@ description: The most important part
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../../../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../../../company/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
 
 ## Introduction
 
-Steamworks Behaviour simply initializes the Steam API for you and exposes common events to the Unity Inspector. As of version 2.30.12 Steamworks Behaviour no longer runs the callback loop. We have made it such that Steam API can be initialized and ran without using any component scripts. That said most uses cases will greatly benifit from using Steamworks Behaviour in their [bootstrap scene](broken-reference).
+Steamworks Behaviour simply initializes the Steam API for you and exposes common events to the Unity Inspector. As of version 2.30.12 Steamworks Behaviour no longer runs the callback loop. We have made it such that Steam API can be initialized and ran without using any component scripts. That said most uses cases will greatly benifit from using Steamworks Behaviour in their [bootstrap scene](../../../../company/concepts/design/bootstrap-scene.md).
 
 ## Use
 
-You should add a Steamworks Behaviour component to a game object in the first scene to be loaded by your game. It is important that this game object is never destroyed as it is operating your Steam API integration. We do recommend you use additive loading and simply never unload your [bootstrapping](broken-reference) scene however you can use the [Do Not Destroy](broken-reference) approach if you are carful to NEVER reload the scene that defined Steamworks Behaviour.
+You should add a Steamworks Behaviour component to a game object in the first scene to be loaded by your game. It is important that this game object is never destroyed as it is operating your Steam API integration. We do recommend you use additive loading and simply never unload your [bootstrapping](../../../../company/concepts/design/bootstrap-scene.md) scene however you can use the [Do Not Destroy](../../../../company/concepts/design/bootstrap-scene.md) approach if you are carful to NEVER reload the scene that defined Steamworks Behaviour.
 
 The Steamworks behaviour is not intended to be a functional component that is you will not interact with this component, it exists wholly to initialize, operate and shutdown the Steam API integration according to Unity events. The one exception to this case is when operating a Steam Game Server in a situation where you need to delay API initialization. You can optionally configure your Steam Settings to NOT auto initialize Steam Game Server, in which case you will need to call SteamworksBeahviour.InitializeGameServer in order to kick off the initialization process.
 
@@ -103,6 +103,6 @@ The [SteamSettings ](../scriptable-objects/steam-settings/)that should be used w
 public static void CreateIfMissing(SteamSettings settings, bool doNotDestroy = false)
 ```
 
-A static method that can be used to create a Steamworks Behaviour safely on demand. It is not recommend to do this, you should be using a [Bootstrap scene](broken-reference) where the Steamworks Behaviour is set up at development time.&#x20;
+A static method that can be used to create a Steamworks Behaviour safely on demand. It is not recommend to do this, you should be using a [Bootstrap scene](../../../../company/concepts/design/bootstrap-scene.md) where the Steamworks Behaviour is set up at development time.&#x20;
 
 If you choose or simply must use a "late initialization" approach then this method can be used to safely create the Steamworks Behaviour and optionally mark it as Do Not Destroy. Note this will not create anything if a Steamworks Behaviour already exists.

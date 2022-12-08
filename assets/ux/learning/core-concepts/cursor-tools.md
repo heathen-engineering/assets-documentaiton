@@ -9,7 +9,7 @@ description: >-
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../../../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../../../company/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -23,7 +23,7 @@ The cursor system allows for easy code free context sensitive mouse cursors with
 The Cursor Animator component handles cursor animation, you should only have 1 of these active at any given time.
 
 {% hint style="info" %}
-This component benefits from the [bootstrap](broken-reference) concept which you can read more about [here](broken-reference)
+This component benefits from the [bootstrap](../../../../company/concepts/design/bootstrap-scene.md) concept which you can read more about [here](../../../../company/concepts/design/bootstrap-scene.md)
 {% endhint %}
 
 With an active Cursor System you can effect the state of the pointer by attaching Cursor State components to desired game objects or through code where you want or need a more bespoke solution.

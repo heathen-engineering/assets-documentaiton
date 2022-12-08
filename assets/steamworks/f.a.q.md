@@ -11,7 +11,7 @@ description: Have a question? Get an Answer!
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../company/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -37,11 +37,11 @@ That is to say we cover 100% of the Steam API by virtue of being built on top of
 
 Simple features such as initializing Steam API, loading and handling stats, achievements and leaderboards and even basic uses of the user's data such as fetching the users name, avatar image, etc. can in fact be done code free right out of the box.
 
-If your [GitHub Subscriber](../../become-a-sponsor.md) our uGUI Tools take it a step further and can handle tasks like creating a friends list, clan chat and more code free right out of the box.
+If your [GitHub Subscriber](../../company/become-a-sponsor.md) our uGUI Tools take it a step further and can handle tasks like creating a friends list, clan chat and more code free right out of the box.
 
 {% hint style="info" %}
 Trying to do everything you can "Code Free" or with "Visual Scripting"?\
-Read our article here on [Visual Scripting](broken-reference) and maybe check out the rest of our Guides. Heathen is here to help you Do More and that means more than just selling you best in class Unity assets.
+Read our article here on [Visual Scripting](../../company/concepts/development/visual-scripting.md) and maybe check out the rest of our Guides. Heathen is here to help you Do More and that means more than just selling you best in class Unity assets.
 {% endhint %}
 
 More complex features, and make no mistake Steam API is absolutely huge and has many many features some of which such as Steam Inventory can be incredibly complex ... these more complex features will always require you to "program" the logic that exploits them with respect to your game's needs. Depending on what tooling your using such as Bolt or other "visual scripting" tools you can still do it "Code Free" thanks to our tools and components layers.
@@ -50,7 +50,7 @@ More complex features, and make no mistake Steam API is absolutely huge and has 
 
 You can find a comparison of what is included in [Steamworks Foundation](./#feature-comparison) on the main page in this knowledge base.&#x20;
 
-Keep in mind you can get instant access and a license to keep forever of Steamworks Complete ... and every other major Heathen asset for $10 by becoming a [GitHub Sponsor](../../become-a-sponsor.md) and yes you can cancel any time and keep what you downloaded and the license to use it.
+Keep in mind you can get instant access and a license to keep forever of Steamworks Complete ... and every other major Heathen asset for $10 by becoming a [GitHub Sponsor](../../company/become-a-sponsor.md) and yes you can cancel any time and keep what you downloaded and the license to use it.
 
 ### What about Microtransactions / Cash Shop?
 
@@ -62,7 +62,7 @@ Yes of course, Steam API handles MTX (micro transactions) via the Steam Inventor
 
 Yes its called [Steamworks Foundation](https://github.com/heathen-engineering/SteamworksFoundation) and is free to use. It has a limited feature set but is the same code used in the "full fat" Complete version.&#x20;
 
-When ready you can get instant access and a license to keep forever of Steamworks Complete ... and every other major Heathen asset for $10 by becoming a [GitHub Sponsor](../../become-a-sponsor.md) and yes you can cancel any time and keep what you downloaded and the license to use it.
+When ready you can get instant access and a license to keep forever of Steamworks Complete ... and every other major Heathen asset for $10 by becoming a [GitHub Sponsor](../../company/become-a-sponsor.md) and yes you can cancel any time and keep what you downloaded and the license to use it.
 
 ## Can I use this for commercial games?
 

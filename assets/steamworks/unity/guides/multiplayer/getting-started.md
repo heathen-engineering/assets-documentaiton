@@ -9,7 +9,7 @@ description: On your mark, Get set .... CODE
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../../../../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../../../../company/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -18,11 +18,11 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 So you want to build a multiplayer Steam game? We can help!
 
-Your first stop should be our [Design article on Multiplayer](broken-reference) it covers the fundamentals that you'll need to know before you get started. One you have your head wrapped around the concepts and a design in mind come back here and we will get started.
+Your first stop should be our [Design article on Multiplayer](../../../../../company/concepts/design/multiplayer/) it covers the fundamentals that you'll need to know before you get started. One you have your head wrapped around the concepts and a design in mind come back here and we will get started.
 
 ### Update Unity
 
-Select the proper Unity Version, this is much more important than you might think. You should be keeping your Unity Editor up to date with what you anticipate will be the most recent 'LTS' build of Unity at the time you game launches. We have a [whole article on this](broken-reference), it explains what LTS is, why we have this stance and how to go about it.
+Select the proper Unity Version, this is much more important than you might think. You should be keeping your Unity Editor up to date with what you anticipate will be the most recent 'LTS' build of Unity at the time you game launches. We have a [whole article on this](../../../../../company/concepts/fundamentals/unity-release-version.md), it explains what LTS is, why we have this stance and how to go about it.
 
 ### Installing Requirements
 
@@ -56,9 +56,9 @@ Heathen’s Steamworks (I suggest Complete, but Foundation might do you)
 
 Setting up your Steam project. If your going with a P2P model nothing special to be done here but if your going with a Client Server set up and intend to build a [Steam Game Server](game-server-browser.md) you then you also need to configure your Steam App for that. You can read more in Valve's own documentation for Steam Game Server [here](https://partner.steamgames.com/doc/features/multiplayer/game\_servers).
 
-For general understanding of what [P2P ](broken-reference)vs[ Client/Server](broken-reference) is please read our [design article](broken-reference). Interestingly a lot of people have a miss conception as to what P2P and Client/Server mean ... its wise to click those links and check the terminology.
+For general understanding of what [P2P ](../../../../../company/concepts/design/multiplayer/#peer-to-peer-p2p)vs[ Client/Server](../../../../../company/concepts/design/multiplayer/#client-server) is please read our [design article](../../../../../company/concepts/design/multiplayer/). Interestingly a lot of people have a miss conception as to what P2P and Client/Server mean ... its wise to click those links and check the terminology.
 
-As to general project architecture check out [these articles](broken-reference), concepts such as bootstrap scenes can be a big help in really most projects.
+As to general project architecture check out [these articles](../../../../../company/concepts/design/bootstrap-scene.md), concepts such as bootstrap scenes can be a big help in really most projects.
 
 {% hint style="info" %}
 Pro Tip

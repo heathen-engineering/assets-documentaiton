@@ -9,7 +9,7 @@ description: Aka MTX, IAP, In App Purchase, cash shop, etc.
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../../../../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../../../../company/become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -23,7 +23,7 @@ The [Steam Inventory](../inventory/) system can be used for a number of things n
 {% embed url="https://kb.heathenengineering.com/assets/steamworks/learning/core-concepts/inventory" %}
 
 {% hint style="info" %}
-Have a look at our articles on [Monetization ](broken-reference)before you get started designing your games monetization systems.&#x20;
+Have a look at our articles on [Monetization ](../../../../../company/concepts/design/monetization/)before you get started designing your games monetization systems.&#x20;
 
 [https://kb.heathenengineering.com/company/concepts/monetization](https://kb.heathenengineering.com/company/concepts/monetization)
 {% endhint %}
