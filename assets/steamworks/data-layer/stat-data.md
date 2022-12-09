@@ -1,4 +1,4 @@
-# Input Action Data
+# Stat Data
 
 {% hint style="success" %}
 #### Like what your seeing?
@@ -13,18 +13,74 @@ These articles are made possible by our [GitHub Sponsors](../../../) ... become 
 ## Introduction
 
 ```csharp
-public struct InputActionData;
+public struct StatData : IEquatable<StatData>, 
+                         IEquatable<string>, 
+                         IComparable<StatData>, 
+                         IComparable<string>
+```
+
+A data wrapper around Steam's concept of a stat. This is implicitly convertible from string expecting that string to be the "API Name" of the stat.
+
+```csharp
+StatData myStat = "NumGames";
+myStat.Set(42);
+myStat.Store();
+
+Debug.Log($"NumGames = {myStat.IntValue()}");
 ```
 
 ## Fields and Attributes
 
-| Type             | Name       | Comment                                                                                              |
-| ---------------- | ---------- | ---------------------------------------------------------------------------------------------------- |
-| InputHandle\_t   | controller | The controller this action data was read from                                                        |
-| InputActionType  | type       | Analog or Digital                                                                                    |
-| bool             | active     | Is this action active e.g. part of an active set or layer                                            |
-| EInputSourceMode | mode       | Only used for analog actions, indicates the type of analog action simulated e.g. mouse, stick, etc.. |
-| bool             | state      | True if this action is active. For analog actions this is true if either x or y is non-zero          |
-| float            | x          | For analog actions this indicates the x axis                                                         |
-| float            | y          | For analog actions this indicates the y axis                                                         |
+### Id
 
+```csharp
+public string id;
+```
+
+The API name of the achievement.
+
+## Methods
+
+### FloatValue
+
+```csharp
+public float FloatValue()
+```
+
+Returns the float value of the stat.
+
+### IntValue
+
+```csharp
+public int IntValue()
+```
+
+Returns the int value of the stat.
+
+### Set
+
+```csharp
+public void Set(float value)
+```
+
+Sets the float value of the stat.
+
+```csharp
+public void Set(int value)
+```
+
+Sets the int value of the stat.
+
+```csharp
+public void Set(float value, double length)
+```
+
+Updates the average rate state value of the stat.
+
+### Store
+
+```csharp
+public void Store()
+```
+
+A simple short cut to the Stats and Achievements Store Stats and achievements. You can call this on any achievement or stat and it will commit all changes to the backend for all stats and achievements.

@@ -1,5 +1,7 @@
 # Achievement Object
 
+
+
 {% hint style="success" %}
 #### Like what your seeing?
 
@@ -23,8 +25,31 @@ The simulation must be running (click Play in Unity) in order for this to work&#
 
 
 
-This is becuase the Steam API must be initalized and updating to return results
+This is because the Steam API must be initialized and updating to return results
 {% endhint %}
+
+The AchievementObject scriptable object simply exposes the [AchievementData ](../../data-layer/achievement-data.md)structure to Unity's ScriptableObject. This allows you to create references in your scripts such that you can drag and drop the achievement and allows us to manage a UnityEvent that will raise when the achievement is locked or unlocked.
+
+You do not have to use the ScriptableObject you can simply use the [AchievementData](../../data-layer/achievement-data.md) structure if you are more comfortable with them.
+
+## Events
+
+### StatusChanged
+
+```csharp
+public UnityBoolEvent StatusChanged;
+```
+
+This is raised when the achievement is cleared, set or reset through Heathen's tools and systems. It cannot detect when the achievement is modified outside of Heathen's systems.
+
+The handler for this event would like the following
+
+```csharp
+void HandleEvent(bool value)
+{
+    //Do Work
+}
+```
 
 ## Fields and Attributes
 
@@ -50,7 +75,7 @@ Returns the display name of the achievement, as with ID, in builds this can only
 public string Description => get;
 ```
 
-Returns the description of the achievement, as with ID, in builds this can only be read, in the editor however it can be read and written to in order to support the import of achievmeents at development time.
+Returns the description of the achievement, as with ID, in builds this can only be read, in the editor however it can be read and written to in order to support the import of achievements at development time.
 
 ### Hidden
 
@@ -58,7 +83,7 @@ Returns the description of the achievement, as with ID, in builds this can only 
 public bool Hidden => get;
 ```
 
-Returns the hidden flag for this achievment, as with ID, in builds this can only be read, in the editor however it can be read and written to in order to support the import of achievements at development time.
+Returns the hidden flag for this achievement, as with ID, in builds this can only be read, in the editor however it can be read and written to in order to support the import of achievements at development time.
 
 ### IsAchieved
 
@@ -66,9 +91,17 @@ Returns the hidden flag for this achievment, as with ID, in builds this can only
 public bool IsAchieved { get; set; }
 ```
 
-This can be read to determin if the user has unlocked this achievement, this can be writen to in order to unlock this achievement.
+This can be read to determine if the user has unlocked this achievement, this can be written to in order to unlock this achievement.
 
 Note that if the achievement is set to write trusted only then the attempt to write to this achievement will simply do nothing.&#x20;
+
+### UnlockTime
+
+```csharp
+public DateTime? UnlockTIme get;
+```
+
+A nullable datetime expression indicating the date and time the achievement was achieved if any
 
 ## Methods
 
@@ -99,10 +132,10 @@ public void CLearAchievement();
 ```
 
 ```csharp
-public void ClearAchievement(CSteamID user);
+public void ClearAchievement(UserData user);
 ```
 
-Clears the achievement state for the local user in client builds (do not pass the user paramiter). For server builds you would pass in the user paramiter to clear the achievement for the indicated user. The server version (takes the user paramiter) will only work from Steam Game Servers and only when the indicated user has been authenticated.
+Clears the achievement state for the local user in client builds (do not pass the user parameter). For server builds you would pass in the user parameter to clear the achievement for the indicated user. The server version (takes the user parameter) will only work from Steam Game Servers and only when the indicated user has been authenticated.
 
 ### GetAchievementStatus
 
@@ -110,7 +143,23 @@ Clears the achievement state for the local user in client builds (do not pass th
 public bool GetAchievementStatus(CSteamID user);
 ```
 
-Gets the achievement state for this achievement for the indicated user. This is only available from Steam Game Servers and only when the indicated user has been authhenticated and its states requested. See the [API.StatsAndAchievements](../../api/stats-and-achievements.md) interface for details
+Gets the achievement state for this achievement for the indicated user. This is only available from Steam Game Servers and only when the indicated user has been authenticated and its states requested. See the [API.StatsAndAchievements](../../api/stats-and-achievements.md) interface for details
+
+### GetAchievementAndUnlockTime
+
+```csharp
+public (bool unlocked, DateTime unlockTime) GetAchievementAndUnlockTime(UserData user)
+```
+
+Returns the unlock status and unlock time if relevant for the achievement.
+
+### GetIcon
+
+```csharp
+public void GetIcon(Action<Texture2D> callback)
+```
+
+Gets the current icon for the achievement. This is sinsative to the user's unlock/lock status. So if the user has achieved this achievement this will be the "unlock" icon, if not it will be the "locked" icon.
 
 ### Store
 
@@ -121,13 +170,13 @@ public void Store()
 This simply calls `StatsAndAchievements.Client.StoreStats()` and is only used on client builds to store any updated stats and achievements to the backend.&#x20;
 
 {% hint style="warning" %}
-You should not call this every time you update the value of a stat or achievement. The inteded purpose from Valve is that you can update your stats and acheivements in real time during gameplay and then at key points such as at the end of a mission or similar store those stats to the backend.
+You should not call this every time you update the value of a stat or achievement. The intended purpose from Valve is that you can update your stats and achievements in real time during gameplay and then at key points such as at the end of a mission or similar store those stats to the backend.
 
 
 
-The notification of a stat or achievemnt being updated only happens when you call store  stats or when the game closes.
+The notification of a stat or achievement being updated only happens when you call store  stats or when the game closes.
 
 
 
-The Store Stats funciton is rate limited so if you call it to frequiently the Steam API will ignore you.
+The Store Stats function is rate limited so if you call it to frequiently the Steam API will ignore you.
 {% endhint %}

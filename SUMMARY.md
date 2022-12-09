@@ -332,6 +332,7 @@
     * [Leaderboard Data](assets/steamworks/data-layer/leaderboard-data.md)
     * [Lobby Data](assets/steamworks/data-layer/lobby-data.md)
     * [Lobby Member Data](assets/steamworks/data-layer/lobby-member-data.md)
+    * [Stat Data](assets/steamworks/data-layer/stat-data.md)
     * [User Data](assets/steamworks/data-layer/user-data.md)
     * [Workshop Item Data](assets/steamworks/data-layer/workshop-item-data.md)
   * [Objects](assets/steamworks/objects/README.md)
