@@ -23,3 +23,5 @@ Heathen has created the best in class integration of Steam API with Unity in our
 {% endhint %}
 
 Steam is the platform for PC gaming and seeing how every video game is created on a PC there is really no reason at all your not shipping your game on Steam. These articles will help you understand what Steam is and how to get the most out of it for your game.
+
+<table data-view="cards"><thead><tr><th></th></tr></thead><tbody><tr><td><h3><span data-gb-custom-inline data-tag="emoji" data-code="261d">☝</span> Quick Start</h3></td></tr><tr><td><h3><span data-gb-custom-inline data-tag="emoji" data-code="1f3c6">🏆</span> Achievements</h3></td></tr><tr><td><h3><span data-gb-custom-inline data-tag="emoji" data-code="1f5e3">🗣</span> Community Hub</h3></td></tr><tr><td><h3><span data-gb-custom-inline data-tag="emoji" data-code="1f50e">🔎</span> Discovery Queue</h3></td></tr><tr><td><h3><span data-gb-custom-inline data-tag="emoji" data-code="1f440">👀</span> Reviews</h3></td></tr><tr><td></td></tr></tbody></table>
