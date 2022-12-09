@@ -9,7 +9,7 @@ description: Knowing is half the battle
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../../become-a-sponsor.md) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../../../) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -26,7 +26,7 @@ PS even if your region has no such laws, you are subject to the laws of the cons
 The safe option is to simply do the right thing and ask before you do.
 {% endhint %}
 
-Rather you choose to go with an automatic or manual reporting solution Heathen's [UX Complete](../../../../assets/ux/learning/core-concepts/feedback-tools.md) has tools that can greatly simplify and enrich all of this for you. If your a [GitHub Sponsor](../../../become-a-sponsor.md) you already own UX Complete, if your not you can become one for just $10.
+Rather you choose to go with an automatic or manual reporting solution Heathen's [UX Complete](../../../../assets/ux/learning/core-concepts/feedback-tools.md) has tools that can greatly simplify and enrich all of this for you. If your a [GitHub Sponsor](../../../../) you already own UX Complete, if your not you can become one for just $10.
 
 ### Unity User Reporting
 
