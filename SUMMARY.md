@@ -3,8 +3,8 @@
 ## General <a href="#company" id="company"></a>
 
 * [😍 Become a Sponsor](README.md)
-  * [Getting to know us](company/become-a-sponsor/getting-to-know-us.md)
-* [Guides](company/concepts/README.md)
+  * [Getting to know us](company/introduction/getting-to-know-us.md)
+* [🤯 Game Dev Guides](company/concepts/README.md)
   * [🤩 Getting Started](company/concepts/getting-started/README.md)
     * [☑ Indie Check List](company/concepts/getting-started/indie-check-list.md)
   * [🦧 Fundamentals](company/concepts/fundamentals/README.md)
