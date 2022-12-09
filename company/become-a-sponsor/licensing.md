@@ -1,21 +1,14 @@
 # Licensing
 
-{% hint style="info" %}
-Subscribing to Heathen as a $10 or more [GitHub Sponsor](https://github.com/sponsors/heathen-engineering) is the most cost effective way to get
+{% hint style="success" %}
+#### Like what your seeing?
 
-* Steamworks Complete
-* PhysKit Complete
-* UX Complete
-* uGUI Extras (On Screen Keyboard)
-* Breakables: Wood Props
-
-and the only way to get exclusives like uGUI Tools for Steam.
-
+Support us as a [GitHub Sponsor](../../) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-You can cancel your subscription at any time and keep using the assets you installed. Our [license](../../company/heathen-license-agreement.md) **does not** expire when you cancel your subscription.\
-\
-Cancelling your subscription only removes your ability to access the Source Repository so if later you want or need updates you can simply sub for another month at your leisure.
+These articles are made possible by our [GitHub Sponsors](../../) ... become a sponsor today!
 {% endhint %}
+
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><h2>Steam</h2></td><td><a href="../concepts/steam/">Guides and Tutorials</a></td><td><a href="../../assets/steamworks/">Integration (Unity and Godot)</a></td><td></td><td></td><td><a href="../concepts/steam/">steam</a></td><td><a href="../../.gitbook/assets/Steamworks Card.png">Steamworks Card.png</a></td></tr><tr><td><h2>PhysKit</h2></td><td><a href="../../assets/physkit/learning/sample-scenes/1-ballistic-basics.md">Ballistics</a></td><td><a href="../../assets/physkit/learning/sample-scenes/1-buoyancy-example.md">Buoyancy</a></td><td><a href="../../assets/physkit/learning/sample-scenes/1-force-effect-fields.md">Force Effects</a></td><td><a href="../../assets/physkit/learning/sample-scenes/2-verlet-spring-skinned-mesh.md">Verlet (Physics Bone)</a></td><td><a href="../../assets/physkit/">physkit</a></td><td><a href="../../.gitbook/assets/PhysKit Card.png">PhysKit Card.png</a></td></tr><tr><td><h2>UX</h2></td><td><a href="../../assets/ux/learning/core-concepts/">User eXperience Tools</a></td><td><a href="../../assets/ux/learning/ugui-extras/">uGUI Extras</a></td><td></td><td></td><td><a href="../../assets/ux/">ux</a></td><td><a href="../../.gitbook/assets/Splash Screen (1).png">Splash Screen (1).png</a></td></tr></tbody></table>
 
 ## Introduction
 
@@ -30,7 +23,7 @@ For small teams and indies this is really the best method for you and for Heathe
 {% embed url="https://github.com/sponsors/heathen-engineering" %}
 
 {% hint style="success" %}
-You can cancel your subscription at any time and keep using the assets you installed. Our [license](../../company/heathen-license-agreement.md) **does not** expire when you cancel your subscription.\
+You can cancel your subscription at any time and keep using the assets you installed. Our [license](heathen-license-agreement.md) **does not** expire when you cancel your subscription.\
 \
 Cancelling your subscription only removes your ability to access the Source Repository so if later you want or need updates you can simply sub for another month at your leisure.
 {% endhint %}
@@ -72,7 +65,7 @@ At current the following are present
 
 ### The License
 
-When you sponsor you gain the license documented [here](../../company/heathen-license-agreement.md), and when you end your subscription you still have whatever you downloaded and yes the [license](../../company/heathen-license-agreement.md) to go with it. You can re-sub when you need to catch up on updates or get that sweet sweet priority support … or maybe you just want to show your support for Heathen.
+When you sponsor you gain the license documented [here](heathen-license-agreement.md), and when you end your subscription you still have whatever you downloaded and yes the [license](heathen-license-agreement.md) to go with it. You can re-sub when you need to catch up on updates or get that sweet sweet priority support … or maybe you just want to show your support for Heathen.
 
 ## Bespoke License
 

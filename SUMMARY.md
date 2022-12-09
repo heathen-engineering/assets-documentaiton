@@ -4,6 +4,8 @@
 
 * [😍 Become a Sponsor](README.md)
   * [Getting to know us](company/introduction/getting-to-know-us.md)
+  * [Licensing](company/become-a-sponsor/licensing.md)
+  * [Heathen License Agreement](company/become-a-sponsor/heathen-license-agreement.md)
 * [🤯 Game Dev Guides](company/concepts/README.md)
   * [🤩 Getting Started](company/concepts/getting-started/README.md)
     * [☑ Indie Check List](company/concepts/getting-started/indie-check-list.md)
@@ -88,6 +90,7 @@
   * [Editor Coroutines](company/asset-developers/editor-coroutines.md)
   * [Package Manger in C#](company/asset-developers/package-manger-in-c.md)
   * [Session State Values](company/asset-developers/session-state-values.md)
+* [Unity Asset Refund Policy](company/extended-refund-policy.md)
 
 ## Hel House <a href="#services" id="services"></a>
 
@@ -98,14 +101,7 @@
 ## Heathen Engineering <a href="#assets" id="assets"></a>
 
 * [🤷 What is Heathen](assets/what-is-heathen.md)
-* [Licensing](assets/licensing/README.md)
-  * [Heathen License Agreement](company/heathen-license-agreement.md)
-* [General Info](assets/general-info/README.md)
-  * [Asset Refund Policy](assets/general-info/extended-refund-policy.md)
-  * [Asset Folder Structure](assets/general-info/asset-folder-structure.md)
-  * [Doc Formatting](assets/general-info/doc-formatting.md)
 * [Art Assets](assets/art-assets/README.md)
-  * [Armoury](assets/art-assets/art-armoury.md)
   * [Breakable](assets/art-assets/breakable/README.md)
     * [Wood Props](assets/art-assets/breakable/wood-props/README.md)
       * [Installation](assets/art-assets/breakable/wood-props/installation.md)
