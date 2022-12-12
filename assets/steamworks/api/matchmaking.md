@@ -163,7 +163,7 @@ You would add a listener on this event such as:
 Assuming a handler in the form of
 
 ```csharp
-private void HandleEvent(LobbyDataUpdate_t result)
+private void HandleEvent(LobbyDataUpdateEventData result)
 {
 }
 ```
