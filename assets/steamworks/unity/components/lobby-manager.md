@@ -303,6 +303,14 @@ private void Handler(UserData user)
 
 ## Fields and Attributes
 
+### Usage Hint
+
+```csharp
+public UseHintOptions usageHint;
+```
+
+This simply indicates what the intended use is for the lobbies created by this instance of the lobby manager. If set to a value other than "None" it will cause the Lobby Manager on Create of a new lobby to set that lobby as either Group or Session depending on the value you set here.
+
 ### SearchArguments
 
 ```csharp
