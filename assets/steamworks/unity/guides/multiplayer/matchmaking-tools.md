@@ -368,6 +368,96 @@ lobby["key"] = "value";
 
 ## General Use Cases
 
+### Get the Lobby
+
+We are often asked how do you "get" the lobby your in as in once you joined or created a lobby how to do you get to its [LobbyData ](../../../data-layer/lobby-data.md)so you can use it for whatever it is you need to use it for.&#x20;
+
+The answer differs depending on context so here are some common cases.
+
+#### Lobby Manager
+
+or for that matter, [Quick Match Lobby Control](../../../for-unity-game-engine/ui-components/quick-match-lobby-control.md) or [Party Lobby Control](../../../for-unity-game-engine/ui-components/party-lobby-control.md) or any similar lobby management tool.
+
+In all cases these tools have a field on them named Lobby that returns the lobby they are managing ... similarly you can set the lobby you want them to manage by writing a value to this field.
+
+```csharp
+LobbyData lobby = lobbyManager.Lobby;
+```
+
+```csharp
+lobbyManager.Lobby = lobby_I_want_you_to_manage;
+```
+
+#### Session and Group
+
+If you use our tools we will mark lobby's by their type ... that is we will mark the lobby as the "group" lobby when you use the Party Lobby Control and we will mark it as the "session" lobby when you use the Quick Match Lobby Control. Note you can configure the Lobby Manager to set this for you if using it. And you can set this yourself if your creating lobby manually.
+
+To set this your self after the creation of your lobby call
+
+```csharp
+//This is a group aka party lobby
+lobby.IsGroup = true;
+```
+
+or
+
+```csharp
+//This is a session lobby
+lobby.IsSession = true;
+```
+
+Note there should only be 1 group and 1 session lobby at a time, you can then get these special use case lobbies from anywhere in code
+
+```csharp
+if(LobbyData.GroupLobby(out var lobby))
+{
+    //We have a group and it is lobby
+}
+else
+{
+    //We do not have a group lobby
+}
+```
+
+or
+
+```csharp
+if(LobbyData.SessionLobby(out var lobby))
+{
+    //We have a session and it is lobby
+}
+else
+{
+    //We do not have a session
+}
+```
+
+#### Look for it
+
+Our system tracks every lobby the local user is a member of, a user cannot be a member of more than 3 lobbies and so it's trivial to just iterate over the lobbies they are a member of to choose the one you want.
+
+```csharp
+foreach(var lobby in API.Matchmaking.Client.memberOfLobbies)
+{
+    //Test if lobby is the right lobby
+}
+```
+
+or if you prefer linq (we do)
+
+```csharp
+//This is how we get the session lobby for you
+var lobby = API.Matchmaking.Client.memberOfLobbies.FirstOrDefault(p => p.IsSession);
+if(lobby.IsValid)
+{
+    //We have a winner
+}
+else
+{
+    //No such lobby
+}
+```
+
 ### Authenticate Users
 
 {% hint style="warning" %}
@@ -551,4 +641,74 @@ API.Matchmaking.Client.EventLobbyGameCreated.AddListener(HandleGameServerSet);
 ```
 {% endhint %}
 
-##
+### Go from Lobby to Network Session
+
+Hopefully you have read the above so you understand the fundamentals of a lobby and what features it has including [how to notify the other members when its time to connect to the network](matchmaking-tools.md#notify-connect-to-network).
+
+So your question then is how do you know when to transition from being in the lobby to starting the network session, and we can't answer that for you. This is entirely up to your game design but here are a couple of common use cases.
+
+#### Lobby Full
+
+In this case you are simply assuming its time to play when the lobby gets full e.g.&#x20;
+
+```csharp
+if(lobby.Full)
+{
+    //Time to start the network session
+}
+```
+
+#### Players Ready
+
+In this case you ware assuming its time to play when the lobby is full and all players have indicated they are ready. Note this requires you to provide the players with a means to set
+
+```csharp
+lobby.IsReady = true;
+```
+
+This sets the metadata on that user indicated that it is ready to play, we use that in the following test
+
+```csharp
+if(lobby.Full && lobby.AllPlayersReady)
+{
+    //Time to start the network session
+}
+```
+
+#### Then What?
+
+Once you know when you want to start the network session it's time to ... start the network session ... exactly what you need to do to do that depends on the networking tool you chose to use but here is the usual workflow with the code snippets relevant to Steam lobby.
+
+First you probably want to set the lobby joinable as false. This will prevent newcomers from joining while you transition players over to the network session. Of course if your game supports "drop-in/drop-out" you don't want to do this ... use your own judgment with regards to your own design.
+
+```csharp
+lobby.SetJoinable(false);
+```
+
+You would then have the owner do whatever it is your networking tool needs you to do to start up the network session. Dont know what that is? consult your networking tool of choice ... its usually something like load up the appropriate scene use the network manager to call StartHost() or similar.
+
+Once the network session is ready you have the owner notify the other members that its time to connect to the network session.
+
+```csharp
+lobby.SetGameServer();
+```
+
+Notice in this case we do not provide any parameters to the [SetGameServer ](../../../data-layer/lobby-data.md#set-game-server)call ... this is assuming your session will be P2P and that the owner is the host ... for more information please consult the article on [LobbyData](../../../data-layer/lobby-data.md).
+
+This will cause the GameServerSet event to be triggered as noted in the [Notify "Connect to network"](matchmaking-tools.md#notify-connect-to-network) entry.
+
+When users see that evernt they will use the GameServer information on the lobby to know who to connect to. You have options here and which you would use depends again on your game and your design. the following code simply highlights what's available in the [LobbyGameServer ](../../../objects/lobby-game-server.md)information you read on the [GameServer ](../../../data-layer/lobby-data.md#game-server)field of the lobby.
+
+```csharp
+//When you are connecting over SteamNetworking/Socket 
+//and need the peer ID or a Steam game server ID.
+CSteamID steamIdToConnectTo = lobby.GameServer.id;
+```
+
+```csharp
+//When you are connecting via IP/Port such as TCP/KCP/UDP/etc
+string ipAddress = lobby.GameServer.IpAddress;
+ushort port = lobby.GameServer.port;
+```
+
+Once your members connect they would typically then leave the lobby ... this is not a requirement simply typical. You do not need the lobby once you have the network session going unless of course your doing the classic "Drop-In/Drop-Out" style gameplay in which case the lobby should persist for the duration of the session.
