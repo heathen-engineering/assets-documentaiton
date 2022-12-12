@@ -64,7 +64,7 @@ The Steam API native CSteamID value for this&#x20;
 public AccountID_t { get; set; }
 ```
 
-The account ID segment of the full CSteamID, to understand more read [this article](../unity/quick-start-guide/csteamid.md).
+The account ID segment of the full CSteamID, to understand more read [this article](../../../company/concepts/steam/steamworks/csteamid.md).
 
 ### FriendId
 
@@ -72,7 +72,7 @@ The account ID segment of the full CSteamID, to understand more read [this artic
 public uint FriendId { get; set; }
 ```
 
-The underlying uint value of the AccountID\_t segment of the CSteamID, to understand more read [this article](../unity/quick-start-guide/csteamid.md).
+The underlying uint value of the AccountID\_t segment of the CSteamID, to understand more read [this article](../../../company/concepts/steam/steamworks/csteamid.md).
 
 ### IsValid
 

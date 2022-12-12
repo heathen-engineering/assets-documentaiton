@@ -4,9 +4,19 @@ description: Simple GameObject driven tree view control for uGUI
 
 # Tree View Collection
 
+{% hint style="success" %}
+#### Like what your seeing?
+
+Support us as a [GitHub Sponsor](../../../../) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](../../../../) ... become a sponsor today!
+{% endhint %}
+
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><h2>Steam</h2></td><td><a href="../../../../company/concepts/steam/">Guides and Tutorials</a></td><td><a href="../../../steamworks/">Integration (Unity and Godot)</a></td><td></td><td></td><td><a href="../../../../company/concepts/steam/">steam</a></td><td><a href="../../../../.gitbook/assets/Steamworks Card.png">Steamworks Card.png</a></td></tr><tr><td><h2>PhysKit</h2></td><td><a href="../../../physkit/learning/sample-scenes/1-ballistic-basics.md">Ballistics</a></td><td><a href="../../../physkit/learning/sample-scenes/1-buoyancy-example.md">Buoyancy</a></td><td><a href="../../../physkit/learning/sample-scenes/1-force-effect-fields.md">Force Effects</a></td><td><a href="../../../physkit/learning/sample-scenes/2-verlet-spring-skinned-mesh.md">Verlet (Physics Bone)</a></td><td><a href="../../../physkit/">physkit</a></td><td><a href="../../../../.gitbook/assets/PhysKit Card.png">PhysKit Card.png</a></td></tr><tr><td><h2>UX</h2></td><td><a href="../core-concepts/">User eXperience Tools</a></td><td><a href="./">uGUI Extras</a></td><td></td><td></td><td><a href="../../">..</a></td><td><a href="../../../../.gitbook/assets/Splash Screen (1).png">Splash Screen (1).png</a></td></tr></tbody></table>
+
 ## Introduction
 
-The tree view is a common GUI element that Unity simply lacks and isn't trivial to create from scratch. The Tree View Collection componenet simplifies this and makes it easy to manage tree views by expressing the data of the collection as GameObjects in your scene hierarchy.
+The tree view is a common GUI element that Unity simply lacks and isn't trivial to create from scratch. The Tree View Collection component simplifies this and makes it easy to manage tree views by expressing the data of the collection as GameObjects in your scene hierarchy.
 
 Put more simply, the Tree View Collection will manage a the children of a targeted GameObject creating a Tree View UI element that is easy to create, read and manage.
 
@@ -20,7 +30,7 @@ To affect the position layout such as to cause child nodes to organize themselve
 
 #### Node Prototype
 
-This is the prefab that should be instantiated to represent your nodes in your game's UI. The prototype should implament the **Tree View Node** component.
+This is the prefab that should be instantiated to represent your nodes in your game's UI. The prototype should implement the **Tree View Node** component.
 
 #### Root
 
@@ -28,7 +38,7 @@ This is the root where the Tree View Collection will create and manage nodes.
 
 ### Tree View Node
 
-This componenet represents the visual node as it will appear in your UI. The typical approch is to define this prototype in scene in a disabled GameObject as a template. This is a similar approch to Unity's own DropDown and its Template.
+This component represents the visual node as it will appear in your UI. The typical approach is to define this prototype in scene in a disabled GameObject as a template. This is a similar approach to Unity's own DropDown and its Template.
 
 ![](<../../../../.gitbook/assets/image (129).png>)
 
@@ -36,7 +46,7 @@ The available fields are
 
 #### Tree
 
-This should be set to the parent tree. If you use the Template approch as discribed here you can set this at development time. If you do not then you will need to set this value at run time when you instantiate the object.
+This should be set to the parent tree. If you use the Template approach as discribed here you can set this at development time. If you do not then you will need to set this value at run time when you instantiate the object.
 
 #### Parent
 
@@ -62,9 +72,9 @@ This simply indicates rather or not this node is expanded e.g. is its children v
 
 The Tree View Collection is the root of the system and would typically be placed above Unity layout controls such as Scroll Views, Vertical Layout, etc.&#x20;
 
-The two fields of the Tree View Collection must be populated for the control to work. See the Tree View Collection notes above for informaiton on each.
+The two fields of the Tree View Collection must be populated for the control to work. See the Tree View Collection notes above for information on each.
 
-Once you have created and configured the structure you can use the Editor controll's "+ Create Child" button to create a root node if desired.
+Once you have created and configured the structure you can use the Editor control's "+ Create Child" button to create a root node if desired.
 
 ### Tree View Node
 
@@ -77,7 +87,7 @@ The core fields to configure on your prototype would be
 * Tree\
   This is the parent tree and used for all collection wide features.
 * Content\
-  This is the root of the node's visual representation e.g. the objects under this point are the label, icon, toggle, etc. that visualy express this node in your UI
+  This is the root of the node's visual representation e.g. the objects under this point are the label, icon, toggle, etc. that visually express this node in your UI
 * Collection\
   This is the root where children of this node will be placed. Typically it would include a Vertical Layout to organize the children in a meaningful way.
 
@@ -96,7 +106,7 @@ foreach(var node in collection)
 
 ### Walk the Tree
 
-This means to iterate over each node in the tree. The tree its self you can easily walk the root nodes with .NET's foreach command as shown in the tip above. To perform a walk accross all nodes requires a bit of extra work.
+This means to iterate over each node in the tree. The tree its self you can easily walk the root nodes with .NET's foreach command as shown in the tip above. To perform a walk across all nodes requires a bit of extra work.
 
 ```csharp
 ...
@@ -120,7 +130,7 @@ private void WalkANode(TreeViewNode node)
 
 ### Get Node Count
 
-You can get the count of the nodes contained direcly in the tree e.g. the root nodes via
+You can get the count of the nodes contained directly in the tree e.g. the root nodes via
 
 ```csharp
 var result = collection.Count;

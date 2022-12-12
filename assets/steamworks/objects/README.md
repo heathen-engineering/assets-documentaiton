@@ -4,33 +4,43 @@ description: Discover the features and capabilities of Heathen's Steam API objec
 
 # Objects
 
-## Introduction
+{% hint style="success" %}
+#### Like what your seeing?
 
-The following articles explain in detail the features and capabiliteis of every object in the Heathen Steamworks integration. In most cases you wont need to read these articles as we have provided full comments in code thus intelisince and auto-complete in your IDE of course should provide you with much of the same information you will find here.
+Support us as a [GitHub Sponsor](../../../) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](../../../) ... become a sponsor today!
+{% endhint %}
+
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><h2>Steam</h2></td><td><a href="../../../company/concepts/steam/">Guides and Tutorials</a></td><td><a href="../">Integration (Unity and Godot)</a></td><td></td><td></td><td><a href="../../../company/concepts/steam/">steam</a></td><td><a href="../../../.gitbook/assets/Steamworks Card.png">Steamworks Card.png</a></td></tr><tr><td><h2>PhysKit</h2></td><td><a href="../../physkit/learning/sample-scenes/1-ballistic-basics.md">Ballistics</a></td><td><a href="../../physkit/learning/sample-scenes/1-buoyancy-example.md">Buoyancy</a></td><td><a href="../../physkit/learning/sample-scenes/1-force-effect-fields.md">Force Effects</a></td><td><a href="../../physkit/learning/sample-scenes/2-verlet-spring-skinned-mesh.md">Verlet (Physics Bone)</a></td><td><a href="../../physkit/">physkit</a></td><td><a href="../../../.gitbook/assets/PhysKit Card.png">PhysKit Card.png</a></td></tr><tr><td><h2>UX</h2></td><td><a href="../../ux/learning/core-concepts/">User eXperience Tools</a></td><td><a href="../../ux/learning/ugui-extras/">uGUI Extras</a></td><td></td><td></td><td><a href="../../ux/">ux</a></td><td><a href="../../../.gitbook/assets/Splash Screen (1).png">Splash Screen (1).png</a></td></tr></tbody></table>
+
+## &#x20;Introduction
+
+The following articles explain in detail the features and capabilities of every object in the Heathen Steamworks integration. In most cases you won't need to read these articles as we have provided full comments in code thus intelliSense and auto-complete in your IDE of course should provide you with much of the same information you will find here.
 
 ### Types
 
 Heathen's Steamworks is built for Unity and so exploits design paradigms common to the Unity development experience.
 
-#### Componenets
+#### Components
 
-A componenet is a C# class that is derived from Unity's MonoBehaviour. components can be added to GameObjects in the Unity editor and are generally used to provide funcitonality to game objects such as UI elements or to act as an interface point between game objects and underlying systems such as the Overlay Manager.
+A component is a C# class that is derived from Unity's MonoBehaviour. components can be added to GameObjects in the Unity editor and are generally used to provide functionality to game objects such as UI elements or to act as an interface point between game objects and underlying systems such as the Overlay Manager.
 
 #### Scriptable Objects
 
-A scriptable object is a C# class that is derived from Unity's ScriptableObject. Scriptable Objects or SOs can be instanteated as part of your assets. That is they are created typically at development time and are offten used to store configuration information such as your SteamSettings object.
+A scriptable object is a C# class that is derived from Unity's ScriptableObject. Scriptable Objects or SOs can be instantiated as part of your assets. That is they are created typically at development time and are offten used to store configuration information such as your SteamSettings object.
 
 #### Classes
 
-Never underestimate the power and flexability of a classic class 😁the majority of Heathen's steam integration funcitonality is implamented using class. You will most offten be interacting with our static classes located in the API name space such as API.User and API.Overlay.
+Never underestimate the power and flexibility of a classic class 😁the majority of Heathen's steam integration functionality is implemented  using class. You will most often be interacting with our static classes located in the API name space such as API.User and API.Overlay.
 
 #### Structures
 
-Structures are the backbone of Heathen's data model. Unlike classes they handled as "value types". They are compact and efficent and while they may have some funcitonality any such funcitonality is specific to that instance of that object. For example you can use the UserData structure to get the name of the user the UserData represents.
+Structures are the backbone of Heathen's data model. Unlike classes they handled as "value types". They are compact and efficient and while they may have some functionality any such functionality is specific to that instance of that object. For example you can use the UserData structure to get the name of the user the [UserData ](../data-layer/user-data.md)represents.
 
 ### Value vs Reference
 
-It is very important to understand the effect of working with classes vs structures. A structure is a value type and will be colored differently by your IDE from reference types such as class objects. When you assign a value type to a variable you are copying its data, in contrast when you assign a refernece type you are really creating a pointer to it not copying it ... consider the following.
+It is very important to understand the effect of working with classes vs structures. A structure is a value type and will be colored differently by your IDE from reference types such as class objects. When you assign a value type to a variable you are copying its data, in contrast when you assign a reference type you are really creating a pointer to it not copying it ... consider the following.
 
 Lets look at a type Clan defined as follows
 
@@ -95,7 +105,7 @@ foreach(var clan in someListOfClans)
 }
 ```
 
-If someListOfClans is a colleciton public struct Clan then you will get a compiler error. This code cannot be compiled because you cannot modify the member of clan in this manner. If the list is of a reference type then the code will compile and will act to set every clan's id to 42.
+If someListOfClans is a collection public struct Clan then you will get a compiler error. This code cannot be compiled because you cannot modify the member of clan in this manner. If the list is of a reference type then the code will compile and will act to set every clan's id to 42.
 
 so how do you set the values? the same way you would if it was a list of ints or floats or any other value type
 

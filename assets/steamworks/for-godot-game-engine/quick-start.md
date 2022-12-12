@@ -76,7 +76,7 @@ Next you need to update the steam\_appid.txt used by the project.&#x20;
 {% hint style="warning" %}
 STOP\
 \
-Learn before you do, read our [article on steam\_appid.txt](../unity/quick-start-guide/steam\_appid.txt.md) to understand what it is, why its used and when it should not be used.
+Learn before you do, read our [article on steam\_appid.txt](../../../company/concepts/steam/steamworks/steam\_appid.txt.md) to understand what it is, why its used and when it should not be used.
 {% endhint %}
 
 You should find the steam\_appid.txt file in the root of your project but it will not be apart of your projects resources so you will need to look in your project folder.

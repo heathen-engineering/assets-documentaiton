@@ -57,4 +57,4 @@ Once your all set up as a Steam Developer and have your App ID your next step sh
 
 Steam API is a tremendous value especially for small and indie developers as it is a power set of backend services and is completely free for you to use. We strongly recommend you understand what Steam API can do for your game before you commit your design. The best and most successful games fully exploit Steam's features.
 
-Be sure to read over our [Steamworks Guides](../../../assets/steamworks/unity/guides/), these guides serve as troubleshooting and how to guides for Heathen's Steamworks Complete but are also a great way to get to know Steam API and what it can do.
+Be sure to read over our [Steamworks Guides](steamworks/), these guides serve as troubleshooting and how to guides for Heathen's Steamworks Complete but are also a great way to get to know Steam API and what it can do.

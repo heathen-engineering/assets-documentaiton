@@ -4,20 +4,17 @@ description: User eXperience asset from Heathen Engineering;
 
 # Installation
 
-## GitHub Sponsor
-
-{% embed url="https://github.com/sponsors/heathen-engineering" %}
-
 {% hint style="success" %}
-Better for us and better for you!
+#### Like what your seeing?
 
-Sponsoring Heathen on GitHub for $10 a month gets you access to the sorce repository for Steamworks, PhysKit and UX Complete.
-
+Support us as a [GitHub Sponsor](../../) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-See why GitHub sponsor is the hands down best way to Do More with Heathen in our [Licensing Article](../../company/become-a-sponsor/licensing.md).
+These articles are made possible by our [GitHub Sponsors](../../) ... become a sponsor today!
 {% endhint %}
 
-## Import
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><h2>Steam</h2></td><td><a href="../../company/concepts/steam/">Guides and Tutorials</a></td><td><a href="../steamworks/">Integration (Unity and Godot)</a></td><td></td><td></td><td><a href="../../company/concepts/steam/">steam</a></td><td><a href="../../.gitbook/assets/Steamworks Card.png">Steamworks Card.png</a></td></tr><tr><td><h2>PhysKit</h2></td><td><a href="../physkit/learning/sample-scenes/1-ballistic-basics.md">Ballistics</a></td><td><a href="../physkit/learning/sample-scenes/1-buoyancy-example.md">Buoyancy</a></td><td><a href="../physkit/learning/sample-scenes/1-force-effect-fields.md">Force Effects</a></td><td><a href="../physkit/learning/sample-scenes/2-verlet-spring-skinned-mesh.md">Verlet (Physics Bone)</a></td><td><a href="../physkit/">physkit</a></td><td><a href="../../.gitbook/assets/PhysKit Card.png">PhysKit Card.png</a></td></tr><tr><td><h2>UX</h2></td><td><a href="learning/core-concepts/">User eXperience Tools</a></td><td><a href="learning/ugui-extras/">uGUI Extras</a></td><td></td><td></td><td><a href="./">.</a></td><td><a href="../../.gitbook/assets/Splash Screen (1).png">Splash Screen (1).png</a></td></tr></tbody></table>
+
+## Introduction
 
 UX Complete and the extension package uGUI Extras are both standard Unity assets that do not require any special installation steps. Simply import the assets and your done.
 

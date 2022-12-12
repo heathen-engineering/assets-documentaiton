@@ -101,7 +101,7 @@ Returns true if all of the players 'IsReady' is true
 public AccountID_t { get; set; }
 ```
 
-The account ID segment of the full CSteamID, to understand more read [this article](../unity/quick-start-guide/csteamid.md).
+The account ID segment of the full CSteamID, to understand more read [this article](../../../company/concepts/steam/steamworks/csteamid.md).
 
 ### Friend Id
 
@@ -109,7 +109,7 @@ The account ID segment of the full CSteamID, to understand more read [this artic
 public uint FriendId { get; set; }
 ```
 
-The underlying uint value of the AccountID\_t segment of the CSteamID, to understand more read [this article](../unity/quick-start-guide/csteamid.md).
+The underlying uint value of the AccountID\_t segment of the CSteamID, to understand more read [this article](../../../company/concepts/steam/steamworks/csteamid.md).
 
 ### Full
 
