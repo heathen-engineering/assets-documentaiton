@@ -29,7 +29,7 @@ This must be done from the Unity Package Manager to insure that the proper Steam
 4. Enter the URL below and press add.
 
 ```
-https://github.com/heathen-engineering/SteamworksFoundation.git?path=/com.heathen.steamworksfoundation
+https://github.com/heathen-engineering/SteamworksFoundation.git?path=Unity/com.heathen.steamworksfoundation
 ```
 
 ### GitHub Sponsors
