@@ -207,6 +207,7 @@
     * [Installation](assets/steamworks/unity/installation/README.md)
       * [Prerequisites](assets/steamworks/unity/installation/prerequisites.md)
       * [UPM Add from Git URL](assets/steamworks/unity/installation/upm-add-from-git-url.md)
+      * [UPM Add from Disk](assets/steamworks/for-unity-game-engine/installation/upm-add-from-disk.md)
       * [UAS Import](assets/steamworks/unity/installation/uas-import.md)
       * [Manual Install](assets/steamworks/unity/installation/manual-install.md)
       * [Networking Integrations](assets/steamworks/unity/installation/networking-integrations.md)

@@ -119,7 +119,7 @@ The point here is do not simply rely on Unity's Load and Unload to be the best o
 
 ## Architecture
 
-![](<../../../.gitbook/assets/image (74).png>)
+![](<../../../.gitbook/assets/image (74) (1).png>)
 
 The above diagram shows the basic flow from 1 scene to another.&#x20;
 
