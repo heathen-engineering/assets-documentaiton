@@ -16,6 +16,18 @@ These articles are made possible by our [GitHub Sponsors](../../../../) ... beco
 
 ### Unity Asset Store
 
+{% hint style="danger" %}
+**Do Not** install Steamworks.NET from the .unitypackage found in its release folder on Git. If you have a copy of Steamworks.NET in your project that was not installed from Unity Package Manager fully remove it first.
+{% endhint %}
+
 If you purchased through the Unity Asset Store simply import through Unity's normal method.
 
 Once imported the asset will check for dependencies and if missing it will install them via the Package Manager through the GitHub Add from Git URL feature.
+
+{% hint style="info" %}
+The Unity Asset Store version is dependent on Steamworks.NET and System Core.\
+\
+For these to be recognized by the asset they MUST be installed via Unity Package Manager (UPM)\
+\
+The asset will attempt to install these for you on import using the [Git URL method](upm-add-from-git-url.md). If you wish to install them manually or for some reason cannot install from Git URL you can use our guide on [UPM Add from Disk](../../for-unity-game-engine/installation/upm-add-from-disk.md) to learn how to install them from disk.
+{% endhint %}

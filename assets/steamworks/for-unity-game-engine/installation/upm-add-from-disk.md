@@ -32,7 +32,7 @@ This is "Git"s little word for make a local workspace, it literally 1 button pre
 
 Here is how you do it ... then we will show you which repos you need to go clone.
 
-<figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 #### Step 1
 
@@ -79,7 +79,7 @@ If your a GitHub sponsor you have access to the source repository which you can 
 1. Open the Package Manager
 2. Click the "+" (plus) button located in the upper left of the window
 3. Select the "Add package from disk..." option\
-   ![](<../../../../.gitbook/assets/image (74).png>)
+   ![](<../../../../.gitbook/assets/image (1).png>)
 4. Select the desired folder.
 
 As to knowing which folder is the "desired" folder ... its always the folder that contains the `package.json` file in it. Follows are the current names of those folders for each requirement as follows

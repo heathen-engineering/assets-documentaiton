@@ -14,7 +14,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../) ... beco
 
 This scene demonstrates the use of [User Data ](../../data-layer/user-data.md)and displaying common information such as the user's avatar and name.
 
-<figure><img src="../../../../.gitbook/assets/image (98).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (98) (3).png" alt=""><figcaption></figcaption></figure>
 
 This scene exists to draw your attention to the [User Data](../../data-layer/user-data.md) object. User Data is a struct Heathen has defined to wrap around the native [CSteamID ](../../../../company/concepts/steam/steamworks/csteamid.md)and the primitive ulong data types providing easy access to everything user related.
 
