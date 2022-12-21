@@ -18,6 +18,12 @@ These articles are made possible by our [GitHub Sponsors](../../../../../) ... b
 
 ## &#x20;Introduction
 
+{% hint style="success" %}
+While Steam Lobby is not a true multiplayer feature ... it is in reality nothing but a chat room with metadata ... actually even called "Chat" on Valve's backend.\
+\
+It is none the less most commonly used for player parties and session matchmaking there for we have listed it under the Multiplayer guides section.
+{% endhint %}
+
 Steam Matchmaking is driven primarily through the Steam Lobby feature. In a nutshell, the concept is that players will create a "lobby". You can think of this a bit like a chat room. This lobby has "metadata" associated with it which can be used to search for lobbies, filtering the results to just those the player cares about.‌
 
 The metadata concept of Steam Lobby is where most of the functionality comes into play. The owner or "host" of a lobby can set the metadata on a lobby and anyone else can read that data, and the Steam Lobby search system can use that data to refine search results. In addition, each member within a lobby has a set of metadata associated with them. Lobby member metadata can only be set by the member it is related to and can only be read by other members of that lobby.‌
