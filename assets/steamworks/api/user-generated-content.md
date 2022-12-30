@@ -176,13 +176,22 @@ Adds a required tag to a pending UGC Query. This will only return UGC with the s
 
 ```csharp
 public static bool CreateItem(WorkshopItemData item, 
-                Action<WorkshopItemDataCreateStatus> callback = null)
+                              WorkshopItemPreviewFile[] additionalPreviews, 
+                              string[] additionalYouTubeIds, 
+                              WorkshopItemKeyValueTag[] additionalKeyValueTags, 
+                              Action<WorkshopItemDataCreateStatus> callback = null)
 ```
 
-The first overload handles the creation and update of new items in a single line call. The callback for this overload would look similar to following.
+The first overload handles the creation and update of new items in a single line call.&#x20;
+
+The first parameter defines the core fields of the item to be created, note the [WorkshopItemData.Create](../data-layer/workshop-item-data.md) method simply calls this overload.
+
+The remaining parameters deal with additional preview images and videos as well as the key value tag system
+
+The callback for this overload would look similar to following.
 
 {% hint style="info" %}
-See the [WorkshopItemDataCreateStatus](../objects/workshop-item-data-create-status.md) defintion for more information on what fields it contains.
+See the [WorkshopItemDataCreateStatus](../objects/workshop-item-data-create-status.md) definition for more information on what fields it contains.
 {% endhint %}
 
 ```csharp
@@ -192,7 +201,7 @@ void Callback(WorkshopItemDataCreateStatus status)
 }
 ```
 
-The second overload is only creates an empty UGC File. You would then manually start the update process and set each of its fields. This approch is more akin to using the Raw Steam API.
+The second overload is only creates an empty UGC File. You would then manually start the update process and set each of its fields. This approach is more akin to using the Raw Steam API.
 
 {% hint style="info" %}
 Learn more about manual creation and update of items [here](user-generated-content.md#create-and-update-items).
