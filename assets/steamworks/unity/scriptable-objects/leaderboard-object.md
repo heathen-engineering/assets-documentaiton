@@ -300,6 +300,38 @@ void HandleCallback(LeaderboardScoreUploaded_t result, bool IOError)
 }
 ```
 
+### ForceUploadScore
+
+Similar to upload score this is a simplified set of upload score commands that assumes you wish to use the "Force Update" method e.g. you want the score to be applied rather or not it is the better value between the current score and the one you are uploading.
+
+```csharp
+public void ForceUploadScore(int score)
+```
+
+or
+
+```csharp
+public void ForceUploadScore(string score)
+```
+
+When uploading a string score the system will attempt to parse the score to an int value, this should only be used when your uploading score from a text field and is meant for testing not production use.
+
+### KeepBestUploadScore
+
+Similar to upload score this is a simplified set of upload score commands that assumes you wish to use the "Keep Best" method e.g. you want the best ranking value to be keep rather that is the score you are uploading or the user's current score.
+
+```csharp
+public void KeepBestUploadScore(int score)
+```
+
+or
+
+```csharp
+public void KeepBestUploadScore(string sscore)
+```
+
+When uploading a string score the system will attempt to parse the score to an int value, this should only be used when your uploading score from a text field and is meant for testing not production use.
+
 ### Attach UGC
 
 ```csharp
