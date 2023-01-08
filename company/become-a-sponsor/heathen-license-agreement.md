@@ -27,7 +27,7 @@ If you have any questions or concerns dont hesitate to contact us.
 
 ## License
 
-License Agreement Copyright © 2014-2022 Heathen Engineering Limited, an Irish registered corporation #556277 identified in this agreement as (“Heathen”).
+License Agreement Copyright © 2014-2023 Heathen Engineering Limited, an Irish registered corporation #556277 identified in this agreement as (“Heathen”).
 
 1. Parties to the Agreement and Subject Matter of the Agreement
 

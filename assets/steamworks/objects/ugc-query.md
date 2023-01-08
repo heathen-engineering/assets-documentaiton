@@ -88,75 +88,73 @@ public class UgcQuery : IDisposable
 
 ## Static Methods
 
-These are inteded to be how you create a new UgcQuery object. Each creates a corisponding type of query.
+We have created a number of Get methods you can use to quickly construct a UgcQuery to meet your needs.
 
-### General Query
+### Get
 
-General use query common for example when browsing all available items
-
-```csharp
-public static UgcQuery Create(EUGCQuery queryType, 
-                              EUGCMatchingUGCType matchingType, 
-                              AppId_t creatorApp, 
-                              AppId_t consumerApp)
-```
-
-* queryType\
-  The type of query to run, see [EUGCQuery ](https://partner.steamgames.com/doc/api/ISteamUGC#EUGCQuery)for more details.
-* matchingType\
-  Used to specify the type of UGC queried for. See [EUGCMAtchingUGCType ](https://partner.steamgames.com/doc/api/ISteamUGC#EUGCMatchingUGCType)for more details.
-* creatorApp\
-  Filter by the app that created the item
-* consumerApp\
-  Filter by the app the item is created for
-
-### File Query
-
-Returns specific files back defined by ID. Use this to get the details on a set of published file IDs such as when returning the list of subscribed items
+#### General
 
 ```csharp
-public static UgcQuery Create(IEnumerable<PublishedFileId_t> fileIds);
+public static UgcQuery Get(EUGCQuery queryType, 
+                           EUGCMatchingUGCType matchingType, 
+                           AppId_t creatorApp, 
+                           AppId_t consumerApp)
 ```
 
-* fileIds\
-  The collection of IDs to search for
+The first form of the Get method can be used with any type of query and simply gets a query ready for you to further modify.
 
-### User Query
-
-Returns items relive to the given user account e.g. the favourited files or followed files
+#### Target Files
 
 ```csharp
-public static UgcQuery Create(AccountID_t account, 
-                              EUserUGCList listType, 
-                              EUGCMatchingUGCType matchingType, 
-                              EUserUGCListSortOrder sortOrder, 
-                              AppId_t creatorApp, 
-                              AppId_t consumerApp)
+public static UgcQuery Get(params PublishedFileId_t[] fileIds)
 ```
 
-or
+This form of the Get method takes one or more file IDs you would like to get more information on. This can be useful when already have a set of known file IDs such as the users subscribed IDs. You can also pass in a list or array of file IDs you would like to query.
+
+#### Related to a given account or user
 
 ```csharp
-public static UgcQuery Create(UserData user, 
-                              EUserUGCList listType, 
-                              EUGCMatchingUGCType matchingType, 
-                              EUserUGCListSortOrder sortOrder, 
-                              AppId_t creatorApp, 
-                              AppId_t consumerApp)
+public static UgcQuery Get(AccountID_t account, 
+                           EUserUGCList listType, 
+                           EUGCMatchingUGCType matchingType, 
+                           EUserUGCListSortOrder sortOrder, 
+                           AppId_t creatorApp, 
+                           AppId_t consumerApp)
 ```
 
-* account or user\
-  This is the user account to search for, we can read the account from the UserData if provided.
-* listType\
-  The type of list to return ... see [EUserUGCList ](https://partner.steamgames.com/doc/api/ISteamUGC#EUserUGCList)for more details
-* matchingType\
-  Used to specify the type of UGC queried for. See [EUGCMAtchingUGCType ](https://partner.steamgames.com/doc/api/ISteamUGC#EUGCMatchingUGCType)for more details.
-* sortOrder\
-  How should the results be sorted. See [EUserUGCListSortOrder ](https://partner.steamgames.com/doc/api/ISteamUGC#EUserUGCListSortOrder)for more details.
-* creatorApp\
-  Filter by the app that created the item
-* consumerApp\
-  Filter by the app the item is created for
+This option lets you create a query that looks for items related to a specific user or account.
+
+### Get My Published
+
+```csharp
+public static UgcQuery GetMyPublished()
+```
+
+```csharp
+public static UgcQuery GetMyPublished(AppData creatorApp, AppData consumerApp)
+```
+
+Creates a query to get all the published files related to the local user.
+
+### Get Subscribed
+
+```csharp
+public static UgcQuery GetSubscribed()
+```
+
+The same as calling `Get(fileIds)` on the set of subscribed files the local user is subscribed to. This is the easiest way to get the details about all the workshop items this user is currently using.
+
+### Get Played
+
+```csharp
+public static UgcQuery GetPlayed()
+```
+
+```csharp
+public static UgcQuery GetPlayed(AppData creatorApp, AppData consumerApp)
+```
+
+Gets the set of workshop items the local player has played
 
 ## Fields and Attributes
 
