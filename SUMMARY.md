@@ -330,6 +330,7 @@
     * [Clan Data](assets/steamworks/data-layer/clan-data.md)
     * [DLC Data](assets/steamworks/data-layer/dlc-data.md)
     * [Game Data](assets/steamworks/data-layer/game-data.md)
+    * [Input Action Data](assets/steamworks/data-layer/input-action-data.md)
     * [Leaderboard Data](assets/steamworks/data-layer/leaderboard-data.md)
     * [Lobby Data](assets/steamworks/data-layer/lobby-data.md)
     * [Lobby Member Data](assets/steamworks/data-layer/lobby-member-data.md)
