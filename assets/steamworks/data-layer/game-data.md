@@ -1,4 +1,4 @@
-# App Data
+# Game Data
 
 {% hint style="success" %}
 #### Like what your seeing?
@@ -13,7 +13,7 @@ These articles are made possible by our [GitHub Sponsors](../../../) ... become 
 ## Introduction
 
 ```csharp
-public struct AppData : IEquatable<AppId_t>, 
+public struct GameData : IEquatable<AppId_t>, 
                         IEquatable<CGameID>, 
                         IEquatable<uint>, 
                         IEquatable<ulong>, 
@@ -24,39 +24,47 @@ public struct AppData : IEquatable<AppId_t>,
                         IComparable<ulong>
 ```
 
-A data wrapper around the Steam's concept of "app". This provides quick and efficient access to features and functions related to a Steam App and lets you use AppData interchangeably with any of the related types `DlcData, AppId_t, CGameID, uint, ulong`
+A data wrapper around the Steam's concept of "game". This provides quick and efficient access to features and functions related to a Steam Game and lets you use GameData interchangeably with any of the related types `AppId_t, CGameID, uint, ulong`
 
 ```csharp
-AppData app_fromUlong = 1234566;
-AppData app_fromCGameID = new CGameID(1234566);
-AppData app = AppData.Get(1234566);
+GameData game_fromUlong = 1234566;
+GameData game_fromCGameID = new CGameID(1234566);
+GameData game = GameData.Get(1234566);
 
-AppData thisApp = AppData.Me;
+GameData thisGame = GameData.Me;
 ```
 
-App Data is used by Steam to uniquely identify an "app" ... for Steam an "app" is a game, tool, server, dlc, demo or really anything similarly defined as part of the Steam Developer Portal. It can offten be useful to convert the various forms in which Steam idenitfies an "app" such that you can get its name or open its store page.&#x20;
+Game Data is used by Steam to uniquely identify a "game". It can often be useful to convert the various forms in which Steam identifies a "game" such that you can get its name or open its store page.&#x20;
 
 For example Steam identifies which game a user is the User's Game Info via CGameID which can be converted to an AppId\_t which can be used to get the uint and passed to the Web ID to get the name of the game the friend is playing.
 
-Heathen makes this much simpler `AppData.Get(gameId).Name` as you can see our approch has far fewer steps thanks to AppData which provides the translation layer for the various ways Steam represents an App's ID.
+Heathen makes this much simpler `GameData.Get(gameId).App.Name` as you can see our approach has far fewer steps thanks to GameData and AppData which provides the translation layer for the various ways Steam represents a Game and its related App ID.
 
 ## Fields and Attributes
 
 ### Me
 
 ```csharp
-public static AppData Me => get;
+public static GameData Me => get;
 ```
 
-This gets the AppData for the currently initialized app if any. I.e. this is your App ID as in the one running right now as far as Steam API is aware. Its often useful to test this and make sure its the value you expect and that your user isn't trying to spoof as some other app.
+This gets the GameData for the currently initialized app if any. I.e. this is your App ID represented as a GameData as in the one running right now as far as Steam API is aware. Its often useful to test this and make sure its the value you expect and that your user isn't trying to spoof as some other app.
 
-### appId
+### gameId
 
 ```csharp
-public AppId_t appId;
+public CGameID gameId;
 ```
 
-The Steamworks native data type representation of this app
+The Steamworks native data type representation of this game
+
+### App
+
+```csharp
+public AppData App;
+```
+
+Gets the AppData representation of this GameData. GameData and AppData are very similar with AppData being the more commonly used of the two. GameData is used in a few of Steam's systems such as GameInfo. Switching between them is made trivial with our data layer as a GameData will convert to an AppData and an AppData will convert to a GameData.
 
 ### IsMe
 
@@ -64,10 +72,10 @@ The Steamworks native data type representation of this app
 public bool IsMe => get;
 ```
 
-Returns true if this AppData represents the app that is running this code e.g. the same as
+Returns true if this GameData represents the game that is running this code e.g. the same as
 
 ```csharp
-thisAppId == AppData.Me
+thisAppId == GameData.Me
 ```
 
 ### Id
@@ -84,7 +92,7 @@ The primitive data type that represents an app
 public string Name => get;
 ```
 
-Gets the local display name Steam store uses for this app for this user ... this expects that you have already loaded the names via the LoadNames method here on the AppData object or in the API.App.Client class.
+Gets the local display name Steam store uses for this game for this user ... this expects that you have already loaded the names via the LoadNames method here on the AppData object or in the API.App.Client class.
 
 ### Names Loaded
 
@@ -99,26 +107,23 @@ Returns true if app names have already been loaded
 ### Get
 
 ```csharp
-//Returns the local app
-public static AppData Get();
+//Returns the local app as a GameData
+public static GameData Get();
 
-//Returns the AppData matching the game ID
-public static AppData Get(CGameID gameId)
+//Returns the GameData matching the game ID
+public static GameData Get(CGameID gameId)
 
-//Returns the AppData matching the game ID
-public static AppData Get(ulong gameId)
+//Returns the GameData matching the game ID
+public static GameData Get(ulong gameId)
 
-//Returns the AppData matching the app id
-public static AppData Get(uint appId)
+//Returns the GameData matching the app id
+public static GameData Get(uint appId)
 
-//Returns the AppData matching the app id
-public static AppData Get(AppId_t appId)
-
-//Returns the AppData matching the Dlc Data
-public static AppData Get(DlcData dlcData);
+//Returns the GameData matching the app id
+public static GameData Get(AppId_t appId)
 ```
 
-The Get method can be used to "get" an AppData matching whatever input it is you have
+The Get method can be used to "get" an GameData matching whatever input it is you have
 
 ### Get Name
 
@@ -160,7 +165,7 @@ A static option for calling the same method that can handle any convertable valu
 
 ```csharp
 uint appId = 123456789;
-AppData.OpenSteamStore(appId);
+GameData.OpenSteamStore(appId);
 ```
 
 Assuming 123456789 was a valid App ID that would open the steam overlay to the store page for that app
