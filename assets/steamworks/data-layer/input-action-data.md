@@ -13,134 +13,73 @@ These articles are made possible by our [GitHub Sponsors](../../../) ... become 
 ## Introduction
 
 ```csharp
-public struct InputActionData : IEquatable<AchievementData>, 
-                                IEquatable<string>, 
-                                IComparable<AchievementData>, 
-                                IComparable<string>
+public struct InputActionData
 ```
 
-A data wrapper around Steam's concept of an Achievement. This is implicitly convertible from string expecting that string to be the "API Name" of the achievement.
-
-```csharp
-AchievementData myAch = "ACH_WIN_100_GAMES";
-myAch.IsAchievd = true;
-myAch.Store();
-```
-
-Achievements are a common feature of Steam API and one of the simpler to implement. They are typically used to mark milestones or key accomplishments of the player, you can learn more in our [Steam Guides](../../../company/concepts/steam/achievements.md).
+Represents the current state of an input action and is returned by the InputAction and InputControllerData objects. Its not typical that you would create this your self. The most common use case is to use the GetActionData() method of the InputAction object in Unity or to use the API.Input class to get the action data of a specific controller.
 
 ## Fields and Attributes
 
 ### Name
 
-```csharp
-public string Name => get;
-```
-
-Returns the display name of this achievement if defined.
-
-### Description
+The name of the action the data relates to
 
 ```csharp
-public string Description => get;
+public string name;
 ```
 
-The description of this achievement if defined.
+### Type
 
-### Hidden
+The type of action the data relates to
 
 ```csharp
-public bool Hidden => get;
+public InputActionType type;
 ```
 
-Returns the display attribute "hidden" for this achievement.
+### Controller
 
-### IsAchieved
+The handle for the controller this action data relates to
 
 ```csharp
-public bool IsAchieved { get; set; }
+public InputHandle_t controller;
 ```
 
-Is the achievement "unlocked" ... this can only be set if the achievement is set to allow client write. If set to GS or Trusted write only then the attempt to set it will be ignored.
+### Active
 
-### UnlockTime
+Is the action active or not
 
 ```csharp
-public DateTime? UnlockTime => get;
+public bool active;
 ```
 
-The time this achievement was achieved... if any, this can be null
+### Mode
 
-### GlobalPercent
+The type of input source this action reported
 
 ```csharp
-public float GlobalPercent => get;
+public EInputSourceMode mode;
 ```
 
-The percentage of users who have unlocked this achievement
+### State
 
-## Methods
-
-### Unlock
+The current state of the action at the time this data was generated
 
 ```csharp
-public void Unlock()
+public bool state;
 ```
 
-The same as assigning true to the IsAcheived field.
+### X
+
+The x axis value of this input
 
 ```csharp
-public void Unlock(UserData user)
+public float x;
 ```
 
-Only used on servers, this can be used to unlock the achievement for a specific user.
+### Y
 
-### ClearAchievement
+The y axis value of this input
 
 ```csharp
-public void ClearAchievement()
+public float y;
 ```
-
-The same as assigning false to the IsAcheived field.
-
-```csharp
-public void ClearAchievement(UserData user)
-```
-
-Only used on servers, this can be used to clear / lock the achievement for a specific user.
-
-### GetAchievementStatus
-
-```csharp
-public bool GetAchievementStatus(UserData user)
-```
-
-Gets the status (locked/unlocked) for the given user. This is only used on server builds.
-
-### GetAchievementAndUnlockTime
-
-```csharp
-public (bool unlocked, DateTime unlockTime) GetAchievementAndUnlockTime(UserData user)
-```
-
-Gets the unlock status and the time the user unlocked it if any. This is only used on server builds.
-
-This uses a tuple which is a standard feature of C#, you can learn more about it here
-
-{% embed url="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-tuples" %}
-
-### GetIcon
-
-```csharp
-public void GetIcon(Action<Texture2D> callback)
-```
-
-Returns the icond for the user based on the user's current state. That is if the user has this achievement unlocked then the unlocked image will be returned, else if not the locked image will be returned.
-
-### Store
-
-```csharp
-public void Store()
-```
-
-A simple short cut to the Stats and Achievements Store Stats and achievements. You can call this on any achievement or stat and it will commit all changes to the backend for all stats and achievements.
