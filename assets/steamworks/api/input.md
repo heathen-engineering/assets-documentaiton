@@ -36,9 +36,33 @@ Indicates rather or not the Seam Input API has been initialized. You must initia
 
 ## How To
 
+### Add Input
+
+Adds an input action to the list of tracted input actions, if your using a [SteamSettings ](../unity/scriptable-objects/steam-settings/)object this will be done for you for all InputActions defined in the [SteamSettings](../unity/scriptable-objects/steam-settings/). Once an action is added it can be updated by the API and tools such as the [SteamInputManager ](../unity/components/steam-input-manager.md)can be used to track changes.
+
+```csharp
+public static void AddInput(string name, InputActionType type);
+```
+
+### Remove Input
+
+Removes an input from the list of tracked inputs, its safe to try to remove and input that was not currently tracked.
+
+```csharp
+public static void RemoveInput(string name);
+```
+
+### Update
+
+Updates the internal state of the indicated controller. Typically you would use the Steam Input Controller which would handle the update of each controller tracked.
+
+```csharp
+public static InputControllerData Update(InputHandle_t controller);
+```
+
 ### Activate Action Set
 
-Reconfigure the controller to use the specified action set (ie "Menu", "Walk", or "Drive").
+Reconfigured the controller to use the specified action set (ie "Menu", "Walk", or "Drive").
 
 This is cheap, and can be safely called repeatedly. It's often easier to repeatedly call it in your state loops, instead of trying to place it in all of your state transitions.
 
@@ -78,6 +102,22 @@ Lookup the handle for an Action Set. Best to do this once on startup, and store 
 
 ```csharp
 var handle = API.Input.Client.GetActionSetHandle(setName);
+```
+
+### Get Action Data
+
+Returns the action data for the indicated input action, this works for Input Actions that have been added to the Input API via the AddInput method.
+
+The first option assumes the first controller in the list of available controllers
+
+```csharp
+public static InputActionData GetActionData(string name);
+```
+
+The second takes a controller as input and returns the data for that controller
+
+```csharp
+public static InputActionData GetActionData(InputHandle_t controller, string name);
 ```
 
 ### Get Analog Action Data
