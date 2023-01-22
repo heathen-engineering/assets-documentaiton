@@ -617,6 +617,19 @@ public static bool MarkContentCorrupt(bool missingFilesOnly);
 
 ## How To
 
+### Check if Online
+
+You can check if the user is currently connected to the Steam backend as a good means to check if the user is "online" at least as far as Steam is concenred.
+
+```csharp
+if(API.App.Client.LoggedOn)
+    Debug.Log("Yes they are connected");
+else
+    Debug.Log("no they are not connected");
+```
+
+The events [EventServersConnected ](app.md#eventserversconnected)and [EventServersDisconnected](app.md#eventserversdisconnected) will be invoked as the connection is gained or lost respectively.
+
 ### Check for app ownership
 
 You can check if the user owns the current app via

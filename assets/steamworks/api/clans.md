@@ -40,13 +40,13 @@ You can list the clan owner, its officers, open the clan chat in overlay or join
 
 ### Related Components
 
-{% embed url="https://kb.heathenengineering.com/assets/steamworks/components/clan-chat-director" %}
+{% embed url="https://kb.heathen.group/assets/steamworks/for-unity-game-engine/components/clan-chat-director" %}
 
 ### Related Objects
 
-{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/clan" %}
+{% embed url="https://kb.heathen.group/assets/steamworks/data-layer/clan-data" %}
 
-{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/clan-chat-msg" %}
+{% embed url="https://kb.heathen.group/assets/steamworks/objects/clan-chat-msg" %}
 
 ## Events
 

@@ -68,3 +68,19 @@ Initializes the the Steam API for client processing. If your using SteamSettings
 ```csharp
 public static Initialize(AppData appId, SteamGameServerConfiguration config);
 ```
+
+### LogOn
+
+Logs the initialized server API on to the steam backend. If your Steam Game Server Settings is configured for auto logon this will be called for you once the API is initialized.
+
+```csharp
+public static void LogOn()
+```
+
+### Send Updated Server Details To Steam
+
+Updates the server details based on the active configuration. This is called for you when the server first connects.
+
+```csharp
+public static void SendUpdatedServerDetailsToSteam()
+```

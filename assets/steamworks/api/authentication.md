@@ -24,6 +24,10 @@ using API = HeathenEngineering.SteamworksIntegration.API;
 public static class API.Authentication
 ```
 
+{% hint style="success" %}
+The Authentication API will use the Server or Client version of Valve's Steam API as required. It is not seperated into a .Client or .Server version like other APIs as all features are exactly the same between them.
+{% endhint %}
+
 The Authentication has both client and server interfaces that are identical. Heathen's Steam API wrap's these in a single call which will call the appropriate client or server interface for you based on the build type in Unity.
 
 ### What can it do?
@@ -32,9 +36,9 @@ The Authentication interface can be used to generate and validate session ticket
 
 ### Related Objects
 
-{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/authentication-session" %}
+{% embed url="https://kb.heathen.group/assets/steamworks/objects/authentication-session" %}
 
-{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/authentication-ticket" %}
+{% embed url="https://kb.heathen.group/assets/steamworks/objects/authentication-ticket" %}
 
 ## Fields and Attributes
 

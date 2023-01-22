@@ -28,25 +28,23 @@ For more info on how to use the Steamworks Web API please see the [Web API Overv
 
 ### What can it do?
 
+{% hint style="success" %}
+See the [LeaderboardData ](https://kb.heathen.group/assets/steamworks/data-layer/leaderboard-data)struct, it can do most everything the raw API can do but is generally easier to work with.
+{% endhint %}
+
 Leaderboards are ranked lists of players where a player's score determines there position on the leaderboard. Leaderboards can contain additional data for each entry either as a details array or as an attachment, attachments are useful for playbacks and other large bits of information while details are useful for character builds, player settings, etc.
 
 ### Related Objects
 
-{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/leaderboard-object" %}
-Defines a leaderboard in the Steam Settings as a scriptable object for easy referencing
-{% endembed %}
+{% embed url="https://kb.heathen.group/assets/steamworks/data-layer/leaderboard-data" %}
 
-{% embed url="https://kb.heathenengineering.com/assets/steamworks/components/leaderboard-manager" %}
-Simplifies reading and writing data to and from a specific Leaderboard
-{% endembed %}
+{% embed url="https://kb.heathen.group/assets/steamworks/for-unity-game-engine/scriptable-objects/leaderboard-object" %}
 
-{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/leaderboard-entry" %}
-Represents an entry in a leaderboard such as the local user or the results of a query on that board
-{% endembed %}
+{% embed url="https://kb.heathen.group/assets/steamworks/for-unity-game-engine/components/leaderboard-manager" %}
 
-{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/rank-change" %}
-Rank change data such as used by the Leaderboard Manager to indicate the user's rank changed
-{% endembed %}
+{% embed url="https://kb.heathen.group/assets/steamworks/objects/leaderboard-entry" %}
+
+{% embed url="https://kb.heathen.group/assets/steamworks/objects/rank-change" %}
 
 ## Fields and Attributes
 
@@ -92,20 +90,20 @@ The number of upload score requests aka UploadScore that are pending processing
 ### AttachUGC
 
 ```csharp
-public static void AttachUGC(SteamLeaderboard_t leaderboard, 
+public static void AttachUGC(LeaderboardData leaderboard, 
                              UGCHandle_t ugc, 
                              Action<LeaderboardUGCSet_t, bool> callback)
 ```
 
 ```csharp
-public static void AttachUGC(SteamLeaderboard_t leaderboard, 
+public static void AttachUGC(LeaderboardData leaderboard, 
                              string fileName, 
                              byte[] data, 
                              Action<LeaderboardUGCSet_t, bool> callback)
 ```
 
 ```csharp
-public static void AttachUGC(SteamLeaderboard_t leaderboard, 
+public static void AttachUGC(LeaderboardData leaderboard, 
                              string fileName, 
                              object jsonObject, 
                              System.Text.Encoding encoding, 
@@ -113,7 +111,7 @@ public static void AttachUGC(SteamLeaderboard_t leaderboard,
 ```
 
 ```csharp
-public static void AttachUGC(SteamLeaderboard_t leaderboard, 
+public static void AttachUGC(LeaderboardData leaderboard, 
                              string fileName, 
                              string content, 
                              System.Text.Encoding encoding, 
@@ -124,7 +122,7 @@ public static void AttachUGC(SteamLeaderboard_t leaderboard,
 The callback deligate should be in the form of
 
 ```csharp
-void CallbackHandler(LeaderboardUGCSet_t result, bool IOError);
+void CallbackHandler(LeaderboardUGCSet result, bool IOError);
 ```
 {% endhint %}
 
@@ -141,7 +139,7 @@ This is used to attach complex data to the user's leaderboard entry. You can do 
 ### DownloadEntries
 
 ```csharp
-public static void DownloadEntries(SteamLeaderboard_t leaderboard, 
+public static void DownloadEntries(LeaderboardData leaderboard, 
                                    ELeaderboardDataRequest request, 
                                    int start, 
                                    int end, 
@@ -150,14 +148,14 @@ public static void DownloadEntries(SteamLeaderboard_t leaderboard,
 ```
 
 ```csharp
-public static void DownloadEntries(SteamLeaderboard_t leaderboard, 
+public static void DownloadEntries(LeaderboardData leaderboard, 
                                    CSteamID[] users, 
                                    int maxDetailsPerEntry, 
                                    Action<LeaderboardEntry[], bool> callback)
 ```
 
 ```csharp
-public static void DownloadEntries(SteamLeaderboard_t leaderboard, 
+public static void DownloadEntries(LeaderboardData leaderboard, 
                                    UserData[] users, 
                                    int maxDetailsPerEntry, 
                                    Action<LeaderboardEntry[], bool> callback)
@@ -191,14 +189,14 @@ This is used to query results from a leaderboard and is akin to the [`DownloadLe
 
 ```csharp
 public static void Find(string leaderboardName, 
-                        Action<LeaderboardFindResult_t, bool> callback)
+                        Action<LeaderboardData, bool> callback)
 ```
 
 {% hint style="info" %}
 The callback deligate should be in the form of
 
 ```csharp
-void CallbackHandler(LeaderboardFindResult_t result, bool IOError);
+void CallbackHandler(LeaderboardData result, bool IOError);
 ```
 {% endhint %}
 
@@ -207,7 +205,7 @@ The [Steamworks Behaviour](../unity/components/steamworks-behaviour.md) will cal
 ### GetDisplayType
 
 ```csharp
-public static ELeaderboardDisplayType GetDisplayType(SteamLeaderboard_t leaderboard)
+public static ELeaderboardDisplayType GetDisplayType(LeaderboardData leaderboard)
 ```
 
 Gets the display type of the board from Valve's backend.
@@ -277,15 +275,7 @@ The [Leaderboard ](../unity/scriptable-objects/leaderboard-object.md)object prov
 
 ### Add an attachment
 
-You can attach files to a user's leaderboard entry using the `AttachLeaderboardUGC` option.&#x20;
-
-{% hint style="info" %}
-It is typically easier to add attaches to the local user's entry from teh board its self, that is to use the AttachUGC methods availabel on the [Leaderboard](../unity/scriptable-objects/leaderboard-object.md) object.
-{% endhint %}
-
-Attaches a piece of user generated content the current user's entry on a leaderboard.
-
-This content could be a replay of the user achieving the score or a ghost to race against.
+You can attach files to a user's leaderboard entry using the `AttachLeaderboardUGC` option. Attaches a piece of user generated content the current user's entry on a leaderboard. This content could be a replay of the user achieving the score or a ghost to race against.
 
 ```csharp
 API.Leaderboards.Client.AttachUGC(board, ugc, callback);
@@ -306,10 +296,6 @@ In this case we are writing a file up to the user's remote storage, if that writ
 ### Entries
 
 Entries e.g. the records in the board can be queried in several ways.
-
-{% hint style="info" %}
-It is typically easier to get and upload entries from the board its self, that is to use the GetEntries and Upload methods available on the [Leaderboard ](../unity/scriptable-objects/leaderboard-object.md)object.
-{% endhint %}
 
 #### Download Entries
 
