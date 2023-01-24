@@ -300,6 +300,7 @@
       * [Set User Avatar](assets/steamworks/unity/components/set-user-avatar.md)
       * [Set User Name](assets/steamworks/unity/components/set-user-name.md)
       * [ToggleEventHelper](assets/steamworks/unity/ugui-tools/ui-components/toggleeventhelper.md)
+  * [How To Guides](company/concepts/steam/steamworks/README.md)
   * [API](assets/steamworks/api/README.md)
     * [App.Client](assets/steamworks/api/app.md)
     * [App.Server](assets/steamworks/api/app.server.md)

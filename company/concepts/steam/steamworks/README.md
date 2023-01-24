@@ -24,6 +24,10 @@ In the articles that come below this you will find detailed guides on every majo
 Learn more about Heathen's [Steamworks Complete](../../../../assets/steamworks/) and Do More with Heathen!
 {% endhint %}
 
+## Topics
+
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Achievements</td><td><a href="achievement-object.md">achievement-object.md</a></td></tr><tr><td>API</td><td><a href="api.md">api.md</a></td></tr><tr><td>Authentication</td><td><a href="authentication.md">authentication.md</a></td></tr><tr><td>Cloud Save</td><td><a href="data-models.md">data-models.md</a></td></tr><tr><td>Debugging</td><td><a href="./#steam-debugging">#steam-debugging</a></td></tr><tr><td>Downloadable Content</td><td></td></tr><tr><td>Friend List</td><td><a href="user-information/friends.md">friends.md</a></td></tr><tr><td>Input</td><td><a href="input/">input</a></td></tr><tr><td>Inventory</td><td><a href="inventory/">inventory</a></td></tr><tr><td>Item Store</td><td><a href="microtransactions/item-store/">item-store</a></td></tr><tr><td>Leaderboards</td><td><a href="leaderboard-object/">leaderboard-object</a></td></tr><tr><td>Lobby</td><td><a href="multiplayer/matchmaking-tools.md">matchmaking-tools.md</a></td></tr><tr><td>Matchmaking</td><td><a href="multiplayer/matchmaking.md">matchmaking.md</a></td></tr><tr><td>Microtransactions</td><td><a href="microtransactions/">microtransactions</a></td></tr><tr><td>Multi-Platform Project</td><td><a href="multi-platform-project.md">multi-platform-project.md</a></td></tr><tr><td>Multiplayer</td><td><a href="multiplayer/">multiplayer</a></td></tr><tr><td>Rich Presence</td><td><a href="multiplayer/rich-presence.md">rich-presence.md</a></td></tr><tr><td>Room Systems</td><td><a href="multiplayer/room-systems.md">room-systems.md</a></td></tr><tr><td>Running a Build</td><td><a href="running-a-build.md">running-a-build.md</a></td></tr><tr><td>Steam Game Server</td><td><a href="multiplayer/game-server-browser.md">game-server-browser.md</a></td></tr><tr><td>steam_appid.txt</td><td><a href="steam_appid.txt.md">steam_appid.txt.md</a></td></tr><tr><td>Steam ID</td><td><a href="csteamid.md">csteamid.md</a></td></tr><tr><td>Stats</td><td><a href="stats-object.md">stats-object.md</a></td></tr><tr><td>User Information</td><td><a href="user-information/">user-information</a></td></tr><tr><td>Voice</td><td><a href="voice.md">voice.md</a></td></tr><tr><td>Workshop</td><td><a href="workshop/">workshop</a></td></tr></tbody></table>
+
 ## Steam Debugging
 
 {% hint style="info" %}
@@ -135,5 +139,3 @@ Tools from Valve
 > Steam automatically outputs a number of debug to the `logs` folder, for others you may need to use [Steam Command Line Parameters](https://partner.steamgames.com/doc/sdk/api/debugging#command\_line\_parameters) or [Steam Console Commands](https://partner.steamgames.com/doc/sdk/api/debugging#console\_commands) to enable them.\
 > \
 > Using [ISteamUtils::SetWarningMessageHook](https://partner.steamgames.com/doc/api/ISteamUtils#SetWarningMessageHook) allows a Steamworks application to register a function that allows the Steamworks API to provide human-readable error messages to the application when something goes wrong. Most Steam APIs use it, so be sure to hook it up and look at it any time something goes wrong.
-
-##
