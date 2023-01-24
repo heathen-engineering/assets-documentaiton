@@ -12,7 +12,7 @@ These articles are made possible by our [GitHub Sponsors](../../../) ... become 
 
 ## Introduction
 
-A simple struct making it easier to create and update workshop items.
+Used with the User Generated Content interface for 1 line creation of workshop items
 
 ## Definition
 

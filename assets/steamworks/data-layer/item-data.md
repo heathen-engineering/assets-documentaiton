@@ -236,3 +236,53 @@ Exchanges a collection of `ExchangeEntry` objects for 1 of this item type. This 
 public void Exchange(IEnumerable<ExchangeEntry> recipeEntries, Action<InventoryResult> callback)
 ```
 
+See the [Get Exchange Entry](item-data.md#get-exchange-entry) method for an example of the usage.
+
+### Generate Item
+
+{% hint style="warning" %}
+This will only work for users that are part of the development team for the project. It is meant for testing and debugging purposes only.
+{% endhint %}
+
+This generates a new item of this type in the users inventory.
+
+```csharp
+public void GenerateItem(Action<InventoryResult> callback)
+```
+
+or
+
+```csharp
+public void GenerateItem(uint quantity, Action<InventoryResult> callback)
+```
+
+### Start Purchase
+
+If this item is valid for purchase this will add the item to the user's cart and open the cart in the Steam overlay so they can continue the purchase process.
+
+```csharp
+public void StartPurchase(Action<SteamInventoryStartPurchaseResult_t, bool> callback)
+```
+
+or
+
+```csharp
+public void StartPurchase(uint count, Action<SteamInventoryStartPurchaseResult_t, bool> callback)
+```
+
+### Get Price
+
+Gets the current and base price as seen by the user. The values are returned in base 100 so a value of 199 would be €1.99 assuming a local currency of Euro.
+
+```csharp
+public void GetPrice(out ulong currentPrice, out ulong basePrice);
+```
+
+### Trigger Drop
+
+If this item is configured as a "Play Time Generator" this will cause Valve's Steam to test the rules and timers and if available generate an item for the player.
+
+```csharp
+public void TriggerDrop(Action<InventoryResult> callback)
+```
+

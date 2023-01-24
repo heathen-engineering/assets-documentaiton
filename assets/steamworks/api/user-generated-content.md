@@ -20,41 +20,39 @@ using UGCClient= HeathenEngineering.SteamworksIntegration.API.UserGeneratedConte
 public static class UserGeneratedContent.Client
 ```
 
+### What can it do?
+
+Create, download, browse and edit Steam UGC files aka Steam Workshop.
+
+### Related Components
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/components/ugc-query-manager" %}
+
+### Related Obejcts
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/components/ugc-query-manager" %}
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/ugc-query" %}
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/ugc-read-community-item" %}
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/workshop-item-data" %}
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/workshop-item-data-create-status" %}
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/workshop-item-key-value-tag" %}
+
+{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/workshop-item-preview-file" %}
+
 ## Events
 
-### EventItemDownloaded
+### Item Downloaded
 
 Occurs when a UGC item is downloaded
 
-```csharp
-public static WorkshopDownloadedItemResultEvent EventItemDownloaded;
-```
-
-The event handler would look similar to&#x20;
-
-```csharp
-void HandleEvent(DownloadItemResult_t arg0)
-{
-    //Do Work
-}
-```
-
-### EventWorkshopItemInstalled
+### Workshop Item Installed
 
 Called when a workshop item has been installed or updated
-
-```csharp
-public static WorkshopItemInstalledEvent EventWorkshopItemInstalled;
-```
-
-The event handler would look similar to&#x20;
-
-```csharp
-void HandleEvent(ItemInstalled_t arg0)
-{
-    //Do Work
-}
-```
 
 ## Methods
 
