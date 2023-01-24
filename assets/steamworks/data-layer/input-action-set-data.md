@@ -1,0 +1,82 @@
+# Input Action Set Data
+
+{% hint style="success" %}
+#### Like what your seeing?
+
+Support us as a [GitHub Sponsor](../../../) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](../../../) ... become a sponsor today!
+{% endhint %}
+
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><h2>Steam</h2></td><td><a href="../../../company/concepts/steam/">Guides and Tutorials</a></td><td><a href="../">Integration (Unity and Godot)</a></td><td></td><td></td><td><a href="../../../company/concepts/steam/">steam</a></td><td><a href="../../../.gitbook/assets/Steamworks Card.png">Steamworks Card.png</a></td></tr><tr><td><h2>PhysKit</h2></td><td><a href="../../physkit/learning/sample-scenes/1-ballistic-basics.md">Ballistics</a></td><td><a href="../../physkit/learning/sample-scenes/1-buoyancy-example.md">Buoyancy</a></td><td><a href="../../physkit/learning/sample-scenes/1-force-effect-fields.md">Force Effects</a></td><td><a href="../../physkit/learning/sample-scenes/2-verlet-spring-skinned-mesh.md">Verlet (Physics Bone)</a></td><td><a href="../../physkit/">physkit</a></td><td><a href="../../../.gitbook/assets/PhysKit Card.png">PhysKit Card.png</a></td></tr><tr><td><h2>UX</h2></td><td><a href="../../ux/learning/core-concepts/">User eXperience Tools</a></td><td><a href="../../ux/learning/ugui-extras/">uGUI Extras</a></td><td></td><td></td><td><a href="../../ux/">ux</a></td><td><a href="../../../.gitbook/assets/Splash Screen (1).png">Splash Screen (1).png</a></td></tr></tbody></table>
+
+## Introduction
+
+```csharp
+public struct InputActionSetData : IEquatable<InputActionSetHandle_t>, 
+                                   IComparable<InputActionSetHandle_t>, 
+                                   IEquatable<ulong>, 
+                                   IComparable<ulong>
+```
+
+A wrapper around the InputActionSetHandle\_t structure from Valve's Steam API. This struct provides a lot of quality of life improvements over the native handle type and can be used interchangeably with it.
+
+## Fields and Attributes
+
+### Handle
+
+The raw ulong value of the handle
+
+```csharp
+public ulong Handle { get; set; }
+```
+
+## Methods
+
+### IsActive
+
+```csharp
+public bool IsActive(InputControllerData controller)
+```
+
+or
+
+```csharp
+public bool IsActive(InputHandle_t controller)
+```
+
+Checks if this set is active for the indicated controller
+
+### Activate
+
+```csharp
+public void Activate(InputControllerData controller)
+```
+
+or
+
+```csharp
+public void Activate(InputHandle_t controller)
+```
+
+Activates this set on the indicated controller
+
+### Get
+
+```csharp
+public static InputActionSetData Get(string setName)
+```
+
+or
+
+```csharp
+public static InputActionSetData Get(InputActionSetHandle_t handle)
+```
+
+or
+
+```csharp
+public static InputActionSetData Get(ulong handleValue)
+```
+
+This will get (i.e. find) the InputActionSetData based on the provided input e.g. its name or handle value.
