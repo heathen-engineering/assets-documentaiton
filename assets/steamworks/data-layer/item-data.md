@@ -286,3 +286,58 @@ If this item is configured as a "Play Time Generator" this will cause Valve's St
 public void TriggerDrop(Action<InventoryResult> callback)
 ```
 
+### Current Price String
+
+Gets the formatted price string of this item ... assuming it has a price and that the prices have already been requested from Valve's Steam API.
+
+This does account for the user's cultural formatting and currency code for example `€1.99` would be used in Ireland while `€1,99` would be used many other regions of Europe.
+
+```csharp
+public string CurrentPriceString()
+```
+
+### Base Price String
+
+Gets the formatted price string of this item from the base price ... assuming it has a price and that the prices have already been requested from Valve's Steam API.
+
+This does account for the user's cultural formatting and currency code for example `€1.99` would be used in Ireland while `€1,99` would be used many other regions of Europe.
+
+```csharp
+public string BasePriceString()
+```
+
+### Request Prices
+
+Used to request prices from Valve's Steam API, this only needs to be called once and would usually be called in your bootstrap shortly after updating all items and of course after the Steam API had been initalized.
+
+```csharp
+public static void RequestPrices(Action<SteamInventoryRequestPricesResult_t, bool> callback)
+```
+
+### Update
+
+Requests all inventory items from the Steam API and updates all item details based on the user's inventory. This should be called when you need to know the item states have all been updated recently such as just before opening an Inventory UI or similar.
+
+```csharp
+public static void Update(Action<InventoryResult> callback)
+```
+
+### Get
+
+A set of simple helpers that will return the ItemData object related to the input you provide
+
+```csharp
+public static ItemData Get(int id)
+```
+
+or
+
+```csharp
+public static ItemData Get(SteamItemDef_t id)
+```
+
+or
+
+```csharp
+public static ItemData Get(ItemDefinitionObject item)
+```
