@@ -79,7 +79,7 @@ Example handler
 public void HandleEvent(bool arg0)
 {
     if(arg0)
-        Debug.Log("Overlay is optn");
+        Debug.Log("Overlay is open");
     else
         Debug.Log("Overlay is closed");
 }
