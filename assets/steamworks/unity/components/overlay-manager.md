@@ -28,45 +28,6 @@ The overlay manager provides access to overlay events such as activated and the 
 
 Everything done in this manage can be done via API.Overlay.
 
-## Fields and Attributes
-
-### NotificationPosition
-
-```csharp
-public ENotificationPosition NotificationPosition { get; set; }
-```
-
-This discribes the position of the notification popups used by Steam client. options include
-
-* k\_EPositionTopLeft
-* k\_EPositionTopRight
-* k\_EPositionBottomLeft
-* k\_EPositionBottomRight
-
-### NotificationInset
-
-```csharp
-public Vector2Int NotificationInset { get; set; }
-```
-
-This discribes the number of pixels to be offset from the indicated Notification Position
-
-### IsShowing
-
-```csharp
-public bool IsShowing => get;
-```
-
-Is the overlay being displayed
-
-### IsEnabled
-
-```csharp
-public bool IsEnabled => get;
-```
-
-Is the overlay enabled i.e. can it be shown
-
 ## Events
 
 ### evtOverlayActivated
@@ -129,7 +90,44 @@ public void HandleEvent(GameRichPresenceJoinRequested_t arg0)
 }
 ```
 
+## Fields and Attributes
 
+### NotificationPosition
+
+```csharp
+public ENotificationPosition NotificationPosition { get; set; }
+```
+
+This discribes the position of the notification popups used by Steam client. options include
+
+* k\_EPositionTopLeft
+* k\_EPositionTopRight
+* k\_EPositionBottomLeft
+* k\_EPositionBottomRight
+
+### NotificationInset
+
+```csharp
+public Vector2Int NotificationInset { get; set; }
+```
+
+This discribes the number of pixels to be offset from the indicated Notification Position
+
+### IsShowing
+
+```csharp
+public bool IsShowing => get;
+```
+
+Is the overlay being displayed
+
+### IsEnabled
+
+```csharp
+public bool IsEnabled => get;
+```
+
+Is the overlay enabled i.e. can it be shown
 
 ## Methods
 
