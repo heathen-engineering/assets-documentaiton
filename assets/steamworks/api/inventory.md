@@ -50,22 +50,6 @@ The following is from the Steam Documentation for the Inventory feature.
 
 See [Steam Inventory Service](https://partner.steamgames.com/doc/features/inventory) for more information.
 
-### Related Objects
-
-{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/inventory-item" %}
-
-{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/inventory-settings" %}
-
-{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/inventory-result" %}
-
-{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/item-details" %}
-
-{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/item-definition" %}
-
-{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/item-property" %}
-
-{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/item-tag" %}
-
 ### Understanding Callbacks
 
 A callback is a delegate similar to a UnityEvent, that is its a pointer to a method that will be called at some later point ... in the case of Steam methods it gets called when the process completes.
@@ -74,7 +58,7 @@ To learn more please read the article on [Callbacks](../../../company/concepts/d
 
 ## Events
 
-### EventSteamInventoryDefinitionUpdate
+### Event Steam Inventory Definition Update
 
 Triggered whenever item definitions have been updated, which could be in response to LoadItemDefinitions or any time new item definitions are available (eg, from the dynamic addition of new item types while players are still in-game).
 
@@ -103,7 +87,7 @@ void OnDestroy()
 }
 ```
 
-### EventSteamInventoryResultReady
+### Event Steam Inventory Result Ready
 
 This is fired whenever an inventory result transitions from k\_EResultPending to any other completed state, see GetResultStatus for the complete list of states. There will always be exactly one callback per handle.
 
@@ -132,7 +116,7 @@ void OnDestroy()
 }
 ```
 
-### EventSteamMicroTransactionAuthorizationResponce
+### Event Steam Micro Transaction Authorization Responce
 
 This is fired whenever Steam client notifies your game of a MTX transaction completing and includes details about that transaction. You can use this along side the [StartPurchase ](inventory.md#startpurchase)feature to know when a transaction starts and ends.
 

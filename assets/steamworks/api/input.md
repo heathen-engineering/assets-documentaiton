@@ -28,13 +28,44 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 To learn more about Steam Input in Heathen's Steamworks Complete [read this article](../../../company/concepts/steam/steamworks/input/) on the core concept.
 
+## Events
+
+### Event Input Data Changed
+
+When the Update method is ran and a controller has 1 or more input changes since its last test this event will raise and will carry with it information about the controller and all actions on it including all changes since the last update was ran.
+
+```csharp
+public static ControllerDataEvent EventInputDataChanged;
+```
+
+The handler would take the form of
+
+```csharp
+void HandleEvent(InputControllerData data)
+{
+    //Do Work
+}
+```
+
 ## Fields and Attributes
 
 ### Initialized
 
+```csharp
+public static bool Initialized => get;
+```
+
 Indicates rather or not the Seam Input API has been initialized. You must initialize the Steam Input API before it can be used. This is handled automatically for you if you have defined Inputs in the Steam Settings object.
 
-## How To
+### Controllers
+
+```csharp
+public static InputHandle_t[] Controllers => get;
+```
+
+Returns the array of controller handles currently connected to the game.
+
+## Methods
 
 ### Add Input
 
@@ -62,7 +93,7 @@ public static InputControllerData Update(InputHandle_t controller);
 
 ### Activate Action Set
 
-Reconfigured the controller to use the specified action set (ie "Menu", "Walk", or "Drive").
+Reconfigures the controller to use the specified action set (ie "Menu", "Walk", or "Drive").
 
 This is cheap, and can be safely called repeatedly. It's often easier to repeatedly call it in your state loops, instead of trying to place it in all of your state transitions.
 
@@ -72,7 +103,7 @@ API.Input.Client.ActivateActionSet(controller, actionSet);
 
 ### Activate Action Set Layer
 
-Reconfigure the controller to use the specified action set layer.\
+Reconfigures the controller to use the specified action set layer.\
 \
 See the [Action Set Layers](https://partner.steamgames.com/doc/features/steam\_controller/action\_set\_layers) article for full details and an in-depth practical example.
 
@@ -82,7 +113,7 @@ API.Input.Client.ActivateActionSetLayer(controller, actionSet);
 
 ### Deactivate Action Set Layer
 
-Reconfigure the controller to stop using the specified action set layer.
+Reconfigures the controller to stop using the specified action set layer.
 
 ```csharp
 API.Input.Client.DeactivateActionSetLayer(controller, actionSet);
