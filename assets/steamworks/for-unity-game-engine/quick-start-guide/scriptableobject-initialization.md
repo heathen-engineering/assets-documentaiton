@@ -1,0 +1,88 @@
+# ScriptableObject Initialization
+
+{% hint style="success" %}
+#### Like what your seeing?
+
+Support us as a [GitHub Sponsor](../../../../) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](../../../../) ... become a sponsor today!
+{% endhint %}
+
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><h2>Steam</h2></td><td><a href="../../../../company/concepts/steam/">Guides and Tutorials</a></td><td><a href="../../">Integration (Unity and Godot)</a></td><td></td><td></td><td><a href="../../../../company/concepts/steam/">steam</a></td><td><a href="../../../../.gitbook/assets/Steamworks Card.png">Steamworks Card.png</a></td></tr><tr><td><h2>PhysKit</h2></td><td><a href="../../../physkit/learning/sample-scenes/1-ballistic-basics.md">Ballistics</a></td><td><a href="../../../physkit/learning/sample-scenes/1-buoyancy-example.md">Buoyancy</a></td><td><a href="../../../physkit/learning/sample-scenes/1-force-effect-fields.md">Force Effects</a></td><td><a href="../../../physkit/learning/sample-scenes/2-verlet-spring-skinned-mesh.md">Verlet (Physics Bone)</a></td><td><a href="../../../physkit/">physkit</a></td><td><a href="../../../../.gitbook/assets/PhysKit Card.png">PhysKit Card.png</a></td></tr><tr><td><h2>UX</h2></td><td><a href="../../../ux/learning/core-concepts/">User eXperience Tools</a></td><td><a href="../../../ux/learning/ugui-extras/">uGUI Extras</a></td><td></td><td></td><td><a href="../../../ux/">ux</a></td><td><a href="../../../../.gitbook/assets/Splash Screen (1).png">Splash Screen (1).png</a></td></tr></tbody></table>
+
+## Introduction
+
+Initialize Steam API with this [Steam Settings](../../unity/scriptable-objects/steam-settings/) object. You do not require the use of any component scripts and thus do not require the use of any GameObjects to use this method. You will need to define your [Steam Settings](../../unity/scriptable-objects/steam-settings/) object and then use it to initialize the API by calling its `Initialize()` method.
+
+```csharp
+using HeathenEngineering.SteamworksIntegration;
+
+namespace YourNameSpace
+{
+    public class SomeScriptOfYours : MonoBehaviour
+    {
+        [SerializeField]
+        private SteamSettings settings;
+    
+        void Start()
+        {
+            //This is all that is required
+            settings.Initialize();
+        }
+    }
+}
+```
+
+In the above example we do use a MonoBehaviour but that is not required. All that is required is that you call the Initialize method on the Steam Settings object you wish to initialize.
+
+## Steam Settings
+
+[Learn more about the Steam Settings object here](../../unity/scriptable-objects/steam-settings/).
+
+Create a new Steam Settings object in your project folder by right clicking in your project tab and selecting\
+**Create > Steamworks > Settings**
+
+![](<../../../../.gitbook/assets/image (158) (1) (1) (1) (1).png>)
+
+The only value you "must" set is the Application Id
+
+### Application Id
+
+Enter your app ID in the Application Id field**.**  If you don't have an application ID just yet that's fine you can work with the test App ID 480 however there will be some limitations.&#x20;
+
+{% hint style="info" %}
+You obviously cannot deploy your app without an App ID
+
+You cannot create your own achievements, stats or other artefacts without your own ID
+
+
+
+Valve issues you an App ID when you pay your application fee. If you don't have your own ID yet you can use App ID 480 as a test ID. Heathen's samples and demos all use App ID 480.
+{% endhint %}
+
+### Artifacts
+
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+The Steam Settings object can be used to reference all of your Steam "artifacts" such as Input Fields, [Stats](../../../../company/concepts/steam/steamworks/stats-object.md), [Leaderboards](../../../../company/concepts/steam/steamworks/leaderboard-object/), [Achievements](../../../../company/concepts/steam/steamworks/achievement-object.md), [DLC ](../../../../company/concepts/steam/steamworks/downloadable-content-object.md)and [Inventory items](../../../../company/concepts/steam/steamworks/inventory/). For many of these artifact types you can define them in the Steam Developer Portal as you normally would and then use the "Import" button to pull them into your project.
+
+{% hint style="info" %}
+The Unity Editor must be in "Play" mode for the import buttons to work.\
+\
+You can import
+
+* Achievements
+* Downloadable Content&#x20;
+* <mark style="color:red;">\*</mark> Inventory Items <mark style="color:red;">\*</mark>
+
+
+
+&#x20;_ <mark style="color:red;">\*</mark> Note_\
+Valve limits what information on Inventory Items can be imported. For example bundle content will not be imported. This is a deliberate limitation from Valve and cannot be worked around. In general you only need the item ID of an item so this should not be a problem in most use cases.
+{% endhint %}
+
+### Steam Game Server Configuration
+
+The Steam Game Server Configuration lets you configure the details of your game server as it will be seen by Steam. This is only relevant for server builds that will be initializing and logging on as a "[Steam Game Server](../../../../company/concepts/steam/steamworks/multiplayer/game-server-browser.md)"
+
+[You can learn more about the configuration fields here](../../objects/steam-game-server-configuration.md).

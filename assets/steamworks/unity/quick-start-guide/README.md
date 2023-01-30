@@ -16,71 +16,9 @@ These articles are made possible by our [GitHub Sponsors](../../../../) ... beco
 
 ## Initialization
 
-You have choices with how you handle initialization, the simples and most commonly used method is to define a Steam Settings object and use the Steamworks Behaviour to initialization and mange your Steam API integration as shown below.
+Initializing the Steam API is the first step and you have a few choices on how you do this.
 
-### Steam Settings
-
-Create a new Steam Settings object in your project folder by right clicking in your project tab and selecting\
-**Create > Steamworks > Settings**
-
-![](<../../../../.gitbook/assets/image (158) (1) (1) (1) (1).png>)
-
-### App Id
-
-Enter your app ID in the Application Id field**.**  If you don't have an application ID just yet that's fine you can work with the test App ID 480 however there will be some limitations.&#x20;
-
-{% hint style="info" %}
-You obviously cannot deploy your app without an App ID
-
-You cannot create your own achievements, stats or other artefacts without your own ID
-
-
-
-Valve issues you an App ID when you pay your application fee. If you don't have your own ID yet you can use App ID 480 as a test ID. Heathen's samples and demos all use App ID 480.
-{% endhint %}
-
-### Steamworks Behaviour
-
-Create a [Steamworks Behaviour](broken-reference) object in your [bootstrap scene](../../../../company/concepts/design/bootstrap-scene.md) or similarly appropriate location; and drag your Steam Settings object into the provided field.
-
-![](<../../../../.gitbook/assets/image (161) (1) (1) (1) (1) (1) (1).png>)
-
-Congratulations, you are now integrated with the Steam APIs. If you run the simulation, you will see that the Steam API initializes and is ready for use.
-
-{% hint style="warning" %}
-It is of course up to you to perform any required validation checks ... that is you MUST make sure Steam is finished initializing before you try to use it and that it did in fact initialize without error. \
-\
-The [Steamworks Behaviour](../components/steamworks-behaviour.md) has events exposed to report initialization or error or you can test via Boolean using [SteamSettings.Initialized](../scriptable-objects/steam-settings/#initialized)
-{% endhint %}
-
-## Advanced
-
-### Steam Settings
-
-Steam Settings can be used to initialize the Steam API without using a component script at all. This is useful for people using Unity's Entity Componenet system who do not want to use a component script.
-
-You will still need a Steam Settings object as this defines your various "artifacts" such as stats, achievements, input fields, inventory items and more. Once defined you can simply call&#x20;
-
-```csharp
-public SteamSettings mySettings;
-mySettings.Intitalize();
-```
-
-This will initialize the Steam API and run its update loop via a background worker. No MonoBehaviour will be involved at all.
-
-### API.App
-
-For users that are allergic to Unity's ScriptableObjects you can use Heathen's API's to initialize and manage the API. The advantage of using Steam Settings is management of your various Steam related artifacts such as Leaderboards, Achievements, etc. however if you wish to go all code and no Unity objects at all ... we have you covered.
-
-```csharp
-//For a client initialization
-API.App.Client.Initialze(AppData appId);
-
-//For a server initialization
-API.App.Server.Initialize(AppData appId, SteamGameServerConfiguraiton config);
-```
-
-You can learn more about [AppData ](../../data-layer/app-data.md)and [SteamGameServerConfiguraiton ](../components/steam-game-server-events.md)in our knowledge base.
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3>Game Object</h3></td><td><ul><li>Zero Code</li></ul></td><td><a href="../../../../.gitbook/assets/Screenshot 2023-01-30 111452.png">Screenshot 2023-01-30 111452.png</a></td><td><a href="../../for-unity-game-engine/quick-start-guide/gameobject-initialization.md">gameobject-initialization.md</a></td></tr><tr><td><h3>Scriptable Object</h3></td><td><ul><li>No GameObject</li><li>Single line of code</li></ul></td><td><a href="../../../../.gitbook/assets/Screenshot 2023-01-30 111537.png">Screenshot 2023-01-30 111537.png</a></td><td><a href="../../for-unity-game-engine/quick-start-guide/scriptableobject-initialization.md">scriptableobject-initialization.md</a></td></tr><tr><td><h3>API</h3></td><td><ul><li>No GameObject</li><li>No ScriptableObject</li><li>Pure C#</li></ul></td><td><a href="../../../../.gitbook/assets/Screenshot 2023-01-30 111633.png">Screenshot 2023-01-30 111633.png</a></td><td><a href="../../for-unity-game-engine/quick-start-guide/api-initialization.md">api-initialization.md</a></td></tr></tbody></table>
 
 ## Networking
 
@@ -92,7 +30,7 @@ Steamworks Complete and whatever HLAPI you chose to work with have no impact on 
 
 ### Do I need Steamworks Complete?
 
-You do not "require" Steamworks Complete in order to use Mirror, FishNetworking or NetCode for GameObject's or any other Steam transports. Those transports like our self work with Steamworks.NET directly.
+You do **not** "require" Steamworks Complete in order to use Mirror, FishNetworking or NetCode for GameObject's or any other Steam transports. Those transports like our self work with Steamworks.NET directly.
 
 That said you will need to initialize, configure and manage the Steam API before SteamNetworking interfaces can be used. Our Steamworks Complete and Steamworks Foundation packages make working with Steam API simple and stable. If you do not use Steamworks Complete or Foundation you would need to use the raw Steam API to initialize and configure your Steam API integration your self before your HLAPI could use the Steam transports.
 
