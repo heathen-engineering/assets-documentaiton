@@ -211,7 +211,7 @@
       * [UAS Import](assets/steamworks/unity/installation/uas-import.md)
       * [Networking Integrations](assets/steamworks/unity/installation/networking-integrations.md)
       * [Troubleshooting](assets/steamworks/unity/installation/troubleshooting.md)
-    * [Quick Start](assets/steamworks/unity/quick-start-guide/README.md)
+    * [Getting Started](assets/steamworks/unity/quick-start-guide/README.md)
       * [GameObject Initialization](assets/steamworks/for-unity-game-engine/quick-start-guide/gameobject-initialization.md)
       * [ScriptableObject Initialization](assets/steamworks/for-unity-game-engine/quick-start-guide/scriptableobject-initialization.md)
       * [API Initialization](assets/steamworks/for-unity-game-engine/quick-start-guide/api-initialization.md)
