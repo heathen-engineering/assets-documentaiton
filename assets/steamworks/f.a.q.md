@@ -78,7 +78,7 @@ For tools that do integrate with Steam API the relevant information is; Heathen 
 
 How do you know its proper use?
 
-1. Does not embed a copy of Steamworks.NET in its source code. Steamworks.NET should always be installed fresh from GitHub preferably via the Unity Package Manager as described on our [installation page](unity/installation/prerequisites.md#steamworks.net).
+1. Does not embed a copy of Steamworks.NET in its source code. Steamworks.NET should always be installed fresh from GitHub preferably via the Unity Package Manager as described on our [installation page](broken-reference).
 2. Does not make \*\***ANY**\*\* use of SteamManager.cs\
    SteamManager.cs is an example script originally authored by the same developer that authors Steamworks.NET ... you can find its original form [here](https://github.com/rlabrecque/Steamworks.NET-Example). It is meant to be a demonstration of how a programmer would initialize the Steam API ... it is absolutely not meant to be production code. Sadly many samples, examples and even some "assets" are had coded to use it.
 

@@ -16,29 +16,6 @@ These articles are made possible by our [GitHub Sponsors](../../../../) ... beco
 
 ## Introduction
 
-How you install depends on how you chose to license Heathen's Steamworks.&#x20;
+How you install depends on how you chose to license Heathen's Steamworks. The following cards cover the installation instructions and core features of each of the three major ways to license Heathen's Steamworks.
 
-## Free users and Sponsors
-
-Heathen offers a free, open source lite version of our Steamworks assets called Steamworks Foundation. Foundation is housed on GitHub and can be installed via the [Unity Package Manager](upm-add-from-git-url.md). Similarly GitHub sponsors have directly access to our Source Repository and so can also install via [Unity Package Manager](upm-add-from-git-url.md).&#x20;
-
-{% embed url="https://kb.heathenengineering.com/assets/steamworks/installation/upm-add-from-git-url" %}
-
-### Become a sponsor
-
-{% embed url="https://github.com/sponsors/heathen-engineering" %}
-
-{% hint style="success" %}
-Better for us and better for you!
-
-Sponsoring Heathen on GitHub for $10 a month gets you access to the source repository for Steamworks, PhysKit and UX Complete.
-
-\
-See why GitHub sponsor is the hands down best way to Do More with Heathen in our [Licensing Article](../../../../company/become-a-sponsor/licensing.md).
-{% endhint %}
-
-## Unity Asset Store
-
-If you purchased on the Unity Asset Store you will use it to import. At the time of this writing that is done through the [Unity Package Manager](uas-import.md) but does import as a lose asset.
-
-{% embed url="https://kb.heathenengineering.com/assets/steamworks/installation/uas-import" %}
+<table data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><h3>Foundation</h3></td><td><p><a href="https://github.com/heathen-engineering/SteamworksFoundation/tree/main/Unity">Installation Instructions</a></p><ul><li>Free</li><li>Source Access</li><li>Limited Feature Set</li></ul></td><td>Package Manager Install</td></tr><tr><td><h3>GitHub Sponsor</h3></td><td><p><a href="https://github.com/sponsors/heathen-engineering">Become a Sponsor</a><br><a href="https://github.com/heathen-engineering/SourceRepo">Installation Instructions</a></p><ul><li>$10.00 monthly</li><li>Source Access</li><li>Live Updates</li><li>Steamworks Complete</li><li>PhysKit Complete</li><li>UX Complete</li><li>Exclusive extras</li><li>Issue Tracking</li><li>Escalated Support</li></ul></td><td>Package Manager Install<br><br>Cancel anytime, keep everything you have includes site based license</td></tr><tr><td><h3>Unity Asset Store</h3></td><td><p><a href="https://assetstore.unity.com/packages/tools/integration/steam-api-steamworks-complete-190316">Buy Now</a><br><a href="https://support.unity.com/hc/en-us/articles/210112873-How-do-I-download-an-asset-">Installation Instructions</a></p><ul><li>$75.00 one-time</li><li>Source Included</li><li>Quarterly Updates<br>+ Hotfixes</li><li>Steamworks Complete</li></ul></td><td>Asset Store Install<br><br>Per-user based license, free updates for that major version, discount on future major updates</td></tr></tbody></table>

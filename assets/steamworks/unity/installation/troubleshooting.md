@@ -88,7 +88,7 @@ You have compiler errors in your project preventing our editor script from runni
 
 If its that you have script defines in place for code you don't have installed simply remove the defines.
 
-If its that you have compiler errors and so our scripts are not running, simply install the requirements directly ... you can find instruction on how in [this section](prerequisites.md).
+If its that you have compiler errors and so our scripts are not running, simply install the requirements directly ... you can find instruction on how in [this section](broken-reference).
 
 ## XXXX is not found
 
