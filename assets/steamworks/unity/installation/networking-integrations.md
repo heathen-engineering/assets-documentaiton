@@ -149,9 +149,7 @@ com.unity.netcode.gameobjects
 
 #### Transports
 
-{% embed url="https://github.com/Unity-Technologies/multiplayer-community-contributions/tree/main/Transports/com.community.netcode.transport.steamnetworking" %}
-Steam Networking Transport
-{% endembed %}
+{% embed url="https://github.com/Unity-Technologies/multiplayer-community-contributions/tree/main/Transports/com.community.netcode.transport.steamnetworkingsockets" %}
 
 NetCode for GameObjects has a community transport project similar to other HLAPI frameworks. Heathen Engineering has contributed a transport that is compatible with Steamworks.NET and can be downloaded from Unity's community transports section.
 
@@ -165,7 +163,7 @@ NetCode for GameObjects has a community transport project similar to other HLAPI
 5. Enter the URL below and press the add button:
 
 ```
-https://github.com/Unity-Technologies/mlapi-community-contributions.git?path=/Transports/com.community.netcode.transport.steamnetworking
+https://github.com/Unity-Technologies/multiplayer-community-contributions.git?path=/Transports/com.community.netcode.transport.steamnetworkingsockets
 ```
 
 ##
