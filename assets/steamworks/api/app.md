@@ -200,7 +200,7 @@ This is a global field located on API.App.Initalized and indicates rather or not
 This is \***Not**\* located in the API.App.Client class rather its in the parent API.App class so to access it&#x20;
 
 ```csharp
-if(API.App.Initalized)
+if(API.App.Initialized)
     ;//Yes it is initalized
 else
     ;//No it is not
