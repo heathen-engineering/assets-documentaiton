@@ -32,8 +32,8 @@ The overlay interface provides simplified access to Steam's overlay features. Th
 
 ### Related Components
 
-{% content-ref url="../unity/components/overlay-manager.md" %}
-[overlay-manager.md](../unity/components/overlay-manager.md)
+{% content-ref url="../unity-engine/components/overlay-manager.md" %}
+[overlay-manager.md](../unity-engine/components/overlay-manager.md)
 {% endcontent-ref %}
 
 ## Events

@@ -45,6 +45,8 @@ Heathen's Steamworks has tooling for you
 
 ## Layers
 
+From the highest level (most abstract and typically simplest to use) to the lowest level (most "native" and typically most flexible to use).
+
 {% hint style="info" %}
 ### Prefabs
 
@@ -82,13 +84,15 @@ myAchievement.IsAchieved = true;
 {% endhint %}
 
 {% hint style="info" %}
-### API Wrapper
+### API
 
-Wraps the underlying Steam API making it more "Engine Centric" for Unity as an example this means we wrap all of the C style callbacks and callresults with UnityEvents&#x20;
+Wraps the underlying Steam tools making it more "Engine Centric" for Unity as an example this means we wrap all of the C style callbacks and callresults with UnityEvents&#x20;
 
 
 
-Our API wrapper makes the Steam API far less cryptic and far more C# and engine relevant enabling your engineers and programmers to work with it much more natively than with the raw Steam API.
+Our API makes Valve's Steamworks far less cryptic and far more C# and engine relevant enabling your engineers and programmers to work with it much more natively than with the raw Steam API.\
+\
+We have also simplified many multi-step processes and concepts, provided request queues and other quality of life features ontop of the raw Steamworks interfaces. Even if your a Steamworks pro, our APIs are all battle tested, robust, efficient and well documented and maintained.
 {% endhint %}
 
 {% hint style="info" %}

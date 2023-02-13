@@ -70,7 +70,7 @@ It is not to say you must use SGS for Stats and Achievements only that you must 
 
 ### Game Server Browser
 
-Put simply server discovery. Steam Game Servers can be configured to list on Steam's Game Server Browser. This can then be used in or out of game to discover game sessions to play or spectate. See the [Game Server Browser Manager](../../../../../assets/steamworks/unity/components/game-server-browser-manager.md) document for more information
+Put simply server discovery. Steam Game Servers can be configured to list on Steam's Game Server Browser. This can then be used in or out of game to discover game sessions to play or spectate. See the [Game Server Browser Manager](../../../../../assets/steamworks/unity-engine/components/game-server-browser-manager.md) document for more information
 
 ### Hosting
 
@@ -92,7 +92,7 @@ There are great tools available to you though a few are linked below. We do not 
 
 ## Configuration
 
-To configure a Steam Game Server browser simply set the desired settings in your [Steam Settings](../../../../../assets/steamworks/unity/scriptable-objects/steam-settings/#steamsettings.server) object and build a server build. In particular take note of the [Game Server](../../../../../assets/steamworks/unity/scriptable-objects/steam-settings/game-server.md) settings.
+To configure a Steam Game Server browser simply set the desired settings in your [Steam Settings](../../../../../assets/steamworks/unity-engine/scriptable-objects/steam-settings/#steamsettings.server) object and build a server build. In particular take note of the [Game Server](../../../../../assets/steamworks/unity-engine/scriptable-objects/steam-settings/game-server.md) settings.
 
 ## Hosting
 

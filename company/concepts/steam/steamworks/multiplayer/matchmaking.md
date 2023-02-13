@@ -48,7 +48,7 @@ This model does much the same as Quick Match but lets the player decide what the
 
 #### How to display lobbies
 
-The [5 Lobbies](../../../../../assets/steamworks/unity/samples/lobby/) sample scene demonstrates browsing for lobbies. If you wanted to do this model the ideal solution is to let the user define there search arguments and return a small number of the lobbies if any that match that say the top 10.&#x20;
+The [5 Lobbies](../../../../../assets/steamworks/unity-engine/samples/lobby/) sample scene demonstrates browsing for lobbies. If you wanted to do this model the ideal solution is to let the user define there search arguments and return a small number of the lobbies if any that match that say the top 10.&#x20;
 
 You can then do searches that are slightly less strict ... what this means depends on your game. For example lets say your game is a classic shooter with modes like CTF, C\&H, KofH and has session sizes of 4v4, 8v8 and 16v16 and maybe also lets your player's pick a map.
 
@@ -87,8 +87,8 @@ Once you have a server build you need to decide how your going to host it.
 
     Do it your self, if your a glutton for pain or just really like data operations you could of course host your servers your self.
 
-Doing this will let you browse for and display all available (and publicly visible) stem game servers via a [Steam Game Server Browser](../../../../../assets/steamworks/unity/components/game-server-browser-manager.md).
+Doing this will let you browse for and display all available (and publicly visible) stem game servers via a [Steam Game Server Browser](../../../../../assets/steamworks/unity-engine/components/game-server-browser-manager.md).
 
 ## Steam Game Server
 
-[Steam Game Server Game Data](../../../../../assets/steamworks/unity/scriptable-objects/steam-settings/game-server.md#gamedata) configurations can be used to establish a similar set of "metadata" as used by the Lobby Matchmaking system. The [Steam Game Server Browser](../../../../../assets/steamworks/unity/components/game-server-browser-manager.md) can be used to query for specific game servers again in a manner similar to searching for a Steam Lobby. The principle difference between the Steam Game Server system and Lobby system is that Steam Game Servers are relatively permanent and can be browsed as a full list, in contrast a Lobby is effectively a chat room and highly temporary.&#x20;
+[Steam Game Server Game Data](../../../../../assets/steamworks/unity-engine/scriptable-objects/steam-settings/game-server.md#gamedata) configurations can be used to establish a similar set of "metadata" as used by the Lobby Matchmaking system. The [Steam Game Server Browser](../../../../../assets/steamworks/unity-engine/components/game-server-browser-manager.md) can be used to query for specific game servers again in a manner similar to searching for a Steam Lobby. The principle difference between the Steam Game Server system and Lobby system is that Steam Game Servers are relatively permanent and can be browsed as a full list, in contrast a Lobby is effectively a chat room and highly temporary.&#x20;

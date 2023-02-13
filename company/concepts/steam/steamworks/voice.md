@@ -22,9 +22,9 @@ Steam Voice does not deal with the sending of data. How you choose to send data 
 
 Heathen's Steamworks Complete includes two tools to simplify the process of capturing and playing back voice data.
 
-### [Voice Recorder](../../../../assets/steamworks/unity/components/voice-recorder.md)
+### [Voice Recorder](../../../../assets/steamworks/unity-engine/components/voice-recorder.md)
 
-The [voice recorder componenet](../../../../assets/steamworks/unity/components/voice-recorder.md) can be used to capture the local user's voice data and prepare it for transmission over your network connection. It provides the data via a [simple event](../../../../assets/steamworks/unity/components/voice-recorder.md#evtvoicestream) feeding a byte\[] of data that should be easily handled by any networking solution.
+The [voice recorder componenet](../../../../assets/steamworks/unity-engine/components/voice-recorder.md) can be used to capture the local user's voice data and prepare it for transmission over your network connection. It provides the data via a [simple event](../../../../assets/steamworks/unity-engine/components/voice-recorder.md#evtvoicestream) feeding a byte\[] of data that should be easily handled by any networking solution.
 
 The idea is that you connect the Voice Stream event up to a method that can send that data over your network.
 
@@ -34,12 +34,12 @@ The idea is that you connect the Voice Stream event up to a method that can send
 voiceRecorded.evtVoiceStream.AddListener(SendVoiceData);
 ```
 
-The [Voice Stream](../../../../assets/steamworks/unity/components/voice-recorder.md#evtvoicestream) event gets invoked when the buffer is full and ready for transmission.
+The [Voice Stream](../../../../assets/steamworks/unity-engine/components/voice-recorder.md#evtvoicestream) event gets invoked when the buffer is full and ready for transmission.
 
-### [Voice Stream](../../../../assets/steamworks/unity/components/voice-stream.md)
+### [Voice Stream](../../../../assets/steamworks/unity-engine/components/voice-stream.md)
 
 ![](<../../../../.gitbook/assets/image (187) (1) (1) (1).png>)
 
-The [voice stream componenet](../../../../assets/steamworks/unity/components/voice-stream.md) can be used to play back voice data produced by the voice recorded component. The intent is that your network system receiving voice data from a Voice Recorded would call the [Play Voice Data method](../../../../assets/steamworks/unity/components/voice-stream.md#play-voice-data) on this component.
+The [voice stream componenet](../../../../assets/steamworks/unity-engine/components/voice-stream.md) can be used to play back voice data produced by the voice recorded component. The intent is that your network system receiving voice data from a Voice Recorded would call the [Play Voice Data method](../../../../assets/steamworks/unity-engine/components/voice-stream.md#play-voice-data) on this component.
 
-Typically you would have one [voice stream componenet](../../../../assets/steamworks/unity/components/voice-stream.md) per connected player (excluding the local player) you can attach these voice stream components to the player's character or controller such that voice audio can (optionally) be accurately represented as 3D audio.
+Typically you would have one [voice stream componenet](../../../../assets/steamworks/unity-engine/components/voice-stream.md) per connected player (excluding the local player) you can attach these voice stream components to the player's character or controller such that voice audio can (optionally) be accurately represented as 3D audio.

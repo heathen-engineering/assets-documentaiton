@@ -2,7 +2,7 @@
 description: Discover the features and capabilities of Heathen's Steam API objects
 ---
 
-# Objects
+# 📦 Objects
 
 {% hint style="success" %}
 #### Like what your seeing?

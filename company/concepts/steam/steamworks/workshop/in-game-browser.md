@@ -13,7 +13,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../../) ... b
 ## &#x20;Introduction
 
 {% hint style="info" %}
-How you set up the UI is up to you, the [UGC Query Manager](../../../../../assets/steamworks/unity/components/ugc-query-manager.md) manages the query and its results for you, its up to you to display those to the user how you see fit.
+How you set up the UI is up to you, the [UGC Query Manager](../../../../../assets/steamworks/unity-engine/components/ugc-query-manager.md) manages the query and its results for you, its up to you to display those to the user how you see fit.
 {% endhint %}
 
 You can find a working example in the sample scenes names `7 Workshop Browser` this sample is designed to work with App 480 Spacewars and emulates the browser in Steam's Workshop UI.
@@ -22,11 +22,11 @@ You can find a working example in the sample scenes names `7 Workshop Browser` t
 
 ### Step 1
 
-The first thing you will want to do is add a [UGC Query Manager](../../../../../assets/steamworks/unity/components/ugc-query-manager.md) to a game object related to your browser UI. This component provides the events your UI will listen on to update its display and the methods and values your UI will interact with to drive the query
+The first thing you will want to do is add a [UGC Query Manager](../../../../../assets/steamworks/unity-engine/components/ugc-query-manager.md) to a game object related to your browser UI. This component provides the events your UI will listen on to update its display and the methods and values your UI will interact with to drive the query
 
 ### Step 2
 
-Create a UI controller that can listen on the Results Changed event of the UGC Query Manager and update your UI accordingly. That is write a new script to manage your browser UI and set it up such that it can listen on the [Results Updated](../../../../../assets/steamworks/unity/components/ugc-query-manager.md#events) event of the manager
+Create a UI controller that can listen on the Results Changed event of the UGC Query Manager and update your UI accordingly. That is write a new script to manage your browser UI and set it up such that it can listen on the [Results Updated](../../../../../assets/steamworks/unity-engine/components/ugc-query-manager.md#events) event of the manager
 
 PSEDO CODE EXAMPLE
 
@@ -41,7 +41,7 @@ public void HandleResultsChanged()
 }
 ```
 
-The above assumes you have a reference to your [query manager](../../../../../assets/steamworks/unity/components/ugc-query-manager.md) in an attribute named `manager`&#x20;
+The above assumes you have a reference to your [query manager](../../../../../assets/steamworks/unity-engine/components/ugc-query-manager.md) in an attribute named `manager`&#x20;
 
 result will be of type [UGC Read Community Item](../../../../../assets/steamworks/objects/ugc-community-item.md) and contains all the details about that specific item.
 

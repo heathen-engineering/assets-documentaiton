@@ -52,7 +52,7 @@ We did this by moving the initialization to the API.App static classes and we ma
 So now you have more options with how you initialize and use Steam API.
 
 1. You can use Steamworks Behaviour as you have traditionally been doing
-2. You can use SteamSettings on its own by simply calling its [Init](unity/scriptable-objects/steam-settings/#init) method.
+2. You can use SteamSettings on its own by simply calling its [Init](unity-engine/scriptable-objects/steam-settings/#init) method.
 3. You can use Heathen's API by calling [App.Client.Initialize](api/app.md#initialize) or [App.Server.Initialize](api/app.server.md#initialize) as appropriate
 
 This then means that

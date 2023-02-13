@@ -2,7 +2,7 @@
 description: Simple structs, powerful features!
 ---
 
-# Data Layer
+# 🧪 Data Layer
 
 {% hint style="success" %}
 #### Like what your seeing?

@@ -2,7 +2,7 @@
 description: The Heathen Steam API wrapper
 ---
 
-# API
+# ⚙ API
 
 {% hint style="success" %}
 #### Like what your seeing?
