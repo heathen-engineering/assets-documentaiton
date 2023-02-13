@@ -295,21 +295,13 @@ public UserLeaveEvent evtUserLeft
 Occurs when the local user is a member of a lobby and a fellow member leaves the lobby. The handler would be similar to the following.
 
 ```csharp
-private void Handler(UserData user)
+private void Handler(UserLobbyLeaveData user)
 {
     //Do work
 }
 ```
 
 ## Fields and Attributes
-
-### Usage Hint
-
-```csharp
-public UseHintOptions usageHint;
-```
-
-This simply indicates what the intended use is for the lobbies created by this instance of the lobby manager. If set to a value other than "None" it will cause the Lobby Manager on Create of a new lobby to set that lobby as either Group or Session depending on the value you set here.
 
 ### SearchArguments
 
@@ -377,6 +369,7 @@ The `CreateArguments` data type is an internal class:
 [Serializable]
 public class CreateArguments
 {
+    public UseHintOptions usageHint;
     public string name;
     public int slots;
     public ELobbyType type;
@@ -386,6 +379,8 @@ public class CreateArguments
 
 the fields of the class are as follows
 
+* usageHint\
+  This simply indicates what the intended use is for the lobbies created by this instance of the lobby manager. If set to a value other than "None" it will cause the Lobby Manager on Create of a new lobby to set that lobby as either Group or Session depending on the value you set here.
 * name\
   This will be set as metadata on the lobby when created e.g. \
   `MyLobby["name"] = value;`
