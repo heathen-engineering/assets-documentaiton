@@ -68,7 +68,7 @@ The JSON item definition listed above describes an item which is a promo item, t
 
 How do you give the player the promo items?
 
-With an item defined you can simply call [Add Promo Item](../../../../../assets/steamworks/api/inventory.md#addpromoitem), This can either be done from the [Inventory API](../../../../../assets/steamworks/api/inventory.md#add-promo-item) or from the [Item Definition](../../../../../assets/steamworks/unity-engine/scriptable-objects/item-definition.md#add-promo-item) object its self.
+With an item defined you can simply call [Add Promo Item](../../../../../assets/steamworks/api/inventory.md#addpromoitem), This can either be done from the [Inventory API](../../../../../assets/steamworks/api/inventory.md#add-promo-item) or from the [Item Definition](../../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#add-promo-item) object its self.
 
 ## Configuration
 

@@ -12,7 +12,7 @@ These articles are made possible by our [GitHub Sponsors](../../../) ... become 
 
 ## Introduction
 
-Used by [InputAction ](../unity-engine/scriptable-objects/input-action.md)objects to report changes as an event argument. InputAction is a type of Game Event, to learn more about [Game Events read our article here](../../system-core/game-events.md).
+Used by [InputAction ](../unity/scriptable-objects/input-action.md)objects to report changes as an event argument. InputAction is a type of Game Event, to learn more about [Game Events read our article here](../../system-core/game-events.md).
 
 ## Fields and Attributes
 
@@ -158,4 +158,4 @@ Reads the is Y, convenance feature and no different than reading isY
 public InputActionData Data => get;
 ```
 
-Returns an [InputActionData ](input-action-data.md)object representing the "is" or current state of the [InputAction](../unity-engine/scriptable-objects/input-action.md).
+Returns an [InputActionData ](input-action-data.md)object representing the "is" or current state of the [InputAction](../unity/scriptable-objects/input-action.md).

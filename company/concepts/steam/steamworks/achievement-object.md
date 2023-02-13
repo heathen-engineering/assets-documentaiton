@@ -29,7 +29,7 @@ Is highly important, you should fully read Valve's own documentation around Stea
 >
 > Steam Stats and Achievements provides an easy way for your game to provide persistent, roaming achievement and statistics tracking for your users. The user's data is associated with their Steam account, and each user's achievements and statistics can be formatted and displayed in their Steam Community Profile.
 
-Heathen's Steamworks represents your defined Steam Achievements as scriptable objects associated with the [Steam Settings](../../../../assets/steamworks/unity-engine/scriptable-objects/steam-settings/). This allows your unity scripts to reference the achievements as you would any other Unity object e.g. by drag and drop and allows you to perform actions against a given achievement such as to unlock it by calling simple methods on that object.
+Heathen's Steamworks represents your defined Steam Achievements as scriptable objects associated with the [Steam Settings](../../../../assets/steamworks/unity/scriptable-objects/steam-settings/). This allows your unity scripts to reference the achievements as you would any other Unity object e.g. by drag and drop and allows you to perform actions against a given achievement such as to unlock it by calling simple methods on that object.
 
 ## What can it do?
 
@@ -47,4 +47,4 @@ Once done you can find Scriptable Objects for each of the identified achievement
 
 ![](<../../../../.gitbook/assets/image (167) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
-You can learn more about the [Achievement Object](../../../../assets/steamworks/unity-engine/scriptable-objects/achievement-object.md) in our documentation. Using this object you can reference this achievement in any of your own logic and easily test for unlock and unlock the achievement.
+You can learn more about the [Achievement Object](../../../../assets/steamworks/unity/scriptable-objects/achievement-object.md) in our documentation. Using this object you can reference this achievement in any of your own logic and easily test for unlock and unlock the achievement.

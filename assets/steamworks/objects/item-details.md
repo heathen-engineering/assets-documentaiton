@@ -16,7 +16,7 @@ These articles are made possible by our [GitHub Sponsors](../../../) ... become 
 public struct ItemDetail
 ```
 
-Used by the [Inventory ](../api/inventory.md)interface and in the [Item Definition](../unity-engine/scriptable-objects/item-definition.md) to represent instances of an item.
+Used by the [Inventory ](../api/inventory.md)interface and in the [Item Definition](../unity/scriptable-objects/item-definition.md) to represent instances of an item.
 
 ## Fields and Attributes
 

@@ -67,17 +67,17 @@ This script will update the quantity owned for each item any time the inventory 
 
 ### How do I get item price?
 
-If you want to fetch the price in the user's currency see: [Current Price](../../../../../../assets/steamworks/unity-engine/scriptable-objects/item-definition.md#currentprice) and [Base Price](../../../../../../assets/steamworks/unity-engine/scriptable-objects/item-definition.md#baseprice). You can check if there is a price at all via [Has Price](../../../../../../assets/steamworks/unity-engine/scriptable-objects/item-definition.md#hasprice).
+If you want to fetch the price in the user's currency see: [Current Price](../../../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#currentprice) and [Base Price](../../../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#baseprice). You can check if there is a price at all via [Has Price](../../../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#hasprice).
 
 ### How do I set up in-game currency?
 
 Your in-game currency would simply be an inventory item. You would then set up "Exchange" recipes for all the items that can be "purchased" for that currency.
 
-In short in-game currency is simply exchanging X items for Y item. See the [Item Definition Exchange section](../../../../../../assets/steamworks/unity-engine/scriptable-objects/item-definition.md#exchange-1) for more details. You can do a lot with exchange well more than would fit in 1 article so be sure to read up in Valve's documentation as well.
+In short in-game currency is simply exchanging X items for Y item. See the [Item Definition Exchange section](../../../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#exchange-1) for more details. You can do a lot with exchange well more than would fit in 1 article so be sure to read up in Valve's documentation as well.
 
 ### How do get item count?
 
-[Item Definition's Total Quantity](../../../../../../assets/steamworks/unity-engine/scriptable-objects/item-definition.md#totalquantity) indicates the number of this item the player owns.
+[Item Definition's Total Quantity](../../../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#totalquantity) indicates the number of this item the player owns.
 
 ### How do I refresh the Inventory?
 
@@ -89,4 +89,4 @@ By refresh we assume you mean how to get the current count of the user's invento
 
 So you have set up your inventory items, your going to use full Client API so you cant simulate an end-to-end purchase. Your asking your self ... How do I test my game logic to make sure its handling inventory change correctly?
 
-Use the [Steamworks Inspector](../../#inventory) and click the "Grant" button beside any of the items, this will cause it to grant you an item which will raise the [EventChanged](../../../../../../assets/steamworks/unity-engine/scriptable-objects/steam-settings/game-client/inventory-settings.md) ... you can now observe your game logic and insure its performing as you expected.
+Use the [Steamworks Inspector](../../#inventory) and click the "Grant" button beside any of the items, this will cause it to grant you an item which will raise the [EventChanged](../../../../../../assets/steamworks/unity/scriptable-objects/steam-settings/game-client/inventory-settings.md) ... you can now observe your game logic and insure its performing as you expected.

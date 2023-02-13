@@ -30,7 +30,7 @@ Use the Steam Web API to set trusted leaderboard scores
 
 ## Leaderboard Object
 
-This is a scriptable object used to define the leaderboard in Unity and used within Unity to query the board and access its information. Read more in the [Leaderboard Object](../../../../../assets/steamworks/unity-engine/scriptable-objects/leaderboard-object.md) document.
+This is a scriptable object used to define the leaderboard in Unity and used within Unity to query the board and access its information. Read more in the [Leaderboard Object](../../../../../assets/steamworks/unity/scriptable-objects/leaderboard-object.md) document.
 
 ### To Create
 
@@ -118,7 +118,7 @@ The leaderboard manager is a simple component that greatly simplifies reading an
 
 ![](<../../../../../.gitbook/assets/image (181) (1).png>)
 
-You can learn more about the [Leaderboard Manager](../../../../../assets/steamworks/unity-engine/components/leaderboard-manager.md) in its documentation article and by reviewing the [4 Leaderboards](../../../../../assets/steamworks/unity-engine/samples/leaderboards.md) sample scene.
+You can learn more about the [Leaderboard Manager](../../../../../assets/steamworks/unity/components/leaderboard-manager.md) in its documentation article and by reviewing the [4 Leaderboards](../../../../../assets/steamworks/unity/samples/leaderboards.md) sample scene.
 
 ## How To
 
@@ -132,7 +132,7 @@ Upload Method or simply Method
 This is a concept you will see in various places when uploading&#x20;
 {% endhint %}
 
-#### [Leaderboard Object](../../../../../assets/steamworks/unity-engine/scriptable-objects/leaderboard-object.md)
+#### [Leaderboard Object](../../../../../assets/steamworks/unity/scriptable-objects/leaderboard-object.md)
 
 The most common is to use the LeaderboardObject its self to upload scores. The LeaderboardObject is a ScriptableObject so you can reference it in any script you like and use it as such:
 
@@ -154,9 +154,9 @@ leaderboard.UploadScore(42, detailArray, method, callback);
 
 This method works the same as the above but can take a detail array. This would be an array of int values and must not be longer than 64 e.g. `int[64] detailArray` this is commonly used to store additional data about the user's entry.
 
-#### [Leaderboard Manager](../../../../../assets/steamworks/unity-engine/components/leaderboard-manager.md)
+#### [Leaderboard Manager](../../../../../assets/steamworks/unity/components/leaderboard-manager.md)
 
-You can use the [Leaderboard Manager](../../../../../assets/steamworks/unity-engine/components/leaderboard-manager.md) component;\
+You can use the [Leaderboard Manager](../../../../../assets/steamworks/unity/components/leaderboard-manager.md) component;\
 This component can be attached to a GameObject to manage a specific leaderboard. Its meant to be used with UI elements or for users that are not comfortable working with Scriptable Objects or the API directly. It serves to simplify the methods and features of the leaderboard system and expose common events to the Unity inspector.
 
 While its not typical you can interact with the Leaderboard Manager from code such as.

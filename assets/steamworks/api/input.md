@@ -69,7 +69,7 @@ Returns the array of controller handles currently connected to the game.
 
 ### Add Input
 
-Adds an input action to the list of tracted input actions, if your using a [SteamSettings ](../unity-engine/scriptable-objects/steam-settings/)object this will be done for you for all InputActions defined in the [SteamSettings](../unity-engine/scriptable-objects/steam-settings/). Once an action is added it can be updated by the API and tools such as the [SteamInputManager ](../unity-engine/components/steam-input-manager.md)can be used to track changes.
+Adds an input action to the list of tracted input actions, if your using a [SteamSettings ](../unity/scriptable-objects/steam-settings/)object this will be done for you for all InputActions defined in the [SteamSettings](../unity/scriptable-objects/steam-settings/). Once an action is added it can be updated by the API and tools such as the [SteamInputManager ](../unity/components/steam-input-manager.md)can be used to track changes.
 
 ```csharp
 public static void AddInput(string name, InputActionType type);

@@ -25,7 +25,7 @@ What actually happens when a user presses that button is&#x20;
    2. Provide the connect string as a command line parameter
 2. If the game is already running
    1. Invoke the Game Rich Presence Join Requested event\
-      You can find this event on [API.Overlay.Client](../../../../../assets/steamworks/api/overlay.md#game-rich-presence-join-requested) or by using the [Overlay Manager](../../../../../assets/steamworks/unity-engine/components/overlay-manager.md#evtrichpresencejoinrequested)
+      You can find this event on [API.Overlay.Client](../../../../../assets/steamworks/api/overlay.md#game-rich-presence-join-requested) or by using the [Overlay Manager](../../../../../assets/steamworks/unity/components/overlay-manager.md#evtrichpresencejoinrequested)
 
 ## Enable
 

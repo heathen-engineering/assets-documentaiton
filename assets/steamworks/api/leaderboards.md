@@ -200,7 +200,7 @@ void CallbackHandler(LeaderboardData result, bool IOError);
 ```
 {% endhint %}
 
-The [Steamworks Behaviour](../unity-engine/components/steamworks-behaviour.md) will call this for you as it initializes the Steam Settings and the boards you have defined within. You only need to call this your self if you are creating a build at run time manually and not using the [Leaderboard Object](../unity-engine/scriptable-objects/leaderboard-object.md).
+The [Steamworks Behaviour](../unity/components/steamworks-behaviour.md) will call this for you as it initializes the Steam Settings and the boards you have defined within. You only need to call this your self if you are creating a build at run time manually and not using the [Leaderboard Object](../unity/scriptable-objects/leaderboard-object.md).
 
 ### GetDisplayType
 
@@ -270,7 +270,7 @@ Uploads a score and optionally details for the user to the target leaderboard.
 ## How To
 
 {% hint style="success" %}
-The [Leaderboard ](../unity-engine/scriptable-objects/leaderboard-object.md)object provides simplified access to many of the features found here in. Be sure to read the documentation for the [Leaderboard ](../unity-engine/scriptable-objects/leaderboard-object.md)object to understand what options are available to you.
+The [Leaderboard ](../unity/scriptable-objects/leaderboard-object.md)object provides simplified access to many of the features found here in. Be sure to read the documentation for the [Leaderboard ](../unity/scriptable-objects/leaderboard-object.md)object to understand what options are available to you.
 {% endhint %}
 
 ### Add an attachment

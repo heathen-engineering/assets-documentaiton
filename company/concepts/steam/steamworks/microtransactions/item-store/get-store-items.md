@@ -66,11 +66,11 @@ foreach(var itemDefinition in SteamSettings.Client.inventory.items)
 For each item you will need to get some common information.&#x20;
 
 * Item Name\
-  You can find this in [item\_name](../../../../../../assets/steamworks/unity-engine/scriptable-objects/item-definition.md#item\_name). or by using the [DisplayName](../../../../../../assets/steamworks/unity-engine/scriptable-objects/item-definition.md#displayname) field of Item Definition.
+  You can find this in [item\_name](../../../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#item\_name). or by using the [DisplayName](../../../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#displayname) field of Item Definition.
 * Item Description\
-  You can find this in [item\_description](../../../../../../assets/steamworks/unity-engine/scriptable-objects/item-definition.md#item\_description).
+  You can find this in [item\_description](../../../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#item\_description).
 * Price\
-  If you want to fetch the price in the user's currency see: [Current Price](../../../../../../assets/steamworks/unity-engine/scriptable-objects/item-definition.md#currentprice) and [Base Price](../../../../../../assets/steamworks/unity-engine/scriptable-objects/item-definition.md#baseprice). You can check if there is a price at all via [Has Price](../../../../../../assets/steamworks/unity-engine/scriptable-objects/item-definition.md#hasprice).
+  If you want to fetch the price in the user's currency see: [Current Price](../../../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#currentprice) and [Base Price](../../../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#baseprice). You can check if there is a price at all via [Has Price](../../../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#hasprice).
 * Images\
   Several images can be associated with an item ... we don't recommend using any of them as they should all be optimized for use in web and thus of pore quality for use in game. but you can read them from the item definition via
   * Icon URL\
@@ -80,4 +80,4 @@ For each item you will need to get some common information.&#x20;
   * Store  Images\
     `foreach(var imageUrl in itemDef.item_store_images)`
 * Recipies\
-  To detect if this item can be exchanged for and if so what it requires you need to read the [item\_exchange](../../../../../../assets/steamworks/unity-engine/scriptable-objects/item-definition.md#item\_exchange).
+  To detect if this item can be exchanged for and if so what it requires you need to read the [item\_exchange](../../../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#item\_exchange).

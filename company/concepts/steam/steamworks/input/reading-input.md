@@ -29,7 +29,7 @@ Step 4: Publishing
 
 Assuming you have a working set of input actions defined for your app and you can configured them in your Steam Settings, see the [Setup article](getting-started.md) for more information.
 
-## [Steam Input Manager](../../../../../assets/steamworks/unity-engine/components/steam-input-manager.md)
+## [Steam Input Manager](../../../../../assets/steamworks/unity/components/steam-input-manager.md)
 
 Before you can use Steam Input you need to enable it. We have created a tool for you that will handle this ... see Steam Input Manager for details. Alternatively you can do this your self with just a few lines of code if you prefer.
 
@@ -66,9 +66,9 @@ var inputData = myAction[SteamInputManager.Controllers[0]];
 
 This of course assumes you want to read data from the first controller and that you have made sure there is a controller. What this returns is an [InputActionData](../../../../../assets/steamworks/objects/input-action-data.md) object which can be used to understand the current state of the action.
 
-## [Input Action Events](../../../../../assets/steamworks/unity-engine/components/input-action-event.md)
+## [Input Action Events](../../../../../assets/steamworks/unity/components/input-action-event.md)
 
-We created [InputAction ](../../../../../assets/steamworks/unity-engine/scriptable-objects/input-action.md)as a type of [Game Event](../../../../../assets/system-core/game-events.md). So this means you can register to and listen for changes on each input action from any where. We have tools like the [Input Action Event](../../../../../assets/steamworks/unity-engine/components/input-action-event.md) that let you set this up easily in Unity Editor's Inspector.
+We created [InputAction ](../../../../../assets/steamworks/unity/scriptable-objects/input-action.md)as a type of [Game Event](../../../../../assets/system-core/game-events.md). So this means you can register to and listen for changes on each input action from any where. We have tools like the [Input Action Event](../../../../../assets/steamworks/unity/components/input-action-event.md) that let you set this up easily in Unity Editor's Inspector.
 
 You can also register for events in script just as easily
 

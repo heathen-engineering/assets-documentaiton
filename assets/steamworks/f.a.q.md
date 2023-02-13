@@ -23,8 +23,12 @@ Either, Heathen's Steamworks was originally created as a Unity asset however we 
 Godot (mono) 3.5 or later. \
 To keep the code base between the two engines as close as possible and thus maintenance costs and bugs in check we use C# thus you need the "mono" version of the engine.
 
-Unity 2020 LTS or later\
-As per Unity's request we maintain all Unity assets on the oldest in support Unity version at current that is 2020 LTS
+Unity 2021 LTS or later\
+As per Unity's request we maintain all Unity assets on the oldest in support Unity version at current that is 2021 LTS.&#x20;
+
+> 2020 LTS was supported through the v2.x life cycle. Unity is expected to release 2022 LTS around the end of March or early April dropping 2020 LTS making 2021 LTS the "legacy" LTS\
+> \
+> We do not use engine features in our funcitonal code but our editor extensions of course use engine features. In most cases you can "back port" Steamworks to Unity 2019 or later with little or no issue however we cannot support it beyond community guidance as Unity doesn't support versions older than the legacy LTS.
 
 ## Can this do X
 
@@ -35,14 +39,14 @@ That is to say we cover 100% of the Steam API by virtue of being built on top of
 
 Simple features such as initializing Steam API, loading and handling stats, achievements and leaderboards and even basic uses of the user's data such as fetching the users name, avatar image, etc. can in fact be done code free right out of the box.
 
-If your [GitHub Subscriber](../../) our uGUI Tools take it a step further and can handle tasks like creating a friends list, clan chat and more code free right out of the box.
+Our prefabs even enable you to do many common things such as listing Friends into groups, displaying a Leaderboards entries and even Party and Quick Match lobby systems all code free.
 
 {% hint style="info" %}
 Trying to do everything you can "Code Free" or with "Visual Scripting"?\
 Read our article here on [Visual Scripting](../../company/concepts/development/visual-scripting.md) and maybe check out the rest of our Guides. Heathen is here to help you Do More and that means more than just selling you best in class Unity assets.
 {% endhint %}
 
-More complex features, and make no mistake Steam API is absolutely huge and has many many features some of which such as Steam Inventory can be incredibly complex ... these more complex features will always require you to "program" the logic that exploits them with respect to your game's needs. Depending on what tooling your using such as Bolt or other "visual scripting" tools you can still do it "Code Free" thanks to our tools and components layers.
+More complex features, and make no mistake Steam API is absolutely huge and has many many features some of which such as Steam Inventory can be incredibly complex ... these more complex features will \* **always** \* require you to "program" the logic that exploits them with respect to your game's needs. Depending on what tooling your using such as Bolt or other "visual scripting" tools you can still do it "Code Free" thanks to our tools and components layers.
 
 ### With the free version?
 
@@ -66,6 +70,8 @@ When ready you can get instant access and a license to keep forever of Steamwork
 
 Of course, have a look at some of the [great games that already use this](https://store.steampowered.com/curator/42461073-Made-with-Heathen).
 
+<figure><img src="../../.gitbook/assets/Made with Heathen.jpg" alt=""><figcaption><p>Made with Heathen Steam Curator lists a few of the games published on Steam that are made with Heathen technology including but not limited to Heathen's Steamworks.</p></figcaption></figure>
+
 {% embed url="https://store.steampowered.com/curator/42461073-Made-with-Heathen" %}
 Some of the games that have been Made with Heathen technology.
 {% endembed %}
@@ -84,25 +90,25 @@ How do you know its proper use?
 
 ### Any Given Networking Tool?
 
-1st yes, the networking tool you choose to use wont impact Steam API at all. Rather or not Steam API impacts it depends on rather or not that networking tool uses Steam Networking Interfaces. If it does then it needs to make proper use Steamworks.NET&#x20;
+1st yes, the networking tool you choose to use wont impact Steam API at all. Rather or not Steam API impacts it depends on rather or not that networking tool uses Steam Networking Interfaces. If it does then it needs to make proper use Steamworks.NET ... which is a low bar to meet.
 
 This is not something for us or Steamworks.NET to do its something for the networking tool in question to do. The following tools are known to have working proper integrations with Steamworks.NET or to not use Steam Networking at all.
 
 ### Fish Networking?
 
-Yes: You can find more information in the [Networking Integrations](unity-engine/installation/networking-integrations.md) article.
+Yes: You can find more information in the [Networking Integrations](unity/installation/networking-integrations.md) article.
 
 ### Mirage?
 
-Yes: You can find more information in the [Networking Integrations](unity-engine/installation/networking-integrations.md) article.
+Yes: You can find more information in the [Networking Integrations](unity/installation/networking-integrations.md) article.
 
 ### Mirror?
 
-Yes: You can find more information in the [Networking Integrations](unity-engine/installation/networking-integrations.md) article.
+Yes: You can find more information in the [Networking Integrations](unity/installation/networking-integrations.md) article.
 
 ### NetCode for GameObjects?
 
-Yes: You can find more information in the [Networking Integrations](unity-engine/installation/networking-integrations.md) article.
+Yes: You can find more information in the [Networking Integrations](unity/installation/networking-integrations.md) article.
 
 ### Photon (any variation)
 
