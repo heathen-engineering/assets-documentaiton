@@ -71,7 +71,7 @@ This is the first and often only thing the player "reads" before deciding to buy
 
 Key things to remember
 
-* Its a Hook, a short, catchy, call to action that inspires to player to paly your game
+* Its a Hook, a short, catchy, call to action that inspires a player to paly your game
 * Concise, this needs to be short and to the point. Its only 250 char long and most players will decided to pass up your game based on the artwork and the first few words in this description alone.
 * Call to action / inspire, its a game ... you got to make them want to play
 
@@ -127,7 +127,7 @@ Follows are some quick tips to help you get started.
 
 Your capsule images as Steam calls them are the first things a player will see. These images need to be well branded, clearly readable, contrast well as to stand out in the noise and of course "paint a picture" of your game that entices the player to read your short description.
 
-Don't forget to update your capsule artwork and take advantage of seasonal overlays as this helps highlight to the player ... and Steam store that your product is active. This set of images is more than important enough to weren't extra time and budget to get right. An armature looking capsule image may draw in a few but will put most off and will defiantly get lost in the noise of the Steam store.
+Don't forget to update your capsule artwork and take advantage of seasonal overlays as this helps highlight to the player ... and Steam store that your product is active. This set of images is more than important enough to weren't extra time and budget to get right. An amateur looking capsule image may draw in a few but will put most off and will defiantly get lost in the noise of the Steam store.
 
 ### Videos and Screenshots
 
