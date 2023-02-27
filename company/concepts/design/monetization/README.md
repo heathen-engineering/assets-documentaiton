@@ -64,7 +64,7 @@ A High roller is a term from the gaming industry ( gambling ) and refers to a pe
 
 The issue with predatory monetization practices is that they have an unacceptably high chance of causing harm to vulnerable persons. What defines "unacceptably high chance" should be clear as a normal functioning human being ... but where its not, your regulatory boards will inform you all be it to late in most cases and usually with fines & penalties.&#x20;
 
-In general you should make every effort to protect vulnerable persons. The simplest way to do so is simply to keep it to morally tenable forms of monetization. Up front and clear pricing, with a max spend that is clearly identified and reasonable for the product delivered is always the best approach. Avoid any form of ossification in the cost or value of your offerings is critically important yet the easiest thing to get wrong.
+In general you should make every effort to protect vulnerable persons. The simplest way to do so is simply to keep it to morally tenable forms of monetization. Up front and clear pricing, with a max spend that is clearly identified and reasonable for the product delivered is always the best approach. Avoid any form of obfuscation in the cost or value of your offerings is critically important yet the easiest thing to get wrong.
 
 ### More reasons to not suck
 
