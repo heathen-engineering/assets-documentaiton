@@ -18,7 +18,7 @@ These are simply examples of real world games that are successful financially an
 
 > You do not want to be part of "why" a thing is made illegal, you want to be one of those who knew it was wrong before a regulator told you so.
 
-The titles listed here are listed in no particular order and are simply a sample of main stream successful titles that are predatory.
+The titles listed here are listed in no particular order and are simply a sample of main stream "successful" titles that are predatory.
 
 {% embed url="https://diabloimmortal.blizzard.com/en-us/" %}
 Obscured pricing, no spend cap, [premium currency](vulnerable-practices/premium-currency.md), [obfuscate loot boxes](predatory-practices/surprise-mechanics.md), [FOMO systems](predatory-practices/fear-of-missing-out-fomo.md)
