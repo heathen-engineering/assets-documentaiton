@@ -24,7 +24,9 @@ Pay to play (P2P) simply means you have an up-front, one time defined price that
 
 ### "Pay Once" is dead?
 
-P2P's main issue and reason it needs to leverage additional monetization tools is that its not sustainable as a "one time purchase". There are often arguments on this but the maths for most studios are such that just about any project just isn't viable for a 1 time price ... that's reasonable to ask anyway. In the past a game was a "fire and forget" affair now days even single player standalone games require community management, support, maintenance development and more. Add to that general inflation, that is the $40-$60 price tag was set in an era now long gone. This however doesn't mean that Pay To Play is dead, simply that you need to consider your operations budget and how your going to provide for it. Also you will have an operations cost, that is your game will cost you money to maintain post release, even if its single player and standalone.
+P2P's main issue and reason it needs to leverage additional monetization tools is that its not sustainable as a "one time purchase". There are often arguments on this but the maths for most studios are such that just about any project just isn't viable for a 1 time price ... that's reasonable to ask the consumer for anyway.&#x20;
+
+In the past a game was a "fire and forget" affair now days even single player standalone games require community management, support, maintenance development and more. Add to that general inflation, that is the $40-$60 price tag was set in an era now long gone. This however doesn't mean that Pay To Play is dead, simply that you need to consider your operations budget and how your going to provide for it. Also you will have an operations cost, that is your game will cost you money to maintain post release, even if its single player and standalone.
 
 ## The Factors
 
@@ -33,7 +35,9 @@ These are factors of the cost of building a game that can be useful to think abo
 ### Team Size
 
 Keep the team small.\
-A smaller team has less overhead but there are more benefits as well. Smaller teams are more efficient and there is increasing evidence that small focused organizations working together yield better result at a lower cost than fewer larger organizations. Whatever approach you take consider keeping your team small, when and where you require look to partners specialized in those gap areas you have and compare that to the cost of staffing up and then letting that staff go when your done with them.
+A smaller team has less overhead but there are more benefits as well. Smaller teams are more efficient and there is increasing evidence that small focused organizations working together yield better result at a lower cost than fewer larger organizations. In short don't "staff up" and crunch just to lay-off and ... consider partnering with other studios and keep your self lean and fit.
+
+Whatever approach you take consider keeping your team small, when and where you require look to partners specialized in those gap areas you have and compare that to the cost of staffing up and then letting that staff go when your done with them.
 
 ### Scope
 
@@ -41,7 +45,9 @@ You have likely heard this a lot, you probably think you have scaled your ambiti
 
 ### Monetization
 
-The core issue with Pay to Play, lack of flexibility. Some studios are looking to raise the accepted price of a game while also looking into hybrid models. The issue here is the way this is being approached is very hostile toward consumers.&#x20;
+The core issue with Pay to Play, lack of flexibility. Some studios are looking to raise the accepted price of a game while also looking into hybrid models. The issue here is the way this is being approached is very hostile toward consumers. Its also a failed cat and mouse game to simply up the P2P price to keep afloat, even if gamers accept $100 base price for a game that will only be relevant for X time and we are back at the fight again.
+
+Ideally we could find a monetization model that wasn't at odds with the consumer, one that yields sufficient profits so as to sustain the industry without making the consumer feel molested. Their isn't at current a single good answer to this and that makes since every game is unique so why would 1 model fit all. Instead consider hybridizing your monetization model based on your game and target audience.
 
 ## Examples
 
@@ -58,10 +64,14 @@ The days of releasing a game and being done with it have been dead and gone for 
 #### God of War
 
 {% embed url="https://store.steampowered.com/app/1593500/God_of_War/" %}
+Sorta does have releases
+{% endembed %}
 
 #### Horizon Zero Dawn
 
 {% embed url="https://store.steampowered.com/app/1151640/Horizon_Zero_Dawn_Complete_Edition/" %}
+Sorta does have expansions and releases
+{% endembed %}
 
 ### Hybrids
 

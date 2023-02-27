@@ -20,7 +20,7 @@ If a game is "Free to Play" that doesn't mean the game is "Free" …&#x20;
 
 > boomer says nothing is free zoomer! 😎
 
-It means that the entry point, that is getting started with the game is free-ish e.g. its free to (start) playing. Rather this is done by capping progress, slowing progress, restricting access to content or some other system or limitation, there is always a limitation. Creating games costs money and thus playing them does to, this cannot be avoided.
+It means that the entry point (that is getting started with the game) is free-ish e.g. its free to (start) playing. Rather this is done by capping progress, slowing progress, restricting access to content or some other system or limitation, there is always a limitation. Creating games costs money and thus playing them does to, this cannot be avoided.
 
 Early players jumped into these F2P games thinking they where "[Free](free.md)" games. That is a game that puts zero cost on the consumer. [Free games](free.md) do exist and where becoming more popular at the time likely adding to the confusion.
 
@@ -30,7 +30,7 @@ Early players jumped into these F2P games thinking they where "[Free](free.md)" 
 Nothing is truly free
 {% endhint %}
 
-The main attraction to this model for most indie devs is that "zero barrier to entry" that is any player at any time can try your game out risk free. For an indie reducing that initial risk or "barrier to entry" is an attractive way to grow your player base. For multiplayer games this is even more critical since most multiplayer games are only as fun to paly as their active player base is large.
+The main attraction to this model for most indie devs is that "**zero barrier to entry**" that is any player at any time can try your game out risk free. For an indie reducing that initial risk or "**barrier to entry**" is an attractive way to grow your player base. For multiplayer games this is even more critical since most multiplayer games are only as fun to paly as their active player base is large.
 
 ### Stigma
 
@@ -42,7 +42,7 @@ F2P based games are the pioneers of predatory monetization practices and this st
 
 ## Examples
 
-Tons but here are a few massively popular ones, we are not saying these are good or bad examples of monetization ... simply they are examples.
+Tons but here are a few massively popular ones, we are not saying these are good or bad examples of monetization ... simply they are examples of F2P games.
 
 ### Defence of the Ancients 2 (DOTA2)
 

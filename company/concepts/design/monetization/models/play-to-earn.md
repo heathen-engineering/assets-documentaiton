@@ -14,7 +14,7 @@ Consider supporting us as a [GitHub Sponsor](../../../../../) and get instant ac
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
 
-This is an extremely problematic model. In Heathens professional opinion and should be avoided.
+This is an extremely problematic model. In Heathens professional opinion and should be avoided at all costs. This extends beyond NFT and other hated buzz words and is more common than you might think.
 
 We will do our level best to explore the model and its methods in as objective of a way as possible.
 
@@ -58,6 +58,25 @@ This model may also be defined as securities fraud depending on the laws and reg
 
 [Information](https://www.ageofrustgame.com/faq)
 
+### Less Obvious examples
+
+#### World of Warcraft
+
+In WOW you can and many convert in-game gold to "WoW Tokens" for free play time or they buy "WoW Tokens" with cash to get in-game gold. Add to this plenty of grey markets and now you have an unregulated pachinko game.
+
+#### EVE Online
+
+As with World of Warcraft the "Pilot License" is a means for a player to spend real money to gain in-game value. And as common since should tell you if a thing has "real value" then users will find a way to exploit it and thus more gambling mechanics.
+
+To spell that out more. \
+Any time a "real" value can be established in a reliable way a human will find a way to exploit it. That is markets (authorized or not) will immerge to trade in that value. This devolves the game from a "just for fun" activity into a gambling or worse financial scheme.&#x20;
+
+#### CS:GO
+
+Skins trading or really any in-game item that can be sold on the Steam Community Marketplace for real money directly. CS:GO is one of the early examples and experiments in adding "real value" to in-game items. It should be clear by the games history, legal implications and damage to peoples lives that its a bad thing to do.
+
+If your unaware CS:GO while a fun game has been used for [money laundering](https://www.bbc.com/news/technology-50262447) and similar problematic uses. This is just an extreme case of adding "real value" to an unregulated, digital environment. Far more common is the simple harm of turning your fun game into a job.&#x20;
+
 ## Implementation
 
 While all of the examples above are based on blockchain technology, blockchain/NFT is not required to implement such a system. For example Steam's community marketplace has in the past been used by CS:GO, Team Fortress and many other games to enable the player base to "cash out". The notable difference here is that the "wealth" of these older games was generated in-game. The publisher only profits from this model when player's buy and sale through the Steam Community Marketplace.
@@ -100,7 +119,7 @@ Here are a few choice quotes from an article on Coin Desk
 
 Obviously this is a pyramid scheme and outright illegal in many contexts. The impact on the player is identical to the impact on a victim of a pyramid scheme or similar financial scheme.
 
-In short making a game P2E makes the game at best an investment opportunity with all the risks and potential rewards of that and impacting its users as a healthy well regulated market tends to impact its investors. The glaring note here is that P2E is not regulated at all.
+In short making a game P2E makes the game at best an investment opportunity with all the risks and potential rewards of that and impacting its users as a healthy well regulated market tends to impact its investors. The glaring note here is that P2E gaming is not regulated at all.
 
 Much more typically this is simply a pyramid or Ponzi scheme. In a few articles will see it argued that they are not Ponzi schemes because there is outside investment, these people clearly don't understand what a Ponzi scheme is. Setting that aside the point is that these games are not capable of lasting, as the player base grows, the buy in grows and eventually it all collapses with the players still present at the end suffering all of the loss. Hence why this is illegal in many countries for any other context.
 
@@ -112,7 +131,7 @@ For a counter argument as to why P2E is not a Ponzi scheme read over this articl
 
 Assigning "real" value to aspects of or in your game has a number of negative effects. The first and most news worthy at the time of this writing is hacking. When a hacker attacks a large successful game such as World of Warcraft in the early 2010s they stood to make a reputation for them selves and perhaps grab some valuable information.
 
-When a hacker hacks a game like Axie Infinity they make $600 million or more and tank entire markets. Thus the attraction to and reward for hacking a little game like Axie is far greater and more valuable for the hacker than to bother with a more secure and larger entity such as Blizzard.&#x20;
+When a hacker hacks a game like Axie Infinity they make $600 million or more and tank entire markets. Thus the attraction to and reward for hacking a little game like Axie is far greater and more valuable for the hacker than to bother with a more "secure" and larger entity such as Blizzard.&#x20;
 
 Second is the effect on the games life, assuming your not picked off by a scammer or hacker that tanks your economy: Please read the above section to understand.
 
