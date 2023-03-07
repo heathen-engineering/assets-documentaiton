@@ -60,4 +60,4 @@ You must install the Input Package system from the Package Manager your self to 
 
 Having issues with Package Manager install or Git install?
 
-Read our [Pacakge Manager Install](../../company/concepts/fundamentals/package-manager-installs.md) article to get it fixed
+Read our [Pacakge Manager Install](../../company/concepts/fundamentals/package-manager-installs/) article to get it fixed

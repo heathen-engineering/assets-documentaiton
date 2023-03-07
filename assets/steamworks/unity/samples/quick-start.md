@@ -14,7 +14,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../) ... beco
 
 This simple scene outlines the basic steps to get up and running with Steamworks.
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 This is a bare bones scene that does nothing more than initialize the Steam API. The key component in the scene is the [Steamworks Behaviour](../components/steamworks-behaviour.md) located on the Manager game object.
 
@@ -34,6 +34,6 @@ it is \*\***strongly\*\*** recommended to use a [bootstrap design pattern](../..
 
 ### [Friend Profile](../ugui-tools/prefabs/friend-profile.md)
 
-![](<../../../../.gitbook/assets/image (2).png>)
+![](<../../../../.gitbook/assets/image (2) (4).png>)
 
 The Friend Profile present in the scene is simply here to prove to you that the Steam API is initialized and able to read data. On load it will fetch the local user's data and populate the avatar image, name, status, friend ID and Steam level.
