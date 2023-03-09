@@ -65,7 +65,7 @@ Valve issues you an App ID when you pay your application fee. If you don't have 
 
 ### Artifacts
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
 
 The Steam Settings object can be used to reference all of your Steam "artifacts" such as Input Fields, [Stats](../../../../company/concepts/steam/steamworks/stats-object.md), [Leaderboards](../../../../company/concepts/steam/steamworks/leaderboard-object/), [Achievements](../../../../company/concepts/steam/steamworks/achievement-object.md), [DLC ](../../../../company/concepts/steam/steamworks/downloadable-content-object.md)and [Inventory items](../../../../company/concepts/steam/steamworks/inventory/). For many of these artifact types you can define them in the Steam Developer Portal as you normally would and then use the "Import" button to pull them into your project.
 

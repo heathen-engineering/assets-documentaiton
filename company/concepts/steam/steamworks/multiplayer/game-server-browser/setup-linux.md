@@ -17,3 +17,7 @@ Research is on going to develop a proper guide for Linux and Windows server set 
 {% embed url="https://www.youtube.com/watch?v=8h8tzvbeRNw" %}
 
 The above video goes over the setup and use of Steam CM D on a fresh Linux server
+
+## List of Ports used by Steam
+
+{% embed url="https://help.steampowered.com/en/faqs/view/2EA8-4D75-DA21-31EB" %}

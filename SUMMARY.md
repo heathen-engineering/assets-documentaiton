@@ -32,6 +32,7 @@
       * [Authentication](company/concepts/steam/steamworks/authentication.md)
       * [Cloud Save](company/concepts/steam/steamworks/data-models.md)
       * [CSteamID](company/concepts/steam/steamworks/csteamid.md)
+      * [Steam Deck](company/concepts/steam/steamworks/steam-deck.md)
       * [Downloadable Content](company/concepts/steam/steamworks/downloadable-content-object.md)
       * [Input](company/concepts/steam/steamworks/input/README.md)
         * [Getting Started](company/concepts/steam/steamworks/input/getting-started.md)

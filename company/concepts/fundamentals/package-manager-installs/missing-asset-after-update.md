@@ -48,6 +48,6 @@ To fix this simply right click on the Steamworks Complete folder in the Packages
 
 Once you click that Unity will recompile the related assemblies and all will work.
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 Here I have selected the same SteamSettings scriptable object and you can see its now populated the inspector as expected
