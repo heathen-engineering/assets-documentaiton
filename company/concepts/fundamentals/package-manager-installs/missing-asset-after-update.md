@@ -36,7 +36,7 @@ I did so by simply clicking the Update button in the upper right of the Package 
 
 ## Observing the issue
 
-<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Screen shot of my SteamSettings object ... see how the script is not loaded</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (5).png" alt=""><figcaption><p>Screen shot of my SteamSettings object ... see how the script is not loaded</p></figcaption></figure>
 
 Next observe the issue, you can do this in lots of ways in short Unity wont be able to load anything from the Package ... in this case I have selected a SteamSettings scriptable object and as you can see the inspector for it is empty.
 

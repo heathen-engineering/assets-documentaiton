@@ -12,7 +12,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../../) ... b
 
 ## &#x20;Introduction
 
-Steam provides matchmaking features through the [Lobby ](matchmaking-tools.md)system and [Steam Game Server](game-server-browser.md) systems.
+Steam provides matchmaking features through the [Lobby ](matchmaking-tools.md)system and [Steam Game Server](game-server-browser/) systems.
 
 ## Lobby
 
@@ -66,10 +66,10 @@ Its keenly important that you understand that a lobby is not a server, it is not
 
 You can think of it like jumping on Team Speak, or Discord, etc. and rounding up a few friends to go play a game together.
 
-If you want to list a set of available server's then you 1st off need servers. You can look at creating a server build for your game and having it register as a [Steam Game Server](game-server-browser.md).
+If you want to list a set of available server's then you 1st off need servers. You can look at creating a server build for your game and having it register as a [Steam Game Server](game-server-browser/).
 
 {% hint style="info" %}
-Learn more [here](game-server-browser.md)
+Learn more [here](game-server-browser/)
 {% endhint %}
 
 Once you have a server build you need to decide how your going to host it.

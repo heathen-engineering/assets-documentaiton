@@ -86,7 +86,7 @@ Valve limits what information on Inventory Items can be imported. For example bu
 
 ### Steam Game Server Configuration
 
-The Steam Game Server Configuration lets you configure the details of your game server as it will be seen by Steam. This is only relevant for server builds that will be initializing and logging on as a "[Steam Game Server](../../../../company/concepts/steam/steamworks/multiplayer/game-server-browser.md)"
+The Steam Game Server Configuration lets you configure the details of your game server as it will be seen by Steam. This is only relevant for server builds that will be initializing and logging on as a "[Steam Game Server](../../../../company/concepts/steam/steamworks/multiplayer/game-server-browser/)"
 
 If you set the "Auto Logon" feature to false you will need to call LogOn for the server when your ready for it to log on which is done via the [API.App.Server.LogOn()](../../api/app.server.md#logon) method.
 
