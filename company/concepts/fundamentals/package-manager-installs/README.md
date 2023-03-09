@@ -147,7 +147,7 @@ If for some reason you do not get this popup then odds are you already have a Gi
 
 ![](<../../../../.gitbook/assets/image (2) (2).png>)
 
-![](<../../../../.gitbook/assets/image (4) (2) (1).png>)
+![](<../../../../.gitbook/assets/image (4) (2) (1) (1).png>)
 
 The above images all show variations of the credential as used. You should be able to force the popup to show again by simply removing any GitHub related credentials already stored in Windows Credential Manager.
 

@@ -9,12 +9,12 @@ description: >-
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../../../) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../../../) ... become a sponsor today!
 {% endhint %}
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><h2>Steam</h2></td><td><a href="../">Guides and Tutorials</a></td><td><a href="../../../../assets/steamworks/">Integration (Unity and Godot)</a></td><td></td><td></td><td><a href="../">..</a></td><td><a href="../../../../.gitbook/assets/Steamworks Card.png">Steamworks Card.png</a></td></tr><tr><td><h2>PhysKit</h2></td><td><a href="../../../../assets/physkit/learning/sample-scenes/1-ballistic-basics.md">Ballistics</a></td><td><a href="../../../../assets/physkit/learning/sample-scenes/1-buoyancy-example.md">Buoyancy</a></td><td><a href="../../../../assets/physkit/learning/sample-scenes/1-force-effect-fields.md">Force Effects</a></td><td><a href="../../../../assets/physkit/learning/sample-scenes/2-verlet-spring-skinned-mesh.md">Verlet (Physics Bone)</a></td><td><a href="../../../../assets/physkit/">physkit</a></td><td><a href="../../../../.gitbook/assets/PhysKit Card.png">PhysKit Card.png</a></td></tr><tr><td><h2>UX</h2></td><td><a href="../../../../assets/ux/learning/core-concepts/">User eXperience Tools</a></td><td><a href="../../../../assets/ux/learning/ugui-extras/">uGUI Extras</a></td><td></td><td></td><td><a href="../../../../assets/ux/">ux</a></td><td><a href="../../../../.gitbook/assets/Splash Screen (1).png">Splash Screen (1).png</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><h2>Steam</h2></td><td><a href="../../">Guides and Tutorials</a></td><td><a href="../../../../../assets/steamworks/">Integration (Unity and Godot)</a></td><td></td><td></td><td><a href="../../">..</a></td><td><a href="../../../../../.gitbook/assets/Steamworks Card.png">Steamworks Card.png</a></td></tr><tr><td><h2>PhysKit</h2></td><td><a href="../../../../../assets/physkit/learning/sample-scenes/1-ballistic-basics.md">Ballistics</a></td><td><a href="../../../../../assets/physkit/learning/sample-scenes/1-buoyancy-example.md">Buoyancy</a></td><td><a href="../../../../../assets/physkit/learning/sample-scenes/1-force-effect-fields.md">Force Effects</a></td><td><a href="../../../../../assets/physkit/learning/sample-scenes/2-verlet-spring-skinned-mesh.md">Verlet (Physics Bone)</a></td><td><a href="../../../../../assets/physkit/">physkit</a></td><td><a href="../../../../../.gitbook/assets/PhysKit Card.png">PhysKit Card.png</a></td></tr><tr><td><h2>UX</h2></td><td><a href="../../../../../assets/ux/learning/core-concepts/">User eXperience Tools</a></td><td><a href="../../../../../assets/ux/learning/ugui-extras/">uGUI Extras</a></td><td></td><td></td><td><a href="../../../../../assets/ux/">ux</a></td><td><a href="../../../../../.gitbook/assets/Splash Screen (1).png">Splash Screen (1).png</a></td></tr></tbody></table>
 
 ## &#x20;Introduction
 
@@ -43,7 +43,7 @@ The intended use of Steam Authentication is that the subject who wishes to authe
 
 ### Generate Ticket
 
-[Get Auth  Session Ticket](../../../../assets/steamworks/api/authentication.md#getauthsessionticket)
+[Get Auth  Session Ticket](../../../../../assets/steamworks/api/authentication.md#getauthsessionticket)
 
 ```csharp
 Authentication.GetAuthSessionTicket((ticket, IOError) =>
@@ -80,7 +80,7 @@ Each ticket can be used exactly once and does expire after a period of time. So 
 
 ### Begin Auth Session
 
-[Begin Auth Session](../../../../assets/steamworks/api/authentication.md#beginauthsession)
+[Begin Auth Session](../../../../../assets/steamworks/api/authentication.md#beginauthsession)
 
 ```csharp
 void AuthenticatUser(byte[] ticket, UserData user)
@@ -154,7 +154,7 @@ Having authenticated a user allows for a few additional features. For example a 
 
 ### End Auth Session
 
-[End Auth Session](../../../../assets/steamworks/api/authentication.md#endauthsession)
+[End Auth Session](../../../../../assets/steamworks/api/authentication.md#endauthsession)
 
 ```csharp
 void UserLoggedOff(UserData user)
@@ -171,11 +171,11 @@ A common use for authentication sessions is to validate that a given user owns s
 
 You can either serialize the local user's whole inventory (rare)
 
-[Serialize All Item Results](../../../../assets/steamworks/api/inventory.md#serializeallitemresults)
+[Serialize All Item Results](../../../../../assets/steamworks/api/inventory.md#serializeallitemresults)
 
 or you can serialize specific items (more common)
 
-[Serialize Item Results By ID](../../../../assets/steamworks/api/inventory.md#serializeitemresultsbyid)
+[Serialize Item Results By ID](../../../../../assets/steamworks/api/inventory.md#serializeitemresultsbyid)
 
 In either case the result is a byte\[] of data that represents the inventory state at the time of serialization, who that inventory was read from and when it was read.
 
@@ -198,7 +198,7 @@ The specifics of sending the data is between you and your networking tools, the 
 
 When your peer or server receives this data they can read its details
 
-[Deserialize Result](../../../../assets/steamworks/api/inventory.md#destroyresult)
+[Deserialize Result](../../../../../assets/steamworks/api/inventory.md#destroyresult)
 
 ```csharp
 void ValidateInventory(UserData user, byte[] data)

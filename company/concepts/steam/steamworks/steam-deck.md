@@ -51,4 +51,4 @@ Connect the Unity Profiler via LAN. To do so in your build settings select and t
 
 In your profiler use the Attach to Player drop down and enter the IP Address of your Steam Deck
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
