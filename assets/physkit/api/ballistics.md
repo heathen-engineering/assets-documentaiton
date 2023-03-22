@@ -60,6 +60,22 @@ public static float MaxRange(
 
 The main feature of the Ballistics API is the Solution method which comes in several overloads to meet any need.
 
+{% hint style="info" %}
+Each method has an equivalent 2D variant. for example
+
+3D Solution is
+
+```csharp
+Solution(...)
+```
+
+2D Solution is
+
+```csharp
+Solution2D(...)
+```
+{% endhint %}
+
 ### Simple Trajectory
 
 ```csharp
@@ -155,20 +171,83 @@ public static bool Solution(
 
 The raycast method can be used to trace a ballistic trajectory for a defined length and test for collision along the way. The resulting steps tested will be returned along with the final direction of the projection and any hit data found.
 
+{% hint style="info" %}
+For 2D casts see Raycast2D
+{% endhint %}
+
 ```csharp
 public static bool Raycast(
-    Vector3 start, //Start point
-    Vector3 velocity, //direction and speed
-    Vector3 gravity, //full gravity vector
-    float resolution, //Distance between steps
-    float maxLength, //max length to test along
-    LayerMask collsiionLayers, //layers to test for collision on
-    out RaycastHit hit, //Hit data if any
-    out List<Vector3> path, //points tested 
-    out Vector3 direction) //Final look direction of the projectile path
+        Vector3 start, 
+        Vector3 velocity, 
+        Vector3 gravity, 
+        float resolution, 
+        float maxLength, 
+        LayerMask collisionLayers, 
+        out RaycastHit hit, 
+        out List<(Vector3 position, Vector3 velocity, float time)> path, 
+        out float distance)
 ```
 
 This can be used test for collision, draw trajectory arcs, plan for bounces, etc.
+
+* start\
+  The point at which the trajectory should start from
+* velocity\
+  The initial velocity of the projectile
+* gravity\
+  The gravity vector, you can read this from Unity via Physics.Gravity or provide your own
+* resolution\
+  The distance for each step of the traversal
+* maxLength\
+  the total length of the traversal before the process is stopped rather or not it reaches a collision point
+* collisionLayers\
+  The layers to check for collision on
+* hit\
+  If a hit occurred this will be populated with the data
+* pay\
+  A tuple defining each step along the path containing the position, velocity and total flight time up to this point
+* distance\
+  the total length of the path
+
+### SphereCast / CircleCast
+
+Casts a ray marching a sphere or circle across the path. Works the same as the Raycast option but can account for the radius of the object which will pass along the path. This is the most common means to check the path of a projectile with a significant geometry such as a ball where as a bullet is offten small enough that the faster Raycast method works fine.
+
+```csharp
+public static bool SphereCast( //Or CircleCast for 2D
+        Vector3 start, 
+        Collider startCollider, 
+        Vector3 velocity, 
+        Vector3 gravity, 
+        float radius, 
+        float resolution, 
+        float maxLength, 
+        LayerMask collisionLayers, 
+        out RaycastHit hit, 
+        out List<(Vector3 position, Vector3 velocity, float time)> path, 
+        out float distance)
+```
+
+* start\
+  The position the trajectory will start from
+* startCollider\
+  This collider will be ignored for the first radius distance of the traverse and helps to avoid self collision on secondary bounces. This is optional and can be null
+* velocity\
+  The initial velocity of the projectile
+* gravity\
+  The gravity vector to apply you can read this from Physics.Gravtiy or Physics2D.Gravity or provider your own
+* radius\
+  The radius of the sphere or circle to be cast
+* resolution\
+  The distance between each step of the travers
+* collisionLayers\
+  The layers to check for collision on
+* hit\
+  If a hit occurred this will be populated with the data
+* pay\
+  A tuple defining each step along the path containing the position, velocity and total flight time up to this point
+* distance\
+  the total length of the path
 
 ## Flight Time
 
@@ -178,7 +257,8 @@ Note that this is an estimate assuming the projectile will travel the full the l
 
 ```csharp
 public static float FlightTime(
-    Vector3 velocity, //The velocity of the projectile 
-    float height, //The height the projectile will travel
-    float gravity, //The effect of gravity on the projectile
+        Vector3 start, 
+        Vector3 end, 
+        Vector3 velocity, 
+        Vector3 gravity)
 ```

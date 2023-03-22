@@ -81,6 +81,24 @@ A production ready prefab is available and configured with the features displaye
 
 <figure><img src="../../../../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
 
+## Events
+
+### Session Lobby Invite
+
+```csharp
+public LobbyDataEvent evtSessionLobbyInvite;
+```
+
+This event is invoked when the user is invited to join a session lobby by the owner of the group lobby. For example if you are in a party with user A and user A uses Heathen's Quick Match to create or join a session you will be invited to join that session and this event will be raised.
+
+### Group Lobby Invite
+
+```csharp
+public GameLobbyJoinRequestedEvent evtGroupLobbyInvite;
+```
+
+This event is invoked when the user is invited and accepts a lobby invite to a group lobby.
+
 ## Fields and Attributes
 
 ### User Owner Pip
@@ -118,6 +136,16 @@ public Button leaveButton;
 ```
 
 A reference to the button the user will click when they want to leave the group/party.
+
+### Auto Join On Invite
+
+```csharp
+public bool autoJoinOnInvite;
+```
+
+If toggled to true then when a GameLobbyJoinRequest event is detected if the target lobby is of type group the tool will leave any existing group lobby and join this new lobby.
+
+This is not generally recomended as you should be validating the game state and lobby state before blindly joining but can be useful for quick testing.
 
 ### Invite Panel
 
