@@ -17,7 +17,7 @@ Becoming a [sponsor of Heathen on GitHub](https://github.com/sponsors/heathen-en
 ## [GitHub Sponsor](https://github.com/sponsors/heathen-engineering)
 
 {% hint style="success" %}
-Sponsoring Heathen at the $10 Monthly (or greater 🤪) [GitHub Sponsor](https://github.com/sponsors/heathen-engineering) tier is the best way to get all of our great assets.
+Sponsoring Heathen at the $15 Monthly (or greater 🤪) [GitHub Sponsor](https://github.com/sponsors/heathen-engineering) tier is the best way to get all of our great assets.
 
 \
 You can cancel your subscription at any time and keep using the assets you installed. Our [license](company/become-a-sponsor/heathen-license-agreement.md) **does not** expire when you cancel your subscription.\
@@ -40,9 +40,9 @@ Sponsors starting at the $10 a month tier gain access to our Source Repository.
 ### How is it Better?
 
 * **Lower price point**\
-  ****Even if you maintain your $10 sponsorship indefinitely we would have to go **2 years** with **zero (0)** major updates and **zero (0)** new assets in order for the Unity Asset Store's perpetual license to break even (_as good of a price, not better_). Even then you wouldn't get the exclusives, instant updates nor the improved support.
+  ****Even if you maintain your $15 sponsorship indefinitely we would have to go **2 years** with **zero (0)** major updates and **zero (0)** new assets in order for the Unity Asset Store's perpetual license to break even (_as good of a price, not better_). Even then you wouldn't get the exclusives, instant updates nor the improved support.
 * **Better support**\
-  As a $10 or greater sponsor you have access to our issue tracking and feedback tools within GitHub as well as priority attention. Any requests or issues you post will get seen first and sorted first as your accessing our source directly.
+  As a $15 or greater sponsor you have access to our issue tracking and feedback tools within GitHub as well as priority attention. Any requests or issues you post will get seen first and sorted first as your accessing our source directly.
 * **Faster updates**\
   As you reading from the source there is no delay at all between us fixing a problem or making an update or addition and you having access to it.
 * **First Access and Exclusives**\
