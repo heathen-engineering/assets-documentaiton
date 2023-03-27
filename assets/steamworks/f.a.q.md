@@ -52,7 +52,7 @@ More complex features, and make no mistake Steam API is absolutely huge and has 
 
 You can find a comparison of what is included in [Steamworks Foundation](./#feature-comparison) on the main page in this knowledge base.&#x20;
 
-Keep in mind you can get instant access and a license to keep forever of Steamworks Complete ... and every other major Heathen asset for $10 by becoming a [GitHub Sponsor](../../) and yes you can cancel any time and keep what you downloaded and the license to use it.
+Keep in mind you can get instant access and a license to keep forever of Steamworks Complete ... and every other major Heathen asset for $15 by becoming a [GitHub Sponsor](../../) and yes you can cancel any time and keep what you downloaded and the license to use it.
 
 ### What about Microtransactions / Cash Shop?
 
@@ -64,7 +64,7 @@ Yes of course, Steam API handles MTX (micro transactions) via the Steam Inventor
 
 Yes its called [Steamworks Foundation](https://github.com/heathen-engineering/SteamworksFoundation) and is free to use. It has a limited feature set but is the same code used in the "full fat" Complete version.&#x20;
 
-When ready you can get instant access and a license to keep forever of Steamworks Complete ... and every other major Heathen asset for $10 by becoming a [GitHub Sponsor](../../) and yes you can cancel any time and keep what you downloaded and the license to use it.
+When ready you can get instant access and a license to keep forever of Steamworks Complete ... and every other major Heathen asset for $15 by becoming a [GitHub Sponsor](../../) and yes you can cancel any time and keep what you downloaded and the license to use it.
 
 ## Can I use this for commercial games?
 

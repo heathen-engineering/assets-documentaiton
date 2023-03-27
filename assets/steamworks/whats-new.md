@@ -124,7 +124,7 @@ We have also added a new "Data" layer that sits between the Scriptable Objects a
 
 No
 
-GitHub Sponsors at the $10 have access to our source repository so not only will that price not be effects but you will see these changes happen as they are made and become stable. You are working on the same source repo that our own internal projects work on.
+GitHub Sponsors at the $15 have access to our source repository so not only will that price not be effects but you will see these changes happen as they are made and become stable. You are working on the same source repo that our own internal projects work on.
 
 ### Will Unity Asset Store users have to pay again and if so how much?
 
@@ -140,9 +140,9 @@ Unity Asset Store has a feature called "Major Update" where we can give the upda
 
 Yes
 
-Anyone can join the GitHub Sponsor program, all sponsors at the $10 monthly tier get instant access to our source repository along with the Heathen standard license which is theirs to keep.
+Anyone can join the GitHub Sponsor program, all sponsors at the $15 monthly tier get instant access to our source repository along with the Heathen standard license which is theirs to keep.
 
-You can thus sub for 10 USD, download what you like, cancel right away if you want and go about your business. If you ever need or want another update resub and get another month of live updates.
+You can thus sub for 15 USD, download what you like, cancel right away if you want and go about your business. If you ever need or want another update resub and get another month of live updates.
 
 GitHub Sponsor is the best way to Do More with Heathen rather or not you own some or all of our assets through Unity Asset Store as well. GitHub Sponsor program is \*\***much**\*\* more than just a way to get our assets. It empowers this Knowledge Base, it fuels on going development, new tools, live support and management of the growing community and a lot more.
 
