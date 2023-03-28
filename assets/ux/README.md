@@ -14,7 +14,7 @@ coverY: 91.6635
 Sponsoring Heathen on GitHub for $10 a month gets you access to the sorce repository for Steamworks, PhysKit and UX Complete.
 
 \
-See why GitHub sponsor is the hands down best way to Do More with Heathen in our [Licensing Article](../../company/become-a-sponsor/licensing.md).
+See why GitHub sponsor is the hands down best way to Do More with Heathen in our [Licensing Article](../../become-a-sponsor/licensing.md).
 {% endhint %}
 
 ### Asset Store

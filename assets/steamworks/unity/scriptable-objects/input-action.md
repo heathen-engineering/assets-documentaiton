@@ -3,12 +3,12 @@
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><h2>Steam</h2></td><td><a href="../../../../company/concepts/steam/">Guides and Tutorials</a></td><td><a href="../../">Integration (Unity and Godot)</a></td><td></td><td></td><td><a href="../../../../company/concepts/steam/">steam</a></td><td><a href="../../../../.gitbook/assets/Steamworks Card.png">Steamworks Card.png</a></td></tr><tr><td><h2>PhysKit</h2></td><td><a href="../../../physkit/learning/sample-scenes/1-ballistic-basics.md">Ballistics</a></td><td><a href="../../../physkit/learning/sample-scenes/1-buoyancy-example.md">Buoyancy</a></td><td><a href="../../../physkit/learning/sample-scenes/1-force-effect-fields.md">Force Effects</a></td><td><a href="../../../physkit/learning/sample-scenes/2-verlet-spring-skinned-mesh.md">Verlet (Physics Bone)</a></td><td><a href="../../../physkit/">physkit</a></td><td><a href="../../../../.gitbook/assets/PhysKit Card.png">PhysKit Card.png</a></td></tr><tr><td><h2>UX</h2></td><td><a href="../../../ux/learning/core-concepts/">User eXperience Tools</a></td><td><a href="../../../ux/learning/ugui-extras/">uGUI Extras</a></td><td></td><td></td><td><a href="../../../ux/">ux</a></td><td><a href="../../../../.gitbook/assets/Splash Screen (1).png">Splash Screen (1).png</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><h2>Steam</h2></td><td><a href="../../../../company/steam/">Guides and Tutorials</a></td><td><a href="../../">Integration (Unity and Godot)</a></td><td></td><td></td><td><a href="../../../../company/steam/">steam</a></td><td><a href="../../../../.gitbook/assets/Steamworks Card.png">Steamworks Card.png</a></td></tr><tr><td><h2>PhysKit</h2></td><td><a href="../../../physkit/learning/sample-scenes/1-ballistic-basics.md">Ballistics</a></td><td><a href="../../../physkit/learning/sample-scenes/1-buoyancy-example.md">Buoyancy</a></td><td><a href="../../../physkit/learning/sample-scenes/1-force-effect-fields.md">Force Effects</a></td><td><a href="../../../physkit/learning/sample-scenes/2-verlet-spring-skinned-mesh.md">Verlet (Physics Bone)</a></td><td><a href="../../../physkit/">physkit</a></td><td><a href="../../../../.gitbook/assets/PhysKit Card.png">PhysKit Card.png</a></td></tr><tr><td><h2>UX</h2></td><td><a href="../../../ux/learning/core-concepts/">User eXperience Tools</a></td><td><a href="../../../ux/learning/ugui-extras/">uGUI Extras</a></td><td></td><td></td><td><a href="../../../ux/">ux</a></td><td><a href="../../../../.gitbook/assets/Splash Screen (1).png">Splash Screen (1).png</a></td></tr></tbody></table>
 
 ## Introduction
 
@@ -16,18 +16,18 @@ These articles are made possible by our [GitHub Sponsors](../../../../) ... beco
 public class InputAction : GameEvent<InputActionData>
 ```
 
-Represents a Steam Input Action such as defined in your games [IGA ](../../../../company/concepts/steam/steamworks/input/getting-started.md#in-game-action-file)file.
+Represents a Steam Input Action such as defined in your games [IGA ](../../../../company/steam/steamworks/input/getting-started.md#in-game-action-file)file.
 
 These must be created as part of your [Steam Settings](steam-settings/) object .
 
 ## Fields and Attributes
 
-| Type                        | Name          | Comment                                                                                                                                            |
-| --------------------------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| InputActionType             | type          | The type of action (Analog or Digital)                                                                                                             |
-| string                      | actionName    | The name of the action as it appears in the [IGA](../../../../company/concepts/steam/steamworks/input/getting-started.md#in-game-action-file) file |
-| InputAnalogActionHandle\_t  | AnalogHandle  | The native Steam API handle if this is a analog handle and has been resolved.                                                                      |
-| InputDigitalActionHandle\_t | DigitalHandle | The native Steam API handle if this is a digital handle and has been resolved.                                                                     |
+| Type                        | Name          | Comment                                                                                                                                   |
+| --------------------------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| InputActionType             | type          | The type of action (Analog or Digital)                                                                                                    |
+| string                      | actionName    | The name of the action as it appears in the [IGA](../../../../company/steam/steamworks/input/getting-started.md#in-game-action-file) file |
+| InputAnalogActionHandle\_t  | AnalogHandle  | The native Steam API handle if this is a analog handle and has been resolved.                                                             |
+| InputDigitalActionHandle\_t | DigitalHandle | The native Steam API handle if this is a digital handle and has been resolved.                                                            |
 
 ## Methods
 

@@ -3,12 +3,12 @@
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><h2>Steam</h2></td><td><a href="../../../../company/concepts/steam/">Guides and Tutorials</a></td><td><a href="../../">Integration (Unity and Godot)</a></td><td></td><td></td><td><a href="../../../../company/concepts/steam/">steam</a></td><td><a href="../../../../.gitbook/assets/Steamworks Card.png">Steamworks Card.png</a></td></tr><tr><td><h2>PhysKit</h2></td><td><a href="../../../physkit/learning/sample-scenes/1-ballistic-basics.md">Ballistics</a></td><td><a href="../../../physkit/learning/sample-scenes/1-buoyancy-example.md">Buoyancy</a></td><td><a href="../../../physkit/learning/sample-scenes/1-force-effect-fields.md">Force Effects</a></td><td><a href="../../../physkit/learning/sample-scenes/2-verlet-spring-skinned-mesh.md">Verlet (Physics Bone)</a></td><td><a href="../../../physkit/">physkit</a></td><td><a href="../../../../.gitbook/assets/PhysKit Card.png">PhysKit Card.png</a></td></tr><tr><td><h2>UX</h2></td><td><a href="../../../ux/learning/core-concepts/">User eXperience Tools</a></td><td><a href="../../../ux/learning/ugui-extras/">uGUI Extras</a></td><td></td><td></td><td><a href="../../../ux/">ux</a></td><td><a href="../../../../.gitbook/assets/Splash Screen (1).png">Splash Screen (1).png</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><h2>Steam</h2></td><td><a href="../../../../company/steam/">Guides and Tutorials</a></td><td><a href="../../">Integration (Unity and Godot)</a></td><td></td><td></td><td><a href="../../../../company/steam/">steam</a></td><td><a href="../../../../.gitbook/assets/Steamworks Card.png">Steamworks Card.png</a></td></tr><tr><td><h2>PhysKit</h2></td><td><a href="../../../physkit/learning/sample-scenes/1-ballistic-basics.md">Ballistics</a></td><td><a href="../../../physkit/learning/sample-scenes/1-buoyancy-example.md">Buoyancy</a></td><td><a href="../../../physkit/learning/sample-scenes/1-force-effect-fields.md">Force Effects</a></td><td><a href="../../../physkit/learning/sample-scenes/2-verlet-spring-skinned-mesh.md">Verlet (Physics Bone)</a></td><td><a href="../../../physkit/">physkit</a></td><td><a href="../../../../.gitbook/assets/PhysKit Card.png">PhysKit Card.png</a></td></tr><tr><td><h2>UX</h2></td><td><a href="../../../ux/learning/core-concepts/">User eXperience Tools</a></td><td><a href="../../../ux/learning/ugui-extras/">uGUI Extras</a></td><td></td><td></td><td><a href="../../../ux/">ux</a></td><td><a href="../../../../.gitbook/assets/Splash Screen (1).png">Splash Screen (1).png</a></td></tr></tbody></table>
 
 ## Introduction
 
@@ -64,7 +64,7 @@ Valve issues you an App ID when you pay your application fee. If you don't have 
 
 <figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-The Steam Settings object can be used to reference all of your Steam "artifacts" such as Input Fields, [Stats](../../../../company/concepts/steam/steamworks/stats-object.md), [Leaderboards](../../../../company/concepts/steam/steamworks/leaderboard-object/), [Achievements](../../../../company/concepts/steam/steamworks/achievement-object.md), [DLC ](../../../../company/concepts/steam/steamworks/downloadable-content-object.md)and [Inventory items](../../../../company/concepts/steam/steamworks/inventory/). For many of these artifact types you can define them in the Steam Developer Portal as you normally would and then use the "Import" button to pull them into your project.
+The Steam Settings object can be used to reference all of your Steam "artifacts" such as Input Fields, [Stats](../../../../company/steam/steamworks/stats-object.md), [Leaderboards](../../../../company/steam/steamworks/leaderboard-object/), [Achievements](../../../../company/steam/steamworks/achievement-object.md), [DLC ](../../../../company/steam/steamworks/downloadable-content-object.md)and [Inventory items](../../../../company/steam/steamworks/inventory/). For many of these artifact types you can define them in the Steam Developer Portal as you normally would and then use the "Import" button to pull them into your project.
 
 {% hint style="info" %}
 The Unity Editor must be in "Play" mode for the import buttons to work.\
@@ -83,7 +83,7 @@ Valve limits what information on Inventory Items can be imported. For example bu
 
 ### Steam Game Server Configuration
 
-The Steam Game Server Configuration lets you configure the details of your game server as it will be seen by Steam. This is only relevant for server builds that will be initializing and logging on as a "[Steam Game Server](../../../../company/concepts/steam/steamworks/multiplayer/game-server-browser/)"
+The Steam Game Server Configuration lets you configure the details of your game server as it will be seen by Steam. This is only relevant for server builds that will be initializing and logging on as a "[Steam Game Server](../../../../company/steam/steamworks/multiplayer/game-server-browser/)"
 
 If you set the "Auto Logon" feature to false you will need to call LogOn for the server when your ready for it to log on which is done via the [API.App.Server.LogOn()](../../api/app.server.md#logon) method.
 

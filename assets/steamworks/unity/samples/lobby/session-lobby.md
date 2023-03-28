@@ -7,12 +7,12 @@ description: Setting up the game
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../../) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../../) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><h2>Steam</h2></td><td><a href="../../../../../company/concepts/steam/">Guides and Tutorials</a></td><td><a href="../../../">Integration (Unity and Godot)</a></td><td></td><td></td><td><a href="../../../../../company/concepts/steam/">steam</a></td><td><a href="../../../../../.gitbook/assets/Steamworks Card.png">Steamworks Card.png</a></td></tr><tr><td><h2>PhysKit</h2></td><td><a href="../../../../physkit/learning/sample-scenes/1-ballistic-basics.md">Ballistics</a></td><td><a href="../../../../physkit/learning/sample-scenes/1-buoyancy-example.md">Buoyancy</a></td><td><a href="../../../../physkit/learning/sample-scenes/1-force-effect-fields.md">Force Effects</a></td><td><a href="../../../../physkit/learning/sample-scenes/2-verlet-spring-skinned-mesh.md">Verlet (Physics Bone)</a></td><td><a href="../../../../physkit/">physkit</a></td><td><a href="../../../../../.gitbook/assets/PhysKit Card.png">PhysKit Card.png</a></td></tr><tr><td><h2>UX</h2></td><td><a href="../../../../ux/learning/core-concepts/">User eXperience Tools</a></td><td><a href="../../../../ux/learning/ugui-extras/">uGUI Extras</a></td><td></td><td></td><td><a href="../../../../ux/">ux</a></td><td><a href="../../../../../.gitbook/assets/Splash Screen (1).png">Splash Screen (1).png</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><h2>Steam</h2></td><td><a href="../../../../../company/steam/">Guides and Tutorials</a></td><td><a href="../../../">Integration (Unity and Godot)</a></td><td></td><td></td><td><a href="../../../../../company/steam/">steam</a></td><td><a href="../../../../../.gitbook/assets/Steamworks Card.png">Steamworks Card.png</a></td></tr><tr><td><h2>PhysKit</h2></td><td><a href="../../../../physkit/learning/sample-scenes/1-ballistic-basics.md">Ballistics</a></td><td><a href="../../../../physkit/learning/sample-scenes/1-buoyancy-example.md">Buoyancy</a></td><td><a href="../../../../physkit/learning/sample-scenes/1-force-effect-fields.md">Force Effects</a></td><td><a href="../../../../physkit/learning/sample-scenes/2-verlet-spring-skinned-mesh.md">Verlet (Physics Bone)</a></td><td><a href="../../../../physkit/">physkit</a></td><td><a href="../../../../../.gitbook/assets/PhysKit Card.png">PhysKit Card.png</a></td></tr><tr><td><h2>UX</h2></td><td><a href="../../../../ux/learning/core-concepts/">User eXperience Tools</a></td><td><a href="../../../../ux/learning/ugui-extras/">uGUI Extras</a></td><td></td><td></td><td><a href="../../../../ux/">ux</a></td><td><a href="../../../../../.gitbook/assets/Splash Screen (1).png">Splash Screen (1).png</a></td></tr></tbody></table>
 
 ## Introduction
 
@@ -122,12 +122,12 @@ For the non-owner members of the lobby the process looks like this
 
 ## Authentication
 
-While not required it is recommended and commonly done, so we demonstrate it in the Practical Use Case scene.  You can learn more about what [Authentication ](../../../../../company/concepts/steam/steamworks/multiplayer/authentication.md)is in our guide section. As to the use in lobby we demonstrate a common workflow where in the owner "authenticates" each joining member. This allows the owner to verify Valve Anti-Cheat (VAC) and if your using Steam Inventory it would allow the owner to verify ownership of specific inventory items.
+While not required it is recommended and commonly done, so we demonstrate it in the Practical Use Case scene.  You can learn more about what [Authentication ](../../../../../company/steam/steamworks/multiplayer/authentication.md)is in our guide section. As to the use in lobby we demonstrate a common workflow where in the owner "authenticates" each joining member. This allows the owner to verify Valve Anti-Cheat (VAC) and if your using Steam Inventory it would allow the owner to verify ownership of specific inventory items.
 
 The workflow is simple
 
 1. When a user joins the lobby (other than the owner) they will get and send their Authentication ticket data through the Lobby Chat Director.
-2. When a chat message is received, we check if it is a message or if its authentication data. If its authentication data then non-owner user's ignore it. The owner of the lobby will read it and "[Begin Session](../../../../../company/concepts/steam/steamworks/multiplayer/authentication.md#begin-auth-session)" on that data verifying the user.&#x20;
+2. When a chat message is received, we check if it is a message or if its authentication data. If its authentication data then non-owner user's ignore it. The owner of the lobby will read it and "[Begin Session](../../../../../company/steam/steamworks/multiplayer/authentication.md#begin-auth-session)" on that data verifying the user.&#x20;
    1. If the user is authentication the owner can cash that data to the Lobby Metadata so all other users are aware the user has been authenticated
    2. If the user fails authentication such as VAC ban the owner can "kick" that user using Heathen's Lobby Kick system.
 
