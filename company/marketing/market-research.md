@@ -20,7 +20,7 @@ Market research is used for more than marketing and should be taken into account
 
 Market research is something every professional in this industry should be investing some of their personal time in. Having a personal understanding of the market that supports the industry you work in is only common since.
 
-Having said that professional market research is leaps and bounds more useful and allows you to make far more effective decisions earlier than the "arm chair research" we should all be doing. Check out our article on [Sourcing Marketing](../sourcing/marketing.md) to learn more about engaging a professional marketing firm.
+Having said that professional market research is leaps and bounds more useful and allows you to make far more effective decisions earlier than the "arm chair research" we should all be doing. Check out our article on [Sourcing Marketing](../sourcing-resources/marketing.md) to learn more about engaging a professional marketing firm.
 
 ## Researching
 

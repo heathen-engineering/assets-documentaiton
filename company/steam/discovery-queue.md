@@ -46,7 +46,7 @@ Put more simply, armature marketing efforts can successfully flood your store pa
 
 Professional marketing on the other hand usually has a concept of "journey" or "funnel" and focused on "converting" users that is ... focused on getting sales. When done correctly professional marketing should raise your conversion rate.&#x20;
 
-We have a guide on [Sourcing Marketing](../sourcing/marketing.md) that might be of use to if you want to know more.
+We have a guide on [Sourcing Marketing](../sourcing-resources/marketing.md) that might be of use to if you want to know more.
 
 ### High Metacritic Score
 
@@ -56,7 +56,7 @@ You can find a list of all the critics that are currently used to calculate the 
 
 We do strongly recommend you use a professional marketing firm with established relationships with Metacritic registered critics and publications. As with any business the relationships available to you are critically important and a random developer sending a review key is not going to get as favourable a response as a known and trusted marketing firm as sad as that may be.
 
-We have a guide on [Sourcing Marketing](../sourcing/marketing.md) that might be of use to if you want to know more.
+We have a guide on [Sourcing Marketing](../sourcing-resources/marketing.md) that might be of use to if you want to know more.
 
 Keep in mind Metacritic only accepts scores posted within 1 year of the game's official release date. Make sure you accomplish this before then and that you have your official release date listed correctly.&#x20;
 
