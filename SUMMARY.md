@@ -110,7 +110,8 @@
     * [❔ Conditional Compilation](company/concepts/development/conditional-compilation.md)
     * [🪳 Debugging](company/concepts/development/debugging.md)
     * [🚧 DevOps](company/concepts/development/devops/README.md)
-      * [Git Control & Unity](company/concepts/development/devops/git-control-and-unity.md)
+      * [☕ Team Collaboration](company/concepts/development/devops/team-collaboration.md)
+      * [🛂 Git Control & Unity](company/concepts/development/devops/git-control-and-unity.md)
     * [⁉ Error Handling](company/concepts/development/error-handling/README.md)
       * [System Dialog](company/concepts/development/error-handling/system-dialog.md)
       * [Reporting](company/concepts/development/error-handling/reporting.md)
@@ -144,9 +145,8 @@
 * [⚔ Solutions](services/solutions.md)
 * [💶 Pricing](services/pricing.md)
 
-## Heathen Engineering <a href="#assets" id="assets"></a>
+## Heathen Assets <a href="#assets" id="assets"></a>
 
-* [🤷 What is Heathen](assets/what-is-heathen.md)
 * [Art Assets](assets/art-assets/README.md)
   * [Breakable](assets/art-assets/breakable/README.md)
     * [Wood Props](assets/art-assets/breakable/wood-props/README.md)
