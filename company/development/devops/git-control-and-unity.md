@@ -16,6 +16,14 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## Introduction
 
+{% hint style="info" %}
+You generally do not want your Unity Project to be the root of your repository.\
+\
+Read our example and its steps and understand why.\
+\
+You do want your repository to have a folder with in it that will be your Unity Project root. This simplifies other aspects later ... read on to better understand.
+{% endhint %}
+
 The concept of source control is critically important for game development. The idea is simply that not only is your source code "backed up" but every change made to your source is tracked and managed and can be reviewed, compared or even rolled back.
 
 In times past you would have needed a paid service such as Perforce, Plastic SCM, Team Foundation or similar. These premium tools do still exist and are a fine option, however several free options are also available. Git or more specifically GitHub has become increasingly friendly to use, integrates with many build services such as Unity Cloud Build and has free levels of use.
