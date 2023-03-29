@@ -37,9 +37,9 @@ Occurs when the overlay is activated&#x20;
 Example handler
 
 ```csharp
-public void HandleEvent(bool arg0)
+public void HandleEvent(bool isOpen)
 {
-    if(arg0)
+    if(isOpen)
         Debug.Log("Overlay is open");
     else
         Debug.Log("Overlay is closed");
@@ -53,12 +53,10 @@ Called when the user tries to join a lobby from their friends list or from an in
 Example handle
 
 ```csharp
-public void HandleEvent(GameLobbyJoinRequested_t arg0)
+public void HandleEvent(LobbyData lobby, UserData user)
 {
-    //You should join this, the user already clicked accept
-    LobbyData lobby = arg0.m_steamIDLobby;
-    //Here is who invited this user
-    UserData fromFriend = arg0.m_steamIDFriend;
+    //the lobby is the lobby your where invited to
+    //the user is who invited you
 }
 ```
 
@@ -67,12 +65,10 @@ public void HandleEvent(GameLobbyJoinRequested_t arg0)
 Called when the user tries to join a different game server from their friends list. The game client should attempt to connect to specified server when this is received
 
 ```csharp
-public void HandleEvent(GameServerChangeRequested_t arg0)
+public void HandleEvent(string address, string password)
 {
     //Server address (e.g. "127.0.0.1:27015", "tf2.valvesoftware.com")
-    string serverAddress = arg0.m_rgchServer;
     //The password if any
-    string password = arg0.m_rgchPassword;
 }
 ```
 
@@ -81,12 +77,10 @@ public void HandleEvent(GameServerChangeRequested_t arg0)
 Called when the user accepts a Rich Precense invite such as API.Friends.Client.InviteToGame(...); This is not an invite to a lobby, this is an invite to a game.
 
 ```csharp
-public void HandleEvent(GameRichPresenceJoinRequested_t arg0)
+public void HandleEvent(UserData fromFriend, string connectionString)
 {
     //Here is who invited this user
-    UserData fromFriend = arg0.m_steamIDFriend;
     //Whatever connection string the inviting user passed in
-    string connString = arg0.m_rgchConnect;
 }
 ```
 
