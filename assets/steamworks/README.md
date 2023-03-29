@@ -7,7 +7,7 @@ cover: ../../.gitbook/assets/SteamMarketing Inventory hStretch.png
 coverY: 17.4
 ---
 
-# Steamworks
+# 🟦 Steamworks
 
 {% hint style="success" %}
 #### Like what your seeing?

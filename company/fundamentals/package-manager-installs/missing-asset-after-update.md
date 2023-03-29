@@ -26,7 +26,7 @@ Follows is a step by step
 
 ## Updating a package
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (5).png" alt=""><figcaption></figcaption></figure>
 
 In this example I will update Heathen's Steamworks Complete from 3.0.9 to 3.0.11 in a Unity 2022.2.4f1 project.
 
@@ -48,6 +48,6 @@ To fix this simply right click on the Steamworks Complete folder in the Packages
 
 Once you click that Unity will recompile the related assemblies and all will work.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 Here I have selected the same SteamSettings scriptable object and you can see its now populated the inspector as expected

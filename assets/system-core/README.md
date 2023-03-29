@@ -4,7 +4,7 @@ description: >-
   and events.
 ---
 
-# System Core
+# ⚙ System Core
 
 {% embed url="https://github.com/heathen-engineering/SystemCore" %}
 

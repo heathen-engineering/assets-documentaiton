@@ -4,7 +4,7 @@ cover: ../../.gitbook/assets/WebPage Cover.png
 coverY: 120.8925
 ---
 
-# PhysKit
+# 🚀 PhysKit
 
 {% hint style="success" %}
 #### Like what your seeing?

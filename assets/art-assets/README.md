@@ -4,5 +4,5 @@ description: >-
   next Unity Project.
 ---
 
-# Art Assets
+# 🎨 Art Assets
 
