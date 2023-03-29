@@ -16,6 +16,10 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 Find our Example Git Repository [here](https://github.com/heathen-engineering/ExampleTeamRepo)!
 {% endhint %}
 
+{% hint style="success" %}
+Before you get started [read this! (IMPORTANT)](git-control-and-unity.md)
+{% endhint %}
+
 When your working with a team and need to share assets from a secure repository such as Heathen's Source Repo.
 
 When you sponsor Heathen you get a site based license, which means you are licensed to have other staff, contractors, etc. who are working under you on your project use our code for that project/task.
