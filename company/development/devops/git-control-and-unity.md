@@ -16,7 +16,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## Introduction
 
-{% hint style="info" %}
+{% hint style="warning" %}
 You generally do not want your Unity Project to be the root of your repository.\
 \
 Read our example and its steps and understand why.\
