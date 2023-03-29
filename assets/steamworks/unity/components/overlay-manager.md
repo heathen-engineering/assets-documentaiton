@@ -56,7 +56,7 @@ Example handle
 public void HandleEvent(GameLobbyJoinRequested_t arg0)
 {
     //You should join this, the user already clicked accept
-    Lobby lobby = arg0.m_steamIDLobby;
+    LobbyData lobby = arg0.m_steamIDLobby;
     //Here is who invited this user
     UserData fromFriend = arg0.m_steamIDFriend;
 }
