@@ -2,7 +2,7 @@
 description: Creating an item store in game and in Steam
 ---
 
-# Item Store
+# 🛒 Item Store
 
 {% hint style="success" %}
 #### Like what your seeing?

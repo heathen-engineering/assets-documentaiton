@@ -2,7 +2,7 @@
 description: Managing a multi-platform build
 ---
 
-# Multi-Platform Project
+# 🤹 Multi-Platform Project
 
 {% hint style="success" %}
 #### Like what your seeing?

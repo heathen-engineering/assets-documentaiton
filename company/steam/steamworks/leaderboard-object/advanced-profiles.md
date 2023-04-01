@@ -2,7 +2,7 @@
 description: Public rich profiles available all the time
 ---
 
-# Advanced Profiles
+# 🗣 Advanced Profiles
 
 {% hint style="success" %}
 #### Like what your seeing?

@@ -2,7 +2,7 @@
 description: Aka MTX, IAP, In App Purchase, cash shop, etc.
 ---
 
-# Microtransactions
+# 💸 Microtransactions
 
 {% hint style="success" %}
 #### Like what your seeing?

@@ -1,4 +1,4 @@
-# Get Store Items
+# 📋 Get Store Items
 
 {% hint style="success" %}
 #### Like what your seeing?

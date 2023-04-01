@@ -12,8 +12,6 @@ Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant acc
 These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><h2>Steam</h2></td><td><a href="../../../company/steam/">Guides and Tutorials</a></td><td><a href="../">Integration (Unity and Godot)</a></td><td></td><td></td><td><a href="../../../company/steam/">steam</a></td><td><a href="../../../.gitbook/assets/Steamworks Card.png">Steamworks Card.png</a></td></tr><tr><td><h2>PhysKit</h2></td><td><a href="../../physkit/learning/sample-scenes/1-ballistic-basics.md">Ballistics</a></td><td><a href="../../physkit/learning/sample-scenes/1-buoyancy-example.md">Buoyancy</a></td><td><a href="../../physkit/learning/sample-scenes/1-force-effect-fields.md">Force Effects</a></td><td><a href="../../physkit/learning/sample-scenes/2-verlet-spring-skinned-mesh.md">Verlet (Physics Bone)</a></td><td><a href="../../physkit/">physkit</a></td><td><a href="../../../.gitbook/assets/PhysKit Card.png">PhysKit Card.png</a></td></tr><tr><td><h2>UX</h2></td><td><a href="../../ux/learning/core-concepts/">User eXperience Tools</a></td><td><a href="../../ux/learning/ugui-extras/">uGUI Extras</a></td><td></td><td></td><td><a href="../../ux/">ux</a></td><td><a href="../../../.gitbook/assets/Splash Screen (1).png">Splash Screen (1).png</a></td></tr></tbody></table>
-
 ## &#x20;Introduction
 
 ```csharp
@@ -25,7 +23,7 @@ public static class API.Authentication
 ```
 
 {% hint style="success" %}
-The Authentication API will use the Server or Client version of Valve's Steam API as required. It is not seperated into a .Client or .Server version like other APIs as all features are exactly the same between them.
+The Authentication API will use the Server or Client version of Valve's Steam API as required. It is not separated into a .Client or .Server version like other APIs as all features are exactly the same between them.
 {% endhint %}
 
 The Authentication has both client and server interfaces that are identical. Heathen's Steam API wrap's these in a single call which will call the appropriate client or server interface for you based on the build type in Unity.
