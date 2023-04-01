@@ -2,7 +2,7 @@
 description: Understanding Steam Achievements and the Heathen Engineering tool kit
 ---
 
-# Achievements
+# 🏆 Achievements
 
 {% hint style="success" %}
 #### Like what your seeing?

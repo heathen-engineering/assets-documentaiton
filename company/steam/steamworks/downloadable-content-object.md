@@ -2,7 +2,7 @@
 description: Understanding Steam DLC and the Heathen Engineering tool kit
 ---
 
-# Downloadable Content
+# 🕹 Downloadable Content
 
 {% hint style="success" %}
 #### Like what your seeing?

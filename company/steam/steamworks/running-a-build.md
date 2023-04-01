@@ -2,7 +2,7 @@
 description: Building and running a Steam game
 ---
 
-# Running a Build
+# 🏃 Running a Build
 
 {% hint style="success" %}
 #### Like what your seeing?
