@@ -122,9 +122,9 @@ You can work with lobby in one of 3 main ways; they (from lowest level to highes
 
 All of the functionality of lobby is defined in the [Matchmaking API](../../../../assets/steamworks/api/matchmaking.md). No matter how you choose to work with Steam lobbies, its this API that will actually be doing the real work. Using the Matchmaking API requires that you have a level of understanding of the underlying Steam API but it does still simplify working with the API by making it Unity centric, handling boiler plate concepts such as the callbacks and simplifying common concepts in a Unity manager e.g. UnityEvents and Actions, simpler calls, etc..
 
-### [Lobby object](../../../../assets/steamworks/data-layer/lobby-data.md)
+### [LobbyData object](../../../../assets/steamworks/data-layer/lobby-data.md)
 
-[Lobby](../../../../assets/steamworks/data-layer/lobby-data.md) as in the object in Steamworks Complete is a [struct](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct) which wraps around ulong and CSteamID. Fundamentally it acts as a lobby ID and is [implicitly convertible](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions) between ulong and CSteamID meaning you can pass it along as if it where a ulong value or a CSteamID and you can assign it from a ulong value or a CSteamID. Beyond being a fancy wrapper around ulong it also has accessors and methods that make working with a specific lobby very easy. Using the lobby object you very likely wont need to touch the raw API at all.
+[LobbyData](../../../../assets/steamworks/data-layer/lobby-data.md) as in the object in Steamworks Complete is a [struct](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct) which wraps around ulong and CSteamID. Fundamentally it acts as a lobby ID and is [implicitly convertible](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions) between ulong and CSteamID meaning you can pass it along as if it where a ulong value or a CSteamID and you can assign it from a ulong value or a CSteamID. Beyond being a fancy wrapper around ulong it also has accessors and methods that make working with a specific lobby very easy. Using the lobby object you very likely wont need to touch the raw API at all.
 
 ### [Lobby Manager](../../../../assets/steamworks/unity/components/lobby-manager.md)
 
@@ -136,12 +136,12 @@ Your first question when managing a lobby is how to know when the user joins or 
 
 ### Matchmaking API
 
-[EventLobbyEnterSuccess](../../../../assets/steamworks/api/matchmaking.md#eventlobbyentersuccess) and [EventLobbyEventFailed ](../../../../assets/steamworks/api/matchmaking.md#eventlobbyenterfailed)are raised when the local user tries and succeeds or fails respectively to enter a lobby. Both events return the [LobbyEnter\_t ](https://partner.steamgames.com/doc/api/ISteamMatchmaking#LobbyEnter\_t)structure provided by Steam API.
+[EventLobbyEnterSuccess](../../../../assets/steamworks/api/matchmaking.md#eventlobbyentersuccess) and [EventLobbyEventFailed ](../../../../assets/steamworks/api/matchmaking.md#eventlobbyenterfailed)are raised when the local user tries and succeeds or fails respectively to enter a lobby. Both events return the LobbyEnter structure provided by Steam API.
 
 #### Success
 
 ```csharp
-void HandleLobbyEnterSuccess(LobbyEnter_t arg)
+void HandleLobbyEnterSuccess(LobbyEnter arg)
 {
     Debug.Log("Success lobby join on lobby ID " + arg.m_ulSteamIDLobby);
 }
@@ -150,7 +150,7 @@ void HandleLobbyEnterSuccess(LobbyEnter_t arg)
 #### Failure
 
 ```csharp
-void HandleLobbyEnterFailed(LobbyEnter_t arg)
+void HandleLobbyEnterFailed(LobbyEnter arg)
 {
     Debug.Log("Failed lobby join on lobby ID " + arg.m_ulSteamIDLobby);
 }
@@ -162,19 +162,16 @@ The lobby object Join method takes a callback so for example
 
 ```csharp
 LobbyData lobbyIWantToJoin = lobbyId;
-Lobby.Join((result, ioError) =>
+lobbyIWantToJoin.Join((result, ioError) =>
     {
         if(!ioError) //Was their an IO error?
         {
-            //cast the chat room responce to the enum for easier reading
-            var responce = (EChatRoomEnterResponse)result.m_EChatRoomEnterResponse;
-
-            if (responce == EChatRoomEnterResponse.k_EChatRoomEnterResponseSuccess)
+            if (result.Responce == EChatRoomEnterResponse.k_EChatRoomEnterResponseSuccess)
                 ;//We are in all is well
             else
             {
                 //Failed
-                if (responce == EChatRoomEnterResponse.k_EChatRoomEnterResponseLimited)
+                if (result.Responce == EChatRoomEnterResponse.k_EChatRoomEnterResponseLimited)
                     ;//Failed because limited account
             }
         }
@@ -249,6 +246,72 @@ void HandleUserLeft(UserData arg)
 }
 ```
 
+## Invite to Lobby
+
+You can invite friends to join a lobby you are a member of this works rather or not the friend is currently in the game. The general workflow for this process is
+
+{% hint style="warning" %}
+When User B clicks "Accept" \
+That DOES NOT join User B to the lobby\
+\
+That simply notifies the game that User B has indicated they would like to join that lobby. \
+\
+It is up to you as a game developer to handle that event appropreatly for your game. Understand that the player could already be in a lobby, they could already be in a match, they could be in the process of exiting. The user that invited them might have invited a ton of other users and now the lobby is full, the user might have clicked Accept hours after the invite was sent ... there are SO MANY reasons why you do not just blindly join the lobby when you get that event.
+{% endhint %}
+
+### Workflow
+
+#### User is current In-Game
+
+1. User A joins or creates a lobby
+2. User A Invites User B to join the lobby
+3. User B clicks the Accept button in the Steam Friends Chat panel (overlay)
+4. Your game client invokes the GameLobbyJoinRequest event
+5. Your game client handles the event validating the lobby and navigating to the appropriate location in the game
+6. Your game client joins the indicated lobby
+
+#### User is not In-game but does own it
+
+1. User A joins or creates a lobby
+2. User A Invites User B to join the lobby
+3. User B's clicks the Accept button in the Steam Friends Chat panel (overlay)
+4. Steam launches the game passing the Lobby ID in on the command line
+5. Your [bootstrap scene](../../../design/bootstrap-scene.md) loads first and has the [Steamworks Behaviour](../../../../assets/steamworks/unity/components/steamworks-behaviour.md) script on it, this will detect that the game was launched with a lobby ID on the command line and will raise an event to notify you of that.
+6. Your game client handles the event validating the lobby and navigating to the appropriate location in the game
+7. Your game client joins the indicated lobby
+
+{% hint style="info" %}
+When the user has accepted a lobby invite the ID of the lobby will be made available to them but the lobbies data will not be updated in the local cash.
+
+\
+You should [RequestLobbyData ](../../../../assets/steamworks/api/matchmaking.md#requestlobbydata)for the invited lobby before attempting to read any of its metadata. You can join the lobby without reading the data however if you are properly validating the lobby you will need to read its data before joining.
+{% endhint %}
+
+### Game Lobby Join Requested
+
+This is the event that Valve's Steam will invoke when the user is currently in your game and accepts an invite to a lobby for your game. The event can be found on the [Overlay.Client](../../../../assets/steamworks/api/overlay.md#event-game-lobby-join-requested) and on the [Overlay Manager](../../../../assets/steamworks/unity/components/overlay-manager.md#evtgamelobbyjoinrequested).
+
+### Command Line
+
+In the event the user accepts an invite to a lobby in your game and is not currently playing your game then Steam will launch your game with the lobby ID on the command line. We have provided you with tools to make detecting this easy.
+
+#### Steamworks Behaviour
+
+Our Steamworks Behaviour script checks for this case on initialization and raises an event if found.
+
+#### CommandLine
+
+CommandLine is a tool available in the HeathenEngineering namespace. It can read common command line arguments for you including a Steam Lobby ID.
+
+```csharp
+LobbyData targetLobby = CommandLine.GetSteamLobbyInvite();
+if (targetLobby.IsValid)
+{
+    //Launched as a result of accepting a lobby invite
+    //targetLobby is the lobby ID the user wants to join
+}
+```
+
 ## Metadata Change
 
 You often need to know when data on the lobby or a given member has changed.
@@ -258,23 +321,19 @@ You often need to know when data on the lobby or a given member has changed.
 The [EventLobbyDataUpdate ](../../../../assets/steamworks/api/matchmaking.md#eventlobbydataupdate)event is raised when any sort of data is updated for the lobby or a member.
 
 ```csharp
-void HandleDataChanged(LobbyDataUpdate_t dataUpdated)
+void HandleDataChanged(LobbyDataUpdateEventData dataUpdated)
 {
     //Is this a lobby we care about?
-    if(dataUpdated.m_ulSteamIDLobby == Lobby)
+    if(dataUpdated.lobby == Lobby)
     {
-        if(dataUpdated.m_ulSteamIDLobby == dataUpdated.m_ulSteamIDMember)
+        if(!dataUpdated.member.HasValue)
         {
             //It was lobby data that was updated
         }
         else
         {
             //It was this member that updated
-            var member = new LobbyMember
-                    { 
-                        lobby = dataUpdated.m_ulSteamIDLobby,
-                        user = dataUpdated.m_ulSteamIDMember
-                    };
+            //dataUpdated.member.Value
         }
     }
 }
@@ -289,25 +348,25 @@ This cannot be done from the Lobby object alone as its an event and the struct d
 Lobby manager is much like the Matchmaking API for this one and uses the [evtDataUpdated](../../../../assets/steamworks/unity/components/lobby-manager.md#evtdataupdated) method to know when any kind of data has changed.
 
 ```csharp
-void HandleDataChanged(LobbyDataUpdate_t dataUpdated)
+void HandleDataChanged(LobbyDataUpdateEventData dataUpdated)
 {
-    if(dataUpdated.m_ulSteamIDLobby == dataUpdated.m_ulSteamIDMember)
+    //Is this a lobby we care about?
+    if(dataUpdated.lobby == Lobby)
     {
-        //It was lobby data that was updated
-    }
-    else
-    {
-        //It was this member that updated
-        var member = new LobbyMember
-                { 
-                    lobby = dataUpdated.m_ulSteamIDLobby,
-                    user = dataUpdated.m_ulSteamIDMember
-                };
+        if(!dataUpdated.member.HasValue)
+        {
+            //It was lobby data that was updated
+        }
+        else
+        {
+            //It was this member that updated
+            //dataUpdated.member.Value
+        }
     }
 }
 ```
 
-## Lobby Data
+## Metadata Read/Write
 
 Writing lobby metadata data can only be done by the owner of the lobby. Metadata on the lobby is what is used when searching for a lobby and is what you would use to express configuration and settings of the session the lobby deals with. For example if you wanted to let all users know what map the session will be on then you would set a lobby metadata data field map = X.&#x20;
 
@@ -322,7 +381,7 @@ else
     ;//Steam said no, your probably not the owner.
 ```
 
-### Lobby
+### Lobby Data
 
 Using the lobby object its a step easier and you have a few options
 
