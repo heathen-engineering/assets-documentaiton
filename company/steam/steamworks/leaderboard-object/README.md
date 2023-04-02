@@ -116,7 +116,7 @@ The leaderboard manager is a simple component that greatly simplifies reading an
 
 ![](<../../../../.gitbook/assets/image (181) (1).png>)
 
-You can learn more about the [Leaderboard Manager](../../../../assets/steamworks/unity/components/leaderboard-manager.md) in its documentation article and by reviewing the [4 Leaderboards](../../../../assets/steamworks/unity/samples/leaderboards.md) sample scene.
+You can learn more about the [Leaderboard Manager](../../../../assets/steamworks/unity/components/leaderboard-manager.md) in its documentation article and by reviewing the [4 Leaderboards](../../../../assets/steamworks/unity-engine/sample-scenes/leaderboards.md) sample scene.
 
 ## How To
 

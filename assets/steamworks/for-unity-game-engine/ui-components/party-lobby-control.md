@@ -77,7 +77,7 @@ Optionally sets the \`steam\_player\_group\` and \`steam\_player\_group\_size\` 
 
 ## Prefab
 
-A production ready prefab is available and configured with the features displayed above. You can see an example of this prefab in use in the [Quick Match Example](../../unity/samples/lobby/#quick-match-example) scene.
+A production ready prefab is available and configured with the features displayed above. You can see an example of this prefab in use in the [Quick Match Example](../../unity-engine/sample-scenes/lobby/#quick-match-example) scene.
 
 <figure><img src="../../../../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
 

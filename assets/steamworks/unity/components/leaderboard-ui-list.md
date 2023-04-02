@@ -16,7 +16,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## &#x20;Introduction
 
-The Leaderboard UI List is a simple tool that can be used to display [LeaderboardEntry ](../../objects/leaderboard-entry.md)records. The Leaderboard UI List can be used in conjunction with the [Leaderboard Manager](leaderboard-manager.md) to display Leaderboards in your UI with a zero code setup as is demonstrated in the [Leaderboard Sample Scene](../samples/leaderboards.md).
+The Leaderboard UI List is a simple tool that can be used to display [LeaderboardEntry ](../../objects/leaderboard-entry.md)records. The Leaderboard UI List can be used in conjunction with the [Leaderboard Manager](leaderboard-manager.md) to display Leaderboards in your UI with a zero code setup as is demonstrated in the [Leaderboard Sample Scene](../../unity-engine/sample-scenes/leaderboards.md).
 
 ### Namespace
 

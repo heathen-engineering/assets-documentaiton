@@ -12,8 +12,6 @@ Support us as a [GitHub Sponsor](../../become-a-sponsor/) and get instant access
 These articles are made possible by our [GitHub Sponsors](../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><h2>Steam</h2></td><td><a href="../../company/steam/">Guides and Tutorials</a></td><td><a href="./">Integration (Unity and Godot)</a></td><td></td><td></td><td><a href="../../company/steam/">steam</a></td><td><a href="../../.gitbook/assets/Steamworks Card.png">Steamworks Card.png</a></td></tr><tr><td><h2>PhysKit</h2></td><td><a href="../physkit/learning/sample-scenes/1-ballistic-basics.md">Ballistics</a></td><td><a href="../physkit/learning/sample-scenes/1-buoyancy-example.md">Buoyancy</a></td><td><a href="../physkit/learning/sample-scenes/1-force-effect-fields.md">Force Effects</a></td><td><a href="../physkit/learning/sample-scenes/2-verlet-spring-skinned-mesh.md">Verlet (Physics Bone)</a></td><td><a href="../physkit/">physkit</a></td><td><a href="../../.gitbook/assets/PhysKit Card.png">PhysKit Card.png</a></td></tr><tr><td><h2>UX</h2></td><td><a href="../ux/learning/core-concepts/">User eXperience Tools</a></td><td><a href="../ux/learning/ugui-extras/">uGUI Extras</a></td><td></td><td></td><td><a href="../ux/">ux</a></td><td><a href="../../.gitbook/assets/Splash Screen (1).png">Splash Screen (1).png</a></td></tr></tbody></table>
-
 ## Unity or Godot?
 
 Either, Heathen's Steamworks was originally created as a Unity asset however we have ported the free [Foundation ](https://github.com/heathen-engineering/SteamworksFoundation)version to Godot and are in the process of porting the Complete version.
@@ -28,9 +26,9 @@ As per Unity's request we maintain all Unity assets on the oldest in support Uni
 
 > 2020 LTS was supported through the v2.x life cycle. Unity is expected to release 2022 LTS around the end of March or early April dropping 2020 LTS making 2021 LTS the "legacy" LTS\
 > \
-> We do not use engine features in our funcitonal code but our editor extensions of course use engine features. In most cases you can "back port" Steamworks to Unity 2019 or later with little or no issue however we cannot support it beyond community guidance as Unity doesn't support versions older than the legacy LTS.
+> We do not use engine features in our functional code but our editor extensions of course use engine features. In most cases you can "back port" Steamworks to Unity 2019 or later with little or no issue however we cannot support it beyond community guidance as Unity doesn't support versions older than the legacy LTS.
 
-## Can this do X
+## Can this do \<X>
 
 If X is something the Steam API can do then yes.\
 That is to say we cover 100% of the Steam API by virtue of being built on top of Steamworks.NET and extending that fundamental Steam API wrapper as opposed to trying to replaces it (as Facepunch does). As a result, if you can do it with Valve's Steam API then you can do it with Heathen's Steamworks.

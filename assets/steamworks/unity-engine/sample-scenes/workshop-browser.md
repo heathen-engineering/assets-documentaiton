@@ -12,7 +12,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-This scene demonstrates the use of the [UGC Query Manager](../components/ugc-query-manager.md) to browse for Workshop items in game.
+This scene demonstrates the use of the [UGC Query Manager](../../unity/components/ugc-query-manager.md) to browse for Workshop items in game.
 
 ![](<../../../../.gitbook/assets/image (182) (1) (1).png>)
 
@@ -20,7 +20,7 @@ This scene demonstrates the use of the [UGC Query Manager](../components/ugc-que
 
 1. Using steam's [Input](../../api/input.md) API to handle controller input
 2. Using [Input](../../api/input.md) API to get button images and names
-3. Using the [UGC Query Manager](../components/ugc-query-manager.md) to query and iterate over items
+3. Using the [UGC Query Manager](../../unity/components/ugc-query-manager.md) to query and iterate over items
 4. How to access the Knowledge Base (where you are now)
 5. How to access the support [Discord ](https://discord.gg/6X3xrRc)
 6. How to leave a review 😉
@@ -40,15 +40,15 @@ This scene demonstrates the use of the [UGC Query Manager](../components/ugc-que
 
 ### Manager
 
-The manager GameObject implements the [Steamworks Behaviour](../components/steamworks-behaviour.md) and the [UGC Query Manager](../components/ugc-query-manager.md) which are used by the scene to initialize Steam API and perform query operations against the Steam Workshop.
+The manager GameObject implements the [Steamworks Behaviour](../../unity/components/steamworks-behaviour.md) and the [UGC Query Manager](../../unity/components/ugc-query-manager.md) which are used by the scene to initialize Steam API and perform query operations against the Steam Workshop.
 
 ### Info Panel
 
 The info panel uses standard Unity uGUI controls to display information and take user input e.g. the Search button and the Next and Back button ...&#x20;
 
-For Search this button calls a method in the DEMO SCRIPTS object's `Scene7Behaviour` which simply reads the string from the InputField and starts the query via the [UGC Query Manager](../components/ugc-query-manager.md).
+For Search this button calls a method in the DEMO SCRIPTS object's `Scene7Behaviour` which simply reads the string from the InputField and starts the query via the [UGC Query Manager](../../unity/components/ugc-query-manager.md).
 
-The Next and Back buttons call SetNextPage and SetPreviousPage on the [UGC Query Manager](../components/ugc-query-manager.md) updating the query page.
+The Next and Back buttons call SetNextPage and SetPreviousPage on the [UGC Query Manager](../../unity/components/ugc-query-manager.md) updating the query page.
 
 ### DEMO SCRIPTS
 

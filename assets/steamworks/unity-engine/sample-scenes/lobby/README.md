@@ -34,7 +34,7 @@ The Quick Match Example scene simply cant get any simpler. With only 2 functiona
 Additional information can be found [here](session-lobby.md)!
 {% endhint %}
 
-Demonstrates the use of Lobby Manager for a custom session lobby use experience. This scene uses a a single custom script \`SessionLobby\_UIController\` in order to manipulate Heathen's [Lobby Manager](../../components/lobby-manager.md) and UI elements for a bespoke user experience in matchmaking. The purpose of the scene is to get you started with creating your own session lobby user experience.&#x20;
+Demonstrates the use of Lobby Manager for a custom session lobby use experience. This scene uses a a single custom script \`SessionLobby\_UIController\` in order to manipulate Heathen's [Lobby Manager](../../../unity/components/lobby-manager.md) and UI elements for a bespoke user experience in matchmaking. The purpose of the scene is to get you started with creating your own session lobby user experience.&#x20;
 
 ![](<../../../../../.gitbook/assets/image (3) (3).png>)![](<../../../../../.gitbook/assets/image (1) (1) (3).png>)
 

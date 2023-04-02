@@ -32,9 +32,9 @@ Used on the TextMesage Pro label to set the description on the achievement.
 
 ## Setting Value
 
-Each of the UI elements shown on the screen is actually a Unity UI Toggle, when clicked it will set the value of the IsAchieved on the [AchievementObject ](../scriptable-objects/achievement-object.md)locking or unlocking it.
+Each of the UI elements shown on the screen is actually a Unity UI Toggle, when clicked it will set the value of the IsAchieved on the [AchievementObject ](../../unity/scriptable-objects/achievement-object.md)locking or unlocking it.
 
-Note in this sample scene we do not call Store to commit the change so the changes wont commit until the app is closed. If you wanted to commit the changes before that you can call the Store method on any [AchievementObject ](../scriptable-objects/achievement-object.md)or StatObject to commit the changes now and this will cause the "popup" from Steam overlay to show if applicable.&#x20;
+Note in this sample scene we do not call Store to commit the change so the changes wont commit until the app is closed. If you wanted to commit the changes before that you can call the Store method on any [AchievementObject ](../../unity/scriptable-objects/achievement-object.md)or StatObject to commit the changes now and this will cause the "popup" from Steam overlay to show if applicable.&#x20;
 
 Steam Overlay doesn't work nicely in Unity Editor so we do not demonstrate that here.
 
@@ -42,11 +42,11 @@ Steam Overlay doesn't work nicely in Unity Editor so we do not demonstrate that 
 
 They work much the same way with regards to setting the value, read the documentation on&#x20;
 
-[Int Stat](../scriptable-objects/int-stat.md)
+[Int Stat](../../unity/scriptable-objects/int-stat.md)
 
-[Float Stat](../scriptable-objects/float-stat.md)
+[Float Stat](../../unity/scriptable-objects/float-stat.md)
 
-and [Average Rate Stat](../scriptable-objects/avg-rate-stat.md)
+and [Average Rate Stat](../../unity/scriptable-objects/avg-rate-stat.md)
 
 to learn more.
 

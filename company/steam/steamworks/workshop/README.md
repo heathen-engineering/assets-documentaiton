@@ -2,7 +2,7 @@
 description: Creating, editing and reading UGC items from Steam Workshop
 ---
 
-# Workshop
+# 🛠 Workshop
 
 {% hint style="success" %}
 #### Like what your seeing?

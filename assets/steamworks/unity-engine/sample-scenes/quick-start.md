@@ -16,23 +16,23 @@ This simple scene outlines the basic steps to get up and running with Steamworks
 
 <figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-This is a bare bones scene that does nothing more than initialize the Steam API. The key component in the scene is the [Steamworks Behaviour](../components/steamworks-behaviour.md) located on the Manager game object.
+This is a bare bones scene that does nothing more than initialize the Steam API. The key component in the scene is the [Steamworks Behaviour](../../unity/components/steamworks-behaviour.md) located on the Manager game object.
 
 ## Game Objects
 
 ### Manager
 
-The manage game object has the [Steamworks Behaviour](../components/steamworks-behaviour.md) component attached and will handle initialization of the Steam API on start up.
+The manage game object has the [Steamworks Behaviour](../../unity/components/steamworks-behaviour.md) component attached and will handle initialization of the Steam API on start up.
 
 ## Components
 
-### [Steamworks Behaviour](../components/steamworks-behaviour.md)
+### [Steamworks Behaviour](../../unity/components/steamworks-behaviour.md)
 
 The Steamworks Behaviour is the component responsible for initializing and operating the Steam API integration. It is important that this is initialized as soon as possible in your game and is never destroyed or duplicated.
 
 it is \*\***strongly\*\*** recommended to use a [bootstrap design pattern](../../../../company/design/bootstrap-scene.md) to insure that Steam API is initialized successful before even your main menu bothers to load.
 
-### [Friend Profile](../ugui-tools/prefabs/friend-profile.md)
+### [Friend Profile](../../unity/ugui-tools/prefabs/friend-profile.md)
 
 ![](<../../../../.gitbook/assets/image (2) (4).png>)
 

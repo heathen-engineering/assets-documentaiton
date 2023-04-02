@@ -1,4 +1,4 @@
-# User Data
+# Item Store Tutorial
 
 {% hint style="success" %}
 #### Like what your seeing?
@@ -12,24 +12,29 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-This scene demonstrates the use of [User Data ](../../data-layer/user-data.md)and displaying common information such as the user's avatar and name.
+This scene is meant to be used in conjunction with the learning article [Item Store](../../../../company/steam/steamworks/microtransactions/item-store/). It provides a crude example of an in-game item store where the developer has defined each item's UI element and linked it with the related [Item Defintion](../../unity/scriptable-objects/item-definition.md).
 
-<figure><img src="../../../../.gitbook/assets/image (98).png" alt=""><figcaption></figcaption></figure>
+![](<../../../../.gitbook/assets/image (162).png>)
 
-This scene exists to draw your attention to the [User Data](../../data-layer/user-data.md) object. User Data is a struct Heathen has defined to wrap around the native [CSteamID ](../../../../company/steam/steamworks/csteamid.md)and the primitive ulong data types providing easy access to everything user related.
+### What do I learn?
 
-User Data can be used to read the name, nickname, level, status, friend ID, avatar image, rich presence data and much more about a friend. User Data is interchangeable with CSteamID and ulong and can be used anywhere those data types representing a Steam user are called for.
+1. Using [Item Defintion](../../unity/scriptable-objects/item-definition.md) to interact with the user's inventory.
+2. Using [Item Definition](../../unity/scriptable-objects/item-definition.md) and Unity uGUI to represent a store item.
+3. Responding to changes in the user's inventory.
+4. How to access the Knowledge Base (where you are now)
+5. How to access the support [Discord ](https://discord.gg/6X3xrRc)
+6. How to leave a review 😉
 
 ## Objects
 
-### Manager
+### Example Item Behaviour
 
-The manage game object has the [Steamworks Behaviour](../components/steamworks-behaviour.md) component attached and will handle initialization of the Steam API on start up.
+This is a crude script serving as an example of how you might control a Unity UI object based on the information in a given Item Definition.
 
-### [Friend Profile](../ugui-tools/prefabs/friend-profile.md)
+Using this we update a UI Text label indicating how many of the given item the user owns
 
-Demonstrates the displaying of the local user's data. This prefab uses the[ Friend Profile](../ugui-tools/ui-components/friendprofile/) component script which its self uses [User Data](../../data-layer/user-data.md) to deliver the required information.
+We provide handlers for Start Purchase and Exchange buttons
 
-### [Friend Group](../ugui-tools/prefabs/friend-groups.md)
+and
 
-Demonstrates the display of the user's friend data in a manner similar to Steam's friend list.
+We update the UI when the local user's inventory changes

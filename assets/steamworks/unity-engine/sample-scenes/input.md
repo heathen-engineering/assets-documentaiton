@@ -32,7 +32,7 @@ Heathen's tools take Valve's input system a step further and wrap all actions as
 
 1. Using steam's [Input](../../api/input.md) API to handle controller input
 2. Using [Input](../../api/input.md) API to get button images and names
-3. Using the [InputActionSet](../scriptable-objects/input-action-set.md), [InputActionSetLayer ](../scriptable-objects/input-action-set-layer.md)and [InputAction ](../scriptable-objects/input-action.md)objects
+3. Using the [InputActionSet](../../unity/scriptable-objects/input-action-set.md), [InputActionSetLayer ](../../unity/scriptable-objects/input-action-set-layer.md)and [InputAction ](../../unity/scriptable-objects/input-action.md)objects
 4. How to access the Knowledge Base (where you are now)
 5. How to access the support [Discord ](https://discord.gg/6X3xrRc)
 6. How to leave a review 😉
@@ -67,13 +67,13 @@ The sample scene should clear this when it exits however if you find your Steam 
 
 ### Manager
 
-The manage game object has the [Steamworks Behaviour](../components/steamworks-behaviour.md) component attached and will handle initialization of the Steam API on start up.
+The manage game object has the [Steamworks Behaviour](../../unity/components/steamworks-behaviour.md) component attached and will handle initialization of the Steam API on start up.
 
 ### Controls UI
 
-The controls UI uses standard Unity scripts and the [Input Action Glyph](../components/input-action-glyph.md) and [Input Action Name](../components/input-action-name.md) components to display the controls and mapped buttons to the user.
+The controls UI uses standard Unity scripts and the [Input Action Glyph](../../unity/components/input-action-glyph.md) and [Input Action Name](../../unity/components/input-action-name.md) components to display the controls and mapped buttons to the user.
 
 ### DEMO SCRIPTS
 
-The demo script for this scene operates the Steam Input API by reading data from the attached [InputAction](../scriptable-objects/input-action.md) objects and controls the active action set and layer by using the attached [InputActionSet](../scriptable-objects/input-action-set.md) and [InputActionSetLayer ](../scriptable-objects/input-action-set-layer.md)objects.&#x20;
+The demo script for this scene operates the Steam Input API by reading data from the attached [InputAction](../../unity/scriptable-objects/input-action.md) objects and controls the active action set and layer by using the attached [InputActionSet](../../unity/scriptable-objects/input-action-set.md) and [InputActionSetLayer ](../../unity/scriptable-objects/input-action-set-layer.md)objects.&#x20;
 
