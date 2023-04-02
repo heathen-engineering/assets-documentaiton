@@ -28,6 +28,13 @@ No name this just holds general stuff applicable to the Knowledge Base over all 
 
 The guides section has all sorts of general game development information in it covering everything from getting started as an indie game developer with our Indie Check List, to detailed articles on every aspect of [Steam](../../../company/steam/) not just the [Steamworks APIs](../../../company/steam/steamworks/) but including that as well, to guides on [programming](../../../company/development/), [game design](../../../company/design/) and more!
 
+{% hint style="info" %}
+If you want to know how to do something ... check the guides.\
+\
+For example want to know how to invite a friend to a Steam Lobby ... [read this](../../../company/steam/steamworks/multiplayer/matchmaking-tools.md#invite-to-lobby).\
+Want to know how to set up an achievement ... [read this](../../../company/steam/steamworks/achievement-object.md).
+{% endhint %}
+
 #### Assets
 
 Where you are right now!\

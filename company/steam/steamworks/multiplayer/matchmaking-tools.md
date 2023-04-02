@@ -16,7 +16,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## &#x20;Introduction
 
-{% hint style="success" %}
+{% hint style="info" %}
 While Steam Lobby is not a true multiplayer feature ... it is in reality nothing but a chat room with metadata ... actually even called "Chat" on Valve's backend.\
 \
 It is none the less most commonly used for player parties and session matchmaking there for we have listed it under the Multiplayer guides section.

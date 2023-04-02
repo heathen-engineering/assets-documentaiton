@@ -29,9 +29,32 @@ Is highly important, you should fully read Valve's own documentation around Stea
 
 Heathen's Steamworks represents your defined Steam Achievements as scriptable objects associated with the [Steam Settings](../../../assets/steamworks/unity/scriptable-objects/steam-settings/). This allows your unity scripts to reference the achievements as you would any other Unity object e.g. by drag and drop and allows you to perform actions against a given achievement such as to unlock it by calling simple methods on that object.
 
-## What can it do?
+## [API](../../../assets/steamworks/api/stats-and-achievements.md)
 
-Heathen's Steamworks makes working with Steam Achievements as simple as possible.
+Heathen's Steamworks wraps Valve's Steam API with a C# and Unity friendly tool kit. All features related to stats and achievements can be found in the [StatsAndAchievements.Client](../../../assets/steamworks/api/stats-and-achievements.md) class. In most cases you wont need to use this low level tool but it is available to you and works very similar to the raw Steam API.
+
+## [Achievement Data](../../../assets/steamworks/data-layer/achievement-data.md)
+
+Heathen's Steamworks' Achievement Data simplifies working with Steam achievements exposing common features to a simple struct.
+
+```csharp
+//The achievement data struct is implictly convertable from string
+//so you can convert the API name as a string into the data struct
+AchievementData myAch = "achievement_API_name";
+
+//You can understand the state of an achievement with simple fields
+if(myAch.IsAchieved)
+    Debug.Log($"{UserData.Me.Name} achieved this on {myAch.UnlockTime}");
+else
+    Debug.Log($"This has not been unlocked yet");
+
+//You can unlock and achievement simply by assigning the IsAchieved value
+myAch.IsAchieved = true;
+```
+
+## [Achievement Object](../../../assets/steamworks/unity/scriptable-objects/achievement-object.md)
+
+Heathen's Steamworks can "import" your achievements from Steam API directly and construct Scriptable Objects that makes it possible to work with achievements with zero coding required.
 
 ![](<../../../.gitbook/assets/image (176) (1) (1) (1) (1).png>)
 
