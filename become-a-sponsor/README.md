@@ -35,7 +35,7 @@ You can cancel your subscription at any time and keep using the assets you insta
 Cancelling your subscription only removes your ability to access the Source Repository so if later you want or need updates you can simply sub for another month at your leisure.
 {% endhint %}
 
-Sponsors starting at the $10 a month tier gain access to our Source Repository.
+Sponsors starting at the $15 a month tier gain access to our Source Repository.
 
 ### How is it Better?
 
