@@ -348,13 +348,13 @@ public static void CreateFriendOnlySession(int slots, Action<EResult, LobbyData,
 ### Join
 
 ```csharp
-public void Join(Action<LobbyEnter_t, bool> callback);
+public void Join(Action<LobbyEnter, bool> callback);
 ```
 
 This attempts to join the player to this lobby. The callback parameter of this event expects a handler method such as
 
 ```csharp
-private void Handler(LobbyEnter_t result, bool IOError)
+private void Handler(LobbyEnter result, bool IOError)
 {
     //Do Work
 }
@@ -363,15 +363,15 @@ private void Handler(LobbyEnter_t result, bool IOError)
 This method has several static overloads that can be useful for friend join UI features and similar
 
 ```csharp
-public static void Join(string accountId, Action<LobbyEnter_t, bool> callback)
+public static void Join(string accountId, Action<LobbyEnter, bool> callback)
 ```
 
 ```csharp
-public static void Join(AccountID_t accountId, Action<LobbyEnter_t, bool> callback)
+public static void Join(AccountID_t accountId, Action<LobbyEnter, bool> callback)
 ```
 
 ```csharp
-public static void Join(Lobby lobby, Action<LobbyEnter_t, bool> callback)
+public static void Join(Lobby lobby, Action<LobbyEnter, bool> callback)
 ```
 
 In all cases these static members fetch the lobby indicated by either an account ID or the Lobby value its self and then attempts to join it. The callback parameter takes the same for as the instanced method.
