@@ -1,3 +1,7 @@
+---
+description: Do More with Heathen!
+---
+
 # 📚 Knowledge Base
 
 ## Welcome
