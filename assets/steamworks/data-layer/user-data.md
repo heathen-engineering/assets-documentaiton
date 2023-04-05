@@ -229,7 +229,7 @@ Invites the target user to a game passing in the connection string. This will ca
 ### InviteToLobby
 
 ```csharp
-public bool InviteToLobby(Lobby lobby)
+public bool InviteToLobby(LobbyData lobby)
 ```
 
 Invites the target user to join a specific lobby. This will cause the [GameLobbyJoinRequest ](../api/overlay.md#game-lobby-join-requested)event to be raised on the invited user when accepted if present in game or will launch the game with the lobby ID in the command line if not in game.
