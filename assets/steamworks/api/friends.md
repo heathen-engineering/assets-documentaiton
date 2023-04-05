@@ -26,13 +26,17 @@ public static class Friends.Client
 
 You can list the clan owner, its officers, open the clan chat in overlay or join the clan's chat in game. The most common use game developers look for and the most complex is to join the clan chat in game.
 
-### Related Componenets
+### Related Components
 
-{% embed url="https://kb.heathenengineering.com/assets/steamworks/components/friend-manager" %}
+{% content-ref url="../unity/components/friend-manager.md" %}
+[friend-manager.md](../unity/components/friend-manager.md)
+{% endcontent-ref %}
 
 ### Related Objects
 
-{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/user-data" %}
+{% content-ref url="../data-layer/user-data.md" %}
+[user-data.md](../data-layer/user-data.md)
+{% endcontent-ref %}
 
 ## Events
 
