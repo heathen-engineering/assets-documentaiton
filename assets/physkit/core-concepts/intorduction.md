@@ -10,12 +10,12 @@ description: >-
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><h2>Steam</h2></td><td><a href="../../company/steam/">Guides and Tutorials</a></td><td><a href="../steamworks/">Integration (Unity and Godot)</a></td><td></td><td></td><td><a href="../../company/steam/">steam</a></td><td><a href="../../.gitbook/assets/Steamworks Card.png">Steamworks Card.png</a></td></tr><tr><td><h2>PhysKit</h2></td><td><a href="learning/sample-scenes/1-ballistic-basics.md">Ballistics</a></td><td><a href="learning/sample-scenes/1-buoyancy-example.md">Buoyancy</a></td><td><a href="learning/sample-scenes/1-force-effect-fields.md">Force Effects</a></td><td><a href="learning/sample-scenes/2-verlet-spring-skinned-mesh.md">Verlet (Physics Bone)</a></td><td><a href="./">.</a></td><td><a href="../../.gitbook/assets/PhysKit Card.png">PhysKit Card.png</a></td></tr><tr><td><h2>UX</h2></td><td><a href="../ux/learning/core-concepts/">User eXperience Tools</a></td><td><a href="../ux/learning/ugui-extras/">uGUI Extras</a></td><td></td><td></td><td><a href="../ux/">ux</a></td><td><a href="../../.gitbook/assets/Splash Screen (1).png">Splash Screen (1).png</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><h2>Steam</h2></td><td><a href="../../../company/steam/">Guides and Tutorials</a></td><td><a href="../../steamworks/">Integration (Unity and Godot)</a></td><td></td><td></td><td><a href="../../../company/steam/">steam</a></td><td><a href="../../../.gitbook/assets/Steamworks Card.png">Steamworks Card.png</a></td></tr><tr><td><h2>PhysKit</h2></td><td><a href="../sample-scenes/fantasy-style-ballistic-simulation.md">Ballistics</a></td><td><a href="../sample-scenes/1-buoyancy-example.md">Buoyancy</a></td><td><a href="../sample-scenes/1-force-effect-fields.md">Force Effects</a></td><td><a href="../sample-scenes/2-verlet-spring-skinned-mesh.md">Verlet (Physics Bone)</a></td><td><a href="../">..</a></td><td><a href="../../../.gitbook/assets/PhysKit Card.png">PhysKit Card.png</a></td></tr><tr><td><h2>UX</h2></td><td><a href="../../ux/learning/core-concepts/">User eXperience Tools</a></td><td><a href="../../ux/learning/ugui-extras/">uGUI Extras</a></td><td></td><td></td><td><a href="../../ux/">ux</a></td><td><a href="../../../.gitbook/assets/Splash Screen (1).png">Splash Screen (1).png</a></td></tr></tbody></table>
 
 ## Introduction
 
@@ -46,12 +46,12 @@ Also called a dynamic bone the idea is that a skinned mesh can have extra bones 
 
 This is a common solution for long flowing hair, dangling tokens on weapons, flexible weapons like whips and flails and soft bits on characters such as long ears, zombie jiblets, big bellies, breast, etc.
 
-![A Verlet Spring Hierarchy assigned to the bones in a pony tail hair mesh](<../../.gitbook/assets/image (161) (1) (1).png>)
+![A Verlet Spring Hierarchy assigned to the bones in a pony tail hair mesh](<../../../.gitbook/assets/image (161) (1) (1).png>)
 
 ### Joints and Chains
 
 We often want to add a bit of life to our props and environments. Verlet Spring can be used to drive any hierarchy of transforms working much like a chain of spring joints only with the ability to propagate changes along its length.
 
-![A Verlet Spring Hierarchy simulating a chain whipping around in a circle (1 Verlet Spring Sample scene)](<../../.gitbook/assets/image (170) (1) (1).png>)
+![A Verlet Spring Hierarchy simulating a chain whipping around in a circle (1 Verlet Spring Sample scene)](<../../../.gitbook/assets/image (170) (1) (1).png>)
 
-![Rolling a ball through a field of a few hundred Verlet Springs](<../../.gitbook/assets/image (181) (1) (1).png>)
+![Rolling a ball through a field of a few hundred Verlet Springs](<../../../.gitbook/assets/image (181) (1) (1).png>)

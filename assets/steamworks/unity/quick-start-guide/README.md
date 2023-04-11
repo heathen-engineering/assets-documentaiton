@@ -65,6 +65,6 @@ You cant because their is no need. Both Steamworks Complete and your HLAPI of ch
 
 If you want to see an example of using your HLAPI of choice with your HLAPI's Steam transport then you should contact them. We have links to [Fish Networking, Mirror and NetCode for GameObjects in our articles](../installation/networking-integrations.md) but any HLAPI that works with Steamworks.NET properly will work.
 
-If your looking for examples on how to initialize, configure and use Steam API (in general) you will find various samples in the provided [samples scenes](../../../physkit/learning/sample-scenes/) and examples throughout our knowledge base.
+If your looking for examples on how to initialize, configure and use Steam API (in general) you will find various samples in the provided [samples scenes](../../../physkit/sample-scenes/) and examples throughout our knowledge base.
 
 If your trying to wrap your head around creating a [multiplayer game on the Steam platform](broken-reference), we have an article for that as well. That article is not specific to any given HLAPI because the HLAPI you choose has no impact on the concepts involved.
