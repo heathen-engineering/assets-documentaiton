@@ -30,7 +30,7 @@ The projectile launched by [Trick Shot](../../components/trick-shot.md) uses the
 
 ## Emitter GameObject
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 The emitter game object does all the real work in the sample scene and houses the Trick Shot component and the Trick Shot Line component. These do the work of calculating the path and displaying it. A simple call to Shoot then causes the Trick Shot component to launch a projectile which will obey the path.
 
@@ -44,6 +44,6 @@ The trick shot line component is used to control the Line Renderer and draw the 
 
 ## Sphere GameObject
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 A simple stand in for our projectile which uses the Ballistic Path Follow component to track the planned path.

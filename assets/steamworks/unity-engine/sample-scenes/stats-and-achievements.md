@@ -12,7 +12,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 The Simple Achievements scene demonstrates reading and updating achievements using the AchievementObject. In this scene we use SetAchievementIcon, SetAchievementName and SetAchievementDescription components to populate the UI showing the icon, name and description of each achievement.
 
