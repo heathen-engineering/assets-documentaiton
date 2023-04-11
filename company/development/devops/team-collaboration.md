@@ -38,7 +38,7 @@ This should not be a folder inside your Unity Project it is keenly important tha
 
 Once you have them copied into your repository check them in such that you have a repo that looks similar to this
 
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 Once checked in you can import the package to your Unity Project using the Git URL
 
@@ -64,4 +64,4 @@ Once you add the package the URL will be reflected there as well meaning future 
 Obviously you would need to copy in the source update into your ThirdParty folder and check in before clicking Update in order for it to see the updated files.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>

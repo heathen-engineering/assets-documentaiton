@@ -24,7 +24,7 @@ The Party Lobby Control is a UI behaviour component that manages a lobby represe
 
 <figure><img src="../../../../.gitbook/assets/image (4) (3).png" alt=""><figcaption><p>DOTA 2 home screen captured 2022-10-30 by Loden Darkstar</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption><p>Halo Infinite multiplayer mode scree captured 2022-10-30 by Loden Darkstar</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Halo Infinite multiplayer mode scree captured 2022-10-30 by Loden Darkstar</p></figcaption></figure>
 
 The purpose of a "party lobby" also known as a "group lobby" is to gather Friends that wish to play together, most typically in a coop game though you do see Group/Party systems in competitive games as well particularly party games.
 
