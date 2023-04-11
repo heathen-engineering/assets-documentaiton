@@ -148,7 +148,7 @@
   * [Learning](assets/physkit/learning/README.md)
     * [Sample Scenes](assets/physkit/learning/sample-scenes/README.md)
       * [Fantasy Style Ballistic Simulation](assets/physkit/learning/sample-scenes/1-ballistic-basics.md)
-      * [(3D) Deterministic Bounce Prediction](assets/physkit/learning/sample-scenes/3d-deterministic-bounce-prediction.md)
+      * [(3D) Deterministic Bounce Prediction](assets/physkit/learning/sample-scenes/2-ballistic-ray-casting.md)
       * [(2D) Deterministic Bounce Prediction](assets/physkit/learning/sample-scenes/2d-deterministic-bounce-prediction.md)
       * [1 Buoyancy Example](assets/physkit/learning/sample-scenes/1-buoyancy-example.md)
       * [1 Force Effect Fields](assets/physkit/learning/sample-scenes/1-force-effect-fields.md)

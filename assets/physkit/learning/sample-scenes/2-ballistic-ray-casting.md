@@ -12,16 +12,18 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-![](<../../../../.gitbook/assets/image (162) (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-This scene demonstrates the use of [Trick Shot](../../components/trick-shot.md) and the [Trick Shot Line](../../components/trick-shot-line.md) component to predict the path a thrown object will take including its bounce.
+This scene demonstrates the use of [Trick Shot](../../components/trick-shot.md) and the [Trick Shot Line](../../components/trick-shot-line.md) component to predict the path a thrown object and will take into account bounces.
 
-The Ballistic raycast method performs raycasts identifying any points of collision and returning the path that will be followed. The Ballistics Path component uses the path data to draw a line using Unity's built in line renderer that matches this path.
+The tool can be used to quickly and easily fire physically simulated projectiles from throwing a ball or grenade to shooting arrows, firing cannons and more. The Trick Shot tool handles all the calculations for you including launching the projectile via the "[Shoot](../../components/trick-shot.md#shoot)" method.
+
+The projectile launched by [Trick Shot](../../components/trick-shot.md) uses the [Ballistic Path Follow](../../components/ballistic-path-follow.md) component which allows the projectile to accurately follow the pre-planned path and to optionally react to changes in the environment as required.
 
 ## What do I Learn?
 
 1. How to use [Trick Shot](../../components/trick-shot.md) to plan and execute shots
-2. How to use Ballistics' Raycast feature
+2. How to use [Ballistic Path Follow](../../components/ballistic-path-follow.md) to manage projectiles
 3. How to display a trajectory using the [Trick Shot Line](../../components/trick-shot-line.md) component.
 
 ## Objects
