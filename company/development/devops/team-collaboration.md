@@ -38,7 +38,7 @@ This should not be a folder inside your Unity Project it is keenly important tha
 
 Once you have them copied into your repository check them in such that you have a repo that looks similar to this
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 Once checked in you can import the package to your Unity Project using the Git URL
 
