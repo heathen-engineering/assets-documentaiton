@@ -24,6 +24,14 @@ The [Ballistic API](../api/ballistics.md) provides you with efficient, easy to u
 
 ## Use Cases
 
+## Deterministic Trajectory
+
+When you need to know the flight path, its bounces and have the projectile actually do that.
+
+Our Trick Shot component for both 2D and 3D can "raycast" a trajectory, pre determine the bounces and yield a path that gives a physically accurate path that a projectile can be made to follow.
+
+Rather you doing a Peggle like game or throwing grenades or maybe a golf simulator the Trick Shot component makes this a nearly code free task.
+
 ### Fantasy Trajectory
 
 Finding the solution to a trajectory with fixed parameters such as known gravity, projectile velocity, etc. is rather simple however its results are less interesting visually in that the resulting arc of the trajectory will only be that nice middle height arc at the extents of the range of the projectile.
