@@ -147,7 +147,7 @@
   * [Installation](assets/physkit/installation.md)
   * [Learning](assets/physkit/learning/README.md)
     * [Sample Scenes](assets/physkit/learning/sample-scenes/README.md)
-      * [1 Ballistic Basics](assets/physkit/learning/sample-scenes/1-ballistic-basics.md)
+      * [Fantasy Style Ballistic Simulation](assets/physkit/learning/sample-scenes/fantasy-style-ballistic-simulation.md)
       * [2 Ballistic Ray Casting](assets/physkit/learning/sample-scenes/2-ballistic-ray-casting.md)
       * [1 Buoyancy Example](assets/physkit/learning/sample-scenes/1-buoyancy-example.md)
       * [1 Force Effect Fields](assets/physkit/learning/sample-scenes/1-force-effect-fields.md)

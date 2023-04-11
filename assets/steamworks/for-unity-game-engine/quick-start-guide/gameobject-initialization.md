@@ -78,7 +78,7 @@ You can import
 
 
 
-&#x20;_ <mark style="color:red;">\*</mark> Note_\
+&#x20;_<mark style="color:red;">\*</mark> Note_\
 Valve limits what information on Inventory Items can be imported. For example bundle content will not be imported. This is a deliberate limitation from Valve and cannot be worked around. In general you only need the item ID of an item so this should not be a problem in most use cases.
 {% endhint %}
 

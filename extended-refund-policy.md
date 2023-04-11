@@ -2,7 +2,7 @@
 description: Unity Assets and the extended refund policy
 ---
 
-# Asset Refund Policy
+# Unity Asset Refund Policy
 
 ## Introduction
 
@@ -62,7 +62,7 @@ You are encouraged to read the articles above from Unity Support, where the poli
 
 _No_
 
-The refund system is not designed to run as **** a demo system; this falls outside of the refund policy.&#x20;
+The refund system is not designed to run as a demo system; this falls outside of the refund policy.&#x20;
 
 Heathen does provides "lite" versions of our assets for free that you can download and try out in order to determine if you are happy with our coding and architecture style.&#x20;
 

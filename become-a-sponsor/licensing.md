@@ -8,7 +8,7 @@ Support us as a [GitHub Sponsor](./) and get instant access to all our assets, e
 These articles are made possible by our [GitHub Sponsors](./) ... become a sponsor today!
 {% endhint %}
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><h2>Steam</h2></td><td><a href="../company/steam/">Guides and Tutorials</a></td><td><a href="../assets/steamworks/">Integration (Unity and Godot)</a></td><td></td><td></td><td><a href="../company/steam/">steam</a></td><td><a href="../.gitbook/assets/Steamworks Card.png">Steamworks Card.png</a></td></tr><tr><td><h2>PhysKit</h2></td><td><a href="../assets/physkit/learning/sample-scenes/1-ballistic-basics.md">Ballistics</a></td><td><a href="../assets/physkit/learning/sample-scenes/1-buoyancy-example.md">Buoyancy</a></td><td><a href="../assets/physkit/learning/sample-scenes/1-force-effect-fields.md">Force Effects</a></td><td><a href="../assets/physkit/learning/sample-scenes/2-verlet-spring-skinned-mesh.md">Verlet (Physics Bone)</a></td><td><a href="../assets/physkit/">physkit</a></td><td><a href="../.gitbook/assets/PhysKit Card.png">PhysKit Card.png</a></td></tr><tr><td><h2>UX</h2></td><td><a href="../assets/ux/learning/core-concepts/">User eXperience Tools</a></td><td><a href="../assets/ux/learning/ugui-extras/">uGUI Extras</a></td><td></td><td></td><td><a href="../assets/ux/">ux</a></td><td><a href="../.gitbook/assets/Splash Screen (1).png">Splash Screen (1).png</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><h2>Steam</h2></td><td><a href="../company/steam/">Guides and Tutorials</a></td><td><a href="../assets/steamworks/">Integration (Unity and Godot)</a></td><td></td><td></td><td><a href="../company/steam/">steam</a></td><td><a href="../.gitbook/assets/Steamworks Card.png">Steamworks Card.png</a></td></tr><tr><td><h2>PhysKit</h2></td><td><a href="../assets/physkit/learning/sample-scenes/fantasy-style-ballistic-simulation.md">Ballistics</a></td><td><a href="../assets/physkit/learning/sample-scenes/1-buoyancy-example.md">Buoyancy</a></td><td><a href="../assets/physkit/learning/sample-scenes/1-force-effect-fields.md">Force Effects</a></td><td><a href="../assets/physkit/learning/sample-scenes/2-verlet-spring-skinned-mesh.md">Verlet (Physics Bone)</a></td><td><a href="../assets/physkit/">physkit</a></td><td><a href="../.gitbook/assets/PhysKit Card.png">PhysKit Card.png</a></td></tr><tr><td><h2>UX</h2></td><td><a href="../assets/ux/learning/core-concepts/">User eXperience Tools</a></td><td><a href="../assets/ux/learning/ugui-extras/">uGUI Extras</a></td><td></td><td></td><td><a href="../assets/ux/">ux</a></td><td><a href="../.gitbook/assets/Splash Screen (1).png">Splash Screen (1).png</a></td></tr></tbody></table>
 
 ## Introduction
 
@@ -33,7 +33,7 @@ Sponsors starting at the $10 a month tier gain access to our Source Repository.
 ### How is it Better?
 
 * **Lower price point**\
-  ****Even if you maintain your $15 sponsorship indefinitely we would have to go **2 years** with **zero (0)** major updates and **zero (0)** new assets in order for the Unity Asset Store's perpetual license to even break even (_as good of a price, not better_). Even then you wouldn't get the exclusives, instant updates nor the improved support.
+  Even if you maintain your $15 sponsorship indefinitely we would have to go **2 years** with **zero (0)** major updates and **zero (0)** new assets in order for the Unity Asset Store's perpetual license to even break even (_as good of a price, not better_). Even then you wouldn't get the exclusives, instant updates nor the improved support.
 * **Better support**\
   As a $15 or greater sponsor you have access to our issue tracking and feedback tools within GitHub as well as priority attention. Any requests or issues you post will get seen first and sorted first as your accessing our source directly.
 * **Faster updates**\
@@ -48,7 +48,7 @@ Sponsors starting at the $10 a month tier gain access to our Source Repository.
   With our license that is no problem your license extends to them while they work for you\
   With Unity Asset Store license that contractor must also license the assets you use.&#x20;
 * **Gain instant access to all our tools**\
-  ****Discover more ways to Do More with Heathen. UX for example can improve and benefit just about any project. You probably didn't know we had it, if you did you probably weren't sure how it could help in your project but now its there, part of the sponsorship, take a look and see how you can do more!
+  Discover more ways to Do More with Heathen. UX for example can improve and benefit just about any project. You probably didn't know we had it, if you did you probably weren't sure how it could help in your project but now its there, part of the sponsorship, take a look and see how you can do more!
 
 ### What's Included?
 
