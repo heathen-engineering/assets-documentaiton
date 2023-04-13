@@ -168,6 +168,7 @@
     * [Maths](assets/physkit/api/maths.md)
     * [Mesh Tools](assets/physkit/api/mesh-tools.md)
   * [Components](assets/physkit/components/README.md)
+    * [Ballistic Aim](assets/physkit/components/ballistic-aim.md)
     * [Ballistic Path Line Render](assets/physkit/components/ballistic-path-line-render.md)
     * [Ballistic Path Follow](assets/physkit/components/ballistic-path-follow.md)
     * [Buoyant Body](assets/physkit/components/buoyant-body.md)

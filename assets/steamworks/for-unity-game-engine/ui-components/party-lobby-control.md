@@ -22,7 +22,7 @@ Create a party [lobby ](../../../../company/steam/steamworks/multiplayer/matchma
 
 The Party Lobby Control is a UI behaviour component that manages a lobby representing a player party and the UI elements associated with that. This sort of "Party UI" is common in most team and  coop games such as MOBAs, Team Shooters, party games and more. One of the most typical examples of a party lobby can seen in DOTA2.
 
-<figure><img src="../../../../.gitbook/assets/image (4) (3).png" alt=""><figcaption><p>DOTA 2 home screen captured 2022-10-30 by Loden Darkstar</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (3) (1).png" alt=""><figcaption><p>DOTA 2 home screen captured 2022-10-30 by Loden Darkstar</p></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Halo Infinite multiplayer mode scree captured 2022-10-30 by Loden Darkstar</p></figcaption></figure>
 
