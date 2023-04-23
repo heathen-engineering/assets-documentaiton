@@ -48,7 +48,7 @@ The only exception to this is when using the [Steam Game Server](multiplayer/gam
 
 When running a build that was not deployed to Steam and ran from the Steam client you will notice that the game fails to initialize the crashes to desktop possibly attempting to re-launch from Steam client.
 
-This is by design, you must hint to Steam API what the app is, read the [article on steam\_appid.txt](./#steam\_appid.txt) it will explain, why this happens, how to work with it, when you should and when you should not use the feature described.
+This is by design, you must hint to Steam API what the app is, read the [article on steam\_appid.txt](steam\_appid.txt.md) it will explain, why this happens, how to work with it, when you should and when you should not use the feature described.
 
 ### Publish Your Changes
 
