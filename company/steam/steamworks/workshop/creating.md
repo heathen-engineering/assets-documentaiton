@@ -70,6 +70,14 @@ var itemData = new WorkshopItemData
         "tag 2"
     }
 };
+
+itemData.Create(result =>
+{
+    if(result.hasError)
+        ; //some error
+    else
+        ; //seems fine
+});
 ```
 
 ## User Generated Content API
@@ -85,46 +93,17 @@ using UGC = HeathenEngineering.SteamworksIntegration.API.UserGeneratedContent.Cl
 You can now access the UGC API with a much shorter name of `UGC`.
 
 ```csharp
-UGC.CreateItem(itemData);
+//Usually easier to just call itemData.Create(...) but this is here if you want it
+UGC.CreateItem(itemData, 
+               additionalPreviews, 
+               youTubeIds, 
+               keyValueTags, 
+               completedCallback, 
+               uploadStartedCallback, 
+               fileCreatedCallback);
 ```
 
 Technically that is all that is required to create a workshop item ... however this would make it hard to handle any sort of issue or error so we recommend you provide a callback handler. You can learn more about [callbacks in our article here](../../../development/callbacks.md). In the case of CreateItem it takes a callback that has a single parameter of type [WorkshopItemDataCreateStatus](../../../../assets/steamworks/objects/workshop-item-data-create-status.md) and is an ideal candidate for an [anonymous callback as discussed in our article here](../../../development/lambda-expressions.md#callbacks).
-
-```csharp
-UGC.CreateItem(itemData, (result) =>
-{
-    if(result.hasError)
-    {
-        //Something went wrong
-        Debug.Log(result.errorMessage);
-        
-        //Lets see where
-        if(result.createItemResult.HasValue
-        && result.createItemResult.Value.m_eResult == EResult.k_EResultOK)
-        {
-            //The create phase was fine
-            if(result.submitItemUpdateResult.HasValue
-            && result.submitItemUpdateResult.Value.m_eResult == EResult.k_EResultOK)
-            {
-                //Wouldnt happen because result.hasError == true
-                //tells us either create or update has a problem
-            }
-            else
-            {
-                //The issue was in update and
-                //result.submitItemUpdateResult.Value.m_eResult tells you why
-            }
-        }
-        else
-        {
-            //The issue was in create and
-            //result.createItemResult tells you why
-        }
-    }
-});
-```
-
-And assuming everything worked correctly you may want to read the new item's file ID so you can activate it, browse it, etc.
 
 ## Troubleshooting
 
