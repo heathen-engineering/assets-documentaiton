@@ -127,7 +127,7 @@ UGC.CreateItem(itemData, (result) =>
 And assuming everything worked correctly you may want to read the new item's file ID so you can activate it, browse it, etc.
 
 ```csharp
-UGC.CreateItem(itemData, (result) =>
+itemData.Create((result) =>
 {
     if(result.hasError)
     {
