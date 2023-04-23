@@ -126,22 +126,6 @@ UGC.CreateItem(itemData, (result) =>
 
 And assuming everything worked correctly you may want to read the new item's file ID so you can activate it, browse it, etc.
 
-```csharp
-itemData.Create((result) =>
-{
-    if(result.hasError)
-    {
-        //...
-    }
-    else
-    {
-        //It worked, here is your new item's file ID
-        if (result.ugcFileId.HasValue)
-            Debug.Log(result.ugcFileId.Value.m_PublishedFileId);
-    }
-});
-```
-
 ## Troubleshooting
 
 The [EResult ](https://partner.steamgames.com/doc/api/steam\_api#EResult)value returned by the callback will give you some idea as to what went wrong with any given attempt to create. Making since of this is easier if you understand the process. To create a new UGC item its actually a two step process
