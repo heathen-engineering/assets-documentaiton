@@ -60,35 +60,14 @@ var itemData = new WorkshopItemData
     appId = API.App.Client.Id,
     title = "My New Item Title",
     description = "Item description",
-    contentFolder = "C:/ValidFolderPath",
-    previewImageFile = "C:/ValidImagePath.jpg",
+    content = new System.IO.DirectoryInfo("C:/ValidFolderPath"),
+    preview = new System.IO.FileInfo("C:/ValidImagePath.jpg"),
     //Now the optional ones
     metadata = "Some arbitrary string",
-    previewFiles = new[]
-    {
-        new WorkshopItemPreviewFile
-        {
-            source = "C:/ValidImagePath.jpg",
-            type = EItemPreviewType.k_EItemPreviewType_Image
-        }
-    },
-    youTubeIds = new[]
-    {
-        "VALIDYOUTUBEID",
-        "OTHERVALIDID"
-    },
     tags = new[]
     {
         "tag 1",
         "tag 2"
-    },
-    keyValueTags = new []
-    {
-        new WorkshopItemKeyValueTag
-        {
-            key = "key",
-            value = "value"
-        }
     }
 };
 ```
