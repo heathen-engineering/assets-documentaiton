@@ -12,40 +12,19 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## Introduction
 
-Used with the User Generated Content interface for [1 line creation](../api/user-generated-content.md#create-and-update-items) of workshop items as the paramiter in the callback e.g.
+Used with the [User Generated Content interface](../api/user-generated-content.md#createitem) and the [WorkshopItemData ](../data-layer/workshop-item-data.md)tool.
+
+The structure provides details on the completed create operation including access to the resulting Workshop Item and the native callback results from Steam API.
 
 ```csharp
-public static bool CreateItem(
-        WorkshopItemData item, 
-        Action<WorkshopItemDataCreateStatus> callback = null)
-```
-
-This method is part of the [User Generated Content API](../api/user-generated-content.md), you provide it with two paramiters.
-
-### WorkshopItemData
-
-The first paramiter, this defines the data of the item you want to create.
-
-### Action\<WorkshopItemDataCreateStatus>
-
-The second paramiter, this is a deligate to a method that will be called when the process is complete. That deligate expects a method that takes 1 paramiter of type WorkshopItemDataCreateStats (this object)&#x20;
-
-### Example Call
-
-```csharp
-var itemData = new WorkshopItemData
-    {
-        // Set the paramiters of this object
-    };
-
-API.UserGeneratedContent.Client.CreateItem(itemData, (status) =>
-    {
-        if(status.hasError)
-        {
-            //Something went wrong
-            Debug.LogError(status.errorMessage);
-        }
-    });
+public struct WorkshopItemDataCreateStatus
+{
+    public bool hasError;
+    public string errorMessage;
+    public WorkshopItemData data;
+    public CreateItemResult_t? createItemResult;
+    public SubmitItemUpdateResult_t? submitItemUpdateResult;
+}
 ```
 
 ## Definition
@@ -72,12 +51,12 @@ If any this will contain the error message related to the fault.
 public string errorMessage;
 ```
 
-### ugcFileId
+### data
 
-This is the ID of the UGC file that was created as is used by the [User Generated Content API](../api/user-generated-content.md). This is a nullable value.
+The [WorkshopItemData ](../data-layer/workshop-item-data.md)that created this response and that contains details about the object.
 
 ```csharp
-public PublishedFileId_t? ugcFileId;
+public WorkshopItemData data;
 ```
 
 ### createItemResult
