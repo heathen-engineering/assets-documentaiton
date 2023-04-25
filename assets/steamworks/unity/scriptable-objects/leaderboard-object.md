@@ -265,7 +265,7 @@ Finds or creates the board according to configuration values. This is handled by
 ```csharp
 public void UploadScore(int score, 
                 ELeaderboardUploadScoreMethod method, 
-                Action<LeaderboardScoreUploaded_t, bool> callback = null)
+                Action<LeaderboardScoreUploaded, bool> callback = null)
 ```
 
 * score\
@@ -279,7 +279,7 @@ public void UploadScore(int score,
 public void UploadScore(int score, 
                 int[] scoreDetails, 
                 ELeaderboardUploadScoreMethod method, 
-                Action<LeaderboardScoreUploaded_t, bool> callback = null)
+                Action<LeaderboardScoreUploaded, bool> callback = null)
 ```
 
 * score\
@@ -294,7 +294,7 @@ public void UploadScore(int score,
 The callback should take the form of
 
 ```csharp
-void HandleCallback(LeaderboardScoreUploaded_t result, bool IOError)
+void HandleCallback(LeaderboardScoreUploaded result, bool IOError)
 {
     //Do Work
 }
@@ -338,7 +338,7 @@ When uploading a string score the system will attempt to parse the score to an i
 public void AttachUGC(string fileName, 
         object jsonObject, 
         System.Text.Encoding encoding, 
-        Action<LeaderboardUGCSet_t, bool> callback = null)
+        Action<LeaderboardUGCSet, bool> callback = null)
 ```
 
 * fileName\
@@ -353,7 +353,7 @@ public void AttachUGC(string fileName,
 The callback should take the form of
 
 ```csharp
-void HandleCallback(LeaderboardUGCSet_t result, bool IOError)
+void HandleCallback(LeaderboardUGCSet result, bool IOError)
 {
     //Do Work
 }
