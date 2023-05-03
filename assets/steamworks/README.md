@@ -103,32 +103,33 @@ The full raw Steam API (in C#) is fully available in all versions via our Steamw
 The "Features" shown here are Heathen extensions which make working with the API easier, safer, more robust and more functional but are not \*required\* in order to integration with Steam.&#x20;
 {% endhint %}
 
-| Features                                             | Foundation | Complete |
-| ---------------------------------------------------- | ---------- | -------- |
-| <p>Full API Supported by</p><p>Steamworks.NET</p>    | ✔          | ✔        |
-| Initialization for client and server                 | ✔          | ✔        |
-| Overlay                                              | ✔          | ✔        |
-| Stats                                                | ✔          | ✔        |
-| Achievements                                         | ✔          | ✔        |
-| Friends                                              | ✔          | ✔        |
-| User                                                 | ✔          | ✔        |
-| **Networking** FishNetworking Compatibility          | ✔          | ✔        |
-| **Networking** Mirror Compatibility                  | ✔          | ✔        |
-| **Networking** NetCode for GameObjects Compatibility | ✔          | ✔        |
-| App                                                  |            | ✔        |
-| Authentication                                       |            | ✔        |
-| Clan                                                 |            | ✔        |
-| Data Model                                           |            | ✔        |
-| DLC                                                  |            | ✔        |
-| Game Server Browser                                  |            | ✔        |
-| Input                                                |            | ✔        |
-| Inventory                                            |            | ✔        |
-| Leaderboard                                          |            | ✔        |
-| Matchmaking (Lobby and Server)                       |            | ✔        |
-| Parties                                              |            | ✔        |
-| Remote Play                                          |            | ✔        |
-| Remote Storage                                       |            | ✔        |
-| Screenshots                                          |            | ✔        |
-| User Generated Content (Workshop)                    |            | ✔        |
-| Voice                                                |            | ✔        |
-| Debugging Tools                                      |            | ✔        |
+| Features                                             | Foundation (free)                                                   | Complete                                                                                                                                                                                         |
+| ---------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| License                                              | [Free](https://github.com/heathen-engineering/SteamworksFoundation) | <p><a href="../../become-a-sponsor/">Sponsor ($15)</a><br><a href="https://assetstore.unity.com/packages/tools/integration/steam-api-steamworks-complete-246652">Unity Asset Store (75$)</a></p> |
+| <p>Full API Supported by</p><p>Steamworks.NET</p>    | ✔                                                                   | ✔                                                                                                                                                                                                |
+| Initialization for client and server                 | ✔                                                                   | ✔                                                                                                                                                                                                |
+| Overlay                                              | ✔                                                                   | ✔                                                                                                                                                                                                |
+| Stats                                                | ✔                                                                   | ✔                                                                                                                                                                                                |
+| Achievements                                         | ✔                                                                   | ✔                                                                                                                                                                                                |
+| Friends                                              | ✔                                                                   | ✔                                                                                                                                                                                                |
+| User                                                 | ✔                                                                   | ✔                                                                                                                                                                                                |
+| **Networking** FishNetworking Compatibility          | ✔                                                                   | ✔                                                                                                                                                                                                |
+| **Networking** Mirror Compatibility                  | ✔                                                                   | ✔                                                                                                                                                                                                |
+| **Networking** NetCode for GameObjects Compatibility | ✔                                                                   | ✔                                                                                                                                                                                                |
+| App                                                  |                                                                     | ✔                                                                                                                                                                                                |
+| Authentication                                       |                                                                     | ✔                                                                                                                                                                                                |
+| Clan                                                 |                                                                     | ✔                                                                                                                                                                                                |
+| Data Model                                           |                                                                     | ✔                                                                                                                                                                                                |
+| DLC                                                  |                                                                     | ✔                                                                                                                                                                                                |
+| Game Server Browser                                  |                                                                     | ✔                                                                                                                                                                                                |
+| Input                                                |                                                                     | ✔                                                                                                                                                                                                |
+| Inventory                                            |                                                                     | ✔                                                                                                                                                                                                |
+| Leaderboard                                          |                                                                     | ✔                                                                                                                                                                                                |
+| Matchmaking (Lobby and Server)                       |                                                                     | ✔                                                                                                                                                                                                |
+| Parties                                              |                                                                     | ✔                                                                                                                                                                                                |
+| Remote Play                                          |                                                                     | ✔                                                                                                                                                                                                |
+| Remote Storage                                       |                                                                     | ✔                                                                                                                                                                                                |
+| Screenshots                                          |                                                                     | ✔                                                                                                                                                                                                |
+| User Generated Content (Workshop)                    |                                                                     | ✔                                                                                                                                                                                                |
+| Voice                                                |                                                                     | ✔                                                                                                                                                                                                |
+| Debugging Tools                                      |                                                                     | ✔                                                                                                                                                                                                |
