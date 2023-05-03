@@ -17,25 +17,55 @@ Support us as a [GitHub Sponsor](../../become-a-sponsor/) and get instant access
 These articles are made possible by our [GitHub Sponsors](../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
-## Introduction
-
-{% hint style="info" %}
-Available for Unity 3D and Godot (mono)\*\
-\
-\* [Foundation](https://github.com/heathen-engineering/SteamworksFoundation) is available for Godot now with Complete in development and coming soon.
-{% endhint %}
+## Do More
 
 {% embed url="https://www.youtube.com/watch?v=6ujmZI1qUYI" %}
 
-Heathen’s approach is to take the strength of Steamworks.NET, and the parody it has with Valve’s original APIs, and extend that with engine centric tools, editor extensions and more to make Steamworks.NET + Heathen the best possible option for Unity & Godot (mono) developers looking to integrate with Steam.&#x20;
+{% hint style="info" %}
+[Become a Sponsor](../../become-a-sponsor/) and get all of our tools for 15$ its the best way to **Do More**!\
 
-With Heathen's Steamworks You retain the strength of directly accessing Steam API when and where you may wish, while having the benefit of not just C# focused but engine focused tools and extensions as well as systems battle tested across [many games](https://store.steampowered.com/curator/42461073-made-with-heathen) from many developers. We have wrapped [all relevant Steam interfaces in our API](api/) accounting for every callback and callresult in them, even the undocumented ones. Our knowledge base outlines every available interface, event, attribute, function and feature as well as every tool, system and object we have created on top of them.
 
+Available for Unity 3D and Godot (mono)\*\
+\* [Foundation](https://github.com/heathen-engineering/SteamworksFoundation) is available for Godot now with Complete in development and coming soon.
+{% endhint %}
+
+We take the strength of Steamworks.NET, and the parody it has with the native APIs, and expand on that with engine centric tools, editor extensions and more!&#x20;
+
+Heathen's Steamworks Complete is the best possible option for Unity & Godot (mono) developers looking to integrate with Steam API.&#x20;
+
+## Battle Tested
+
+{% embed url="https://store.steampowered.com/curator/42461073-Made-with-Heathen" %}
+
+Trusted by [thousands of developers](https://discord.gg/6X3xrRc) we have been hard at work on this tool for more than a decade. [The Steam Curator link above](https://store.steampowered.com/curator/42461073-Made-with-Heathen) are just a few of the works our community have published covering many genre and demonstrating a wide range of examples from small passion projects to major commercial products.
+
+## Built for You
+
+Our tools are built in layers from powerful APIs and Frameworks up to code free solutions. No matter your need, skill level or discipline our tools can help you Do More!
+
+{% hint style="success" %}
 Whether you're new to Steam, or game development in general or maybe a seasoned veteran well capable with the Steam APIs, Heathen’s Steamworks can greatly accelerate your project and help you produce a more robust product that better leverages the services offered by Valve.&#x20;
+{% endhint %}
 
-Heathen’s asset does not prevent you from using raw API calls in conjunction with its own extensions and tools. Many features of Steam API can be handled within Heathen's tools with little or no coding at all. In the same respect everything is built with respect to the programmer and the need to extend and expand without limitation.&#x20;
+From top to bottom each layer offers a level of simplicity and abstraction, you can mix and match as required to meet your project's and team's needs.
 
-Modular, extensible, and supported by a large community of fellow developers. Heathen’s Steamworks is the best solution for Unity & Godot (mono) developers looking to ship on the Steam platform.
+### Prefab & Tool Layer
+
+We provide a range ready to use prefabs and simple script components that allow manny common requirements to be handled completely code free. All built on our easy to use Components Layer.
+
+### Components Layer
+
+We provide flexible and powerful tools in the form of component scripts and scriptable objects that simplify the use of every major Steam feature in editor with little or no code required. All built on our easy to use Data Layer.
+
+### Data Layer
+
+Our "data layer" is a set of structs and tools that simplify working with Steam's concepts and artifacts such as UserData, LeaderboardData, AchievementData and more. These greatly reduce the code and effort required to accomplish any task. All built on our robust API Layer.
+
+### API Layer
+
+Every end point and interface of Valve's Steam API has been expressed in a C# and Unity (or Godot) centric API. This means no need to mess with callbacks, manage operation queues cast and convert between various primitive and native types, etc.
+
+The API Layer coupled with the Data Layer empowers programmers and engineers to work more efficiently and maintainable with Steam API and is built around the Native Steam API vis Steamworks.NET
 
 ## Heathen vs Steamworks.NET
 
