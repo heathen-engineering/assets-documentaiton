@@ -141,7 +141,7 @@ public static bool IsVRHeadsetStreamingenabled => get;
 
 ## Methods
 
-### SetGameLauncherMode
+### Set Game Launcher Mode
 
 In game launchers that don't have controller support you can call this to have Steam Input translate the controller input into mouse/kb to navigate the launcher
 
@@ -153,7 +153,7 @@ public static void SetGameLauncherMode(bool mode);
 
 Whether a launcher is active or not
 
-### StartVRDashboard
+### Start VR Dashboard
 
 Asks Steam to create and render the OpenVR dashboard.
 
@@ -161,7 +161,9 @@ Asks Steam to create and render the OpenVR dashboard.
 public static void StartVRDashboard();
 ```
 
-### ShowVirtualKeyboard
+### Show Virtual Keyboard
+
+Uses the `Show Floating Gamepad Text Input` feature of Steam API to display a floating / virtual keyboard over the game and deliver input to the target field.
 
 Opens a floating keyboard over the game content and sends OS keyboard keys directly to the game. The text field position is specified in pixels relative the origin of the game window and is used to position the floating keyboard in a way that doesn't cover the text field.
 
@@ -171,6 +173,8 @@ But how do I get the text?
 It is a true virtual keyboard, so Unity's Input system should be triggered by the key strokes as if it was a real keyboard.
 {% endhint %}
 
+#### Pixel Based Position
+
 ```csharp
 public static bool ShowVirtualKeyboard(
                 EFloatingGamepadTextInputMode mode, 
@@ -178,16 +182,42 @@ public static bool ShowVirtualKeyboard(
                 int2 fieldSize)
 ```
 
+or
+
+```csharp
+public static bool ShowVirtualKeyboard(
+                EFloatingGamepadTextInputMode mode, 
+                float2 fieldPosition, 
+                float2 fieldSize)
+```
+
 returns **true** if the floating keyboard was shown, otherwise, **false**.
 
-#### mode
-
+**mode**\
 Selects the keyboard type to use
 
-#### fieldPosition
-
+**fieldPosition**\
 Coordinate of where to position the floating keyboard
 
-#### fieldSize
-
+**fieldSize**\
 Desired size of the floating keyboard
+
+#### RectTransform Based Position
+
+```csharp
+public static bool ShowVirtualKeyboard(
+                EFloatingGamepadTextInputMode mode, 
+                RectTransform fieldTransform, 
+                Canvas canvas)
+```
+
+returns **true** if the floating keyboard was shown, otherwise, **false**.
+
+**mode**\
+Selects the keyboard type to use
+
+**RectTransform**\
+The rect transform of the input field
+
+**Canvas**\
+The parent canvas the input field is a member of
