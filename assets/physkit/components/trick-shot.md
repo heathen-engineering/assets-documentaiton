@@ -123,13 +123,13 @@ Should the distance be measured as arc length from the start or should it be con
 For 3D
 
 ```csharp
-public List<BallisticPath> perdiction;
+public List<BallisticPath> prediction;
 ```
 
 For 2D
 
 ```csharp
-public List<BallisticPath2D> perdiction;
+public List<BallisticPath2D> prediction;
 ```
 
 This is the resulting path predicted by the tool. each entry in the list represents 1 "segment" aka "path" where a segment is "bounce to bounce" thus if you have 2 entries then there was at least 1 bounce.
