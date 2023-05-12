@@ -6,15 +6,11 @@ coverY: 0
 
 # 😍 Become a Sponsor
 
-## Introduction
-
-Becoming a [sponsor of Heathen on GitHub](https://github.com/sponsors/heathen-engineering) is the best way to support us and enable us to deliver more articles, videos, tools, examples, support and just more!
+## [GitHub Sponsor](https://github.com/sponsors/heathen-engineering)
 
 {% embed url="https://github.com/sponsors/heathen-engineering" %}
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><h2>Steam</h2></td><td><a href="../company/steam/">Guides and Tutorials</a></td><td><a href="../assets/steamworks/">Integration (Unity and Godot)</a></td><td></td><td></td><td><a href="../company/steam/">steam</a></td><td><a href="../.gitbook/assets/Steamworks_Cover.jpg">Steamworks_Cover.jpg</a></td></tr><tr><td><h2>PhysKit</h2></td><td><a href="../assets/physkit/sample-scenes/fantasy-style-ballistic-simulation.md">Ballistics</a></td><td><a href="../assets/physkit/sample-scenes/1-buoyancy-example.md">Buoyancy</a></td><td><a href="../assets/physkit/sample-scenes/1-force-effect-fields.md">Force Effects</a></td><td><a href="../assets/physkit/sample-scenes/2-verlet-spring-skinned-mesh.md">Verlet (Physics Bone)</a></td><td><a href="../assets/physkit/">physkit</a></td><td><a href="../.gitbook/assets/PhysKit Card.png">PhysKit Card.png</a></td></tr><tr><td><h2>UX</h2></td><td><a href="../assets/ux/learning/core-concepts/">User eXperience Tools</a></td><td><a href="../assets/ux/learning/ugui-extras/">uGUI Extras</a></td><td></td><td></td><td><a href="../assets/ux/">ux</a></td><td><a href="../.gitbook/assets/Splash Screen (1).png">Splash Screen (1).png</a></td></tr><tr><td><h2>Wood Props</h2></td><td>Quality hand broken wooden props</td><td>With PhysKit integration</td><td></td><td></td><td><a href="../assets/art-assets/breakable/wood-props/">wood-props</a></td><td><a href="../.gitbook/assets/WoodBreakableProps_16_9.png">WoodBreakableProps_16_9.png</a></td></tr></tbody></table>
-
-## [GitHub Sponsor](https://github.com/sponsors/heathen-engineering)
+Becoming a [sponsor of Heathen on GitHub](https://github.com/sponsors/heathen-engineering) is the best way to support us and enable us to deliver more articles, videos, tools, examples, support and just more!
 
 {% hint style="success" %}
 Sponsoring Heathen at the $15 Monthly (or greater 🤪) [GitHub Sponsor](https://github.com/sponsors/heathen-engineering) tier is the best way to get all of our great assets.
@@ -58,6 +54,8 @@ Sponsors starting at the $15 a month tier gain access to our Source Repository.
   Discover more ways to Do More with Heathen. UX for example can improve and benefit just about any project. You probably didn't know we had it, if you did you probably weren't sure how it could help in your project but now its there, part of the sponsorship, take a look and see how you can do more!
 
 ### What's Included?
+
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><h2>Steam</h2></td><td><a href="../company/steam/">Guides and Tutorials</a></td><td><a href="../assets/steamworks/">Integration (Unity and Godot)</a></td><td></td><td></td><td><a href="../company/steam/">steam</a></td><td><a href="../.gitbook/assets/Steamworks_Cover.jpg">Steamworks_Cover.jpg</a></td></tr><tr><td><h2>PhysKit</h2></td><td><a href="../assets/physkit/sample-scenes/fantasy-style-ballistic-simulation.md">Ballistics</a></td><td><a href="../assets/physkit/sample-scenes/1-buoyancy-example.md">Buoyancy</a></td><td><a href="../assets/physkit/sample-scenes/1-force-effect-fields.md">Force Effects</a></td><td><a href="../assets/physkit/sample-scenes/2-verlet-spring-skinned-mesh.md">Verlet (Physics Bone)</a></td><td><a href="../assets/physkit/">physkit</a></td><td><a href="../.gitbook/assets/PhysKit Card.png">PhysKit Card.png</a></td></tr><tr><td><h2>UX</h2></td><td><a href="../assets/ux/learning/core-concepts/">User eXperience Tools</a></td><td><a href="../assets/ux/learning/ugui-extras/">uGUI Extras</a></td><td></td><td></td><td><a href="../assets/ux/">ux</a></td><td><a href="../.gitbook/assets/Splash Screen (1).png">Splash Screen (1).png</a></td></tr><tr><td><h2>Wood Props</h2></td><td>Quality hand broken wooden props</td><td>With PhysKit integration</td><td></td><td></td><td><a href="../assets/art-assets/breakable/wood-props/">wood-props</a></td><td><a href="../.gitbook/assets/WoodBreakableProps_16_9.png">WoodBreakableProps_16_9.png</a></td></tr></tbody></table>
 
 Eventually everything except (maybe) our large art assets … and if we can find a way to ship them on GitHub Sponsor we will. Even GitHub has its limitations and large single files are one of them.
 
