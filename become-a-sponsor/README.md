@@ -43,9 +43,9 @@ Sponsors starting at the $15 a month tier gain access to our Source Repository.
   As you reading from the source there is no delay at all between us fixing a problem or making an update or addition and you having access to it.
 * **First Access and Exclusives**\
   Some of our tools like uGUI Tools for Steam are exclusive to GitHub Sponsors as they don't really fit well on Unity Asset Store. Other tools like Breakable Wood Props do make it to Unity Asset Store later and often in some reduced capacity due to the Asset Store's limitations.
-* **Managed dependencies: (**_major failing the of Asset Store_**)**\
+* **Managed dependencies** \
   On GitHub we distribute through Package Manager, which means we can define dependencies and have them resolve and install for you.
-* **More flexible license: (**_major failing of the Asset Store_**)**\
+* **More flexible license** \
   Our license is designed to be friendly to indies and is yours to keep even if you cancel your sub.\
   Did you hire a contractor?\
   With our license that is no problem your license extends to them while they work for you\
