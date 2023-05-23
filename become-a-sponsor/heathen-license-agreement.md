@@ -40,7 +40,7 @@ License Agreement Copyright © 2014-2023 Heathen Engineering Limited, an Irish r
 
 1.3 Heathen grants you a non-exclusive, non-transferable, non-sublicensable (except as described in this Agreement) license to use, reproduce, display, perform, and modify the Licensed Technology or Content for any lawful purpose (the END\_USER), subject to all terms of this Agreement. Heathen reserves all rights not expressly granted to you under this Agreement.
 
-1. Distribution Terms
+&#x20;  2\. Distribution Terms
 
 2.1 Assembly - You may distribute Assemblies to any party. “Assembly” means a compiled output or “Product” made using the Licensed Technology that does not include as part of the distributed product any source for which Heathen holds copy right. This is also known as a “program”, “app”, “binary”. “executable”, “dynamically linked library” or otherwise “compiled” output.
 
@@ -48,17 +48,17 @@ License Agreement Copyright © 2014-2023 Heathen Engineering Limited, an Irish r
 
 2.3 Employees and Contractors - You also may Distribute Source and or content to a Licensee who is your employee or your contractor who does not have rights under their license to the same content, only to permit that Licensee to utilize that content in good faith to develop a Product on your behalf for Distribution by you under the License.
 
-1. Distribution Limitations
+&#x20;  3\. Distribution Limitations
 
 3.1 You may not distribute any source in whole or in part to any party, except to enable “employees and contractors”, and to enable “publishers”, “distributors” or “other business partners” to develop, test, market or distribute a product on your behalf as defined in section 2 above.
 
 3.2 You may not sublicense the Licensed Technology in Source format. You may not sublicense the Licensed Technology in assembly format, or any content copyright held by Heathen, except to grant End Users the ability to use, or to permit your publishers, distributors or other business partners to market and distribute, a Product that you distribute as defined in section 2 above.
 
-1. Support
+&#x20;  4\. Support
 
 4.1 Heathen does not have any support obligations with respect to the Licensed Technology under this Agreement.
 
-1. Disclaimer of Warranties
+&#x20;  5\. Disclaimer of Warranties
 
 5.1 You expressly understand and agree that your use of the Licensed Technology and/or any content copyright held by Heathen or otherwise obtained through Heathen is at your sole risk and that Heathen provides its Licensed Technology and other copyright held content “AS IS” and “AS AVAILABLE” without warranty of any kind, to the maximum extent permitted by applicable law. In particular, Heathen, its subsidiaries, holding companies, affiliates, licensors and partners do not represent or warrant to you that:
 
@@ -70,7 +70,7 @@ A. Your use of the Licensed Technology or Content will meet your requirements, B
 
 5.4 None of the Technology Licensed or Content is intended for use in the operation of nuclear facilities, life support systems, emergency communications, aircraft navigation or communication systems, air traffic control systems, or any other such activities in which case the failure of the Licensed Technology or Content could lead to death, personal injury, or physical or environmental damage.
 
-1. Limitation of Liability
+&#x20;  6\. Limitation of Liability
 
 6.1 Heathen and its subsidiaries, holding companies and/or other affiliates total liability to you from all causes of action and under all theories of liability under these terms will be limited to the amounts paid to Heathen by you in the past six months for the Licensed Technology, Content or other services relating to the dispute. In no event will Heathen or its subsidiaries, holding companies or other affiliates shall be liable to you for any special, incidental, exemplary, punitive or consequential damages, including but not limited to the loss of data, business, profits, and or ability to execute, or for the cost of procuring substitute products arising out of or in connection with these terms or your use of the Licensed Technology or Content or services or any materials acquired from Heathen, whether such liability arises from any claim based upon contract, warranty, tort (including negligence), strict liability or otherwise, and whether or not Heathen has been advised of the possibility of such loss or damage. The foregoing limitations will survive and apply even if any limited remedy specified in this agreement is found to have failed of its essential purpose.
 
