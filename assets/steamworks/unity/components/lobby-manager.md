@@ -123,7 +123,7 @@ private void Handler(LobbyData[] lobbies)
 public LobbyDataEvent evtEnterSuccess
 ```
 
-Occurs when the local user enters a lobby as the result of a create or join request. The handler would be similar to the following.
+Occurs when the local user enters a lobby as the result of a join request. The handler would be similar to the following.
 
 ```csharp
 private void Handler(LobbyData lobby)
