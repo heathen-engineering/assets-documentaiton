@@ -41,7 +41,7 @@ Our prefabs even enable you to do many common things such as listing Friends int
 
 {% hint style="info" %}
 Trying to do everything you can "Code Free" or with "Visual Scripting"?\
-Read our article here on [Visual Scripting](../../guides/development/visual-scripting.md) and maybe check out the rest of our Guides. Heathen is here to help you Do More and that means more than just selling you best in class Unity assets.
+Read our article here on [Visual Scripting](../../company/development/visual-scripting.md) and maybe check out the rest of our Guides. Heathen is here to help you Do More and that means more than just selling you best in class Unity assets.
 {% endhint %}
 
 More complex features, and make no mistake Steam API is absolutely huge and has many many features some of which such as Steam Inventory can be incredibly complex ... these more complex features will \* **always** \* require you to "program" the logic that exploits them with respect to your game's needs. Depending on what tooling your using such as Bolt or other "visual scripting" tools you can still do it "Code Free" thanks to our tools and components layers.
@@ -54,9 +54,9 @@ Keep in mind you can get instant access and a license to keep forever of Steamwo
 
 ### What about Microtransactions / Cash Shop?
 
-Yes of course, Steam API handles MTX (micro transactions) via the Steam Inventory interface. Heathen's Steamworks Complete has robust tooling around [Steam Inventory](../../steam/inventory/) which can greatly help any developer regardless of skill set.
+Yes of course, Steam API handles MTX (micro transactions) via the Steam Inventory interface. Heathen's Steamworks Complete has robust tooling around [Steam Inventory](../../company/steam/steamworks/inventory/) which can greatly help any developer regardless of skill set.
 
-> To reiterate as its often hard to believe, yes Steam API does MTX, yes it is [Steam Inventory](../../steam/inventory/) that is used to do that.
+> To reiterate as its often hard to believe, yes Steam API does MTX, yes it is [Steam Inventory](../../company/steam/steamworks/inventory/) that is used to do that.
 
 ## Can I try before I buy?
 

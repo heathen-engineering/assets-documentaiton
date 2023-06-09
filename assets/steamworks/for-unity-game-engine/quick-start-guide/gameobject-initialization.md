@@ -20,7 +20,7 @@ Steamworks Behaviour is used to initialize a Steam Settings object on startup of
 
 You should only ever have 1 Steamworks Behaviour in your game.
 
-You should NOT define your Steamworks Behaviour in your "main menu" or "title" scene as these scenes get loaded and reloaded multiple times. Instead you should use a "[bootstrap](../../../../guides/design/bootstrap-scene.md)" scene and place the behaviour and all other system level objects there. If you cannot or do not want to use a bootstrap setup then see the Steamworks Creator.
+You should NOT define your Steamworks Behaviour in your "main menu" or "title" scene as these scenes get loaded and reloaded multiple times. Instead you should use a "[bootstrap](../../../../company/design/bootstrap-scene.md)" scene and place the behaviour and all other system level objects there. If you cannot or do not want to use a bootstrap setup then see the Steamworks Creator.
 
 ## Steamworks Creator
 
@@ -28,12 +28,12 @@ You should NOT define your Steamworks Behaviour in your "main menu" or "title" s
 
 This is a simple script behaviour that checks if the Steam API is already initialized or not. If it is not it will create a new Steamworks Behaviour and optionally mark it as Do Not Destroy On Load.&#x20;
 
-This behaviour is here to help developers that are using the old approach to scene architecture and are not using a [bootstrap process](../../../../guides/design/bootstrap-scene.md). You can safely put the Steamworks Creator in every scene of your game as it will only work if its required to do so.
+This behaviour is here to help developers that are using the old approach to scene architecture and are not using a [bootstrap process](../../../../company/design/bootstrap-scene.md). You can safely put the Steamworks Creator in every scene of your game as it will only work if its required to do so.
 
 {% hint style="warning" %}
 This is not an efficient or robust way of architecting a game. We only support it as it is very common with new Unity developers.\
 \
-We very strongly encourage you to create a [bootstrap process](../../../../guides/design/bootstrap-scene.md) for your game in which case the proper place for Steam initialization is as part of that [bootstrap process](../../../../guides/design/bootstrap-scene.md).
+We very strongly encourage you to create a [bootstrap process](../../../../company/design/bootstrap-scene.md) for your game in which case the proper place for Steam initialization is as part of that [bootstrap process](../../../../company/design/bootstrap-scene.md).
 {% endhint %}
 
 ## Steam Settings
@@ -65,7 +65,7 @@ Valve issues you an App ID when you pay your application fee. If you don't have 
 
 <figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-The Steam Settings object can be used to reference all of your Steam "artifacts" such as Input Fields, [Stats](../../../../steam/stats-object.md), [Leaderboards](../../../../steam/leaderboard-object/), [Achievements](../../../../steam/achievements.md), [DLC ](../../../../steam/downloadable-content-object.md)and [Inventory items](../../../../steam/inventory/). For many of these artifact types you can define them in the Steam Developer Portal as you normally would and then use the "Import" button to pull them into your project.
+The Steam Settings object can be used to reference all of your Steam "artifacts" such as Input Fields, [Stats](../../../../company/steam/steamworks/stats-object.md), [Leaderboards](../../../../company/steam/steamworks/leaderboard-object/), [Achievements](../../../../company/steam/achievements.md), [DLC ](../../../../company/steam/steamworks/downloadable-content-object.md)and [Inventory items](../../../../company/steam/steamworks/inventory/). For many of these artifact types you can define them in the Steam Developer Portal as you normally would and then use the "Import" button to pull them into your project.
 
 {% hint style="info" %}
 The Unity Editor must be in "Play" mode for the import buttons to work.\
@@ -84,7 +84,7 @@ Valve limits what information on Inventory Items can be imported. For example bu
 
 ### Steam Game Server Configuration
 
-The Steam Game Server Configuration lets you configure the details of your game server as it will be seen by Steam. This is only relevant for server builds that will be initializing and logging on as a "[Steam Game Server](../../../../steam/multiplayer/game-server-browser/)"
+The Steam Game Server Configuration lets you configure the details of your game server as it will be seen by Steam. This is only relevant for server builds that will be initializing and logging on as a "[Steam Game Server](../../../../company/steam/steamworks/multiplayer/game-server-browser/)"
 
 If you set the "Auto Logon" feature to false you will need to call LogOn for the server when your ready for it to log on which is done via the [API.App.Server.LogOn()](../../api/app.server.md#logon) method.
 

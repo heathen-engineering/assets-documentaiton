@@ -36,7 +36,7 @@ You connect a lobby to the LobbyManager by using the LobbyManager to create or j
 
 ### Steam Lobby
 
-The [Steam Lobby](../../../../steam/multiplayer/matchmaking-tools.md) feature of the Steam API is a flexible and powerful tool useful for far more than simple matchmaking. We find it best to think of a "lobby" more like a chat room with metadata. It does not have anything to do with networking, it doesn't have to relate to a game session or a game server.
+The [Steam Lobby](../../../../company/steam/steamworks/multiplayer/matchmaking-tools.md) feature of the Steam API is a flexible and powerful tool useful for far more than simple matchmaking. We find it best to think of a "lobby" more like a chat room with metadata. It does not have anything to do with networking, it doesn't have to relate to a game session or a game server.
 
 Steam allows a player to be apart of up to 3 lobbies but has a few restrictions.
 

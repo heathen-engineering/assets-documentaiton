@@ -16,7 +16,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 The Heathen API provides access to the full Steam API wrapping every interface with a Unity friendly static class, simplifying use of the raw API without reducing its functionality and exposing every callback as a UnityEvent and every callresult as a Unity firendly Action.
 
-We have wrapped every interface (except Networking interfaces) and copied its relevant documentation meaning you can now explore Valve's own documentation in your IDE via [IntelliSense](../../../guides/development/intellisense.md), take full advantage of auto complete and suggestions and explore the full API via the object explorer.&#x20;
+We have wrapped every interface (except Networking interfaces) and copied its relevant documentation meaning you can now explore Valve's own documentation in your IDE via [IntelliSense](../../../company/development/intellisense.md), take full advantage of auto complete and suggestions and explore the full API via the object explorer.&#x20;
 
 {% hint style="info" %}
 Why not wrap the networking interfaces?

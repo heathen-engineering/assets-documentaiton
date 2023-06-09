@@ -22,7 +22,7 @@ public static class Parties.Client
 
 You can use this system as a matchmaking solution where in your user can scan for available beacons to join and can create and publish beacons that others can view and join.
 
-You can attach metadata to a beacon similar to the metadata concept with [Steam Lobby](../../../steam/multiplayer/matchmaking-tools.md) based matchmaking. You can use the party system along side other forms of matchmaking manually updating the available "slots" a beacon is advertising.
+You can attach metadata to a beacon similar to the metadata concept with [Steam Lobby](../../../company/steam/steamworks/multiplayer/matchmaking-tools.md) based matchmaking. You can use the party system along side other forms of matchmaking manually updating the available "slots" a beacon is advertising.
 
 
 

@@ -18,7 +18,7 @@ The Leaderboard sample scene demonstrates the read, write and display of Leaderb
 
 ### Steamworks Behaviour
 
-Located on the Manager GameObject in the scene root. [Steamworks Behaviour](../../unity/components/steamworks-behaviour.md) is required for the Steam API to work at all. Typically this would be in your [Bootstrap scene](../../../../guides/design/bootstrap-scene.md) however for the case of these samples which are meant to be ran in editor we place them here.
+Located on the Manager GameObject in the scene root. [Steamworks Behaviour](../../unity/components/steamworks-behaviour.md) is required for the Steam API to work at all. Typically this would be in your [Bootstrap scene](../../../../company/design/bootstrap-scene.md) however for the case of these samples which are meant to be ran in editor we place them here.
 
 In the case of this sample we are using the [Evt Steam Initialized](../../unity/components/steamworks-behaviour.md#evt-steam-initialized) event on the behaviour to trigger the initial query on the Leaderboard Manager and refresh the Leaderboard User Entry.
 

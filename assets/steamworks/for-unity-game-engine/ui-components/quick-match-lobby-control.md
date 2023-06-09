@@ -14,7 +14,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## &#x20;Introduction
 
-Create a session [lobby ](../../../../steam/multiplayer/matchmaking-tools.md)and manage a quick match style UI with ZERO code required.
+Create a session [lobby ](../../../../company/steam/steamworks/multiplayer/matchmaking-tools.md)and manage a quick match style UI with ZERO code required.
 
 Quick match based lobbies are the simplest and cleanest user experience for your player in common game design. They present very little to no real UI elements concerned with the "lobby" rather the user or system defines the search arguments and searches for or creates a new session to match players with. This approach requires the least amount of input from players typically reducing match wait types by using more flexible search parameters when needed.
 

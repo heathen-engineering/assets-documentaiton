@@ -25,7 +25,7 @@ myAch.IsAchievd = true;
 myAch.Store();
 ```
 
-Achievements are a common feature of Steam API and one of the simpler to implement. They are typically used to mark milestones or key accomplishments of the player, you can learn more in our [Steam Guides](../../../steam/achievements.md).
+Achievements are a common feature of Steam API and one of the simpler to implement. They are typically used to mark milestones or key accomplishments of the player, you can learn more in our [Steam Guides](../../../company/steam/achievements.md).
 
 ## Fields and Attributes
 

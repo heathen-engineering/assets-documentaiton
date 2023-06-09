@@ -32,6 +32,6 @@ You should **ALWAYS** treat sample code as a sample that you learn from and use 
 
 As a GitHub Sponsor you will have installed Steamworks Complete via the Unity Package Manager
 
-![](<../../../../.gitbook/assets/image (2) (3).png>)
+![](<../../../../.gitbook/assets/image (2) (3) (1).png>)
 
 You can simply select Steamworks Complete in the Unity Package Manager expand the "Samples" drop down and then import the Example Scenes ... this is also where you will find the uGUI Tools

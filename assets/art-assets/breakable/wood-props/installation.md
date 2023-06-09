@@ -8,15 +8,6 @@ description: Installing Wood Props from Heathen's Breakable collection
 
 {% embed url="https://github.com/sponsors/heathen-engineering" %}
 
-{% hint style="success" %}
-Better for us and better for you!
-
-Sponsoring Heathen on GitHub for $10 a month gets you access to the source repository for Steamworks, PhysKit and UX Complete; as well as our growing library of art assets.
-
-\
-See why GitHub sponsor is the hands down best way to Do More with Heathen in our [Licensing Article](../../../../become-a-sponsor/licensing.md).
-{% endhint %}
-
 ### Import
 
 Import the PhysKit Complete asset first, this is a dependency and provides the logic for breaking the assets and the assets are stored as a "sample" of it.

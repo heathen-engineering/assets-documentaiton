@@ -14,13 +14,13 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 public class InputAction : GameEvent<InputActionData>
 ```
 
-Represents a Steam Input Action such as defined in your games [IGA ](../../../../steam/input/getting-started.md#in-game-action-file)file.
+Represents a Steam Input Action such as defined in your games [IGA ](../../../../company/steam/steamworks/input/getting-started.md#in-game-action-file)file.
 
 These must be created as part of your [Steam Settings](steam-settings/) object .
 
 ## Fields and Attributes
 
-<table><thead><tr><th width="181.56643368118847">Type</th><th width="173.82668241105068">Name</th><th width="375.82373346952215">Comment</th></tr></thead><tbody><tr><td>InputActionType</td><td>type</td><td>The type of action (Analog or Digital)</td></tr><tr><td>string</td><td>actionName</td><td>The name of the action as it appears in the <a href="../../../../steam/input/getting-started.md#in-game-action-file">IGA</a> file</td></tr><tr><td>InputAnalogActionHandle_t</td><td>AnalogHandle</td><td>The native Steam API handle if this is a analog handle and has been resolved.</td></tr><tr><td>InputDigitalActionHandle_t</td><td>DigitalHandle</td><td>The native Steam API handle if this is a digital handle and has been resolved.</td></tr></tbody></table>
+<table><thead><tr><th width="181.56643368118847">Type</th><th width="173.82668241105068">Name</th><th width="375.82373346952215">Comment</th></tr></thead><tbody><tr><td>InputActionType</td><td>type</td><td>The type of action (Analog or Digital)</td></tr><tr><td>string</td><td>actionName</td><td>The name of the action as it appears in the <a href="../../../../company/steam/steamworks/input/getting-started.md#in-game-action-file">IGA</a> file</td></tr><tr><td>InputAnalogActionHandle_t</td><td>AnalogHandle</td><td>The native Steam API handle if this is a analog handle and has been resolved.</td></tr><tr><td>InputDigitalActionHandle_t</td><td>DigitalHandle</td><td>The native Steam API handle if this is a digital handle and has been resolved.</td></tr></tbody></table>
 
 ## Methods
 

@@ -14,7 +14,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## &#x20;Introduction
 
-Create a party [lobby ](../../../../steam/multiplayer/matchmaking-tools.md)and its UI fully featured including in game friend invite, chat, and more with ZERO code required.
+Create a party [lobby ](../../../../company/steam/steamworks/multiplayer/matchmaking-tools.md)and its UI fully featured including in game friend invite, chat, and more with ZERO code required.
 
 ![](<../../../../.gitbook/assets/image (5) (4).png>)
 
@@ -22,7 +22,7 @@ The Party Lobby Control is a UI behaviour component that manages a lobby represe
 
 <figure><img src="../../../../.gitbook/assets/image (4) (3) (1).png" alt=""><figcaption><p>DOTA 2 home screen captured 2022-10-30 by Loden Darkstar</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Halo Infinite multiplayer mode scree captured 2022-10-30 by Loden Darkstar</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (4).png" alt=""><figcaption><p>Halo Infinite multiplayer mode scree captured 2022-10-30 by Loden Darkstar</p></figcaption></figure>
 
 The purpose of a "party lobby" also known as a "group lobby" is to gather Friends that wish to play together, most typically in a coop game though you do see Group/Party systems in competitive games as well particularly party games.
 
