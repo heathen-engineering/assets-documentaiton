@@ -26,6 +26,6 @@ Ideally community management would be a core function of your business but in re
 
 Your building a game, your using a PC to do so ... there is zero reason to not release your game on Steam and in our opinion it should be your first and core platform.
 
-We have a whole guide section dedicated to [Steam ](../steam/)you can find it [here](../steam/). Within that you will find a guide specifically for the [Community Hub](../steam/community-hub.md).
+We have a whole guide section dedicated to Steam you can find it here. Within that you will find a guide specifically for the [Community Hub](../steam/community-hub.md).
 
 Steam if you where not aware is a major social network, before "social network" was even a buzz word much less an industry. It includes community's, chats, forums, streaming and integrates with so much more. If your game is going to be on PC it should be on Steam and if your game is Steam that should be the root of your community.

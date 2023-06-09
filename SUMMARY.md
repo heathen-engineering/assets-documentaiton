@@ -7,7 +7,7 @@
   * [Heathen License Agreement](become-a-sponsor/heathen-license-agreement.md)
 * [Unity Asset Refund Policy](extended-refund-policy.md)
 
-## Industry Guides <a href="#guides" id="guides"></a>
+## General <a href="#guides" id="guides"></a>
 
 * [🔎 Table of Contents](company/concepts.md)
 * [🤩 Getting Started](company/getting-started/README.md)

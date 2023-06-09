@@ -34,7 +34,7 @@ Read our article on [Sourcing Marketing](../sourcing-resources/marketing.md) to 
 
 Your building a game, your using a PC to do so ... there is zero reason to not release your game on Steam and in our opinion it should be your first and core platform.
 
-We have a whole guide section dedicated to [Steam ](../steam/)you can find it [here](../steam/).
+We have a whole guide section dedicated to Steam you can find it here.
 
 ## Market Research
 

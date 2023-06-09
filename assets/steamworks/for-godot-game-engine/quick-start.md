@@ -17,7 +17,7 @@ Our scripts are all C# based\
 Consequently you should be using Godot (mono) or a similarly .NET compatible version of Godot.
 {% endhint %}
 
-Your first stop for getting started as a Steam Developer should be our [Guides on Steam](../../../company/steam/) its self including its [Quick Start](../../../company/steam/quick-start.md#introduction) guide. While you can perform very basic functional testing using the "Test App" 480 you really will need to secure your own App ID before you can do anything meaningful with Steam.
+Your first stop for getting started as a Steam Developer should be our Guides on Steam its self including its [Quick Start](../../../company/steam/quick-start.md#introduction) guide. While you can perform very basic functional testing using the "Test App" 480 you really will need to secure your own App ID before you can do anything meaningful with Steam.
 
 ## Auto Load
 

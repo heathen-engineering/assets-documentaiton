@@ -10,18 +10,18 @@ These articles are made possible by our [GitHub Sponsors](./) ... become a spons
 
 ## Introduction
 
-This license agreement is used as the foundation for bespoke license agreements with clients and applied to assets aquired through GitHub sponsorship, Patreon subscription and similar distribution channels.
+This license agreement is used as the foundation for bespoke license agreements with clients and applied to assets acquired through GitHub sponsorship, Patreon subscription and similar distribution channels.
 
-This license does not conflcit with or modify in any way any license you aquired through affiliates or partners such as Unity Asset Store.
+This license does not conflict with or modify in any way any license you acquired through affiliates or partners such as Unity Asset Store.
 
-The spirit of the license is that (When legitimetly aquired) you have a license that allows you to use Heathen technology and content with out restriction and that mitigates our legal liability\
+The spirit of the license is that (When legitimately acquired) you have a license that allows you to use Heathen technology and content without restriction and that mitigates our legal liability\
 \
-These permisions are granted as long as you&#x20;
+These permissions are granted as long as you&#x20;
 
-* Dont try distributing our source code to enable others to circumvent our distribution channels
-* Dont try to claim ownership over our copyrighted material
+* Don't try distributing our source code to enable others to circumvent our distribution channels
+* Don't try to claim ownership over our copyrighted material
 
-If you have any questions or concerns dont hesitate to contact us.
+If you have any questions or concerns don't hesitate to contact us.
 
 ## License
 

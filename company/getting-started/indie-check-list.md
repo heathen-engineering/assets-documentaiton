@@ -46,7 +46,7 @@ As a game developer, even before you have a game ready to publish, you will be c
 
 {% hint style="success" %}
 We strongly recommend Steam as your first and core platform.\
-Steam is the gaming platform for PC, it has a low barrier to entry and your building your game on a PC so its the most native to the project ... there really is no reason to not launch on [Steam](../steam/).
+Steam is the gaming platform for PC, it has a low barrier to entry and your building your game on a PC so its the most native to the project ... there really is no reason to not launch on Steam.
 {% endhint %}
 
 How will you distribute your product? This is something you should think about early. It will dictate many other aspects of your organization, and likely have a significant impact on the design and implementation of any apps/games you create.&#x20;
