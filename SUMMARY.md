@@ -86,7 +86,6 @@
 
 ## Steam
 
-* [🟦 Steam](company/steam/README.md)
 * [☝ Quick Start](company/steam/quick-start.md)
 * [🏆 Achievements](company/steam/achievements.md)
 * [🗣 Community Hub](company/steam/community-hub.md)

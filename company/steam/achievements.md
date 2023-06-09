@@ -74,36 +74,6 @@ From there select the Stats & Achievements > Achievements option and create your
 
 ## Using Achievements
 
-### Using Heathen APIs
-
-[API](../../assets/steamworks/api/stats-and-achievements.md)
-
-Heathen's Steamworks wraps Valve's Steam API with a C# and Unity friendly tool kit. All features related to stats and achievements can be found in the [StatsAndAchievements.Client](../../assets/steamworks/api/stats-and-achievements.md) class. In most cases you won't need to use this low level tool but it is available to you and works very similar to the raw Steam API.
-
-```csharp
-using UnityEngine;
-using Achievements = HeathenEngineering.SteamworksIntegration.API.StatsAndAchievements.Client;
-
-public class ExampleScript : MonoBehaviour
-{
-  void Start()
-  {
-    Achievements.GetAchievement("ACH_TRAVEL_FAR_ACCUM", out bool isAchieved);
-    
-    if(isAchieved)
-      Debug.Log("It is unlocked");
-    else
-      Debug.Log("It is locked");
-      
-    //To unlock it
-    Achievements.SetAchievement("ACH_TRAVEL_FAR_ACCUM");
-    
-    //To re-lockit
-    Achievements.ClearAchievement("ACH_TRAVEL_FAR_ACCUM");
-  }
-}
-```
-
 ### Using Value Types
 
 [Achievement Data](../../assets/steamworks/data-layer/achievement-data.md)
@@ -162,3 +132,35 @@ public class ExampleScript : MonoBehaviour
   }
 }
 ```
+
+### Using Heathen APIs
+
+[API](../../assets/steamworks/api/stats-and-achievements.md)
+
+Heathen's Steamworks wraps Valve's Steam API with a C# and Unity friendly tool kit. All features related to stats and achievements can be found in the [StatsAndAchievements.Client](../../assets/steamworks/api/stats-and-achievements.md) class. In most cases you won't need to use this low level tool but it is available to you and works very similar to the raw Steam API.
+
+```csharp
+using UnityEngine;
+using Achievements = HeathenEngineering.SteamworksIntegration.API.StatsAndAchievements.Client;
+
+public class ExampleScript : MonoBehaviour
+{
+  void Start()
+  {
+    Achievements.GetAchievement("ACH_TRAVEL_FAR_ACCUM", out bool isAchieved);
+    
+    if(isAchieved)
+      Debug.Log("It is unlocked");
+    else
+      Debug.Log("It is locked");
+      
+    //To unlock it
+    Achievements.SetAchievement("ACH_TRAVEL_FAR_ACCUM");
+    
+    //To re-lockit
+    Achievements.ClearAchievement("ACH_TRAVEL_FAR_ACCUM");
+  }
+}
+```
+
+a
