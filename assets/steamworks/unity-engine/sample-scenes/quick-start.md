@@ -32,6 +32,6 @@ it is \*\***strongly\*\*** recommended to use a [bootstrap design pattern](../..
 
 ### [Friend Profile](../../unity/ugui-tools/prefabs/friend-profile.md)
 
-![](<../../../../.gitbook/assets/image (2) (4).png>)
+![](<../../../../.gitbook/assets/image (2) (4) (3).png>)
 
 The Friend Profile present in the scene is simply here to prove to you that the Steam API is initialized and able to read data. On load it will fetch the local user's data and populate the avatar image, name, status, friend ID and Steam level.
