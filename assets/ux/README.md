@@ -4,14 +4,14 @@ cover: ../../.gitbook/assets/WebPage Cover (1).png
 coverY: 91.6635
 ---
 
-# User eXperience \[UX]
+# 🧙♂ User eXperience \[UX]
 
 {% embed url="https://discord.gg/6X3xrRc" %}
 
 ## GitHub Sponsors
 
 {% hint style="success" %}
-Sponsoring Heathen on GitHub for $10 a month gets you access to the sorce repository for Steamworks, PhysKit and UX Complete.
+Sponsoring Heathen on GitHub for $15 a month gets you access to the sorce repository for Steamworks, PhysKit and UX Complete.
 
 \
 See why GitHub sponsor is the hands down best way to Do More with Heathen in our [Licensing Article](../../become-a-sponsor/licensing.md).
