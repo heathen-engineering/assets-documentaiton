@@ -18,13 +18,5 @@ Used by the [Matchmaking ](../api/matchmaking.md)interface in relation to favori
 
 ## Fields and Attributes
 
-| Type     | Name               | Comment                                     |
-| -------- | ------------------ | ------------------------------------------- |
-| AppId\_t | appId              | The ID of the game                          |
-| string   | IpAddress          | string representation of the IP address     |
-| uint     | ipAddress          | Steam native uint version of the IP address |
-| ushort   | connectionPort     |                                             |
-| ushort   | queryPort          |                                             |
-| DateTime | lastPlayedOnServer |                                             |
-| bool     | isHistory          |                                             |
+<table><thead><tr><th width="187.56643368118847">Type</th><th width="183.36921690104845">Name</th><th width="375.82373346952215">Comment</th></tr></thead><tbody><tr><td>AppId_t</td><td>appId</td><td>The ID of the game</td></tr><tr><td>string</td><td>IpAddress</td><td>string representation of the IP address</td></tr><tr><td>uint</td><td>ipAddress</td><td>Steam native uint version of the IP address</td></tr><tr><td>ushort</td><td>connectionPort</td><td></td></tr><tr><td>ushort</td><td>queryPort</td><td></td></tr><tr><td>DateTime</td><td>lastPlayedOnServer</td><td></td></tr><tr><td>bool</td><td>isHistory</td><td></td></tr></tbody></table>
 

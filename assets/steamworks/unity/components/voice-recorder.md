@@ -16,10 +16,7 @@ Meant to be attached to a game object representing the local player. This compon
 
 ## Fields and Attributes
 
-| Type  | Name         | Comments                                                                                                                        |
-| ----- | ------------ | ------------------------------------------------------------------------------------------------------------------------------- |
-| float | bufferLength | The length of buffer in seconds range 0 to 1                                                                                    |
-| bool  | IsRecording  | <p>Indicates rather or not the system is currently capturing audio.</p><p></p><p>this can be set to start or stop recording</p> |
+<table><thead><tr><th width="217.91333012691814">Type</th><th>Name</th><th width="316.8664058133036">Comments</th></tr></thead><tbody><tr><td>float</td><td>bufferLength</td><td>The length of buffer in seconds range 0 to 1</td></tr><tr><td>bool </td><td>IsRecording</td><td><p>Indicates rather or not the system is currently capturing audio.</p><p></p><p>this can be set to start or stop recording</p></td></tr></tbody></table>
 
 ## Events
 

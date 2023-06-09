@@ -16,18 +16,7 @@ The Window component is meant to be applied to a RectTransform game object aka a
 
 ### Fields and Attributes
 
-| Type    | Name          | Comment                                                                                                                                      |
-| ------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Vector2 | minimalSize   | The smallest size the windows Rect will be set to by the Windows system.                                                                     |
-| bool    | alwaysOnTop   | If true this window will force its self to the top on each update                                                                            |
-| bool    | clampToParent | If true the window will be forced to fall within the bounds of its parent's rect.                                                            |
-| bool    | HasFocus      | True if the window has focus. You can set this field to focus this window or if this window is focused you can set it false to remove focus  |
-| Vector2 | Position      | Used to get and set the windows position. This will respect the clamp to parent setting                                                      |
-| float   | Width         | Used to get and set the width of the window. This will respect the minimal size and clamp to parent setting                                  |
-| float   | Height        | Used to get and set the height of the window. This will respect the minimal size and clamp to parent setting                                 |
-| Vector2 | Size          | Used to get and set the width and hight at the same time. This will respect the minimal size and clamp to parent setting                     |
-| bool    | IsMaximized   | Used to get or set the maximized state of the window                                                                                         |
-| bool    | IsMinimized   | Used to get or set the minimized state of the window                                                                                         |
+<table><thead><tr><th width="226.53266678954236">Type</th><th width="193.13335237910752">Name</th><th width="297.85630306988895">Comment</th></tr></thead><tbody><tr><td>Vector2</td><td>minimalSize</td><td>The smallest size the windows Rect will be set to by the Windows system.</td></tr><tr><td>bool</td><td>alwaysOnTop</td><td>If true this window will force its self to the top on each update</td></tr><tr><td>bool</td><td>clampToParent</td><td>If true the window will be forced to fall within the bounds of its parent's rect.</td></tr><tr><td>bool</td><td>HasFocus</td><td>True if the window has focus. You can set this field to focus this window or if this window is focused you can set it false to remove focus </td></tr><tr><td>Vector2</td><td>Position</td><td>Used to get and set the windows position. This will respect the clamp to parent setting</td></tr><tr><td>float</td><td>Width</td><td>Used to get and set the width of the window. This will respect the minimal size and clamp to parent setting</td></tr><tr><td>float </td><td>Height</td><td>Used to get and set the height of the window. This will respect the minimal size and clamp to parent setting</td></tr><tr><td>Vector2</td><td>Size</td><td>Used to get and set the width and hight at the same time. This will respect the minimal size and clamp to parent setting</td></tr><tr><td>bool</td><td>IsMaximized</td><td>Used to get or set the maximized state of the window</td></tr><tr><td>bool</td><td>IsMinimized</td><td>Used to get or set the minimized state of the window</td></tr></tbody></table>
 
 ### Events
 

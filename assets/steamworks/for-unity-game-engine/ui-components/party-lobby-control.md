@@ -14,7 +14,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## &#x20;Introduction
 
-Create a party [lobby ](../../../../company/steam/steamworks/multiplayer/matchmaking-tools.md)and its UI fully featured including in game friend invite, chat, and more with ZERO code required.
+Create a party [lobby ](../../../../steam/multiplayer/matchmaking-tools.md)and its UI fully featured including in game friend invite, chat, and more with ZERO code required.
 
 ![](<../../../../.gitbook/assets/image (5) (4).png>)
 

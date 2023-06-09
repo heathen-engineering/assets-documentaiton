@@ -49,12 +49,7 @@ mySettings.client.inventory
 ```
 {% endhint %}
 
-| Type                                                         | Name            | Comments                                         |
-| ------------------------------------------------------------ | --------------- | ------------------------------------------------ |
-| InventorySettings                                            | Inventory       | Static access to inventory settings              |
-| List<[InputActionSet](../../input-action-set.md)>            | actionSets      | collection of sets mapped from Steam Input       |
-| List<[InputActionSetLayer](../../input-action-set-layer.md)> | actionSetLayers | collection of set layers mapped from Steam Input |
-| List<[InputAction](../../input-action.md)>                   | actions         | collection of actions mapped from Steam Input    |
+<table><thead><tr><th width="210.30334048495172">Type</th><th width="150">Name</th><th width="304.9982296920071">Comments</th></tr></thead><tbody><tr><td>InventorySettings</td><td>Inventory</td><td>Static access to inventory settings</td></tr><tr><td>List&#x3C;<a href="../../input-action-set.md">InputActionSet</a>></td><td>actionSets</td><td>collection of sets mapped from Steam Input</td></tr><tr><td>List&#x3C;<a href="../../input-action-set-layer.md">InputActionSetLayer</a>></td><td>actionSetLayers</td><td>collection of set layers mapped from Steam Input</td></tr><tr><td>List&#x3C;<a href="../../input-action.md">InputAction</a>></td><td>actions</td><td>collection of actions mapped from Steam Input</td></tr></tbody></table>
 
 ## Methods
 

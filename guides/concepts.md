@@ -1,0 +1,19 @@
+---
+description: >-
+  Explore concepts and ideas around game development and software engineering in
+  general.
+cover: ../.gitbook/assets/1920x384 DoMore Banner (1).png
+coverY: 0
+---
+
+# 🔎 Table of Contents
+
+{% hint style="success" %}
+#### Like what your seeing?
+
+Consider supporting us as a [GitHub Sponsor](../become-a-sponsor/) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
+{% endhint %}
+
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><span data-gb-custom-inline data-tag="emoji" data-code="1f929">🤩</span> Getting Started</h3></td><td>Learn what we have to offer and checkout the <a href="getting-started/indie-check-list.md">Check List</a> to help you get started quickly</td><td></td><td><a href="getting-started/">getting-started</a></td></tr><tr><td><h3><span data-gb-custom-inline data-tag="emoji" data-code="1f9a7">🦧</span>Fundamentals</h3></td><td>Release versions, dev phases, how to use Package Manager. Here you will find the very fundamentals.</td><td></td><td><a href="fundamentals/">fundamentals</a></td></tr><tr><td><h3><span data-gb-custom-inline data-tag="emoji" data-code="2694">⚔</span>Sourcing</h3></td><td>Learn how to select a marketing partner, community management partner and more!</td><td></td><td><a href="sourcing-resources/">sourcing-resources</a></td></tr><tr><td><h3><span data-gb-custom-inline data-tag="emoji" data-code="1f7e6">🟦</span>Steam</h3></td><td>Get started as a Steam developer and discover why Steam is <strong>the</strong> gaming platform.</td><td></td><td><a href="../steam/steam.md">steam.md</a></td></tr><tr><td><h3><span data-gb-custom-inline data-tag="emoji" data-code="1f4d0">📐</span>Design</h3></td><td>From the basics of bootstrapping to the theories of player motivation, learn to create better experiences.</td><td></td><td><a href="design/">design</a></td></tr><tr><td><h3><span data-gb-custom-inline data-tag="emoji" data-code="1f3d7">🏗</span>Development</h3></td><td>From the basics of how to use your IDE ... and what an IDE is ... to advanced topics that will give you an edge.</td><td></td><td><a href="development/">development</a></td></tr><tr><td><h3><span data-gb-custom-inline data-tag="emoji" data-code="26a0">⚠</span>Publishers</h3></td><td>Coming Soon!</td><td></td><td><a href="publishers.md">publishers.md</a></td></tr><tr><td><h3><span data-gb-custom-inline data-tag="emoji" data-code="1f9ea">🧪</span>Testing</h3></td><td>Our new but up and coming section on all things testing testing and quality related</td><td></td><td><a href="testing/">testing</a></td></tr><tr><td><h3><span data-gb-custom-inline data-tag="emoji" data-code="1f9d9-2642">🧙♂</span>Community</h3></td><td>Our new but up and coming section on all things community management related</td><td></td><td><a href="community/">community</a></td></tr><tr><td><h3><span data-gb-custom-inline data-tag="emoji" data-code="1f4e3">📣</span>Marketing</h3></td><td>Learn the ins and outs rather you choose to go-it-alone or select a partner in what is one of the most hated but most important parts of game dev.</td><td></td><td><a href="marketing/">marketing</a></td></tr><tr><td><h3><span data-gb-custom-inline data-tag="emoji" data-code="1f4c6">📆</span>Release</h3></td><td>Coming Soon!</td><td></td><td><a href="release.md">release.md</a></td></tr><tr><td><h3><span data-gb-custom-inline data-tag="emoji" data-code="1f5fa">🗺</span>Live</h3></td><td>Coming Soon!</td><td></td><td><a href="live.md">live.md</a></td></tr></tbody></table>

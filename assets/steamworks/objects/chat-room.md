@@ -22,13 +22,7 @@ The clan chat room structure is used by chat specific features of the Clans inte
 
 ## Fields and Attributes
 
-| Type                   | Name          | Comment                                                                                     |
-| ---------------------- | ------------- | ------------------------------------------------------------------------------------------- |
-| Clan                   | clan          | The clan this room belongs to                                                               |
-| CSteamID               | id            | The id of the room                                                                          |
-| EChatRoomEnterResponse | enterResponce | The responce from Steam when the user attempted to enter the room if any                    |
-| UserData\[]            | Members       | The list of chat members, note client interface cannot iterate the full list of large clans |
-| bool                   | IsOpenInSteam | Check if the chat is open in Steam UI                                                       |
+<table><thead><tr><th width="193.7178270108939">Type</th><th width="150">Name</th><th width="379.4856019593156">Comment</th></tr></thead><tbody><tr><td>Clan</td><td>clan</td><td>The clan this room belongs to</td></tr><tr><td>CSteamID</td><td>id</td><td>The id of the room</td></tr><tr><td>EChatRoomEnterResponse</td><td>enterResponce</td><td>The responce from Steam when the user attempted to enter the room if any</td></tr><tr><td>UserData[]</td><td>Members</td><td>The list of chat members, note client interface cannot iterate the full list of large clans</td></tr><tr><td>bool</td><td>IsOpenInSteam</td><td>Check if the chat is open in Steam UI</td></tr></tbody></table>
 
 ## Methods
 

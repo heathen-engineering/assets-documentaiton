@@ -18,8 +18,5 @@ Used by the [WorkshopItemData ](../data-layer/workshop-item-data.md)object.
 
 ### Fields and Attributes
 
-| Type   | Name  | Comment              |
-| ------ | ----- | -------------------- |
-| string | key   | The key of the tag   |
-| string | value | The value of the tag |
+<table><thead><tr><th width="214.47090837902758">Type</th><th width="150">Name</th><th width="375.82373346952215">Comment</th></tr></thead><tbody><tr><td>string</td><td>key</td><td>The key of the tag</td></tr><tr><td>string</td><td>value</td><td>The value of the tag</td></tr></tbody></table>
 

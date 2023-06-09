@@ -16,12 +16,7 @@ Meant to be attached to a game object representing non-local players. It can be 
 
 ## Fields and Attributes
 
-| Type             | Name             | Comments                                                                                                 |
-| ---------------- | ---------------- | -------------------------------------------------------------------------------------------------------- |
-| AudioSource      | outputSource     | The audio source to play audio through                                                                   |
-| SampleRateMethod | sampleRateMethod | The method by which to calculate samplerate                                                              |
-| uint             | customSampleRate | If using a custom sample rate, specify that rate here.                                                   |
-| double           | encodingTime     | <p>The max length of the current streaming clip time. </p><p></p><p>This can be useful for debugging</p> |
+<table><thead><tr><th width="217.91333012691814">Type</th><th>Name</th><th width="316.8664058133036">Comments</th></tr></thead><tbody><tr><td>AudioSource</td><td>outputSource</td><td>The audio source to play audio through</td></tr><tr><td>SampleRateMethod</td><td>sampleRateMethod</td><td>The method by which to calculate samplerate</td></tr><tr><td>uint</td><td>customSampleRate</td><td>If using a custom sample rate, specify that rate here.</td></tr><tr><td>double</td><td>encodingTime</td><td><p>The max length of the current streaming clip time. </p><p></p><p>This can be useful for debugging</p></td></tr></tbody></table>
 
 ## Methods
 

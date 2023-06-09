@@ -50,12 +50,7 @@ Once complete you can use your new ScriptableObject to represent the currently l
 
 ## Fields and Attributes
 
-| Type                 | Name           | Comment                                               |
-| -------------------- | -------------- | ----------------------------------------------------- |
-| string               | extension      | The extension to be used with this model              |
-| RemoteStorageFile\[] | availableFiles | List of available files found on Steam Remote Storage |
-| Type                 | DataType       | The underlying data type used by this model           |
-| T                    | data           | The data stored by this model                         |
+<table><thead><tr><th width="176.1867087633845">Type</th><th width="173.82668241105068">Name</th><th width="375.82373346952215">Comment</th></tr></thead><tbody><tr><td>string</td><td>extension</td><td>The extension to be used with this model</td></tr><tr><td>RemoteStorageFile[]</td><td>availableFiles</td><td>List of available files found on Steam Remote Storage</td></tr><tr><td>Type</td><td>DataType</td><td>The underlying data type used by this model</td></tr><tr><td>T</td><td>data</td><td>The data stored by this model</td></tr></tbody></table>
 
 ## Methods
 

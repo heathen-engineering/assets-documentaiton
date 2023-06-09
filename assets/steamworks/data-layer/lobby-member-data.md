@@ -18,14 +18,14 @@ LobbyMemberData is a structure that wraps around [LobbyData ](lobby-data.md)and 
 LobbyMemberData lobbyMember = myLobby.Me;
 ```
 
-The most common thing to do with a LobbyMemberData is to set the [metadata](../../../company/steam/steamworks/multiplayer/matchmaking-tools.md#metadata) of that member.
+The most common thing to do with a LobbyMemberData is to set the [metadata](../../../steam/multiplayer/matchmaking-tools.md#metadata) of that member.
 
 ```csharp
 lobbyMember["fieldName"] = "fieldValue";
 ```
 
 {% hint style="info" %}
-You can learn more about Lobby metadata and LobbyMemberData metadata by reading [this](../../../company/steam/steamworks/multiplayer/matchmaking-tools.md#metadata) article.
+You can learn more about Lobby metadata and LobbyMemberData metadata by reading [this](../../../steam/multiplayer/matchmaking-tools.md#metadata) article.
 {% endhint %}
 
 ## Definition

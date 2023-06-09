@@ -120,12 +120,12 @@ For the non-owner members of the lobby the process looks like this
 
 ## Authentication
 
-While not required it is recommended and commonly done, so we demonstrate it in the Practical Use Case scene.  You can learn more about what [Authentication ](../../../../../company/steam/steamworks/multiplayer/authentication.md)is in our guide section. As to the use in lobby we demonstrate a common workflow where in the owner "authenticates" each joining member. This allows the owner to verify Valve Anti-Cheat (VAC) and if your using Steam Inventory it would allow the owner to verify ownership of specific inventory items.
+While not required it is recommended and commonly done, so we demonstrate it in the Practical Use Case scene.  You can learn more about what [Authentication ](../../../../../steam/multiplayer/authentication.md)is in our guide section. As to the use in lobby we demonstrate a common workflow where in the owner "authenticates" each joining member. This allows the owner to verify Valve Anti-Cheat (VAC) and if your using Steam Inventory it would allow the owner to verify ownership of specific inventory items.
 
 The workflow is simple
 
 1. When a user joins the lobby (other than the owner) they will get and send their Authentication ticket data through the Lobby Chat Director.
-2. When a chat message is received, we check if it is a message or if its authentication data. If its authentication data then non-owner user's ignore it. The owner of the lobby will read it and "[Begin Session](../../../../../company/steam/steamworks/multiplayer/authentication.md#begin-auth-session)" on that data verifying the user.&#x20;
+2. When a chat message is received, we check if it is a message or if its authentication data. If its authentication data then non-owner user's ignore it. The owner of the lobby will read it and "[Begin Session](../../../../../steam/multiplayer/authentication.md#begin-auth-session)" on that data verifying the user.&#x20;
    1. If the user is authentication the owner can cash that data to the Lobby Metadata so all other users are aware the user has been authenticated
    2. If the user fails authentication such as VAC ban the owner can "kick" that user using Heathen's Lobby Kick system.
 

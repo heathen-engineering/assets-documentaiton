@@ -18,9 +18,5 @@ Used by the [Inventory ](../api/inventory.md)interface to return general invento
 
 ## Fields and Attributes
 
-| Type          | Name      | Comment                                |
-| ------------- | --------- | -------------------------------------- |
-| ItemDetail\[] | items     | The items returned                     |
-| EResult       | result    | The Steam result of the request        |
-| DateTime      | timestamp | The time stamp the result was produced |
+<table><thead><tr><th width="187.56643368118847">Type</th><th width="173.82668241105068">Name</th><th width="375.82373346952215">Comment</th></tr></thead><tbody><tr><td>ItemDetail[]</td><td>items</td><td>The items returned</td></tr><tr><td>EResult</td><td>result</td><td>The Steam result of the request</td></tr><tr><td>DateTime</td><td>timestamp</td><td>The time stamp the result was produced</td></tr></tbody></table>
 

@@ -62,7 +62,7 @@ Valve issues you an App ID when you pay your application fee. If you don't have 
 
 <figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-The Steam Settings object can be used to reference all of your Steam "artifacts" such as Input Fields, [Stats](../../../../company/steam/steamworks/stats-object.md), [Leaderboards](../../../../company/steam/steamworks/leaderboard-object/), [Achievements](../../../../company/steam/steamworks/achievement-object.md), [DLC ](../../../../company/steam/steamworks/downloadable-content-object.md)and [Inventory items](../../../../company/steam/steamworks/inventory/). For many of these artifact types you can define them in the Steam Developer Portal as you normally would and then use the "Import" button to pull them into your project.
+The Steam Settings object can be used to reference all of your Steam "artifacts" such as Input Fields, [Stats](../../../../steam/stats-object.md), [Leaderboards](../../../../steam/leaderboard-object/), [Achievements](../../../../steam/achievements.md), [DLC ](../../../../steam/downloadable-content-object.md)and [Inventory items](../../../../steam/inventory/). For many of these artifact types you can define them in the Steam Developer Portal as you normally would and then use the "Import" button to pull them into your project.
 
 {% hint style="info" %}
 The Unity Editor must be in "Play" mode for the import buttons to work.\
@@ -81,7 +81,7 @@ Valve limits what information on Inventory Items can be imported. For example bu
 
 ### Steam Game Server Configuration
 
-The Steam Game Server Configuration lets you configure the details of your game server as it will be seen by Steam. This is only relevant for server builds that will be initializing and logging on as a "[Steam Game Server](../../../../company/steam/steamworks/multiplayer/game-server-browser/)"
+The Steam Game Server Configuration lets you configure the details of your game server as it will be seen by Steam. This is only relevant for server builds that will be initializing and logging on as a "[Steam Game Server](../../../../steam/multiplayer/game-server-browser/)"
 
 If you set the "Auto Logon" feature to false you will need to call LogOn for the server when your ready for it to log on which is done via the [API.App.Server.LogOn()](../../api/app.server.md#logon) method.
 

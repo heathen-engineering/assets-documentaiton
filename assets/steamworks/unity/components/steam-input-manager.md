@@ -14,7 +14,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## &#x20;Introduction
 
-The Steam Input Manager handles the boiler plate aspects of starting and running Steam Input updates. When used you can treat Steam InputAction objects as found in your Steam Settings much like you would an InputAction from Unity's stock system, Rewired or similar systems. For more information about the use of [Steam Input see our How-To and Troubleshooting guides](../../../../company/steam/steamworks/input/).
+The Steam Input Manager handles the boiler plate aspects of starting and running Steam Input updates. When used you can treat Steam InputAction objects as found in your Steam Settings much like you would an InputAction from Unity's stock system, Rewired or similar systems. For more information about the use of [Steam Input see our How-To and Troubleshooting guides](../../../../steam/input/).
 
 {% hint style="success" %}
 If your using Steam Input features then you should add a Steam Input Manager along side your Steamworks Behaviour such that it is never duplicated or destroyed during the game session.

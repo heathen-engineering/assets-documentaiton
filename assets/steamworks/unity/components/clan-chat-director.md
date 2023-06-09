@@ -38,12 +38,7 @@ public class ClanChatDirector : MonoBehaviour;
 
 ## Fields and Attributes
 
-|             |               |                                                                                                                                                                                                                            |
-| ----------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| UserData\[] | Members       | Returns the members in this chat room if the user is able to iterate over them.                                                                                                                                            |
-| bool        | IsOpenInSteam | True if the clan chat is open in Steam client or oen of its dialogs                                                                                                                                                        |
-| bool        | InRoom        | <p>True if the system has been connected to a room succesfuly.</p><p></p><p>Note it is possible to be removed a room and this not be updated. You should handle errors when attempting to send and adjust accordingly.</p> |
-| ChatRoom    | ChatRoom      | <p>Returns the ChatRoom object that is being operated on if any.</p><p></p><p>If none then this will return a default ChatRoom with an invalid ID</p>                                                                      |
+<table><thead><tr><th width="150"></th><th width="182.05438239668894"></th><th></th></tr></thead><tbody><tr><td>UserData[]</td><td>Members</td><td>Returns the members in this chat room if the user is able to iterate over them.</td></tr><tr><td>bool</td><td>IsOpenInSteam</td><td>True if the clan chat is open in Steam client or oen of its dialogs</td></tr><tr><td>bool</td><td>InRoom</td><td><p>True if the system has been connected to a room succesfuly.</p><p></p><p>Note it is possible to be removed a room and this not be updated. You should handle errors when attempting to send and adjust accordingly.</p></td></tr><tr><td>ChatRoom</td><td>ChatRoom</td><td><p>Returns the ChatRoom object that is being operated on if any.</p><p></p><p>If none then this will return a default ChatRoom with an invalid ID</p></td></tr></tbody></table>
 
 ## Events
 

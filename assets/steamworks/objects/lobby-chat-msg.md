@@ -18,13 +18,7 @@ Represents a chat message sent from the Steam Lobby system. This can be used to 
 
 ### Fields and Attributes
 
-| Type     | Name         | Comment                                 |
-| -------- | ------------ | --------------------------------------- |
-| Lobby    | lobby        | The source lobby                        |
-| UserData | sender       | The user that sent it                   |
-| byte\[]  | data         | The raw data sent                       |
-| DateTime | recievedTime | The time stamp the message was recieved |
-| string   | Message      | the string parsing of the message       |
+<table><thead><tr><th width="187.56643368118847">Type</th><th width="173.82668241105068">Name</th><th width="375.82373346952215">Comment</th></tr></thead><tbody><tr><td>Lobby</td><td>lobby</td><td>The source lobby</td></tr><tr><td>UserData</td><td>sender</td><td>The user that sent it</td></tr><tr><td>byte[]</td><td>data</td><td>The raw data sent</td></tr><tr><td>DateTime</td><td>recievedTime</td><td>The time stamp the message was recieved</td></tr><tr><td>string</td><td>Message</td><td>the string parsing of the message</td></tr></tbody></table>
 
 ### Methods
 

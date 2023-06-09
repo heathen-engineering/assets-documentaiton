@@ -18,10 +18,5 @@ Used by the [Parties ](../api/parties.md)interface and represents a given beacon
 
 ### Fields and Attributes
 
-| Type                        | Name     | Comment                            |
-| --------------------------- | -------- | ---------------------------------- |
-| PartyBeaconID\_t            | id       | The native ID of the beacon        |
-| UserData                    | owner    | The owner of the beacon            |
-| SteamPartyBeaconLocation\_t | location | The  location of the beacon        |
-| string                      | metadata | Thhe metadata related to the becon |
+<table><thead><tr><th width="187.56643368118847">Type</th><th width="173.82668241105068">Name</th><th width="375.82373346952215">Comment</th></tr></thead><tbody><tr><td>PartyBeaconID_t</td><td>id</td><td>The native ID of the beacon</td></tr><tr><td>UserData</td><td>owner</td><td>The owner of the beacon</td></tr><tr><td>SteamPartyBeaconLocation_t</td><td>location</td><td>The  location of the beacon</td></tr><tr><td>string</td><td>metadata</td><td>Thhe metadata related to the becon</td></tr></tbody></table>
 

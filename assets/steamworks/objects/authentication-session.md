@@ -18,15 +18,7 @@ Used by the [Authentication ](../api/authentication.md)interface to represent an
 
 ## Fields and Attributes
 
-| Type                 | Name            | Comment                                                                                   |
-| -------------------- | --------------- | ----------------------------------------------------------------------------------------- |
-| bool                 | isClientSession | Is this a client or server session                                                        |
-| CSteamID             | user            | The ID typically a user the session is related to                                         |
-| CSteamID             | gameOwner       | The id of the owner of the game, if this is different than the user then this is barrowed |
-| byte\[]              | data            | the ticekt data that was used to start the session                                        |
-| EAuthSessionResponse | responce        | The responce recieved when validating a provided ticket                                   |
-| bool                 | IsBarrowed      | The same as user == gameOwner                                                             |
-| Action               | onStartCallback | the callback invoked when the session has started ... this is used internally             |
+<table><thead><tr><th width="176.1867087633845">Type</th><th width="173.82668241105068">Name</th><th width="375.82373346952215">Comment</th></tr></thead><tbody><tr><td>bool</td><td>isClientSession</td><td>Is this a client or server session</td></tr><tr><td>CSteamID</td><td>user</td><td>The ID typically a user the session is related to</td></tr><tr><td>CSteamID</td><td>gameOwner</td><td>The id of the owner of the game, if this is different than the user then this is barrowed</td></tr><tr><td>byte[]</td><td>data</td><td>the ticekt data that was used to start the session</td></tr><tr><td>EAuthSessionResponse</td><td>responce</td><td>The responce recieved when validating a provided ticket</td></tr><tr><td>bool</td><td>IsBarrowed</td><td>The same as user == gameOwner</td></tr><tr><td>Action</td><td>onStartCallback</td><td>the callback invoked when the session has started ... this is used internally</td></tr></tbody></table>
 
 ## Methods
 

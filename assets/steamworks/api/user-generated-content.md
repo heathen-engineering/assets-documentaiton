@@ -855,7 +855,7 @@ Then you can call the method such as
 UGC.CreateItem(itemdata, Foo);
 ```
 
-To learn more about [callbacks](../../../company/development/callbacks.md) please read the related article.
+To learn more about [callbacks](../../../guides/development/callbacks.md) please read the related article.
 
 The status returned to the callback will indicate the status of the operation. Note that the operation occurs in two stages. First a blank item is created and then once that has been found successful that blank item will be updated with the content and settings indicated thus it is possible for a blank item to be created but for the update to fail. Please see the [results](../objects/workshop-item-data-create-status.md#createitemresult) in the status object for more details.
 

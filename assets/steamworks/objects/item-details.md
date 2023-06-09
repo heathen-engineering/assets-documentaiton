@@ -18,14 +18,5 @@ Used by the [Inventory ](../api/inventory.md)interface and in the [Item Definiti
 
 ## Fields and Attributes
 
-| Type                   | Name              | Comment                                          |
-| ---------------------- | ----------------- | ------------------------------------------------ |
-| SteamItemDetails\_t    | itemDetails       | The ID of the DLC                                |
-| ItemProperty\[]        | properties        | Properties of the item                           |
-| string                 | dynamicProperties | Dynamic properties set on the item               |
-| ItemTag\[]             | tags              | tags applied to the item                         |
-| SteamItemInstanceID\_t | ItemId            | The instance ID of the item                      |
-| SteamItemDef\_t        | Definition        | the definition ID of the item                    |
-| ushort                 | Quantity          | Quantity represented by the instnace of the item |
-| ESteamItemFlags        | Flags             | <p>No Trade</p><p>Removed</p><p>Consumed</p>     |
+<table><thead><tr><th width="234.2444989075424">Type</th><th width="178.8468268360739">Name</th><th width="375.82373346952215">Comment</th></tr></thead><tbody><tr><td>SteamItemDetails_t</td><td>itemDetails</td><td>The ID of the DLC</td></tr><tr><td>ItemProperty[]</td><td>properties</td><td>Properties of the item</td></tr><tr><td>string</td><td>dynamicProperties</td><td>Dynamic properties set on the item</td></tr><tr><td>ItemTag[]</td><td>tags</td><td>tags applied to the item</td></tr><tr><td>SteamItemInstanceID_t</td><td>ItemId</td><td>The instance ID of the item</td></tr><tr><td>SteamItemDef_t</td><td>Definition</td><td>the definition ID of the item</td></tr><tr><td>ushort</td><td>Quantity</td><td>Quantity represented by the instnace of the item</td></tr><tr><td>ESteamItemFlags</td><td>Flags</td><td><p>No Trade</p><p>Removed</p><p>Consumed</p></td></tr></tbody></table>
 

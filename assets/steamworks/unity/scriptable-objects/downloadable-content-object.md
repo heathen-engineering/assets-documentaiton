@@ -34,11 +34,7 @@ Represents a DLC object, this is created by the [Steam Settings](steam-settings/
 
 ## Fields and Attributes
 
-| Type     | Name         | Comment                                            |
-| -------- | ------------ | -------------------------------------------------- |
-| AppId\_t | appId        | The room this message relates to                   |
-| bool     | IsSubscribed | Indicates rather or not the DLC is currently owned |
-| bool     | IsInstalled  | Indicated rather or not the DLC is installed       |
+<table><thead><tr><th width="187.56643368118847">Type</th><th width="173.82668241105068">Name</th><th width="375.82373346952215">Comment</th></tr></thead><tbody><tr><td>AppId_t</td><td>appId</td><td>The room this message relates to</td></tr><tr><td>bool</td><td>IsSubscribed</td><td>Indicates rather or not the DLC is currently owned</td></tr><tr><td>bool</td><td>IsInstalled</td><td>Indicated rather or not the DLC is installed</td></tr></tbody></table>
 
 ## Methods
 

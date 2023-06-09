@@ -16,9 +16,7 @@ Make anything selectable and searchable with a simple easy to use componenet.
 
 ### Fields and Attributes
 
-| Type | Name       | Notes                                                                                                                       |
-| ---- | ---------- | --------------------------------------------------------------------------------------------------------------------------- |
-| bool | IsSelected | If true this object is selected. If you set this it will update the object's selection state in the API.Selection interface |
+<table><thead><tr><th width="150">Type</th><th width="150">Name</th><th width="370.2">Notes</th></tr></thead><tbody><tr><td>bool</td><td>IsSelected</td><td>If true this object is selected. If you set this it will update the object's selection state in the API.Selection interface</td></tr></tbody></table>
 
 ### Events
 

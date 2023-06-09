@@ -18,12 +18,5 @@ Used by the Leaderboard system when a user's rank changes.
 
 ### Fields and Attributes
 
-| Type                | Name            | Comment                                      |
-| ------------------- | --------------- | -------------------------------------------- |
-| string              | leaderboardName | The name of the board                        |
-| SteamLeaderboard\_t | leaderboardId   | The id of the board                          |
-| LeaderboardEntry    | oldEntry        | The prior entry data                         |
-| LeaderboardEntry    | newEntry        | The current entry data                       |
-| int                 | rankDelta       | The amount of change in rank e.g. new - old  |
-| int                 | scoreDelta      | The amount of change in score e.g. new - old |
+<table><thead><tr><th width="220.30993726870204">Type</th><th width="169.82668241105068">Name</th><th width="375.82373346952215">Comment</th></tr></thead><tbody><tr><td>string</td><td>leaderboardName</td><td>The name of the board</td></tr><tr><td>SteamLeaderboard_t</td><td>leaderboardId</td><td>The id of the board</td></tr><tr><td>LeaderboardEntry</td><td>oldEntry</td><td>The prior entry data</td></tr><tr><td>LeaderboardEntry</td><td>newEntry</td><td>The current entry data</td></tr><tr><td>int</td><td>rankDelta</td><td>The amount of change in rank e.g. new - old</td></tr><tr><td>int</td><td>scoreDelta</td><td>The amount of change in score e.g. new - old</td></tr></tbody></table>
 

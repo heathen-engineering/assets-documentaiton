@@ -146,7 +146,7 @@ public void GetUserEntry(int maxDetailEntries, Action<LeaderboardEntry, bool> ca
 Queries for the local user's entry on this board and invokes the callback when and if found.
 
 * maxDetailEntries\
-  This indicates how many if any detail entries should be read for each entry on the board. To understand detail entries better please read the article on [Steam Leaderboards](../../../../company/steam/steamworks/leaderboard-object/).
+  This indicates how many if any detail entries should be read for each entry on the board. To understand detail entries better please read the article on [Steam Leaderboards](../../../../steam/leaderboard-object/).
 * callback\
   A method to be invoked when the process completes
 
@@ -172,7 +172,7 @@ Queries the leaderboard for the top number of entries.
 * count\
   How many top records should be read
 * maxDetailEntries\
-  This indicates how many if any detail entries should be read for each entry on the board. To understand detail entries better please read the article on [Steam Leaderboards](../../../../company/steam/steamworks/leaderboard-object/).
+  This indicates how many if any detail entries should be read for each entry on the board. To understand detail entries better please read the article on [Steam Leaderboards](../../../../steam/leaderboard-object/).
 * callback\
   A method to be invoked when the process completes
 
@@ -194,7 +194,7 @@ public void GetAllEntries(int maxDetailEntries, Action<LeaderboardEntry[], bool>
 Returns all entries on this board
 
 * maxDetailEntries\
-  This indicates how many if any detail entries should be read for each entry on the board. To understand detail entries better please read the article on [Steam Leaderboards](../../../../company/steam/steamworks/leaderboard-object/).
+  This indicates how many if any detail entries should be read for each entry on the board. To understand detail entries better please read the article on [Steam Leaderboards](../../../../steam/leaderboard-object/).
 * callback\
   A method to be invoked when the process completes
 
@@ -224,7 +224,7 @@ public void GetEntries(ELeaderboardDataRequest request,
 * end\
   The index to stop downloading entries.
 * maxDetailEntries\
-  This indicates how many if any detail entries should be read for each entry on the board. To understand detail entries better please read the article on [Steam Leaderboards](../../../../company/steam/steamworks/leaderboard-object/).
+  This indicates how many if any detail entries should be read for each entry on the board. To understand detail entries better please read the article on [Steam Leaderboards](../../../../steam/leaderboard-object/).
 * callback\
   A method to be invoked when the process completes
 
@@ -237,7 +237,7 @@ public void GetEntries(UserData[] users,
 * users\
   The set of users you want to read records for.
 * maxDetailEntries\
-  This indicates how many if any detail entries should be read for each entry on the board. To understand detail entries better please read the article on [Steam Leaderboards](../../../../company/steam/steamworks/leaderboard-object/).
+  This indicates how many if any detail entries should be read for each entry on the board. To understand detail entries better please read the article on [Steam Leaderboards](../../../../steam/leaderboard-object/).
 * callback\
   A method to be invoked when the process completes
 

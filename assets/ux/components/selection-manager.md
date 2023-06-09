@@ -25,10 +25,7 @@ foreach(var selected in selectionManager)
 
 ### Fields and Attributes
 
-| Type | Name       | Notes                                        |
-| ---- | ---------- | -------------------------------------------- |
-| int  | Count      | Gets the count of currently selected objects |
-| bool | IsReadOnly | Always returns true                          |
+<table><thead><tr><th width="150">Type</th><th width="150">Name</th><th width="370.2">Notes</th></tr></thead><tbody><tr><td>int</td><td>Count</td><td>Gets the count of currently selected objects</td></tr><tr><td>bool</td><td>IsReadOnly</td><td>Always returns true</td></tr></tbody></table>
 
 ### Events
 

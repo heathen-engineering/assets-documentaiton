@@ -22,7 +22,7 @@ public class UserGeneratedContentQueryManager : MonoBehaviour
 
 {% embed url="https://kb.heathenengineering.com/assets/steamworks/learning/core-concepts/user-generated-content-workshop" %}
 
-The UGC Workshop article includes a step by step guide on the use of UGC Query Manager to create an [In-Game Workshop browser](../../../../company/steam/steamworks/workshop/in-game-browser.md).
+The UGC Workshop article includes a step by step guide on the use of UGC Query Manager to create an [In-Game Workshop browser](../../../../steam/workshop/in-game-browser.md).
 
 #### User Generated Content API
 
@@ -34,14 +34,7 @@ The User Generated Content API is the underlying tool set used by the query mana
 
 ## Fields and Attributes
 
-| Type                          | Name         | Comments                                        |
-| ----------------------------- | ------------ | ----------------------------------------------- |
-| AppId\_t                      | creatorAppId | The ID of the app that creates the items        |
-| UserGeneratedContentItemQuery | activeQuerry | Settings to search for                          |
-| int                           | CurrentFrom  | the index of the first item in the current list |
-| int                           | CurrentTo    | the index of the last item in the current list  |
-| int                           | TotalCount   | how many items are in the current query         |
-| int                           | CurrentPage  | which page is currently loaded                  |
+<table><thead><tr><th width="217.91333012691814">Type</th><th>Name</th><th width="316.8664058133036">Comments</th></tr></thead><tbody><tr><td>AppId_t</td><td>creatorAppId</td><td>The ID of the app that creates the items</td></tr><tr><td>UserGeneratedContentItemQuery</td><td>activeQuerry</td><td>Settings to search for</td></tr><tr><td>int</td><td>CurrentFrom</td><td>the index of the first item in the current list</td></tr><tr><td>int</td><td>CurrentTo</td><td>the index of the last item in the current list</td></tr><tr><td>int</td><td>TotalCount</td><td>how many items are in the current query</td></tr><tr><td>int</td><td>CurrentPage</td><td>which page is currently loaded</td></tr></tbody></table>
 
 
 

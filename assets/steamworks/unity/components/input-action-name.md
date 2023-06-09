@@ -34,11 +34,7 @@ public class UGUIInputActionName : MonoBehaviour
 
 ## Fields and Attributes
 
-| Type                                                                   | Name   | Comments                                                                                    |
-| ---------------------------------------------------------------------- | ------ | ------------------------------------------------------------------------------------------- |
-| [InputActionSet](../scriptable-objects/input-action-set.md)            | set    | <p>The set the action is a member of.</p><p>Set this value or Layer value but not both.</p> |
-| [InputActionSetLayer](../scriptable-objects/input-action-set-layer.md) | layer  | <p>The layer the action is a member of.</p><p>Set this value or Set value but not both.</p> |
-| [InputAction](../scriptable-objects/input-action.md)                   | action | The action to fetch the glyph for                                                           |
+<table><thead><tr><th width="217.91333012691814">Type</th><th>Name</th><th width="316.8664058133036">Comments</th></tr></thead><tbody><tr><td><a href="../scriptable-objects/input-action-set.md">InputActionSet</a></td><td>set</td><td><p>The set the action is a member of.</p><p>Set this value or Layer value but not both.</p></td></tr><tr><td><a href="../scriptable-objects/input-action-set-layer.md">InputActionSetLayer</a></td><td>layer</td><td><p>The layer the action is a member of.</p><p>Set this value or Set value but not both.</p></td></tr><tr><td><a href="../scriptable-objects/input-action.md">InputAction</a></td><td>action</td><td>The action to fetch the glyph for</td></tr></tbody></table>
 
 ## Methods
 

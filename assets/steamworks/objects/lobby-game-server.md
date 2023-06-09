@@ -20,10 +20,5 @@ Note a server will always have either or both IP/Port and ID, it will never have
 
 ### Fields and Attributes
 
-| Type     | Name      | Comment                                                             |
-| -------- | --------- | ------------------------------------------------------------------- |
-| CSteamID | id        | The id of the Steam Game Server or of the Steam User acting as host |
-| string   | IpAddress | string parse of the uint IP address                                 |
-| uint     | ipAddress | The ip address as Steam would nativly handle it                     |
-| ushot    | port      | The connection port                                                 |
+<table><thead><tr><th width="187.56643368118847">Type</th><th width="173.82668241105068">Name</th><th width="375.82373346952215">Comment</th></tr></thead><tbody><tr><td>CSteamID</td><td>id</td><td>The id of the Steam Game Server or of the Steam User acting as host</td></tr><tr><td>string</td><td>IpAddress</td><td>string parse of the uint IP address</td></tr><tr><td>uint</td><td>ipAddress</td><td>The ip address as Steam would nativly handle it</td></tr><tr><td>ushot</td><td>port</td><td>The connection port</td></tr></tbody></table>
 

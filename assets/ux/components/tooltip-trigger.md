@@ -24,12 +24,7 @@ Invokes Unity Events when the tip should be activated and cancled respectivly
 
 ### Fields and Attributes
 
-| Type  | Name           | Notes                                                                                                                                             |
-| ----- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| bool  | isActive       | if false then this trigger will not fire                                                                                                          |
-| float | triggerDelay   | the time in seconds the trigger will delay activation                                                                                             |
-| bool  | useCancelTimer | if true then this trgger will close its self after the indicated time has passed. If false this trigger will only close when it loses activation. |
-| float | cancelDelay    | if useCancelTimer is true then this is the number of seconds after the tip is shown before the trigger self cancels.                              |
+<table><thead><tr><th width="150">Type</th><th width="150">Name</th><th width="370.2">Notes</th></tr></thead><tbody><tr><td>bool</td><td>isActive</td><td>if false then this trigger will not fire</td></tr><tr><td>float</td><td>triggerDelay</td><td>the time in seconds the trigger will delay activation</td></tr><tr><td>bool</td><td>useCancelTimer</td><td>if true then this trgger will close its self after the indicated time has passed. If false this trigger will only close when it loses activation.</td></tr><tr><td>float</td><td>cancelDelay</td><td>if useCancelTimer is true then this is the number of seconds after the tip is shown before the trigger self cancels.</td></tr></tbody></table>
 
 ### Events
 

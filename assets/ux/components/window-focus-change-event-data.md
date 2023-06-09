@@ -10,8 +10,5 @@ Provided as part of the focus changed event of the [API.Window](../api/windows.m
 
 ### Fields and Attributes
 
-| Type                | Name     | Notes                                    |
-| ------------------- | -------- | ---------------------------------------- |
-| [Window](window.md) | previous | The previous window to have focus if any |
-| [Window](window.md) | current  | The new window to have focus if any      |
+<table><thead><tr><th width="150">Type</th><th width="150">Name</th><th width="370.2">Notes</th></tr></thead><tbody><tr><td><a href="window.md">Window</a></td><td>previous</td><td>The previous window to have focus if any</td></tr><tr><td><a href="window.md">Window</a></td><td>current</td><td>The new window to have focus if any</td></tr></tbody></table>
 
