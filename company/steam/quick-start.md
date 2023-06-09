@@ -34,7 +34,7 @@ Steamworks has its very own [Getting Started](https://partner.steamgames.com/doc
 Read this ... do as it says
 {% endembed %}
 
-## App ID
+## Sign-up to Steamworks
 
 If you read the [getting started article](https://partner.steamgames.com/doc/gettingstarted) linked above and followed its instructions you should have already been guided to pay the [Steam Direct fee](https://partner.steamgames.com/doc/store/application) and that will get you your first App ID.
 
@@ -53,4 +53,10 @@ Once your all set up as a Steam Developer and have your App ID your next step sh
 
 Steam API is a tremendous value especially for small and indie developers as it is a power set of backend services and is completely free for you to use. We strongly recommend you understand what Steam API can do for your game before you commit your design. The best and most successful games fully exploit Steam's features.
 
-Be sure to read over our [Steamworks Guides](steamworks/), these guides serve as troubleshooting and how to guides for Heathen's Steamworks Complete but are also a great way to get to know Steam API and what it can do.
+## Installing Heathen's Steamworks
+
+Now that you have made the very wise decision to use Heathen's Steamworks to integration Steam API with your game project on [Unity](../../assets/steamworks/unity/installation/) or [Godot ](../../assets/steamworks/for-godot-game-engine/installation.md)you will need to get it installed and configured for use!
+
+[Install Heathen Steamworks for Unity](../../assets/steamworks/unity/installation/)
+
+[Install Heathen Steamworks for Godot](../../assets/steamworks/for-godot-game-engine/installation.md)
