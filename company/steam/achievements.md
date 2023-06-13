@@ -116,6 +116,16 @@ myAch.Store();
 API.StatsAndAchievements.Client.StoreStats();
 ```
 
+### Pop up
+
+The Steam popup that your used to seeing when you unlock and achievement or receive some other notification is not actually code in the game but rather the Steam client rendering overtop the game's window.&#x20;
+
+{% hint style="info" %}
+Players can force this to be disabled so do not assume it will always be present its user's choice as configured in Steam client not your game. This is not for you to control.
+{% endhint %}
+
+For achievements this popup triggers when an achievement is [stored ](achievements.md#storing-achievements)not when it is set. Also note that because it is rendering over the game window that it will not likely work properly when testing in the Unity Editor or if you have a debugger or other app mounted to the process as this may restrict window updates and or add additional windows to the process.
+
 ### Using Value Types
 
 [Achievement Data](../../assets/steamworks/data-layer/achievement-data.md)
@@ -204,13 +214,3 @@ public class ExampleScript : MonoBehaviour
   }
 }
 ```
-
-## Pop up
-
-The Steam popup that your used to seeing when you unlock and achievement or receive some other notification is not actually code in the game but rather the Steam client rendering overtop the game's window.&#x20;
-
-{% hint style="info" %}
-Players can force this to be disabled so do not assume it will always be present its user's choice as configured in Steam client not your game. This is not for you to control.
-{% endhint %}
-
-For achievements this popup triggers when an achievement is [stored ](achievements.md#storing-achievements)not when it is set.
