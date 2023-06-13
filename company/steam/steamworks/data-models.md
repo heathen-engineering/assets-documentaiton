@@ -191,13 +191,13 @@ CouldAPI.FileReadAsync("TheFilesName", (data, hasError) =>
 You can write a file to the remote storage system using the following methods
 
 ```csharp
-//Save a byte[]
+//Save a byte[] ... assumes data is a byte[]
 CloudAPI.FileWrite("TheFileName", data);
 
-//Save a string
+//Save a string ... assumes data is a string
 CloudAPI.FileWrite("TheFileName", data, System.Text.Encoding.UTF8);
 
-//Save an object
+//Save an object ... assumes data is a serializable class or struct
 CloudAPI.FileWrite("TheFileName", data, System.Text.Encoding.UTF8);
 ```
 
