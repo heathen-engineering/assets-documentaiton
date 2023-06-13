@@ -74,6 +74,24 @@ From there select the Stats & Achievements > Achievements option and create your
 
 ## Using Achievements
 
+The first thing to understand is that with stats and achievements the process of setting them is two steps.
+
+1. You assign the value such as `myAch.IsAchieved = true;`
+2. You store the changes to the backend such as `myAch.Store()`
+
+The notification popup will not trigger until the achievement is "stored"&#x20;
+
+### Storing Achievements
+
+This is the process of committing any changes made during gameplay to the Steam backend. That is you can freely "set" the state of achievements and stats during gameplay such as incrementing kills of enemy units, player score, etc. These changes are written to the local cash not directly to the backend.
+
+When the game is closed or when you call "Store" the changes will be committed to the backend. This should be done at key points in the game such as at the end of a level, on player death, when a boss is defeated or at some other opportune time. It is generally not recommend that you constantly call Store with each change.
+
+{% hint style="warning" %}
+Think about when you want that popup to show\
+It will be immersion breaking, it could cover parts of the screen, it could cause things such as Windows Auto HDR to cause screen flicker ... in generally you want it to show only when the player is not actively engaged in gameplay such as on a menu, debriefing, "You Died" screen, etc.
+{% endhint %}
+
 ### Using Value Types
 
 [Achievement Data](../../assets/steamworks/data-layer/achievement-data.md)
@@ -163,4 +181,12 @@ public class ExampleScript : MonoBehaviour
 }
 ```
 
-a
+## Pop up
+
+The Steam popup that your used to seeing when you unlock and achievement or receive some other notification is not actually code in the game but rather the Steam client rendering overtop the game's window.&#x20;
+
+{% hint style="info" %}
+Players can force this to be disabled so do not assume it will always be present its user's choice as configured in Steam client not your game. This is not for you to control.
+{% endhint %}
+
+For achievements this popup triggers when an achievement is [stored ](achievements.md#storing-achievements)not when it is set.
