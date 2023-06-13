@@ -92,6 +92,30 @@ Think about when you want that popup to show\
 It will be immersion breaking, it could cover parts of the screen, it could cause things such as Windows Auto HDR to cause screen flicker ... in generally you want it to show only when the player is not actively engaged in gameplay such as on a menu, debriefing, "You Died" screen, etc.
 {% endhint %}
 
+There are several ways to store stats and achievements and they all do the same thing. They are simply different ways you can trigger the effect depending on what objects you have available in memory and how you are more comfortable as a developer.
+
+#### AchievementData
+
+Assuming you have a data object named myAch
+
+```csharp
+myAch.Store();
+```
+
+#### AchievementObject
+
+Assuming you have a object named myAch
+
+```csharp
+myAch.Store();
+```
+
+#### API
+
+```csharp
+API.StatsAndAchievements.Client.StoreStats();
+```
+
 ### Using Value Types
 
 [Achievement Data](../../assets/steamworks/data-layer/achievement-data.md)
