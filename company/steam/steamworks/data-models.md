@@ -22,6 +22,54 @@ Quote from Valve's documentation
 >
 > Users can globally disable Cloud synchronization in the Steam Settings under Cloud by unchecking "Enable Steam Cloud synchronization for applications which support it."
 
+## Getting Started
+
+Steam's Cloud Save aka Steam Remote Storage can be worked with in one of two models.
+
+### Steam Auto-Cloud
+
+{% hint style="danger" %}
+Not Recommended
+{% endhint %}
+
+Steam Auto-Cloud is an alternative to the Steam Cloud API that allows apps to use Steam Cloud without writing code or modifying the game in any way. It only requires that you specify the file groups which you want persisting to the Cloud. Steam will automatically sync the groups of files when the application launches and exits.&#x20;
+
+While this might appear simpler on the surface it actually doesn't save you any effort at all in that you must still write code to read and write your files to the user's local disk. That code is no simpler and is in most cases more complex than the code required to save directly to Steam Cloud API using Heathen's Steamworks Complete.
+
+In addition this gives you no control over what is saved, it will attempt to sync everything in that folder so of course you do not want to store system specific things there as that would interfere with running the game on other systems and you do not want to store large things that shouldn't be synced there. This means you end up needing to manage multiple save locations.
+
+For more information on Steam's Auto Cloud and its configuration [read this article](https://partner.steamgames.com/doc/features/cloud#steam\_auto-cloud).
+
+### Steam Remote Storage
+
+{% hint style="success" %}
+The Best Way
+{% endhint %}
+
+aka the Steam Cloud API. This is the superior method in everyway and when your using Heathen's Steamworks Complete its actually easier to code for than writing a text file to disk so its also the easier method.
+
+Using this approach you simply need to include the namespace for Heathen's RemoteStorage.Client in the script you wish to use for saving or reading files.
+
+```csharp
+using CloudAPI = HeathenEngineering.SteamworksIntegration.API.RemoteStorage.Client;
+```
+
+Once you have done that you can easily read files with a single line
+
+```csharp
+CloudAPI.FileRead(...)
+```
+
+For more information see our detailed section on [Read Files](data-models.md#read-files).
+
+You can also easily write files with a single line
+
+```csharp
+CloudAPI.FileWrite(...)
+```
+
+For more information see our detailed section on [Write Files](data-models.md#write-file).
+
 ## Remote Storage API
 
 You can use the Remote Storage API to access Steam's remote storage features.
