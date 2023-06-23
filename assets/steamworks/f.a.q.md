@@ -108,10 +108,32 @@ Yes: You can find more information in the [Networking Integrations](unity/instal
 
 Yes: You can find more information in the [Networking Integrations](unity/installation/networking-integrations.md) article.
 
-### Photon (any variation)
+### Photon (any variation)?
 
 Yes: Photon is its own platform, uses its own networking interfaces and has no impact on nor is it impacted by Steam API in any way that comes to mind.
 
-### SpatialOS
+### SpatialOS?
 
 Yes: SpatialOS is its own platform, uses its own networking interfaces and has no impact on nor is it impacted by Steam API in any way that comes to mind.
+
+## Updates?
+
+### GitHub Sponsors
+
+GitHub Sponsors have access to the "Source Repo" this is the place where we do the actual work so updates are frequent and instant as we make them. It is GitHub so you can of course review every single update, each check-in, every comment ... full tracked and managed version history.
+
+### Unity Asset Store
+
+Unity Asset Store is updated each quarter (every 3 months) with the consolidated changes made in GitHub Source Repo.
+
+In the event of a critical issue such as Steam, Unity, etc. making a breaking change to the API or engine we will update Unity Asset Store as quickly as possible and can offer ad-hoc patches via our Discord community.
+
+### Major Updates
+
+We release major updates every 2 to 3 years, GitHub Sponsors see these as any other update as they are working on the source directly.
+
+Unity Asset Store users will see this as a paid major update. As typical with major updates on Unity Asset Store users that have purchased recently (with the last 90 days) will receive the update for free, all other users will receive a decaying discount.
+
+#### What is a decaying discount?
+
+The discount starts out steep as much as 80-90% off the base price. As the update ages the discount reduces to 0 over the course of 2 years. That is after 2 years past the release of a major update you will be paying the "sticker price".
