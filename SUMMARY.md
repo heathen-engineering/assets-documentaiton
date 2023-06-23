@@ -362,7 +362,7 @@
     * [Remote Storage File](assets/steamworks/objects/remote-storage-file.md)
     * [Steam Game Server Configuration](assets/steamworks/objects/steam-game-server-configuration.md)
     * [UGC Query](assets/steamworks/objects/ugc-query.md)
-    * [UGC Community Item](assets/steamworks/objects/ugc-community-item.md)
+    * [Workshop Item](assets/steamworks/objects/workshop-item.md)
     * [User Leave Data](assets/steamworks/objects/user-leave-data.md)
     * [User Lobby Leave Data](assets/steamworks/objects/user-lobby-leave-data.md)
     * [Workshop Item Data Create Status](assets/steamworks/objects/workshop-item-data-create-status.md)

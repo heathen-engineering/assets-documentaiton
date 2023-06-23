@@ -196,7 +196,7 @@ public List<UGCCommunityItem> ResultsList
 
 This will be populated with the results when the query is executed ... assuming there are results to populate.
 
-See [UGCCommunityItem ](ugc-community-item.md)for more info on how to use the items returned.
+See [UGCCommunityItem ](workshop-item.md)for more info on how to use the items returned.
 
 ## Methods
 
