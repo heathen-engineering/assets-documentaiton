@@ -251,3 +251,204 @@ public UnityEvent previewImageUpdated;
 ```
 
 A standard UnityEvent which is invoked when/if the items preview image is updated and reported from Steam or when the file is loaded from disk if known. This can be used to trigger an update of display of the item preview image.
+
+## Methods
+
+### Get
+
+WorkshopItem objects are "get" by query, the Get methods are static methods that help you create a [UgcQuery ](ugc-query.md)to fetch specific items. This is just a shortcut to the [UgcQuery ](ugc-query.md)get methods, see [UgcQuery ](ugc-query.md)documentation for more details.
+
+### Download Preview Image
+
+Starts the download of the preview image
+
+```csharp
+public void DownloadPreviewImage()
+```
+
+### Download Item
+
+```csharp
+public bool DownloadItem(bool highPriority)
+```
+
+Typically Steam will download the item when it's convenient to do so and won't usually download while a game is running. High Priority flag simply indicates that Steam should download the item as soon as it can.
+
+### Subscribe
+
+```csharp
+public void Subscribe(Action<RemoteStorageSubscribePublishedFileResult_t, bool> callback)
+```
+
+Causes the item to be marked as subscribed, the callback indicates the results&#x20;
+
+<pre class="language-csharp"><code class="lang-csharp"><strong>void Callback(RemoteStorageSubscribePublishedFileResult_t results, bool ioError)
+</strong>{
+    //Do Work
+}
+</code></pre>
+
+### Unsubscribe
+
+```csharp
+public void Unsubscribe(Action<RemoteStorageUnsubscribePublishedFileResult_t, bool> callback)
+```
+
+Causes the item to be marked as unsubscribed, the callback indicates the results&#x20;
+
+<pre class="language-csharp"><code class="lang-csharp"><strong>void Callback(RemoteStorageSubscribePublishedFileResult_t results, bool ioError)
+</strong>{
+    //Do Work
+}
+</code></pre>
+
+### Set Vote
+
+```csharp
+public void SetVote(bool voteUp, Action<SetUserItemVoteResult_t, bool> callback)
+```
+
+Sets the user's vote for this item, the callback indicates the results
+
+<pre class="language-csharp"><code class="lang-csharp"><strong>void Callback(SetUserItemVoteResult_t results, bool ioError)
+</strong>{
+    //Do Work
+}
+</code></pre>
+
+## Update Methods
+
+If the local user is the owner of the item they can modify the items values, the following methods are only applicable to the item's owners and will not work as intended for any other user.
+
+### Update Title
+
+```csharp
+public void UpdateTitle(string value, 
+                        string changeNote, 
+                        Action<SubmitItemUpdateResult_t, bool> callback)
+```
+
+Use to update the item's title, the callback will indicate the results of the operation, the bool indicates error, for example:
+
+<pre class="language-csharp"><code class="lang-csharp"><strong>void Callback(SubmitItemUpdateResult_t results, bool ioError)
+</strong>{
+    //Do Work
+}
+</code></pre>
+
+Update Title has a single overload where you can indicate the language associated with the title.
+
+```csharp
+public void UpdateTitle(string value, 
+                        LanguageCodes language, 
+                        string changeNote, 
+                        Action<SubmitItemUpdateResult_t, bool> callback)
+```
+
+### Update Description
+
+```csharp
+public void UpdateDescription(string value, 
+                        string changeNote, 
+                        Action<SubmitItemUpdateResult_t, bool> callback)
+```
+
+Use to update the item's description, the callback will indicate the results of the operation, the bool indicates error, for example:
+
+```csharp
+void Callback(SubmitItemUpdateResult_t results, bool ioError)
+{
+    //Do Work
+}
+```
+
+Update Description has a single overload where you can indicate the language associated with the title.
+
+```csharp
+public void UpdateDescription(string value, 
+                        LanguageCodes language, 
+                        string changeNote, 
+                        Action<SubmitItemUpdateResult_t, bool> callback)
+```
+
+### Update Content
+
+This can be used to update the preview image or the contents of the items folder
+
+```csharp
+//For content folder
+public void UpdateContent(DirectoryInfo value, 
+                          string changeNote, 
+                          Action<SubmitItemUpdateResult_t, bool> callback)
+```
+
+```csharp
+//For preview image
+public void UpdateContent(FileInfo value, 
+                          string changeNote, 
+                          Action<SubmitItemUpdateResult_t, bool> callback)
+```
+
+The callback will indicate the results or error if any
+
+```csharp
+void Callback(SubmitItemUpdateResult_t results, bool ioError)
+{
+    //Do Work
+}
+```
+
+### Update Metadata
+
+Update the metadata linked to the object
+
+```csharp
+public void UpdateMetadata(string value, 
+                           string changeNote, 
+                           Action<SubmitItemUpdateResult_t, bool> callback)
+```
+
+The callback will indicate the results or error if any
+
+```csharp
+void Callback(SubmitItemUpdateResult_t results, bool ioError)
+{
+    //Do Work
+}
+```
+
+### Update Tags
+
+Update the tags linked to the object
+
+```csharp
+public void UpdateTags(string[] value, 
+                       string changeNote, 
+                       Action<SubmitItemUpdateResult_t, bool> callback)
+```
+
+The callback will indicate the results or error if any
+
+```csharp
+void Callback(SubmitItemUpdateResult_t results, bool ioError)
+{
+    //Do Work
+}
+```
+
+### Delete Item
+
+Requests the delet of this item
+
+```csharp
+public void DeleteItem(Action<DeleteItemResult_t, bool> callback)
+```
+
+The callback will indicate the results or error if any
+
+```csharp
+void Callback(DeleteItemResult_t results, bool ioError)
+{
+    //Do Work
+}
+```
