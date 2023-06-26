@@ -26,6 +26,10 @@ The top most being the group your in now contains general information about Heat
 
 The general guides section contains a wide variety of topics around becoming and being a game developer. From the first steps and our [Indie Check List](company/getting-started/indie-check-list.md), to tips on [Design ](company/design/)and [Development ](company/development/)through to the [Live ](company/live.md)operation of your game (coming soon).
 
+### Steam
+
+We have been supporting Steam game developers for a decade and have a tone of great guides, samples and tools to help you get started. Our Steam guides will help you make the most out of the Steam platform, from setting up your [developer account](company/steam/quick-start.md), creating your [store page](company/steam/store-page.md) and integrating [Steamworks (Steam API)](company/steam/steamworks/) we have you covered!
+
 ### Heathen Assets
 
 The Heathen assets section contains full and detailed documentation on all of Heathen's assets and goes beyond simple "what and how" and into guides on common use cases and recommended practices. Each asset family has its own sub-section and is divided into further sections according to the nature of the asset its self.
