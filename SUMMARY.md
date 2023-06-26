@@ -124,6 +124,7 @@
 * [🏃 Running a Build](company/steam/steamworks/running-a-build.md)
 * [💶 Sales](company/steam/sales.md)
 * [⭐ Stats](company/steam/steamworks/stats-object.md)
+* [🔑 Steam API Key](steam/steam-api-key.md)
 * [📃 steam\_appid.txt](company/steam/steamworks/steam\_appid.txt.md)
 * [🖥 Steam Deck](company/steam/steamworks/steam-deck.md)
 * [⚙ Steamworks](company/steam/steamworks/README.md)

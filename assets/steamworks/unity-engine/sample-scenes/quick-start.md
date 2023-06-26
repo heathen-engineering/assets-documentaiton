@@ -12,7 +12,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 This simple scene outlines the basic steps to get up and running with Steamworks.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (6).png" alt=""><figcaption></figcaption></figure>
 
 This is a bare bones scene that does nothing more than initialize the Steam API. The key component in the scene is the [Steamworks Behaviour](../../unity/components/steamworks-behaviour.md) located on the Manager game object.
 

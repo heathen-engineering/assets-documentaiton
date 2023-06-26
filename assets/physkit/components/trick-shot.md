@@ -12,7 +12,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## Introduction
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 A simple tool able to predict the flight of a projectile including bounces and to "fire" that projectile for you. Simply attach this to your "emitter" e.g. the point of origin for your projectile and this tool does the rest.
 

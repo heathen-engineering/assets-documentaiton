@@ -66,11 +66,11 @@ Valve's own documentation on the [Stats and Achievement](https://partner.steamga
 
 Log into your Steam Developer Portal and access your app's admin page. Look for the Technical Tools section and select the Edit Steamworks Settings option.
 
-<figure><img src="../../.gitbook/assets/image.png" alt="Techincal Tools"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt="Techincal Tools"><figcaption></figcaption></figure>
 
 From there select the Stats & Achievements > Achievements option and create your new achievements. Make note of the value you use in the API Name field. You will use it when working with achievements in code. In Unity if you prefer to work with Achievements via an object reference then you can use our AchievementObject which is a Unity ScriptableObject that can be referenced and accessed like any other Unity Object.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt="Achievement test"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (6).png" alt="Achievement test"><figcaption></figcaption></figure>
 
 ## Using Achievements
 

@@ -12,6 +12,14 @@ Support us as a [GitHub Sponsor](../../become-a-sponsor/) and get instant access
 These articles are made possible by our [GitHub Sponsors](../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
+## Offline Documentation?
+
+<figure><img src="../../.gitbook/assets/image (165).png" alt=""><figcaption></figcaption></figure>
+
+The code is fully commented and documented as a result you can use your IDE's "Object Explorer" to view all the objects in our asset, see all the members in each object and review the comments and notes on every field and attribute with in.
+
+We do not provide PDF style documents for the asset.
+
 ## Unity or Godot?
 
 Either, Heathen's Steamworks was originally created as a Unity asset however we have ported the free [Foundation ](https://github.com/heathen-engineering/SteamworksFoundation)version to Godot and are in the process of porting the Complete version.
