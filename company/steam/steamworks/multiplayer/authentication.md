@@ -44,7 +44,7 @@ The intended use of Steam Authentication is that the subject who wishes to authe
 [Get Auth  Session Ticket](../../../../assets/steamworks/api/authentication.md#getauthsessionticket)
 
 ```csharp
-Authentication.GetAuthSessionTicket((ticket, IOError) =>
+Authentication.GetAuthSessionTicket(identity, (ticket, IOError) =>
 {
     if(!IOError)
     {
@@ -54,8 +54,6 @@ Authentication.GetAuthSessionTicket((ticket, IOError) =>
 ```
 
 This ticket contains a bit of information but the important part is the data represented as a byte\[]
-
-{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/authentication-ticket" %}
 
 This is the data that should be sent to who or whatever it is that will be authenticating this subject. So send it to your game server or your peer if your doing peer to peer authentication ... and yes peer to peer authentication can be done.
 

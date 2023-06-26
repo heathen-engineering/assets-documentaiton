@@ -28,7 +28,7 @@ The projectile launched by [Trick Shot](../components/trick-shot.md) uses the [B
 
 ## Emitter GameObject
 
-<figure><img src="../../../.gitbook/assets/image (6) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 The emitter game object does all the real work in the sample scene and houses the Trick Shot component and the Trick Shot Line component. These do the work of calculating the path and displaying it. A simple call to Shoot then causes the Trick Shot component to launch a projectile which will obey the path.
 

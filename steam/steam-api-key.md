@@ -18,11 +18,11 @@ If your planning on working with Steam Web API such as through PlayFab or really
 
 To do this first navigate to your Steam Developer Portal and select the Manage Groups option under the Users & Permissions menu
 
-<figure><img src="../.gitbook/assets/image (2).png" alt="Manage user groups"><figcaption><p>The Users &#x26; Permissions panel</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt="Manage user groups"><figcaption><p>The Users &#x26; Permissions panel</p></figcaption></figure>
 
 From here you should create a new group which we will associate the key with, this is how we control what apps the key is associated with.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt="Create a new group"><figcaption><p>Creating a new group</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt="Create a new group"><figcaption><p>Creating a new group</p></figcaption></figure>
 
 Select the group and in the group page you will see an option on the right side of the screen to create a Web API Key
 
@@ -30,4 +30,4 @@ Select the group and in the group page you will see an option on the right side 
 
 Once created you view the key directly below that Edit Group menu and of course can revoke the key should it no longer be needed or be compromised. The "Manage Web API Key" option lets you white list specific IP addresses though this can be left blank and typically would be for uses like PlayFab.
 
-<figure><img src="../.gitbook/assets/image.png" alt="Manage the API key"><figcaption><p>Managing the key</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt="Manage the API key"><figcaption><p>Managing the key</p></figcaption></figure>

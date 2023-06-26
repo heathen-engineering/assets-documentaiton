@@ -118,7 +118,7 @@ This is a way to split a code base up into assemblies for faster and simpler com
 
 You can view and edit the references a given assembly define has toward other defines in the Unity Inspector for your Assembly Definition.
 
-![](<../../../../.gitbook/assets/image (165) (2).png>)
+![](<../../../../.gitbook/assets/image (165).png>)
 
 ## Missing namespace
 

@@ -79,7 +79,20 @@ This is most commonly used with web calls such as [https://partner.steamgames.co
 ### GetAuthSessionTicket
 
 ```csharp
-public static void GetAuthSessionTicket(
+//Ticket for a Steam User or Steam Game Server
+public static void GetAuthSessionTicket(CSteamID identity,
+        Action<AuthenticationTicket, bool> callback);
+```
+
+```csharp
+//Native use of Steam Networking Identity
+public static void GetAuthSessionTicket(SteamNetworkingIdentity identity,
+        Action<AuthenticationTicket, bool> callback);
+```
+
+```csharp
+//Ticket for Steam Web API use
+public static void GetAuthSessionTicket(SteamNetworkingIdentity identity,
         Action<AuthenticationTicket, bool> callback);
 ```
 
