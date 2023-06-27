@@ -280,6 +280,7 @@
       * [IChatMessage](assets/steamworks/unity-engine/programming-tools/ichatmessage.md)
       * [ILeaderboardEntryDisplay](assets/steamworks/unity-engine/programming-tools/ileaderboardentrydisplay.md)
       * [IUserProfile](assets/steamworks/unity-engine/programming-tools/iuserprofile.md)
+      * [LobbyMemberSlot](assets/steamworks/unity-engine/programming-tools/lobbymemberslot.md)
     * [UI Components](assets/steamworks/unity/ugui-tools/ui-components/README.md)
       * [FriendGroup](assets/steamworks/unity/ugui-tools/ui-components/friendgroup.md)
       * [FriendGroupsDisplay](assets/steamworks/unity/ugui-tools/ui-components/friendgroupsdisplay.md)

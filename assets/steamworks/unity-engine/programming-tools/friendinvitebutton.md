@@ -10,7 +10,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## &#x20;Introduction
 
-An abstract class used by the Friend Invite Dropdown to display the list of friends and handle click events driving the invite process.
+An abstract class used by the [Friend Invite Dropdown](../../for-unity-game-engine/ui-components/friend-invite-dropdown.md) to display the list of friends and handle click events driving the invite process.
 
 ```csharp
 using HeathenEngieering.SteamworksIntegration.UI;
