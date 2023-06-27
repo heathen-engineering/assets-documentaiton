@@ -244,6 +244,7 @@
           * [Inventory Settings](assets/steamworks/unity/scriptable-objects/steam-settings/game-client/inventory-settings.md)
         * [Game Server](assets/steamworks/unity/scriptable-objects/steam-settings/game-server.md)
     * [Components](assets/steamworks/unity/components/README.md)
+      * [Chat Auto Join](assets/steamworks/unity-engine/components/chat-auto-join.md)
       * [Clan Chat Director](assets/steamworks/unity/components/clan-chat-director.md)
       * [Friend Manager](assets/steamworks/unity/components/friend-manager.md)
       * [Game Server Browser Manager](assets/steamworks/unity/components/game-server-browser-manager.md)
