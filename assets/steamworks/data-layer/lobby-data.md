@@ -474,7 +474,7 @@ public bool SendChatMessage(byte[] data);
 public bool SendChatMessage(object jsonObject);
 ```
 
-Sends a message over the Lobby chat system. You can use tools like the [Lobby Chat Director](../unity/components/lobby-chat-director.md) to help you manage incoming chat messages.
+Sends a message over the Lobby chat system. You can use tools like the [Lobby Chat Director](../unity-engine/ui-components/lobby-chat-director.md) to help you manage incoming chat messages.
 
 Note that Steam's lobby chat sends byte\[] data so it can send more than simple text if you need.
 
@@ -492,7 +492,7 @@ public void SetGameServer(string address, ushort port);
 public void SetGameServer(CSteamID id);
 ```
 
-Sets the Game Server information and causes the EventLobbyGameServer event to be raised on the [Matchmaking ](../api/matchmaking.md)interface and on any attached [Lobby Manager](../unity/components/lobby-manager.md) componenets.
+Sets the Game Server information and causes the EventLobbyGameServer event to be raised on the [Matchmaking ](../api/matchmaking.md)interface and on any attached [Lobby Manager](../unity-engine/ui-components/lobby-manager.md) componenets.
 
 ### Kick Member
 
@@ -500,7 +500,7 @@ Sets the Game Server information and causes the EventLobbyGameServer event to be
 public bool KickMember(CSteamID memberId);
 ```
 
-Marks the ID as a member that should be removed from the lobby. This simply sets the ID to a "kick list" on the lobbies metadata and will cause the EventLobbyAskedToLeave event to be raised for the effected user on the event is present on the [Matchmaking](../api/matchmaking.md) interface and [Lobby Manager](../unity/components/lobby-manager.md).
+Marks the ID as a member that should be removed from the lobby. This simply sets the ID to a "kick list" on the lobbies metadata and will cause the EventLobbyAskedToLeave event to be raised for the effected user on the event is present on the [Matchmaking](../api/matchmaking.md) interface and [Lobby Manager](../unity-engine/ui-components/lobby-manager.md).
 
 ### Kick List Contains
 

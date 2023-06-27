@@ -2,19 +2,19 @@
 description: Funcitonaly similar to Steam Client's Friends List
 ---
 
-# FriendGroupsDisplay
+# Friend Groups Display
 
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
 ## &#x20;Introduction
 
-![](<../../../../../.gitbook/assets/image (176) (1).png>)
+![](<../../../../.gitbook/assets/image (176) (1).png>)
 
 This control component is focused on emulation of Steam's own Friend List. It will read for and sort the local player's friends into the same list structure see in Steam Client's Friend List i.e. Playing, Online, Offline, any custom groups the player may have, etc.
 
@@ -46,7 +46,7 @@ This is a Transform which will be the root of all friends that are currently off
 
 This is a template or prefab that will be instantiated for each group found. i.e. Online, Offline, etc.
 
-This GameObject must implement the [FriendGroup](friendgroup.md) component.
+This GameObject must implement the [FriendGroup](friend-group.md) component.
 
 ## Methods
 

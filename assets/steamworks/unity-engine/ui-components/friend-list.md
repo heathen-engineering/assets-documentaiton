@@ -1,16 +1,16 @@
-# FriendList
+# Friend List
 
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
 ## &#x20;Introduction
 
-![](<../../../../../.gitbook/assets/image (174).png>)
+![](<../../../../.gitbook/assets/image (174).png>)
 
 A simple linear list of friends, you can specify via the filter value what types of friends this list should populate. This will update its list when there is an update to persona data detected by Steam client. This means most state changes for a player's friends and followed users will be automatically detected and updated adjusting the list as required.
 
@@ -49,4 +49,4 @@ The transform where instantiated records will be parented to
 
 ### Record Template
 
-This is a GameObject reference to a template or prefab. The Game Object must have a component on it that implements the [IUserProfile ](../../../unity-engine/programming-tools/iuserprofile.md)interface.
+This is a GameObject reference to a template or prefab. The Game Object must have a component on it that implements the [IUserProfile ](../programming-tools/iuserprofile.md)interface.

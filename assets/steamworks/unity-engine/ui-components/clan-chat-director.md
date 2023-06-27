@@ -8,15 +8,7 @@ Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant 
 These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
-## &#x20;Introduction
-
-{% hint style="info" %}
-This tool simply exposes features present in the API to the inspector.
-
-
-
-This is not required to use these features it is simply a helper tool allowing user's who are more comfortable working with editor inspectors and game object rather than classic C# objects and scripting to make use of the related feature.
-{% endhint %}
+## Introduction
 
 The Clan Chat Director is intended to be attached to your Clan/Group chat UI. You will then need to call the Join method to connect the director to a specific clan's chat. Assuming the user is permitted to be in that chat you will now start receiving messages from that chat and send messages to that chat.&#x20;
 
@@ -38,19 +30,61 @@ public class ClanChatDirector : MonoBehaviour;
 
 ## Fields and Attributes
 
-<table><thead><tr><th width="150"></th><th width="182.05438239668894"></th><th></th></tr></thead><tbody><tr><td>UserData[]</td><td>Members</td><td>Returns the members in this chat room if the user is able to iterate over them.</td></tr><tr><td>bool</td><td>IsOpenInSteam</td><td>True if the clan chat is open in Steam client or oen of its dialogs</td></tr><tr><td>bool</td><td>InRoom</td><td><p>True if the system has been connected to a room succesfuly.</p><p></p><p>Note it is possible to be removed a room and this not be updated. You should handle errors when attempting to send and adjust accordingly.</p></td></tr><tr><td>ChatRoom</td><td>ChatRoom</td><td><p>Returns the ChatRoom object that is being operated on if any.</p><p></p><p>If none then this will return a default ChatRoom with an invalid ID</p></td></tr></tbody></table>
+### Members
+
+```csharp
+public UserData[] Members => get;
+```
+
+The members seen in this chat room, this may not list all members for large chat rooms.
+
+### Is Open In Steam
+
+```csharp
+public bool IsOpenInSteam => get;
+```
+
+This will be true if the Clan chat window is open in the Steam Friend Chat dialog of Steam.
+
+### In Room
+
+```csharp
+public bool InRoom => get;
+```
+
+This will be true if the user is "in" this chat room
+
+### Chat Room
+
+```csharp
+public ChatRoom ChatRoom => get;
+```
+
+The chat room associated with this director if any
 
 ## Events
 
 ### evtJoin
 
+```csharp
+public GameConnectedChatJoinEvent evtJoin;
+```
+
 Occurs when a member joins the room
 
 ### evtRecieved
 
+```csharp
+public GameConnectedClanChatMsgEvent evtReceived;
+```
+
 Occurs when a message is received to this room
 
 ### evtLeave
+
+```csharp
+public GameConnectedChatLeaveEvent evtLeave;
+```
 
 Occurs when a member leaves the room
 

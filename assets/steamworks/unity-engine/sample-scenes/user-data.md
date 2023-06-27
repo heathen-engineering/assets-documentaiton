@@ -26,7 +26,7 @@ The manage game object has the [Steamworks Behaviour](../../unity/components/ste
 
 ### [Friend Profile](../../unity/ugui-tools/prefabs/friend-profile.md)
 
-Demonstrates the displaying of the local user's data. This prefab uses the[ Friend Profile](../../unity/ugui-tools/ui-components/friendprofile/) component script which its self uses [User Data](../../data-layer/user-data.md) to deliver the required information.
+Demonstrates the displaying of the local user's data. This prefab uses the[ Friend Profile](../ui-components/friend-profile/) component script which its self uses [User Data](../../data-layer/user-data.md) to deliver the required information.
 
 ### [Friend Group](../../unity/ugui-tools/prefabs/friend-groups.md)
 

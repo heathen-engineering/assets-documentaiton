@@ -12,4 +12,4 @@ These articles are made possible by our [GitHub Sponsors](../../../../../become-
 
 <figure><img src="../../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
-This prefab implements the [Friend Profile](../ui-components/friendprofile/) component script in a visual style that reflects the Steam client.
+This prefab implements the [Friend Profile](../../../unity-engine/ui-components/friend-profile/) component script in a visual style that reflects the Steam client.

@@ -14,7 +14,7 @@ These articles are made possible by our [GitHub Sponsors](../../become-a-sponsor
 
 ## Offline Documentation?
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 The code is fully commented and documented as a result you can use your IDE's "Object Explorer" to view all the objects in our asset, see all the members in each object and review the comments and notes on every field and attribute with in.
 
