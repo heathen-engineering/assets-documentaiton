@@ -69,7 +69,15 @@ public ClanData Clan { get; set; }
 
 Apply the clan, this is done for you when you assign the Clan field
 
+```csharp
+public void Apply(ClanData clan)
+```
+
 ### Refresh
 
 Refresh the value, this updates the text label, this is in general called for you
+
+```csharp
+public void Refresh()
+```
 
