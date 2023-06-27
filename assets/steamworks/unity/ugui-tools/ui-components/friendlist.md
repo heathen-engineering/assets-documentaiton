@@ -49,4 +49,4 @@ The transform where instantiated records will be parented to
 
 ### Record Template
 
-This is a GameObject reference to a template or prefab. The Game Object must have a component on it that implements the [IUserProfile ](../interfaces/iuserprofile.md)interface.
+This is a GameObject reference to a template or prefab. The Game Object must have a component on it that implements the [IUserProfile ](../../../unity-engine/programming-tools/iuserprofile.md)interface.

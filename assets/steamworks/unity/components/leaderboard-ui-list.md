@@ -54,7 +54,7 @@ This will be the parent of any records instantiated by the tool. Most often you 
 public GameObject template;
 ```
 
-This is the "template" that will instantiated for each record the list displays. This template should implement a component that inherits from [ILeaderboardEntryDisplay](../interfaces/ileaderboardentrydisplay.md). You can either create your own UI Control script and implement the [ILeaderboardEntryDisplay](../interfaces/ileaderboardentrydisplay.md) interface or you can use the [Leaderboard Entry UI Record](leaderboard-entry-ui-record.md) we provide which has a basic implementation already done.
+This is the "template" that will instantiated for each record the list displays. This template should implement a component that inherits from [ILeaderboardEntryDisplay](../../unity-engine/programming-tools/ileaderboardentrydisplay.md). You can either create your own UI Control script and implement the [ILeaderboardEntryDisplay](../../unity-engine/programming-tools/ileaderboardentrydisplay.md) interface or you can use the [Leaderboard Entry UI Record](leaderboard-entry-ui-record.md) we provide which has a basic implementation already done.
 
 ## Methods
 
@@ -64,6 +64,6 @@ This is the "template" that will instantiated for each record the list displays.
 public void Display(LeaderboardEntry[] entries)
 ```
 
-Calling this method will cause the Leaderboard UI List to clear any currently displayed records and to instantiate the "Template" for each entry passed in. It will attempt to get the [ILeaderboardEntryDisplay ](../interfaces/ileaderboardentrydisplay.md)component on the Template and set it's [Entry](../interfaces/ileaderboardentrydisplay.md#entry) field.
+Calling this method will cause the Leaderboard UI List to clear any currently displayed records and to instantiate the "Template" for each entry passed in. It will attempt to get the [ILeaderboardEntryDisplay ](../../unity-engine/programming-tools/ileaderboardentrydisplay.md)component on the Template and set it's [Entry](../../unity-engine/programming-tools/ileaderboardentrydisplay.md#entry) field.
 
 You can connect this method to the [Leaderboard Manager's Query Completed](leaderboard-manager.md#evtquerycompleted) event to automatically display the results of any query ran on the manager. Doing this will give you a "code free" solution for displaying leaderboard entries.

@@ -34,4 +34,4 @@ A Toggle element used to expand or collapse this group
 
 ### Record Template
 
-A GameObject that will be instantiated for each member in this group and parented to the "Content" reference. This must implement a component which implements the [IUserProfile ](../interfaces/iuserprofile.md)interface.
+A GameObject that will be instantiated for each member in this group and parented to the "Content" reference. This must implement a component which implements the [IUserProfile ](../../../unity-engine/programming-tools/iuserprofile.md)interface.

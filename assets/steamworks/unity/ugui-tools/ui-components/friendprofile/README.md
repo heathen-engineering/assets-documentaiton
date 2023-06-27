@@ -10,7 +10,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../../../beco
 
 ## &#x20;Introduction
 
-Friend profile is a simple implementation of the [IUserProfile ](../../interfaces/iuserprofile.md)interface and is used in the prefab examples for [FriendList ](../friendlist.md)and other controls. In most cases you will want to create your own "Friend Profile" UI script and can use the included FriendProfile as an example to get started with.
+Friend profile is a simple implementation of the [IUserProfile ](../../../../unity-engine/programming-tools/iuserprofile.md)interface and is used in the prefab examples for [FriendList ](../friendlist.md)and other controls. In most cases you will want to create your own "Friend Profile" UI script and can use the included FriendProfile as an example to get started with.
 
 ## Creating your own
 
@@ -21,9 +21,9 @@ public class MyFriendProfileScript : MonoBehaviour, IUserProfile
 }
 ```
 
-You can implement the [IUserProfile](../../interfaces/iuserprofile.md) interface on your custom profile script and this will allow all of the other profile related UI tools to work with it. That is you can create a custom profile like this and the [FriendList](../friendlist.md), [FriendGroup ](../friendgroup.md)and other friend related controls will be able to work with it thanks to the [IUserProfile](../../interfaces/iuserprofile.md) interface.
+You can implement the [IUserProfile](../../../../unity-engine/programming-tools/iuserprofile.md) interface on your custom profile script and this will allow all of the other profile related UI tools to work with it. That is you can create a custom profile like this and the [FriendList](../friendlist.md), [FriendGroup ](../friendgroup.md)and other friend related controls will be able to work with it thanks to the [IUserProfile](../../../../unity-engine/programming-tools/iuserprofile.md) interface.
 
-The [IUserProfile](../../interfaces/iuserprofile.md) interface requires you to implement two features
+The [IUserProfile](../../../../unity-engine/programming-tools/iuserprofile.md) interface requires you to implement two features
 
 ```csharp
 private UserData _userData;
@@ -40,7 +40,7 @@ public void Apply(UserData user)
 }
 ```
 
-The [UserData ](../../../../data-layer/user-data.md)field and the Apply method are the two required features of the [IUserProfile](../../interfaces/iuserprofile.md) interface. You can use the implementation shown above as a good starting off point adding whatever code your UI requires to the Apply method.
+The [UserData ](../../../../data-layer/user-data.md)field and the Apply method are the two required features of the [IUserProfile](../../../../unity-engine/programming-tools/iuserprofile.md) interface. You can use the implementation shown above as a good starting off point adding whatever code your UI requires to the Apply method.
 
 ## Events
 
