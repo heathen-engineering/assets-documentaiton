@@ -285,6 +285,7 @@
       * [Clan Chat Director](assets/steamworks/unity-engine/ui-components/clan-chat-director.md)
       * [Clan Chat Member Counter](assets/steamworks/unity-engine/ui-components/clan-chat-member-counter.md)
       * [Clan Chat Member List](assets/steamworks/unity-engine/ui-components/clan-chat-member-list.md)
+      * [Clan List](assets/steamworks/unity-engine/ui-components/clan-list.md)
       * [Friend Group](assets/steamworks/unity-engine/ui-components/friend-group.md)
       * [Friend Groups Display](assets/steamworks/unity-engine/ui-components/friend-groups-display.md)
       * [Friend Invite Dropdown](assets/steamworks/for-unity-game-engine/ui-components/friend-invite-dropdown.md)
