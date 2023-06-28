@@ -28,9 +28,35 @@ Functions that provide information about Steam Remote Play sessions, streaming y
 
 Called when a session connects
 
+```csharp
+public static SteamRemotePlaySessionConnectedEvent EventSessionConnected;
+```
+
+The handler would take the form
+
+```csharp
+void Handler(SteamRemotePlaySessionConnected_t responce)
+{
+    //Do Work
+}
+```
+
 ### Session Disconnected
 
 Called when a session disconnects
+
+```csharp
+public static SteamRemotePlaySessionDisconnectedEvent EventSessionDisconnected;
+```
+
+The handler would take the form
+
+```csharp
+void Handler(SteamRemotePlaySessionDisconnected_t responce)
+{
+    //Do Work
+}
+```
 
 ## How To
 

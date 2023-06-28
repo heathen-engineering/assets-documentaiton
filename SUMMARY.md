@@ -120,6 +120,7 @@
     * [🐧 Setup Linux](company/steam/steamworks/multiplayer/game-server-browser/setup-linux.md)
   * [🗣 Terminology](company/steam/steamworks/multiplayer/terminology.md)
 * [🤹 Multi-Platform Project](company/steam/steamworks/multi-platform-project.md)
+* [🛋 Remote Play](steam/remote-play.md)
 * [👀 Reviews](company/steam/reviews.md)
 * [🏃 Running a Build](company/steam/steamworks/running-a-build.md)
 * [💶 Sales](company/steam/sales.md)
