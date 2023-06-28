@@ -19,10 +19,10 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 {% hint style="info" %}
 The Steam documentation linked above is REQUIRED reading for Steam Remote Play.&#x20;
 
-The system is very simple but does require a but of configuration in your Steam Developer Portal.
+The system is very simple but does require a bit of configuration in your Steam Developer Portal.
 {% endhint %}
 
-Valve's Steam Remote Play lets you make a local multiplayer game, network multiplayer. It works in a manner similar to Steam game streaming ... that is the ability to play a game that is running on your PC but on your TV or other Steam Link device.
+Valve's Steam Remote Play lets you make a local multiplayer game that is also network multiplayer. It works in a manner similar to Steam game streaming ... that is the ability to play a game that is running on your PC but on your TV or other Steam Link device.
 
 With Steam Remote Play you are running the game and your guest is streaming your game in that Steam Link similar manner. As far as your game is concerned the guest is a local player.
 
@@ -75,3 +75,9 @@ or
 //Get the resolution the session is playing at
 Vector2Int resolution = API.RemotePlay.Client.GetSessionClientResolution(session);
 ```
+
+## Player Controls
+
+This is handled exactly as you do with a local player, as far as your game is concerned each of the "session guests" is a local player and is causing local inputs to occur e.g. controller input, keyboard/mouse input, etc will all act as if local.
+
+The whole idea of Steam's Remote Play is that if you created a local multiplayer game then this will simply work right out of the box with you needing to do nothing more than invite a player to remote play.
