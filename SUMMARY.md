@@ -89,6 +89,7 @@
 * [☝ Quick Start](company/steam/quick-start.md)
 * [🏆 Achievements](company/steam/achievements.md)
 * [🗣 Community Hub](company/steam/community-hub.md)
+* [⬆ Uploading to Steam](steam/uploading-to-steam.md)
 * [☁ Cloud Save](company/steam/steamworks/data-models.md)
 * [🆔 CSteamID](company/steam/steamworks/csteamid.md)
 * [🔎 Discovery Queue](company/steam/discovery-queue.md)
