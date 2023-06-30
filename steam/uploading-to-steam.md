@@ -20,7 +20,7 @@ Valve's official documentation on the subject is required reading!
 
 If your game is small enough you can upload it as a zip file in the Steam Developer Portal.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 In short if the resulting zip file is smaller than 2gb you can upload it in the Steam Pipe -> Builds -> Upload Depots option.
 
@@ -41,7 +41,7 @@ Download the Steamworks SDK
 
 Once you have that downloaded you should unpack it to a location on your local machine. The folder your looking for within the SDK is the SDK -> Tools -> ContentBuilder folder.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Shows the ContentBuilder folder within the SDK zip file</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Shows the ContentBuilder folder within the SDK zip file</p></figcaption></figure>
 
 {% embed url="https://www.youtube.com/watch?v=SoNH-v6aU9Q" %}
 A video explaining how this all works
@@ -93,6 +93,8 @@ The .vdf format from Valve does 2 things, there are:
 
 #### Template App Build VDF
 
+This should be saved in the scripts folder with a name such as `app_build_####.vdf` where the ### is your app ID.
+
 ```json
 "appbuild"
 {
@@ -136,6 +138,8 @@ You should replace the text defined below with the values appropreate for your g
 The Depot Build Config define what content they will read or not from the content folder they are pointed to. How this works will make more since as you read over the template for the Depot Build Configuration
 
 #### Template Depot Build Configuration VDF
+
+This should be saved in the scripts folder with a name such as depot`_build_####.vdf` where the ### is your depot ID.
 
 ```json
 "DepotBuildConfig"

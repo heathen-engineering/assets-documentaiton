@@ -1,3 +1,7 @@
+---
+description: Not an option to just skip
+---
+
 # 📑 Namespace and Using
 
 <figure><img src="../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
@@ -30,7 +34,7 @@ One major issue with learning to program through Unity, is that Unity is absolut
 
 {% embed url="https://learn.unity.com/tutorial/namespaces" %}
 
-Strangely Unity considers the use of namespaces as an "intermediate" concept, and only references it as import for code organization. However, this couldn't be further from the truth. Properly formed code is more than just about organizing your class objects, it helps reduce the risk of ambiguity which can result in bugs that don't through errors and can be incredibly difficult to track down even for a skilled engineer.
+Strangely Unity considers the use of namespaces as an "intermediate" concept, and only references it as import for code organization. However, this couldn't be further from the truth. Properly formed code is more than just about organizing your class objects, it helps reduce the risk of ambiguity which can result in bugs that don't throw errors and can be incredibly difficult to track down even for a skilled engineer.
 
 This topic bares more attention than we will give it here, so just accept that **ALWAYS** using a namespace in **ALL** of your code is an absolute must.
 
