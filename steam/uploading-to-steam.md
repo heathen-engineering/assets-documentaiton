@@ -16,11 +16,90 @@ Valve's official documentation on the subject is required reading!
 
 {% embed url="https://partner.steamgames.com/doc/sdk/uploading" %}
 
+## Steam Build
+
+Heathen's Steamworks Complete includes the Steam Content Builder tool which can be used to build and upload your game to Steam. The feature uses the Steamworks SDK's [Steam CMD](uploading-to-steam.md#steam-cmd) tool and automates the process in the Unity Editor.
+
+### Where to find the tool
+
+This can be accessed from the `File\Steam Build` or `Window\Steamworks\Builder` menu:
+
+![](<../.gitbook/assets/image (10).png>)or![](<../.gitbook/assets/image (6).png>)
+
+### Configuring the tool
+
+When you first open the tool in your first project you will see a message asking you to configure the Steamworks SDK location
+
+<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+
+You can click the Update Configuration button to open the Steam Content Builder Configuration where you can edit the Steamworks SDK Content Builder location and modify other settings.
+
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+
+#### Depots
+
+The Content Builder Config is where you will define the depots your project has, these are stored in the Scriptable Object and so would be shared with your team if your using source control or similar.
+
+Most Steam games will have 1 depot for each platform they support
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>The values populated here are for example only. Do not copy them and expect it to work!</p></figcaption></figure>
+
+#### Content Builder Folder Path
+
+This is the local folder path to the Steamworks SDK's ContentBuilder folder. by default this would be located at `sdk/tools/ContentBuilder` the tool has a button you can press to help you get started downloading the Steamworks SDK from Valve.
+
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
+#### Username and Password
+
+You will need to provide the tool with a valid Steam Username and Password that has access to upload builds to the target app. This is the same username and password you use to log into Steam Developer Poral.&#x20;
+
+{% hint style="warning" %}
+The Username is stored in the Scriptable Obejct configuraiton asset encrypted with a simple cipher. This is not meant as a security measure but simply to insure the username cannot be read as plain text.\
+\
+The Password is not stored by default and is help in temporary memory, cleared each time Unity is restarted. \
+\
+If you choose to toggle the "Remember Password" option then we will store the password in the Scriptable Obejct as well again encrypted with a simple cipher. While the cipher prevents reading the password as plain text it is not a replacement for proper security ... do not share the configuration with anyone you wouldn't trust with the username and password
+{% endhint %}
+
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+#### Application ID
+
+Finally the Application ID, this will default to the App ID of the project its in if known but can be set to any value that suits. This should be the App ID of the application you are uploading to and for which the depots are defined.
+
+<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+
+### Run the tool
+
+With everything configured correctly you can now select the Depot you wish to upload your build to and then choose `Build & Upload` or simply `Upload`
+
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+
+* Build & Upload\
+  This will compile a new build and store it in the `sdk\tools\ContentBuilder\content\<AppName>\<Platform>\` where once build it will upload it to Steam displaying progress as it goes.
+* Upload\
+  This will simply upload whatever if any content is located in `sdk\tools\ContentBuilder\content\<AppName>\<Platform>\`
+
+### How Does it work?
+
+Heathen's Content Builder tool uses Steam CMD and is simply doing the work of constructing a VDF for you based on the configuration you provided. You can view the VDF it creates in the `sdk\tools\ContentBuilder\scripts\simple_app_build.vdf` file.
+
+This is mechanically the same as if you created the VDF your self, and copied your build into the SDK content builder content folder your self as is described in the [Steam CMD](uploading-to-steam.md#steam-build) upload option.
+
+### What do I do after?
+
+Once the tool has uploaded your content to Steam you need to log into your Steam Developer Portal, select the App from your Dashboard, select the Steam Pipe Builds tool and set the build active to the desired branch.
+
+#### Why doesn't this set the branch live for me?
+
+Because Valve doesn't allow Steam CMD to set a build live on the default branch automatically. It is possible to set non-default branches automatically live but not the default and so we do not expose the feature at all as best practice is to log into your portal and review the build there before setting it live.
+
 ## Zip Upload
 
 If your game is small enough you can upload it as a zip file in the Steam Developer Portal.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 In short if the resulting zip file is smaller than 2gb you can upload it in the Steam Pipe -> Builds -> Upload Depots option.
 
@@ -41,7 +120,7 @@ Download the Steamworks SDK
 
 Once you have that downloaded you should unpack it to a location on your local machine. The folder your looking for within the SDK is the SDK -> Tools -> ContentBuilder folder.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Shows the ContentBuilder folder within the SDK zip file</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption><p>Shows the ContentBuilder folder within the SDK zip file</p></figcaption></figure>
 
 {% embed url="https://www.youtube.com/watch?v=SoNH-v6aU9Q" %}
 A video explaining how this all works

@@ -10,6 +10,6 @@ These articles are made possible by our [GitHub Sponsors](../../../../../become-
 
 ## &#x20;Introduction
 
-<figure><img src="../../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5) (1) (4).png" alt=""><figcaption></figcaption></figure>
 
 This prefab implements the [Friend Profile](../../../unity-engine/ui-components/friend-profile/) component script in a visual style that reflects the Steam client.
