@@ -92,7 +92,7 @@ public static void GetAuthSessionTicket(SteamNetworkingIdentity identity,
 
 ```csharp
 //Ticket for Steam Web API use
-public static void GetAuthSessionTicket(SteamNetworkingIdentity identity,
+public static void GetAuthSessionTicket(string identity,
         Action<AuthenticationTicket, bool> callback);
 ```
 

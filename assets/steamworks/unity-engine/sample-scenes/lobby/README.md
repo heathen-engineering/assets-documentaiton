@@ -22,7 +22,7 @@ The Quick Match Example and Session Lobby sample scenes demonstrate the use of o
 
 Demonstrating the most common use case for Steam Lobby and how it can be accomplished code free using Heathen's [Party Lobby Control](../../../for-unity-game-engine/ui-components/party-lobby-control.md) and [Quick Match Lobby Control](../../../for-unity-game-engine/ui-components/quick-match-lobby-control.md) components. This code free example uses no custom code at all and handles the use case most common to hobbyist and enthusiast multiplayer game projects.
 
-<figure><img src="../../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 The Quick Match Example scene simply cant get any simpler. With only 2 functional UI elements and zero custom code this scene handles forming players in a friend group/party, searching for and selecting or creating a new lobby and reporting when that lobby is full. You can easily connect this scene to any networking HLAPI of your choice and have a functional party + matchmaking multiplayer session assuming you have a network demo scene you can load when your lobby is full.
 
