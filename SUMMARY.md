@@ -290,6 +290,7 @@
       * [Clan Profile](assets/steamworks/unity-engine/ui-components/clan-profile.md)
       * [Friend Group](assets/steamworks/unity-engine/ui-components/friend-group.md)
       * [Friend Groups Display](assets/steamworks/unity-engine/ui-components/friend-groups-display.md)
+      * [Friend ID Field](assets/steamworks/unity-engine/ui-components/friend-id-field.md)
       * [Friend Invite Dropdown](assets/steamworks/for-unity-game-engine/ui-components/friend-invite-dropdown.md)
       * [Friend List](assets/steamworks/unity-engine/ui-components/friend-list.md)
       * [Friend Profile](assets/steamworks/unity-engine/ui-components/friend-profile/README.md)
