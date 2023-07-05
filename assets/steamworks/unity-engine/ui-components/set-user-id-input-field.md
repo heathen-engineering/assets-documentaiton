@@ -1,4 +1,4 @@
-# Friend Invite Dropdown
+# Set User Id Input Field
 
 {% hint style="success" %}
 #### Like what your seeing?
@@ -10,14 +10,40 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-Displays a list of the clans the user sees e.g. is a member of or otherwise has a relationship with.
+Displays the ID of a friend in an input field
 
 ```csharp
 namespace HeathenEngineering.SteamworksIntegration.UI
 ```
 
 ```csharp
-public class FriendInviteDropDown : MonoBehaviour
+public class ClanProfile : MonoBehaviour
 ```
 
 ## Fields and Attributes
+
+### As Hex
+
+Should the ID be displayed as a Hex value
+
+```csharp
+public bool AsHex { get; set; }
+```
+
+### User Data
+
+What user is currently applied
+
+```csharp
+public UserData UserData { get; set; }
+```
+
+## Methods
+
+### Apply
+
+Applies a user to be displayed
+
+```csharp
+public void Apply(UserData user)
+```

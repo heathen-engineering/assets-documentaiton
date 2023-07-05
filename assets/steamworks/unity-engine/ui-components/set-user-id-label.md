@@ -1,4 +1,4 @@
-# Friend ID Field
+# Set User Id Label
 
 {% hint style="success" %}
 #### Like what your seeing?
@@ -10,7 +10,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-Displays the ID of a friend
+Displays the ID of a friend in a text label
 
 ```csharp
 namespace HeathenEngineering.SteamworksIntegration.UI
