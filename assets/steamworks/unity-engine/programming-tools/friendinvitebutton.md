@@ -55,7 +55,7 @@ This can only be set by the inheriting class and is the [UserData](../../data-la
 
 ### OnPointerClick
 
-This is an implementation of the `UnityEvent.EventSystem.IPointerClickHandler` and will be invoked when the user clicks on the UI element. This method will in turn invoke the [Click ](user-invite-button.md#click)event for you.
+This is an implementation of the `UnityEvent.EventSystem.IPointerClickHandler` and will be invoked when the user clicks on the UI element. This method will in turn invoke the [Click ](friendinvitebutton.md#click)event for you.
 
 ```csharp
 public void OnPointerClick(PointerEventData eventData)

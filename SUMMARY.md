@@ -279,7 +279,7 @@
       * [ILeaderboardEntryDisplay](assets/steamworks/unity-engine/programming-tools/ileaderboardentrydisplay.md)
       * [IUserProfile](assets/steamworks/unity-engine/programming-tools/iuserprofile.md)
       * [LobbyMemberSlot](assets/steamworks/unity-engine/programming-tools/lobbymemberslot.md)
-      * [User Invite Button](assets/steamworks/unity-engine/programming-tools/user-invite-button.md)
+      * [User Invite Button](assets/steamworks/unity-engine/programming-tools/friendinvitebutton.md)
     * [UI Components](assets/steamworks/unity/ugui-tools/ui-components/README.md)
       * [Chat Auto Join](assets/steamworks/unity-engine/ui-components/chat-auto-join.md)
       * [Chat Stream](assets/steamworks/unity-engine/ui-components/chat-stream.md)

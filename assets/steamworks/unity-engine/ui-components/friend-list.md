@@ -14,7 +14,11 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 A simple linear list of friends, you can specify via the filter value what types of friends this list should populate. This will update its list when there is an update to persona data detected by Steam client. This means most state changes for a player's friends and followed users will be automatically detected and updated adjusting the list as required.
 
-## Inspector Fields
+## Fields and Attributes
+
+### Include Followed
+
+Should the tool include the users that you follow
 
 ### Filter
 
@@ -50,3 +54,29 @@ The transform where instantiated records will be parented to
 ### Record Template
 
 This is a GameObject reference to a template or prefab. The Game Object must have a component on it that implements the [IUserProfile ](../programming-tools/iuserprofile.md)interface.
+
+## Methods
+
+### Clear
+
+Clear the list
+
+```csharp
+public void Clear()
+```
+
+### Update Display
+
+Update the list display
+
+```csharp
+public void UpdateDisplay()
+```
+
+### Match Filter
+
+Check the user to determin if it matches the filter configured for this list
+
+```csharp
+public bool MatchFilter(UserData friend)
+```

@@ -20,4 +20,65 @@ namespace HeathenEngineering.SteamworksIntegration.UI
 public class FriendInviteDropDown : MonoBehaviour
 ```
 
+## Events
+
+### Invited
+
+A User Data event that will be invioked when the "invite" button is pressed for a specific friend. The event will indicate for what friend the button was pressed
+
+```csharp
+public UserDataEvent Invited;
+```
+
+The handler for this event would take the form of
+
+```csharp
+void Handler(UserData user)
+{
+    //Do Work
+}
+```
+
 ## Fields and Attributes
+
+### Filter
+
+A set of flags that indicate what friends should be included in the list
+
+```csharp
+public FilterOptions filter;
+```
+
+This uses an internal struct
+
+```csharp
+public struct FilterOptions
+{
+    public bool inThisGame;
+    public bool inOtherGame;
+    public bool busy;
+    public bool away;
+    public bool snooze;
+}
+```
+
+* In This Game\
+  Should friends that are playing the current game be displayed
+* In Other Game\
+  Should friends that are playing some other game be displayed
+* Busy\
+  Should friends with a persona state of busy be displayed
+* Away\
+  Should friends with a persona state of away be displayed
+* Snooze\
+  Should friends with a persona state of snooze be displayed
+
+## Methods
+
+### Show
+
+Expands the drop down and displays the list of friends that match the filter
+
+```csharp
+public void Show()
+```
