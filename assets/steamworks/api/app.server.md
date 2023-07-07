@@ -32,7 +32,7 @@ public static bool LoggedOn => get;
 
 ### Configuration
 
-Defines the configuration of the server, this will be set by the Initalize method
+Defines the configuration of the server, this will be set by the Initialize method
 
 ```csharp
 public static SteamGameServerConfiguraiton Configuraiton => get;
@@ -40,7 +40,7 @@ public static SteamGameServerConfiguraiton Configuraiton => get;
 
 ### Initialized
 
-This is a global field located on API.App.Initalized and indicates rather or not the system is initialized.
+This is a global field located on API.App.Initialized and indicates rather or not the system is initialized.
 
 {% hint style="info" %}
 This is \***Not**\* located in the API.App.Server class rather its in the parent API.App class so to access it&#x20;
@@ -61,7 +61,9 @@ public static bool API.App.Initalized => get;
 
 ### Initialize
 
-Initializes the the Steam API for client processing. If your using SteamSettings or SteamworksBehaviour this is done for you. You should only call this if you are not using SteamSettings.Initialize or SteamworksBehaviour.
+Initializes the Steam API for client processing. If your using [SteamSettings](../for-unity-game-engine/quick-start-guide/scriptableobject-initialization.md) or [SteamworksBehaviour](../for-unity-game-engine/quick-start-guide/gameobject-initialization.md) this is done for you. You should only call this if you are not using [SteamSettings.Initialize](../unity/scriptable-objects/steam-settings/#initialize) or the [SteamworksBehaviour](../unity/components/steamworks-behaviour.md).
+
+If used you will need to provide a [Steam Game Server Configuration](../objects/steam-game-server-configuration.md), this can be write and read from a JSON formatted file or set up as a structure and passed in.
 
 ```csharp
 public static Initialize(AppData appId, SteamGameServerConfiguration config);
