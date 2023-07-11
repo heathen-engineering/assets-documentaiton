@@ -10,7 +10,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## &#x20;Introduction
 
-A simple interface that standardizes the concept of a chat message making it easier to create UI elements for the presentation and collection of chat messages originating from Steam Lobby, Clan and Friends.
+A simple interface that standardizes the concept of a Workshop Browser Item making it easier to create UI elements for the presentation and collection of [Workshop items](../../objects/workshop-item.md) originating from UGC Query and similar.
 
 ```csharp
 using HeathenEngieering.SteamworksIntegration.UI;

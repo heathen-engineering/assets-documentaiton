@@ -12,6 +12,15 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 A simple implementation of the [ILeaderboardEntryDisplay ](../../unity-engine/programming-tools/ileaderboardentrydisplay.md)interface.
 
+```csharp
+namespace HeathenEngineering.SteamworksIntegration.UI
+```
+
+```csharp
+public class LeaderboardEntryUIRecord : MonoBehaviour,
+                                        ILeaderboardEntryDisplay
+```
+
 ## Fields and Attributes
 
 ### Avatar
