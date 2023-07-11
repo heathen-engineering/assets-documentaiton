@@ -297,6 +297,7 @@
         * [Message Options](assets/steamworks/unity-engine/ui-components/friend-profile/message-options.md)
         * [Text Field](assets/steamworks/unity-engine/ui-components/friend-profile/text-field.md)
       * [Input Action Glyph](assets/steamworks/unity-engine/ui-components/input-action-glyph.md)
+      * [Input Action Name](assets/steamworks/unity-engine/ui-components/input-action-name.md)
       * [Leaderboard Entry UI Record](assets/steamworks/unity/components/leaderboard-entry-ui-record.md)
       * [Leaderboard UI List](assets/steamworks/unity/components/leaderboard-ui-list.md)
       * [Leaderboard Results](assets/steamworks/unity-engine/ui-components/leaderboard-results.md)

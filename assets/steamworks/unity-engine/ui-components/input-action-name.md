@@ -1,4 +1,4 @@
-# Input Action Glyph
+# Input Action Name
 
 {% hint style="success" %}
 #### Like what your seeing?
@@ -17,8 +17,8 @@ namespace HeathenEngineering.SteamworksIntegration.UI
 ```
 
 ```csharp
-[RequireComponent(typeof(UnityEngine.UI.RawImage))]
-public class InputActionGlyph : MonoBehaviour
+[RequireComponent(typeof(TMPro.TextMeshProUGUI))]
+public class InputActionName : MonoBehaviour
 ```
 
 ## Fields and Attributes
@@ -52,7 +52,7 @@ The [Steam Input Action](../../unity/scriptable-objects/input-action.md) to be d
 ### Refresh Image
 
 ```csharp
-public void RefreshImage()
+public void RefreshName()
 ```
 
-Refresh the displayed image
+Refresh the displayed name
