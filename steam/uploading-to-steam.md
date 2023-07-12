@@ -55,11 +55,11 @@ This is the local folder path to the Steamworks SDK's ContentBuilder folder. by 
 You will need to provide the tool with a valid Steam Username and Password that has access to upload builds to the target app. This is the same username and password you use to log into Steam Developer Poral.&#x20;
 
 {% hint style="warning" %}
-The Username is stored in the Scriptable Obejct configuraiton asset encrypted with a simple cipher. This is not meant as a security measure but simply to insure the username cannot be read as plain text.\
+The Username is stored in the Scriptable Object configuration asset encrypted with a simple cipher. This is not meant as a security measure but simply to insure the username cannot be read as plain text.\
 \
-The Password is not stored by default and is help in temporary memory, cleared each time Unity is restarted. \
+The Password is not stored by default and is held in temporary memory, cleared each time Unity is restarted.\
 \
-If you choose to toggle the "Remember Password" option then we will store the password in the Scriptable Obejct as well again encrypted with a simple cipher. While the cipher prevents reading the password as plain text it is not a replacement for proper security ... do not share the configuration with anyone you wouldn't trust with the username and password
+If you choose to toggle the "Remember Password" option then we will store the password in the Scriptable Object as well again encrypted with a simple cipher. While the cipher prevents reading the password as plain text it is not a replacement for proper security ... do not share the configuration with anyone you wouldn't trust with the username and password
 {% endhint %}
 
 <figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
