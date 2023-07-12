@@ -18,7 +18,7 @@ These articles are made possible by our [GitHub Sponsors](../../become-a-sponsor
 
 The code is fully commented and documented as a result you can use your IDE's "Object Explorer" and [IntelliSense ](../../company/development/intellisense.md)features to view all the objects in our asset, see all the members in each object and review the comments and notes on every field and attribute with in.
 
-We do not provide PDF style documents for the asset. Your IDE's Object Explorer, Your IDE's [IntelliSense](../../company/development/intellisense.md) and this Knowledge Base and its AI driven search tools should prove a superior option to any static file based documentation. If you have any questions please reach out to us pn our [Discord](https://discord.gg/eVVgM36).
+We do not provide PDF style documents for the asset. Your IDE's Object Explorer, Your IDE's [IntelliSense](../../company/development/intellisense.md) and this Knowledge Base and its AI driven search tools should prove a superior option to any static file based documentation. If you have any questions please reach out to us on our [Discord](https://discord.gg/eVVgM36).
 
 ## Unity or Godot?
 
