@@ -12,7 +12,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 This scene demonstrates the use of the [UGC Query Manager](../../unity/components/ugc-query-manager.md) to browse for Workshop items in game.
 
-![](<../../../../.gitbook/assets/image (182) (1) (1).png>)
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ### What do I learn?
 
