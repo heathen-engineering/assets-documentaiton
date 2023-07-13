@@ -217,7 +217,7 @@
       * [GameObject Initialization](assets/steamworks/for-unity-game-engine/quick-start-guide/gameobject-initialization.md)
       * [ScriptableObject Initialization](assets/steamworks/for-unity-game-engine/quick-start-guide/scriptableobject-initialization.md)
       * [API Initialization](assets/steamworks/for-unity-game-engine/quick-start-guide/api-initialization.md)
-    * [Debugging Tools](assets/steamworks/unity-engine/debugging-tools/README.md)
+    * [Debugging Tools](assets/steamworks/unity-engine/debugging-tools.md)
       * [Testing](assets/steamworks/unity-engine/debugging-tools/testing.md)
     * [Sample Scenes](assets/steamworks/unity-engine/sample-scenes/README.md)
       * [Quick Start](assets/steamworks/unity-engine/sample-scenes/quick-start.md)

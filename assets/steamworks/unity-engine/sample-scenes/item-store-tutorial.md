@@ -12,7 +12,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 This scene is meant to be used in conjunction with the learning article [Item Store](../../../../company/steam/steamworks/microtransactions/item-store/). It provides a crude example of an in-game item store where the developer has defined each item's UI element and linked it with the related [Item Definition](../../unity/scriptable-objects/item-definition.md).
 
-<figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 The scene requires additional configuration in your Steam Developer Portal and a basic understanding of the [Steam Inventory](../../../../company/steam/steamworks/inventory/) system to use properly.
 

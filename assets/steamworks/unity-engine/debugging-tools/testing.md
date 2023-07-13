@@ -10,9 +10,9 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-This article outlines the testing methodology and processes to validate the good working order of Steamworks Complete. The core tests are designed to be ran on a clean project configured for a Steam compatible platform (Windows, Mac or Linux) and for the Steam App 480 aka “Spacewars”.
+This article outlines the testing methodology and processes to validate the good working order of Steamworks Complete. The [sample scenes](../sample-scenes/) serve as the core tests and are designed to be ran on a clean project configured for a Steam compatible platform (Windows, Mac or Linux) and for the Steam App 480 aka “Spacewars”.
 
-The function of these tests are to insure the good working order of the asset independent of the unique conditions of a given project. Additional notes can be found (here) to help the developer construct Steam App specific tests such as Steam Inventory testing.
+The function of these tests are to insure the good working order of the asset independent of the unique conditions of a given project and to demonstrate the basic use of the core Steam API features.&#x20;
 
 ## Spacewars Tests
 
@@ -34,7 +34,7 @@ The expectations are:
 
 These expectations allow the developer to review and compare the clean operation of Steamworks Complete against the behaviour observed in a live project and thus can be used to identify and isolate the source of error as either Asset or Bespoke Code more quickly.
 
-In addition, Heathen provides an in-editor window “[Steamworks Inspector](./)” available in the \[Windows > Steamworks > Inspector] menu that can be used to inspect and exercise all major Steamworks features. For more information on the Steamworks Inspectors please read the [Knowledge Base article](./). The Steamworks Inspector works with any App as long as Steamworks API is initialized (your running the app in editor).
+In addition, Heathen provides an in-editor window “[Steamworks Inspector](../debugging-tools.md)” available in the \[Windows > Steamworks > Inspector] menu that can be used to inspect and exercise all major Steamworks features. For more information on the Steamworks Inspectors please read the [Knowledge Base article](../debugging-tools.md). The Steamworks Inspector works with any App as long as Steamworks API is initialized (your running the app in editor).
 
 ### [Sample Scenes](../sample-scenes/)
 

@@ -62,4 +62,4 @@ Once you add the package the URL will be reflected there as well meaning future 
 Obviously you would need to copy in the source update into your ThirdParty folder and check in before clicking Update in order for it to see the updated files.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15) (1) (2).png" alt=""><figcaption></figcaption></figure>

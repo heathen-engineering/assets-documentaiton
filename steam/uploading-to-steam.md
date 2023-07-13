@@ -24,13 +24,13 @@ Heathen's Steamworks Complete includes the Steam Content Builder tool which can 
 
 This can be accessed from the `File\Steam Build` or `Window\Steamworks\Builder` menu:
 
-![](<../.gitbook/assets/image (8).png>)or![](<../.gitbook/assets/image (6) (2).png>)
+![](<../.gitbook/assets/image (8).png>)or![](<../.gitbook/assets/image (6).png>)
 
 ### Configuring the tool
 
 When you first open the tool in your first project you will see a message asking you to configure the Steamworks SDK location
 
-<figure><img src="../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 You can click the Update Configuration button to open the Steam Content Builder Configuration where you can edit the Steamworks SDK Content Builder location and modify other settings.
 
@@ -42,7 +42,7 @@ The Content Builder Config is where you will define the depots your project has,
 
 Most Steam games will have 1 depot for each platform they support
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption><p>The values populated here are for example only. Do not copy them and expect it to work!</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (4).png" alt=""><figcaption><p>The values populated here are for example only. Do not copy them and expect it to work!</p></figcaption></figure>
 
 #### Content Builder Folder Path
 
@@ -62,19 +62,19 @@ The Password is not stored by default and is held in temporary memory, cleared e
 If you choose to toggle the "Remember Password" option then we will store the password in the Scriptable Object as well again encrypted with a simple cipher. While the cipher prevents reading the password as plain text it is not a replacement for proper security ... do not share the configuration with anyone you wouldn't trust with the username and password
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (16) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 #### Application ID
 
 Finally the Application ID, this will default to the App ID of the project its in if known but can be set to any value that suits. This should be the App ID of the application you are uploading to and for which the depots are defined.
 
-<figure><img src="../.gitbook/assets/image (3) (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Run the tool
 
 With everything configured correctly you can now select the Depot you wish to upload your build to and then choose `Build & Upload` or simply `Upload`
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Build & Upload\
   This will compile a new build and store it in the `sdk\tools\ContentBuilder\content\<AppName>\<Platform>\` where once build it will upload it to Steam displaying progress as it goes.

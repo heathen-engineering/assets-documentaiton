@@ -12,7 +12,12 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 This scene demonstrates the use of Steam Input API
 
-![](<../../../../.gitbook/assets/image (170) (1) (1) (1).png>)
+{% hint style="info" %}
+The icons may not load until you click the Activate button causing the UI to refresh.\
+This is a sample scene for developer testing of the API and not indicative of production use and so the UI is "quick and dirty" for easy testing not robust execution.
+{% endhint %}
+
+<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 It is important to understand what Steam Input is and how to properly configure it for your game.&#x20;
 

@@ -18,7 +18,7 @@ If your planning on working with Steam Web API such as through PlayFab or really
 
 To do this first navigate to your Steam Developer Portal and select the Manage Groups option under the Users & Permissions menu
 
-<figure><img src="../.gitbook/assets/image (13).png" alt="Manage user groups"><figcaption><p>The Users &#x26; Permissions panel</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (3).png" alt="Manage user groups"><figcaption><p>The Users &#x26; Permissions panel</p></figcaption></figure>
 
 From here you should create a new group which we will associate the key with, this is how we control what apps the key is associated with.
 

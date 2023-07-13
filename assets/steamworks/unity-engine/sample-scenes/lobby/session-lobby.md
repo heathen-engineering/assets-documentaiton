@@ -83,7 +83,7 @@ This happens when we have successfully created a lobby, that is we hit the Play 
 
 ### Start Session
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
 
 At some point either determined by your game logic or at the whim of the lobby owner it will be time to "start session" ... that is you will want to start playing the game with the players you have.
 

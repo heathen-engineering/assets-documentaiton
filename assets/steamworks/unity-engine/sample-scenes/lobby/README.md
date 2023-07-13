@@ -48,6 +48,6 @@ Additional information can be found [here](lobby-browser.md)!
 
 Demonstrates a bare bones Lobby Browser set up&#x20;
 
-![](<../../../../../.gitbook/assets/image (16).png>)
+![](<../../../../../.gitbook/assets/image (57).png>)
 
 You can use this scene to learn how to set up a Lobby Browser with search, create, join and leave options with all Steam operations being code free and the sample only using custom code to drive Unity UI.

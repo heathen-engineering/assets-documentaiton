@@ -12,7 +12,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 This scene provides example scripts demonstrating the use of [Item Definition](../../unity/scriptable-objects/item-definition.md). The scene is not functional as Steam Inventory is depend on your App's configuration.
 
-<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 Steam Inventory cannot be tested using app 480 and is dependent on your App's Inventory Item Definitions which is a matter of configuration in your Steam Developer Portal. You can learn more about the [Steam Inventory feature here](../../../../company/steam/steamworks/inventory/).
 

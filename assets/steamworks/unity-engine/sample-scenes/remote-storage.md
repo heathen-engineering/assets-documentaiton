@@ -12,7 +12,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 This scene demonstrates the use of the [Remote Storage](../../../../company/steam/steamworks/data-models.md) system e.g. Steam Cloud
 
-<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 Steamworks Complete provides several ways to work with remote storage via the [Remote Storage API](../../api/remote-storage.md) and [DataModel ](../programming-tools/datamodel.md)tools.
 
