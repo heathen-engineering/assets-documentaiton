@@ -39,3 +39,15 @@ Demonstrates the use of Lobby Manager for a custom session lobby use experience.
 When you press play in this scene it will search for a matching lobby, if none is found it will create a new lobby matching the Create Arguments in the Lobby Manager. While in a lobby the members are displayed along with simple features like "Ready Check", "Leave" and an indication as to which member is the "owner" of the lobby.
 
 This scene's demo script is marked as "Deprecated" because you are NOT supposed to copy and paste it as is into your game. Rather you are supposed to use it as a learning tool to create your own lobby UI controller suitable for your specific needs. If you are looking for an "out of the box" lobby solution then see our Quick Match Example.
+
+### Lobby Browser
+
+{% hint style="success" %}
+Additional information can be found [here](lobby-browser.md)!
+{% endhint %}
+
+Demonstrates a bare bones Lobby Browser set up&#x20;
+
+![](<../../../../../.gitbook/assets/image (16).png>)
+
+You can use this scene to learn how to set up a Lobby Browser with search, create, join and leave options with all Steam operations being code free and the sample only using custom code to drive Unity UI.

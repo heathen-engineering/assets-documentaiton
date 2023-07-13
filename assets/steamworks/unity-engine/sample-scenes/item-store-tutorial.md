@@ -10,18 +10,11 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-This scene is meant to be used in conjunction with the learning article [Item Store](../../../../company/steam/steamworks/microtransactions/item-store/). It provides a crude example of an in-game item store where the developer has defined each item's UI element and linked it with the related [Item Defintion](../../unity/scriptable-objects/item-definition.md).
+This scene is meant to be used in conjunction with the learning article [Item Store](../../../../company/steam/steamworks/microtransactions/item-store/). It provides a crude example of an in-game item store where the developer has defined each item's UI element and linked it with the related [Item Definition](../../unity/scriptable-objects/item-definition.md).
 
-![](<../../../../.gitbook/assets/image (162).png>)
+<figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
-### What do I learn?
-
-1. Using [Item Defintion](../../unity/scriptable-objects/item-definition.md) to interact with the user's inventory.
-2. Using [Item Definition](../../unity/scriptable-objects/item-definition.md) and Unity uGUI to represent a store item.
-3. Responding to changes in the user's inventory.
-4. How to access the Knowledge Base (where you are now)
-5. How to access the support [Discord ](https://discord.gg/6X3xrRc)
-6. How to leave a review 😉
+The scene requires additional configuration in your Steam Developer Portal and a basic understanding of the [Steam Inventory](../../../../company/steam/steamworks/inventory/) system to use properly.
 
 ## Objects
 

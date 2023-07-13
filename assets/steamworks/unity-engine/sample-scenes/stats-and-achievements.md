@@ -48,4 +48,14 @@ and [Average Rate Stat](../../unity/scriptable-objects/avg-rate-stat.md)
 
 to learn more.
 
-Stats do not have icons so there is no icon to load and each type of stat has its own "data type" but otherwise the process is the same, set the Valve of the stat and when ready call Store to commit the changes to the backend.
+Stats do not have icons so there is no icon to load and each type of stat has its own "data type" but otherwise the process is the same, set the Value of the stat and when ready call Store to commit the changes to the backend.
+
+## Testing
+
+Assuming you are using an unmodified version of the sample scene and Steam Settings you will see messages appear in the Unity Editor Console log detailing each step of the initialization process.
+
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Example initialization messages</p></figcaption></figure>
+
+In the event of an error details will be listed here along with troubleshooting guidance. In the event you require support please select the first error message in the log and press \[Ctrl + C] this will copy the full message and its stack trace to your clipboard. You can then paste that error into [Discord chat](https://discord.gg/eVVgM36) for live support or into a support email or similar.
+
+Aside from the console output you can click the achievement to toggle it from achieved to locked. You can confirm the value is committed by stopping and restarting the simulation to see that the values retain the last applied state.

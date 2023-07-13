@@ -31,3 +31,19 @@ Demonstrates the displaying of the local user's data. This prefab uses the[ Frie
 ### [Friend Group](../../unity/ugui-tools/prefabs/friend-groups.md)
 
 Demonstrates the display of the user's friend data in a manner similar to Steam's friend list.
+
+{% hint style="info" %}
+On your first run of a day you may notice that some friend avatar images or names do not load or load slowly. This is side effect of this use case and would not occur in a production environment.\
+\
+The cause is that Steam cashes this information on your local machine, when the information is first requested it can take time for that data to download. The sample scene doesn't wait and simply loads what information is available where typically you use the provided events or good design practices such as [bootstrapping ](../../../../company/design/bootstrap-scene.md)and validation avoiding this issue.
+{% endhint %}
+
+## Testing
+
+Assuming you are using an unmodified version of the sample scene and Steam Settings you will see messages appear in the Unity Editor Console log detailing each step of the initialization process.
+
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Example initialization messages</p></figcaption></figure>
+
+In the event of an error details will be listed here along with troubleshooting guidance. In the event you require support please select the first error message in the log and press \[Ctrl + C] this will copy the full message and its stack trace to your clipboard. You can then paste that error into [Discord chat](https://discord.gg/eVVgM36) for live support or into a support email or similar.
+
+Aside from the console output you will have a visual indication that Steam API is initialized correctly when your Steam User profile image, name, status and ID are displayed in the upper right corner of the screen.

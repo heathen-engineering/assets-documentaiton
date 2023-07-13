@@ -43,3 +43,13 @@ Located on the Canvas > Leaderboard Scroll View > Template > Leaderboard Entry U
 At the bottom of the screen you will see a red box with a few few self explanatory buttons. Those buttons use the [LeaderboardObject ](../../unity/scriptable-objects/leaderboard-object.md)to clear or update the score of the user on the leaderboard in question.
 
 To the right you will notice a display that updates in real time as the user's score is changed. The Developer Cheat Box > User Leaderboard Entry GameObject is using the [LeaderboardUserEntry](../../unity/components/leaderboard-user-entry.md) component to update the score and rank label's for the user on this board. This component reacts to changes on the board and updates the values as required and can be refreshed on demand if desired.
+
+## Testing
+
+Assuming you are using an unmodified version of the sample scene and Steam Settings you will see messages appear in the Unity Editor Console log detailing each step of the initialization process.
+
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Example initialization messages</p></figcaption></figure>
+
+In the event of an error details will be listed here along with troubleshooting guidance. In the event you require support please select the first error message in the log and press \[Ctrl + C] this will copy the full message and its stack trace to your clipboard. You can then paste that error into [Discord chat](https://discord.gg/eVVgM36) for live support or into a support email or similar.
+
+Aside from the console output you can use the "Developer Cheat Box" to clear your score and upload score at 5 or 10 increments. The green buttons located at the top of the board allow you to query the boards top 10, to query only your friends or to query the entries near your own and are demonstrations of the various queries available all ran code free.
