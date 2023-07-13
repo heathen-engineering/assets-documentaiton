@@ -232,6 +232,8 @@
       * [Inventory](assets/steamworks/unity-engine/sample-scenes/inventory.md)
       * [Item Store Tutorial](assets/steamworks/unity-engine/sample-scenes/item-store-tutorial.md)
       * [Remote Storage](assets/steamworks/unity-engine/sample-scenes/remote-storage.md)
+      * [Game Server Browser](assets/steamworks/unity-engine/sample-scenes/game-server-browser.md)
+      * [Steam Game Server](assets/steamworks/unity-engine/sample-scenes/steam-game-server.md)
     * [Scriptable Objects](assets/steamworks/unity/scriptable-objects/README.md)
       * [Achievement Object](assets/steamworks/unity/scriptable-objects/achievement-object.md)
       * [Avg Rate Stat](assets/steamworks/unity/scriptable-objects/avg-rate-stat.md)
