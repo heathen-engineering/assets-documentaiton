@@ -37,3 +37,9 @@ In Unity you have a choice in how and when you initialize the Steam API. From a 
 ![](<../../../.gitbook/assets/image (3) (3).png>)![](<../../../.gitbook/assets/image (1) (1) (3).png>)
 
 Unity prefabs and component scripts enable us to create production ready drag and drop tools that simply work. From UI tools like the [Quick Match Lobby](../for-unity-game-engine/ui-components/quick-match-lobby-control.md) or manager tools like [Overlay Manager](components/overlay-manager.md) we have a wide selection of battle hardened tools to accelerate your game.
+
+### Sample Scenes
+
+![](<../../../.gitbook/assets/image (1).png>)![](<../../../.gitbook/assets/image (3).png>)
+
+Our sample scenes do more than demonstrate features, they excessive every major feature of the Steam API and server as both a learning tool and testing tool. You can browser the collection of [Samples Scenes](../unity-engine/sample-scenes/) or read over our [Testing](../unity-engine/debugging-tools/testing.md) article to learn more.
