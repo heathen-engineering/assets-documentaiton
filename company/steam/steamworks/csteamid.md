@@ -5,7 +5,7 @@ description: Understanding Steam's Unique ID
 # 🆔 CSteamID
 
 {% hint style="success" %}
-#### Like what your seeing?
+#### Like what you're seeing?
 
 Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
@@ -16,7 +16,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 CSteamID also known simply as "Steam ID" is a ulong value (64 bits) and is used by Steam API to uniquely identify ... well most things.&#x20;
 
-Heathen has created wrap around structures like [UserData ](../../../assets/steamworks/data-layer/user-data.md)and [Lobby ](../../../assets/steamworks/data-layer/lobby-data.md)that are interchangeable with CSteamID and ulong and provide helpful features unique to each use case of the ID. In most cases you should be using [UserData](../../../assets/steamworks/data-layer/user-data.md), [Lobby](../../../assets/steamworks/data-layer/lobby-data.md), [Clan](../../../assets/steamworks/data-layer/clan-data.md), etc. and not needing to bother with the raw CSteamID or its ulong value.
+Heathen has created wrap-around structures like [UserData ](../../../assets/steamworks/data-layer/user-data.md)and [Lobby ](../../../assets/steamworks/data-layer/lobby-data.md)that are interchangeable with CSteamID and ulong and provide helpful features unique to each use case of the ID. In most cases, you should be using [UserData](../../../assets/steamworks/data-layer/user-data.md), [Lobby](../../../assets/steamworks/data-layer/lobby-data.md), [Clan](../../../assets/steamworks/data-layer/clan-data.md), etc. and not need to bother with the raw CSteamID or its ulong value.
 
 The native CSteamID ulong value is composed of 4 main parts
 
@@ -66,7 +66,7 @@ namespace Steamworks
 AccountId_t accountId;
 ```
 
-The data type AccountId\_t is a wrapper around the uint primitive type ... that is it is really a uint value with a few extra features.
+The data type AccountId\_t is a wrapper around the uint primitive type ... that is it is a uint value with a few extra features.
 
 ### Account Instance
 
@@ -96,9 +96,9 @@ unAccountInstance = 393216u;
 
 ## Wrappers
 
-As noted Steam IDs are used for a lot of different things and each has its own set of features and functions. For example a CSteamID can represent a user and users have additional features like name, nickname, rich presence, etc. Alternatively a CSteamID could represent a lobby which has its own features like metadata, members, etc.
+As noted Steam IDs are used for a lot of different things and each has its own set of features and functions. For example, a CSteamID can represent a user and users have additional features like name, nickname, rich presence, etc. Alternatively, a CSteamID could represent a lobby which has features like metadata, members, etc.
 
-Heathen has created a set of wrappers that let you treat each ID as a unique type and simplify working with the features of each unique type. Note each of these are implicitly convertible ... that is you can use them as if they are CSteamID\_t or ulong and you can assign them from CSteamID\_t or ulong. These also have additional handlers to help you work with them as AccountID\_t
+Heathen has created a set of wrappers that let you treat each ID as a unique type and simplify working with the features of each unique type. Note each of these is implicitly convertible ... that is you can use them as if they are CSteamID\_t or ulong and you can assign them from CSteamID\_t or ulong. These also have additional handlers to help you work with them as AccountID\_t
 
 ### [Clan](../../../assets/steamworks/data-layer/clan-data.md)
 
@@ -114,13 +114,13 @@ This is for IDs that represent users
 
 ## Creating Steam Ids
 
-While the full CSteamID is a 64bit long ... not very human friendly number the actual "unique" part is just 32bits long and much more manageable by a human. If you know the "type" of the ID then you can reconstruct it providing only the 32bit "account Id" part.
+While the full CSteamID is a 64bit long ... not very human-friendly number the actual "unique" part is just 32bits long and much more manageable by a human. If you know the "type" of the ID then you can reconstruct it providing only the 32-bit "account Id" part.
 
 ### Examples
 
 #### Adding Friends
 
-Lets say you want your user's to be able to "invite" each other to become friends through some method out side of Steam such as chat, stream, etc. You could simply show the user their "Friend ID" aka the Account ID of their CSteamID. They can this provide this fairly short number to prospective friends.
+Let's say you want your users to be able to "invite" each other to become friends through some method outside of Steam such as chat, stream, etc. You could simply show the user their "Friend ID" aka the Account ID of their CSteamID. They can provide this fairly short number to prospective friends.
 
 To display the local user's Friend ID we can simply read it from the local user's User Data.
 
@@ -130,14 +130,14 @@ textField.text = UserData.Me.FriendId.ToString();
 
 This will populate a simple number in the provided text field.
 
-You can then also provide an inputField where user's can type in the IDs they get from others. The friend ID typed in can then be used to construct a UserData object which you can use for anything you like including Adding to Friends.
+You can then also provide an inputField where users can type in the IDs they get from others. The friend ID typed in can then be used to construct a UserData object which you can use for anything you like including Adding to Friends.
 
 ```csharp
 //Parse the input string to a uint value
 uint FriendID = System.Convert.ToUint32(inputfield.text);
 //Get the UserData for this friend ID
 UserData newGuy = UserData.Get(FriendID);
-//Invite this user to be our friend in Steam
+//Invite this user to be our friend on Steam
 API.Overlay.Client.Activate(FriendDialog.friendadd, newGuy);
 ```
 
@@ -151,13 +151,13 @@ if(UserData.AddFriend(inputField.text))
 }
 else
 {
-    //text is not a unit value, no action taken
+    //text is not a unit value, and no action was taken
 }
 ```
 
 #### Sharing Lobbies
 
-Lets say you want to share a simple string so that players can join lobbies automatically. You could do this in a few ways but one option is to share the lobbies but one is to expose the lobby's account ID.
+Let's say you want to share a simple string so that players can join lobbies automatically. You could do this in a few ways but one option is to share the lobbies and one is to expose the lobby's account ID.
 
 ```csharp
 lobbyIdField.text = myLobby.AccountId;
@@ -170,7 +170,7 @@ As with the Add Friend example you can then join a lobby via the ID
 uint LobbyAccountID = System.Convert.ToUint32(inputfield.text);
 //Get the UserData for this friend ID
 Lobby newLobby = Lobby.Get(LobbyAccountID );
-//Invite this user to be our friend in Steam
+//Invite this user to be our friend on Steam
 mewLobby.Join(CallbackHandler);
 ```
 
