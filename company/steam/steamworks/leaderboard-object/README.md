@@ -5,7 +5,7 @@ description: Understanding Steam Leaderboards and the Heathen Engineering tool k
 # 🥇 Leaderboards
 
 {% hint style="success" %}
-#### Like what your seeing?
+#### Like what you're seeing?
 
 Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
@@ -16,9 +16,9 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 Steam leaderboards are persistent tables with automatically ordered entries. Leaderboards can be used to display global and friend boards in your game and on your community page. Each title can create up to 10,000 leaderboards, and each leaderboard can be retrieved immediately after a player's score has been uploaded.
 
-There is no limit on the number of players a leaderboard supports. Each leaderboard entry contains a score (as an int) and optionally up to 64 ints of detail data stored as a simple array on the entry. The detail data can be used to store game specific information about the play session that resulted in the user's leaderboard entry. This data is not sorted or parsed by Steam, and is replaced when a new leaderboard entry is created for the user. Attachments can be linked with the leaderboard via the UGC (User Generated Content) feature of Steam.
+There is no limit on the number of players a leaderboard supports. Each leaderboard entry contains a score (as an int) and optionally up to 64 ints of detail data stored as a simple array on the entry. The detailed data can be used to store game-specific information about the play session that resulted in the user's leaderboard entry. This data is not sorted or parsed by Steam and is replaced when a new leaderboard entry is created for the user. Attachments can be linked with the leaderboard via the UGC (User Generated Content) feature of Steam.
 
-Leaderboards can be configured such that only a trusted web API call can set the value. This is strongly recommended if you have any concern over the validity of leaderboard scores. When the leaderboard's write operation is configured as trusted only a server using the Steam Web API and a publisher token can upload scores to the board. If the board is not configured as trusted write then anyone can upload any score to the board.
+Leaderboards can be configured such that only a trusted web API call can set the value. This is strongly recommended if you have any concerns over the validity of leaderboard scores. When the leaderboard's write operation is configured as trusted only a server using the Steam Web API and a publisher token can upload scores to the board. If the board is not configured as a trusted write then anyone can upload any score to the board.
 
 {% hint style="info" %}
 Use the Steam Web API to set trusted leaderboard scores
@@ -41,14 +41,14 @@ Unfortunately we cannot import existing leaderboards from Steam directly.
 
 Why?
 
-Valve have not provided an official means to do so through the Steam API.
+Valve has not provided an official means to do so through the Steam API.
 {% endhint %}
 
 ![](<../../../../.gitbook/assets/image (182) (1) (1) (1).png>)
 
 A few key features to know about when you create your Leaderboard.
 
-From the Steam Settings you can mark the leaderboard as create if missing by ticking the toggle to the left of the name. If ticked, the system will search for the board by name, if it is not found it will create the board for you.
+From the Steam Settings, you can mark the leaderboard as created if missing by ticking the toggle to the left of the name. If ticked, the system will search for the board by name, if it is not found it will create the board for you.
 
 ![](<../../../../.gitbook/assets/image (152) (1) (1).png>)
 
@@ -71,7 +71,7 @@ None is an available but invalid option for both settings
 
 
 
-Why even show it if its invalid, ask Valve, its part of the enums they provide so we expose it.
+Why even show it if it's invalid, ask Valve, it's part of the enums they provide so we expose it.
 {% endhint %}
 
 ### Details
@@ -84,9 +84,9 @@ In many cases however you need or want additional data linked with that score, r
 
 You can upload an array of int values along with the player's score, Steam takes up to 64 values e.g. `int[64]` these can be anything you would like as long as they are int and there are less than 64 of them.
 
-To read this data make sure you have se the `Details` field as seen in the inspector for you Leaderboard Object. This tells our system how many details it should read from Steam when reading a user's data. If you leave it at 0 we will not try to read detail values, if you enter a value larger than 64 errors will occur.
+To read this data make sure you have set the `Details` field as seen in the inspector for your Leaderboard Object. This tells our system how many details it should read from Steam when reading a user's data. If you leave it at 0 we will not try to read detail values, if you enter a value larger than 64 errors will occur.
 
-The details them selves will be provided in the [LeaderboardEntry ](../../../../assets/steamworks/objects/leaderboard-entry.md)record returned by leaderboard queries.
+The details themselves will be provided in the [LeaderboardEntry ](../../../../assets/steamworks/objects/leaderboard-entry.md)record returned by leaderboard queries.
 
 ### Attachments
 
@@ -95,7 +95,7 @@ Understanding leaderboard attachments.
 As with the `Details` you can add additional data to the leaderboard entry in the form of an attachment. This is simply a single file stored in the user's remote storage and linked to the leaderboard entry.
 
 {% hint style="info" %}
-Steam copies this item over to the board directly so it will remain even if the user later deletes it from their own storage.
+Steam copies this item over to the board directly so it will remain even if the user later deletes it from their storage.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -122,7 +122,7 @@ You can learn more about the [Leaderboard Manager](../../../../assets/steamworks
 
 ### Upload Score
 
-When uploading scores you have a number of options,&#x20;
+When uploading scores you have several options,&#x20;
 
 {% hint style="info" %}
 Upload Method or simply Method
@@ -132,7 +132,7 @@ This is a concept you will see in various places when uploading&#x20;
 
 #### [Leaderboard Object](../../../../assets/steamworks/unity/scriptable-objects/leaderboard-object.md)
 
-The most common is to use the LeaderboardObject its self to upload scores. The LeaderboardObject is a ScriptableObject so you can reference it in any script you like and use it as such:
+The most common is to use the LeaderboardObject itself to upload scores. The LeaderboardObject is a ScriptableObject so you can reference it in any script you like and use it as such:
 
 ```csharp
 leaderboard.UploadScore(42, method, callback);
@@ -141,7 +141,7 @@ leaderboard.UploadScore(42, method, callback);
 This method requires you to pass in the score, method of upload and provide a callback in the form of `void Callback(LeaderboardScoreUploaded_t result, bool IOError)` that will be invoked when the process is complete.
 
 {% hint style="info" %}
-Callbacks are a common feature of many multi-process systems to include Unity its self.  You can [learn more about them here](../../../development/callbacks.md).
+Callbacks are a common feature of many multi-process systems including Unity itself.  You can [learn more about them here](../../../development/callbacks.md).
 {% endhint %}
 
 or
@@ -150,14 +150,14 @@ or
 leaderboard.UploadScore(42, detailArray, method, callback);
 ```
 
-This method works the same as the above but can take a detail array. This would be an array of int values and must not be longer than 64 e.g. `int[64] detailArray` this is commonly used to store additional data about the user's entry.
+This method works the same as the above but can take a detailed array. This would be an array of int values and must not be longer than 64 e.g. `int[64] detailArray` this is commonly used to store additional data about the user's entry.
 
 #### [Leaderboard Manager](../../../../assets/steamworks/unity/components/leaderboard-manager.md)
 
 You can use the [Leaderboard Manager](../../../../assets/steamworks/unity/components/leaderboard-manager.md) component;\
 This component can be attached to a GameObject to manage a specific leaderboard. Its meant to be used with UI elements or for users that are not comfortable working with Scriptable Objects or the API directly. It serves to simplify the methods and features of the leaderboard system and expose common events to the Unity inspector.
 
-While its not typical you can interact with the Leaderboard Manager from code such as.
+While it's not typical you can interact with the Leaderboard Manager from code such as.
 
 ```csharp
 leaderboardManager.UploadScore(42);
@@ -171,7 +171,7 @@ or
 leaderboardManager.UploadScore(42, detailArray);
 ```
 
-This method takes a score and an array of int, note you can only upload up to 64 ints, to read these ints you must have configured the Details value in the Leaderboard Object on the Steam Settings as shown above.
+This method takes a score and an array of ints, note you can only upload up to 64 ints, to read these ints you must have configured the Details value in the Leaderboard Object on the Steam Settings as shown above.
 
 or
 
@@ -189,7 +189,7 @@ are available, these do the same as the `UploadScore` version only they do so wi
 
 #### Leaderboard API
 
-The leaderboard API is what actually does all the work no matter what method or tool you choose to use. The APIs are all static classes which make no assumptions so you need to provide more information.
+The leaderboard API is what does all the work no matter what method or tool you choose to use. The APIs are all static classes which make no assumptions so you need to provide more information.
 
 ```csharp
 Leaderboard.API.UploadScore(leaderboard,
@@ -201,15 +201,15 @@ Leaderboard.API.UploadScore(leaderboard,
 
 Because this is a static class we must indicate what leaderboard we want to upload to, this is done by passing in the LeaderboardObject.
 
-Next we must indicate the upload method; [methods are defined by Steam here](https://partner.steamgames.com/doc/api/ISteamUserStats#ELeaderboardUploadScoreMethod). Typically you would upload with `ELeaderboardUploadScoreMethod.k_ELeaderboardUploadScoreMethodKeepBest` this will cause the system to keep the best score. You would never upload with `ELeaderboardUploadScoreMethod.k_ELeaderboardUploadScoreMethodNone` the 3rd option is to Force Update, forcing the board to take whatever you give it; `ELeaderboardUploadScoreMethod.k_ELeaderboardUploadScoreMethodForceUpdate` this is generally only used to "reset" a board.
+Next, we must indicate the upload method; [methods are defined by Steam here](https://partner.steamgames.com/doc/api/ISteamUserStats#ELeaderboardUploadScoreMethod). Typically you would upload with `ELeaderboardUploadScoreMethod.k_ELeaderboardUploadScoreMethodKeepBest` this will cause the system to keep the best score. You would never upload with `ELeaderboardUploadScoreMethod.k_ELeaderboardUploadScoreMethodNone` the 3rd option is to Force Update, forcing the board to take whatever you give it; `ELeaderboardUploadScoreMethod.k_ELeaderboardUploadScoreMethodForceUpdate` this is generally only used to "reset" a board.
 
 ## Troubleshooting&#x20;
 
 ### Upload ignores my value
 
-A common issue when your starting out is that it may appear that the leaderboard is ignoring the score you upload, or that it only takes scores in the opposite direction you intended.
+A common issue when your start is that it may appear that the leaderboard is ignoring the score you upload, or that it only takes scores in the opposite direction you intended.
 
-For example if you upload 10, then upload 11 it may ignore the 11 but if you upload 9 it will take the 9.
+For example, if you upload 10, then upload 11 it may ignore the 11 but if you upload 9 it will take the 9.
 
 #### Why?
 
@@ -226,16 +226,16 @@ board.UploadScore(42,
     });
 ```
 
-The "Keep Best" option tells Steam to only record the new value you presents \*\* **if** \*\* that value is better than the previous value recorded. This is determined by the "sort order" you configured for the board in the Steam Portal.
+The "Keep Best" option tells Steam to only record the new value you present \*\* **if** \*\* that value is better than the previous value recorded. This is determined by the "sort order" you configured for the board in the Steam Portal.
 
 ### How to Fix?
 
-Assuming you have board configured incorrectly simply update its configuration in the Steam portal and then publish the changes.
+Assuming you have the board configured incorrectly simply update its configuration in the Steam portal and then publish the changes.
 
 {% hint style="warning" %}
-You **MUST ALWAYS** publish changes when making edits in Steam Portal. It does not apply the moment you make the change in the portal it is a Perforce based source control system that requires you to publish your changes.
+You **MUST ALWAYS** publish changes when making edits in Steam Portal. It does not apply the moment you make the change in the portal it is a Perforce-based source control system that requires you to publish your changes.
 {% endhint %}
 
-If for some reason you find your board still acts like its sorted the other way around, this is likely due to an issue seen a few times with Steam's backend services. Submit a support case letting Valve know that your board appears bugged and is not changing its sort direction as it should.
+If for some reason you find your board still acts like it's sorted the other way around, this is likely due to an issue seen a few times with Steam's backend services. Submit a support case letting Valve know that your board appears bugged and is not changing its sort direction as it should.
 
-To work around the issue make a new board (with a new name) and set up with the sort direction you desire; do not delete the broken board … please … so Valve can review it.
+To work around the issue make a new board (with a new name) and set it up with the sort of direction you desire; do not delete the broken board … please … so Valve can review it.

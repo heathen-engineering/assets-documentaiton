@@ -7,7 +7,7 @@ description: >-
 # ☝ Getting Started
 
 {% hint style="success" %}
-#### Like what your seeing?
+#### Like what you're seeing?
 
 Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
@@ -20,16 +20,16 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 You cannot test Steam Inventory features with App ID 480 aka Spacewars.
 
 \
-In order to test Steam Inventory features including but not limited to microtransactions, crafting, player inventory, etc. you will need to register your for your own app ID and configure your own Steam Inventory Items.\
+To test Steam Inventory features including but not limited to microtransactions, crafting, player inventory, etc. you will need to register for your app ID and configure your own Steam Inventory Items.\
 \
-As a result of this limitation from Valve the sample scenes for Inventory cannot be used with App 480 in any functional form.
+As a result of this limitation from Valve, the sample scenes for Inventory cannot be used with App 480 in any functional form.
 {% endhint %}
 
 First, you should understand what Steam Inventory is and is not, the only real place to do so is via Valve's documentation and videos on the feature.&#x20;
 
 {% embed url="https://partner.steamgames.com/doc/features/inventory" %}
 
-You will also need to understand the Steam Inventory Schema, while Heathen's tools help you define your item definitions in this schema there will be time when you need to manually edit to take advantage of more complex features, or to apply some unique concept specific to your project.
+You will also need to understand the Steam Inventory Schema, while Heathen's tools help you define your item definitions in this schema there will be times when you need to manually edit to take advantage of more complex features, or to apply some unique concept specific to your project.
 
 {% embed url="https://partner.steamgames.com/doc/features/inventory/schema" %}
 
@@ -43,7 +43,7 @@ The very first thing you should do is import any Steam Inventory Items you alrea
 
 Once done you will see every item you had defined already in your Steam Developer Portal has been pulled into Unity under your Steam Settings:
 
-![Screen shot of a WIP project with 57 items. You can see here how the Settings object categorizes the items based on type.](<../../../../.gitbook/assets/image (169) (1) (1) (1).png>)
+![Screenshot of a WIP project with 57 items. You can see here how the Settings object categorizes the items based on type.](<../../../../.gitbook/assets/image (169) (1) (1) (1).png>)
 
 ## **Defining Items**
 
@@ -57,14 +57,14 @@ Every Steam Inventory Schema feature is available but the inspector will hide on
 
 ## **Uploading the Schema**
 
-Once you have defined your items you can copy the JSON data that represents the item, or optionally copy all of the items to your clipboard and past the results into Steam Developer Portals item editor or into a text file to be uploaded later.
+Once you have defined your items you can copy the JSON data that represents the item, or optionally copy all of the items to your clipboard and paste the results into Steam Developer Portals item editor or into a text file to be uploaded later.
 
 {% hint style="info" %}
 You can find the Copy JSON button on the Inventory Item object and in the Inventory list of the Steam Settings object.
 
 On the Steam Settings object it will export the JSON for every item in a single collection.
 
-On the item it will export only that item's JSON
+On the item, it will export only that item's JSON
 {% endhint %}
 
 ```json
