@@ -172,7 +172,7 @@ Cancels all tracked tickets
 To authenticate the user who needs to be authenticated will first get a ticket and then send that data to the entity that will be doing the authentication ... so typically a client gets a ticket and sends it to a server.
 
 ```csharp
-API.Authentication.GetAuthSessionTicket((result, IOError) =>
+API.Authentication.GetAuthSessionTicket(targetSteamId, (result, IOError) =>
 {
     if(!IOError)
     {
@@ -182,6 +182,10 @@ API.Authentication.GetAuthSessionTicket((result, IOError) =>
 ```
 
 The act of sending your ticket data to your server or the other client that wishes to authenticate you is up to your networking solution. Rather that is Mirror, MLAPI, Forge, etc. you will need to send the ticket.Data to that user.
+
+#### Target Steam ID
+
+Valve added a new parameter to the Get Authentication Ticket process where its necessary to identify who the ticket is intended for. The targetSteamId parameter is simply that the Steam ID of the user or Steam Game Server that will be using the ticket.
 
 ### Begin a session
 
