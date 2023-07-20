@@ -60,3 +60,41 @@ Now that you have made the very wise decision to use Heathen's Steamworks to int
 [Install Heathen Steamworks for Unity](../../assets/steamworks/unity/installation/)
 
 [Install Heathen Steamworks for Godot](../../assets/steamworks/for-godot-game-engine/installation.md)
+
+## Getting Help
+
+This Knowledge Base is your best source for information not just on Steam but all manner of Game Development related tasks.
+
+### Navigation
+
+:eyes: Look to your left, that is the navigation panel and can be used to brose the Knowledge Base. Many articles have sub-articles so check the little > arrow to the right of an entry.
+
+### AI Search and Classic Search
+
+In the Upper right corner you will find a search box&#x20;
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+That Search box has an AI function called Lens
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+Like any AI tool its a bias search so isn't perfect but it does link the articles it found with related information in the "Answer based on X sources" drop down at the bottom left. It also of course has a standard search function.
+
+### Discord
+
+{% embed url="https://discord.gg/6X3xrRc" %}
+
+Linked at the top of this knowledge base is a link to our Discord server where you can get live support from the wider community and Heathen developers. This is the best method for asking a question when you cant find the answer here in the Knowledge Base.
+
+The Discord community is there to help you as a game developer so feel free to ask questions about any game development related topic you might have. As to support for each of Heathen's assets, each has a dedicated channel for that.
+
+### Direct Message
+
+Once you join Discord you will be able to directly message the Heathen staff you see there ... they are denoted by the `| Heathen` at the end of their name. We do try to keep DMs to a minimal so if your question doesn't require a private conversation we will answer you in the appropriate server channel.&#x20;
+
+Direct Message is not a means to get a faster response, it's a resource available when you need a bit more confidentiality than a public chat forum.
+
+### Email
+
+While not recommended as its slow, error prone and all around the least effective of the available support options Heathen can be contacted for support at `support at heathen dot group` we will get back to you as soon as possible. Please be aware that emails may be trapped by spam, are an indirect method of communication and will require additional lead time to get back to you on.
