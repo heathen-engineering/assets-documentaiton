@@ -1,7 +1,7 @@
 # ⬆ Uploading to Steam
 
 {% hint style="success" %}
-#### Like what your seeing?
+#### Like what you're seeing?
 
 Support us as a [GitHub Sponsor](../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
@@ -10,7 +10,7 @@ These articles are made possible by our [GitHub Sponsors](../become-a-sponsor/) 
 
 ## Introduction
 
-So you have built your game and your ready to push it up to Steam but your not quite sure how to do this. This article will describe the two main methods to getting your game build up to Steam as well as some of the administrative features around Steam builds and depots as they relate to the topic.
+So you have built your game and you're ready to push it up to Steam but you are not quite sure how to do this. This article will describe the two main methods to getting your game build up to Steam as well as some of the administrative features around Steam builds and depots as they relate to the topic.
 
 Valve's official documentation on the subject is required reading!
 
@@ -38,24 +38,24 @@ You can click the Update Configuration button to open the Steam Content Builder 
 
 #### Depots
 
-The Content Builder Config is where you will define the depots your project has, these are stored in the Scriptable Object and so would be shared with your team if your using source control or similar.
+The Content Builder Config is where you will define the depots your project has, these are stored in the Scriptable Object and so would be shared with your team if you're using source control or similar.
 
 Most Steam games will have 1 depot for each platform they support
 
-<figure><img src="../.gitbook/assets/image (7) (4).png" alt=""><figcaption><p>The values populated here are for example only. Do not copy them and expect it to work!</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (4).png" alt=""><figcaption><p>The values populated here are for example only. Do not copy them and expect them to work!</p></figcaption></figure>
 
 #### Content Builder Folder Path
 
-This is the local folder path to the Steamworks SDK's ContentBuilder folder. by default this would be located at `sdk/tools/ContentBuilder` the tool has a button you can press to help you get started downloading the Steamworks SDK from Valve.
+This is the local folder path to the Steamworks SDK's ContentBuilder folder. By default this would be located at `sdk/tools/ContentBuilder` the tool has a button you can press to help you get started downloading the Steamworks SDK from Valve.
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Username and Password
 
-You will need to provide the tool with a valid Steam Username and Password that has access to upload builds to the target app. This is the same username and password you use to log into Steam Developer Poral.&#x20;
+You will need to provide the tool with a valid Steam Username and Password that has access to upload builds to the target app. This is the same username and password you use to log into Steam Developer Portal.&#x20;
 
 {% hint style="warning" %}
-The Username is stored in the Scriptable Object configuration asset encrypted with a simple cipher. This is not meant as a security measure but simply to insure the username cannot be read as plain text.\
+The Username is stored in the Scriptable Object configuration asset encrypted with a simple cypher. This is not meant as a security measure but simply to ensure the username cannot be read as plain text.\
 \
 The Password is not stored by default and is held in temporary memory, cleared each time Unity is restarted.\
 \
@@ -66,13 +66,13 @@ If you choose to toggle the "Remember Password" option then we will store the pa
 
 #### Application ID
 
-Finally the Application ID, this will default to the App ID of the project its in if known but can be set to any value that suits. This should be the App ID of the application you are uploading to and for which the depots are defined.
+Finally the Application ID will default to the App ID of the project it's in if known but can be set to any value that suits. This should be the App ID of the application you are uploading to and for which the depots are defined.
 
 <figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Run the tool
 
-With everything configured correctly you can now select the Depot you wish to upload your build to and then choose `Build & Upload` or simply `Upload`
+With everything configured correctly, you can now select the Depot you wish to upload your build to and then choose `Build & Upload` or simply `Upload`
 
 <figure><img src="../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -85,7 +85,7 @@ With everything configured correctly you can now select the Depot you wish to up
 
 Heathen's Content Builder tool uses Steam CMD and is simply doing the work of constructing a VDF for you based on the configuration you provided. You can view the VDF it creates in the `sdk\tools\ContentBuilder\scripts\simple_app_build.vdf` file.
 
-This is mechanically the same as if you created the VDF your self, and copied your build into the SDK content builder content folder your self as is described in the [Steam CMD](uploading-to-steam.md#steam-build) upload option.
+This is mechanically the same as if you created the VDF yourself and copied your build into the SDK content builder content folder yourself as described in the [Steam CMD](uploading-to-steam.md#steam-build) upload option.
 
 ### What do I do after?
 
@@ -93,7 +93,7 @@ Once the tool has uploaded your content to Steam you need to log into your Steam
 
 #### Why doesn't this set the branch live for me?
 
-Because Valve doesn't allow Steam CMD to set a build live on the default branch automatically. It is possible to set non-default branches automatically live but not the default and so we do not expose the feature at all as best practice is to log into your portal and review the build there before setting it live.
+Because Valve doesn't allow Steam CMD to set a build live on the default branch automatically. It is possible to set non-default branches automatically live but not the default and so we do not expose the feature at all as the best practice is to log into your portal and review the build there before setting it live.
 
 ## Zip Upload
 
@@ -101,7 +101,7 @@ If your game is small enough you can upload it as a zip file in the Steam Develo
 
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-In short if the resulting zip file is smaller than 2gb you can upload it in the Steam Pipe -> Builds -> Upload Depots option.
+In short, if the resulting zip file is smaller than 2 GB you can upload it in the Steam Pipe -> Builds -> Upload Depots option.
 
 ## Steam CMD
 
@@ -118,7 +118,7 @@ The app build vdf further references "depot build configuration vdf" files that 
 Download the Steamworks SDK
 {% endembed %}
 
-Once you have that downloaded you should unpack it to a location on your local machine. The folder your looking for within the SDK is the SDK -> Tools -> ContentBuilder folder.
+Once you have that downloaded you should unpack it to a location on your local machine. The folder you're looking for within the SDK is the SDK -> Tools -> ContentBuilder folder.
 
 <figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>Shows the ContentBuilder folder within the SDK zip file</p></figcaption></figure>
 
@@ -126,18 +126,18 @@ Once you have that downloaded you should unpack it to a location on your local m
 A video explaining how this all works
 {% endembed %}
 
-In short you can use a couple simple commands to upload your build to Steam via Steam CMD. This set up can even be scripted so that all you need to do is run your script.
+In short, you can use a couple of simple commands to upload your build to Steam via Steam CMD. This setup can even be scripted so that all you need to do is run your script.
 
 ### Run Build Script
 
-To get started lets create the script that you will actually execute to upload your builds, follows is a template you can use.
+To get started let us create the script that you will execute to upload your builds, follows is a template you can use.
 
 ```
 builder\steamcmd.exe +login [Username] [Password] +run_app_build_http ..\scripts\app_build_[appid].vdf +quit
 pause
 ```
 
-To use the above template open up note pad or your preferred plain text editor and past that command in. Next we are going to replace the following text
+To use the above template open up Notepad or your preferred plain text editor and paste that command in. Next, we are going to replace the following text
 
 * \[Username]\
   This should be your Steam User Name that you use for the Steam Developer Portal
@@ -146,15 +146,15 @@ To use the above template open up note pad or your preferred plain text editor a
 * \[appid]\
   This is the numeric app id that you want to upload
 
-Next save the file to the ContentBuilder folder ... we suggest you give it a name such as `run_build_MyGameName.bat` this will make it easier to sort, search and remember which app this goes to.
+Next, save the file to the ContentBuilder folder ... we suggest you give it a name such as `run_build_MyGameName.bat` this will make it easier to sort, search and remember which app this goes to.
 
 This script does the following things
 
 1. Run SteamCmd
-2. Log in as the user you indicated
-3. run app build web API providing the script you named e.g. the `..\scripts\app_build_#####.vdf`
+2. Log in as the indicated user
+3. Indicate the script`..\scripts\app_build_#####.vdf`
 
-The final command there is passing in a file as part of the argument ... a file located in the scripts folder, its that vdf file that describes what is to be uploaded, where the content should be read from and what depots it should be pushed to.
+The final command there is passing in a file as part of the argument ... a file located in the scripts folder, it's that vdf file that describes what is to be uploaded, where the content should be read from and what depots it should be pushed to.
 
 You can create variations of this script for different builds and different apps, this gives you a 1 click way to upload all your content and you can even have it upload multiple builds at once.
 
@@ -166,9 +166,9 @@ The next section covers it.
 The .vdf format from Valve does 2 things, there are:
 
 * "appbuild" \
-  These VDFs describe what is to be upload e.g. the app id, the description of the build, the content folder the build content can be found in, etc.
+  These VDFs describe what is to be uploaded e.g. the app id, the description of the build, the content folder the build content can be found in, etc.
 * "DepotBuildConfig"\
-  These VDFs describe the depot its self that an upload should push to, this will include the depot ID and its file mapping information as well as any file exclusion rules such as explcuding \*.pdb files from being uploaded
+  These VDFs describe the depot itself that an upload should push to, this will include the depot ID and its file mapping information as well as any file exclusion rules such as excluding \*.pdb files from being uploaded
 
 #### Template App Build VDF
 
@@ -183,7 +183,7 @@ This should be saved in the scripts folder with a name such as `app_build_####.v
 	"contentroot" "..\content\[gameFolder]\" // root content folder, relative to location of this file
 	"setlive"	"" // branch to set live after successful build, non if empty
 	"preview" "0" // to enable preview builds
-	"local"	""	// set to flie path of local content server 
+the 	"local"	""	// set to flie path of the local content server 
 	
 	"depots"
 	{
@@ -192,14 +192,14 @@ This should be saved in the scripts folder with a name such as `app_build_####.v
 }
 ```
 
-You should replace the text defined below with the values appropreate for your game
+You should replace the text defined below with the values appropriate for your game
 
 * \[appId]\
-  The app ID this build is in relation to
+  The app ID this build is about
 * \[description]\
-  The description of this build ... this is usually something like "MyGame's base build" or "MyGame's Windows Build"
+  The description of this build ... is usually something like "MyGame's base build" or "MyGame's Windows Build"
 * \[gameFolder]\
-  This is the location of your build content, and as you can see we assume your putting your build in the SDK -> Tools -> ContentBuilder -> content folder. We recomend you make sub-folders in that for each game ... and for each platform ... for example
+  This is the location of your build content, and as you can see we assume you're putting your build in the SDK -> Tools -> ContentBuilder -> content folder. We recommend you make sub-folders in that for each game ... and for each platform ... for example
   * sdk/tools/ContentBuilder/content/MyGame/Windows
   * sdk/tools/ContentBuilder/content/MyGame/Linux
   * sdk/tools/ContentBuilder/content/MyOtherGame/Windows
@@ -214,7 +214,7 @@ You should replace the text defined below with the values appropreate for your g
 }
 ```
 
-The Depot Build Config define what content they will read or not from the content folder they are pointed to. How this works will make more since as you read over the template for the Depot Build Configuration
+The Depot Build Config define what content they will read or not from the content folder they are pointed to. How this works will make more sense as you read over the template for the Depot Build Configuration
 
 #### Template Depot Build Configuration VDF
 
@@ -243,7 +243,7 @@ This should be saved in the scripts folder with a name such as depot`_build_####
 Here we will replace the following text
 
 * \[DepotId]\
-  This is the depots ID as seen in Steam Developer Portal and is a number such as 123456
+  This is the depot's ID as seen in Steam Developer Portal and is a number such as 123456
 * \[RootFolderOfTheGame ... where the platform folder live]]\
   This is the root folder where the content will read from ... for example\
   `C:\Builds\ContentBuilder\content\MyGame`
@@ -254,4 +254,4 @@ Here we will replace the following text
 
 Once you have the 3 layers of scripts created that is the Run Build Script, the App Build VDF and the Depot Build Config VDFs you can now upload your build by simply running the "Run Build Script" you set up.\
 \
-This can now be easily tied into your build process if your using one or even ran manually by double clicking the bat file.&#x20;
+This can now be easily tied into your build process if your using one or even ran manually by double-clicking the bat file.&#x20;
