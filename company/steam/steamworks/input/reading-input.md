@@ -5,7 +5,7 @@ description: Reading input actions in game
 # 🔎 Reading Input
 
 {% hint style="success" %}
-#### Like what your seeing?
+#### Like what you're seeing?
 
 Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
@@ -25,23 +25,23 @@ That is you must have set up the default actions for your app in your portal and
 Step 4: Publishing
 {% endembed %}
 
-Assuming you have a working set of input actions defined for your app and you can configured them in your Steam Settings, see the [Setup article](getting-started.md) for more information.
+Assuming you have a working set of input actions defined for your app and you can configure them in your Steam Settings, see the [Setup article](getting-started.md) for more information.
 
 ## [Steam Input Manager](../../../../assets/steamworks/unity/components/steam-input-manager.md)
 
-Before you can use Steam Input you need to enable it. We have created a tool for you that will handle this ... see Steam Input Manager for details. Alternatively you can do this your self with just a few lines of code if you prefer.
+Before you can use Steam Input you need to enable it. We have created a tool for you that will handle this ... see Steam Input Manager for details. Alternatively, you can do this yourself with just a few lines of code if you prefer.
 
 ### Creating your own
 
 Input Manager really only does 3 things for you
 
-1. Initialize and Dispose the Input system\
+1. Initialize and Dispose of the Input system\
    To do this you need to call [API.Input.Client.RunFrame](../../../../assets/steamworks/api/input.md#run-frame) on start. In UnityEditor you should also call `Application.OpenURL($"steam://forceinputappid/{SteamSettings.ApplicationId}");` to force Steam client to use your app's input settings\
    And when your done call `Application.OpenURL("steam://forceinputappid/0");`
 2. Get the list of controllers e.g.\
    `controllers = API.Input.Client.ConnectedControllers;` you'll need these for step 3
 3. Update all actions for all controllers e.g.\
-   foreach over each conntorller and call: `SteamSettings.Client.UpdateAllActions(controller);` on it.
+   foreach over each controller and call: `SteamSettings.Client.UpdateAllActions(controller);` on it.
 
 For a functional codded example simply review the source code of SteamInputManager.cs
 
