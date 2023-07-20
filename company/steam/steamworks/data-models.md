@@ -1,7 +1,7 @@
 # ☁ Cloud Save
 
 {% hint style="success" %}
-#### Like what your seeing?
+#### Like what you're seeing?
 
 Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
@@ -16,7 +16,7 @@ Quote from Valve's documentation
 
 > The Steam Cloud provides an easy and transparent remote file storage system for your game. Files specified in the Auto-Cloud configuration or written to disk (created, modified, deleted, etc.) using the Cloud API will automatically be replicated to the Steam servers after the game exits.
 >
-> If the user changes computers, the files are automatically downloaded to the new computer prior to the game launching. The game can then access the files by reading them through the Cloud API or reading them directly from disk as usual. Avoid machine specific configurations such as video settings.
+> If the user changes computers, the files are automatically downloaded to the new computer before the game launches. The game can then access the files by reading them through the Cloud API or reading them directly from the disk as usual. Avoid machine-specific configurations such as video settings.
 >
 > The Steam Client does the work of ensuring that the files are kept synchronized across all computers the user may be accessing.
 >
@@ -32,11 +32,11 @@ Steam's Cloud Save aka Steam Remote Storage can be worked with in one of two mod
 Not Recommended
 {% endhint %}
 
-Steam Auto-Cloud is an alternative to the Steam Cloud API that allows apps to use Steam Cloud without writing code or modifying the game in any way. It only requires that you specify the file groups which you want persisting to the Cloud. Steam will automatically sync the groups of files when the application launches and exits.&#x20;
+Steam Auto-Cloud is an alternative to the Steam Cloud API that allows apps to use Steam Cloud without writing code or modifying the game in any way. It only requires that you specify the file groups which you want persisting in the Cloud. Steam will automatically sync the groups of files when the application launches and exits.&#x20;
 
-While this might appear simpler on the surface it actually doesn't save you any effort at all in that you must still write code to read and write your files to the user's local disk. That code is no simpler and is in most cases more complex than the code required to save directly to Steam Cloud API using Heathen's Steamworks Complete.
+While this might appear simpler on the surface it doesn't save you any effort at all in that you must still write code to read and write your files to the user's local disk. That code is no simpler and is in most cases more complex than the code required to save directly to Steam Cloud API using Heathen's Steamworks Complete.
 
-In addition this gives you no control over what is saved, it will attempt to sync everything in that folder so of course you do not want to store system specific things there as that would interfere with running the game on other systems and you do not want to store large things that shouldn't be synced there. This means you end up needing to manage multiple save locations.
+In addition, this gives you no control over what is saved, it will attempt to sync everything in that folder so of course you do not want to store system-specific things there as that would interfere with running the game on other systems and you do not want to store large things that shouldn't be synced there. This means you end up needing to manage multiple save locations.
 
 For more information on Steam's Auto Cloud and its configuration [read this article](https://partner.steamgames.com/doc/features/cloud#steam\_auto-cloud).
 
@@ -46,7 +46,7 @@ For more information on Steam's Auto Cloud and its configuration [read this arti
 The Best Way
 {% endhint %}
 
-aka the Steam Cloud API. This is the superior method in everyway and when your using Heathen's Steamworks Complete its actually easier to code for than writing a text file to disk so its also the easier method.
+aka the Steam Cloud API. This is the superior method in every way and when you're using Heathen's Steamworks Complete it's easier to code for than writing a text file to disk so it's also the easier method.
 
 Using this approach you simply need to include the namespace for Heathen's RemoteStorage.Client in the script you wish to use for saving or reading files.
 
@@ -78,7 +78,7 @@ You can use the Remote Storage API to access Steam's remote storage features.
 using CloudAPI = HeathenEngineering.SteamworksIntegration.API.RemoteStorage.Client;
 ```
 
-It is important that you check and insure that the user has enabled cloud storage and that the user has sufficent storage space remaining when writing new files to the system
+you must check and ensure that the user has enabled cloud storage and that the user has sufficient storage space remaining when writing new files to the system
 
 ### Is the system enabled?
 
@@ -113,7 +113,7 @@ if(CloudAPI.IsEnabledForApp)
 }
 else
 {
-   //You or Valve have disabled cloud storage in the app configuraiton
+   //You or Valve have disabled cloud storage in the app configuration
 }
 ```
 
@@ -133,7 +133,7 @@ Debug.Log("Used " + total-remaining + " of " + total + " bytes.");
 RemoteStorageFile[] files = CloudAPI.GetFiles();
 ```
 
-GetFiles returns a list of all files found on Steam and returns an array of [RemoteStorageFile](../../../assets/steamworks/objects/remote-storage-file.md) objects. The RemoteStorageFile object can be thought of similar to the .NET FileInfo object and contains data about the file that can be used to perform other actions.
+GetFiles returns a list of all files found on Steam and returns an array of [RemoteStorageFile](../../../assets/steamworks/objects/remote-storage-file.md) objects. The RemoteStorageFile object can be thought of as similar to the .NET FileInfo object and contains data about the file that can be used to perform other actions.
 
 You can optionally return files that have a specific extension such as ".profile"
 
@@ -143,7 +143,7 @@ RemoteStorageFile[] files = CloudAPI.GetFiles(".profile");
 
 ### Read Files
 
-The RemoteStorageFile object returned can be used to read the data of files as a byte\[], string or to cast the data to any serializable data type.
+The RemoteStorageFile object returned can be used to read the data of files as a byte\[], or string or to cast the data to any serializable data type.
 
 Assuming a serializable data type `MyDataType`
 
@@ -156,11 +156,11 @@ byte[] data = dataFile.Data;
 //Get string
 string text = dataFile.ToString();
 
-//Get object
+//Get an object
 MyDataType obj = dataFile.ToJson<MyDataType>();
 ```
 
-Alternativly you if you know the name of the file you can read it directly from the API
+Alternatively if you know the name of the file you can read it directly from the API
 
 ```csharp
 //Get byte[]
@@ -169,11 +169,11 @@ byte[] data = CouldAPI.FileRead("TheFilesName");
 //Get string
 string text = CloudAPI.FileReadString("TheFilesName", System.Text.Encoding.UTF8);
 
-//Get object
+//Get an object
 MyDataType obj = CloudAPI.FileReadJson<MyDataType>("TheFilesName", System.Text.Encoding.UTF8);
 ```
 
-If you prefer you can read the files asynchroniously&#x20;
+If you prefer you can read the files asynchronously&#x20;
 
 ```csharp
 //Get byte[]
@@ -201,7 +201,7 @@ CloudAPI.FileWrite("TheFileName", data, System.Text.Encoding.UTF8);
 CloudAPI.FileWrite("TheFileName", data, System.Text.Encoding.UTF8);
 ```
 
-The same commands can be used asynchroniously
+The same commands can be used asynchronously
 
 ```csharp
 CloudAPI.FileWriteAsync("TheFileName", data, (result, hasError) =>
@@ -213,7 +213,7 @@ CloudAPI.FileWriteAsync("TheFileName", data, (result, hasError) =>
 
 ## Data Model
 
-The Data Model concept is a tool that helps you manage each type of save file your game works with. To get started you would first need to create the "structure" of your file as a serializable object. This can be a class or structure ... in general you should always use a structure unless your object specifically needs features of C# class not available to C# structures.
+The Data Model concept is a tool that helps you manage each type of save file your game works with. To get started you would first need to create the "structure" of your file as a serializable object. This can be a class or structure ... in general, you should always use a structure unless your object specifically needs features of a C# class not available to C# structures.
 
 ### Creating a model
 
@@ -229,7 +229,7 @@ public struct SaveProfile
 }
 ```
 
-Once you have defined your data structure you can create a new DataModel object which will help you list, load, save and generally manage all examples of this file on the users Steam storage.
+Once you have defined your data structure you can create a new DataModel object which will help you list, load, save and generally manage all examples of this file on the user's Steam storage.
 
 ```csharp
 [CreateAssetMenu(menuName = "My Data/Save Profile")]
@@ -239,11 +239,11 @@ public class SaveProfileDataModel : DataModel<SaveProfile>
 
 Note that we do not need to write any code in the body of the SaveProfileDataModel class, everything is implemented for you by the DataModel\<T> base class.
 
-Once this is done you can create a Scriptable Object in your project's asset folder by right clicking and selecting `Create > My Data > Save Profile` . You can use this new object to assign an extension. This extension will be added to the end of the file name if missing and is how the DataModel knows which files belong to it.
+Once this is done you can create a Scriptable Object in your project's asset folder by right-clicking and selecting `Create > My Data > Save Profile` . You can use this new object to assign an extension. This extension will be added to the end of the file name if missing and is how the DataModel knows which files belong to it.
 
 ### Referencing your model
 
-With your new DataModel you can more easily list, load and save character profiles; lets assume we have a reference to our DataModel such as:
+With your new DataModel you can more easily list, load and save character profiles; let's assume we have a reference to our DataModel such as:
 
 ```csharp
 public SaveProfileDataModel profiles;
@@ -291,4 +291,4 @@ profiles.data.difficulty = 3;
 profiles.Save("profileSettings");
 ```
 
-Note the save method will add the extension if its missing and has overloads for aynchronious save.
+Note the save method will add the extension if it's missing and has overloads for the asynchronous save.
