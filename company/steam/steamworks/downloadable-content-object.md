@@ -5,7 +5,7 @@ description: Understanding Steam DLC and the Heathen Engineering tool kit
 # 🕹 Downloadable Content
 
 {% hint style="success" %}
-#### Like what your seeing?
+#### Like what you're seeing?
 
 Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
@@ -17,12 +17,12 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 {% hint style="warning" %}
 #### Understanding Steam DLC
 
-Its important to understand the proper usage of DLC. Most of this is a matter of configuration in the Steam Developer Portal. Please carefully and fully read the documentation for the feature. It can be found here [https://partner.steamgames.com/doc/store/application/dlc](https://partner.steamgames.com/doc/store/application/dlc)
+It's important to understand the proper usage of DLC. Most of this is a matter of configuration in the Steam Developer Portal. Please carefully and fully read the documentation for the feature. It can be found here [https://partner.steamgames.com/doc/store/application/dlc](https://partner.steamgames.com/doc/store/application/dlc)
 {% endhint %}
 
 ![](<../../../.gitbook/assets/image (183) (1) (1) (1) (1).png>)
 
-The [Downloadable Content Object](../../../assets/steamworks/unity/scriptable-objects/downloadable-content-object.md) helps you track the status of DLC. You can import the DLC you have defined in the Steam Developer Portal for this application by running the simulation such that Steam API is able to initialize and then clicking the Import button on the Steam Settings Downloadable Content list
+The [Downloadable Content Object](../../../assets/steamworks/unity/scriptable-objects/downloadable-content-object.md) helps you track the status of DLC. You can import the DLC you have defined in the Steam Developer Portal for this application by running the simulation such that Steam API can initialize and then clicking the Import button on the Steam Settings Downloadable Content list
 
 ![](<../../../.gitbook/assets/image (157) (1) (1) (1).png>)
 
