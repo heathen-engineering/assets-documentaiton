@@ -31,6 +31,8 @@ Achievements are a simple and traditional feature for games that can help drive 
 
 First you need to create your achievements on the Steam Developer portal. [https://partner.steamgames.com/](https://partner.steamgames.com/)
 
+### Create
+
 Log into your Steam Developer Portal and access your app's admin page. Look for the Technical Tools section and select the Edit Steamworks Settings option.
 
 <figure><img src="../../.gitbook/assets/image (6) (1).png" alt="Techincal Tools"><figcaption></figcaption></figure>
@@ -47,9 +49,9 @@ In Unity, if you prefer to work with Achievements via an object reference then y
 
 You \*\***MUST**\*\* publish your changes in Steam Developer Portal before they will be accessible via Steam API. In the Steam Developer Portal when you have pending changes you will see a red banner at the top of the screen ... click it and follow the instructions.
 
-<figure><img src="../../.gitbook/assets/image (81).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-### In Unity
+### Use
 
 Once your achievements are defined and published in Steam Developer Portal you can start using them. You have 3 options with how you choose to engage with achievements or any other Steam "artefact" like it.
 
