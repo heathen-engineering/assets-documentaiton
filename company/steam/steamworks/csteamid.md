@@ -12,7 +12,7 @@ Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant acc
 These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
-## &#x20;Introduction
+## Introduction
 
 CSteamID also known simply as "Steam ID" is a ulong value (64 bits) and is used by Steam API to uniquely identify ... well most things.&#x20;
 
@@ -114,7 +114,7 @@ This is for IDs that represent users
 
 ## Creating Steam Ids
 
-While the full CSteamID is a 64bit long ... not very human-friendly number the actual "unique" part is just 32bits long and much more manageable by a human. If you know the "type" of the ID then you can reconstruct it providing only the 32-bit "account Id" part.
+While the full CSteamID is a 64-bit long ... not very human-friendly number the actual "unique" part is just 32-bits long and much more manageable by a human. If you know the "type" of the ID then you can reconstruct it providing only the 32-bit "account Id" part.
 
 ### Examples
 

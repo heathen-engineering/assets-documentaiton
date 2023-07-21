@@ -10,7 +10,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## &#x20;Introduction
 
-{% embed url="https://partner.steamgames.com/doc/features/cloud" %}
+Cloud save also known as Steam Remote Storage allows you to save a file and have it synced to the "cloud" e.g. Steam's servers so that the same file is available to that user on any machine they log into.
 
 Quote from Valve's documentation
 
@@ -22,23 +22,18 @@ Quote from Valve's documentation
 >
 > Users can globally disable Cloud synchronization in the Steam Settings under Cloud by unchecking "Enable Steam Cloud synchronization for applications which support it."
 
-## Getting Started
+<details>
+
+<summary>Useful Links</summary>
+
+* Valve's Documentation\
+  [https://partner.steamgames.com/doc/features/cloud](https://partner.steamgames.com/doc/features/cloud)
+
+</details>
+
+## Quick Start
 
 Steam's Cloud Save aka Steam Remote Storage can be worked with in one of two models.
-
-### Steam Auto-Cloud
-
-{% hint style="danger" %}
-Not Recommended
-{% endhint %}
-
-Steam Auto-Cloud is an alternative to the Steam Cloud API that allows apps to use Steam Cloud without writing code or modifying the game in any way. It only requires that you specify the file groups which you want persisting in the Cloud. Steam will automatically sync the groups of files when the application launches and exits.&#x20;
-
-While this might appear simpler on the surface it doesn't save you any effort at all in that you must still write code to read and write your files to the user's local disk. That code is no simpler and is in most cases more complex than the code required to save directly to Steam Cloud API using Heathen's Steamworks Complete.
-
-In addition, this gives you no control over what is saved, it will attempt to sync everything in that folder so of course you do not want to store system-specific things there as that would interfere with running the game on other systems and you do not want to store large things that shouldn't be synced there. This means you end up needing to manage multiple save locations.
-
-For more information on Steam's Auto Cloud and its configuration [read this article](https://partner.steamgames.com/doc/features/cloud#steam\_auto-cloud).
 
 ### Steam Remote Storage
 
@@ -69,6 +64,20 @@ CloudAPI.FileWrite(...)
 ```
 
 For more information see our detailed section on [Write Files](data-models.md#write-file).
+
+### Steam Auto-Cloud
+
+{% hint style="danger" %}
+Not Recommended
+{% endhint %}
+
+Steam Auto-Cloud is an alternative to the Steam Cloud API that allows apps to use Steam Cloud without writing code or modifying the game in any way. It only requires that you specify the file groups which you want persisting in the Cloud. Steam will automatically sync the groups of files when the application launches and exits.&#x20;
+
+While this might appear simpler on the surface it doesn't save you any effort at all in that you must still write code to read and write your files to the user's local disk. That code is no simpler and is in most cases more complex than the code required to save directly to Steam Cloud API using Heathen's Steamworks Complete.
+
+In addition, this gives you no control over what is saved, it will attempt to sync everything in that folder so of course you do not want to store system-specific things there as that would interfere with running the game on other systems and you do not want to store large things that shouldn't be synced there. This means you end up needing to manage multiple save locations.
+
+For more information on Steam's Auto Cloud and its configuration [read this article](https://partner.steamgames.com/doc/features/cloud#steam\_auto-cloud).
 
 ## Remote Storage API
 
@@ -160,7 +169,7 @@ string text = dataFile.ToString();
 MyDataType obj = dataFile.ToJson<MyDataType>();
 ```
 
-Alternatively if you know the name of the file you can read it directly from the API
+Alternatively, if you know the name of the file you can read it directly from the API
 
 ```csharp
 //Get byte[]

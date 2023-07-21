@@ -77,7 +77,7 @@ In the Upper right corner you will find a search box&#x20;
 
 That Search box has an AI function called Lens
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 Like any AI tool, it is a biased search so isn't perfect but it does link the articles it found with related information in the "Answer based on X sources" drop-down at the bottom left. It also of course has a standard search function.
 

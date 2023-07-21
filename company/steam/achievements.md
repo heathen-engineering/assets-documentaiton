@@ -16,8 +16,6 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 Achievements are a simple and traditional feature for games that can help drive player engagement. While they are simple to implement (make work) coming up with a good achievement design is not so simple. You could of course :face\_vomiting: forth random achievements like "Played 15 min", "Logged into the game", and "Pressed the spacebar"; but these are often time harmful to the game and not helpful.
 
-
-
 <details>
 
 <summary>Useful Links</summary>
@@ -49,7 +47,7 @@ In Unity, if you prefer to work with Achievements via an object reference then y
 
 You \*\***MUST**\*\* publish your changes in Steam Developer Portal before they will be accessible via Steam API. In the Steam Developer Portal when you have pending changes you will see a red banner at the top of the screen ... click it and follow the instructions.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
 
 ### Use
 

@@ -14,7 +14,18 @@ So you have built your game and you're ready to push it up to Steam but you are 
 
 Valve's official documentation on the subject is required reading!
 
-{% embed url="https://partner.steamgames.com/doc/sdk/uploading" %}
+<details>
+
+<summary>Useful Links</summary>
+
+* Valve's Documentation\
+  [https://partner.steamgames.com/doc/sdk/uploading](https://partner.steamgames.com/doc/sdk/uploading)
+
+</details>
+
+## Quick Start
+
+The simplest way to upload your game to Steam is with Heathen's Steam Build. The tools is available in both Steamworks Foundation and Steamworks Complete and is described in the [Steam Build](uploading-to-steam.md#steam-build) section below.
 
 ## Steam Build
 
