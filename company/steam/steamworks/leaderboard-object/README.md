@@ -26,16 +26,32 @@ Use the Steam Web API to set trusted leaderboard scores
 [https://partner.steamgames.com/doc/webapi/ISteamLeaderboards#SetLeaderboardScore](https://partner.steamgames.com/doc/webapi/ISteamLeaderboards#SetLeaderboardScore)
 {% endhint %}
 
-## Leaderboard Object
+## Quick Start
 
-This is a scriptable object used to define the leaderboard in Unity and used within Unity to query the board and access its information. Read more in the [Leaderboard Object](../../../../assets/steamworks/unity/scriptable-objects/leaderboard-object.md) document.
+First you need to create your achievements on the Steam Developer portal. [https://partner.steamgames.com/](https://partner.steamgames.com/)
 
-### To Create
+### Create
 
-To create a Leaderboard Object press the "<mark style="color:green;">+ New</mark>" button on the Steam Settings object next to the Leaderboards entry
+Log into your Steam Developer Portal and access your app's admin page. Look for the Technical Tools section and select the Edit Steamworks Settings option.
+
+<figure><img src="../../../../.gitbook/assets/image (6) (1).png" alt="Techincal Tools"><figcaption></figcaption></figure>
+
+From there select the Stats & Achievements > Leaderboards option and create your new boards.&#x20;
+
+Make note of the value you use in the API Name field. You will use it when working with achievements in code.&#x20;
+
+### Publish
+
+You \*\***MUST**\*\* publish your changes in Steam Developer Portal before they will be accessible via Steam API. In the Steam Developer Portal when you have pending changes you will see a red banner at the top of the screen ... click it and follow the instructions.
+
+<figure><img src="../../../../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
+
+### Use
+
+To reference a Leaderboard in your Steam Settings press the "<mark style="color:green;">+ New</mark>" button on the Steam Settings object next to the Leaderboards entry
 
 {% hint style="info" %}
-Unfortunately we cannot import existing leaderboards from Steam directly.
+Unfortunately, we cannot import existing leaderboards from Steam directly.
 
 
 
