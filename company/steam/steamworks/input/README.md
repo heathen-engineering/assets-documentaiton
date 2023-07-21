@@ -14,6 +14,17 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-These articles deal with the Steam Input feature. It is always advised that you first read and understand Valve's documentation on what the feature is and how its meant to be used. Having this understanding is key, Heathen's Steamworks Complete is a set of tools that makes working with Steam API easier but it is still bound by the limitations Valve lays out in its documents.
+Steam Input allows you to define "actions" for your game which can be mapped and bound by the Steam client (outside your game) enabling any controller the player may have to simply work.
 
-{% embed url="https://partner.steamgames.com/doc/features/steam_controller" %}
+In practice, Steam Input is very much like Unity's "new" Input System and 3rd party Unity assets such as Rewired. Steam Input is not a requirement to publish your game on Steam or to achieve Steam Deck verification.
+
+Steam Input cannot be used for Keyboard and Mouse bindings in that it was designed specifically for use with controllers that are being mapped by Steam client.
+
+<details>
+
+<summary>Useful Links</summary>
+
+* Valve's Documentation\
+  [https://partner.steamgames.com/doc/features/steam\_controller](https://partner.steamgames.com/doc/features/steam\_controller)
+
+</details>
