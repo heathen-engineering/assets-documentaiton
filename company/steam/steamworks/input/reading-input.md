@@ -25,7 +25,7 @@ That is you must have set up the default actions for your app in your portal and
 Step 4: Publishing
 {% endembed %}
 
-Assuming you have a working set of input actions defined for your app and you can configure them in your Steam Settings, see the [Setup article](getting-started.md) for more information.
+Assuming you have a working set of input actions defined for your app and you can configure them in your Steam Settings, see the Setup article for more information.
 
 ## [Steam Input Manager](../../../../assets/steamworks/unity/components/steam-input-manager.md)
 

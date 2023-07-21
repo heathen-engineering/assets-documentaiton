@@ -14,7 +14,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 public class InputActionSetLayer : ScriptableObject
 ```
 
-Represents a Steam Input Action such as defined in your games [IGA ](../../../../company/steam/steamworks/input/getting-started.md#in-game-action-file)file.
+Represents a Steam Input Action such as defined in your games IGA file.
 
 These must be created as part of your [Steam Settings](steam-settings/) object .
 
