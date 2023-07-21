@@ -18,6 +18,16 @@ These articles are made possible by our [GitHub Sponsors](../../become-a-sponsor
 
 The hardest part about Steam Inventory is usually setting up your Steam Inventory Items. Have no fret Heathen is here to help!
 
+## JSON
+
+JSON files are the easiest method to edit especially in bulk. Visual Studio can open JSON in a nicely formatted way its find-and-replace features make managing large definition files easier. You do not need to define all your items in a single file in general, we recommend you split your files up in a logical way. This could be 1 file per item, or per item type whatever makes sense for your game.
+
+You can learn more about the JSON file schema in [Valve's Schema Documentation](https://partner.steamgames.com/doc/features/inventory/schema).
+
+## Editor Tools
+
+Heathen's tools can help you get started with creating your JSON definition files.
+
 The very first thing you should do is import any Steam Inventory Items you already have. You can do this quickly by simply running the simulation (so that Steam API is initialized) and clicking the Import button under the Inventory list in your Steam Settings
 
 ![](<../../.gitbook/assets/image (187) (1) (1) (1) (1).png>)
