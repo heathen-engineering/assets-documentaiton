@@ -40,7 +40,7 @@ As a result of this limitation from Valve, the sample scenes for Inventory canno
 
 ## What can it do?
 
-### Microtransaction (MTX)
+### [Microtransaction (MTX)](../microtransactions/)
 
 Steam Inventory is the interface and framework you would use to define items for purchase either through the Steam store or through your store to be managed by Steam.
 
@@ -48,7 +48,7 @@ Steam Inventory is the interface and framework you would use to define items for
 
 Steam Inventory is how you create items that can be traded between players securely both in and out of the game and can optionally be put on the "Community Marketplace" for sale by players to players.
 
-### In-App Purchase (IAP)
+### [In-App Purchase (IAP)](../microtransactions/)
 
 Steam Inventory is the framework you would use to define the items that can be purchased in-game and the exchange "recipes" that define how a player can "purchase" an item in-game for an in-game item e.g. in-game currency, in-game shop, etc.
 
