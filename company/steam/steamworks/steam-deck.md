@@ -12,25 +12,24 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 Steam Desk is a handheld Linux PC running (by default) Steam OS and designed with Steam's "Big Picture" in mind. More than just a handheld Steam machine the Steam Deck product includes services that deal with verifying that games run well "On Deck".&#x20;
 
+<details>
+
+<summary>Useful Links</summary>
+
+* Store Page\
+  [https://store.steampowered.com/steamdeck](https://store.steampowered.com/steamdeck)
+* Feature Documentaiton\
+  [https://partner.steamgames.com/doc/steamdeck](https://partner.steamgames.com/doc/steamdeck)
+* Compatability Checklist\
+  [https://partner.steamgames.com/doc/steamdeck/compat#DeckCompatibilityChecklist](https://partner.steamgames.com/doc/steamdeck/compat#DeckCompatibilityChecklist)
+
+</details>
+
 ## Quick Start
 
 To get your project working on deck the only thing you \*\***need**\*\* to do is ensure you have full controller support and that your game does not use a launcher.
 
 Steam Deck is not a special use case it is simply a Linux machine with no keyboard or mouse but does have a controller present. You can use native Unity Input to handle controller support or if you prefer [Steam Input](../../../assets/steamworks/unity-engine/sample-scenes/input.md) is an option though not required.
-
-## Useful Links
-
-{% embed url="https://store.steampowered.com/steamdeck" %}
-Store Page
-{% endembed %}
-
-{% embed url="https://partner.steamgames.com/doc/steamdeck" %}
-Developer Documents
-{% endembed %}
-
-{% embed url="https://partner.steamgames.com/doc/steamdeck/compat#DeckCompatibilityChecklist" %}
-Compatability Checks and Review Process
-{% endembed %}
 
 ## Debugging with Unity
 
