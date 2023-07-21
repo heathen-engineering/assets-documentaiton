@@ -4,46 +4,27 @@ description: >-
   Manager tools
 ---
 
-# ☝ Getting Started
+# 🛠 Item Definition Tools
 
 {% hint style="success" %}
 #### Like what you're seeing?
 
-Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
-## &#x20;Introduction
-
-{% hint style="warning" %}
-You cannot test Steam Inventory features with App ID 480 aka Spacewars.
-
-\
-To test Steam Inventory features including but not limited to microtransactions, crafting, player inventory, etc. you will need to register for your app ID and configure your own Steam Inventory Items.\
-\
-As a result of this limitation from Valve, the sample scenes for Inventory cannot be used with App 480 in any functional form.
-{% endhint %}
-
-First, you should understand what Steam Inventory is and is not, the only real place to do so is via Valve's documentation and videos on the feature.&#x20;
-
-{% embed url="https://partner.steamgames.com/doc/features/inventory" %}
-
-You will also need to understand the Steam Inventory Schema, while Heathen's tools help you define your item definitions in this schema there will be times when you need to manually edit to take advantage of more complex features, or to apply some unique concept specific to your project.
-
-{% embed url="https://partner.steamgames.com/doc/features/inventory/schema" %}
-
-## **Set up**
+## Introduction
 
 The hardest part about Steam Inventory is usually setting up your Steam Inventory Items. Have no fret Heathen is here to help!
 
 The very first thing you should do is import any Steam Inventory Items you already have. You can do this quickly by simply running the simulation (so that Steam API is initialized) and clicking the Import button under the Inventory list in your Steam Settings
 
-![](<../../../../.gitbook/assets/image (187) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (187) (1) (1) (1) (1).png>)
 
 Once done you will see every item you had defined already in your Steam Developer Portal has been pulled into Unity under your Steam Settings:
 
-![Screenshot of a WIP project with 57 items. You can see here how the Settings object categorizes the items based on type.](<../../../../.gitbook/assets/image (169) (1) (1) (1).png>)
+![Screenshot of a WIP project with 57 items. You can see here how the Settings object categorizes the items based on type.](<../../.gitbook/assets/image (169) (1) (1) (1).png>)
 
 ## **Defining Items**
 
@@ -51,9 +32,9 @@ Creating new items is quick and easy simply click the "<mark style="color:green;
 
 Every Steam Inventory Schema feature is available but the inspector will hide ones that cannot be used with the currently selected type.
 
-![Normal items can be traded, marketed, sold, etc.](<../../../../.gitbook/assets/image (166) (1) (1) (1) (1) (1) (1).png>)
+![Normal items can be traded, marketed, sold, etc.](<../../.gitbook/assets/image (166) (1) (1) (1) (1) (1) (1).png>)
 
-![Tag Generators only exist to attach to other items as generators](<../../../../.gitbook/assets/image (177) (1) (1) (1).png>)
+![Tag Generators only exist to attach to other items as generators](<../../.gitbook/assets/image (177) (1) (1) (1).png>)
 
 ## **Uploading the Schema**
 
@@ -89,9 +70,9 @@ Once you have your items you should upload them to the Steam Developer Portal as
 Now that you have items defined in your Steam Developer Portal, and you have representations of those items in your Unity Project linked with your Steam Settings you can use Heathen's tools to manage the items at both dev time and run time.
 
 {% hint style="info" %}
-The Inventory Item Definitions stored in your Steam Settings object act as an inventory. See the [Inventory Item](../../../../assets/steamworks/unity/scriptable-objects/item-definition.md) documentation for more information.
+The Inventory Item Definitions stored in your Steam Settings object act as an inventory. See the [Inventory Item](../../assets/steamworks/unity/scriptable-objects/item-definition.md) documentation for more information.
 {% endhint %}
 
 For developers needing to test, you can use the Steamworks Inspector to inspect, grant and clear items from your inventory. This is particularly useful since you can not use Steam client to view items for a game that is not yet released so the only way to view your items before release is to use our tool.
 
-![](<../../../../.gitbook/assets/image (159) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (159) (1) (1) (1) (1).png>)

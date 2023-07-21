@@ -14,6 +14,10 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## &#x20;Introduction
 
+Steam Inventory lets you define items that will be held in the user's Steam Inventory. These items can be made tradable between players, marketable on the community marketplace, made available for sale in the Steam store or in your game and can be define with probaiblity tables and exchange recipies enabling crafting, loot boxes and more.
+
+Steam Inventory is by and far the largest, most capable and most complex feature of Steamworks. This article will introduce the general concepts of the system, as the system can be used in many ways for many purposes quick start and how to guides will be separated out.
+
 {% hint style="warning" %}
 You cannot test Steam Inventory features with App ID 480 aka Spacewars.
 
@@ -23,13 +27,16 @@ To test Steam Inventory features including but not limited to microtransactions,
 As a result of this limitation from Valve, the sample scenes for Inventory cannot be used with App 480 in any functional form.
 {% endhint %}
 
-First, you should understand what Steam Inventory is and is not, the only real place to do so is via Valve's documentation and videos on the feature.&#x20;
+<details>
 
-{% embed url="https://partner.steamgames.com/doc/features/inventory" %}
+<summary>Useful Links</summary>
 
-You will also need to understand the Steam Inventory Schema. While Heathen's tools help you define your item definitions in this schema, there will be a time when you need to manually edit the JSON to take advantage of more complex features or to apply some unique concept specific to your project.
+* Valve's Documentation\
+  [https://partner.steamgames.com/doc/features/inventory](https://partner.steamgames.com/doc/features/inventory)
+* Schema Documentation\
+  [https://partner.steamgames.com/doc/features/inventory/schema](https://partner.steamgames.com/doc/features/inventory/schema)
 
-{% embed url="https://partner.steamgames.com/doc/features/inventory/schema" %}
+</details>
 
 ## What can it do?
 
