@@ -40,6 +40,12 @@ As a result of this limitation from Valve, the sample scenes for Inventory canno
 
 ## What can it do?
 
+### Crafting
+
+The Steam Inventory system has a concept of "exchange" wherein you can define a "recipe" being a collection of items and quantities that can be "exchanged" to receive a specific item.
+
+The Exchange feature can be used to create loot boxes and other systems but far less predatory is the use as a crafting system. That is the player can collect reagents which you have defined as items and exchange them for specific items such as iron and leather to be exchanged for a shield or sword.
+
 ### [Microtransaction (MTX)](../microtransactions/)
 
 Steam Inventory is the interface and framework you would use to define items for purchase either through the Steam store or through your store to be managed by Steam.
@@ -61,6 +67,35 @@ Steam Inventory is the framework you would use to define the items, reagents, cr
 Steam Inventory is the framework you would use to define the items, reagents, recipes, drop rates, loot tables, etc. that drive these systems.&#x20;
 
 No Steam Inventory items do not have to be available for sale, trade or community marketing you can hide them in inventory and control every aspect of how they are distributed, consumed and used. It is simply a secure way of defining the client's interaction with the items, the items themselves and related features of those items e.g. generators, drops, exchanges, etc.
+
+## Item Definitions
+
+Once you have created your Steam Inventory Items in the Steam Developer Portal you can access them in your project via code, through the [Item Data](../../../../assets/steamworks/data-layer/item-data.md) struct or the [Inventory API](../../../../assets/steamworks/api/inventory.md). You can also access your item definitions via Scriptable Objects using the Steam Settings object.
+
+In all cases using your Item Defintiion you will be able to
+
+* Determine if the user owns this item and how many they own
+* Be able to start a purchase of this item
+* Be able to consome this item
+* Be able to use this item in an exchange recipie
+* Be able to exchange other items (recipes) for this item
+* Be able to read the item's price, name and other attributes if set
+
+### Scriptable Objects
+
+To import you Steam Inventory Item Definition into your project as Scriptable Objects you need to start your game in Editor so that the Steam API can initialize. Then open your Steam Settings in the inspector and click the Import option under the Inventory section
+
+<figure><img src="../../../../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
+
+This may take a few seconds to complete but it will import all [item definitions](../../../../assets/steamworks/unity/scriptable-objects/item-definition.md) and create a Scriptable Object representation for each one stored under the Steam Settings object similar to Stas, Achievements and other Steam artifacts.
+
+### Data Layer
+
+In cases where you prefer to work in purse code or simply wish to avoid reference type objects such as Scriptable Objects you can use the Data Layer struct [Item Data](../../../../assets/steamworks/data-layer/item-data.md) to access your Item Definitions. As is always the case with the Data Layer you do not need to initialize or configure objects ahead of time. The Data Layer works on data without reference so you only need to know the uint ID of the item you wish to work with.
+
+### API
+
+The Data Layer as noted above is simply a struct that wraps around the underlying Inventory API. Some programmer centric developers may be more comfortable working with API end points than with structs and so you can access everything you need via the [Inventory.Client](../../../../assets/steamworks/api/inventory.md) API
 
 ## Required Reading
 
@@ -136,7 +171,7 @@ Learn more in our [Inventory API](../../../../assets/steamworks/api/inventory.md
 
 ### Item Definition
 
-Defines a Steam Inventory Item and provides access to commonly used features as well as the full definition of the item. Learn more [here](../../../../assets/steamworks/unity/scriptable-objects/item-definition.md).
+Defines a Steam Inventory Item and provides access to commonly used features as well as the full definition of the item. You can learn more about the creation and use of [Item Definitions](./#item-definitions) in the section above.
 
 ### Item Detail
 
