@@ -10,7 +10,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-This scene is meant to be used in conjunction with the learning article [Item Store](../../../../company/steam/steamworks/microtransactions/item-store/). It provides a crude example of an in-game item store where the developer has defined each item's UI element and linked it with the related [Item Definition](../../unity/scriptable-objects/item-definition.md).
+This scene is meant to be used in conjunction with the learning article [Item Store](../../../../steam/inventory/microtransactions/item-store/). It provides a crude example of an in-game item store where the developer has defined each item's UI element and linked it with the related [Item Definition](../../unity/scriptable-objects/item-definition.md).
 
 <figure><img src="../../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 

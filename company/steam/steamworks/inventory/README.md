@@ -40,13 +40,13 @@ As a result of this limitation from Valve, the sample scenes for Inventory canno
 
 ## What can it do?
 
-### [Crafting](../../../../steam/crafting-system.md)
+### [Crafting](../../../../steam/inventory/crafting-system.md)
 
 The Steam Inventory system has a concept of "exchange" wherein you can define a "recipe" being a collection of items and quantities that can be "exchanged" to receive a specific item.
 
 The Exchange feature can be used to create loot boxes and other systems but far less predatory is the use as a crafting system. That is the player can collect reagents which you have defined as items and exchange them for specific items such as iron and leather to be exchanged for a shield or sword.
 
-### [Microtransaction (MTX)](../microtransactions/)
+### [Microtransaction (MTX)](../../../../steam/inventory/microtransactions/)
 
 Steam Inventory is the interface and framework you would use to define items for purchase either through the Steam store or through your store to be managed by Steam.
 
@@ -54,7 +54,7 @@ Steam Inventory is the interface and framework you would use to define items for
 
 Steam Inventory is how you create items that can be traded between players securely both in and out of the game and can optionally be put on the "Community Marketplace" for sale by players to players.
 
-### [In-App Purchase (IAP)](../microtransactions/)
+### [In-App Purchase (IAP)](../../../../steam/inventory/microtransactions/)
 
 Steam Inventory is the framework you would use to define the items that can be purchased in-game and the exchange "recipes" that define how a player can "purchase" an item in-game for an in-game item e.g. in-game currency, in-game shop, etc.
 
@@ -185,7 +185,7 @@ This scene directs you to the documentation here and provides a simple example s
 
 ### 9 Item Store Tutorial
 
-This scene is meant to be used along with the [Item Store](../microtransactions/item-store/) article and demonstrates connecting [Item Definition](../../../../assets/steamworks/unity/scriptable-objects/item-definition.md) objects to Unity UI.
+This scene is meant to be used along with the [Item Store](../../../../steam/inventory/microtransactions/item-store/) article and demonstrates connecting [Item Definition](../../../../assets/steamworks/unity/scriptable-objects/item-definition.md) objects to Unity UI.
 
 ## F.A.Q
 
