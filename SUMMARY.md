@@ -91,6 +91,7 @@
 * [🗣 Community Hub](company/steam/community-hub.md)
 * [⬆ Uploading to Steam](steam/uploading-to-steam.md)
 * [☁ Cloud Save](company/steam/steamworks/data-models.md)
+* [🔨 Crafting System](steam/crafting-system.md)
 * [🆔 CSteamID](company/steam/steamworks/csteamid.md)
 * [🔎 Discovery Queue](company/steam/discovery-queue.md)
 * [🕹 Downloadable Content](company/steam/steamworks/downloadable-content-object.md)

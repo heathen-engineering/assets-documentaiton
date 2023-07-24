@@ -40,7 +40,7 @@ As a result of this limitation from Valve, the sample scenes for Inventory canno
 
 ## What can it do?
 
-### Crafting
+### [Crafting](../../../../steam/crafting-system.md)
 
 The Steam Inventory system has a concept of "exchange" wherein you can define a "recipe" being a collection of items and quantities that can be "exchanged" to receive a specific item.
 

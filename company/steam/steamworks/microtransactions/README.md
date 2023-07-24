@@ -53,3 +53,11 @@ You can also set up an in-game store using your Item Definition and the Start Pu
 ## In-Game Store
 
 Please see the [Item Store](item-store/) article and its sub-articles for more information on how to set up an in-game store using Steam Inventory.
+
+## In-Game Currency
+
+Setting up a cash shop is as easy as assigning a price to the items, you can also though set up an in-game currency where they player "purchases" items via an in-game currency.
+
+This is effectively "crafting" that is your in-game currency is a reagent that is exchanged for another item.
+
+See the [Crafting System](../../../../steam/crafting-system.md) article for more information.
