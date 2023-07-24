@@ -139,3 +139,14 @@ You can require a quantity of tags as well though we don't use x in this case ra
 "exchange":"type:tree*3,quality:fancy"
 ```
 
+## Crafting / Exchanging
+
+To craft an item ... that is to exchange a set of materials/reagents for an item. we do the following
+
+### Using Item Definition
+
+Read the [Item Definition article's Exchange](../assets/steamworks/unity/scriptable-objects/item-definition.md#exchange-1) section for a detailed example.
+
+### Using Item Data
+
+Read the [Item Data article's Exchange](../assets/steamworks/data-layer/item-data.md#exchange-items) section for a detailed example.

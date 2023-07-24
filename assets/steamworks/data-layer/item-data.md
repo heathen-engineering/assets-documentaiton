@@ -306,7 +306,7 @@ public string BasePriceString()
 
 ### Request Prices
 
-Used to request prices from Valve's Steam API, this only needs to be called once and would usually be called in your bootstrap shortly after updating all items and of course after the Steam API had been initalized.
+Used to request prices from Valve's Steam API, this only needs to be called once and would usually be called in your bootstrap shortly after updating all items and of course after the Steam API had been initialized.
 
 ```csharp
 public static void RequestPrices(Action<SteamInventoryRequestPricesResult_t, bool> callback)
@@ -338,4 +338,41 @@ or
 
 ```csharp
 public static ItemData Get(ItemDefinitionObject item)
+```
+
+## How To
+
+### Exchange Items
+
+To exchange items we need to gather the instances of the reagents we want to exchange and pass them into the item wish to exchange for.
+
+The following assumes 2 of each `reagentA` and `reagentB` are required to exchange/craft for `itemA`.&#x20;
+
+```csharp
+//Track our status, if we don't have enough of something this will be true
+bool isf = false;
+
+//If we have enough of A get the entries
+if (!reagentA.GetExchangeEntry(2, out var entriesA))
+    isf = true;
+//If we have enough of B get the entries
+if (!reagentB.GetExchangeEntry(2,out var entriesB))
+    isf = true;
+    
+//If we have enough of A and B exchange them for itemA
+if(!isf)
+{
+    //Make a new list to merge the entries from A and B with
+    var recipe = new List<ExchangeEntry>(reagentA);
+    recipe.AddRange(entriesB);
+    
+    //Exchange the merged entries and check the results
+    itemA.Exchange(recipe, results =>
+    {
+        if (results.result == EResult.k_EResultOK)
+            Debug.Log("Exchange completed without error");
+        else
+            Debug.LogError($"Exchange completed with error: {results.result}");
+    });
+}
 ```
