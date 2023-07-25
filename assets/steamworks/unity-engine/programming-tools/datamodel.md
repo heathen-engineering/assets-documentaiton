@@ -47,7 +47,7 @@ var myModel = new MyCustomDataModel();
 myModel.extension = ".data";
 myModel.data = new MyCustomData
 {
-  name = "Helo world",  
+  name = "Hello world",  
   health = 46.5f,
   level = 13,
   currency = 1123
