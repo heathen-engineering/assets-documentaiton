@@ -4,6 +4,61 @@ description: How to .... everything!
 
 # ⚙ Steamworks
 
+## Introduction
+
+Heathen creates the top Steamworks integration for Unity and is porting it to Godot! Want to do more with Valve's Steamworks API? Then check out [Heathen's Steamworks Complete](../../../assets/steamworks/)!
+
+## Quick Start
+
+### With Heathen
+
+The best way to get started quickly and Do More is with [Heathen's Steamworks Complete](../../../assets/steamworks/#feature-comparison) or if you are not quite sure yet you can start with the free "lite" version [Heathen's Steamworks Foundation](../../../assets/steamworks/#feature-comparison).
+
+With Heathen's Steamworks you can handle initialization and most features of Steamworks completely code-free. We also provide a robust set of tools for programmers greatly speeding up the process of integrating Steamworks with your project by providing robust and battle-tested systems and tools.&#x20;
+
+### Manual Integration
+
+#### Install Steamworks.NET
+
+First you will need to Install Steamworks.NET, we recommend you do this via the Unity Package Manager and avoid installing it from the GitHub Release folder as that package is usually out of date and is not easily updated.
+
+* From Git URL
+  * Open the Unity Package Manager
+  * Press the Add (+) button
+  * Select Add from Git URL
+  * Enter the URL \
+    `https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net`
+* From Disk
+  * Clone the Steamworks.NET Repo to your local disk ... we use GitHub Desktop for this.
+  * Open the Unity Package Manager
+  * Press the Add (+) button
+  * Select Add from Disk
+  * Browse to the `com.rlabrecque.steamworks.net` folder and import.
+
+#### Initialize Steam API
+
+{% hint style="danger" %}
+[SteamManager.cs](https://github.com/rlabrecque/Steamworks.NET-Example/blob/master/Assets/Scripts/Steamworks.NET/SteamManager.cs) demonstrate this ... but you should not just copy and paste it blindly into your project.\
+\
+SteamManager.cs only initialize for the client API so it won't work with Steam Game Server, it also doesn't initialize input, leaderboards or other artefacts for you. \
+\
+It is ALWAYS important to read and understand and not simply copy example code snippets into your project expecting them to work.
+{% endhint %}
+
+If you are initializing Steam API for a client build you will need to register a handler on the `SteamAPIWarningMessageHook_t`, check the system is fit and ready to be initialized and then call the Init method of the SteamAPI static class.
+
+```csharp
+var result = Steamworks.SteamAPI.Init();
+```
+
+If this returns true then the API is initialized, otherwise it failed to initialize. Once initialized you will need to be sure you run callbacks each frame.
+
+```csharp
+Steamworks.SteamAPI.RunCallbacks();
+```
+
+If you are handling Steam Input you will probably want to update it as well with each frame though you can do that on demand.
+
 ## Steam Debugging
 
 {% hint style="info" %}
@@ -12,13 +67,13 @@ Steam's Documentation has a Debugging article as well ... read it ... its good
 [https://partner.steamgames.com/doc/sdk/api/debugging](https://partner.steamgames.com/doc/sdk/api/debugging)
 {% endhint %}
 
-The following articles will help you learn how to perform common tasks and to debug and troubleshoot your Steam API integration. We have created a large array of tools that simplify the use of Steam API including tools like Steamworks Inspector to help you troubleshoot and debug your integration.
+The following articles will help you learn how to perform common tasks and debug and troubleshoot your Steam API integration. We have created a large array of tools that simplify the use of Steam API including tools like Steamworks Inspector to help you troubleshoot and debug your integration.
 
 ## The Basics
 
 ### Steam must be running
 
-Be aware that none of the work done by Steam API is "in" your game, Steam API is an "application program interface" that allows your game to work with features in the Steam client. As a result you **must** have Steam client open, running and logged in to a valid Steam user that owns the app you are trying to work with.
+Be aware that none of the work done by Steam API is "in" your game, Steam API is an "application program interface" that allows your game to work with features in the Steam client. As a result, you **must** have Steam client open, running and logged in to a valid Steam user that owns the app you are trying to work with.
 
 The only exception to this is when using the [Steam Game Server](multiplayer/game-server-browser/) feature which also limits the functionality of Steam API as there is no client and no user available to do work.
 
