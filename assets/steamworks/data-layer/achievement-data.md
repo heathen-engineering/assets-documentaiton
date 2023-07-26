@@ -10,6 +10,9 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## Introduction
 
+<pre class="language-csharp"><code class="lang-csharp"><strong>using HeathenEngineering.SteamworksIntegration;
+</strong></code></pre>
+
 ```csharp
 public struct AchievementData : IEquatable<AchievementData>, 
                                 IEquatable<string>, 

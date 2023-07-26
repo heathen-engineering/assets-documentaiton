@@ -15,13 +15,13 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 ## Introduction
 
 ```csharp
-namespace HeathenEngineering.SteamworksIntegraiton
-{
-    public struct LobbyData : IEquatable<CSteamID>, 
+using HeathenEngineering.SteamworksIntegration;
+```
+
+```csharp
+public struct LobbyData : IEquatable<CSteamID>, 
                           IEquatable<ulong>, 
                           IEquatable<LobbyData>
-    {}
-}
 ```
 
 The LobbyData object is a custom CSteamId that carries tools and functions unique to the Steam Lobby system. This object is common between both Unity and Godot game engine integrations.

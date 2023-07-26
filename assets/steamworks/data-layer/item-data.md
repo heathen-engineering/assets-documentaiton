@@ -11,6 +11,10 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 ## Introduction
 
 ```csharp
+using HeathenEngineering.SteamworksIntegration;
+```
+
+```csharp
 public struct ItemData : IEquatable<ItemData>, 
                          IEquatable<int>, 
                          IEquatable<SteamItemDef_t>, 

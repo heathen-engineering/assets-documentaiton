@@ -1,7 +1,7 @@
 # User Leave Data
 
 {% hint style="success" %}
-#### Like what your seeing?
+#### Like what you're seeing?
 
 Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
@@ -9,6 +9,10 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 {% endhint %}
 
 ## Introduction
+
+```csharp
+using HeathenEngineering.SteamworksIntegration;
+```
 
 ```csharp
 public struct UserLeaveData
@@ -47,5 +51,5 @@ public bool kicked;
 Was the connection dropped
 
 ```csharp
-publlic bool dropped;
+public bool dropped;
 ```

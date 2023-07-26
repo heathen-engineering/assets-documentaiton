@@ -11,6 +11,10 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 ## Introduction
 
 ```csharp
+using HeathenEngineering.SteamworksIntegration;
+```
+
+```csharp
 public struct GameData : IEquatable<AppId_t>, 
                         IEquatable<CGameID>, 
                         IEquatable<uint>, 

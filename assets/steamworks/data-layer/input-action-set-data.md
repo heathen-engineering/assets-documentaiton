@@ -11,6 +11,10 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 ## Introduction
 
 ```csharp
+using HeathenEngineering.SteamworksIntegration;
+```
+
+```csharp
 public struct InputActionSetData : IEquatable<InputActionSetHandle_t>, 
                                    IComparable<InputActionSetHandle_t>, 
                                    IEquatable<ulong>, 

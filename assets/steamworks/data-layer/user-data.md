@@ -5,7 +5,7 @@ description: Useing Steam User Data
 # User Data
 
 {% hint style="success" %}
-#### Like what your seeing?
+#### Like what you're seeing?
 
 Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
@@ -14,27 +14,39 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## Introduction
 
-The UserData object provides quick and efficent access to the details and artifacts pertaining to any given user. Heathen's UserData object is interchaingable with CSteamID and ulong and can be created by simply casting or assigning from those values.
+```csharp
+using HeathenEngineering.SteamworksIntegration;
+```
+
+```csharp
+public struct UserData : IEquatable<CSteamID>, 
+                         IEquatable<ulong>, 
+                         IEquatable<UserData>
+```
+
+You can create a UserData object by assigning a ulong or CSteamID value or by using the [Get methods](user-data.md#get) defined below.
 
 ```csharp
 UserData user_fromUlong = 1234566;
 UserData user_fromCSteamID = new CSteamID(1234566);
 UserData user = UserData.Get(1234566);
 
-//A static helper to geet the local user's UserData object
+//A static helper to get the local user's UserData object
 UserData thisUser = UserData.Me;
 ```
 
-The UserData object is a structure and as such is a value type, it only stores the CSteamID of the user it relates to and reads all other information at the time of request from Steam's local cashe. As this object reads from Steam cashe it is possible to try to read data for a user that is not cashed resulting in empty or partial information.
+The UserData object provides quick and efficient access to the details and artefacts pertaining to any given user. Heathen's UserData object is interchangeable with CSteamID and ulong and can be created by simply casting or assigning from those values.
 
-In general you can only access user information for a user that the local user "knows". This is defined by Steam as users that:
+The UserData object is a structure and as such is a value type, it only stores the CSteamID of the user it relates to and reads all other information at the time of request from Steam's local cache. As this object reads from the Steam cache it is possible to try to read data for a user that is not cashed resulting in empty or partial information.
+
+In general, you can only access user information for a user that the local user "knows". This is defined by Steam as users that:
 
 * Are friends
 * Share a clan or group (some limitations apply regarding large groups)
 * Share a lobby
 * Share a game server
 
-You may be able to get limited information for additional users such as user's found on a leaderboard that you have quried.
+You may be able to get limited information for additional users such as users found on a leaderboard that you have queried.
 
 If you need to request information for a user your local user does not "know" you should call `API.Friends.Client.RequestUserInformation(user, getNameOnly)`. You should avoid doing this if possible, in most cases there is no reason to get a user's information for a user that the local user does not "know".
 
@@ -99,7 +111,7 @@ This is true if this UserData object is the local user
 ### Avatar
 
 {% hint style="info" %}
-You can use the [SetUserAvatar](../unity/components/set-user-avatar.md) component to more easily manage a given user's avatar texture. The [SetUserAvatar](../unity/components/set-user-avatar.md) componenet will assign a RawImage with the texture and will monitor Steam API for changes to that avatar thus if that user changes there avatar image it will automatically update the RawImage texture.
+You can use the [SetUserAvatar](../unity/components/set-user-avatar.md) component to more easily manage a given user's avatar texture. The [SetUserAvatar](../unity/components/set-user-avatar.md) component will assign a RawImage with the texture and will monitor Steam API for changes to that avatar thus if that user changes their avatar image it will automatically update the RawImage texture.
 {% endhint %}
 
 ```csharp
@@ -121,7 +133,7 @@ else
 ### Name
 
 {% hint style="info" %}
-You can use the [SetUserName](../unity/components/set-user-name.md) component to more easily manage a given user's name. The [SetUserName ](../unity/components/set-user-name.md)componenet will assign a uGUI Text or TMPro Text with the name or nickname of the indicated user and will update it if that name should change.
+You can use the [SetUserName](../unity/components/set-user-name.md) component to more easily manage a given user's name. The [SetUserName ](../unity/components/set-user-name.md)component will assign a uGUI Text or TMPro Text with the name or nickname of the indicated user and will update it if that name should change.
 {% endhint %}
 
 ```csharp
@@ -133,7 +145,7 @@ This reads the user's Steam Name
 ### Nickname
 
 {% hint style="info" %}
-You can use the [SetUserName](../unity/components/set-user-name.md) component to more easily manage a given user's name. The [SetUserName ](../unity/components/set-user-name.md)componenet will assign a uGUI Text or TMPro Text with the name or nickname of the indicated user and will update it if that name should change.
+You can use the [SetUserName](../unity/components/set-user-name.md) component to more easily manage a given user's name. The [SetUserName ](../unity/components/set-user-name.md)component will assign a uGUI Text or TMPro Text with the name or nickname of the indicated user and will update it if that name should change.
 {% endhint %}
 
 ```csharp
@@ -164,7 +176,7 @@ Is this user in a game?
 public FriendGameInfo_t GameInfo => get;
 ```
 
-Returns the [FriendGameInfo\_t](https://partner.steamgames.com/doc/api/ISteamFriends#FriendGameInfo\_t) discribing the game ID, connection information and lobby ID if any that this user is related to.
+Returns the [FriendGameInfo\_t](https://partner.steamgames.com/doc/api/ISteamFriends#FriendGameInfo\_t) describing the game ID, connection information and lobby ID if any that this user is related to.
 
 ### Level
 

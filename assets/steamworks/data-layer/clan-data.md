@@ -15,6 +15,10 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 ## Introduction
 
 ```csharp
+using HeathenEngineering.SteamworksIntegration;
+```
+
+```csharp
 public struct ClanData : IEquatable<CSteamID>, 
                          IEquatable<ClanData>, 
                          IEquatable<ulong>, 

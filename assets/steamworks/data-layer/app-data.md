@@ -11,6 +11,10 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 ## Introduction
 
 ```csharp
+using HeathenEngineering.SteamworksIntegration;
+```
+
+```csharp
 public struct AppData : IEquatable<AppId_t>, 
                         IEquatable<CGameID>, 
                         IEquatable<uint>, 
@@ -32,11 +36,11 @@ AppData app = AppData.Get(1234566);
 AppData thisApp = AppData.Me;
 ```
 
-App Data is used by Steam to uniquely identify an "app" ... for Steam an "app" is a game, tool, server, dlc, demo or really anything similarly defined as part of the Steam Developer Portal. It can offten be useful to convert the various forms in which Steam idenitfies an "app" such that you can get its name or open its store page.&#x20;
+App Data is used by Steam to uniquely identify an "app" ... for Steam an "app" is a game, tool, server, dlc, demo or really anything similarly defined as part of the Steam Developer Portal. It can often be useful to convert the various forms in which Steam identifies an "app" such that you can get its name or open its store page.&#x20;
 
 For example Steam identifies which game a user is the User's Game Info via CGameID which can be converted to an AppId\_t which can be used to get the uint and passed to the Web ID to get the name of the game the friend is playing.
 
-Heathen makes this much simpler `AppData.Get(gameId).Name` as you can see our approch has far fewer steps thanks to AppData which provides the translation layer for the various ways Steam represents an App's ID.
+Heathen makes this much simpler `AppData.Get(gameId).Name` as you can see our approach has far fewer steps thanks to AppData which provides the translation layer for the various ways Steam represents an App's ID.
 
 ## Fields and Attributes
 

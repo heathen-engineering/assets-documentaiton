@@ -1,7 +1,7 @@
 # Workshop Item Data
 
 {% hint style="success" %}
-#### Like what your seeing?
+#### Like what you're seeing?
 
 Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
@@ -10,85 +10,89 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## Introduction
 
-A simple struct making it easier to create and update workshop items.
-
-## Definition
+```csharp
+using HeathenEngineering.SteamworksIntegration;
+```
 
 ```csharp
 public struct WorkshopItemData
 ```
 
+A helper tool that allows you to pre-define all of the typical fields of a Steam User Generated Content item (aka a Workshop Item) for quick and easy creation or update. see the method for details.
+
+## Definition
+
 Used with the User Generated Content interface for 1 line creation of workshop items.
 
 ## Fields and Attributes
 
-### publishedFileId
+### Published File Id
 
 ```csharp
 public PublishedFileId_t? publishedFileId
 ```
 
-The published file ID if any,&#x20;
+The published file ID is to be updated. This can be null and would be in the case of a create, if you are however updating an item this should be populated with the ID of the file to be updated
 
 > Note the ? at the end of the data type, this is a C# feature and indicates that this is a "Nullable" attribute e.g. Nullable\<PublishedFileId\_t> in this case.
 
-### appId
+### App Id
 
 ```csharp
 public AppData appId
 ```
 
-The app this item is related to
+The consume and creating app ID of the item.
 
-### title
+### Title
 
 ```csharp
 public string title
 ```
 
-The title of the item
+The title of the item.
 
-### description
+### Description
 
 ```csharp
 public string description
 ```
 
-The description of the item
+The description of the item.
 
-### content
+### Content
 
 ```csharp
 public DirectoryInfo content
 ```
 
-The folder where the content is located, this is used when creating and updating an item
+The folder where the content is located is used when creating and updating an item.
 
-### preview
+### Preview
 
 ```csharp
 public FileInfo preview
 ```
 
-The file to be used as the preview image, this should be a .jpg or .png file and its size must be smaller than that defined in the app's remote storage settings.
+The file to be used as the preview image should be a .jpg or .png file and its size must be smaller than that defined in the app's remote storage settings.
 
-### metadata
+### Metadata
 
 ```csharp
 public string metadata
 ```
 
-The metadata associated with the file if any
+The metadata associated with the file if any.
 
-### tags
+### Tags
 
 ```csharp
 public string[] tags
 ```
 
-The set of tags associated or to be associated with the item
+The set of tags associated or to be associated with the item.
 
-### visibility
+### Visibility
 
 ```csharp
 public ERemoteStoragePublishedFileVisibility visibility
@@ -96,7 +100,7 @@ public ERemoteStoragePublishedFileVisibility visibility
 
 The visibility setting to apply to the file when created or updated.
 
-### IsValid
+### Is Valid
 
 ```csharp
 public bool IsValid => get;
@@ -136,7 +140,7 @@ Creates a workshop item with the fields defined in the structure, optionally wit
 ### Update
 
 ```csharp
-public bool Update(Action<WorkshopItemDataCreateStatus> callback = null)
+public bool Update(Action<WorkshopItemDataUpdateStatus> callback = null)
 ```
 
 or
@@ -145,7 +149,7 @@ or
 public bool Update(WorkshopItemPreviewFile[] additionalPreviews, 
                    string[] additionalYouTubeIds, 
                    WorkshopItemKeyValueTag[] additionalKeyValueTags, 
-                   Action<WorkshopItemDataCreateStatus> callback = null)
+                   Action<WorkshopItemDataUpdateStatus> callback = null)
 ```
 
 Assuming the publishedFileId is a valid file that the user owns this will update that file&#x20;
@@ -157,3 +161,16 @@ public static void Get(PublishedFileId_t file, Action<WorkshopItem> callback)
 ```
 
 Gets the WorkshopItem for the indicated file.
+
+### Get Subscribed
+
+```csharp
+public static void GetSubscribed(bool withLongDescription, 
+                                 bool withMetadata, 
+                                 bool withKeyValueTags, 
+                                 bool withAdditionalPreviews, 
+                                 uint withPlayTimeStatsInDays, 
+                                 Action<List<WorkshopItem>> callback)
+```
+
+Gets the subscribed items with the additional arguments requested.

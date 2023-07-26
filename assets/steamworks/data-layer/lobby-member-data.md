@@ -10,7 +10,15 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## Introduction
 
-LobbyMemberData is a structure that wraps around [LobbyData ](lobby-data.md)and [UserData](user-data.md) to simplify access to the lobby member metadata and related features for a specific user on a specific lobby. In most cases you would be working with the LobbyMemberData of the local user and can easily create the LobbyMemberData by reading it from the related lobby.
+```csharp
+using HeathenEngineering.SteamworksIntegration;
+```
+
+```csharp
+public struct LobbyMemberData
+```
+
+LobbyMemberData is a structure that wraps around [LobbyData ](lobby-data.md)and [UserData](user-data.md) to simplify access to the lobby member metadata and related features for a specific user on a specific lobby. In most cases, you would be working with the LobbyMemberData of the local user and can easily create the LobbyMemberData by reading it from the related lobby.
 
 ```csharp
 //Assuming we have a Lobby named myLobby
@@ -28,13 +36,7 @@ lobbyMember["fieldName"] = "fieldValue";
 You can learn more about Lobby metadata and LobbyMemberData metadata by reading [this](../../../company/steam/steamworks/multiplayer/matchmaking-tools.md#metadata) article.
 {% endhint %}
 
-## Definition
-
-```csharp
-public struct LobbyManagerData
-```
-
-Represents a user in a given lobby.
+This struct represents a user in a given lobby.
 
 {% hint style="warning" %}
 This structure does not store any data locally, it is simply a means by which you can simplify the reading and writing of data to and from a LobbyMemberData ...&#x20;
@@ -76,7 +78,9 @@ which is the same data as
 var myMember = thisLobby.Members.First(p => p.user = UserData.Me);
 ```
 
-### lobby
+## Fields and Attributes
+
+### Lobby
 
 The ID of the lobby this member is a member of
 
@@ -84,7 +88,7 @@ The ID of the lobby this member is a member of
 public LobbyData lobby;
 ```
 
-### user
+### User
 
 The ID of the user this represents
 
@@ -92,7 +96,7 @@ The ID of the user this represents
 public UserData user;
 ```
 
-### IsReady
+### Is Ready
 
 A shortcut to read or write the user's lobby member metadata for the field `z_heathenReady`
 
@@ -114,7 +118,7 @@ var valueAsBool = bool.Parse(lobbyMember["z_heathenReady"]);
 
 The read the value as a bool
 
-### GameVersion
+### Game Version
 
 A shortcut to read or write the user's lobby member metadata for the field `z_heathenGameVersion`
 
@@ -131,8 +135,6 @@ var versionAsString = bool.Parse(lobbyMember["z_heathenGameVersion"]);
 ```
 
 The read the value as a bool
-
-
 
 ## Methods
 
