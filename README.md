@@ -19,7 +19,7 @@ layout:
 
 To the Heathen Knowledge Base.&#x20;
 
-Here you will find guides, articles, and samples on all matters game developer related as well as complete documentation and guidance on all of Heathen's assets!
+Here you will find guides, articles, and samples on all matters game developer related as well as complete documentation and guidance on all of Heathen's assets!&#x20;
 
 This guide is made possible and supported by the [GitHub Sponsor program](become-a-sponsor/).
 
@@ -27,7 +27,7 @@ This guide is made possible and supported by the [GitHub Sponsor program](become
 
 :eyes: Look to your left!
 
-On the left side of the page, you will see the navigation column which has 3 groups of articles.&#x20;
+On the left side of the page, you will see the navigation column which has a few groups of articles.&#x20;
 
 ### Top
 

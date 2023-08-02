@@ -216,6 +216,7 @@
       * [GameObject Initialization](assets/steamworks/for-unity-game-engine/quick-start-guide/gameobject-initialization.md)
       * [ScriptableObject Initialization](assets/steamworks/for-unity-game-engine/quick-start-guide/scriptableobject-initialization.md)
       * [API Initialization](assets/steamworks/for-unity-game-engine/quick-start-guide/api-initialization.md)
+    * [Build Upload Tool](http://127.0.0.1:5000/s/-MZWu8yFOWhCYCMkJFmR/steam/uploading-to-steam#steam-build)
     * [Debugging Tools](assets/steamworks/unity-engine/debugging-tools.md)
       * [Testing](assets/steamworks/unity-engine/debugging-tools/testing.md)
     * [Sample Scenes](assets/steamworks/unity-engine/sample-scenes/README.md)
