@@ -18,6 +18,8 @@ When toggled on Heathen's tools will write additional verbose information in par
 
 Heathen provides a powerful inspector that will show you the states and values of all Steam API artefacts configured for your project.&#x20;
 
+{% embed url="https://www.youtube.com/watch?v=wya0BymbN3k" %}
+
 To Access the inspector simply open the **Window > Steamworks Inspector** menu.
 
 or
