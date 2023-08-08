@@ -1,5 +1,5 @@
 ---
-description: Steamworks Multiplayer tools, systems and features
+description: Steamworks Multiplayer tools, systems & features.
 ---
 
 # 🎮 Multiplayer
