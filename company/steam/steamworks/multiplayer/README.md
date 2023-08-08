@@ -1,5 +1,5 @@
 ---
-description: Playing with your self is fun, playing with others is even more! ... usually
+description: Steamworks Multiplayer tools, systems and features
 ---
 
 # 🎮 Multiplayer
