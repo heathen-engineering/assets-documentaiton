@@ -1,5 +1,5 @@
 ---
-description: Do More with Heathen!
+description: Do More with Heathen
 layout:
   title:
     visible: true
