@@ -70,6 +70,7 @@
   * [🤹♀ Multi Platform Projects](company/development/multi-platform-projects.md)
   * [📑 Namespace and Using](company/development/namespace-and-using.md)
   * [🎮 Unity's "New" Input System](company/development/unitys-new-input-system.md)
+  * [🔼 Updating Visual Studio and C#](guides/development/updating-visual-studio-and-c.md)
   * [💡 Visual Scripting](company/development/visual-scripting.md)
 * [⚠ Publishers](company/publishers.md)
 * [🧪 Testing](company/testing/README.md)

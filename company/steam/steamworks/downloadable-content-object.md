@@ -33,11 +33,11 @@ First you need to create your DLC on the Steam Developer portal. [https://partne
 
 Log into your Steam Developer Portal and access your app's admin page. Look for the Technical Tools section and select the Edit Steamworks Settings option.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 From there scroll down until you find the All DLC section and click Add New DLC button
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 Populate the form with the names of the DLC you would like to create making sure to start the name with the name of your game. For example our game's name is Túatha Legends so we might a DLC something like Túatha Legends - The Iron King
 
