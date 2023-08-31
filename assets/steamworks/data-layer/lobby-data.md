@@ -460,6 +460,10 @@ public bool InviteUserToLobby(UserData user);
 
 Invites the indicated user to the lobby
 
+### Request
+
+
+
 ### Send Chat Message
 
 ```csharp
@@ -492,7 +496,7 @@ public void SetGameServer(string address, ushort port);
 public void SetGameServer(CSteamID id);
 ```
 
-Sets the Game Server information and causes the EventLobbyGameServer event to be raised on the [Matchmaking ](../api/matchmaking.md)interface and on any attached [Lobby Manager](../unity-engine/ui-components/lobby-manager.md) componenets.
+Sets the Game Server information and causes the EventLobbyGameServer event to be raised on the [Matchmaking ](../api/matchmaking.md)interface and on any attached [Lobby Manager](../unity-engine/ui-components/lobby-manager.md) components.
 
 ### Kick Member
 
