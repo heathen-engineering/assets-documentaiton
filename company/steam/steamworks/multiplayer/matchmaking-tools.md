@@ -112,7 +112,7 @@ To learn more check out the [Lobby](../../../../assets/steamworks/data-layer/lob
 
 ### Chat
 
-While the developer facing part of the Steam API calls it a "Lobby" the backendeveloper-facingcalls it a chat, this is because in reality a "Lobby" is just a chat room. This chat room has its own metadata as noted above and each member within it has its own metadata and you can send and receive messages containing byte\[] data between all members without a network connection. Our [Lobby Chat Director](../../../../assets/steamworks/unity-engine/ui-components/lobby-chat-director.md) can help you get started.
+While the developer-facing part of the Steam API calls it a "Lobby" the backend developer-facing calls it a chat, this is because in reality a "Lobby" is just a chat room. This chat room has its own metadata as noted above and each member within it has its own metadata and you can send and receive messages containing byte\[] data between all members without a network connection. Our [Lobby Chat Director](../../../../assets/steamworks/unity-engine/ui-components/lobby-chat-director.md) can help you get started.
 
 ## Working with Lobbies
 
@@ -128,7 +128,7 @@ All of the functionality of lobby is defined in the [Matchmaking API](../../../.
 
 ### [Lobby Manager](../../../../assets/steamworks/unity-engine/ui-components/lobby-manager.md)
 
-As the name suggests [this is a tool for managing a lobby](../../../../assets/steamworks/unity-engine/ui-components/lobby-manager.md). The lobby manager is the easiest way to manage a lobby and is a [Unity component](https://docs.unity3d.com/ScriptReference/Component.html) ... that is you can add it to a GameObject and configure it in Unity editor. The [Lobby Manager](../../../../assets/steamworks/unity-engine/ui-components/lobby-manager.md) does more than simply expose Matchmaking events to the Unity editor it handles common concepts for you and makes it easier to work with a lobby through designer frdesigner-friendly as Bolt and other visual scripting assets.
+As the name suggests [this is a tool for managing a lobby](../../../../assets/steamworks/unity-engine/ui-components/lobby-manager.md). The lobby manager is the easiest way to manage a lobby and is a [Unity component](https://docs.unity3d.com/ScriptReference/Component.html) ... that is you can add it to a GameObject and configure it in Unity editor. The [Lobby Manager](../../../../assets/steamworks/unity-engine/ui-components/lobby-manager.md) does more than simply expose Matchmaking events to the Unity editor it handles common concepts for you and makes it easier to work with a lobby through designer-friendly tools such as Bolt and other visual scripting assets.
 
 ## Player Join / Leave
 
@@ -188,11 +188,11 @@ In our example above we used expression to create an anon method. This is a styl
 
 ### Lobby Manager
 
-Lobby manager makes this supper easy. Using Lobby Manager you don't need to use any code at all if you don't want. You will see right in the inspector a [evtEnterSuccess ](../../../../assets/steamworks/unity-engine/ui-components/lobby-manager.md#evtentersuccess)and an [evtEnterFailed ](../../../../assets/steamworks/unity-engine/ui-components/lobby-manager.md#evtenterfailed)event. These work just like the ones on Matchmaking API but of course are accessible from the Unity Editor and only raise for lobbies that where joined through this Lobby Manager.
+Lobby manager makes this super easy. Using Lobby Manager you don't need to use any code at all if you don't want. You will see right in the inspector an [evtEnterSuccess ](../../../../assets/steamworks/unity-engine/ui-components/lobby-manager.md#evtentersuccess)and an [evtEnterFailed ](../../../../assets/steamworks/unity-engine/ui-components/lobby-manager.md#evtenterfailed)event. These work just like the ones on Matchmaking API but of course are accessible from the Unity Editor and only raise for lobbies that were joined through this Lobby Manager.
 
-The fact that Lobby Manager filters its events to only the events that where ran through it makes it much easier when driving UI elements. Most games will have 2 lobbies, 1 for the session aka "matchmaking" and 1 as a player friend group or party. The Matchmaking API events raise for any event on any lobby that the local user is a member of so if a user is in a session lobby and a party lobby the events will raise for both leaving it up to you to sort out which lobby the event goes to.
+The fact that Lobby Manager filters its events to only the events that were ran through it makes it much easier when driving UI elements. Most games will have 2 lobbies, 1 for the session aka "matchmaking" and 1 as a player friend group or party. The Matchmaking API events raise for any event on any lobby that the local user is a member of so if a user is in a session lobby and a party lobby the events will raise for both leaving it up to you to sort out which lobby the event goes to.
 
-Lobby Manager only handles events for the lobby that it is "managing" so its filtering the events down for you. Thus when the "evtEnterSuccess" triggers on your MatchmakingObject's LobbyManagaer component you know its related to the matchmaking lobby.
+Lobby Manager only handles events for the lobby that it is "managing" so it is filtering the events down for you. Thus when the "evtEnterSuccess" triggers on your MatchmakingObject's LobbyManagaer component you know its related to the matchmaking lobby.
 
 {% hint style="info" %}
 Yes you can of course use the Lobby Manager from code as much or as little as you would like. Doing so is no different than using any other Unity component from code.
