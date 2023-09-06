@@ -18,7 +18,7 @@ The concept of a "room" is one often asked about but isn't something for Steam t
 
 Traditionally matchmaking and lobby systems are by design as light as possible and involve as little user interaction as possible. The most common idea is that the player should be able to press play and the game will take care of everything for them responding only once the game is ready to play... take a look at DOTA, Halo, LOL, or really any team-based multiplayer game for a typical example of a "Quick Match" lobby based matchmaking system.
 
-Rooms differ completely, the idea is to get the player into some sort of network session right away even if the session is ready to play the game properly. This may take the form of a sandbox or "room" the player can run around with a 3D avatar.
+Rooms differ completely, the idea is to get the player into some sort of network session right away even if the session is not ready to play the game properly. This may take the form of a sandbox or "room" the player can run around with a 3D avatar. You see these with games that are derived from mods such as Battle Royal as a side effect or hold over of the source games they originate from Arma for example.
 
 ### What is a room exactly?
 
