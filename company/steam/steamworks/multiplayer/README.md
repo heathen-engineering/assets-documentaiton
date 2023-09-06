@@ -16,7 +16,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 Let’s start by saying this here:
 
-Creating a game is hard work, creating a multiplayer game is extra hard work, creating a massively multiplayer game is … well you get the idea. If this is your first game or even 5th game, I would personally recommend spending some more time creating smaller stand-alone projects you can get done from start to finish without complexities like multiplayer. With that out of the way let’s get started.
+Creating a game is hard work, creating a multiplayer game is extra hard work, and creating a massively multiplayer game is … well you get the idea. If this is your first game or even 5th game, I would personally recommend spending some more time creating smaller stand-alone projects you can get done from start to finish without complexities like multiplayer. With that out of the way let’s get started.
 
 {% hint style="success" %}
 This article covers Steam Multiplayer concepts for more general information on Multiplayer [game design](../../../design/) please see our [guide on that topic](../../../design/multiplayer/).&#x20;
@@ -37,9 +37,9 @@ The [Terminology ](terminology.md)sub-section in this article is a must-read, wi
 
 ### Network Scene (or scenes)
 
-You will have a scene that is used during your gameplay and is the one where you want the network to spawn any network objects. This could be more than one scene or a single scene that really depends on your game and what HLAPI you using. The important concept here is you have some scene that is loaded into before the network session actually starts.
+You will have a scene that is used during your gameplay and is the one where you want the network to spawn any network objects. This could be more than one scene or a single scene depending on your game and what HLAPI you using. The important concept here is you have some scene that is loaded into before the network session starts.
 
-Many HLAPIs are able to define Network Objects as part of a scene and initialize them on start-up. This can be handy but it can also make debugging a nightmare. Consider at least keeping the scene itself free of any networking concepts then have the server or host as the case may be spawn in the required items as they configure the environment for play.
+Many HLAPIs can define Network Objects as part of a scene and initialize them on start-up. This can be handy but it can also make debugging a nightmare. Consider at least keeping the scene itself free of any networking concepts then have the server or host as the case may be spawn in the required items as they configure the environment for play.
 
 This may sound like extra work but it keeps the scene small and flexible so you can easily use 1 scene for many session types and makes debugging and troubleshooting vastly easier as the network only gets involved when you say so.
 
@@ -49,7 +49,7 @@ Keep your PC simple, think of the PC a bit like you might think of Unity's Event
 
 It probably shouldn't be a visual element in your game, rather it's there to capture the inputs of the player it represents and sync that over the network and notify all other players as that input changes.
 
-It makes sense to store player-specific values on it but the player is not character. In most of our use cases, our PC is just an IO sync tool with some state info like what team the player is a part of. We have the PC spawn character controllers as required and these character controls define the visuals, sync animations, store character health, level, etc.
+It makes sense to store player-specific values on it but the player is not a character. In most of our use cases, our PC is just an IO sync tool with some state info like what team the player is a part of. We have the PC spawn character controllers as required and these character controls define the visuals, sync animations, store character health, level, etc.
 
 ### Scene Management
 
@@ -61,11 +61,11 @@ We find it best to have the client handle the load and unload of scenes as makes
 
 [See this article for more](../../../design/multi-scene-architecture.md)
 
-See [UX Complete](../../../../assets/ux/components/scenes-manager.md) for tools that can help you really leverage the power of Unity's scene system
+See [UX Complete](../../../../assets/ux/components/scenes-manager.md) for tools that can help you leverage the power of Unity's scene system
 
 ### Session Lobby
 
-[First read up on what a Lobby is and is not](matchmaking-tools.md).
+[First, read up on what a Lobby is and is not](matchmaking-tools.md).
 
 Importantly a lobby is not a networking tool or part of your networking system but it is a tool commonly used for matchmaking ... a process that happens before you get to the networking part.
 

@@ -42,13 +42,13 @@ Make note of the value you use in the API Name field. You will use it when worki
 
 ### Publish
 
-You \*\***MUST**\*\* publish your changes in Steam Developer Portal before they will be accessible via Steam API. In the Steam Developer Portal when you have pending changes you will see a red banner at the top of the screen ... click it and follow the instructions.
+You \*\***MUST**\*\* publish your changes in the Steam Developer Portal before they will be accessible via Steam API. In the Steam Developer Portal when you have pending changes you will see a red banner at the top of the screen ... click it and follow the instructions.
 
 <figure><img src="../../../../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
 
 ### Use
 
-To reference a Leaderboard in your Steam Settings press the "<mark style="color:green;">+ New</mark>" button on the Steam Settings object next to the Leaderboards entry
+To reference a Leaderboard in your Steam Settings press the "<mark style="color:green;">+ New</mark>" button on the Steam Settings object next to the Leaderboard entry
 
 {% hint style="info" %}
 Unfortunately, we cannot import existing leaderboards from Steam directly.
@@ -98,7 +98,7 @@ A leaderboard is simply a score recorded for a user, Steam will sort these score
 
 In many cases however you need or want additional data linked with that score, rather this is info about the player's build, stats during the session that earned them the score or something else.
 
-You can upload an array of int values along with the player's score, Steam takes up to 64 values e.g. `int[64]` these can be anything you would like as long as they are int and there are less than 64 of them.
+You can upload an array of int values along with the player's score, Steam takes up to 64 values e.g. `int[64]` These can be anything you would like as long as they are int and there are less than 64 of them.
 
 To read this data make sure you have set the `Details` field as seen in the inspector for your Leaderboard Object. This tells our system how many details it should read from Steam when reading a user's data. If you leave it at 0 we will not try to read detail values, if you enter a value larger than 64 errors will occur.
 
@@ -108,7 +108,7 @@ The details themselves will be provided in the [LeaderboardEntry ](../../../../a
 
 Understanding leaderboard attachments.
 
-As with the `Details` you can add additional data to the leaderboard entry in the form of an attachment. This is simply a single file stored in the user's remote storage and linked to the leaderboard entry.
+As with the `Details` You can add additional data to the leaderboard entry in the form of an attachment. This is simply a single file stored in the user's remote storage and linked to the leaderboard entry.
 
 {% hint style="info" %}
 Steam copies this item over to the board directly so it will remain even if the user later deletes it from their storage.
@@ -124,7 +124,7 @@ Our tools make the process of uploading and attaching files extremely simple. yo
 leaderboard.AttachUGC("attachmentName", myData, Encoding.UTF8, callback);
 ```
 
-The above example assumes that `myData` is a JSON serializable object and that callback is a suitable method or delegate with a signature like `void Callback(LeaderbaordUGCSet_t result, bool IOError);` this will create a new file named attachmentName in the user's remote storage and then attach it to the user's entry on this leaderboard.
+The above example assumes that `myData` is a JSON serializable object and that callback is a suitable method or delegate with a signature like `void Callback(LeaderbaordUGCSet_t result, bool IOError);` This will create a new file named attachmentName in the user's remote storage and then attach it to the user's entry on this leaderboard.
 
 ## Leaderboard Manager
 
@@ -154,7 +154,7 @@ The most common is to use the LeaderboardObject itself to upload scores. The Lea
 leaderboard.UploadScore(42, method, callback);
 ```
 
-This method requires you to pass in the score, method of upload and provide a callback in the form of `void Callback(LeaderboardScoreUploaded_t result, bool IOError)` that will be invoked when the process is complete.
+This method requires you to pass in the score, and method of upload and provide a callback in the form of `void Callback(LeaderboardScoreUploaded_t result, bool IOError)` that will be invoked when the process is complete.
 
 {% hint style="info" %}
 Callbacks are a common feature of many multi-process systems including Unity itself.  You can [learn more about them here](../../../development/callbacks.md).
@@ -166,12 +166,12 @@ or
 leaderboard.UploadScore(42, detailArray, method, callback);
 ```
 
-This method works the same as the above but can take a detailed array. This would be an array of int values and must not be longer than 64 e.g. `int[64] detailArray` this is commonly used to store additional data about the user's entry.
+This method works the same as the above but can take a detailed array. This would be an array of int values and must not be longer than 64 e.g. `int[64] detailArray` This is commonly used to store additional data about the user's entry.
 
 #### [Leaderboard Manager](../../../../assets/steamworks/unity/components/leaderboard-manager.md)
 
 You can use the [Leaderboard Manager](../../../../assets/steamworks/unity/components/leaderboard-manager.md) component;\
-This component can be attached to a GameObject to manage a specific leaderboard. Its meant to be used with UI elements or for users that are not comfortable working with Scriptable Objects or the API directly. It serves to simplify the methods and features of the leaderboard system and expose common events to the Unity inspector.
+This component can be attached to a GameObject to manage a specific leaderboard. It is meant to be used with UI elements or for users who are not comfortable working with Scriptable Objects or the API directly. It serves to simplify the methods and features of the leaderboard system and expose common events to the Unity inspector.
 
 While it's not typical you can interact with the Leaderboard Manager from code such as.
 
@@ -249,7 +249,7 @@ The "Keep Best" option tells Steam to only record the new value you present \*\*
 Assuming you have the board configured incorrectly simply update its configuration in the Steam portal and then publish the changes.
 
 {% hint style="warning" %}
-You **MUST ALWAYS** publish changes when making edits in Steam Portal. It does not apply the moment you make the change in the portal it is a Perforce-based source control system that requires you to publish your changes.
+You **MUST ALWAYS** publish changes when making edits in the Steam Portal. It does not apply the moment you make the change in the portal it is a Perforce-based source control system that requires you to publish your changes.
 {% endhint %}
 
 If for some reason you find your board still acts like it's sorted the other way around, this is likely due to an issue seen a few times with Steam's backend services. Submit a support case letting Valve know that your board appears bugged and is not changing its sort direction as it should.

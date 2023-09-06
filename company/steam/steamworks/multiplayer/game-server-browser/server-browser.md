@@ -5,7 +5,7 @@ description: Discovering Steam Game Servers in Steam client or in game.
 # 📋 Server Browser
 
 {% hint style="success" %}
-#### Like what your seeing?
+#### Like what you're seeing?
 
 Support us as a [GitHub Sponsor](../../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
@@ -14,7 +14,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../../become-
 
 ## &#x20;Introduction
 
-Steam Game Server Browser is a feature of the Steam client and Steam API that gives you a matchmaking and discovery tool for logged on Steam Game Servers. In order to use this feature you will need to initialize your server build as a Steam Game Server and Log On the server with Set Advertise Game Server as true.&#x20;
+Steam Game Server Browser is a feature of the Steam client and Steam API that gives you a matchmaking and discovery tool for logged-on Steam Game Servers. In order to use this feature you will need to initialize your server build as a Steam Game Server and Log On to the server with Set Advertise Game Server as true.&#x20;
 
 {% hint style="info" %}
 Heathen's Steamworks Complete for Unity trivializes all of this, the [Steam Settings](../../../../../assets/steamworks/unity/scriptable-objects/steam-settings/) scriptable object contains all the configuration options so you can set them in the Unity inspector.&#x20;
@@ -24,9 +24,9 @@ Our initialization process is smart and will initialize for Steam Game Server fo
 
 ## In Game Browser
 
-The [Game Server Browser Manager](../../../../../assets/steamworks/unity/components/game-server-browser-manager.md) is a Unity component we designed to simplify query of the Steam Game Server browser entries. Our browser manager works with the [Matchmaking.Client API](../../../../../assets/steamworks/api/matchmaking.md) to query Steam for lists of servers.
+The [Game Server Browser Manager](../../../../../assets/steamworks/unity/components/game-server-browser-manager.md) is a Unity component we designed to simplify the query of the Steam Game Server browser entries. Our browser manager works with the [Matchmaking.Client API](../../../../../assets/steamworks/api/matchmaking.md) to query Steam for lists of servers.
 
-In general servers are listed in the following groups and may appear in more than 1 group
+In general, servers are listed in the following groups and may appear in more than 1 group
 
 * Favourites \
   Servers marked as favourite by the user who&#x20;
@@ -51,5 +51,5 @@ The SteamMatchmakingServers API from Steam API is where you will find the Reques
 SteamMatchmakingServer.RequestInternetServerList(...);
 ```
 
-Heathen's API contains this in `API.Matchmaking.Client` along with all other matchmaking related features suitable for use in a client build.
+Heathen's API contains this in `API.Matchmaking.Client` along with all other matchmaking-related features suitable for use in a client build.
 

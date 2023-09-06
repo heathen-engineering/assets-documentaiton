@@ -5,7 +5,7 @@ description: Remote local multiplayer
 # 🛋 Remote Play
 
 {% hint style="success" %}
-#### Like what your seeing?
+#### Like what you're seeing?
 
 Consider supporting us as a [GitHub Sponsor](../become-a-sponsor/) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
@@ -30,7 +30,7 @@ Once you have configured your game to work with Steam Remote Play you can use He
 
 ## Send an Invite
 
-The first step to getting a remote play session going is to send an invite to a friend. The friend does not require a license to the game so you can send this invite to any friend. They will be streaming the game you are playing so its your license of the game they will be playing on.
+The first step to getting a remote play session going is to send an invite to a friend. The friend does not require a license to the game so you can send this invite to any friend. They will be streaming the game you are playing so it's your license of the game they will be playing on.
 
 ```csharp
 if(API.RemotePlayClient.SendInvite(user))
@@ -52,7 +52,7 @@ void HandleSessionConnected(SteamRemotePlaySessionConnected_t responce)
 }
 ```
 
-With the session known you can then
+With the session known, you can then
 
 ```csharp
 //Get the UserData for the connected user
@@ -78,6 +78,6 @@ Vector2Int resolution = API.RemotePlay.Client.GetSessionClientResolution(session
 
 ## Player Controls
 
-This is handled exactly as you do with a local player, as far as your game is concerned each of the "session guests" is a local player and is causing local inputs to occur e.g. controller input, keyboard/mouse input, etc will all act as if local.
+This is handled exactly as you do with a local player, as far as your game is concerned each of the "session guests" is a local player and is causing local inputs to occur e.g. controller input, keyboard/mouse input, etc. will all act as if local.
 
 The whole idea of Steam's Remote Play is that if you created a local multiplayer game then this will simply work right out of the box with you needing to do nothing more than invite a player to remote play.
