@@ -46,7 +46,7 @@ public LobbyChatMsgEvent evtMessageRecieved
 
 Occurs when a chat message is received on this lobby, The handler for this event would take a form similar to.
 
-Uses the [LobbyChatMsg](../../objects/lobby-chat-msg.md) object
+Uses the [LobbyChatMsg](../objects/lobby-chat-msg.md) object
 
 ```csharp
 private void Handler(LobbyChatMsg arg)
@@ -98,7 +98,7 @@ private void HandleMessage(LobbyChatMsg message)
 
 The above simply demonstrates a valid handler; you would of course want to display that message to your users. You can do this with whatever UI system you choose to use that part is up to you.
 
-See the [Lobby Chat Msg](../../objects/lobby-chat-msg.md) object article for more information on what you can find in the message paramiter.
+See the [Lobby Chat Msg](../objects/lobby-chat-msg.md) object article for more information on what you can find in the message paramiter.
 
 ### Advanced Chat
 

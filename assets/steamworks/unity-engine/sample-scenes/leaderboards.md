@@ -32,7 +32,7 @@ The 3 buttons arranged above the display area simply call methods on the [Leader
 
 Located on the Canvas > Leaderboard Scroll View GameObject. The [Leaderboard UI List](../../unity/components/leaderboard-ui-list.md) is responsible for consuming query results and displaying the records on the UI.&#x20;
 
-This is done by instantiating the Leaderboard Entry UI Record which uses the [LeaderboardEntryUIRecord](../../unity/components/leaderboard-entry-ui-record.md) component to set UI elements according to the provided [LeaderboardEntry](../../objects/leaderboard-entry.md) value.&#x20;
+This is done by instantiating the Leaderboard Entry UI Record which uses the [LeaderboardEntryUIRecord](../../unity/components/leaderboard-entry-ui-record.md) component to set UI elements according to the provided [LeaderboardEntry](../objects/leaderboard-entry.md) value.&#x20;
 
 ### Leaderboard Entry UI Record
 

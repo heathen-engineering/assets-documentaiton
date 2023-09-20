@@ -10,7 +10,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## &#x20;Introduction
 
-The Heathen framework simplifies the concept of Steam User Data in our [UserData](../../../../assets/steamworks/data-layer/user-data.md) object. This object is equitable and comparable to CSteamID and ulong meaning you can convert any CSteamID or ulong value to a UserData object.
+The Heathen framework simplifies the concept of Steam User Data in our [UserData](../../../../assets/steamworks/unity-engine/data-layer/user-data.md) object. This object is equitable and comparable to CSteamID and ulong meaning you can convert any CSteamID or ulong value to a UserData object.
 
 ```csharp
 UserData user_fromUlong = 1234566;
@@ -21,7 +21,7 @@ UserData user = UserData.Get(1234566);
 This means you no longer need to "Get" a UserData object as you did in other steam integrations. The UserData object exposes all relevant information about the user in question with simple fields.&#x20;
 
 {% hint style="info" %}
-For full details see [UserData's documentaiton here](../../../../assets/steamworks/data-layer/user-data.md).
+For full details see [UserData's documentaiton here](../../../../assets/steamworks/unity-engine/data-layer/user-data.md).
 {% endhint %}
 
 ## Use Cases

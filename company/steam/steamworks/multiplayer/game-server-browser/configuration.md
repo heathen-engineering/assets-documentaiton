@@ -20,7 +20,7 @@ Note For a server to be listed properly in the Steam Game Server Browser you mus
 
 <figure><img src="../../../../../.gitbook/assets/image (4) (2).png" alt=""><figcaption><p>Screen shot of a Heathen Steam Settings object with the Game Server config expanded</p></figcaption></figure>
 
-If you're working in C# and not using scriptable objects at all you can create a [SteamGameServerConfiguraiton ](../../../../../assets/steamworks/objects/steam-game-server-configuration.md)and pass that to the [API.App.Server.Initialization(...)](../../../../../assets/steamworks/api/app.server.md#initialize) method.
+If you're working in C# and not using scriptable objects at all you can create a [SteamGameServerConfiguraiton ](../../../../../assets/steamworks/unity-engine/objects/steam-game-server-configuration.md)and pass that to the [API.App.Server.Initialization(...)](../../../../../assets/steamworks/unity-engine/api/app.server.md#initialize) method.
 
 ## Raw API
 

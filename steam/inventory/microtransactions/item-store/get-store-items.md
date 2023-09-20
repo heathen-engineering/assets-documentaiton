@@ -3,9 +3,9 @@
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
 ## &#x20;Introduction
@@ -44,15 +44,15 @@ That said you can do it programmatically and here is how.
 API.Inventory.Client.LoadItemDefinitions();
 ```
 
-Read more [here](../../../../../assets/steamworks/api/inventory.md#loaditemdefinitions).
+Read more [here](../../../../assets/steamworks/unity-engine/api/inventory.client.md#loaditemdefinitions).
 
-In short this starts the process of loading item definitions from Steam and will trigger the [EventSteamInventoryDefinitionUpdate](../../../../../assets/steamworks/api/inventory.md#eventsteaminventorydefinitionupdate) to be raised when the definitions are ready.
+In short this starts the process of loading item definitions from Steam and will trigger the [EventSteamInventoryDefinitionUpdate](../../../../assets/steamworks/unity-engine/api/inventory.client.md#eventsteaminventorydefinitionupdate) to be raised when the definitions are ready.
 
 You would do this as soon as Steam Initializes so you can pull the current item definitions local.
 
 ## Iterate and Initialize
 
-Once the [EventSteamInventoryDefinitionUpdate ](../../../../../assets/steamworks/api/inventory.md#eventsteaminventorydefinitionupdate)has been raised and you have the item definitions local to the user's cash you can walk the items and spawn UI objects to represent each.
+Once the [EventSteamInventoryDefinitionUpdate ](../../../../assets/steamworks/unity-engine/api/inventory.client.md#eventsteaminventorydefinitionupdate)has been raised and you have the item definitions local to the user's cash you can walk the items and spawn UI objects to represent each.
 
 ```csharp
 foreach(var itemDefinition in SteamSettings.Client.inventory.items)
@@ -64,11 +64,11 @@ foreach(var itemDefinition in SteamSettings.Client.inventory.items)
 For each item you will need to get some common information.&#x20;
 
 * Item Name\
-  You can find this in [item\_name](../../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#item\_name). or by using the [DisplayName](../../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#displayname) field of Item Definition.
+  You can find this in [item\_name](../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#item\_name). or by using the [DisplayName](../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#displayname) field of Item Definition.
 * Item Description\
-  You can find this in [item\_description](../../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#item\_description).
+  You can find this in [item\_description](../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#item\_description).
 * Price\
-  If you want to fetch the price in the user's currency see: [Current Price](../../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#currentprice) and [Base Price](../../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#baseprice). You can check if there is a price at all via [Has Price](../../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#hasprice).
+  If you want to fetch the price in the user's currency see: [Current Price](../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#currentprice) and [Base Price](../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#baseprice). You can check if there is a price at all via [Has Price](../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#hasprice).
 * Images\
   Several images can be associated with an item ... we don't recommend using any of them as they should all be optimized for use in web and thus of pore quality for use in game. but you can read them from the item definition via
   * Icon URL\
@@ -78,4 +78,4 @@ For each item you will need to get some common information.&#x20;
   * Store  Images\
     `foreach(var imageUrl in itemDef.item_store_images)`
 * Recipies\
-  To detect if this item can be exchanged for and if so what it requires you need to read the [item\_exchange](../../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#item\_exchange).
+  To detect if this item can be exchanged for and if so what it requires you need to read the [item\_exchange](../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#item\_exchange).

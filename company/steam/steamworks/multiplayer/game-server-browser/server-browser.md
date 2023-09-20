@@ -24,7 +24,7 @@ Our initialization process is smart and will initialize for Steam Game Server fo
 
 ## In Game Browser
 
-The [Game Server Browser Manager](../../../../../assets/steamworks/unity/components/game-server-browser-manager.md) is a Unity component we designed to simplify the query of the Steam Game Server browser entries. Our browser manager works with the [Matchmaking.Client API](../../../../../assets/steamworks/api/matchmaking.md) to query Steam for lists of servers.
+The [Game Server Browser Manager](../../../../../assets/steamworks/unity/components/game-server-browser-manager.md) is a Unity component we designed to simplify the query of the Steam Game Server browser entries. Our browser manager works with the [Matchmaking.Client API](../../../../../assets/steamworks/unity-engine/api/matchmaking.client.md) to query Steam for lists of servers.
 
 In general, servers are listed in the following groups and may appear in more than 1 group
 

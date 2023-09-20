@@ -14,7 +14,7 @@ This scene demonstrates the use of the [Remote Storage](../../../../company/stea
 
 <figure><img src="../../../../.gitbook/assets/image (19) (2).png" alt=""><figcaption></figcaption></figure>
 
-Steamworks Complete provides several ways to work with remote storage via the [Remote Storage API](../../api/remote-storage.md) and [DataModel ](../programming-tools/datamodel.md)tools.
+Steamworks Complete provides several ways to work with remote storage via the [Remote Storage API](../api/remotestorage.client.md) and [DataModel ](../programming-tools/datamodel.md)tools.
 
 ## Objects
 

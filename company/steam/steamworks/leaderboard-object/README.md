@@ -102,7 +102,7 @@ You can upload an array of int values along with the player's score, Steam takes
 
 To read this data make sure you have set the `Details` field as seen in the inspector for your Leaderboard Object. This tells our system how many details it should read from Steam when reading a user's data. If you leave it at 0 we will not try to read detail values, if you enter a value larger than 64 errors will occur.
 
-The details themselves will be provided in the [LeaderboardEntry ](../../../../assets/steamworks/objects/leaderboard-entry.md)record returned by leaderboard queries.
+The details themselves will be provided in the [LeaderboardEntry ](../../../../assets/steamworks/unity-engine/objects/leaderboard-entry.md)record returned by leaderboard queries.
 
 ### Attachments
 

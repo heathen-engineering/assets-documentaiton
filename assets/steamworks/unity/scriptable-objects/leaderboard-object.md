@@ -14,7 +14,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 public class LeaderboardObject : ScriptableObject
 ```
 
-Represents a Steam Leaderboard and is used by the [Steam Settings](steam-settings/) object to initalize the Leaderboard system. This is a wrapper around the [LeaderboardData ](../../data-layer/leaderboard-data.md)object making it a referenceable Unity object.
+Represents a Steam Leaderboard and is used by the [Steam Settings](steam-settings/) object to initalize the Leaderboard system. This is a wrapper around the [LeaderboardData ](../../unity-engine/data-layer/leaderboard-data.md)object making it a referenceable Unity object.
 
 You create leaderboard objects through thee Steam Settings object by clicking the <mark style="color:green;">+ New</mark> button in the leaderboards list.
 
@@ -117,7 +117,7 @@ How many detail entries should be allowed on entries from this board, this is us
 public LeaderboardData data;
 ```
 
-The underlying [LeaderboardData](../../data-layer/leaderboard-data.md) object, this is what does all the actual work.
+The underlying [LeaderboardData](../../unity-engine/data-layer/leaderboard-data.md) object, this is what does all the actual work.
 
 ### Valid
 

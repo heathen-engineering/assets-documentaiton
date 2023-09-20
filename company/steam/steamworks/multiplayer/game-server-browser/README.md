@@ -54,7 +54,7 @@ This is not limited to P2P games despite what some of the API names suggest
 
 ### Authentication
 
-The Steam Authentication tools must be used with SGS if you want the Steam Game Server Browser to properly list user counts. The [Authentication](../../../../../assets/steamworks/api/authentication.md) documentation can provide more details.
+The Steam Authentication tools must be used with SGS if you want the Steam Game Server Browser to properly list user counts. The [Authentication](../../../../../assets/steamworks/unity-engine/api/authentication.md) documentation can provide more details.
 
 ### Stats and Achievements Security
 

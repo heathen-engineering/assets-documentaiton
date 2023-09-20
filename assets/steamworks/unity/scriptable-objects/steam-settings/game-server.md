@@ -69,7 +69,7 @@ The uint packed IP address, this is the raw form Steam would use IP address as a
 
 &#x20;`00000000 00000000 00000000 00000000`&#x20;
 
-each 8 bit segment storing a different octave. We have tools that can convert this to a string or a string based IP to a uint see our [Utilities ](../../../api/utilities.md)for more information.
+each 8 bit segment storing a different octave. We have tools that can convert this to a string or a string based IP to a uint see our [Utilities ](../../../unity-engine/api/utilities.md)for more information.
 
 ### queryPort
 

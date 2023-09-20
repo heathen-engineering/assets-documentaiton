@@ -51,13 +51,13 @@ So now you have more options with how you initialize and use Steam API.
 
 1. You can use Steamworks Behaviour as you have traditionally been doing
 2. You can use SteamSettings on its own by simply calling its [Init](unity/scriptable-objects/steam-settings/#init) method.
-3. You can use Heathen's API by calling [App.Client.Initialize](api/app.md#initialize) or [App.Server.Initialize](api/app.server.md#initialize) as appropriate
+3. You can use Heathen's API by calling [App.Client.Initialize](unity-engine/api/app.client.md#initialize) or [App.Server.Initialize](unity-engine/api/app.server.md#initialize) as appropriate
 
 This then means that
 
 * Steamworks Behaviour while it can be used is no longer required e.g. no requirement for a GameObject + Component script
 * Steamworks Behaviour is no longer fragile, e.g. you can destroy it and not break Steam API
-* You can now force server initialization even in a client build ... just call [App.Server.Initialize](api/app.server.md#initialize) ... really don't recommend you do that but you can
+* You can now force server initialization even in a client build ... just call [App.Server.Initialize](unity-engine/api/app.server.md#initialize) ... really don't recommend you do that but you can
 * Steam API wont be blocked by you blocking the main update loop e.g. Pause, etc. We now run on our own background thread.
 * It also means Godot and Unity will be even more alike, While Unity has the option of Steamworks Behaviour which is a uniquely Unity thing. That behaviour now is pretty hallow and just ends up calling the App APIs we created which are common across all versions.
 
@@ -65,7 +65,7 @@ This then means that
 
 A new \`Data\` object layer is being created to act as a mid level abstraction of Steam API and provide for a common code base between Godot and Unity. These \`Data\` objects such as UserData, LobbyData, AchievementData and more will have engine specific features such as returning avatars, icons, etc. in the engine's native "texture" format but will have identical functionality between the two engines.
 
-Data objects are simple structs that are implicitly convertible with the underlying native data type for example one can convert a ulong value to a [UserData ](data-layer/user-data.md)object
+Data objects are simple structs that are implicitly convertible with the underlying native data type for example one can convert a ulong value to a [UserData ](unity-engine/data-layer/user-data.md)object
 
 ```csharp
 UserData myFriend = 123456789987;

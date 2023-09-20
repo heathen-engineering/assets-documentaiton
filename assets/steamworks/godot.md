@@ -12,7 +12,7 @@ These articles are made possible by our [GitHub Sponsors](../../become-a-sponsor
 
 The articles within are specific to Godot and include the engine specific tools and systems unique to the Godot version of the package.&#x20;
 
-The Heathen [APIs](api/) and [Objects](objects/) being native C# are \*\***nearly\*\*** identical between Unity and Godot with the only difference being the use of each engines native structures ...&#x20;
+The Heathen [APIs](unity-engine/api/) and [Objects](unity-engine/objects/) being native C# are \*\***nearly\*\*** identical between Unity and Godot with the only difference being the use of each engines native structures ...&#x20;
 
 for example&#x20;
 
@@ -46,15 +46,15 @@ The Foundation version contains the basics such as
 
 This initializes the Steam API and handles configuration and running callback update.
 
-### [API.Friends](api/friends.md)
+### [API.Friends](unity-engine/api/friends.client.md)
 
 This is an extension of the SteamFriends API end point and greatly simplifies working with friends, UserData and related tasks
 
-### [API.Overlay](api/overlay.md)
+### [API.Overlay](unity-engine/api/overlay.client.md)
 
 This is an extension of several parts of Steam API simplifies handling of overlay features and reacting to invite events
 
-### [API.Utilities](api/utilities.client.md)
+### [API.Utilities](unity-engine/api/utilities.client.md)
 
 A set of misc tools from Valve useful&#x20;
 

@@ -92,8 +92,8 @@ In short in-game currency is simply exchanging X items for Y items. See the [Ite
 On your Item Definition, you will see a Start Purchase option. A similar method is available on the Data Layer, Scriptable Object and of course in the Inventory API. You simply call this method indicating the number of items you wish to start a purchase with.
 
 * [Item Definition Object Start Purchase](../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#start-purchase)
-* [Item Data Start Purchase](../../../../assets/steamworks/data-layer/item-data.md#start-purchase)
-* [Inventory API Start Purchase](../../../../assets/steamworks/api/inventory.md#startpurchase)
+* [Item Data Start Purchase](../../../../assets/steamworks/unity-engine/data-layer/item-data.md#start-purchase)
+* [Inventory API Start Purchase](../../../../assets/steamworks/unity-engine/api/inventory.client.md#startpurchase)
 * [Item Shopping Cart Start Purchase](../../../../assets/steamworks/unity/components/item-shopping-cart-manager.md#startpurchase)
 
 If the item has a properly formatted price or price category (it cannot have both) then the item will be added to the user's Steam Store cart ready for purchase. The Steam Overlay will open showing the user this cart.
@@ -102,10 +102,10 @@ When the user completes the transaction you will be notified in two ways.
 
 1. Transaction Complete Event\
    [On the Inventory Manager](../../../../assets/steamworks/unity/components/inventory-manager.md#evttransactionresponce)\
-   [On the Inventory API](../../../../assets/steamworks/api/inventory.md#event-steam-micro-transaction-authorization-responce)
+   [On the Inventory API](../../../../assets/steamworks/unity-engine/api/inventory.client.md#event-steam-micro-transaction-authorization-responce)
 2. Inventory Change Event\
    [On the Inventory Manager](../../../../assets/steamworks/unity/components/inventory-manager.md#evtchanged)\
-   [On the Inventory API](../../../../assets/steamworks/api/inventory.md#event-steam-inventory-result-ready)
+   [On the Inventory API](../../../../assets/steamworks/unity-engine/api/inventory.client.md#event-steam-inventory-result-ready)
 
 ### How do get the item count?
 
@@ -115,7 +115,7 @@ When the user completes the transaction you will be notified in two ways.
 
 By refresh, we assume you mean how to get the current count of the user's inventory.
 
-[Inventory API's Get All Items](../../../../assets/steamworks/api/inventory.md#getallitems) will do that for you calling its callback when the process is complete.
+[Inventory API's Get All Items](../../../../assets/steamworks/unity-engine/api/inventory.client.md#getallitems) will do that for you calling its callback when the process is complete.
 
 ### Testing Inventory Change
 

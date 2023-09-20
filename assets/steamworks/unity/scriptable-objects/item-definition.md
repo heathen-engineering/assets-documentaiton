@@ -46,7 +46,7 @@ Returns the item defintion ID.
 public List<ItemDetail> Details => get;
 ```
 
-Returns a list of all the known [item details](../../objects/item-details.md) the local user owns of this item type.
+Returns a list of all the known [item details](../../unity-engine/objects/item-detail.md) the local user owns of this item type.
 
 ### TotalQuantity
 
@@ -62,7 +62,7 @@ Returns the quantity of this item the user owns, this is the sum of all quanity 
 public string DisplayName => get;
 ```
 
-This can only be used if you have called [LoadItemDefintions](../../api/inventory.md#loaditemdefinitions) from the [Inventory API](../../api/inventory.md#introduction). It returns the localized name of the item if any.
+This can only be used if you have called [LoadItemDefintions](../../unity-engine/api/inventory.client.md#loaditemdefinitions) from the [Inventory API](../../unity-engine/api/inventory.client.md#introduction). It returns the localized name of the item if any.
 
 ### HasPrice
 
@@ -78,7 +78,7 @@ Indicates rather or not this item has a price ... this will always return false 
 public Currency.Code CurrencyCode => get;
 ```
 
-Returns the [currency code](../../objects/currency.md) used by the local user's currency in Steam. e.g. USD, GBP, EUR, etc.
+Returns the [currency code](../../unity-engine/objects/currency.md) used by the local user's currency in Steam. e.g. USD, GBP, EUR, etc.
 
 ### CurrencySymbol
 
@@ -114,7 +114,7 @@ No price found if this returns 0.
 public InventoryItemType Type => get;
 ```
 
-This indicates the [type](../../enums/inventory-item-type.md) of item this definition represents.
+This indicates the [type](../../unity-engine/enums/inventory-item-type.md) of item this definition represents.
 
 ### Name
 
@@ -130,7 +130,7 @@ Gets  the simple name of the item as defined in your schema. If you need the lan
 public string Description => get;
 ```
 
-Gets the simple description as defined in your schema. If you need the langauge based name you will need to fetch [item defintions](../../api/inventory.md#loaditemdefinitions) and [get the description property](../../api/inventory.md#getitemdefinitionproperty).
+Gets the simple description as defined in your schema. If you need the langauge based name you will need to fetch [item defintions](../../unity-engine/api/inventory.client.md#loaditemdefinitions) and [get the description property](../../unity-engine/api/inventory.client.md#getitemdefinitionproperty).
 
 ### DisplayType
 
@@ -138,7 +138,7 @@ Gets the simple description as defined in your schema. If you need the langauge 
 public string DisplayType => get;
 ```
 
-Gets the simple display type as defined in your schema. If you need the langauge based name you will need to fetch [item defintions](../../api/inventory.md#loaditemdefinitions) and [get the description property](../../api/inventory.md#getitemdefinitionproperty).
+Gets the simple display type as defined in your schema. If you need the langauge based name you will need to fetch [item defintions](../../unity-engine/api/inventory.client.md#loaditemdefinitions) and [get the description property](../../unity-engine/api/inventory.client.md#getitemdefinitionproperty).
 
 ### Bundle
 

@@ -49,7 +49,7 @@ Represents the user this button is related to
 public UserData UserData { get; protected set; }
 ```
 
-This can only be set by the inheriting class and is the [UserData](../../data-layer/user-data.md) of the user this button represents.
+This can only be set by the inheriting class and is the [UserData](../data-layer/user-data.md) of the user this button represents.
 
 ## Methods
 

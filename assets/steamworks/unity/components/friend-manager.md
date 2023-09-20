@@ -164,7 +164,7 @@ foreach(UserData friend in friends)
 }
 ```
 
-Be sure to read and understand all the features of the [UserData](../../data-layer/user-data.md) object. You can also use tools like [SetUserAvatar ](set-user-avatar.md)and [SetUserName ](set-user-name.md)to simplify fetching and keeping up to date the friend's avatar image and display name.
+Be sure to read and understand all the features of the [UserData](../../unity-engine/data-layer/user-data.md) object. You can also use tools like [SetUserAvatar ](set-user-avatar.md)and [SetUserName ](set-user-name.md)to simplify fetching and keeping up to date the friend's avatar image and display name.
 
 ### Create an in-game Friend Chat
 

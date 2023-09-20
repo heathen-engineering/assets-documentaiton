@@ -257,7 +257,7 @@ The lobby the manager is currently managing. This will automatically be updated 
 public LobbyMember Owner => get;
 ```
 
-Gets the [Lobby Member](../../data-layer/lobby-member-data.md) data for the current lobby owner.
+Gets the [Lobby Member](../../unity-engine/data-layer/lobby-member-data.md) data for the current lobby owner.
 
 ### Me
 
@@ -265,7 +265,7 @@ Gets the [Lobby Member](../../data-layer/lobby-member-data.md) data for the curr
 public LobbyMember Me => get;
 ```
 
-Gets the local user's [Lobby Member](../../data-layer/lobby-member-data.md) data for the current lobby.
+Gets the local user's [Lobby Member](../../unity-engine/data-layer/lobby-member-data.md) data for the current lobby.
 
 ### HasLobby
 

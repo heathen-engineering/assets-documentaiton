@@ -120,7 +120,7 @@ Pop over to his [sponsor page](https://github.com/sponsors/rlabrecque) and buy t
 
 [Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET) gives the best access to Valve's APIs and does so true to the original so that the original documentation and decades of community guidance are still applicable. The drawback to [Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET) is that it is true to the original API using programming styles and approaches foreign to most game developers and very clunky at best to use in Unity or Godot scripting.
 
-Heathen has wrapped every relevant interface in Steamworks.NET with our static [APIs ](api/)delivering a simpler more robust tool set with every drop of power of the source Steam API and with that raw Steam API still available to you.
+Heathen has wrapped every relevant interface in Steamworks.NET with our static [APIs ](unity-engine/api/)delivering a simpler more robust tool set with every drop of power of the source Steam API and with that raw Steam API still available to you.
 
 Heathen's Steamworks does not replace [Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET) - it builds on top of it and provides you with a set of battle-tested and developer-approved tools and systems written with Unity in mind.&#x20;
 
