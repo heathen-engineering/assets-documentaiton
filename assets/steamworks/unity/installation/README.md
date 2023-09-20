@@ -5,7 +5,7 @@ description: Installing Heathen Engineering's Steamworks and related componenets
 # Installation
 
 {% hint style="success" %}
-#### Like what your seeing?
+#### Like what you're seeing?
 
 Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
@@ -14,26 +14,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-How you install depends on how you chose to license Heathen's Steamworks. The following cards cover the installation instructions and core features of each of the three major ways to license Heathen's Steamworks.
-
-{% hint style="danger" %}
-Make sure you do not have a "deep copy" of Steamworks.NET in your project. If you do have a copy then Unity will attempt to merge it and issues will occur.\
-\
-Unfortunately, some other Steamworks-related assets do have a full copy of Steamworks.NET embedded in the asset package. This will cause numerous issues for you.\
-\
-You may have also imported Steamworks.NET from GitHub via a .unitypackage and this will cause you issues.\
-\
-Steamworks.NET should only be installed via the Unity Package Manager. Our asset will import Steamworks.NET via the Unity Package Manager for you, or you can import it via the Add from Git URL option in Unity Package Manager.\
-\
-This insures the following important factors
-
-* You have the latest code from GitHub\
-  If you import the .unitypackage from the releases folder it is usually out of date sometimes by a significant amount. Installing from the Package Manager pulls directly from the source and is always live and up-to-date
-* The assembly can be referenced\
-  If you import via .unitypackage the Steamworks.NET assembly cannot be referred to as a compilation condition by other assets. This is a limitation of Unity's Assembly Dev such that only Packages can be referenced in this manner thus you need to install via the Package Manager
-{% endhint %}
-
-
+How you install depends on how you choose to license Heathen's Steamworks. The following cards cover the installation instructions and core features of each of the three major ways to license Heathen's Steamworks.
 
 {% embed url="https://www.youtube.com/watch?v=vxZ0jvBi0s8" %}
 Video is silent but does have subtitles/captions

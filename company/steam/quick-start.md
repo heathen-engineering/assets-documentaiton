@@ -73,7 +73,7 @@ This Knowledge Base is your best source for information not just on Steam but al
 
 In the Upper right corner you will find a search box&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 That Search box has an AI function called Lens
 

@@ -52,7 +52,7 @@ Tips contributed by the [Heathen Development Community](https://discord.gg/6X3xr
 
 Connect the Unity Profiler via LAN. To do so in your build settings select and toggle on the Development Build and Autoconnect Profiler options.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 In your profiler use the Attach to Player drop down and enter the IP Address of your Steam Deck
 

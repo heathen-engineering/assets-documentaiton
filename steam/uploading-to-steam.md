@@ -59,7 +59,7 @@ Most Steam games will have 1 depot for each platform they support
 
 This is the local folder path to the Steamworks SDK's ContentBuilder folder. By default this would be located at `sdk/tools/ContentBuilder` the tool has a button you can press to help you get started downloading the Steamworks SDK from Valve.
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Username and Password
 
@@ -79,7 +79,7 @@ If you choose to toggle the "Remember Password" option then we will store the pa
 
 Finally the Application ID will default to the App ID of the project it's in if known but can be set to any value that suits. This should be the App ID of the application you are uploading to and for which the depots are defined.
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Run the tool
 
@@ -110,7 +110,7 @@ Because Valve doesn't allow Steam CMD to set a build live on the default branch 
 
 If your game is small enough you can upload it as a zip file in the Steam Developer Portal.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 In short, if the resulting zip file is smaller than 2 GB you can upload it in the Steam Pipe -> Builds -> Upload Depots option.
 
