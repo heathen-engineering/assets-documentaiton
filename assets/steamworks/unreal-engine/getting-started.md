@@ -10,6 +10,12 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## Initialization
 
+### Steam Game Instance
+
+{% hint style="danger" %}
+Coming Soon!
+{% endhint %}
+
 ### Blueprint
 
 You will probably want to initialize and run your Steam integration globally at the level of the whole game as opposed to linking it to a given object or actor.
