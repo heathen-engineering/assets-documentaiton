@@ -33,11 +33,11 @@ First you need to create your DLC on the Steam Developer portal. [https://partne
 
 Log into your Steam Developer Portal and access your app's admin page. Look for the Technical Tools section and select the Edit Steamworks Settings option.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 From there scroll down until you find the All DLC section and click Add New DLC button
 
-<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (4).png" alt=""><figcaption></figcaption></figure>
 
 Populate the form with the names of the DLC you would like to create making sure to start the name with the name of your game. For example our game's name is Túatha Legends so we might a DLC something like Túatha Legends - The Iron King
 
@@ -51,7 +51,7 @@ You \*\***MUST**\*\* publish your changes in Steam Developer Portal before they 
 
 
 
-The [Downloadable Content Object](../../../assets/steamworks/unity/scriptable-objects/downloadable-content-object.md) helps you track the status of DLC. You can import the DLC you have defined in the Steam Developer Portal for this application by running the simulation such that Steam API can initialize and then clicking the Import button on the Steam Settings Downloadable Content list
+The [Downloadable Content Object](../../../heathens-steamworks-complete/unity/scriptable-objects/downloadable-content-object.md) helps you track the status of DLC. You can import the DLC you have defined in the Steam Developer Portal for this application by running the simulation such that Steam API can initialize and then clicking the Import button on the Steam Settings Downloadable Content list
 
 ![](<../../../.gitbook/assets/image (157) (1) (1) (1).png>)
 
@@ -59,4 +59,4 @@ Once completed all of the DLC registered to your application will be listed unde
 
 ![](<../../../.gitbook/assets/image (178) (1) (1) (1) (1).png>)
 
-And can be used to test ownership of the indicated DLC. Please see the [Downloadable Content Object](../../../assets/steamworks/unity/scriptable-objects/downloadable-content-object.md) for details on the use of the object.
+And can be used to test ownership of the indicated DLC. Please see the [Downloadable Content Object](../../../heathens-steamworks-complete/unity/scriptable-objects/downloadable-content-object.md) for details on the use of the object.

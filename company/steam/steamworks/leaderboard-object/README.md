@@ -102,7 +102,7 @@ You can upload an array of int values along with the player's score, Steam takes
 
 To read this data make sure you have set the `Details` field as seen in the inspector for your Leaderboard Object. This tells our system how many details it should read from Steam when reading a user's data. If you leave it at 0 we will not try to read detail values, if you enter a value larger than 64 errors will occur.
 
-The details themselves will be provided in the [LeaderboardEntry ](../../../../assets/steamworks/unity-engine/objects/leaderboard-entry.md)record returned by leaderboard queries.
+The details themselves will be provided in the [LeaderboardEntry ](../../../../heathens-steamworks-complete/unity/objects/leaderboard-entry.md)record returned by leaderboard queries.
 
 ### Attachments
 
@@ -132,7 +132,7 @@ The leaderboard manager is a simple component that greatly simplifies reading an
 
 ![](<../../../../.gitbook/assets/image (181) (1).png>)
 
-You can learn more about the [Leaderboard Manager](../../../../assets/steamworks/unity/components/leaderboard-manager.md) in its documentation article and by reviewing the [4 Leaderboards](../../../../assets/steamworks/unity-engine/sample-scenes/leaderboards.md) sample scene.
+You can learn more about the [Leaderboard Manager](../../../../heathens-steamworks-complete/unity/components/leaderboard-manager.md) in its documentation article and by reviewing the [4 Leaderboards](../../../../heathens-steamworks-complete/unity/sample-scenes/leaderboards.md) sample scene.
 
 ## How To
 
@@ -146,7 +146,7 @@ Upload Method or simply Method
 This is a concept you will see in various places when uploading&#x20;
 {% endhint %}
 
-#### [Leaderboard Object](../../../../assets/steamworks/unity/scriptable-objects/leaderboard-object.md)
+#### [Leaderboard Object](../../../../heathens-steamworks-complete/unity/scriptable-objects/leaderboard-object.md)
 
 The most common is to use the LeaderboardObject itself to upload scores. The LeaderboardObject is a ScriptableObject so you can reference it in any script you like and use it as such:
 
@@ -168,9 +168,9 @@ leaderboard.UploadScore(42, detailArray, method, callback);
 
 This method works the same as the above but can take a detailed array. This would be an array of int values and must not be longer than 64 e.g. `int[64] detailArray` This is commonly used to store additional data about the user's entry.
 
-#### [Leaderboard Manager](../../../../assets/steamworks/unity/components/leaderboard-manager.md)
+#### [Leaderboard Manager](../../../../heathens-steamworks-complete/unity/components/leaderboard-manager.md)
 
-You can use the [Leaderboard Manager](../../../../assets/steamworks/unity/components/leaderboard-manager.md) component;\
+You can use the [Leaderboard Manager](../../../../heathens-steamworks-complete/unity/components/leaderboard-manager.md) component;\
 This component can be attached to a GameObject to manage a specific leaderboard. It is meant to be used with UI elements or for users who are not comfortable working with Scriptable Objects or the API directly. It serves to simplify the methods and features of the leaderboard system and expose common events to the Unity inspector.
 
 While it's not typical you can interact with the Leaderboard Manager from code such as.

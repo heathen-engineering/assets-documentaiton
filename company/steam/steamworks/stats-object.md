@@ -36,7 +36,7 @@ Once you add a sate you need to provide its API name exactly as you created it i
 
 ## Using Stats
 
-See the [Int Stat Object](../../../assets/steamworks/unity/scriptable-objects/int-stat.md), [Float Stat Object](../../../assets/steamworks/unity/scriptable-objects/float-stat.md) and [Avg Rate Stat Object](../../../assets/steamworks/unity/scriptable-objects/avg-rate-stat.md) for details on how to use each. In general though the process is that you will create a reference to the stat in question in one of your game's scripts such as
+See the [Int Stat Object](../../../heathens-steamworks-complete/unity/scriptable-objects/int-stat.md), [Float Stat Object](../../../heathens-steamworks-complete/unity/scriptable-objects/float-stat.md) and [Avg Rate Stat Object](../../../heathens-steamworks-complete/unity/scriptable-objects/avg-rate-stat.md) for details on how to use each. In general though the process is that you will create a reference to the stat in question in one of your game's scripts such as
 
 ```csharp
 public IntStatObject myIntStat;

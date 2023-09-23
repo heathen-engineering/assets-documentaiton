@@ -26,7 +26,7 @@ Valve's Steam Remote Play lets you make a local multiplayer game that is also ne
 
 With Steam Remote Play you are running the game and your guest is streaming your game in that Steam Link similar manner. As far as your game is concerned the guest is a local player.
 
-Once you have configured your game to work with Steam Remote Play you can use Heathen's [Remote Play API](../assets/steamworks/unity-engine/api/remoteplay.client.md) to send invites, manage guests and generally make the most out of the feature in your game.
+Once you have configured your game to work with Steam Remote Play you can use Heathen's [Remote Play API](../heathens-steamworks-complete/unity/api/remoteplay.client.md) to send invites, manage guests and generally make the most out of the feature in your game.
 
 ## Send an Invite
 
@@ -39,11 +39,11 @@ else
     Debug.Log("Send failed");
 ```
 
-When / if the guest connects the [Event Session Connected](../assets/steamworks/unity-engine/api/remoteplay.client.md#session-connected) event will be invoked letting you know what the session ID is
+When / if the guest connects the [Event Session Connected](../heathens-steamworks-complete/unity/api/remoteplay.client.md#session-connected) event will be invoked letting you know what the session ID is
 
 ## Get Session Data
 
-Once a user has connected you might want to know which user it is, what form factor they are playing in or even what resolution they are running at. The Remote Play API has all of these and uses the Session ID the [Event Session Connected](../assets/steamworks/unity-engine/api/remoteplay.client.md#session-connected) told you about.
+Once a user has connected you might want to know which user it is, what form factor they are playing in or even what resolution they are running at. The Remote Play API has all of these and uses the Session ID the [Event Session Connected](../heathens-steamworks-complete/unity/api/remoteplay.client.md#session-connected) told you about.
 
 ```csharp
 void HandleSessionConnected(SteamRemotePlaySessionConnected_t responce)

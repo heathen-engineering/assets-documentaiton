@@ -48,7 +48,7 @@ With your items designed and defined you are effectively done. If you defined yo
 
 Users can browse and purchase items for your game directly through the Steam store. Valve will handle payment processing and deliver the items to the user's inventory. You can detect what items a user owns in the game by referencing your [Item Definition](../../../company/steam/steamworks/inventory/#item-definition) and using its feature to see the quantity.
 
-You can also set up an in-game store using your Item Definition and the Start Purchase option. Heathen even has an [Item Shopping Cart Manager](../../../assets/steamworks/unity/components/item-shopping-cart-manager.md) to help you set up and manage an in-game shopping cart ... so your game can be a step or two better than the Epic Game Store was at launch :wink:
+You can also set up an in-game store using your Item Definition and the Start Purchase option. Heathen even has an [Item Shopping Cart Manager](../../../heathens-steamworks-complete/unity/components/item-shopping-cart-manager.md) to help you set up and manage an in-game shopping cart ... so your game can be a step or two better than the Epic Game Store was at launch :wink:
 
 ## In-Game Store
 

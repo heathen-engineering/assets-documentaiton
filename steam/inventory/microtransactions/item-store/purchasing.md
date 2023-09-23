@@ -18,15 +18,15 @@ You can see a simple working example of this in the Example Item Behaviour.
 
 This is done when you want to send the user to the Steam Store page so they can "check out" spending real money on some item. Note you can call Start Purchase on a single item or you can set up a shopping cart building up a collection of items and call Start Purchase on all of them.
 
-### [Item Shopping Cart Manager](../../../../assets/steamworks/unity/components/item-shopping-cart-manager.md)
+### [Item Shopping Cart Manager](../../../../heathens-steamworks-complete/unity/components/item-shopping-cart-manager.md)
 
 We have constructed a tool to help you manage a shopping cart in the game. This tool is capable of adding, removing and editing the quantities of items in it, it can report the estimated total of the cart and can manage and track the purchase operation through authorization reporting issues and or successes through simple Unity events.
 
-You would add this script to your Store/Shop UI and use its members to add, remove and edit the items in the cart. Once you have populated the cart and are ready to "check out" you can call StartPurchase in the manager to kick off the process and track the results. To learn more about the use of [Item Shopping Cart Manager see this article](../../../../assets/steamworks/unity/components/item-shopping-cart-manager.md).
+You would add this script to your Store/Shop UI and use its members to add, remove and edit the items in the cart. Once you have populated the cart and are ready to "check out" you can call StartPurchase in the manager to kick off the process and track the results. To learn more about the use of [Item Shopping Cart Manager see this article](../../../../heathens-steamworks-complete/unity/components/item-shopping-cart-manager.md).
 
 ### Manual
 
-You can of course call to start purchasing yourself and handle the response. The following code demonstrates a StartPurchase on a single item and uses the [ItemDefinition.StartPurchase](../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#start-purchase) method to simplify the process.
+You can of course call to start purchasing yourself and handle the response. The following code demonstrates a StartPurchase on a single item and uses the [ItemDefinition.StartPurchase](../../../../heathens-steamworks-complete/unity/scriptable-objects/item-definition.md#start-purchase) method to simplify the process.
 
 ```csharp
 public void StartPurchase()
@@ -99,11 +99,11 @@ API.Inventory.Client.StartPurchase(itemDefs, itemQuan, (result, error) =>
 });
 ```
 
-Assuming you want to track the completion of the order you should listen on the Micro Transaction Authorization Response. You can find this on the [Inventory Manager](../../../../assets/steamworks/unity/components/inventory-manager.md#evttransactionresponce) component or directly in the [Inventory API](../../../../assets/steamworks/unity-engine/api/inventory.client.md#eventsteammicrotransactionauthorizationresponce). In either case, this is an event that is raised when the Steam client informs your game of a completed e.g. authorization on a transaction. The event will indicate the app the transaction is for, the order ID of the transaction and rather or not the transaction was authorized.
+Assuming you want to track the completion of the order you should listen on the Micro Transaction Authorization Response. You can find this on the [Inventory Manager](../../../../heathens-steamworks-complete/unity/components/inventory-manager.md#evttransactionresponce) component or directly in the [Inventory API](../../../../heathens-steamworks-complete/unity/api/inventory.client.md#eventsteammicrotransactionauthorizationresponce). In either case, this is an event that is raised when the Steam client informs your game of a completed e.g. authorization on a transaction. The event will indicate the app the transaction is for, the order ID of the transaction and rather or not the transaction was authorized.
 
 ## Exchange
 
-It's fairly common to have users "purchase" items with an in-game currency. In reality, this is not a purchase it is an exchange. That is it is similar to crafting where some reagents are exchanged for some other item. Exchanges must be done one item at a time and the following code snippet shows how you would go about doing that for a given [itemDefinition](../../../../assets/steamworks/unity/scriptable-objects/item-definition.md).
+It's fairly common to have users "purchase" items with an in-game currency. In reality, this is not a purchase it is an exchange. That is it is similar to crafting where some reagents are exchanged for some other item. Exchanges must be done one item at a time and the following code snippet shows how you would go about doing that for a given [itemDefinition](../../../../heathens-steamworks-complete/unity/scriptable-objects/item-definition.md).
 
 ```csharp
 public void Exchange()
@@ -140,6 +140,6 @@ if (itemDefinition.CanExchange(itemDefinition.item_exchange.recipe[0],
                                out List<ExchangeEntry> recipe))
 ```
 
-[CanExchange ](../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#can-exchange)is a method on the [Item Definition](../../../../assets/steamworks/unity/scriptable-objects/item-definition.md) that takes a given recipe as an input and has an output that collects the required items to complete the recipe.
+[CanExchange ](../../../../heathens-steamworks-complete/unity/scriptable-objects/item-definition.md#can-exchange)is a method on the [Item Definition](../../../../heathens-steamworks-complete/unity/scriptable-objects/item-definition.md) that takes a given recipe as an input and has an output that collects the required items to complete the recipe.
 
-Assuming this returns true then we can complete an exchange for this item on this recipe, so the next step is to request that using the output the [CanExchange](../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#can-exchange) method provided us. Unlike StartPurchase we will know in a single step rather or not this was a success and the items will already be updated.
+Assuming this returns true then we can complete an exchange for this item on this recipe, so the next step is to request that using the output the [CanExchange](../../../../heathens-steamworks-complete/unity/scriptable-objects/item-definition.md#can-exchange) method provided us. Unlike StartPurchase we will know in a single step rather or not this was a success and the items will already be updated.

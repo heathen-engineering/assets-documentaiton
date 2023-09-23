@@ -10,7 +10,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## &#x20;Introduction
 
-The Heathen framework simplifies the concept of Steam User Data in our [UserData](../../../../assets/steamworks/unity-engine/data-layer/user-data.md) object. This object is equitable and comparable to CSteamID and ulong meaning you can convert any CSteamID or ulong value to a UserData object.
+The Heathen framework simplifies the concept of Steam User Data in our [UserData](../../../../heathens-steamworks-complete/unity/data-layer/user-data.md) object. This object is equitable and comparable to CSteamID and ulong meaning you can convert any CSteamID or ulong value to a UserData object.
 
 ```csharp
 UserData user_fromUlong = 1234566;
@@ -21,7 +21,7 @@ UserData user = UserData.Get(1234566);
 This means you no longer need to "Get" a UserData object as you did in other steam integrations. The UserData object exposes all relevant information about the user in question with simple fields.&#x20;
 
 {% hint style="info" %}
-For full details see [UserData's documentaiton here](../../../../assets/steamworks/unity-engine/data-layer/user-data.md).
+For full details see [UserData's documentaiton here](../../../../heathens-steamworks-complete/unity/data-layer/user-data.md).
 {% endhint %}
 
 ## Use Cases
@@ -78,7 +78,7 @@ If your not aware of what a callback is see this [article](../../../development/
 
 ### Display User information
 
-There are a few pre-made components that can help display common UserData to the screen such as the [Set User Avatar](../../../../assets/steamworks/unity/components/set-user-avatar.md) and [Set User Name](../../../../assets/steamworks/unity/components/set-user-name.md) components. These simply set uGUI RawImage or uGUI Text or TMPro text fields.&#x20;
+There are a few pre-made components that can help display common UserData to the screen such as the [Set User Avatar](../../../../heathens-steamworks-complete/unity/ui-components/set-user-avatar.md) and [Set User Name](../../../../heathens-steamworks-complete/unity/ui-components/set-user-name.md) components. These simply set uGUI RawImage or uGUI Text or TMPro text fields.&#x20;
 
 {% hint style="warning" %}
 These are based on uGUI and sadly Unity has greatly fragmented its UI frameworks with 3 frameworks at current being supported and 1 of them having 2 variations that are "official".

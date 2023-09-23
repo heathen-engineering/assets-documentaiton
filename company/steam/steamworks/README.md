@@ -6,13 +6,13 @@ description: How to .... everything!
 
 ## Introduction
 
-Heathen creates the top Steamworks integration for Unity and is porting it to Godot! Want to do more with Valve's Steamworks API? Then check out [Heathen's Steamworks Complete](../../../assets/steamworks/)!
+Heathen creates the top Steamworks integration for Unity and is porting it to Godot! Want to do more with Valve's Steamworks API? Then check out [Heathen's Steamworks Complete](../../../heathens-steamworks-complete/steamworks.md)!
 
 ## Quick Start
 
 ### With Heathen
 
-The best way to get started quickly and Do More is with [Heathen's Steamworks Complete](../../../assets/steamworks/#feature-comparison) or if you are not quite sure yet you can start with the free "lite" version [Heathen's Steamworks Foundation](../../../assets/steamworks/#feature-comparison).
+The best way to get started quickly and Do More is with [Heathen's Steamworks Complete](../../../heathens-steamworks-complete/steamworks.md#feature-comparison) or if you are not quite sure yet you can start with the free "lite" version [Heathen's Steamworks Foundation](../../../heathens-steamworks-complete/steamworks.md#feature-comparison).
 
 With Heathen's Steamworks you can handle initialization and most features of Steamworks completely code-free. We also provide a robust set of tools for programmers greatly speeding up the process of integrating Steamworks with your project by providing robust and battle-tested systems and tools.&#x20;
 

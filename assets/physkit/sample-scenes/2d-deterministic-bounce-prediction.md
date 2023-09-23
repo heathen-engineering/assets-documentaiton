@@ -42,6 +42,6 @@ The trick shot line component is used to control the Line Renderer and draw the 
 
 ## Sphere GameObject
 
-<figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 A simple stand in for our projectile which uses the Ballistic Path Follow component to track the planned path.

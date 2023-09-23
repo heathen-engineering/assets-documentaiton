@@ -60,13 +60,13 @@ Any item with a "promo" rule defined is a promo item. for example
 }
 ```
 
-The JSON item definition listed above describes an item which is a promo item, that can be granted via a manual [Add Promo Item ](../../../../assets/steamworks/unity-engine/api/inventory.client.md#addpromoitem)call as a 1-time item drop.
+The JSON item definition listed above describes an item which is a promo item, that can be granted via a manual [Add Promo Item ](../../../../heathens-steamworks-complete/unity/api/inventory.client.md#addpromoitem)call as a 1-time item drop.
 
 ## How
 
 How do you give the player the promo items?
 
-With an item defined, you can simply call [Add Promo Item](../../../../assets/steamworks/unity-engine/api/inventory.client.md#addpromoitem), This can either be done from the [Inventory API](../../../../assets/steamworks/unity-engine/api/inventory.client.md#add-promo-item) or from the [Item Definition](../../../../assets/steamworks/unity/scriptable-objects/item-definition.md#add-promo-item) object itself.
+With an item defined, you can simply call [Add Promo Item](../../../../heathens-steamworks-complete/unity/api/inventory.client.md#addpromoitem), This can either be done from the [Inventory API](../../../../heathens-steamworks-complete/unity/api/inventory.client.md#add-promo-item) or from the [Item Definition](../../../../heathens-steamworks-complete/unity/scriptable-objects/item-definition.md#add-promo-item) object itself.
 
 ## Configuration
 

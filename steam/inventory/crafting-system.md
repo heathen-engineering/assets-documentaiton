@@ -44,14 +44,14 @@ The steps of exchange are as follows
 
 * &#x20;Get references to the specific items that will be exchanged\
   You can use the Get Exchange Entry for this step
-  * [Item Definition Get Exchange Entry](../../assets/steamworks/unity/scriptable-objects/item-definition.md#get-exchange-entry)
-  * [Item Data Get Exchange Entry](../../assets/steamworks/unity-engine/data-layer/item-data.md#get-exchange-entry)
-  * [Inventory API Get Exchange Entry](../../assets/steamworks/unity-engine/api/inventory.client.md#exchange-items)
+  * [Item Definition Get Exchange Entry](../../heathens-steamworks-complete/unity/scriptable-objects/item-definition.md#get-exchange-entry)
+  * [Item Data Get Exchange Entry](../../heathens-steamworks-complete/unity/data-layer/item-data.md#get-exchange-entry)
+  * [Inventory API Get Exchange Entry](../../heathens-steamworks-complete/unity/api/inventory.client.md#exchange-items)
 * On the item you wish to "craft" exchange the reagents you just collected\
   You can use the Exchange feature for this step
-  * [Item Definition Exchange](../../assets/steamworks/unity/scriptable-objects/item-definition.md#exchange-1)
-  * [Item Data Exchange](../../assets/steamworks/unity-engine/data-layer/item-data.md#exchange)
-  * [Inventory API Exchange](../../assets/steamworks/unity-engine/api/inventory.client.md#exchange-items)
+  * [Item Definition Exchange](../../heathens-steamworks-complete/unity/scriptable-objects/item-definition.md#exchange-1)
+  * [Item Data Exchange](../../heathens-steamworks-complete/unity/data-layer/item-data.md#exchange)
+  * [Inventory API Exchange](../../heathens-steamworks-complete/unity/api/inventory.client.md#exchange-items)
 
 ## Definition Recipes
 
@@ -145,8 +145,8 @@ To craft an item ... that is to exchange a set of materials/reagents for an item
 
 ### Using Item Definition
 
-Read the [Item Definition article's Exchange](../../assets/steamworks/unity/scriptable-objects/item-definition.md#exchange-1) section for a detailed example.
+Read the [Item Definition article's Exchange](../../heathens-steamworks-complete/unity/scriptable-objects/item-definition.md#exchange-1) section for a detailed example.
 
 ### Using Item Data
 
-Read the [Item Data article's Exchange](../../assets/steamworks/unity-engine/data-layer/item-data.md#exchange-items) section for a detailed example.
+Read the [Item Data article's Exchange](../../heathens-steamworks-complete/unity/data-layer/item-data.md#exchange-items) section for a detailed example.

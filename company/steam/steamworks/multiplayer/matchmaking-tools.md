@@ -71,7 +71,7 @@ The following explains; as clearly as Steam documentation allows, the available 
 
 ### Members
 
-Every user that has joined the lobby is identified as a [LobbyMember.](../../../../assets/steamworks/unity-engine/data-layer/lobby-member-data.md) Each member in a lobby has its own set of metadata which all other members can read but only the member itself can set. To clarify that means you can only set your lobby member metadata but you can read everyone else's data. You cannot however read lobby member metadata if you are not a member of the lobby.
+Every user that has joined the lobby is identified as a [LobbyMember.](../../../../heathens-steamworks-complete/unity/data-layer/lobby-member-data.md) Each member in a lobby has its own set of metadata which all other members can read but only the member itself can set. To clarify that means you can only set your lobby member metadata but you can read everyone else's data. You cannot however read lobby member metadata if you are not a member of the lobby.
 
 ### Metadata
 
@@ -87,7 +87,7 @@ In contrast, metadata stored on a lobby member can only be seen by members of th
 
 When metadata is changed the Steam API will raise the lobby data changed event ... that event will indicate what object's data changed not what data field changed so for example if the event indicates the lobby data changed you should check all the lobby metadata whereas if it indicated a members data changed you should check that members metadata.
 
-The event in question is exposed on the Lobby Manager as [evtDataUpdated ](../../../../assets/steamworks/unity-engine/ui-components/lobby-manager.md#evtdataupdated)and in the Matchmaking API as [EventLobbyDataUpdate](../../../../assets/steamworks/unity-engine/api/matchmaking.client.md#eventlobbydataupdate).
+The event in question is exposed on the Lobby Manager as [evtDataUpdated ](../../../../heathens-steamworks-complete/unity/ui-components/lobby-manager.md#evtdataupdated)and in the Matchmaking API as [EventLobbyDataUpdate](../../../../heathens-steamworks-complete/unity/api/matchmaking.client.md#eventlobbydataupdate).
 
 As far as setting metadata you can use the indexers to set metadata for example if you have a `Lobby` in memory such as from the lobby manager.
 
@@ -108,27 +108,27 @@ var member = lobby.Me;
 member["thisField"] = "thisValue";
 ```
 
-To learn more check out the [Lobby](../../../../assets/steamworks/unity-engine/data-layer/lobby-data.md#introduction) and [LobbyMember ](../../../../assets/steamworks/unity-engine/data-layer/lobby-member-data.md)articles describing the features of the lobby and lobbyMember structures.
+To learn more check out the [Lobby](../../../../heathens-steamworks-complete/unity/data-layer/lobby-data.md#introduction) and [LobbyMember ](../../../../heathens-steamworks-complete/unity/data-layer/lobby-member-data.md)articles describing the features of the lobby and lobbyMember structures.
 
 ### Chat
 
-While the developer-facing part of the Steam API calls it a "Lobby" the backend developer-facing calls it a chat, this is because in reality a "Lobby" is just a chat room. This chat room has its own metadata as noted above and each member within it has its own metadata and you can send and receive messages containing byte\[] data between all members without a network connection. Our [Lobby Chat Director](../../../../assets/steamworks/unity-engine/ui-components/lobby-chat-director.md) can help you get started.
+While the developer-facing part of the Steam API calls it a "Lobby" the backend developer-facing calls it a chat, this is because in reality a "Lobby" is just a chat room. This chat room has its own metadata as noted above and each member within it has its own metadata and you can send and receive messages containing byte\[] data between all members without a network connection. Our [Lobby Chat Director](../../../../heathens-steamworks-complete/unity/ui-components/lobby-chat-director.md) can help you get started.
 
 ## Working with Lobbies
 
 You can work with Lobby in one of 3 main ways; (from lowest level to highest)
 
-### [Raw API](../../../../assets/steamworks/unity-engine/api/matchmaking.client.md)
+### [Raw API](../../../../heathens-steamworks-complete/unity/api/matchmaking.client.md)
 
-All of the functionality of lobby is defined in the [Matchmaking API](../../../../assets/steamworks/unity-engine/api/matchmaking.client.md). No matter how you choose to work with Steam lobbies, it's this API that will be doing the real work. Using the Matchmaking API requires that you have a level of understanding of the underlying Steam API but it does still simplify working with the API by making it Unity-centric, handling boilerplate concepts such as the callbacks and simplifying common concepts in a Unity manager e.g. UnityEvents and Actions, simpler calls, etc..
+All of the functionality of lobby is defined in the [Matchmaking API](../../../../heathens-steamworks-complete/unity/api/matchmaking.client.md). No matter how you choose to work with Steam lobbies, it's this API that will be doing the real work. Using the Matchmaking API requires that you have a level of understanding of the underlying Steam API but it does still simplify working with the API by making it Unity-centric, handling boilerplate concepts such as the callbacks and simplifying common concepts in a Unity manager e.g. UnityEvents and Actions, simpler calls, etc..
 
-### [LobbyData object](../../../../assets/steamworks/unity-engine/data-layer/lobby-data.md)
+### [LobbyData object](../../../../heathens-steamworks-complete/unity/data-layer/lobby-data.md)
 
-[LobbyData](../../../../assets/steamworks/unity-engine/data-layer/lobby-data.md) as in the object in Steamworks Complete is a [struct](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct) which wraps around ulong and CSteamID. Fundamentally it acts as a lobby ID and is [implicitly convertible](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions) between ulong and CSteamID meaning you can pass it along as if it were a ulong value or a CSteamID and you can assign it from a ulong value or a CSteamID. Beyond being a fancy wrapper around ulong it also has accessors and methods that make working with a specific lobby very easy. Using the lobby object you very likely won't need to touch the raw API at all.
+[LobbyData](../../../../heathens-steamworks-complete/unity/data-layer/lobby-data.md) as in the object in Steamworks Complete is a [struct](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct) which wraps around ulong and CSteamID. Fundamentally it acts as a lobby ID and is [implicitly convertible](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions) between ulong and CSteamID meaning you can pass it along as if it were a ulong value or a CSteamID and you can assign it from a ulong value or a CSteamID. Beyond being a fancy wrapper around ulong it also has accessors and methods that make working with a specific lobby very easy. Using the lobby object you very likely won't need to touch the raw API at all.
 
-### [Lobby Manager](../../../../assets/steamworks/unity-engine/ui-components/lobby-manager.md)
+### [Lobby Manager](../../../../heathens-steamworks-complete/unity/ui-components/lobby-manager.md)
 
-As the name suggests [this is a tool for managing a lobby](../../../../assets/steamworks/unity-engine/ui-components/lobby-manager.md). The lobby manager is the easiest way to manage a lobby and is a [Unity component](https://docs.unity3d.com/ScriptReference/Component.html) ... that is you can add it to a GameObject and configure it in Unity editor. The [Lobby Manager](../../../../assets/steamworks/unity-engine/ui-components/lobby-manager.md) does more than simply expose Matchmaking events to the Unity editor it handles common concepts for you and makes it easier to work with a lobby through designer-friendly tools such as Bolt and other visual scripting assets.
+As the name suggests [this is a tool for managing a lobby](../../../../heathens-steamworks-complete/unity/ui-components/lobby-manager.md). The lobby manager is the easiest way to manage a lobby and is a [Unity component](https://docs.unity3d.com/ScriptReference/Component.html) ... that is you can add it to a GameObject and configure it in Unity editor. The [Lobby Manager](../../../../heathens-steamworks-complete/unity/ui-components/lobby-manager.md) does more than simply expose Matchmaking events to the Unity editor it handles common concepts for you and makes it easier to work with a lobby through designer-friendly tools such as Bolt and other visual scripting assets.
 
 ## Player Join / Leave
 
@@ -136,7 +136,7 @@ Your first question when managing a lobby is how to know when the user joins or 
 
 ### Matchmaking API
 
-[EventLobbyEnterSuccess](../../../../assets/steamworks/unity-engine/api/matchmaking.client.md#eventlobbyentersuccess) and [EventLobbyEventFailed ](../../../../assets/steamworks/unity-engine/api/matchmaking.client.md#eventlobbyenterfailed)are raised when the local user tries and succeeds or fails respectively to enter a lobby. Both events return the LobbyEnter structure provided by Steam API.
+[EventLobbyEnterSuccess](../../../../heathens-steamworks-complete/unity/api/matchmaking.client.md#eventlobbyentersuccess) and [EventLobbyEventFailed ](../../../../heathens-steamworks-complete/unity/api/matchmaking.client.md#eventlobbyenterfailed)are raised when the local user tries and succeeds or fails respectively to enter a lobby. Both events return the LobbyEnter structure provided by Steam API.
 
 #### Success
 
@@ -188,7 +188,7 @@ In our example above we used expression to create an anon method. This is a styl
 
 ### Lobby Manager
 
-Lobby manager makes this super easy. Using Lobby Manager you don't need to use any code at all if you don't want. You will see right in the inspector an [evtEnterSuccess ](../../../../assets/steamworks/unity-engine/ui-components/lobby-manager.md#evtentersuccess)and an [evtEnterFailed ](../../../../assets/steamworks/unity-engine/ui-components/lobby-manager.md#evtenterfailed)event. These work just like the ones on Matchmaking API but of course are accessible from the Unity Editor and only raise for lobbies that were joined through this Lobby Manager.
+Lobby manager makes this super easy. Using Lobby Manager you don't need to use any code at all if you don't want. You will see right in the inspector an [evtEnterSuccess ](../../../../heathens-steamworks-complete/unity/ui-components/lobby-manager.md#evtentersuccess)and an [evtEnterFailed ](../../../../heathens-steamworks-complete/unity/ui-components/lobby-manager.md#evtenterfailed)event. These work just like the ones on Matchmaking API but of course are accessible from the Unity Editor and only raise for lobbies that were joined through this Lobby Manager.
 
 The fact that Lobby Manager filters its events to only the events that were run through it makes it much easier when driving UI elements. Most games will have 2 lobbies, 1 for the session aka "matchmaking" and 1 for a player friend group or party. The Matchmaking API events raise for any event on any lobby that the local user is a member of so if a user is in a session lobby and a party lobby the events will raise for both leaving it up to you to sort out which lobby the event goes to.
 
@@ -204,7 +204,7 @@ This is how do you know when some other player joins or leaves the lobby that yo
 
 ### Matchmaking API
 
-This is actually handled via the [EventLobbyChatUpdate ](../../../../assets/steamworks/unity-engine/api/matchmaking.client.md#eventlobbychatupdate)event which is raised any time a chat event occurs ... including when members join or leave.
+This is actually handled via the [EventLobbyChatUpdate ](../../../../heathens-steamworks-complete/unity/api/matchmaking.client.md#eventlobbychatupdate)event which is raised any time a chat event occurs ... including when members join or leave.
 
 The handler for this event would look something like this, note the work is done in the [EChatMemberStateChange](https://partner.steamgames.com/doc/api/ISteamMatchmaking#EChatMemberStateChange) data
 
@@ -230,7 +230,7 @@ Their is no way to do this from the lobby object as the lobby object is a struct
 
 ### Lobby Manager
 
-As always the Lobby Manager makes it easier not just by filtering on the lobby for you but also by splitting the event into two. [evtUserJoined ](../../../../assets/steamworks/unity-engine/ui-components/lobby-manager.md#evtuserjoined)and [evtUserLeft ](../../../../assets/steamworks/unity-engine/ui-components/lobby-manager.md#evtuserleft)invoke when someone joins or leaves respectively. These events are [UserData ](../../../../assets/steamworks/unity-engine/data-layer/user-data.md)events meaning they hand you the [UserData ](../../../../assets/steamworks/unity-engine/data-layer/user-data.md)of the member that joined or left.
+As always the Lobby Manager makes it easier not just by filtering on the lobby for you but also by splitting the event into two. [evtUserJoined ](../../../../heathens-steamworks-complete/unity/ui-components/lobby-manager.md#evtuserjoined)and [evtUserLeft ](../../../../heathens-steamworks-complete/unity/ui-components/lobby-manager.md#evtuserleft)invoke when someone joins or leaves respectively. These events are [UserData ](../../../../heathens-steamworks-complete/unity/data-layer/user-data.md)events meaning they hand you the [UserData ](../../../../heathens-steamworks-complete/unity/data-layer/user-data.md)of the member that joined or left.
 
 ```csharp
 void HandleUserJoined(UserData arg)
@@ -276,7 +276,7 @@ It is up to you as a game developer to handle that event appropreatly for your g
 2. User A Invites User B to join the lobby
 3. User B's clicks the Accept button in the Steam Friends Chat panel (overlay)
 4. Steam launches the game passing the Lobby ID in on the command line
-5. Your [bootstrap scene](../../../design/bootstrap-scene.md) loads first and has the [Steamworks Behaviour](../../../../assets/steamworks/unity/components/steamworks-behaviour.md) script on it, this will detect that the game was launched with a lobby ID on the command line and will raise an event to notify you of that.
+5. Your [bootstrap scene](../../../design/bootstrap-scene.md) loads first and has the [Steamworks Behaviour](../../../../heathens-steamworks-complete/unity/components/steamworks-behaviour.md) script on it, this will detect that the game was launched with a lobby ID on the command line and will raise an event to notify you of that.
 6. Your game client handles the event validating the lobby and navigating to the appropriate location in the game
 7. Your game client joins the indicated lobby
 
@@ -284,12 +284,12 @@ It is up to you as a game developer to handle that event appropreatly for your g
 When the user has accepted a lobby invite the ID of the lobby will be made available to them but the lobbies data will not be updated in the local cash.
 
 \
-You should [RequestLobbyData ](../../../../assets/steamworks/unity-engine/api/matchmaking.client.md#requestlobbydata)for the invited lobby before attempting to read any of its metadata. You can join the lobby without reading the data however if you are properly validating the lobby you will need to read its data before joining.
+You should [RequestLobbyData ](../../../../heathens-steamworks-complete/unity/api/matchmaking.client.md#requestlobbydata)for the invited lobby before attempting to read any of its metadata. You can join the lobby without reading the data however if you are properly validating the lobby you will need to read its data before joining.
 {% endhint %}
 
 ### Game Lobby Join Requested
 
-This is the event that Valve's Steam will invoke when the user is currently in your game and accepts an invite to a lobby for your game. The event can be found on the [Overlay.Client](../../../../assets/steamworks/unity-engine/api/overlay.client.md#event-game-lobby-join-requested) and on the [Overlay Manager](../../../../assets/steamworks/unity/components/overlay-manager.md#evtgamelobbyjoinrequested).
+This is the event that Valve's Steam will invoke when the user is currently in your game and accepts an invite to a lobby for your game. The event can be found on the [Overlay.Client](../../../../heathens-steamworks-complete/unity/api/overlay.client.md#event-game-lobby-join-requested) and on the [Overlay Manager](../../../../heathens-steamworks-complete/unity/components/overlay-manager.md#evtgamelobbyjoinrequested).
 
 ### Command Line
 
@@ -318,7 +318,7 @@ You often need to know when data on the lobby or a given member has changed.
 
 ### Matchmaking API
 
-The [EventLobbyDataUpdate ](../../../../assets/steamworks/unity-engine/api/matchmaking.client.md#eventlobbydataupdate)event is raised when any sort of data is updated for the lobby or a member.
+The [EventLobbyDataUpdate ](../../../../heathens-steamworks-complete/unity/api/matchmaking.client.md#eventlobbydataupdate)event is raised when any sort of data is updated for the lobby or a member.
 
 ```csharp
 void HandleDataChanged(LobbyDataUpdateEventData dataUpdated)
@@ -345,7 +345,7 @@ This cannot be done from the Lobby object alone as it is an event and the struct
 
 ### Lobby Manager
 
-Lobby manager is much like the Matchmaking API for this one and uses the [evtDataUpdated](../../../../assets/steamworks/unity-engine/ui-components/lobby-manager.md#evtdataupdated) method to know when any kind of data has changed.
+Lobby manager is much like the Matchmaking API for this one and uses the [evtDataUpdated](../../../../heathens-steamworks-complete/unity/ui-components/lobby-manager.md#evtdataupdated) method to know when any kind of data has changed.
 
 ```csharp
 void HandleDataChanged(LobbyDataUpdateEventData dataUpdated)
@@ -372,7 +372,7 @@ Writing lobby metadata data can only be done by the owner of the lobby. Metadata
 
 ### Matchmaking API
 
-Use the [SetLobbyData](../../../../assets/steamworks/unity-engine/api/matchmaking.client.md#setlobbydata) method to apply lobby data. This can only be done if the user is the owner of the lobby.
+Use the [SetLobbyData](../../../../heathens-steamworks-complete/unity/api/matchmaking.client.md#setlobbydata) method to apply lobby data. This can only be done if the user is the owner of the lobby.
 
 ```csharp
 if(Matchmaking.Client.SetlobbyData(lobby, key, value))
@@ -433,13 +433,13 @@ lobby["key"] = "value";
 
 ### Get the Lobby
 
-We are often asked how do you "get" the lobby your in as in once you joined or created a lobby how to do you get to its [LobbyData ](../../../../assets/steamworks/unity-engine/data-layer/lobby-data.md)so you can use it for whatever it is you need to use it for.&#x20;
+We are often asked how do you "get" the lobby your in as in once you joined or created a lobby how to do you get to its [LobbyData ](../../../../heathens-steamworks-complete/unity/data-layer/lobby-data.md)so you can use it for whatever it is you need to use it for.&#x20;
 
 The answer differs depending on context so here are some common cases.
 
 #### Lobby Manager
 
-or for that matter, [Quick Match Lobby Control](../../../../assets/steamworks/for-unity-game-engine/ui-components/quick-match-lobby-control.md) or [Party Lobby Control](../../../../assets/steamworks/for-unity-game-engine/ui-components/party-lobby-control.md) or any similar lobby management tool.
+or for that matter, [Quick Match Lobby Control](../../../../heathens-steamworks-complete/unity/ui-components/quick-match-lobby-control.md) or [Party Lobby Control](../../../../heathens-steamworks-complete/unity/ui-components/party-lobby-control.md) or any similar lobby management tool.
 
 In all cases these tools have a field on them named Lobby that returns the lobby they are managing ... similarly you can set the lobby you want them to manage by writing a value to this field.
 
@@ -606,7 +606,7 @@ You can learn more about handling the result of a `BeginAuthSession` in our arti
 
 For more information on lobby types see Valve's documentation [https://partner.steamgames.com/doc/api/ISteamMatchmaking#typedefs](https://partner.steamgames.com/doc/api/ISteamMatchmaking#typedefs)&#x20;
 
-See the [API.Matchmaking](../../../../assets/steamworks/unity-engine/api/matchmaking.client.md#create-lobby) interface for details on creating a lobby. In addition the [Lobby Manager](../../../../assets/steamworks/unity-engine/ui-components/lobby-manager.md), tools can help you create, join and manage a lobby for a specific function in your game.&#x20;
+See the [API.Matchmaking](../../../../heathens-steamworks-complete/unity/api/matchmaking.client.md#create-lobby) interface for details on creating a lobby. In addition the [Lobby Manager](../../../../heathens-steamworks-complete/unity/ui-components/lobby-manager.md), tools can help you create, join and manage a lobby for a specific function in your game.&#x20;
 
 Let's say for example you use 2 types of lobbies in your game
 
@@ -617,19 +617,19 @@ Let's say for example you use 2 types of lobbies in your game
 
     This would be where you have your players configure a gameplay session and wait for competitors to join or similar. This is the most typical use of a lobby and what drives matchmaking in your game.
 
-In the above use case, you would attack a [Lobby Manager](../../../../assets/steamworks/unity-engine/ui-components/lobby-manager.md) to your Party UI and another to your Session UI. You would configure each accordingly and each can manage its own chat and metadata features. This helps you split functionality across concepts unique to your game.
+In the above use case, you would attack a [Lobby Manager](../../../../heathens-steamworks-complete/unity/ui-components/lobby-manager.md) to your Party UI and another to your Session UI. You would configure each accordingly and each can manage its own chat and metadata features. This helps you split functionality across concepts unique to your game.
 
 ### Find and Join Lobbies
 
-The easiest way to search for and join lobbies is through the [Lobby Manager](../../../../assets/steamworks/unity-engine/ui-components/lobby-manager.md) tool. Alternatively, you can use Heathen's API.Matchmaking directly to easily search for and join lobbies.&#x20;
+The easiest way to search for and join lobbies is through the [Lobby Manager](../../../../heathens-steamworks-complete/unity/ui-components/lobby-manager.md) tool. Alternatively, you can use Heathen's API.Matchmaking directly to easily search for and join lobbies.&#x20;
 
 Aside from browsing for a lobby you can handle invites and joining of lobby invites. Inviting friends to Lobby can be done in several ways including from outside of your game via the Steam Friends list.
 
-Internally to you're game you can use the [User Data](../../../../assets/steamworks/unity-engine/data-layer/user-data.md) object to invite a specific player. You would have access to this object from various tools and interfaces including [Friends](../../../../assets/steamworks/unity-engine/api/friends.client.md), [Clans ](../../../../assets/steamworks/unity-engine/api/clans.client.md)and their related chat systems. When you send an invite it is up to that user to accept it and there are multiple use cases for how they might accept the invite
+Internally to you're game you can use the [User Data](../../../../heathens-steamworks-complete/unity/data-layer/user-data.md) object to invite a specific player. You would have access to this object from various tools and interfaces including [Friends](../../../../heathens-steamworks-complete/unity/api/friends.client.md), [Clans ](../../../../heathens-steamworks-complete/unity/api/clans.client.md)and their related chat systems. When you send an invite it is up to that user to accept it and there are multiple use cases for how they might accept the invite
 
 #### While In-game
 
-In this case, the accepting user is already in-game so the Game Lobby Join Invite event will be raised on the [Overlay Manger](../../../../assets/steamworks/unity/components/overlay-manager.md#events) and its related [API.Overlay](../../../../assets/steamworks/unity-engine/api/overlay.client.md#game-lobby-join-requested) interface.
+In this case, the accepting user is already in-game so the Game Lobby Join Invite event will be raised on the [Overlay Manger](../../../../heathens-steamworks-complete/unity/components/overlay-manager.md#events) and its related [API.Overlay](../../../../heathens-steamworks-complete/unity/api/overlay.client.md#game-lobby-join-requested) interface.
 
 #### While out of the game
 
@@ -660,13 +660,13 @@ If you get the Lobby Join Requested event or if you see the lobby invite ID on t
 Thus it's best to join the lobby and then read its data as a member.
 {% endhint %}
 
-In the rare case where you need to read the data before you join, you would first have to [Request the data](../../../../assets/steamworks/unity-engine/api/matchmaking.client.md#requestlobbydata) and wait for the [EventLobbyDataUpdate](../../../../assets/steamworks/unity-engine/api/matchmaking.client.md#eventlobbydataupdate) event to trigger indicating the data had been downloaded.
+In the rare case where you need to read the data before you join, you would first have to [Request the data](../../../../heathens-steamworks-complete/unity/api/matchmaking.client.md#requestlobbydata) and wait for the [EventLobbyDataUpdate](../../../../heathens-steamworks-complete/unity/api/matchmaking.client.md#eventlobbydataupdate) event to trigger indicating the data had been downloaded.
 
 ### Using Lobby Chat
 
-Steam's Lobby system includes a simple chat system able to handle text or data. The easiest way to interact with lobby chat is via the [Lobby Chat Director](../../../../assets/steamworks/unity-engine/ui-components/lobby-chat-director.md) which needs to be added to the same object as your [Lobby Manager](../../../../assets/steamworks/unity-engine/ui-components/lobby-manager.md).
+Steam's Lobby system includes a simple chat system able to handle text or data. The easiest way to interact with lobby chat is via the [Lobby Chat Director](../../../../heathens-steamworks-complete/unity/ui-components/lobby-chat-director.md) which needs to be added to the same object as your [Lobby Manager](../../../../heathens-steamworks-complete/unity/ui-components/lobby-manager.md).
 
-You can also interact with lobby chat manually through the [API.Matchmaking](../../../../assets/steamworks/unity-engine/api/matchmaking.client.md) interface.
+You can also interact with lobby chat manually through the [API.Matchmaking](../../../../heathens-steamworks-complete/unity/api/matchmaking.client.md) interface.
 
 ### Notify "Connect to network"
 
@@ -694,7 +694,7 @@ When called Valve will record the information on the Steam Lobby metadata as sho
 
 ![](<../../../../.gitbook/assets/image (65).png>)
 
-Each member of the lobby (other than the owner) will be notified by a callback which raises the `EventLobbyGameCreated` event located on the [API.Matchmaking](../../../../assets/steamworks/unity-engine/api/matchmaking.client.md) interface and exposed through the [Lobby Manager](../../../../assets/steamworks/unity-engine/ui-components/lobby-manager.md).&#x20;
+Each member of the lobby (other than the owner) will be notified by a callback which raises the `EventLobbyGameCreated` event located on the [API.Matchmaking](../../../../heathens-steamworks-complete/unity/api/matchmaking.client.md) interface and exposed through the [Lobby Manager](../../../../heathens-steamworks-complete/unity/ui-components/lobby-manager.md).&#x20;
 
 {% hint style="warning" %}
 All members of a lobby should upon joining the lobby register an event handler on the `Lobby.evtGameServerSet` event
@@ -756,11 +756,11 @@ Once the network session is ready you have the owner notify the other members th
 lobby.SetGameServer();
 ```
 
-Notice in this case we do not provide any parameters to the [SetGameServer ](../../../../assets/steamworks/unity-engine/data-layer/lobby-data.md#set-game-server)call ... this is assuming your session will be P2P and that the owner is the host ... for more information please consult the article on [LobbyData](../../../../assets/steamworks/unity-engine/data-layer/lobby-data.md).
+Notice in this case we do not provide any parameters to the [SetGameServer ](../../../../heathens-steamworks-complete/unity/data-layer/lobby-data.md#set-game-server)call ... this is assuming your session will be P2P and that the owner is the host ... for more information please consult the article on [LobbyData](../../../../heathens-steamworks-complete/unity/data-layer/lobby-data.md).
 
 This will cause the GameServerSet event to be triggered as noted in the [Notify "Connect to network"](matchmaking-tools.md#notify-connect-to-network) entry.
 
-When users see that event they will use the GameServer information in the lobby to know who to connect to. You have options here and which you would use depends again on your game and your design. The following code simply highlights what's available in the [LobbyGameServer ](../../../../assets/steamworks/unity-engine/objects/lobby-game-server.md)information you read on the [GameServer ](../../../../assets/steamworks/unity-engine/data-layer/lobby-data.md#game-server)field of the lobby.
+When users see that event they will use the GameServer information in the lobby to know who to connect to. You have options here and which you would use depends again on your game and your design. The following code simply highlights what's available in the [LobbyGameServer ](../../../../heathens-steamworks-complete/unity/objects/lobby-game-server.md)information you read on the [GameServer ](../../../../heathens-steamworks-complete/unity/data-layer/lobby-data.md#game-server)field of the lobby.
 
 ```csharp
 //When you are connecting over SteamNetworking/Socket 

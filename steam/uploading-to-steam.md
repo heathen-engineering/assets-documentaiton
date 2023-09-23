@@ -35,7 +35,7 @@ Heathen's Steamworks Complete includes the Steam Content Builder tool which can 
 
 This can be accessed from the `File\Steam Build` or `Window\Steamworks\Builder` menu:
 
-![](<../.gitbook/assets/image (8).png>)or![](<../.gitbook/assets/image (6).png>)
+![](<../.gitbook/assets/image (8) (1).png>)or![](<../.gitbook/assets/image (6) (2).png>)
 
 ### Configuring the tool
 
@@ -45,7 +45,7 @@ When you first open the tool in your first project you will see a message asking
 
 You can click the Update Configuration button to open the Steam Content Builder Configuration where you can edit the Steamworks SDK Content Builder location and modify other settings.
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Depots
 
@@ -59,7 +59,7 @@ Most Steam games will have 1 depot for each platform they support
 
 This is the local folder path to the Steamworks SDK's ContentBuilder folder. By default this would be located at `sdk/tools/ContentBuilder` the tool has a button you can press to help you get started downloading the Steamworks SDK from Valve.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Username and Password
 
@@ -73,19 +73,19 @@ The Password is not stored by default and is held in temporary memory, cleared e
 If you choose to toggle the "Remember Password" option then we will store the password in the Scriptable Object as well again encrypted with a simple cipher. While the cipher prevents reading the password as plain text it is not a replacement for proper security ... do not share the configuration with anyone you wouldn't trust with the username and password
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Application ID
 
 Finally the Application ID will default to the App ID of the project it's in if known but can be set to any value that suits. This should be the App ID of the application you are uploading to and for which the depots are defined.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Run the tool
 
 With everything configured correctly, you can now select the Depot you wish to upload your build to and then choose `Build & Upload` or simply `Upload`
 
-<figure><img src="../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 * Build & Upload\
   This will compile a new build and store it in the `sdk\tools\ContentBuilder\content\<AppName>\<Platform>\` where once build it will upload it to Steam displaying progress as it goes.
@@ -110,7 +110,7 @@ Because Valve doesn't allow Steam CMD to set a build live on the default branch 
 
 If your game is small enough you can upload it as a zip file in the Steam Developer Portal.
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In short, if the resulting zip file is smaller than 2 GB you can upload it in the Steam Pipe -> Builds -> Upload Depots option.
 
@@ -131,7 +131,7 @@ Download the Steamworks SDK
 
 Once you have that downloaded you should unpack it to a location on your local machine. The folder you're looking for within the SDK is the SDK -> Tools -> ContentBuilder folder.
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>Shows the ContentBuilder folder within the SDK zip file</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>Shows the ContentBuilder folder within the SDK zip file</p></figcaption></figure>
 
 {% embed url="https://www.youtube.com/watch?v=SoNH-v6aU9Q" %}
 A video explaining how this all works

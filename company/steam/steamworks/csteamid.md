@@ -16,7 +16,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 CSteamID also known simply as "Steam ID" is a ulong value (64 bits) and is used by Steam API to uniquely identify ... well most things.&#x20;
 
-Heathen has created wrap-around structures like [UserData ](../../../assets/steamworks/unity-engine/data-layer/user-data.md)and [Lobby ](../../../assets/steamworks/unity-engine/data-layer/lobby-data.md)that are interchangeable with CSteamID and ulong and provide helpful features unique to each use case of the ID. In most cases, you should be using [UserData](../../../assets/steamworks/unity-engine/data-layer/user-data.md), [Lobby](../../../assets/steamworks/unity-engine/data-layer/lobby-data.md), [Clan](../../../assets/steamworks/unity-engine/data-layer/clan-data.md), etc. and not need to bother with the raw CSteamID or its ulong value.
+Heathen has created wrap-around structures like [UserData ](../../../heathens-steamworks-complete/unity/data-layer/user-data.md)and [Lobby ](../../../heathens-steamworks-complete/unity/data-layer/lobby-data.md)that are interchangeable with CSteamID and ulong and provide helpful features unique to each use case of the ID. In most cases, you should be using [UserData](../../../heathens-steamworks-complete/unity/data-layer/user-data.md), [Lobby](../../../heathens-steamworks-complete/unity/data-layer/lobby-data.md), [Clan](../../../heathens-steamworks-complete/unity/data-layer/clan-data.md), etc. and not need to bother with the raw CSteamID or its ulong value.
 
 The native CSteamID ulong value is composed of 4 main parts
 
@@ -100,15 +100,15 @@ As noted Steam IDs are used for a lot of different things and each has its own s
 
 Heathen has created a set of wrappers that let you treat each ID as a unique type and simplify working with the features of each unique type. Note each of these is implicitly convertible ... that is you can use them as if they are CSteamID\_t or ulong and you can assign them from CSteamID\_t or ulong. These also have additional handlers to help you work with them as AccountID\_t
 
-### [Clan](../../../assets/steamworks/unity-engine/data-layer/clan-data.md)
+### [Clan](../../../heathens-steamworks-complete/unity/data-layer/clan-data.md)
 
 This is for IDs that represent a "clan" or "group"
 
-### [Lobby](../../../assets/steamworks/unity-engine/data-layer/lobby-data.md)
+### [Lobby](../../../heathens-steamworks-complete/unity/data-layer/lobby-data.md)
 
 This is for IDs that represent lobbies aka chats
 
-### [UserData](../../../assets/steamworks/unity-engine/data-layer/user-data.md)
+### [UserData](../../../heathens-steamworks-complete/unity/data-layer/user-data.md)
 
 This is for IDs that represent users
 
