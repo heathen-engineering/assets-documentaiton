@@ -18,11 +18,11 @@ An extension of the standard UImage widget with two new functions to help displa
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
-This works with the[ Get My Steam Avatar](../blueprint-nodes/get-my-steam-avatar.md) method to handle loading the local user's avatar image for you and assigning it to the Image for display.
+This works with the[ Get My Steam Avatar](../blueprint-nodes/friends/get-my-steam-avatar.md) method to handle loading the local user's avatar image for you and assigning it to the Image for display.
 
 ### Show User Avatar
 
@@ -32,7 +32,7 @@ This works with the[ Get My Steam Avatar](../blueprint-nodes/get-my-steam-avatar
 
 </div>
 
-This works with the [Get User Steam Avatar](../blueprint-nodes/get-user-steam-avatar.md) method to handle loading a target user's avatar image for you and assigning it to the image for the display.
+This works with the [Get User Steam Avatar](../blueprint-nodes/friends/get-user-steam-avatar.md) method to handle loading a target user's avatar image for you and assigning it to the image for the display.
 
 ## Example
 
