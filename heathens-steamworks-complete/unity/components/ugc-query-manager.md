@@ -1,11 +1,16 @@
+---
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
+---
+
 # UGC Query Manager
 
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
 ## &#x20;Introduction
@@ -22,7 +27,7 @@ public class UserGeneratedContentQueryManager : MonoBehaviour
 
 {% embed url="https://kb.heathenengineering.com/assets/steamworks/learning/core-concepts/user-generated-content-workshop" %}
 
-The UGC Workshop article includes a step by step guide on the use of UGC Query Manager to create an [In-Game Workshop browser](../../../../company/steam/steamworks/workshop/in-game-browser.md).
+The UGC Workshop article includes a step by step guide on the use of UGC Query Manager to create an [In-Game Workshop browser](../../../company/steam/steamworks/workshop/in-game-browser.md).
 
 #### User Generated Content API
 

@@ -1,22 +1,24 @@
 ---
 description: The Heathen Steam API wrapper
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
 ---
 
-# ⚙ API
+# API
 
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
 ## &#x20;Introduction
 
 The Heathen API provides access to the full Steam API wrapping every interface with a Unity friendly static class, simplifying use of the raw API without reducing its functionality and exposing every callback as a UnityEvent and every callresult as a Unity firendly Action.
 
-We have wrapped every interface (except Networking interfaces) and copied its relevant documentation meaning you can now explore Valve's own documentation in your IDE via [IntelliSense](../../../../company/development/intellisense.md), take full advantage of auto complete and suggestions and explore the full API via the object explorer.&#x20;
+We have wrapped every interface (except Networking interfaces) and copied its relevant documentation meaning you can now explore Valve's own documentation in your IDE via [IntelliSense](../../../company/development/intellisense.md), take full advantage of auto complete and suggestions and explore the full API via the object explorer.&#x20;
 
 {% hint style="info" %}
 Why not wrap the networking interfaces?

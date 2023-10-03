@@ -1,5 +1,7 @@
 ---
 description: Documentation for the Lobbies sample scenes in the Steamworks Complete asset
+cover: ../../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
 ---
 
 # Lobby

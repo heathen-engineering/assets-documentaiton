@@ -1,5 +1,7 @@
 ---
 description: Access rich presence, user data and more through the Friends interface
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
 ---
 
 # Friends.Client
@@ -7,9 +9,9 @@ description: Access rich presence, user data and more through the Friends interf
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
 ## &#x20;Introduction
@@ -28,8 +30,8 @@ You can list the clan owner, its officers, open the clan chat in overlay or join
 
 ### Related Components
 
-{% content-ref url="../../unity/components/friend-manager.md" %}
-[friend-manager.md](../../unity/components/friend-manager.md)
+{% content-ref url="../components/friend-manager.md" %}
+[friend-manager.md](../components/friend-manager.md)
 {% endcontent-ref %}
 
 ### Related Objects

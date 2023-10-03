@@ -1,11 +1,16 @@
+---
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
+---
+
 # Input.Client
 
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
 ## &#x20;Introduction
@@ -24,7 +29,7 @@ Steam Input API is a flexible action-based API that supports all major controlle
 
 {% embed url="https://partner.steamgames.com/doc/features/steam_controller" %}
 
-To learn more about Steam Input in Heathen's Steamworks Complete [read this article](../../../../steam/input.md) on the core concept.
+To learn more about Steam Input in Heathen's Steamworks Complete [read this article](../../../steam/input.md) on the core concept.
 
 ## Events
 
@@ -67,7 +72,7 @@ Returns the array of controller handles currently connected to the game.
 
 ### Add Input
 
-Adds an input action to the list of tracted input actions, if your using a [SteamSettings ](../../unity/scriptable-objects/steam-settings/)object this will be done for you for all InputActions defined in the [SteamSettings](../../unity/scriptable-objects/steam-settings/). Once an action is added it can be updated by the API and tools such as the [SteamInputManager ](../../unity/components/steam-input-manager.md)can be used to track changes.
+Adds an input action to the list of tracted input actions, if your using a [SteamSettings ](../scriptable-objects/steam-settings/)object this will be done for you for all InputActions defined in the [SteamSettings](../scriptable-objects/steam-settings/). Once an action is added it can be updated by the API and tools such as the [SteamInputManager ](../components/steam-input-manager.md)can be used to track changes.
 
 ```csharp
 public static void AddInput(string name, InputActionType type);

@@ -1,11 +1,16 @@
+---
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
+---
+
 # Inventory.Client
 
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
 ## &#x20;Introduction
@@ -52,7 +57,7 @@ See [Steam Inventory Service](https://partner.steamgames.com/doc/features/invent
 
 A callback is a delegate similar to a UnityEvent, that is its a pointer to a method that will be called at some later point ... in the case of Steam methods it gets called when the process completes.
 
-To learn more please read the article on [Callbacks](../../../../company/development/callbacks.md) and on [Lambda Expressions](../../../../company/development/lambda-expressions.md).
+To learn more please read the article on [Callbacks](../../../company/development/callbacks.md) and on [Lambda Expressions](../../../company/development/lambda-expressions.md).
 
 ## Events
 
@@ -544,13 +549,13 @@ public static ItemDetail GetExtendedItemDetail(SteamInventoryResult_t result,
 ## How To
 
 {% hint style="success" %}
-Methods that impact a user's inventory will typically have a [callback ](../../../../company/development/callbacks.md)that returns a type of [Inventory Result](../objects/inventory-result.md). In addition the [Item Definitions](../../unity/scriptable-objects/item-definition.md) stored in the active Steam Settings will be updated with the resulting [Item Details](../objects/item-detail.md) which be used as a real time view of the current state of the user's inventory.
+Methods that impact a user's inventory will typically have a [callback ](../../../company/development/callbacks.md)that returns a type of [Inventory Result](../objects/inventory-result.md). In addition the [Item Definitions](../scriptable-objects/item-definition.md) stored in the active Steam Settings will be updated with the resulting [Item Details](../objects/item-detail.md) which be used as a real time view of the current state of the user's inventory.
 {% endhint %}
 
 {% hint style="info" %}
-The [Item Definitions](../../unity/scriptable-objects/item-definition.md) object contains shortcut methods to many of the features found in the API.Inventory interface.
+The [Item Definitions](../scriptable-objects/item-definition.md) object contains shortcut methods to many of the features found in the API.Inventory interface.
 
-For example it is possible to consume quantity, add promo items and exchange items directly from the item its self. Please review the [Item Definition](../../unity/scriptable-objects/item-definition.md) object closely to understand all the options available to you.
+For example it is possible to consume quantity, add promo items and exchange items directly from the item its self. Please review the [Item Definition](../scriptable-objects/item-definition.md) object closely to understand all the options available to you.
 {% endhint %}
 
 ### Add Promo Item

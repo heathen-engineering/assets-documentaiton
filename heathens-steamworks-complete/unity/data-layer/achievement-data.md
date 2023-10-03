@@ -1,11 +1,16 @@
+---
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
+---
+
 # Achievement Data
 
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
 ## Introduction
@@ -28,7 +33,7 @@ myAch.IsAchievd = true;
 myAch.Store();
 ```
 
-Achievements are a common feature of Steam API and one of the simpler to implement. They are typically used to mark milestones or key accomplishments of the player, you can learn more in our [Steam Guides](../../../../company/steam/achievements.md).
+Achievements are a common feature of Steam API and one of the simpler to implement. They are typically used to mark milestones or key accomplishments of the player, you can learn more in our [Steam Guides](../../../company/steam/achievements.md).
 
 ## Fields and Attributes
 

@@ -1,5 +1,7 @@
 ---
 description: Lobby management made easy
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
 ---
 
 # Lobby Manager
@@ -7,9 +9,9 @@ description: Lobby management made easy
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
 ## &#x20;Introduction
@@ -36,7 +38,7 @@ You connect a lobby to the LobbyManager by using the LobbyManager to create or j
 
 ### Steam Lobby
 
-The [Steam Lobby](../../../../company/steam/steamworks/multiplayer/matchmaking-tools.md) feature of the Steam API is a flexible and powerful tool useful for far more than simple matchmaking. We find it best to think of a "lobby" more like a chat room with metadata. It does not have anything to do with networking, it doesn't have to relate to a game session or a game server.
+The [Steam Lobby](../../../company/steam/steamworks/multiplayer/matchmaking-tools.md) feature of the Steam API is a flexible and powerful tool useful for far more than simple matchmaking. We find it best to think of a "lobby" more like a chat room with metadata. It does not have anything to do with networking, it doesn't have to relate to a game session or a game server.
 
 Steam allows a player to be apart of up to 3 lobbies but has a few restrictions.
 

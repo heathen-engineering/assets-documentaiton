@@ -1,5 +1,7 @@
 ---
 description: The most important part
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
 ---
 
 # Steamworks Behaviour

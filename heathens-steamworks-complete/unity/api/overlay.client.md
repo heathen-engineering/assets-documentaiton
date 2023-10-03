@@ -1,11 +1,16 @@
+---
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
+---
+
 # Overlay.Client
 
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
 ## &#x20;Introduction
@@ -30,8 +35,8 @@ The overlay interface provides simplified access to Steam's overlay features. Th
 
 ### Related Components
 
-{% content-ref url="../../unity/components/overlay-manager.md" %}
-[overlay-manager.md](../../unity/components/overlay-manager.md)
+{% content-ref url="../components/overlay-manager.md" %}
+[overlay-manager.md](../components/overlay-manager.md)
 {% endcontent-ref %}
 
 ## Events

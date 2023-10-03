@@ -1,5 +1,7 @@
 ---
 description: More than the Epic Game Store had at launch 🤪🤪
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
 ---
 
 # Item Shopping Cart Manager
@@ -7,14 +9,14 @@ description: More than the Epic Game Store had at launch 🤪🤪
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
 ## &#x20;Introduction
 
-This tool helps you manage a shopping cart like behaviour for in-game item shops working with [Steam Inventory](../../../../company/steam/steamworks/inventory/). The tool can be used to add, set, or get items from the cart thus enabling you to add items, adjust the quantity in the cart and has features for reading the estimated total and reporting that as a string for display.
+This tool helps you manage a shopping cart like behaviour for in-game item shops working with [Steam Inventory](../../../company/steam/steamworks/inventory/). The tool can be used to add, set, or get items from the cart thus enabling you to add items, adjust the quantity in the cart and has features for reading the estimated total and reporting that as a string for display.
 
 The core feature of the cart is its ability to manage an order, that is you can call StartPurchase through the cart and it will manage the process through to authorization. The idea is you would use the cart to start the purchase and listen for the result. You game should block further modification to the cart until the order is authorized or cleared.
 

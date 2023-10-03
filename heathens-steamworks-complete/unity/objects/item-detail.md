@@ -1,11 +1,16 @@
+---
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
+---
+
 # Item Detail
 
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
 ## Introduction
@@ -14,7 +19,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 public struct ItemDetail
 ```
 
-Used by the [Inventory ](../api/inventory.client.md)interface and in the [Item Definition](../../unity/scriptable-objects/item-definition.md) to represent instances of an item.
+Used by the [Inventory ](../api/inventory.client.md)interface and in the [Item Definition](../scriptable-objects/item-definition.md) to represent instances of an item.
 
 ## Fields and Attributes
 

@@ -1,11 +1,16 @@
+---
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
+---
+
 # Input Action Glyph
 
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
 ## Introduction
@@ -29,7 +34,7 @@ public class InputActionGlyph : MonoBehaviour
 public InputActionSet set;
 ```
 
-The [Steam Input Action Set](../../unity/scriptable-objects/input-action-set.md) the action is a member of
+The [Steam Input Action Set](../scriptable-objects/input-action-set.md) the action is a member of
 
 ### Layer
 
@@ -37,7 +42,7 @@ The [Steam Input Action Set](../../unity/scriptable-objects/input-action-set.md)
 public InputActionSetLayer layer;
 ```
 
-The [Steam Input Action Set Layer](../../unity/scriptable-objects/input-action-set-layer.md) the action is a member of
+The [Steam Input Action Set Layer](../scriptable-objects/input-action-set-layer.md) the action is a member of
 
 ### Action
 
@@ -45,7 +50,7 @@ The [Steam Input Action Set Layer](../../unity/scriptable-objects/input-action-s
 public InputAction action;
 ```
 
-The [Steam Input Action](../../unity/scriptable-objects/input-action.md) to be displayed
+The [Steam Input Action](../scriptable-objects/input-action.md) to be displayed
 
 ## Methods
 

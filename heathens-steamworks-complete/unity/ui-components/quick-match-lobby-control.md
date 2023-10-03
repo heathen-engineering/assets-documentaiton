@@ -1,5 +1,7 @@
 ---
 description: Code free drag and drop quick match style session lobby tool
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
 ---
 
 # Quick Match Lobby Control

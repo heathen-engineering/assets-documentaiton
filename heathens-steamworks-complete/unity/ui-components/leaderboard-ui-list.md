@@ -1,5 +1,7 @@
 ---
 description: Displaying leaderboard results with zero code
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
 ---
 
 # Leaderboard UI List

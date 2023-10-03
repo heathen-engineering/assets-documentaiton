@@ -1,18 +1,23 @@
+---
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
+---
+
 # Remote Storage
 
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
 ## Introduction
 
-This scene demonstrates the use of the [Remote Storage](../../../../company/steam/steamworks/data-models.md) system e.g. Steam Cloud
+This scene demonstrates the use of the [Remote Storage](../../../company/steam/steamworks/data-models.md) system e.g. Steam Cloud
 
-<figure><img src="../../../../.gitbook/assets/image (19) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19) (2).png" alt=""><figcaption></figcaption></figure>
 
 Steamworks Complete provides several ways to work with remote storage via the [Remote Storage API](../api/remotestorage.client.md) and [DataModel ](../programming-tools/datamodel.md)tools.
 

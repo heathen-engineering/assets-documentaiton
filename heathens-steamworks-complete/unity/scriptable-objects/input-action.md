@@ -1,11 +1,16 @@
+---
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
+---
+
 # Input Action
 
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
 ## Introduction
@@ -166,7 +171,7 @@ label.Text = names[0];
 
 Input Actions are created as part of your [Steam Settings](steam-settings/) object
 
-![](<../../../../.gitbook/assets/image (160) (1).png>)
+![](<../../../.gitbook/assets/image (160) (1).png>)
 
 ### Set Analog or Digital
 
@@ -176,4 +181,4 @@ AI represents "Analog Input"
 
 DI represents "Digital Input"
 
-![](<../../../../.gitbook/assets/image (161) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (161) (1) (1) (1).png>)

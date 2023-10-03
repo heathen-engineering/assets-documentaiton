@@ -1,11 +1,16 @@
+---
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
+---
+
 # UGC Query
 
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
 ## Introduction
@@ -14,7 +19,7 @@ Designed to simplify the act of querying User Generated Content aka Workshop ite
 
 The intended use is that a query will be created through one of the static Create methods to properly initialize the base query and you can then use simple calls on the object to modify the query, execute the query and step through query pages.
 
-This is used by the [UGC Query Manager](../../unity/components/ugc-query-manager.md) which can its self simplify UGC query even further.
+This is used by the [UGC Query Manager](../components/ugc-query-manager.md) which can its self simplify UGC query even further.
 
 ## Understanding UGC Queries
 

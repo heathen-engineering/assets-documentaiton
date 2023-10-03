@@ -1,5 +1,7 @@
 ---
 description: Represents a group of friends such as online, offline, etc.
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
 ---
 
 # Friend Group
@@ -7,14 +9,14 @@ description: Represents a group of friends such as online, offline, etc.
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
 ## &#x20;Introduction
 
-![](<../../../../.gitbook/assets/image (152).png>)
+![](<../../../.gitbook/assets/image (152).png>)
 
 This is used by the [FriendGroups ](friend-groups-display.md)component when instantiating groups in the list. The FriendGroup is responsible for instantiating each user record within it and maintaining that information.
 

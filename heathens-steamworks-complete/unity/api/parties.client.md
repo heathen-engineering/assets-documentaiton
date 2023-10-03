@@ -1,11 +1,16 @@
+---
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
+---
+
 # Parties.Client
 
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
 ## &#x20;Introduction
@@ -22,7 +27,7 @@ public static class Parties.Client
 
 You can use this system as a matchmaking solution where in your user can scan for available beacons to join and can create and publish beacons that others can view and join.
 
-You can attach metadata to a beacon similar to the metadata concept with [Steam Lobby](../../../../company/steam/steamworks/multiplayer/matchmaking-tools.md) based matchmaking. You can use the party system along side other forms of matchmaking manually updating the available "slots" a beacon is advertising.
+You can attach metadata to a beacon similar to the metadata concept with [Steam Lobby](../../../company/steam/steamworks/multiplayer/matchmaking-tools.md) based matchmaking. You can use the party system along side other forms of matchmaking manually updating the available "slots" a beacon is advertising.
 
 
 

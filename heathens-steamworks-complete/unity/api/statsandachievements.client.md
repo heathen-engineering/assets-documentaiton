@@ -1,11 +1,16 @@
+---
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
+---
+
 # StatsAndAchievements.Client
 
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
 ## &#x20;Introduction
@@ -491,9 +496,9 @@ You can clear achievements either by using the interface
 API.StatsAndAchievements.Client.ClearAChievement(name);
 ```
 
-or by using the [Achievement Object](../../unity/scriptable-objects/achievement-object.md) directly
+or by using the [Achievement Object](../scriptable-objects/achievement-object.md) directly
 
-Resetting a stat is as simple as setting its value, see the [Int Stat](../../unity/scriptable-objects/int-stat.md) and [Float Stat](../../unity/scriptable-objects/float-stat.md) object for details
+Resetting a stat is as simple as setting its value, see the [Int Stat](../scriptable-objects/int-stat.md) and [Float Stat](../scriptable-objects/float-stat.md) object for details
 
 You can optionally reset all stats and achievements
 

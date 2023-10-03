@@ -1,5 +1,7 @@
 ---
 description: Representing a Steam Clan aka Steam Group
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
 ---
 
 # Clan Data
@@ -7,9 +9,9 @@ description: Representing a Steam Clan aka Steam Group
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
 ## Introduction
@@ -66,7 +68,7 @@ The Steam API native CSteamID value for this&#x20;
 public AccountID_t { get; set; }
 ```
 
-The account ID segment of the full CSteamID, to understand more read [this article](../../../../company/steam/steamworks/csteamid.md).
+The account ID segment of the full CSteamID, to understand more read [this article](../../../company/steam/steamworks/csteamid.md).
 
 ### FriendId
 
@@ -74,7 +76,7 @@ The account ID segment of the full CSteamID, to understand more read [this artic
 public uint FriendId { get; set; }
 ```
 
-The underlying uint value of the AccountID\_t segment of the CSteamID, to understand more read [this article](../../../../company/steam/steamworks/csteamid.md).
+The underlying uint value of the AccountID\_t segment of the CSteamID, to understand more read [this article](../../../company/steam/steamworks/csteamid.md).
 
 ### IsValid
 

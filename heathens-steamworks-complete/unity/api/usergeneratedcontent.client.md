@@ -1,11 +1,16 @@
+---
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
+---
+
 # UserGeneratedContent.Client
 
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
 ## &#x20;Introduction
@@ -234,7 +239,7 @@ public static UGCQueryHandle_t CreateQueryAllRequest(EUGCQuery queryType,
 ```
 
 {% hint style="info" %}
-The [UGC Query Manager](../../unity/components/ugc-query-manager.md) can make working with quires much simpler.
+The [UGC Query Manager](../components/ugc-query-manager.md) can make working with quires much simpler.
 {% endhint %}
 
 Query for all matching UGC. You can use this to list all of the available UGC for your app. You must release the handle returned by this function by calling WorkshopReleaseQueryRequest when you are done with it!
@@ -259,7 +264,7 @@ public static UGCQueryHandle_t CreateQueryDetailsRequest(
 ```
 
 {% hint style="info" %}
-The [UGC Query Manager](../../unity/components/ugc-query-manager.md) can make working with quires much simpler.
+The [UGC Query Manager](../components/ugc-query-manager.md) can make working with quires much simpler.
 {% endhint %}
 
 Query for the details of specific workshop items. You must release the handle returned by this function by calling WorkshopReleaseQueryRequest when you are done with it!
@@ -855,7 +860,7 @@ Then you can call the method such as
 UGC.CreateItem(itemdata, Foo);
 ```
 
-To learn more about [callbacks](../../../../company/development/callbacks.md) please read the related article.
+To learn more about [callbacks](../../../company/development/callbacks.md) please read the related article.
 
 The status returned to the callback will indicate the status of the operation. Note that the operation occurs in two stages. First a blank item is created and then once that has been found successful that blank item will be updated with the content and settings indicated thus it is possible for a blank item to be created but for the update to fail. Please see the [results](../objects/workshop-item-data-create-status.md#createitemresult) in the status object for more details.
 
@@ -905,7 +910,7 @@ UGC.SubmitItemUpdate(handle, changenote, callback);
 
 ### Browse Items
 
-The easiest way to handle a UGC / Workshop browser in game is to use the [UGC Query Manager](../../unity/components/ugc-query-manager.md). The manager uses the same features present in the interface so it can be done manually.
+The easiest way to handle a UGC / Workshop browser in game is to use the [UGC Query Manager](../components/ugc-query-manager.md). The manager uses the same features present in the interface so it can be done manually.
 
 The remainder of this section talks about manually querying items.
 
@@ -958,7 +963,7 @@ Once you have created your handle you can modify the way it searches for matchin
 
 Once you have your query set up you can submit it to fetch the related items. Note the UGC Query system is a page query system. It will never return more than 50 items (determined by Valve) and so you will need to increment the page in your query handle to fetch each successive set of records.&#x20;
 
-You can see how we implemented paging in the [UGC Query Manager](../../unity/components/ugc-query-manager.md) if you wished to do so your self or simply to better understand the system.
+You can see how we implemented paging in the [UGC Query Manager](../components/ugc-query-manager.md) if you wished to do so your self or simply to better understand the system.
 
 ```csharp
 //When ready send the query so Valve can process it

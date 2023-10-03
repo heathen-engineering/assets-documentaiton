@@ -1,3 +1,8 @@
+---
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
+---
+
 # User Invite Button
 
 {% hint style="success" %}

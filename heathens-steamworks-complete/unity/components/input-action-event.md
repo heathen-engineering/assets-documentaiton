@@ -1,5 +1,7 @@
 ---
 description: Listening for input actions
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
 ---
 
 # Input Action Event

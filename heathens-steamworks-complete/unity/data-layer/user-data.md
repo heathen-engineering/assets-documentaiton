@@ -1,5 +1,7 @@
 ---
 description: Useing Steam User Data
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
 ---
 
 # User Data

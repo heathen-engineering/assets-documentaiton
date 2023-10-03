@@ -1,11 +1,16 @@
+---
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
+---
+
 # Leaderboards.Client
 
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
 ## &#x20;Introduction
@@ -198,7 +203,7 @@ void CallbackHandler(LeaderboardData result, bool IOError);
 ```
 {% endhint %}
 
-The [Steamworks Behaviour](../../unity/components/steamworks-behaviour.md) will call this for you as it initializes the Steam Settings and the boards you have defined within. You only need to call this your self if you are creating a build at run time manually and not using the [Leaderboard Object](../../unity/scriptable-objects/leaderboard-object.md).
+The [Steamworks Behaviour](../components/steamworks-behaviour.md) will call this for you as it initializes the Steam Settings and the boards you have defined within. You only need to call this your self if you are creating a build at run time manually and not using the [Leaderboard Object](../scriptable-objects/leaderboard-object.md).
 
 ### GetDisplayType
 
@@ -268,7 +273,7 @@ Uploads a score and optionally details for the user to the target leaderboard.
 ## How To
 
 {% hint style="success" %}
-The [Leaderboard ](../../unity/scriptable-objects/leaderboard-object.md)object provides simplified access to many of the features found here in. Be sure to read the documentation for the [Leaderboard ](../../unity/scriptable-objects/leaderboard-object.md)object to understand what options are available to you.
+The [Leaderboard ](../scriptable-objects/leaderboard-object.md)object provides simplified access to many of the features found here in. Be sure to read the documentation for the [Leaderboard ](../scriptable-objects/leaderboard-object.md)object to understand what options are available to you.
 {% endhint %}
 
 ### Add an attachment

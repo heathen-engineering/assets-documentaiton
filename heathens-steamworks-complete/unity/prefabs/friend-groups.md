@@ -1,5 +1,7 @@
 ---
 description: A prefab implamenting the FriendGroup component
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
 ---
 
 # Friend Groups
