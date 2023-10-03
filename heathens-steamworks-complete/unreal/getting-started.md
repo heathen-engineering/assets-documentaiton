@@ -41,11 +41,11 @@ You will probably want to initialize and run your Steam integration globally at 
 
 For that reason, we recommend you use "Game Instance" as the base class of a new blueprint. Don't forget to set your new Game Instance in the Project Settings.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Open your new blueprint and let's create a few nodes
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The above shows a fully functional initialization, update and shutdown of the Steam API all connected to your game's lifecycle from a blueprint.
 

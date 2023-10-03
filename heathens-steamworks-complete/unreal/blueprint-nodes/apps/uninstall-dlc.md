@@ -17,7 +17,7 @@ layout:
     visible: true
 ---
 
-# 🔵 Get DLC Count
+# 🔵 Uninstall DLC
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -29,12 +29,12 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-Get the number of DLC available for this app
+Allows you to uninstall an optional DLC.
 
-### Return Value
+### App Id
 
-The number of DLC available would typically be used with a For Loop to iterate over the available DLC using the [Get DLC Data by Index](get-dlc-data-by-index.md) node to read data about each DLC.
+The DLC you want to uninstall.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>

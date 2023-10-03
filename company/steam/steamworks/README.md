@@ -8,7 +8,7 @@ description: How to .... everything!
 
 <div data-full-width="true">
 
-<figure><img src="../../../.gitbook/assets/Banner@8x-100.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Banner@8x-100.jpg" alt="Steamworks Complete"><figcaption></figcaption></figure>
 
 </div>
 

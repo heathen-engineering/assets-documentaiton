@@ -17,7 +17,7 @@ layout:
     visible: true
 ---
 
-# 🔵 Get DLC Count
+# 🔵 Mark Content Corrupt
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -29,12 +29,14 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-Get the number of DLC available for this app
+Allows you to force verify game content on the next launch.
+
+If you detect the game is out-of-date (for example, by having the client detect a version mismatch with a server), you can use MarkContentCorrupt to force a verification, show a message to the user, and then quit.
 
 ### Return Value
 
-The number of DLC available would typically be used with a For Loop to iterate over the available DLC using the [Get DLC Data by Index](get-dlc-data-by-index.md) node to read data about each DLC.
+True if the Steam API has been initialized, false otherwise
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
