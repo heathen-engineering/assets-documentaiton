@@ -3,8 +3,22 @@ description: >-
   Heathen’s Steamworks is a set of tools, systems and editor extensions designed
   to make integrating Steam easier, faster, and more robust. Helping you Do More
   rather your a beginner or a pro.
-cover: ../.gitbook/assets/SteamMarketing Inventory hStretch.png
-coverY: 17.4
+cover: ../.gitbook/assets/Banner@8x-100.jpg
+coverY: 0
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # Introduction

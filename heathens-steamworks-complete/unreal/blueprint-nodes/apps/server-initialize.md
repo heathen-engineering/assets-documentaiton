@@ -1,4 +1,23 @@
-# 🔵 Game Server Initialize
+---
+cover: ../../../../.gitbook/assets/Unreal Banner@4x-100.jpg
+coverY: 0
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
+# 🔵 Server Initialize
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -12,7 +31,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 Initializes the ISteamGameServer interface object, and set server properties which may not be changed.
 
-After calling this function, you should set any additional server parameters, and then call [Log On](game-server-log-on.md) or [Log On Anonymous](game-server-log-on-anonymous.md)
+After calling this function, you should set any additional server parameters, and then call [Log On](server-log-on.md) or [Log On Anonymous](server-log-on-anonymous.md)
 
 ### Return Value
 

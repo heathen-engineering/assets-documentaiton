@@ -31,7 +31,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 Initialize the Steam API.
 
-This is only used for client builds, for server builds see the [Game Server Initialize](../game-server/game-server-initialize.md) node.
+This is only used for client builds, for server builds see the [Game Server Initialize](server-initialize.md) node.
 
 ### Return Value
 

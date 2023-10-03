@@ -1,11 +1,30 @@
+---
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Sample Scenes
 
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
 ## Introduction
@@ -32,6 +51,6 @@ You should **ALWAYS** treat sample code as a sample that you learn from and use 
 
 As a GitHub Sponsor you will have installed Steamworks Complete via the Unity Package Manager
 
-![](<../../../../.gitbook/assets/image (2) (3).png>)
+![](<../../../.gitbook/assets/image (2) (3).png>)
 
 You can simply select Steamworks Complete in the Unity Package Manager expand the "Samples" drop down and then import the Example Scenes ... this is also where you will find the uGUI Tools

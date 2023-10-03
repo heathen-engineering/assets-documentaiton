@@ -1,5 +1,21 @@
 ---
 description: So you have a problem
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # Troubleshooting
@@ -7,9 +23,9 @@ description: So you have a problem
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
 ## Introduction
@@ -44,7 +60,7 @@ Script defines are used by Unity, Steamworks.NET and Heathen to know what is ins
 
 Heathen no longer uses global script defines but references all defines as part of the assembly definitions.
 
-![Note the "Version Defines" at the bottom of the inspector window](<../../../../.gitbook/assets/image (171).png>)
+![Note the "Version Defines" at the bottom of the inspector window](<../../../.gitbook/assets/image (171).png>)
 
 These defines exist only if the related assembly is present. If these defines are not present the code will not compile.
 
@@ -118,12 +134,12 @@ This is a way to split a code base up into assemblies for faster and simpler com
 
 You can view and edit the references a given assembly define has toward other defines in the Unity Inspector for your Assembly Definition.
 
-![](<../../../../.gitbook/assets/image (165).png>)
+![](<../../../.gitbook/assets/image (165).png>)
 
 ## Missing namespace
 
 If you have errors coming from Heathen's code to the effect of&#x20;
 
-![Or similar](<../../../../.gitbook/assets/image (122).png>)
+![Or similar](<../../../.gitbook/assets/image (122).png>)
 
 Then the problem is you either removed Steamworks.NET from the Package Manager or more likely your target platform is not valid. Steamworks.NET will only compile for PC, Mac or Linux ... not Windows Universal or any other platform.

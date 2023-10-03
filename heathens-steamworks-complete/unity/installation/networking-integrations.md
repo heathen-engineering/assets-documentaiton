@@ -1,5 +1,21 @@
 ---
 description: Use whatever you like
+cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
+coverY: 0
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # Networking Integrations
@@ -7,9 +23,9 @@ description: Use whatever you like
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
 ## Introduction
@@ -115,7 +131,7 @@ Mirror Community's FizzySteamTransport has been made compatible with our asset a
 2. Open the Unity Package Manager
 3. Click the "+" (plus) button located in the upper left of the window
 4. Select the "Add package from git URL..." option\
-   <img src="../../../../.gitbook/assets/image (144).png" alt="" data-size="original">
+   <img src="../../../.gitbook/assets/image (144).png" alt="" data-size="original">
 5. Enter the URL below and press the add button:
 
 ```
@@ -138,7 +154,7 @@ You must install Unity's NetCode to use its community transports. The above arti
 2. Open the Unity Package Manager
 3. Click the "+" (plus) button located in the upper left of the window
 4. Select the "Add package from git URL..." option\
-   <img src="../../../../.gitbook/assets/image (144).png" alt="" data-size="original">
+   <img src="../../../.gitbook/assets/image (144).png" alt="" data-size="original">
 5. Enter the URL below and press the add button:
 
 ```
@@ -157,7 +173,7 @@ NetCode for GameObjects has a community transport project similar to other HLAPI
 2. Open the Unity Package Manager
 3. Click the "+" (plus) button located in the upper left of the window
 4. Select the "Add package from git URL..." option\
-   <img src="../../../../.gitbook/assets/image (144).png" alt="" data-size="original">
+   <img src="../../../.gitbook/assets/image (144).png" alt="" data-size="original">
 5. Enter the URL below and press the add button:
 
 ```
