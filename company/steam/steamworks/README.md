@@ -6,7 +6,13 @@ description: How to .... everything!
 
 ## Introduction
 
-Heathen creates the top Steamworks integration for Unity and is porting it to Godot! Want to do more with Valve's Steamworks API? Then check out [Heathen's Steamworks Complete](../../../heathens-steamworks-complete/steamworks.md)!
+<div data-full-width="true">
+
+<figure><img src="../../../.gitbook/assets/Banner@8x-100.jpg" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+Heathen creates the top Steamworks integration for Unreal, Unity and is porting it to Godot! Want to do more with Valve's Steamworks API? Then check out [Heathen's Steamworks Complete](../../../heathens-steamworks-complete/steamworks.md)!
 
 ## Quick Start
 
@@ -20,7 +26,7 @@ With Heathen's Steamworks you can handle initialization and most features of Ste
 
 #### Install Steamworks.NET
 
-First you will need to Install Steamworks.NET, we recommend you do this via the Unity Package Manager and avoid installing it from the GitHub Release folder as that package is usually out of date and is not easily updated.
+First, you will need to Install Steamworks.NET, we recommend you do this via the Unity Package Manager and avoid installing it from the GitHub Release folder as that package is usually out of date and is not easily updated.
 
 * From Git URL
   * Open the Unity Package Manager
@@ -38,7 +44,7 @@ First you will need to Install Steamworks.NET, we recommend you do this via the 
 #### Initialize Steam API
 
 {% hint style="danger" %}
-[SteamManager.cs](https://github.com/rlabrecque/Steamworks.NET-Example/blob/master/Assets/Scripts/Steamworks.NET/SteamManager.cs) demonstrate this ... but you should not just copy and paste it blindly into your project.\
+[SteamManager.cs](https://github.com/rlabrecque/Steamworks.NET-Example/blob/master/Assets/Scripts/Steamworks.NET/SteamManager.cs) demonstrates this ... but you should not just copy and paste it blindly into your project.\
 \
 SteamManager.cs only initialize for the client API so it won't work with Steam Game Server, it also doesn't initialize input, leaderboards or other artefacts for you. \
 \
@@ -73,19 +79,19 @@ The following articles will help you learn how to perform common tasks and debug
 
 ### Steam must be running
 
-Be aware that none of the work done by Steam API is "in" your game, Steam API is an "application program interface" that allows your game to work with features in the Steam client. As a result, you **must** have Steam client open, running and logged in to a valid Steam user that owns the app you are trying to work with.
+Be aware that none of the work done by Steam API is "in" your game, Steam API is an "application program interface" that allows your game to work with features in the Steam client. As a result, you **must** have Steam client open, running and logged in to a valid Steam user who owns the app you are trying to work with.
 
 The only exception to this is when using the [Steam Game Server](multiplayer/game-server-browser/) feature which also limits the functionality of Steam API as there is no client and no user available to do work.
 
 ### Running a Build&#x20;
 
-When running a build that was not deployed to Steam and ran from the Steam client you will notice that the game fails to initialize the crashes to desktop possibly attempting to re-launch from Steam client.
+When running a build that was not deployed to Steam and ran from the Steam client you will notice that the game fails to initialize the crashes to the desktop possibly attempting to re-launch from Steam client.
 
-This is by design, you must hint to Steam API what the app is, read the [article on steam\_appid.txt](steam\_appid.txt.md) it will explain, why this happens, how to work with it, when you should and when you should not use the feature described.
+This is by design, you must hint to Steam API what the app is, read the [article on steam\_appid.txt](steam\_appid.txt.md) it will explain, why this happens, how to work with it, and when you should and when you should not use the feature described.
 
 ### Publish Your Changes
 
-When you make any changes in Steam Developer Portal you **must** publish them before they take effect and can be testing in your game
+When you make any changes in the Steam Developer Portal you **must** publish them before they take effect and can be tested in your game
 
 > Use this page to publish all of the metadata that you've used this site to author. You'll need to publish in order to test things like your game **depot configuration**, new builds, or new **achievements** you've added. If your game is not yet set to playable, this action **will not release the game**, but will simply **publish configuration changes you've made**.
 >
@@ -98,7 +104,7 @@ The above quote is from the publish page as seen below
 
 ### Environment Checks
 
-Having something wrong with your environment (Engine Editor, Steam.exe, Steam User, etc.) can cause odd issues with Steam API ones that are hard to pin down unless you know what to look for.
+Having something wrong with your environment (Engine Editor, Steam.exe, Steam User, etc.) can cause odd issues with Steam API that are hard to pin down unless you know what to look for.
 
 Here are some key things to check before you bother trying to debug anything.
 
@@ -118,15 +124,15 @@ If yes; then know that those custom installs would have Steamworks.NET artefacts
 
 1. Remove the offending files\
    Steamworks.NET manual installs would have installed bits in several different folders (scripts, plugins, examples, etc.)\
-   Many old assets would have buried a copy or customized version of Steamworks.NET in there asset.
-2. Once you are positive that you fully remove Steamworks.NET and related files from your Assets folder.\
-   Remove Steamworks.NET from package manager and then reinstall it
+   Many old assets would have buried a copy or customized version of Steamworks.NET in their asset.
+2. Once you are positive that you fully removed Steamworks.NET and related files from your Assets folder.\
+   Remove Steamworks.NET from the package manager and then reinstall it
 
 ### Steam Client Login
 
 For some reason some devs like to run Steam.exe as Admin or run Unity Editor as Admin ... Windows will mangle your callbacks if you do this.
 
-Its important that Unity Editor and Steam.exe are running as the same user, which should also be the user that is logged into the OS  in order for Steam API to work properly.
+It's important that Unity Editor and Steam.exe are running as the same user, which should also be the user that is logged into the OS  in order for Steam API to work properly.
 
 e.g. Do not run either Steam.exe or Unity Editor with elevated or any other non-standard permissions or users. If you do you will have issues.
 
@@ -137,13 +143,13 @@ Valve's Steam has a concept of "limited" users ... when a new user is created it
 This applies to dev accounts, publishers, etc. there are no exceptions. So if your account or your test account is new and or has not spent at least 5 USD on Steam odds are its limited by Valve and it will have limited access to Steam API including but not limited to&#x20;
 
 * Lobby limits\
-  Can join but cant really use a Steam Lobby ... this one is real odd as it will join it but it cant do anything beyond that
+  Can join but can't really use a Steam Lobby ... this one is real odd as it will join it but it can't do anything beyond that
 * Chat limits\
-  Typically cant chat with anyone
+  Typically can't chat with anyone
 * Friend limits\
-  Typically cant have friends, friend chats, friend invites, etc.
+  Typically can't have friends, friend chats, friend invites, etc.
 
-In addition the Steam User your testing the game with MUST own a license to the app to initialize the Steam API. Developer accounts are "supposed" to be granted a dev license to the app ... however we have seen it such that this doesn't happen correctly.
+In addition, the Steam User you're testing the game with MUST own a license to the app to initialize the Steam API. Developer accounts are "supposed" to be granted a dev license to the app ... however, we have seen it such that this doesn't happen correctly.
 
 You can test and modify ownership of the app you are a dev for using Steam's command line as outlined in&#x20;
 
@@ -157,7 +163,7 @@ If your build target is set to ANY other build target then the Steamworks.NET as
 
 #### What about multi-platform games?
 
-use `#if DISABLESTEAMWORKS` script define you can add this your self if you like to cause Steam API code to simply not compile. You can use it to strip out your Steam related code if you need.
+use `#if DISABLESTEAMWORKS` script define you can add this yourself if you like to cause Steam API code to simply not compile. You can use it to strip out your Steam-related code if you need.
 
 ### Steam Command Line
 
