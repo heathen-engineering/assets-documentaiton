@@ -1,23 +1,9 @@
 ---
 cover: ../../../../.gitbook/assets/Unreal Banner@4x-100.jpg
 coverY: 0
-layout:
-  cover:
-    visible: true
-    size: full
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
-# 🔻 Dlc Installed
+# 🔵 Get App Build ID
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -29,12 +15,13 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-An event that is triggered when the user installs a DLC item related to this app.
+Gets the buildid of this app, which may change at any time based on backend updates to the game.
 
-### Dlc Id
+### Return Value
 
-The id of the DLC which was just installed
+The current Build ID of this App. \
+Defaults to 0 if you're not running a build downloaded from Steam.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (202).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (210).png" alt=""><figcaption></figcaption></figure>

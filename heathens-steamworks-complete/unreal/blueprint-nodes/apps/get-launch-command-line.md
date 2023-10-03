@@ -1,6 +1,6 @@
 ---
 cover: ../../../../.gitbook/assets/Unreal Banner@4x-100.jpg
-coverY: 0
+coverY: -27.217431192660552
 layout:
   cover:
     visible: true
@@ -17,7 +17,7 @@ layout:
     visible: true
 ---
 
-# 🔻 Dlc Installed
+# 🔵 Get Launch Command Line
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -29,12 +29,12 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-An event that is triggered when the user installs a DLC item related to this app.
+Gets the command line if the game was launched via Steam URL, e.g. steam://run////. This method is preferable to launching with a command line via the operating system, which can be a security risk. In order for rich presence joins to go through this and not be placed on the OS command line, you must enable "Use launch command line" from the Installation > General page on your app.
 
-### Dlc Id
+### Return Value
 
-The id of the DLC which was just installed
+The command line as a string value.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (202).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (217).png" alt=""><figcaption></figcaption></figure>
