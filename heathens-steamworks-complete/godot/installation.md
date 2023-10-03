@@ -1,11 +1,16 @@
+---
+cover: ../../.gitbook/assets/Godot Banner@4x-100.jpg
+coverY: 0
+---
+
 # Installation
 
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
 ## Introduction
@@ -25,8 +30,8 @@ The [ProjectTemplate](https://github.com/heathen-engineering/SteamworksFoundatio
    Obviously you should choose the Windows or OSX-Linux versions based on what platform your building for.
 3. Enable the plugin in the editors Project Settings see the example below
 
-<figure><img src="../../../.gitbook/assets/image (6) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (3).png" alt=""><figcaption></figcaption></figure>
 
 This will have created the AutoLoad script Steamworks Behaviour for you
 
-<figure><img src="../../../.gitbook/assets/image (193).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (193).png" alt=""><figcaption></figcaption></figure>
