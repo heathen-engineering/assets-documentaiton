@@ -37,7 +37,7 @@ An extension of the standard UImage widget with two new functions to help displa
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 

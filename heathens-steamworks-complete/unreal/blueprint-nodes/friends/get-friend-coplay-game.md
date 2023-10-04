@@ -33,4 +33,4 @@ Gets the app ID of the game that the user played with someone on their recently-
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>

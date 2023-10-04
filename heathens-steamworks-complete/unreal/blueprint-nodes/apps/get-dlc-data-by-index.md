@@ -41,4 +41,4 @@ The related data of the DLC includes the App ID, whether or not this DLC is avai
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

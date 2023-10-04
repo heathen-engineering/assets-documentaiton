@@ -37,4 +37,4 @@ Check if the user is subscribed to the current appID through a timed trial. If s
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>

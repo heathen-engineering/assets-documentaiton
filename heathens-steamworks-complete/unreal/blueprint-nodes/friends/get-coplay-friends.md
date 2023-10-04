@@ -35,6 +35,6 @@ Heathen exposes the native count and gets methods as well as an array-based impl
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (19).png" alt=""><figcaption><p>Traditional Steam API style count and get flow</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (19) (1).png" alt=""><figcaption><p>Traditional Steam API style count and get flow</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (20).png" alt=""><figcaption><p>More typical array flow</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (20) (1).png" alt=""><figcaption><p>More typical array flow</p></figcaption></figure>

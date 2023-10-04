@@ -37,7 +37,7 @@ The articles within are specific to Unity and include the engine specific tools 
 
 ### Content Builder
 
-<figure><img src="../../.gitbook/assets/image (15) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 Added in version 3.2 the Content Builder helps you compile and upload your game to Steam right from the Unity Editor. You can learn more about this tool in the [Uploading to Steam](../../steam/uploading-to-steam.md) article.
 

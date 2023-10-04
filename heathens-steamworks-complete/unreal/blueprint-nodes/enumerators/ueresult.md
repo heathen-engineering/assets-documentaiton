@@ -35,6 +35,8 @@ These are frequently returned by functions, callbacks, and call results from bot
 
 Heathen's UEResult is a blueprint-friendly wrapper around this common enum
 
+{% embed url="https://partner.steamgames.com/doc/api/steam_api#EResult" %}
+
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>

@@ -31,10 +31,8 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 Called when the user tries to join a game from their friends list or after a user accepts an invite by a friend with [InviteUserToGame](invite-user-to-game.md).
 
-
-
 {% hint style="info" %}
-
+This callback is made when joining a game. If the user is attempting to join a lobby, then the callback [Lobby Join Requested](lobby-join-requested.md) will be made.
 {% endhint %}
 
 ### Steam Id

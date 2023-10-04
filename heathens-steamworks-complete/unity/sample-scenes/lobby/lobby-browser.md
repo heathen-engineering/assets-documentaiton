@@ -74,7 +74,7 @@ This script is used on the template instantiated by the Lobby Browser UI Control
 
 Assuming you are using an unmodified version of the sample scene and Steam Settings you will see messages appear in the Unity Editor Console log detailing each step of the initialization process.
 
-<figure><img src="../../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption><p>Example initialization messages</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (15) (1) (3).png" alt=""><figcaption><p>Example initialization messages</p></figcaption></figure>
 
 In the event of an error details will be listed here along with troubleshooting guidance. In the event you require support please select the first error message in the log and press \[Ctrl + C] this will copy the full message and its stack trace to your clipboard. You can then paste that error into [Discord chat](https://discord.gg/eVVgM36) for live support or into a support email or similar.
 

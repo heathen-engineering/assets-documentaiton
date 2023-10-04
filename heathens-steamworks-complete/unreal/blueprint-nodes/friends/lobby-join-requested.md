@@ -29,21 +29,15 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-Called when the user tries to join a game from their friends list or after a user accepts an invite by a friend with [InviteUserToGame](invite-user-to-game.md).
+Called when the user tries to join a lobby from their friend's list or from an invite. The game client should attempt to connect to the specified lobby when this is received. If the game isn't running yet then the game will be automatically launched with the command line parameter `+connect_lobby <64-bit lobby Steam ID>` instead.
 
+### Lobby Id
 
+The Steam ID of the lobby to connect to.
 
-{% hint style="info" %}
-
-{% endhint %}
-
-### Steam Id
+### User Id
 
 The friend they joined through. This will be invalid if not directly via a friend.
-
-### Connection String
-
-The value associated with the "connect" Rich Presence key or provided by the inviting user on the request.
 
 ## Nodes
 
