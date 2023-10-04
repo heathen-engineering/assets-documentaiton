@@ -46,4 +46,4 @@ F**alse** if the current user is rate-limited or chat-restricted.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>

@@ -59,7 +59,7 @@ Once you do have a .sln we need to copy the Plugins in. You may already have a P
 
 Next, simply copy the SteamworksComplete folder into your Plugins folder. You'll find the plugin in our GitHub Sponsor Source Repo
 
-<figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (30) (1).png" alt=""><figcaption></figcaption></figure>
 
 When done your folder should look similar to the above.
 

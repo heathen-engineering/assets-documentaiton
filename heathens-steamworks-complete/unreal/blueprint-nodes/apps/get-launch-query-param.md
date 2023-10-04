@@ -43,4 +43,4 @@ The value associated with the key is provided. Returns an empty string ("") if t
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>

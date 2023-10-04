@@ -35,4 +35,4 @@ Flags for enumerating friends list, or quickly checking the relationship between
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>

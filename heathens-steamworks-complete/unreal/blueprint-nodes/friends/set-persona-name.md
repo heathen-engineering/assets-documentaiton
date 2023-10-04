@@ -53,4 +53,4 @@ A [UEResult ](../enumerators/ueresult.md)value indicating the result of the oper
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>

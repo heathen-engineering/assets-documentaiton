@@ -30,4 +30,4 @@ Select the group and in the group page you will see an option on the right side 
 
 Once created you view the key directly below that Edit Group menu and of course can revoke the key should it no longer be needed or be compromised. The "Manage Web API Key" option lets you white list specific IP addresses though this can be left blank and typically would be for uses like PlayFab.
 
-<figure><img src="../.gitbook/assets/image (37).png" alt="Manage the API key"><figcaption><p>Managing the key</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (37) (1).png" alt="Manage the API key"><figcaption><p>Managing the key</p></figcaption></figure>
