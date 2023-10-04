@@ -15,7 +15,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-Gets the buildid of this app, which may change at any time based on backend updates to the game.
+Gets the build ID (aka the Build Number) of this app, which may change at any time based on backend updates to the game.
 
 ### Return Value
 

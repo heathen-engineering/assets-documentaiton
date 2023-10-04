@@ -430,7 +430,7 @@ Debug.Log(language);
 
 ### BuildId
 
-Gets the buildid of this app, may change at any time based on backend updates to the game.
+Gets the build id (aka the Build Number) of this app, may change at any time based on backend updates to the game.
 
 ```csharp
 public static int BuildId => get;

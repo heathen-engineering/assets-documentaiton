@@ -6,7 +6,7 @@ coverY: 0
 # Set User Avatar
 
 {% hint style="success" %}
-#### Like what your seeing?
+#### Like what you're seeing?
 
 Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
@@ -17,9 +17,9 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 A simple component meant to be attached to a UnityEngine.UI.RawImage
 
-This can update the raw image with the indicated user's avatar and can optionally pull the local user's data on start up.
+This can update the raw image with the indicated user's avatar and can optionally pull the local user's data on start-up.
 
-This will update if the linked user changes there avatar image.
+This will update if the linked user changes their avatar image.
 
 ## Definition
 
@@ -56,10 +56,10 @@ private bool useLocalUser;
 ```
 
 {% hint style="warning" %}
-This can only be set in the Unity Editor and will be false for run time created componenets or if not set.
+This can only be set in the Unity Editor and will be false for run time created components or if not set.
 {% endhint %}
 
-This causes the componenet to grab the local user's ID on startup.
+This causes the component to grab the local user's ID on startup.
 
 ### UserData
 
@@ -67,7 +67,7 @@ This causes the componenet to grab the local user's ID on startup.
 public UserData UserData { get; set; }
 ```
 
-This returns the UserData that this componenet is currently tracking. Setting this will cause this componenet to track the user you set to it and is the same as calling LoadAvatar;
+This returns the UserData that this component is currently tracking. Setting this will cause this component to track the user you set to it and is the same as calling LoadAvatar;
 
 ## Methods
 
