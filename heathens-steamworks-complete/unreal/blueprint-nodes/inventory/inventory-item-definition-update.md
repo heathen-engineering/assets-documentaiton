@@ -33,10 +33,10 @@ Returns the set of all item definition IDs which are defined in the App Admin pa
 \
 These item definitions may not necessarily be contiguous integers.
 
-### Result Handle
+### Item Defs
 
-The Inventory Result Handle to destroy
+The array of Item Definitions (Int 32)
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>

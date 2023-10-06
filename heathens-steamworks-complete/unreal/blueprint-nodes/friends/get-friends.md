@@ -43,6 +43,6 @@ Learn more about the different flag options at the link below
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (23) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (218).png" alt=""><figcaption></figcaption></figure>

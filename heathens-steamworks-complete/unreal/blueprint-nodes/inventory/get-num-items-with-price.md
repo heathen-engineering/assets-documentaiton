@@ -37,4 +37,4 @@ The number of items defined for the app that have a price defined for them.
 
 ## Example
 
-<figure><img src="../../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (25) (1).png" alt=""><figcaption></figcaption></figure>

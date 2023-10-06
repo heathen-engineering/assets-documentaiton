@@ -33,6 +33,6 @@ Loads the local user's Steam Avatar image into a Unreal Texture 2D and invokes a
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This node uses a callback delegate which will be invoked when the process is completed and which will contain the Texsture2D result.
