@@ -35,4 +35,4 @@ The Return Value of Get Favorite Game defines the details of the server includin
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>

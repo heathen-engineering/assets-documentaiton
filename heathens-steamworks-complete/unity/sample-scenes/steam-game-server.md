@@ -17,7 +17,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 This scene is used to demonstrate Steam Game Server initialization. This doesn't actually require any special coding or components and is handled through the Steamwork Behaviour automatically for you based on your build target such that any server build will simply initialize the API as a Steam Game Server according to your [Steam Settings](../scriptable-objects/steam-settings/).
 
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Components
 

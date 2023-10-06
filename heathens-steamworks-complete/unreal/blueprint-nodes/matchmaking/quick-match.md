@@ -61,4 +61,4 @@ If joining an existing lobby this will be the [UEChatRoomEnterResponse ](../enum
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
