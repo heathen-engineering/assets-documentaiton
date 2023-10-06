@@ -43,7 +43,9 @@ promo: owns:440;owns:480
 
 Heathen provides two options when working with this endpoint.
 
-### Simple
+<details>
+
+<summary>Simple</summary>
 
 Our Simple variant will save you a lot of effort by handling the result-ready event for you, processing any requested properties and handing you a completed collection of item details when it's all done.
 
@@ -63,11 +65,15 @@ The callback is an event that will contain the [UEResult](../enumerators/ueresul
 
 ### Example
 
-<figure><img src="../../../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+<img src="../../../../.gitbook/assets/image (39).png" alt="Simple Add Promo Item Example" data-size="original">
 
 Note that we never return the result handle to you, we track this handle, process the items, read the requested properties and destroy the handle for you returning to you the resulting data in an array.
 
-### Native
+</details>
+
+<details>
+
+<summary>Native</summary>
 
 The native Steam API works by issuing the request and returning an Item Request Handle when the request is filled Steam will execute the Result Ready callback. You must then read the details, properties and other aspects you desire from the result and then destroy the result handle.
 
@@ -79,12 +85,16 @@ The definition ID of the item to grant the player.
 
 To get the handle you make your request, and check if the request was successful, if so store that request ... you'll need the handle from it later. This will prompt Steam to execute the Result Ready event when the results have been read.
 
-<figure><img src="../../../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
+<img src="../../../../.gitbook/assets/image (38).png" alt="" data-size="original">
 
 When the Result Ready is executed you will need to check if it matches your result handle, fetch the items contained in that result, and for each item fetch whatever additional properties you may need.
 
-<figure><img src="../../../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+
+
+<img src="../../../../.gitbook/assets/image (36).png" alt="" data-size="original">
 
 Importantly when you are done reading the data returned by that result you need to destroy the handle.
 
-<figure><img src="../../../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+<img src="../../../../.gitbook/assets/image (37).png" alt="" data-size="original">
+
+</details>
