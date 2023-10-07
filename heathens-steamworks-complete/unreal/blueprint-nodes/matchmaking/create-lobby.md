@@ -47,4 +47,4 @@ The maximum number of players that can join this lobby. This can not be above 25
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>

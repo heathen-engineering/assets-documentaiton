@@ -39,4 +39,4 @@ If you need to determine the steamID of the permanent owner of the license, use 
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
