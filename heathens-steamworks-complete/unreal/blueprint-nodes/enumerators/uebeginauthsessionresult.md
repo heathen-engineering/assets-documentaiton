@@ -17,7 +17,7 @@ layout:
     visible: true
 ---
 
-# 🔵 Server Log On Anonymous
+# 🟨 UEBeginAuthSessionResult
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -29,12 +29,10 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-{% hint style="warning" %}
-Only valid for Steam Game Servers
-{% endhint %}
+Results returned by the User and Server: Begin Auth Session functions.
 
-Log a Steam Game Server on to the Steam API, this will cause the server to be assigned a Steam ID.
+{% embed url="https://partner.steamgames.com/doc/api/steam_api#EBeginAuthSessionResult" %}
 
 ## Nodes
 
-Coming Soon
+<figure><img src="../../../../.gitbook/assets/image (267).png" alt=""><figcaption></figcaption></figure>

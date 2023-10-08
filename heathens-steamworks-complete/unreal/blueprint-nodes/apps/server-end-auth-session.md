@@ -17,7 +17,7 @@ layout:
     visible: true
 ---
 
-# 🔵 Server Log On Anonymous
+# 🔵 Server End Auth Session
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -33,8 +33,12 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 Only valid for Steam Game Servers
 {% endhint %}
 
-Log a Steam Game Server on to the Steam API, this will cause the server to be assigned a Steam ID.
+Ends an auth session that was started with Begin Auth Session. This should be called when no longer playing with the specified entity.
+
+### Steam Id
+
+The entity to end the active auth session with.
 
 ## Nodes
 
-Coming Soon
+<figure><img src="../../../../.gitbook/assets/image (273).png" alt=""><figcaption></figcaption></figure>

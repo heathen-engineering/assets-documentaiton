@@ -17,7 +17,7 @@ layout:
     visible: true
 ---
 
-# 🔵 Server Log On Anonymous
+# 🔵 Server Associate with Clan
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -33,8 +33,16 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 Only valid for Steam Game Servers
 {% endhint %}
 
-Log a Steam Game Server on to the Steam API, this will cause the server to be assigned a Steam ID.
+associate this game server with this clan for the purposes of computing player compatibility.
+
+### Clan Id
+
+The ID of the clan to be associated with
+
+### Callback
+
+An event delegate indicating the [UEResult ](../enumerators/ueresult.md)of the process
 
 ## Nodes
 
-Coming Soon
+<figure><img src="../../../../.gitbook/assets/image (266).png" alt=""><figcaption></figcaption></figure>

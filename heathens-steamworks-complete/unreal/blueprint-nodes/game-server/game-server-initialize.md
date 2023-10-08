@@ -29,6 +29,10 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
+{% hint style="warning" %}
+Only valid for Steam Game Servers
+{% endhint %}
+
 Initializes the ISteamGameServer interface object, and set server properties which may not be changed.
 
 After calling this function, you should set any additional server parameters, and then call [Log On](game-server-log-on.md) or [Log On Anonymous](game-server-log-on-anonymous.md)

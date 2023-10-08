@@ -1,23 +1,9 @@
 ---
 cover: ../../../../.gitbook/assets/Unreal Banner@4x-100.jpg
 coverY: 0
-layout:
-  cover:
-    visible: true
-    size: full
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
-# 🔵 Server Log On Anonymous
+# 🟩 Key Value Pair
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -29,12 +15,16 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-{% hint style="warning" %}
-Only valid for Steam Game Servers
-{% endhint %}
+A simple string-based key and value pair, used in various parts of the plugin such as Request Server List.
 
-Log a Steam Game Server on to the Steam API, this will cause the server to be assigned a Steam ID.
+### Key
+
+The string key of the pair
+
+### Value
+
+The string value of the pair
 
 ## Nodes
 
-Coming Soon
+<figure><img src="../../../../.gitbook/assets/image (262).png" alt=""><figcaption></figcaption></figure>

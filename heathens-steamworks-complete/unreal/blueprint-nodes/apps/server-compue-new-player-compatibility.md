@@ -17,7 +17,7 @@ layout:
     visible: true
 ---
 
-# 🔵 Server Log On Anonymous
+# 🔵 Server Compue New Player Compatibility
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -33,8 +33,16 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 Only valid for Steam Game Servers
 {% endhint %}
 
-Log a Steam Game Server on to the Steam API, this will cause the server to be assigned a Steam ID.
+Check if any of the current players don't want to play with this new player who is attempting to join - or vice versa; based on the frenemy system.
+
+### User Id
+
+The player who is attempting to join
+
+### Callback
+
+An event delegate that indicates the [UEResult ](../enumerators/ueresult.md)of the process and the counts of players disliked and disliking this player.
 
 ## Nodes
 
-Coming Soon
+<figure><img src="../../../../.gitbook/assets/image (271).png" alt=""><figcaption></figcaption></figure>

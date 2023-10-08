@@ -17,7 +17,7 @@ layout:
     visible: true
 ---
 
-# 🔵 Server Log On Anonymous
+# 🔵 Server Set Key Value
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -33,8 +33,16 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 Only valid for Steam Game Servers
 {% endhint %}
 
-Log a Steam Game Server on to the Steam API, this will cause the server to be assigned a Steam ID.
+Add/update a rules key/value pair.
+
+### Key
+
+The key to set
+
+### Value
+
+The value to set
 
 ## Nodes
 
-Coming Soon
+<figure><img src="../../../../.gitbook/assets/image (264).png" alt=""><figcaption></figcaption></figure>

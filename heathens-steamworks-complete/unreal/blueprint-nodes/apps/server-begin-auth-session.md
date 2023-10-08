@@ -17,7 +17,7 @@ layout:
     visible: true
 ---
 
-# 🔵 Server Log On Anonymous
+# 🔵 Server Begin Auth Session
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -33,8 +33,20 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 Only valid for Steam Game Servers
 {% endhint %}
 
-Log a Steam Game Server on to the Steam API, this will cause the server to be assigned a Steam ID.
+Authenticate the ticket from the entity Steam ID to be sure it is valid and isn't reused.
+
+### Auth Ticket
+
+The auth ticket to validate.
+
+### Steam ID
+
+The entity's Steam ID that sent this ticket.
+
+### Return Value
+
+The [UEBeginAuthSessionResult](../enumerators/uebeginauthsessionresult.md) indicates the state of the request.
 
 ## Nodes
 
-Coming Soon
+<figure><img src="../../../../.gitbook/assets/image (268).png" alt=""><figcaption></figcaption></figure>

@@ -17,7 +17,7 @@ layout:
     visible: true
 ---
 
-# 🔵 Server Log On Anonymous
+# 🔵 Server Cancel Auth Ticket
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -33,8 +33,12 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 Only valid for Steam Game Servers
 {% endhint %}
 
-Log a Steam Game Server on to the Steam API, this will cause the server to be assigned a Steam ID.
+Cancels an auth ticket received from Get Auth Session Ticket. This should be called when no longer playing with the specified entity.
+
+### Auth Ticket
+
+The auth ticket handle to cancel.
 
 ## Nodes
 
-Coming Soon
+<figure><img src="../../../../.gitbook/assets/image (269).png" alt=""><figcaption></figcaption></figure>

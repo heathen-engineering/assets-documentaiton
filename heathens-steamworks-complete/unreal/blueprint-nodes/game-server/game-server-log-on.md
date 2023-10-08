@@ -29,6 +29,10 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
+{% hint style="warning" %}
+Only valid for Steam Game Servers
+{% endhint %}
+
 Log a Steam Game Server on to the Steam API, this will cause the server to be assigned a Steam ID.
 
 ## Nodes

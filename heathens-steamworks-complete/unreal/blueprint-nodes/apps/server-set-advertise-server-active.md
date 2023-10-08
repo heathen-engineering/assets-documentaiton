@@ -17,7 +17,7 @@ layout:
     visible: true
 ---
 
-# 🔵 Server Log On Anonymous
+# 🔵 Server Set Advertise Server Active
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -33,8 +33,12 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 Only valid for Steam Game Servers
 {% endhint %}
 
-Log a Steam Game Server on to the Steam API, this will cause the server to be assigned a Steam ID.
+Tells the Steam master servers whether or not you want to be active.
+
+### Active
+
+Should be active or no
 
 ## Nodes
 
-Coming Soon
+<figure><img src="../../../../.gitbook/assets/image (272).png" alt=""><figcaption></figcaption></figure>
