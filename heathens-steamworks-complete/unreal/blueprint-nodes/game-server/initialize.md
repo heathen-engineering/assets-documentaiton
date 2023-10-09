@@ -43,9 +43,17 @@ The address of the server
 
 ### Game Port
 
+{% hint style="info" %}
+Valve uses 27015 as a default
+{% endhint %}
+
 The port that clients will connect to for gameplay.
 
 ### Query Port
+
+{% hint style="info" %}
+Valve uses 27016 as a default
+{% endhint %}
 
 The port that will manage server browser-related duties and info pings from clients.
 

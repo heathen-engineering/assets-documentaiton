@@ -37,6 +37,10 @@ Set whether the game server allows spectators, and what port they should connect
 
 ### Port
 
+{% hint style="info" %}
+Valve uses 27017 as a default
+{% endhint %}
+
 The port for spectators to join.
 
 ## Nodes
