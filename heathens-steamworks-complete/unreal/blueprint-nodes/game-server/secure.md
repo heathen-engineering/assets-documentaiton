@@ -17,7 +17,7 @@ layout:
     visible: true
 ---
 
-# 🔵 Server Initialize
+# 🔵 Secure
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -33,14 +33,8 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 Only valid for Steam Game Servers
 {% endhint %}
 
-Initializes the ISteamGameServer interface object, and set server properties which may not be changed.
-
-After calling this function, you should set any additional server parameters, and then call [Log On](game-server-log-on.md) or [Log On Anonymous](game-server-log-on-anonymous.md)
-
-### Return Value
-
-True indicates the API was initialized, false indicates some error with the inputs or otherwise a failure to initialize the Steam API
+Check whether the game server is in "Secure" mode.
 
 ## Nodes
 
-Coming Soon
+<figure><img src="../../../../.gitbook/assets/image (283).png" alt=""><figcaption></figcaption></figure>

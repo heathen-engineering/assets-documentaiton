@@ -17,7 +17,7 @@ layout:
     visible: true
 ---
 
-# 🔵 Server Log On
+# 🔵 Log On Anonymous
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -37,4 +37,4 @@ Log a Steam Game Server on to the Steam API, this will cause the server to be as
 
 ## Nodes
 
-Coming Soon
+<figure><img src="../../../../.gitbook/assets/image (277).png" alt=""><figcaption></figcaption></figure>

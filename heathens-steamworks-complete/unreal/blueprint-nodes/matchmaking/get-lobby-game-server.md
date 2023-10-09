@@ -45,4 +45,4 @@ A [Lobby Game Server](../types/lobby-game-server.md) struct represents the conne
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>

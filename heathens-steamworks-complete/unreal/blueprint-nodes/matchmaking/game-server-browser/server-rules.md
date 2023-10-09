@@ -34,7 +34,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../../become-
 Queries individual game servers directly via IP/Port to request the list of rules that the server is running.
 
 {% hint style="info" %}
-See [Server Set Key Value](../../apps/server-set-key-value.md) for more information on setting server rules.
+See [Server Set Key Value](../../game-server/set-key-value.md) for more information on setting server rules.
 {% endhint %}
 
 ### Address

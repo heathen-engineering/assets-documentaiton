@@ -33,7 +33,7 @@ For Unity users Heathen has created a [Build Upload Tool](../heathens-steamworks
 
 If your game is small enough you can upload it as a zip file in the Steam Developer Portal.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In short, if the resulting zip file is smaller than 2 GB you can upload it in the Steam Pipe -> Builds -> Upload Depots option.
 
@@ -54,7 +54,7 @@ Download the Steamworks SDK
 
 Once you have that downloaded you should unpack it to a location on your local machine. The folder you're looking for within the SDK is the SDK -> Tools -> ContentBuilder folder.
 
-<figure><img src="../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Shows the ContentBuilder folder within the SDK zip file</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Shows the ContentBuilder folder within the SDK zip file</p></figcaption></figure>
 
 {% embed url="https://www.youtube.com/watch?v=SoNH-v6aU9Q" %}
 A video explaining how this all works
