@@ -420,6 +420,12 @@
       * [🔵 Set Spectator Name](heathens-steamworks-complete/unreal/blueprint-nodes/game-server/set-spectator-name.md)
       * [🔵 Set Spectator Port](heathens-steamworks-complete/unreal/blueprint-nodes/game-server/set-spectator-port.md)
       * [🔵 Set User Achievement](heathens-steamworks-complete/unreal/blueprint-nodes/game-server/set-user-achievement.md)
+      * [🔵 Set User Float Stat](heathens-steamworks-complete/unreal/blueprint-nodes/game-server/set-user-float-stat.md)
+      * [🔵 Set User Int Stat](heathens-steamworks-complete/unreal/blueprint-nodes/game-server/set-user-int-stat.md)
+      * [🔵 Store User Stats](heathens-steamworks-complete/unreal/blueprint-nodes/game-server/store-user-stats.md)
+      * [🔵 Update User Avg Rate Stat](heathens-steamworks-complete/unreal/blueprint-nodes/game-server/update-user-avg-rate-stat.md)
+      * [🔵 User Has License for App](heathens-steamworks-complete/unreal/blueprint-nodes/game-server/user-has-license-for-app.md)
+      * [🔵 Was Restart Requested](heathens-steamworks-complete/unreal/blueprint-nodes/game-server/was-restart-requested.md)
     * [Friends](heathens-steamworks-complete/unreal/blueprint-nodes/friends/README.md)
       * [🔵 Clear Rich Presence](heathens-steamworks-complete/unreal/blueprint-nodes/friends/clear-rich-presence.md)
       * [🔻 Friend Chat Msg](heathens-steamworks-complete/unreal/blueprint-nodes/friends/friend-chat-msg.md)
@@ -557,6 +563,7 @@
       * [🟨 UEResult](heathens-steamworks-complete/unreal/blueprint-nodes/enumerators/ueresult.md)
       * [🟨 UESteamCurrencyCode](heathens-steamworks-complete/unreal/blueprint-nodes/enumerators/uesteamcurrencycode.md)
       * [🟨 UEServerMode](heathens-steamworks-complete/unreal/blueprint-nodes/enumerators/ueservermode.md)
+      * [🟨 UEUserHasLicenseForAppResult](heathens-steamworks-complete/unreal/blueprint-nodes/enumerators/ueuserhaslicenseforappresult.md)
   * [C++](heathens-steamworks-complete/unreal/c++.md)
 
 ## More Heathen Tools <a href="#assets" id="assets"></a>

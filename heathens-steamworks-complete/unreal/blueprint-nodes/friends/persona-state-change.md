@@ -41,6 +41,6 @@ Indicates what changed, this in raw Steam API is a bitwise flag however limitati
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>The event its self is created when you Bind event</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>The event its self is created when you Bind event</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>An exampel comparing the Change Flags value of the event</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>An exampel comparing the Change Flags value of the event</p></figcaption></figure>

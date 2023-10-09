@@ -43,9 +43,9 @@ Once this has been set any new members can read the data by using [Get Lobby Gam
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>Assumes the lobby Owner is the "listen serer" aka "host"</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption><p>Assumes the lobby Owner is the "listen serer" aka "host"</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption><p>Records the provided Server ID as the target server, this can be a user or a Steam Game Server ID</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption><p>Records the provided Server ID as the target server, this can be a user or a Steam Game Server ID</p></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p>Records an ID, IP Address and Port for the traget server</p></figcaption></figure>
 

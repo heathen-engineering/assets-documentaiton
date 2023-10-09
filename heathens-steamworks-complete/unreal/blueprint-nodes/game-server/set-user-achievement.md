@@ -17,7 +17,7 @@ layout:
     visible: true
 ---
 
-# 🔵 Copy of Set Spectator Port
+# 🔵 Set User Achievement
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -50,6 +50,10 @@ The user to set the achievement for
 ### API Name
 
 The API Name of the Achievement to set
+
+### Return Value
+
+True if successful
 
 ## Nodes
 
