@@ -39,4 +39,4 @@ Heathen's UEResult is a blueprint-friendly wrapper around this common enum
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (18) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

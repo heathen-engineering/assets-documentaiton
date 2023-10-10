@@ -39,4 +39,4 @@ The index of the message, use this with [Get Lobby Chat Entry](get-lobby-chat-en
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>

@@ -3,7 +3,7 @@ cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
 coverY: 0
 ---
 
-# Selectable Friend ID
+# 📦 Selectable Friend ID
 
 {% hint style="success" %}
 #### Like what your seeing?

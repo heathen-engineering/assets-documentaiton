@@ -54,7 +54,7 @@ Heathen's Steamworks Complete includes the Steam Content Builder tool which can 
 
 This can be accessed from the `File\Steam Build` or `Window\Steamworks\Builder` menu:
 
-![](<../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1).png>)or![](<../../.gitbook/assets/image (6) (2).png>)
+![](<../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1).png>)or![](<../../.gitbook/assets/image (6) (2).png>)
 
 ### Configuring the tool
 
@@ -64,7 +64,7 @@ When you first open the tool in your first project you will see a message asking
 
 You can click the Update Configuration button to open the Steam Content Builder Configuration where you can edit the Steamworks SDK Content Builder location and modify other settings.
 
-<figure><img src="../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Depots
 
@@ -78,7 +78,7 @@ Most Steam games will have 1 depot for each platform they support
 
 This is the local folder path to the Steamworks SDK's ContentBuilder folder. By default this would be located at `sdk/tools/ContentBuilder` the tool has a button you can press to help you get started downloading the Steamworks SDK from Valve.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Username and Password
 
@@ -129,7 +129,7 @@ Because Valve doesn't allow Steam CMD to set a build live on the default branch 
 
 If your game is small enough you can upload it as a zip file in the Steam Developer Portal.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In short, if the resulting zip file is smaller than 2 GB you can upload it in the Steam Pipe -> Builds -> Upload Depots option.
 
@@ -150,7 +150,7 @@ Download the Steamworks SDK
 
 Once you have that downloaded you should unpack it to a location on your local machine. The folder you're looking for within the SDK is the SDK -> Tools -> ContentBuilder folder.
 
-<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Shows the ContentBuilder folder within the SDK zip file</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Shows the ContentBuilder folder within the SDK zip file</p></figcaption></figure>
 
 {% embed url="https://www.youtube.com/watch?v=SoNH-v6aU9Q" %}
 A video explaining how this all works

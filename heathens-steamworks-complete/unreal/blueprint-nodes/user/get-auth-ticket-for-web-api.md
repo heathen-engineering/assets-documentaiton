@@ -17,7 +17,7 @@ layout:
     visible: true
 ---
 
-# 🔵 Clear Rich Presence
+# 🔵 Get Auth Ticket for Web API
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -29,8 +29,16 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-Clears all of the current user's Rich Presence key/values.
+Retrieve an authentication ticket to be sent to the entity that wishes to authenticate you using the authenticate user ticket Web API
+
+### For Steam ID
+
+The ID of the entity that you will send the ticket to
+
+### Return Value
+
+A [Auth Ticket Data](../types/auth-ticket-data.md) value
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (15) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>

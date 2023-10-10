@@ -37,4 +37,4 @@ An array if Steam IDs representing each friend in the group
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (29) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (29) (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -41,4 +41,4 @@ True if the activation or close occurred as a result of a direct user request e.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (26) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (26) (1) (1).png" alt=""><figcaption></figcaption></figure>

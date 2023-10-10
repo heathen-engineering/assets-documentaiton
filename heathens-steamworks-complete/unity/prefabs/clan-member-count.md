@@ -3,7 +3,7 @@ cover: ../../../.gitbook/assets/Unity Banner@4x-100.jpg
 coverY: 0
 ---
 
-# Clan Member Count
+# 📦 Clan Member Count
 
 {% hint style="success" %}
 #### Like what your seeing?

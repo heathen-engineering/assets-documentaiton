@@ -49,4 +49,4 @@ True if you are successful, false if you're not the lobby owner.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
