@@ -18,6 +18,10 @@ So you want to build a multiplayer Steam game? We can help!
 
 Your first stop should be our [Design article on Multiplayer](../../../design/multiplayer/) it covers the fundamentals that you'll need to know before you get started. Once you have your head wrapped around the concepts and a design in mind come back here and we will get started.
 
+<details>
+
+<summary>Unity</summary>
+
 ### Update Unity
 
 Select the proper Unity Version, this is much more important than you might think. You should be keeping your Unity Editor up to date with what you anticipate will be the most recent 'LTS' build of Unity at the time your game launches. We have a [whole article on this](../../../fundamentals/unity-release-version.md), it explains what LTS is, why we have this stance and how to go about it.
@@ -58,22 +62,17 @@ For a general understanding of what [P2P ](../../../design/multiplayer/#peer-to-
 
 As to general project architecture check out [these articles](../../../design/bootstrap-scene.md), concepts such as bootstrap scenes can be a big help in most projects.
 
-{% hint style="info" %}
-Pro Tip
+</details>
 
-Keep your product project clean and light.
+<details>
 
+<summary>Unreal</summary>
 
+Unreal's approach to multiplayer is significantly more mature and able. Simply install the [Steam Sockets plugin](https://docs.unrealengine.com/5.3/en-US/using-steam-sockets-in-unreal-engine/) to enable the Steam Sockets netdriver.&#x20;
 
-I like to set up 2 projects with each "game project".
+Note that you do not need to use Online Subsystem Steam if you are using Heathen's Steamworks Complete.
 
-1\) The "production" project will be kept clean and I will only ever install just what it needs that is when I import an asset I will exclude its prefabs, samples, documents, etc. keeping only the functional parts I need to use.
+[Online Subsystem Steam](https://docs.unrealengine.com/5.3/en-US/online-subsystem-steam-interface-in-unreal-engine/) is a bare-bones Steamworks SDK integration written by Epic directly. It lacks full support for all of Steam APIs features but provides the basics. [Heathen's Steamworks Compelte](../../../../heathens-steamworks-complete/unreal/) on the other hand is a full-featured integration and toolkit expanding on Steam API and integrated deeply with the engine.
 
+</details>
 
-
-2\) The "sandbox" project is where I pull things in as they were defined by their authors and where I play with my code and assets making a right mess but designing and iterating quickly
-
-
-
-When something is fit for production I simply export it from Sandbox and bring it into Production. This lets me be a messy boy as I design and experiment which I love to do while also keeping the bloat out of the production product.
-{% endhint %}

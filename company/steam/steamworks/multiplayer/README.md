@@ -22,18 +22,18 @@ Creating a game is hard work, creating a multiplayer game is extra hard work, an
 This article covers Steam Multiplayer concepts for more general information on Multiplayer [game design](../../../design/) please see our [guide on that topic](../../../design/multiplayer/).&#x20;
 {% endhint %}
 
-{% hint style="info" %}
+## Concepts
+
+<details>
+
+<summary>Unity</summary>
+
 The Networking tool you choose to use does not impact any of the concepts you will learn here.&#x20;
 
 You can use any networking tool you like (NetCode for GameObjects, FIshNetworking, Mirror, etc.), if you want to use the SteamNetworkingSockets interface you should choose a networking tool that has an integration with it.
 
 \
 Fish Networking, Mirror and NetCode for GameObjects all have Steam transports that they or their community author. Heathen \*\***does not\*\*** author any of these transports and cannot provide support for them. These transports can be used alongside Heathen's Steamworks Complete and Foundation.
-{% endhint %}
-
-The [Terminology ](terminology.md)sub-section in this article is a must-read, with networking concepts especially there are multiple definitions for various terms used and this makes an already confusing topic even more confusing. The terminology section lays out term definitions as we use them here which almost certainly differs from what you used to.
-
-## Key Concepts
 
 ### Network Scene (or scenes)
 
@@ -90,3 +90,5 @@ if(lobby.HasServer)
     NetworkManager.StartClient();
 }
 ```
+
+</details>

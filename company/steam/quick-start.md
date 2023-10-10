@@ -49,21 +49,47 @@ Having said that you can't do anything meaningful with the test app, it exists a
 
 ## Steam API
 
-Once you're all set up as a Steam Developer and have your App ID your next step should be to get familiar with the Steam API and what it has to offer. Heathen creates the best-in-class integration between Unity and Steam API, read more on our [Steamworks page](../../heathens-steamworks-complete/steamworks.md).
+Once you're all set up as a Steam Developer and have your App ID your next step should be to get familiar with the Steam API and what it has to offer. Heathen creates the best Steam integration for Unreal, Unity and Godot, read more on our [Steamworks page](../../heathens-steamworks-complete/steamworks.md).
 
 Steam API is a tremendous value especially for small and indie developers as it is a power set of backend services and is completely free for you to use. We strongly recommend you understand what Steam API can do for your game before you commit your design. The best and most successful games fully exploit Steam's features.
 
 ## Installing Heathen's Steamworks
 
-Now that you have made the wise decision to use Heathen's Steamworks to integrate Steam API with your game project on [Unity](../../heathens-steamworks-complete/unity/installation/) or [Godot ](../../heathens-steamworks-complete/godot/installation.md)you will need to get it installed and configured for use!
+Now that you have made the wise decision to use Heathen's Steamworks to integrate Steam API with your game project on [Unreal](../../heathens-steamworks-complete/unreal/installation.md), [Unity](../../heathens-steamworks-complete/unity/installation/) or [Godot ](../../heathens-steamworks-complete/godot/installation.md)you will need to get it installed and configured for use!
 
-[Install Heathen Steamworks for Unity](../../heathens-steamworks-complete/unity/installation/)
+[Install Heathen's Steamworks for Unreal](../../heathens-steamworks-complete/unreal/installation.md)
 
-[Install Heathen Steamworks for Godot](../../heathens-steamworks-complete/godot/installation.md)
+[Install Heathen's Steamworks for Unity](../../heathens-steamworks-complete/unity/installation/)
+
+[Install Heathen's Steamworks for Godot](../../heathens-steamworks-complete/godot/installation.md)
+
+## Unlearning Bad Habits
+
+Unfortunately, there is a lot of just horrible sample and example code out there, especially around Steamworks / Steam API for Unity. Here are some common things you might have picked up or learned that you should throw out right now.
+
+### SteamManager.cs
+
+This original came from an example of using the raw Steamworks.NET C# wrapper you can find the original at the link below
+
+{% embed url="https://github.com/rlabrecque/Steamworks.NET-Example" %}
+
+Keep in mind this was an example script, meant to be used with a specific example project and like any example script
+
+{% hint style="danger" %}
+Was never meant for production use
+{% endhint %}
+
+Sadly a great many Unity Asset developers do what Unity Asset developers often do and copy and paste someone else's work into their own asset and run with it without actually understanding what it was, why it was or how to do it properly.
+
+{% hint style="info" %}
+SteamManager should not be present much less used in any project
+{% endhint %}
+
+The functionality that SteamManager provided in its original context is handled by Heathen's systems. Please see the [Steamworks Behaviour](../../heathens-steamworks-complete/unity/components/steamworks-behaviour.md) for a similar but quite different approach.
 
 ## Getting Help
 
-This Knowledge Base is your best source for information not just on Steam but all manner of Game Development related tasks.
+This Knowledge Base is your best source for information not just on Steam but all manner of Game Development tasks.
 
 ### Navigation
 
@@ -71,7 +97,7 @@ This Knowledge Base is your best source for information not just on Steam but al
 
 ### AI Search and Classic Search
 
-In the Upper right corner you will find a search box&#x20;
+In the Upper right corner, you will find a search box&#x20;
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 

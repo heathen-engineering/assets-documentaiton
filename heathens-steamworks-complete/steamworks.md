@@ -39,13 +39,13 @@ These articles are made possible by our [GitHub Sponsors](../become-a-sponsor/) 
 [Become a Sponsor](../become-a-sponsor/) and get all of our tools for 15$ it's the best way to **Do More**!\
 
 
-Available for Unity 3D and Godot (mono)\*\
+Available for Unreal, Unity and Godot (mono)\*\
 \* [Foundation](https://github.com/heathen-engineering/SteamworksFoundation) is available for Godot now with Complete in development and coming soon.
 {% endhint %}
 
 We take the strength of Steamworks.NET, and the parody it has with the native APIs, and expand on that with engine-centric tools, editor extensions and more!&#x20;
 
-Heathen's Steamworks Complete is the best possible option for Unity & Godot (mono) developers looking to integrate with Steam API.&#x20;
+Heathen's Steamworks Complete is the best possible option for Unreal, Unity & Godot (mono) developers looking to integrate with Steam API.&#x20;
 
 ## Key Features
 
@@ -55,11 +55,17 @@ Heathen's Steamworks Complete covers every aspect of Valve's Steamworks API, but
 
 ### Build Upload Tool
 
-Build and upload your game to Steam right from the Unity editor with our [Steam Content Builder](../steam/uploading-to-steam.md) integration.
+In editor Build Upload tools available for [Unity](unity/build-upload-tool.md) and Unreal (coming soon).
 
 ### Networking Integrations
 
-Heathen's Steamworks Complete works with the networking tools you already know and use. On Unity, we work with Mirror, FishNetworking and NetCode for GameObject projects to ensure compatibility and with Unreal the Steam Networking Sockets plugin is again compatible with our plugin.
+#### Unreal
+
+Works with Unreal Engine's Steam Sockets plugin
+
+#### Unity
+
+Works with Steam Networking Sockets Transports available for NetCode for GameObjects, Mirror and FishNetworking.
 
 ### API Extensions
 
@@ -69,11 +75,13 @@ These extensions can be as simple as handling engine textures, events, etc. or m
 
 Our goal is to expose the Steamworks SDK features in such a way that they feel like a native extension of the engine you are working with.
 
-### Steam Artifacts&#x20;
+### Engine Native
 
-Every Steam artefact (lobby, achievement, DLC, user, etc.) is handled in a way native to the engine. For Unity this is C# structs (DOTS, programmers) and ScriptableObejcts (designers, editors). For Unreal Blueprint exposed nodes and events.
+#### Unreal
 
-### Components
+Blueprint functions and bindable events, ready-made systems and widgets for common use cases. Do More with less effort with Heathen's Steamworks Complete.
+
+#### Unity
 
 Major systems and concepts have additional tooling built around them to save you time with common tasks. From reading and displaying records from a leaderboard to managing a Steam Lobby for player parties, game sessions quick matches and a lot more.
 

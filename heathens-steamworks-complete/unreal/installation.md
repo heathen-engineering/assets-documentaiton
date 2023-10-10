@@ -30,10 +30,7 @@ These articles are made possible by our [GitHub Sponsors](../../become-a-sponsor
 ## Engine First
 
 {% hint style="info" %}
-We will eventually ship on Unreal Marketplace ... or that is the plan.\
-For now though a manual install of a loss Plugin is how we are shipping.\
-\
-These steps should get you going.
+Unreal Marketplace deployment coming soon!
 {% endhint %}
 
 ### Version
