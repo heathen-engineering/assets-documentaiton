@@ -55,7 +55,7 @@ Heathen's Steamworks Complete covers every aspect of Valve's Steamworks API, but
 
 ### Build Upload Tool
 
-In editor Build Upload tools available for [Unity](unity/build-upload-tool.md) and Unreal (coming soon).
+In the editor Build Upload tools available for [Unity](unity/build-upload-tool.md) and [Unreal ](unreal/packaging-tool.md)(coming soon).
 
 ### Networking Integrations
 
@@ -79,7 +79,7 @@ Our goal is to expose the Steamworks SDK features in such a way that they feel l
 
 #### Unreal
 
-Blueprint functions and bindable events, ready-made systems and widgets for common use cases. Do More with less effort with Heathen's Steamworks Complete.
+Blueprint functions and bindable events, ready-made systems and widgets for common use cases. Engine native approach to Game Insnace, Save Game and more!
 
 #### Unity
 
@@ -105,7 +105,7 @@ From top to bottom, each layer offers a level of simplicity and abstraction, you
 
 ### Prefab & Tool Layer
 
-Provides a range of ready-to-use prefabs and simple script components that allow many common requirements to be handled completely code free. All are built on our easy-to-use Components Layer.
+Provides a range of ready-to-use prefabs and simple script components that allow many common requirements to be handled completely code-free. All are built on our easy-to-use Components Layer.
 
 ### Components Layer
 
@@ -113,24 +113,13 @@ We provide flexible and powerful tools in the form of component scripts and scri
 
 ### Data Layer
 
-Our "data layer" is a set of structs and tools that simplify working with Steam's concepts and artefacts such as UserData, LeaderboardData, AchievementData and more. These greatly reduce the code and effort required to accomplish any task. All are built on our robust API Layer.
+Our "data layer" is a set of structures and tools that simplify working with Steam's concepts and artefacts such as UserData, LeaderboardData, AchievementData and more. These greatly reduce the code and effort required to accomplish any task. All are built on our robust API Layer.
 
 ### API Layer
 
 Every endpoint and interface of Valve's Steam API has been expressed in a C# and Unity (or Godot) centric API. This means no need to mess with callbacks, manage operation queues cast and convert between various primitive and native types, etc.
 
 The API Layer coupled with the Data Layer empowers programmers and engineers to work more efficiently and maintainable with Steam API and is built around the Native Steam API vis Steamworks.NET
-
-## Feature Comparison
-
-Heathen's Steamworks integration is available in two forms
-
-* Foundation\
-  This is a lite version available for free and is a great alternative to raw Steamworks.NET or Facepunch in that it will handle the core of Steamworks integration for you reliable and tried and true manner.
-* Complete\
-  This is our "full fat" tool covering every aspect of the Steamworks API, providing you with invaluable tools, systems, components and code-free solutions to help you Do More with Steam API.
-
-<table data-full-width="true"><thead><tr><th width="261.5">Features</th><th width="221">Foundation (free)</th><th width="217">Complete</th><th width="171">Steamworks.NET</th><th>Facepunch</th></tr></thead><tbody><tr><td>License</td><td><a href="https://github.com/heathen-engineering/SteamworksFoundation">Free</a></td><td><a href="../become-a-sponsor/">Sponsor ($15)</a><br><a href="https://assetstore.unity.com/packages/tools/integration/steam-api-steamworks-complete-246652">Unity Asset Store (75$)</a><br>Unreal Marketplace (coming soon)</td><td><a href="https://github.com/rlabrecque/Steamworks.NET">Free</a></td><td><a href="https://wiki.facepunch.com/steamworks/">Free</a></td></tr><tr><td>Full API Supported</td><td>✔</td><td>✔</td><td>✔</td><td>Mostly</td></tr><tr><td>Documentation</td><td>Knowledge Base</td><td>Knowledge Base</td><td>Valve Docs</td><td>Wiki</td></tr><tr><td>Support</td><td>Dedicated + Community</td><td>Dedicated + Community</td><td>GitHub Issues</td><td>Not Found</td></tr><tr><td><h3>Editor Tools</h3></td><td></td><td></td><td></td><td></td></tr><tr><td>Achievement UI Tools</td><td>✔</td><td>✔</td><td></td><td></td></tr><tr><td>Build Upload Tool</td><td>✔</td><td>✔</td><td></td><td></td></tr><tr><td>Chat UI Tools</td><td></td><td>✔</td><td></td><td></td></tr><tr><td>Group / Clan UI Tools</td><td></td><td>✔</td><td></td><td></td></tr><tr><td>User Profile Tools</td><td>✔</td><td>✔</td><td></td><td></td></tr><tr><td>Leaderboard UI Tools</td><td></td><td>✔</td><td></td><td></td></tr><tr><td>Lobby UI Tools</td><td></td><td>✔</td><td></td><td></td></tr><tr><td>Debugging Tools</td><td></td><td>✔</td><td></td><td></td></tr><tr><td><h3>Data Layer</h3></td><td></td><td></td><td></td><td></td></tr><tr><td>Achievements</td><td>✔</td><td>✔</td><td></td><td></td></tr><tr><td>App</td><td>✔</td><td>✔</td><td></td><td></td></tr><tr><td>Group / Clan</td><td></td><td>✔</td><td></td><td></td></tr><tr><td>DLC</td><td></td><td>✔</td><td></td><td></td></tr><tr><td>Game</td><td>✔</td><td>✔</td><td></td><td></td></tr><tr><td>Input</td><td></td><td>✔</td><td></td><td></td></tr><tr><td>Inventory</td><td></td><td>✔</td><td></td><td></td></tr><tr><td>Leaderboard</td><td></td><td>✔</td><td></td><td></td></tr><tr><td>Lobby</td><td></td><td>✔</td><td></td><td></td></tr><tr><td>Stats</td><td>✔</td><td>✔</td><td></td><td></td></tr><tr><td>User / Friend</td><td>✔</td><td>✔</td><td></td><td></td></tr><tr><td>Workshop</td><td></td><td>✔</td><td></td><td></td></tr><tr><td><h3>API Extensions</h3></td><td></td><td></td><td></td><td></td></tr><tr><td>Application</td><td>✔</td><td>✔</td><td></td><td> </td></tr><tr><td>Authentication</td><td></td><td>✔</td><td></td><td></td></tr><tr><td>Big Picture</td><td></td><td>✔</td><td></td><td></td></tr><tr><td>Groups / Clans</td><td></td><td>✔</td><td></td><td></td></tr><tr><td>User / Friends</td><td>✔</td><td>✔</td><td></td><td></td></tr><tr><td>Steam Input</td><td></td><td>✔</td><td></td><td></td></tr><tr><td><strong>Inventory</strong></td><td></td><td>✔</td><td></td><td></td></tr><tr><td><strong>Leaderboard</strong></td><td></td><td>✔</td><td></td><td></td></tr><tr><td><strong>Matchmaking</strong></td><td></td><td>✔</td><td></td><td></td></tr><tr><td>Overlay</td><td>✔</td><td>✔</td><td></td><td></td></tr><tr><td>Parties</td><td></td><td>✔</td><td></td><td></td></tr><tr><td>Remote Play</td><td></td><td>✔</td><td></td><td></td></tr><tr><td>Remote Storage (cloud)</td><td></td><td>✔</td><td></td><td></td></tr><tr><td>Screenshots</td><td></td><td>✔</td><td></td><td></td></tr><tr><td>Stats &#x26; Achievements</td><td>✔</td><td>✔</td><td></td><td></td></tr><tr><td>UGC (Workshop)</td><td></td><td>✔</td><td></td><td></td></tr><tr><td>Utilities</td><td>✔</td><td>✔</td><td></td><td></td></tr><tr><td>Voice</td><td></td><td>✔</td><td></td><td></td></tr></tbody></table>
 
 ## Heathen vs Steamworks.NET
 
@@ -157,3 +146,17 @@ Facepunch's stated goal is to make a C# focused wrapper that exploits/leverages 
 whoHeathen does similar in that we are here to make the Steam API more friendly to a specific audience, only we are Unity-centric not just C# centric. We have wrapped the complexities of Steamworks.NET making it quick and easy to integrate for C# programmers, Unity-specific programmers, Unity designers and hobbyists who prefer to use tools like Bolt or work through inspectors to get the job done. We chose to build on top of Steamworks.NET so that the dev that wants/needs to can still leverage the decades of community guidance on the source API only needing to convert C/C++ to C#.
 
 Because we are built on top of Steamworks.NET which is itself a true-to-form wrapper around the native Steam APIs many tools, assets, etc. built for Steamworks.NET or Valve's original Steam API simply work, that is not the case for Facepunch which often requires its own flavour of a tool to work.
+
+## Heathen vs Online Subsystem Steam
+
+Put bluntly [Online Subsystem Steam](https://docs.unrealengine.com/5.3/en-US/online-subsystem-steam-interface-in-unreal-engine/) is an incomplete solution. It does not cover the full Steam API and is limited to a handful of modules, what it does cover it only partially covers.
+
+You can see a more l[ine by line breakdown of Heathen vs Online Subsystem Steam in our Unreal article](unreal/).
+
+Heathen's Steamworks Complete is as its name suggests a complete integration of every aspect of Valve's Steamworks with the engine. It goes well beyond a simple API wrapper and provides you with ready-made and proven tools. The full Steam API is exposed to you in both C++ and Blueprint Functions, we also provide you with a set of common-use [UI Widgets](unreal/widgets/) and Unreal-centric tools like our [Steam Remote Storage Save Game](unreal/save-game.md) base class, [Steam Game Instance](unreal/game-instance.md) and more.
+
+## Heathen vs Steam Core
+
+Steam Core is a plugin available from the Unreal Marketplace and is "another Steam API wrapper". It provides more coverage than you get with Epic's own Online Subsystem Steam but doesn't cover the full Steam API. It also (appears) to make improper use of Steam API in a few key areas for example its approach to Steam Remote Storage (aka Steam Cloud) is to save the game to the disk using Unreal's Save Game and then read that file from the disk to save it to Steam Remote Storage ... this is exactly what Valve says you shouldn't do as you will end up with sync issues, it also doubles the disk space the save uses since Steam Remote Storage also writes the file to disk before syncing to Valve's backend.
+
+The major difference between Heathen and frankly any other option is that Heathen has been doing this for over a decade, we have supported thousands of developers shipping hundreds of games on Steam. Our tools are well-designed and adhere to Valve's and the engine's best practices, our tools are more than just a Steam API wrapper, they let you leverage our extensive experience with the Steam API and Steam platform.
