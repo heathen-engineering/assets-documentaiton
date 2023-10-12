@@ -38,51 +38,31 @@ Your first step is to initialize the Steam API and we give you a few options to 
 * C++\
   The full features of Steam API available C++
 
-## Steam Game Instance
+## [Steam Game Instance](game-instance.md)
 
-<figure><img src="../../.gitbook/assets/image (299).png" alt=""><figcaption></figcaption></figure>
+The easiest and most straightforward solution to getting started with Steam API is to use the BP\_Steam\_Game\_Instance.
 
-A premade Blueprint of type Game Instance that handles initialization and shutdown of Steamworks APIs for both Client and Server builds.
+Simply open your project settings, select Maps & Modes, scroll to the bottom and set your Game Instance Class to `BP_Steam_Game_Instance`
 
-The expectation is that you will open up and modify this Blueprint to suit your game's needs.
+The [BP\_Steam\_Game\_Instance](game-instance.md) is configured to work with App 480 `Spacewars` and is able to handle both client and server initialization. You can either modify it to suit your game's needs or use it as a template to create your own Blueprint as described below.
 
-### App ID
-
-<figure><img src="../../.gitbook/assets/image (300).png" alt=""><figcaption></figcaption></figure>
-
-Your first step should be to set your App ID in the Steam Client Should Restart node. This will be used by Steamworks to hint and test whether or not the app should be restarted from Steam client.
-
-In the event the test is true the Should Restart event will be called, otherwise Client Initialization will proceed.
-
-### Game Server Configuraiton
-
-<figure><img src="../../.gitbook/assets/image (302).png" alt=""><figcaption></figcaption></figure>
-
-If your game will have a dedicated server build you should update the Steam Server Initialization node according to your configuration. The specifics of how you do this and what you will set the values to will depend on the nature of your servers, how they are hosted and how they are allocated.
-
-For example, if your servers are allocated dynamically you may want to pass the required information in on the command line in that case you could read parameters from the command line to populate the required fields. Unreal's built-in tools can help you with this
-
-<figure><img src="../../.gitbook/assets/image (303).png" alt=""><figcaption></figcaption></figure>
-
-### Bootstrap
-
-<figure><img src="../../.gitbook/assets/image (304).png" alt=""><figcaption></figcaption></figure>
-
-The concept of "bootstrapping" is a common one and pre-configured in the sample. The Initialization Complete even will be raised when Steam is ready to use and you can easily apply any additional logic you require at this time to ensure that the user does own the game and that the API is ready to be used.
-
-For example, this would be the ideal time to load system settings, user profiles and other saved data from Steam Remote Storage.
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 ## Blueprint
 
-You will probably want to initialize and run your Steam integration globally at the level of the whole game as opposed to linking it to a given object or actor.
+Creating your own Steam Game Instance.
 
-For that reason, we recommend you use "Game Instance" as the base class of a new blueprint. Don't forget to set your new Game Instance in the Project Settings.
+{% hint style="info" %}
+Open up and read the included `BP_Steam_Game_Instance` to see a working version of what you need to do ...
+{% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Step 1: create your own game instance, probably best to do this as a Blueprint so create a new blueprint and select GameInstance as your base class, then set that new class as your game's Game Instance Class.
+
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Open your new blueprint and let's create a few nodes
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The above shows a fully functional initialization, update and shutdown of the Steam API all connected to your game's lifecycle from a blueprint.
 

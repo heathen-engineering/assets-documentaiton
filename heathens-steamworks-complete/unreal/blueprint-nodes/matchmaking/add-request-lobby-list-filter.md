@@ -43,7 +43,7 @@ The [UELobbyDistanceFilter](../enumerators/uelobbydistancefilter.md) option for 
 
 ### Example
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Slots Available
 
@@ -55,7 +55,7 @@ The number of open slots that must be open.
 
 ### Example
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Near Value
 
@@ -73,7 +73,7 @@ The value that lobbies will be sorted on
 
 ### Example
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Numerical
 
@@ -93,7 +93,7 @@ The [UELobbyComparison](../enumerators/uelobbycomparison.md) type to use for the
 
 ### Example
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Result Count
 
@@ -111,7 +111,7 @@ The maximum number of lobbies to return. Steam will not return more than 50.
 
 ### Example
 
-<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## String
 
@@ -131,4 +131,4 @@ The [UELobbyComparison](../enumerators/uelobbycomparison.md) type to use for the
 
 ### Example
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

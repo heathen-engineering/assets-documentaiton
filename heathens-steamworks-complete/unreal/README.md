@@ -43,7 +43,7 @@ Heathen's Steamworks Complete will save you hundreds if not thousands of hours a
 
 [Online Subsystem Steam](https://docs.unrealengine.com/5.3/en-US/online-subsystem-steam-interface-in-unreal-engine/) is a barebones integration of the basics. Setting aside the poor documentation it also simply lacks many of Valve's most valuable Steamworks features and what is covered is only partially covered.
 
-Heathen's Steamworks Complete is as its name suggests a complete solution, more than "Just Another Steam API Wrapper" we go further, Heathen's Steamworks Complete exposes the whole of Steamworks as Blueprint functions and bindable events. We deliver ready-to-use widgets and blueprints for common use cases and editor tools like the Steam Build Tool.
+Heathen's Steamworks Complete is as its name suggests a complete solution, and more than "Just Another Steam API Wrapper", Heathen's Steamworks Complete exposes the whole of Steamworks as Blueprint functions and bindable events. We deliver ready-to-use widgets and blueprints for common use cases and editor tools like the Steam Build Tool. We have created production-ready Unreal Engine-centric objects to make working with Steam API a more engine-native experience (Steam Game Instance, Steam Remote Storage Save Game, etc.)
 
 Beyond the engine plugin, we also provide an extensive knowledge base that goes beyond simply listing interfaces and provides actual guidance for not just technical features but every aspect of the Steam platform. We also foster a rich community of thousands of game developers that have shipped hundreds of games on Steam and of course, we provide support for our asset and your use of it.
 
