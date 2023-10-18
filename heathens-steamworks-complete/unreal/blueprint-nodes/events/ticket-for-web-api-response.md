@@ -1,9 +1,23 @@
 ---
 cover: ../../../../.gitbook/assets/Unreal Banner@4x-100.jpg
 coverY: 0
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
-# 🟩 Voice Result
+# 🔻 Ticket for Web API Response
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -15,16 +29,8 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-The compressed voice result data from the [Get Voice](../functions/get-voice.md) node.
-
-### Result
-
-The [UEVoiceResult](../enumerators/uevoiceresult.md)&#x20;
-
-### Voice Data
-
-The compressed voice data
+The result of [Get Auth Ticket for Web API](../functions/get-auth-ticket-for-web-api.md)
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
