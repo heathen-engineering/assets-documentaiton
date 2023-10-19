@@ -29,24 +29,22 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-{% hint style="warning" %}
-Only valid for Steam Game Servers
-{% endhint %}
+Get the ordered list of achievements given global achievement status
 
-Gets the unlock status of the Achievement.
+### User ID
 
-### User Id
-
-The user to check for
+The user to get the achievement for
 
 ### API Name
 
-The API name of the achievement to check for
+The achievement to get
 
 ### Return Value
 
-The [Server Achievement Status](../types/server-achievement-status.md)
+The [User Achievement Status](../types/user-achievement-status.md) for the achievement, or the [Server Achievement Status](../types/server-achievement-status.md)
 
 ## Nodes
+
+<figure><img src="../../../../.gitbook/assets/image (336).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

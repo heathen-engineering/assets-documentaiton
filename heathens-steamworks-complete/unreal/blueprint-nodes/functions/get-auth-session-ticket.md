@@ -29,18 +29,18 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-{% hint style="warning" %}
-Only valid for Steam Game Servers
-{% endhint %}
+Retrieve an authentication ticket to be sent to the entity that wishes to authenticate you.
 
-Retrieve an authentication ticket to be sent to the entity that wishes to authenticate you.\
-\
-After calling this you can send the ticket to the entity where they can then call Begin Auth Session to verify this entity's integrity.
+### For Steam ID
+
+The ID of the entity that you will send the ticket to
 
 ### Return Value
 
-An [Auth Ticket Data](../types/auth-ticket-data.md) value
+A [Auth Ticket Data](../types/auth-ticket-data.md) value
 
 ## Nodes
+
+<figure><img src="../../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

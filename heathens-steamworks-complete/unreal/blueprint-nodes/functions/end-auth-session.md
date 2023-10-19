@@ -17,7 +17,7 @@ layout:
     visible: true
 ---
 
-# 🔵 Server End Auth Session
+# 🔵 End Auth Session
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -29,16 +29,14 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-{% hint style="warning" %}
-Only valid for Steam Game Servers
-{% endhint %}
+Ends an auth session that was started with [Begin Auth Session](begin-auth-session.md). This should be called when no longer playing with the specified entity.
 
-Ends an auth session that was started with Begin Auth Session. This should be called when no longer playing with the specified entity.
+### Steam ID
 
-### Steam Id
-
-The entity to end the active auth session with.
+The ID to end the session with
 
 ## Nodes
+
+<figure><img src="../../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (273).png" alt=""><figcaption></figcaption></figure>
