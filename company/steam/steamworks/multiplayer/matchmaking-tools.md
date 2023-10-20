@@ -638,7 +638,7 @@ In this case, the accepting user is not yet in the game so the Steam client will
 A crude example follows
 
 ```csharp
-Lobby targetLobby = CommandLine.GetSteamLobbyInvite();
+LobbyData targetLobby = CommandLine.GetSteamLobbyInvite();
 if(targetLobby.IsValid)
 {
     //We should probably navigate to the proper place in-game first

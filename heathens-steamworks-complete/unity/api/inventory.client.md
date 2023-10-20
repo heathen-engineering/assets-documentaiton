@@ -578,7 +578,7 @@ This can be safely called from the client because the items it can grant can be 
 \
 Any items that can be granted MUST have a "promo" attribute in their itemdef. That promo item list a set of APPIDs that the user must own to be granted this given item. This version will grant all items that have promo attributes specified for them in the configured item definitions. This allows adding additional promotional items without having to update the game client. For example the following will allow the item to be granted if the user owns either TF2 or SpaceWar.
 
-```
+```csharp
 API.Inventory.Client.AddPromoItems(items, callback);
 ```
 
@@ -607,7 +607,7 @@ Once an item is removed it cannot be recovered.&#x20;
 This is not for the faint of heart - if your game implements item removal at all, a high-friction UI confirmation process is highly recommended.
 {% endhint %}
 
-```
+```csharp
 API.Inventory.Client.ConsumeItem(item, quantity, callback);
 ```
 
@@ -619,7 +619,7 @@ This call has a potential soft-failure mode where the handle status is set to [k
 \
 You should call [Check Result Steam ID](inventory.client.md#check-result-steam-id) on the result handle when it completes to verify that a remote player is not pretending to have a different user's inventory.
 
-```
+```csharp
 API.Inventory.Client.DeserializeResult(buffer, callback);
 ```
 
@@ -635,7 +635,7 @@ This only needs to be called if you are manually handling results ... which shou
 This is only provided for completeness of the API to enable deep customization for those who wish to do so.
 {% endhint %}
 
-```
+```csharp
 API.Inventory.Client.DestroyResult(resultHandle);
 ```
 
@@ -674,7 +674,7 @@ Grants specific items to the current user, for developers only.
 
 This API is only intended for prototyping - it is only usable by Steam accounts that belong to the publisher group for your game.
 
-```
+```csharp
 API.Inventory.Client.GenerateItems(items, quantity, callback);
 ```
 
@@ -686,7 +686,7 @@ Start retrieving all items in the current users inventory.
 Calls to this function are subject to rate limits and may return cached results if called too frequently. It is suggested that you call this function only when you are about to display the user's full inventory, or if you expect that the inventory may have changed.
 {% endhint %}
 
-```
+```csharp
 API.Inventory.Client.GetAllItems(callback);
 ```
 
@@ -696,7 +696,7 @@ Request the list of "eligible" promo items that can be manually granted to the g
 
 These are promo items of type "manual" that won't be granted automatically. An example usage of this is an item that becomes available every week.
 
-```
+```csharp
 API.Inventory.Client.GetEligiblePromoItemDefinitionIDs(user, callback);
 ```
 
@@ -724,7 +724,7 @@ You should never need to call this method if your using Heathen's Steamworks&#x2
 This method is included for completeness of the interface.
 {% endhint %}
 
-```
+```csharp
 API.Inventory.Client.GetResultItems(resultHandle, items, ref count);
 ```
 
@@ -748,7 +748,7 @@ This can be safely called from the client because the items it can grant can be 
 \
 Any items that can be granted MUST have a "promo" attribute in their itemdef. That promo item list a set of APPIDs that the user must own to be granted this given item. This version will grant all items that have promo attributes specified for them in the configured item definitions. This allows adding additional promotional items without having to update the game client. For example the following will allow the item to be granted if the user owns either TF2 or SpaceWar.
 
-```
+```csharp
 API.Inventory.Client.GrantPromoItems(callback);
 ```
 
@@ -768,6 +768,6 @@ Only item definitions which are marked as "playtime item generators" can be spaw
 \
 Typically this function should be called at the end of a game or level or match or any point of significance in the game in which an item drop could occur. The granularity of the playtime generator settings is in minutes, so calling it more frequently than minutes is not useful and will be rate limited in the Steam client. The Steam servers will perform playtime accounting to prevent too-frequent drops. The servers will also manage adding the item to the players inventory.
 
-```
+```csharp
 API.Inventory.Client.TriggerItemDrop(item, callback);
 ```

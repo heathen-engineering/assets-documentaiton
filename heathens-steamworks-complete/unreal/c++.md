@@ -54,7 +54,7 @@ Reference the required headers
 
 ```cpp
 THIRD_PARTY_INCLUDES_START
-#include <SteamworksComplete/sdk/steam_api.h>
+#include <ThirdParty/sdk/steam_api.h>
 THIRD_PARTY_INCLUDES_END
 ```
 
@@ -68,4 +68,4 @@ The full SDK's headers have been included with all assemblies accounted for incl
 
 You now have the box standard Steamworks SDK's Steam API at your disposal exactly as Valve intended it.&#x20;
 
-Valve's Steamworks SDK is an older C-styled kit, see our Blueprints for an easier approach or review there source code for functional examples of working with Steam API covering every method, callback and call result.
+Valve's Steamworks SDK is an older C-styled kit, see our Blueprints for an easier approach or review their source code for functional examples of working with Steam API covering every method, callback and call result.
