@@ -84,7 +84,7 @@ Valve issues you an App ID when you pay your application fee. If you don't have 
 
 <figure><img src="../../../.gitbook/assets/image (3) (5).png" alt=""><figcaption></figcaption></figure>
 
-The Steam Settings object can be used to reference all of your Steam "artifacts" such as Input Fields, [Stats](../../../company/steam/steamworks/stats-object.md), [Leaderboards](../../../company/steam/steamworks/leaderboard-object/), [Achievements](../../../steam/achievements/), [DLC ](../../../company/steam/steamworks/downloadable-content-object.md)and [Inventory items](../../../company/steam/steamworks/inventory/). For many of these artifact types you can define them in the Steam Developer Portal as you normally would and then use the "Import" button to pull them into your project.
+The Steam Settings object can be used to reference all of your Steam "artifacts" such as Input Fields, [Stats](../../../company/steam/steamworks/stats-object.md), [Leaderboards](../../../company/steam/steamworks/leaderboard-object/), [Achievements](../../../steam/achievements/), [DLC ](../../../steam/downloadable-content-object/)and [Inventory items](../../../company/steam/steamworks/inventory/). For many of these artifact types you can define them in the Steam Developer Portal as you normally would and then use the "Import" button to pull them into your project.
 
 {% hint style="info" %}
 The Unity Editor must be in "Play" mode for the import buttons to work.\
