@@ -17,12 +17,12 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 {% hint style="info" %}
 ### Working in Unreal, Unity or Godot?
 
-We author the top [Steam Integration](../../heathens-steamworks-complete/steamworks.md) for Unity & are porting to Godot!
+We author the top [Steam Integration](../../heathens-steamworks-complete/steamworks.md) for Unreal, Unity & are porting to Godot!
 
 [Learn More!](../../heathens-steamworks-complete/steamworks.md)
 {% endhint %}
 
-Your first step is to navigate to [partner.steamworks.com](https://partner.steamgames.com/) we strongly recommend you create a new Steam account to represent you as a publisher or developer separate from any personal account/s you might have. Remember, new Steam accounts start as "limited" put $5 in your Steam wallet to get around this.&#x20;
+Your first step is to navigate to [partner.steamworks.com](https://partner.steamgames.com/) we strongly recommend you create a new Steam account to represent you as a publisher or developer separate from any personal account/s you might have. Remember, new Steam accounts start as "limited" Put $5 in your Steam wallet to get around this.&#x20;
 
 {% embed url="https://partner.steamgames.com/" %}
 Step 1
@@ -43,7 +43,7 @@ If you read the [getting started article](https://partner.steamgames.com/doc/get
 Technically ... for the very first step ... no.\
 In reality absolutely yes, you can't do anything meaningful without your App ID.
 
-You can test some features of Steam API using the test application "Spacewars" whose app Id is 480. This is the app id we use in all of our [Steamworks](../../heathens-steamworks-complete/steamworks.md) sample scenes and doesn't require you to even be signed up to use it.
+You can test some features of Steam API using the test application "Spacewars" whose app ID is 480. This is the app ID we use in all of our [Steamworks](../../heathens-steamworks-complete/steamworks.md) sample scenes and doesn't require you to be signed up to use it.
 
 Having said that you can't do anything meaningful with the test app, it exists as a teaching tool. To create the stats, achievements, leaderboard, workshop, etc. for your game you will require an App ID and we do recommend you do this as soon as you are sure you want to release your game on Steam ... no reason to wait.
 
@@ -51,7 +51,7 @@ Having said that you can't do anything meaningful with the test app, it exists a
 
 Once you're all set up as a Steam Developer and have your App ID your next step should be to get familiar with the Steam API and what it has to offer. Heathen creates the best Steam integration for Unreal, Unity and Godot, read more on our [Steamworks page](../../heathens-steamworks-complete/steamworks.md).
 
-Steam API is a tremendous value especially for small and indie developers as it is a power set of backend services and is completely free for you to use. We strongly recommend you understand what Steam API can do for your game before you commit your design. The best and most successful games fully exploit Steam's features.
+Steam API is of tremendous value especially for small and indie developers as it is a power set of backend services and is completely free for you to use. We strongly recommend you understand what Steam API can do for your game before you commit your design. The best and most successful games fully exploit Steam's features.
 
 ## Installing Heathen's Steamworks
 
@@ -65,9 +65,37 @@ Now that you have made the wise decision to use Heathen's Steamworks to integrat
 
 ## Unlearning Bad Habits
 
-Unfortunately, there is a lot of just horrible sample and example code out there, especially around Steamworks / Steam API for Unity. Here are some common things you might have picked up or learned that you should throw out right now.
+Unfortunately, there is a lot of just bad sample and example code out there, especially around Steamworks / Steam API for Unity. Even Unreal's own built-in Online Subsystem Steam and Steam Sockets plugins are well out of date and can be problematic. Here are some common things you might have picked up or learned that you should throw out right now.
 
-### SteamManager.cs
+### Unreal's Online Subsystem Steam
+
+1st understand what an Online Subsystem is. ... TL;DR it is not a full-featured platform integration, very specifically it is a limited platform integration that attempts to normalize platform features.
+
+{% hint style="warning" %}
+Online Subsystem Steam and the related Steam Socket plugin from Epic Games for Unreal is really very far out of date. Even if you wanted to keep to the Online Subsystem model. The Online Subsystem Steam is a bit of a liability you should be aware of.
+{% endhint %}
+
+In Unreal they have a standard approach to online systems e.g. friends, chat, sessions, etc. that is the "Epic" way to do things. They have created "Online Subsystem" implementations of many popular live operations/backend services such as "Online Subsystem Steam" ... as well as Facebook, Google, etc.
+
+Online Subsystem Steam shoehorns the Steam API and tries to make it fit the Epic concept of an Online Subsystem.&#x20;
+
+{% hint style="success" %}
+This can be useful when you want to do a multi-platform game and have all the different builds have the same basic online features but use each individual platform (we don't recommend this).
+{% endhint %}
+
+{% hint style="danger" %}
+It falls apart when you want to take full advantage of a platform's features and capabilities.
+{% endhint %}
+
+Epic Games does try to compensate for the limitations of Online Subsystem regarding Steam API with several add-on plugins such as Steam Controller however this doesn't address the fact that Online Subsystem Steam is very far out of date nor the limitations with some of Valve's most valuable features in Steam Lobby, Steam Game Server, Steam Workshop, Steam Inventory.
+
+{% hint style="info" %}
+For note, the "Heathen" way to handle multi-platform live operations (what Unreal calls an Online Subsystem) is to use a non-platform specific one ... such as PlayFab, GameLift, Photon, etc.
+
+These are not platform-specific and work on all platforms, this will ensure that you are not limited to a knee-capped common feature set among all platforms but rather can fully exploit the robust features of a specific tool that is its self multi-plat and can be applied to any distribution platform.
+{% endhint %}
+
+### Steamworks.NET SteamManager.cs
 
 This original came from an example of using the raw Steamworks.NET C# wrapper you can find the original at the link below
 
@@ -82,10 +110,10 @@ Was never meant for production use
 Sadly a great many Unity Asset developers do what Unity Asset developers often do and copy and paste someone else's work into their own asset and run with it without actually understanding what it was, why it was or how to do it properly.
 
 {% hint style="info" %}
-SteamManager should not be present much less used in any project
+SteamManager should not be present much less used in any project. It's a learning tool, not production code.
 {% endhint %}
 
-The functionality that SteamManager provided in its original context is handled by Heathen's systems. Please see the [Steamworks Behaviour](../../heathens-steamworks-complete/unity/components/steamworks-behaviour.md) for a similar but quite different approach.
+The functionality that SteamManager provided in its original context is handled by Heathen's systems. We provide both a free lite version and a paid full-featured version [for Unity](../../heathens-steamworks-complete/unity/).
 
 ## Getting Help
 
