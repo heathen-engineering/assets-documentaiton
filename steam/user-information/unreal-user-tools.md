@@ -13,7 +13,7 @@ You can use the [Clear Rich Presence](../../heathens-steamworks-complete/unreal/
 
 ### User ID
 
-Valve's Steam ID is a complex value made up of several parts, we outline this in detail [here](../../company/steam/steamworks/csteamid.md). Heathen's [Steam ID Tools](../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/steam-id-tools.md) provide functions for converting between Friend ID aka Account ID and the larger Steam ID as well as tools for converting Friend ID to and from a hexadecimal value.
+Valve's Steam ID is a complex value made up of several parts, we outline this in detail [here](../csteamid/). Heathen's [Steam ID Tools](../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/steam-id-tools.md) provide functions for converting between Friend ID aka Account ID and the larger Steam ID as well as tools for converting Friend ID to and from a hexadecimal value.
 
 ### Avatar
 

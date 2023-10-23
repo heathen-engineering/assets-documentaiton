@@ -84,7 +84,7 @@ The underlying ulong value of the CSteamID&#x20;
 public AccountID_t { get; set; }
 ```
 
-The account ID segment of the full CSteamID, to understand more read [this article](../../../company/steam/steamworks/csteamid.md).
+The account ID segment of the full CSteamID, to understand more read [this article](../../../steam/csteamid/).
 
 ### FriendId
 
@@ -92,7 +92,7 @@ The account ID segment of the full CSteamID, to understand more read [this artic
 public uint FriendId { get; set; }
 ```
 
-The underlying uint value of the AccountID\_t segment of the CSteamID, to understand more read [this article](../../../company/steam/steamworks/csteamid.md).
+The underlying uint value of the AccountID\_t segment of the CSteamID, to understand more read [this article](../../../steam/csteamid/).
 
 ### IsValid
 

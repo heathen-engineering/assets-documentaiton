@@ -9,7 +9,7 @@ coverY: 0
 
 ### Read Achievement
 
-Below we show getting the achievement, breaking the result down and using it to print a string to the screen including the Achievements friendly name&#x20;
+Below we show getting the achievement, breaking the result down and using it to print a string to the screen including the Achievement's friendly name&#x20;
 
 <figure><img src="../../.gitbook/assets/image (363).png" alt=""><figcaption></figcaption></figure>
 
@@ -61,4 +61,20 @@ status.Name = name;
 status.Description = desc;
 status.IsHidden = isHidden;
 
+```
+
+### Set (unlock) Achievement
+
+Assuming that `apiName` is defined as `FString apiName`.
+
+```cpp
+bool result = SteamUserStats()->SetAchievement(StringCast<ANSICHAR>(*apiName).Get());
+```
+
+### Clear (reset) Achievement
+
+Assuming that `apiName` is defined as `FString apiName`.
+
+```cpp
+bool result = SteamUserStats()->ClearAchievement(StringCast<ANSICHAR>(*apiName).Get());
 ```
