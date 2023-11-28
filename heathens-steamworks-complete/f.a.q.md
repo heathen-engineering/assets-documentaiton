@@ -75,7 +75,7 @@ Simple features such as initializing Steam API, loading and handling stats, achi
 
 For Unity our prefabs even enable you to do many common things such as listing Friends into groups, displaying Leaderboards entries and even Party and Quick Match lobby systems all code-free.
 
-### What about Microtransactions / Cash Shop?
+### What about Microtransactions / Cash Shops?
 
 Yes of course, Steam API handles MTX (microtransactions) via the Steam Inventory interface. Heathen's Steamworks Complete has robust tooling around [Steam Inventory](../company/steam/steamworks/inventory/) which can greatly help any developer regardless of skill set.
 
@@ -83,9 +83,9 @@ Yes of course, Steam API handles MTX (microtransactions) via the Steam Inventory
 
 ## Can I try before I buy?
 
-Yes it's called [Steamworks Foundation](https://github.com/heathen-engineering/SteamworksFoundation) and is free to use. It has a limited feature set but is the same code used in the "full fat" Complete version.&#x20;
+For Unity, Yes it's called [Steamworks Foundation](https://github.com/heathen-engineering/SteamworksFoundation) and is free to use. It has a limited feature set but is the same code used in the "full fat" Complete version.&#x20;
 
-When ready you can get instant access and a license to keep forever Steamworks Complete ... and every other major Heathen asset for $15 by becoming a [GitHub Sponsor](../become-a-sponsor/) and yes you can cancel any time and keep what you downloaded and the license to use it.
+For Unreal, we are working on an equivalent to "Foundation" but don't have anything to announce at this time.
 
 ## Can I use this for commercial games?
 
@@ -97,11 +97,22 @@ Of course, have a look at some of the [great games that already use this](https:
 Some of the games that have been Made with Heathen technology.
 {% endembed %}
 
-## Does this work with X
+## Does this work with \<name of other tool>?
 
 1st off most tools such as UMA, Character Controllers, etc. do not impact Steam API at all and are not impacted by Steam API at all. So in most cases whether or not you use Steam API has nothing to do with compatibility with those tools.
 
-For tools that do integrate with Steam API the relevant information is; Heathen builds on top of Steamworks.NET so anything that makes \*\***Proper**\*\* use of Steamworks.NET will simply work right out of the box.
+For tools that do integrate with Steam API&#x20;
+
+### Unreal
+
+For Unreal, anything working with the native Steam API should be fine, anything using Unreal's Online Subsystem Steam will not work.
+
+Why?\
+Online Subsystem Steam is grossly out of date and doesn't fully utilise Steam API so we replace it, you cant have our asset and it working at the same time.
+
+### Unity
+
+For Unity, the relevant information is; Heathen builds on top of Steamworks.NET so anything that makes \*\***Proper**\*\* use of Steamworks.NET will simply work right out of the box.
 
 How do you know its proper use?
 
@@ -109,11 +120,17 @@ How do you know its proper use?
 2. Does not make \*\***ANY**\*\* use of SteamManager.cs\
    SteamManager.cs is an example script originally authored by the same developer that authors Steamworks.NET ... you can find its original form [here](https://github.com/rlabrecque/Steamworks.NET-Example). It is meant to be a demonstration of how a programmer would initialize the Steam API ... it is absolutely not meant to be production code. Sadly many samples, examples and even some "assets" are had coded to use it.
 
-### Any Given Networking Tool?
+## How does networking work?
 
 ### Unreal
 
-Yes, you can use our asset with the Steam Networking Sockets Plugin to work with Steam Networking via Unreal's multiplayer tools. Or you can of course go with EOS or other networking solutions.&#x20;
+If you are using a standard net driver or otherwise not looking to use Steam Networking Sockets then everything will work normally Steam API doesn't impact your networking situation. Features like Lobby, Game Server, etc. are not impacted by your networking solution they are stand-alone features.
+
+If you do plan on using Steam Networking Sockets:
+
+We have created our own NetDriver based on Steam's Networking Sockets (available to GitHub Sponsors now, Coming Soon to Unreal Marketplace). We do not currently use an Online Subsystem though will be offering one in the future. Note you do not require Online Subsystem to do multiplayer, the purpose of Online Subsystem is to abstract backend services like Steamworks down to a common subset so you can use many in an agnostic way.
+
+Heathen's Steamworks Complete is designed to enable you to fully utilise every aspect of Steam API so using Online Subsystem is a bit counter-productive though something we will support in future updates if there is demand for it
 
 ### Unity
 
@@ -145,24 +162,45 @@ Yes: Photon is its own platform, uses its own networking interfaces and has no i
 
 Yes: SpatialOS is its own platform, uses its own networking interfaces and has no impact on nor is it impacted by Steam API in any way that comes to mind.
 
-## Updates?
+## How do Asset Updates work?
 
 ### GitHub Sponsors
 
-GitHub Sponsors have access to the "Source Repo" this is the place where we do the actual work so updates are frequent and instant as we make them. It is GitHub so you can of course review every single update, each check-in, every comment ... full tracked and managed version history.
+GitHub Sponsors have access to the "Source Repo" This is the place where we do the actual work so updates are frequent and instant as we make them. It is GitHub so you can of course review every single update, each check-in, and every comment ... fully tracked and managed version history.
 
-### Unity Asset Store
+### Asset Stores (Unreal or Unity)
 
-Unity Asset Store is updated each quarter (every 3 months) with the consolidated changes made in GitHub Source Repo.
+Unity Asset Store and Unreal Marketplace are updated each quarter (every 3 months) with the consolidated changes made in GitHub Source Repo if relevant or more frequently in the case of a critical issue.
 
-In the event of a critical issue such as Steam, Unity, etc. making a breaking change to the API or engine, we will update the Unity Asset Store as quickly as possible and can offer ad-hoc patches via our Discord community.
+In the event of a critical issue such as Steam, Unity, etc. making a breaking change to the API or engine, we will update the stores as quickly as possible and can offer ad-hoc patches via our Discord community.
 
-### Unreal Marketplace
+## How do Paid/Major Updates work?
 
-Coming soon, we will be shipping Steamworks Complete on the Unreal Marketplace in the future. At the moment we are in a stage of rapid development of the Unreal Steamworks Complete plugin so it's only available to GitHub Sponsors during this phase.&#x20;
+### GitHub Sponsors
 
-### Major Updates
+Not relevant, as you working on our Source Repository you have instant access to our changes as they happen thus there is no "upgrade path" needed you will naturally have access to the next version as it develops.
 
-We release major updates every 2 to 3 years, GitHub Sponsors see these as any other update as they are working on the source directly.
+### Asset Stores (Unreal or Unity)
 
-Unity Asset Store users will see this as a paid major update. As typical with major updates on Unity Asset Store users who have purchased recently (within the last 90 days) will receive the update for free, and all other users will receive a discount.
+We release major updates no more frequently than 2 years apart.
+
+Unity Asset Store and Unreal Marketplace users will see this as a paid major update. As typical with major updates users who have purchased recently (within the last 90 days) will receive the update for free, and all other users will receive a steep discount aka an "upgrade price".
+
+## From one store can I get access to the other?
+
+In short no.
+
+Each store is its own walled garden operated by that platform (Epic's Unreal Marketplace, Unity's Unity Asset Store). They define the terms of the license, they handle payment processing and refunds. Everything about the relationship is actually with them. We won't even know you exist unless you introduce yourself to us.
+
+We cannot grant you access to an asset on either store for any reason but we especially wouldn't be permitted to grant you a license on Unreal from Unity Asset Store or vice versa ... they are competitors.
+
+If you want access to our asset for any engine then you want GitHub Sponsor.\
+GitHub Sponsors (or Patreon) have access to all of our assets for all engines, including tools and code that we do not publish on the asset stores. We control the license terms in that case and we do so via a [Site Based license](../become-a-sponsor/heathen-license-agreement.md).&#x20;
+
+## From a store can I get access to GitHub?
+
+By sponsoring for $15 or more yes,
+
+If you asking if we can transfer your Unity Asset Store or Unreal Marketplace license to GitHub Sponsor or Patreon membership then no I am afraid not.
+
+Unity has hinted they may introduce such a feature but at current Unity Asset Store and Unreal Marketplace are walled gardens. We cannot transfer licenses in or out of either, we cannot grant you access to one from the other.
