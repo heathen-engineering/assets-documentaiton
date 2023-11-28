@@ -164,11 +164,11 @@ Yes: SpatialOS is its own platform, uses its own networking interfaces and has n
 
 ## How do Asset Updates work?
 
-### GitHub Sponsors
+### [GitHub Sponsors](../become-a-sponsor/)
 
 GitHub Sponsors have access to the "Source Repo" This is the place where we do the actual work so updates are frequent and instant as we make them. It is GitHub so you can of course review every single update, each check-in, and every comment ... fully tracked and managed version history.
 
-### Asset Stores (Unreal or Unity)
+### Asset Stores ([Unreal ](https://www.unrealengine.com/marketplace/en-US/product/steam-api-steamworks-complete)or [Unity](https://assetstore.unity.com/packages/tools/integration/steam-api-steamworks-complete-246652))
 
 Unity Asset Store and Unreal Marketplace are updated each quarter (every 3 months) with the consolidated changes made in GitHub Source Repo if relevant or more frequently in the case of a critical issue.
 
@@ -176,11 +176,11 @@ In the event of a critical issue such as Steam, Unity, etc. making a breaking ch
 
 ## How do Paid/Major Updates work?
 
-### GitHub Sponsors
+### [GitHub Sponsors](../become-a-sponsor/)
 
 Not relevant, as you working on our Source Repository you have instant access to our changes as they happen thus there is no "upgrade path" needed you will naturally have access to the next version as it develops.
 
-### Asset Stores (Unreal or Unity)
+### Asset Stores ([Unreal ](https://www.unrealengine.com/marketplace/en-US/product/steam-api-steamworks-complete)or [Unity](https://assetstore.unity.com/packages/tools/integration/steam-api-steamworks-complete-246652))
 
 We release major updates no more frequently than 2 years apart.
 
@@ -194,7 +194,7 @@ Each store is its own walled garden operated by that platform (Epic's Unreal Mar
 
 We cannot grant you access to an asset on either store for any reason but we especially wouldn't be permitted to grant you a license on Unreal from Unity Asset Store or vice versa ... they are competitors.
 
-If you want access to our asset for any engine then you want GitHub Sponsor.\
+If you want access to our asset for any engine then you want[ GitHub Sponsor](../become-a-sponsor/).\
 GitHub Sponsors (or Patreon) have access to all of our assets for all engines, including tools and code that we do not publish on the asset stores. We control the license terms in that case and we do so via a [Site Based license](../become-a-sponsor/heathen-license-agreement.md).&#x20;
 
 ## From a store can I get access to GitHub?
