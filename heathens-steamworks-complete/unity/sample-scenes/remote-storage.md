@@ -15,7 +15,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## Introduction
 
-This scene demonstrates the use of the [Remote Storage](../../../steam/data-models/) system e.g. Steam Cloud
+This scene demonstrates the use of the [Remote Storage](../../../steam/cloud-save.md) system e.g. Steam Cloud
 
 <figure><img src="../../../.gitbook/assets/image (19) (2).png" alt=""><figcaption></figcaption></figure>
 

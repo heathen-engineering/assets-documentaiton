@@ -153,7 +153,7 @@ Put bluntly [Online Subsystem Steam](https://docs.unrealengine.com/5.3/en-US/onl
 
 You can see a more l[ine by line breakdown of Heathen vs Online Subsystem Steam in our Unreal article](unreal/).
 
-Heathen's Steamworks Complete is as its name suggests a complete integration of every aspect of Valve's Steamworks with the engine. It goes well beyond a simple API wrapper and provides you with ready-made and proven tools. The full Steam API is exposed to you in both C++ and Blueprint Functions, we also provide you with a set of common-use [UI Widgets](unreal/widgets/) and Unreal-centric tools like our [Steam Remote Storage Save Game](unreal/save-game.md) base class, [Steam Game Instance](unreal/game-instance.md) and more.
+Heathen's Steamworks Complete is as its name suggests a complete integration of every aspect of Valve's Steamworks with the engine. It goes well beyond a simple API wrapper and provides you with ready-made and proven tools. The full Steam API is exposed to you in both C++ and Blueprint Functions, we also provide you with a set of common-use [UI Widgets](unreal/widgets/) and Unreal-centric tools like our [Steam Remote Storage Save Game](broken-reference) base class, [Steam Game Instance](unreal/game-instance.md) and more.
 
 ## Heathen vs Steam Core
 

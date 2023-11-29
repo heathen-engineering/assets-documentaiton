@@ -19,7 +19,7 @@ This scene demonstrates the use of [User Data ](../data-layer/user-data.md)and d
 
 <figure><img src="../../../.gitbook/assets/image (98).png" alt=""><figcaption></figcaption></figure>
 
-This scene exists to draw your attention to the [User Data](../data-layer/user-data.md) object. User Data is a struct Heathen has defined to wrap around the native [CSteamID ](../../../steam/csteamid/)and the primitive ulong data types providing easy access to everything user related.
+This scene exists to draw your attention to the [User Data](../data-layer/user-data.md) object. User Data is a struct Heathen has defined to wrap around the native [CSteamID ](../../../steam/csteamid.md)and the primitive ulong data types providing easy access to everything user related.
 
 User Data can be used to read the name, nickname, level, status, friend ID, avatar image, rich presence data and much more about a friend. User Data is interchangeable with CSteamID and ulong and can be used anywhere those data types representing a Steam user are called for.
 

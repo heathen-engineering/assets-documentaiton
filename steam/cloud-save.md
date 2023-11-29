@@ -1,13 +1,35 @@
----
-cover: ../../.gitbook/assets/Unity Banner@4x-100.jpg
-coverY: 0
----
+# ☁ Cloud Save
 
-# Unity Cloud Save
+{% hint style="success" %}
+#### Like what you're seeing?
 
-## Introduction
+Support us as a [GitHub Sponsor](../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+\
+These articles are made possible by our [GitHub Sponsors](../become-a-sponsor/) ... become a sponsor today!
+{% endhint %}
 
-Steam's Cloud Save aka Steam Remote Storage can be worked with in one of two models.
+## &#x20;Introduction
+
+Cloud save also known as Steam Remote Storage allows you to save a file and have it synced to the "cloud" e.g. Steam's servers so that the same file is available to that user on any machine they log into.
+
+Quote from Valve's documentation
+
+> The Steam Cloud provides an easy and transparent remote file storage system for your game. Files specified in the Auto-Cloud configuration or written to disk (created, modified, deleted, etc.) using the Cloud API will automatically be replicated to the Steam servers after the game exits.
+>
+> If the user changes computers, the files are automatically downloaded to the new computer before the game launches. The game can then access the files by reading them through the Cloud API or reading them directly from the disk as usual. Avoid machine-specific configurations such as video settings.
+>
+> The Steam Client does the work of ensuring that the files are kept synchronized across all computers the user may be accessing.
+>
+> Users can globally disable Cloud synchronization in the Steam Settings under Cloud by unchecking "Enable Steam Cloud synchronization for applications which support it."
+
+<details>
+
+<summary>Useful Links</summary>
+
+* Valve's Documentation\
+  [https://partner.steamgames.com/doc/features/cloud](https://partner.steamgames.com/doc/features/cloud)
+
+</details>
 
 ### Steam Remote Storage
 
@@ -16,28 +38,6 @@ The Best Way
 {% endhint %}
 
 aka the Steam Cloud API. This is the superior method in every way and when you're using Heathen's Steamworks Complete it's easier to code for than writing a text file to disk so it's also the easier method.
-
-Using this approach you simply need to include the namespace for Heathen's RemoteStorage.Client in the script you wish to use for saving or reading files.
-
-```csharp
-using CloudAPI = HeathenEngineering.SteamworksIntegration.API.RemoteStorage.Client;
-```
-
-Once you have done that you can easily read files with a single line
-
-```csharp
-CloudAPI.FileRead(...)
-```
-
-For more information see our detailed section on [Read Files](unity-cloud-save.md#read-files).
-
-You can also easily write files with a single line
-
-```csharp
-CloudAPI.FileWrite(...)
-```
-
-For more information see our detailed section on [Write Files](unity-cloud-save.md#write-file).
 
 ### Steam Auto-Cloud
 
@@ -53,7 +53,7 @@ In addition, this gives you no control over what is saved, it will attempt to sy
 
 For more information on Steam's Auto Cloud and its configuration [read this article](https://partner.steamgames.com/doc/features/cloud#steam\_auto-cloud).
 
-## Remote Storage API
+## Unity Examples
 
 You can use the Remote Storage API to access Steam's remote storage features.
 
@@ -116,7 +116,7 @@ Debug.Log("Used " + total-remaining + " of " + total + " bytes.");
 RemoteStorageFile[] files = CloudAPI.GetFiles();
 ```
 
-GetFiles returns a list of all files found on Steam and returns an array of [RemoteStorageFile](../../heathens-steamworks-complete/unity/objects/remote-storage-file.md) objects. The RemoteStorageFile object can be thought of as similar to the .NET FileInfo object and contains data about the file that can be used to perform other actions.
+GetFiles returns a list of all files found on Steam and returns an array of [RemoteStorageFile](../heathens-steamworks-complete/unity/objects/remote-storage-file.md) objects. The RemoteStorageFile object can be thought of as similar to the .NET FileInfo object and contains data about the file that can be used to perform other actions.
 
 You can optionally return files that have a specific extension such as ".profile"
 
@@ -194,7 +194,7 @@ CloudAPI.FileWriteAsync("TheFileName", data, (result, hasError) =>
     });
 ```
 
-## Data Model
+### Data Model
 
 The Data Model concept is a tool that helps you manage each type of save file your game works with. To get started you would first need to create the "structure" of your file as a serializable object. This can be a class or structure ... in general, you should always use a structure unless your object specifically needs features of a C# class not available to C# structures.
 
@@ -275,3 +275,48 @@ profiles.Save("profileSettings");
 ```
 
 Note the save method will add the extension if it's missing and has overloads for the asynchronous save.
+
+## Unreal Examples
+
+We have created a Steam Remote Storage Save Game class that extends Unreal's Save Game concept enabling it to work with Steam Remote Storage. You can use this as you would any typical Save Game in Unreal.
+
+{% hint style="info" %}
+Steam Remote Storage Save Game is derived from Unreal's Save Game class. As a result, it does everything a normal Save Game object would and can be used for traditional to-disk save operation if you so desire.\
+\
+We have simply provided additional functions that can be used to read and write the data to and from Steam's Remote Storage system.
+{% endhint %}
+
+{% hint style="info" %}
+Steam Remote Storage aka Steam Cloud Save\
+Is a drop box-like file sync system that synchronizes files written to the local disk to Steam's remote storage (aka cloud). It does work in offline mode and handles syncing data between all devices the user plays on.
+{% endhint %}
+
+### Save Game Setup
+
+Start by creating a blueprint class and here we will choose the Steam Remote Storage Save Game as our base class.
+
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+Next, add whatever variables you would like to have saved.
+
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+And that is all that is required to create your Save Game object. Creating, setting and reading values from the Save Game object is the same as you would use with any Unreal Save Game object.
+
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption><p>Assume Test Save Game is my Blueprint derived from Steam Remote Storage Save Game</p></figcaption></figure>
+
+### Write File (aka Save)
+
+To save the file to Steam Remote Storage you will use the Steam Write File and Steam Write File Async Blueprint functions
+
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption><p>Synchronious File Write</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>Asynchronious File Write</p></figcaption></figure>
+
+### Read File (aka Load)
+
+To read the file from Steam Remote Storage you will use the Steam Read File and Steam Read File Sync Blueprint functions
+
+<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption><p>Synchronious File Read</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption><p>Asynchronious File Read</p></figcaption></figure>

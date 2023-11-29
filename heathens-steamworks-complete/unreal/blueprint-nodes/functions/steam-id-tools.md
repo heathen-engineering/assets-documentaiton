@@ -33,7 +33,7 @@ Valve uses Steam ID to uniquely identify many things such as users, lobbies, ser
 
 In some cases, it is useful to read the parts that make up a Steam ID or use those parts to re-create a Steam ID.
 
-A Steam ID is a complex number expressed as an int 64 and composed of several key parts ... see more information in this [article](../../../../steam/csteamid/). The following nodes can be used to convert a Steam ID to and from Friend ID and Hex values as it relates to a User's Steam ID
+A Steam ID is a complex number expressed as an int 64 and composed of several key parts ... see more information in this [article](../../../../steam/csteamid.md). The following nodes can be used to convert a Steam ID to and from Friend ID and Hex values as it relates to a User's Steam ID
 
 ## Nodes
 

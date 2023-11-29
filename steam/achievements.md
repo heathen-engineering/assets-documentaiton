@@ -7,7 +7,7 @@ description: Be better than "killed 10 rats"
 {% hint style="success" %}
 #### Like what you're seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../become-a-sponsor/) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../become-a-sponsor/) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -33,25 +33,25 @@ First you need to create your achievements on the Steam Developer portal. [https
 
 Log into your Steam Developer Portal and access your app's admin page. Look for the Technical Tools section and select the Edit Steamworks Settings option.
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Techincal Tools"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Techincal Tools"><figcaption></figcaption></figure>
 
 From there select the Stats & Achievements > Achievements option and create your new achievements.&#x20;
 
 Make note of the value you use in the API Name field. You will use it when working with achievements in code.&#x20;
 
-In Unity, if you prefer to work with Achievements via an object reference then you can use our [AchievementObject ](../../heathens-steamworks-complete/unity/scriptable-objects/achievement-object.md)which is a Unity ScriptableObject that can be referenced and accessed like any other Unity Object.
+In Unity, if you prefer to work with Achievements via an object reference then you can use our [AchievementObject ](../heathens-steamworks-complete/unity/scriptable-objects/achievement-object.md)which is a Unity ScriptableObject that can be referenced and accessed like any other Unity Object.
 
-<figure><img src="../../.gitbook/assets/image (1) (6).png" alt="Achievement test"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (6).png" alt="Achievement test"><figcaption></figcaption></figure>
 
 ### Publish
 
 You \*\***MUST**\*\* publish your changes in Steam Developer Portal before they will be accessible via Steam API. In the Steam Developer Portal when you have pending changes you will see a red banner at the top of the screen ... click it and follow the instructions.
 
-<figure><img src="../../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
 
 ### Use
 
-Use your achievements ... how? depends on the tools and engine you choose set the [Unity Achievements](unity-achievements.md) and [Unreal Achievements](unreal-achievements.md) articles for more information.
+Use your achievements ... how? depends on the tools and engine you choose set the [Unity Achievements](broken-reference) and [Unreal Achievements](broken-reference) articles for more information.
 
 ## Using Achievements
 
@@ -87,7 +87,7 @@ The Steam popup that you're used to seeing when you unlock an achievement or rec
 Players can force this to be disabled so do not assume it will always be present it's the user's choice as configured in the Steam client, not your game. This is not for you to control.
 {% endhint %}
 
-For achievements, this popup triggers when an achievement is [stored ](./#storing-achievements)not when it is set. Also, note that because it is rendering over the game window it will not likely work properly when testing in the Unity Editor or if you have a debugger or other app mounted to the process as this may restrict window updates and or add additional windows to the process.
+For achievements, this popup triggers when an achievement is [stored ](achievements.md#storing-achievements)not when it is set. Also, note that because it is rendering over the game window it will not likely work properly when testing in the Unity Editor or if you have a debugger or other app mounted to the process as this may restrict window updates and or add additional windows to the process.
 
 ### New Player Experience
 
@@ -123,7 +123,7 @@ There are many types of players and a common one across all game genres is the "
 >
 > Steam Stats and Achievements provides an easy way for your game to provide persistent, roaming achievement and statistics tracking for your users. The user's data is associated with their Steam account, and each user's achievements and statistics can be formatted and displayed in their Steam Community Profile.
 
-Achievements like stats are created in your [Steam Developer Portal](https://partner.steamgames.com/), once created there you can access them via their ID, if you're use Heathen's Steamworks ... why aren't you it has a free version. Then you can import your Stats and Achievements into Unity or use our [AchievementData ](../../heathens-steamworks-complete/unity/data-layer/achievement-data.md)structure to easily work with your achievements in code.
+Achievements like stats are created in your [Steam Developer Portal](https://partner.steamgames.com/), once created there you can access them via their ID, if you're use Heathen's Steamworks ... why aren't you it has a free version. Then you can import your Stats and Achievements into Unity or use our [AchievementData ](../heathens-steamworks-complete/unity/data-layer/achievement-data.md)structure to easily work with your achievements in code.
 
 Valve's documentation on the [Stats and Achievement](https://partner.steamgames.com/doc/features/achievements) features is a good place to get started.
 
@@ -134,7 +134,7 @@ The first thing to understand is that with stats and achievements, the process o
 1. You assign the value such as `myAch.IsAchieved = true;`
 2. You store the changes to the backend such as `myAch.Store()`
 
-The notification popup will not trigger until the achievement is "stored". In the above examples "myAch" would be either an [AchievementObject ](../../heathens-steamworks-complete/unity/scriptable-objects/achievement-object.md)or [AchievementData](../../heathens-steamworks-complete/unity/data-layer/achievement-data.md), both do the same thing, "Object" is a reference type based on ScriptableObject so can be easily referenced in Unity Editor while "Data" is a value type e.g. a C# struct and more suitable for DOTS and related structures.
+The notification popup will not trigger until the achievement is "stored". In the above examples "myAch" would be either an [AchievementObject ](../heathens-steamworks-complete/unity/scriptable-objects/achievement-object.md)or [AchievementData](../heathens-steamworks-complete/unity/data-layer/achievement-data.md), both do the same thing, "Object" is a reference type based on ScriptableObject so can be easily referenced in Unity Editor while "Data" is a value type e.g. a C# struct and more suitable for DOTS and related structures.
 
 ### Storing
 
@@ -164,7 +164,7 @@ API.StatsAndAchievements.Client.StoreStats();
 
 ### Using Value Types
 
-[Achievement Data](../../heathens-steamworks-complete/unity/data-layer/achievement-data.md)
+[Achievement Data](../heathens-steamworks-complete/unity/data-layer/achievement-data.md)
 
 Heathen's Steamworks' Achievement Data simplifies working with Steam achievements exposing common features to a simple struct.
 
@@ -185,11 +185,11 @@ myAch.IsAchieved = true;
 
 ### Using Object References
 
-[Achievement Object](../../heathens-steamworks-complete/unity/scriptable-objects/achievement-object.md)
+[Achievement Object](../heathens-steamworks-complete/unity/scriptable-objects/achievement-object.md)
 
 Heathen's Steamworks can "import" your achievements from Steam API directly and construct Scriptable Objects that make it possible to work with achievements with zero coding required.
 
-![](<../../.gitbook/assets/image (176) (1) (1) (1) (1).png>)
+![](<../.gitbook/assets/image (176) (1) (1) (1) (1).png>)
 
 Right from the Steam Settings object you import all of the Steam Achievements you defined in Valve's Steam Developer Portal.
 
@@ -199,9 +199,9 @@ You must have the simulation running so the Steam API is initialized and able to
 
 Once done you can find Scriptable Objects for each of the identified achievements nested under your Steam Settings
 
-![](<../../.gitbook/assets/image (167) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../.gitbook/assets/image (167) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
-You can learn more about the [Achievement Object](../../heathens-steamworks-complete/unity/scriptable-objects/achievement-object.md) in our documentation. Using this object you can reference this achievement in any of your logic and easily test for unlock and unlock the achievement.
+You can learn more about the [Achievement Object](../heathens-steamworks-complete/unity/scriptable-objects/achievement-object.md) in our documentation. Using this object you can reference this achievement in any of your logic and easily test for unlock and unlock the achievement.
 
 ```csharp
 using UnityEngine;
@@ -223,9 +223,9 @@ public class ExampleScript : MonoBehaviour
 
 ### Using APIs
 
-[API](../../heathens-steamworks-complete/unity/api/statsandachievements.client.md)
+[API](../heathens-steamworks-complete/unity/api/statsandachievements.client.md)
 
-Heathen's Steamworks wraps Valve's Steam API with a C# and Unity-friendly tool kit. All features related to stats and achievements can be found in the [StatsAndAchievements.Client](../../heathens-steamworks-complete/unity/api/statsandachievements.client.md) class. In most cases, you won't need to use this low-level tool but it is available to you and works very similar to the raw Steam API.
+Heathen's Steamworks wraps Valve's Steam API with a C# and Unity-friendly tool kit. All features related to stats and achievements can be found in the [StatsAndAchievements.Client](../heathens-steamworks-complete/unity/api/statsandachievements.client.md) class. In most cases, you won't need to use this low-level tool but it is available to you and works very similar to the raw Steam API.
 
 ```csharp
 using UnityEngine;
@@ -257,7 +257,7 @@ public class ExampleScript : MonoBehaviour
 
 Store the changes to all stats and achievements made since the last time this was called.
 
-<figure><img src="../../.gitbook/assets/image (372).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (372).png" alt=""><figcaption></figcaption></figure>
 
 ```cpp
 bool result = SteamUserStats()->StoreStats();
@@ -267,7 +267,7 @@ bool result = SteamUserStats()->StoreStats();
 
 Below we show getting the achievement, breaking the result down and using it to print a string to the screen including the Achievement's friendly name&#x20;
 
-<figure><img src="../../.gitbook/assets/image (363).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (363).png" alt=""><figcaption></figcaption></figure>
 
 Assuming that `apiName` is defined as `FString apiName`.
 
@@ -307,7 +307,7 @@ status.IsHidden = isHidden;
 
 Simply unlock/achieve the achievement
 
-<figure><img src="../../.gitbook/assets/image (364).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (364).png" alt=""><figcaption></figcaption></figure>
 
 Assuming that `apiName` is defined as `FString apiName`.
 
@@ -319,7 +319,7 @@ bool result = SteamUserStats()->SetAchievement(StringCast<ANSICHAR>(*apiName).Ge
 
 Simply reset/clear/re-lock the achievement
 
-<figure><img src="../../.gitbook/assets/image (365).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (365).png" alt=""><figcaption></figcaption></figure>
 
 Assuming that `apiName` is defined as `FString apiName`.
 
