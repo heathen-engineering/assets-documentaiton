@@ -25,31 +25,27 @@ As a result of this limitation from Valve, the sample scenes for Inventory canno
 
 A common request we see is for an example in-game store or other "MTX" (micro-transaction) example.
 
-Since Valve's Spacewar doesn't have a usable Steam Inventory configuration and since your store would be highly dependent on what items you have and how they are configured. The sample scene we have provided (9 Item Store Tutorial) simply contains example scripts based on this article and is meant to be a teaching tool, not a functional example.
+Valve's Spacewar doesn't have a usable Steam Inventory configuration and since your store would be highly dependent on what items you have and how they are configured. The sample scene we have provided (9 Item Store Tutorial) simply contains example scripts based on this article and is meant to be a teaching tool, not a functional example.
 
 This article will describe the concepts of an item store and cover several common use cases providing abstract examples for each. Finally, in the end, we will compile a list of commonly asked questions and of course, if you have any questions please reach out to the community on our [Discord](https://discord.gg/6X3xrRc) server.
 
-## Quick Start
+### In-Game Currency
 
-This assumes you have read over the [Microtransactions article](../) and understand how to reference an [Item Definition](../../../../company/steam/steamworks/inventory/#item-definition).
+Your in-game currency would simply be an inventory item. You would then set up "Exchange" recipes for all the items that can be "purchased" for that currency.
 
-### Step 1: Create the Store UI
+In short in-game currency is simply exchanging X items for Y items. See the [Crafting System](../../crafting-system.md) article for more information on exchanging items.
 
-Create your Store UI using Unity's UI tools as you would any other UI. The only thing of relevant note is the "button" or other UI elements you will have your users interact with that are meant to put an item in the carte or are meant to "Start Purchase"
+## Unity Examples
 
-### Step 2: Connect the UI to items
+### Testing Inventory Change
+
+So you have set up your inventory items, You are going to use full Client API so you can't simulate an end-to-end purchase. You're asking yourself ... How do I test my game logic to make sure it's handling inventory change correctly?
+
+Use the [Steamworks Inspector](../../../../company/steam/steamworks/#inventory) and click the "Grant" button beside any of the items, this will cause it to grant you an item which will raise the [EventChanged](../../../../heathens-steamworks-complete/unity/scriptable-objects/steam-settings/game-client/inventory-settings.md) ... you can now observe your game logic and ensure it's performing as you expected.
+
+### Shopping Cart
 
 For your buttons that are meant to add an item to a shopping cart. You will be using [Heathen's Item Shopping Cart Manager](../../../../heathens-steamworks-complete/unity/components/item-shopping-cart-manager.md) so that your button on-click adds the item to that script as defined in that script's documentation article.
-
-For "Start Purchase" see the [How do I start a purchase request?](./#how-do-i-start-a-purchase-request) FAQ below.
-
-### Assumptions
-
-This article assumes you have defined your items already. If you have questions about that see our [Getting Started](../../item-definition-tools.md) article.
-
-This article also assumes you already understand how to create UI and behaviours in Unity. If you have questions there we strongly recommend you check out [this tutorial](https://learn.unity.com/pathway/junior-programmer). It's short and very useful for every Unity developer.
-
-## Creating the Store UI
 
 ![](<../../../../.gitbook/assets/image (180) (1) (1).png>)
 
@@ -73,21 +69,9 @@ As a common point of reference, we assume you're using Unity's uGUI, in our samp
 
 This is a simple script included in the 9 Item Store Tutorial folder. It is not an example of best practice it is a simple crude example of updating Unity uGUI UI elements based on the values in an Item Definition.&#x20;
 
-This script will update the quantity owned for each item any time the inventory changes and will update the interactable status of the Exchange button based on rather or not the item has an exchange recipe and the local user owning the required items to perform the exchange.
+This script will update the quantity owned for each item any time the inventory changes and will update the interactable status of the Exchange button based on whether or not the item has an exchange recipe and the local user owning the required items to perform the exchange.
 
-## F.A.Q
-
-### How do I get the item price?
-
-If you want to fetch the price in the user's currency see: [Current Price](../../../../heathens-steamworks-complete/unity/scriptable-objects/item-definition.md#currentprice) and [Base Price](../../../../heathens-steamworks-complete/unity/scriptable-objects/item-definition.md#baseprice). You can check if there is a price at all via [Has Price](../../../../heathens-steamworks-complete/unity/scriptable-objects/item-definition.md#hasprice).
-
-### How do I set up in-game currency?
-
-Your in-game currency would simply be an inventory item. You would then set up "Exchange" recipes for all the items that can be "purchased" for that currency.
-
-In short in-game currency is simply exchanging X items for Y items. See the [Item Definition Exchange section](../../../../heathens-steamworks-complete/unity/scriptable-objects/item-definition.md#exchange-1) for more details. You can do a lot with exchange well more than would fit in 1 article so be sure to read up in Valve's documentation as well.
-
-### How do I start a purchase request?
+### Start Purchase request
 
 On your Item Definition, you will see a Start Purchase option. A similar method is available on the Data Layer, Scriptable Object and of course in the Inventory API. You simply call this method indicating the number of items you wish to start a purchase with.
 
@@ -107,18 +91,22 @@ When the user completes the transaction you will be notified in two ways.
    [On the Inventory Manager](../../../../heathens-steamworks-complete/unity/components/inventory-manager.md#evtchanged)\
    [On the Inventory API](../../../../heathens-steamworks-complete/unity/api/inventory.client.md#event-steam-inventory-result-ready)
 
-### How do get the item count?
+### Get Item Price
 
-[Item Definition's Total Quantity](../../../../heathens-steamworks-complete/unity/scriptable-objects/item-definition.md#totalquantity) indicates the number of this item the player owns.
+If you want to fetch the price in the user's currency see: [Current Price](../../../../heathens-steamworks-complete/unity/scriptable-objects/item-definition.md#currentprice) and [Base Price](../../../../heathens-steamworks-complete/unity/scriptable-objects/item-definition.md#baseprice). You can check if there is a price at all via [Has Price](../../../../heathens-steamworks-complete/unity/scriptable-objects/item-definition.md#hasprice).
 
-### How do I refresh the Inventory?
-
-By refresh, we assume you mean how to get the current count of the user's inventory.
-
-[Inventory API's Get All Items](../../../../heathens-steamworks-complete/unity/api/inventory.client.md#getallitems) will do that for you calling its callback when the process is complete.
+## Unreal Examples
 
 ### Testing Inventory Change
 
-So you have set up your inventory items, your going to use full Client API so you can't simulate an end-to-end purchase. You're asking yourself ... How do I test my game logic to make sure it's handling inventory change correctly?
+The [Inventory Results Ready event](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/events/inventory-results-ready.md) can be used to know when the player's inventory has changed. This will be raised by Steam for any change caused by the game but may not be raised in response to changes that start outside the game so it's important to not use this as an alternative to [Get All Items](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/get-all-items.md) for keeping your view of the player's inventory up to date.
 
-Use the [Steamworks Inspector](../../../../company/steam/steamworks/#inventory) and click the "Grant" button beside any of the items, this will cause it to grant you an item which will raise the [EventChanged](../../../../heathens-steamworks-complete/unity/scriptable-objects/steam-settings/game-client/inventory-settings.md) ... you can now observe your game logic and ensure it's performing as you expected.
+### Start Purchase request
+
+The Start Purchase function asks Steam to load a shopping cart with given items and present it to the user for payment processing. Only items that have a defined price can be purchased, only items available to this user can be purchased. Steam will process the payment from that point forward and you are not assured of getting a response. For example, a player may simply leave the cart open and never process the transaction, they may cancel the transaction, modify items in the cart, etc.
+
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+If a transaction is processed and authorized you will see a [Micro Txn Authorization Response](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/events/micro-txn-authorization-response.md) event be executed. That event will carry the Order ID which can be matched to the Order ID created with the Start Purchase request.
+
+<figure><img src="../../../../.gitbook/assets/image (373).png" alt=""><figcaption></figcaption></figure>

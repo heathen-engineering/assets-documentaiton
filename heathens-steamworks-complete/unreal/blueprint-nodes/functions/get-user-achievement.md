@@ -47,4 +47,4 @@ The [User Achievement Status](../types/user-achievement-status.md) for the achie
 
 <figure><img src="../../../../.gitbook/assets/image (336).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

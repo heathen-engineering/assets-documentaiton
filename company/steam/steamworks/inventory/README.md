@@ -68,35 +68,6 @@ Steam Inventory is the framework you would use to define the items, reagents, re
 
 No Steam Inventory items do not have to be available for sale, trade or community marketing you can hide them in inventory and control every aspect of how they are distributed, consumed and used. It is simply a secure way of defining the client's interaction with the items, the items themselves and related features of those items e.g. generators, drops, exchanges, etc.
 
-## Item Definitions
-
-Once you have created your Steam Inventory Items in the Steam Developer Portal you can access them in your project via code, through the [Item Data](../../../../heathens-steamworks-complete/unity/data-layer/item-data.md) struct or the [Inventory API](../../../../heathens-steamworks-complete/unity/api/inventory.client.md). You can also access your item definitions via Scriptable Objects using the Steam Settings object.
-
-In all cases using your Item Defintiion you will be able to
-
-* Determine if the user owns this item and how many they own
-* Be able to start a purchase of this item
-* Be able to consome this item
-* Be able to use this item in an exchange recipie
-* Be able to exchange other items (recipes) for this item
-* Be able to read the item's price, name and other attributes if set
-
-### Scriptable Objects
-
-To import you Steam Inventory Item Definition into your project as Scriptable Objects you need to start your game in Editor so that the Steam API can initialize. Then open your Steam Settings in the inspector and click the Import option under the Inventory section
-
-<figure><img src="../../../../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
-
-This may take a few seconds to complete but it will import all [item definitions](../../../../heathens-steamworks-complete/unity/scriptable-objects/item-definition.md) and create a Scriptable Object representation for each one stored under the Steam Settings object similar to Stas, Achievements and other Steam artifacts.
-
-### Data Layer
-
-In cases where you prefer to work in purse code or simply wish to avoid reference type objects such as Scriptable Objects you can use the Data Layer struct [Item Data](../../../../heathens-steamworks-complete/unity/data-layer/item-data.md) to access your Item Definitions. As is always the case with the Data Layer you do not need to initialize or configure objects ahead of time. The Data Layer works on data without reference so you only need to know the uint ID of the item you wish to work with.
-
-### API
-
-The Data Layer as noted above is simply a struct that wraps around the underlying Inventory API. Some programmer centric developers may be more comfortable working with API end points than with structs and so you can access everything you need via the [Inventory.Client](../../../../heathens-steamworks-complete/unity/api/inventory.client.md) API
-
 ## Required Reading
 
 Steam Inventory can be used for consumables, craftables, player economy (marketplace and trading) and microtransactions. The system is concerned first and foremost with security and this can make it a more cumbersome feature than you need if you're not taking advantage of either the player economy or MTX aspects of the system.
@@ -108,7 +79,7 @@ In short, a "client" can never be trusted so it can't do anything that cannot be
 {% endhint %}
 
 {% hint style="info" %}
-The following is taken directly from Valve's documentation. you should read Valves documentation.
+The following is taken directly from Valve's documentation. you should read Valve's documentation.
 
 [https://partner.steamgames.com/doc/features/inventory/schema](https://partner.steamgames.com/doc/features/inventory/schema)
 {% endhint %}
@@ -161,31 +132,52 @@ Items can be made tradeable by players, this allows players to trade with each o
 
 {% embed url="https://partner.steamgames.com/doc/features/inventory/schema" %}
 
-## Related Objects
+## Use
 
-The following are objects and tools in Steamworks Complete that can help you work with Steam Inventory.
+No matter your intended use of the Steam Inventory system you will need to follow some simple guidelines when working with items in the game.&#x20;
 
-### Inventory API
+### What is an Item
 
-Learn more in our [Inventory API](../../../../heathens-steamworks-complete/unity/api/inventory.client.md) documentation.
+In reality, an item is just an int ... i.e. it is a number\
+The number is the unique ID of that item type, it's associated with an Item Definition which describes the type of item, its name, price, etc.&#x20;
 
-### Item Definition
+When using items in the game you generally only need to know how many of what item types the user owns. e.g. how many of item type 42 does the user own?
 
-Defines a Steam Inventory Item and provides access to commonly used features as well as the full definition of the item. You can learn more about the creation and use of [Item Definitions](./#item-definitions) in the section above.
+When using items in a store you only need to know the price of the item, e.g. what is the local user's price for item 42?
 
-### Item Detail
+### Inventory Snapshot
 
-An object used to detail an instance of an item in the player's inventory. Learn more [here](../../../../heathens-steamworks-complete/unity/objects/item-detail.md).
+First, you need to understand that the items do not "live" in your game logic and can be affected by many different systems including Steam itself without your game being aware of or even involved in the transaction. As such your game will need to query the state of the inventory to understand what items the user owns at the time of that query. That view is just that, a view of the items at that time, the item states, quantities, etc. may change over time without your game being aware of it.
 
-## Sample Scenes
+The approach Valve (and Heathen) recommends is that you "refresh" your game's view of the items the user owns just before any important use of the items, such as just before opening an inventory screen, or just before entering a game session where 1 or more items will be used. Heathen provides you with simple and easy-to-use tools for requesting all items and inspecting the quantities, tags and general state of each item found.
 
-### 8 Inventory
+### Using Items
 
-This scene directs you to the documentation here and provides a simple example script that demonstrates the most common features.
+Your view of the user's items will be a collection of "item details" Each detail represents a stack of 0 to many items in the user's inventory. Each stack will have just 1 item type.
 
-### 9 Item Store Tutorial
+For example:\
+I could have 10 stacks of gold each with different quantities of gold in each of the stacks. While rare it is technically possible for a stack to have 0 quantity so you can't assume a stack means 1 or more.
 
-This scene is meant to be used along with the [Item Store](../../../../steam/inventory/microtransactions/item-store/) article and demonstrates connecting [Item Definition](../../../../heathens-steamworks-complete/unity/scriptable-objects/item-definition.md) objects to Unity UI.
+Most of the operations you will do on items such as "Exchanging", "Consuming", etc. will work with specific item details. Each Item Detail has a unique identifier for this purpose.
+
+Heathen's tools simplify working with item details and building out lists of details for exchanges and consumption so you don't generally need to deal with sorting items yourself.
+
+#### Exchanging
+
+Exchanging aka Crafting, is the process of trading 1 or more items for some different item. The result of an exchange is always 1 item, that 1 item can be of type bundle or even generator or any nested type thereof. Examples follow
+
+Opening a Chest or Box\
+Exchange 1 Chest for a bundle, the bundle could contain more than 1 item or generator or other bundles.
+
+Crafting a Sword\
+Exchange 2 iron and 10 gold for an Iron Sword
+
+Buying a Chest ... which we can later open\
+Exchange 100 gold for 1 Chest ... that we could exchange for a bundle
+
+#### Consuming
+
+You can "consume" items as well, this is simply deleting the item and would be used for consumables like food, boosts, potions, etc.
 
 ## F.A.Q
 
@@ -198,7 +190,7 @@ For testing a developer account can generate any item at runtime by simply calli
 This however will not work for players
 
 {% hint style="warning" %}
-Generate Item can only be used by developers for testing purposes.
+Generate Items can only be used by developers for testing purposes.
 {% endhint %}
 
 For security reasons, there is no straightforward way to generate a specific item for the user from the Steam Client API. To give players items you need to do one of the following
@@ -238,4 +230,84 @@ This is a limitation from Valve confirmed with Valve engineers as a deliberate l
 
 The above quote is from a Valve support case on this topic. It is not a bug nor a limitation we can effect. If you would like to see this changed you will need to raise it with Valve.
 
-{% embed url="https://kb.heathenengineering.com/assets/steamworks/learning/core-concepts/inventory/item-store" %}
+## Unity Examples
+
+Once you have created your Steam Inventory Items in the Steam Developer Portal you can access them in your project via code, through the [Item Data](../../../../heathens-steamworks-complete/unity/data-layer/item-data.md) struct or the [Inventory API](../../../../heathens-steamworks-complete/unity/api/inventory.client.md). You can also access your item definitions via Scriptable Objects using the Steam Settings object.
+
+In all cases using your Item Definition you will be able to
+
+* Determine if the user owns this item and how many they own
+* Be able to start a purchase of this item
+* Be able to combine this item
+* Be able to use this item in an exchange recipe
+* Be able to exchange other items (recipes) for this item
+* Be able to read the item's price, name and other attributes if set
+
+{% hint style="info" %}
+Heathen's system will attempt to track changes to the items that Steam notifies the game of and in many cases this can keep the item state up to date through gameplay. \
+\
+However:\
+It's important to remember that changes can occur to the items from outside your game's view. As such anytime you need to "know" with a level of certainty how many or what items the player owns you should perform a Get All Items
+{% endhint %}
+
+### Scriptable Objects
+
+To import you Steam Inventory Item Definition into your project as Scriptable Objects you need to start your game in Editor so that the Steam API can initialize. Then open your Steam Settings in the inspector and click the Import option under the Inventory section
+
+<figure><img src="../../../../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
+
+This may take a few seconds to complete but it will import all [item definitions](../../../../heathens-steamworks-complete/unity/scriptable-objects/item-definition.md) and create a Scriptable Object representation for each one stored under the Steam Settings object similar to Stas, Achievements and other Steam artifacts.
+
+### Data Layer
+
+In cases where you prefer to work in purse code or simply wish to avoid reference type objects such as Scriptable Objects, you can use the Data Layer struct [Item Data](../../../../heathens-steamworks-complete/unity/data-layer/item-data.md) to access your Item Definitions. As is always the case with the Data Layer you do not need to initialize or configure objects ahead of time. The Data Layer works on data without reference so you only need to know the uint ID of the item you wish to work with.
+
+### API
+
+The Data Layer as noted above is simply a struct that wraps around the underlying Inventory API. Some programmer-centric developers may be more comfortable working with API endpoints than with structs and so you can access everything you need via the [Inventory.Client](../../../../heathens-steamworks-complete/unity/api/inventory.client.md) API
+
+### Related Objects
+
+The following are objects and tools in Steamworks Complete that can help you work with Steam Inventory.
+
+#### Inventory API
+
+Learn more in our [Inventory API](../../../../heathens-steamworks-complete/unity/api/inventory.client.md) documentation.
+
+#### Item Definition
+
+Defines a Steam Inventory Item and provides access to commonly used features as well as the full definition of the item. You can learn more about the creation and use of [Item Definitions](./#item-definitions) in the section above.
+
+#### Item Detail
+
+An object is used to detail an instance of an item in the player's inventory. Learn more [here](../../../../heathens-steamworks-complete/unity/objects/item-detail.md).
+
+## Unreal Examples
+
+The following are just a few of the most common use cases or needs regarding Steam Inventory. If you check the articles below this article you will find more specific cases such as [Crafing Systems](../../../../steam/inventory/crafting-system.md), [Microtransacitons](../../../../steam/inventory/microtransactions/) and [Promo Items](promo-items.md)
+
+### [Get All Items](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/get-all-items.md)
+
+This is how you "refresh" your view of the player's inventory. We provide 2 variations of this feature in Blueprints with the Simple variant being the most commonly used.
+
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>View of the relivent parts of the Simple Get All Items funciton.</p></figcaption></figure>
+
+You optionally pass in an array of strings representing the custom properties you would like the system to read off the resulting items. When the callback is executed it will define its result state and if not a failed condition it will include an array of the [Item Details with Properties](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/types/item-detail-with-properties.md) it found. You can think of each of these as a "stack" of 0 to many of a given item type.
+
+The Definition ID of the item detail tells you what type of item it is and the instance ID can be used with other functions such as consume or exchange.
+
+### [Get Item Price](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/get-item-price.md)
+
+If you are setting up an in-game store or some similar microtransaction system you will likely want to know what the price of the item is for this user.
+
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+Notice that the event tells you the currency code and currency symbol seen for the user and that prices are returned as a whole number e.g. int64
+
+In the case of say USD you would want to convert the price to a float and divide by 100 so that 199 becomes 1.99\
+\
+
+
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+The above are the relevant nodes to yield a string formatted for the user's currency assuming a cent-based currency like USD, GBP, etc. The resulting string here would look like this \`$1.99" assuming a base price of 199 and a currency symbol of $
