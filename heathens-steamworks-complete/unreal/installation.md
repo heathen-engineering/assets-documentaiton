@@ -31,17 +31,13 @@ These articles are made possible by our [GitHub Sponsors](../../become-a-sponsor
 Video is silent but does have subtitles/captions
 {% endembed %}
 
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><h3>GitHub Sponsor</h3></td><td><p><a href="https://github.com/sponsors/heathen-engineering">Become a Sponsor</a></p><p><em>The link below only works for Sponsors</em><br><a href="https://github.com/heathen-engineering/SourceRepo">Installation Instructions</a></p><p>Cancel anytime, and keep everything you have including our site-based license</p><ul><li>$15.00 month</li><li>Source Access<br>For all our assets</li><li>Live Updates</li><li>Exclusive extras</li><li>Issue Tracking</li><li>Escalated Live Support</li><li><p>Unity</p><ul><li>Steamworks Complete</li><li>PhysKit Complete</li><li>UX Complete</li></ul></li><li><p>Unreal</p><ul><li>Steamworks Complete</li></ul></li></ul></td><td></td></tr><tr><td><h3>Unreal Marketplace</h3></td><td><p>Coming Soon</p><ul><li>$74.99</li><li>Source Included</li><li>Quarterly Updates<br>+ Hotfixes</li><li>Steamworks Complete</li><li>Live Support</li></ul></td><td><mark style="color:orange;">Per-user license, free updates for that major version, discount on future major updates</mark></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><h3>GitHub Sponsor</h3></td><td><p><a href="https://github.com/sponsors/heathen-engineering">Become a Sponsor</a></p><p><em>The link below only works for Sponsors</em><br><a href="https://github.com/heathen-engineering/SourceRepo">Installation Instructions</a></p><p>Cancel anytime, and keep everything you have including our site-based license</p><ul><li>$15.00 month</li><li>Source Access<br>For all our assets</li><li>Live Updates</li><li>Exclusive extras</li><li>Issue Tracking</li><li>Escalated Live Support</li><li><p>Unity</p><ul><li>Steamworks Complete</li><li>PhysKit Complete</li><li>UX Complete</li></ul></li><li><p>Unreal</p><ul><li>Steamworks Complete</li></ul></li></ul></td><td></td></tr><tr><td><h3>Unreal Marketplace</h3></td><td><p><a href="https://www.unrealengine.com/marketplace/en-US/product/ad658ddf5c434478acb95f9091ea279c">Unreal Marketplace</a></p><ul><li>$74.99</li><li>Source Included</li><li>Quarterly Updates<br>+ Hotfixes</li><li>Steamworks Complete</li><li>Live Support</li></ul></td><td><mark style="color:orange;">Per-user license, free updates for that major version, discount on future major updates</mark></td></tr></tbody></table>
 
 ## Requirements
 
-{% hint style="info" %}
-Unreal Marketplace deployment coming soon!
-{% endhint %}
-
 ### Version
 
-You'll need to install Unreal v5+ we have built the plugin using 5.3 though theoretically... in theory any v5 should play nice.
+You'll need to install Unreal v5.1, 5.2 or 5.3.
 
 ### C++
 
@@ -52,33 +48,40 @@ If you chose a C++ project when you created your project congratz, step done, an
 
 If you chose Blueprint project when you created your project, simply add a C++ class via the Tools menu and Unreal Editor will do the work of setting your project up so it can be completed.
 
-### Add the Plugin
+## Installation
 
-So close your engine, and navigate to the project folder, this is where your .uproject file is located.
+### From the Marketplace
+
+The plugin is deployed to the Unreal Marketplace as an engine plugin. This means you need to install the plugin to the engine after purchase in order to be able to use it.
+
+<figure><img src="../../.gitbook/assets/image (367).png" alt=""><figcaption></figcaption></figure>
+
+Once you have installed the plugin to the engine versions you require you need to enable the plugin for your project, this will require a restart to complete.
+
+<figure><img src="../../.gitbook/assets/image (368).png" alt=""><figcaption></figcaption></figure>
+
+### From GitHub
+
+The plugin will be installed as part of your project as opposed to part of the engine. To get started close your engine, and navigate to the project folder, this is where your .uproject file is located.
 
 You should see a .sln file beside it, if you do not then your project is not set up for C++ so go back a step and fix that.
 
 Once you do have a .sln we need to copy the Plugins in. You may already have a Plugins folder if not simply create one.
 
-Next, simply copy the SteamworksComplete folder into your Plugins folder. You'll find the plugin in our GitHub Sponsor Source Repo
+#### Add the plugin
+
+Next, copy the SteamworksComplete folder into your Plugins folder. You'll find the plugin in our GitHub Sponsor Source Repo
 
 <figure><img src="../../.gitbook/assets/image (30) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 When done your folder should look similar to the above.
 
-### Rebuild
+#### Generate files
+
+Next, right-click on the .uproject file and select Generate Visual Studio project files
+
+<figure><img src="../../.gitbook/assets/image (369).png" alt=""><figcaption></figcaption></figure>
+
+#### Rebuild
 
 Right-click on your projects .uproject file and select `Generate Visual Studio Project files`. This will cause the engine to scan the project directory and link up all the related bits we just copied in.
-
-#### Next
-
-So technically you should be able to double-click your project file and it should see the change and compile.
-
-Personally, I prefer to have some control here so I recommend you double-click your .sln file to open the solution in Visual Studio and press Build there.
-
-Note you may see a red X in the log as if something stopped the compilation but if you can press the green play button and it launches and runs the engine then we have what we want.
-
-### Test
-
-So how do we know it's all there and working?\
-The simplest way is to open a blueprint editor and see if you can add a Steam node ... just right-click and start typing Steam. You should see a slew of Function nodes we have created for you.

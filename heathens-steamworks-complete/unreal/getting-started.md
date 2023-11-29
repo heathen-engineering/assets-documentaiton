@@ -27,19 +27,19 @@ Support us as a [GitHub Sponsor](../../become-a-sponsor/) and get instant access
 These articles are made possible by our [GitHub Sponsors](../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
-## Install
+## [Installation](installation.md)
 
 Import the Steamworks Complete plugin to your project. Whether you purchased the plugin from Unreal Marketplace or are a GitHub Sponsor you will need access to the Steamworks Complete plugin to get started using it.
 
-The plugin is not free and is only available from Heathen via the GitHub Sponsor program and on the Unreal Marketplace. If you acquired the plugin anywhere else we suggest you remove it immediately as it's not a legit copy and likely contains malware.
+The plugin is not free and is only available from Heathen via the [GitHub Sponsor](../../become-a-sponsor/) program and on the [Unreal Marketplace](https://www.unrealengine.com/marketplace/en-US/product/ad658ddf5c434478acb95f9091ea279c). If you acquired the plugin anywhere else we suggest you remove it immediately as it's not a legit copy and likely contains malware.&#x20;
 
 ## [Game Instance](game-instance.md)
 
 With the plugin installed, you will want to set up your Game Instance.&#x20;
 
-The plugin ships with a ready-to-use Steam Game Instnace named `BP_Steam_Game_Instance` you can use this as is or use it as a learning tool to create your own Game Instnace derived from our SteamGameInstance parent class.
+The plugin ships with a ready-to-use Steam Game Instnace named `BP_Steam_Game_Instance` You can use this as is or use it as a learning tool to create your own Game Instnace derived from our SteamGameInstance parent class or use it as is.
 
-## Steam Developer
+## [Steam Developer](../../company/steam/quick-start.md#sign-up-to-steamworks)
 
 Become a Steam Developer and get your own App ID.
 
@@ -52,5 +52,7 @@ You can learn more about [getting started as a Steam Developer in our article he
 We have exposed every major feature of Steam API to Blueprint Functions and Events, and we have created ready-to-use UI Widgets and many samples to help you get started. You can of course also use Steam API from C++ code. Steamworks Complete includes the full Steamworks SDK and all its features.
 
 You can learn more about all the features of Steam in our knowledge base by reviewing the hundreds of articles linked in the navigation panel to the left 👀
+
+<figure><img src="../../.gitbook/assets/image (370).png" alt=""><figcaption></figcaption></figure>
 
 If you have any questions simply look up ... there you will find our Search tool which is AI-assisted and fairly useful as well as links to our Discord Community where you can get live support.
