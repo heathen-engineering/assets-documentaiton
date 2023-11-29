@@ -12,15 +12,15 @@ Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant 
 These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
-## &#x20;Introduction
+## Introduction
 
 Rich public user profiles can be significant to social games
 
 ![Example of a Dota2 user profile from a random Google image](<../../../../.gitbook/assets/image (164) (1) (1) (1) (1) (1).png>)
 
-To be effective these profiles need to always be available any time a player sees another player's name so as an offline friend, as an entry in a leaderboard, as a teammate in a match, as an opponent that stomped you in a match, etc. The profile needs to always be accessible to every user that might see it without needing to be a friend or actively in a lobby or server with that player.
+To be effective these profiles need to always be available any time a player sees another player's name so as an offline friend, as an entry in a leaderboard, as a teammate in a match, as an opponent that stomped you in a match, etc. The profile needs to always be accessible to every user who might see it without needing to be a friend or actively in a lobby or server with that player.
 
-This means that you can't depend on Steam's rich presence alone though that can be of use, notice the Main Menu text under that user's name. That is from Steam's rich presence but would only list people who are you or are your friend.
+This means that you can't depend on Steam's rich presence alone though that can be of use, notice the Main Menu text under that user's name. That is from Steam's rich presence but would only list people who are you or are your friends.
 
 All of the rest of that data is stored in a profile object, this being DOTA it's likely stored on the account after all DOTA has access to so much more than we as regular Steam developers do. That said we can do nearly the same using Leaderboards to house profile data.
 
@@ -30,21 +30,11 @@ In summary, the idea is to create a publicly accessible rich account profile as 
 
 Leaderboards are used since anyone can query a leaderboard and fetch the data contained in it. Leaderboards can be easily written by anyone and can contain more than just a score and rank. The key to this use case is the use of a leaderboard details array and leaderboard attachments.
 
-## How To?
+## How to?
 
-### Related Objects
-
-{% embed url="https://kb.heathenengineering.com/assets/steamworks/api/leaderboards" %}
-The leaderboard interface
-{% endembed %}
-
-{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/leaderboard-object" %}
-The leaderboard object itself
-{% endembed %}
-
-{% embed url="https://kb.heathenengineering.com/assets/steamworks/objects/leaderboard-entry" %}
-The leaderboard entry represents entries on a board
-{% endembed %}
+{% hint style="info" %}
+The examples shown here are written in C# but would be similar in C++ or via Unreal Blueprints
+{% endhint %}
 
 Your first step is always to decide what data you want the users to store on/in their public profiles. You will also need to create a serializable struct or object that can house that information.&#x20;
 
@@ -65,12 +55,10 @@ public struct ProfileDataObject
 
 As much as possible try to pack that information into an int\[] with 64 or fewer entries. Of course, if your values are already ints then this is very easy, for example, the level value in ProfielDataObject above would be a good candidate as would the GameMode assuming it was an enum. Enums are just ints with names.
 
-
-
-Booleans are something we use a lot as game developers and an int can represent 32 of them quite easily. Below I show a bit on how you might pack up to 32 Booleans in a single int&#x20;
+Booleans are something we use a lot as game developers and an int can represent 32 of them quite easily. Below I show a bit of how you might pack up to 32 Booleans in a single int&#x20;
 
 {% hint style="info" %}
-Yes you can use bitwise operations to do this and yes it is less code to use bitwise and arguably faster operations to execute but bitwise operations tend to make some peoples head smoke and really if you're doing this so often that the performance impact is an issue then you should be cashing profile results.
+Yes, you can use bitwise operations to do this and yes it is less code to use bitwise and arguably faster operations to execute but bitwise operations tend to make some people's heads smoke and really if you're doing this so often the performance impact is an issue then you should be cashing profile results.
 
 
 
@@ -125,7 +113,7 @@ Our system will use JsonUtility to serialize the file and convert it to byte\[] 
 
 Let's assume you have defined a leaderboard that will be used as your player\_profles and you have linked it with your game as you would any other leaderboard.
 
-To save a user’s profile you need only create the serializable object and set up the detail array you wish to store and then call upload with a score different than the current score … for ease what we do is an alternative between 1 and 0 e.g. if the current score is 1 we force an update to 0 if it's 0 we force an update to 1. You could also increment the score where score represents a “version” number if you like; that is up to you.
+To save a user’s profile you need only create the serializable object and set up the detail array you wish to store and then call upload with a score different than the current score … for ease what we do is an alternative between 1 and 0 e.g. if the current score is 1 we force an update to 0 if it's 0 we force an update to 1. You could also increment the score where the score represents a “version” number if you like; that is up to you.
 
 ```csharp
 player_profile.UploadScore(
@@ -186,7 +174,6 @@ private void HandleProfiles(LeaderboardEntry[] results, bool error)
 }
 ```
 
-The callback will contain the entries for each of the users in your users list. You can use the LeaderboardEntry object to read the details and fetch the attachment e.g.
+The callback will contain the entries for each of the users in your users' list. You can use the LeaderboardEntry object to read the details and fetch the attachment e.g.
 
-The callback will contain a populated ProfileDataType assuming there is a valid JSON attachment else it will return the default so null for classes or new for structs.
-
+The callback will contain a populated ProfileDataType assuming there is a valid JSON attachment it will return the default so null for classes or new for structs.

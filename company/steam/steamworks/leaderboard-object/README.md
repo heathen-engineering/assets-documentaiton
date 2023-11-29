@@ -26,11 +26,9 @@ Use the Steam Web API to set trusted leaderboard scores
 [https://partner.steamgames.com/doc/webapi/ISteamLeaderboards#SetLeaderboardScore](https://partner.steamgames.com/doc/webapi/ISteamLeaderboards#SetLeaderboardScore)
 {% endhint %}
 
-## Quick Start
+## Create
 
-First you need to create your achievements on the Steam Developer portal. [https://partner.steamgames.com/](https://partner.steamgames.com/)
-
-### Create
+First, you need to create your achievements on the Steam Developer portal. [https://partner.steamgames.com/](https://partner.steamgames.com/)
 
 Log into your Steam Developer Portal and access your app's admin page. Look for the Technical Tools section and select the Edit Steamworks Settings option.
 
@@ -46,7 +44,55 @@ You \*\***MUST**\*\* publish your changes in the Steam Developer Portal before t
 
 <figure><img src="../../../../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
 
-### Use
+## Troubleshooting&#x20;
+
+### Upload ignores my value
+
+A common issue when your start is that it may appear that the leaderboard is ignoring the score you upload, or that it only takes scores in the opposite direction you intended.
+
+For example, if you upload 10, then upload 11 it may ignore the 11 but if you upload 9 it will take the 9.
+
+#### Why?
+
+Steam Leaderboards are configured to sort scores in a particular direction and when you upload a score you are typically doing so as "Keep Best".&#x20;
+
+```csharp
+board.UploadScore(42,
+    ELeaderboardUploadScoreMethod.k_ELeaderboardUploadScoreMethodKeepBest,
+    (result, error) =>
+    {
+        if(!error)
+            Debug.Log("Recorded: " + result.m_nScore +
+                      "New Rank: " + result.m_nGlobalRankNew);
+    });
+```
+
+The "Keep Best" option tells Steam to only record the new value you present \*\* **if** \*\* that value is better than the previous value recorded. This is determined by the "sort order" you configured for the board in the Steam Portal.
+
+### How to Fix?
+
+Assuming you have the board configured incorrectly simply update its configuration in the Steam portal and then publish the changes.
+
+{% hint style="warning" %}
+You **MUST ALWAYS** publish changes when making edits in the Steam Portal. It does not apply the moment you make the change in the portal it is a Perforce-based source control system that requires you to publish your changes.
+{% endhint %}
+
+If for some reason you find your board still acts like it's sorted the other way around, this is likely due to an issue seen a few times with Steam's backend services. Submit a support case letting Valve know that your board appears bugged and is not changing its sort direction as it should.
+
+To work around the issue make a new board (with a new name) and set it up with the sort of direction you desire; do not delete the broken board … please … so Valve can review it.
+
+## Unity Examples
+
+As with all features in the Unity version of Steamworks Complete, there are multiple ways to work with Leaderboards.
+
+* [Leaderboard Object](../../../../heathens-steamworks-complete/unity/scriptable-objects/leaderboard-object.md)\
+  Scriptable Object that can be referenced by GameObejcts in your component scripts
+* [Leaderboard Data](../../../../heathens-steamworks-complete/unity/data-layer/leaderboard-data.md)\
+  A simple C# struct suitable for DOTS or other situations where you want to avoid the use of object references
+* [Leaderboard API](../../../../heathens-steamworks-complete/unity/api/leaderboards.client.md)\
+  A static API system is similar to the raw Steamworks APIs using modern C# features and handling all the boilerplate for you while maintaining the native Steam API structure.&#x20;
+
+### Object Setup
 
 To reference a Leaderboard in your Steam Settings press the "<mark style="color:green;">+ New</mark>" button on the Steam Settings object next to the Leaderboard entry
 
@@ -90,7 +136,7 @@ None is an available but invalid option for both settings
 Why even show it if it's invalid, ask Valve, it's part of the enums they provide so we expose it.
 {% endhint %}
 
-### Details
+#### Details
 
 Understanding the detail array.
 
@@ -104,7 +150,7 @@ To read this data make sure you have set the `Details` field as seen in the insp
 
 The details themselves will be provided in the [LeaderboardEntry ](../../../../heathens-steamworks-complete/unity/objects/leaderboard-entry.md)record returned by leaderboard queries.
 
-### Attachments
+#### Attachments
 
 Understanding leaderboard attachments.
 
@@ -126,15 +172,13 @@ leaderboard.AttachUGC("attachmentName", myData, Encoding.UTF8, callback);
 
 The above example assumes that `myData` is a JSON serializable object and that callback is a suitable method or delegate with a signature like `void Callback(LeaderbaordUGCSet_t result, bool IOError);` This will create a new file named attachmentName in the user's remote storage and then attach it to the user's entry on this leaderboard.
 
-## Leaderboard Manager
+### Leaderboard Manager
 
 The leaderboard manager is a simple component that greatly simplifies reading and writing data to and from a given leaderboard and exposes helpful events to the Unity Inspector.
 
 ![](<../../../../.gitbook/assets/image (181) (1).png>)
 
 You can learn more about the [Leaderboard Manager](../../../../heathens-steamworks-complete/unity/components/leaderboard-manager.md) in its documentation article and by reviewing the [4 Leaderboards](../../../../heathens-steamworks-complete/unity/sample-scenes/leaderboards.md) sample scene.
-
-## How To
 
 ### Upload Score
 
@@ -217,41 +261,34 @@ Leaderboard.API.UploadScore(leaderboard,
 
 Because this is a static class we must indicate what leaderboard we want to upload to, this is done by passing in the LeaderboardObject.
 
-Next, we must indicate the upload method; [methods are defined by Steam here](https://partner.steamgames.com/doc/api/ISteamUserStats#ELeaderboardUploadScoreMethod). Typically you would upload with `ELeaderboardUploadScoreMethod.k_ELeaderboardUploadScoreMethodKeepBest` this will cause the system to keep the best score. You would never upload with `ELeaderboardUploadScoreMethod.k_ELeaderboardUploadScoreMethodNone` the 3rd option is to Force Update, forcing the board to take whatever you give it; `ELeaderboardUploadScoreMethod.k_ELeaderboardUploadScoreMethodForceUpdate` this is generally only used to "reset" a board.
+Next, we must indicate the upload method; [methods are defined by Steam here](https://partner.steamgames.com/doc/api/ISteamUserStats#ELeaderboardUploadScoreMethod). Typically you would upload with `ELeaderboardUploadScoreMethod.k_ELeaderboardUploadScoreMethodKeepBest` this will cause the system to keep the best score. You would never upload with `ELeaderboardUploadScoreMethod.k_ELeaderboardUploadScoreMethodNone` the 3rd option is to Force Update, forcing the board to take whatever you give it; `ELeaderboardUploadScoreMethod.k_ELeaderboardUploadScoreMethodForceUpdate` this is generally only used to "reset" aboard.
 
-## Troubleshooting&#x20;
+## Unreal Examples
 
-### Upload ignores my value
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-A common issue when your start is that it may appear that the leaderboard is ignoring the score you upload, or that it only takes scores in the opposite direction you intended.
+### Find Leaderboards
 
-For example, if you upload 10, then upload 11 it may ignore the 11 but if you upload 9 it will take the 9.
+Working with leaderboards requires you to find the Leaderboard ID first, the ID will be used with all other leaderboard functions and won't change during the execution of the app so can be cashed to save a step in future calls.
 
-#### Why?
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-Steam Leaderboards are configured to sort scores in a particular direction and when you upload a score you are typically doing so as "Keep Best".&#x20;
+### Upload Score
 
-```csharp
-board.UploadScore(42,
-    ELeaderboardUploadScoreMethod.k_ELeaderboardUploadScoreMethodKeepBest,
-    (result, error) =>
-    {
-        if(!error)
-            Debug.Log("Recorded: " + result.m_nScore +
-                      "New Rank: " + result.m_nGlobalRankNew);
-    });
-```
+Uploading a score is a matter of providing a score and optionally details.
 
-The "Keep Best" option tells Steam to only record the new value you present \*\* **if** \*\* that value is better than the previous value recorded. This is determined by the "sort order" you configured for the board in the Steam Portal.
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-### How to Fix?
+### Attach Files
 
-Assuming you have the board configured incorrectly simply update its configuration in the Steam portal and then publish the changes.
+You can attach a file to the leaderboard for the user, this is often useful to store replays or can be used to store rich information about the user's entry. The attached file will always be related to the local user.
 
-{% hint style="warning" %}
-You **MUST ALWAYS** publish changes when making edits in the Steam Portal. It does not apply the moment you make the change in the portal it is a Perforce-based source control system that requires you to publish your changes.
-{% endhint %}
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-If for some reason you find your board still acts like it's sorted the other way around, this is likely due to an issue seen a few times with Steam's backend services. Submit a support case letting Valve know that your board appears bugged and is not changing its sort direction as it should.
+To attach a file you first need to upload the file to Steam's Remote Storage, once the file is uploaded you need to mark it for sharing. This will provide you with a UGC Handle that can be assigned to the board.
 
-To work around the issue make a new board (with a new name) and set it up with the sort of direction you desire; do not delete the broken board … please … so Valve can review it.
+### Reading Entries
+
+[Download Leaderboard Entries](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/download-leaderboard-entries.md) and [Download Leaderboard Entries for Users](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/download-leaderboard-entries-for-users.md) can be used to read the entries on a leaderboard.
+
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>

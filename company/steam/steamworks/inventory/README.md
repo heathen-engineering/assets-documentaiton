@@ -46,7 +46,7 @@ The Steam Inventory system has a concept of "exchange" wherein you can define a 
 
 The Exchange feature can be used to create loot boxes and other systems but far less predatory is the use as a crafting system. That is the player can collect reagents which you have defined as items and exchange them for specific items such as iron and leather to be exchanged for a shield or sword.
 
-### [Microtransaction (MTX)](../../../../steam/inventory/microtransactions/)
+### [Microtransaction (MTX)](../../../../steam/inventory/microtransactions.md)
 
 Steam Inventory is the interface and framework you would use to define items for purchase either through the Steam store or through your store to be managed by Steam.
 
@@ -54,7 +54,7 @@ Steam Inventory is the interface and framework you would use to define items for
 
 Steam Inventory is how you create items that can be traded between players securely both in and out of the game and can optionally be put on the "Community Marketplace" for sale by players to players.
 
-### [In-App Purchase (IAP)](../../../../steam/inventory/microtransactions/)
+### [In-App Purchase (IAP)](../../../../steam/inventory/microtransactions.md)
 
 Steam Inventory is the framework you would use to define the items that can be purchased in-game and the exchange "recipes" that define how a player can "purchase" an item in-game for an in-game item e.g. in-game currency, in-game shop, etc.
 
@@ -284,13 +284,13 @@ An object is used to detail an instance of an item in the player's inventory. Le
 
 ## Unreal Examples
 
-The following are just a few of the most common use cases or needs regarding Steam Inventory. If you check the articles below this article you will find more specific cases such as [Crafing Systems](../../../../steam/inventory/crafting-system.md), [Microtransacitons](../../../../steam/inventory/microtransactions/) and [Promo Items](promo-items.md)
+The following are just a few of the most common use cases or needs regarding Steam Inventory. If you check the articles below this article you will find more specific cases such as [Crafing Systems](../../../../steam/inventory/crafting-system.md), [Microtransacitons](../../../../steam/inventory/microtransactions.md) and [Promo Items](promo-items.md)
 
 ### [Get All Items](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/get-all-items.md)
 
 This is how you "refresh" your view of the player's inventory. We provide 2 variations of this feature in Blueprints with the Simple variant being the most commonly used.
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>View of the relivent parts of the Simple Get All Items funciton.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>View of the relivent parts of the Simple Get All Items funciton.</p></figcaption></figure>
 
 You optionally pass in an array of strings representing the custom properties you would like the system to read off the resulting items. When the callback is executed it will define its result state and if not a failed condition it will include an array of the [Item Details with Properties](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/types/item-detail-with-properties.md) it found. You can think of each of these as a "stack" of 0 to many of a given item type.
 
@@ -300,7 +300,7 @@ The Definition ID of the item detail tells you what type of item it is and the i
 
 If you are setting up an in-game store or some similar microtransaction system you will likely want to know what the price of the item is for this user.
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Notice that the event tells you the currency code and currency symbol seen for the user and that prices are returned as a whole number e.g. int64
 
@@ -308,6 +308,6 @@ In the case of say USD you would want to convert the price to a float and divide
 \
 
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 The above are the relevant nodes to yield a string formatted for the user's currency assuming a cent-based currency like USD, GBP, etc. The resulting string here would look like this \`$1.99" assuming a base price of 199 and a currency symbol of $
