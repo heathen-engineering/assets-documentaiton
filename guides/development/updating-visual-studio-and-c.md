@@ -28,7 +28,7 @@ If the flag is not present or you prefer another method you can press open the S
 
 In general, we recommend you keep your Visual Studio IDE up to date with the latest option available.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 It's also advisable to insure you have all the components of Visual Studio installed for Unity development.
 

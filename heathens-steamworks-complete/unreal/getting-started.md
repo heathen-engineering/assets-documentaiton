@@ -53,6 +53,6 @@ We have exposed every major feature of Steam API to Blueprint Functions and Even
 
 You can learn more about all the features of Steam in our knowledge base by reviewing the hundreds of articles linked in the navigation panel to the left 👀
 
-<figure><img src="../../.gitbook/assets/image (370).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 If you have any questions simply look up ... there you will find our Search tool which is AI-assisted and fairly useful as well as links to our Discord Community where you can get live support.
