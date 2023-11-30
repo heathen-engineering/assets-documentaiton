@@ -49,9 +49,15 @@ You can learn more about [getting started as a Steam Developer in our article he
 
 ## Use the kit
 
-We have exposed every major feature of Steam API to Blueprint Functions and Events, and we have created ready-to-use UI Widgets and many samples to help you get started. You can of course also use Steam API from C++ code. Steamworks Complete includes the full Steamworks SDK and all its features.
+The Example Level presents a UI that demonstrates key features
 
-You can learn more about all the features of Steam in our knowledge base by reviewing the hundreds of articles linked in the navigation panel to the left 👀
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+Be sure to check out the Graph on the BP\_Example\_UI for additional examples such as how to find, join and create a Steam Lobby
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+Beyond samples we have extensive documentation including how-to guides for nearly every aspect of the Steam platform, going beyond simple documentation for our tools and assets. You can learn more about all the features of Steam in our knowledge base by reviewing the hundreds of articles linked in the navigation panel to the left 👀
 
 <figure><img src="../../.gitbook/assets/image (371).png" alt=""><figcaption></figcaption></figure>
 
