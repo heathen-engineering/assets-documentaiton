@@ -12,7 +12,7 @@ Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant 
 These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
-## &#x20;Introduction
+## Introduction
 
 Let’s start by saying this here:
 
@@ -22,11 +22,7 @@ Creating a game is hard work, creating a multiplayer game is extra hard work, an
 This article covers Steam Multiplayer concepts for more general information on Multiplayer [game design](../../../design/) please see our [guide on that topic](../../../design/multiplayer/).&#x20;
 {% endhint %}
 
-## Concepts
-
-<details>
-
-<summary>Unity</summary>
+## Unity&#x20;
 
 The Networking tool you choose to use does not impact any of the concepts you will learn here.&#x20;
 
@@ -91,4 +87,42 @@ if(lobby.HasServer)
 }
 ```
 
-</details>
+## Unreal
+
+With Unreal, networking is a more integrated aspect of the engine. Synchronization is an engine concept and is not impacted by the use or lack of use of Steam API.&#x20;
+
+{% hint style="danger" %}
+Do not use the Online Subsystem Steam plugin\
+\
+It is not compatible with Heathen's Steamworks Complete and is built on an out-of-date version of the Steamworks API lacking many important features.\
+\
+The limitations and drawbacks of Online Subsystem Steam are one of many reasons to choose Heathen's Steamworks Complete for Unreal over Unreal's built-in solution.
+{% endhint %}
+
+For more information on [Online Subsystem](../../../../heathens-steamworks-complete/unreal/online-subsystem.md) check out our article in the Steamworks Unreal section.
+
+Your ability to set up multiplayer games is not bound to Steam API. Steam does provide a low-level transport called Steam Networking Sockets and Heathen does provide an Unreal NetDriver for it.
+
+{% hint style="info" %}
+Steam Networking Sockets Net Driver is currently in preview and only available to GitHub Sponsors\
+\
+If you have a need for the NetDriver and would like to work with the community on its implementation and testing let us know on Discord.
+{% endhint %}
+
+### How do you list sessions?
+
+Steam API has matchmaking and social solutions that are not limited to the concept of game sessions and can easily account for the functionality of Online Subsystem's Sessions.
+
+#### [Lobby](matchmaking-tools.md)
+
+Steam Lobby is a common tool used for matchmaking, parties, teams, and merge groups. It's actually not a great tool for session browsing as it was designed with matchmaking in mind. In matchmaking the system tries to match the player with the best "match" based on defined factors such as the age of the match, region of the player and the specifics of the type of game session the player is looking for.
+
+Heahten's Steam Lobby tools can help you use Steam Lobby to its fullest, creating player parties and groups, quick matches, chat rooms and more. Steam Lobby can be advertised on the player's Rich Presence enabling friends to join the lobby from outside the game. The lobby invite system can be used to invite players who are not currently in the game if desired and much more.
+
+#### [Game Server](game-server-browser/)
+
+With Heathen's Steamworks Complete, you can register your dedicated servers as Steam Game Servers. This will cause them to list on the Steam Game Server Browser. It will issue them a Steam ID and enable them to leverage the Steam API for authentication, stats, achievements and more.
+
+[Rich Presence](rich-presence.md)
+
+Steam Rich Presence is a powerful system that can enable you to display rich data through the user's friends list. Including but not limited to details about a game session. This can be as simple as how to connect by exposing a "Join Game" button or it can go deeper showing groups of users and providing details about the player's session such as mode, character selection, win or loss and more.

@@ -1,5 +1,5 @@
 ---
-description: On your mark, Get set .... CODE
+description: Getting started with Steam Multiplayer
 ---
 
 # ☝ Getting Started
@@ -18,27 +18,17 @@ So you want to build a multiplayer Steam game? We can help!
 
 Your first stop should be our [Design article on Multiplayer](../../../design/multiplayer/) it covers the fundamentals that you'll need to know before you get started. Once you have your head wrapped around the concepts and a design in mind come back here and we will get started.
 
-<details>
-
-<summary>Unity</summary>
-
-### Update Unity
-
-Select the proper Unity Version, this is much more important than you might think. You should be keeping your Unity Editor up to date with what you anticipate will be the most recent 'LTS' build of Unity at the time your game launches. We have a [whole article on this](../../../fundamentals/unity-release-version.md), it explains what LTS is, why we have this stance and how to go about it.
-
-### Installing Requirements
-
-You have options in how you deliver a multiplayer experience for your players.&#x20;
-
-#### Local Multiplayer
+### Local Multiplayer
 
 Local multiplayer is the simplest and least common in the current market, especially for PC games. This method doesn't require any additional technology beyond a means to understand when input comes from 1 player vs. the others. Steam Input identifies each controller uniquely so this is a trivial matter usually accomplished by asking each player to press a button to "register" and then associating that controller with that player.
 
-#### Remote Play
+### Remote Play
 
-This is a feature of&#x20;
+This is a feature of Steam API where a remote player can Steam into your local game. Your game will see this user as another local user so if your game is configured for local multiplayer this can usually be used right out of the box
 
-## Networking
+## Unity
+
+### Networking
 
 Installing requirements
 
@@ -54,7 +44,7 @@ Heathen’s Steamworks (I suggest Complete, but Foundation might do you)
 
 [UX Complete](../../../../assets/ux/) can be a big help as well if you want to manage[ your scenes directly](../../../../assets/ux/components/scenes-manager.md) though some HLAPI NMs do some crude scene management.
 
-## Configuring Steam
+### Configuring Steam
 
 Setting up your Steam project. If you going with a P2P model nothing special to be done here but if you're going with a Client-Server setup and intend to build a [Steam Game Server](game-server-browser/) then you also need to configure your Steam App for that. You can read more in Valve's documentation for Steam Game Server [here](https://partner.steamgames.com/doc/features/multiplayer/game\_servers).
 
@@ -62,17 +52,18 @@ For a general understanding of what [P2P ](../../../design/multiplayer/#peer-to-
 
 As to general project architecture check out [these articles](../../../design/bootstrap-scene.md), concepts such as bootstrap scenes can be a big help in most projects.
 
-</details>
+## Unreal
 
-<details>
+Unreal's built-in networking tools and features are unaffected by Steam API and will work as normal. The only consideration to keep in mind is regarding the Online Subsystem. The following link explains what an Online Subsystem is and how it relates to Steamworks Complete.
 
-<summary>Unreal</summary>
+{% content-ref url="../../../../heathens-steamworks-complete/unreal/online-subsystem.md" %}
+[online-subsystem.md](../../../../heathens-steamworks-complete/unreal/online-subsystem.md)
+{% endcontent-ref %}
 
-Unreal's approach to multiplayer is significantly more mature and able. Simply install the [Steam Sockets plugin](https://docs.unrealengine.com/5.3/en-US/using-steam-sockets-in-unreal-engine/) to enable the Steam Sockets netdriver.&#x20;
+The Net Driver you choose defines how you will connect, Unreal's built-in Steam Sockets Net Driver is unfortunately out of date and dependent on the incompatible Online Subsystem Steam.&#x20;
 
-Note that you do not need to use Online Subsystem Steam if you are using Heathen's Steamworks Complete.
-
-[Online Subsystem Steam](https://docs.unrealengine.com/5.3/en-US/online-subsystem-steam-interface-in-unreal-engine/) is a bare-bones Steamworks SDK integration written by Epic directly. It lacks full support for all of Steam APIs features but provides the basics. [Heathen's Steamworks Compelte](../../../../heathens-steamworks-complete/unreal/) on the other hand is a full-featured integration and toolkit expanding on Steam API and integrated deeply with the engine.
-
-</details>
-
+{% hint style="info" %}
+Heathen has created a Steam Networking Sockets Net Driver that is compatible with Heahten's Steamworks Complete and is not dependent on an Online Subsystem.\
+\
+The Net Driver is in preview and currently only available to [GitHub Sponsors](../../../../become-a-sponsor/). Once the driver has been tested and proven it will be added to the Steamworks Complete plugin.
+{% endhint %}

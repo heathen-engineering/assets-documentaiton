@@ -341,6 +341,7 @@
   * [Getting Started](heathens-steamworks-complete/unreal/getting-started.md)
   * [Packaging Tool](heathens-steamworks-complete/unreal/packaging-tool.md)
   * [Game Instance](heathens-steamworks-complete/unreal/game-instance.md)
+  * [Online Subsystem](heathens-steamworks-complete/unreal/online-subsystem.md)
   * [Widgets](heathens-steamworks-complete/unreal/widgets/README.md)
     * [BP\_FriendsListDisplay](heathens-steamworks-complete/unreal/widgets/bp\_friendslistdisplay.md)
     * [BP\_FriendsListEntry](heathens-steamworks-complete/unreal/widgets/bp\_friendslistentry.md)
