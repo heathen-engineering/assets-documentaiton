@@ -61,4 +61,4 @@ Beyond samples we have extensive documentation including how-to guides for nearl
 
 <figure><img src="../../.gitbook/assets/image (371).png" alt=""><figcaption></figcaption></figure>
 
-If you have any questions simply look up ... there you will find our Search tool which is AI-assisted and fairly useful as well as links to our Discord Community where you can get live support.
+If you have any questions simply look up ... there you will find our Search tool which is AI-assisted and fairly useful as well as links to our [Discord Community](https://discord.gg/6X3xrRc) where you can get live support.

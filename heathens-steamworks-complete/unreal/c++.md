@@ -31,7 +31,7 @@ These articles are made possible by our [GitHub Sponsors](../../become-a-sponsor
 
 Heathen's Steamworks Complete is always built on the full raw Steam API for every engine and Unreal Steamworks Complete is no different.
 
-You can access the entire Steam Client and Steam Game Server API fro C++ with minimal effort using our asset.
+You can access the entire Steam Client and Steam Game Server API from C++ with minimal effort using our asset.
 
 ## Step 1
 
