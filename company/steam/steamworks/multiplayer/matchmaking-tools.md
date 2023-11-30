@@ -114,7 +114,48 @@ To learn more check out the [Lobby](../../../../heathens-steamworks-complete/uni
 
 While the developer-facing part of the Steam API calls it a "Lobby" the backend developer-facing calls it a chat, this is because in reality a "Lobby" is just a chat room. This chat room has its own metadata as noted above and each member within it has its own metadata and you can send and receive messages containing byte\[] data between all members without a network connection. Our [Lobby Chat Director](../../../../heathens-steamworks-complete/unity/ui-components/lobby-chat-director.md) can help you get started.
 
-## Working with Lobbies
+### Invite to Lobby
+
+You can invite friends to join a lobby you are a member of This works rather or not the friend is currently in the game. The general workflow for this process is
+
+{% hint style="warning" %}
+When User B clicks "Accept" \
+That DOES NOT join User B to the lobby\
+\
+That simply notifies the game that User B has indicated they would like to join that lobby. \
+\
+It is up to you as a game developer to handle that event appropreatly for your game. Understand that the player could already be in a lobby, they could already be in a match, they could be in the process of exiting. The user that invited them might have invited a ton of other users and now the lobby is full, the user might have clicked Accept hours after the invite was sent ... there are SO MANY reasons why you do not just blindly join the lobby when you get that event.
+{% endhint %}
+
+#### Workflow
+
+#### The user is currently In-Game
+
+1. User A joins or creates a lobby
+2. User A Invites User B to join the lobby
+3. User B clicks the Accept button in the Steam Friends Chat panel (overlay)
+4. Your game client invokes the GameLobbyJoinRequest event
+5. Your game client handles the event validating the lobby and navigating to the appropriate location in the game
+6. Your game client joins the indicated lobby
+
+#### The user is not In-game but does own it
+
+1. User A joins or creates a lobby
+2. User A Invites User B to join the lobby
+3. User B's clicks the Accept button in the Steam Friends Chat panel (overlay)
+4. Steam launches the game passing the Lobby ID in on the command line
+5. Your [bootstrap scene](../../../design/bootstrap-scene.md) loads first and is the place to detect command line arguments such as lobby ID.
+6. Your game client handles the event validating the lobby and navigating to the appropriate location in the game
+7. Your game client joins the indicated lobby
+
+{% hint style="info" %}
+When the user has accepted a lobby invite the ID of the lobby will be made available to them but the lobby's data will not be updated in the local cash.
+
+\
+You should Request Lobby Data for the invited lobby before attempting to read any of its metadata. You can join the lobby without reading the data however if you are properly validating the lobby you will need to read its data before joining.
+{% endhint %}
+
+## Unity Examples
 
 You can work with Lobby in one of 3 main ways; (from lowest level to highest)
 
@@ -130,11 +171,11 @@ All of the functionality of lobby is defined in the [Matchmaking API](../../../.
 
 As the name suggests [this is a tool for managing a lobby](../../../../heathens-steamworks-complete/unity/ui-components/lobby-manager.md). The lobby manager is the easiest way to manage a lobby and is a [Unity component](https://docs.unity3d.com/ScriptReference/Component.html) ... that is you can add it to a GameObject and configure it in Unity editor. The [Lobby Manager](../../../../heathens-steamworks-complete/unity/ui-components/lobby-manager.md) does more than simply expose Matchmaking events to the Unity editor it handles common concepts for you and makes it easier to work with a lobby through designer-friendly tools such as Bolt and other visual scripting assets.
 
-## Player Join / Leave
+### Player Join / Leave
 
 Your first question when managing a lobby is how to know when the user joins or leaves a lobby and what lobby it was that they joined or left. From low level to high here are the notes!
 
-### Matchmaking API
+#### Matchmaking API
 
 [EventLobbyEnterSuccess](../../../../heathens-steamworks-complete/unity/api/matchmaking.client.md#eventlobbyentersuccess) and [EventLobbyEventFailed ](../../../../heathens-steamworks-complete/unity/api/matchmaking.client.md#eventlobbyenterfailed)are raised when the local user tries and succeeds or fails respectively to enter a lobby. Both events return the LobbyEnter structure provided by Steam API.
 
@@ -156,7 +197,7 @@ void HandleLobbyEnterFailed(LobbyEnter arg)
 }
 ```
 
-### Lobby
+#### Lobby
 
 The lobby object Join method takes a callback so for example
 
@@ -186,7 +227,7 @@ So we do a bit more work here so we can understand if it was a success or not, a
 In our example above we used expression to create an anon method. This is a style choice you can learn more about [expression ](../../../development/lambda-expressions.md)and [anon methods](../../../development/callbacks.md#callback-examples) in our other articles.
 {% endhint %}
 
-### Lobby Manager
+#### Lobby Manager
 
 Lobby manager makes this super easy. Using Lobby Manager you don't need to use any code at all if you don't want. You will see right in the inspector an [evtEnterSuccess ](../../../../heathens-steamworks-complete/unity/ui-components/lobby-manager.md#evtentersuccess)and an [evtEnterFailed ](../../../../heathens-steamworks-complete/unity/ui-components/lobby-manager.md#evtenterfailed)event. These work just like the ones on Matchmaking API but of course are accessible from the Unity Editor and only raise for lobbies that were joined through this Lobby Manager.
 
@@ -198,11 +239,11 @@ Lobby Manager only handles events for the lobby that it is "managing" so it is f
 Yes, you can of course use the Lobby Manager from code as much or as little as you would like. Doing so is no different than using any other Unity component from code.
 {% endhint %}
 
-## Others Join / Leave
+### Others Join / Leave
 
 This is how do you know when some other player joins or leaves the lobby that your in. In other words, how do you know when new "peers" come in or go out of the lobby?
 
-### Matchmaking API
+#### Matchmaking API
 
 This is actually handled via the [EventLobbyChatUpdate ](../../../../heathens-steamworks-complete/unity/api/matchmaking.client.md#eventlobbychatupdate)event which is raised any time a chat event occurs ... including when members join or leave.
 
@@ -224,11 +265,11 @@ void HandleChatUpdate(LobbyChatUpdate_t arg)
 }
 ```
 
-### Lobby object
+#### Lobby object
 
-Their is no way to do this from the lobby object as the lobby object is a struct and doesn't define events.&#x20;
+There is no way to do this from the lobby object as the lobby object is a struct and doesn't define events.&#x20;
 
-### Lobby Manager
+#### Lobby Manager
 
 As always the Lobby Manager makes it easier not just by filtering on the lobby for you but also by splitting the event into two. [evtUserJoined ](../../../../heathens-steamworks-complete/unity/ui-components/lobby-manager.md#evtuserjoined)and [evtUserLeft ](../../../../heathens-steamworks-complete/unity/ui-components/lobby-manager.md#evtuserleft)invoke when someone joins or leaves respectively. These events are [UserData ](../../../../heathens-steamworks-complete/unity/data-layer/user-data.md)events meaning they hand you the [UserData ](../../../../heathens-steamworks-complete/unity/data-layer/user-data.md)of the member that joined or left.
 
@@ -246,52 +287,17 @@ void HandleUserLeft(UserData arg)
 }
 ```
 
-## Invite to Lobby
+### Invited to Lobby
 
-You can invite friends to join a lobby you are a member of This works rather or not the friend is currently in the game. The general workflow for this process is
+[Request Lobby Data](../../../../heathens-steamworks-complete/unity/api/matchmaking.client.md#requestlobbydata)
 
-{% hint style="warning" %}
-When User B clicks "Accept" \
-That DOES NOT join User B to the lobby\
-\
-That simply notifies the game that User B has indicated they would like to join that lobby. \
-\
-It is up to you as a game developer to handle that event appropreatly for your game. Understand that the player could already be in a lobby, they could already be in a match, they could be in the process of exiting. The user that invited them might have invited a ton of other users and now the lobby is full, the user might have clicked Accept hours after the invite was sent ... there are SO MANY reasons why you do not just blindly join the lobby when you get that event.
-{% endhint %}
+Gets data about a lobby, if you have been invited to a lobby you will probably want to get data about it before attempting to join it. This can be useful when preparing the lobby UI or to confirm that the lobby is a valid lobby for the local player.
 
-### Workflow
-
-#### The user is currently In-Game
-
-1. User A joins or creates a lobby
-2. User A Invites User B to join the lobby
-3. User B clicks the Accept button in the Steam Friends Chat panel (overlay)
-4. Your game client invokes the GameLobbyJoinRequest event
-5. Your game client handles the event validating the lobby and navigating to the appropriate location in the game
-6. Your game client joins the indicated lobby
-
-#### The user is not In-game but does own it
-
-1. User A joins or creates a lobby
-2. User A Invites User B to join the lobby
-3. User B's clicks the Accept button in the Steam Friends Chat panel (overlay)
-4. Steam launches the game passing the Lobby ID in on the command line
-5. Your [bootstrap scene](../../../design/bootstrap-scene.md) loads first and has the [Steamworks Behaviour](../../../../heathens-steamworks-complete/unity/components/steamworks-behaviour.md) script on it, this will detect that the game was launched with a lobby ID on the command line and will raise an event to notify you of that.
-6. Your game client handles the event validating the lobby and navigating to the appropriate location in the game
-7. Your game client joins the indicated lobby
-
-{% hint style="info" %}
-When the user has accepted a lobby invite the ID of the lobby will be made available to them but the lobbies data will not be updated in the local cash.
-
-\
-You should [RequestLobbyData ](../../../../heathens-steamworks-complete/unity/api/matchmaking.client.md#requestlobbydata)for the invited lobby before attempting to read any of its metadata. You can join the lobby without reading the data however if you are properly validating the lobby you will need to read its data before joining.
-{% endhint %}
-
-### Game Lobby Join Requested
+#### Game Lobby Join Requested Event
 
 This is the event that Valve's Steam will invoke when the user is currently in your game and accepts an invite to a lobby for your game. The event can be found on the [Overlay.Client](../../../../heathens-steamworks-complete/unity/api/overlay.client.md#event-game-lobby-join-requested) and on the [Overlay Manager](../../../../heathens-steamworks-complete/unity/components/overlay-manager.md#evtgamelobbyjoinrequested).
 
-### Command Line
+#### Command Arguments
 
 In the event the user accepts an invite to a lobby in your game and is not currently playing your game then Steam will launch your game with the lobby ID on the command line. We have provided you with tools to make detecting this easy.
 
@@ -312,11 +318,11 @@ if (targetLobby.IsValid)
 }
 ```
 
-## Metadata Change
+### Metadata
 
 You often need to know when data on the lobby or a given member has changed.
 
-### Matchmaking API
+#### Matchmaking API
 
 The [EventLobbyDataUpdate ](../../../../heathens-steamworks-complete/unity/api/matchmaking.client.md#eventlobbydataupdate)event is raised when any sort of data is updated for the lobby or a member.
 
@@ -339,13 +345,13 @@ void HandleDataChanged(LobbyDataUpdateEventData dataUpdated)
 }
 ```
 
-### Lobby object
+#### Lobby object
 
 This cannot be done from the Lobby object alone as it is an event and the struct doesn't have any of the events.
 
-### Lobby Manager
+#### Lobby Manager
 
-Lobby manager is much like the Matchmaking API for this one and uses the [evtDataUpdated](../../../../heathens-steamworks-complete/unity/ui-components/lobby-manager.md#evtdataupdated) method to know when any kind of data has changed.
+Lobby Manager is much like the Matchmaking API for this one and uses the [evtDataUpdated](../../../../heathens-steamworks-complete/unity/ui-components/lobby-manager.md#evtdataupdated) method to know when any kind of data has changed.
 
 ```csharp
 void HandleDataChanged(LobbyDataUpdateEventData dataUpdated)
@@ -366,11 +372,11 @@ void HandleDataChanged(LobbyDataUpdateEventData dataUpdated)
 }
 ```
 
-## Metadata Read/Write
+Metadata Read/Write
 
 Writing lobby metadata data can only be done by the owner of the lobby. Metadata on the lobby is what is used when searching for a lobby and is what you would use to express configuration and settings of the session the lobby deals with. For example if you wanted to let all users know what map the session will be on then you would set a lobby metadata data field map = X.&#x20;
 
-### Matchmaking API
+#### Matchmaking API
 
 Use the [SetLobbyData](../../../../heathens-steamworks-complete/unity/api/matchmaking.client.md#setlobbydata) method to apply lobby data. This can only be done if the user is the owner of the lobby.
 
@@ -381,7 +387,7 @@ else
     ;//Steam said no, your probably not the owner.
 ```
 
-### Lobby Data
+#### Lobby Data
 
 Using the lobby object its a step easier and you have a few options
 
@@ -418,7 +424,7 @@ myLobby.SetType(ELobbyType.k_ELobbyTypeInvisbile);
 myLobby["z_heathenMode"] = "Group";
 ```
 
-### Lobby Manager
+#### Lobby Manager
 
 The lobby manager lets you use both approaches
 
@@ -428,8 +434,6 @@ lobbyManager.SetLobbyData(key, value);
 var lobby = lobbyMannager.Lobby;
 lobby["key"] = "value";
 ```
-
-## General Use Cases
 
 ### Get the Lobby
 
@@ -521,88 +525,7 @@ else
 }
 ```
 
-### Authenticate Users
-
-{% hint style="warning" %}
-Steam Authentication is not used to prove a person is who they say they are. Steam API already does that implicitly so you know if you see them and can be in a lobby with them, then they are in fact who they say they are and do in fact own a license to this app ID.\
-\
-Steam Authentication is used to establish trust between users and other users or between users and Steam Game Servers. In particular it can be used to validate the contents of Steam Inventory and it can be used to check the VAC status of the user in question.
-{% endhint %}
-
-the First, you need to understand what Steam Authentication is and is not and how it works in general. Please read the Steam Authentication article for more information on that. As to how you can use it in lobby.
-
-The Lobby Chat system can send and receive byte\[] data thus you can send Authentication ticket data over the Lobby Chat system. In most cases, we recommend you create a LobbyChatMessage struct for yourself so you can know what kind of message has been sent.
-
-```csharp
-[Serializable]
-public struct CustomChatMessage
-{
-    public enum Type
-    {
-        TextMessage,
-        AuthenticationTicket
-    }
-    
-    public Type type;
-    public byte[] data;
-    public string message;
-}
-```
-
-With something like the above, you could then send the message as
-
-```csharp
-Authentication.GetAuthSessionTicket((ticket, IOError) =>
-{
-    if(!IOError)
-    {
-        var message = new CustomChatMessage
-        {
-            type = CustomChatMessage.Type.AuthenticationTicket,
-            data = ticket.data
-        };
-        lobbyChatDirector.Send(message);
-    }
-});
-```
-
-This would generate an auth ticket and when done it would send that auth ticket over to the lobby chat director. You should handle similarly receiving a chat message.
-
-First, make sure you are listening to the message received event
-
-```csharp
-void Start()
-{
-    lobbyChatDirector.evtMessageRecieved.AddListener(HandleChatMessage);
-}
-```
-
-Then in that handler, you need to work with the message received
-
-```csharp
-void HandleChatMessage(LobbyChatMsg message)
-{
-    var customChatMessage = message.FromJson<CustomChatMessage>();
-    if(customChatMessage.type == CustomChatMessage.Type.AuthenticationTicket)
-    {
-        //Only the user is the owner do we bother with auth
-        if(lobbyManager.IsPlayerOwner)
-        {
-            var responce = Authentication.BeginAuthSession(
-                customChatMessage.data, 
-                message.sender, 
-                result =>
-                {
-                    //... handle the result
-                }
-        }
-    }
-}
-```
-
-You can learn more about handling the result of a `BeginAuthSession` in our article on [Steam Authentication](authentication.md#begin-auth-session).
-
-### Create a Lobby or Group.
+### Create a Lobby
 
 For more information on lobby types see Valve's documentation [https://partner.steamgames.com/doc/api/ISteamMatchmaking#typedefs](https://partner.steamgames.com/doc/api/ISteamMatchmaking#typedefs)&#x20;
 
@@ -649,18 +572,6 @@ if(targetLobby.IsValid)
     });
 }
 ```
-
-### Reading Lobby Data
-
-You can read the metadata of a lobby you have queried for or are a member of without issue. If you wanted to read the data on a lobby you had been invited to it's best to join that lobby first.
-
-{% hint style="info" %}
-If you get the Lobby Join Requested event or if you see the lobby invite ID on the command line then you know the user has already "accepted" the invite and you should join said lobby.\
-\
-Thus it's best to join the lobby and then read its data as a member.
-{% endhint %}
-
-In the rare case where you need to read the data before you join, you would first have to [Request the data](../../../../heathens-steamworks-complete/unity/api/matchmaking.client.md#requestlobbydata) and wait for the [EventLobbyDataUpdate](../../../../heathens-steamworks-complete/unity/api/matchmaking.client.md#eventlobbydataupdate) event to trigger indicating the data had been downloaded.
 
 ### Using Lobby Chat
 
@@ -768,9 +679,160 @@ When users see that event they will use the GameServer information in the lobby 
 CSteamID steamIdToConnectTo = lobby.GameServer.id;
 ```
 
-```csharp
-string
-ushort port = lobby.GameServer.port;
-```
-
 Once your members connect they would typically then leave the lobby ... this is not a requirement simply typical. You do not need the lobby once you have the network session going unless, of course, you're doing the classic "Drop-In/Drop-Out" style gameplay in which case the lobby should persist for the duration of the session.
+
+## Unreal Examples
+
+### Player Join / Leave
+
+A common question asked is how to know the user Joins or Leaves a lobby. A player will not join or leave a lobby if you do not call Join Lobby or Leave Lobby respectively so you define when this will happen.
+
+{% content-ref url="../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/join-lobby.md" %}
+[join-lobby.md](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/join-lobby.md)
+{% endcontent-ref %}
+
+{% content-ref url="../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/leave-lobby.md" %}
+[leave-lobby.md](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/leave-lobby.md)
+{% endcontent-ref %}
+
+### Others Join / Leave
+
+This is how you know when some other player joins or leaves the lobby that you are in. In other words, how do you know when new "peers" come in or go out of the lobby?
+
+{% content-ref url="../../../../heathens-steamworks-complete/unreal/blueprint-nodes/events/lobby-chat-update.md" %}
+[lobby-chat-update.md](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/events/lobby-chat-update.md)
+{% endcontent-ref %}
+
+<figure><img src="../../../../.gitbook/assets/image (374).png" alt=""><figcaption></figcaption></figure>
+
+This event is executed when a user enters or exits. The event tells you the ID of the lobby that was effected, what user it was that was effected, who caused the change if that is different and what change was made.
+
+Note that while "Kicked" is an option for state change that is an internal feature of Steam ... you cannot kick a user out of a lobby at least not with a feature built-in by Valve.
+
+### Invited to Lobby
+
+{% content-ref url="../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/request-lobby-data.md" %}
+[request-lobby-data.md](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/request-lobby-data.md)
+{% endcontent-ref %}
+
+When your player is invited to a lobby they will not have a view of that lobby's data which you may want to check before joining such as to validate that the lobby is suitable for the player's current state.&#x20;
+
+{% content-ref url="../../../../heathens-steamworks-complete/unreal/blueprint-nodes/events/lobby-join-requested.md" %}
+[lobby-join-requested.md](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/events/lobby-join-requested.md)
+{% endcontent-ref %}
+
+The Lobby Join Requested event is executed when the user accepts a lobby invite and is currently in-game.&#x20;
+
+Note the player is not automatically joined to the lobby, it's up to you to validate that the lobby is fit for purpose given the user and state of the game. To then navigate to an appropriate place in the game and join the lobby through the normal means of [Join Lobby](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/join-lobby.md).
+
+If the player accepts an invite but is not currently in the game, then Steam will launch the game with the lobby ID passed in on the command line.
+
+<figure><img src="../../../../.gitbook/assets/image (375).png" alt=""><figcaption></figcaption></figure>
+
+Above we are fetching the command line, checking it for the `+connect_lobby` argument and if found we parse that value to an int64 which we can use as a Lobby ID for other operations such as Requesting the Lobby Data or Joining the Lobby.
+
+### Metadata
+
+To detect when metadata has changed on the lobby or a member of the lobby you can use the Lobby Data Update event.
+
+{% content-ref url="../../../../heathens-steamworks-complete/unreal/blueprint-nodes/events/lobby-data-update.md" %}
+[lobby-data-update.md](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/events/lobby-data-update.md)
+{% endcontent-ref %}
+
+This event is executed when any data changes on a lobby be it data for the lobby itself or a member of the lobby.
+
+You can get or set data on a player's lobby member using Set Lobby Member Data
+
+{% content-ref url="../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/get-lobby-member-data.md" %}
+[get-lobby-member-data.md](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/get-lobby-member-data.md)
+{% endcontent-ref %}
+
+{% content-ref url="../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/set-lobby-member-data.md" %}
+[set-lobby-member-data.md](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/set-lobby-member-data.md)
+{% endcontent-ref %}
+
+Only the members themselves can set their data but any member of the lobby can read it. This is useful for setting things such as player selection, map votes, etc.
+
+The owner of a lobby can do the same on the lobby itself, the data on a lobby can be used to search for and filter lobbies and can be read by anyone not just members of the lobby.
+
+{% content-ref url="../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/get-lobby-data.md" %}
+[get-lobby-data.md](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/get-lobby-data.md)
+{% endcontent-ref %}
+
+{% content-ref url="../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/set-lobby-data.md" %}
+[set-lobby-data.md](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/set-lobby-data.md)
+{% endcontent-ref %}
+
+### Create Lobby
+
+Creating a lobby is a simple function call, once the lobby is created you can then update its data, change its type, mark it as joinable or not, etc.
+
+A lobby is simply an ID, all lobbies will have 1 or more members, you do not "destroy" or "close" a lobby, they simply cease to exist when there are no members in them.
+
+1 user is always said to "own" the lobby, by default, this is the user that created it but that can be changed after e.g. the owner can set a different user as owner.
+
+{% content-ref url="../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/create-lobby.md" %}
+[create-lobby.md](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/create-lobby.md)
+{% endcontent-ref %}
+
+### Find and Join Lobbies
+
+To find a lobby to join you set up a request by adding filters, then making the request. When you make a request it clears the filters so you will need to set up the filters again to make a subsequent request.
+
+{% content-ref url="../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/add-request-lobby-list-filter.md" %}
+[add-request-lobby-list-filter.md](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/add-request-lobby-list-filter.md)
+{% endcontent-ref %}
+
+{% content-ref url="../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/request-lobby-list.md" %}
+[request-lobby-list.md](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/request-lobby-list.md)
+{% endcontent-ref %}
+
+<figure><img src="../../../../.gitbook/assets/image (378).png" alt=""><figcaption></figcaption></figure>
+
+In the above example, we set up a search to find a lobby where map = Some Cool Map Name
+
+We then iterate over the results and get the Lobby by index for each.
+
+The above is not functional but shows you the important nodes to work with. In functional logic, you would build out a more complete search filter, check the result count was greater than zero, and then handle each result as required.
+
+For example, a quick match would simply join the first lobby found. As the Steam Lobby system is a Matchmaking query the first lobby found is the "best" lobby to join.
+
+{% content-ref url="../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/join-lobby.md" %}
+[join-lobby.md](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/join-lobby.md)
+{% endcontent-ref %}
+
+### Using Lobby Chat
+
+A Steam Lobby is little more than a fancy chat room, Steam API even refers to a Lobby ID as a CSteamID of type Chat. You can use a lobby as a chat room sending and receiving data messages without needing a network session. Note that this is a chat, so it's not suitable for real-time data such as Voice Streaming but can handle simple text messages or even send serialized data such as authentication tickets.
+
+{% content-ref url="../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/send-lobby-chat.md" %}
+[send-lobby-chat.md](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/send-lobby-chat.md)
+{% endcontent-ref %}
+
+{% content-ref url="../../../../heathens-steamworks-complete/unreal/blueprint-nodes/events/lobby-chat-msg.md" %}
+[lobby-chat-msg.md](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/events/lobby-chat-msg.md)
+{% endcontent-ref %}
+
+The Lobby Chat Msg event is executed when a chat message is received and can be used with the [Get Lobby Chat Entry](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/get-lobby-chat-entry.md) node to read the message
+
+<figure><img src="../../../../.gitbook/assets/image (379).png" alt=""><figcaption></figcaption></figure>
+
+### Notify "Connect to network"
+
+Steam provides a built-in way to notify members of a lobby when the network is ready for them to connect. This is done by the owner of the lobby calling Set Game Server or its variants.
+
+{% content-ref url="../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/set-lobby-game-server.md" %}
+[set-lobby-game-server.md](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/set-lobby-game-server.md)
+{% endcontent-ref %}
+
+This has several variations for Peer to Peer (where the lobby owner is the server), Steam Game Server (where the server is addressed by an ID) as well as traditional IP/Port-based connection addressing.
+
+When the owner of the lobby calls this all members will receive the Lobby Game Created event.
+
+{% content-ref url="../../../../heathens-steamworks-complete/unreal/blueprint-nodes/events/lobby-game-created.md" %}
+[lobby-game-created.md](../../../../heathens-steamworks-complete/unreal/blueprint-nodes/events/lobby-game-created.md)
+{% endcontent-ref %}
+
+This event provides the connection details for the server to all members&#x20;
+
+<figure><img src="../../../../.gitbook/assets/image (381).png" alt=""><figcaption></figcaption></figure>

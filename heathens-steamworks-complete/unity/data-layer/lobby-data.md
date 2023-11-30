@@ -464,7 +464,23 @@ Invites the indicated user to the lobby
 
 ### Request
 
+```csharp
+public static void Request(ELobbyDistanceFilter distanceFilter, 
+                           int openSlotsRequired, 
+                           int maxResultsToReturn, 
+                           IEnumerable<StringFilter> stringFilters, 
+                           IEnumerable<NearFilter> nearFilters, 
+                           IEnumerable<NumericFilter> numericFilters, 
+                           Action<LobbyData[], bool> callback)
+```
 
+```csharp
+public static void Request(SearchArguments searchArguments, 
+                           int maxResultsToReturn, 
+                           Action<LobbyData[], bool> callback)
+```
+
+Searches for a lobby that matches the arguments
 
 ### Send Chat Message
 
