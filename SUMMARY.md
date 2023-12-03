@@ -142,11 +142,8 @@
 
 ## Heathen's Steamworks Complete
 
-* [Introduction](heathens-steamworks-complete/steamworks.md)
+* [Steamworks Complete](heathens-steamworks-complete/steamworks.md)
 * [F.A.Q](heathens-steamworks-complete/f.a.q.md)
-* [Godot](heathens-steamworks-complete/godot/README.md)
-  * [Installation](heathens-steamworks-complete/godot/installation.md)
-  * [Quick Start](heathens-steamworks-complete/godot/quick-start.md)
 * [Unity](heathens-steamworks-complete/unity/README.md)
   * [Installation](heathens-steamworks-complete/unity/installation/README.md)
     * [Networking Integrations](heathens-steamworks-complete/unity/installation/networking-integrations.md)
@@ -624,6 +621,9 @@
       * [🟨 UEUserHasLicenseForAppResult](heathens-steamworks-complete/unreal/blueprint-nodes/enumerators/ueuserhaslicenseforappresult.md)
       * [🟨 UEVoiceResult](heathens-steamworks-complete/unreal/blueprint-nodes/enumerators/uevoiceresult.md)
   * [C++](heathens-steamworks-complete/unreal/c++.md)
+* [🚧 Godot](heathens-steamworks-complete/godot/README.md)
+  * [Installation](heathens-steamworks-complete/godot/installation.md)
+  * [Quick Start](heathens-steamworks-complete/godot/quick-start.md)
 
 ## More Heathen Tools <a href="#assets" id="assets"></a>
 
