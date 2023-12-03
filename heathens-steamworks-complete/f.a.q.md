@@ -108,17 +108,21 @@ For tools that do integrate with Steam API&#x20;
 For Unreal, anything working with the native Steam API should be fine, anything using Unreal's Online Subsystem Steam will not work.
 
 Why?\
-Online Subsystem Steam is grossly out of date and doesn't fully utilise Steam API so we replace it, you cant have our asset and it working at the same time.
+Online Subsystem Steam is grossly out of date and doesn't fully utilise Steam API so we replace it, as a result, you cannot have both Steamworks COmplete and Online Subsystem Steam active at the same time they will conflict.
 
 ### Unity
 
-For Unity, the relevant information is; Heathen builds on top of Steamworks.NET so anything that makes \*\***Proper**\*\* use of Steamworks.NET will simply work right out of the box.
+For Unity, the relevant information is; that Heathen builds on top of Steamworks.NET so anything that makes \*\***Proper**\*\* use of Steamworks.NET will simply work right out of the box.
+
+Sadly Unity Assets seen on the Asset Store rarely make proper use of Steamworks.NET and very often, very wrongly copy the full Steamworks.NET source into the project root causing a myriad of issues rather or not you use our kit.
+
+We do work with Unity Asset developers such as Mirror, FishNetworking and even the NetCode for GameObjects community to help them make proper use of Steamworks.NET and in those cases, you will have no issues.
 
 How do you know its proper use?
 
 1. Does not embed a copy of Steamworks.NET in its source code. Steamworks.NET should always be installed fresh from GitHub preferably via the Unity Package Manager as described on our [installation page](broken-reference).
 2. Does not make \*\***ANY**\*\* use of SteamManager.cs\
-   SteamManager.cs is an example script originally authored by the same developer that authors Steamworks.NET ... you can find its original form [here](https://github.com/rlabrecque/Steamworks.NET-Example). It is meant to be a demonstration of how a programmer would initialize the Steam API ... it is absolutely not meant to be production code. Sadly many samples, examples and even some "assets" are had coded to use it.
+   SteamManager.cs is an example script originally authored by the same developer that authors Steamworks.NET ... you can find its original form [here](https://github.com/rlabrecque/Steamworks.NET-Example). It is meant to be a demonstration of how a programmer would initialize the Steam API ... it is absolutely not meant to be production code. Sadly many samples, examples and even some "assets" are hard coded to use it.
 
 ## How does networking work?
 
