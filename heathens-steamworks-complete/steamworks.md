@@ -1,7 +1,7 @@
 ---
 description: >-
-  Power integration of Steamworks SDK for Unity & Unreal. More than just another
-  API wrapper! Get easy-to-use editor tools, proven systems, impeccable support,
+  More than just another API wrapper, it's a powerful Steamworks integration for
+  Unity & Unreal. Easy-to-use editor tools, proven systems, impeccable support,
   a rich knowledge base & friendly community
 cover: ../.gitbook/assets/Banner@8x-100.jpg
 coverY: 0
