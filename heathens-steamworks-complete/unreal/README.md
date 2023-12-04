@@ -47,6 +47,10 @@ We expose the native Steamworks SDK to you in both C++ and Blueprints and extend
 
 That is literal, we do more than simply wrap up the old-school C-style Steamworks SDK into a more modern set of window trimming. We build on top of Steamworks with editor extensions and engine-specific features to make working with Steam as "native" feeling to the engine you choose as possible. Our extensions are an extension, not a replacement, the full, unadulterated Steamwroks SDK is at your command as well as our robust proven systems and tools.
 
+### Work Your Way
+
+<table data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><h2>C++</h2></td><td>Simple full access to the native Steam APIs in C++ with no faffing about required.</td><td></td></tr><tr><td><h2>Blueprints</h2></td><td>Access every function and event available through Steam API in Blueprints no C++ required.</td><td></td></tr><tr><td><h2>Tools</h2></td><td>Steam Save Game, Steam Game Instance, prebuilt widgets, Sample level and much more.</td><td>Do More with Heathen!</td></tr></tbody></table>
+
 ### Proved Reliability
 
 We have developed and maintained Heathen's Steamworks Complete for more than a decade. In that time we have learned a lot not just about Steam and the engines we support but what a developer needs to deliver a successful project. Heathen's Steamworks Complete is trusted by thousands of developers big and small and drives hundreds of games from small passion projects to major professional titles.
@@ -78,7 +82,3 @@ Heathen's Steamworks Complete is as its name suggests a complete solution. Our p
 #### More than "Just Another Steam API Wrapper"
 
 Heathen's Steamworks Complete exposes the whole of Steamworks in C++ code of course and everything is also exposed to Blueprints in an Unreal friendly manner. Beyond that, we have created systems, tools and extensions that bridge the concepts and approaches of Unreal and Steam, for example, the Steam Game Instance, Steam Save Game, etc. The goal of the kit is to enable you to do more and to make Steam feel like a native extension of the engine you choose.
-
-### Work Your Way
-
-<table data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><h2>C++</h2></td><td>Simple full access to the native Steam APIs in C++ with no faffing about required.</td><td></td></tr><tr><td><h2>Blueprints</h2></td><td>Access every function and event available through Steam API in Blueprints no C++ required.</td><td></td></tr><tr><td><h2>Tools</h2></td><td>Build Tool, prebuilt widgets for common use cases and much more.</td><td>Do More with Heathen!</td></tr></tbody></table>
