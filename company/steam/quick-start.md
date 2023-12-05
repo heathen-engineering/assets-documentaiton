@@ -14,14 +14,6 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction
 
-{% hint style="info" %}
-### Working in Unreal, Unity or Godot?
-
-We author the top [Steam Integration](../../heathens-steamworks-complete/steamworks.md) for Unreal, Unity & are porting to Godot!
-
-[Learn More!](../../heathens-steamworks-complete/steamworks.md)
-{% endhint %}
-
 Your first step is to navigate to [partner.steamworks.com](https://partner.steamgames.com/) we strongly recommend you create a new Steam account to represent you as a publisher or developer separate from any personal account/s you might have. Remember, new Steam accounts start as "limited" Put $5 in your Steam wallet to get around this.&#x20;
 
 {% embed url="https://partner.steamgames.com/" %}
@@ -53,34 +45,32 @@ Once you're all set up as a Steam Developer and have your App ID your next step 
 
 Steam API is of tremendous value especially for small and indie developers as it is a power set of backend services and is completely free for you to use. We strongly recommend you understand what Steam API can do for your game before you commit your design. The best and most successful games fully exploit Steam's features.
 
-## Installing Heathen's Steamworks
+### Tools
 
-Now that you have made the wise decision to use Heathen's Steamworks to integrate Steam API with your game project on [Unreal](../../heathens-steamworks-complete/unreal/installation.md), [Unity](../../heathens-steamworks-complete/unity/installation/) or [Godot ](../../heathens-steamworks-complete/godot/installation.md)you will need to get it installed and configured for use!
+Heathen's Steamworks Complete is the best tool for Valve's Steamworks SDK in Unreal, Unity or Godot (preview). The tool has been maintained and updated for more than a decade, is trusted by thousands of developers and drives hundreds of games on Steam. Steamworks Complete is more than just an API wrapper and includes engine-specific tools and systems on top of a complete integration of Valve's Steam APIs.
 
-[Install Heathen's Steamworks for Unreal](../../heathens-steamworks-complete/unreal/installation.md)
+<figure><img src="../../.gitbook/assets/Short Banner@2x.png" alt="Steamworks Complete"><figcaption></figcaption></figure>
 
-[Install Heathen's Steamworks for Unity](../../heathens-steamworks-complete/unity/installation/)
-
-[Install Heathen's Steamworks for Godot](../../heathens-steamworks-complete/godot/installation.md)
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Complete</td><td><a href="https://github.com/sponsors/heathen-engineering">GitHub | Patreon</a></td><td><a href="https://www.unrealengine.com/marketplace/en-US/product/ad658ddf5c434478acb95f9091ea279c">Marketplace</a></td><td><a href="../../.gitbook/assets/UnrealCardCover.png">UnrealCardCover.png</a></td><td><a href="../../heathens-steamworks-complete/unreal/">unreal</a></td></tr><tr><td>Complete | Foundation</td><td><a href="https://github.com/sponsors/heathen-engineering">Gitub | Patreon</a></td><td><a href="https://assetstore.unity.com/packages/tools/integration/steam-api-steamworks-complete-246652">Asset Store</a></td><td><a href="../../.gitbook/assets/UnityCardCover.png">UnityCardCover.png</a></td><td><a href="../../heathens-steamworks-complete/unity/">unity</a></td></tr><tr><td>Foundation</td><td><a href="https://github.com/heathen-engineering/SteamworksFoundation">GitHub</a></td><td></td><td><a href="../../.gitbook/assets/GodotCardCover.png">GodotCardCover.png</a></td><td><a href="../../heathens-steamworks-complete/godot/">godot</a></td></tr></tbody></table>
 
 ## Unlearning Bad Habits
 
-Unfortunately, there is a lot of just bad sample and example code out there, especially around Steamworks / Steam API for Unity. Even Unreal's own built-in Online Subsystem Steam and Steam Sockets plugins are well out of date and can be problematic. Here are some common things you might have picked up or learned that you should throw out right now.
+Unfortunately, there is a lot of just bad sample and example code out there, especially around Steamworks / Steam API for Unity. Even Unreal's own built-in Online Subsystem Steam and Steam Sockets plugins are very out-of-date and make some odd uses of the API that do not align with "good practice" as defined by Valve. Here are some common things you might have picked up or learned that you should throw out right now.
 
 ### Unreal's Online Subsystem Steam
 
-1st understand what an Online Subsystem is. ... TL;DR it is not a full-featured platform integration, very specifically it is a limited platform integration that attempts to normalize platform features.
+1st understand what an Online Subsystem is. ... TL;DR is not a full-featured platform integration, very specifically it is a limited platform integration that attempts to normalize platform features for many platforms into a common set. This means it will never be a complete solution, it's not trying to be a complete solution.
 
 {% hint style="warning" %}
-Online Subsystem Steam and the related Steam Socket plugin from Epic Games for Unreal is really very far out of date. Even if you wanted to keep to the Online Subsystem model. The Online Subsystem Steam is a bit of a liability you should be aware of.
+Online Subsystem Steam and the related Steam Socket plugin from Epic Games for Unreal is really very far out of date. Even if you wanted to keep to the Online Subsystem model. The Online Subsystem Steam is a liability you should be aware of.
 {% endhint %}
 
-In Unreal they have a standard approach to online systems e.g. friends, chat, sessions, etc. that is the "Epic" way to do things. They have created "Online Subsystem" implementations of many popular live operations/backend services such as "Online Subsystem Steam" ... as well as Facebook, Google, etc.
+In Unreal they have a standard approach to online systems e.g. friends, chat, sessions, etc. that is the "Epic" way to do things. They have created an "Online Subsystem" framework of many popular live operations/backend services such as "Online Subsystem Steam" ... as well as Facebook, Google, etc.
 
 Online Subsystem Steam shoehorns the Steam API and tries to make it fit the Epic concept of an Online Subsystem.&#x20;
 
-{% hint style="success" %}
-This can be useful when you want to do a multi-platform game and have all the different builds have the same basic online features but use each individual platform (we don't recommend this).
+{% hint style="info" %}
+This can be useful when you want to do a multi-platform game and have all the different builds have the same basic online features but use each platform (we don't recommend this).
 {% endhint %}
 
 {% hint style="danger" %}
