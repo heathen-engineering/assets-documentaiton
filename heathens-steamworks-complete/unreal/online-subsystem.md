@@ -55,6 +55,6 @@ In all cases, these platforms are platforms and not simply "Live Ops" solutions.
 
 Steam API doesn't have to have any impact on your multiplayer set-up or management of sessions. The API offers inventory services, leaderboards, stats, achievements and many other features that are not limited to networking or multiplayer topics.
 
-For multiplayer games, an Online Subsystem is not required. It is the configured Net Driver that actually handles the network transport. Unreal's synchronization handles syncing data. The Online Subsystem is primarily a means to find and advertise "sessions".
+For multiplayer games, an Online Subsystem is not required. It is the configured Net Driver that handles the network transport. Heathen has developed a [Sockets Net Driver](sockets-net-driver.md) that is not dependent on an Online Subsystem that leverages Steam Networking Sockets find more [here](sockets-net-driver.md). Unreal's synchronization handles syncing data. The Online Subsystem is primarily a means to find and advertise "sessions".
 
 Platforms such as Steam have their own mechanisms to create, find and share sessions of various types and Heathen provides you with the tools to use those features. See our [Multiplayer ](../../company/steam/steamworks/multiplayer/)articles for more information on the tools, systems and concepts at play with Multiplayer games on Steam.
