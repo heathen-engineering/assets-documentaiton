@@ -17,7 +17,7 @@ layout:
     visible: true
 ---
 
-# 🔵 Has Friend
+# 🔵 Get Lobby Members
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -29,20 +29,24 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-Check if the user meets the specified criteria. (Friends, blocked, users on the same server, etc)
+Gets an array of the members of this lobby.
 
-### Steam Id
+{% hint style="info" %}
+You can only read the members of a lobby you are a member of.
+{% endhint %}
 
-The user you want to check if it is a friend (with flag) of the local player.
+### Lobby Id
 
-### Flag
+The lobby ID to read data from
 
-The criteria to check if the indicated friend is part of. This is a [UEFriendFlags ](../enumerators/uefriendflags.md)value.
+### Include Local User
+
+Should the local user be included in the results?
 
 ### Return Value
 
-**true** if the specified user meets any of the criteria specified, otherwise, **false**.
+An array of int64 represents the ID of the members of this lobby.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (383).png" alt=""><figcaption></figcaption></figure>

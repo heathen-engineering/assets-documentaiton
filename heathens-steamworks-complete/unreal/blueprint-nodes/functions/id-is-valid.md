@@ -17,7 +17,7 @@ layout:
     visible: true
 ---
 
-# 🔵 Has Friend
+# 🔵 Id is Valid
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -29,20 +29,16 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-Check if the user meets the specified criteria. (Friends, blocked, users on the same server, etc)
+Check if the Steam ID is valid, this does not ensure that the ID evaluates to a legitimate user, lobby, etc. It simply checks if the ID is of a valid structure.
 
 ### Steam Id
 
-The user you want to check if it is a friend (with flag) of the local player.
-
-### Flag
-
-The criteria to check if the indicated friend is part of. This is a [UEFriendFlags ](../enumerators/uefriendflags.md)value.
+The user you want to check
 
 ### Return Value
 
-**true** if the specified user meets any of the criteria specified, otherwise, **false**.
+**true** if the id is valid, otherwise, **false**.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (384).png" alt=""><figcaption></figcaption></figure>

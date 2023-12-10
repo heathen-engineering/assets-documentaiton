@@ -17,7 +17,7 @@ layout:
     visible: true
 ---
 
-# 🔵 Has Friend
+# 🔵 Is Lobby Owner
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -29,20 +29,16 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-Check if the user meets the specified criteria. (Friends, blocked, users on the same server, etc)
+Check if the local user is the owner of this lobby.
 
-### Steam Id
+### Lobby Id
 
-The user you want to check if it is a friend (with flag) of the local player.
-
-### Flag
-
-The criteria to check if the indicated friend is part of. This is a [UEFriendFlags ](../enumerators/uefriendflags.md)value.
+The Lobby ID to check if the local user is the owner of.
 
 ### Return Value
 
-**true** if the specified user meets any of the criteria specified, otherwise, **false**.
+**true** if the user owns the lobby, otherwise **false**.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (382).png" alt=""><figcaption></figcaption></figure>
