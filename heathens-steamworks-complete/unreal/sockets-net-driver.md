@@ -41,8 +41,16 @@ The specifics of your Engine.ini may change when installing the plugin as part o
 
 ### Class Name
 
-`SteamworksComplete.NetSocketsNetDriver` is the formal name of the NetDriver for example, assuming you have installed the plugin from GitHub as part of your project (e.g. a project plugin) your NetDriverDefinitions entry might take the form
+`SteamworksComplete.NetSocketsNetDriver` is the formal name of the NetDriver and `SteamworksComplete.NetSocketsNetConnection` is the formal name of the connection class for example, assuming you have installed the plugin from GitHub as part of your project (e.g. a project plugin) your NetDriverDefinitions entry and Plugins config might take the form
 
 ```ini
-+NetDriverDefinitions=(DefName="SteamNetDriver",DriverClassName="/Script/SteamworksComplete.NetSocketsNetDriver",DriverClassNameFallback="/Script/SteamworksComplete.NetSocketsNetDriver")
+[/Script/Engine.Engine]
+!NetDriverDefinitions=ClearArray
++NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="SteamworksComplete.NetSocketsNetDriver",DriverClassNameFallback="SteamworksComplete.NetSocketsNetDriver")
+
+[/Script/SteamworksComplete.NetSocketsNetDriver]
+NetConnectionClassName="SteamworksComplete.NetSocketsNetConnection"
+
+[Plugins]
+EnabledPlugins=SteamworksComplete
 ```
