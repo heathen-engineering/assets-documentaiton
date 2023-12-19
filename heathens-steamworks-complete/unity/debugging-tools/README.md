@@ -31,7 +31,13 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ![Toggle this on](<../../../.gitbook/assets/image (3) (1) (3) (1) (1).png>)
 
-When toggled on Heathen's tools will write additional verbose information in particular around initialization which is the most common point of error. If you have not finished testing and are not building a fully tested, production ready, release build ... then you should have this turned on.
+{% hint style="info" %}
+The Steamworks Inspector requires the use of Steamworks Behaviour for the time being.\
+\
+That is if you want to use the Steamworks Inspector to review the state of objects in the editor then you need to be using the [Steamworks Behaviour method of initialization](../quick-start-guide/gameobject-initialization.md) as the inspector uses the Beahvioru to run corioutines and similar.
+{% endhint %}
+
+When toggled on Heathen's tools will write additional verbose information in particular around initialization which is the most common point of error. If you have not finished testing and are not building a fully tested, production-ready, release build ... then you should have this turned on.
 
 ## Steamworks Inspector
 
@@ -48,7 +54,7 @@ or
 {% hint style="warning" %}
 #### IMPORTANT
 
-The inspector's data only populate while the simulation is running.
+The inspector's data only populates while the simulation is running.
 {% endhint %}
 
 The Home page of the inspector displays core values for your user and the app its self. This is the first place you should check, and you should do the following
@@ -61,9 +67,9 @@ The Home page of the inspector displays core values for your user and the app it
 
 ![](<../../../.gitbook/assets/image (151) (1).png>)
 
-If you answered no to any of the above questions your issue is on step 1. That is your not configured correctly to initialize Steam and or you do not have the Steam client up and running with a valid user logged in.
+If you answered no to any of the above questions your issue is on step 1. That is you are not configured correctly to initialize Steam and or you do not have the Steam client up and running with a valid user logged in.
 
-If for example you find that the App ID does not match then what you most likely did was to change the App ID in the Steam Settings file but did not fully shut down Unity, Visual Studio and absolutely everything else that might have mounted it; e.g. Unity, Visual Studio or any related process.
+If for example, you find that the App ID does not match then what you most likely did was to change the App ID in the Steam Settings file but did not fully shut down Unity, Visual Studio and absolutely everything else that might have mounted it; e.g. Unity, Visual Studio or any related process.
 
 The reason this happens is that Valve will not release app initialization until every process that mounted its handles has closed. This is the single most common issue we have reported.
 
@@ -136,4 +142,4 @@ The inventory tab will display all the items registered to your game and provide
 
 ![](<../../../.gitbook/assets/image (185) (1).png>)
 
-The lobbies tab will populate a sub page for each detected lobby and will display the list of members and the lobby's metadata.
+The lobbies tab will populate a sub-page for each detected lobby and will display the list of members and the lobby's metadata.
