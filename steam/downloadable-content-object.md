@@ -65,7 +65,7 @@ Modern DLC are not actually content that you download, they are far more offten 
 
 ### Is Subscribed
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In Steam you don't "own" a game or app, you are "subscribed" to it. So to check for ownership of a given DLC, use the Steam Is Subscribed App node.
 
@@ -79,7 +79,7 @@ bool result = SteamApps()->BIsSubscribedApp(app);
 
 ### Iterate over DLC
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 It's often handy to iterate over all your DLC such as to list them in the game or open the Overlay to the store pages. We have provided a number of nodes to help you do just that.
 

@@ -76,6 +76,22 @@ Next, copy the SteamworksComplete folder into your Plugins folder. You'll find t
 
 When done your folder should look similar to the above.
 
+#### Modify the Plugin configuration
+
+If you do not own the Plugin from the Unreal Marketplace then the Epic editor will see that this plugin is also a Marketplace plugin and expect you to download it from there
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+You have 2 options to sidestep this, 1 you could deploy it as an engine plugin (personly not my preference) or you can modify the SteamworksComplete.uplugin to empty the `MarkeplaceURL` node, as shown below
+
+```ini
+{
+    ...
+    "MarketplaceURL": "",
+    ...
+}
+```
+
 #### Generate files
 
 Next, right-click on the .uproject file and select Generate Visual Studio project files

@@ -283,7 +283,7 @@ Uploading a score is a matter of providing a score and optionally details.
 
 You can attach a file to the leaderboard for the user, this is often useful to store replays or can be used to store rich information about the user's entry. The attached file will always be related to the local user.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 To attach a file you first need to upload the file to Steam's Remote Storage, once the file is uploaded you need to mark it for sharing. This will provide you with a UGC Handle that can be assigned to the board.
 
