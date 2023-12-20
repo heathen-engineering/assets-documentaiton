@@ -56,8 +56,8 @@ As to general project architecture check out [these articles](../../../design/bo
 
 Unreal's built-in networking tools and features are unaffected by Steam API and will work as normal. The only consideration to keep in mind is regarding the Online Subsystem. The following link explains what an Online Subsystem is and how it relates to Steamworks Complete.
 
-{% content-ref url="../../../../heathens-steamworks-complete/unreal/online-subsystem.md" %}
-[online-subsystem.md](../../../../heathens-steamworks-complete/unreal/online-subsystem.md)
+{% content-ref url="../../../../heathens-toolkit-for-steamworks-sdk/unreal/online-subsystem.md" %}
+[online-subsystem.md](../../../../heathens-toolkit-for-steamworks-sdk/unreal/online-subsystem.md)
 {% endcontent-ref %}
 
 The Net Driver you choose defines how you will connect, Unreal's built-in Steam Sockets Net Driver is unfortunately out of date and dependent on the incompatible Online Subsystem Steam.&#x20;

@@ -80,7 +80,7 @@ Once you have your items you should upload them to the Steam Developer Portal as
 Now that you have items defined in your Steam Developer Portal, and you have representations of those items in your Unity Project linked with your Steam Settings you can use Heathen's tools to manage the items at both dev time and run time.
 
 {% hint style="info" %}
-The Inventory Item Definitions stored in your Steam Settings object act as an inventory. See the [Inventory Item](../../heathens-steamworks-complete/unity/scriptable-objects/item-definition.md) documentation for more information.
+The Inventory Item Definitions stored in your Steam Settings object act as an inventory. See the [Inventory Item](../../heathens-toolkit-for-steamworks-sdk/unity/scriptable-objects/item-definition.md) documentation for more information.
 {% endhint %}
 
 For developers needing to test, you can use the Steamworks Inspector to inspect, grant and clear items from your inventory. This is particularly useful since you can not use Steam client to view items for a game that is not yet released so the only way to view your items before release is to use our tool.

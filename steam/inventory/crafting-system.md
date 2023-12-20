@@ -44,14 +44,14 @@ The steps of exchange are as follows
 
 * &#x20;Get references to the specific items that will be exchanged\
   You can use the Get Exchange Entry for this step
-  * [Item Definition Get Exchange Entry](../../heathens-steamworks-complete/unity/scriptable-objects/item-definition.md#get-exchange-entry)
-  * [Item Data Get Exchange Entry](../../heathens-steamworks-complete/unity/data-layer/item-data.md#get-exchange-entry)
-  * [Inventory API Get Exchange Entry](../../heathens-steamworks-complete/unity/api/inventory.client.md#exchange-items)
+  * [Item Definition Get Exchange Entry](../../heathens-toolkit-for-steamworks-sdk/unity/scriptable-objects/item-definition.md#get-exchange-entry)
+  * [Item Data Get Exchange Entry](../../heathens-toolkit-for-steamworks-sdk/unity/data-layer/item-data.md#get-exchange-entry)
+  * [Inventory API Get Exchange Entry](../../heathens-toolkit-for-steamworks-sdk/unity/api/inventory.client.md#exchange-items)
 * On the item you wish to "craft" exchange the reagents you just collected\
   You can use the Exchange feature for this step
-  * [Item Definition Exchange](../../heathens-steamworks-complete/unity/scriptable-objects/item-definition.md#exchange-1)
-  * [Item Data Exchange](../../heathens-steamworks-complete/unity/data-layer/item-data.md#exchange)
-  * [Inventory API Exchange](../../heathens-steamworks-complete/unity/api/inventory.client.md#exchange-items)
+  * [Item Definition Exchange](../../heathens-toolkit-for-steamworks-sdk/unity/scriptable-objects/item-definition.md#exchange-1)
+  * [Item Data Exchange](../../heathens-toolkit-for-steamworks-sdk/unity/data-layer/item-data.md#exchange)
+  * [Inventory API Exchange](../../heathens-toolkit-for-steamworks-sdk/unity/api/inventory.client.md#exchange-items)
 
 ## Definition Recipes
 
@@ -145,15 +145,15 @@ To craft an item ... that is to exchange a set of materials/reagents for an item
 
 ### Using Item Definition
 
-Read the [Item Definition article's Exchange](../../heathens-steamworks-complete/unity/scriptable-objects/item-definition.md#exchange-1) section for a detailed example.
+Read the [Item Definition article's Exchange](../../heathens-toolkit-for-steamworks-sdk/unity/scriptable-objects/item-definition.md#exchange-1) section for a detailed example.
 
 ### Using Item Data
 
-Read the [Item Data article's Exchange](../../heathens-steamworks-complete/unity/data-layer/item-data.md#exchange-items) section for a detailed example.
+Read the [Item Data article's Exchange](../../heathens-toolkit-for-steamworks-sdk/unity/data-layer/item-data.md#exchange-items) section for a detailed example.
 
 ## Unreal Examples
 
-[Exchange Items](../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/exchange-items.md) lets you pass in an array of [Item Count](../../heathens-steamworks-complete/unreal/blueprint-nodes/types/item-count.md) to exchange for a given item. The callback works much like the [Get All Items](../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/get-all-items.md) discussed in the [Inventory](../../company/steam/steamworks/inventory/) article.
+[Exchange Items](../../heathens-toolkit-for-steamworks-sdk/unreal/blueprint-nodes/functions/exchange-items.md) lets you pass in an array of [Item Count](../../heathens-toolkit-for-steamworks-sdk/unreal/blueprint-nodes/types/item-count.md) to exchange for a given item. The callback works much like the [Get All Items](../../heathens-toolkit-for-steamworks-sdk/unreal/blueprint-nodes/functions/get-all-items.md) discussed in the [Inventory](../../company/steam/steamworks/inventory/) article.
 
 To use the feature you first need to know what item ID you want to "craft" i.e. exchange other items for.&#x20;
 

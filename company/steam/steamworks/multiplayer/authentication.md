@@ -41,7 +41,7 @@ The intended use of Steam Authentication is that the subject who wishes to authe
 
 ### Generate Ticket
 
-[Get Auth  Session Ticket](../../../../heathens-steamworks-complete/unity/api/authentication.md#getauthsessionticket)
+[Get Auth  Session Ticket](../../../../heathens-toolkit-for-steamworks-sdk/unity/api/authentication.md#getauthsessionticket)
 
 ```csharp
 Authentication.GetAuthSessionTicket(identity, (ticket, IOError) =>
@@ -76,7 +76,7 @@ Each ticket can be used exactly once and does expire after some time. So for exa
 
 ### Begin Auth Session
 
-[Begin Auth Session](../../../../heathens-steamworks-complete/unity/api/authentication.md#beginauthsession)
+[Begin Auth Session](../../../../heathens-toolkit-for-steamworks-sdk/unity/api/authentication.md#beginauthsession)
 
 ```csharp
 void AuthenticatUser(byte[] ticket, UserData user)
@@ -150,7 +150,7 @@ Having authenticated a user allows for a few additional features. For example, a
 
 ### End Auth Session
 
-[End Auth Session](../../../../heathens-steamworks-complete/unity/api/authentication.md#endauthsession)
+[End Auth Session](../../../../heathens-toolkit-for-steamworks-sdk/unity/api/authentication.md#endauthsession)
 
 ```csharp
 void UserLoggedOff(UserData user)
@@ -167,11 +167,11 @@ A common use for authentication sessions is to validate that a given user owns s
 
 You can either serialize the local user's whole inventory (rare)
 
-[Serialize All Item Results](../../../../heathens-steamworks-complete/unity/api/inventory.client.md#serializeallitemresults)
+[Serialize All Item Results](../../../../heathens-toolkit-for-steamworks-sdk/unity/api/inventory.client.md#serializeallitemresults)
 
 or you can serialize specific items (more common)
 
-[Serialize Item Results By ID](../../../../heathens-steamworks-complete/unity/api/inventory.client.md#serializeitemresultsbyid)
+[Serialize Item Results By ID](../../../../heathens-toolkit-for-steamworks-sdk/unity/api/inventory.client.md#serializeitemresultsbyid)
 
 In either case, the result is a byte\[] of data that represents the inventory state at the time of serialization, who that inventory was read from and when it was read.
 
@@ -194,7 +194,7 @@ The specifics of sending the data are between you and your networking tools, the
 
 When your peer or server receives this data they can read its details
 
-[Deserialize Result](../../../../heathens-steamworks-complete/unity/api/inventory.client.md#destroyresult)
+[Deserialize Result](../../../../heathens-toolkit-for-steamworks-sdk/unity/api/inventory.client.md#destroyresult)
 
 ```csharp
 void ValidateInventory(UserData user, byte[] data)

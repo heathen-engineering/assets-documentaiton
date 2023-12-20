@@ -69,7 +69,7 @@ A Session Lobby is simply the lobby you use for matchmaking and preparing the se
 
 ### Set Game Server
 
-A feature of Steam's Lobby system. SetGameServer is a method available to you on the [Lobby](../../../../heathens-steamworks-complete/unity/data-layer/lobby-data.md) and through the [Matchmaking ](../../../../heathens-steamworks-complete/unity/api/matchmaking.client.md)API. Only the owner of the lobby can call this method.
+A feature of Steam's Lobby system. SetGameServer is a method available to you on the [Lobby](../../../../heathens-toolkit-for-steamworks-sdk/unity/data-layer/lobby-data.md) and through the [Matchmaking ](../../../../heathens-toolkit-for-steamworks-sdk/unity/api/matchmaking.client.md)API. Only the owner of the lobby can call this method.
 
 What it does is when this is called it will cause an event to be raised on all the members of the lobby to notify them that the server's connection information has been set and they can now join it.
 
@@ -99,7 +99,7 @@ It is not compatible with Heathen's Steamworks Complete and is built on an out-o
 The limitations and drawbacks of Online Subsystem Steam are one of many reasons to choose Heathen's Steamworks Complete for Unreal over Unreal's built-in solution.
 {% endhint %}
 
-For more information on [Online Subsystem](../../../../heathens-steamworks-complete/unreal/online-subsystem.md) check out our article in the Steamworks Unreal section.
+For more information on [Online Subsystem](../../../../heathens-toolkit-for-steamworks-sdk/unreal/online-subsystem.md) check out our article in the Steamworks Unreal section.
 
 Your ability to set up multiplayer games is not bound to Steam API. Steam does provide a low-level transport called Steam Networking Sockets and Heathen does provide an Unreal NetDriver for it.
 

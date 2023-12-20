@@ -8,7 +8,7 @@ Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant 
 These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
-## &#x20;Introduction
+## Introduction
 
 Steam's Rich Presence is what populates all the details about a user in the Friends list and importantly for multiplayer games, it's what enables the "Join Game" button on the Steam friends list.
 
@@ -23,7 +23,7 @@ What happens when a user presses that button is&#x20;
    2. Provide the connect string as a command line parameter
 2. If the game is already running
    1. Invoke the Game Rich Presence Join Requested event\
-      You can find this event on [API.Overlay.Client](../../../../heathens-steamworks-complete/unity/api/overlay.client.md#game-rich-presence-join-requested) or by using the [Overlay Manager](../../../../heathens-steamworks-complete/unity/components/overlay-manager.md#evtrichpresencejoinrequested)
+      You can find this event on [API.Overlay.Client](../../../../heathens-toolkit-for-steamworks-sdk/unity/api/overlay.client.md#game-rich-presence-join-requested) or by using the [Overlay Manager](../../../../heathens-toolkit-for-steamworks-sdk/unity/components/overlay-manager.md#evtrichpresencejoinrequested)
 
 ## Enable
 

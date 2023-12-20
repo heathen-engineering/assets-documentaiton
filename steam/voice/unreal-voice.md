@@ -1,5 +1,5 @@
 ---
-cover: ../../.gitbook/assets/Unreal Banner@4x-100.jpg
+cover: ../../.gitbook/assets/Unreal Banner@2x.png
 coverY: 0
 ---
 
@@ -13,7 +13,7 @@ Heathen's Steamworks Complete exposes all the necessary features to get and play
 
 Before you try to get and use voice data you would want to know if there is any data available, this would depend on you starting and stopping voice recording as well.
 
-[Stop](../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/stop-voice-recording.md), [Start](../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/start-voice-recording.md) and [Get Available Voice](../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/get-available-voice.md) can be used for this purpose.
+[Stop](../../heathens-toolkit-for-steamworks-sdk/unreal/blueprint-nodes/functions/stop-voice-recording.md), [Start](../../heathens-toolkit-for-steamworks-sdk/unreal/blueprint-nodes/functions/start-voice-recording.md) and [Get Available Voice](../../heathens-toolkit-for-steamworks-sdk/unreal/blueprint-nodes/functions/get-available-voice.md) can be used for this purpose.
 
 <figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
@@ -23,7 +23,7 @@ Before you try to get and use voice data you would want to know if there is any 
 
 Steam API provides the necessary tools to get compressed voice audio from the player's active audio input device if any.
 
-### [Steam Get Voice](../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/get-voice.md)
+### [Steam Get Voice](../../heathens-toolkit-for-steamworks-sdk/unreal/blueprint-nodes/functions/get-voice.md)
 
 The Steam Get Voice node will return a result indicating the state of the data and the data as a compressed array of bytes.
 
@@ -35,6 +35,6 @@ It up to you how you send this data to those that might want to play it back. In
 
 To Stream voice data it's up to you to receive the compressed data from whatever source you wish to playback from, typically this would be a server sending you the data.
 
-### [Decompress Voice](../../heathens-steamworks-complete/unreal/blueprint-nodes/functions/decompress-voice.md)
+### [Decompress Voice](../../heathens-toolkit-for-steamworks-sdk/unreal/blueprint-nodes/functions/decompress-voice.md)
 
 The Steam Decompress Voice node takes in the compressed data and is a reference to a Procedural Sound Wave. It will then load the received data and indicate the state of that process. Once completed you can simply play the Procedural Sound Wave as either 2D or 3D, this system will continue to queue new audio onto the sound wave as it is received.
