@@ -47,7 +47,7 @@ Steam API is of tremendous value especially for small and indie developers as it
 
 ### Tools
 
-Heathen's Steamworks Complete is the best tool for Valve's Steamworks SDK in Unreal, Unity or Godot (preview). The tool has been maintained and updated for more than a decade, is trusted by thousands of developers and drives hundreds of games on Steam. Steamworks Complete is more than just an API wrapper and includes engine-specific tools and systems on top of a complete integration of Valve's Steam APIs.
+Heathen's Toolkit for Steamworks SDK is the best tool for Valve's Steamworks SDK in Unreal, Unity or Godot (preview). The tool has been maintained and updated for more than a decade, is trusted by thousands of developers and drives hundreds of games on Steam. Toolkit for Steamworks is more than just an API wrapper and includes engine-specific tools and systems on top of a complete integration of Valve's Steam APIs.
 
 <figure><img src="../../.gitbook/assets/Short Banner@2x.png" alt="Steamworks Complete"><figcaption></figcaption></figure>
 
@@ -55,14 +55,14 @@ Heathen's Steamworks Complete is the best tool for Valve's Steamworks SDK in Unr
 
 ## Unlearning Bad Habits
 
-Unfortunately, there is a lot of just bad sample and example code out there, especially around Steamworks / Steam API for Unity. Even Unreal's own built-in Online Subsystem Steam and Steam Sockets plugins are very out-of-date and make some odd uses of the API that do not align with "good practice" as defined by Valve. Here are some common things you might have picked up or learned that you should throw out right now.
+Unfortunately, there is a lot of just bad samples and example code out there, especially around Steamworks / Steam API for Unity. Even Unreal's own built-in Online Subsystem Steam and Steam Sockets plugins are very out-of-date and make some odd uses of the API that do not align with "good practice" as defined by Valve. Here are some common things you might have picked up or learned that you should throw out right now.
 
 ### Unreal's Online Subsystem Steam
 
 1st understand what an Online Subsystem is. ... TL;DR is not a full-featured platform integration, very specifically it is a limited platform integration that attempts to normalize platform features for many platforms into a common set. This means it will never be a complete solution, it's not trying to be a complete solution.
 
 {% hint style="warning" %}
-Online Subsystem Steam and the related Steam Socket plugin from Epic Games for Unreal is really very far out of date. Even if you wanted to keep to the Online Subsystem model. The Online Subsystem Steam is a liability you should be aware of.
+Online Subsystem Steam and the related Steam Socket plugin from Epic Games for Unreal is very far out of date. Even if you wanted to keep to the Online Subsystem model. The Online Subsystem Steam is a liability you should be aware of.
 {% endhint %}
 
 In Unreal they have a standard approach to online systems e.g. friends, chat, sessions, etc. that is the "Epic" way to do things. They have created an "Online Subsystem" framework of many popular live operations/backend services such as "Online Subsystem Steam" ... as well as Facebook, Google, etc.
