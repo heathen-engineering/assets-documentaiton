@@ -142,7 +142,7 @@
 
 ## Heathen's Toolkit for Steamworks SDK
 
-* [Steamworks SDK Toolkit](heathens-toolkit-for-steamworks-sdk/steamworks.md)
+* [Introduction](heathens-toolkit-for-steamworks-sdk/steamworks.md)
 * [F.A.Q](heathens-toolkit-for-steamworks-sdk/f.a.q.md)
 * [Unity](heathens-toolkit-for-steamworks-sdk/unity/README.md)
   * [Installation](heathens-toolkit-for-steamworks-sdk/unity/installation/README.md)
