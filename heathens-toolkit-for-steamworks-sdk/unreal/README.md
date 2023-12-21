@@ -53,7 +53,7 @@ That is literal, we do more than simply wrap up the old-school C-style Steamwork
 
 ### Proved Reliability
 
-We have developed and maintained Heathen's Steamworks Complete for more than a decade. In that time we have learned a lot not just about Steam and the engines we support but what a developer needs to deliver a successful project. Heathen's Steamworks Complete is trusted by thousands of developers big and small and drives hundreds of games from small passion projects to major professional titles.
+We have developed and maintained Heathen's Toolkit for Steamworks for more than a decade. In that time we have learned a lot not just about Steam and the engines we support but what a developer needs to deliver a successful project. Heathen's Toolkit for Steamworks is trusted by thousands of developers big and small and drives hundreds of games from small passion projects to major professional titles.
 
 ### Peerless Support
 
@@ -66,7 +66,7 @@ This is our day job, we are always here and we support our tools and our communi
 ### But Online Subsystem Steam?
 
 {% hint style="success" %}
-Heathen's Steamworks Complete will save you hundreds if not thousands of hours and enable you to exploit every feature Valve's Steamworks provides easily, efficiently, stably and robustly.
+Heathen's Toolkit for Steamworks will save you hundreds if not thousands of hours and enable you to exploit every feature Valve's Steamworks provides easily, efficiently, stably and robustly.
 {% endhint %}
 
 [Online Subsystem Steam](https://docs.unrealengine.com/5.3/en-US/online-subsystem-steam-interface-in-unreal-engine/) is a barebones integration of the basics and is built on an outdated version of Steam API that depending on your use case will simply not work. Documentation for Online Subsystem Steam is similarly dated and incomplete making it difficult to leverage Steam in any capacity beyond the most basic initialization. The lobby feature of Online Subsystem Steam is particularly limited and only suitable as a discovery system which is not what the feature was designed for at all giving you the worst of both worlds.
@@ -77,8 +77,8 @@ Importantly you should understand that any "Online Subsystem" is an attempt at s
 
 #### In Contrast:
 
-Heathen's Steamworks Complete is as its name suggests a complete solution. Our plugin is kept up to date with Valve's Steamworks SDK and the version of the SDK used can be changed by you with minimal effort (no code change required just swap assemblies).
+Heathen's Toolkit for Steamworks is as its name suggests a complete solution. Our plugin is kept up to date with Valve's Steamworks SDK and the version of the SDK used can be changed by you with minimal effort (no code change required just swap assemblies).
 
 #### More than "Just Another Steam API Wrapper"
 
-Heathen's Steamworks Complete exposes the whole of Steamworks in C++ code of course and everything is also exposed to Blueprints in an Unreal friendly manner. Beyond that, we have created systems, tools and extensions that bridge the concepts and approaches of Unreal and Steam, for example, the Steam Game Instance, Steam Save Game, etc. The goal of the kit is to enable you to do more and to make Steam feel like a native extension of the engine you choose.
+Heathen's Toolkit for Steamworks exposes the whole of Steamworks in C++ code of course and everything is also exposed to Blueprints in an Unreal friendly manner. Beyond that, we have created systems, tools and extensions that bridge the concepts and approaches of Unreal and Steam, for example, the Steam Game Instance, Steam Save Game, etc. The goal of the kit is to enable you to do more and to make Steam feel like a native extension of the engine you choose.

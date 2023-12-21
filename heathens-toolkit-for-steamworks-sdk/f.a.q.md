@@ -40,15 +40,15 @@ We do not provide PDF-style documents for the asset. Your IDE's Object Explorer,
 
 ### Godot
 
-At current Steamworks Foundation is available as a proof of concept for Gotdot C# 3.5 We are monitoring the engine development and community need and will port Steamworks Complete to Godot C# as the platform stabilises or as demand calls for it. If you have a need for Steamworks Complete on Godot reach out and let us know.
+Currently Heathen's Toolkit for Steamworks is available as a lite "Foundation" package containing the core systems as a proof of concept for Gotdot C# 3.5 We are monitoring the engine development and community need and will port Steamworks Toolkit to Godot C# as the platform stabilises or as demand calls for it. If you need Steamworks Toolkit on Godot reach out and let us know.
 
 ### Unity
 
-Heathen's Steamworks Complete and Foundation are available for Unity through GitHub Sponsor and the Unity Asset Store.
+Heathen's Toolkit for Steamworks comes in a full "Complete" and a lite "Foundation" package for Unity through GitHub Sponsor and the Unity Asset Store.
 
 ### Unreal
 
-Heathen's Steamworks Complete is available for Unreal through GitHub Sponsor. We intend to make the asset available on Unreal Marketplace soon.
+Heathen's Toolkit for Steamworks is available for Unreal through GitHub Sponsor and the Unreal Marketplace.
 
 ## Can this do \<X>
 
@@ -77,7 +77,7 @@ For Unity our prefabs even enable you to do many common things such as listing F
 
 ### What about Microtransactions / Cash Shops?
 
-Yes of course, Steam API handles MTX (microtransactions) via the Steam Inventory interface. Heathen's Steamworks Complete has robust tooling around [Steam Inventory](../company/steam/steamworks/inventory/) which can greatly help any developer regardless of skill set.
+Yes of course, Steam API handles MTX (microtransactions) via the Steam Inventory interface. Heathen's Toolkit for Steamworks has robust tooling around [Steam Inventory](../company/steam/steamworks/inventory/) which can greatly help any developer regardless of skill set.
 
 > To reiterate as its often hard to believe, yes Steam API does MTX, yes it is [Steam Inventory](../company/steam/steamworks/inventory/) that is used to do that.
 
@@ -108,7 +108,7 @@ For tools that do integrate with Steam API&#x20;
 For Unreal, anything working with the native Steam API should be fine, anything using Unreal's Online Subsystem Steam will not work.
 
 Why?\
-Online Subsystem Steam is grossly out of date and doesn't fully utilise Steam API so we replace it, as a result, you cannot have both Steamworks COmplete and Online Subsystem Steam active at the same time they will conflict.
+Online Subsystem Steam is grossly out of date and doesn't fully utilise Steam API so we replace it, as a result, you cannot have both Heathen's Toolkit and Online Subsystem Steam active at the same time they will conflict.
 
 ### Unity
 
@@ -134,7 +134,7 @@ If you do plan on using Steam Networking Sockets:
 
 We have created our own NetDriver based on Steam's Networking Sockets (available to GitHub Sponsors now, Coming Soon to Unreal Marketplace). We do not currently use an Online Subsystem though will be offering one in the future. Note you do not require Online Subsystem to do multiplayer, the purpose of Online Subsystem is to abstract backend services like Steamworks down to a common subset so you can use many in an agnostic way.
 
-Heathen's Steamworks Complete is designed to enable you to fully utilise every aspect of Steam API so using Online Subsystem is a bit counter-productive though something we will support in future updates if there is demand for it
+Heathen's Toolkit for Steamworks is designed to enable you to fully utilise every aspect of Steam API so using Online Subsystem is a bit counter-productive though something we will support in future updates if there is demand for it
 
 ### Unity
 

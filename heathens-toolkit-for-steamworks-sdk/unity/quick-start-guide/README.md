@@ -68,23 +68,23 @@ Follows is a quick break down of each layer and what it was meant for. Note you 
 {% embed url="https://kb.heathenengineering.com/assets/steamworks/guides/multiplayer" %}
 
 {% hint style="success" %}
-Steamworks Complete and whatever HLAPI you chose to work with have no impact on each other at all. You will use Steamworks and your HLAPI of choice exactly the same with as you would without the other.
+Heathen's Toolkit for Steamworks and whatever HLAPI you choose to work with have no impact on each other at all. You will use Steamworks and your HLAPI of choice the same as you would without the other.
 {% endhint %}
 
-### Do I need Steamworks Complete?
+### Do I need Heathen's Toolkit for Steamworks?
 
-You do **not** "require" Steamworks Complete in order to use Mirror, FishNetworking or NetCode for GameObject's or any other Steam transports. Those transports like our self work with Steamworks.NET directly.
+You do **not** "require" the Toolkit to use Mirror, FishNetworking or NetCode for GameObject's or any other Steam transports. Those transports like our selves work with Steamworks.NET directly.
 
-That said you will need to initialize, configure and manage the Steam API before SteamNetworking interfaces can be used. Our Steamworks Complete and Steamworks Foundation packages make working with Steam API simple and stable. If you do not use Steamworks Complete or Foundation you would need to use the raw Steam API to initialize and configure your Steam API integration your self before your HLAPI could use the Steam transports.
+That said you will need to initialize, configure and manage the Steam API before SteamNetworking interfaces can be used. Our Toolkit for Steamworks both the Complete and Foundation packages make working with Steam API simple and stable. If you do not use Complete or Foundation you would need to use the raw Steam API to initialize and configure your Steam API integration yourself before your HLAPI could use the Steam transports.
 
 ### Examples?
 
-Where can I find examples on using Steamworks Complete and (the HLAPI I chose)?
+Where can I find examples on using Heathen's Toolkit for Steamworks and (the HLAPI I chose)?
 
-You cant because their is no need. Both Steamworks Complete and your HLAPI of choice work exactly the same rather or not the other exists. Thus we do not have an example of using (your HLAPI of choice) along side our Steamworks Complete.&#x20;
+You can't because there is no need. Both Steamworks Complete and your HLAPI of choice work the same whether or not the other exists. Thus we do not have an example of using (your HLAPI of choice) alongside our Steamworks Complete.&#x20;
 
 If you want to see an example of using your HLAPI of choice with your HLAPI's Steam transport then you should contact them. We have links to [Fish Networking, Mirror and NetCode for GameObjects in our articles](../installation/networking-integrations.md) but any HLAPI that works with Steamworks.NET properly will work.
 
-If your looking for examples on how to initialize, configure and use Steam API (in general) you will find various samples in the provided [samples scenes](../../../assets/physkit/sample-scenes/) and examples throughout our knowledge base.
+If you looking for examples of how to initialize, configure and use Steam API (in general) you will find various samples in the provided [sample scenes](../../../assets/physkit/sample-scenes/) and examples throughout our knowledge base.
 
-If your trying to wrap your head around creating a [multiplayer game on the Steam platform](broken-reference), we have an article for that as well. That article is not specific to any given HLAPI because the HLAPI you choose has no impact on the concepts involved.
+If you are trying to wrap your head around creating a [multiplayer game on the Steam platform](broken-reference), we have an article for that as well. That article is not specific to any given HLAPI because the HLAPI you choose has no impact on the concepts involved.

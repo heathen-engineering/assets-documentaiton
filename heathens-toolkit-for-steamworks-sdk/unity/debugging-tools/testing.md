@@ -47,25 +47,25 @@ Heathen has provided a set of sample scenes which exercise all major features of
 
 The expectations are:
 
-1. That the developer will set up a clean project configured for Windows, Mac or Linux standalone build.
-2. That they will import Steamworks Complete in the normal fashion (Unity Asset Store or GitHub Add from Disk or GitHub Add from Git URL).
-3. That the project will remain free of customization or custom code as “clean example” of the asset in isolation
+1. The developer will set up a clean project configured for Windows, Mac or Linux standalone build.
+2. They will import Heathen's Toolkit for Steamworks in the normal fashion (Unity Asset Store or GitHub Add from Disk or GitHub Add from Git URL).
+3. That the project will remain free of customization or custom code as a “clean example” of the asset in isolation
 
-These expectations allow the developer to review and compare the clean operation of Steamworks Complete against the behaviour observed in a live project and thus can be used to identify and isolate the source of error as either Asset or Bespoke Code more quickly.
+These expectations allow the developer to review and compare the clean operation of Steamworks against the behaviour observed in a live project and thus can be used to identify and isolate the source of error as either Asset or Bespoke Code more quickly.
 
-In addition, Heathen provides an in-editor window “[Steamworks Inspector](./)” available in the \[Windows > Steamworks > Inspector] menu that can be used to inspect and exercise all major Steamworks features. For more information on the Steamworks Inspectors please read the [Knowledge Base article](./). The Steamworks Inspector works with any App as long as Steamworks API is initialized (your running the app in editor).
+In addition, Heathen provides an in-editor window “[Steamworks Inspector](./)” available in the \[Windows > Steamworks > Inspector] menu that can be used to inspect and exercise all major Steamworks features. For more information on the Steamworks Inspectors please read the [Knowledge Base article](./). The Steamworks Inspector works with any App as long as Steamworks API is initialized (you are running the app in the editor).
 
 ### [Sample Scenes](../sample-scenes/)
 
 Note for GitHub Sponsors installing the asset from Unity Package Manager you will need to import the samples from the Sample dropdown in the Package Manager. Please read [this article](../sample-scenes/) for more information.
 
-Each sample scene discribes the objects in the scene, there use and the expected results. The Unity Editor Console log will provide details as to each step of the operation along with highlighting any errors or warnings in such a manner that they can be easily reported.
+Each sample scene describes the objects in the scene, their use and the expected results. The Unity Editor Console log will provide details as to each step of the operation along with highlighting any errors or warnings in such a manner that they can be easily reported.
 
 {% hint style="success" %}
 Want to share your Unity consoler log?\
 \
 Select the Console log item you want to share in Unity Editor\
-Press \[Ctrl + C] this will copy the whole message including its stack to your clipboard\
-You can now paste that into Discord, email or elsewhere ... far better than a screen shot or video.
+Press \[Ctrl + C] This will copy the whole message including its stack to your clipboard\
+You can now paste that into Discord, email or elsewhere ... far better than a screenshot or video.
 {% endhint %}
 

@@ -21,7 +21,7 @@ layout:
     visible: true
 ---
 
-# Steamworks SDK Toolkit
+# Introduction
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -39,7 +39,7 @@ These articles are made possible by our [GitHub Sponsors](../become-a-sponsor/) 
 
 ### More than just another API wrapper!
 
-Heathen's Steamworks Complete is a robust kit of editor tools and extensions, proven game systems and extensive guides and articles that cover not just every function & feature of the plugin but go beyond into guides & articles on every facet of being a Steam Developer and Game Developer in general. This is all supported by our team of passionate engineers & our community of thousands of game developers who have shipped hundreds of games on Steam.
+Heathen's Toolkit is a robust kit of editor tools and extensions, proven game systems and extensive guides and articles that cover not just every function & feature of the plugin but go beyond into guides & articles on every facet of being a Steam Developer and Game Developer in general. This is all supported by our team of passionate engineers & our community of thousands of game developers who have shipped hundreds of games on Steam.
 
 ## Key Features
 
@@ -111,7 +111,7 @@ Put bluntly [Online Subsystem Steam](https://docs.unrealengine.com/5.3/en-US/onl
 
 You can see a more [line-by-line breakdown of Heathen vs Online Subsystem Steam in our Unreal article](unreal/).
 
-Heathen's Steamworks Complete is as its name suggests a complete integration of every aspect of Valve's Steamworks with the engine. It goes well beyond a simple API wrapper and provides you with ready-made and proven tools. The full Steam API is exposed to you in both C++ and Blueprint Functions, we also provide you with a set of common-use [UI Widgets](unreal/widgets/) and Unreal-centric tools like our [Steam Remote Storage Save Game](broken-reference) base class, [Steam Game Instance](unreal/game-instance.md) and more.
+Heathen's Toolkit is a complete integration of every aspect of Valve's Steamworks with the engine. It goes well beyond a simple API wrapper and provides you with ready-made and proven tools. The full Steam API is exposed to you in both C++ and Blueprint Functions, we also provide you with a set of common-use [UI Widgets](unreal/widgets/) and Unreal-centric tools like our [Steam Remote Storage Save Game](broken-reference) base class, [Steam Game Instance](unreal/game-instance.md) and more.
 
 ## Heathen vs Steam Core
 

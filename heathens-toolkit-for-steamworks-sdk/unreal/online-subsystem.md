@@ -8,15 +8,15 @@ coverY: 0
 ## Introduction
 
 {% hint style="success" %}
-While Heathen has no use for an Online Subsystem for Steamworks Complete we do listen to our community.\
+While Heathen has no use for an Online Subsystem in Toolkit for Steamworks we do listen to our community.\
 \
-If this is a feature you want or need please let us know, if there is sufficient demand for it we will create an Online Subsystem Steamworks Complete to fill the role without conflicting with the wider Steamworks Complete plugin.
+If this is a feature you want or need please let us know, if there is sufficient demand for it we will create an Online Subsystem Steamworks to fill the role without conflicting with the wider Toolkit for Steamworks plugin.
 {% endhint %}
 
 An Unreal Online Subsystem is a framework that attempts to normalize the use of typical backend systems to a standard or common form. In theory, this would mean you could code to the Online Subsystem standard and interchangeably swap in and out various systems such as Facebook, Steam and EGS.
 
 {% hint style="info" %}
-The limitations of Online Subsystem as a framework are common reasons why developers would choose to use Heathen's Steamworks Complete.
+The limitations of Online Subsystem as a framework are common reasons why developers would choose to use Heathen's Toolkit for Steamworks.
 
 \
 While the Online Subsystem framework is limiting if there is a demand for it we can create an Online Subsystem wrapper. Join our discord and let us know what you want!

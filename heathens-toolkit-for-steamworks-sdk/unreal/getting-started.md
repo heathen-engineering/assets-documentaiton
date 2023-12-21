@@ -29,7 +29,7 @@ These articles are made possible by our [GitHub Sponsors](../../become-a-sponsor
 
 ## [Installation](installation.md)
 
-Import the Steamworks Complete plugin to your project. Whether you purchased the plugin from Unreal Marketplace or are a GitHub Sponsor you will need access to the Steamworks Complete plugin to get started using it.
+Import the Toolkit for Steamworks plugin to your project. Whether you purchased the plugin from Unreal Marketplace or are a GitHub Sponsor you will need access to the Toolkit for Steamworks plugin to get started using it.
 
 The plugin is not free and is only available from Heathen via the [GitHub Sponsor](../../become-a-sponsor/) program and on the [Unreal Marketplace](https://www.unrealengine.com/marketplace/en-US/product/ad658ddf5c434478acb95f9091ea279c). If you acquired the plugin anywhere else we suggest you remove it immediately as it's not a legit copy and likely contains malware.&#x20;
 

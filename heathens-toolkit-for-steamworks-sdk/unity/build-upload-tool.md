@@ -44,11 +44,11 @@ Valve's official documentation on the subject is required reading!
 
 ## Quick Start
 
-The simplest way to upload your game to Steam is with Heathen's Steam Build. The tools is available in both Steamworks Foundation and Steamworks Complete and is described in the [Steam Build](build-upload-tool.md#steam-build) section below.
+The simplest way to upload your game to Steam is with Heathen's Steam Build. The tool is available in both Foundation and Complete and is described in the [Steam Build](build-upload-tool.md#steam-build) section below.
 
 ## Steam Build
 
-Heathen's Steamworks Complete includes the Steam Content Builder tool which can be used to build and upload your game to Steam. The feature uses the Steamworks SDK's [Steam CMD](build-upload-tool.md#steam-cmd) tool and automates the process in the Unity Editor.
+Heathen's Toolkit for Steamwork includes the Steam Content Builder tool which can be used to build and upload your game to Steam. The feature uses the Steamworks SDK's [Steam CMD](build-upload-tool.md#steam-cmd) tool and automates the process in the Unity Editor.
 
 ### Where to find the tool
 
@@ -76,7 +76,7 @@ Most Steam games will have 1 depot for each platform they support
 
 #### Content Builder Folder Path
 
-This is the local folder path to the Steamworks SDK's ContentBuilder folder. By default this would be located at `sdk/tools/ContentBuilder` the tool has a button you can press to help you get started downloading the Steamworks SDK from Valve.
+This is the local folder path to the Steamworks SDK's ContentBuilder folder. By default, this would be located at `sdk/tools/ContentBuilder` the tool has a button you can press to help you get started downloading the Steamworks SDK from Valve.
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
