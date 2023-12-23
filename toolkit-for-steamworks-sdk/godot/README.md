@@ -34,7 +34,7 @@ public void LoadAvatar(Action<Texture2D> callback)
 ```
 
 {% hint style="info" %}
-At current only the Foundation version of Heathen's Steamworks is available for Godot. We are working on porting the full Steamworks Complete asset however this will take time.
+At current only the Foundation version of Heathen's Steamworks is available for Godot.
 {% endhint %}
 
 ## Foundation
@@ -43,21 +43,21 @@ At current only the Foundation version of Heathen's Steamworks is available for 
 Godot Project Template
 {% endembed %}
 
-Steamworks Foundation is a freely available "lite" version of Heathen's Steamworks Complete. It is an extension of Steamworks.NET and so does provide access to every aspect of the Steam API. The differences between Foundation and Complete are the additional tools and systems Heathen has created ontop of Steamworks.NET.
+Steamworks Foundation is a freely available "lite" version of Heathen's Toolkit for Steamworks Complete. It is an extension of Steamworks.NET and so does provide access to every aspect of the Steam API. The differences between Foundation and Complete are the additional tools and systems Heathen has created on top of Steamworks.NET.
 
 The Foundation version contains the basics such as
 
 ### Steamworks Behaviour
 
-This initializes the Steam API and handles configuration and running callback update.
+This initializes the Steam API and handles configuration and running callback updates.
 
 ### [API.Friends](../unity/api/friends.client.md)
 
-This is an extension of the SteamFriends API end point and greatly simplifies working with friends, UserData and related tasks
+This is an extension of the SteamFriends API endpoint and greatly simplifies working with friends, UserData and related tasks
 
 ### [API.Overlay](../unity/api/overlay.client.md)
 
-This is an extension of several parts of Steam API simplifies handling of overlay features and reacting to invite events
+This is an extension of several parts of Steam API simplifies the handling of overlay features and reacting to invite events
 
 ### [API.Utilities](../unity/api/utilities.client.md)
 

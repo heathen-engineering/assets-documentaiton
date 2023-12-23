@@ -29,7 +29,7 @@ Steam Desk is a handheld Linux PC running (by default) Steam OS and designed wit
 
 To get your project working on deck the only thing you \*\***need**\*\* to do is ensure you have full controller support and that your game does not use a launcher.
 
-Steam Deck is not a special use case it is simply a Linux machine with no keyboard or mouse but does have a controller present. You can use native Unity Input to handle controller support or if you prefer [Steam Input](../../../heathens-toolkit-for-steamworks-sdk/unity/sample-scenes/input.md) is an option though not required.
+Steam Deck is not a special use case it is simply a Linux machine with no keyboard or mouse but does have a controller present. You can use native Unity Input to handle controller support or if you prefer [Steam Input](../../../toolkit-for-steamworks-sdk/unity/sample-scenes/input.md) is an option though not required.
 
 ## Debugging with Unity
 

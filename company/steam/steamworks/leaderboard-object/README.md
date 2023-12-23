@@ -83,13 +83,15 @@ To work around the issue make a new board (with a new name) and set it up with t
 
 ## Unity Examples
 
+{% embed url="https://youtu.be/6WQBal2brKI" %}
+
 As with all features in the Unity version of Steamworks Complete, there are multiple ways to work with Leaderboards.
 
-* [Leaderboard Object](../../../../heathens-toolkit-for-steamworks-sdk/unity/scriptable-objects/leaderboard-object.md)\
+* [Leaderboard Object](../../../../toolkit-for-steamworks-sdk/unity/scriptable-objects/leaderboard-object.md)\
   Scriptable Object that can be referenced by GameObejcts in your component scripts
-* [Leaderboard Data](../../../../heathens-toolkit-for-steamworks-sdk/unity/data-layer/leaderboard-data.md)\
+* [Leaderboard Data](../../../../toolkit-for-steamworks-sdk/unity/data-layer/leaderboard-data.md)\
   A simple C# struct suitable for DOTS or other situations where you want to avoid the use of object references
-* [Leaderboard API](../../../../heathens-toolkit-for-steamworks-sdk/unity/api/leaderboards.client.md)\
+* [Leaderboard API](../../../../toolkit-for-steamworks-sdk/unity/api/leaderboards.client.md)\
   A static API system is similar to the raw Steamworks APIs using modern C# features and handling all the boilerplate for you while maintaining the native Steam API structure.&#x20;
 
 ### Object Setup
@@ -148,7 +150,7 @@ You can upload an array of int values along with the player's score, Steam takes
 
 To read this data make sure you have set the `Details` field as seen in the inspector for your Leaderboard Object. This tells our system how many details it should read from Steam when reading a user's data. If you leave it at 0 we will not try to read detail values, if you enter a value larger than 64 errors will occur.
 
-The details themselves will be provided in the [LeaderboardEntry ](../../../../heathens-toolkit-for-steamworks-sdk/unity/objects/leaderboard-entry.md)record returned by leaderboard queries.
+The details themselves will be provided in the [LeaderboardEntry ](../../../../toolkit-for-steamworks-sdk/unity/objects/leaderboard-entry.md)record returned by leaderboard queries.
 
 #### Attachments
 
@@ -178,7 +180,7 @@ The leaderboard manager is a simple component that greatly simplifies reading an
 
 ![](<../../../../.gitbook/assets/image (181) (1).png>)
 
-You can learn more about the [Leaderboard Manager](../../../../heathens-toolkit-for-steamworks-sdk/unity/components/leaderboard-manager.md) in its documentation article and by reviewing the [4 Leaderboards](../../../../heathens-toolkit-for-steamworks-sdk/unity/sample-scenes/leaderboards.md) sample scene.
+You can learn more about the [Leaderboard Manager](../../../../toolkit-for-steamworks-sdk/unity/components/leaderboard-manager.md) in its documentation article and by reviewing the [4 Leaderboards](../../../../toolkit-for-steamworks-sdk/unity/sample-scenes/leaderboards.md) sample scene.
 
 ### Upload Score
 
@@ -190,7 +192,7 @@ Upload Method or simply Method
 This is a concept you will see in various places when uploading&#x20;
 {% endhint %}
 
-#### [Leaderboard Object](../../../../heathens-toolkit-for-steamworks-sdk/unity/scriptable-objects/leaderboard-object.md)
+#### [Leaderboard Object](../../../../toolkit-for-steamworks-sdk/unity/scriptable-objects/leaderboard-object.md)
 
 The most common is to use the LeaderboardObject itself to upload scores. The LeaderboardObject is a ScriptableObject so you can reference it in any script you like and use it as such:
 
@@ -212,9 +214,9 @@ leaderboard.UploadScore(42, detailArray, method, callback);
 
 This method works the same as the above but can take a detailed array. This would be an array of int values and must not be longer than 64 e.g. `int[64] detailArray` This is commonly used to store additional data about the user's entry.
 
-#### [Leaderboard Manager](../../../../heathens-toolkit-for-steamworks-sdk/unity/components/leaderboard-manager.md)
+#### [Leaderboard Manager](../../../../toolkit-for-steamworks-sdk/unity/components/leaderboard-manager.md)
 
-You can use the [Leaderboard Manager](../../../../heathens-toolkit-for-steamworks-sdk/unity/components/leaderboard-manager.md) component;\
+You can use the [Leaderboard Manager](../../../../toolkit-for-steamworks-sdk/unity/components/leaderboard-manager.md) component;\
 This component can be attached to a GameObject to manage a specific leaderboard. It is meant to be used with UI elements or for users who are not comfortable working with Scriptable Objects or the API directly. It serves to simplify the methods and features of the leaderboard system and expose common events to the Unity inspector.
 
 While it's not typical you can interact with the Leaderboard Manager from code such as.
@@ -289,6 +291,6 @@ To attach a file you first need to upload the file to Steam's Remote Storage, on
 
 ### Reading Entries
 
-[Download Leaderboard Entries](../../../../heathens-toolkit-for-steamworks-sdk/unreal/blueprint-nodes/functions/download-leaderboard-entries.md) and [Download Leaderboard Entries for Users](../../../../heathens-toolkit-for-steamworks-sdk/unreal/blueprint-nodes/functions/download-leaderboard-entries-for-users.md) can be used to read the entries on a leaderboard.
+[Download Leaderboard Entries](../../../../toolkit-for-steamworks-sdk/unreal/blueprint-nodes/functions/download-leaderboard-entries.md) and [Download Leaderboard Entries for Users](../../../../toolkit-for-steamworks-sdk/unreal/blueprint-nodes/functions/download-leaderboard-entries-for-users.md) can be used to read the entries on a leaderboard.
 
 <figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>

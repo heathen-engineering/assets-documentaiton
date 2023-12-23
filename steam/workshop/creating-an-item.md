@@ -12,12 +12,12 @@ These articles are made possible by our [GitHub Sponsors](../../become-a-sponsor
 
 With Heathen's Steamworks Complete creating a new workshop item from your game can be done with a [single call to our API](https://kb.heathenengineering.com/assets/steamworks/api/usergeneratedcontent.client#createitem). Understanding what data you need to send to this call is important and the cause of most issues experienced.
 
-## [Workshop Item Data](../../heathens-toolkit-for-steamworks-sdk/unity/data-layer/workshop-item-data.md)
+## [Workshop Item Data](../../toolkit-for-steamworks-sdk/unity/data-layer/workshop-item-data.md)
 
-This is a simple `struct` we created that lets you gather up all of the inputs needed to create a new workshop item. You can find details on the [Workshop Item Data](../../heathens-toolkit-for-steamworks-sdk/unity/data-layer/workshop-item-data.md) object in its article. Here is a list of data you will need in order to create a [Workshop Item Data](../../heathens-toolkit-for-steamworks-sdk/unity/data-layer/workshop-item-data.md) object.
+This is a simple `struct` we created that lets you gather up all of the inputs needed to create a new workshop item. You can find details on the [Workshop Item Data](../../toolkit-for-steamworks-sdk/unity/data-layer/workshop-item-data.md) object in its article. Here is a list of data you will need in order to create a [Workshop Item Data](../../toolkit-for-steamworks-sdk/unity/data-layer/workshop-item-data.md) object.
 
 * **App ID**\
-  This will nearly always be your game's App ID and is the ID of the app this item is made to work with. You can read this from our API easily via [App.Client.Id](../../heathens-toolkit-for-steamworks-sdk/unity/api/app.client.md#id).
+  This will nearly always be your game's App ID and is the ID of the app this item is made to work with. You can read this from our API easily via [App.Client.Id](../../toolkit-for-steamworks-sdk/unity/api/app.client.md#id).
 * **Title**\
   The name you want to give to this item as a string. This must be less than 129 characters in length.
 * **Description**\
@@ -50,7 +50,7 @@ In addition to the required fields you have a number of optional fields
 * Key Value Tags\
   Similar to tags this is a collection of "Key:Value" tags, the total length of key + value must be less than 255.
 
-To create the item simply instantiate a new [WorkshopItemData ](../../heathens-toolkit-for-steamworks-sdk/unity/data-layer/workshop-item-data.md)object
+To create the item simply instantiate a new [WorkshopItemData ](../../toolkit-for-steamworks-sdk/unity/data-layer/workshop-item-data.md)object
 
 ```csharp
 var itemData = new WorkshopItemData
@@ -101,7 +101,7 @@ UGC.CreateItem(itemData,
                fileCreatedCallback);
 ```
 
-Technically that is all that is required to create a workshop item ... however this would make it hard to handle any sort of issue or error so we recommend you provide a callback handler. You can learn more about [callbacks in our article here](../../company/development/callbacks.md). In the case of CreateItem it takes a callback that has a single parameter of type [WorkshopItemDataCreateStatus](../../heathens-toolkit-for-steamworks-sdk/unity/objects/workshop-item-data-create-status.md) and is an ideal candidate for an [anonymous callback as discussed in our article here](../../company/development/lambda-expressions.md#callbacks).
+Technically that is all that is required to create a workshop item ... however this would make it hard to handle any sort of issue or error so we recommend you provide a callback handler. You can learn more about [callbacks in our article here](../../company/development/callbacks.md). In the case of CreateItem it takes a callback that has a single parameter of type [WorkshopItemDataCreateStatus](../../toolkit-for-steamworks-sdk/unity/objects/workshop-item-data-create-status.md) and is an ideal candidate for an [anonymous callback as discussed in our article here](../../company/development/lambda-expressions.md#callbacks).
 
 ## Troubleshooting
 
@@ -110,9 +110,9 @@ The [EResult ](https://partner.steamgames.com/doc/api/steam\_api#EResult)value r
 1. Create a new empty "file id" \
    This is just what Steam calls the entry for your Workshop item and this step rarely fails. If it does fail it suggests an issue with your app configuration or the user your logged in with.
 2. Set the required values on that new empty "file id"\
-   This is where we set and update the file id created in step 1 with all the data you gave us in the [Workshop Item Data](../../heathens-toolkit-for-steamworks-sdk/unity/data-layer/workshop-item-data.md) object.
+   This is where we set and update the file id created in step 1 with all the data you gave us in the [Workshop Item Data](../../toolkit-for-steamworks-sdk/unity/data-layer/workshop-item-data.md) object.
 
-Nearly 100% of the time the issue is with the data you provided to the [Workshop Item Data](../../heathens-toolkit-for-steamworks-sdk/unity/data-layer/workshop-item-data.md) object. The most common issues are listed below
+Nearly 100% of the time the issue is with the data you provided to the [Workshop Item Data](../../toolkit-for-steamworks-sdk/unity/data-layer/workshop-item-data.md) object. The most common issues are listed below
 
 ### Preview Image
 

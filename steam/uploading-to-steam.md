@@ -27,7 +27,7 @@ Valve's official documentation on the subject is required reading!
 
 The sections below will walk you through uploading your game to Steam.
 
-For Unity users Heathen has created a [Build Upload Tool](../heathens-toolkit-for-steamworks-sdk/unity/build-upload-tool.md) which can be accessed from the engine, you can find its documentation at the link above.
+For Unity users Heathen has created a [Build Upload Tool](../toolkit-for-steamworks-sdk/unity/build-upload-tool.md) which can be accessed from the engine, you can find its documentation at the link above.
 
 ## Zip Upload
 
