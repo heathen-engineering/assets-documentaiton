@@ -12,7 +12,7 @@ Online Subsystem is not required to do Multiplayer in Unreal\
 \
 The Online Subsystem framework is simply a means of abstracting backend services to a "common" form e.g. a subsystem. In most use cases this is completely undesired, if you are building a Steam game then you want to fully utilize the Steam API not just the subset of features common to all similar systems.\
 \
-If you do want a multiplatform system then you would be far better off using a multiplatform service such as PlatFab or GameLift as opposed to trying to dumb down all other systems to some common set.
+If you do want a multiplatform system then you would be far better off using a multiplatform service such as PlayFab or GameLift as opposed to trying to dumb down all other systems to some common set.
 {% endhint %}
 
 An Unreal Online Subsystem is a framework that attempts to normalize the use of typical backend systems to a standard or common form. In theory, this would mean you could code to the Online Subsystem standard and interchangeably swap in and out various systems such as Facebook, Steam and EGS.
