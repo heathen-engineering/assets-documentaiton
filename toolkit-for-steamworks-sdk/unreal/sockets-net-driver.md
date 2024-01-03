@@ -25,19 +25,23 @@ The above format is an example of how you would address a target connection usin
 
 ## Engine.ini
 
-{% hint style="info" %}
-This is a poorly documented aspect of the Unreal engine. Heathen is working with the community to explore and document this and other undefined features as we have for Valve's Steamworks.\
-\
-This is a WIP
-{% endhint %}
-
 Unreal requires you to specify the NetDriver you are using as part of the engine configuration ... this is commonly done in the Engine.ini
 
 {% hint style="warning" %}
 The specifics of your Engine.ini may change when installing the plugin as part of a project vs as an engine plugin such as from Marketplace
 {% endhint %}
 
-### Class Name
+### System Settings
+
+The first step is to configure the handshake version and set the session ID's to 0. If not done you will find the server fails to complete handshake on client connect and will reject messages from the client resulting in a disconnect.
+
+### Engine
+
+Clear the NetDriver definition and set NetSocketsNetDriver as our GameNetDriver.
+
+### Net Sockets Net Driver
+
+Configure the net driver timeout settings and define the connection class name.
 
 `SteamworksComplete.NetSocketsNetDriver` is the formal name of the NetDriver and `SteamworksComplete.NetSocketsNetConnection` is the formal name of the connection class for example, assuming you have installed the plugin from GitHub as part of your project (e.g. a project plugin) your NetDriverDefinitions entry and Plugins config might take the form
 
