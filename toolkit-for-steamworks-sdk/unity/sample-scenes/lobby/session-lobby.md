@@ -18,7 +18,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 This is a simple "matchmaking" lobby, that is its used to gather players together before starting a multiplayer session. This is the most common "primary use case" we see for Steam Lobby.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (384).png" alt=""><figcaption></figcaption></figure>
 
 ### Features
 
@@ -46,7 +46,7 @@ This is the fun part, having the owner start up a network session, make it ready
 
 After the party leader ... or if your not in a party a solo player clicks the "Play" button we perform a Quick Match search via the Lobby Manager tool.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (629).png" alt=""><figcaption></figcaption></figure>
 
 This is a simple process where the system will call `SessionUIController.QuickMatch()` on button press. The QuickMatch function does a few simple checks that are unique to this scene but common for more uses cases.
 
@@ -85,7 +85,7 @@ This happens when we have successfully created a lobby, that is we hit the Play 
 
 ### Start Session
 
-<figure><img src="../../../../.gitbook/assets/image (1) (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (603).png" alt=""><figcaption></figcaption></figure>
 
 At some point either determined by your game logic or at the whim of the lobby owner it will be time to "start session" ... that is you will want to start playing the game with the players you have.
 
@@ -122,12 +122,12 @@ For the non-owner members of the lobby the process looks like this
 
 ## Authentication
 
-While not required it is recommended and commonly done, so we demonstrate it in the Practical Use Case scene.  You can learn more about what [Authentication ](../../../../company/steam/steamworks/multiplayer/authentication.md)is in our guide section. As to the use in lobby we demonstrate a common workflow where in the owner "authenticates" each joining member. This allows the owner to verify Valve Anti-Cheat (VAC) and if your using Steam Inventory it would allow the owner to verify ownership of specific inventory items.
+While not required it is recommended and commonly done, so we demonstrate it in the Practical Use Case scene.  You can learn more about what [Authentication ](../../../../steam/multiplayer/authentication.md)is in our guide section. As to the use in lobby we demonstrate a common workflow where in the owner "authenticates" each joining member. This allows the owner to verify Valve Anti-Cheat (VAC) and if your using Steam Inventory it would allow the owner to verify ownership of specific inventory items.
 
 The workflow is simple
 
 1. When a user joins the lobby (other than the owner) they will get and send their Authentication ticket data through the Lobby Chat Director.
-2. When a chat message is received, we check if it is a message or if its authentication data. If its authentication data then non-owner user's ignore it. The owner of the lobby will read it and "[Begin Session](../../../../company/steam/steamworks/multiplayer/authentication.md#begin-auth-session)" on that data verifying the user.&#x20;
+2. When a chat message is received, we check if it is a message or if its authentication data. If its authentication data then non-owner user's ignore it. The owner of the lobby will read it and "[Begin Session](../../../../steam/multiplayer/authentication.md#begin-auth-session)" on that data verifying the user.&#x20;
    1. If the user is authentication the owner can cash that data to the Lobby Metadata so all other users are aware the user has been authenticated
    2. If the user fails authentication such as VAC ban the owner can "kick" that user using Heathen's Lobby Kick system.
 

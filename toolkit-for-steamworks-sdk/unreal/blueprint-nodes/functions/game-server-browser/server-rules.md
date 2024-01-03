@@ -51,4 +51,4 @@ An event delegate that responds with an array of [Key Value Pair](../../types/ke
 
 ## Nodes
 
-<figure><img src="../../../../../.gitbook/assets/image (263).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (778).png" alt=""><figcaption></figcaption></figure>

@@ -23,7 +23,7 @@ If your a GitHub sponsor you have access to the source repository which you can 
 1. Open the Package Manager
 2. Click the "+" (plus) button located in the upper left of the window
 3. Select the "Add package from git URL..." option\
-   <img src="../../.gitbook/assets/image (144).png" alt="" data-size="original">
+   <img src="../../.gitbook/assets/image (641).png" alt="" data-size="original">
 4. Enter the URL below and press add.
 
 ```
@@ -52,10 +52,10 @@ In recent updates Unity has changed the process for enabling the "New" input sys
 You must install the Input Package system from the Package Manager your self to get it to work. Our asset is coded to use either the new or the old depending on which is installed. If you set the Project Settings to use the "New" input system without installing it from the Package Manager then you will get compiler errors.&#x20;
 {% endhint %}
 
-![](<../../.gitbook/assets/image (179) (1) (1).png>)
+![](<../../.gitbook/assets/image (343).png>)
 
 ## Troubleshooting
 
 Having issues with Package Manager install or Git install?
 
-Read our [Pacakge Manager Install](../../company/fundamentals/package-manager-installs/) article to get it fixed
+Read our [Pacakge Manager Install](../../guides/fundamentals/package-manager-installs/) article to get it fixed

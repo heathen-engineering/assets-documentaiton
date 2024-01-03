@@ -17,7 +17,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 This scene demonstrates the use of the [UGC Query Manager](../components/ugc-query-manager.md) to browse for Workshop items in game.
 
-<figure><img src="../../../.gitbook/assets/image (41) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (690).png" alt=""><figcaption></figcaption></figure>
 
 ### What do I learn?
 

@@ -10,7 +10,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-![](<../../../../.gitbook/assets/image (188) (1).png>)
+![](<../../../../.gitbook/assets/image (463).png>)
 
 This scene demonstrates the use of animated and context sinsative cursors. Each box changes the style of the defualt cursor and has several controls which will change the context of the cursor several of which are animated.
 

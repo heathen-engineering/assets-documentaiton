@@ -10,7 +10,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## Introduction
 
-![](<../../../.gitbook/assets/image (188) (1) (1).png>)
+![](<../../../.gitbook/assets/image (276).png>)
 
 Added to an object you want to have effected by a Force Effect Source. The receiver enables this object to listen for local and global Force Effects and allows you to configure what effectors will be listened to or ignored.
 

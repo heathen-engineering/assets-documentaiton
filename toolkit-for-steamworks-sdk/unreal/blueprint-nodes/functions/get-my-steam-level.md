@@ -37,4 +37,4 @@ The local user's Steam level
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (306).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (821).png" alt=""><figcaption></figcaption></figure>

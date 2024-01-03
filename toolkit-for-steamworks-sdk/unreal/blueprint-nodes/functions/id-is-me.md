@@ -41,4 +41,4 @@ The ID you want to compare to the local user
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (385).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (900).png" alt=""><figcaption></figcaption></figure>

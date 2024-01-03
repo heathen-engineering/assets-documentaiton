@@ -37,7 +37,7 @@ An extension of the standard UImage widget with two new functions to help displa
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (216).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -47,7 +47,7 @@ This works with the[ Get My Steam Avatar](../blueprint-nodes/functions/get-my-st
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/image (204).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (719).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -55,7 +55,7 @@ This works with the [Get User Steam Avatar](../blueprint-nodes/functions/get-use
 
 ## Example
 
-<figure><img src="../../../.gitbook/assets/image (205).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (720).png" alt=""><figcaption></figcaption></figure>
 
 The process assumes you have added a BP\_SteamAvatarImage to your UI. We then get the Steam Avatar Image from your UI and use that as the target input for the Show My Avatar function call.
 

@@ -41,4 +41,4 @@ The Date Time the result was returned
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (228).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (743).png" alt=""><figcaption></figcaption></figure>

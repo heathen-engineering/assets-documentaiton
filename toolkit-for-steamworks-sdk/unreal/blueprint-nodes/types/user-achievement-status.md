@@ -27,4 +27,4 @@ The time the achievement was unlocked
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (337).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (852).png" alt=""><figcaption></figcaption></figure>

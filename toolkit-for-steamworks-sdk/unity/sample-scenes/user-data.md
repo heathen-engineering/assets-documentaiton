@@ -17,7 +17,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 This scene demonstrates the use of [User Data ](../data-layer/user-data.md)and displaying common information such as the user's avatar and name.
 
-<figure><img src="../../../.gitbook/assets/image (98).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (648).png" alt=""><figcaption></figcaption></figure>
 
 This scene exists to draw your attention to the [User Data](../data-layer/user-data.md) object. User Data is a struct Heathen has defined to wrap around the native [CSteamID ](../../../steam/csteamid.md)and the primitive ulong data types providing easy access to everything user related.
 
@@ -40,14 +40,14 @@ Demonstrates the display of the user's friend data in a manner similar to Steam'
 {% hint style="info" %}
 On your first run of a day you may notice that some friend avatar images or names do not load or load slowly. This is side effect of this use case and would not occur in a production environment.\
 \
-The cause is that Steam cashes this information on your local machine, when the information is first requested it can take time for that data to download. The sample scene doesn't wait and simply loads what information is available where typically you use the provided events or good design practices such as [bootstrapping ](../../../company/design/bootstrap-scene.md)and validation avoiding this issue.
+The cause is that Steam cashes this information on your local machine, when the information is first requested it can take time for that data to download. The sample scene doesn't wait and simply loads what information is available where typically you use the provided events or good design practices such as [bootstrapping ](../../../guides/design/bootstrap-scene.md)and validation avoiding this issue.
 {% endhint %}
 
 ## Testing
 
 Assuming you are using an unmodified version of the sample scene and Steam Settings you will see messages appear in the Unity Editor Console log detailing each step of the initialization process.
 
-<figure><img src="../../../.gitbook/assets/image (15) (1) (3).png" alt=""><figcaption><p>Example initialization messages</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (491).png" alt=""><figcaption><p>Example initialization messages</p></figcaption></figure>
 
 In the event of an error details will be listed here along with troubleshooting guidance. In the event you require support please select the first error message in the log and press \[Ctrl + C] this will copy the full message and its stack trace to your clipboard. You can then paste that error into [Discord chat](https://discord.gg/eVVgM36) for live support or into a support email or similar.
 

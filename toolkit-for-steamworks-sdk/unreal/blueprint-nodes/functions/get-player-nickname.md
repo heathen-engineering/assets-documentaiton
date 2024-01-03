@@ -51,4 +51,4 @@ You don't nickname yourself, when you set your name that is you setting your per
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (222).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (737).png" alt=""><figcaption></figcaption></figure>

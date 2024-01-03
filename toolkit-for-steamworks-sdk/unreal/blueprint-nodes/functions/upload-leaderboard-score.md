@@ -49,4 +49,4 @@ A callback event that indicates success, score changed, the new rank if any and 
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (329).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (844).png" alt=""><figcaption></figcaption></figure>

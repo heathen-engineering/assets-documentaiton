@@ -37,4 +37,4 @@ The id of the DLC which was just installed
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (202).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (717).png" alt=""><figcaption></figcaption></figure>

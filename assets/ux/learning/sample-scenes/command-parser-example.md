@@ -10,7 +10,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-![](<../../../../.gitbook/assets/image (171) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (656).png>)
 
 This scene demonstrates the use of the Command System. Command system lets you parse string input such as from an in-game chat and trigger paramiterized [game events](../../../system-core/game-events.md). This system can be used to create console or MMO chat like command systems for player chats, emotes, help systems and more.
 

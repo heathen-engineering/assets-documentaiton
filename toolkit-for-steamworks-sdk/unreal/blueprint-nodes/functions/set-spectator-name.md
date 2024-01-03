@@ -41,4 +41,4 @@ The spectator server name to set. Must not be **NULL** or an empty string (""). 
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (296).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (811).png" alt=""><figcaption></figcaption></figure>

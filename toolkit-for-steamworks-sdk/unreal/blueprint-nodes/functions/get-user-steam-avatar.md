@@ -37,6 +37,6 @@ The user you want to get the avatar for
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (203).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (718).png" alt=""><figcaption></figcaption></figure>
 
 This node uses a callback delegate which will be invoked when the process is completed and which will contain the Texsture2D result.

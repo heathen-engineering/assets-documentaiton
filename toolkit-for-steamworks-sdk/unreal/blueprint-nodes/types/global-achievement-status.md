@@ -31,4 +31,4 @@ The percentage of users that have achieved this achievement
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (335).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (850).png" alt=""><figcaption></figcaption></figure>

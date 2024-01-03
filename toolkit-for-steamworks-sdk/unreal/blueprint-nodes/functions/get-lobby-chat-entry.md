@@ -45,4 +45,4 @@ The [Chat Entry](../types/chat-entry.md) at this index
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (145).png" alt=""><figcaption></figcaption></figure>

@@ -39,4 +39,4 @@ It's best to call this at >10Hz, the more time between calls, the more potential
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (282).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (797).png" alt=""><figcaption></figcaption></figure>

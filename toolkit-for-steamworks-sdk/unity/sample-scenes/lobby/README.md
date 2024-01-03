@@ -16,7 +16,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-<figure><img src="../../../../.gitbook/assets/image (6) (2) (1) (2).png" alt=""><figcaption><p>Session Lobby Screen Shot</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (644).png" alt=""><figcaption><p>Session Lobby Screen Shot</p></figcaption></figure>
 
 The Quick Match Example and Session Lobby sample scenes demonstrate the use of our lobby tools, systems and UI elements.
 
@@ -24,7 +24,7 @@ The Quick Match Example and Session Lobby sample scenes demonstrate the use of o
 
 Demonstrating the most common use case for Steam Lobby and how it can be accomplished code free using Heathen's [Party Lobby Control](../../ui-components/party-lobby-control.md) and [Quick Match Lobby Control](../../ui-components/quick-match-lobby-control.md) components. This code free example uses no custom code at all and handles the use case most common to hobbyist and enthusiast multiplayer game projects.
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (635).png" alt=""><figcaption></figcaption></figure>
 
 The Quick Match Example scene simply cant get any simpler. With only 2 functional UI elements and zero custom code this scene handles forming players in a friend group/party, searching for and selecting or creating a new lobby and reporting when that lobby is full. You can easily connect this scene to any networking HLAPI of your choice and have a functional party + matchmaking multiplayer session assuming you have a network demo scene you can load when your lobby is full.
 
@@ -36,7 +36,7 @@ Additional information can be found [here](session-lobby.md)!
 
 Demonstrates the use of Lobby Manager for a custom session lobby use experience. This scene uses a a single custom script \`SessionLobby\_UIController\` in order to manipulate Heathen's [Lobby Manager](../../ui-components/lobby-manager.md) and UI elements for a bespoke user experience in matchmaking. The purpose of the scene is to get you started with creating your own session lobby user experience.&#x20;
 
-![](<../../../../.gitbook/assets/image (3) (3).png>)![](<../../../../.gitbook/assets/image (1) (1) (3) (1).png>)
+![](<../../../../.gitbook/assets/image (429).png>)![](<../../../../.gitbook/assets/image (290).png>)
 
 When you press play in this scene it will search for a matching lobby, if none is found it will create a new lobby matching the Create Arguments in the Lobby Manager. While in a lobby the members are displayed along with simple features like "Ready Check", "Leave" and an indication as to which member is the "owner" of the lobby.
 
@@ -50,6 +50,6 @@ Additional information can be found [here](lobby-browser.md)!
 
 Demonstrates a bare bones Lobby Browser set up&#x20;
 
-![](<../../../../.gitbook/assets/image (57) (2).png>)
+![](<../../../../.gitbook/assets/image (618).png>)
 
 You can use this scene to learn how to set up a Lobby Browser with search, create, join and leave options with all Steam operations being code free and the sample only using custom code to drive Unity UI.

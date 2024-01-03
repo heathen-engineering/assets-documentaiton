@@ -41,4 +41,4 @@ A [Auth Ticket Data](../types/auth-ticket-data.md) value
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>

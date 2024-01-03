@@ -27,4 +27,4 @@ The string value of the pair
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (262).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (777).png" alt=""><figcaption></figcaption></figure>

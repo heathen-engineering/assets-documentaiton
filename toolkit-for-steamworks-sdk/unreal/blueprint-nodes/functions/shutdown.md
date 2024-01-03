@@ -33,4 +33,4 @@ Shuts down the Steam API
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (198).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (713).png" alt=""><figcaption></figcaption></figure>

@@ -35,4 +35,4 @@ Results for use with the [Steam Voice](https://partner.steamgames.com/doc/featur
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>

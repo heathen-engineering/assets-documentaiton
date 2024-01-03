@@ -16,7 +16,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## &#x20;Introduction
 
-![](<../../../.gitbook/assets/image (152).png>)
+![](<../../../.gitbook/assets/image (657).png>)
 
 This is used by the [FriendGroups ](friend-groups-display.md)component when instantiating groups in the list. The FriendGroup is responsible for instantiating each user record within it and maintaining that information.
 

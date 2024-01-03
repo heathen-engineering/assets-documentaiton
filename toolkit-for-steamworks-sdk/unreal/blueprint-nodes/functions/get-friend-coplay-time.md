@@ -37,4 +37,4 @@ The Date and time the user last played with this user
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (21) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (241).png" alt=""><figcaption></figcaption></figure>

@@ -17,7 +17,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 This scene demonstrates the use of the [Steam Game Server Browser](game-server-browser.md) feature.
 
-<figure><img src="../../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (523).png" alt=""><figcaption></figcaption></figure>
 
 ## Components
 

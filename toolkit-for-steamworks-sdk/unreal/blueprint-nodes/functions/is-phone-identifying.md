@@ -37,4 +37,4 @@ Check whether the user's phone number is used to uniquely identify them.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>

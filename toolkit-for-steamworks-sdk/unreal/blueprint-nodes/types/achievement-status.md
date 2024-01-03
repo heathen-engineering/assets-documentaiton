@@ -43,4 +43,4 @@ When was this achievement earned by the user
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (318).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (833).png" alt=""><figcaption></figcaption></figure>

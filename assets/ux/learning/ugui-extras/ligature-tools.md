@@ -19,7 +19,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 Define character combinations and the result character enabling Key Collection inputs for Korean, Japanese and other ligature based character sets as well as common use extended characters such as translating ( c ) to ©
 
-![](<../../../../.gitbook/assets/image (134).png>)
+![](<../../../../.gitbook/assets/image (421).png>)
 
 The Ligature Tools provided in uGUI Extras helps you extend user input to account for common character combinations and to extend the use of Key Collection for language sets that depend on ligatures such as the Korean and Katakana character sets.
 
@@ -29,7 +29,7 @@ The way the system works is that an input string is tested for the input charact
 
 Defines a set of ligatures
 
-![](<../../../../.gitbook/assets/image (134).png>)
+![](<../../../../.gitbook/assets/image (421).png>)
 
 ### Ligature Helper
 
@@ -39,7 +39,7 @@ Connects to a game object with an InputField to parse ligatures on edit of the i
 Works with both Text Mesh Pro Input Field and uGUI standard Input Field
 {% endhint %}
 
-![](<../../../../.gitbook/assets/image (135).png>)
+![](<../../../../.gitbook/assets/image (486).png>)
 
 ## Configuraiton
 
@@ -51,7 +51,7 @@ The typical use is to use the Ligature Library in conjunciton with the Ligature 
 
 An example of this can be seen in the Keyboard examples where you will observer that each input field has a Ligature Helper attached to it
 
-![](<../../../../.gitbook/assets/image (135).png>)
+![](<../../../../.gitbook/assets/image (486).png>)
 
 ## Code Examples
 

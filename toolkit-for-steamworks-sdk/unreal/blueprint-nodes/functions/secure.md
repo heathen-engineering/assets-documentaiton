@@ -37,4 +37,4 @@ Check whether the game server is in "Secure" mode.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (283).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (798).png" alt=""><figcaption></figcaption></figure>

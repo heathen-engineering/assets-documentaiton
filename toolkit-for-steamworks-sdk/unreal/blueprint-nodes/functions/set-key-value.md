@@ -45,4 +45,4 @@ The value to set
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (264).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (779).png" alt=""><figcaption></figcaption></figure>

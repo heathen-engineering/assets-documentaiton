@@ -45,4 +45,4 @@ The description of your game. Must not be **NULL** or an empty string (""). This
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (286).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (801).png" alt=""><figcaption></figcaption></figure>

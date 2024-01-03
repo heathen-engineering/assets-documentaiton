@@ -16,15 +16,15 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## &#x20;Introduction
 
-Create a party [lobby ](../../../company/steam/steamworks/multiplayer/matchmaking-tools.md)and its UI fully featured including in game friend invite, chat, and more with ZERO code required.
+Create a party [lobby ](../../../steam/multiplayer/matchmaking-tools.md)and its UI fully featured including in game friend invite, chat, and more with ZERO code required.
 
-![](<../../../.gitbook/assets/image (5) (4).png>)
+![](<../../../.gitbook/assets/image (291).png>)
 
 The Party Lobby Control is a UI behaviour component that manages a lobby representing a player party and the UI elements associated with that. This sort of "Party UI" is common in most team and  coop games such as MOBAs, Team Shooters, party games and more. One of the most typical examples of a party lobby can seen in DOTA2.
 
-<figure><img src="../../../.gitbook/assets/image (4) (3) (1).png" alt=""><figcaption><p>DOTA 2 home screen captured 2022-10-30 by Loden Darkstar</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (673).png" alt=""><figcaption><p>DOTA 2 home screen captured 2022-10-30 by Loden Darkstar</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (4).png" alt=""><figcaption><p>Halo Infinite multiplayer mode scree captured 2022-10-30 by Loden Darkstar</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (402).png" alt=""><figcaption><p>Halo Infinite multiplayer mode scree captured 2022-10-30 by Loden Darkstar</p></figcaption></figure>
 
 The purpose of a "party lobby" also known as a "group lobby" is to gather Friends that wish to play together, most typically in a coop game though you do see Group/Party systems in competitive games as well particularly party games.
 
@@ -61,13 +61,13 @@ Display the user's avatar and the number of slots available to the party/group. 
 
 ### Friend Invite
 
-![](<../../../.gitbook/assets/image (194).png>)
+![](<../../../.gitbook/assets/image (414).png>)
 
 The provided prefab implements the [Friend Invite Drop Down](friend-invite-dropdown.md) letting the user invite online friends with the click of a button or to type in a friend's "code" to initiate and invite.
 
 ### Chat
 
-![](<../../../.gitbook/assets/image (3) (4).png>)
+![](<../../../.gitbook/assets/image (263).png>)
 
 When a user is in a party with other player's a simple text based chat interface is displayed. The chat system is used by other tools to notify party members when they should join a specific session lobby. Heathen's session lobby controls will handle this automatically or you can do this your self by prefixing the chat message with \`\[SessionId]\` followed by the ulong id of the session lobby to join
 
@@ -79,7 +79,7 @@ Optionally sets the \`steam\_player\_group\` and \`steam\_player\_group\_size\` 
 
 A production ready prefab is available and configured with the features displayed above. You can see an example of this prefab in use in the [Quick Match Example](../sample-scenes/lobby/#quick-match-example) scene.
 
-<figure><img src="../../../.gitbook/assets/image (7) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (691).png" alt=""><figcaption></figcaption></figure>
 
 ## Events
 

@@ -1,6 +1,6 @@
 ---
 description: Tools, systems and frameworks to help you deliver a superior User eXperience!
-cover: ../../.gitbook/assets/WebPage Cover (1).png
+cover: ../../.gitbook/assets/WebPage Cover.png
 coverY: 91.6635
 ---
 

@@ -41,10 +41,12 @@ Converting the game's app ID to a string for this is recommended.
 This is required for all game servers and can only be set before calling [Log On](log-on.md) / [Log On Anonymous](log-on-anonymous.md)
 {% endhint %}
 
-### Is Password Protected
+### Product
 
-Enable (**true**) or disable (**false**) password protection.
+The unique identifier for your game. Must not be **NULL** or an empty string. Sets the game product identifier. This is currently used by the master server for version-checking purposes.
+
+Converting the game's app ID to a string for this is recommended.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (294).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (809).png" alt=""><figcaption></figcaption></figure>

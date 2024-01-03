@@ -10,7 +10,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## Introduction
 
-![](<../../../.gitbook/assets/image (159) (1) (1).png>)
+![](<../../../.gitbook/assets/image (313).png>)
 
 Used with the Surface Tool component to simulate the effect of buoyancy on a rigidbody.
 

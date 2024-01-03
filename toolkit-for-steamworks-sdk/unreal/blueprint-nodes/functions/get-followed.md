@@ -35,6 +35,6 @@ Heathen has created a few options with this function which can be accessed over 
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (17) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (237).png" alt=""><figcaption></figcaption></figure>
 
 This node uses a callback delegate which will be invoked when the process is completed and which will contain the UEResult and array of friend IDs.

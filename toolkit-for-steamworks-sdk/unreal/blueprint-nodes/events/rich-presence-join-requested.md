@@ -45,4 +45,4 @@ The value associated with the "connect" Rich Presence key or provided by the inv
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (224).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (739).png" alt=""><figcaption></figcaption></figure>

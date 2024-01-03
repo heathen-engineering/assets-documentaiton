@@ -37,4 +37,4 @@ The that lists an array of [Global Achievement Status](../types/global-achieveme
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (334).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (849).png" alt=""><figcaption></figcaption></figure>

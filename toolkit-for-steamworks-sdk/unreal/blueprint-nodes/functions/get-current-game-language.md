@@ -37,4 +37,4 @@ The name of the language.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (213).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (728).png" alt=""><figcaption></figcaption></figure>

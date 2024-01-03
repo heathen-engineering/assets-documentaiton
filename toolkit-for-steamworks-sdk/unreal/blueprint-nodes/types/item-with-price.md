@@ -25,4 +25,4 @@ The current price is the current price as shown to the user which will include t
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (174).png" alt=""><figcaption></figcaption></figure>

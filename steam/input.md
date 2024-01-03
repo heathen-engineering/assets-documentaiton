@@ -68,7 +68,7 @@ Once you have created your In-Game Action file; For more information on that rea
 
 Steam Input actions, sets and layers can be referenced in your [Steam Settings](../toolkit-for-steamworks-sdk/unity/scriptable-objects/steam-settings/) object. Simply expand the Artifacts section and add each action, layer and set, this will create Scriptable Object representations for each under your Steam Settings object in your Asset folder. You can then reference these objects in your other scripts to detect when the action has been triggered and with what values.
 
-![](<../.gitbook/assets/image (158) (1) (1) (1).png>)
+![](<../.gitbook/assets/image (619).png>)
 
 ### Analog vs Digital Actions
 

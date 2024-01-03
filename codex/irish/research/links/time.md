@@ -34,7 +34,7 @@ This is 15 days though not the 14 we use now ... also not 2 weeks ... its 2 week
 
 Months are lunar and start with a whole cycle of the moon. There is some disagreement on what phase is the starting phase (New vs Full). Not sure how relevant the specifics of what phase is the start/end as this would at most shift things by 14.5 days. The pattern and effect remains the same as the key points in the year are known to be the two equinox and the shortest and longest days of the year.
 
-While the moon was apparently quite important they understood that the lunar cycle did not align with the solar cycle. Have a look at the article on [Astronomy ](../../folklore/concepts/astronomy.md)for more information.
+While the moon was apparently quite important they understood that the lunar cycle did not align with the solar cycle. Have a look at the article on [Astronomy ](astronomy.md)for more information.
 
 {% hint style="info" %}
 Below we map the modern Georgann months to the Irish month names though these would not align properly every year in that a Celtic month is lunar with leap year patterns that reconcile periodically.

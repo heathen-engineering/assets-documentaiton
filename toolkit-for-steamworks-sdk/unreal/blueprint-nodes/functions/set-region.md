@@ -47,4 +47,4 @@ Enable (**true**) or disable (**false**) password protection.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (295).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (810).png" alt=""><figcaption></figcaption></figure>

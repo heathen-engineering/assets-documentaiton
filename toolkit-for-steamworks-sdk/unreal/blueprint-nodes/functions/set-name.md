@@ -41,4 +41,4 @@ The new server name to set. Must not be **NULL** or an empty string (""). This c
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (292).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (807).png" alt=""><figcaption></figcaption></figure>

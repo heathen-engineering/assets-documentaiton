@@ -37,4 +37,4 @@ A Steam ID is a complex number expressed as an int 64 and composed of several ke
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>

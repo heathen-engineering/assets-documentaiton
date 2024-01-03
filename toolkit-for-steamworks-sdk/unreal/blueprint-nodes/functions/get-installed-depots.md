@@ -41,4 +41,4 @@ An array of Depot IDs represented as int values.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (216).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (731).png" alt=""><figcaption></figcaption></figure>

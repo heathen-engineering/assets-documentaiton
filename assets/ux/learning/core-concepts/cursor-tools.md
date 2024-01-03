@@ -18,12 +18,12 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 The cursor system allows for easy code free context sensitive mouse cursors with support for animation.
 
-![](<../../../../.gitbook/assets/image (153) (1) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (496).png>)
 
 The Cursor Animator component handles cursor animation, you should only have 1 of these active at any given time.
 
 {% hint style="info" %}
-This component benefits from the [bootstrap](../../../../company/design/bootstrap-scene.md) concept which you can read more about [here](../../../../company/design/bootstrap-scene.md)
+This component benefits from the [bootstrap](../../../../guides/design/bootstrap-scene.md) concept which you can read more about [here](../../../../guides/design/bootstrap-scene.md)
 {% endhint %}
 
 With an active Cursor System you can effect the state of the pointer by attaching Cursor State components to desired game objects or through code where you want or need a more bespoke solution.
@@ -105,19 +105,19 @@ That is if the system is currently holding a state active due to Hold On Mouse D
 
 ## Mouse Over Cursor State
 
-![](<../../../../.gitbook/assets/image (99).png>)
+![](<../../../../.gitbook/assets/image (595).png>)
 
 This simple component can be added game objects and will cause the state of the cursor to change when the mouse enters the object. Optionally the state can be set to hold on mouse down, which can be useful of hand grab icons such as might be used for a drag to scroll UI element.
 
 ## Button Cursor State
 
-![](<../../../../.gitbook/assets/image (100).png>)
+![](<../../../../.gitbook/assets/image (525).png>)
 
 The button cursor state handles two (2) possible state changes, one for mouse enter similar to the Mousse Over Cursor State and one for On Click. This allows the component to show a 2nd cursor state while the mouse is held down such as highlighted pointer or tapping finger.
 
 ## Change Cursor Default State
 
-![](<../../../../.gitbook/assets/image (101) (1).png>)
+![](<../../../../.gitbook/assets/image (492).png>)
 
 The change cursor default state will change the registered default state on enter and exit.
 

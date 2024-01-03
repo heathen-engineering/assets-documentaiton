@@ -35,4 +35,4 @@ Results returned by the User and Server: Begin Auth Session functions.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (267).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (782).png" alt=""><figcaption></figcaption></figure>

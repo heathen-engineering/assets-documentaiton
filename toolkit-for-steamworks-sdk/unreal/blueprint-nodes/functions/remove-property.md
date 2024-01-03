@@ -33,4 +33,4 @@ Removes a [dynamic property](https://partner.steamgames.com/doc/features/invento
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (232).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (747).png" alt=""><figcaption></figcaption></figure>

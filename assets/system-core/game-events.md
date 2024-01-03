@@ -106,13 +106,13 @@ Creating a new GameEvent or any type derived from it is a simple matter of creat
 
 To expose a GameEvent to the inspector such that you can connect MonoBehaviours to it use the corasponing Game Event Listener ... you will find there is one for each type.
 
-![](<../../.gitbook/assets/image (136).png>)
+![](<../../.gitbook/assets/image (653).png>)
 
 This lets you connect behaviours up to the event just like you would a regular Unity Event.
 
 You can also invoke events via the inspector if you so choose such as through a button click
 
-![](<../../.gitbook/assets/image (137).png>)
+![](<../../.gitbook/assets/image (479).png>)
 
 ## Code Examples
 

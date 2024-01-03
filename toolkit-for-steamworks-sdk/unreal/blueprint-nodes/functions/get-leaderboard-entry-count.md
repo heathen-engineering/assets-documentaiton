@@ -43,4 +43,4 @@ The number of entries on the board
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (333).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (848).png" alt=""><figcaption></figcaption></figure>

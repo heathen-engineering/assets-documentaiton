@@ -1,6 +1,6 @@
 ---
 description: A collection of breakable wood props to kick start your next project.
-cover: ../../../../.gitbook/assets/WoodBreakableProps.png
+cover: ../../../../.gitbook/assets/WoodBreakableProps (1).png
 coverY: 73.93356470004957
 ---
 
@@ -28,5 +28,5 @@ We keep our props simple but detailed, modifying Heathen assets should be trivia
 * Weapon rack
 * Antler ... a little extra something 👍
 
-![Image taken in Unity 2019 HDRP with standard shader](<../../../../.gitbook/assets/image (167) (1) (1).png>)
+![Image taken in Unity 2019 HDRP with standard shader](<../../../../.gitbook/assets/image (500).png>)
 

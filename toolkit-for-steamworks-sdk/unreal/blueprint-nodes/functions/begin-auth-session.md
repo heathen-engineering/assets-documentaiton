@@ -47,6 +47,6 @@ The [UEBeginAuthSessionResult](../enumerators/uebeginauthsessionresult.md) value
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (268).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (783).png" alt=""><figcaption></figcaption></figure>

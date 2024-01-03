@@ -37,7 +37,7 @@ The API makes it easy to read and write files to and from Steam Remote Storage a
 
 A callback is a delegate similar to a UnityEvent, that is its a pointer to a method that will be called at some later point ... in the case of Steam methods it gets called when the process completes.
 
-To learn more please read the article on [Callbacks](../../../company/development/callbacks.md) and on [Lambda Expressions](../../../company/development/lambda-expressions.md).
+To learn more please read the article on [Callbacks](../../../guides/development/callbacks.md) and on [Lambda Expressions](../../../guides/development/lambda-expressions.md).
 
 ## Events
 

@@ -37,4 +37,4 @@ The command line as a string value.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (217).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (732).png" alt=""><figcaption></figcaption></figure>

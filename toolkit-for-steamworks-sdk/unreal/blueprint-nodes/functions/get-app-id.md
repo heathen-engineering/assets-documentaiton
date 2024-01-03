@@ -37,4 +37,4 @@ Returns the App Id that the Steam API was initialized for represented as an int3
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (195).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (710).png" alt=""><figcaption></figcaption></figure>

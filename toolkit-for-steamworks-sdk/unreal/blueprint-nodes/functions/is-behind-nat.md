@@ -39,4 +39,4 @@ This is only valid if the user is connected to the Steam servers and may not cat
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>

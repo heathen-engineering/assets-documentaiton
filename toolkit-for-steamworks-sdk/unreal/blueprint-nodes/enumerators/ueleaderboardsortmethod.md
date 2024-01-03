@@ -13,4 +13,4 @@ The sort methods for a leaderboard
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (331).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (846).png" alt=""><figcaption></figcaption></figure>

@@ -35,11 +35,11 @@ The top most being the group you are in now contains general information about H
 
 ### General Guides
 
-The general guides section contains a wide variety of topics around becoming and being a game developer. From the first steps and our, [Indie Check List](company/getting-started/indie-check-list.md) to tips on [Design ](company/design/)and [Development ](company/development/)through to the [Live ](company/live.md)operation of your game (coming soon).
+The general guides section contains a wide variety of topics around becoming and being a game developer. From the first steps and our, [Indie Check List](guides/getting-started/indie-check-list.md) to tips on [Design ](guides/design/)and [Development ](guides/development/)through to the [Live ](guides/live.md)operation of your game (coming soon).
 
 ### Steam
 
-We have been supporting Steam game developers for a decade and have a ton of guides, samples, and tools to help you get started. Our Steam guides will help you make the most out of the Steam platform, setting up your [developer account](company/steam/quick-start.md), creating your [store page](company/steam/store-page.md), and integrating [Steamworks (Steam API)](company/steam/steamworks/) we have you covered!
+We have been supporting Steam game developers for a decade and have a ton of guides, samples, and tools to help you get started. Our Steam guides will help you make the most out of the Steam platform, setting up your [developer account](steam/quick-start.md), creating your [store page](steam/store-page.md), and integrating [Steamworks (Steam API)](steam/steamworks.md) we have you covered!
 
 ### Heathen Assets
 

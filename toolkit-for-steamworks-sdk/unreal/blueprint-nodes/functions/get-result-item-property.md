@@ -49,8 +49,8 @@ The string value of the property requested.
 
 ### Example
 
-<figure><img src="../../../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (186).png" alt=""><figcaption></figcaption></figure>
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (226).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (741).png" alt=""><figcaption></figcaption></figure>

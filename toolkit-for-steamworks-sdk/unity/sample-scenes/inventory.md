@@ -17,9 +17,9 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 This scene provides example scripts demonstrating the use of [Item Definition](../scriptable-objects/item-definition.md). The scene is not functional as Steam Inventory is depend on your App's configuration.
 
-<figure><img src="../../../.gitbook/assets/image (18) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (504).png" alt=""><figcaption></figcaption></figure>
 
-Steam Inventory cannot be tested using app 480 and is dependent on your App's Inventory Item Definitions which is a matter of configuration in your Steam Developer Portal. You can learn more about the [Steam Inventory feature here](../../../company/steam/steamworks/inventory/).
+Steam Inventory cannot be tested using app 480 and is dependent on your App's Inventory Item Definitions which is a matter of configuration in your Steam Developer Portal. You can learn more about the [Steam Inventory feature here](../../../steam/inventory/).
 
 ## Components
 

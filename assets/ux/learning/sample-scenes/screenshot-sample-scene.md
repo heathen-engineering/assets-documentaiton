@@ -10,7 +10,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-![](<../../../../.gitbook/assets/image (161) (1).png>)
+![](<../../../../.gitbook/assets/image (436).png>)
 
 This sample scene demonstrates the use of the [Screenshot API](../../api/screenshot.md). The UX Screenshot API can be used to capture full screen or parts of a screen and simplies the process of reading that data out to a file, to byte\[] for transmission over a network, for resizing to make it appropreate as a thubnail ... think Save Game thumbnails and much more.
 

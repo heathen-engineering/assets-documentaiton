@@ -17,7 +17,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 This scene demonstrates the use of the [Remote Storage](../../../steam/cloud-save.md) system e.g. Steam Cloud
 
-<figure><img src="../../../.gitbook/assets/image (19) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (515).png" alt=""><figcaption></figcaption></figure>
 
 Steamworks Complete provides several ways to work with remote storage via the [Remote Storage API](../api/remotestorage.client.md) and [DataModel ](../programming-tools/datamodel.md)tools.
 

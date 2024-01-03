@@ -24,4 +24,4 @@ Defaults to 0 if you're not running a build downloaded from Steam.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (210).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (725).png" alt=""><figcaption></figcaption></figure>

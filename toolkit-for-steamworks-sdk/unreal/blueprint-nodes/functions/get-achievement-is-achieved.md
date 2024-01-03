@@ -41,4 +41,4 @@ True if the user has achieved this achievement, false otherwise
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (321).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (836).png" alt=""><figcaption></figcaption></figure>

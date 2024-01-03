@@ -53,4 +53,4 @@ Triggers a [Persona State Change](../events/persona-state-change.md) callback.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (30) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (180).png" alt=""><figcaption></figcaption></figure>

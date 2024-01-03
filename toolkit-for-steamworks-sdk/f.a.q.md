@@ -30,11 +30,11 @@ These articles are made possible by our [GitHub Sponsors](../become-a-sponsor/) 
 
 ## Offline Documentation?
 
-<figure><img src="../.gitbook/assets/image (1) (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (480).png" alt=""><figcaption></figcaption></figure>
 
-The code is fully commented and documented as a result you can use your IDE's "Object Explorer" and [IntelliSense ](../company/development/intellisense.md)features to view all the objects in our asset, see all the members in each object and review the comments and notes on every field and attribute within.
+The code is fully commented and documented as a result you can use your IDE's "Object Explorer" and [IntelliSense ](../guides/development/intellisense.md)features to view all the objects in our asset, see all the members in each object and review the comments and notes on every field and attribute within.
 
-We do not provide PDF-style documents for the asset. Your IDE's Object Explorer, Your IDE's [IntelliSense](../company/development/intellisense.md) and this Knowledge Base and its AI-driven search tools should prove a superior option to any static file-based documentation. If you have any questions please reach out to us on our [Discord](https://discord.gg/eVVgM36).
+We do not provide PDF-style documents for the asset. Your IDE's Object Explorer, Your IDE's [IntelliSense](../guides/development/intellisense.md) and this Knowledge Base and its AI-driven search tools should prove a superior option to any static file-based documentation. If you have any questions please reach out to us on our [Discord](https://discord.gg/eVVgM36).
 
 ## Engine
 
@@ -77,9 +77,9 @@ For Unity our prefabs even enable you to do many common things such as listing F
 
 ### What about Microtransactions / Cash Shops?
 
-Yes of course, Steam API handles MTX (microtransactions) via the Steam Inventory interface. Heathen's Toolkit for Steamworks has robust tooling around [Steam Inventory](../company/steam/steamworks/inventory/) which can greatly help any developer regardless of skill set.
+Yes of course, Steam API handles MTX (microtransactions) via the Steam Inventory interface. Heathen's Toolkit for Steamworks has robust tooling around [Steam Inventory](../steam/inventory/) which can greatly help any developer regardless of skill set.
 
-> To reiterate as its often hard to believe, yes Steam API does MTX, yes it is [Steam Inventory](../company/steam/steamworks/inventory/) that is used to do that.
+> To reiterate as its often hard to believe, yes Steam API does MTX, yes it is [Steam Inventory](../steam/inventory/) that is used to do that.
 
 ## Can I try before I buy?
 

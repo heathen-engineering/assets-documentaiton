@@ -50,4 +50,4 @@ For server token see [https://steamcommunity.com/dev/managegameservers](https://
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure>

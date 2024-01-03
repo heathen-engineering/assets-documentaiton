@@ -37,4 +37,4 @@ Check whether the current user has Steam Guard two-factor authentication enabled
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (309).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (824).png" alt=""><figcaption></figcaption></figure>

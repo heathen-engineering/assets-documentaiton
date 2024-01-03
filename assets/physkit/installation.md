@@ -37,7 +37,7 @@ If your a GitHub sponsor you have access to the source repository which you can 
 1. Open the Package Manager
 2. Click the "+" (plus) button located in the upper left of the window
 3. Select the "Add package from git URL..." option\
-   <img src="../../.gitbook/assets/image (144).png" alt="" data-size="original">
+   <img src="../../.gitbook/assets/image (641).png" alt="" data-size="original">
 4. Enter the URL below and press add.
 
 ```
@@ -80,7 +80,7 @@ If you have questions or issues pealse reach out on our [Discord ](https://disco
 
 When you import Heathen's Phys Kit it will test for the presence of System Core and if missing it will ask you if you want to install similar to the message shown below.
 
-![](<../../.gitbook/assets/image (189) (1).png>)
+![](<../../.gitbook/assets/image (268).png>)
 
 When you click yes the system will use Package Manager to install System Core from GitHub.&#x20;
 
@@ -115,7 +115,7 @@ This thread might also be of help for you
 
 When System Core is successfuly installed you will see messages in your console log similar to the following. These messages indicate what was installed, you can also review these in your Package Manager.
 
-![](<../../.gitbook/assets/image (165) (1).png>)
+![](<../../.gitbook/assets/image (391).png>)
 
 {% hint style="info" %}
 This always installs the latest code available and so the version number you see may very.
@@ -127,7 +127,7 @@ If for whatever reason you clicked no, or if you had an error and needed to inst
 
 &#x20;
 
-![](<../../.gitbook/assets/image (180) (1).png>)
+![](<../../.gitbook/assets/image (265).png>)
 
 ## From Package Manager
 
@@ -140,7 +140,7 @@ This must be done from the Unity Package Manager to insure that the proper Syste
 1. Open the Package Manager
 2. Click the "+" (plus) button located in the upper left of the window
 3. Select the "Add package from git URL..." option\
-   <img src="../../.gitbook/assets/image (144).png" alt="" data-size="original">
+   <img src="../../.gitbook/assets/image (641).png" alt="" data-size="original">
 4. Enter the URL below and press add.
 
 ```

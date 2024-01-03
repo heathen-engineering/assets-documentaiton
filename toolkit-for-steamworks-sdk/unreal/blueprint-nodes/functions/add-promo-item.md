@@ -65,7 +65,7 @@ The callback is an event that will contain the [UEResult](../enumerators/ueresul
 
 ### Example
 
-<img src="../../../../.gitbook/assets/image (39).png" alt="Simple Add Promo Item Example" data-size="original">
+<img src="../../../../.gitbook/assets/image (189).png" alt="Simple Add Promo Item Example" data-size="original">
 
 Note that we never return the result handle to you, we track this handle, process the items, read the requested properties and destroy the handle for you returning to you the resulting data in an array.
 
@@ -85,16 +85,16 @@ The definition ID of the item to grant the player.
 
 To get the handle you make your request, and check if the request was successful, if so store that request ... you'll need the handle from it later. This will prompt Steam to execute the Result Ready event when the results have been read.
 
-<img src="../../../../.gitbook/assets/image (38).png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/image (188).png" alt="" data-size="original">
 
 When the Result Ready is executed you will need to check if it matches your result handle, fetch the items contained in that result, and for each item fetch whatever additional properties you may need.
 
 
 
-<img src="../../../../.gitbook/assets/image (36).png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/image (186).png" alt="" data-size="original">
 
 Importantly when you are done reading the data returned by that result you need to destroy the handle.
 
-<img src="../../../../.gitbook/assets/image (37).png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/image (187).png" alt="" data-size="original">
 
 </details>

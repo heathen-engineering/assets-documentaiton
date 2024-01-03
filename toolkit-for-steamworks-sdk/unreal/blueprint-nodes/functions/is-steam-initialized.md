@@ -37,4 +37,4 @@ True if the Steam API has been initialized, false otherwise
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (81).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (709).png" alt=""><figcaption></figcaption></figure>

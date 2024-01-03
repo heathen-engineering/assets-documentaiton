@@ -33,4 +33,4 @@ Clears all of the current user's Rich Presence key/values.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (235).png" alt=""><figcaption></figcaption></figure>

@@ -37,4 +37,4 @@ The Inventory Result Handle of the result request that is now ready to be read
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (239).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (754).png" alt=""><figcaption></figcaption></figure>

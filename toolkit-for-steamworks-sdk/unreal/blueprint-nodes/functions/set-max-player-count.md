@@ -43,4 +43,4 @@ The new maximum number of players allowed on this server.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (290).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (805).png" alt=""><figcaption></figcaption></figure>

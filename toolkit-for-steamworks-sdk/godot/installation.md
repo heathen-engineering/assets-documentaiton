@@ -30,8 +30,8 @@ The [ProjectTemplate](https://github.com/heathen-engineering/SteamworksFoundatio
    Obviously you should choose the Windows or OSX-Linux versions based on what platform your building for.
 3. Enable the plugin in the editors Project Settings see the example below
 
-<figure><img src="../../.gitbook/assets/image (6) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (373).png" alt=""><figcaption></figcaption></figure>
 
 This will have created the AutoLoad script Steamworks Behaviour for you
 
-<figure><img src="../../.gitbook/assets/image (193).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (411).png" alt=""><figcaption></figcaption></figure>

@@ -17,7 +17,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 This simple scene outlines the basic steps to get up and running with Steamworks.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (397).png" alt=""><figcaption></figcaption></figure>
 
 This is a bare bones scene that does nothing more than initialize the Steam API. The key component in the scene is the [Steamworks Behaviour](../components/steamworks-behaviour.md) located on the Manager game object.
 
@@ -46,7 +46,7 @@ The Overlay Manager is a component script that can be added to a Game Object to 
 
 ### [User Profile](../prefabs/friend-profile.md)
 
-![](<../../../.gitbook/assets/image (2) (4) (3).png>)
+![](<../../../.gitbook/assets/image (310).png>)
 
 The User Profile present in the scene is simply here to prove to you that the Steam API is initialized and able to read data. On load it will fetch the local user's data and populate the avatar image, name, status, friend ID and Steam level.
 
@@ -60,7 +60,7 @@ In a production use case you would generally request the information on bootstra
 
 Assuming you are using an unmodified version of the sample scene and Steam Settings you will see messages appear in the Unity Editor Console log detailing each step of the initialization process.
 
-<figure><img src="../../../.gitbook/assets/image (15) (1) (3).png" alt=""><figcaption><p>Example initialization messages</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (491).png" alt=""><figcaption><p>Example initialization messages</p></figcaption></figure>
 
 In the event of an error details will be listed here along with troubleshooting guidance. In the event you require support please select the first error message in the log and press \[Ctrl + C] this will copy the full message and its stack trace to your clipboard. You can then paste that error into [Discord chat](https://discord.gg/eVVgM36) for live support or into a support email or similar.
 

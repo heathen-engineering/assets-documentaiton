@@ -12,4 +12,4 @@ Real-time services will be disabled until a matching [Steam Servers Connected](s
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (276).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (791).png" alt=""><figcaption></figcaption></figure>

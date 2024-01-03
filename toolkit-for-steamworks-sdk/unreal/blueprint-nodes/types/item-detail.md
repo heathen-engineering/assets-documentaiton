@@ -19,4 +19,4 @@ Returned from Heathen's "Simple" Inventory request nodes. This contains the deta
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (191).png" alt=""><figcaption></figcaption></figure>

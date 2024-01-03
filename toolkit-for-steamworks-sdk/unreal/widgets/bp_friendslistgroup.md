@@ -33,7 +33,7 @@ This example blueprint is used with the [BP\_FriendsListDisplay](bp\_friendslist
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/image (358).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (873).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -43,9 +43,9 @@ The above image shows 2 such groups "Family" and "Online". This widget does not 
 
 The widget has a custom event "Show Users" which when run will set the group name and iterate over the provided IDs
 
-<figure><img src="../../../.gitbook/assets/image (359).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (874).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (360).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (875).png" alt=""><figcaption></figcaption></figure>
 
 As we iterate over the provided IDs we create a new widget of type [BP\_FriendsListEntry ](bp\_friendslistentry.md)and pass it a specific User ID from the input array adding it to our Content Root which is a simple panel.
 

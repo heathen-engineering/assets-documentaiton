@@ -37,4 +37,4 @@ The beta name if any, is empty otherwise,
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (212).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (727).png" alt=""><figcaption></figcaption></figure>

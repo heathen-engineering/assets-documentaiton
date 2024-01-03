@@ -43,12 +43,29 @@ The specifics of your Engine.ini may change when installing the plugin as part o
 
 `SteamworksComplete.NetSocketsNetDriver` is the formal name of the NetDriver and `SteamworksComplete.NetSocketsNetConnection` is the formal name of the connection class for example, assuming you have installed the plugin from GitHub as part of your project (e.g. a project plugin) your NetDriverDefinitions entry and Plugins config might take the form
 
+{% hint style="success" %}
+Note you should set the ConnectionTimeout and InitialConnectTimeout to a value that makes sense for you.\
+\
+In the example below we use 60 ... which is a very long timeout but can be useful for dev/test where we often test on very clunky and slow machines.
+
+\
+Production would probably be better set as a much smaller value 2-10 for example.
+{% endhint %}
+
 ```ini
+[SystemSettings]
+net.CurrentHandshakeVersion=2
+net.MinHandshakeVersion=2
+net.VerifyNetSessionID=0
+net.VerifyNetClientID=0
+
 [/Script/Engine.Engine]
 !NetDriverDefinitions=ClearArray
 +NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="SteamworksComplete.NetSocketsNetDriver",DriverClassNameFallback="SteamworksComplete.NetSocketsNetDriver")
 
 [/Script/SteamworksComplete.NetSocketsNetDriver]
+ConnectionTimeout=60.0
+InitialConnectTimeout=60.0
 NetConnectionClassName="SteamworksComplete.NetSocketsNetConnection"
 
 [Plugins]

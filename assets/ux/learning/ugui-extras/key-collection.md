@@ -49,7 +49,7 @@ Key Collection is a simple Unity component that can be added to a GameObject. Yo
 
 ### Key Collection
 
-![](<../../../../.gitbook/assets/image (102).png>)
+![](<../../../../.gitbook/assets/image (443).png>)
 
 The root of the system Key Collection is the behavior that manages all others. This component contains your high level configuration options and exposes collection level events to the inspector
 
@@ -79,37 +79,37 @@ A standard Unity event that is invoked when the user presses a key
 
 ### Key Collection Output Manager
 
-![](<../../../../.gitbook/assets/image (103) (1).png>)
+![](<../../../../.gitbook/assets/image (450).png>)
 
 This component directs the results of key presses according to its configuration. The most common configuration is shown above. When configured for Event System the output manager will monitor the Unity Event system and remember the most recently selected UnityEngine.UI.InputField or TMPro.TextMeshProInputField. When a key is pressed the output will be directed to that most recently focused input field.
 
 #### Input Field
 
-![](<../../../../.gitbook/assets/image (104).png>)
+![](<../../../../.gitbook/assets/image (485).png>)
 
 When configured for Input Field the designer can specify a UnityEngine.UI.InputField. In this mode the output will always be directed to this specific InputField
 
 #### Text
 
-![](<../../../../.gitbook/assets/image (105).png>)
+![](<../../../../.gitbook/assets/image (696).png>)
 
 When configured for Text the designer can specify a target UnityEngine.UI.Text. in this mode the output will always be directed to this specific text field
 
 #### Component
 
-![](<../../../../.gitbook/assets/image (106).png>)
+![](<../../../../.gitbook/assets/image (582).png>)
 
 When configured for Component, the designer can select a GameObject and then select any component behavior on that GameObject. The designer can then indicate any string field or attribute on that component behavior to be the target of the output.
 
 #### Function
 
-![](<../../../../.gitbook/assets/image (107).png>)
+![](<../../../../.gitbook/assets/image (708).png>)
 
 When configured for Function the designer can specify a target function via a Unity Event. The output will be directed to that function as an input parameter of type KeyCollectionKey. It is up to that function handle the input from there.
 
 ### Key Collection Designer
 
-![](<../../../../.gitbook/assets/image (108) (1).png>)
+![](<../../../../.gitbook/assets/image (575).png>)
 
 The Key Collection Designer assists the user in creating a new keyboard from scratch. You can quickly generate common boards such as QWERTY, AZERTY, etc. and then modify the collection from there manually.
 
@@ -119,7 +119,7 @@ Remember the collection is just a GameObject and each key within it is again jus
 
 ### Key Collection Template Manager
 
-![](<../../../../.gitbook/assets/image (109) (1).png>)
+![](<../../../../.gitbook/assets/image (433).png>)
 
 The Key Collection Template Manager allows you to save your configuration as an asset object for easy import into other scenes or projects. With modern versions of Unity, a nested Prefab can do much the same however this tool can be useful for quickly swapping out key templates (the prefab used to generate the keys).
 

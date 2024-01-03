@@ -16,19 +16,19 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## &#x20;Introduction
 
-Create a session [lobby ](../../../company/steam/steamworks/multiplayer/matchmaking-tools.md)and manage a quick match style UI with ZERO code required.
+Create a session [lobby ](../../../steam/multiplayer/matchmaking-tools.md)and manage a quick match style UI with ZERO code required.
 
 Quick match based lobbies are the simplest and cleanest user experience for your player in common game design. They present very little to no real UI elements concerned with the "lobby" rather the user or system defines the search arguments and searches for or creates a new session to match players with. This approach requires the least amount of input from players typically reducing match wait types by using more flexible search parameters when needed.
 
 ### DOTA 2 Example
 
-![](<../../../.gitbook/assets/image (1) (2).png>)  ![](<../../../.gitbook/assets/image (4) (4).png>)
+![](<../../../.gitbook/assets/image (338).png>)  ![](<../../../.gitbook/assets/image (650).png>)
 
 Screen captures of DOTA 2 "Play DOTA" option is a true example of Steam Lobby used for Quick Match matchmaking. The player hits one button, optionally selects preferences like ranked vs unranked and the system does the rest based on the player's stats, rather or not they are in a party, geo location, rankings, etc.
 
 ### Halo Infinite Example
 
-![](<../../../.gitbook/assets/image (2) (1) (3).png>)  ![](<../../../.gitbook/assets/image (5) (1) (3).png>)
+![](<../../../.gitbook/assets/image (330).png>)  ![](<../../../.gitbook/assets/image (371).png>)
 
 Screen captures of Halo Infinite's "Quick Play" option is a prime example of a Quick Match Lobby setup. The player hits one button and the system will find an appropriate match based on the player's stats, rather or not they are in a party, geo location, rankings, etc.
 
@@ -58,7 +58,7 @@ Easily access critical information about your Quick Match session for a simple a
 
 A production ready prefab is available and configured with the features displayed above. You can see an example of this prefab in use in the [Quick Match Example](../sample-scenes/lobby/#quick-match-example) scene.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (623).png" alt=""><figcaption></figcaption></figure>
 
 ## Events
 
