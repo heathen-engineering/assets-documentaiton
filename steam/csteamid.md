@@ -191,7 +191,7 @@ All Steam IDs can be expressed as simple value types such as int64 for Steam ID.
 
 See the [Steam ID Tools article](../toolkit-for-steamworks-sdk/unreal/blueprint-nodes/functions/steam-id-tools.md) for more information.
 
-<figure><img src="../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 ### C++
 

@@ -41,4 +41,4 @@ The name of the board if found
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (847).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (332).png" alt=""><figcaption></figcaption></figure>

@@ -44,4 +44,4 @@ The callback is an event raised when the process completes and contains the foll
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (755).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (240).png" alt=""><figcaption></figcaption></figure>

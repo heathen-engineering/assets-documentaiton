@@ -11,13 +11,13 @@ Steamworks requires a few system-level features to function correctly such as a 
 
 To handle this for you Heathen has created the Steam Game Instance class which extends Unreal's native Game Instance class. To use Steamworks you should create a new Blueprint based on Steam Game Instance or use the provided BP\_Steam\_Game\_Instance.
 
-<figure><img src="../../.gitbook/assets/image (862).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (347).png" alt=""><figcaption></figcaption></figure>
 
 ## Configuration
 
 You can adjust the behaviour of the Initialize Steam API function using the Class Defaults
 
-<figure><img src="../../.gitbook/assets/image (863).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (348).png" alt=""><figcaption></figcaption></figure>
 
 ### Callback Frequency
 
@@ -29,7 +29,7 @@ The system will clamp this value to be between 0.1 and 0.01 e.g. 10Htz to 100Htz
 
 Only used for client API initialization this value is the App ID Valve issued you when you signed up for and paid for your Steam application fee. The value of 480 is the test App ID provided by Steam aka Spacewars but should be replaced with your own App ID as soon as you have it.
 
-We use this value on initialisations to check if the app requires a restart and if so we will restart the app from the Steam client. You can learn more about this in our [steam\_appid.txt](../../steam/steam\_appid.txt.md) article.
+We use this value on initialisations to check if the app requires a restart and if so we will restart the app from the Steam client. You can learn more about this in our [steam\_appid.txt](../../company/steam/steamworks/steam\_appid.txt.md) article.
 
 ### IP
 
@@ -53,7 +53,7 @@ Only used for game server API initialization this value is used with Steam Game 
 
 ## Initialization
 
-<figure><img src="../../.gitbook/assets/image (864).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (349).png" alt=""><figcaption></figcaption></figure>
 
 You will notice that initialization does require the use of a few nodes. The main node here is the Initialize Steam API function node. This will read the configuration you have provided from the Steam Game Instance and initialize Steam API for you. It will always initialize Steam Client API endpoints when executing on a client or listen server and will always initialise Steam Game Server API endpoints when executing on a dedicated server aka a "headless" server.
 
@@ -65,7 +65,7 @@ Finally, we call a few event handlers so we can better organize our nodes.
 
 ## Events
 
-<figure><img src="../../.gitbook/assets/image (865).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (350).png" alt=""><figcaption></figcaption></figure>
 
 ### Should Restart
 

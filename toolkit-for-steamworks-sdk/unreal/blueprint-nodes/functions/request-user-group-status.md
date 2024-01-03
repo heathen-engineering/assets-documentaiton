@@ -37,4 +37,4 @@ Checks if a user is in the specified Steam group.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (795).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (280).png" alt=""><figcaption></figcaption></figure>

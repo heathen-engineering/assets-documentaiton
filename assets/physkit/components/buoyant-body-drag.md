@@ -10,7 +10,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## Introduction
 
-![](<../../../.gitbook/assets/image (381).png>)
+![](<../../../.gitbook/assets/image (177) (1) (1).png>)
 
 Modifies the drag effect applied to a body based on the portion of that body that is submerged under a Surface Tool.
 

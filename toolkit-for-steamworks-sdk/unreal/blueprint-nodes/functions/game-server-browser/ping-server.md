@@ -45,4 +45,4 @@ An event delegate that reports the [Game Server Item Wrapper](../../types/game-s
 
 ## Nodes
 
-<figure><img src="../../../../../.gitbook/assets/image (766).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (251).png" alt=""><figcaption></figcaption></figure>

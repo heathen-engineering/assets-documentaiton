@@ -41,4 +41,4 @@ True if the call was successful
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (859).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (344).png" alt=""><figcaption></figcaption></figure>

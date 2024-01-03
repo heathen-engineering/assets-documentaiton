@@ -41,6 +41,6 @@ You usually don't need to check for this yourself. All of the API calls that rel
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (825).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (310).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (793).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (278).png" alt=""><figcaption></figcaption></figure>

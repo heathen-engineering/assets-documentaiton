@@ -45,4 +45,4 @@ Is this a dedicated server (**true**) or a listen server (**false**)?
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (800).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (285).png" alt=""><figcaption></figcaption></figure>

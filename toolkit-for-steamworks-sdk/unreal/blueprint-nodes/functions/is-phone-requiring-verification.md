@@ -37,4 +37,4 @@ Check whether the current user's phone number is awaiting (re)verification.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>

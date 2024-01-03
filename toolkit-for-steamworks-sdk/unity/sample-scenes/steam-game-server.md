@@ -17,7 +17,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 This scene is used to demonstrate Steam Game Server initialization. This doesn't actually require any special coding or components and is handled through the Steamwork Behaviour automatically for you based on your build target such that any server build will simply initialize the API as a Steam Game Server according to your [Steam Settings](../scriptable-objects/steam-settings/).
 
-<figure><img src="../../../.gitbook/assets/image (454).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Components
 
@@ -34,7 +34,7 @@ Its smart enough to initialize the Client API for client builds and the Server A
 
 Assuming you are using an unmodified version of the sample scene and Steam Settings you will see messages appear in the Unity Editor Console log detailing each step of the initialization process.
 
-<figure><img src="../../../.gitbook/assets/image (513).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the event of an error details will be listed here along with troubleshooting guidance. In the event you require support please select the first error message in the log and press \[Ctrl + C] this will copy the full message and its stack trace to your clipboard. You can then paste that error into [Discord chat](https://discord.gg/eVVgM36) for live support or into a support email or similar.
 

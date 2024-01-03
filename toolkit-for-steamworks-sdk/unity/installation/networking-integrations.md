@@ -131,7 +131,7 @@ Mirror Community's FizzySteamTransport has been made compatible with our asset a
 2. Open the Unity Package Manager
 3. Click the "+" (plus) button located in the upper left of the window
 4. Select the "Add package from git URL..." option\
-   <img src="../../../.gitbook/assets/image (641).png" alt="" data-size="original">
+   <img src="../../../.gitbook/assets/image (144).png" alt="" data-size="original">
 5. Enter the URL below and press the add button:
 
 ```
@@ -154,7 +154,7 @@ You must install Unity's NetCode to use its community transports. The above arti
 2. Open the Unity Package Manager
 3. Click the "+" (plus) button located in the upper left of the window
 4. Select the "Add package from git URL..." option\
-   <img src="../../../.gitbook/assets/image (641).png" alt="" data-size="original">
+   <img src="../../../.gitbook/assets/image (144).png" alt="" data-size="original">
 5. Enter the URL below and press the add button:
 
 ```
@@ -173,7 +173,7 @@ NetCode for GameObjects has a community transport project similar to other HLAPI
 2. Open the Unity Package Manager
 3. Click the "+" (plus) button located in the upper left of the window
 4. Select the "Add package from git URL..." option\
-   <img src="../../../.gitbook/assets/image (641).png" alt="" data-size="original">
+   <img src="../../../.gitbook/assets/image (144).png" alt="" data-size="original">
 5. Enter the URL below and press the add button:
 
 ```

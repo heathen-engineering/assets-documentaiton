@@ -38,4 +38,4 @@ An array of strings representing each language code the app supports
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (726).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (211).png" alt=""><figcaption></figcaption></figure>

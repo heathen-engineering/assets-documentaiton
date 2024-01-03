@@ -37,4 +37,4 @@ Begin the process of logging the game server out of Steam.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>

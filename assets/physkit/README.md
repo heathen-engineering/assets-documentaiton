@@ -1,6 +1,6 @@
 ---
 description: Bring life to your game with Heathen's PhysKit.
-cover: ../../.gitbook/assets/WebPage Cover (1).png
+cover: ../../.gitbook/assets/WebPage Cover.png
 coverY: 120.8925
 ---
 

@@ -54,11 +54,11 @@ If you chose Blueprint project when you created your project, simply add a C++ c
 
 The plugin is deployed to the Unreal Marketplace as an engine plugin. This means you need to install the plugin to the engine after purchase in order to be able to use it.
 
-<figure><img src="../../.gitbook/assets/image (882).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (367).png" alt=""><figcaption></figcaption></figure>
 
 Once you have installed the plugin to the engine versions you require you need to enable the plugin for your project, this will require a restart to complete.
 
-<figure><img src="../../.gitbook/assets/image (883).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (368).png" alt=""><figcaption></figcaption></figure>
 
 ### From GitHub
 
@@ -72,7 +72,7 @@ Once you do have a .sln we need to copy the Plugins in. You may already have a P
 
 Next, copy the SteamworksComplete folder into your Plugins folder. You'll find the plugin in our GitHub Sponsor Source Repo
 
-<figure><img src="../../.gitbook/assets/image (250).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (30) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 When done your folder should look similar to the above.
 
@@ -96,7 +96,7 @@ You have 2 options to sidestep this, 1 you could deploy it as an engine plugin (
 
 Next, right-click on the .uproject file and select Generate Visual Studio project files
 
-<figure><img src="../../.gitbook/assets/image (884).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (369).png" alt=""><figcaption></figcaption></figure>
 
 #### Rebuild
 

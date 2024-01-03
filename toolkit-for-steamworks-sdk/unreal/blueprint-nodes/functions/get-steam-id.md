@@ -41,4 +41,4 @@ The Steam ID of the server can be used to connect to the server when using Steam
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (794).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (279).png" alt=""><figcaption></figcaption></figure>

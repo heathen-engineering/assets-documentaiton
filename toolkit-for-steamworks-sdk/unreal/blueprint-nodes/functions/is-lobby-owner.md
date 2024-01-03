@@ -41,4 +41,4 @@ The Lobby ID to check if the local user is the owner of.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (897).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (382).png" alt=""><figcaption></figcaption></figure>

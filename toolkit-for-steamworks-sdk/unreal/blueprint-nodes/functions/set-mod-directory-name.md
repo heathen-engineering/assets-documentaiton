@@ -47,4 +47,4 @@ The game directory to set. Must not be **NULL** or an empty string (""). This ca
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (806).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (291).png" alt=""><figcaption></figcaption></figure>

@@ -11,4 +11,4 @@ Called when a connection to the Steam back-end has been established. This means 
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (789).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (274).png" alt=""><figcaption></figcaption></figure>

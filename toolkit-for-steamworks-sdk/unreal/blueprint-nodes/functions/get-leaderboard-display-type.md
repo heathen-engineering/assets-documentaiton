@@ -41,4 +41,4 @@ The [UELeaderboardDisplayType](../enumerators/ueleaderboarddisplaytype.md) of th
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (842).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (327).png" alt=""><figcaption></figcaption></figure>

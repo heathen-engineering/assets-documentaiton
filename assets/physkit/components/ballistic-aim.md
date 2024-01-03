@@ -8,11 +8,11 @@ Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant acc
 These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (600).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Introduction
 
-<figure><img src="../../../.gitbook/assets/image (621).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (6).png" alt=""><figcaption></figcaption></figure>
 
 And easy to use solution for code free management of turrets. Add this to a game object and configure the "Y" (left and right rotation) and the "X" (up and down rotation) pivot and limits and we will do the rest. You can simply call "Aim" and we will track the target if a projectile solution available.
 

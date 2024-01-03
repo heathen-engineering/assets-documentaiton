@@ -10,7 +10,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## Introduction
 
-![](<../../../.gitbook/assets/image (661).png>)
+![](<../../../.gitbook/assets/image (166) (1) (1) (1) (1) (1).png>)
 
 The Verlet Spring component manages hierarchies of transforms integrating Newtonian movement formulas according to the settings applied to each hierarchy.
 

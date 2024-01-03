@@ -35,4 +35,4 @@ Once started, use [Get Available Voice](get-available-voice.md) and [Get Voice](
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>

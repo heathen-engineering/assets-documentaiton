@@ -27,4 +27,4 @@ What was the value it read
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (839).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (324).png" alt=""><figcaption></figcaption></figure>

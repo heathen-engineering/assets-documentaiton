@@ -35,4 +35,4 @@ Item definitions are a mapping of "definition IDs" (integers between 1 and 99999
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (746).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (231).png" alt=""><figcaption></figcaption></figure>

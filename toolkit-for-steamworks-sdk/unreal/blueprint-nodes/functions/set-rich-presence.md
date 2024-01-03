@@ -50,4 +50,4 @@ There are three additional special keys used by the [new Steam Chat](https://ste
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (828).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (313).png" alt=""><figcaption></figcaption></figure>

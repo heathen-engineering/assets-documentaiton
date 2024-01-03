@@ -56,4 +56,4 @@ The UEResult status represents the status of the request.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (742).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (227).png" alt=""><figcaption></figcaption></figure>

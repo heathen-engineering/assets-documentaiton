@@ -41,4 +41,4 @@ The game info for the friend if any
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (736).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (221).png" alt=""><figcaption></figcaption></figure>

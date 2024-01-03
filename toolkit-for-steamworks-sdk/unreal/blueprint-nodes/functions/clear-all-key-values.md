@@ -41,4 +41,4 @@ The auth ticket handle to cancel.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (785).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (270).png" alt=""><figcaption></figcaption></figure>

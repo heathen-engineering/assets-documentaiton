@@ -47,8 +47,8 @@ An Inventory Result object defining the handle and success state.
 
 This process requires two steps, first request a result handle with the desired items
 
-<figure><img src="../../../../.gitbook/assets/image (171).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (21) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The second part is to listen on the Steam Inventory Result Ready event callback and when received check it against your expected handle, if it is the handle for your request Serialize Result produces an array of bytes that can be sent over the network and destroy the handle.
 
-<figure><img src="../../../../.gitbook/assets/image (172).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>

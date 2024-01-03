@@ -10,7 +10,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-![](<../../../../.gitbook/assets/image (362).png>)
+![](<../../../../.gitbook/assets/image (174) (1) (1).png>)
 
 This scene gives a more practice example of code free drag and drop and shows how to use tags and rules to control what can be draged to where. In this scene each drag item is idetified with a color and a number, each slot has either or both a number and a color.&#x20;
 
@@ -49,7 +49,7 @@ You will find 4 items configured under the \
 Canvas > Background > Inventory \
 Game object. Each item has two "types" assigned. A type is simply a scriptable object and is used like a tag by the drop rules e.g. does the item have this tag, does that allow it or forbid it.
 
-![](<../../../../.gitbook/assets/image (586).png>)
+![](<../../../../.gitbook/assets/image (163) (1) (1) (1) (1).png>)
 
 ### Slots / Containers
 
@@ -59,4 +59,4 @@ and\
 Canvas > Background > Complex Slots\
 Game objects respetivly, each slot is configured with "Filter Types" and "Mask Mode" which effects what items can and cannot be droped on it.
 
-![](<../../../../.gitbook/assets/image (540).png>)
+![](<../../../../.gitbook/assets/image (172) (1).png>)

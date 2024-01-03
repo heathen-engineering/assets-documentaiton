@@ -35,6 +35,6 @@ Alternatively, we have created a simpler Get Friend From Source node that will p
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (734).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (219).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (735).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (220).png" alt=""><figcaption></figcaption></figure>

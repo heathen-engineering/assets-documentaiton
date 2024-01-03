@@ -81,7 +81,7 @@ Note the Avatar field checks for loaded avatar images and returns the matching i
 
 The LoadAvatar method does similar but asynchronously and will load the image if not found. It does this by taking an Action as a parameter and invoking it when the image is found or loaded as required.
 
-If your not aware of what a callback is see this [article](../../guides/development/lambda-expressions.md#callbacks).
+If your not aware of what a callback is see this [article](../../company/development/lambda-expressions.md#callbacks).
 
 ### Display User information
 

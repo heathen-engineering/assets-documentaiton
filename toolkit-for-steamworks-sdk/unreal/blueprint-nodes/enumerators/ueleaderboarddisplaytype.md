@@ -13,4 +13,4 @@ The display type used by the Steam Community website to know how to format the l
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (843).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (328).png" alt=""><figcaption></figcaption></figure>

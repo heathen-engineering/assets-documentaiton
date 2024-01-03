@@ -45,4 +45,4 @@ The port for spectators to join.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (812).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (297).png" alt=""><figcaption></figcaption></figure>

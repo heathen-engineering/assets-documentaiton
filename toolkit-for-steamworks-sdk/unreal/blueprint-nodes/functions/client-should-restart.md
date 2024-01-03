@@ -35,7 +35,7 @@ Test if the app was launched from the Steam client, if it was not it will attemp
 
 The App ID is to be tested, if the user does not own the app the Steam Store page for the app will be opened. If the user does own the app but the app was not launched from the Steam client then the app will be launched from the Steam client.
 
-* If steam\_appid.txt is present it will cause this test to skip, you should not ship the steam\_appid.txt with your game. It is for dev use and use with Steam Game Server. See the article on [steam\_appid.txt](../../../../steam/steam\_appid.txt.md) for more information.
+* If steam\_appid.txt is present it will cause this test to skip, you should not ship the steam\_appid.txt with your game. It is for dev use and use with Steam Game Server. See the article on [steam\_appid.txt](../../../../company/steam/steamworks/steam\_appid.txt.md) for more information.
 
 ### Return Value
 
@@ -43,4 +43,4 @@ True if the app needs to be restarted. In this case Steam will be launching the 
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (712).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (197).png" alt=""><figcaption></figcaption></figure>

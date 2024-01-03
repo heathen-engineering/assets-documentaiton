@@ -38,7 +38,7 @@ This is the root where the Tree View Collection will create and manage nodes.
 
 This component represents the visual node as it will appear in your UI. The typical approach is to define this prototype in scene in a disabled GameObject as a template. This is a similar approach to Unity's own DropDown and its Template.
 
-![](<../../../../.gitbook/assets/image (445).png>)
+![](<../../../../.gitbook/assets/image (129).png>)
 
 The available fields are
 
@@ -66,7 +66,7 @@ This simply indicates rather or not this node is expanded e.g. is its children v
 
 ### Tree View Collection
 
-![](<../../../../.gitbook/assets/image (573).png>)
+![](<../../../../.gitbook/assets/image (130).png>)
 
 The Tree View Collection is the root of the system and would typically be placed above Unity layout controls such as Scroll Views, Vertical Layout, etc.&#x20;
 
@@ -76,7 +76,7 @@ Once you have created and configured the structure you can use the Editor contro
 
 ### Tree View Node
 
-![](<../../../../.gitbook/assets/image (605).png>)
+![](<../../../../.gitbook/assets/image (132).png>)
 
 The Tree View Node is the "element" of the Tree View Collection and will be instantiated for each node in the collection.
 

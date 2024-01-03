@@ -26,11 +26,11 @@ Check out the following articles for more details on specific components
 [Border Handle](window-tools.md#border-handles)
 {% endhint %}
 
-![](<../../../../.gitbook/assets/image (470).png>)
+![](<../../../../.gitbook/assets/image (152) (1) (1) (1).png>)
 
 With this system, you have complete control of your window's features including resize and move handles. You can choose to add a move handle, allowing the window to be dragged around the parent, rather or not it clamps to the parent and rather or not it remains always on top of other windows.
 
-![](<../../../../.gitbook/assets/image (267).png>)
+![](<../../../../.gitbook/assets/image (80).png>)
 
 ## Searchable Windows
 
@@ -42,7 +42,7 @@ For more information please review the [API.Windows interface article](../../api
 
 ### Move Handles
 
-![](<../../../../.gitbook/assets/image (647).png>)
+![](<../../../../.gitbook/assets/image (85).png>)
 
 Intended to be added to a child object of your window the RecTransform this is added to will be the clickable area that when clicked allows the user to drag the window.
 
@@ -52,7 +52,7 @@ Works great with the [Cursor Tools](cursor-tools.md) Button Cursor State
 
 ### Border Handles
 
-![](<../../../../.gitbook/assets/image (668).png>)
+![](<../../../../.gitbook/assets/image (86).png>)
 
 Similar to the Move Handle, the Border Handle is intended to be added to a child object of your window, the RectTransform of which will be the clickable area that when click allows the user to drag to resize the window. Border Handles need to be told what part of the border they are on as this effects the drag to resize behaviour.
 

@@ -82,7 +82,7 @@ itemData.Create(result =>
 
 Now that we have our data sorted we can simply call create on the UGC API.&#x20;
 
-You probably noticed its name is very long and a pain to type? We do this so each name is verbose, easily understandable and not likely to be ambiguous. You can however make it easier for yourself in your using statements via an alias. See our [article on Namespaces](../../guides/development/namespace-and-using.md) for more information.
+You probably noticed its name is very long and a pain to type? We do this so each name is verbose, easily understandable and not likely to be ambiguous. You can however make it easier for yourself in your using statements via an alias. See our [article on Namespaces](../../company/development/namespace-and-using.md) for more information.
 
 ```csharp
 using UGC = HeathenEngineering.SteamworksIntegration.API.UserGeneratedContent.Client;
@@ -101,7 +101,7 @@ UGC.CreateItem(itemData,
                fileCreatedCallback);
 ```
 
-Technically that is all that is required to create a workshop item ... however this would make it hard to handle any sort of issue or error so we recommend you provide a callback handler. You can learn more about [callbacks in our article here](../../guides/development/callbacks.md). In the case of CreateItem it takes a callback that has a single parameter of type [WorkshopItemDataCreateStatus](../../toolkit-for-steamworks-sdk/unity/objects/workshop-item-data-create-status.md) and is an ideal candidate for an [anonymous callback as discussed in our article here](../../guides/development/lambda-expressions.md#callbacks).
+Technically that is all that is required to create a workshop item ... however this would make it hard to handle any sort of issue or error so we recommend you provide a callback handler. You can learn more about [callbacks in our article here](../../company/development/callbacks.md). In the case of CreateItem it takes a callback that has a single parameter of type [WorkshopItemDataCreateStatus](../../toolkit-for-steamworks-sdk/unity/objects/workshop-item-data-create-status.md) and is an ideal candidate for an [anonymous callback as discussed in our article here](../../company/development/lambda-expressions.md#callbacks).
 
 ## Troubleshooting
 

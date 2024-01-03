@@ -41,4 +41,4 @@ The [Achievement Status](../types/achievement-status.md) value indicating the na
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (832).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (317).png" alt=""><figcaption></figcaption></figure>

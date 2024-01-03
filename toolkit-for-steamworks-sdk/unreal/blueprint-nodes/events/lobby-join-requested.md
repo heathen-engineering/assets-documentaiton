@@ -41,4 +41,4 @@ The friend they joined through. This will be invalid if not directly via a frien
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (740).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (225).png" alt=""><figcaption></figcaption></figure>

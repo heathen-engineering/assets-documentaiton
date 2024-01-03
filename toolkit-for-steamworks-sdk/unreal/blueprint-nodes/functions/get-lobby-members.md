@@ -49,4 +49,4 @@ An array of int64 represents the ID of the members of this lobby.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (898).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (383).png" alt=""><figcaption></figcaption></figure>

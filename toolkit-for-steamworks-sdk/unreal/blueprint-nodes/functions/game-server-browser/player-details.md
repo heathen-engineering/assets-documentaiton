@@ -45,4 +45,4 @@ An event delegate that reports an array of [Game Server Player Details Wrapper](
 
 ## Nodes
 
-<figure><img src="../../../../../.gitbook/assets/image (768).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (253).png" alt=""><figcaption></figcaption></figure>

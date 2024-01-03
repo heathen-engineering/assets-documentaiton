@@ -54,5 +54,5 @@ False under the following conditions:
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (738).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (223).png" alt=""><figcaption></figcaption></figure>
 

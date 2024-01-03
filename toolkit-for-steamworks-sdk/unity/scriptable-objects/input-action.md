@@ -171,7 +171,7 @@ label.Text = names[0];
 
 Input Actions are created as part of your [Steam Settings](steam-settings/) object
 
-![](<../../../.gitbook/assets/image (631).png>)
+![](<../../../.gitbook/assets/image (160) (1).png>)
 
 ### Set Analog or Digital
 
@@ -181,4 +181,4 @@ AI represents "Analog Input"
 
 DI represents "Digital Input"
 
-![](<../../../.gitbook/assets/image (557).png>)
+![](<../../../.gitbook/assets/image (161) (1) (1) (1).png>)

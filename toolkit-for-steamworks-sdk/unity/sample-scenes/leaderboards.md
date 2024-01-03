@@ -15,7 +15,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## Introduction
 
-<figure><img src="../../../.gitbook/assets/image (262).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (5).png" alt=""><figcaption></figcaption></figure>
 
 The Leaderboard sample scene demonstrates the read, write and display of Leaderboard data. The sample scene doesn't use any custom code and works "code free" using standard Heathen tools.
 
@@ -23,7 +23,7 @@ The Leaderboard sample scene demonstrates the read, write and display of Leaderb
 
 ### Steamworks Behaviour
 
-Located on the Manager GameObject in the scene root. [Steamworks Behaviour](../components/steamworks-behaviour.md) is required for the Steam API to work at all. Typically this would be in your [Bootstrap scene](../../../guides/design/bootstrap-scene.md) however for the case of these samples which are meant to be ran in editor we place them here.
+Located on the Manager GameObject in the scene root. [Steamworks Behaviour](../components/steamworks-behaviour.md) is required for the Steam API to work at all. Typically this would be in your [Bootstrap scene](../../../company/design/bootstrap-scene.md) however for the case of these samples which are meant to be ran in editor we place them here.
 
 In the case of this sample we are using the [Evt Steam Initialized](../components/steamworks-behaviour.md#evt-steam-initialized) event on the behaviour to trigger the initial query on the Leaderboard Manager and refresh the Leaderboard User Entry.
 
@@ -53,7 +53,7 @@ To the right you will notice a display that updates in real time as the user's s
 
 Assuming you are using an unmodified version of the sample scene and Steam Settings you will see messages appear in the Unity Editor Console log detailing each step of the initialization process.
 
-<figure><img src="../../../.gitbook/assets/image (491).png" alt=""><figcaption><p>Example initialization messages</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15) (1) (3).png" alt=""><figcaption><p>Example initialization messages</p></figcaption></figure>
 
 In the event of an error details will be listed here along with troubleshooting guidance. In the event you require support please select the first error message in the log and press \[Ctrl + C] this will copy the full message and its stack trace to your clipboard. You can then paste that error into [Discord chat](https://discord.gg/eVVgM36) for live support or into a support email or similar.
 

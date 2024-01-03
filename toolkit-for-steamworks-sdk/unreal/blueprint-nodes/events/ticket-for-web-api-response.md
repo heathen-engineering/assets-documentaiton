@@ -33,4 +33,4 @@ The result of [Get Auth Ticket for Web API](../functions/get-auth-ticket-for-web
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>

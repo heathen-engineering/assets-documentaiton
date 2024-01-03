@@ -37,4 +37,4 @@ An array of [Item With Price](../types/item-with-price.md).
 
 ## Example
 
-<figure><img src="../../../../.gitbook/assets/image (173).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (23) (1) (1).png" alt=""><figcaption></figcaption></figure>

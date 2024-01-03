@@ -45,4 +45,4 @@ Did the user authorize the transaction
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (758).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (243).png" alt=""><figcaption></figcaption></figure>

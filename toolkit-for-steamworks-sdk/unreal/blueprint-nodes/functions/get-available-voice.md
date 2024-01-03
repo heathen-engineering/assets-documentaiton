@@ -39,4 +39,4 @@ A [Voice Available Result](../types/voice-available-result.md) object expressing
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>

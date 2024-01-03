@@ -35,4 +35,4 @@ Because people often release push-to-talk keys early, the system will keep recor
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>

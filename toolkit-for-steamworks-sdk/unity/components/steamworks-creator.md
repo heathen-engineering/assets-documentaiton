@@ -30,7 +30,7 @@ This tool performs a check on start and will if required create a new [Steamwork
 
 Simply add a Steamworks Creator to a game object in any or even all scenes. The object can be configured to test on start or on demand and can be configured to mark the resulting [Steamworks Behaviour](steamworks-behaviour.md) object as Do Not Destroy.
 
-![](<../../../.gitbook/assets/image (272).png>)
+![](<../../../.gitbook/assets/image (151) (1) (1).png>)
 
 ### Create On Start
 

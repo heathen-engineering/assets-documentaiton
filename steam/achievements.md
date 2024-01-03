@@ -33,7 +33,7 @@ First you need to create your achievements on the Steam Developer portal. [https
 
 Log into your Steam Developer Portal and access your app's admin page. Look for the Technical Tools section and select the Edit Steamworks Settings option.
 
-<figure><img src="../.gitbook/assets/image (316).png" alt="Techincal Tools"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Techincal Tools"><figcaption></figcaption></figure>
 
 From there select the Stats & Achievements > Achievements option and create your new achievements.&#x20;
 
@@ -41,13 +41,13 @@ Make note of the value you use in the API Name field. You will use it when worki
 
 In Unity, if you prefer to work with Achievements via an object reference then you can use our [AchievementObject ](../toolkit-for-steamworks-sdk/unity/scriptable-objects/achievement-object.md)which is a Unity ScriptableObject that can be referenced and accessed like any other Unity Object.
 
-<figure><img src="../.gitbook/assets/image (455).png" alt="Achievement test"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (6).png" alt="Achievement test"><figcaption></figcaption></figure>
 
 ### Publish
 
 You \*\***MUST**\*\* publish your changes in Steam Developer Portal before they will be accessible via Steam API. In the Steam Developer Portal when you have pending changes you will see a red banner at the top of the screen ... click it and follow the instructions.
 
-<figure><img src="../.gitbook/assets/image (704).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
 
 ### Use
 
@@ -189,7 +189,7 @@ myAch.IsAchieved = true;
 
 Heathen's Steamworks can "import" your achievements from Steam API directly and construct Scriptable Objects that make it possible to work with achievements with zero coding required.
 
-![](<../.gitbook/assets/image (360).png>)
+![](<../.gitbook/assets/image (176) (1) (1) (1) (1).png>)
 
 Right from the Steam Settings object you import all of the Steam Achievements you defined in Valve's Steam Developer Portal.
 
@@ -199,7 +199,7 @@ You must have the simulation running so the Steam API is initialized and able to
 
 Once done you can find Scriptable Objects for each of the identified achievements nested under your Steam Settings
 
-![](<../.gitbook/assets/image (543).png>)
+![](<../.gitbook/assets/image (167) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 You can learn more about the [Achievement Object](../toolkit-for-steamworks-sdk/unity/scriptable-objects/achievement-object.md) in our documentation. Using this object you can reference this achievement in any of your logic and easily test for unlock and unlock the achievement.
 
@@ -257,7 +257,7 @@ public class ExampleScript : MonoBehaviour
 
 Store the changes to all stats and achievements made since the last time this was called.
 
-<figure><img src="../.gitbook/assets/image (887).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (372).png" alt=""><figcaption></figcaption></figure>
 
 ```cpp
 bool result = SteamUserStats()->StoreStats();
@@ -267,7 +267,7 @@ bool result = SteamUserStats()->StoreStats();
 
 Below we show getting the achievement, breaking the result down and using it to print a string to the screen including the Achievement's friendly name&#x20;
 
-<figure><img src="../.gitbook/assets/image (878).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (363).png" alt=""><figcaption></figcaption></figure>
 
 Assuming that `apiName` is defined as `FString apiName`.
 
@@ -307,7 +307,7 @@ status.IsHidden = isHidden;
 
 Simply unlock/achieve the achievement
 
-<figure><img src="../.gitbook/assets/image (879).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (364).png" alt=""><figcaption></figcaption></figure>
 
 Assuming that `apiName` is defined as `FString apiName`.
 
@@ -319,7 +319,7 @@ bool result = SteamUserStats()->SetAchievement(StringCast<ANSICHAR>(*apiName).Ge
 
 Simply reset/clear/re-lock the achievement
 
-<figure><img src="../.gitbook/assets/image (880).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (365).png" alt=""><figcaption></figcaption></figure>
 
 Assuming that `apiName` is defined as `FString apiName`.
 

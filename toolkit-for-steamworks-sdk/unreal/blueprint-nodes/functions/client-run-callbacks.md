@@ -33,8 +33,8 @@ Updates the Steam API callbacks with any changes reported from the Steam client.
 
 ### Example:
 
-<figure><img src="../../../../.gitbook/assets/image (715).png" alt=""><figcaption><p>Run the callback at 30 FPS</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (200).png" alt=""><figcaption><p>Run the callback at 30 FPS</p></figcaption></figure>
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (714).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (199).png" alt=""><figcaption></figcaption></figure>

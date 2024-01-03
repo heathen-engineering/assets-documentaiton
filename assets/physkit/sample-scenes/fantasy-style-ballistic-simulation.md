@@ -10,7 +10,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## Introduction
 
-![](<../../../.gitbook/assets/image (386).png>)
+![](<../../../.gitbook/assets/image (180) (1) (1) (1) (1).png>)
 
 This scene demonstrates the use of the Ballistics API to solve form a desired trajectory and to then apply that result to a physically simulated projectile.
 

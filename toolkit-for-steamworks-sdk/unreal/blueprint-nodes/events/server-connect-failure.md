@@ -11,4 +11,4 @@ Called when a connection attempt has failed. This will occur periodically if the
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (790).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (275).png" alt=""><figcaption></figcaption></figure>

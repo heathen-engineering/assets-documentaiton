@@ -43,4 +43,4 @@ An event that is called when the results are ready that will contain the Texture
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (835).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (320).png" alt=""><figcaption></figcaption></figure>

@@ -72,9 +72,9 @@ public class Example : MonoBehaviour
 
 Using the menu button to the left of the input field the designer can change the mode of Better Way
 
-![Better Way is set to Constant](<../../.gitbook/assets/image (510).png>)
+![Better Way is set to Constant](<../../.gitbook/assets/image (42) (1).png>)
 
-![Better Way is set to Variable](<../../.gitbook/assets/image (627).png>)
+![Better Way is set to Variable](<../../.gitbook/assets/image (45) (1).png>)
 
 ## Custom Variables
 
@@ -138,9 +138,9 @@ public class Example : MonoBehaviour
 
 In the inspector that will look like this
 
-![Complex Data is set to Constant mode](<../../.gitbook/assets/image (321).png>)
+![Complex Data is set to Constant mode](<../../.gitbook/assets/image (46) (1).png>)
 
-![Complex Data is set to Variable mode](<../../.gitbook/assets/image (308).png>)
+![Complex Data is set to Variable mode](<../../.gitbook/assets/image (47) (1).png>)
 
 If you wanted to insist that its a variable e.g. not let your designers choose then change the code to use the variable as opposed to the reference
 
@@ -151,7 +151,7 @@ public class Example : MonoBehaviour
 }
 ```
 
-![Variable type, has no menu button](<../../.gitbook/assets/image (628).png>)
+![Variable type, has no menu button](<../../.gitbook/assets/image (48) (1).png>)
 
 Notice that there is no menu button, the designer is thus forced to use a variable of this object.
 

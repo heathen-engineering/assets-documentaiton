@@ -15,7 +15,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## Introduction&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (640).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 The Simple Achievements scene demonstrates reading and updating achievements using the AchievementObject. In this scene we use SetAchievementIcon, SetAchievementName and SetAchievementDescription components to populate the UI showing the icon, name and description of each achievement.
 
@@ -59,7 +59,7 @@ Stats do not have icons so there is no icon to load and each type of stat has it
 
 Assuming you are using an unmodified version of the sample scene and Steam Settings you will see messages appear in the Unity Editor Console log detailing each step of the initialization process.
 
-<figure><img src="../../../.gitbook/assets/image (491).png" alt=""><figcaption><p>Example initialization messages</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15) (1) (3).png" alt=""><figcaption><p>Example initialization messages</p></figcaption></figure>
 
 In the event of an error details will be listed here along with troubleshooting guidance. In the event you require support please select the first error message in the log and press \[Ctrl + C] this will copy the full message and its stack trace to your clipboard. You can then paste that error into [Discord chat](https://discord.gg/eVVgM36) for live support or into a support email or similar.
 

@@ -43,4 +43,4 @@ Global stats return the value as a float or int directly, history stats return v
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (841).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (326).png" alt=""><figcaption></figcaption></figure>

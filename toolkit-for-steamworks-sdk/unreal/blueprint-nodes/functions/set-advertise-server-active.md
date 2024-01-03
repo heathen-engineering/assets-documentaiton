@@ -41,4 +41,4 @@ Should be active or no
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (787).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (272).png" alt=""><figcaption></figcaption></figure>

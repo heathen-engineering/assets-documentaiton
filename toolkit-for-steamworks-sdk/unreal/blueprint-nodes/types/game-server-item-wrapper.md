@@ -83,4 +83,4 @@ server version as reported to Steam
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (765).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (250).png" alt=""><figcaption></figcaption></figure>

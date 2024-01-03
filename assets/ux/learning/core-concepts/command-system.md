@@ -36,7 +36,7 @@ With your library populated your ready to use the system as is, additional tools
 
 This object acts as a collection of valid commands and provides the basic logic for parsing text and matching commands.
 
-![](<../../../../.gitbook/assets/image (599).png>)
+![](<../../../../.gitbook/assets/image (133).png>)
 
 You can create a new Command Library by right clicking in your asset folder and seleting Create > UX > Commands > Library.
 

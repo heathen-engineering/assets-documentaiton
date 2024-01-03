@@ -10,7 +10,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-![](<../../../../.gitbook/assets/image (520).png>)
+![](<../../../../.gitbook/assets/image (164) (1) (1) (1).png>)
 
 This scene demonstrates the basics of the Drag and Drop system showing off the various drag and drop behaviours.&#x20;
 

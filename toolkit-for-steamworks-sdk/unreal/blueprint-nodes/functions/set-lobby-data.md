@@ -55,4 +55,4 @@ True if set successfully, false indicates the lobby ID is invalid or the key/val
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

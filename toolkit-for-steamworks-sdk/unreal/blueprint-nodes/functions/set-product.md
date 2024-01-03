@@ -49,4 +49,4 @@ Converting the game's app ID to a string for this is recommended.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (809).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (294).png" alt=""><figcaption></figcaption></figure>

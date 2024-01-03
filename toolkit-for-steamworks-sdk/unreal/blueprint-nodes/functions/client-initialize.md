@@ -46,4 +46,4 @@ This is only used for client builds, for server builds see the [Game Server Init
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (716).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (201).png" alt=""><figcaption></figcaption></figure>

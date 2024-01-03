@@ -47,4 +47,4 @@ The resulting authorization cookie has an expiration time of one day, so it woul
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (827).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (312).png" alt=""><figcaption></figcaption></figure>

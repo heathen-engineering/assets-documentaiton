@@ -13,7 +13,7 @@ The [voice recorder component](../../toolkit-for-steamworks-sdk/unity/components
 
 The idea is that you connect the Voice Stream event to a method that can send that data over your network.
 
-![](<../../.gitbook/assets/image (664).png>)
+![](<../../.gitbook/assets/image (158) (1) (1).png>)
 
 ```csharp
 voiceRecorded.evtVoiceStream.AddListener(SendVoiceData);
@@ -23,7 +23,7 @@ The [Voice Stream](../../toolkit-for-steamworks-sdk/unity/components/voice-recor
 
 ### [Voice Stream](../../toolkit-for-steamworks-sdk/unity/components/voice-stream.md)
 
-![](<../../.gitbook/assets/image (579).png>)
+![](<../../.gitbook/assets/image (187) (1) (1) (1).png>)
 
 The [voice stream component](../../toolkit-for-steamworks-sdk/unity/components/voice-stream.md) can be used to play back voice data produced by the voice-recorded component. The intent is that your network system receiving voice data from a Voice Recorded would call the [Play Voice Data method](../../toolkit-for-steamworks-sdk/unity/components/voice-stream.md#play-voice-data) on this component.
 

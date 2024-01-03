@@ -37,4 +37,4 @@ Log a Steam Game Server on to the Steam API, this will cause the server to be as
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (792).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (277).png" alt=""><figcaption></figcaption></figure>

@@ -91,10 +91,10 @@ Depending on your game there may be more context specific factors to consider wh
 
 This is a simple tool which simply serves to expose events of the [API.Scenes](../../api/scenes.md) interface to the Unity Inspector for easy hookup..
 
-![](<../../../../.gitbook/assets/image (578).png>)
+![](<../../../../.gitbook/assets/image (154) (1) (1) (1).png>)
 
 {% hint style="info" %}
-You will see the term Bootstrap or Bootstrap Scene used in this and other documents. You can read more on that concept [here](../../../../guides/design/bootstrap-scene.md). Note that the first scene in your game is by definition your bootstrap scene e.g. build index 0 is bootstrap.
+You will see the term Bootstrap or Bootstrap Scene used in this and other documents. You can read more on that concept [here](../../../../company/design/bootstrap-scene.md). Note that the first scene in your game is by definition your bootstrap scene e.g. build index 0 is bootstrap.
 {% endhint %}
 
 #### References

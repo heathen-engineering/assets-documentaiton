@@ -16,9 +16,9 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 The drag and drop system makes it easy to create drag-able, intractable elements and to define rules for drop points with no coding required. Consisting of 2 major features **Item** and **Container,** designers can quickly create spell bars, inventory systems and more without needing a single line of scripting.
 
-![The Drag Item Componenet](<../../../../.gitbook/assets/image (546).png>)
+![The Drag Item Componenet](<../../../../.gitbook/assets/image (121).png>)
 
-![The Drop Container Componenet](<../../../../.gitbook/assets/image (299).png>)
+![The Drop Container Componenet](<../../../../.gitbook/assets/image (122) (1).png>)
 
 ## Configuration
 
@@ -26,7 +26,7 @@ The drag and drop system makes it easy to create drag-able, intractable elements
 
 Drag and Drop Item objects are the objects that are to be dragged. The drag effect and drop effect and clear drop effect can be defined on the item.
 
-![](<../../../../.gitbook/assets/image (555).png>)
+![](<../../../../.gitbook/assets/image (124).png>)
 
 #### Home Container
 
@@ -64,7 +64,7 @@ This defines what should happen when the drag operation is "dropped" outside of 
 
 #### Types
 
-![](<../../../../.gitbook/assets/image (622).png>)
+![](<../../../../.gitbook/assets/image (123).png>)
 
 This is a list of Drop Type references which discribe this particular item and are used by Drop Container to filter in or out items e.g. to define the rules of what can or cannot be dropped into a container.
 
@@ -72,7 +72,7 @@ This is a list of Drop Type references which discribe this particular item and a
 
 Drop Containers are how we define valid drop points and defines the filter types and masking mode for the container.&#x20;
 
-![](<../../../../.gitbook/assets/image (682).png>)
+![](<../../../../.gitbook/assets/image (125).png>)
 
 #### Recieve Mode
 
@@ -104,7 +104,7 @@ This discribes how the Filter Types should be tested, options include
 
 #### Filter Types
 
-![](<../../../../.gitbook/assets/image (672).png>)
+![](<../../../../.gitbook/assets/image (126).png>)
 
 This is the list of **Drop Types** the **Mask Mode** rule should be applied to when comparing against the Dropped Drag Item's **Types** field.
 
@@ -112,6 +112,6 @@ This is the list of **Drop Types** the **Mask Mode** rule should be applied to w
 
 Masks can be applied to items and containers, and allow the designer to filter in or out what can be dropped on a slot. To accomplish this designers can define Types which can be used by the system to define rules for drops.
 
-![Highlights the Types list of Drop Types in the Drag Item component](<../../../../.gitbook/assets/image (405).png>)
+![Highlights the Types list of Drop Types in the Drag Item component](<../../../../.gitbook/assets/image (127).png>)
 
-![Highlights the Filter Types list of Drop Types in teh Drop Contianer component](<../../../../.gitbook/assets/image (472).png>)
+![Highlights the Filter Types list of Drop Types in teh Drop Contianer component](<../../../../.gitbook/assets/image (128).png>)

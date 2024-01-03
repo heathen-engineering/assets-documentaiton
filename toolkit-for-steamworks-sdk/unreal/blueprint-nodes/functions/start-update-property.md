@@ -37,4 +37,4 @@ Returns an Update Handle that can be used with Set Property, Remove Property and
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (748).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (233).png" alt=""><figcaption></figcaption></figure>

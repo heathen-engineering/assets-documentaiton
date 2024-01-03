@@ -10,7 +10,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## Introduction
 
-![](<../../../.gitbook/assets/image (688).png>)
+![](<../../../.gitbook/assets/image (153).png>)
 
 This scene serves as a simple playground for force effects. You'll find a simple UI on the left side letting you turn different force effect fields on and off. These fields are rotating around the room effecting the spheres in the room. In addition a wind effect direction is applied to room pushing subjects away from the camera.
 

@@ -17,13 +17,11 @@ The Sockets Net Driver is a standard Unreal Net Driver designed to work with Val
 
 The transport is technically capable of connecting through several different addressing methods including IP:Port however the most common and most valuable is to address via Steam ID.&#x20;
 
-`steam.12345678987654321`
+`steam.<SteamID>/<level_name>`
 
-or
+The above format is an example of how you would address a target connection using the Open Level node in Unreal's Blueprints
 
-`12345678987654321`
-
-The above shows an example of addresses formed when working with the Steam Net Driver, the custom URL prefix `steam.` is optional if present or if the provided address is numeric it will be treated as a Steam ID
+<figure><img src="../../.gitbook/assets/image (390).png" alt=""><figcaption><p>Convert a Hex ID to a Steam ID and use it as an address to connect to</p></figcaption></figure>
 
 ## Engine.ini
 

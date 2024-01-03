@@ -35,4 +35,4 @@ When the filter has been established call Request Lobby List, this will have a s
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (137).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (14) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -16,7 +16,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 User eXperience kit helps you gather rich game data in a well formatted log, and then feed that data from within your game tools such as Trello, Zendesk, Unity's User Reporting, etc. and to help you capture and save screenshots for the full screen or sections of the screen.
 
-![](<../../../../.gitbook/assets/image (285).png>)
+![](<../../../../.gitbook/assets/image (92).png>)
 
 ## Features
 

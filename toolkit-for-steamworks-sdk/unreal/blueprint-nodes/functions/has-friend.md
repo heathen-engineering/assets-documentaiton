@@ -45,4 +45,4 @@ The criteria to check if the indicated friend is part of. This is a [UEFriendFla
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (182).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>

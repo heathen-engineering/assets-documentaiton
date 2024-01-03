@@ -31,10 +31,10 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 A simple widget to display a user's avatar, name and status is used by the [BP\_FriendsListGroup ](bp\_friendslistgroup.md)and further by the [BP\_FriendsListDisplay](bp\_friendslistdisplay.md).
 
-<figure><img src="../../../.gitbook/assets/image (876).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (361).png" alt=""><figcaption></figcaption></figure>
 
 ## Construction
 
-<figure><img src="../../../.gitbook/assets/image (877).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (362).png" alt=""><figcaption></figcaption></figure>
 
 This simple example widget has a single event Set User Data which takes in a User ID and uses that to set the user's image, name and status. Note that this widget example uses the [BP\_SteamAvatarImage ](bp\_steamavatarimage.md)and [BP\_SteamUserName ](bp\_steamusername.md)widgets to further simplify getting and displaying name and image.

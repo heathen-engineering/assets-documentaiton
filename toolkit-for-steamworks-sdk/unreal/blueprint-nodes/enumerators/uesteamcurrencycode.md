@@ -35,4 +35,4 @@ A simple enumerator expressing the currency codes supported by Steam&#x20;
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (756).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (241).png" alt=""><figcaption></figcaption></figure>

@@ -27,7 +27,7 @@ public class UserGeneratedContentQueryManager : MonoBehaviour
 
 {% embed url="https://kb.heathenengineering.com/assets/steamworks/learning/core-concepts/user-generated-content-workshop" %}
 
-The UGC Workshop article includes a step by step guide on the use of UGC Query Manager to create an [In-Game Workshop browser](../../../steam/workshop/in-game-browser.md).
+The UGC Workshop article includes a step by step guide on the use of UGC Query Manager to create an [In-Game Workshop browser](../../../company/steam/steamworks/workshop/in-game-browser.md).
 
 #### User Generated Content API
 

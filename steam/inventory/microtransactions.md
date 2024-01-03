@@ -14,10 +14,10 @@ These articles are made possible by our [GitHub Sponsors](../../become-a-sponsor
 
 ## &#x20;Introduction
 
-Steam Microtransactions (In-Game Purchases) are handled via the [Steam Inventory](./) feature.&#x20;
+Steam Microtransactions (In-Game Purchases) are handled via the [Steam Inventory](../../company/steam/steamworks/inventory/) feature.&#x20;
 
 {% hint style="info" %}
-Have a look at our articles on [Monetization ](../../guides/design/monetization/)before you get started designing your game's monetization systems.&#x20;
+Have a look at our articles on [Monetization ](../../company/design/monetization/)before you get started designing your game's monetization systems.&#x20;
 
 [https://kb.heathenengineering.com/company/concepts/monetization](https://kb.heathenengineering.com/company/concepts/monetization)
 {% endhint %}
@@ -49,7 +49,7 @@ In short in-game currency is simply exchanging X items for Y items. See the [Cra
 
 So you have set up your inventory items, You are going to use full Client API so you can't simulate an end-to-end purchase. You're asking yourself ... How do I test my game logic to make sure it's handling inventory change correctly?
 
-Use the [Steamworks Inspector](../steamworks.md#inventory) and click the "Grant" button beside any of the items, this will cause it to grant you an item which will raise the [EventChanged](../../toolkit-for-steamworks-sdk/unity/scriptable-objects/steam-settings/game-client/inventory-settings.md) ... you can now observe your game logic and ensure it's performing as you expected.
+Use the [Steamworks Inspector](../../company/steam/steamworks/#inventory) and click the "Grant" button beside any of the items, this will cause it to grant you an item which will raise the [EventChanged](../../toolkit-for-steamworks-sdk/unity/scriptable-objects/steam-settings/game-client/inventory-settings.md) ... you can now observe your game logic and ensure it's performing as you expected.
 
 ### Start Purchase
 
@@ -211,15 +211,15 @@ The [Inventory Results Ready event](../../toolkit-for-steamworks-sdk/unreal/blue
 
 The Start Purchase function asks Steam to load a shopping cart with given items and present it to the user for payment processing. Only items that have a defined price can be purchased, only items available to this user can be purchased. Steam will process the payment from that point forward and you are not assured of getting a response. For example, a player may simply leave the cart open and never process the transaction, they may cancel the transaction, modify items in the cart, etc.
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 If a transaction is processed and authorized you will see a [Micro Txn Authorization Response](../../toolkit-for-steamworks-sdk/unreal/blueprint-nodes/events/micro-txn-authorization-response.md) event be executed. That event will carry the Order ID which can be matched to the Order ID created with the Start Purchase request.
 
-<figure><img src="../../.gitbook/assets/image (888).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (373).png" alt=""><figcaption></figcaption></figure>
 
 ### Exchange
 
-[Exchange Items](../../toolkit-for-steamworks-sdk/unreal/blueprint-nodes/functions/exchange-items.md) lets you pass in an array of [Item Count](../../toolkit-for-steamworks-sdk/unreal/blueprint-nodes/types/item-count.md) to exchange for a given item. The callback works much like the [Get All Items](../../toolkit-for-steamworks-sdk/unreal/blueprint-nodes/functions/get-all-items.md) discussed in the [Inventory](./) article.
+[Exchange Items](../../toolkit-for-steamworks-sdk/unreal/blueprint-nodes/functions/exchange-items.md) lets you pass in an array of [Item Count](../../toolkit-for-steamworks-sdk/unreal/blueprint-nodes/types/item-count.md) to exchange for a given item. The callback works much like the [Get All Items](../../toolkit-for-steamworks-sdk/unreal/blueprint-nodes/functions/get-all-items.md) discussed in the [Inventory](../../company/steam/steamworks/inventory/) article.
 
 To use the feature you first need to know what item ID you want to "craft" i.e. exchange other items for.&#x20;
 
@@ -231,13 +231,13 @@ The following image is an example of creating the "recipe" array needed by the E
 
 In the example, we are using all of stack 123 and 5 from stack 124.
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### [Get Item Price](../../toolkit-for-steamworks-sdk/unreal/blueprint-nodes/functions/get-item-price.md)
 
 If you are setting up an in-game store or some similar microtransaction system you will likely want to know what the price of the item is for this user.
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Notice that the event tells you the currency code and currency symbol seen for the user and that prices are returned as a whole number e.g. int64
 
@@ -245,6 +245,6 @@ In the case of say USD you would want to convert the price to a float and divide
 \
 
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 The above are the relevant nodes to yield a string formatted for the user's currency assuming a cent-based currency like USD, GBP, etc. The resulting string here would look like this \`$1.99" assuming a base price of 199 and a currency symbol of $

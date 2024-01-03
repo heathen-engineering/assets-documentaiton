@@ -35,19 +35,19 @@ An extension of the standard UTextBlock widget with three new functions to help 
 
 ### Show My Name
 
-![](<../../../.gitbook/assets/image (722).png>)
+![](<../../../.gitbook/assets/image (207).png>)
 
 This works with the Get Persona Name method to handle loading a target user's name for you and assigning it to the display.
 
 ### Show User Name
 
-![](<../../../.gitbook/assets/image (723).png>)
+![](<../../../.gitbook/assets/image (208).png>)
 
 This works with the Get Friend Persona Name method to handle loading a target user's name for you and assigning it to the display.
 
 ### Show User Nickname
 
-![](<../../../.gitbook/assets/image (724).png>)
+![](<../../../.gitbook/assets/image (209).png>)
 
 This works with the Get Player Nickname method to handle loading a target user's name for you and assigning it to the display.
 
@@ -65,7 +65,7 @@ Given this, there is no such thing as a Nickname for the local user. The local u
 
 ## Example
 
-<figure><img src="../../../.gitbook/assets/image (721).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (206).png" alt=""><figcaption></figcaption></figure>
 
 The process assumes you have added a BP\_SteamUserName to your UI. We then get the Steam Name from your UI and use that as the target input for the Show My Name function call.
 

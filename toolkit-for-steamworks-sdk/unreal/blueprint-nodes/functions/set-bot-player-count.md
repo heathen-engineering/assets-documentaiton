@@ -41,4 +41,4 @@ The number of bot/AI players currently playing on the server.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (799).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (284).png" alt=""><figcaption></figcaption></figure>

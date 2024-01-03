@@ -43,4 +43,4 @@ The other user that we have played with.
 
 ## Nodes
 
-![](<../../../../.gitbook/assets/image (178).png>)
+![](<../../../../.gitbook/assets/image (28) (1).png>)

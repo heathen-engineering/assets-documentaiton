@@ -37,4 +37,4 @@ Check whether the current user has verified their phone number.
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>

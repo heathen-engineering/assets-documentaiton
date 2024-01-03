@@ -22,7 +22,7 @@ Interaction Tools is a collection of simple behaviors that help you deliver a mo
 
 These tools help you create hold event actions for your players and they come in a few flavors. A hold event is when your interface asks the player to click on a GUI element or press a specific button for some duration in order to activate the action.
 
-![](<../../../../.gitbook/assets/image (422).png>)
+![](<../../../../.gitbook/assets/image (113).png>)
 
 All hold events let you specify the hold time and rather or not the system should use unscaled time.
 
@@ -61,7 +61,7 @@ This variant uses Unity's IPointer Down, Up and Exit handlers so will respond to
 
 Play On audio tools are simple components which will play an audio clip on the indicated events. This makes for a very simple system for applying UI audio.
 
-![](<../../../../.gitbook/assets/image (533).png>)
+![](<../../../../.gitbook/assets/image (114).png>)
 
 Each Play On component takes an Output audio source and a Sound audio clip and can configure the Volume Scale of the clip. The Play On will play the clip through the output source when its engaged. The following variants are available.
 

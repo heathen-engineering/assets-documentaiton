@@ -10,7 +10,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-![](<../../../../.gitbook/assets/image (642).png>)
+![](<../../../../.gitbook/assets/image (156).png>)
 
 Applies a [Force Effect](../../objects/force-effect/) either as a global effect or as a triggered effect. One or more effects can be added and will be applied to any [Force Effect Receiver](../force-effect-reciever.md) that is effected by this field.
 

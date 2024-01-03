@@ -22,7 +22,7 @@ The icons may not load until you click the Activate button causing the UI to ref
 This is a sample scene for developer testing of the API and not indicative of production use and so the UI is "quick and dirty" for easy testing not robust execution.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (609).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
 
 It is important to understand what Steam Input is and how to properly configure it for your game.&#x20;
 
