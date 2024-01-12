@@ -7,11 +7,7 @@ coverY: 0
 
 ## Introduction
 
-{% hint style="info" %}
-The Sockets Net Driver is currently in preview and only available to GitHub Sponsors. If you have any questions please reach out to us on Discord (link in the top menu)
-{% endhint %}
-
-The Sockets Net Driver is a standard Unreal Net Driver designed to work with Valve's Steam Networking Sockets. Inspired by Unreal's built-in Net Driver Sockets but without dependency on an Online Subsystem. Steam Networking Sockets is a powerful UDP-like socket layer that can be used for classic "peer to peer" or "client / server" topologies.&#x20;
+The Sockets Net Driver is a standard Unreal Net Driver designed to work with Valve's Steam Networking Sockets. Inspired by Unreal's built-in Net Driver Sockets but without dependency on an Online Subsystem. Steam Networking Sockets is a powerful UDP-like socket layer that can be used for classic "peer to peer" or "client/server" topologies.&#x20;
 
 ## Addressing
 
@@ -72,4 +68,14 @@ NetConnectionClassName="SteamworksComplete.NetSocketsNetConnection"
 
 [Plugins]
 EnabledPlugins=SteamworksComplete
+```
+
+### Disable Steam Socket
+
+Need to go back to using Ip Net Driver?\
+To stop the module load from setting the Steam Socket Subsystem as the default you need to add the following configure value to your Engine.ini
+
+```ini
+[/Script/SteamworksComplete.Steamworkscomplete]
+bUseSteamNetworking=False
 ```
