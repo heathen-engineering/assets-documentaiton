@@ -56,7 +56,11 @@ Navigate to your organization's home page. This is usually just gethub.com follo
 
 ### Step 2
 
-As the owner of an organization you will see a simple green button near the top ladled "New"; click that.
+As the owner of an organization you will see a simple green button near the top labelled "New"; click that.
+
+{% hint style="warning" %}
+Be sure your repo is "Private" especially if you will have 3rd party code in your repo. Otherwise, you could leak your code and the code you licensed from others.
+{% endhint %}
 
 ![](<../../../.gitbook/assets/image (183).png>)
 
