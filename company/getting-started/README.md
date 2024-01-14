@@ -47,7 +47,7 @@ Understanding where you are and what you want as a developer is the first and mo
 
 If you are even slightly serious about making a go of it as a game developer or game development studio that pays the bills then be sure to read the sub-articles under this page. We will lightly touch on the key concepts you need to understand. We will aim to reset your expectations to be based on the reality of the game industry today and help you develop a plan that **could** lead you to success.
 
-## Hopefuls
+## Startups
 
 So you want to be a professional game developer. that is great, we need you, don't be dissuaded but let's make sure your expectations are rooted in reality.
 
@@ -61,7 +61,7 @@ Game development is very challenging.&#x20;
 
 **Before we even get started, understand**:
 
-Learning is required for any level of success as a dev and/or as a studio. \
+Learning is required for any level of success as a solo dev and/or as a studio. \
 \
 Even a "solo" developer has a rather massive team of support and tooling propping them up. \
 \
