@@ -37,7 +37,7 @@ The ID of the entity that you will send the ticket to
 
 ### Return Value
 
-A [Auth Ticket Data](../types/auth-ticket-data.md) value
+An [Auth Ticket Data](../types/auth-ticket-data.md) value
 
 ## Nodes
 

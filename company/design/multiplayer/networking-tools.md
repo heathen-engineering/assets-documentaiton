@@ -7,7 +7,7 @@ description: Making connections
 <figure><img src="../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
 
 {% hint style="success" %}
-#### Like what your seeing?
+#### Like what you are seeing?
 
 Consider supporting us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
@@ -16,92 +16,92 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction
 
-Networking tools is a pretty general term and can mean anything from Low Level tools like Steam Networking Sockets, to high level APIs like Fish Networking all the way up to full on platforms such as offered by Photon and Special OS.&#x20;
+Networking tools is a pretty general term and can mean anything from Low-Level tools like Steam Networking Sockets to high-level APIs like Fish Networking up to full-on platforms such as those offered by PlayFab, GameLift, etc.&#x20;
 
 {% hint style="success" %}
-Your an indie not a AAA developer pushing the bleeding edge of what is even possible.
+You are an indie, not a AAA developer pushing the bleeding edge of what is even possible.
 
-odds are any of these solutions will ( technology wise ) do everything you could dream of plus some so try not to get hung up on "most performant", "MMO SCALE!"?!?!?!", etc. and just look for the tool that suits your project and team. \
+odds are any of these solutions will (technology-wise) do everything you could dream of plus some. Try not to get hung up on "most performant", or "MMO SCALE!"?!?!?!", etc. and just look for the tool that suits your project and team. \
 \
-That will be the tool whose documentation, community and general design "jive" most with you personally.
+That will be the tool whose documentation, community and general design "jive" most with you personally, your project and with the rest of your team.
 {% endhint %}
 
 We will list a few commonly used tools in each category below
 
-### Low Level Tools
+### Unity
 
-These are usually low level APIs or frameworks that are meant for use by software engineers looking to implement a particular protocol or networking feature in the engine its self. Unity does have their own Low Level API&#x20;
-
-### High Level Tools
-
-These are often called APIs but are more than just programming tools often including editor extensions and other tools suitable for use by most Unity developers as opposed to being aimed at engineers and programmers.
-
-### Platforms
-
-This is the most diverse set of options, some include Low and High level tools along side backend services and other features. Others go several steps further offering environments for development, testing, etc. in addition to in editor tools. Choosing a platform is less about choosing a technology and more about choosing a networking partner.
-
-## High Level APIs
-
-aka High Level Tools, this is the most common approach for indies to use, its easier than going low level and cheaper than using a full on platform provider. Some examples follow. These are listed in alphabetical order ... we have no favourites.
+Unity doesn't have a pre-defined or standardized approach to multiplayer. On one hand, this means you have more flexibility and can generally do what you feel works best. On the other hand, it means you have to sort out how you will do everything, from syncing data to game objects, serializing data for transmission, etc. Unity has loads of tools and plug-ins to help with various aspects, the most common of which being "HLAPI"s or High-Level Application Interfaces: A few common examples follow
 
 {% hint style="info" %}
-Check out the communities for each of these and find one that suits you. They are all in reality community variants on the old uNET approach and thus they all look and work very similarly.\
+[Heathen's Toolkit for Steamworks](../../../toolkit-for-steamworks-sdk/steamworks.md) is available for Unity, Unreal and Godot and integrates the full feature set of Steamworks / Steam API with your game.\
 \
-While we are sure that each developer has put their own spin on the model the differences at a glance are negligible for nearly every use case so find the one whose documentations, community and support suits your needs.
+No matter what HLAPI you choose if you want to work with Steam Networking Sockets you will need to integrate Steamworks SDK / Steam API with your game.
 {% endhint %}
 
-### Fish Networking
+#### Fish Networking
 
 {% embed url="https://github.com/FirstGearGames/FishNet" %}
 Its out of beta now but the GitHub site hasn't updated its name
 {% endembed %}
 
-### Mirage
+#### Mirage
 
 {% embed url="https://github.com/MirageNet/Mirage" %}
 
-### Mirror
+#### Mirror
 
 {% embed url="https://github.com/vis2k/Mirror" %}
 
-### Net Code for GameObjects aka MLAPI
+#### Net Code for GameObjects aka MLAPI
 
 {% embed url="https://docs-multiplayer.unity3d.com/" %}
 
-### Net Code for Entities (sorta DOTS)
+#### Net Code for Entities (sorta DOTS)
 
 {% embed url="https://github.com/Unity-Technologies/multiplayer" %}
 
-### Riptide
+#### Riptide
 
 {% embed url="https://github.com/tom-weiland/RiptideNetworking" %}
 
+### Unreal
+
+Unreal is built with networking in mind fundamentally. That is networking is simply part of the engine and doesn't (strictly speaking) require any additional plugins or tools. Unreal does offer additional plugins to expand its capabilities such as "Online Subsystems" that integrate with various services such as Google, Facebook, etc in a standardized way.
+
+Online Subsystems have a notable drawback when working with Steam or other rich featured platforms in that the Online Subsystem approach seeks to "normalize" the feature set to the commonly available features.
+
+{% hint style="info" %}
+[Heathen's Toolkit for Steamworks](../../../toolkit-for-steamworks-sdk/steamworks.md) is available for both Unreal and Unity and integrates the full feature set of Steamworks / Steam API with your game&#x20;
+{% endhint %}
+
 ## Platforms
 
-These are far less commonly used by indies but offer some interesting usually very niche options.
+These are far less commonly used by indies but offer some interesting options.
+
+### GameLift
+
+A full LiveOps service based on Amazon Web Services (AWS). Together with PlayFab these are the most service and feature-complete options available.&#x20;
+
+{% embed url="https://aws.amazon.com/gamelift/" %}
+
+### G-Portal
+
+A popular solution for Survival games and other genres where dedicated servers hosted by players or your selves (private and official servers) are needed but with less overhead and complexity than a full LiveOps service or a hybrid service like Photon.
+
+{% embed url="https://www.g-portal.com/en" %}
 
 ### Photon
 
+An early entry into the market, initially a solution for easily accessible Multiplayer services available for Unity and Unreal.
+
 {% embed url="https://www.photonengine.com/" %}
+
+### PlayFab
+
+A full LiveOps service based on Microsoft's Azure. Together with GameLift these are the most service and feature-complete options available.&#x20;
+
+{% embed url="https://playfab.com/" %}
 
 ### Reactor
 
 {% embed url="https://www.kinematicsoup.com/" %}
-
-### SpacialOS
-
-{% embed url="https://ims.improbable.io/products/spatialos" %}
-
-## Low Level APIs
-
-Typically an indie would select an HLAPI (High Level API) and then choose from the "transports" it supports. You could however forgo using a HLAPI and integrate the low level framework, protocol, etc. directly.
-
-TCP, UDP, etc. are all obvious options but really if your going that way why not use an existing plugin. The options below again have transports available in most HLAPIs but worth mention here.
-
-### Game Networking Sockets
-
-{% embed url="https://github.com/ValveSoftware/GameNetworkingSockets" %}
-
-### KCP
-
-{% embed url="https://github.com/skywind3000/kcp" %}
