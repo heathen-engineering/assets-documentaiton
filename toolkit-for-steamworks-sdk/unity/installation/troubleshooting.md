@@ -84,13 +84,49 @@ Or any other Unity Package Manager related issue
 
 {% embed url="https://kb.heathenengineering.com/company/concepts/package-manager-install" %}
 
+## How to install from disk
+
+So if you can't or won't install Git command so that Unity's Package Manager can read Git repositories directly ... then be prepared to have a hard time with most community and open source assets but we can help you install Heathen's assets without it.
+
+{% hint style="info" %}
+Installing Git doesn't mean you have to use git in your project as source control. It is simply a command line tool that allows Unity's Package Manager to read packages directly from their Git Repos on the web.
+{% endhint %}
+
+1st thing you need to do is clone the repository to your local disk (NOT YOUR PROJECT):
+
+{% hint style="danger" %}
+DO NOT simply copy the repo into your Unity project\
+That will NOT work, it will break references it is not the correct solution.
+{% endhint %}
+
+Once you have cloned the repo to your disk ... which by the way is easier to do if you have Git installed ... but you can do it by downloading a zip and extracting it.
+
+Once you have the repository local on your disk you use the Unity Package Manager's "Install from Disk" option to install whatever it is for example System Core, Steamworks.NET, etc.
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+This will open a file browser window, you should navigate to the folder that contains the package.json file in the repo for example if you were manually doing Steamworks Complete it would look like\
+`./SourceRepo/Unity/Steamworks/com.heathen.steamworkscomplete/package.json`
+
+Click okay and now the Unity Package Manager will install that package properly.
+
+### Why you shouldn't use zips
+
+the main issue with downloading a zip and using it is version control and update. Even if you insist on installing from a local disk you should still do so via Git Desktop or a similar Git install.
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+Unlike a zip this will be a version-managed repository so updating is literally a single button click, it will also show you change history and compare files on the local disk with the repo making it easy to understand what changed, when and by whom.
+
+Using a zip is not the easiest method, it is highly error-prone, slower to download, and unable to directly update. Downloading Git Desktop or similar doesn't mean you have to use Git in your projects, it doesn't mean your bound to Git Hub or anything its simply a free tool with a superior in every solution to this problem
+
 ## XXXX did not install
 
 So for example System Core did not install or Steamworks.NET did not install
 
 When you install a Heathen asset you should get a dialog box to pop up and let you know if it sees something missing and ask you if you want to install it. If you click install it will then try and install it from Package Manager.
 
-**But what if you never see the dialog?**
+**But what if you never see the dialogue?**
 
 Well that means 1 of 2 things is true.
 
@@ -102,13 +138,13 @@ You have compiler errors in your project preventing our editor script from runni
 
 If its that you have script defines in place for code you don't have installed simply remove the defines.
 
-If its that you have compiler errors and so our scripts are not running, simply install the requirements directly ... you can find instruction on how in [this section](broken-reference).
+If its that you have compiler errors and so our scripts are not running, simply install the requirements directly ... you can find instructions on how in [this section](broken-reference).
 
 ## XXXX is not found
 
 So for example SteamSettings is not found in namespace XXXX or otherwise some message indicating that something you know is installed is not visible in code.
 
-This can be due to missing script defines, or you being on the wrong build target or you using an assembly definition that is not referencing the required assemblies.
+This can be due to missing script definitions, or you being on the wrong build target or you using an assembly definition that is not referencing the required assemblies.
 
 #### Missing Script Defines
 

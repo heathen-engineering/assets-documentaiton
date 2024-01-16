@@ -267,7 +267,7 @@ Next, we must indicate the upload method; [methods are defined by Steam here](ht
 
 ## Unreal Examples
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Find Leaderboards
 
@@ -285,7 +285,7 @@ Uploading a score is a matter of providing a score and optionally details.
 
 You can attach a file to the leaderboard for the user, this is often useful to store replays or can be used to store rich information about the user's entry. The attached file will always be related to the local user.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 To attach a file you first need to upload the file to Steam's Remote Storage, once the file is uploaded you need to mark it for sharing. This will provide you with a UGC Handle that can be assigned to the board.
 
@@ -293,4 +293,4 @@ To attach a file you first need to upload the file to Steam's Remote Storage, on
 
 [Download Leaderboard Entries](../../../../toolkit-for-steamworks-sdk/unreal/blueprint-nodes/functions/download-leaderboard-entries.md) and [Download Leaderboard Entries for Users](../../../../toolkit-for-steamworks-sdk/unreal/blueprint-nodes/functions/download-leaderboard-entries-for-users.md) can be used to read the entries on a leaderboard.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
