@@ -157,17 +157,25 @@ You should Request Lobby Data for the invited lobby before attempting to read an
 
 ## Unity Examples
 
+### Getting Started
+
+Bobsi has a quick setup tutorial that goes through a basic simple setup using Heathen's Toolkit for Steamworks. The Working with Lobbies entry below goes into more details and other options you have available.
+
+{% embed url="https://www.youtube.com/watch?v=VBmm0L1Iaqg" %}
+
+### Working with Lobbies
+
 You can work with Lobby in one of 3 main ways; (from lowest level to highest)
 
-### [Raw API](../../../../toolkit-for-steamworks-sdk/unity/api/matchmaking.client.md)
+#### [Raw API](../../../../toolkit-for-steamworks-sdk/unity/api/matchmaking.client.md)
 
 All of the functionality of lobby is defined in the [Matchmaking API](../../../../toolkit-for-steamworks-sdk/unity/api/matchmaking.client.md). No matter how you choose to work with Steam lobbies, it's this API that will be doing the real work. Using the Matchmaking API requires that you have a level of understanding of the underlying Steam API but it does still simplify working with the API by making it Unity-centric, handling boilerplate concepts such as the callbacks and simplifying common concepts in a Unity manager e.g. UnityEvents and Actions, simpler calls, etc..
 
-### [LobbyData object](../../../../toolkit-for-steamworks-sdk/unity/data-layer/lobby-data.md)
+#### [LobbyData object](../../../../toolkit-for-steamworks-sdk/unity/data-layer/lobby-data.md)
 
 [LobbyData](../../../../toolkit-for-steamworks-sdk/unity/data-layer/lobby-data.md) as in the object in Steamworks Complete is a [struct](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct) which wraps around ulong and CSteamID. Fundamentally it acts as a lobby ID and is [implicitly convertible](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions) between ulong and CSteamID meaning you can pass it along as if it were a ulong value or a CSteamID and you can assign it from a ulong value or a CSteamID. Beyond being a fancy wrapper around ulong it also has accessors and methods that make working with a specific lobby very easy. Using the lobby object you very likely won't need to touch the raw API at all.
 
-### [Lobby Manager](../../../../toolkit-for-steamworks-sdk/unity/ui-components/lobby-manager.md)
+#### [Lobby Manager](../../../../toolkit-for-steamworks-sdk/unity/ui-components/lobby-manager.md)
 
 As the name suggests [this is a tool for managing a lobby](../../../../toolkit-for-steamworks-sdk/unity/ui-components/lobby-manager.md). The lobby manager is the easiest way to manage a lobby and is a [Unity component](https://docs.unity3d.com/ScriptReference/Component.html) ... that is you can add it to a GameObject and configure it in Unity editor. The [Lobby Manager](../../../../toolkit-for-steamworks-sdk/unity/ui-components/lobby-manager.md) does more than simply expose Matchmaking events to the Unity editor it handles common concepts for you and makes it easier to work with a lobby through designer-friendly tools such as Bolt and other visual scripting assets.
 
