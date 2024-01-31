@@ -6,7 +6,7 @@ coverY: 0
 
 # 😍 Become a Sponsor
 
-## [itHub Sponsor](https://github.com/sponsors/heathen-engineering)
+## [GitHub Sponsor](https://github.com/sponsors/heathen-engineering)
 
 {% embed url="https://github.com/sponsors/heathen-engineering" %}
 
@@ -18,7 +18,7 @@ Sponsoring Heathen at the $15 Monthly (or greater 🤪) [GitHub Sponsor](https:/
 \
 You can cancel your subscription at any time and keep using the assets you installed. Our [license](heathen-license-agreement.md) **does not** expire when you cancel your subscription.\
 \
-Canceling your subscription only removes your ability to access the Source Repository so if later you want or need updates you can simply sub for another month at your leisure.
+Cancelling your subscription only removes your ability to access the Source Repository so if later you want or need updates you can simply sub for another month at your leisure.
 {% endhint %}
 
 {% embed url="https://www.youtube.com/watch?v=k8uBq_BrMgY" %}
