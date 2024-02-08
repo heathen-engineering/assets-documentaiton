@@ -89,7 +89,7 @@ As with all features in the Unity version of Steamworks Complete, there are mult
 
 * [Leaderboard Object](../../../../toolkit-for-steamworks-sdk/unity/scriptable-objects/leaderboard-object.md)\
   Scriptable Object that can be referenced by GameObejcts in your component scripts
-* [Leaderboard Data](../../../../toolkit-for-steamworks-sdk/unity/data-layer/leaderboard-data.md)\
+* [Leaderboard Data](../../../../toolkit-for-steamworks-sdk/unity/classes-and-structs/leaderboard-data.md)\
   A simple C# struct suitable for DOTS or other situations where you want to avoid the use of object references
 * [Leaderboard API](../../../../toolkit-for-steamworks-sdk/unity/api/leaderboards.client.md)\
   A static API system is similar to the raw Steamworks APIs using modern C# features and handling all the boilerplate for you while maintaining the native Steam API structure.&#x20;
@@ -150,7 +150,7 @@ You can upload an array of int values along with the player's score, Steam takes
 
 To read this data make sure you have set the `Details` field as seen in the inspector for your Leaderboard Object. This tells our system how many details it should read from Steam when reading a user's data. If you leave it at 0 we will not try to read detail values, if you enter a value larger than 64 errors will occur.
 
-The details themselves will be provided in the [LeaderboardEntry ](../../../../toolkit-for-steamworks-sdk/unity/objects/leaderboard-entry.md)record returned by leaderboard queries.
+The details themselves will be provided in the [LeaderboardEntry ](../../../../toolkit-for-steamworks-sdk/unity/classes-and-structs/leaderboard-entry.md)record returned by leaderboard queries.
 
 #### Attachments
 

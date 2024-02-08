@@ -31,9 +31,9 @@ The simulation must be running (click Play in Unity) in order for this to work&#
 This is because the Steam API must be initialized and updating to return results
 {% endhint %}
 
-The AchievementObject scriptable object simply exposes the [AchievementData ](../data-layer/achievement-data.md)structure to Unity's ScriptableObject. This allows you to create references in your scripts such that you can drag and drop the achievement and allows us to manage a UnityEvent that will raise when the achievement is locked or unlocked.
+The AchievementObject scriptable object simply exposes the [AchievementData ](../classes-and-structs/achievement-data.md)structure to Unity's ScriptableObject. This allows you to create references in your scripts such that you can drag and drop the achievement and allows us to manage a UnityEvent that will raise when the achievement is locked or unlocked.
 
-You do not have to use the ScriptableObject you can simply use the [AchievementData](../data-layer/achievement-data.md) structure if you are more comfortable with them.
+You do not have to use the ScriptableObject you can simply use the [AchievementData](../classes-and-structs/achievement-data.md) structure if you are more comfortable with them.
 
 ## Events
 

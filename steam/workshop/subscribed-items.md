@@ -14,13 +14,13 @@ Workshop lets your users create and upload items and then subscribe to other use
 
 ## Finding the subscribed items
 
-The simplest approach to find what items the user is subscribed to is to use the [UGCQuery](../../toolkit-for-steamworks-sdk/unity/objects/ugc-query.md) tool and search for all subscribed items.&#x20;
+The simplest approach to find what items the user is subscribed to is to use the [UGCQuery](../../toolkit-for-steamworks-sdk/unity/classes-and-structs/ugc-query.md) tool and search for all subscribed items.&#x20;
 
 ```csharp
 var query = UgcQuery.GetSubscriobed();
 ```
 
-This will give you a [UgcQuery ](../../toolkit-for-steamworks-sdk/unity/objects/ugc-query.md)object configured to return the list of items the local user is subscribed to. You can further adapt this query to suit your own needs. For example if your game's items use metadata then you should set the query to also return metadata.
+This will give you a [UgcQuery ](../../toolkit-for-steamworks-sdk/unity/classes-and-structs/ugc-query.md)object configured to return the list of items the local user is subscribed to. You can further adapt this query to suit your own needs. For example if your game's items use metadata then you should set the query to also return metadata.
 
 ```csharp
 query.SetReturnMetadata(true);
@@ -32,7 +32,7 @@ Once your query is configured as required you can simply execute the query and i
 query.Execute(callback);
 ```
 
-results will be a reference to the same [UgcQuery ](../../toolkit-for-steamworks-sdk/unity/objects/ugc-query.md)this allows you to use a pre-defined method such as
+results will be a reference to the same [UgcQuery ](../../toolkit-for-steamworks-sdk/unity/classes-and-structs/ugc-query.md)this allows you to use a pre-defined method such as
 
 ```csharp
 query.Execute(HandleQueryResults);

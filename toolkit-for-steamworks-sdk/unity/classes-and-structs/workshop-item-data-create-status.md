@@ -15,7 +15,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## Introduction
 
-Used with the [User Generated Content interface](../api/usergeneratedcontent.client.md#createitem) and the [WorkshopItemData ](../data-layer/workshop-item-data.md)tool.
+Used with the [User Generated Content interface](../api/usergeneratedcontent.client.md#createitem) and the [WorkshopItemData ](workshop-item-data.md)tool.
 
 The structure provides details on the completed create operation including access to the resulting Workshop Item and the native callback results from Steam API.
 
@@ -56,7 +56,7 @@ public string errorMessage;
 
 ### data
 
-The [WorkshopItemData ](../data-layer/workshop-item-data.md)that created this response and that contains details about the object.
+The [WorkshopItemData ](workshop-item-data.md)that created this response and that contains details about the object.
 
 ```csharp
 public WorkshopItemData data;

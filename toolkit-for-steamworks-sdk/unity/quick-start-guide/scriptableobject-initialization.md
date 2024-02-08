@@ -106,4 +106,4 @@ If you set the "Auto Logon" feature to false you will need to call LogOn for the
 
 This is most commonly done when you want to prevent the server from registering itself on the Steam Game Server browser until after you have made it ready such as after you have "StartServer" called on your HLAPI of choice and have configured the server making it ready for connections.
 
-[You can learn more about the configuration fields here](../objects/steam-game-server-configuration.md).
+[You can learn more about the configuration fields here](../classes-and-structs/steam-game-server-configuration.md).

@@ -232,7 +232,7 @@ The above quote is from a Valve support case on this topic. It is not a bug nor 
 
 ## Unity Examples
 
-Once you have created your Steam Inventory Items in the Steam Developer Portal you can access them in your project via code, through the [Item Data](../../../../toolkit-for-steamworks-sdk/unity/data-layer/item-data.md) struct or the [Inventory API](../../../../toolkit-for-steamworks-sdk/unity/api/inventory.client.md). You can also access your item definitions via Scriptable Objects using the Steam Settings object.
+Once you have created your Steam Inventory Items in the Steam Developer Portal you can access them in your project via code, through the [Item Data](../../../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-data.md) struct or the [Inventory API](../../../../toolkit-for-steamworks-sdk/unity/api/inventory.client.md). You can also access your item definitions via Scriptable Objects using the Steam Settings object.
 
 In all cases using your Item Definition you will be able to
 
@@ -260,7 +260,7 @@ This may take a few seconds to complete but it will import all [item definitions
 
 ### Data Layer
 
-In cases where you prefer to work in purse code or simply wish to avoid reference type objects such as Scriptable Objects, you can use the Data Layer struct [Item Data](../../../../toolkit-for-steamworks-sdk/unity/data-layer/item-data.md) to access your Item Definitions. As is always the case with the Data Layer you do not need to initialize or configure objects ahead of time. The Data Layer works on data without reference so you only need to know the uint ID of the item you wish to work with.
+In cases where you prefer to work in purse code or simply wish to avoid reference type objects such as Scriptable Objects, you can use the Data Layer struct [Item Data](../../../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-data.md) to access your Item Definitions. As is always the case with the Data Layer you do not need to initialize or configure objects ahead of time. The Data Layer works on data without reference so you only need to know the uint ID of the item you wish to work with.
 
 ### API
 
@@ -280,7 +280,7 @@ Defines a Steam Inventory Item and provides access to commonly used features as 
 
 #### Item Detail
 
-An object is used to detail an instance of an item in the player's inventory. Learn more [here](../../../../toolkit-for-steamworks-sdk/unity/objects/item-detail.md).
+An object is used to detail an instance of an item in the player's inventory. Learn more [here](../../../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-detail.md).
 
 ## Unreal Examples
 

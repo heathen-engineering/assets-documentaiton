@@ -19,7 +19,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 public struct WorkshopItemKeyValueTag
 ```
 
-Used by the [WorkshopItemData ](../data-layer/workshop-item-data.md)object.
+Used by the [WorkshopItemData ](workshop-item-data.md)object.
 
 ### Fields and Attributes
 

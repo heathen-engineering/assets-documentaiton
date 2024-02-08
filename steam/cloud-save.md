@@ -116,7 +116,7 @@ Debug.Log("Used " + total-remaining + " of " + total + " bytes.");
 RemoteStorageFile[] files = CloudAPI.GetFiles();
 ```
 
-GetFiles returns a list of all files found on Steam and returns an array of [RemoteStorageFile](../toolkit-for-steamworks-sdk/unity/objects/remote-storage-file.md) objects. The RemoteStorageFile object can be thought of as similar to the .NET FileInfo object and contains data about the file that can be used to perform other actions.
+GetFiles returns a list of all files found on Steam and returns an array of [RemoteStorageFile](../toolkit-for-steamworks-sdk/unity/classes-and-structs/remote-storage-file.md) objects. The RemoteStorageFile object can be thought of as similar to the .NET FileInfo object and contains data about the file that can be used to perform other actions.
 
 You can optionally return files that have a specific extension such as ".profile"
 

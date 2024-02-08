@@ -36,8 +36,8 @@ You can list the clan owner, its officers, open the clan chat in overlay or join
 
 ### Related Objects
 
-{% content-ref url="../data-layer/user-data.md" %}
-[user-data.md](../data-layer/user-data.md)
+{% content-ref url="../classes-and-structs/user-data.md" %}
+[user-data.md](../classes-and-structs/user-data.md)
 {% endcontent-ref %}
 
 ## Events
@@ -388,7 +388,7 @@ Gets the level of the indicated user if kown by the local user
 public static void GetFriendAvatar(UserData userId, Action<Texture2D> callback)
 ```
 
-This can be performed from the [UserData](../data-layer/user-data.md) object directly. It simply requests and load's the user's avatar into a Unity Texture2D. This will not duplicate memory it will used existing loaded data for the image if present.
+This can be performed from the [UserData](../classes-and-structs/user-data.md) object directly. It simply requests and load's the user's avatar into a Unity Texture2D. This will not duplicate memory it will used existing loaded data for the image if present.
 
 ### UnloadAvatarImages
 
@@ -412,7 +412,7 @@ Unloads a specific avatar image from memory
 public static string GetPlayerNickname(UserData userId)
 ```
 
-This is handled automatically via [UserData](../data-layer/user-data.md).Name. It simply returns the nickname set for this user by the local user if any.
+This is handled automatically via [UserData](../classes-and-structs/user-data.md).Name. It simply returns the nickname set for this user by the local user if any.
 
 ### HasFriend
 

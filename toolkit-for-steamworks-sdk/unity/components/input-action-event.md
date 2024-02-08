@@ -18,7 +18,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 <figure><img src="../../../.gitbook/assets/image (4) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-Lets you connect an [InputAction](../scriptable-objects/input-action.md) to a method that takes an [InputActionUpdate ](../objects/input-action-update.md)value as a parameter in the Unity Editor Inspector similar to the behaviour with a UI Button Click event.
+Lets you connect an [InputAction](../scriptable-objects/input-action.md) to a method that takes an [InputActionUpdate ](../classes-and-structs/input-action-update.md)value as a parameter in the Unity Editor Inspector similar to the behaviour with a UI Button Click event.
 
 ## Events
 
@@ -28,7 +28,7 @@ Lets you connect an [InputAction](../scriptable-objects/input-action.md) to a me
 public InputactionEvent.ActionDataEvent changed;
 ```
 
-This event expects a handler that takes an [InputActionUpdate ](../objects/input-action-update.md)parameter such as.
+This event expects a handler that takes an [InputActionUpdate ](../classes-and-structs/input-action-update.md)parameter such as.
 
 ```csharp
 public void HandleActionEvent(InputActionUpdate data)

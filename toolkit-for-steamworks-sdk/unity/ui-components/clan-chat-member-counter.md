@@ -62,7 +62,7 @@ internal string suffix;
 
 ### Clan
 
-Exposes the [ClanData ](../data-layer/clan-data.md)that this object is linked to and can be assigned to update which clan is monitored
+Exposes the [ClanData ](../classes-and-structs/clan-data.md)that this object is linked to and can be assigned to update which clan is monitored
 
 ```csharp
 public ClanData Clan { get; set; }

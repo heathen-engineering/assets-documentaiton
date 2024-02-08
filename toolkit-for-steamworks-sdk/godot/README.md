@@ -17,7 +17,7 @@ These articles are made possible by our [GitHub Sponsors](../../become-a-sponsor
 
 The articles within are specific to Godot and include the engine specific tools and systems unique to the Godot version of the package.&#x20;
 
-The Heathen [APIs](../unity/api/) and [Objects](../unity/objects/) being native C# are \*\***nearly\*\*** identical between Unity and Godot with the only difference being the use of each engines native structures ...&#x20;
+The Heathen [APIs](../unity/api/) and [Objects](broken-reference) being native C# are \*\***nearly\*\*** identical between Unity and Godot with the only difference being the use of each engines native structures ...&#x20;
 
 for example&#x20;
 

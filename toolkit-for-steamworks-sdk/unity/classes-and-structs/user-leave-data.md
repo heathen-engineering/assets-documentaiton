@@ -23,7 +23,7 @@ using HeathenEngineering.SteamworksIntegration;
 public struct UserLeaveData
 ```
 
-Used in the GameConnectedChatLEaveEvent and related event handlers.
+Used in the GameConnectedChatLeaveEvent and related event handlers.
 
 ## Fields and Attributes
 

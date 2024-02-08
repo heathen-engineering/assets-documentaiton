@@ -115,7 +115,7 @@ Then you can read the state of that action for a given controller&#x20;
 var inputData = myAction[SteamInputManager.Controllers[0]];
 ```
 
-This of course assumes you want to read data from the first controller and that you have made sure there is a controller. What this returns is an [InputActionData](../toolkit-for-steamworks-sdk/unity/objects/input-action-data.md) object which can be used to understand the current state of the action.
+This of course assumes you want to read data from the first controller and that you have made sure there is a controller. What this returns is an [InputActionData](broken-reference) object which can be used to understand the current state of the action.
 
 ### [Input Action Events](../toolkit-for-steamworks-sdk/unity/components/input-action-event.md)
 

@@ -56,7 +56,7 @@ Follows is a quick break down of each layer and what it was meant for. Note you 
   We have created a set of component scripts (aka MonoBehaviours) to cover virtually every aspect of Steam API letting you work in Editor and with visual code editors like Bolt with ease
 * [Scriptable Objects](../scriptable-objects/)\
   We have created scriptable objects for all Steam artifacts (stats, achievements, inventory items, etc.) making it easy to reference them and work with them via ours or your own component scripts as well as in code editors like Bolt.
-* [Data Layer](../data-layer/)\
+* [Data Layer](../classes-and-structs/)\
   We have created highly efficient and easy to use C# structs for all Steam artifacts (stats, achievements, inventory items, etc.). These allow programmers to work against these objects more efficiently and with significantly less coding required on there part. All of our structs are implicitly convertible between the primitive type, Steam API native type and our more abstracted structs and classes.&#x20;
 * [API Layer](../api/)\
   We have wrapped all core Steam API interfaces with our own C# and Unity centric API wrapper. These API wrappers match 1 to 1 with the raw wrappers but do greatly simplify use such as replacing "Callback" and "CallResult" with UnityEvents and Action parameters. In addition we have created a number of "quality of life" features such as a queue system allowing you to queue multiple calls to the API for features that require 1 call be processed at a time such as Leaderboard queries.

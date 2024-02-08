@@ -161,4 +161,4 @@ Reads the is Y, convenance feature and no different than reading isY
 public InputActionData Data => get;
 ```
 
-Returns an [InputActionData ](input-action-data.md)object representing the "is" or current state of the [InputAction](../scriptable-objects/input-action.md).
+Returns an [InputActionData ](broken-reference)object representing the "is" or current state of the [InputAction](../scriptable-objects/input-action.md).

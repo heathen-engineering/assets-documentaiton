@@ -48,7 +48,7 @@ This is typically a matter of having the "room" creator also create a Steam lobb
 
 ### Room Creation
 
-When a user wants to play the game they will search for a room ... for the typical indie dev, this means searching for a Steam Lobby. If a lobby is found they will join that lobby and connect to the related "room" e.g. network session. If there is no matching lobby the player will start a new "Room" so for example if you're using Mirror and a P2P network solution then you might do `NetworkManager.StartHost` once the "room" is created and ready you have this same player create a new Steam lobby and call [SetGameServer](../../../../toolkit-for-steamworks-sdk/unity/data-layer/lobby-data.md#set-game-server) on it so that new joining members know the room is ready to join.
+When a user wants to play the game they will search for a room ... for the typical indie dev, this means searching for a Steam Lobby. If a lobby is found they will join that lobby and connect to the related "room" e.g. network session. If there is no matching lobby the player will start a new "Room" so for example if you're using Mirror and a P2P network solution then you might do `NetworkManager.StartHost` once the "room" is created and ready you have this same player create a new Steam lobby and call [SetGameServer](../../../../toolkit-for-steamworks-sdk/unity/classes-and-structs/lobby-data.md#set-game-server) on it so that new joining members know the room is ready to join.
 
 ### Join Room
 
@@ -63,13 +63,13 @@ if(lobbyData.HasServer)
 }
 ```
 
-See [LobbyData.GameServer](../../../../toolkit-for-steamworks-sdk/unity/data-layer/lobby-data.md#game-server) and [LobbyGameServer ](../../../../toolkit-for-steamworks-sdk/unity/objects/lobby-game-server.md)for more information.
+See [LobbyData.GameServer](../../../../toolkit-for-steamworks-sdk/unity/classes-and-structs/lobby-data.md#game-server) and [LobbyGameServer ](../../../../toolkit-for-steamworks-sdk/unity/classes-and-structs/lobby-game-server.md)for more information.
 
 ### Transitioning to Gameplay
 
 At some point you will want to move your players from the "room" to the game session proper. This has nothing at all to do with Steam and keep in mind you are not closing 1 network session to create another you're just loading the players into the game session scene and closing the "room" scene in most cases.
 
-All that said when the "room" is done being useful you probably want to do away with the lobby. To do so you generally want to have the owner of the lobby "[lock](../../../../toolkit-for-steamworks-sdk/unity/data-layer/lobby-data.md#set-joinable)" the lobby so no one else can join it and then have every player in the lobby leave it as they start playing the "session" proper.
+All that said when the "room" is done being useful you probably want to do away with the lobby. To do so you generally want to have the owner of the lobby "[lock](../../../../toolkit-for-steamworks-sdk/unity/classes-and-structs/lobby-data.md#set-joinable)" the lobby so no one else can join it and then have every player in the lobby leave it as they start playing the "session" proper.
 
 ### Browsing / Finding Rooms
 

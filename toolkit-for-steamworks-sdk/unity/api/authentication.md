@@ -44,7 +44,7 @@ The Authentication interface can be used to generate and validate session ticket
 
 ### Active Tickets
 
-[Tickets](../objects/authentication-ticket.md) this player has sent out.
+[Tickets](../classes-and-structs/authentication-ticket.md) this player has sent out.
 
 ```csharp
 public static List<AuthenticationTicket> ActiveTickets;
@@ -52,7 +52,7 @@ public static List<AuthenticationTicket> ActiveTickets;
 
 ### Active Sessions
 
-[Sessions](../objects/authentication-session.md) the player has started.
+[Sessions](../classes-and-structs/authentication-session.md) the player has started.
 
 ```csharp
 public static List<AuthenticationSession> ActiveSessions;

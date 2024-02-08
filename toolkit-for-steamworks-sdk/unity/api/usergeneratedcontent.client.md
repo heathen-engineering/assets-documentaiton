@@ -189,14 +189,14 @@ public static bool CreateItem(WorkshopItemData item,
 
 The first overload handles the creation and update of new items in a single line call.&#x20;
 
-The first parameter defines the core fields of the item to be created, note the [WorkshopItemData.Create](../data-layer/workshop-item-data.md) method simply calls this overload.
+The first parameter defines the core fields of the item to be created, note the [WorkshopItemData.Create](../classes-and-structs/workshop-item-data.md) method simply calls this overload.
 
 The remaining parameters deal with additional preview images and videos as well as the key value tag system
 
 The callback for this overload would look similar to following.
 
 {% hint style="info" %}
-See the [WorkshopItemDataCreateStatus](../objects/workshop-item-data-create-status.md) definition for more information on what fields it contains.
+See the [WorkshopItemDataCreateStatus](../classes-and-structs/workshop-item-data-create-status.md) definition for more information on what fields it contains.
 {% endhint %}
 
 ```csharp
@@ -836,9 +836,9 @@ Creating a new item can be done in one of two ways.
 UGC.CreateItem(itemdata, callback);
 ```
 
-When using the 1 liner approach you will first create a [Workshop Item Data](../data-layer/workshop-item-data.md) object. This object defines the item you wish to create e.g. its name, description, content folder, etc.
+When using the 1 liner approach you will first create a [Workshop Item Data](../classes-and-structs/workshop-item-data.md) object. This object defines the item you wish to create e.g. its name, description, content folder, etc.
 
-The callback for this method is a delegate that takes 1 parameter of type [Workshop Item Data Create Status](../objects/workshop-item-data-create-status.md).
+The callback for this method is a delegate that takes 1 parameter of type [Workshop Item Data Create Status](../classes-and-structs/workshop-item-data-create-status.md).
 
 Example:
 
@@ -862,7 +862,7 @@ UGC.CreateItem(itemdata, Foo);
 
 To learn more about [callbacks](../../../company/development/callbacks.md) please read the related article.
 
-The status returned to the callback will indicate the status of the operation. Note that the operation occurs in two stages. First a blank item is created and then once that has been found successful that blank item will be updated with the content and settings indicated thus it is possible for a blank item to be created but for the update to fail. Please see the [results](../objects/workshop-item-data-create-status.md#createitemresult) in the status object for more details.
+The status returned to the callback will indicate the status of the operation. Note that the operation occurs in two stages. First a blank item is created and then once that has been found successful that blank item will be updated with the content and settings indicated thus it is possible for a blank item to be created but for the update to fail. Please see the [results](../classes-and-structs/workshop-item-data-create-status.md#createitemresult) in the status object for more details.
 
 #### Step by step
 

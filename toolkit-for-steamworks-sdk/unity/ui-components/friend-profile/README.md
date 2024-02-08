@@ -45,7 +45,7 @@ public void Apply(UserData user)
 }
 ```
 
-The [UserData ](../../data-layer/user-data.md)field and the Apply method are the two required features of the [IUserProfile](../../programming-tools/iuserprofile.md) interface. You can use the implementation shown above as a good starting off point adding whatever code your UI requires to the Apply method.
+The [UserData ](../../classes-and-structs/user-data.md)field and the Apply method are the two required features of the [IUserProfile](../../programming-tools/iuserprofile.md) interface. You can use the implementation shown above as a good starting off point adding whatever code your UI requires to the Apply method.
 
 ## Events
 
@@ -61,7 +61,7 @@ This object is meant as an example to get you started with creating your own.
 public UnityEvent evtLoaded;
 ```
 
-A simple event that is raised when the [UserData ](../../data-layer/user-data.md)is loaded to the UI controls. This event has no arguments.
+A simple event that is raised when the [UserData ](../../classes-and-structs/user-data.md)is loaded to the UI controls. This event has no arguments.
 
 ## Fields and Attributes
 
@@ -77,7 +77,7 @@ This object is meant as an example to get you started with creating your own.
 private bool useLocalUser;
 ```
 
-A private field only accessible in the Unity Inspector, you can set this to true and the profile will automatically load the local user's [UserData ](../../data-layer/user-data.md)on start.
+A private field only accessible in the Unity Inspector, you can set this to true and the profile will automatically load the local user's [UserData ](../../classes-and-structs/user-data.md)on start.
 
 ### appendNickname
 

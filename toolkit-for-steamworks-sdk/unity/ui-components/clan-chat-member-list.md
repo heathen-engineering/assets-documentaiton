@@ -56,7 +56,7 @@ private GameObject template;
 
 ### Clan
 
-The [Clan Data ](../data-layer/clan-data.md)object for the linked clan
+The [Clan Data ](../classes-and-structs/clan-data.md)object for the linked clan
 
 ```csharp
 public ClanData Clan { get; set; )

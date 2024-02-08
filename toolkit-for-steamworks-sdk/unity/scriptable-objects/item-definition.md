@@ -48,7 +48,7 @@ Returns the item defintion ID.
 public List<ItemDetail> Details => get;
 ```
 
-Returns a list of all the known [item details](../objects/item-detail.md) the local user owns of this item type.
+Returns a list of all the known [item details](../classes-and-structs/item-detail.md) the local user owns of this item type.
 
 ### TotalQuantity
 
@@ -80,7 +80,7 @@ Indicates rather or not this item has a price ... this will always return false 
 public Currency.Code CurrencyCode => get;
 ```
 
-Returns the [currency code](../objects/currency.md) used by the local user's currency in Steam. e.g. USD, GBP, EUR, etc.
+Returns the [currency code](../classes-and-structs/currency.md) used by the local user's currency in Steam. e.g. USD, GBP, EUR, etc.
 
 ### CurrencySymbol
 

@@ -40,4 +40,4 @@ When working with the Steam Game Server API there are two stages to making the A
 1. Initialize the Steam API ... which is done via the [API.App.Server.Initialize(...)](../api/app.server.md#initialize) method
 2. Log the server on ... which is done via the [API.App.Server.LogOn()](../api/app.server.md#logon) method
 
-Note that you can configure automatic logon in the [Steam Game Server Configuraiton](../objects/steam-game-server-configuration.md) object you pass into the Initialize method. This will instruct our system to "log on" as soon as initialization is complete.
+Note that you can configure automatic logon in the [Steam Game Server Configuraiton](../classes-and-structs/steam-game-server-configuration.md) object you pass into the Initialize method. This will instruct our system to "log on" as soon as initialization is complete.

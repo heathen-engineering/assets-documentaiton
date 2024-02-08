@@ -71,7 +71,7 @@ public void HandleEvent(ClanChatMsg arg)
 }
 ```
 
-You can learn more about [ClanChatMsg](../objects/clan-chat-msg.md) in its article.
+You can learn more about [ClanChatMsg](../classes-and-structs/clan-chat-msg.md) in its article.
 
 ### EventGameConnectedChatJoin
 

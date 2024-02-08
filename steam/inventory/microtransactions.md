@@ -66,7 +66,7 @@ You would add this script to your Store/Shop UI and use its members to add, remo
 On your Item Definition, you will see a Start Purchase option. A similar method is available on the Data Layer, Scriptable Object and of course in the Inventory API. You simply call this method indicating the number of items you wish to start a purchase with.
 
 * [Item Definition Object Start Purchase](../../toolkit-for-steamworks-sdk/unity/scriptable-objects/item-definition.md#start-purchase)
-* [Item Data Start Purchase](../../toolkit-for-steamworks-sdk/unity/data-layer/item-data.md#start-purchase)
+* [Item Data Start Purchase](../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-data.md#start-purchase)
 * [Inventory API Start Purchase](../../toolkit-for-steamworks-sdk/unity/api/inventory.client.md#startpurchase)
 * [Item Shopping Cart Start Purchase](../../toolkit-for-steamworks-sdk/unity/components/item-shopping-cart-manager.md#startpurchase)
 

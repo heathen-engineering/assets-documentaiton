@@ -538,7 +538,7 @@ public static void SetProperty(SteamInventoryUpdateHandle_t handle,
 
 ### GetExtendedItemDetail
 
-Constructs an [ItemDetail](../objects/item-detail.md) object based on a native SteamItemDetails\_t object and its source result list
+Constructs an [ItemDetail](../classes-and-structs/item-detail.md) object based on a native SteamItemDetails\_t object and its source result list
 
 ```csharp
 public static ItemDetail GetExtendedItemDetail(SteamInventoryResult_t result, 
@@ -549,7 +549,7 @@ public static ItemDetail GetExtendedItemDetail(SteamInventoryResult_t result,
 ## How To
 
 {% hint style="success" %}
-Methods that impact a user's inventory will typically have a [callback ](../../../company/development/callbacks.md)that returns a type of [Inventory Result](../objects/inventory-result.md). In addition the [Item Definitions](../scriptable-objects/item-definition.md) stored in the active Steam Settings will be updated with the resulting [Item Details](../objects/item-detail.md) which be used as a real time view of the current state of the user's inventory.
+Methods that impact a user's inventory will typically have a [callback ](../../../company/development/callbacks.md)that returns a type of [Inventory Result](../classes-and-structs/inventory-result.md). In addition the [Item Definitions](../scriptable-objects/item-definition.md) stored in the active Steam Settings will be updated with the resulting [Item Details](../classes-and-structs/item-detail.md) which be used as a real time view of the current state of the user's inventory.
 {% endhint %}
 
 {% hint style="info" %}

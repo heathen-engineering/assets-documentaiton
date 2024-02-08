@@ -17,10 +17,14 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 ## Introduction
 
 ```csharp
+using HeathenEngineering.SteamworksIntegration;
+```
+
+```csharp
 public struct ChatRoom
 ```
 
-The clan chat room structure is used by chat specific features of the Clans interface and is its self a shortcut to the most common chat features.
+The clan chat room structure is used by chat-specific features of the Clans interface and is itself a shortcut to the most common chat features.
 
 ## Fields and Attributes
 
