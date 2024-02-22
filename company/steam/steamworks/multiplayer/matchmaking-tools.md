@@ -251,6 +251,8 @@ Yes, you can of course use the Lobby Manager from code as much or as little as y
 
 This is how do you know when some other player joins or leaves the lobby that your in. In other words, how do you know when new "peers" come in or go out of the lobby?
 
+{% embed url="https://www.youtube.com/watch?v=uJ4fEPy9XQ8" %}
+
 #### Matchmaking API
 
 This is actually handled via the [EventLobbyChatUpdate ](../../../../toolkit-for-steamworks-sdk/unity/api/matchmaking.client.md#eventlobbychatupdate)event which is raised any time a chat event occurs ... including when members join or leave.
@@ -582,6 +584,8 @@ if(targetLobby.IsValid)
 ```
 
 ### Using Lobby Chat
+
+{% embed url="https://www.youtube.com/watch?v=2ZqoOBEvnrQ" %}
 
 Steam's Lobby system includes a simple chat system able to handle text or data. The easiest way to interact with lobby chat is via the [Lobby Chat Director](../../../../toolkit-for-steamworks-sdk/unity/ui-components/lobby-chat-director.md) which needs to be added to the same object as your [Lobby Manager](../../../../toolkit-for-steamworks-sdk/unity/ui-components/lobby-manager.md).
 
