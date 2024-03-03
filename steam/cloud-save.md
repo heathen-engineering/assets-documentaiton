@@ -1,4 +1,4 @@
-# ☁ Cloud Save
+# ☁️ Cloud Save
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -295,7 +295,7 @@ Is a drop box-like file sync system that synchronizes files written to the local
 
 Start by creating a blueprint class and here we will choose the Steam Remote Storage Save Game as our base class.
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Next, add whatever variables you would like to have saved.
 

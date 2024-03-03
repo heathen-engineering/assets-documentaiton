@@ -272,6 +272,7 @@
     * [Steam System Events](toolkit-for-steamworks-sdk/unity/components/steam-system-events.md)
     * [Steamworks Behaviour](toolkit-for-steamworks-sdk/unity/components/steamworks-behaviour.md)
     * [Steamworks Creator](toolkit-for-steamworks-sdk/unity/components/steamworks-creator.md)
+    * [Steamworks Event Triggers](toolkit-for-steamworks-sdk/unity/components/steamworks-event-triggers.md)
     * [UGC Query Manager](toolkit-for-steamworks-sdk/unity/components/ugc-query-manager.md)
     * [Voice Recorder](toolkit-for-steamworks-sdk/unity/components/voice-recorder.md)
     * [Voice Stream](toolkit-for-steamworks-sdk/unity/components/voice-stream.md)

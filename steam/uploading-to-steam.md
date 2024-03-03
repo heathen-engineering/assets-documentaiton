@@ -1,4 +1,4 @@
-# ⬆ Uploading to Steam
+# ⬆️ Uploading to Steam
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -33,7 +33,7 @@ For Unity users Heathen has created a [Build Upload Tool](../toolkit-for-steamwo
 
 If your game is small enough you can upload it as a zip file in the Steam Developer Portal.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In short, if the resulting zip file is smaller than 2 GB you can upload it in the Steam Pipe -> Builds -> Upload Depots option.
 
