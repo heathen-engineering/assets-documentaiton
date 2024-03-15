@@ -4,7 +4,7 @@ description: >-
   Lobby
 ---
 
-# 🛋 Lobby
+# 🛋️ Lobby
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -592,6 +592,8 @@ Steam's Lobby system includes a simple chat system able to handle text or data. 
 You can also interact with lobby chat manually through the [API.Matchmaking](../../../../toolkit-for-steamworks-sdk/unity/api/matchmaking.client.md) interface.
 
 ### Notify "Connect to network"
+
+This will set the Game Server information on the lobby and can be done in a number of ways. You are required to have either a Steam ID (which a UserData is) or an IP and Port or both, when you call the SetGameServer method with no input parameters it will assume the owner of the lobby is the Listen Server.
 
 The typical purpose of a lobby is to gather players and settle on the rules and conditions of the multiplayer session. In most cases, you will at some point want to notify players that they should connect to a particular server be that a Peer in a P2P game or a dedicated server on the net.
 
