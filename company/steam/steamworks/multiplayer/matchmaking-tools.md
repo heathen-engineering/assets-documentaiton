@@ -833,6 +833,8 @@ The Lobby Chat Msg event is executed when a chat message is received and can be 
 
 ### Notify "Connect to network"
 
+This will set the Game Server information on the lobby and can be done in a number of ways. You are required to have either a Steam ID (which a UserData is) or an IP and Port or both, when you call the SetGameServer method with no input parameters it will assume the owner of the lobby is the Listen Server.
+
 Steam provides a built-in way to notify members of a lobby when the network is ready for them to connect. This is done by the owner of the lobby calling Set Game Server or its variants.
 
 {% content-ref url="../../../../toolkit-for-steamworks-sdk/unreal/blueprint-nodes/functions/set-lobby-game-server.md" %}
