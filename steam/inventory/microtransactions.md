@@ -49,7 +49,7 @@ In short in-game currency is simply exchanging X items for Y items. See the [Cra
 
 So you have set up your inventory items, You are going to use full Client API so you can't simulate an end-to-end purchase. You're asking yourself ... How do I test my game logic to make sure it's handling inventory change correctly?
 
-Use the [Steamworks Inspector](../../company/steam/steamworks/#inventory) and click the "Grant" button beside any of the items, this will cause it to grant you an item which will raise the [EventChanged](../../toolkit-for-steamworks-sdk/unity/scriptable-objects/steam-settings/game-client/inventory-settings.md) ... you can now observe your game logic and ensure it's performing as you expected.
+Use the [Steamworks Inspector](../../company/steam/steamworks/#inventory) and click the "Grant" button beside any of the items, this will cause it to grant you an item which will raise the [EventChanged](../../toolkit-for-steamworks-sdk/unity/classes-and-structs/steam-settings/game-client/inventory-settings.md) ... you can now observe your game logic and ensure it's performing as you expected.
 
 ### Start Purchase
 
@@ -65,7 +65,7 @@ You would add this script to your Store/Shop UI and use its members to add, remo
 
 On your Item Definition, you will see a Start Purchase option. A similar method is available on the Data Layer, Scriptable Object and of course in the Inventory API. You simply call this method indicating the number of items you wish to start a purchase with.
 
-* [Item Definition Object Start Purchase](../../toolkit-for-steamworks-sdk/unity/scriptable-objects/item-definition.md#start-purchase)
+* [Item Definition Object Start Purchase](../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-definition.md#start-purchase)
 * [Item Data Start Purchase](../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-data.md#start-purchase)
 * [Inventory API Start Purchase](../../toolkit-for-steamworks-sdk/unity/api/inventory.client.md#startpurchase)
 * [Item Shopping Cart Start Purchase](../../toolkit-for-steamworks-sdk/unity/components/item-shopping-cart-manager.md#startpurchase)
@@ -156,7 +156,7 @@ Assuming you want to track the completion of the order you should listen on the 
 
 ### Exchange
 
-It's fairly common to have users "purchase" items with an in-game currency. In reality, this is not a purchase it is an exchange. That is it is similar to crafting where some reagents are exchanged for some other item. Exchanges must be done one item at a time and the following code snippet shows how you would go about doing that for a given [itemDefinition](../../toolkit-for-steamworks-sdk/unity/scriptable-objects/item-definition.md).
+It's fairly common to have users "purchase" items with an in-game currency. In reality, this is not a purchase it is an exchange. That is it is similar to crafting where some reagents are exchanged for some other item. Exchanges must be done one item at a time and the following code snippet shows how you would go about doing that for a given [itemDefinition](../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-definition.md).
 
 ```csharp
 public void Exchange()
@@ -193,13 +193,13 @@ if (itemDefinition.CanExchange(itemDefinition.item_exchange.recipe[0],
                                out List<ExchangeEntry> recipe))
 ```
 
-[CanExchange ](../../toolkit-for-steamworks-sdk/unity/scriptable-objects/item-definition.md#can-exchange)is a method on the [Item Definition](../../toolkit-for-steamworks-sdk/unity/scriptable-objects/item-definition.md) that takes a given recipe as an input and has an output that collects the required items to complete the recipe.
+[CanExchange ](../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-definition.md#can-exchange)is a method on the [Item Definition](../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-definition.md) that takes a given recipe as an input and has an output that collects the required items to complete the recipe.
 
-Assuming this returns true then we can complete an exchange for this item on this recipe, so the next step is to request that using the output the [CanExchange](../../toolkit-for-steamworks-sdk/unity/scriptable-objects/item-definition.md#can-exchange) method provided us. Unlike StartPurchase we will know in a single step whether or not this was a success and the items will already be updated.
+Assuming this returns true then we can complete an exchange for this item on this recipe, so the next step is to request that using the output the [CanExchange](../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-definition.md#can-exchange) method provided us. Unlike StartPurchase we will know in a single step whether or not this was a success and the items will already be updated.
 
 ### Get Item Price
 
-If you want to fetch the price in the user's currency see: [Current Price](../../toolkit-for-steamworks-sdk/unity/scriptable-objects/item-definition.md#currentprice) and [Base Price](../../toolkit-for-steamworks-sdk/unity/scriptable-objects/item-definition.md#baseprice). You can check if there is a price at all via [Has Price](../../toolkit-for-steamworks-sdk/unity/scriptable-objects/item-definition.md#hasprice).
+If you want to fetch the price in the user's currency see: [Current Price](../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-definition.md#currentprice) and [Base Price](../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-definition.md#baseprice). You can check if there is a price at all via [Has Price](../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-definition.md#hasprice).
 
 ## Unreal Examples
 

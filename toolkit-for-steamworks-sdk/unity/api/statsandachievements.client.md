@@ -496,9 +496,9 @@ You can clear achievements either by using the interface
 API.StatsAndAchievements.Client.ClearAChievement(name);
 ```
 
-or by using the [Achievement Object](../scriptable-objects/achievement-object.md) directly
+or by using the [Achievement Object](../classes-and-structs/achievement-object.md) directly
 
-Resetting a stat is as simple as setting its value, see the [Int Stat](../scriptable-objects/int-stat.md) and [Float Stat](../scriptable-objects/float-stat.md) object for details
+Resetting a stat is as simple as setting its value, see the [Int Stat](../classes-and-structs/int-stat.md) and [Float Stat](../classes-and-structs/float-stat.md) object for details
 
 You can optionally reset all stats and achievements
 

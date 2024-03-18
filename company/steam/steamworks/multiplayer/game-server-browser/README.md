@@ -90,7 +90,7 @@ There are great tools available to you though a few are linked below. We do not 
 
 ## Configuration
 
-To configure a Steam Game Server browser simply set the desired settings in your [Steam Settings](../../../../../toolkit-for-steamworks-sdk/unity/scriptable-objects/steam-settings/#steamsettings.server) object and build a server build. In particular take note of the [Game Server](../../../../../toolkit-for-steamworks-sdk/unity/scriptable-objects/steam-settings/game-server.md) settings.
+To configure a Steam Game Server browser simply set the desired settings in your [Steam Settings](../../../../../toolkit-for-steamworks-sdk/unity/classes-and-structs/steam-settings/#steamsettings.server) object and build a server build. In particular take note of the [Game Server](../../../../../toolkit-for-steamworks-sdk/unity/classes-and-structs/steam-settings/game-server.md) settings.
 
 ## Hosting
 

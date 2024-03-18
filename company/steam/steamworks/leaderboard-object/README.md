@@ -87,7 +87,7 @@ To work around the issue make a new board (with a new name) and set it up with t
 
 As with all features in the Unity version of Steamworks Complete, there are multiple ways to work with Leaderboards.
 
-* [Leaderboard Object](../../../../toolkit-for-steamworks-sdk/unity/scriptable-objects/leaderboard-object.md)\
+* [Leaderboard Object](../../../../toolkit-for-steamworks-sdk/unity/classes-and-structs/leaderboard-object.md)\
   Scriptable Object that can be referenced by GameObejcts in your component scripts
 * [Leaderboard Data](../../../../toolkit-for-steamworks-sdk/unity/classes-and-structs/leaderboard-data.md)\
   A simple C# struct suitable for DOTS or other situations where you want to avoid the use of object references
@@ -180,7 +180,7 @@ The leaderboard manager is a simple component that greatly simplifies reading an
 
 ![](<../../../../.gitbook/assets/image (181) (1).png>)
 
-You can learn more about the [Leaderboard Manager](../../../../toolkit-for-steamworks-sdk/unity/components/leaderboard-manager.md) in its documentation article and by reviewing the [4 Leaderboards](../../../../toolkit-for-steamworks-sdk/unity/sample-scenes/leaderboards.md) sample scene.
+You can learn more about the [Leaderboard Manager](../../../../toolkit-for-steamworks-sdk/unity/components/leaderboard-manager.md) in its documentation article and by reviewing the [4 Leaderboards](broken-reference) sample scene.
 
 ### Upload Score
 
@@ -192,7 +192,7 @@ Upload Method or simply Method
 This is a concept you will see in various places when uploading&#x20;
 {% endhint %}
 
-#### [Leaderboard Object](../../../../toolkit-for-steamworks-sdk/unity/scriptable-objects/leaderboard-object.md)
+#### [Leaderboard Object](../../../../toolkit-for-steamworks-sdk/unity/classes-and-structs/leaderboard-object.md)
 
 The most common is to use the LeaderboardObject itself to upload scores. The LeaderboardObject is a ScriptableObject so you can reference it in any script you like and use it as such:
 

@@ -29,7 +29,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## Introduction
 
-Initialize Steam API with a simple component script attached to a GameObject of your choice. You can use the [Steamworks Behaviour](../components/steamworks-behaviour.md) or the [Steamworks Creator](../components/steamworks-creator.md) to handle initialization for you. In both cases however you do need to first create and configure a [Steam Settings](../scriptable-objects/steam-settings/) object. Once you have your Steam Settings object defined and configured you can apply it to the [Steamworks Behaviour](../components/steamworks-behaviour.md) or [Steamworks Creator](../components/steamworks-creator.md) depending on which you choose to use.
+Initialize Steam API with a simple component script attached to a GameObject of your choice. You can use the [Steamworks Behaviour](../components/steamworks-behaviour.md) or the [Steamworks Creator](../components/steamworks-creator.md) to handle initialization for you. In both cases however you do need to first create and configure a [Steam Settings](../classes-and-structs/steam-settings/) object. Once you have your Steam Settings object defined and configured you can apply it to the [Steamworks Behaviour](../components/steamworks-behaviour.md) or [Steamworks Creator](../components/steamworks-creator.md) depending on which you choose to use.
 
 ## Steamworks Behaviour
 
@@ -57,7 +57,7 @@ We very strongly encourage you to create a [bootstrap process](../../../company/
 
 ## Steam Settings
 
-[Learn more about the Steam Settings object here](../scriptable-objects/steam-settings/).
+[Learn more about the Steam Settings object here](../classes-and-structs/steam-settings/).
 
 Create a new Steam Settings object in your project folder by right clicking in your project tab and selecting\
 **Create > Steamworks > Settings**

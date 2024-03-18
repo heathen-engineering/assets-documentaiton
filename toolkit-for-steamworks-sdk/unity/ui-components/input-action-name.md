@@ -34,7 +34,7 @@ public class InputActionName : MonoBehaviour
 public InputActionSet set;
 ```
 
-The [Steam Input Action Set](../scriptable-objects/input-action-set.md) the action is a member of
+The [Steam Input Action Set](../classes-and-structs/input-action-set.md) the action is a member of
 
 ### Layer
 
@@ -42,7 +42,7 @@ The [Steam Input Action Set](../scriptable-objects/input-action-set.md) the acti
 public InputActionSetLayer layer;
 ```
 
-The [Steam Input Action Set Layer](../scriptable-objects/input-action-set-layer.md) the action is a member of
+The [Steam Input Action Set Layer](../classes-and-structs/input-action-set-layer.md) the action is a member of
 
 ### Action
 
@@ -50,7 +50,7 @@ The [Steam Input Action Set Layer](../scriptable-objects/input-action-set-layer.
 public InputAction action;
 ```
 
-The [Steam Input Action](../scriptable-objects/input-action.md) to be displayed
+The [Steam Input Action](../classes-and-structs/input-action.md) to be displayed
 
 ## Methods
 

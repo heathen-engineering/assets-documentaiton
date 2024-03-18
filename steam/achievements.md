@@ -39,7 +39,7 @@ From there select the Stats & Achievements > Achievements option and create your
 
 Make note of the value you use in the API Name field. You will use it when working with achievements in code.&#x20;
 
-In Unity, if you prefer to work with Achievements via an object reference then you can use our [AchievementObject ](../toolkit-for-steamworks-sdk/unity/scriptable-objects/achievement-object.md)which is a Unity ScriptableObject that can be referenced and accessed like any other Unity Object.
+In Unity, if you prefer to work with Achievements via an object reference then you can use our [AchievementObject ](../toolkit-for-steamworks-sdk/unity/classes-and-structs/achievement-object.md)which is a Unity ScriptableObject that can be referenced and accessed like any other Unity Object.
 
 <figure><img src="../.gitbook/assets/image (1) (6).png" alt="Achievement test"><figcaption></figcaption></figure>
 
@@ -134,7 +134,7 @@ The first thing to understand is that with stats and achievements, the process o
 1. You assign the value such as `myAch.IsAchieved = true;`
 2. You store the changes to the backend such as `myAch.Store()`
 
-The notification popup will not trigger until the achievement is "stored". In the above examples "myAch" would be either an [AchievementObject ](../toolkit-for-steamworks-sdk/unity/scriptable-objects/achievement-object.md)or [AchievementData](../toolkit-for-steamworks-sdk/unity/classes-and-structs/achievement-data.md), both do the same thing, "Object" is a reference type based on ScriptableObject so can be easily referenced in Unity Editor while "Data" is a value type e.g. a C# struct and more suitable for DOTS and related structures.
+The notification popup will not trigger until the achievement is "stored". In the above examples "myAch" would be either an [AchievementObject ](../toolkit-for-steamworks-sdk/unity/classes-and-structs/achievement-object.md)or [AchievementData](../toolkit-for-steamworks-sdk/unity/classes-and-structs/achievement-data.md), both do the same thing, "Object" is a reference type based on ScriptableObject so can be easily referenced in Unity Editor while "Data" is a value type e.g. a C# struct and more suitable for DOTS and related structures.
 
 ### Storing
 
@@ -185,7 +185,7 @@ myAch.IsAchieved = true;
 
 ### Using Object References
 
-[Achievement Object](../toolkit-for-steamworks-sdk/unity/scriptable-objects/achievement-object.md)
+[Achievement Object](../toolkit-for-steamworks-sdk/unity/classes-and-structs/achievement-object.md)
 
 Heathen's Steamworks can "import" your achievements from Steam API directly and construct Scriptable Objects that make it possible to work with achievements with zero coding required.
 
@@ -201,7 +201,7 @@ Once done you can find Scriptable Objects for each of the identified achievement
 
 ![](<../.gitbook/assets/image (167) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
-You can learn more about the [Achievement Object](../toolkit-for-steamworks-sdk/unity/scriptable-objects/achievement-object.md) in our documentation. Using this object you can reference this achievement in any of your logic and easily test for unlock and unlock the achievement.
+You can learn more about the [Achievement Object](../toolkit-for-steamworks-sdk/unity/classes-and-structs/achievement-object.md) in our documentation. Using this object you can reference this achievement in any of your logic and easily test for unlock and unlock the achievement.
 
 ```csharp
 using UnityEngine;

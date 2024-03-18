@@ -147,7 +147,7 @@ Reads the quantity for this item, if the item is not in the cart this will retur
 public ulong TotalPrice()
 ```
 
-This gets the raw ulong price of the sum of the items in the cart. This is the same value that would be returned for each item's [CurrentPrice](../scriptable-objects/item-definition.md#currentprice) value multiplied by the quantity for each item in the cart.
+This gets the raw ulong price of the sum of the items in the cart. This is the same value that would be returned for each item's [CurrentPrice](../classes-and-structs/item-definition.md#currentprice) value multiplied by the quantity for each item in the cart.
 
 ### TotalPriceSymbolledString
 

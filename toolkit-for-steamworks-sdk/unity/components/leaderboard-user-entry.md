@@ -15,7 +15,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## &#x20;Introduction
 
-Reads the user's record from the referenced [LeaderboardObject ](../scriptable-objects/leaderboard-object.md)and populates a TextMesh Pro label with the rank and score.
+Reads the user's record from the referenced [LeaderboardObject ](../classes-and-structs/leaderboard-object.md)and populates a TextMesh Pro label with the rank and score.
 
 This will update as the user's score is updated keeping it up to date with any changes made.
 

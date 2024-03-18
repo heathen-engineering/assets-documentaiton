@@ -44,12 +44,12 @@ The steps of exchange are as follows
 
 * &#x20;Get references to the specific items that will be exchanged\
   You can use the Get Exchange Entry for this step
-  * [Item Definition Get Exchange Entry](../../toolkit-for-steamworks-sdk/unity/scriptable-objects/item-definition.md#get-exchange-entry)
+  * [Item Definition Get Exchange Entry](../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-definition.md#get-exchange-entry)
   * [Item Data Get Exchange Entry](../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-data.md#get-exchange-entry)
   * [Inventory API Get Exchange Entry](../../toolkit-for-steamworks-sdk/unity/api/inventory.client.md#exchange-items)
 * On the item you wish to "craft" exchange the reagents you just collected\
   You can use the Exchange feature for this step
-  * [Item Definition Exchange](../../toolkit-for-steamworks-sdk/unity/scriptable-objects/item-definition.md#exchange-1)
+  * [Item Definition Exchange](../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-definition.md#exchange-1)
   * [Item Data Exchange](../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-data.md#exchange)
   * [Inventory API Exchange](../../toolkit-for-steamworks-sdk/unity/api/inventory.client.md#exchange-items)
 
@@ -145,7 +145,7 @@ To craft an item ... that is to exchange a set of materials/reagents for an item
 
 ### Using Item Definition
 
-Read the [Item Definition article's Exchange](../../toolkit-for-steamworks-sdk/unity/scriptable-objects/item-definition.md#exchange-1) section for a detailed example.
+Read the [Item Definition article's Exchange](../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-definition.md#exchange-1) section for a detailed example.
 
 ### Using Item Data
 

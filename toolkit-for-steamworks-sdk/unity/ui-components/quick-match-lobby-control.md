@@ -56,7 +56,7 @@ Easily access critical information about your Quick Match session for a simple a
 
 ## Prefab
 
-A production ready prefab is available and configured with the features displayed above. You can see an example of this prefab in use in the [Quick Match Example](../sample-scenes/lobby/#quick-match-example) scene.
+A production ready prefab is available and configured with the features displayed above. You can see an example of this prefab in use in the [Quick Match Example](broken-reference) scene.
 
 <figure><img src="../../../.gitbook/assets/image (3) (1) (5).png" alt=""><figcaption></figcaption></figure>
 

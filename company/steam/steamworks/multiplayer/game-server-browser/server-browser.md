@@ -17,7 +17,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../../become-
 Steam Game Server Browser is a feature of the Steam client and Steam API that gives you a matchmaking and discovery tool for logged-on Steam Game Servers. In order to use this feature you will need to initialize your server build as a Steam Game Server and Log On to the server with Set Advertise Game Server as true.&#x20;
 
 {% hint style="info" %}
-Heathen's Steamworks Complete for Unity trivializes all of this, the [Steam Settings](../../../../../toolkit-for-steamworks-sdk/unity/scriptable-objects/steam-settings/) scriptable object contains all the configuration options so you can set them in the Unity inspector.&#x20;
+Heathen's Steamworks Complete for Unity trivializes all of this, the [Steam Settings](../../../../../toolkit-for-steamworks-sdk/unity/classes-and-structs/steam-settings/) scriptable object contains all the configuration options so you can set them in the Unity inspector.&#x20;
 
 Our initialization process is smart and will initialize for Steam Game Server for any server build and will use Steam Client for any client build. We do this by checking the standard unity script define `UNITY_SERVER`
 {% endhint %}

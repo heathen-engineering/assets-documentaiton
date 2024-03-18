@@ -69,4 +69,4 @@ Unity prefabs and component scripts enable us to create production ready drag an
 
 ![](<../../.gitbook/assets/image (1) (1) (3).png>)![](<../../.gitbook/assets/image (3) (1) (3).png>)
 
-Our sample scenes do more than demonstrate features, they excessive every major feature of the Steam API and server as both a learning tool and testing tool. You can browser the collection of [Samples Scenes](sample-scenes/) or read over our [Testing](debugging-tools/testing.md) article to learn more.
+Our sample scenes do more than demonstrate features, they excessive every major feature of the Steam API and server as both a learning tool and testing tool. You can browser the collection of [Samples Scenes](sample-scene.md) or read over our [Testing](debugging-tools/testing.md) article to learn more.

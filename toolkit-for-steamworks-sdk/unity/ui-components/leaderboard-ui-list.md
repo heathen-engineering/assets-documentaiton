@@ -16,7 +16,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## &#x20;Introduction
 
-The Leaderboard UI List is a simple tool that can be used to display [LeaderboardEntry ](../classes-and-structs/leaderboard-entry.md)records. The Leaderboard UI List can be used in conjunction with the [Leaderboard Manager](../components/leaderboard-manager.md) to display Leaderboards in your UI with a zero code setup as is demonstrated in the [Leaderboard Sample Scene](../sample-scenes/leaderboards.md).
+The Leaderboard UI List is a simple tool that can be used to display [LeaderboardEntry ](../classes-and-structs/leaderboard-entry.md)records. The Leaderboard UI List can be used in conjunction with the [Leaderboard Manager](../components/leaderboard-manager.md) to display Leaderboards in your UI with a zero code setup as is demonstrated in the [Leaderboard Sample Scene](broken-reference).
 
 ### Namespace
 

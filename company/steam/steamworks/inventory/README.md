@@ -185,7 +185,7 @@ You can "consume" items as well, this is simply deleting the item and would be u
 
 How do I generate or grant an item to a player at run time?
 
-For testing a developer account can generate any item at runtime by simply calling the [GenerateItem](../../../../toolkit-for-steamworks-sdk/unity/scriptable-objects/item-definition.md#generate-item) method on the item definition or the corresponding command on the [Inventory API](../../../../toolkit-for-steamworks-sdk/unity/api/inventory.client.md#generateitems).
+For testing a developer account can generate any item at runtime by simply calling the [GenerateItem](../../../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-definition.md#generate-item) method on the item definition or the corresponding command on the [Inventory API](../../../../toolkit-for-steamworks-sdk/unity/api/inventory.client.md#generateitems).
 
 This however will not work for players
 
@@ -196,9 +196,9 @@ Generate Items can only be used by developers for testing purposes.
 For security reasons, there is no straightforward way to generate a specific item for the user from the Steam Client API. To give players items you need to do one of the following
 
 * Promo Items\
-  You can grant players items as part of a promotion. These are 1-time grants of free items and require the item to be configured as a "promo" item if done correctly you can use [AddPromoItem](../../../../toolkit-for-steamworks-sdk/unity/scriptable-objects/item-definition.md#add-promo-item) on the item definition or the corresponding command in the [Inventory API](../../../../toolkit-for-steamworks-sdk/unity/api/inventory.client.md#addpromoitem) to grant the item.
+  You can grant players items as part of a promotion. These are 1-time grants of free items and require the item to be configured as a "promo" item if done correctly you can use [AddPromoItem](../../../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-definition.md#add-promo-item) on the item definition or the corresponding command in the [Inventory API](../../../../toolkit-for-steamworks-sdk/unity/api/inventory.client.md#addpromoitem) to grant the item.
 * Drop Items\
-  You can define play time generators that can be used to grant players items based on client-side rules ... mainly play time and or ownership of specific apps. This method requires you to configure a "Play Time Generator" with the required rules to drop the item and then to call [TriggerDrop](../../../../toolkit-for-steamworks-sdk/unity/scriptable-objects/item-definition.md#trigger-drop) on the item or the corresponding [Inventory API](../../../../toolkit-for-steamworks-sdk/unity/api/inventory.client.md#triggeritemdrop) call.&#x20;
+  You can define play time generators that can be used to grant players items based on client-side rules ... mainly play time and or ownership of specific apps. This method requires you to configure a "Play Time Generator" with the required rules to drop the item and then to call [TriggerDrop](../../../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-definition.md#trigger-drop) on the item or the corresponding [Inventory API](../../../../toolkit-for-steamworks-sdk/unity/api/inventory.client.md#triggeritemdrop) call.&#x20;
 * Web API\
   You can use the Web API on a trusted web server to perform more direct actions like simply adding an item to a target player's inventory. This requires you to have a trusted web server using a publisher token on the Steam Web API. The Web API is out of scope for Unity assets as it's not part of Unity. You can learn more [here](https://partner.steamgames.com/doc/webapi/IInventoryService).
 
@@ -208,9 +208,9 @@ How do you create an in-game store for your items?
 
 In the same way, you create any Unity UI, the visual and UI aspects of your store are wholly up to you. That is you being the developer know what items you have and should create a UI to present those to the player.
 
-As to starting a purchase from your UI, you can use the [Start Purchase](../../../../toolkit-for-steamworks-sdk/unity/scriptable-objects/item-definition.md#start-purchase) command on the item definition or the corresponding [Inventory API](../../../../toolkit-for-steamworks-sdk/unity/api/inventory.client.md#startpurchase) call.
+As to starting a purchase from your UI, you can use the [Start Purchase](../../../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-definition.md#start-purchase) command on the item definition or the corresponding [Inventory API](../../../../toolkit-for-steamworks-sdk/unity/api/inventory.client.md#startpurchase) call.
 
-If you're exchanging an item or group of items for another item e.g. in-game currency for an in-game item. then use the [Exchange](../../../../toolkit-for-steamworks-sdk/unity/scriptable-objects/item-definition.md#exchange) feature on the item definition or its corresponding [Inventory API](../../../../toolkit-for-steamworks-sdk/unity/api/inventory.client.md#exchangeitems) call.
+If you're exchanging an item or group of items for another item e.g. in-game currency for an in-game item. then use the [Exchange](../../../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-definition.md#exchange) feature on the item definition or its corresponding [Inventory API](../../../../toolkit-for-steamworks-sdk/unity/api/inventory.client.md#exchangeitems) call.
 
 For more details see the [learning article here](./#item-store).
 
@@ -256,7 +256,7 @@ To import you Steam Inventory Item Definition into your project as Scriptable Ob
 
 <figure><img src="../../../../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
 
-This may take a few seconds to complete but it will import all [item definitions](../../../../toolkit-for-steamworks-sdk/unity/scriptable-objects/item-definition.md) and create a Scriptable Object representation for each one stored under the Steam Settings object similar to Stas, Achievements and other Steam artifacts.
+This may take a few seconds to complete but it will import all [item definitions](../../../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-definition.md) and create a Scriptable Object representation for each one stored under the Steam Settings object similar to Stas, Achievements and other Steam artifacts.
 
 ### Data Layer
 

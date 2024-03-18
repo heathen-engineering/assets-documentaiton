@@ -29,7 +29,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## Introduction
 
-Initialize Steam API with this [Steam Settings](../scriptable-objects/steam-settings/) object. You do not require the use of any component scripts and thus do not require the use of any GameObjects to use this method. You will need to define your [Steam Settings](../scriptable-objects/steam-settings/) object and then use it to initialize the API by calling its `Initialize()` method.
+Initialize Steam API with this [Steam Settings](../classes-and-structs/steam-settings/) object. You do not require the use of any component scripts and thus do not require the use of any GameObjects to use this method. You will need to define your [Steam Settings](../classes-and-structs/steam-settings/) object and then use it to initialize the API by calling its `Initialize()` method.
 
 ```csharp
 using HeathenEngineering.SteamworksIntegration;
@@ -54,7 +54,7 @@ In the above example we do use a MonoBehaviour but that is not required. All tha
 
 ## Steam Settings
 
-[Learn more about the Steam Settings object here](../scriptable-objects/steam-settings/).
+[Learn more about the Steam Settings object here](../classes-and-structs/steam-settings/).
 
 Create a new Steam Settings object in your project folder by right clicking in your project tab and selecting\
 **Create > Steamworks > Settings**

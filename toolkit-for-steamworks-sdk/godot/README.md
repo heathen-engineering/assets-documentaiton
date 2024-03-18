@@ -63,6 +63,6 @@ This is an extension of several parts of Steam API simplifies the handling of ov
 
 A set of misc tools from Valve useful&#x20;
 
-### [UserData](../unity/sample-scenes/user-data.md)
+### [UserData](broken-reference)
 
 A helpful tool for working with Steam user data providing simple access to features like Rich Presence, Nickname, Avatar images and more!

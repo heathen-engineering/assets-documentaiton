@@ -54,7 +54,7 @@ Follows is a quick break down of each layer and what it was meant for. Note you 
   We have a number of ready to use prefabs that can be dragged and dropped into your game and will just work with no additional code required.
 * [Components](../components/)\
   We have created a set of component scripts (aka MonoBehaviours) to cover virtually every aspect of Steam API letting you work in Editor and with visual code editors like Bolt with ease
-* [Scriptable Objects](../scriptable-objects/)\
+* [Scriptable Objects](broken-reference)\
   We have created scriptable objects for all Steam artifacts (stats, achievements, inventory items, etc.) making it easy to reference them and work with them via ours or your own component scripts as well as in code editors like Bolt.
 * [Data Layer](../classes-and-structs/)\
   We have created highly efficient and easy to use C# structs for all Steam artifacts (stats, achievements, inventory items, etc.). These allow programmers to work against these objects more efficiently and with significantly less coding required on there part. All of our structs are implicitly convertible between the primitive type, Steam API native type and our more abstracted structs and classes.&#x20;

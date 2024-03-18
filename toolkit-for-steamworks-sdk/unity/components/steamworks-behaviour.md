@@ -93,7 +93,7 @@ public void HandleEvent(Lobby lobby)
 public SteamSettings settings;
 ```
 
-The [SteamSettings ](../scriptable-objects/steam-settings/)that should be used when initializing the API.
+The [SteamSettings ](../classes-and-structs/steam-settings/)that should be used when initializing the API.
 
 ## Methods
 

@@ -1,4 +1,4 @@
-# 🧑🤝🧑 Matchmaking
+# 🧑‍🤝‍🧑 Matchmaking
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -46,7 +46,7 @@ This model does much the same as Quick Match but lets the player decide what the
 
 #### How to display lobbies
 
-The [5 Lobbies](../../../../toolkit-for-steamworks-sdk/unity/sample-scenes/lobby/) sample scene demonstrates browsing for lobbies. If you wanted to do this model the ideal solution is to let the user define their search arguments and return a small number of the lobbies if any that match that say the top 10.&#x20;
+The [5 Lobbies](broken-reference) sample scene demonstrates browsing for lobbies. If you wanted to do this model the ideal solution is to let the user define their search arguments and return a small number of the lobbies if any that match that say the top 10.&#x20;
 
 You can then do searches that are slightly less strict ... what this means depends on your game. For example let's say your game is a classic shooter with modes like CTF, C\&H, and KofH and has session sizes of 4v4, 8v8 and 16v16 and maybe also lets your players pick a map.
 
@@ -89,4 +89,4 @@ Doing this will let you browse for and display all available (and publicly visib
 
 ## Steam Game Server
 
-[Steam Game Server Game Data](../../../../toolkit-for-steamworks-sdk/unity/scriptable-objects/steam-settings/game-server.md#gamedata) configurations can be used to establish a similar set of "metadata" as used by the Lobby Matchmaking system. The [Steam Game Server Browser](../../../../toolkit-for-steamworks-sdk/unity/components/game-server-browser-manager.md) can be used to query for specific game servers again like searching for a Steam Lobby. The principle difference between the Steam Game Server system and the Lobby system is that Steam Game Servers are relatively permanent and can be browsed as a full list, in contrast, a Lobby is effectively a chat room and highly temporary.&#x20;
+[Steam Game Server Game Data](../../../../toolkit-for-steamworks-sdk/unity/classes-and-structs/steam-settings/game-server.md#gamedata) configurations can be used to establish a similar set of "metadata" as used by the Lobby Matchmaking system. The [Steam Game Server Browser](../../../../toolkit-for-steamworks-sdk/unity/components/game-server-browser-manager.md) can be used to query for specific game servers again like searching for a Steam Lobby. The principle difference between the Steam Game Server system and the Lobby system is that Steam Game Servers are relatively permanent and can be browsed as a full list, in contrast, a Lobby is effectively a chat room and highly temporary.&#x20;
