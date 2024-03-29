@@ -39,6 +39,50 @@ Video is silent but does have subtitles/captions
 
 You'll need to install Unreal v5.1 and later
 
+### SteamShared
+
+You will need to include the Steam Shared plugin.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+When adding the plugin from the marketplace it will be installed as an Engine plugin and should add its dependencies automatically.
+
+If you are importing the plugin to your project as opposed to as an engine plugin it is advisable to add the SteamShared plugin first. If you forget before you add the plugin, you can adjust the .uproject manually by adding `SteamShared` to the list of plugins
+
+```json
+{
+	"FileVersion": 3,
+	"EngineAssociation": "5.2",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "ProjectName",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		},
+		{
+			"Name": "SteamShared",
+			"Enabled": true
+		}
+	],
+	"TargetPlatforms": [
+		"Linux",
+		"Mac",
+		"Windows"
+	]
+}
+```
+
 ### C++
 
 You'll need your project to support C++\
