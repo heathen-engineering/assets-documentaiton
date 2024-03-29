@@ -37,7 +37,7 @@ Video is silent but does have subtitles/captions
 
 ### Version
 
-You'll need to install Unreal v5.1, 5.2 or 5.3.
+You'll need to install Unreal v5.1 and later
 
 ### C++
 
@@ -101,3 +101,79 @@ Next, right-click on the .uproject file and select Generate Visual Studio projec
 #### Rebuild
 
 Right-click on your projects .uproject file and select `Generate Visual Studio Project files`. This will cause the engine to scan the project directory and link up all the related bits we just copied in.
+
+## Configuration
+
+{% hint style="info" %}
+### New to v2
+
+v2 is in preview with GitHub Sponsors and Patreons, it will be released to Unreal Marketplace #Soon™️
+{% endhint %}
+
+Toolkit for Steamworks works with Steamworks SDK and is compatible with all of Unreal's built-in Steam-related plugins. It uses the same configuration features to keep things simple. This means even if you are not using OnlineSubsystemSteam you will be using its Engine.ini settings to configure and control Toolkit for Steamworks.
+
+### App ID
+
+In development, the OnlineSubsystemSteam SteamDevAppId value is used
+
+```ini
+[OnlineSubsystemSteam]
+SteamDevAppId=480
+```
+
+For a build the define `UE_PROJECT_STEAMSHIPPINGID` is used. There are several ways to "define" this define. using the PublicDefines list in your game's Build.cs is a common approach.
+
+```csharp
+PublicDefinitions.Add("UE_PROJECT_STEAMSHIPPINGID=480");
+```
+
+### Steam Sockets
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+We leverage the built-in Steam Socket Net Driver which has a dependency on the Online Subsystem Steam plugin. When you enable Steam Sockets plugin (not just Online Subsystem Steam) the related dependencies should also be enabled and will require a restart of the engine.
+
+Once enabled the following ini settings become relevant ... learn more in Unreal's official documentation
+
+{% embed url="https://dev.epicgames.com/documentation/en-us/unreal-engine/online-subsystem-steam-interface-in-unreal-engine" %}
+
+```ini
+[URL]
+; This is the Game Port that Steam Game Server will use and by default should be 27017
+Port=27017
+
+[SystemSettings]
+; Need this to sort out handshake issues with 5.1 and 5.2
+net.CurrentHandshakeVersion=2
+net.MinHandshakeVersion=2
+net.VerifyNetSessionID=0
+net.VerifyNetClientID=0
+
+[OnlineSubsystem]
+; Let the Online Subsystem know which platform you are working with
+DefaultPlatformService=Steam
+
+[OnlineSubsystemSteam]
+bEnabled=True
+; Should VAC be used, only applies to Steam Game Server
+bVACEnabled=True
+; Your AppID only used for dev builds and in the editor
+SteamDevAppId=480
+; The game version ... this is only required if you are going to run a 
+; Dedicated Server and have it visible over Steam Game Server browser
+GameVersion=1.0.0.0
+; Query Port is by default 2017 this is only used by Steam Game Server
+GameServerQueryPort=27018
+; If using Sessions then you need this set to true, else you can ignore it
+bInitServerOnClient=true
+
+[/Script/Engine.GameEngine]
+; Clear existing definitions
+!NetDriverDefinitions=ClearArray
+; Add the Steam Sockets Net Driver
++NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="/Script/SteamSockets.SteamSocketsNetDriver",DriverClassNameFallback="/Script/SteamSockets.SteamNetSocketsNetDriver")
+
+[/Script/OnlineSubsystemSteam.SteamNetDriver]
+; Set the Connection class name for the net driver
+NetConnectionClassName="/Scripts/SteamSockets.SteamSocketsNetConnection"
+```

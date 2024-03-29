@@ -13,45 +13,19 @@ To handle this for you Heathen has created the Steam Game Instance class which e
 
 <figure><img src="../../.gitbook/assets/image (347).png" alt=""><figcaption></figcaption></figure>
 
-## Configuration
-
-You can adjust the behaviour of the Initialize Steam API function using the Class Defaults
-
-<figure><img src="../../.gitbook/assets/image (348).png" alt=""><figcaption></figcaption></figure>
-
 ### Callback Frequency
+
+{% hint style="info" %}
+Not applicable when using Steam Sockets as it will handle the callbacks on a background thread. This is however used if you are not initializing Online Subsystem Steam at all such as when working in the editor.
+{% endhint %}
 
 Expressed in seconds this is the time between Run Callback calls. This is an important value as it dictates how frequently messages from Valve's Steam will be invoked as callback delegates in your game. This impacts all asynchronous features of Steam which is most of them.
 
 The system will clamp this value to be between 0.1 and 0.01 e.g. 10Htz to 100Htz the typical range being more frequently 30Htz to 60Htz
 
-### App ID
-
-Only used for client API initialization this value is the App ID Valve issued you when you signed up for and paid for your Steam application fee. The value of 480 is the test App ID provided by Steam aka Spacewars but should be replaced with your own App ID as soon as you have it.
-
-We use this value on initialisations to check if the app requires a restart and if so we will restart the app from the Steam client. You can learn more about this in our [steam\_appid.txt](../../company/steam/steamworks/steam\_appid.txt.md) article.
-
-### IP
-
-Only used for game server API initialization this value is the string representation of the server's IP address. Generally only relevant when using Steam Game Server browser and connecting via IP/Port
-
-### Game Port
-
-Only used for game server API initialization this value is the port that will be used for connections.
-
-### Query Port
-
-Only used for game server API initialization this value is the port that will be used by Steam Game Server Matchmaking and similar queries
-
-### Mode
-
-Only used for game server API initialization this value indicates the authentication mode the server should run in ... typically Authentication or Authentication & Secure.
-
-### Version
-
-Only used for game server API initialization this value is used with Steam Game Server browser to indicate the version of the server and is expected to be in the form of #.#.#.#
-
 ## Initialization
+
+Initialization is smart, if the API has been initialized by another system it will go with it and will still invoke the success events.
 
 <figure><img src="../../.gitbook/assets/image (349).png" alt=""><figcaption></figcaption></figure>
 

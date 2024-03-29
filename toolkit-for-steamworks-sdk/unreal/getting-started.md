@@ -37,7 +37,7 @@ The plugin is not free and is only available from Heathen via the [GitHub Sponso
 
 With the plugin installed, you will want to set up your Game Instance.&#x20;
 
-The plugin ships with a ready-to-use Steam Game Instnace named `BP_Steam_Game_Instance` You can use this as is or use it as a learning tool to create your own Game Instnace derived from our SteamGameInstance parent class or use it as is.
+The plugin ships with a ready-to-use Steam Game Instnace named `BP_SteamGameInstance` You can use this as is or use it as a learning tool to create your own Game Instnace derived from our SteamGameInstance parent class or use it as is.
 
 ## [Steam Developer](../../company/steam/quick-start.md#sign-up-to-steamworks)
 
@@ -55,7 +55,7 @@ The Example Level presents a UI that demonstrates key features
 
 Be sure to check out the Graph on the BP\_Example\_UI for additional examples such as how to find, join and create a Steam Lobby, Host and Join a network session via Steam Networking Sockets, etc.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Beyond samples we have extensive documentation including how-to guides for nearly every aspect of the Steam platform, going beyond simple documentation for our tools and assets. You can learn more about all the features of Steam in our knowledge base by reviewing the hundreds of articles linked in the navigation panel to the left 👀
 
@@ -64,54 +64,6 @@ Beyond samples we have extensive documentation including how-to guides for nearl
 If you have any questions simply look up ... there you will find our Search tool which is AI-assisted and fairly useful as well as links to our [Discord Community](https://discord.gg/6X3xrRc) where you can get live support.
 
 ## Troubleshooting
-
-### Editor Fails to Load
-
-When you first install/enable the plugin whether you installed it as a Project Plugin or Engine Plugin you may get a message similar to&#x20;
-
-<figure><img src="../../.gitbook/assets/image (386).png" alt=""><figcaption></figcaption></figure>
-
-This is caused when the editor cannot find the required assemblies and is typically corrected with a Clean and Rebuild. If Clean and Rebuild does not resolve the issue check the Binaries folder of the Plugin and ensure that the Encrypted App TIcket and Steam API assemblies are present.
-
-<figure><img src="../../.gitbook/assets/image (387).png" alt=""><figcaption><p>Shows the assemblies as used by Widnows </p></figcaption></figure>
-
-If you need to locate a copy of these assemblies to manually access you can find them at the paths listed below.
-
-#### Steam API Assemblies
-
-`Plugins\SteamworksComplete\Source\ThirdParty\SteamworksCompleteLibrary\sdk\redistributable_bin`
-
-Each platform has a sub-folder
-
-#### Encrypted App Ticket
-
-`Plugins\SteamworksComplete\Source\ThirdParty\SteamworksCompleteLibrary\sdk\public\steam\lib`\`
-
-Each platform has a sub-folder&#x20;
-
-### Package Fails to Load
-
-As with the editor, this is caused by the required assemblies not being copied over correctly during the packaging process. You can confirm this by reviewing the Binaries folder
-
-<figure><img src="../../.gitbook/assets/image (388).png" alt=""><figcaption><p>Shows the required assemblies for a Windows build</p></figcaption></figure>
-
-If you need to locate a copy of these assemblies to manually access you can find them at the paths listed below.
-
-{% hint style="info" %}
-You can also copy them from the Binary folder of the Plugin in your project. This is where the Unreal Editor should have copied them from.
-{% endhint %}
-
-#### Steam API Assemblies
-
-`Plugins\SteamworksComplete\Source\ThirdParty\SteamworksCompleteLibrary\sdk\redistributable_bin`
-
-Each platform has a sub-folder
-
-#### Encrypted App Ticket
-
-`Plugins\SteamworksComplete\Source\ThirdParty\SteamworksCompleteLibrary\sdk\public\steam\lib`\`
-
-Each platform has a sub-folder&#x20;
 
 ### Package Closes/Crashes on launch
 
@@ -128,8 +80,6 @@ You DO want your game to shut down and relaunch from the Steam client to ensure 
 
 [Learn more about steam\_appid.txt and when to and when not to use it.](../../company/steam/steamworks/steam\_appid.txt.md)
 {% endhint %}
-
-<figure><img src="../../.gitbook/assets/image (389).png" alt=""><figcaption></figcaption></figure>
 
 ### Callbacks not working in the package
 

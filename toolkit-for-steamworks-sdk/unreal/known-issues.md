@@ -15,6 +15,12 @@ These articles are made possible by our [GitHub Sponsors](../../become-a-sponsor
 
 ## Sockets Net Driver
 
+{% hint style="success" %}
+### Resolved in v2
+
+Currently available to GitHub Sponsor and Patreon, coming to Marketplace #Soon™️
+{% endhint %}
+
 The Sockets Net Driver included in the plugin has a known issue where clients connecting to a Dedicated or Listen server will quickly flash between the spectator and player controller.
 
 The root issue is that possession of the Player Controller is not being acknowledged correctly, this is resulting in the server triggering the rest of the client e.g. the client will spawn all objects, fail to acknowledge correctly, be told to reset and thus destroy all objects only to try again.

@@ -7,7 +7,9 @@ coverY: 0
 
 ## Introduction
 
-The Sockets Net Driver is a standard Unreal Net Driver designed to work with Valve's Steam Networking Sockets. Inspired by Unreal's built-in Net Driver Sockets but without dependency on an Online Subsystem. Steam Networking Sockets is a powerful UDP-like socket layer that can be used for classic "peer to peer" or "client/server" topologies.&#x20;
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+The Sockets Net Driver is a standard Unreal Net Driver designed to work with Valve's Steam Networking Sockets. It has a dependency on Online Subsystem Steam so it will install it and Online Subsystem if missing however that doesn't mean you have to use Online Subsystem if you don't want to.
 
 ## Addressing
 
@@ -21,61 +23,49 @@ The above format is an example of how you would address a target connection usin
 
 ## Engine.ini
 
-Unreal requires you to specify the NetDriver you are using as part of the engine configuration ... this is commonly done in the Engine.ini
+We leverage the built-in Steam Socket Net Driver which has a dependency on the Online Subsystem Steam plugin. When you enable Steam Sockets plugin (not just Online Subsystem Steam) the related dependencies should also be enabled and will require a restart of the engine.
 
-{% hint style="warning" %}
-The specifics of your Engine.ini may change when installing the plugin as part of a project vs as an engine plugin such as from Marketplace
-{% endhint %}
+Once enabled the following ini settings become relevant ... learn more in Unreal's official documentation
 
-### System Settings
-
-The first step is to configure the handshake version and set the session ID's to 0. If not done you will find the server fails to complete handshake on client connect and will reject messages from the client resulting in a disconnect.
-
-### Engine
-
-Clear the NetDriver definition and set NetSocketsNetDriver as our GameNetDriver.
-
-### Net Sockets Net Driver
-
-Configure the net driver timeout settings and define the connection class name.
-
-`SteamworksComplete.NetSocketsNetDriver` is the formal name of the NetDriver and `SteamworksComplete.NetSocketsNetConnection` is the formal name of the connection class for example, assuming you have installed the plugin from GitHub as part of your project (e.g. a project plugin) your NetDriverDefinitions entry and Plugins config might take the form
-
-{% hint style="success" %}
-Note you should set the ConnectionTimeout and InitialConnectTimeout to a value that makes sense for you.\
-\
-In the example below we use 60 ... which is a very long timeout but can be useful for dev/test where we often test on very clunky and slow machines.
-
-\
-Production would probably be better set as a much smaller value 2-10 for example.
-{% endhint %}
+{% embed url="https://dev.epicgames.com/documentation/en-us/unreal-engine/online-subsystem-steam-interface-in-unreal-engine" %}
 
 ```ini
+[URL]
+; This is the Game Port that Steam Game Server will use and by default should be 27017
+Port=27017
+
 [SystemSettings]
+; Need this to sort out handshake issues with 5.1 and 5.2
 net.CurrentHandshakeVersion=2
 net.MinHandshakeVersion=2
 net.VerifyNetSessionID=0
 net.VerifyNetClientID=0
 
-[/Script/Engine.Engine]
+[OnlineSubsystem]
+; Let the Online Subsystem know which platform you are working with
+DefaultPlatformService=Steam
+
+[OnlineSubsystemSteam]
+bEnabled=True
+; Should VAC be used, only applies to Steam Game Server
+bVACEnabled=True
+; Your AppID only used for dev builds and in the editor
+SteamDevAppId=480
+; The game version ... this is only required if you are going to run a 
+; Dedicated Server and have it visible over Steam Game Server browser
+GameVersion=1.0.0.0
+; Query Port is by default 2017 this is only used by Steam Game Server
+GameServerQueryPort=27018
+; If using Sessions then you need this set to true, else you can ignore it
+bInitServerOnClient=true
+
+[/Script/Engine.GameEngine]
+; Clear existing definitions
 !NetDriverDefinitions=ClearArray
-+NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="SteamworksComplete.NetSocketsNetDriver",DriverClassNameFallback="SteamworksComplete.NetSocketsNetDriver")
+; Add the Steam Sockets Net Driver
++NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="/Script/SteamSockets.SteamSocketsNetDriver",DriverClassNameFallback="/Script/SteamSockets.SteamNetSocketsNetDriver")
 
-[/Script/SteamworksComplete.NetSocketsNetDriver]
-ConnectionTimeout=60.0
-InitialConnectTimeout=60.0
-NetConnectionClassName="SteamworksComplete.NetSocketsNetConnection"
-
-[Plugins]
-EnabledPlugins=SteamworksComplete
-```
-
-### Disable Steam Socket
-
-Need to go back to using Ip Net Driver?\
-To stop the module load from setting the Steam Socket Subsystem as the default you need to add the following configure value to your Engine.ini
-
-```ini
-[/Script/SteamworksComplete.Steamworkscomplete]
-bUseSteamNetworking=False
+[/Script/OnlineSubsystemSteam.SteamNetDriver]
+; Set the Connection class name for the net driver
+NetConnectionClassName="/Scripts/SteamSockets.SteamSocketsNetConnection"
 ```

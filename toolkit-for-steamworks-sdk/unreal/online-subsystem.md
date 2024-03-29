@@ -7,56 +7,22 @@ coverY: 0
 
 ## Introduction
 
-{% hint style="success" %}
-Online Subsystem is not required to do Multiplayer in Unreal\
-\
-The Online Subsystem framework is simply a means of abstracting backend services to a "common" form e.g. a subsystem. In most use cases this is completely undesired, if you are building a Steam game then you want to fully utilize the Steam API not just the subset of features common to all similar systems.\
-\
-If you do want a multiplatform system then you would be far better off using a multiplatform service such as PlayFab or GameLift as opposed to trying to dumb down all other systems to some common set.
-{% endhint %}
+Online Subsystem and the Steam variant Online Subsystem Steam are fully compatible with Heathen's Toolkit for Steamworks SDK, however in general we do not recommend you use them as they greatly limit some of the most valuable features of the Steamworks SDK and the Steam platform as a whole.
 
-An Unreal Online Subsystem is a framework that attempts to normalize the use of typical backend systems to a standard or common form. In theory, this would mean you could code to the Online Subsystem standard and interchangeably swap in and out various systems such as Facebook, Steam and EGS.
+In order to use Steam Networking Sockets you will find it necessary to install Online Subsystem Steam as it is a technical requirement for the Steam Sockets plugin. You don't have to use its features for matchmaking, session discovery or management and in general wont want to.
 
-{% hint style="info" %}
-The limitations of Online Subsystem as a framework are common reasons why developers would choose to use Heathen's Toolkit for Steamworks.
+## [Steam Lobby](../../company/steam/steamworks/multiplayer/matchmaking-tools.md)
 
-\
-While the Online Subsystem framework is limiting if there is a demand for it we can create an Online Subsystem wrapper. Join our discord and let us know what you want!
-{% endhint %}
+So much more than just matchmaking, never the less it is an industry-leading tool for matchmaking. We have extensive documentation on the features of Steam Lobby and many tools to help you easily and efficiently make the most of it.
 
-## Considerations
+## [Steam Game Server](../../company/steam/steamworks/multiplayer/game-server-browser/)
 
-In practice, however, there is more to all of these systems than the Online Subsystem can leverage and these systems can not be fully normalized. If you wanted to create a multiplatform game that had the same features and functionality across all systems then you should use a multiplatform system such as
+Dedicated servers initialize the Steam API similar to your client build, they do so as a Steam Game Server which lets them avail of Steam ID addressing for multiplayer, [Steam Game Server Browser](../../company/steam/steamworks/multiplayer/game-server-browser/server-browser.md) for matchmaking and discovery as well as leverage other core features of Steam such as [Authentication](../../company/steam/steamworks/multiplayer/authentication.md).
 
-* GameLift (Amazon)
-* PlayFab (Microsoft)
+## [Remote Play](../../steam/remote-play.md)
 
-PlayFab and GameLift are by far the largest and most capable options for multiplatform live service-like games however there are other smaller options such as.
+Put simply, it lets your local multiplayer game be an online multiplayer game with no additional work from you.
 
-* Facebook
-* Machinations
-* Epic Game Services
-* Unity Game Services
-* AppLovin
-* G Portal
-* etc.
+## [Rich Presence](../../company/steam/steamworks/multiplayer/rich-presence.md)
 
-The Online Subsystem framework for multiplatform is thus highly limiting, if you not trying to create a multiplatform game then the platform APIs of the platform you choose are generally easier to use and far more robust than an Online Subsystem can account for. As you won't be switching between more than one there is no reason to not use the platform API directly.
-
-* Steam
-* GoG&#x20;
-* Facebook
-* Google
-* Apple
-* PlayStation
-* Xbox
-
-In all cases, these platforms are platforms and not simply "Live Ops" solutions. They work more like and in some cases outright are social networks including rich social features that are specific to each platform and thus can't be normalized by a common framework in a meaningful way.
-
-## Alternative
-
-Steam API doesn't have to have any impact on your multiplayer set-up or management of sessions. The API offers inventory services, leaderboards, stats, achievements and many other features that are not limited to networking or multiplayer topics.
-
-For multiplayer games, an Online Subsystem is not required. It is the configured Net Driver that handles the network transport. Heathen has developed a [Sockets Net Driver](sockets-net-driver.md) that is not dependent on an Online Subsystem that leverages Steam Networking Sockets find more [here](sockets-net-driver.md). Unreal's synchronization handles syncing data. The Online Subsystem is primarily a means to find and advertise "sessions".
-
-Platforms such as Steam have their own mechanisms to create, find and share sessions of various types and Heathen provides you with the tools to use those features. See our [Multiplayer ](../../company/steam/steamworks/multiplayer/)articles for more information on the tools, systems and concepts at play with Multiplayer games on Steam.
+Steam is much more than just multiplayer tools, its also one of the first social networks and its rich presence leverages those features exposing invite features, join functions and rich details that can help your players find, join and entice friends to paly more!

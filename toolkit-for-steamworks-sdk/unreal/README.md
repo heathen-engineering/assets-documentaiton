@@ -29,7 +29,13 @@ These articles are made possible by our [GitHub Sponsors](../../become-a-sponsor
 
 ## Introduction
 
-The articles within are specific to Unreal and include the engine-specific tools and systems unique to the Unity version of the package.&#x20;
+Heathen's Toolkit for Steamworks enables the full-featured Steamworks SDK and extends that with tried and true tools, system and quality-of-life improvements forged over a decade plus of continuous development and support.&#x20;
+
+Unlike our contemporaries, we work with Unreal Engine's plugins, tools and systems to extend and empower. This means your existing work, tools and assets you may already own, samples and guides you found along the way and years of forum posts and code snippets will all just work.
+
+No limits, it's no secret that Online Subsystem Steam is out of date and feature-limited. Updating it is simple and what Epic Games intended you to do. We can help make that less painful. Extending the native Steamworks integration is where we shine. Exposing every feature of Steamworks SDK making it easy to work with in C++ or Blueprint, integrating it deeply with the engine enabling the full feature set in the editor (not just standalone runs) and extending that further with Unreal-specific systems, tools and widgets like Steam Save Game and our Steam Game Instance.
+
+We help you Do More with Toolkit for Steamworks SDK
 
 ## Features
 
@@ -39,13 +45,19 @@ The single most valuable resource we offer is completely free and you are readin
 
 ### Full-Featured Steamworks SDK
 
-We expose the native Steamworks SDK to you in both C++ and Blueprints and extend that with quality-of-life and convenience additions to help you Do More with less and deliver a more robust integration by leveraging our decade+ of experience and refinement.&#x20;
+Leverage the full feature set of Steamworks SDK in C++ or Blueprint. We have created a rich blueprint library that covers every API and function of Steamworks SDK with additional quality-of-life nodes to further accelerate your project.
 
-### Deep Engine Integration
+### More than just an API wrapper
 
-> More than just another API wrapper
+Deeply integrated with Unreal we bridge the gap between Unreal and Steamworks. Work in the editor with the full Steamworks API integrated into the Unreal Game Instance. We expose every Steam API callback as an Unreal delegate (event). We extend Save Game to integrate it tightly with Steam Remote Storage (aka Steam Cloud) and provide a fully functional example of major features like friends, leaderboards, lobby and multiplayer.
 
-That is literal, we do more than simply wrap up the old-school C-style Steamworks SDK into a more modern set of window trimming. We build on top of Steamworks with editor extensions and engine-specific features to make working with Steam as "native" feeling to the engine you choose as possible. Our extensions are an extension, not a replacement, the full, unadulterated Steamwroks SDK is at your command as well as our robust proven systems and tools.
+### Unreal Capability
+
+We work with Unreal Engine's built-in plugins, tools and systems taking them further and enabling you to take advantage of everything Steamworks and the Steam platform offers. This means all of your existing tools, knowledge, experience, guides and community sources will continue to work for you enhanced by Heathen's Toolkit for Steamworks SDK.
+
+### Free from Multiplayer Limits
+
+Finding Online Subsystem limiting? let us fix that for you. You can of course use OSS Steam, Sessions, Advanced Session or any other Unreal tool alongside Toolkit for Steamworks. You can also forgo them completely leveraging Steam Lobby, Steam Game Sever, Rich Presence, Remote Play and much more to deliver a rich user experience leveraging every feature Valve's Steam platform has to offer.
 
 ### Work Your Way
 
@@ -57,28 +69,21 @@ We have developed and maintained Heathen's Toolkit for Steamworks for more than 
 
 ### Peerless Support
 
-This is our day job, we are always here and we support our tools and our community. The community we have fostered is rich, diverse and supportive. Whether you are a passionate hobbyist looking to publish your first game on Steam or an industry veteran with years of experience Heathen's dedication and experience and the wider Heathen community will enable you Do More!
+This is our day job, we are always here and we support our tools and our community. The community we have fostered is rich, diverse and supportive. Whether you are a passionate hobbyist looking to publish your first game on Steam or an industry veteran with years of experience Heathen's dedication and experience and the wider Heathen community will enable you to Do More!
 
 ## Comparison
 
-<table data-full-width="true"><thead><tr><th width="381.5">Features</th><th width="303">Online Subsystem Steam</th><th width="319">Complete</th></tr></thead><tbody><tr><td>License</td><td><a href="https://docs.unrealengine.com/5.3/en-US/online-subsystem-steam-interface-in-unreal-engine/">Free</a><br><em><mark style="color:yellow;">Warning Online Subsystem Steam is out of date with modern Steam API</mark></em></td><td><a href="../../become-a-sponsor/">Sponsor ($15)</a><br><a href="https://www.unrealengine.com/marketplace/en-US/product/ad658ddf5c434478acb95f9091ea279c">Unreal Marketplace ($74.99)</a></td></tr><tr><td>C++ API Supported</td><td>- Out dated version</td><td>✔ current and frequently updated and easy to update yourself if need be.</td></tr><tr><td>Documentation</td><td><a href="https://docs.unrealengine.com/5.3/en-US/online-subsystem-steam-interface-in-unreal-engine/">Minimal</a></td><td>This Knowledge Base and its guides</td></tr><tr><td>Support</td><td>Community</td><td>Dedicated + Community</td></tr><tr><td>Steam Networking Sockets</td><td>- Old Steam API version, dependent on Online Subsystem</td><td>✔ full-featured NetDriver, latest Steam API version, no dependency on an Online Subsystem</td></tr><tr><td><h2>Networking</h2></td><td></td><td></td></tr><tr><td>Online Subsystem</td><td>✔  ( <mark style="color:yellow;">out of date</mark> )</td><td>Not Applicable (<a href="online-subsystem.md">learn more</a>)</td></tr><tr><td>Net Drive</td><td>✔  ( <mark style="color:yellow;">out of date</mark> )</td><td>Sockets Net Driver (<a href="sockets-net-driver.md">learn more</a>)</td></tr><tr><td><h3>Editor Tools</h3></td><td></td><td></td></tr><tr><td>Achievement UI Tools</td><td></td><td>✔</td></tr><tr><td>Build Upload Tool</td><td></td><td>Coming Soon</td></tr><tr><td>Chat UI Tools</td><td></td><td>✔</td></tr><tr><td>Group / Clan UI Tools</td><td></td><td>✔</td></tr><tr><td>User Profile Tools</td><td></td><td>✔</td></tr><tr><td>Leaderboard UI Tools</td><td></td><td>✔</td></tr><tr><td>Lobby UI Tools</td><td></td><td>✔</td></tr><tr><td>Debugging Tools</td><td></td><td>✔</td></tr><tr><td><h3>API Extensions</h3></td><td></td><td></td></tr><tr><td>Application</td><td>- Partial</td><td>✔ + Blueprint Integration</td></tr><tr><td>Authentication</td><td>- Partial</td><td>✔ + Blueprint Integration</td></tr><tr><td>Big Picture</td><td></td><td>✔ + Blueprint Integration</td></tr><tr><td>Groups / Clans</td><td></td><td>✔ + Blueprint Integration</td></tr><tr><td>User / Friends</td><td>- Partial</td><td>✔ + Blueprint Integration</td></tr><tr><td>Steam Input</td><td></td><td>✔ + Blueprint Integration</td></tr><tr><td>Inventory</td><td></td><td>✔ + Blueprint Integration</td></tr><tr><td>Leaderboard</td><td>- Partial</td><td>✔ + Blueprint Integration</td></tr><tr><td>Matchmaking</td><td>- Partial</td><td>✔ + Blueprint Integration</td></tr><tr><td>Overlay</td><td>✔</td><td>✔ + Blueprint Integration</td></tr><tr><td>Parties</td><td></td><td>✔ + Blueprint Integration</td></tr><tr><td>Remote Play</td><td></td><td>✔ + Blueprint Integration</td></tr><tr><td>Remote Storage (cloud)</td><td></td><td>✔ + Blueprint Integration</td></tr><tr><td>Screenshots</td><td></td><td>✔ + Blueprint Integration</td></tr><tr><td>Stats &#x26; Achievements</td><td>- Partial</td><td>✔ + Blueprint Integration</td></tr><tr><td>UGC (Workshop)</td><td></td><td>✔ + Blueprint Integration</td></tr><tr><td>Utilities</td><td></td><td>✔ + Blueprint Integration</td></tr><tr><td>Voice</td><td>✔</td><td>✔ + Blueprint Integration</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th width="381.5">Features</th><th width="303">Online Subsystem Steam</th><th width="319">Toolkit for Steamworks</th></tr></thead><tbody><tr><td>License</td><td><a href="https://docs.unrealengine.com/5.3/en-US/online-subsystem-steam-interface-in-unreal-engine/">Free</a></td><td><a href="../../become-a-sponsor/">Sponsor ($15)</a><br><a href="https://www.unrealengine.com/marketplace/en-US/product/ad658ddf5c434478acb95f9091ea279c">Unreal Marketplace ($74.99)</a></td></tr><tr><td>Documentation</td><td><a href="https://docs.unrealengine.com/5.3/en-US/online-subsystem-steam-interface-in-unreal-engine/">Minimal</a></td><td>This Knowledge Base and its guides</td></tr><tr><td>Support</td><td>Community</td><td>Dedicated + Community</td></tr><tr><td><h3>Editor Tools</h3></td><td></td><td></td></tr><tr><td>UI Widgets <br>(friends, user, lobby, leaderboard, etc.)</td><td></td><td>✔</td></tr><tr><td>Remote Storage<br>Steam Cloud Save</td><td></td><td>✔</td></tr><tr><td>Initialize in the editor, in any play mode <br>(Not limited to Standalone)</td><td></td><td>✔</td></tr><tr><td><h3>API Extensions</h3></td><td></td><td></td></tr><tr><td>Application</td><td>- Partial</td><td>✔ + Blueprint Integration</td></tr><tr><td>Authentication</td><td>- Partial</td><td>✔ + Blueprint Integration</td></tr><tr><td>Big Picture</td><td></td><td>✔ + Blueprint Integration</td></tr><tr><td>Groups / Clans</td><td></td><td>✔ + Blueprint Integration</td></tr><tr><td>User / Friends</td><td>- Partial</td><td>✔ + Blueprint Integration</td></tr><tr><td>Steam Input</td><td></td><td>✔ + Blueprint Integration</td></tr><tr><td>Inventory</td><td></td><td>✔ + Blueprint Integration</td></tr><tr><td>Leaderboard</td><td>- Partial</td><td>✔ + Blueprint Integration</td></tr><tr><td>Matchmaking</td><td>- Partial</td><td>✔ + Blueprint Integration</td></tr><tr><td>Overlay</td><td>✔</td><td>✔ + Blueprint Integration</td></tr><tr><td>Parties</td><td></td><td>✔ + Blueprint Integration</td></tr><tr><td>Remote Play</td><td></td><td>✔ + Blueprint Integration</td></tr><tr><td>Remote Storage (cloud)</td><td></td><td>✔ + Blueprint Integration</td></tr><tr><td>Screenshots</td><td></td><td>✔ + Blueprint Integration</td></tr><tr><td>Stats &#x26; Achievements</td><td>- Partial</td><td>✔ + Blueprint Integration</td></tr><tr><td>UGC (Workshop)</td><td></td><td>✔ + Blueprint Integration</td></tr><tr><td>Utilities</td><td></td><td>✔ + Blueprint Integration</td></tr><tr><td>Voice</td><td>✔</td><td>✔ + Blueprint Integration</td></tr></tbody></table>
 
 ### But Online Subsystem Steam?
 
-{% hint style="success" %}
-Heathen's Toolkit for Steamworks will save you hundreds if not thousands of hours and enable you to exploit every feature Valve's Steamworks provides easily, efficiently, stably and robustly.
-{% endhint %}
+Online Subsystems (Steam or otherwise) are not platform integrations, they do not attempt to leverage the platform features fully or even in the way intended by the platform. Online Subsystems such as Online Subsystem Steam reduces the power of Steamworks to its bare bones in order to conform with the Online Subsystem structure and the concept of Sessions.
 
-[Online Subsystem Steam](https://docs.unrealengine.com/5.3/en-US/online-subsystem-steam-interface-in-unreal-engine/) is a barebones integration of the basics and is built on an outdated version of Steam API that depending on your use case will simply not work. Documentation for Online Subsystem Steam is similarly dated and incomplete making it difficult to leverage Steam in any capacity beyond the most basic initialization. The lobby feature of Online Subsystem Steam is particularly limited and only suitable as a discovery system which is not what the feature was designed for at all giving you the worst of both worlds.
+The advantage to Online Subsystems is that you could theoretically swap them out as in switch from Steam to Facebook to anything else and all your logic would remain unchanged.&#x20;
 
-Setting aside the poor documentation for Online Subsystem Steam and the fact that it's on an older version of Steam API, it also simply lacks many of Valve's Steamworks' most valuable features and what is covered is only partially covered. The fact that it is outdated also presents risks regarding authentication and similar security features.
+The disadvantage is that you cannot avail of any of the platform-specific features. This is particularly tragic with Steam which offers hands down the best services, tools and features for no additional charge.&#x20;
 
-Importantly you should understand that any "Online Subsystem" is an attempt at shoehorning a given platform's features into the form expected by the Online Subsystem Framework. This means you cannot take full advantage of the platform, you cannot leverage all the features available and you must use the limited integration in the Unreal-defined manner, in the case of Steam API this is hugely limiting and greatly reduces the value of Steam APIs which is a rather large, expansive and incredibly feature reach kit.
+Steamworks is far more than a multiplayer tool set, it includes rich social features, support for modding, inventory which itself supports microtransactions, crafting, player economy and itemization. Steam allows for 10,000 leaderboards per app (game) each can have a limitless number of users and includes file attachments enabling replay features and more. Steam workshop is the gold standard for easy-to-use mods and community-created content and Steam Remote play lets your local multiplayer game be online-multiplayer with no additional work on your part.
 
-#### In Contrast:
-
-Heathen's Toolkit for Steamworks is as its name suggests a complete solution. Our plugin is kept up to date with Valve's Steamworks SDK and the version of the SDK used can be changed by you with minimal effort (no code change required just swap assemblies).
-
-#### More than "Just Another Steam API Wrapper"
-
-Heathen's Toolkit for Steamworks exposes the whole of Steamworks in C++ code of course and everything is also exposed to Blueprints in an Unreal friendly manner. Beyond that, we have created systems, tools and extensions that bridge the concepts and approaches of Unreal and Steam, for example, the Steam Game Instance, Steam Save Game, etc. The goal of the kit is to enable you to do more and to make Steam feel like a native extension of the engine you choose.
+Why not just use Online Subsystem Steam?\
+Because you are missing 99% of what Steam has to offer. Valve will be taking their 30% rather you use none or all of Steam's features, you might as well make them work for it and leverage the industry-leading Steamworks SDK to its fullest.

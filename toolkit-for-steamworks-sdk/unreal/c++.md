@@ -29,43 +29,40 @@ These articles are made possible by our [GitHub Sponsors](../../become-a-sponsor
 
 ## Introduction
 
-Heathen's Steamworks Complete is always built on the full raw Steam API for every engine and Unreal Steamworks Complete is no different.
+Working in C++ then add this to your Build.cs
 
-You can access the entire Steam Client and Steam Game Server API from C++ with minimal effort using our asset.
+```csharp
+PrivateDependencyModuleNames.AddRange(
+    new string[]
+    {
+        //... your other dependencies
+        "Steamworks",
+    });
 
-## Step 1
-
-Add Steamworks Complete to your public dependency module names in your project Build.cs
-
-```cpp
-PublicDependencyModuleNames.AddRange(new string[] 
-{ 
-    "Core", 
-    "CoreUObject", 
-    "Engine", 
-    "InputCore", 
-    "SteamworksComplete" 
-});
+//This is important to
+AddEngineThirdPartyPrivateStaticDependencies(Target, "Steamworks");
 ```
 
-## Step 2
-
-Reference the required headers
+now in code, you should be able to do this
 
 ```cpp
 THIRD_PARTY_INCLUDES_START
-#include <ThirdParty/sdk/steam_api.h>
+#include <steam/steam_api.h>        //For client APIs
+#include <steam/steam_gameserver.h> //For server APIs
 THIRD_PARTY_INCLUDES_END
 ```
 
-The full SDK's headers have been included with all assemblies accounted for including support for&#x20;
+Heathen's Steam Game Instance includes this for you and comes with a slew of helpful tools such as exposing all the callbacks to events and defining linker wrappers enabling a more modern callback structure than the native Steamworks SDK was set up for.
 
-* Mac
-* Linux
-* Windows 64
+To access it in code, simply add it to your dependencies:
 
-## Step 3
+```csharp
+PrivateDependencyModuleNames.AddRange(
+    new string[]
+    {
+        //... your other dependencies
+        "ToolkitSteamworks",
+    });
+```
 
-You now have the box standard Steamworks SDK's Steam API at your disposal exactly as Valve intended it.&#x20;
-
-Valve's Steamworks SDK is an older C-styled kit, see our Blueprints for an easier approach or review their source code for functional examples of working with Steam API covering every method, callback and call result.
+You should now be able to access SteamGameInstance and HeathenTools, its worth noting that Unreal Editor would do this for you. To do so, in the editor click Add C++ object and choose the parent class of SteamGameInstance. You'll often want to create a derived instance anyway especially when working in C++ as this acts as your most global instanced object initializing right after engine load.
