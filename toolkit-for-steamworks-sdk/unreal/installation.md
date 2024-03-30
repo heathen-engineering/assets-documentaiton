@@ -106,7 +106,9 @@ Once you have installed the plugin to the engine versions you require you need t
 
 ### From GitHub
 
-The plugin will be installed as part of your project as opposed to part of the engine. To get started close your engine, and navigate to the project folder, this is where your .uproject file is located.
+The plugin will be installed as part of your project as opposed to part of the engine. Honestly find this preferable even when I use Marketplace as my source as it lets me control the version per project.
+
+To get started close your engine, and navigate to the project folder, this is where your .uproject file is located.
 
 You should see a .sln file beside it, if you do not then your project is not set up for C++ so go back a step and fix that.
 
@@ -114,9 +116,9 @@ Once you do have a .sln we need to copy the Plugins in. You may already have a P
 
 #### Add the plugin
 
-Next, copy the SteamworksComplete folder into your Plugins folder. You'll find the plugin in our GitHub Sponsor Source Repo
+Next, copy the ToolkitSteamworks folder into your Plugins folder. You'll find the plugin in our GitHub Sponsor Source Repo
 
-<figure><img src="../../.gitbook/assets/image (30) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (411).png" alt=""><figcaption></figcaption></figure>
 
 When done your folder should look similar to the above.
 
@@ -124,7 +126,7 @@ When done your folder should look similar to the above.
 
 If you do not own the Plugin from the Unreal Marketplace then the Epic editor will see that this plugin is also a Marketplace plugin and expect you to download it from there
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Wording may differ depending on version but similar to the above.</p></figcaption></figure>
 
 You have 2 options to sidestep this, 1 you could deploy it as an engine plugin (personly not my preference) or you can modify the SteamworksComplete.uplugin to empty the `MarkeplaceURL` node, as shown below
 
@@ -221,3 +223,23 @@ bInitServerOnClient=true
 ; Set the Connection class name for the net driver
 NetConnectionClassName="/Scripts/SteamSockets.SteamSocketsNetConnection"
 ```
+
+## Builds
+
+If you are building a Dedicated Server you will need to ensure you have the following defines declared, there are several ways you can go about this such as the Target.cs, please see Unreal Engine's documentation for details.
+
+{% hint style="info" %}
+This is a requirement from the Online Subsystem Steam plugin and deals with how it initializes the Steamworks SDK.
+
+We document it here because it is often overlooked, to find the source documentation please review the [Server Details](https://dev.epicgames.com/documentation/en-us/unreal-engine/online-subsystem-steam-interface-in-unreal-engine#serverdetails) section of the [Online Subsystem Steam article](https://dev.epicgames.com/documentation/en-us/unreal-engine/online-subsystem-steam-interface-in-unreal-engine) on Epic's documentation site.
+{% endhint %}
+
+
+
+<table data-full-width="true"><thead><tr><th>UE Macro</th><th>Steam Name</th><th>Notes</th></tr></thead><tbody><tr><td><code>UE_PROJECT_STEAMPRODUCTNAME</code></td><td><code>STEAMPRODUCTNAME</code></td><td>Typically your App ID<br>Used by Steam Game Server Matchmaking features.</td></tr><tr><td><code>UE_PROJECT_STEAMGAMEDIR</code></td><td><code>STEAMGAMEDIR</code></td><td>This should be the folder where your game resides and is usually just the game name sans spaces and symbols. note it's just the folder name, not the path it's self</td></tr><tr><td><code>UE_PROJECT_STEAMGAMEDESC</code></td><td><code>STEAMGAMEDESC</code></td><td>Usually the human name of your game</td></tr><tr><td><code>UE_PROJECT_STEAMSHIPPINGID</code></td><td></td><td>This is 100% Unreal Engine and is used in both client and server when not in the editor or a Dev build. <br><br>It is simply your App ID and is used during initialization.</td></tr></tbody></table>
+
+### steam\_appid.txt
+
+We have a [full article](../../company/steam/steamworks/steam\_appid.txt.md) on what this text file is and when you should or should not be using it. Epic notes similar in their article [here](https://dev.epicgames.com/documentation/en-us/unreal-engine/online-subsystem-steam-interface-in-unreal-engine#steamappid).
+
+In short this should only be needed when your running a packaged project from outside of Steam or if your running a Dedicated server build.

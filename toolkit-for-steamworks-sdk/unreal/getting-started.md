@@ -29,6 +29,10 @@ These articles are made possible by our [GitHub Sponsors](../../become-a-sponsor
 
 ## [Installation](installation.md)
 
+{% hint style="info" %}
+Be sure to read the [Installation ](installation.md)article, it contains information on initial engine and project configuration that will prevent most "getting started" issues.
+{% endhint %}
+
 Import the Toolkit for Steamworks plugin to your project. Whether you purchased the plugin from Unreal Marketplace or are a GitHub Sponsor you will need access to the Toolkit for Steamworks plugin to get started using it.
 
 The plugin is not free and is only available from Heathen via the [GitHub Sponsor](../../become-a-sponsor/) program and on the [Unreal Marketplace](https://www.unrealengine.com/marketplace/en-US/product/ad658ddf5c434478acb95f9091ea279c). If you acquired the plugin anywhere else we suggest you remove it immediately as it's not a legit copy and likely contains malware.&#x20;
@@ -51,9 +55,25 @@ You can learn more about [getting started as a Steam Developer in our article he
 
 The Example Level presents a UI that demonstrates key features
 
-<figure><img src="../../.gitbook/assets/image (391).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (412).png" alt=""><figcaption></figcaption></figure>
 
 Be sure to check out the Graph on the BP\_Example\_UI for additional examples such as how to find, join and create a Steam Lobby, Host and Join a network session via Steam Networking Sockets, etc.
+
+{% hint style="info" %}
+The Center Bottom text boxes are used to test lobby and multiplayer features.&#x20;
+
+### Lobby
+
+* You can create a lobby by clicking the button with the input field empty.
+* You can join a lobby by typing in the Hex ID of the lobby you wish to join.&#x20;
+* Browsing and matchmaking can also be done with blueprint nodes only, we simply didn't want to clutter the example with to many use cases.
+
+### Multiplayer
+
+
+{% endhint %}
+
+Everything in the example scene is done with Blueprint Nodes requiring no C++ work at all. The UI WIdgets used are all created using Blueprint Nodes only again no C++ work required at all.
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
