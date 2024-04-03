@@ -3,27 +3,23 @@ cover: ../../.gitbook/assets/Unreal Banner@2x.png
 coverY: 0
 ---
 
-# Packaging Tool
+# Packaging
 
 ## Introduction
-
-{% hint style="info" %}
-Coming Soon!
-
-As we have done with other engines we will for Unreal create an in editor tool to help you build and deploy your apps to Steam.\
-\
-This tool is under development and will be released #Soon™️
-{% endhint %}
 
 ## Steam CMD
 
 {% hint style="success" %}
-Steam CMD is Valve's official tool for uploading your app to Steam, and it's what our Packaging Tool will actually be used to do the dead.
+Steam CMD is Valve's official tool for uploading your app to Steam, there are 3rd party visual interfaces for the tool though we recommend you learn the command line version and how to work with VDFs as they offer far more flexibility and are the "official" method supported by Valve.\
+\
+A quick Google search will find you various open-source visual tools for modifying VDFs and using the Steam CMD tool ... here is one such search result ... please note we are not affiliated with this tool at all its simply an example of a search result.
 
-The tool is a command line tool, we will be creating an in-editor form for it, and as a command line tool, it intimidates some.
+[https://github.com/AndrSator/SteamCMD-GUI](https://github.com/AndrSator/SteamCMD-GUI)
 {% endhint %}
 
-Steam CMD has a feature "Content Builder" which is the traditional way to upload your games and in our opinion, the better method as it's more flexible and doesn't depend on you opening the engine. Your first step is to download the Steamworks SDK, this is a zip file that has a slew of tools and examples meant to help you get to terms with the Steamworks tools.
+Steam CMD has a feature "Content Builder" which is the traditional way to upload your games and in our opinion, the better method as it's more flexible and doesn't depend on you opening the engine or some 3rd party tool. It can be easily automated with whatever build processes you're currently using and is the "official" method support by Valve so they can help with any issues if you get stuck.
+
+Your first step is to download the Steamworks SDK, this is a zip file that has a slew of tools and examples meant to help you get to terms with the Steamworks tools.
 
 {% hint style="info" %}
 In short, we are going to create a script that will run SteamCMD and tell it to read another script called an "app build vdf" ... that app build vdf is just a script that describes what app it is we want to upload for and what depots we want to upload to.\
@@ -49,6 +45,8 @@ In short, you can use a couple of simple commands to upload your build to Steam 
 ### Run Build Script
 
 To get started let us create the script that you will execute to upload your builds, follows is a template you can use.
+
+We like to do these for testing though keep in mind you are typing a username and password into what amounts to a text file so make sure it's in a secure location like a secured and restricted build server. This tool uploads the game to Steam so obviously it will need a net connection with the ability to read from disk and call out to the web.
 
 ```
 builder\steamcmd.exe +login [Username] [Password] +run_app_build_http ..\scripts\app_build_[appid].vdf +quit
@@ -116,11 +114,14 @@ You should replace the text defined below with the values appropriate for your g
   The app ID this build is about
 * \[description]\
   The description of this build ... is usually something like "MyGame's base build" or "MyGame's Windows Build"
-* \[gameFolder]\
-  This is the location of your build content, and as you can see we assume you're putting your build in the SDK -> Tools -> ContentBuilder -> content folder. We recommend you make sub-folders in that for each game ... and for each platform ... for example
-  * sdk/tools/ContentBuilder/content/MyGame/Windows
-  * sdk/tools/ContentBuilder/content/MyGame/Linux
-  * sdk/tools/ContentBuilder/content/MyOtherGame/Windows
+*   \[gameFolder]\
+    This is the location of your build content, and as you can see we assume you're putting your build in the SDK -> Tools -> ContentBuilder -> content folder. We recommend you make sub-folders in that for each game ... and for each platform ... for example
+
+    * sdk/tools/ContentBuilder/content/MyGame/Windows
+    * sdk/tools/ContentBuilder/content/MyGame/Linux
+    * sdk/tools/ContentBuilder/content/MyOtherGame/Windows
+
+    In this example, the value would be `..\content\MyGame\`
 * \[DepotId]\
   This is the list of DepotBuildConfig files to be included, it is an array so you can include more than 1 for example
 
