@@ -17,7 +17,7 @@ layout:
     visible: true
 ---
 
-# v2 Coming Soon!
+# What's New!
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -26,6 +26,12 @@ Support us as a [GitHub Sponsor](../../become-a-sponsor/) and get instant access
 \
 These articles are made possible by our [GitHub Sponsors](../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
+
+## Introduction
+
+Heathen has not stopped updating, improving, expanding and enriching its tools and knowledge base in over a decade ... and we aren't about to stop now!
+
+This article describes major recent and upcoming changes coming to Heathen's Toolkit for Steamworks SDK for the Unreal Engine. GitHub Sponsors and Patreon Subscribers have access to all our changes as they occur as well as track and manage issues, feedback and suggestion tools. Becoming a sponsor is the best way to experience and guide the ongoing development of all of Heathen's great tools for all engines.
 
 <table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><h3>GitHub Sponsor</h3></td><td><p><a href="https://github.com/sponsors/heathen-engineering">Become a Sponsor</a></p><p><em>The link below only works for Sponsors</em><br><a href="https://github.com/heathen-engineering/SourceRepo">Installation Instructions</a></p><p><em><mark style="color:yellow;"><strong>Cancel anytime, and keep everything you have including our site-based license</strong></mark></em></p><ul><li>$15.00 month</li><li>Source Access<br>For all our assets</li><li>Live Updates</li><li>Exclusive extras</li><li>Issue Tracking</li><li>Escalated Live Support</li><li><p>Unity</p><ul><li>Toolkit for Steamworks</li><li>PhysKit Complete</li><li>UX Complete</li></ul></li><li><p>Unreal</p><ul><li>Toolkit for Steamworks</li></ul></li></ul></td><td></td></tr><tr><td><h3>Unreal Marketplace</h3></td><td><p><a href="https://www.unrealengine.com/marketplace/en-US/product/ad658ddf5c434478acb95f9091ea279c">Unreal Marketplace</a></p><ul><li>$74.99</li><li>Source Included</li><li>Quarterly Updates<br>+ Hotfixes</li><li>Toolkit for Steamworks</li><li>Live Support</li></ul></td><td><mark style="color:orange;">Per-user license, free updates for that major version, discount on future major updates</mark></td></tr></tbody></table>
 
@@ -37,7 +43,7 @@ Version 1 was spawned from an internal tool and was a complete manual integratio
 
 Version 2's approach is to author our tools to work with any relevant version of the engine or Steamworks SDK and handle integration through common/shared Unreal Engine features such as Steam Shared. The net result of this change is that all existing tools, plugins, samples, tutorials, etc. around Unreal's Steamworks will simply work and that all of Heathen's "full feature set" will also simply work.
 
-## Changes
+## v2 Changes
 
 ### Installation
 

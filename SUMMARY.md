@@ -316,7 +316,7 @@
     * [Toggle Event Helper](toolkit-for-steamworks-sdk/unity/ui-components/toggle-event-helper.md)
     * [Workshop Browser Simple Item Record](toolkit-for-steamworks-sdk/unity/ui-components/workshop-browser-simple-item-record.md)
 * [Unreal](toolkit-for-steamworks-sdk/unreal/README.md)
-  * [v2 Coming Soon!](toolkit-for-steamworks-sdk/unreal/v2-coming-soon.md)
+  * [What's New!](toolkit-for-steamworks-sdk/unreal/whats-new.md)
   * [Installation](toolkit-for-steamworks-sdk/unreal/installation.md)
   * [Getting Started](toolkit-for-steamworks-sdk/unreal/getting-started.md)
   * [Known Issues](toolkit-for-steamworks-sdk/unreal/known-issues.md)
