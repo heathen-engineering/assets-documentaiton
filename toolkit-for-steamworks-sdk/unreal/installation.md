@@ -102,6 +102,11 @@ The plugin is deployed to the Unreal Marketplace as an engine plugin. This means
 
 Once you have installed the plugin to the engine versions you require you need to enable the plugin for your project, this will require a restart to complete.
 
+{% hint style="info" %}
+Toolkit for Steamworks SDK & Steamworks Complete\
+It's the same thing, we simply had a recent name change and not all our images have been updated yet.
+{% endhint %}
+
 <figure><img src="../../.gitbook/assets/image (368).png" alt=""><figcaption></figcaption></figure>
 
 ### From GitHub
