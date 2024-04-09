@@ -1,5 +1,5 @@
 ---
-cover: ../../../.gitbook/assets/Unreal Banner@2x.png
+cover: ../../../.gitbook/assets/Unreal Banner.jpg
 coverY: 0
 layout:
   cover:
