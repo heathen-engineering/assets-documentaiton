@@ -1,6 +1,6 @@
 ---
 description: Installing Heathen Engineering's Steamworks and related componenets.
-cover: ../../../.gitbook/assets/Unity Banner@2x.png
+cover: ../../../.gitbook/assets/Unity Banner.jpg
 coverY: 0
 layout:
   cover:

@@ -1,6 +1,6 @@
 ---
 description: Represents a group of friends such as online, offline, etc.
-cover: ../../../.gitbook/assets/Unity Banner@2x.png
+cover: ../../../.gitbook/assets/Unity Banner.jpg
 coverY: 0
 ---
 

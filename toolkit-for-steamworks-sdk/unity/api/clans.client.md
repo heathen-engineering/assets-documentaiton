@@ -1,6 +1,6 @@
 ---
 description: Access the Steam Clan aka Steam Group system with Heathen's Steam API
-cover: ../../../.gitbook/assets/Unity Banner@2x.png
+cover: ../../../.gitbook/assets/Unity Banner.jpg
 coverY: 0
 ---
 

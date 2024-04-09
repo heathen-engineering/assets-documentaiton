@@ -1,6 +1,6 @@
 ---
 description: Have a question? Get an Answer!
-cover: ../.gitbook/assets/Banner@2x.png
+cover: ../.gitbook/assets/Banner.jpg
 coverY: 0
 layout:
   cover:

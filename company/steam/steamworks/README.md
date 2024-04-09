@@ -2,13 +2,13 @@
 description: How to .... everything!
 ---
 
-# ⚙ Steamworks
+# ⚙️ Steamworks
 
 ## Introduction
 
 <div data-full-width="true">
 
-<figure><img src="../../../.gitbook/assets/Banner@2x.png" alt="Steamworks Complete"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Banner.jpg" alt="Steamworks Complete"><figcaption></figcaption></figure>
 
 </div>
 

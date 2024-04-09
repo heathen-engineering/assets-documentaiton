@@ -1,6 +1,6 @@
 ---
 description: When you need it on-demand
-cover: ../../../.gitbook/assets/Unity Banner@2x.png
+cover: ../../../.gitbook/assets/Unity Banner.jpg
 coverY: 0
 ---
 

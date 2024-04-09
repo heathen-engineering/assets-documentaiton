@@ -3,7 +3,7 @@ description: >-
   More than just another API wrapper, it's a powerful Steamworks integration for
   Unity & Unreal. Easy-to-use editor tools, proven systems, impeccable support,
   a rich knowledge base & friendly community
-cover: ../.gitbook/assets/Banner@2x.png
+cover: ../.gitbook/assets/Banner.jpg
 coverY: 0
 layout:
   cover:

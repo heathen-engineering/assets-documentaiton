@@ -1,6 +1,6 @@
 ---
 description: Features from ISteamUtil with a few extras from Heathen!
-cover: ../../../.gitbook/assets/Unity Banner@2x.png
+cover: ../../../.gitbook/assets/Unity Banner.jpg
 coverY: 0
 ---
 

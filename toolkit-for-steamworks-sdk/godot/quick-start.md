@@ -1,5 +1,5 @@
 ---
-cover: ../../.gitbook/assets/Godot Banner@2x.png
+cover: ../../.gitbook/assets/Godot Banner.jpg
 coverY: 0
 ---
 

@@ -1,6 +1,6 @@
 ---
 description: Steam Lobby Functionality in an easy to use struct
-cover: ../../../.gitbook/assets/Unity Banner@2x.png
+cover: ../../../.gitbook/assets/Unity Banner.jpg
 coverY: 0
 ---
 
