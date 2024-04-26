@@ -2,7 +2,7 @@
 description: Getting started with Steam Multiplayer
 ---
 
-# ☝ Getting Started
+# ☝️ Getting Started
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -75,39 +75,11 @@ You can learn more about Unreal Online Subsystem and in particular why it is not
 
 The Net Driver you choose defines how you will connect, Unreal's built-in Steam Sockets Net Driver is unfortunately out of date and dependent on the incompatible Online Subsystem Steam.&#x20;
 
-### Steam Sockets NetDriver
+### [Sockets NetDriver](../../../../toolkit-for-steamworks-sdk/unreal/sockets-net-driver.md)
 
 You are not required to use a Steam Networking Sockets-based NetDriver just because your game is shipping on Steam. You can use any NetDriver you like. Each NetDriver should have its own documentation and instructions on how you should configure the engine for its use and how it should be addressed.
 
-{% hint style="success" %}
-Heathen has created a [Steam Networking Sockets; NetDriver](../../../../toolkit-for-steamworks-sdk/unreal/sockets-net-driver.md) that is compatible with Heathen's Toolkit for Steamworks SDK - Steam API and is not dependent on an Online Subsystem at all.
-{% endhint %}
-
-You can configure your project to User Heathen's Steam Networking Sockets NetDriver by adding the following lines to your Engine.ini
-
-```ini
-[SystemSettings]
-net.CurrentHandshakeVersion=2
-net.MinHandshakeVersion=2
-net.VerifyNetSessionID=0
-net.VerifyNetClientID=0
-
-[/Script/Engine.Engine]
-!NetDriverDefinitions=ClearArray
-+NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="SteamworksComplete.NetSocketsNetDriver",DriverClassNameFallback="SteamworksComplete.NetSocketsNetDriver")
-
-[/Script/SteamworksComplete.NetSocketsNetDriver]
-ConnectionTimeout=60.0
-InitialConnectTimeout=60.0
-NetConnectionClassName="SteamworksComplete.NetSocketsNetConnection"
-
-[Plugins]
-EnabledPlugins=SteamworksComplete
-```
-
-{% hint style="info" %}
-In the above, we have set the Connection Timeout values to 60, which is a very long time, while useful for development and testing you will probably want to set the default to something smaller before you build and deploy.
-{% endhint %}
+[Learn more about the Sockets NetDriver for Steam in the Unreal section of the Knowledge Base](../../../../toolkit-for-steamworks-sdk/unreal/sockets-net-driver.md).
 
 If you configure your project to use [Heathen's Steam Networking Sockets-based NetDriver](../../../../toolkit-for-steamworks-sdk/unreal/sockets-net-driver.md) (or any compatible Steam Networking Sockets-based driver) then the sample scene can be used to host (start a listen server) and connect to a session.
 
