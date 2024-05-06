@@ -33,10 +33,10 @@ Provides easy access to detailed item information without needing a ScriptableOb
 Example:
 
 ```csharp
-//Lets assume you have an item whoes ID is 100 and wanted to know how many the player
+//Let's assume you have an item who's ID is 100 and want to know how many the player
 //owned of that item
-var myItem = 100;
-Debug.Log($"Player owns {myItem.GetTotalQuantity()}";
+ItemData myItem = 100;
+Debug.Log($"Player owns {myItem.GetTotalQuantity()}");
 ```
 
 This of course assumes you have "Updated" the inventory at some point previously which can also be done using this structure.
