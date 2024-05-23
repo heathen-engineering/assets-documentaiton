@@ -94,21 +94,21 @@ unAccountInstance = 393216u;
 
 ## Unity Examples
 
-Heathen has created wrap-around structures like [UserData ](../toolkit-for-steamworks-sdk/unity/classes-and-structs/user-data.md)and [Lobby ](../toolkit-for-steamworks-sdk/unity/classes-and-structs/lobby-data.md)that are interchangeable with CSteamID and ulong and provide helpful features unique to each use case of the ID. In most cases, you should be using [UserData](../toolkit-for-steamworks-sdk/unity/classes-and-structs/user-data.md), [Lobby](../toolkit-for-steamworks-sdk/unity/classes-and-structs/lobby-data.md), [Clan](../toolkit-for-steamworks-sdk/unity/classes-and-structs/clan-data.md), etc. and not need to bother with the raw CSteamID or its ulong value.
+Heathen has created wrap-around structures like [UserData ](../toolkit-for-steamworks/unity/classes-and-structs/user-data.md)and [Lobby ](../toolkit-for-steamworks/unity/classes-and-structs/lobby-data.md)that are interchangeable with CSteamID and ulong and provide helpful features unique to each use case of the ID. In most cases, you should be using [UserData](../toolkit-for-steamworks/unity/classes-and-structs/user-data.md), [Lobby](../toolkit-for-steamworks/unity/classes-and-structs/lobby-data.md), [Clan](../toolkit-for-steamworks/unity/classes-and-structs/clan-data.md), etc. and not need to bother with the raw CSteamID or its ulong value.
 
 Steam IDs are used for a lot of different things and each has its own set of features and functions. For example, a CSteamID can represent a user and users have additional features like name, nickname, rich presence, etc. Alternatively, a CSteamID could represent a lobby which has features like metadata, members, etc.
 
 Heathen has created a set of wrappers that let you treat each ID as a unique type and simplify working with the features of each unique type. Note each of these is implicitly convertible ... that is you can use them as if they are CSteamID\_t or ulong and you can assign them from CSteamID\_t or ulong. These also have additional handlers to help you work with them as AccountID\_t
 
-### [Clan](../toolkit-for-steamworks-sdk/unity/classes-and-structs/clan-data.md)
+### [Clan](../toolkit-for-steamworks/unity/classes-and-structs/clan-data.md)
 
 This is for IDs that represent a "clan" or "group"
 
-### [Lobby](../toolkit-for-steamworks-sdk/unity/classes-and-structs/lobby-data.md)
+### [Lobby](../toolkit-for-steamworks/unity/classes-and-structs/lobby-data.md)
 
 This is for IDs that represent lobbies aka chats
 
-### [UserData](../toolkit-for-steamworks-sdk/unity/classes-and-structs/user-data.md)
+### [UserData](../toolkit-for-steamworks/unity/classes-and-structs/user-data.md)
 
 This is for IDs that represent users
 
@@ -189,7 +189,7 @@ else
 
 All Steam IDs can be expressed as simple value types such as int64 for Steam ID. Heathen provides a number of Blueprint nodes that help translate the IDs into and out of various data types such as Hex strings.
 
-See the [Steam ID Tools article](../toolkit-for-steamworks-sdk/unreal/blueprint-nodes/functions/steam-id-tools.md) for more information.
+See the [Steam ID Tools article](../toolkit-for-steamworks/unreal/blueprint-nodes/functions/steam-id-tools.md) for more information.
 
 <figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 

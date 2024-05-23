@@ -77,7 +77,7 @@ A unique feature of Steam ( for now ) but likely to come to other solutions. Thi
 
 {% embed url="https://store.steampowered.com/remoteplay" %}
 
-This is simply streaming the game over the Steam client so the other players do not require a copy of the game or even a machine that can run the game, they do however require a network connection suitable for streaming the game over the wire. Implementing this requires [Steam API](../../../toolkit-for-steamworks-sdk/steamworks.md) ... and Heathen has you covered there but it's out of scope for this article.
+This is simply streaming the game over the Steam client so the other players do not require a copy of the game or even a machine that can run the game, they do however require a network connection suitable for streaming the game over the wire. Implementing this requires [Steam API](../../../toolkit-for-steamworks/steamworks.md) ... and Heathen has you covered there but it's out of scope for this article.
 
 ## Network Topology
 

@@ -2,7 +2,7 @@
 description: Did you think about [ ... ]
 ---
 
-# ☑ Indie Check List
+# ☑️ Indie Check List
 
 <figure><img src="../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
 
@@ -67,12 +67,12 @@ Examples of Trusted Platforms, non-exhaustive (means there are other options)
   Each has its official store
 {% endhint %}
 
-For "PC" games (that is Windows, Mac and Linux games) the Steam platform is the largest and most dominant by a very long shot. If you plan to release a game on PC then you should plan to release that game on Steam. Steam API is a feature available freely to all Steam games and can add a lot of value to your game for your players. Heathen of course provides great tooling around [Steam API](../../toolkit-for-steamworks-sdk/steamworks.md).
+For "PC" games (that is Windows, Mac and Linux games) the Steam platform is the largest and most dominant by a very long shot. If you plan to release a game on PC then you should plan to release that game on Steam. Steam API is a feature available freely to all Steam games and can add a lot of value to your game for your players. Heathen of course provides great tooling around [Steam API](../../toolkit-for-steamworks/steamworks.md).
 
 Do be careful of the platforms you choose, especially if you're considering exclusivity.
 
 {% hint style="success" %}
-Our [biased opinion](../../toolkit-for-steamworks-sdk/steamworks.md) is that you should treat Steam as your primary platform and then add additional platforms to your supported list as your bandwidth (skill and resource availability) allows.\
+Our [biased opinion](../../toolkit-for-steamworks/steamworks.md) is that you should treat Steam as your primary platform and then add additional platforms to your supported list as your bandwidth (skill and resource availability) allows.\
 \
 This recommendation applies to console games and "major" mobile games as well. PC is the most "native" platform to any bit of software and Steam is king on PC. There is little to no reason to not release on Steam and in general, your Steam release should be the easiest to accomplish.
 {% endhint %}

@@ -44,14 +44,14 @@ The steps of exchange are as follows
 
 * &#x20;Get references to the specific items that will be exchanged\
   You can use the Get Exchange Entry for this step
-  * [Item Definition Get Exchange Entry](../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-definition.md#get-exchange-entry)
-  * [Item Data Get Exchange Entry](../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-data.md#get-exchange-entry)
-  * [Inventory API Get Exchange Entry](../../toolkit-for-steamworks-sdk/unity/api/inventory.client.md#exchange-items)
+  * [Item Definition Get Exchange Entry](../../toolkit-for-steamworks/unity/classes-and-structs/item-definition.md#get-exchange-entry)
+  * [Item Data Get Exchange Entry](../../toolkit-for-steamworks/unity/classes-and-structs/item-data.md#get-exchange-entry)
+  * [Inventory API Get Exchange Entry](../../toolkit-for-steamworks/unity/api/inventory.client.md#exchange-items)
 * On the item you wish to "craft" exchange the reagents you just collected\
   You can use the Exchange feature for this step
-  * [Item Definition Exchange](../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-definition.md#exchange-1)
-  * [Item Data Exchange](../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-data.md#exchange)
-  * [Inventory API Exchange](../../toolkit-for-steamworks-sdk/unity/api/inventory.client.md#exchange-items)
+  * [Item Definition Exchange](../../toolkit-for-steamworks/unity/classes-and-structs/item-definition.md#exchange-1)
+  * [Item Data Exchange](../../toolkit-for-steamworks/unity/classes-and-structs/item-data.md#exchange)
+  * [Inventory API Exchange](../../toolkit-for-steamworks/unity/api/inventory.client.md#exchange-items)
 
 ## Definition Recipes
 
@@ -145,15 +145,15 @@ To craft an item ... that is to exchange a set of materials/reagents for an item
 
 ### Using Item Definition
 
-Read the [Item Definition article's Exchange](../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-definition.md#exchange-1) section for a detailed example.
+Read the [Item Definition article's Exchange](../../toolkit-for-steamworks/unity/classes-and-structs/item-definition.md#exchange-1) section for a detailed example.
 
 ### Using Item Data
 
-Read the [Item Data article's Exchange](../../toolkit-for-steamworks-sdk/unity/classes-and-structs/item-data.md#exchange-items) section for a detailed example.
+Read the [Item Data article's Exchange](../../toolkit-for-steamworks/unity/classes-and-structs/item-data.md#exchange-items) section for a detailed example.
 
 ## Unreal Examples
 
-[Exchange Items](../../toolkit-for-steamworks-sdk/unreal/blueprint-nodes/functions/exchange-items.md) lets you pass in an array of [Item Count](../../toolkit-for-steamworks-sdk/unreal/blueprint-nodes/types/item-count.md) to exchange for a given item. The callback works much like the [Get All Items](../../toolkit-for-steamworks-sdk/unreal/blueprint-nodes/functions/get-all-items.md) discussed in the [Inventory](../../company/steam/steamworks/inventory/) article.
+[Exchange Items](../../toolkit-for-steamworks/unreal/blueprint-nodes/functions/exchange-items.md) lets you pass in an array of [Item Count](../../toolkit-for-steamworks/unreal/blueprint-nodes/types/item-count.md) to exchange for a given item. The callback works much like the [Get All Items](../../toolkit-for-steamworks/unreal/blueprint-nodes/functions/get-all-items.md) discussed in the [Inventory](../../company/steam/steamworks/inventory/) article.
 
 To use the feature you first need to know what item ID you want to "craft" i.e. exchange other items for.&#x20;
 
@@ -165,4 +165,4 @@ The following image is an example of creating the "recipe" array needed by the E
 
 In the example, we are using all of stack 123 and 5 from stack 124.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

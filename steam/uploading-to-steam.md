@@ -27,13 +27,13 @@ Valve's official documentation on the subject is required reading!
 
 The sections below will walk you through uploading your game to Steam.
 
-For Unity users Heathen has created a [Build Upload Tool](../toolkit-for-steamworks-sdk/unity/build-upload-tool.md) which can be accessed from the engine, you can find its documentation at the link above.
+For Unity users Heathen has created a [Build Upload Tool](../toolkit-for-steamworks/unity/build-upload-tool.md) which can be accessed from the engine, you can find its documentation at the link above.
 
 ## Zip Upload
 
 If your game is small enough you can upload it as a zip file in the Steam Developer Portal.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In short, if the resulting zip file is smaller than 2 GB you can upload it in the Steam Pipe -> Builds -> Upload Depots option.
 

@@ -49,7 +49,7 @@ You \*\***MUST**\*\* publish your changes in the Steam Developer Portal before t
 
 ## Unity Examples
 
-The [Downloadable Content Object](../toolkit-for-steamworks-sdk/unity/classes-and-structs/downloadable-content-object.md) helps you track the status of DLC. You can import the DLC you have defined in the Steam Developer Portal for this application by running the simulation such that Steam API can initialize and then clicking the Import button on the Steam Settings Downloadable Content list
+The [Downloadable Content Object](../toolkit-for-steamworks/unity/classes-and-structs/downloadable-content-object.md) helps you track the status of DLC. You can import the DLC you have defined in the Steam Developer Portal for this application by running the simulation such that Steam API can initialize and then clicking the Import button on the Steam Settings Downloadable Content list
 
 ![](<../.gitbook/assets/image (157) (1) (1) (1).png>)
 
@@ -57,7 +57,7 @@ Once completed all of the DLC registered to your application will be listed unde
 
 ![](<../.gitbook/assets/image (178) (1) (1) (1) (1).png>)
 
-And can be used to test ownership of the indicated DLC. Please see the [Downloadable Content Object](../toolkit-for-steamworks-sdk/unity/classes-and-structs/downloadable-content-object.md) for details on the use of the object.
+And can be used to test ownership of the indicated DLC. Please see the [Downloadable Content Object](../toolkit-for-steamworks/unity/classes-and-structs/downloadable-content-object.md) for details on the use of the object.
 
 ## Unreal Examples
 
@@ -65,7 +65,7 @@ Modern DLC are not actually content that you download, they are far more offten 
 
 ### Is Subscribed
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In Steam you don't "own" a game or app, you are "subscribed" to it. So to check for ownership of a given DLC, use the Steam Is Subscribed App node.
 
@@ -79,7 +79,7 @@ bool result = SteamApps()->BIsSubscribedApp(app);
 
 ### Iterate over DLC
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 It's often handy to iterate over all your DLC such as to list them in the game or open the Overlay to the store pages. We have provided a number of nodes to help you do just that.
 
@@ -105,7 +105,7 @@ if (SteamApps()->BGetDLCDataByIndex(index, &appId, &available, name, 128))
 
 ### DLC Installation
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Finally, if you are doing traditional DLC that is installed we provide you with node to check for installation, start the installation and uninstall. Note that install and uninstall is a request, Steam will attempt it if it can but if the user doesn't own the DLC, or the files are locked by the game running them, etc. then it may not complete.
 

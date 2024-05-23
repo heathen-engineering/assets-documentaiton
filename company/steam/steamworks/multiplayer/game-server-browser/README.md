@@ -54,7 +54,7 @@ This is not limited to P2P games despite what some of the API names suggest
 
 ### Authentication
 
-The Steam Authentication tools must be used with SGS if you want the Steam Game Server Browser to properly list user counts. The [Authentication](../../../../../toolkit-for-steamworks-sdk/unity/api/authentication.md) documentation can provide more details.
+The Steam Authentication tools must be used with SGS if you want the Steam Game Server Browser to properly list user counts. The [Authentication](../../../../../toolkit-for-steamworks/unity/api/authentication.md) documentation can provide more details.
 
 ### Stats and Achievements Security
 
@@ -68,7 +68,7 @@ It is not to say you must use SGS for Stats and Achievements only that you must 
 
 ### Game Server Browser
 
-Put simply server discovery. Steam Game Servers can be configured to list on Steam's Game Server Browser. This can then be used in or out of the game to discover game sessions to play or spectate. See the [Game Server Browser Manager](../../../../../toolkit-for-steamworks-sdk/unity/components/game-server-browser-manager.md) document for more information.
+Put simply server discovery. Steam Game Servers can be configured to list on Steam's Game Server Browser. This can then be used in or out of the game to discover game sessions to play or spectate. See the [Game Server Browser Manager](../../../../../toolkit-for-steamworks/unity/components/game-server-browser-manager.md) document for more information.
 
 ### Hosting
 
@@ -90,7 +90,7 @@ There are great tools available to you though a few are linked below. We do not 
 
 ## Configuration
 
-To configure a Steam Game Server browser simply set the desired settings in your [Steam Settings](../../../../../toolkit-for-steamworks-sdk/unity/classes-and-structs/steam-settings/#steamsettings.server) object and build a server build. In particular take note of the [Game Server](../../../../../toolkit-for-steamworks-sdk/unity/classes-and-structs/steam-settings/game-server.md) settings.
+To configure a Steam Game Server browser simply set the desired settings in your [Steam Settings](../../../../../toolkit-for-steamworks/unity/classes-and-structs/steam-settings/#steamsettings.server) object and build a server build. In particular take note of the [Game Server](../../../../../toolkit-for-steamworks/unity/classes-and-structs/steam-settings/game-server.md) settings.
 
 ## Hosting
 

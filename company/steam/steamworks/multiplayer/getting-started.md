@@ -69,19 +69,19 @@ bUseSteamNetworking=False
 
 You can learn more about Unreal Online Subsystem and in particular why it is not great when working with Steam and Steamworks SDK.
 
-{% content-ref url="../../../../toolkit-for-steamworks-sdk/unreal/online-subsystem.md" %}
-[online-subsystem.md](../../../../toolkit-for-steamworks-sdk/unreal/online-subsystem.md)
+{% content-ref url="../../../../toolkit-for-steamworks/unreal/online-subsystem.md" %}
+[online-subsystem.md](../../../../toolkit-for-steamworks/unreal/online-subsystem.md)
 {% endcontent-ref %}
 
 The Net Driver you choose defines how you will connect, Unreal's built-in Steam Sockets Net Driver is unfortunately out of date and dependent on the incompatible Online Subsystem Steam.&#x20;
 
-### [Sockets NetDriver](../../../../toolkit-for-steamworks-sdk/unreal/sockets-net-driver.md)
+### [Sockets NetDriver](../../../../toolkit-for-steamworks/unreal/sockets-net-driver.md)
 
 You are not required to use a Steam Networking Sockets-based NetDriver just because your game is shipping on Steam. You can use any NetDriver you like. Each NetDriver should have its own documentation and instructions on how you should configure the engine for its use and how it should be addressed.
 
-[Learn more about the Sockets NetDriver for Steam in the Unreal section of the Knowledge Base](../../../../toolkit-for-steamworks-sdk/unreal/sockets-net-driver.md).
+[Learn more about the Sockets NetDriver for Steam in the Unreal section of the Knowledge Base](../../../../toolkit-for-steamworks/unreal/sockets-net-driver.md).
 
-If you configure your project to use [Heathen's Steam Networking Sockets-based NetDriver](../../../../toolkit-for-steamworks-sdk/unreal/sockets-net-driver.md) (or any compatible Steam Networking Sockets-based driver) then the sample scene can be used to host (start a listen server) and connect to a session.
+If you configure your project to use [Heathen's Steam Networking Sockets-based NetDriver](../../../../toolkit-for-steamworks/unreal/sockets-net-driver.md) (or any compatible Steam Networking Sockets-based driver) then the sample scene can be used to host (start a listen server) and connect to a session.
 
 <figure><img src="../../../../.gitbook/assets/image (392).png" alt=""><figcaption></figcaption></figure>
 

@@ -2,7 +2,7 @@
 description: Configurating your Steam Game Server settings
 ---
 
-# ⚙ Configuration
+# ⚙️ Configuration
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -20,7 +20,7 @@ Note For a server to be listed properly in the Steam Game Server Browser you mus
 
 <figure><img src="../../../../../.gitbook/assets/image (4) (2).png" alt=""><figcaption><p>Screen shot of a Heathen Steam Settings object with the Game Server config expanded</p></figcaption></figure>
 
-If you're working in C# and not using scriptable objects at all you can create a [SteamGameServerConfiguraiton ](../../../../../toolkit-for-steamworks-sdk/unity/classes-and-structs/steam-game-server-configuration.md)and pass that to the [API.App.Server.Initialization(...)](../../../../../toolkit-for-steamworks-sdk/unity/api/app.server.md#initialize) method.
+If you're working in C# and not using scriptable objects at all you can create a [SteamGameServerConfiguraiton ](../../../../../toolkit-for-steamworks/unity/classes-and-structs/steam-game-server-configuration.md)and pass that to the [API.App.Server.Initialization(...)](../../../../../toolkit-for-steamworks/unity/api/app.server.md#initialize) method.
 
 ## Raw API
 

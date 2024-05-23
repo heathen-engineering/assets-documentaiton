@@ -33,7 +33,7 @@ We will list a few commonly used tools in each category below
 Unity doesn't have a pre-defined or standardized approach to multiplayer. On one hand, this means you have more flexibility and can generally do what you feel works best. On the other hand, it means you have to sort out how you will do everything, from syncing data to game objects, serializing data for transmission, etc. Unity has loads of tools and plug-ins to help with various aspects, the most common of which being "HLAPI"s or High-Level Application Interfaces: A few common examples follow
 
 {% hint style="info" %}
-[Heathen's Toolkit for Steamworks](../../../toolkit-for-steamworks-sdk/steamworks.md) is available for Unity, Unreal and Godot and integrates the full feature set of Steamworks / Steam API with your game.\
+[Heathen's Toolkit for Steamworks](../../../toolkit-for-steamworks/steamworks.md) is available for Unity, Unreal and Godot and integrates the full feature set of Steamworks / Steam API with your game.\
 \
 No matter what HLAPI you choose if you want to work with Steam Networking Sockets you will need to integrate Steamworks SDK / Steam API with your game.
 {% endhint %}
@@ -71,7 +71,7 @@ Unreal is built with networking in mind fundamentally. That is networking is sim
 Online Subsystems have a notable drawback when working with Steam or other rich featured platforms in that the Online Subsystem approach seeks to "normalize" the feature set to the commonly available features.
 
 {% hint style="info" %}
-[Heathen's Toolkit for Steamworks](../../../toolkit-for-steamworks-sdk/steamworks.md) is available for both Unreal and Unity and integrates the full feature set of Steamworks / Steam API with your game&#x20;
+[Heathen's Toolkit for Steamworks](../../../toolkit-for-steamworks/steamworks.md) is available for both Unreal and Unity and integrates the full feature set of Steamworks / Steam API with your game&#x20;
 {% endhint %}
 
 ## Platforms
