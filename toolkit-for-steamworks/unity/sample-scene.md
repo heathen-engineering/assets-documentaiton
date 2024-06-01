@@ -29,6 +29,16 @@ These articles are made possible by our [GitHub Sponsors](../../become-a-sponsor
 
 ## Introduction
 
+### Install&#x20;
+
+As of v3.4 the asset will install as a Unity Package ... this means it has an entry in your Unity Package Manager and extras such as sample scenes and prefabs can be imported from there and do not automatically import.
+
+To find the package, open Unity Package Manager, be sure you're looking in the "In Project" collection and be sure you're looking under the `Packages - Heathen Group` heading, not the `Pacakages - Asset Store` heading. There you will find the Samples tab with options to import the Example Scene and Prefabs.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+### Layout
+
 <figure><img src="../../.gitbook/assets/image (394).png" alt=""><figcaption></figcaption></figure>
 
 <table data-header-hidden data-full-width="false"><thead><tr><th width="517"></th><th></th></tr></thead><tbody><tr><td>Along the right-hand side of the screen, you will find a menu of available topics covered by the sample scene. You can select a topic by clicking it, this will present an interactive UI specific to that topic, each display is unique and will include any relevant instructions as well as a button <code>Knowledge Base</code> that will open the corresponding Knowledge Base entry for that topic.</td><td><img src="../../.gitbook/assets/image (397).png" alt="" data-size="original"></td></tr></tbody></table>

@@ -190,7 +190,7 @@ The Center Bottom text boxes are used to test lobby and multiplayer features.&#x
 
 Everything in the example scene is done with Blueprint Nodes requiring no C++ work at all. The UI WIdgets used are all created using Blueprint Nodes only again no C++ work required at all.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Beyond samples we have extensive documentation including how-to guides for nearly every aspect of the Steam platform, going beyond simple documentation for our tools and assets. You can learn more about all the features of Steam in our knowledge base by reviewing the hundreds of articles linked in the navigation panel to the left 👀
 
