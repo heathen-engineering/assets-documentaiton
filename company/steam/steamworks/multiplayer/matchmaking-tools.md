@@ -600,13 +600,13 @@ The typical purpose of a lobby is to gather players and settle on the rules and 
 The lobby system provides tools for this via the `SetGameServer` method on the lobby
 
 ```csharp
-public void Lobby.SetGameServer()
+public void LobbyData.SetGameServer()
 
-public void Lobby.SetGameServer(CSteamID gameServerId)
+public void LobbyData.SetGameServer(CSteamID gameServerId)
 
-public void Lobby.SetGameServer(string address, ushort port)
+public void LobbyData.SetGameServer(string address, ushort port)
 
-public void Lobby.SetGameServer(string address,
+public void LobbyData.SetGameServer(string address,
                                 ushort port,
                                 CSteamID gameServerId)
 ```
