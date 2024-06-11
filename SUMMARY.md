@@ -136,9 +136,7 @@
 * [🧑‍🏫 User Information](company/steam/steamworks/user-information/README.md)
   * [Unity User Tools](steam/user-information/unity-user-tools.md)
   * [Unreal User Tools](steam/user-information/unreal-user-tools.md)
-* [🗣️ Voice](steam/voice/README.md)
-  * [Unity Voice](steam/voice/unity-voice.md)
-  * [Unreal Voice](steam/voice/unreal-voice.md)
+* [🗣️ Voice](steam/voice.md)
 
 ## Toolkit for Steamworks
 
