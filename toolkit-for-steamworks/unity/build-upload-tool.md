@@ -78,7 +78,7 @@ Most Steam games will have 1 depot for each platform they support
 
 This is the local folder path to the Steamworks SDK's ContentBuilder folder. By default, this would be located at `sdk/tools/ContentBuilder` the tool has a button you can press to help you get started downloading the Steamworks SDK from Valve.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Username and Password
 

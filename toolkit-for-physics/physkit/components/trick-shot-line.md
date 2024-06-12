@@ -10,7 +10,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## Introduction
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This component works with and requires Trick Shot, like Trick Shot it comes in both 3D and 2D variants. The component will simply manage a Line Rinderer in order to draw a line along the path predicted by Trick Shot.
 
