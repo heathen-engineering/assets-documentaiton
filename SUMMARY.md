@@ -334,7 +334,6 @@
       * [🔵 Add Favorite Game](toolkit-for-steamworks/unreal/blueprint-nodes/functions/add-favorite-game.md)
       * [🔵 Add History Game](toolkit-for-steamworks/unreal/blueprint-nodes/functions/add-history-game.md)
       * [🔵 Add Promo Item](toolkit-for-steamworks/unreal/blueprint-nodes/functions/add-promo-item.md)
-      * [🔵 Add Promo Items](toolkit-for-steamworks/unreal/blueprint-nodes/functions/add-promo-items.md)
       * [🔵 Add Request Lobby List Filter](toolkit-for-steamworks/unreal/blueprint-nodes/functions/add-request-lobby-list-filter.md)
       * [🔵 Advertise Game](toolkit-for-steamworks/unreal/blueprint-nodes/functions/advertise-game.md)
       * [🔵 Associate with Clan](toolkit-for-steamworks/unreal/blueprint-nodes/functions/associate-with-clan.md)

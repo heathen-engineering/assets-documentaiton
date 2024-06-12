@@ -247,7 +247,11 @@ or
 public static bool GetGlobalStat(string statApiName, out double data)
 ```
 
-Gets the lifetime total for an aggregated stat
+Gets the lifetime total for an aggregated stat.
+
+{% hint style="info" %}
+You must call [RequestGlobalStats ](statsandachievements.client.md#requestglobalstats)before you try to read them.
+{% endhint %}
 
 ### GetMostAchievedAchievements
 

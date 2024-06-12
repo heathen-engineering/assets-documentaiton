@@ -24,7 +24,9 @@ API.StatsAndAchievements.Client.StoreStats();
 
 {% embed url="https://partner.steamgames.com/doc/features/achievements" %}
 
-## Creating Stats
+## Unity
+
+### Creating Stats
 
 Stats work much like achievements however they cannot be imported from Valve directly so you must add your stats to your system manually.
 
@@ -34,7 +36,7 @@ Once you add a sate you need to provide its API name exactly as you created it i
 
 ![](<../../../.gitbook/assets/image (160) (1) (1).png>)
 
-## Using Stats
+### Using Stats
 
 See the [Int Stat Object](../../../toolkit-for-steamworks/unity/classes-and-structs/int-stat.md), [Float Stat Object](../../../toolkit-for-steamworks/unity/classes-and-structs/float-stat.md) and [Avg Rate Stat Object](../../../toolkit-for-steamworks/unity/classes-and-structs/avg-rate-stat.md) for details on how to use each. In general though the process is that you will create a reference to the stat in question in one of your game's scripts such as
 
@@ -65,3 +67,61 @@ myIntStat.Value = 42;
 myIntStat.StorStats();
 ```
 
+### Global Stats
+
+#### From Value
+
+> Stats can be marked as aggregated on the admin page to tell Steam to keep a global total of all users' values for the stat. This can be used to get data on total money in the economy, total kills, favorite weapons, favorite maps, and which team tends to do better. On the flip side, this should not be used for stats like "MostKills" as adding that up for multiple users would be meaningless. As stats are in the hands of users, this data is subject to being manipulated. Therefore it's crucial when using aggregated stats to set good bounds for min value, max value, increment only (if appropriate), and max change. Max change has a special meaning for aggregated stats. When a new value is uploaded, the global value will change no more than the max change value. This limits how quickly a cheater can influence the global totals.
+
+To read global stats you need to first request them, this will read the current state of the global stats for the app optionally with a date range for the number of "day by day" values to read for.
+
+#### [Request Global Stats](../../../toolkit-for-steamworks/unity/api/statsandachievements.client.md#requestglobalstats)
+
+> How many days of day-by-day history to retrieve in addition to the overall totals. The limit is 60.
+
+```csharp
+StatsAndAchievements.Client.RequestGlobalStats(60, callback);
+```
+
+The callback will notify you when the stats are ready to be read.
+
+#### [Get Global Stat](../../../toolkit-for-steamworks/unity/api/statsandachievements.client.md#getglobalstat)
+
+you can read global stats as a long or a double, below is an example of reading a long value.
+
+```csharp
+if(StatsAndAchievements.Client.GetGlobalStat("statAPIName", out long value))
+{
+  ;//value is the value
+}
+else
+{
+  ;//did not read anything
+}
+```
+
+## Unreal
+
+### Creating Stats
+
+You create your stats in the Steamworks Developer Portal, you work with stats via their "API Name"
+
+{% hint style="warning" %}
+Pay attention to the "Set By" value, if this is not set to "Client" then the game client will not be able to set the stat and you will need to work with Steam Game Server to write values to the stat. This is useful if you need the stat to be "secure" e.g. to prevent players from writing whatever value they want to the stat.
+{% endhint %}
+
+![](<../../../.gitbook/assets/image (160) (1) (1).png>)
+
+### Using Stats
+
+Steam user's can read and write their own stats (assuming Set By = Client)&#x20;
+
+Steam Game Server's (your server build that initialized Steamworks SDK) can read and write (assuming Set By is not Client) the stats for any user authenticated against it and that it has requested stats for.
+
+<figure><img src="../../../.gitbook/assets/image (418).png" alt=""><figcaption></figcaption></figure>
+
+### Global Stats
+
+In Unreal we handle the async nature of Global History stats at the time of call, the callback will invoke when the result is ready
+
+<figure><img src="../../../.gitbook/assets/image (420).png" alt=""><figcaption></figcaption></figure>

@@ -41,7 +41,9 @@ promo: owns:440;owns:480
 
 ## Options
 
-Heathen provides two options when working with this endpoint.
+Heathen provides two sets of options when working with this endpoint. You can add a single promo item or multiple, and you can use the "Native" or "Simple" version. The Simple version uses a callback that will invoke when the result is ready as opposed to returning a handle that you would need to manage your self
+
+<figure><img src="../../../../.gitbook/assets/image (423).png" alt=""><figcaption></figcaption></figure>
 
 <details>
 

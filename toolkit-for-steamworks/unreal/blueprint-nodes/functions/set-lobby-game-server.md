@@ -43,10 +43,10 @@ Once this has been set any new members can read the data by using [Get Lobby Gam
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Assumes the lobby Owner is the "listen serer" aka "host"</p></figcaption></figure>
+You have 4 ways you can set this data depending on what kind of information you want to store and for what use.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Records the provided Server ID as the target server, this can be a user or a Steam Game Server ID</p></figcaption></figure>
+For example in a traditional Peer-to-Peer set up aka "Listen Server" the lobby owner is the "host" aka server and so we do not need any info thus the `Set Lobby Listen Server` doesn't require any input other than the server to set it on.
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption><p>Records an ID, IP Address and Port for the traget server</p></figcaption></figure>
+In a multiplex dedicated server, you may want to support Steam ID, as well as IP:Port and so the `Set Lobby Dedicated Server - ID and IP Address` is the option you want. In all cases these will all cause the same event to be raised for the members of the lobby.
 
-<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1).png" alt=""><figcaption><p>Records IP Address and Port for the target server, leaving Server ID default (0)</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (430).png" alt=""><figcaption></figcaption></figure>

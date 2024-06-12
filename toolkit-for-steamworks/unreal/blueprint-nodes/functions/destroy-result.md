@@ -37,7 +37,7 @@ If you use the "Simple" variant of nodes that effect items this is not needed an
 See the following for examples
 
 * [Add Promo Item](add-promo-item.md)
-* [Add Promo Items](add-promo-items.md)
+* [Add Promo Items](broken-reference)
 * [Consume Item](consume-item.md)
 * [Deserialize Result](deserialize-result.md)
 * [Exchange Items](exchange-items.md)
