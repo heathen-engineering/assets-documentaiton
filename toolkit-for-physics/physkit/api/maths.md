@@ -1,7 +1,7 @@
 # Maths
 
 {% hint style="success" %}
-#### Like what your seeing?
+#### Like what you are seeing?
 
 Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
@@ -17,7 +17,7 @@ public static class Maths
 Found in namespace:
 
 ```csharp
-using HeathenEngineering.PhysKit.API;
+using HeathenEngineering.UnityPhysics.API;
 ```
 
 {% hint style="info" %}
@@ -26,7 +26,7 @@ We recommend using aliases to reduce typing and simplify names. and reduce possi
 
 
 ```csharp
-using API = HeathenEngineering.PhysKit.API;
+using API = HeathenEngineering.UnityPhysics.API;
 ```
 
 doing this you can fully qualify the name of this class as

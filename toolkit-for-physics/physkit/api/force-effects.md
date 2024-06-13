@@ -17,7 +17,7 @@ public static class ForceEffects
 Found in namespace:
 
 ```csharp
-using HeathenEngineering.PhysKit.API;
+using HeathenEngineering.UnityPhysics.API;
 ```
 
 ### What can it do?

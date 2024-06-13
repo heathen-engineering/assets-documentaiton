@@ -17,7 +17,7 @@ public static class Buoyancy
 Found in namespace:
 
 ```csharp
-using HeathenEngineering.PhysKit.API;
+using HeathenEngineering.UnityPhysics.API;
 ```
 
 {% hint style="info" %}
@@ -26,7 +26,7 @@ We recommend using aliases to reduce typing and simplify names.
 
 
 ```csharp
-using API = HeathenEngineering.PhysKit.API;
+using API = HeathenEngineering.UnityPhysics.API;
 ```
 
 doing this you can fully qualify the name of this class as

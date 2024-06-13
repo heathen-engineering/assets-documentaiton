@@ -1,7 +1,7 @@
 # Ballistics
 
 {% hint style="success" %}
-#### Like what your seeing?
+#### Like what you are seeing?
 
 Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
@@ -11,13 +11,13 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 ## Introduction
 
 ```csharp
-public static class Ballisitics
+public static class Ballistics
 ```
 
 Found in namespace:
 
 ```csharp
-using HeathenEngineering.PhysKit.API;
+using HeathenEngineering.UnityPhysics.API;
 ```
 
 {% hint style="info" %}
@@ -26,7 +26,7 @@ We recommend using aliases to reduce typing and simplify names.
 
 
 ```csharp
-using API = HeathenEngineering.PhysKit.API;
+using API = HeathenEngineering.UnityPhysics.API;
 ```
 
 doing this you can fully qualify the name of this class as
@@ -88,7 +88,7 @@ public static int Solution(
 
 This overload returns an int ranging from 0 to 2 representing the number of valid solutions found. If the value is greater than 1 then there is at least 1 valid solution.
 
-The valid solutions found will be expressed as rotations for a low angle and high angle trajectory.
+The valid solutions found will be expressed as rotations for a low-angle and high-angle trajectory.
 
 ```csharp
 public static int Solution(
@@ -105,14 +105,14 @@ The same as the previous overload only this overload takes a `targetVelocity` an
 
 ### Variable Trajectory
 
-While the above solution are simple we often want to tailor the visuals of a parabolic trajectory such that the angle is not to high or flat and that the projectile has a fixed linear speed as if fired strait at the target. This is the more common solution for simulating say a bow shot where the archer will optimize flight time and range for the target.
+While the above solutions are simple we often want to tailor the visuals of a parabolic trajectory such that the angle is not to high or flat and that the projectile has a fixed linear speed as if fired strait at the target. This is the more common solution for simulating say a bow shot where the archer will optimize flight time and range for the target.
 
 ```csharp
 public static bool Solution(
     Vector3 projectile, //The starting position of the projectile
     float linearSpeed, //Speed of projectile over ground
     Vector3 target, //Target position to reach
-    float arcCeiling, //Max hight of the arc to fire on
+    float arcCeiling, //Max height of the arc to fire on
     out Vector3 firingVelocity, //The speed the projectile should launch at
     out float gravity) //The magnitude of gravity that should be applied to it
 ```
@@ -126,17 +126,17 @@ public static bool Solution(
     float linearSpeed, //Speed of projectile over ground
     Vector3 target, //Target position to reach
     Vector3 targetVelocity, //Targets velocity
-    float arcCeiling, //Max hight of the arc to fire on
+    float arcCeiling, //Max height of the arc to fire on
     out Vector3 firingVelocity, //The speed the projectile should launch at
     out float gravity, //The magnitude of gravity that should be applied to it
     out Vector3 impactPoint) //Perdicted impact point 
 ```
 
-These overloads return a boolean indicating rather or not a solution was found. If a solution was found then the firingVelocity and gravity output parameters will be populated.&#x20;
+These overloads return a boolean indicating whether or not a solution was found. If a solution is found then the firingVelocity and gravity output parameters will be populated.&#x20;
 
 ### Fixed Time
 
-On occasion its important for gameplay that the projectile reach its target at a specific time so we can use the following overload to find the launch velocity. Launch velocity indicates the the direction and speed of the launch.&#x20;
+On occasion its important for gameplay that the projectile reaches its target at a specific time so we can use the following overload to find the launch velocity. Launch velocity indicates the direction and speed of the launch.&#x20;
 
 ```csharp
 public static Vector3 Solution(
@@ -186,7 +186,7 @@ public static bool Raycast(
         out float distance)
 ```
 
-This can be used test for collision, draw trajectory arcs, plan for bounces, etc.
+This can be used to test for collision, draw trajectory arcs, plan for bounces, etc.
 
 * start\
   The point at which the trajectory should start from
@@ -201,7 +201,7 @@ This can be used test for collision, draw trajectory arcs, plan for bounces, etc
 * collisionLayers\
   The layers to check for collision on
 * hit\
-  If a hit occurred this will be populated with the data
+  If a hit occurs this will be populated with the data
 * pay\
   A tuple defining each step along the path containing the position, velocity and total flight time up to this point
 * distance\
@@ -209,7 +209,7 @@ This can be used test for collision, draw trajectory arcs, plan for bounces, etc
 
 ### SphereCast / CircleCast
 
-Casts a ray marching a sphere or circle across the path. Works the same as the Raycast option but can account for the radius of the object which will pass along the path. This is the most common means to check the path of a projectile with a significant geometry such as a ball where as a bullet is offten small enough that the faster Raycast method works fine.
+Casts a ray marching a sphere or circle across the path. Works the same as the Raycast option but can account for the radius of the object which will pass along the path. This is the most common means to check the path of a projectile with a significant geometry such as a ball where as a bullet is often small enough that the faster Raycast method works fine.
 
 ```csharp
 public static bool SphereCast( //Or CircleCast for 2D
@@ -229,19 +229,19 @@ public static bool SphereCast( //Or CircleCast for 2D
 * start\
   The position the trajectory will start from
 * startCollider\
-  This collider will be ignored for the first radius distance of the traverse and helps to avoid self collision on secondary bounces. This is optional and can be null
+  This collider will be ignored for the first radius distance of the traverse and helps to avoid self-collision on secondary bounces. This is optional and can be null
 * velocity\
   The initial velocity of the projectile
 * gravity\
-  The gravity vector to apply you can read this from Physics.Gravtiy or Physics2D.Gravity or provider your own
+  The gravity vector to apply you can read this from Physics.Gravity or Physics2D.Gravity or provide your own
 * radius\
   The radius of the sphere or circle to be cast
 * resolution\
-  The distance between each step of the travers
+  The distance between each step of the traverse
 * collisionLayers\
   The layers to check for collision on
 * hit\
-  If a hit occurred this will be populated with the data
+  If a hit occurs this will be populated with the data
 * pay\
   A tuple defining each step along the path containing the position, velocity and total flight time up to this point
 * distance\
@@ -249,9 +249,9 @@ public static bool SphereCast( //Or CircleCast for 2D
 
 ## Flight Time
 
-Estimating flight time can be done with the projectiles velocity, the height difference it must travel from start to end and the effect of gravity.
+Estimating flight time can be done with the projectile velocity, the height difference it must travel from start to end and the effect of gravity.
 
-Note that this is an estimate assuming the projectile will travel the full the length of a typical trajectory.
+Note that this is an estimate assuming the projectile will travel the full length of a typical trajectory.
 
 ```csharp
 public static float FlightTime(
