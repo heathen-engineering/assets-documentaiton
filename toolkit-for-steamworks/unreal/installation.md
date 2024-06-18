@@ -43,7 +43,7 @@ You'll need to install Unreal v5.1 and later
 
 You will need to include the Steam Shared plugin.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 When adding the plugin from the marketplace it will be installed as an Engine plugin and should add its dependencies automatically.
 
@@ -131,7 +131,7 @@ When done your folder should look similar to the above.
 
 If you do not own the Plugin from the Unreal Marketplace then the Epic editor will see that this plugin is also a Marketplace plugin and expect you to download it from there
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Wording may differ depending on version but similar to the above.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>Wording may differ depending on version but similar to the above.</p></figcaption></figure>
 
 You have 2 options to sidestep this, 1 you could deploy it as an engine plugin (personly not my preference) or you can modify the SteamworksComplete.uplugin to empty the `MarkeplaceURL` node, as shown below
 

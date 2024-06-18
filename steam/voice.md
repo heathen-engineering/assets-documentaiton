@@ -56,7 +56,7 @@ Before you try to get and use voice data you would want to know if there is any 
 
 <figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>A simple example of getting voice data</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>A simple example of getting voice data</p></figcaption></figure>
 
 Steam API provides the necessary tools to get compressed voice audio from the player's active audio input device if any.
 
@@ -66,7 +66,7 @@ The Steam Get Voice node will return a result indicating the state of the data a
 
 It up to you how you send this data to those that might want to play it back. In most cases you would send it to the server which would then echo it down to all appropriate players.
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption><p>A simple example of getting and decoding audio for the network</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>A simple example of getting and decoding audio for the network</p></figcaption></figure>
 
 To Stream voice data it's up to you to receive the compressed data from whatever source you wish to playback from, typically this would be a server sending you the data.
 
