@@ -294,7 +294,7 @@ The following are just a few of the most common use cases or needs regarding Ste
 
 This is how you "refresh" your view of the player's inventory. We provide 2 variations of this feature in Blueprints with the Simple variant being the most commonly used.
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 You optionally pass in an array of strings representing the custom properties you would like the system to read off the resulting items. When the callback is executed it will define its result state and if not a failed condition it will include an array of the [Item Details with Properties](../../../../toolkit-for-steamworks/unreal/blueprint-nodes/types/item-detail-with-properties.md) it found. You can think of each of these as a "stack" of 0 to many of a given item type.
 
@@ -304,11 +304,11 @@ The Definition ID of the item detail tells you what type of item it is and the i
 
 In the above example, we used the "Simple" version of the Get All Items, this takes in a delegate that will be called when the process completes letting our internal systems manage the callback for you. You can optionally bind on a global event listening for all "Inventory Result Ready" calls and compare the result ready "handle" with the handle provided by the native "Get All Items"
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Here we request Steam to fetch all items, Steam will give us a result handle identifying this particular request</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Here we request Steam to fetch all items, Steam will give us a result handle identifying this particular request</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Here we are listening on the global event for Inventory Result Ready when we get that we compare it to our handle to see if its from our request.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Here we are listening on the global event for Inventory Result Ready when we get that we compare it to our handle to see if its from our request.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Assuming it is from our request we can ask Steam to read us back the results based on that result handle</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Assuming it is from our request we can ask Steam to read us back the results based on that result handle</p></figcaption></figure>
 
 As you can see our "Simple" variant greatly simplifies the process and handles the internals for you.
 
@@ -316,15 +316,15 @@ As you can see our "Simple" variant greatly simplifies the process and handles t
 
 If you are setting up an in-game store or some similar microtransaction system you will likely want to know what the price of the item is for this user.
 
-<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>First, you should request Steam to cash the prices for relevant items for this user. This will also tell you what the currency code and symbol is for this user.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>First, you should request Steam to cash the prices for relevant items for this user. This will also tell you what the currency code and symbol is for this user.</p></figcaption></figure>
 
 Once you have the prices available you can iterate through all items that have a price
 
-<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Get all item definitions that have a defined price valid for this user</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Get all item definitions that have a defined price valid for this user</p></figcaption></figure>
 
 You can then read the current and base price for this user, note that current and base price are int64 (long) values. it is the base 100 value. e.g. $1.99 would be returned as 199.
 
-<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### [Start Purchase](../../../../toolkit-for-steamworks/unreal/blueprint-nodes/functions/start-purchase.md)
 

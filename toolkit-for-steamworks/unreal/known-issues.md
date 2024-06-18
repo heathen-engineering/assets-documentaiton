@@ -13,29 +13,6 @@ Support us as a [GitHub Sponsor](../../become-a-sponsor/) and get instant access
 These articles are made possible by our [GitHub Sponsors](../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
-## Sockets Net Driver
+There are no known issues with the current version of Toolkit for Steamworks SDK on the Unreal Marketplace or from the GitHub Sponsor / Patreon source version.
 
-{% hint style="success" %}
-### Resolved in v2
-
-Currently available to GitHub Sponsor and Patreon, coming to Marketplace #Soon™️
-{% endhint %}
-
-The Sockets Net Driver included in the plugin has a known issue where clients connecting to a Dedicated or Listen server will quickly flash between the spectator and player controller.
-
-The root issue is that possession of the Player Controller is not being acknowledged correctly, this is resulting in the server triggering the rest of the client e.g. the client will spawn all objects, fail to acknowledge correctly, be told to reset and thus destroy all objects only to try again.
-
-### Workaround
-
-There is no current workaround.
-
-It is recommended you work with the default NetDriver while waiting for a proper fix, note that you can disable the Steam Sockets Subsystem so you can use IpNetDriver or similar via the following ini setting.
-
-```ini
-[/Script/SteamworksComplete.Steamworkscomplete]
-bUseSteamNetworking=False
-```
-
-### Community
-
-The [#Unreal Steamworks](https://discord.com/channels/463483739612381204/1153799474620137483) thread in the Discord server is the best place to chat about this topic.
+If you encounter any issues please contact us on our [Discord ](https://discord.gg/pr7Hp4VTTJ)

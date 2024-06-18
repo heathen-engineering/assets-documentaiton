@@ -39,12 +39,6 @@ The plugin is not free and is only available from Heathen via the [GitHub Sponso
 
 ## Configuration
 
-{% hint style="info" %}
-### New to v2
-
-v2 is in preview with GitHub Sponsors and Patreons, it will be released to Unreal Marketplace #Soon™️
-{% endhint %}
-
 Toolkit for Steamworks works with Steamworks SDK and is compatible with all of Unreal's built-in Steam-related plugins. It uses the same configuration features to keep things simple. This means even if you are not using OnlineSubsystemSteam you will be using its Engine.ini settings to configure and control Toolkit for Steamworks.
 
 ### App ID
@@ -72,7 +66,7 @@ GlobalDefinitions.Add("UE_PROJECT_STEAMSHIPPINGID=480");
 
 ### Steam Sockets
 
-<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 We leverage the built-in Steam Socket Net Driver which has a dependency on the Online Subsystem Steam plugin. When you enable Steam Sockets plugin (not just Online Subsystem Steam) the related dependencies should also be enabled and will require a restart of the engine.
 
@@ -128,6 +122,40 @@ NetConnectionClassName="/Scripts/SteamSockets.SteamSocketsNetConnection"
 With the plugin installed, you will want to set up your Game Instance.&#x20;
 
 The plugin ships with a ready-to-use Steam Game Instnace named `BP_SteamGameInstance` You can use this as is or use it as a learning tool to create your own Game Instnace derived from our SteamGameInstance parent class or use it as is.
+
+### Global Events
+
+Steamworks is largely a multi-process and thus asynchronous toolkit where you will need to listen on events to know when a request has been serviced. In many if not most cases we provide a "Callback" parameter to methods where you can create an event that will be invoked for that specific method call.&#x20;
+
+In some cases however you may wish to bind to the global event
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+To help you do this we defined all of the global events as delegates on the Steam Game Instance and created a simple Get Steam Game Instance method that will fetch the current instance for you. You can then browse and bind on any events you like, be sure to unbind before the object in question leaves scope as these are global events that remain in scope themselves for the life of your game.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>An example of binding an event</p></figcaption></figure>
+
+## Callbacks
+
+As you should know Steamworks SDK enables your game to ask Steam (the authenticated client on the user's machine) to do stuff for your game. This means it is largely a multi-process and asynchronous thing.
+
+Valve handles this in a class way using Callback and CallResult delegates. This is translated in Unreal as "Global" events and Funciton callbacks.
+
+### Global Events
+
+You can bind to global events via the Steam Game Instance ... we provide a simple Get Steam Game Instance node to make this easy to "get".
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+You can then browse and bind on any events you like, be sure to unbind before the object in question leaves scope as these are global events that remain in scope themselves for the life of your game.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>An example of binding an event</p></figcaption></figure>
+
+### Function Callbacks
+
+These take the place of Valve's "CallResult" delegate and are scoped to a specific method call for these you will see there is a delegate parameter on the function call where you can create an event that will be invoked when the request is complete.
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ## [Steam Developer](../../company/steam/quick-start.md#sign-up-to-steamworks)
 
@@ -190,7 +218,7 @@ The Center Bottom text boxes are used to test lobby and multiplayer features.&#x
 
 Everything in the example scene is done with Blueprint Nodes requiring no C++ work at all. The UI WIdgets used are all created using Blueprint Nodes only again no C++ work required at all.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Beyond samples we have extensive documentation including how-to guides for nearly every aspect of the Steam platform, going beyond simple documentation for our tools and assets. You can learn more about all the features of Steam in our knowledge base by reviewing the hundreds of articles linked in the navigation panel to the left 👀
 

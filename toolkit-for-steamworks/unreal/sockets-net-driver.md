@@ -7,7 +7,7 @@ coverY: 0
 
 ## Introduction
 
-<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The Sockets Net Driver is a standard Unreal Net Driver designed to work with Valve's Steam Networking Sockets. It has a dependency on Online Subsystem Steam so it will install it and Online Subsystem if missing however that doesn't mean you have to use Online Subsystem if you don't want to.
 
