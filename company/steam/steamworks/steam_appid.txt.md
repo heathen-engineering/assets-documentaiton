@@ -24,13 +24,9 @@ The steam\_appid.txt is a simple text file that contains only your app ID. This 
 
 Notice that the file contains nothing but the app ID, no spaces, no comments, and no formatting at all other than the app ID. You should of course use your app ID we are using 480 in this case as an example only.
 
-### Unity
+### Where
 
-In Unity builds this should be located in the same folder as the executable
-
-### Unreal
-
-In Unreal
+The file generally goes in the same folder as the executable file. Technically speaking it goes in the "working folder" of the process e.g. if you use DIrectory Info on the path `./` where is that to your game? In 99% of cases that will be the folder your `.exe` is located in.
 
 ## When to use steam\_appid.txt
 
