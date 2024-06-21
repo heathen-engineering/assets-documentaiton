@@ -6,21 +6,19 @@ description: How to .... everything!
 
 ## Introduction
 
-<div data-full-width="true">
+<figure><img src="../../../.gitbook/assets/Short Banner@2x.png" alt="Steamworks Complete"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/Banner.jpg" alt="Steamworks Complete"><figcaption></figcaption></figure>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Complete</td><td><a href="https://github.com/sponsors/heathen-engineering">GitHub | Patreon</a></td><td><a href="https://www.unrealengine.com/marketplace/en-US/product/ad658ddf5c434478acb95f9091ea279c">Marketplace</a></td><td><a href="../../../.gitbook/assets/UnrealCardCover.png">UnrealCardCover.png</a></td><td><a href="../../../toolkit-for-steamworks/unreal/">unreal</a></td></tr><tr><td>Complete | Foundation</td><td><a href="https://github.com/sponsors/heathen-engineering">Gitub | Patreon</a></td><td><a href="https://assetstore.unity.com/packages/tools/integration/steam-api-steamworks-complete-246652">Asset Store</a></td><td><a href="../../../.gitbook/assets/UnityCardCover.png">UnityCardCover.png</a></td><td><a href="../../../toolkit-for-steamworks/unity/">unity</a></td></tr><tr><td>Foundation</td><td><a href="https://github.com/heathen-engineering/SteamworksFoundation">GitHub</a></td><td></td><td><a href="../../../.gitbook/assets/GodotCardCover.png">GodotCardCover.png</a></td><td><a href="../../../toolkit-for-steamworks/godot/">godot</a></td></tr></tbody></table>
 
-</div>
-
-Heathen creates the top Steamworks integration for Unreal, Unity and is porting it to Godot! Want to do more with Valve's Steamworks API? Then check out [Heathen's Steamworks Complete](../../../toolkit-for-steamworks/steamworks.md)!
+Heathen creates the top Steamworks integration for Unreal, Unity and is porting it to Godot! Want to do more with Valve's Steamworks SDK? Then check out [Heathen's Toolkit for Steamworks SDK](../../../toolkit-for-steamworks/steamworks.md)!
 
 ## Quick Start
 
 ### With Heathen
 
-The best way to get started quickly and Do More is with [Heathen's Steamworks Complete](../../../toolkit-for-steamworks/steamworks.md#feature-comparison) or if you are not quite sure yet you can start with the free "lite" version [Heathen's Steamworks Foundation](../../../toolkit-for-steamworks/steamworks.md#feature-comparison).
+The best way to get started quickly and Do More is with [Heathen's Toolkit for Steamworks SDK](../../../toolkit-for-steamworks/steamworks.md#feature-comparison) or if you are not quite sure yet you can start with the free "lite" version [Foundation](../../../toolkit-for-steamworks/steamworks.md#feature-comparison).
 
-With Heathen's Steamworks you can handle initialization and most features of Steamworks completely code-free. We also provide a robust set of tools for programmers greatly speeding up the process of integrating Steamworks with your project by providing robust and battle-tested systems and tools.&#x20;
+With Toolkit for Steamworks you can handle initialization and most features of Steamworks completely code-free. We also provide a robust set of tools for programmers greatly speeding up the process of integrating Steamworks with your project by providing robust and battle-tested systems and tools.&#x20;
 
 ### Manual Integration
 

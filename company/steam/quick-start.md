@@ -39,15 +39,18 @@ You can test some features of Steam API using the test application "Spacewars" w
 
 Having said that you can't do anything meaningful with the test app, it exists as a teaching tool. To create the stats, achievements, leaderboard, workshop, etc. for your game you will require an App ID and we do recommend you do this as soon as you are sure you want to release your game on Steam ... no reason to wait.
 
-## Steam API
+## Steamworks (aka) Steam API
 
-Once you're all set up as a Steam Developer and have your App ID your next step should be to get familiar with the Steam API and what it has to offer. Heathen creates the best Steam integration for Unreal, Unity and Godot, read more on our [Steamworks page](../../toolkit-for-steamworks/steamworks.md).
+Once you're all set up as a Steam Developer and have your App ID your next step should be to get familiar with [Steamworks](steamworks/) and what it has to offer.&#x20;
 
-Steam API is of tremendous value especially for small and indie developers as it is a power set of backend services and is completely free for you to use. We strongly recommend you understand what Steam API can do for your game before you commit your design. The best and most successful games fully exploit Steam's features.
+Steamworks is a dense topic with loads of features that can and will benefit any game. Be sure to check out our article on [Steamworks](steamworks/), this is one of those things in life where it's better to read first and then do, than it is to YOLO it.
 
 ### Tools
 
-Heathen's Toolkit for Steamworks SDK is the best tool for Valve's Steamworks SDK in Unreal, Unity or Godot (preview). The tool has been maintained and updated for more than a decade, is trusted by thousands of developers and drives hundreds of games on Steam. Toolkit for Steamworks is more than just an API wrapper and includes engine-specific tools and systems on top of a complete integration of Valve's Steam APIs.
+Already fully understand what Steamworks is and how it can benefit your project?\
+Great ... now your ready to integrate it with your project.
+
+Heathen's Toolkit for Steamworks SDK is the best tool for Valve's Steamworks SDK in Unreal, Unity or Godot (preview). The tool has been maintained and updated for over a decade, is trusted by thousands of developers and drives hundreds of games on Steam. Toolkit for Steamworks is more than just an API wrapper, it includes engine-specific tools and systems on top of a complete integration of Valve's Steamworks coupled with rich documentation, best/good practices and a helpful community.
 
 <figure><img src="../../.gitbook/assets/Short Banner@2x.png" alt="Steamworks Complete"><figcaption></figcaption></figure>
 
