@@ -30,7 +30,7 @@ There are indie-friendly ways to account for every aspect of this journey, it's 
 
 ### Registration and Administration
 
-In many regions you are legally required to register a business, even if it's just you. In most cases, it's strongly advised that you incorporate and not simply "DBA" (doing business as). The specifics of this are highly dependent on region, deal with legal matters and are not appropriately advised on via a community forum or even this article.&#x20;
+In many regions, you are legally required to register a business, even if it's just you. In most cases, it's strongly advised that you incorporate and not simply "DBA" (doing business as). The specifics of this are highly dependent on region, deal with legal matters and are not appropriately advised on via a community forum or even this article.&#x20;
 
 Go see a professional that deals with Company Formation in your region and understand what your obligations are, and seek advice on what options might best work for you. Finding a local advisor or partner to help you here is key. Most regions will have state/government ran programs and initiatives meant to support new businesses, this is particularly common with new arts, technical and consequently game businesses.
 
@@ -51,7 +51,7 @@ Steam is the gaming platform for PC, it has a low barrier to entry and you build
 
 How will you distribute your product? This is something you should think about early. It will dictate many other aspects of your organization and likely have a significant impact on the design and implementation of any apps/games you create.&#x20;
 
-You will need to choose a trusted platform or multiple platforms. While it is technically possible to distribute your games and apps, platforms do much more than just distribution. A key aspect of choosing a platform is the "Trust and Security" aspect. Why should a customer trust your app? How do they know it's not malware? Simple, if it's on a trusted platform it's safe.&#x20;
+You will need to choose a trusted platform or multiple platforms. While it is technically possible to distribute your games and apps yourself, platforms do much more than just distribution. A key aspect of choosing a platform is the "Trust and Security" aspect. Why should a customer trust your app? How do they know it's not malware? Simple, if it's on a trusted platform it's "safe" or at least there is recourse if things go sideways.&#x20;
 
 {% hint style="info" %}
 Examples of Trusted Platforms, non-exhaustive (means there are other options)
@@ -67,7 +67,7 @@ Examples of Trusted Platforms, non-exhaustive (means there are other options)
   Each has its official store
 {% endhint %}
 
-For "PC" games (that is Windows, Mac and Linux games) the Steam platform is the largest and most dominant by a very long shot. If you plan to release a game on PC then you should plan to release that game on Steam. Steam API is a feature available freely to all Steam games and can add a lot of value to your game for your players. Heathen of course provides great tooling around [Steam API](../../toolkit-for-steamworks/steamworks.md).
+For "PC" games (that is Windows, Mac and Linux games) the Steam platform is the largest and most dominant by a very long shot. If you plan to release a game on PC then you should plan to release that game on Steam. [Steamworks ](../steam/steamworks/)is a feature available freely to all Steam games and can add a lot of value to your game for your players. Heathen of course provides great tooling around [Steamworks](../../toolkit-for-steamworks/steamworks.md).
 
 Do be careful of the platforms you choose, especially if you're considering exclusivity.
 
@@ -120,6 +120,10 @@ This however is not reality. In reality, each of these areas is skilled creative
 Seems obvious right?\
 This is usually the one common thing we all (game developers) do or are interested in. That however doesn't mean we are all game designers and that we have a passion for it as our core skill. If you're not the game designer, you need to source for this fundamental requirement. Staffing up is usually the preference here but it is possible to contract or even outsource your game design.
 
+Keep in mind having a "great idea" is not game design, game design is devising all those little hidden and often obscure factors that work together to create an experience that the user wants to pay you money for. This is often held up as the "rock star" role in a studio but in reality, its the most thankless and difficult job usually done by a team of dedicated people who most people don't even realize exist.
+
+It just so happens that a couple of influential people in the industry at current are people who started as designers, they however are no longer designers they are now executives (full-time job), managers (full-time job), or otherwise not dealing with the day to day design of given areas of the project.
+
 ### Engineering
 
 {% hint style="danger" %}
@@ -140,7 +144,7 @@ Visual scripting tools, blueprints, "code free" development tools ... they can a
 {% hint style="danger" %}
 If you want to release a professional game you cannot be releasing it with Unity Asset Store artwork in it. \
 \
-Art assets on the Unity Asset Store and similar marketplaces are wonderful placeholders, inspiration pieces or even as a base or bash kit to work from when creating custom works. UAS Art Assets however are not production ready regardless of what is said on the store page. You might get away with it as a passion project done by a hobbyist but the moment you put that professional hat on and try to be a business, your clients and probably some of your peers are going to rip you apart.
+Art assets on the Unity Asset Store and similar marketplaces are wonderful placeholders, inspiration pieces or even as a base or bash kit to work from when creating custom works. UAS Art Assets however are not production-ready regardless of what is said on the store page. You might get away with it as a passion project done by a hobbyist but the moment you put that professional hat on and try to be a business, your clients and probably some of your peers are going to rip you apart.
 {% endhint %}
 
 Visuals (usually just called art but audio guys get offended :wink:)&#x20;

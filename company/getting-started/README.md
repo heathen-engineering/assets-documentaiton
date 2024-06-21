@@ -33,14 +33,14 @@ The articles in Heathen's guides are here to help. We have guides here to help e
 * Hobbyist\
   For the love of it, not the profit of it
 * Amateur\
-  Industry hopeful but this isn't your day job ... so you won't starve to death if it fails
+  This word means "for the love of" and is not a jab or meant to be offensive. This is the industry hopeful but this isn't your day job ... so you won't starve to death if it fails
 * Professional\
-  How you make your money
+  How you make your money, how you earn your pay
 
 {% hint style="info" %}
 The rest of the articles on this page are aimed at amateur and professional developers. That is people looking to make a buck doing game dev.\
 \
-If that's not you then the sub-articles under this one may be less useful for you. The rest of our guides though are topic based and great for everyone.
+If that's not you then the sub-articles under this one may be less useful for you. The rest of our guides though are topic-based and great for everyone.
 {% endhint %}
 
 Understanding where you are and what you want as a developer is the first and most important thing to sort out. The list above isn't exhaustive and isn't linear for example anyone finding this article is almost certainly an enthusiast and either is or planning to be a hobbyist.
