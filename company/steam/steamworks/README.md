@@ -12,15 +12,25 @@ description: How to .... everything!
 
 Heathen creates the top Steamworks integration for Unreal, Unity and is porting it to Godot! Want to do more with Valve's Steamworks SDK? Then check out [Heathen's Toolkit for Steamworks SDK](../../../toolkit-for-steamworks/steamworks.md)!
 
-## Quick Start
+## Integrate
 
-### With Heathen
+You will need to bring the Steamworks SDK assemblies into your project so you can make use of the features in your game logic.&#x20;
+
+### Unity
+
+#### [Toolkit for Steamworks SDK](../../../toolkit-for-steamworks/unity/)
 
 The best way to get started quickly and Do More is with [Heathen's Toolkit for Steamworks SDK](../../../toolkit-for-steamworks/steamworks.md#feature-comparison) or if you are not quite sure yet you can start with the free "lite" version [Foundation](../../../toolkit-for-steamworks/steamworks.md#feature-comparison).
 
 With Toolkit for Steamworks you can handle initialization and most features of Steamworks completely code-free. We also provide a robust set of tools for programmers greatly speeding up the process of integrating Steamworks with your project by providing robust and battle-tested systems and tools.&#x20;
 
-### Manual Integration
+#### Manual Integration
+
+{% hint style="warning" %}
+In general, you should never install anything to your project from a .unitypackage file.\
+\
+In particular, Steamworks.NET doesn't often update its unity package ... please do your self a massive favor and use UPM to install as described below
+{% endhint %}
 
 #### Install Steamworks.NET
 
@@ -39,7 +49,31 @@ First, you will need to Install Steamworks.NET, we recommend you do this via the
   * Select Add from Disk
   * Browse to the `com.rlabrecque.steamworks.net` folder and import.
 
-#### Initialize Steam API
+### Unreal
+
+#### [Toolkit for Steamworks SDK](../../../toolkit-for-steamworks/unreal/)
+
+The best way to get started quickly and Do More is with [Heathen's Toolkit for Steamworks SDK](../../../toolkit-for-steamworks/unreal/).
+
+With Toolkit for Steamworks, you can access and leverage every aspect of Steamworks from Blueprint or C++ and we have created a number of Unreal-specific tools to simplify common use cases such as the Steam Save Game which is a classic Unreal Save Game that can leverage Steam's Cloud Storage as you would any normal Unreal Save Game.
+
+#### Manual Install
+
+You will need to include the Steam Shared Module. This is Unreal's built-in Third Party Engine Plugin that makes the Steamworks SDK available to your project. Sadly Unreal's built-in tools for Steamworks are very lacking so you will be using this from C++ as a raw API ... or you will want to use [Heathen's Toolkit for Steamworks](../../../toolkit-for-steamworks/unreal/) as talked about above.
+
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+## Initialize
+
+### Unity
+
+#### [Toolkit for Steamworks SDK](../../../toolkit-for-steamworks/unity/quick-start-guide/)
+
+Our tools are built to support everyone, hobbyists, amateurs, pros, veteran engineers with decades of experience... and everything in between.
+
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3>Component</h3></td><td><ul><li>Zero Code</li></ul></td><td><a href="../../../.gitbook/assets/Screenshot 2023-01-30 111452.png">Screenshot 2023-01-30 111452.png</a></td><td><a href="../../../toolkit-for-steamworks/unity/quick-start-guide/gameobject-initialization.md">gameobject-initialization.md</a></td></tr><tr><td><h3>Object</h3></td><td><ul><li>Doesn't require a GameObject</li><li>Single line of code</li></ul></td><td><a href="../../../.gitbook/assets/Screenshot 2023-01-30 111537.png">Screenshot 2023-01-30 111537.png</a></td><td><a href="../../../toolkit-for-steamworks/unity/quick-start-guide/scriptableobject-initialization.md">scriptableobject-initialization.md</a></td></tr><tr><td><h3>API</h3></td><td><ul><li>Doesn't require a GameObject</li><li>No ScriptableObject</li><li>Pure C#</li></ul></td><td><a href="../../../.gitbook/assets/Screenshot 2023-01-30 111633.png">Screenshot 2023-01-30 111633.png</a></td><td><a href="../../../toolkit-for-steamworks/unity/quick-start-guide/api-initialization.md">api-initialization.md</a></td></tr></tbody></table>
+
+#### Manual
 
 {% hint style="danger" %}
 [SteamManager.cs](https://github.com/rlabrecque/Steamworks.NET-Example/blob/master/Assets/Scripts/Steamworks.NET/SteamManager.cs) demonstrates this ... but you should not just copy and paste it blindly into your project.\
@@ -62,6 +96,86 @@ Steamworks.SteamAPI.RunCallbacks();
 ```
 
 If you are handling Steam Input you will probably want to update it as well with each frame though you can do that on demand.
+
+### Unreal
+
+#### [Toolkit for Steamworks SDK](../../../toolkit-for-steamworks/unreal/getting-started.md)
+
+Create a new Game Instance derived from our Steam Game Instance ... or use the example BP\_SteamGameInstance as a jumping-off point.
+
+<figure><img src="../../../.gitbook/assets/image (347).png" alt=""><figcaption></figcaption></figure>
+
+Be sure to read over our Getting Started article for detailed instructions.
+
+#### Manual
+
+Keep in mind when working manually you are limited to Epic's assumptions ... which assumes you are only using Steam as part of an Online Subsystem. e.g. Online Subsystem Steam. Its configuration and initialization are part of the engine load process and are not available in PIE. [Hethen's Toolkit for Steamworks](../../../toolkit-for-steamworks/unreal/) does initialize Steam in PIE though of course some features do require you to run in standalone mode such as Overlay, Networking, etc.
+
+Setting your App ID has two places in manual Unreal Steam config, In development, the OnlineSubsystemSteam SteamDevAppId value is used
+
+```ini
+[OnlineSubsystemSteam]
+SteamDevAppId=480
+```
+
+For a build the define `UE_PROJECT_STEAMSHIPPINGID` is used. There are several ways to "define" this define.&#x20;
+
+Using the PublicDefines list in your game's Build.cs&#x20;
+
+```csharp
+PublicDefinitions.Add("UE_PROJECT_STEAMSHIPPINGID=480");
+```
+
+Or in the GlobalDefines list in your game's Target.cs (**preferred**)
+
+```csharp
+GlobalDefinitions.Add("UE_PROJECT_STEAMSHIPPINGID=480");
+```
+
+To configure the plugin for proper initialization you will need to add the following to your Engine.ini
+
+{% code fullWidth="false" %}
+```ini
+[URL]
+; This is the Game Port that Steam Game Server will use and by default should be 27017
+Port=27017
+
+[SystemSettings]
+; Need this to sort out handshake issues with 5.1 and 5.2
+net.CurrentHandshakeVersion=2
+net.MinHandshakeVersion=2
+net.VerifyNetSessionID=0
+net.VerifyNetClientID=0
+
+[OnlineSubsystem]
+; Let the Online Subsystem know which platform you are working with
+DefaultPlatformService=Steam
+
+[OnlineSubsystemSteam]
+bEnabled=True
+; Should VAC be used, only applies to Steam Game Server
+bVACEnabled=True
+; Your AppID only used for dev builds and in the editor
+SteamDevAppId=480
+; The game version ... this is only required if you are going to run a 
+; Dedicated Server and have it visible over Steam Game Server browser
+GameVersion=1.0.0.0
+; Query Port is by default 2017 this is only used by Steam Game Server
+GameServerQueryPort=27018
+; If using Sessions then you need this set to true, else you can ignore it
+bInitServerOnClient=true
+
+[/Script/Engine.GameEngine]
+; Clear existing definitions
+!NetDriverDefinitions=ClearArray
+; Add the Steam Sockets Net Driver
++NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="/Script/SteamSockets.SteamSocketsNetDriver",DriverClassNameFallback="/Script/SteamSockets.SteamNetSocketsNetDriver")
+
+[/Script/OnlineSubsystemSteam.SteamNetDriver]
+; Set the Connection class name for the net driver
+NetConnectionClassName="/Scripts/SteamSockets.SteamSocketsNetConnection"
+```
+{% endcode %}
 
 ## Steam Debugging
 
