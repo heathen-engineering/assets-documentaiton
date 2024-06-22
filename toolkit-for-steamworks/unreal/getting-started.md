@@ -35,7 +35,7 @@ Be sure to read the [Installation ](installation.md)article, it contains informa
 
 Import the Toolkit for Steamworks plugin to your project. Whether you purchased the plugin from Unreal Marketplace or are a GitHub Sponsor you will need access to the Toolkit for Steamworks plugin to get started using it.
 
-The plugin is not free and is only available from Heathen via the [GitHub Sponsor](../../become-a-sponsor/) program and on the [Unreal Marketplace](https://www.unrealengine.com/marketplace/en-US/product/ad658ddf5c434478acb95f9091ea279c). If you acquired the plugin anywhere else we suggest you remove it immediately as it's not a legit copy and likely contains malware.&#x20;
+The plugin is not free and is only available from Heathen via the [GitHub Sponsor](../../become-a-sponsor/) program, [Patreon ](https://www.patreon.com/HeathenEngineering)and on the [Unreal Marketplace](https://www.unrealengine.com/marketplace/en-US/product/ad658ddf5c434478acb95f9091ea279c). If you acquired the plugin anywhere else we suggest you remove it immediately as it's not a legit copy and likely contains malware.&#x20;
 
 ## Configuration
 
@@ -67,6 +67,14 @@ GlobalDefinitions.Add("UE_PROJECT_STEAMSHIPPINGID=480");
 ### Steam Sockets
 
 <figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+You do not have to use Online Subsystem Steam in order to do Steam Networking multiplayer. You will need to include and configure the plugin as that is how the Third Party Steam Shared plugin gets its config.\
+\
+You do not have to use Sessions or Advanced Sessions to work with it either, our tools enable you to use Steam Lobby and other standard Steamworks features as intended by Valve without the confines of Epic's Online Subsystem \
+\
+You can of course if you so wish, use Epic's Online Subsystem concept with Steam ... all options are supported.
+{% endhint %}
 
 We leverage the built-in Steam Socket Net Driver which has a dependency on the Online Subsystem Steam plugin. When you enable Steam Sockets plugin (not just Online Subsystem Steam) the related dependencies should also be enabled and will require a restart of the engine.
 
@@ -127,7 +135,7 @@ The plugin ships with a ready-to-use Steam Game Instnace named `BP_SteamGameInst
 
 Steamworks is largely a multi-process and thus asynchronous toolkit where you will need to listen on events to know when a request has been serviced. In many if not most cases we provide a "Callback" parameter to methods where you can create an event that will be invoked for that specific method call.&#x20;
 
-In some cases however you may wish to bind to the global event
+In some cases, however, you may wish to bind to the global event
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
@@ -139,7 +147,7 @@ To help you do this we defined all of the global events as delegates on the Stea
 
 As you should know Steamworks SDK enables your game to ask Steam (the authenticated client on the user's machine) to do stuff for your game. This means it is largely a multi-process and asynchronous thing.
 
-Valve handles this in a class way using Callback and CallResult delegates. This is translated in Unreal as "Global" events and Funciton callbacks.
+Valve handles this in a classic way using Callback and CallResult delegates. This is translated in Unreal as "Global" events and Function callbacks.
 
 ### Global Events
 
@@ -167,7 +175,7 @@ You can learn more about [getting started as a Steam Developer in our article he
 
 ## Builds
 
-If you are building a Dedicated Server you will need to ensure you have the following defines declared, there are several ways you can go about this such as the Target.cs, please see Unreal Engine's documentation for details.
+If you are building a Dedicated Server you will need to ensure you have the following definitions declared, there are several ways you can go about this such as the Target.cs, please see Unreal Engine's documentation for details.
 
 {% hint style="info" %}
 This is a requirement from the Online Subsystem Steam plugin and deals with how it initializes the Steamworks SDK.
@@ -190,9 +198,9 @@ GlobalDefinitions.Add("UE_PROJECT_STEAMPRODUCTNAME=480");
 
 ### steam\_appid.txt
 
-We have a [full article](../../company/steam/steamworks/steam\_appid.txt.md) on what this text file is and when you should or should not be using it. Epic notes similar in their article [here](https://dev.epicgames.com/documentation/en-us/unreal-engine/online-subsystem-steam-interface-in-unreal-engine#steamappid).
+We have a [full article](../../company/steam/steamworks/steam\_appid.txt.md) on what this text file is and when you should or should not be using it. Epic notes are similar in their article [here](https://dev.epicgames.com/documentation/en-us/unreal-engine/online-subsystem-steam-interface-in-unreal-engine#steamappid).
 
-In short this should only be needed when your running a packaged project from outside of Steam or if your running a Dedicated server build.
+In short, this should only be needed when your running a packaged project from outside of Steam or if your running a Dedicated server build.
 
 ## Use the kit
 
@@ -246,13 +254,13 @@ You DO want your game to shut down and relaunch from the Steam client to ensure 
 
 ### Editor Crash on Play
 
-Where the crash log mentions and Access Violation or similar low level exception noting the steam\_api.dll or a similar Steam-related assembly.
+Where the crash log mentions an Access Violation or similar low-level exception noting the steam\_api.dll or a similar Steam-related assembly.
 
 Typically caused by an issue with the Steam Shared plugin. This is a built-in plugin of the Unreal engine not part of Heathen's codebase but is a dependency. If you attempted to update Steamworks SDK or made some change to the engine build that prevents the Steam Shared plugin from loading properly you will get this sort of crash.
 
-To correct the issue start by verifying your engine install, if you are building from source check for compilation errors and changes to the ThridParty Steamworks engine plugin. If you installed via the launcher you can simply right-click on the engine version and select Verify, it will clean and correct any issues found.
+To correct the issue start by verifying your engine install, if you are building from source check for compilation errors and changes to the Third Party Steamworks engine plugin. If you installed via the launcher you can simply right-click on the engine version and select Verify, it will clean and correct any issues found.
 
-### Callbacks not working in the package
+### Callbacks are not working in the package
 
 In most cases, this is due to Steam API not initializing,&#x20;
 
