@@ -231,7 +231,7 @@ Note the Client and Server variants of the [Begin Auth Session](../../../../tool
 
 The Steam ID field is the ID of the entity this ticket is believed to be from
 
-<figure><img src="../../../../.gitbook/assets/image (19).png" alt=""><figcaption><p>For use by clients</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (19) (1).png" alt=""><figcaption><p>For use by clients</p></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (268).png" alt=""><figcaption><p>For use by Steam Game Servers</p></figcaption></figure>
 
@@ -241,7 +241,7 @@ Note the Client and Server variants of the [End Auth Session](../../../../toolki
 
 The Steam ID field is the ID of the entity to end the session relationship with.
 
-<figure><img src="../../../../.gitbook/assets/image (21).png" alt=""><figcaption><p>For use by clients</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption><p>For use by clients</p></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (273).png" alt=""><figcaption><p>For use by Steam Game Servers</p></figcaption></figure>
 

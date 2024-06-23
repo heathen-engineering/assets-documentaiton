@@ -2,7 +2,7 @@
 description: Understanding players, friends and community
 ---
 
-# 🧑🏫 User Information
+# 🧑‍🏫 User Information
 
 ## Introduction
 
@@ -17,7 +17,7 @@ Like any social network, it has a selection of tools that deal with a person's s
 
 ## [Community](https://partner.steamgames.com/doc/features/community)
 
-<figure><img src="../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 > Millions of players use the Steam Community each day to browse and create content with their friends. There are many features that your team can utilize to make it easier for these players to enjoy your community, while simultaneously promoting your product.
 
@@ -25,7 +25,7 @@ Every Steam App (Game, tool, etc) has a [Community Hub](../../community-hub.md),
 
 ## User Data
 
-<figure><img src="../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
 Avatar, Name, Nickname, Level, Game Status, every user has a defined set of information that identifies them on the network and to their friends and acquaintances. This information is typically seen in a friends list, on leaderboards, on lobby member lists and anywhere else you might see a Steam user.
 

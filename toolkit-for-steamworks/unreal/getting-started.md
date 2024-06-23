@@ -66,7 +66,7 @@ GlobalDefinitions.Add("UE_PROJECT_STEAMSHIPPINGID=480");
 
 ### Steam Sockets
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 You do not have to use Online Subsystem Steam in order to do Steam Networking multiplayer. You will need to include and configure the plugin as that is how the Third Party Steam Shared plugin gets its config.\
@@ -137,11 +137,11 @@ Steamworks is largely a multi-process and thus asynchronous toolkit where you wi
 
 In some cases, however, you may wish to bind to the global event
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 To help you do this we defined all of the global events as delegates on the Steam Game Instance and created a simple Get Steam Game Instance method that will fetch the current instance for you. You can then browse and bind on any events you like, be sure to unbind before the object in question leaves scope as these are global events that remain in scope themselves for the life of your game.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>An example of binding an event</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>An example of binding an event</p></figcaption></figure>
 
 ## Callbacks
 
@@ -153,17 +153,17 @@ Valve handles this in a classic way using Callback and CallResult delegates. Thi
 
 You can bind to global events via the Steam Game Instance ... we provide a simple Get Steam Game Instance node to make this easy to "get".
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 You can then browse and bind on any events you like, be sure to unbind before the object in question leaves scope as these are global events that remain in scope themselves for the life of your game.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>An example of binding an event</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>An example of binding an event</p></figcaption></figure>
 
 ### Function Callbacks
 
 These take the place of Valve's "CallResult" delegate and are scoped to a specific method call for these you will see there is a delegate parameter on the function call where you can create an event that will be invoked when the request is complete.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## [Steam Developer](../../company/steam/quick-start.md#sign-up-to-steamworks)
 
@@ -226,7 +226,7 @@ The Center Bottom text boxes are used to test lobby and multiplayer features.&#x
 
 Everything in the example scene is done with Blueprint Nodes requiring no C++ work at all. The UI WIdgets used are all created using Blueprint Nodes only again no C++ work required at all.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Features
 

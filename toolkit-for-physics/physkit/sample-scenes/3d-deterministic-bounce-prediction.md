@@ -10,7 +10,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## Introduction
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This scene demonstrates the use of [Trick Shot](../components/trick-shot.md) and the [Trick Shot Line](../components/trick-shot-line.md) component to predict the path a thrown object and will take into account bounces.
 
@@ -28,7 +28,7 @@ The projectile launched by [Trick Shot](../components/trick-shot.md) uses the [B
 
 ## Emitter GameObject
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The emitter game object does all the real work in the sample scene and houses:
 

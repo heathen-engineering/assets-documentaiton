@@ -43,7 +43,7 @@ You'll need to install Unreal v5.1 and later
 
 You will need to include the Steam Shared Module.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 When adding the plugin from the marketplace it will be installed as an Engine plugin and should add its dependencies automatically.
 
@@ -98,7 +98,7 @@ If you chose Blueprint project when you created your project, simply add a C++ c
 
 The plugin is deployed to the Unreal Marketplace as an engine plugin. This means you need to install the plugin to the engine after purchase in order to be able to use it.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 Once you have installed the plugin to the engine versions you require you need to enable the plugin for your project, this will require a restart to complete.
 
@@ -106,7 +106,7 @@ Once you have installed the plugin to the engine versions you require you need t
 Toolkit for Steamworks SDK & Steamworks Complete are the same thing ... it's just a name and icon change.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### From GitHub
 
@@ -130,7 +130,7 @@ When done your folder should look similar to the above.
 
 If you do not own the Plugin from the Unreal Marketplace then the Epic editor will see that this plugin is also a Marketplace plugin and expect you to download it from there
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Wording may differ depending on version but similar to the above.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Wording may differ depending on version but similar to the above.</p></figcaption></figure>
 
 You have 2 options to sidestep this, 1 you could deploy it as an engine plugin (personly not my preference) or you can modify the SteamworksComplete.uplugin to empty the `MarkeplaceURL` node, as shown below
 

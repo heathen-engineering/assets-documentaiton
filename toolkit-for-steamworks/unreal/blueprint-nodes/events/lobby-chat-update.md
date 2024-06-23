@@ -35,4 +35,4 @@ A [UEChatMemberStateChange ](../enumerators/uechatmemberstatechange.md)value ind
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

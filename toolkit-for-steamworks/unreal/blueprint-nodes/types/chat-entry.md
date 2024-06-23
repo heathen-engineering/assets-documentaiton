@@ -35,4 +35,4 @@ The [UEChatEntryType ](../enumerators/uechatentrytype.md)of the message
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (21) (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -50,4 +50,4 @@ An event that will be called when the process completes and will indicate the re
 
 ## Nodes
 
-<figure><img src="../../../../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
