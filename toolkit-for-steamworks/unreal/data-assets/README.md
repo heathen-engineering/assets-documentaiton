@@ -15,6 +15,14 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## Introduction
 
+{% hint style="success" %}
+## New Feature
+
+This is a new feature currently in preview with GitHub Sponsors and Patreons. Data Assets will make their way to the Unreal Marketplace once we have had a chance to gather the initial feedback and reviews.\
+\
+This feature will be available on Unreal 5.1 and later&#x20;
+{% endhint %}
+
 Unreal has a concept of Data Asset where we can define an asset representing the type of data in our project, add variables, events and functions to that type, and then create "records" of this type as assets in our project that can easily be referenced in blueprints and on actors.
 
 This is an incredibly flexible and powerful feature of the Unreal engine and Heathen's Toolkit for Steamworks makes use of it to simplify working with common Steam artefacts. We have defined a Primary Data Asset type for each of the common Steam artifacts listed in the articles below.
