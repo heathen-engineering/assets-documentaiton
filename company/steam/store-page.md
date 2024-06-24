@@ -16,7 +16,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 Heathen isn't a marketing guru or anything like that but we have been around for a minute ... or a decade or so worth of them. In that time we have learned a few things and more importantly, made connections with people and groups that do know what the hell they are talking about 😂
 
-Below we share some incites learned through experiences and teachings gathered from across our industry. This is simply a bit of guidance and we do strongly recommend you work with a [marketing partner](../sourcing-resources/marketing.md) to devise and execute a proper marketing strategy for your game.
+Below we share some incites learned through experiences and teachings gathered from across our industry. This is simply a bit of guidance and we do strongly recommend you work with a [marketing partner](../../guides/getting-started/sourcing-resources/marketing.md) to devise and execute a proper marketing strategy for your game.
 
 ## Jumping In
 

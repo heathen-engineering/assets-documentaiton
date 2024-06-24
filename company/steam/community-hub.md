@@ -2,7 +2,7 @@
 description: Creating a home from your community
 ---
 
-# 🗣 Community Hub
+# 🗣️ Community Hub
 
 {% hint style="success" %}
 #### Like what you're seeing?
@@ -16,7 +16,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 Every product on Steam has its own unique Community Hub. By default, a game's Community Hub is set live when your game release state is set to "Coming Soon".&#x20;
 
-It's through the Community Hub you will communicate with your clients and includes numerous channels to do so. In general, your [Community Management team](../sourcing-resources/community.md) should treat the Community Hub as the root of your community. This is generally the first contact you will make with a community member and very often the only channel of contact you will have with most users.
+It's through the Community Hub you will communicate with your clients and includes numerous channels to do so. In general, your [Community Management team](../../guides/getting-started/sourcing-resources/community.md) should treat the Community Hub as the root of your community. This is generally the first contact you will make with a community member and very often the only channel of contact you will have with most users.
 
 <details>
 

@@ -4,7 +4,7 @@ description: >-
   to prove its solved.
 ---
 
-# ✏ Writing Formal Tests
+# ✏️ Writing Formal Tests
 
 {% hint style="success" %}
 #### Like what your seeing?
@@ -22,7 +22,7 @@ This article will help you break down the process of creating tests for your gam
 
 Their are different schools of though as to when tests should be written. Most professional software engineers will tell you that you should define your test before your software design and thus much before you start writing any code. The act of creating the tests that will prove a thing is or is not complete to the quality standard is the best way to understand what you need to build before you try to actually build it.
 
-That said most game development is less "engineered" and more "hacked" and hopefully later cleaned up in production. As a result tests are usually defined at the end of the [preproduction](../fundamentals/development-phases.md#preproduction) phase and very likely will be expanded, reduced or otherwise modified over the [production ](../fundamentals/development-phases.md#production)phase of the game. Ideally the bulk of your "engineering" will be done with good test cases driving that technical design and implementation.
+That said most game development is less "engineered" and more "hacked" and hopefully later cleaned up in production. As a result tests are usually defined at the end of the [preproduction](../../guides/tips-and-tricks/fundamentals/development-phases.md#preproduction) phase and very likely will be expanded, reduced or otherwise modified over the [production ](../../guides/tips-and-tricks/fundamentals/development-phases.md#production)phase of the game. Ideally the bulk of your "engineering" will be done with good test cases driving that technical design and implementation.
 
 ## Define
 

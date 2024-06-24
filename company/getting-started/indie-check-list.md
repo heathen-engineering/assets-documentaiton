@@ -2,7 +2,7 @@
 description: Did you think about [ ... ]
 ---
 
-# ☑️ Indie Check List
+# Indie Check List
 
 <figure><img src="../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
 

@@ -2,7 +2,7 @@
 description: Jump right in
 ---
 
-# ☝ Quick Start
+# ☝️ Quick Start
 
 <figure><img src="../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
 
@@ -28,7 +28,7 @@ And if you want to make a business of this then you need to start doing as many 
 
 Selecting a marketing partner is the best option for most small studios and especially for solo developers. A proper marketing partner will function as an extension of your studio and is capable of being your fully outsourced marketing division complete with strategy planning, market research, ad content production, ad campaign execution, market performance analysis, product positioning and much much more.&#x20;
 
-Read our article on [Sourcing Marketing](../sourcing-resources/marketing.md) to learn more, you will be surprised at how affordable it is to get started.
+Read our article on [Sourcing Marketing](../../guides/getting-started/sourcing-resources/marketing.md) to learn more, you will be surprised at how affordable it is to get started.
 
 ## Steam
 

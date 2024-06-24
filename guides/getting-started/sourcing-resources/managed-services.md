@@ -2,14 +2,14 @@
 description: Managing all those services you just sourced
 ---
 
-# 🧞♂ Managed Services
+# 🧞‍♂️ Managed Services
 
-<figure><img src="../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 #### Like what your seeing?
 
-Consider supporting us as a [GitHub Sponsor](../../become-a-sponsor/) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Consider supporting us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our Unity assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
 These articles are made possible by our [GitHub Sponsors](https://github.com/sponsors/heathen-engineering) ... become a sponsor today!
 {% endhint %}
@@ -24,7 +24,7 @@ Read [this](./#professional-service-management) for that answer and more!
 
 Managed Services is an alternative to the traditional publisher. It doesn't account for the financial aspect. It is wholly focused on helping you deliver your project on time, on budget and to the quality standard you define. This separates financial instigative from the work, and reduces unfortunate situations. Such as where in a publisher may push a particular solution, partner or option because it makes fiscal sense; even if its of harm to the game or developer which is sadly very common. This also removes a lot of the burden from financial instruments making them more efficient.&#x20;
 
-Its important to understand how [publishing works in the game industry](../publishers.md), we of course have an article for that :smile:
+Its important to understand how [publishing works in the game industry](../../../company/publishers.md), we of course have an article for that :smile:
 
 ## What to expect
 

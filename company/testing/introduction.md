@@ -20,7 +20,7 @@ These sections will introduce you to software and game testing concepts and prac
 
 ## Sourcing
 
-Testing is a big topic that even established professional studios find they need to outsource part of in order to deliver on correctly and professionally. Check out our guide on [Sourcing Testing](../sourcing-resources/testing.md) for more information. In particular proper testing requires "scale" meaning a small studio or individual simply cannot solve for this requirement without additional support.
+Testing is a big topic that even established professional studios find they need to outsource part of in order to deliver on correctly and professionally. Check out our guide on [Sourcing Testing](../../guides/getting-started/sourcing-resources/testing.md) for more information. In particular proper testing requires "scale" meaning a small studio or individual simply cannot solve for this requirement without additional support.
 
 ## When to Test
 
@@ -32,7 +32,7 @@ Software engineers and programmers will test constantly while they work and have
 
 ### [Formal Tests](writing-formal-tests.md)
 
-These should be written as the final steps in [preproduction ](../fundamentals/development-phases.md#preproduction)but will be modified and maintained over the [production ](../fundamentals/development-phases.md#production)cycle. These are the tests that let you know when your project is fit for release. In an ideal world your programmers would use these "formal tests" to know what they need to build and why.
+These should be written as the final steps in [preproduction ](../../guides/tips-and-tricks/fundamentals/development-phases.md#preproduction)but will be modified and maintained over the [production ](../../guides/tips-and-tricks/fundamentals/development-phases.md#production)cycle. These are the tests that let you know when your project is fit for release. In an ideal world your programmers would use these "formal tests" to know what they need to build and why.
 
 ### Alpha / Beta Testing
 
