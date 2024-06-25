@@ -34,6 +34,8 @@ Unity and Unreal have two very different approaches to developing a game engine.
 
 Unreal has a "way" to it, because Unreal has so many tools, features and systems available to you right out-of-the-box you probably want to make yourself aware of what that "way" is and adjust your design to make use of it, not fight against it.
 
+{% embed url="https://www.youtube.com/watch?v=iQ3c-lrHO7o" %}
+
 Beyond those handy tools, in Unreal fundamental concepts of a game are already defined and built in as part of the engine.
 
 * Game Instance
@@ -45,6 +47,22 @@ Beyond those handy tools, in Unreal fundamental concepts of a game are already d
 * etc.
 
 Understanding the relationship between these objects and how best to leverage the inherent design of Unreal to the advantage of your game is key to success. Where in Unity if you wanted to do something you likely just start trying to do things, in Unreal I would STRONGLY recommend you research and see if Unreal has a feature/tool/system that does this already (it often does). This doesn't mean you should always just use the native system but you should never ignore that there is one.
+
+### Game Objects
+
+When you first open Unreal it might be tempting to think of Actor as GameObject ... dont
+
+In Unity, we have a frankly bad habit of nesting GameObjects and even using them as folders for organizational purposes.
+
+A level in Unity is really a tree structure of GameObjects where some objects have components attached causing logic to run. The organization of GameObjects impacts transform logic as well as execution order and even whether or not the object is even active.
+
+In Unreal, we don't nest things, an Actor is not like a GameObject with children below it that we would turn on and off.&#x20;
+
+A level in Unreal is more like a flat list of Actors, each actor represents just that ... an actor in the world with a visual, behaviour, some data, etc.
+
+Actors may be composed of components and may have relationships with other actors but they are not generally "parented" or grouped. In general, each Actor is functionally independent, we add or remove actors and components to achieve the needs of the game. We use systems and tools to facilitate level design.
+
+If you have used Unity's DOTS you find that an Actor is much more like an Entity than it is a GameObject
 
 ## Development
 
