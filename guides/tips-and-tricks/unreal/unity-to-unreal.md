@@ -67,11 +67,3 @@ Nowhere is the difference in game development more apparent between Unreal and U
 Unreal itself is fundamentally designed to be a multiplayer game engine. Out-of-the-box with no additional anything added to it, you can start a multiplayer session, right with the sample scenes. If you want to make a variable replicate over the network it really is as simple as toggling a tick box on that variable.
 
 In contrast, Unity is not, with Unity your first step is to decide how you want to handle networking. The most common approach is an HLAPI such as NetCode for GameObjects, Mirror or FishNetworking but there are other options as well. Then for everything you might want to replicate over the network, you must code in C# or use existing scripts everything from scratch.
-
-## Flexibility
-
-Both approaches have the same level of flexibility in terms of letting you change how things are done. For example, if you want to use Steam Networking Sockets in Unreal then you need to use a NetDriver suited for that (Heathen provides one of course 😉).
-
-In Unity, you would use a transport for your networking solution of choice that worked with Steam Networking Sockets ... and again Heathen has you covered 😉
-
-The difference is that with Unreal the "HLAPI" aspect is 1st party, that is Epic Games has built that into the engine. They have also created a number of "Online Subsystems" to get you up and running right away with various platforms and of course, developers like Heathen have created tailor-made solutions such as Heathen's Steamworks Complete which is available for Unity or Unreal.
