@@ -48,6 +48,16 @@ The simplest way to upload your game to Steam is with Heathen's Steam Build. The
 
 ## Steam Build
 
+{% hint style="danger" %}
+Steam 2FA tends to be a problem when using the Build Tool from within Unity.\
+\
+If you are using a personal account with 2FA on it then it would be better to learn to use Steam CMD directly and avoid this issue.\
+\
+If you are using a separate company account that doesn't use mobile authenticator and uses the email 2FA then it should be suitable for iterative builds.\
+\
+All that said use of the Steam CMD tool directly is generally the better option for most devs. The build tool in Unity is simply using it in a simplified and limited manner saving you a couple of clicks when your situation is very simple.
+{% endhint %}
+
 Heathen's Toolkit for Steamwork includes the Steam Content Builder tool which can be used to build and upload your game to Steam. The feature uses the Steamworks SDK's [Steam CMD](build-upload-tool.md#steam-cmd) tool and automates the process in the Unity Editor.
 
 ### Where to find the tool
