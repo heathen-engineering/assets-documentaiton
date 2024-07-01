@@ -50,18 +50,30 @@ In development, the OnlineSubsystemSteam SteamDevAppId value is used
 SteamDevAppId=480
 ```
 
-For a build the define `UE_PROJECT_STEAMSHIPPINGID` is used. There are several ways to "define" this define.&#x20;
+To define `UE_PROJECT_STEAMSHIPPINGID` we use the game's Target.cs, an example from one of our projects follows.
 
-Using the PublicDefines list in your game's Build.cs&#x20;
-
-```csharp
-PublicDefinitions.Add("UE_PROJECT_STEAMSHIPPINGID=480");
-```
-
-Or in the GlobalDefines list in your game's Target.cs (**preferred**)
+{% hint style="warning" %}
+The following is just an example you would use your own settings and the name of your constructor would of course be different. The point is to show you a working example in the Target.cs of your app.
+{% endhint %}
 
 ```csharp
-GlobalDefinitions.Add("UE_PROJECT_STEAMSHIPPINGID=480");
+public TuathaLegendsTarget(TargetInfo Target) : base(Target)
+{
+    Type = TargetType.Game;
+    DefaultBuildSettings = BuildSettingsVersion.V5;
+    IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
+
+    //Set our app id
+    ProjectDefinitions.Add("UE_PROJECT_STEAMSHIPPINGID=1024120");
+    //Set our human-friendly name
+    ProjectDefinitions.Add("UE_PROJECT_STEAMGAMEDESC=Túatha: Legends");
+    //Set our directory name
+    ProjectDefinitions.Add("UE_PROJECT_STEAMGAMEDIR=TuathaLegends");
+    //Set the product name
+    ProjectDefinitions.Add("UE_PROJECT_STEAMPRODUCTNAME=1024120");
+    //Add our module name
+    ExtraModuleNames.AddRange( new string[] { "TuathaLegends" } );
+}
 ```
 
 ### Steam Sockets
