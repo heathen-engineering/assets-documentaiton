@@ -38,15 +38,15 @@ API.Maths
 
 ### What can it do?
 
-A lot, the maths API is our home for all those formula and calculations that have a lot of use but don't fit nicely into a single API rather that's because they fit into many or that they are simply unique little gems worthy of sharing but not sufficient for a full API.
+A lot, the maths API is our home for all those formulas and calculations that have a lot of use but don't fit nicely into a single API rather that's because they fit into many or that they are simply unique little gems worthy of sharing but not sufficient for a full API.
 
 ## Intercept
 
-A number of intercept formulas have been provided which can be used to calculate point in space where an interception will occur between two moving objects ... if any.
+A number of intercept formulas have been provided which can be used to calculate points in space where an interception will occur between two moving objects ... if any.
 
 ### Fast Intercept
 
-A simple fast formula suitable for situations where you know there is a solution. For example you know that if a subject is faster than its target there is some solution however this method doesn't handle the case where there simply is no solution such as the target moving faster than the subject.
+A simple fast formula suitable for situations where you know there is a solution. For example, you know that if a subject is faster than its target there is some solution however this method doesn't handle the case where there simply is no solution such as the target moving faster than the subject.
 
 ```csharp
 var point = Maths.FastIntercept(start, speed, targetBody);
@@ -105,14 +105,14 @@ These are formulas that help us work with rigidbodies and transforms, things lik
 {% hint style="info" %}
 Tip
 
-Don't be overly obsessed with "Realistic" even in a simulator game "real" is a very flexible term and for good reason; its hard to do and in many cases impossible to achieve with current technology ... even where we can get very close to real ... reality is not as much fun as fiction in most cases.
+Don't be overly obsessed with "Realistic" even in a simulator game "Real" is a very flexible term and for good reason; it is hard to do and in many cases impossible to achieve with current technology ... even where we can get very close to real ... the reality is not as much fun as fiction in most cases.
 
 
 
 Use the "real" values you google up as a good starting point but don't hesitate to tweak them to get the desired results.
 {% endhint %}
 
-put simply the drag effect on a body is proportional to the equar of its speed and the density of the volume its moving through. This is why it takes much less energy to go form say 0 to 5 meters per second than it does to go from 5 to 10 meters per second.&#x20;
+put simply the drag effect on a body is proportional to the square of its speed and the density of the volume it's moving through. This is why it takes much less energy to go from say 0 to 5 meters per second than it does to go from 5 to 10 meters per second.&#x20;
 
 This is important in games where we for example want to simulate racing, the rate of acceleration of a car or boat should slope off the faster it goes until that change is 0 and the vehicle has reached its maximum speed. One of many ways to simulate this is to approximate the drag effect.
 
@@ -122,11 +122,11 @@ var drag = Maths.QuadraticDrag(coefficent, density, speed, crossSectionArea);
 
 ... So what do all those parameters mean?
 
-**Coefficent**\
-The Coefficent or "Drag Coefficent" is a "magic number" usually determined through experimentation that accounts for numerous factors impacting drag including the surface, shape, etc. You can find drag coefficents for various real world shapes and objects with a simple google search and then adjust off that to achieve your desired effect.
+**Coefficient**\
+The coefficient or "Drag Coefficient" is a "magic number" usually determined through experimentation that accounts for numerous factors impacting drag including the surface, shape, etc. You can find drag coefficients for various real-world shapes and objects with a simple Google search and then adjust that to achieve your desired effect.
 
 **Density**\
-Density, this refers to the density of the volume that is apply drag to you. Again a quick google search will pull back the density values for various substances ... two commonly used ones
+Density refers to the density of the volume that is applied to you. Again a quick Google search will pull back the density values for various substances ... two commonly used ones
 
 15 centigrade air at sea level = 1.225 kg/m^3\
 Water = 997 kg/m^3 or 1000 kg/m^3 depending on the paper you read
@@ -135,7 +135,7 @@ Water = 997 kg/m^3 or 1000 kg/m^3 depending on the paper you read
 Speed is the magnitude of your velocity
 
 **CrossSectionArea**\
-The cross section is basically the silhouette as it would appear if you where looking head on into that moving object.
+The cross-section is basically the silhouette as it would appear if you were looking head-on into that moving object.
 
 ### Force to reach
 
@@ -171,7 +171,7 @@ This works for Vector3 positions and Quaternion rotations. When used with Rigidb
 
 ### Rotate Around
 
-A simple tool to rotate a vector around another given a eular or quaternion similar to Transform's Rotate Around only doesn't require a transform.
+A simple tool to rotate a vector around another given a Eular or quaternion similar to Transform's Rotate Around only doesn't require a transform.
 
 ```csharp
 Maths.RotatePointAroundPivot(point, pivot, angle)
