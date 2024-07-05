@@ -550,7 +550,7 @@ Let's say for example you use 2 types of lobbies in your game
 
     This would be where you have your players configure a gameplay session and wait for competitors to join or similar. This is the most typical use of a lobby and what drives matchmaking in your game.
 
-In the above use case, you would attack a [Lobby Manager](../../../../toolkit-for-steamworks/unity/ui-components/lobby-manager.md) to your Party UI and another to your Session UI. You would configure each accordingly and each can manage its own chat and metadata features. This helps you split functionality across concepts unique to your game.
+In the above use case, you would attach a [Lobby Manager](../../../../toolkit-for-steamworks/unity/ui-components/lobby-manager.md) to your Party UI and another to your Session UI. You would configure each accordingly and each can manage its own chat and metadata features. This helps you split functionality across concepts unique to your game.
 
 ### Find and Join Lobbies
 
