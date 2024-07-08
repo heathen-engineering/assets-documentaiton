@@ -331,7 +331,6 @@
     * [Downloadable Content](toolkit-for-steamworks/unreal/data-assets/downloadable-content.md)
     * [Inventory Item](toolkit-for-steamworks/unreal/data-assets/inventory-item.md)
     * [Leaderboard](toolkit-for-steamworks/unreal/data-assets/leaderboard.md)
-    * [Lobby](toolkit-for-steamworks/unreal/data-assets/lobby.md)
     * [Stat](toolkit-for-steamworks/unreal/data-assets/stat.md)
   * [Widgets](toolkit-for-steamworks/unreal/widgets/README.md)
     * [BP\_FriendsListDisplay](toolkit-for-steamworks/unreal/widgets/bp\_friendslistdisplay.md)
