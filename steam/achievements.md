@@ -33,7 +33,7 @@ First you need to create your achievements on the Steam Developer portal. [https
 
 Log into your Steam Developer Portal and access your app's admin page. Look for the Technical Tools section and select the Edit Steamworks Settings option.
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Techincal Tools"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Techincal Tools"><figcaption></figcaption></figure>
 
 From there select the Stats & Achievements > Achievements option and create your new achievements.&#x20;
 
@@ -261,15 +261,15 @@ This is an optional feature, you can either work with Achievements via a Data As
 
 You can create a Data Asset in your project for each of your achievements
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Create a new Data Asset of type AchievementDataAsset</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>Create a new Data Asset of type AchievementDataAsset</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Set the API Name to match the name you set in Steamworks Developer Portal</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Set the API Name to match the name you set in Steamworks Developer Portal</p></figcaption></figure>
 
 #### Use
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Create a variable where required and select your Achievement as its Default Value</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Create a variable where required and select your Achievement as its Default Value</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Use it as you see fit</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Use it as you see fit</p></figcaption></figure>
 
 ### Storing
 

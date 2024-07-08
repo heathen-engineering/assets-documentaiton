@@ -103,7 +103,7 @@ Once you have cloned the repo to your disk ... which by the way is easier to do 
 
 Once you have the repository local on your disk you use the Unity Package Manager's "Install from Disk" option to install whatever it is for example System Core, Steamworks.NET, etc.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This will open a file browser window, you should navigate to the folder that contains the package.json file in the repo for example if you were manually doing Steamworks Complete it would look like\
 `./SourceRepo/Unity/Steamworks/com.heathen.steamworkscomplete/package.json`
@@ -114,7 +114,7 @@ Click okay and now the Unity Package Manager will install that package properly.
 
 the main issue with downloading a zip and using it is version control and update. Even if you insist on installing from a local disk you should still do so via Git Desktop or a similar Git install.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Unlike a zip this will be a version-managed repository so updating is a single button click, it will also show you change history and compare files on the local disk with the repo making it easy to understand what changed, when and by whom.
 
