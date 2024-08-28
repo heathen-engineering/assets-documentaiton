@@ -617,9 +617,6 @@
       * [🟨 UEUserHasLicenseForAppResult](toolkit-for-steamworks/unreal/blueprint-nodes/enumerators/ueuserhaslicenseforappresult.md)
       * [🟨 UEVoiceResult](toolkit-for-steamworks/unreal/blueprint-nodes/enumerators/uevoiceresult.md)
   * [C++](toolkit-for-steamworks/unreal/c++.md)
-* [🚧 Godot](toolkit-for-steamworks/godot/README.md)
-  * [Installation](toolkit-for-steamworks/godot/installation.md)
-  * [Quick Start](toolkit-for-steamworks/godot/quick-start.md)
 
 ## Toolkit for Physics
 
