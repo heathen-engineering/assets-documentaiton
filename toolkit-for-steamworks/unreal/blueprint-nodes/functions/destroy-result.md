@@ -32,12 +32,11 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 Destroys a result handle and frees all associated memory.
 
 {% hint style="info" %}
-If you use the "Simple" variant of nodes that effect items this is not needed and you will not have a result handle that needs to be destroyed.\
+If you use the "Simple" variant of nodes that affect items this is not needed and you will not have a result handle that needs to be destroyed.\
 \
 See the following for examples
 
 * [Add Promo Item](add-promo-item.md)
-* [Add Promo Items](broken-reference)
 * [Consume Item](consume-item.md)
 * [Deserialize Result](deserialize-result.md)
 * [Exchange Items](exchange-items.md)
