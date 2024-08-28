@@ -51,7 +51,7 @@ You \*\***MUST**\*\* publish your changes in Steam Developer Portal before they 
 
 ### Use
 
-Use your achievements ... how? depends on the tools and engine you choose set the [Unity Achievements](broken-reference) and [Unreal Achievements](broken-reference) articles for more information.
+Use your achievements ... how? depends on the tools and engine you choose, see the [Unity Examples](achievements.md#unity-examples) and [Unreal Examples](achievements.md#unreal-examples) articles for more information.
 
 ## Using Achievements
 
