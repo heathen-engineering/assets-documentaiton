@@ -30,33 +30,33 @@ Screen captures of DOTA 2 "Play DOTA" option is a true example of Steam Lobby us
 
 ![](<../../../.gitbook/assets/image (2) (1) (3).png>)  ![](<../../../.gitbook/assets/image (5) (1) (3).png>)
 
-Screen captures of Halo Infinite's "Quick Play" option is a prime example of a Quick Match Lobby setup. The player hits one button and the system will find an appropriate match based on the player's stats, rather or not they are in a party, geo location, rankings, etc.
+Screen captures of Halo Infinite's "Quick Play" option is a prime example of a Quick Match Lobby setup. The player hits one button and the system will find an appropriate match based on the player's stats, rather or not they are in a party, geo-location, rankings, etc.
 
 ## Features
 
 ### Authentication
 
-Automatically checks the VAC and auth status of connecting user's asking user's to leave if they fail the checks you have configured.
+Automatically checks the VAC and auth status of connecting user asking users to leave if they fail the checks you have configured.
 
 ### Simple Quick Match
 
-Search for a match and join, if none is found create a match and wait. Quick match is one of the best options for a quality user experience in most session based multiplayer games. The Quick Match Lobby Control's main function is this, your user's with a single push of a button will be placed in a match with any party they may have as quickly as possible with as little input required as possible.
+Search for a match and join, if none is found create a match and wait. Quick match is one of the best options for a quality user experience in most session-based multiplayer games. The Quick Match Lobby Control's main function is this, your user with a single push of a button will be placed in a match with any party they may have as quickly as possible with as little input required as possible.
 
 ### Event Driven
 
-Optional Unity Events are available in editor and in code to help you drive additional UI and game logic based on Quick Match status change.
+Optional Unity Events are available in the editor and in code to help you drive additional UI and game logic based on Quick Match status change.
 
 ### Working Status
 
-A simple \`Status\` enum is available for use cases where Event Driven is not desired or possible. You can test the \`WorkingStatus\` of the control to see when its idle, searching, waiting or starting.
+A simple \`Status\` enum is available for use cases where Event Driven is not desired or possible. You can test the \`WorkingStatus\` of the control to see when it's idle, searching, waiting or starting.
 
 ### Easy Access
 
-Easily access critical information about your Quick Match session for a simple and efficient integration with any networking HLAPI you would like. Quickly access the lobby, owner, the local user's member and much more.
+Easily access critical information about your Quick Match session for simple and efficient integration with any networking HLAPI you would like. Quickly access the lobby, owner, the local user's member and much more.
 
 ## Prefab
 
-A production ready prefab is available and configured with the features displayed above. You can see an example of this prefab in use in the [Quick Match Example](broken-reference) scene.
+A production-ready prefab is available and configured with the features displayed above.
 
 <figure><img src="../../../.gitbook/assets/image (3) (1) (5).png" alt=""><figcaption></figcaption></figure>
 
@@ -108,7 +108,7 @@ This event is invoked when the user joins or creates a lobby e.g. lets you know 
 public LobbyResponceEvent evtEnterFailed;
 ```
 
-This event is invoked when the user attempted to join an existing lobby but for some reason it failed. The event parameter will indicate what went wrong.
+This event is invoked when the user attempts to join an existing lobby but for some reason it failed. The event parameter will indicate what went wrong.
 
 ### Evt Created Failed
 
@@ -116,7 +116,7 @@ This event is invoked when the user attempted to join an existing lobby but for 
 public EResultEvent evtCreatedFailed;
 ```
 
-This event is invoked when the the user attempted to create a new lobby but for some reason it failed. The event parameter will indicate what went wrong.
+This event is invoked when the user attempts to create a new lobby but for some reason it failed. The event parameter will indicate what went wrong.
 
 ### Evt State Changed
 
@@ -124,7 +124,7 @@ This event is invoked when the the user attempted to create a new lobby but for 
 public UnityEvent evtStateChanged;
 ```
 
-This event is frequently invoked, and will trigger when any data change happens such as user's coming and going, authentication failing, etc. This can be used to drive general game logic that simply needs to know when to check the system for a change.
+This event is frequently invoked and will trigger when any data change happens such as user's coming and going, authentication failing, etc. This can be used to drive general game logic that simply needs to know when to check the system for a change.
 
 ## Fields and Attributes
 
@@ -134,7 +134,7 @@ This event is frequently invoked, and will trigger when any data change happens 
 public GameObject indelGroup;
 ```
 
-This game object is enabled when the system is \*\*NOT\*\* processing. This is useful to place a "Play Button" or similar elements in that you want to be "turned off" when the system starts processing. You can similarly use the \`Evt Process Started\` event to control you UI
+This game object is enabled when the system is \*\*NOT\*\* processing. This is useful to place a "Play Button" or similar elements in that you want to be "turned off" when the system starts processing. You can similarly use the \`Evt Process Started\` event to control your UI
 
 ### Processing Group
 
@@ -142,7 +142,7 @@ This game object is enabled when the system is \*\*NOT\*\* processing. This is u
 public GameObject processingGroup;
 ```
 
-This game object is enabled when the system \*\*IS\*\* processing. This is useful to place a "status message" object in that should be displayed when the system is working.
+This game object is enabled when the system \*\*IS\*\* processing. This is useful for placing a "status message" object in that should be displayed when the system is working.
 
 ### Update Rich Presence Group Data
 
@@ -175,7 +175,7 @@ The `SearchArguments` data type is an internal class:
 public class SearchArguments
 {
     /// <summary>
-    /// If less than or equal to 0 then we wont use the open slot filter
+    /// If less than or equal to 0 then we won't use the open slot filter
     /// </summary>
     public int slots = -1;
     public ELobbyDistanceFilter distance = ELobbyDistanceFilter.k_ELobbyDistanceFilterDefault;
@@ -188,9 +188,9 @@ public class SearchArguments
 The fields of the class are as follows
 
 * slots\
-  If less than or equal to 0 this will be ignored otherwise this will indicate the number of available slots resulting lobbies must have. For example if you wanted to find a lobby for you and 3 friends then you would provide a value of 4 in this field to return only lobbies that had 4 open slots.
+  If less than or equal to 0 this will be ignored otherwise this will indicate the number of available slots that resulting lobbies must have. For example, if you wanted to find a lobby for you and 3 friends then you would provide a value of 4 in this field to return only lobbies that had 4 open slots.
 * distance\
-  An enumerator that indicates the max alowed distance between the searching user and the members of the resulting lobbies. For more details on the values see [Valve's documentation on ELobbyDistanceFilter](https://partner.steamgames.com/doc/api/ISteamMatchmaking#ELobbyDistanceFilter), in summary
+  An enumerator that indicates the max allowed distance between the searching user and the members of the resulting lobbies. For more details on the values see [Valve's documentation on ELobbyDistanceFilter](https://partner.steamgames.com/doc/api/ISteamMatchmaking#ELobbyDistanceFilter), in summary
   * Close\
     Only in the same Valve region as this user
   * Default\
@@ -200,17 +200,17 @@ The fields of the class are as follows
   * World Wide\
     No filtering at all
 * nearValues\
-  Key value pairs that the system should search for "near by" values for. See [Valve's documentation](https://partner.steamgames.com/doc/api/ISteamMatchmaking#AddRequestLobbyListNearValueFilter) on this feature for more details. In summary this doesn't "filter out" lobbies but rather effects the sorting, the closer a lobby's metadata is to matching this value the higher it will be sorted in the resulting list. This is useful for say "Player Rank" whose min and max player rank is as near the player's actual rank as possible. To do this you could set near values of `minRank = myRank` and `maxRank = myRank` this would not exclude any lobbies in and of its self but would sort lobbies such that top results where nearest "my rank" ... this assumes minRank is the rank of the lowest ranked player in that lobby and maxRank is the rank of the highhest ranked player in that lobby
+  Key value pairs that the system should search for "nearby" values for. See [Valve's documentation](https://partner.steamgames.com/doc/api/ISteamMatchmaking#AddRequestLobbyListNearValueFilter) on this feature for more details. In summary, this doesn't "filter out" lobbies but rather effects the sorting, the closer a lobby's metadata is to matching this value the higher it will be sorted in the resulting list. This is useful for say "Player Rank" whose min and max player rank is as near the player's actual rank as possible. To do this you could set near values of `minRank = myRank` and `maxRank = myRank` this would not exclude any lobbies in and of itself but would sort lobbies such that top results were nearest "my rank" ... this assumes minRank is the rank of the lowest ranked player in that lobby and maxRank is the rank of the highest ranked player in that lobby
 * numericFilters\
   Instructs the search to perform a numeric filtering operation on these fields and can filer by the following methods
   * Equal to or Less than
   * Less than
   * Equal
   * Greater than
-  * Equal to or Greater thhan
+  * Equal to or Greater than
   * Not Equal
 * stringFilter\
-  Instructs the search to perform a string filtering operation on these fields and can be filtered by the same methods as numeric filters. Valve doesn't explain what the result of each is so test to confirm desired results.
+  Instructs the search to perform a string filtering operation on these fields which can be filtered by the same methods as numeric filters. Valve doesn't explain what the result of each is so test to confirm desired results.
 
 ### CreateArguments
 
@@ -218,7 +218,7 @@ The fields of the class are as follows
 public CreateArguments createArguments;
 ```
 
-Used by the Lobby Manager any time a lobby is created with it, this would apply to [Create ](quick-match-lobby-control.md#create)as well as [QuickMatch ](quick-match-lobby-control.md#quick-match)when no lobby is found and create on fail is set to true.
+Used by the Lobby Manager any time a lobby is created with it, this would apply to [Create ](quick-match-lobby-control.md#create)as well as [QuickMatch ](quick-match-lobby-control.md#quick-match)when no lobby is found and Create on fail is set to true.
 
 The `CreateArguments` data type is an internal class:
 
@@ -243,7 +243,7 @@ the fields of the class are as follows
 * type\
   The type of lobby to create, you can learn more about the [available types above](quick-match-lobby-control.md#lobby-types).
 * metadata\
-  Metadata fields to be set on the lobby once created. This is a simple string key and string value pairing. Metadata is what is used when "filtering" or "searching" for lobbies.
+  Metadata fields are to be set on the lobby once created. This is a simple string key and string value pairing. Metadata is what is used when "filtering" or "searching" for lobbies.
 
 ### Lobby
 
@@ -299,7 +299,7 @@ True if the local user is the owner of the managed lobby, false otherwise.
 public bool AllPlayersReady => get;
 ```
 
-True if all members of the lobby have marked them selves as ready, otherwise false.
+True if all members of the lobby have marked themselves as ready, otherwise false.
 
 ### IsPlayerReady
 
@@ -307,7 +307,7 @@ True if all members of the lobby have marked them selves as ready, otherwise fal
 public bool IsPlayerReady { get; set; }
 ```
 
-Returns true if the player has marked them self as ready on this lobby. This can be set to mark the player as ready or not on this lobby.
+Returns true if the player has marked themselves as ready on this lobby. This can be set to mark the player as ready or not on this lobby.
 
 ### Full
 
@@ -339,7 +339,7 @@ How many people are currently in this lobby if any lobby at all
 public LobbyGameServer GameServer => get;
 ```
 
-The current game server set by the owner of the lobby if any
+The current game server is set by the owner of the lobby if any
 
 ### Working Status
 
@@ -354,9 +354,9 @@ The current status of the system
 * Searching\
   If currently searching for a match
 * Waiting For Start\
-  Match found but lobby not full and session not started
+  A match found but the lobby was not full and the session not started
 * Starting\
-  Match found and lobby is now full  ... the owner should be starting up the network session
+  Match found and the lobby is now full  ... the owner should be starting up the network session
 
 ### Timer
 
