@@ -7,7 +7,7 @@ coverY: 0
 # Party Lobby Control
 
 {% hint style="success" %}
-#### Like what your seeing?
+#### Like what you are seeing?
 
 Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
@@ -16,11 +16,11 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 
 ## &#x20;Introduction
 
-Create a party [lobby ](../../../company/steam/steamworks/multiplayer/matchmaking-tools.md)and its UI fully featured including in game friend invite, chat, and more with ZERO code required.
+Create a party [lobby ](../../../company/steam/steamworks/multiplayer/matchmaking-tools.md)and its UI fully featured including in-game friend invite, chat, and more with ZERO code required.
 
 ![](<../../../.gitbook/assets/image (5) (4).png>)
 
-The Party Lobby Control is a UI behaviour component that manages a lobby representing a player party and the UI elements associated with that. This sort of "Party UI" is common in most team and  coop games such as MOBAs, Team Shooters, party games and more. One of the most typical examples of a party lobby can seen in DOTA2.
+The Party Lobby Control is a UI behaviour component that manages a lobby representing a player party and the UI elements associated with that. This sort of "Party UI" is common in most team and coop games such as MOBAs, Team Shooters, party games and more. One of the most typical examples of a party lobby can seen in DOTA2.
 
 <figure><img src="../../../.gitbook/assets/image (4) (3) (1).png" alt=""><figcaption><p>DOTA 2 home screen captured 2022-10-30 by Loden Darkstar</p></figcaption></figure>
 
@@ -31,10 +31,10 @@ The purpose of a "party lobby" also known as a "group lobby" is to gather Friend
 Party or Group type lobbies differ from Session type lobbies in that they only group a set of friends together. They do not attempt to matchmake or define the state of a "session".
 
 {% hint style="info" %}
-In this case let "session" refer to a session of game play e.g. a match, mission, race, level, etc.
+In this case let "session" refer to a session of gameplay e.g. a match, mission, race, level, etc.
 {% endhint %}
 
-Session lobbies in contrast are not typically concerned with friends so much as they are with meaningful matchmaking e.g. placing players of similar skill, near by region and similar game session preferences together in order to facilitate a timely and entertaining "session". The members in a "Party" would typically join the same "Session" lobby when looking to play a game.&#x20;
+Session lobbies in contrast are not typically concerned with friends so much as they are with meaningful matchmaking e.g. placing players of similar skill, nearby regions and similar game session preferences together in order to facilitate a timely and entertaining "session". The members in a "Party" would typically join the same "Session" lobby when looking to play a game.&#x20;
 
 For example in DOTA 2 up to 5 players can form a group/party, this is a full "team" in DOTA. When the party leader presses the "Play DOTA" button the game performs a quick match looking for a "Session" that can accommodate the party of players. When the session starts the party of players will be placed on the same team.
 
@@ -42,7 +42,7 @@ For example in DOTA 2 up to 5 players can form a group/party, this is a full "te
 
 ### Create
 
-Automatically handles create and exit of a group lobby. You can always fetch the current group lobby from the [Lobby ](../classes-and-structs/lobby-data.md)struct.
+Automatically handles the creation and exit of a group lobby. You can always fetch the current group lobby from the [Lobby ](../classes-and-structs/lobby-data.md)structure.
 
 ```csharp
 if(Lobby.GroupLobby(out Lobby groupLobby)
@@ -63,13 +63,13 @@ Display the user's avatar and the number of slots available to the party/group. 
 
 ![](<../../../.gitbook/assets/image (194).png>)
 
-The provided prefab implements the [Friend Invite Drop Down](friend-invite-dropdown.md) letting the user invite online friends with the click of a button or to type in a friend's "code" to initiate and invite.
+The provided prefab implements the [Friend Invite Drop Down](friend-invite-dropdown.md) letting the user invite online friends with the click of a button or to type in a friend's "code" to initiate an invite.
 
 ### Chat
 
 ![](<../../../.gitbook/assets/image (3) (4).png>)
 
-When a user is in a party with other player's a simple text based chat interface is displayed. The chat system is used by other tools to notify party members when they should join a specific session lobby. Heathen's session lobby controls will handle this automatically or you can do this your self by prefixing the chat message with \`\[SessionId]\` followed by the ulong id of the session lobby to join
+When a user is in a party with other player's a simple text based chat interface is displayed. The chat system is used by other tools to notify party members when they should join a specific session lobby. Heathen's session lobby controls will handle this automatically or you can do this yourself by prefixing the chat message with \`\[SessionId]\` followed by the ulong id of the session lobby to join
 
 ### Rich Presence
 
@@ -77,7 +77,7 @@ Optionally sets the \`steam\_player\_group\` and \`steam\_player\_group\_size\` 
 
 ## Prefab
 
-A production ready prefab is available and configured with the features displayed above. You can see an example of this prefab in use in the [Quick Match Example](broken-reference) scene.
+A production-ready prefab is available and configured with the features displayed above.
 
 <figure><img src="../../../.gitbook/assets/image (7) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -89,7 +89,7 @@ A production ready prefab is available and configured with the features displaye
 public LobbyDataEvent evtSessionLobbyInvite;
 ```
 
-This event is invoked when the user is invited to join a session lobby by the owner of the group lobby. For example if you are in a party with user A and user A uses Heathen's Quick Match to create or join a session you will be invited to join that session and this event will be raised.
+This event is invoked when the user is invited to join a session lobby by the owner of the group lobby. For example, if you are in a party with user A and user A uses Heathen's Quick Match to create or join a session you will be invited to join that session and this event will be raised.
 
 ### Group Lobby Invite
 
@@ -185,7 +185,7 @@ If true then the \`steam\_player\_group\` and \`steam\_player\_group\_size\` ric
 public int maxMessages;
 ```
 
-The number of message entries to keep in the chat history. The system will delete the oldest chat message from the chat log when these number is exceeded.
+The number of message entries to keep in the chat history. The system will delete the oldest chat message from the chat log when this number is exceeded.
 
 ### Chat Panel
 
@@ -193,7 +193,7 @@ The number of message entries to keep in the chat history. The system will delet
 public GameObject chatPanel;
 ```
 
-The root of the chat UI this will be enabled when the lobby as 2 or more members including the local user.
+The root of the chat UI will be enabled when the lobby has 2 or more members including the local user.
 
 ### Input Field
 
