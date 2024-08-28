@@ -35,7 +35,7 @@ Only valid for Steam Game Servers
 
 Unlocks an achievement for the specified user.
 
-You must have called [Request User Stats](broken-reference) and it needs to return successfully via its callback prior to calling this!
+You must have called [Request User Stats](request-user-stats.md) and it needs to return successfully via its callback prior to calling this!
 
 This call only modifies Steam's in-memory state and is very cheap. To submit the stats to the server you must call Store User Stats.
 
