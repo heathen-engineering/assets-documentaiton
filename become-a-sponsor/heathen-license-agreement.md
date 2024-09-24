@@ -60,7 +60,13 @@ License Agreement Copyright © 2014-2024 Heathen Engineering Limited, an Irish r
 
 5.1 You expressly understand and agree that your use of the Licensed Technology and/or any content copyright held by Heathen or otherwise obtained through Heathen is at your sole risk and that Heathen provides its Licensed Technology and other copyright held content “AS IS” and “AS AVAILABLE” without warranty of any kind, to the maximum extent permitted by applicable law. In particular, Heathen, its subsidiaries, holding companies, affiliates, licensors, and partners do not represent or warrant to you that:
 
-A. Your use of the Licensed Technology or Content will meet your requirements, B. Your use of the Licensed Technology or Content will be uninterrupted, timely, secure, or free from error, C. Any information obtained by you as a result of your use of the Licensed Technology or Content will be accurate or reliable, and D. That defects in the operation or functionality of any Licensed Technology or Content provided to you as part of the agreement will be corrected.
+A. Your use of the Licensed Technology or Content will meet your requirements,&#x20;
+
+B. Your use of the Licensed Technology or Content will be uninterrupted, timely, secure, or free from error,&#x20;
+
+C. Any information obtained by you as a result of your use of the Licensed Technology or Content will be accurate or reliable,&#x20;
+
+and D. That defects in the operation or functionality of any Licensed Technology or Content provided to you as part of the agreement will be corrected.
 
 5.2 Your use of Heathen’s Licensed Technology or Content is at your discretion and risk, and you are solely responsible for any damage to your computer systems, or other device, or loss of data that results from such use.
 
