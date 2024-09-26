@@ -60,7 +60,7 @@ In order you will need to capitalize on each of the following
 
 From Discovery Queue front page and listing become things your game will get and those will all drive further discovery and visibility. By listing, we mean ranking in the various lists Steam has like Top Sale, Most Popular, etc.
 
-## Store Page
+## [Store Page](../company/steam/store-page.md)
 
 ### When?
 
@@ -104,10 +104,10 @@ Unless you're a professional small studio with enough staff to deliver on this V
 
 Early Access is a "double-edged sword" If done well it can really set your game up for success ... it is however EXCEEDINGLY difficult to do well and it requires significant staff and management to do well something most indies do not have.
 
-## Playtest
+## [Playtest](playtest.md)
 
 This can be useful for some games though is more effective as a testing tool than a marketing tool. That said Valve and some others have used Playtest to great effect as a marketing ploy. It really depends on your game. If your game has a "hook" that needs to be played to experience then absolutely... though I would argue Demo is a better channel than Playtest for most use cases but Playtest for MOBA, and other event-based or social-based games can really drive early community development.
 
-## Alpha / Beta
+## [Alpha / Beta](branches.md)
 
 Not really ideal for marketing and launch prep but great for testing and technical. If you want to "test" publicly as a marketing ploy ... look to Playtest and Demo ... if you want controlled full-bodied testing ... look to Branches (Alpha / Beta)
