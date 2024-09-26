@@ -94,6 +94,7 @@
 
 * [☝️ Quick Start](company/steam/quick-start.md)
 * [🏆 Achievements](steam/achievements.md)
+* [🌳 Branches](steam/branches.md)
 * [🗣️ Community Hub](company/steam/community-hub.md)
 * [⬆️ Uploading to Steam](steam/uploading-to-steam.md)
 * [☁️ Cloud Save](steam/cloud-save.md)
@@ -123,6 +124,7 @@
     * [🐧 Setup Linux](company/steam/steamworks/multiplayer/game-server-browser/setup-linux.md)
   * [🗣️ Terminology](company/steam/steamworks/multiplayer/terminology.md)
 * [🤹 Multi-Platform Project](company/steam/steamworks/multi-platform-project.md)
+* [🧪 Playtest](steam/playtest.md)
 * [🛋️ Remote Play](steam/remote-play.md)
 * [👀 Reviews](company/steam/reviews.md)
 * [🏃 Running a Build](company/steam/steamworks/running-a-build.md)
