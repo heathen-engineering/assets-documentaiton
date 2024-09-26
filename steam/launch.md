@@ -19,7 +19,7 @@ This article is a loose collection of considerations and tips to account for whe
 {% hint style="info" %}
 For the sake of this article; "Launch" doesn't just mean release:\
 \
-"Launch" means you have made the existence of this thing public, be that a store page, a blog, a product they can buy, a Kickstarterit's ... doesn't matter\
+"Launch" means you have made the existence of this thing public, be that a store page, a blog, a product they can buy, a Kickstarter ... doesn't matter\
 \
 If people can publicly talk about your product ... it is "launched" and there are some things you should consider/do.
 {% endhint %}
