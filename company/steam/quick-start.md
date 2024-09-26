@@ -39,7 +39,7 @@ You can test some features of Steam API using the test application "Spacewars" w
 
 Having said that you can't do anything meaningful with the test app, it exists as a teaching tool. To create the stats, achievements, leaderboard, workshop, etc. for your game you will require an App ID and we do recommend you do this as soon as you are sure you want to release your game on Steam ... no reason to wait.
 
-## Steamworks (aka) Steam API
+## Steamworks SDK - aka Steam API
 
 Once you're all set up as a Steam Developer and have your App ID your next step should be to get familiar with [Steamworks](steamworks/) and what it has to offer.&#x20;
 
@@ -56,7 +56,7 @@ Heathen's Toolkit for Steamworks SDK is the best tool for Valve's Steamworks SDK
 
 <table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Complete</td><td><a href="https://github.com/sponsors/heathen-engineering">GitHub | Patreon</a></td><td><a href="https://www.unrealengine.com/marketplace/en-US/product/ad658ddf5c434478acb95f9091ea279c">Marketplace</a></td><td><a href="../../.gitbook/assets/UnrealCardCover.png">UnrealCardCover.png</a></td><td><a href="../../toolkit-for-steamworks/unreal/">unreal</a></td></tr><tr><td>Complete | Foundation</td><td><a href="https://github.com/sponsors/heathen-engineering">Gitub | Patreon</a></td><td><a href="https://assetstore.unity.com/packages/tools/integration/steam-api-steamworks-complete-246652">Asset Store</a></td><td><a href="../../.gitbook/assets/UnityCardCover.png">UnityCardCover.png</a></td><td><a href="../../toolkit-for-steamworks/unity/">unity</a></td></tr><tr><td>Foundation</td><td><a href="https://github.com/heathen-engineering/SteamworksFoundation">GitHub</a></td><td></td><td><a href="../../.gitbook/assets/GodotCardCover.png">GodotCardCover.png</a></td><td><a href="broken-reference">Broken link</a></td></tr></tbody></table>
 
-## Unlearning Bad Habits
+### Unlearning Bad Habits
 
 Unfortunately, there is a lot of just bad samples and example code out there, especially around Steamworks / Steam API for Unity. Even Unreal's own built-in Online Subsystem Steam and Steam Sockets plugins are very out-of-date and make some odd uses of the API that do not align with "good practice" as defined by Valve. Here are some common things you might have picked up or learned that you should throw out right now.
 
@@ -107,6 +107,18 @@ SteamManager should not be present much less used in any project. It's a learnin
 {% endhint %}
 
 The functionality that SteamManager provided in its original context is handled by Heathen's systems. We provide both a free lite version and a paid full-featured version [for Unity](../../toolkit-for-steamworks/unity/).
+
+## Comming Soon
+
+Once you have your app you can start setting up your Store Page. With the store page ready and approved you have the option to make it public before your game is ready for release and can set a "Release Date". You can set this date to be a Year, Quarter, Month or even a specific date and time.
+
+{% hint style="info" %}
+The release date you set will impact when/if your game shows up on the "Comming Soon" lists in Steam.\
+\
+You can change the date at any time but DO NOT update the date frequently in an attempt to remain high on that list or you will be banned.\
+\
+You should however make sure you list your game as coming soon as soon as you can. You want to try and build up a few thousand wishlists before your game goes live.
+{% endhint %}
 
 ## Getting Help
 

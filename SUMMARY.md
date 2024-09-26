@@ -107,6 +107,7 @@
   * [🛠️ Item Definition Tools](steam/inventory/item-definition-tools.md)
   * [💸 Microtransactions](steam/inventory/microtransactions.md)
   * [🎁 Promo Items](company/steam/steamworks/inventory/promo-items.md)
+* [🚢 Launch](steam/launch.md)
 * [🥇 Leaderboards](company/steam/steamworks/leaderboard-object/README.md)
   * [🗣️ Advanced Profiles](company/steam/steamworks/leaderboard-object/advanced-profiles.md)
 * [🎮 Multiplayer](company/steam/steamworks/multiplayer/README.md)

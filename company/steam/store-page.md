@@ -65,7 +65,7 @@ Choosing a good title isn't as easy as it sounds and is usually harder for you t
 
 ### Short Description
 
-This is the first and often the only thing the player "reads" before deciding to buy or pass up your game. It has a 250-character limit so "concise" is critical. Again get feedback from outside the development team as to what works best here. In particular, this is the sort of thing a professional marketing team will accel at ... so use that marketing partner.
+This is the first and often the only thing the player "reads" before deciding to buy or pass up your game. It has a 250-character limit so "concise" is critical. Again get feedback from outside the development team as to what works best here. In particular, this is the sort of thing a professional marketing team will excel at ... so use that marketing partner.
 
 Key things to remember
 
@@ -87,7 +87,7 @@ We like this for our games as it keeps the barrier to entry at zero and we can e
 
 #### Pay to Play
 
-The traditional model, here you have a sticker price and that is that.
+In the traditional model, here you have a sticker price and that is that.
 
 This is the simplest to get right since you only have 1 value to figure out.
 
@@ -139,7 +139,8 @@ Video Types
 
 * Teaser\
   Length - Few seconds, less than 1 min\
-  This is a usually very short video designed to hook the viewers' attention and encourage them to learn more. Not useful on your Steam Store page as by the time they get to your videos they have already been hooked. This can be very useful for external marketing efforts.
+  This is a usually very short video designed to hook the viewers' attention and encourage them to learn more. Not useful on your Steam Store page post release as by the time they get to your videos they have already been hooked. This can be very useful for external marketing efforts.\
+  <mark style="background-color:yellow;">PS: Pre-release it is often all you have so yes put it on your page so you can launch your page.</mark>
 * Trailer\
   Length - Minute or two\
   This can be thought of a bit like a video version of your "Short Description" It should inspire the player to go play the game yet be short and focus on grabbing the player.
