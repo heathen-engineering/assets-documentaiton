@@ -19,7 +19,7 @@ This article is a loose collection of considerations and tips to account for whe
 {% hint style="info" %}
 For the sake of this article; "Launch" doesn't just mean release:\
 \
-"Launch" means you have made the existence of this thing public, be that a store page, a blog, a product they can buy a kickstarter ... doesn't matter\
+"Launch" means you have made the existence of this thing public, be that a store page, a blog, a product they can buy, a Kickstarterit's ... doesn't matter\
 \
 If people can publicly talk about your product ... it is "launched" and there are some things you should consider/do.
 {% endhint %}
@@ -30,7 +30,7 @@ So let's start with this finger in the air: Have "more than" 7,000 wishlists by 
 
 ### Why?
 
-In reality, its not the number of wishlists that matters but your "rank" ... for upcoming games (1 week out) Steam ranks those games by wishlist count. You want to have enough to be ranked, and you want that rank to be as high as you can so you can get your game on the "Popular Upcoming" list.
+In reality, it's not the number of wishlists that matters but your "rank" ... for upcoming games (1 week out) Steam ranks those games by wishlist count. You want to have enough to be ranked, and you want that rank to be as high as you can so you can get your game on the "Popular Upcoming" list.
 
 7,000 is simply a nice achievable number that should usually be enough to get you ranked and thus on that list.
 
