@@ -86,11 +86,13 @@ We have a whole article dedicated to the Steam [Store Page](../company/steam/sto
 
 ## Coming Soon
 
-Once you have your store page live you NEED to set a release date, your date should be to the quarter e.g. Q3 2020 or whatever.  As soon as you can RELIABLY put a date down ... do it!
+Once you have your store page live you NEED to set a release date. Try not to be vague, the goal here is to get your game listed on the Popular Upcoming ... to do that Steam needs to know when the game is "upcoming".
 
 ### Why?
 
-Steam has "Popular Upcoming" lists and it shows these lists A LOT to players. You get on these lists based on your release date and wishlist. You want to be on this list long enough to earn enough wishlist that your game can convert well enough to hit the "New and Trending"&#x20;
+Steam has "Popular Upcoming" lists and it shows these lists A LOT to players. You get on these lists based on your release date and wishlist. You want to be on this list long enough to earn enough wishlist that your game can convert well enough to hit the "New and Trending".
+
+To end up on the list, you first need to have a solid number of wishlists and your game needs to be "upcoming". While Steam doesn't tell us how close to release a game has to be in order to be considered for the list, it seems to be about a week forward as of the time of this writing (Sep 2024).
 
 ## Demo
 

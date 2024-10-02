@@ -17,7 +17,7 @@ These articles are made possible by our [GitHub Sponsors](../../../become-a-spon
 ## Introduction
 
 ```csharp
-public class ItemDefinition : ScriptableObject
+public class ItemDefinitionObject : ScriptableObject
 ```
 
 Represents a Steam Inventory Item of any type. This object contains all the schema data for any possible item. The specifics of each field are defined in [Steam's Inventory Schema documentaiton](https://partner.steamgames.com/doc/features/inventory/schema).
