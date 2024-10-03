@@ -1,5 +1,5 @@
 ---
-description: Setting up and using Steam Input in your game
+description: Preparing for and launching a product on Steam
 ---
 
 # 🚢 Launch
