@@ -28,21 +28,23 @@ Let's get this out of the way first, there is NO benefit to early access. There 
 
 ### Huge Workload
 
-This can work for larger AA studios that have built out the mechanics and systems of a game e.g. are "Feature Complete" or very near it and are just fleshing out the content. For a team that large doing monthly updates of significant content while also managing a community is achievable. For a solo indie, small team, in experienced team or even a AA with a tight budget or headcount this usually spells disaster.
+This can work for larger AA studios that have built out the mechanics and systems of a game e.g. are "Feature Complete" or very near it and are just fleshing out the content. For a team that large doing monthly updates of significant content while also managing a community is achievable. For a solo indie, a small team, an inexperienced team or even an AA with a tight budget or headcount this usually spells disaster.
 
 ### Negative Stigma
 
-Add to this that Early Access games have a stigma around them especially from unknown developers. "Cash Grab" and "Scam" are flung around as default and a few have even tried litigation (law suits) despite it beign very clearly stated that its Early Access and the game may never be completed or launched much less updated in a timely manner.
+Add to this that Early Access games have a stigma around them especially from unknown developers. "Cash Grab" and "Scam" are flung around as default and a few have even tried litigation (lawsuits) despite it being very clearly stated that it's Early Access and the game may never be completed or launched much less updated promptly.
 
-More over the negative reviews that you will get during this period are part of the main game and remain post-release. Steam may filter them and label them but it sets the tone and a negative tone is exceedingly difficult to reverse though not impossible.
+The negative reviews you will get during this period are part of the main game and remain post-release. Steam may filter them and label them but it sets the tone and a negative tone is exceedingly difficult to reverse though not impossible.
 
 ### Attention Economy
 
-The reality of it is, the game like all media is an attention economy. That is to find success you need to earn the attention of enough people to make a profit. Like with all things attention is highest when its new and new to a user is when it's first accessible... for an early access game this means day 1 Early Access.
+The reality of it is, that game like all media is an attention economy. That is to find success you need to earn the attention of enough people to make a profit. Like with all things attention is highest when its new and new to a user is when it's first accessible... for an early access game this means day 1 Early Access.
 
 So your most "hype" period is when your game is at its worst and least complete and polished. You then have the impossible task of maintaining attention while polishing the game. Already polished major games struggle to maintain attention more than a few months with a polished release experience EA games struggle even more.&#x20;
 
 Sure your supper fans will love it and eat it up but the average gamer will lose interest and move on before your game ever releases its already old news to them. And for your supper fans, they would have been just as happy with a Playtest or Alpha/Beta as they are with an Early Access.
+
+The net result is "Dead Game" is the community view by the time your game hits its v1.0 release.
 
 ## How to Make it Work
 
@@ -74,7 +76,7 @@ This is a MUST the game MUST be feature complete, this doesn't mean releasing al
 
 ### Limited Release
 
-Disable features and release a build that focuses on a specific area of your game to be tested. This means disable levels, classes, modes whatever it is your game does for content organization and reduce the build to a "slice" of your game to be tested.
+Disable features and release a build that focuses on a specific area of your game to be tested. This means disabling levels, classes, modes whatever it is your game does for content organization and reducing the build to a "slice" of your game to be tested.
 
 ### FREQUENT Updates
 
@@ -82,6 +84,6 @@ You need to be releasing patches on a regular schedule, one you can sustain inde
 
 ### Events
 
-You MUST keep players engaged, this means frequent updates, with periodic events such as Monthly or Quarterly major patches, community events and streams and really anything you can manage to keep the player base highly engaged.
+You MUST keep players engaged, this means frequent updates, with periodic events such as Monthly or Quarterly major patches, community events and streams and anything you can manage to keep the player base highly engaged.
 
-Games are notorious for a "long tail" this means they get there best attention when they are truly new, immediately after becoming publicly accessible. Your EArly Access is that point so you are starting your down slope before your game is complete. This means you need to put extra effort into keeping the spectacle that is your product fresh for the duration of your Early Access else there won't be any way to hear about your next big patch that makes everything all better.
+Games are notorious for a "long tail" This means they get their best attention when they are truly new, immediately after becoming publicly accessible. Your Early Access is that point so you are starting your downslope before your game is complete. This means you need to put extra effort into keeping the spectacle that is your product fresh for the duration of your Early Access else there won't be any way to hear about your next big patch that makes everything all better.
