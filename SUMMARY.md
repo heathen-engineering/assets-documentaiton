@@ -101,7 +101,7 @@
 * [🆔 CSteamID](steam/csteamid.md)
 * [🔎 Discovery Queue](company/steam/discovery-queue.md)
 * [🕹️ Downloadable Content](steam/downloadable-content-object.md)
-* [🚫 Early Access](steam/downloadable-content-object-1.md)
+* [🚫 Early Access](steam/early-access.md)
 * [🖱️ Input](steam/input.md)
 * [📦 Inventory](company/steam/steamworks/inventory/README.md)
   * [🔨 Crafting System](steam/inventory/crafting-system.md)

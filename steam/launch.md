@@ -100,7 +100,7 @@ Yes, right now if you can.
 
 You require a demo in order to participate in Steam Next Fest and most festivals really. So having a demo is just a basic requirement to avail of those features. Even if your game is going to be a free-2-play and thus has no use for a post-release Demo ... pre-release demo is a great way to build initial interest and wishlists.
 
-## Early Access
+## [Early Access](early-access.md)
 
 Unless you're a professional small studio with enough staff to deliver on this VERY well ... don't do it.
 
