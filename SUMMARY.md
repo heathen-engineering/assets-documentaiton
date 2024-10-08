@@ -149,6 +149,7 @@
 ## Toolkit for Steamworks
 
 * [Introduction](toolkit-for-steamworks/steamworks.md)
+* [Store Upgrades](toolkit-for-steamworks/store-upgrades.md)
 * [F.A.Q](toolkit-for-steamworks/f.a.q.md)
 * [Unity](toolkit-for-steamworks/unity/README.md)
   * [Installation](toolkit-for-steamworks/unity/installation/README.md)
