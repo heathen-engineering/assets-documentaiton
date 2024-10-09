@@ -1,7 +1,3 @@
----
-description: Managing a multi-platform build
----
-
 # 🧪 Playtest
 
 {% hint style="success" %}
