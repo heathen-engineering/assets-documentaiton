@@ -10,7 +10,7 @@ Heathen Group was founded in 2015 as Heathen Engineering Limited by a small team
 
 Efforts aim to enable ourselves and our peers to develop a more consumer-centric game industry. This requires a high level of technical quality, a required depth of care in user experience and general design, and importantly fair, ethical, and sustainable monetization systems and practices.
 
-Heathen has a particular focus on game software development and related technologies, though its pedigree is largely in the enterprise software sector. Heathen’s unique blend of experiences and understanding straddles multi-media entertainment and enterprise-level business and industry with many years of experience in both worlds.
+Heathen has a particular focus on game software development and related technologies, though its pedigree is largely in the enterprise software sector. Heathen’s unique blend of experiences and understanding straddles multi-media entertainment and enterprise-level business and industry with decades of experience in both worlds.
 
 ## Our Approach
 

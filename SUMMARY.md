@@ -1,11 +1,11 @@
 # Table of contents
 
 * [📚 Knowledge Base](README.md)
+  * [Getting to know us](knowledge-base/getting-to-know-us.md)
+* [Buy](buy/README.md)
+  * [Heathen License Agreement](buy/heathen-license-agreement.md)
 * [😍 Become a Sponsor](become-a-sponsor/README.md)
-  * [Getting to know us](become-a-sponsor/getting-to-know-us.md)
   * [Licensing](become-a-sponsor/licensing.md)
-  * [Heathen License Agreement](become-a-sponsor/heathen-license-agreement.md)
-* [Unity Asset Refund Policy](extended-refund-policy.md)
 
 ## General <a href="#guides" id="guides"></a>
 
@@ -152,6 +152,7 @@
 * [Store Upgrades](toolkit-for-steamworks/store-upgrades.md)
 * [F.A.Q](toolkit-for-steamworks/f.a.q.md)
 * [Unity](toolkit-for-steamworks/unity/README.md)
+  * [Unity Asset Refund Policy](toolkit-for-steamworks/unity/extended-refund-policy.md)
   * [Installation](toolkit-for-steamworks/unity/installation/README.md)
     * [Networking Integrations](toolkit-for-steamworks/unity/installation/networking-integrations.md)
     * [Troubleshooting](toolkit-for-steamworks/unity/installation/troubleshooting.md)
