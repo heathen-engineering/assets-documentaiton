@@ -35,11 +35,39 @@ These articles are made possible by our [GitHub Sponsors](../become-a-sponsor/) 
 
 {% embed url="https://www.youtube.com/watch?v=6ujmZI1qUYI" %}
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Complete</td><td><a href="https://github.com/sponsors/heathen-engineering">GitHub | Patreon</a></td><td><a href="https://www.unrealengine.com/marketplace/en-US/product/ad658ddf5c434478acb95f9091ea279c">Marketplace</a></td><td><a href="../.gitbook/assets/UnrealCardCover.png">UnrealCardCover.png</a></td><td><a href="unreal/">unreal</a></td></tr><tr><td>Complete | Foundation</td><td><a href="https://github.com/sponsors/heathen-engineering">Gitub | Patreon</a></td><td><a href="https://assetstore.unity.com/packages/tools/integration/steam-api-steamworks-complete-246652">Asset Store</a></td><td><a href="../.gitbook/assets/UnityCardCover.png">UnityCardCover.png</a></td><td><a href="unity/">unity</a></td></tr><tr><td>Foundation</td><td><a href="https://github.com/heathen-engineering/SteamworksFoundation">GitHub</a></td><td></td><td><a href="../.gitbook/assets/GodotCardCover.png">GodotCardCover.png</a></td><td><a href="broken-reference">Broken link</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Complete</td><td><a href="https://github.com/sponsors/heathen-engineering">GitHub | Patreon</a> $15</td><td><a href="https://www.unrealengine.com/marketplace/en-US/product/ad658ddf5c434478acb95f9091ea279c">FAB</a> $75</td><td></td><td><a href="../.gitbook/assets/UnrealCardCover.png">UnrealCardCover.png</a></td><td><a href="unreal/">unreal</a></td></tr><tr><td>Complete | Foundation</td><td><a href="https://github.com/sponsors/heathen-engineering">Gitub | Patreon</a> $15</td><td><a href="https://www.unrealengine.com/marketplace/en-US/product/ad658ddf5c434478acb95f9091ea279c">FAB</a> $75</td><td><a href="https://assetstore.unity.com/packages/tools/integration/steam-api-steamworks-complete-246652">Asset Store</a> $75</td><td><a href="../.gitbook/assets/UnityCardCover.png">UnityCardCover.png</a></td><td><a href="unity/">unity</a></td></tr><tr><td>Foundation</td><td><a href="https://github.com/heathen-engineering/SteamworksFoundation">GitHub</a> (Free)</td><td></td><td></td><td><a href="../.gitbook/assets/GodotCardCover.png">GodotCardCover.png</a></td><td><a href="broken-reference">Broken link</a></td></tr></tbody></table>
 
 ### More than just another API wrapper!
 
 Heathen's Toolkit is a robust kit of editor tools and extensions, proven game systems and extensive guides and articles that cover not just every function & feature of the plugin but go beyond into guides & articles on every facet of being a Steam Developer and Game Developer in general. This is all supported by our team of passionate engineers & our community of thousands of game developers who have shipped hundreds of games on Steam.
+
+### GitHub | Patreon vs FAB | Asset Store
+
+In all cases the license you get is perpetual, which means its yours to keep rather you ever update, upgrade, subscribe, etc. again. We DO NOT take or end your license.
+
+#### GitHub | Patreon
+
+* Perpetual License\
+  This means you keep everything you have downloaded and the license to use it. Even when you cancel you can keep using it for commercial projects and keep getting support in the community
+* Site Based License\
+  This means your team, contractors, etc. can all work under you for no additional cost
+* All Access\
+  This means you have a license to all of Heathen's tools for all engines
+* Updates\
+  Instant updates while you are subscribed (monthly/yearly) your subscription is getting access to instant updates. There is no additional update/upgrade fee as it is a subscription model.
+* Issue and Feedback Tracking \
+  While subscribed you have access to our repository and everything that includes e.g. feedback, issues, source contribution, instant updates, full source history, etc.
+
+#### Marketplace | Fab | Asset Store
+
+* Perpetual License\
+  Major updates are released yearly however this DOES NOT end your license or ability to use prior versions. All licenses are perpetual, upgrades simply give access to the next year's update cycle.
+* Per User License\
+  Each store defines its own "standard license" and in all cases, it is a per-user license meaning each person working on your project must buy their own license.
+* Single Toolkit\
+  Stores sale you a license to each toolkit individually, so you would be purchasing a license for a single toolkit on a single engine. FAB is the exception, it is a single toolkit but all engines.
+* Updates\
+  What you purchase in a store is that year's worth of updates. When the next year's version releases you will have an 80% discount on the base price but you will have to pay for the next cycle of updates. It is not Free-Lifetime updates
 
 ## Key Features
 
