@@ -199,7 +199,7 @@ Each store is its own walled garden operated by that platform (Epic's Unreal Mar
 We cannot grant you access to an asset on either store for any reason but we especially wouldn't be permitted to grant you a license on Unreal from Unity Asset Store or vice versa ... they are competitors.
 
 If you want access to our asset for any engine then you want[ GitHub Sponsor](../become-a-sponsor/).\
-GitHub Sponsors (or Patreon) have access to all of our assets for all engines, including tools and code that we do not publish on the asset stores. We control the license terms in that case and we do so via a [Site Based license](../buy/heathen-license-agreement.md).&#x20;
+GitHub Sponsors (or Patreon) have access to all of our assets for all engines, including tools and code that we do not publish on the asset stores. We control the license terms in that case and we do so via a [Site Based license](../where-to-buy/heathen-license-agreement.md).&#x20;
 
 ## From a store can I get access to GitHub?
 

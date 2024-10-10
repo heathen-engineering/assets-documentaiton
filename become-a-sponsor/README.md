@@ -4,7 +4,7 @@ cover: ../.gitbook/assets/1920x384 DoMore Banner (1).png
 coverY: 0
 ---
 
-# 😍 Become a Sponsor
+# Become a Sponsor
 
 ## [GitHub Sponsor](https://github.com/sponsors/heathen-engineering)
 
@@ -16,7 +16,7 @@ Becoming a [sponsor of Heathen on GitHub](https://github.com/sponsors/heathen-en
 Sponsoring Heathen at the $15 Monthly (or greater 🤪) [GitHub Sponsor](https://github.com/sponsors/heathen-engineering) tier is the best way to get all of our great assets.
 
 \
-You can cancel your subscription at any time and keep using the assets you installed. Our [license](../buy/heathen-license-agreement.md) **does not** expire when you cancel your subscription.\
+You can cancel your subscription at any time and keep using the assets you installed. Our [license](../where-to-buy/heathen-license-agreement.md) **does not** expire when you cancel your subscription.\
 \
 Cancelling your subscription only removes your ability to access the Source Repository so if later you want or need updates you can simply sub for another month at your leisure.
 {% endhint %}
@@ -26,7 +26,7 @@ Cancelling your subscription only removes your ability to access the Source Repo
 {% embed url="https://github.com/sponsors/heathen-engineering" %}
 
 {% hint style="success" %}
-You can cancel your subscription at any time and keep using the assets you installed. Our [license](../buy/heathen-license-agreement.md) **does not** expire when you cancel your subscription.\
+You can cancel your subscription at any time and keep using the assets you installed. Our [license](../where-to-buy/heathen-license-agreement.md) **does not** expire when you cancel your subscription.\
 \
 Cancelling your subscription only removes your ability to access the Source Repository so if later you want or need updates you can simply sub for another month at your leisure.
 {% endhint %}
@@ -69,4 +69,4 @@ At current the following are present
 
 ### The License
 
-When you sponsor you gain the license documented [here](../buy/heathen-license-agreement.md), and when you end your subscription you still have whatever you downloaded and yes the [license](../buy/heathen-license-agreement.md) to go with it. You can re-sub when you need to catch up on updates or get that sweet sweet priority support … or maybe you just want to show your support for Heathen.
+When you sponsor you gain the license documented [here](../where-to-buy/heathen-license-agreement.md), and when you end your subscription you still have whatever you downloaded and yes the [license](../where-to-buy/heathen-license-agreement.md) to go with it. You can re-sub when you need to catch up on updates or get that sweet sweet priority support … or maybe you just want to show your support for Heathen.

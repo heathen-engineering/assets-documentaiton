@@ -1,10 +1,10 @@
 # Table of contents
 
-* [📚 Knowledge Base](README.md)
+* [Knowledge Base](README.md)
   * [Getting to know us](knowledge-base/getting-to-know-us.md)
-* [Buy](buy/README.md)
-  * [Heathen License Agreement](buy/heathen-license-agreement.md)
-* [😍 Become a Sponsor](become-a-sponsor/README.md)
+* [Where to Buy](where-to-buy/README.md)
+  * [Heathen License Agreement](where-to-buy/heathen-license-agreement.md)
+* [Become a Sponsor](become-a-sponsor/README.md)
   * [Licensing](become-a-sponsor/licensing.md)
 
 ## General <a href="#guides" id="guides"></a>

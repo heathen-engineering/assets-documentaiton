@@ -13,7 +13,7 @@ layout:
     visible: true
 ---
 
-# 📚 Knowledge Base
+# Knowledge Base
 
 ## Welcome
 
