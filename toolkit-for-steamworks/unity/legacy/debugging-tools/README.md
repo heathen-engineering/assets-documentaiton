@@ -1,5 +1,5 @@
 ---
-cover: ../../../.gitbook/assets/Unity Banner.jpg
+cover: ../../../../.gitbook/assets/Unity Banner.jpg
 coverY: 0
 layout:
   cover:
@@ -22,14 +22,14 @@ layout:
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../../become-a-sponsor/) ... become a sponsor today!
 {% endhint %}
 
 ## Enable Debugging
 
-![Toggle this on](<../../../.gitbook/assets/image (3) (1) (3) (1) (1).png>)
+![Toggle this on](<../../../../.gitbook/assets/image (3) (1) (3) (1) (1).png>)
 
 {% hint style="info" %}
 The Steamworks Inspector requires the use of Steamworks Behaviour for the time being.\
@@ -49,7 +49,7 @@ To Access the inspector simply open the **Window > Steamworks Inspector** menu.
 
 or
 
-![Click the button in Steam Settings](<../../../.gitbook/assets/image (5) (3).png>)
+![Click the button in Steam Settings](<../../../../.gitbook/assets/image (5) (3).png>)
 
 {% hint style="warning" %}
 #### IMPORTANT
@@ -65,7 +65,7 @@ The Home page of the inspector displays core values for your user and the app it
 4. Is the steam\_appid.txt the same as the Listed App ID
 5. Is the displayed user me / who I expect it to be
 
-![](<../../../.gitbook/assets/image (151) (1).png>)
+![](<../../../../.gitbook/assets/image (151) (1).png>)
 
 If you answered no to any of the above questions your issue is on step 1. That is you are not configured correctly to initialize Steam and or you do not have the Steam client up and running with a valid user logged in.
 
@@ -100,19 +100,19 @@ This is the App ID that is currently recorded in the steam\_appid.txt file
 
 ### Inspecting Stats
 
-![](<../../../.gitbook/assets/image (173) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (173) (1) (1).png>)
 
 You can use the Stats tab to view and update the value of all registered stats
 
 ### Inspecting Achievements
 
-![](<../../../.gitbook/assets/image (179) (1) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (179) (1) (1) (1) (1).png>)
 
 You can use the Achievements tab to view and unlock/reset all registered achievements
 
 ### Inspecting Leaderboards
 
-![](<../../../.gitbook/assets/image (170) (1) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (170) (1) (1) (1) (1).png>)
 
 You can use the Leaderboard's tab to view your score and rank on all registered leaderboards. Leaderboards while one of the simplest aspects of Steam API are also one of the more fragile aspects.
 
@@ -128,18 +128,18 @@ If you need to repair a board that is misbehaving you will need to contact Valve
 
 ### Inspecting Downloadable Content
 
-![](<../../../.gitbook/assets/image (181) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (181) (1) (1) (1).png>)
 
 You can view the subscription status of all DLC in the DLC tab
 
 ### Inspecting Inventory
 
-![](<../../../.gitbook/assets/image (164) (1) (1) (1) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (164) (1) (1) (1) (1) (1) (1).png>)
 
 The inventory tab will display all the items registered to your game and provides tools for clearing and granting each item
 
 ### Inspecting Lobbies
 
-![](<../../../.gitbook/assets/image (185) (1).png>)
+![](<../../../../.gitbook/assets/image (185) (1).png>)
 
 The lobbies tab will populate a sub-page for each detected lobby and will display the list of members and the lobby's metadata.

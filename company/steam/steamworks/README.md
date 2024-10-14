@@ -61,17 +61,17 @@ With Toolkit for Steamworks, you can access and leverage every aspect of Steamwo
 
 You will need to include the Steam Shared Module. This is Unreal's built-in Third Party Engine Plugin that makes the Steamworks SDK available to your project. Sadly Unreal's built-in tools for Steamworks are very lacking so you will be using this from C++ as a raw API ... or you will want to use [Heathen's Toolkit for Steamworks](../../../toolkit-for-steamworks/unreal/) as talked about above.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Initialize
 
 ### Unity
 
-#### [Toolkit for Steamworks SDK](../../../toolkit-for-steamworks/unity/quick-start-guide/)
+#### [Toolkit for Steamworks SDK](../../../toolkit-for-steamworks/unity/legacy/quick-start-guide/)
 
 Our tools are built to support everyone, hobbyists, amateurs, pros, veteran engineers with decades of experience... and everything in between.
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3>Component</h3></td><td><ul><li>Zero Code</li></ul></td><td><a href="../../../.gitbook/assets/Screenshot 2023-01-30 111452.png">Screenshot 2023-01-30 111452.png</a></td><td><a href="../../../toolkit-for-steamworks/unity/quick-start-guide/gameobject-initialization.md">gameobject-initialization.md</a></td></tr><tr><td><h3>Object</h3></td><td><ul><li>Doesn't require a GameObject</li><li>Single line of code</li></ul></td><td><a href="../../../.gitbook/assets/Screenshot 2023-01-30 111537.png">Screenshot 2023-01-30 111537.png</a></td><td><a href="../../../toolkit-for-steamworks/unity/quick-start-guide/scriptableobject-initialization.md">scriptableobject-initialization.md</a></td></tr><tr><td><h3>API</h3></td><td><ul><li>Doesn't require a GameObject</li><li>No ScriptableObject</li><li>Pure C#</li></ul></td><td><a href="../../../.gitbook/assets/Screenshot 2023-01-30 111633.png">Screenshot 2023-01-30 111633.png</a></td><td><a href="../../../toolkit-for-steamworks/unity/quick-start-guide/api-initialization.md">api-initialization.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3>Component</h3></td><td><ul><li>Zero Code</li></ul></td><td><a href="../../../.gitbook/assets/Screenshot 2023-01-30 111452.png">Screenshot 2023-01-30 111452.png</a></td><td><a href="../../../toolkit-for-steamworks/unity/legacy/quick-start-guide/gameobject-initialization.md">gameobject-initialization.md</a></td></tr><tr><td><h3>Object</h3></td><td><ul><li>Doesn't require a GameObject</li><li>Single line of code</li></ul></td><td><a href="../../../.gitbook/assets/Screenshot 2023-01-30 111537.png">Screenshot 2023-01-30 111537.png</a></td><td><a href="../../../toolkit-for-steamworks/unity/legacy/quick-start-guide/scriptableobject-initialization.md">scriptableobject-initialization.md</a></td></tr><tr><td><h3>API</h3></td><td><ul><li>Doesn't require a GameObject</li><li>No ScriptableObject</li><li>Pure C#</li></ul></td><td><a href="../../../.gitbook/assets/Screenshot 2023-01-30 111633.png">Screenshot 2023-01-30 111633.png</a></td><td><a href="../../../toolkit-for-steamworks/unity/legacy/quick-start-guide/api-initialization.md">api-initialization.md</a></td></tr></tbody></table>
 
 #### Manual
 

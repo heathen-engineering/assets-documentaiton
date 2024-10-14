@@ -66,7 +66,7 @@ public static bool API.App.Initalized => get;
 
 ### Initialize
 
-Initializes the Steam API for client processing. If your using [SteamSettings](../quick-start-guide/scriptableobject-initialization.md) or [SteamworksBehaviour](../quick-start-guide/gameobject-initialization.md) this is done for you. You should only call this if you are not using [SteamSettings.Initialize](../classes-and-structs/steam-settings/#initialize) or the [SteamworksBehaviour](../components/steamworks-behaviour.md).
+Initializes the Steam API for client processing. If your using [SteamSettings](../legacy/quick-start-guide/scriptableobject-initialization.md) or [SteamworksBehaviour](../legacy/quick-start-guide/gameobject-initialization.md) this is done for you. You should only call this if you are not using [SteamSettings.Initialize](../classes-and-structs/steam-settings/#initialize) or the [SteamworksBehaviour](../legacy/components/steamworks-behaviour.md).
 
 If used you will need to provide a [Steam Game Server Configuration](../classes-and-structs/steam-game-server-configuration.md), this can be write and read from a JSON formatted file or set up as a structure and passed in.
 

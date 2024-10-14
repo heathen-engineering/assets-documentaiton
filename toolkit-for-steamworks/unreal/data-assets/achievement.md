@@ -37,20 +37,20 @@ You can create a Data Asset in your project for each of your achievements
 
 Create a new Data Asset Instance of type AchievementDataAsset
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption><p>Create a new Data Asset of type AchievementDataAsset</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>Create a new Data Asset of type AchievementDataAsset</p></figcaption></figure>
 
 ## Configure
 
 Set the API Name to the same value you defined in your Steamworks Developer Portal for this achievement.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Set the API Name to match the name you set in Steamworks Developer Portal</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Set the API Name to match the name you set in Steamworks Developer Portal</p></figcaption></figure>
 
 ## Use
 
 To use the achievement you can simply create a variable of type AchievementDataAsset and set its default value to be the instance you just created.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Create a variable where required and select your Achievement as its Default Value</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Create a variable where required and select your Achievement as its Default Value</p></figcaption></figure>
 
 With the variable set you can simply drag off that variable to access the functions and features of a Steam Achievements relative to this specific achievement.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Use it as you see fit</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Use it as you see fit</p></figcaption></figure>

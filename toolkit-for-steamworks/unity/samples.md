@@ -1,10 +1,5 @@
 ---
-cover: ../../.gitbook/assets/Unity Banner.jpg
-coverY: 0
 layout:
-  cover:
-    visible: true
-    size: full
   title:
     visible: true
   description:
@@ -17,15 +12,7 @@ layout:
     visible: true
 ---
 
-# Sample Scene
-
-{% hint style="success" %}
-#### Like what you are seeing?
-
-Support us as a [GitHub Sponsor](../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
-\
-These articles are made possible by our [GitHub Sponsors](../../become-a-sponsor/) ... become a sponsor today!
-{% endhint %}
+# Samples
 
 ## Introduction
 
@@ -35,7 +22,7 @@ As of v3.4 the asset will install as a Unity Package ... this means it has an en
 
 To find the package, open Unity Package Manager, be sure you're looking in the "In Project" collection and be sure you're looking under the `Packages - Heathen Group` heading, not the `Pacakages - Asset Store` heading. There you will find the Samples tab with options to import the Example Scene and Prefabs.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Layout
 

@@ -203,7 +203,7 @@ void CallbackHandler(LeaderboardData result, bool IOError);
 ```
 {% endhint %}
 
-The [Steamworks Behaviour](../components/steamworks-behaviour.md) will call this for you as it initializes the Steam Settings and the boards you have defined within. You only need to call this your self if you are creating a build at run time manually and not using the [Leaderboard Object](../classes-and-structs/leaderboard-object.md).
+The [Steamworks Behaviour](../legacy/components/steamworks-behaviour.md) will call this for you as it initializes the Steam Settings and the boards you have defined within. You only need to call this your self if you are creating a build at run time manually and not using the [Leaderboard Object](../classes-and-structs/leaderboard-object.md).
 
 ### GetDisplayType
 

@@ -23,51 +23,19 @@ layout:
 
 # Introduction
 
-{% hint style="success" %}
-#### Like what you're seeing?
+## [Where To Buy](../where-to-buy/)
 
-Support us as a [GitHub Sponsor](../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
-\
-These articles are made possible by our [GitHub Sponsors](../become-a-sponsor/) ... become a sponsor today!
-{% endhint %}
+<table data-view="cards" data-full-width="true"><thead><tr><th></th><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Complete</td><td><a href="https://github.com/sponsors/heathen-engineering">GitHub | Patreon</a> $15</td><td><a href="https://www.unrealengine.com/marketplace/en-US/product/ad658ddf5c434478acb95f9091ea279c">FAB</a> $75</td><td></td><td><a href="../.gitbook/assets/UnrealCardCover.png">UnrealCardCover.png</a></td><td><a href="unreal/">unreal</a></td></tr><tr><td>Complete | Foundation</td><td><a href="https://github.com/sponsors/heathen-engineering">Gitub | Patreon</a> $15</td><td><a href="https://www.unrealengine.com/marketplace/en-US/product/ad658ddf5c434478acb95f9091ea279c">FAB</a> $75</td><td><a href="https://assetstore.unity.com/packages/tools/integration/steam-api-steamworks-complete-246652">Asset Store</a> $80 - $100</td><td><a href="../.gitbook/assets/UnityCardCover.png">UnityCardCover.png</a></td><td><a href="unity/">unity</a></td></tr><tr><td>Foundation</td><td><a href="https://github.com/heathen-engineering/SteamworksFoundation">GitHub</a> (Free)</td><td></td><td></td><td><a href="../.gitbook/assets/GodotCardCover.png">GodotCardCover.png</a></td><td><a href="broken-reference">Broken link</a></td></tr></tbody></table>
+
+<table data-card-size="large" data-view="cards" data-full-width="true"><thead><tr><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td><h2><a href="https://github.com/sponsors/heathen-engineering">Sponsor $15</a></h2></td><td><a href="../become-a-sponsor/">Learn More</a><br><strong>Perpetual Site License</strong><br>This means your entire team can work under the 1 license and the license is yours to keep forever. <br></td><td><strong>Monthly Purchase, Instant Update</strong><br>Updates happen in real-time, you have access to our source code while you are subscribed so updates are of course instant.<br>                  </td><td><strong>Escalated Support</strong><br>Get escalated support, issue and feedback tracking and of course our standard live community support.<br> </td><td><strong>All Tools</strong><br>You get instant access to all of Heathen's tools for all engines.</td></tr><tr><td><h2>Store $75 - $100</h2></td><td>FAB (All coming-soon), <a href="https://www.unrealengine.com/marketplace/en-US/profile/Heathen+Engineering">Marketplace </a>(Unreal), <a href="https://assetstore.unity.com/publishers/5836">Asset Store</a> (Unity)<br><strong>Perpetual Per-User License</strong><br>Each store defines its own "standard license" but all use a per-user model. You are meant to buy 1 for each person on the project.<br></td><td><strong>Yearly Purchase, Quarterly Updates</strong><br>You are purchasing that year's quarterly updates and hotfixes. The next major update will be available to you at an 80% discount off the base price. The stores are refreshed quarterly from GitHub. in addition to any hotfixes addressing breaking changes.<br></td><td><strong>Single Tool</strong><br>Each purchase is for a single tool, Unity Asset Store is for ONLY Unity while FAB supports both Unity and Unreal.<br></td><td><strong>Depreciation</strong><br>Unity Asset Store and FAB use a Major Version Update system, each year on or about 1st November a new Major is released and the old one is deprecated. You can of course keep using older versions without issue, we DO NOT remove access to anything you own and we DO NOT revoke your licenses EVER.</td></tr></tbody></table>
+
+Becoming a [sponsor of Heathen on GitHub or Patreon](https://github.com/sponsors/heathen-engineering) is the best way to support us and enable us to deliver more articles, videos, tools, examples, support, and just more! It's also the best way to buy/license all of Heathen's Toolkits, assets and services.
 
 ## Do More with Heathen
-
-{% embed url="https://www.youtube.com/watch?v=6ujmZI1qUYI" %}
-
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Complete</td><td><a href="https://github.com/sponsors/heathen-engineering">GitHub | Patreon</a> $15</td><td><a href="https://www.unrealengine.com/marketplace/en-US/product/ad658ddf5c434478acb95f9091ea279c">FAB</a> $75</td><td></td><td><a href="../.gitbook/assets/UnrealCardCover.png">UnrealCardCover.png</a></td><td><a href="unreal/">unreal</a></td></tr><tr><td>Complete | Foundation</td><td><a href="https://github.com/sponsors/heathen-engineering">Gitub | Patreon</a> $15</td><td><a href="https://www.unrealengine.com/marketplace/en-US/product/ad658ddf5c434478acb95f9091ea279c">FAB</a> $75-100</td><td><a href="https://assetstore.unity.com/packages/tools/integration/steam-api-steamworks-complete-246652">Asset Store</a> $75</td><td><a href="../.gitbook/assets/UnityCardCover.png">UnityCardCover.png</a></td><td><a href="unity/">unity</a></td></tr><tr><td>Foundation</td><td><a href="https://github.com/heathen-engineering/SteamworksFoundation">GitHub</a> (Free)</td><td></td><td></td><td><a href="../.gitbook/assets/GodotCardCover.png">GodotCardCover.png</a></td><td><a href="broken-reference">Broken link</a></td></tr></tbody></table>
 
 ### More than just another API wrapper!
 
 Heathen's Toolkit is a robust kit of editor tools and extensions, proven game systems and extensive guides and articles that cover not just every function & feature of the plugin but go beyond into guides & articles on every facet of being a Steam Developer and Game Developer in general. This is all supported by our team of passionate engineers & our community of thousands of game developers who have shipped hundreds of games on Steam.
-
-### Sponsor vs Store
-
-In all cases the license you get is perpetual, which means its yours to keep rather you ever update, upgrade, subscribe, etc. again. We DO NOT take or end your license.
-
-#### GitHub | Patreon (Sponsor)
-
-* Perpetual License\
-  This means you keep everything you have downloaded and the license to use it. Even when you cancel you can keep using it for commercial projects and keep getting support in the community
-* Site Based License\
-  This means your team, contractors, etc. can all work under you for no additional cost
-* All Access\
-  This means you have a license to all of Heathen's tools for all engines
-* Updates\
-  Instant updates while you are subscribed (monthly/yearly) your subscription is getting access to instant updates. There is no additional update/upgrade fee as it is a subscription model.
-* Issue and Feedback Tracking \
-  While subscribed you have access to our repository and everything that includes e.g. feedback, issues, source contribution, instant updates, full source history, etc.
-
-#### Marketplace | Fab | Asset Store (Stores)
-
-* Perpetual License\
-  Major updates are released yearly however this DOES NOT end your license or ability to use prior versions. All licenses are perpetual, upgrades simply give access to the next year's update cycle.
-* Per User License\
-  Each store defines its own "standard license" and in all cases, it is a per-user license meaning each person working on your project must buy their own license.
-* Single Toolkit\
-  Stores sale you a license to each toolkit individually, so you would be purchasing a license for a single toolkit on a single engine. FAB is the exception, it is a single toolkit but all engines.
-* Updates\
-  What you purchase in a store is that year's worth of updates. When the next year's version releases you will have an 80% discount on the base price but you will have to pay for the next cycle of updates. It is not Free-Lifetime update
 
 ## Key Features
 

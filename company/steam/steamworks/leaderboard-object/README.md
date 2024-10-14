@@ -32,7 +32,7 @@ First, you need to create your achievements on the Steam Developer portal. [http
 
 Log into your Steam Developer Portal and access your app's admin page. Look for the Technical Tools section and select the Edit Steamworks Settings option.
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Techincal Tools"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Techincal Tools"><figcaption></figcaption></figure>
 
 From there select the Stats & Achievements > Leaderboards option and create your new boards.&#x20;
 
@@ -267,25 +267,25 @@ Next, we must indicate the upload method; [methods are defined by Steam here](ht
 
 ## Unreal Examples
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Find Leaderboards
 
 Working with leaderboards requires you to find the Leaderboard ID first, the ID will be used with all other leaderboard functions and won't change during the execution of the app so can be cashed to save a step in future calls.
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Upload Score
 
 Uploading a score is a matter of providing a score and optionally details.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Attach Files
 
 You can attach a file to the leaderboard for the user, this is often useful to store replays or can be used to store rich information about the user's entry. The attached file will always be related to the local user.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 To attach a file you first need to upload the file to Steam's Remote Storage, once the file is uploaded you need to mark it for sharing. This will provide you with a UGC Handle that can be assigned to the board.
 
@@ -293,4 +293,4 @@ To attach a file you first need to upload the file to Steam's Remote Storage, on
 
 [Download Leaderboard Entries](../../../../toolkit-for-steamworks/unreal/blueprint-nodes/functions/download-leaderboard-entries.md) and [Download Leaderboard Entries for Users](../../../../toolkit-for-steamworks/unreal/blueprint-nodes/functions/download-leaderboard-entries-for-users.md) can be used to read the entries on a leaderboard.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
