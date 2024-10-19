@@ -1,5 +1,5 @@
 ---
-description: Be better than "killed 10 rats"
+description: More than a trophy
 ---
 
 # 🏆 Achievements
@@ -14,7 +14,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 
 ## Introduction
 
-Achievements are a simple and traditional feature for games that can help drive player engagement. While they are simple to implement (make work) coming up with a good achievement design is not so simple. You could of course :face\_vomiting: forth random achievements like "Played 15 min", "Logged into the game", and "Pressed the spacebar"; but these are often time harmful to the game and not helpful.
+Achievements are a simple and traditional feature for games that can help drive player engagement. They can also act as a poor-mans Game Statistics feature, for example, you can set achievements to unlock at particular milestones and then monitor the game's global stats to see what % of your player base has unlocked each achievement giving an idea of how your game's retention looks.
 
 <details>
 
@@ -27,13 +27,13 @@ Achievements are a simple and traditional feature for games that can help drive 
 
 ## Quick Start
 
-First you need to create your achievements on the Steam Developer portal. [https://partner.steamgames.com/](https://partner.steamgames.com/)
+First, you need to create your achievements on the Steam Developer portal. [https://partner.steamgames.com/](https://partner.steamgames.com/)
 
 ### Create
 
 Log into your Steam Developer Portal and access your app's admin page. Look for the Technical Tools section and select the Edit Steamworks Settings option.
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Techincal Tools"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Techincal Tools"><figcaption></figcaption></figure>
 
 From there select the Stats & Achievements > Achievements option and create your new achievements.&#x20;
 
@@ -48,10 +48,6 @@ In Unity, if you prefer to work with Achievements via an object reference then y
 You \*\***MUST**\*\* publish your changes in Steam Developer Portal before they will be accessible via Steam API. In the Steam Developer Portal when you have pending changes you will see a red banner at the top of the screen ... click it and follow the instructions.
 
 <figure><img src="../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
-
-### Use
-
-Use your achievements ... how? depends on the tools and engine you choose, see the [Unity Examples](achievements.md#unity-examples) and [Unreal Examples](achievements.md#unreal-examples) articles for more information.
 
 ## Using Achievements
 
@@ -117,181 +113,116 @@ Steam Inventory is a huge topic unto itself that needs its own guide. The overla
 
 There are many types of players and a common one across all game genres is the "Collector" or "Hunter" This is a type of player that likes to "100%" the game. Be careful to not bloat your game with meaningless achievements as this will simply frustrate the collector but do make sure to track and reward them for fully exploring your game.
 
+### Player Retention Monitoring
+
+Did you know you can view the global stats for games that have achievements seeing what % of the player base has achieved each achievement?
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+Well now you do, this means you can use achievements to understand (vaguely) what parts of your game are used and what are not, used well and you can track where players "fall off".
+
 ## Creating Achievements
 
 > #### [Valve](https://partner.steamgames.com/doc/features/achievements)
 >
 > Steam Stats and Achievements provides an easy way for your game to provide persistent, roaming achievement and statistics tracking for your users. The user's data is associated with their Steam account, and each user's achievements and statistics can be formatted and displayed in their Steam Community Profile.
 
-Achievements like stats are created in your [Steam Developer Portal](https://partner.steamgames.com/), once created there you can access them via their ID, if you're use Heathen's Steamworks ... why aren't you it has a free version. Then you can import your Stats and Achievements into Unity or use our [AchievementData ](../toolkit-for-steamworks/unity/classes-and-structs/achievement-data.md)structure to easily work with your achievements in code.
+Achievements like stats are created in your [Steam Developer Portal](https://partner.steamgames.com/), once created there you can access them via their ID, if you are not using Heathen's Steamworks ... why aren't you, it has a free version. Then you can import your Stats and Achievements into Unity or use our [AchievementData ](../toolkit-for-steamworks/unity/classes-and-structs/achievement-data.md)structure to easily work with your achievements in code.
 
 Valve's documentation on the [Stats and Achievement](https://partner.steamgames.com/doc/features/achievements) features is a good place to get started.
 
-## Unity Examples
+## Examples
 
-The first thing to understand is that with stats and achievements, the process of setting them in two steps.
+### Set Achievement
 
-1. You assign the value such as `myAch.IsAchieved = true;`
-2. You store the changes to the backend such as `myAch.Store()`
-
-The notification popup will not trigger until the achievement is "stored". In the above examples "myAch" would be either an [AchievementObject ](../toolkit-for-steamworks/unity/classes-and-structs/achievement-object.md)or [AchievementData](../toolkit-for-steamworks/unity/classes-and-structs/achievement-data.md), both do the same thing, "Object" is a reference type based on ScriptableObject so can be easily referenced in Unity Editor while "Data" is a value type e.g. a C# struct and more suitable for DOTS and related structures.
-
-### Storing
-
-In Unity you can work with achievements through a few different tools as shown below.
-
-#### AchievementData
-
-Assuming you have a data object named myAch
+{% tabs %}
+{% tab title="Toolkit for Unity" %}
+This assumes myAch is an [AchievementObject ](../toolkit-for-steamworks/unity/classes-and-structs/achievement-object.md)or [AchievementData](../toolkit-for-steamworks/unity/classes-and-structs/achievement-data.md)
 
 ```csharp
-myAch.Store();
-```
-
-#### AchievementObject
-
-Assuming you have an object named myAch
-
-```csharp
-myAch.Store();
-```
-
-#### API
-
-```csharp
-API.StatsAndAchievements.Client.StoreStats();
-```
-
-### Using Value Types
-
-[Achievement Data](../toolkit-for-steamworks/unity/classes-and-structs/achievement-data.md)
-
-Heathen's Steamworks' Achievement Data simplifies working with Steam achievements exposing common features to a simple struct.
-
-```csharp
-//The achievement data struct is implicitly convertible from the string
-//so you can convert the API name as a string into the data struct
-AchievementData myAch = "achievement_API_name";
-
-//You can understand the state of an achievement with simple fields
-if(myAch.IsAchieved)
-    Debug.Log($"{UserData.Me.Name} achieved this on {myAch.UnlockTime}");
-else
-    Debug.Log($"This has not been unlocked yet");
-
-//You can unlock an achievement simply by assigning the IsAchieved value
 myAch.IsAchieved = true;
-```
+// or
+myAch.Unlock();
 
-### Using Object References
-
-[Achievement Object](../toolkit-for-steamworks/unity/classes-and-structs/achievement-object.md)
-
-Heathen's Steamworks can "import" your achievements from Steam API directly and construct Scriptable Objects that make it possible to work with achievements with zero coding required.
-
-![](<../.gitbook/assets/image (176) (1) (1) (1) (1).png>)
-
-Right from the Steam Settings object you import all of the Steam Achievements you defined in Valve's Steam Developer Portal.
-
-{% hint style="info" %}
-You must have the simulation running so the Steam API is initialized and able to talk to the Steam client.
-{% endhint %}
-
-Once done you can find Scriptable Objects for each of the identified achievements nested under your Steam Settings
-
-![](<../.gitbook/assets/image (167) (1) (1) (1) (1) (1) (1) (1) (1).png>)
-
-You can learn more about the [Achievement Object](../toolkit-for-steamworks/unity/classes-and-structs/achievement-object.md) in our documentation. Using this object you can reference this achievement in any of your logic and easily test for unlock and unlock the achievement.
-
-```csharp
-using UnityEngine;
-using HeathenEngineering.SteamworksIntegration;
-
-public class ExampleScript : MonoBehaviour
-{
-  public AchievementObject myAchievement;
-  
-  void Start()
-  {
-    if(myAchievement.IsAchieved)
-      Debug.Log("It is unlocked");
-    else
-      Debug.Log("It is locked");
-  }
-}
-```
-
-### Using APIs
-
-[API](../toolkit-for-steamworks/unity/api/statsandachievements.client.md)
-
-Heathen's Steamworks wraps Valve's Steam API with a C# and Unity-friendly tool kit. All features related to stats and achievements can be found in the [StatsAndAchievements.Client](../toolkit-for-steamworks/unity/api/statsandachievements.client.md) class. In most cases, you won't need to use this low-level tool but it is available to you and works very similar to the raw Steam API.
-
-```csharp
-using UnityEngine;
+//You can also do this with the API Extensions
+//Assuming you have a using statement such as
 using Achievements = HeathenEngineering.SteamworksIntegration.API.StatsAndAchievements.Client;
 
-public class ExampleScript : MonoBehaviour
-{
-  void Start()
-  {
-    Achievements.GetAchievement("ACH_TRAVEL_FAR_ACCUM", out bool isAchieved);
-    
-    if(isAchieved)
-      Debug.Log("It is unlocked");
-    else
-      Debug.Log("It is locked");
-      
-    //To unlock it
-    Achievements.SetAchievement("ACH_TRAVEL_FAR_ACCUM");
-    
-    //To re-lock it
-    Achievements.ClearAchievement("ACH_TRAVEL_FAR_ACCUM");
-  }
-}
+//Then
+Achievements.SetAchievement("The Achievement API Name");
 ```
+{% endtab %}
 
-## Unreal Examples
+{% tab title="Tookit for Unreal" %}
+## Blueprint
 
-### Data Asset
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-{% hint style="info" %}
-This is an optional feature, you can either work with Achievements via a Data Asset or via Static methods/Blueprint Library Nodes in C++ or Blueprint
-{% endhint %}
-
-You can create a Data Asset in your project for each of your achievements
-
-<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>Create a new Data Asset of type AchievementDataAsset</p></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Set the API Name to match the name you set in Steamworks Developer Portal</p></figcaption></figure>
-
-#### Use
-
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Create a variable where required and select your Achievement as its Default Value</p></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Use it as you see fit</p></figcaption></figure>
-
-### Storing
-
-Store the changes to all stats and achievements made since the last time this was called.
-
-<figure><img src="../.gitbook/assets/image (372).png" alt=""><figcaption></figcaption></figure>
+## C++
 
 ```cpp
-bool result = SteamUserStats()->StoreStats();
+bool result = SteamUserStats()->SetAchievement(StringCast<ANSICHAR>(*apiName).Get());
 ```
+{% endtab %}
+
+{% tab title="Steamworks.NET" %}
+```csharp
+SteamUserStats.SetAchievement(achievementApiName, achieved);
+```
+{% endtab %}
+{% endtabs %}
 
 ### Read Achievement
 
-{% hint style="info" %}
-You can use the Achievement Data Asset or Steamworks Static Functions to work with achievements
-{% endhint %}
+{% tabs %}
+{% tab title="Toolkit for Unity" %}
+This assumes myAch is an [AchievementObject ](../toolkit-for-steamworks/unity/classes-and-structs/achievement-object.md)or [AchievementData](../toolkit-for-steamworks/unity/classes-and-structs/achievement-data.md)
 
-Below we show getting the achievement, breaking the result down and using it to print a string to the screen including the Achievement's friendly name&#x20;
+<pre class="language-csharp" data-full-width="true"><code class="lang-csharp">//Is this achievement achieved?
+var isAchieved = myAch.IsAchieved;
 
-<figure><img src="../.gitbook/assets/image (363).png" alt=""><figcaption></figcaption></figure>
+//When was this unlocked
+var dateTime = myAch.UnlockTime;
 
-Assuming that `apiName` is defined as `FString apiName`.
+//What is the icon for this achievement
+//This is an asynchronous call so its parameter is a delegate
+//that will be run when the call is completed
+myAch.GetIcon(texture2D =>
+{
+    //texture2D is a UnityEngine.Texture2D that can be used as needed
+    //This will be the icon the user sees e.g. if the achievement is unlocked
+    //this will be the unlocked version
+    //if the achievement is locked it will be the locked version
+    //If you unlock the achievement or if its status changes you can get the icon again
+    //to get the new icon version
+});
+
+//You can read the achievements of other uses once you have their data
+var achState = myAch.GetAchievementAndUnlockTime(user);
+//The return is a tuple that defines the unlocked
+var isAchieved = achState.unlocked;
+//and unlock time
+var dateTime = achState.unlockTime;
+
+<strong>//You can also do this with the API Extensions
+</strong>//Assuming you have a using statement such as
+using Achievements = HeathenEngineering.SteamworksIntegration.API.StatsAndAchievements.Client;
+
+//Then
+Achievements.GetAchievement(id, out bool status);
+</code></pre>
+{% endtab %}
+
+{% tab title="Toolkit for Unreal" %}
+## Blueprint
+
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+## Achievement Data Asset
+
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+## C++
 
 ```cpp
 //Get the unlock state and time
@@ -323,36 +254,143 @@ status.Name = name;
 status.Description = desc;
 status.IsHidden = isHidden;
 
+//Get the Icon ... you can do this with the aid of our SteamGameInstance
+// Note the "callback" is a 
+DECLARE_DYNAMIC_DELEGATE_OneParam(FIconLoadCallback, UTexture2D*, icon);
+//First you need to get the image handle
+int32 handle = SteamUserStats()->GetAchievementIcon(StringCast<ANSICHAR>(*apiName).Get());
+SteamGameInstance->LoadIcon(handle, apiName, callback);
 ```
+{% endtab %}
 
-### Set (unlock) Achievement
+{% tab title="Steamworks.NET" %}
+<pre class="language-csharp"><code class="lang-csharp">//Read the value
+SteamUserStats.GetAchievement(achievementApiName, out bool achieved);
 
-{% hint style="info" %}
-You can use the Achievement Data Asset or Steamworks Static Functions to work with achievements
-{% endhint %}
+//Read the value and time
+var result = SteamUserStats.GetAchievementAndUnlockTime(achievementApiName, out bool achieved, out uint epoch);
+var unlockTime = new DateTime(1970, 1, 1).AddSeconds(epoch);
 
-Simply unlock/achieve the achievement
+//Get Icon
+//First you need to manage the native callback
+if (m_UserAchievementIconFetched_t == null)
+    m_UserAchievementIconFetched_t = Callback&#x3C;UserAchievementIconFetched_t>.Create(HandleIconImageLoaded);
 
-<figure><img src="../.gitbook/assets/image (364).png" alt=""><figcaption></figcaption></figure>
+//Fetch the image handle
+var handle = SteamUserStats.GetAchievementIcon(achievementApiName);
 
-Assuming that `apiName` is defined as `FString apiName`.
+//If the handle is valid
+if (handle > 0)
+{
+    //Find the image size
+    if (SteamUtils.GetImageSize(handle, out uint width, out uint height))
+<strong>    {
+</strong><strong>        //Create a Texture2D
+</strong>        Texture2D pointer = new Texture2D((int)width, (int)height, TextureFormat.RGBA32, false);
+        //Set a buffer to fit the data
+        int bufferSize = (int)(width * height * 4);
+        byte[] imageBuffer = new byte[bufferSize];
+        //Get the RGBA of the image
+        if (SteamUtils.GetImageRGBA(imageHandle, imageBuffer, bufferSize))
+        {
+            //Read and flip the data for Unity
+            byte[] result = new byte[buffer.Length];
+
+            int xWidth = (int)(width * 4);
+            int yHeight = (int)(height);
+
+            for (int y = 0; y &#x3C; yHeight; y++)
+            {
+                for (int x = 0; x &#x3C; xWidth; x++)
+                {
+                    result[x + ((yHeight - 1 - y) * xWidth)] = buffer[x + (xWidth * y)];
+                }
+            }
+
+            //Load the data and apply it to the texture
+            pointer.LoadRawTextureData(result);
+            pointer.Apply();
+        }
+    }
+}
+else
+{
+    Debug.LogWarning("No image available");
+}
+</code></pre>
+{% endtab %}
+{% endtabs %}
+
+### Clear Achievement
+
+{% tabs %}
+{% tab title="Toolkit for Unity" %}
+This assumes myAch is an [AchievementObject ](../toolkit-for-steamworks/unity/classes-and-structs/achievement-object.md)or [AchievementData](../toolkit-for-steamworks/unity/classes-and-structs/achievement-data.md)
+
+```csharp
+myAch.IsAchieved = false;
+
+//You can also do this with the API Extensions
+//Assuming you have a using statement such as
+using Achievements = HeathenEngineering.SteamworksIntegration.API.StatsAndAchievements.Client;
+
+//Then
+Achievements.ClearAchievement(id);
+```
+{% endtab %}
+
+{% tab title="Toolkit for Unreal" %}
+## Blueprint
+
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+## C++
 
 ```cpp
-bool result = SteamUserStats()->SetAchievement(StringCast<ANSICHAR>(*apiName).Get());
+bool result = SteamUserStats()->ClearAchievement(StringCast<ANSICHAR>(*achievementApiName).Get());
 ```
+{% endtab %}
 
-### Clear (reset) Achievement
+{% tab title="Steamworks.NET" %}
+```csharp
+SteamUserStats.ClearAchievement(achievementApiName);
+```
+{% endtab %}
+{% endtabs %}
 
-{% hint style="info" %}
-You can use the Achievement Data Asset or Steamworks Static Functions to work with achievements
-{% endhint %}
+### Store Changes
 
-Simply reset/clear/re-lock the achievement
+{% tabs %}
+{% tab title="Toolkit for Unity" %}
+This assumes myAch is an [AchievementObject ](../toolkit-for-steamworks/unity/classes-and-structs/achievement-object.md)or [AchievementData](../toolkit-for-steamworks/unity/classes-and-structs/achievement-data.md)
 
-<figure><img src="../.gitbook/assets/image (365).png" alt=""><figcaption></figcaption></figure>
+```csharp
+myAch.Store();
 
-Assuming that `apiName` is defined as `FString apiName`.
+//You can also do this with the API Extensions
+//Assuming you have a using statement such as
+using Achievements = HeathenEngineering.SteamworksIntegration.API.StatsAndAchievements.Client;
+
+//Then
+Achievements.StoreStats();
+```
+{% endtab %}
+
+{% tab title="Toolkit for Unreal" %}
+## Blueprint
+
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+## C++
 
 ```cpp
-bool result = SteamUserStats()->ClearAchievement(StringCast<ANSICHAR>(*apiName).Get());
+SteamUserStats()->StoreStats();
 ```
+{% endtab %}
+
+{% tab title="Steamworks.NET" %}
+```csharp
+SteamUserStats.StoreStats();
+```
+{% endtab %}
+{% endtabs %}

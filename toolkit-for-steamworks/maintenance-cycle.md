@@ -12,7 +12,7 @@ The length of this grace period is not entirely under our control so we do not s
 ## When?
 
 1st November of each year.\
-Or as close as is possible given Unity's tendency to shadow drop events and launchges that effect our plans.
+Or as close as is possible given Unity's tendency to shadow drop events and launches that effect our plans.
 
 ## Why?
 
@@ -42,5 +42,5 @@ This is what Unity calls it when we mark a version to no longer be sold. It will
 
 You can still get "community support" which means you can ask questions and we and the community as your peers and fellow game developers will do our best to help you.
 
-If you need a patch, a hot fix, an update more formalized technical support, etc. then you need to be on the "active" version either by joining GitHub Sponsor, Patreon or by purchasing the update in FAB or Unity Asset Store.
+If you need a patch, a hot fix, an update or more formalized technical support, etc. then you need to be on the "active" version either by joining GitHub Sponsor, Patreon or by purchasing the update in FAB or Unity Asset Store.
 

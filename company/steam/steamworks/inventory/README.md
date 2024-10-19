@@ -288,19 +288,19 @@ An object is used to detail an instance of an item in the player's inventory. Le
 
 You can define your Inventory Items as Inventory Item Data Assets
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Once created you can set the Item Definition ID ... this is the ID you created when you uploaded you Item Definition JSON to Steamworks Developer Portal
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 With the inventory Item defines as a Data Asset you can then reference the item in you Steam Game Settings blueprint.
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Doing so allows our systems to update the Inventory Item Details of this data asset for you any time you use the "Simple" versions of inventory requests such as Get All Items - Simple
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 It also allows you to work with this item type in a context-sensitive manner ... for example, you could create a variable Inventory Item Data Asset in a Blueprint and set your item as its default value.
 
@@ -328,7 +328,7 @@ This is how you "refresh" your view of the player's inventory. We provide 2 vari
 When your working with Inventory Item Data Assets you should either always use the Simple variation or you need to manually Clear and Update details on the Steam Game Instance
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You optionally pass in an array of strings representing the custom properties you would like the system to read off the resulting items. When the callback is executed it will define its result state and if not a failed condition it will include an array of the [Item Details with Properties](../../../../toolkit-for-steamworks/unreal/blueprint-nodes/types/item-detail-with-properties.md) it found. You can think of each of these as a "stack" of 0 to many of a given item type.
 
@@ -338,11 +338,11 @@ The Definition ID of the item detail tells you what type of item it is and the i
 
 In the above example, we used the "Simple" version of the Get All Items, this takes in a delegate that will be called when the process completes letting our internal systems manage the callback for you. You can optionally bind on a global event listening for all "Inventory Result Ready" calls and compare the result ready "handle" with the handle provided by the native "Get All Items"
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>Here we request Steam to fetch all items, Steam will give us a result handle identifying this particular request</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Here we request Steam to fetch all items, Steam will give us a result handle identifying this particular request</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Here we are listening on the global event for Inventory Result Ready when we get that we compare it to our handle to see if its from our request.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Here we are listening on the global event for Inventory Result Ready when we get that we compare it to our handle to see if its from our request.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption><p>Assuming it is from our request we can ask Steam to read us back the results based on that result handle</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Assuming it is from our request we can ask Steam to read us back the results based on that result handle</p></figcaption></figure>
 
 As you can see our "Simple" variant greatly simplifies the process and handles the internals for you.
 
@@ -350,25 +350,25 @@ As you can see our "Simple" variant greatly simplifies the process and handles t
 
 If you are setting up an in-game store or some similar microtransaction system you will likely want to know what the price of the item is for this user.
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption><p>First, you should request Steam to cash the prices for relevant items for this user. This will also tell you what the currency code and symbol is for this user.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>First, you should request Steam to cash the prices for relevant items for this user. This will also tell you what the currency code and symbol is for this user.</p></figcaption></figure>
 
 Once you have the prices available you can iterate through all items that have a price
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption><p>Get all item definitions that have a defined price valid for this user</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Get all item definitions that have a defined price valid for this user</p></figcaption></figure>
 
 You can then read the current and base price for this user, note that current and base price are int64 (long) values. it is the base 100 value. e.g. $1.99 would be returned as 199.
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### [Start Purchase](../../../../toolkit-for-steamworks/unreal/blueprint-nodes/functions/start-purchase.md)
 
 For items that have a valid price and are enabled for purchase in their item definition you can form the gate "start purchase" ... what this does is simply load the items into the Steam shopping cart and give you an Order and Transaction ID that represents that as of yet incomplete transaction.
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 As noted this "starts" the process but does not mean the transaction is completed. You can listen on the Micro Transaction Authorization Response event to know when a transaction is completed and check it against the Order ID provided in the Start Purchase process.
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Note that a transaction can fail or be cancelled... so its the "Authorized = True" that indicates this order is complete. Also, be aware the user may have changed the state of the shopping cart before completing the transaction so items may have been added or removed. It would be advisable to check the state of the inventory again or to listen to the Inventory Results Ready event and listen for changes to the player's inventory
 

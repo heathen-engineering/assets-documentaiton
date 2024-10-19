@@ -295,21 +295,21 @@ Is a drop box-like file sync system that synchronizes files written to the local
 
 Start by creating a blueprint class and here we will choose the Steam Remote Storage Save Game as our base class.
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Next, add whatever variables you would like to have saved.
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 And that is all that is required to create your Save Game object. Creating, setting and reading values from the Save Game object is the same as you would use with any Unreal Save Game object.
 
-<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption><p>Assume Test Save Game is my Blueprint derived from Steam Remote Storage Save Game</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Assume Test Save Game is my Blueprint derived from Steam Remote Storage Save Game</p></figcaption></figure>
 
 ### Write File (aka Save)
 
 To save the file to Steam Remote Storage you will use the Steam Write File and Steam Write File Async Blueprint functions
 
-<figure><img src="../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption><p>Synchronious File Write</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Synchronious File Write</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (9) (1) (1) (1) (1).png" alt=""><figcaption><p>Asynchronious File Write</p></figcaption></figure>
 

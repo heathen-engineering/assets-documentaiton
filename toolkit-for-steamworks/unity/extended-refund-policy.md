@@ -4,15 +4,13 @@ description: Unity Assets and the extended refund policy
 
 # Unity Asset Refund Policy
 
-## Introduction
+## Why?
 
-### Why?
+We have traditionally put forth our best efforts to resolve any issues whether the fault of our assets or not and agreed to all requests for refunds without question. This has however been abused increasingly as we have grown and so we must now set down a predefined policy that will be held strictly.
 
-We have traditionally put forth our best efforts to resolve any issues rather the fault of our assets or not and agreed to all requests for refunds without question. This has however been abused increasingly as we have grown and so we must now set down a predefined policy that will be held strictly.
+This policy is intended to ensure a fair and predictable process for handling refunds above and beyond what is required or provided for by Unity Asset Store itself. This is a courtesy extended to all customers in good faith and in the interest of customer satisfaction.
 
-This policy is intended to ensure a fair and predictable process for handling refunds above and beyond what is required or provided for by Unity Asset Store itself. This is a courtesy extended to all customers in good faith and the interest of customer satisfaction.
-
-### What?
+## What?
 
 As a courtesy and in extension to Unity's terms:
 

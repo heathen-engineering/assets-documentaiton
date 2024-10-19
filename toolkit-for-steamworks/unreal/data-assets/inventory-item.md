@@ -57,11 +57,11 @@ You can ignore the "Details" property for now, Details are set at run time as da
 
 In your Steam Game Instance Blueprint, you will want to add each of your items to the Inventory Items array.
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Doing so allows our systems to update the Inventory Item Details of this data asset for you any time you use the "Simple" versions of inventory requests such as Get All Items - Simple
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Manual Detail Updates
 

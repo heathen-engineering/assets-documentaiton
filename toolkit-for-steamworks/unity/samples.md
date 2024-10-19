@@ -22,14 +22,45 @@ Now scroll that navigation panel up till you see Steam
 
 <figure><img src="../../.gitbook/assets/image (461).png" alt=""><figcaption></figcaption></figure>
 
-Behold a series of guides on every aspect of Steam not restricted to Steamworks but including every feature of it as well. Select a topic that suits you:
+Behold a series of guides on every aspect of Steam not restricted to Steamworks but including every feature of it and much more. Select a topic that suits you ... and read.
 
 <figure><img src="../../.gitbook/assets/image (463).png" alt=""><figcaption></figcaption></figure>
 
-And read.\
 The structure will vary by topic a bit but in general you will find a "Quick Start" along with Examples including common use cases. Note this applies to all engines and is even useful if your not using Heathen tools at all.
 
 Each of these articles is meant to be a concise yet robust guide to each given topic.
+
+## Object, Data, API Extension
+
+With Unity, you have at least 3 ways to do anything. These 3 options all fundamentally do the same thing, they all compile down to the same result when built. They exist to support 3 major types of Unity developers.
+
+1 is not better than the other, they all result in the same output and they all ultimately call the same underlying APIs. Note that each layer is built upon the layer below it, as a result, you can easily switch form one to the other mixing and matching as suits you at any given point for any given topic.
+
+### API Extension
+
+This is a full C# & Unity-centric wrap around the Steamworks SDK. It covers every feature of the Steamworks SDK with static classes, it handles every Steam Callback and CallResult in a Unity-centric manner (UnityEvent, Action, etc.) and it returns Unity-centric data types where applicable e.g. Get Avatar returns a Texture2D instead of the native byte\[]
+
+This layer will be familiar for developers used to working with the raw Steamworks SDK or with working with Steamworks.NET or Facepunch Steamworks.
+
+It is of value even to vetted engineers because it handles all of the boiler plates and includes a number of quality-of-life improvements speeding up your workflow and decreasing your maintenance time.
+
+### Data&#x20;
+
+Steamworks can be described as "artefacts" such as Stats, Achievements, Lobbies, Apps, DLC, Users and more. The Data Layer creates a Data struct for each of these concepts which encapsulates the features, functions and data of those concepts.
+
+For example, the UseData struct is implicitly convertible and equatable with ulong, CSteamDI and can be created from uint or string (Hex ID). It defines static functions to "Get" user data from various sources, to list friends, to fetch avatar images and more.
+
+In effect, the DataLayer is a highly performant and highly convenient expression of Steamworks functionality by artefact type.
+
+Note that "Data" structs are always implicitly convertible with the native Steamworks type such as CSteamID and the underlying primitive type such as ulong this means they can be used interchangeably with those types.
+
+### Objects, Components & Prefabs
+
+Unity classically has been a very object-oriented engine. ScriptableObject, GameObjects, UnityObejct. These allow you to drag and drop and create relationships between "objects" in the editor and largely code free. For all Steamworks "artefacts" such as Stats, Achievements, Leaderboards, Items, Inputs, etc. we have created "Objects" as ScriptableObejcts that reside under your SteamSettings object. This means you can easily reference and drag and drop in the editor to create relationships between objects and to call each of these objects exposes all the functionality of those respective artefacts for example you can create an AchievementObejct myAch and call myAch.Unlock() to unlock it.
+
+For non-artifacts e.g. system concepts we have created "Managers" and other components for example the Lobby Manager which is a component script that can be added to any GameObject and will expose the features and functions of a Steam Lobby so you can easily and largely code free connect your Unity UI to a Steam Lobby
+
+Prefabs are available that demonstrate the use of all the major components as well as a detailed example scene that uses Objects, Components & Prefabs to "largely" code-free implement all major Steamworks features.
 
 ## Code Snip-its
 
@@ -39,7 +70,11 @@ New Work In Progress Feature
 
 These are component scripts located in the Example Scene folder. Each covers a single topic and is meant to be opened and read like a book. They are functional C# code demonstrating features and use cases for the topics they cover such as LeaderboardData, UserData, etc.
 
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
 The components themselves are wrapped such that they will not compile in a build and are marked as deprecated to discourage blind copy and paste. You can however take snips of the code (copy small sections) to jump-start whatever it is you are doing rewriting as needed for your own logic.
+
+Each Snipit contains "Example" functions demonstrating common and key features of the topic. You can selectively copy and paste or simply read and learn from these to help kick start your own C# scripts.
 
 ## Example Scenes & Prefabs
 
@@ -49,7 +84,7 @@ As of v3.4 the asset will install as a Unity Package ... this means it has an en
 
 To find the package, open Unity Package Manager, be sure you're looking in the "In Project" collection and be sure you're looking under the `Packages - Heathen Group` heading, not the `Pacakages - Asset Store` heading. There you will find the Samples tab with options to import the Example Scene and Prefabs.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Layout
 

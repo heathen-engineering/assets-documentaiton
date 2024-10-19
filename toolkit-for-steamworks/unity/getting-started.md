@@ -9,7 +9,7 @@
 That script should not be used at all, it is not part of Heathen's Toolkit and it was not meant to be dragged and dropped into a production project in the first place.
 {% endhint %}
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3>Code Free</h3></td><td><ul><li>Set your desired settings</li><li>Add component to game object </li><li>Done!</li></ul></td><td><a href="../../.gitbook/assets/image (4).png">image (4).png</a></td><td><a href="getting-started.md#component-1">#component-1</a></td></tr><tr><td><h3>With Configuraiton</h3></td><td><ul><li>Doesn't require a GameObject</li><li>Single line of code</li></ul></td><td><a href="../../.gitbook/assets/Screenshot 2023-01-30 111537.png">Screenshot 2023-01-30 111537.png</a></td><td><a href="getting-started.md#object-1">#object-1</a></td></tr><tr><td><h3>Pure Code</h3></td><td><ul><li>Doesn't require a GameObject</li><li>No ScriptableObject</li><li>Pure C#</li></ul></td><td><a href="../../.gitbook/assets/Screenshot 2023-01-30 111633.png">Screenshot 2023-01-30 111633.png</a></td><td><a href="getting-started.md#api-1">#api-1</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3>Code Free</h3></td><td><ul><li>Set your desired settings</li><li>Add component to game object </li><li>Done!</li></ul></td><td><a href="../../.gitbook/assets/image (4) (1).png">image (4) (1).png</a></td><td><a href="getting-started.md#component-1">#component-1</a></td></tr><tr><td><h3>With Configuraiton</h3></td><td><ul><li>Doesn't require a GameObject</li><li>Single line of code</li></ul></td><td><a href="../../.gitbook/assets/Screenshot 2023-01-30 111537.png">Screenshot 2023-01-30 111537.png</a></td><td><a href="getting-started.md#object-1">#object-1</a></td></tr><tr><td><h3>Pure Code</h3></td><td><ul><li>Doesn't require a GameObject</li><li>No ScriptableObject</li><li>Pure C#</li></ul></td><td><a href="../../.gitbook/assets/Screenshot 2023-01-30 111633.png">Screenshot 2023-01-30 111633.png</a></td><td><a href="getting-started.md#api-1">#api-1</a></td></tr></tbody></table>
 
 ## Pure Code
 
@@ -47,11 +47,11 @@ When you configured your Steam Settings it created `SteamSettings` objects that 
 
 Open your Project Settings and select Player > Steamworks
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 When you first do this it will create a SteamMain Steam Settings object in your projects Settings folder.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can optionally add a Demo setting and as many Playtest settings as you would like. All of them will be added to the Settings folder in their own Steam Settings object.
 
@@ -84,7 +84,7 @@ If you need a code-free solution we provide you with a component script `Initial
 
 
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 This component should be put on your first scene, you should make sure Steamworks has initiated before you make any use of it and ideally, before you load it into your main menu.
 
