@@ -117,7 +117,7 @@ There are many types of players and a common one across all game genres is the "
 
 Did you know you can view the global stats for games that have achievements seeing what % of the player base has achieved each achievement?
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Well now you do, this means you can use achievements to understand (vaguely) what parts of your game are used and what are not, used well and you can track where players "fall off".
 
@@ -137,6 +137,12 @@ Valve's documentation on the [Stats and Achievement](https://partner.steamgames.
 
 {% tabs %}
 {% tab title="Toolkit for Unity" %}
+## Visual Scripting
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+## C\#
+
 This assumes myAch is an [AchievementObject ](../toolkit-for-steamworks/unity/classes-and-structs/achievement-object.md)or [AchievementData](../toolkit-for-steamworks/unity/classes-and-structs/achievement-data.md)
 
 ```csharp
@@ -156,7 +162,7 @@ Achievements.SetAchievement("The Achievement API Name");
 {% tab title="Tookit for Unreal" %}
 ## Blueprint
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## C++
 
@@ -176,6 +182,12 @@ SteamUserStats.SetAchievement(achievementApiName, achieved);
 
 {% tabs %}
 {% tab title="Toolkit for Unity" %}
+## Visual Scripting
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+## C\#
+
 This assumes myAch is an [AchievementObject ](../toolkit-for-steamworks/unity/classes-and-structs/achievement-object.md)or [AchievementData](../toolkit-for-steamworks/unity/classes-and-structs/achievement-data.md)
 
 <pre class="language-csharp" data-full-width="true"><code class="lang-csharp">//Is this achievement achieved?
@@ -216,7 +228,7 @@ Achievements.GetAchievement(id, out bool status);
 {% tab title="Toolkit for Unreal" %}
 ## Blueprint
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Achievement Data Asset
 
@@ -325,6 +337,12 @@ else
 
 {% tabs %}
 {% tab title="Toolkit for Unity" %}
+## Visual Scripting
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+## C\#
+
 This assumes myAch is an [AchievementObject ](../toolkit-for-steamworks/unity/classes-and-structs/achievement-object.md)or [AchievementData](../toolkit-for-steamworks/unity/classes-and-structs/achievement-data.md)
 
 ```csharp
@@ -362,6 +380,12 @@ SteamUserStats.ClearAchievement(achievementApiName);
 
 {% tabs %}
 {% tab title="Toolkit for Unity" %}
+## Visual Scripting
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+## C\#
+
 This assumes myAch is an [AchievementObject ](../toolkit-for-steamworks/unity/classes-and-structs/achievement-object.md)or [AchievementData](../toolkit-for-steamworks/unity/classes-and-structs/achievement-data.md)
 
 ```csharp

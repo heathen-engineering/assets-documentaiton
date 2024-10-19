@@ -56,7 +56,7 @@ Before you try to get and use voice data you would want to know if there is any 
 
 <figure><img src="../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>A simple example of getting voice data</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>A simple example of getting voice data</p></figcaption></figure>
 
 Steam API provides the necessary tools to get compressed voice audio from the player's active audio input device if any.
 

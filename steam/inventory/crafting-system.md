@@ -165,4 +165,4 @@ The following image is an example of creating the "recipe" array needed by the E
 
 In the example, we are using all of stack 123 and 5 from stack 124.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
