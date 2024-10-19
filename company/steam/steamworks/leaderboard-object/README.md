@@ -14,6 +14,8 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## &#x20;Introduction
 
+{% embed url="https://youtu.be/6WQBal2brKI" %}
+
 Steam leaderboards are persistent tables with automatically ordered entries. Leaderboards can be used to display global and friend boards in your game and on your community page. Each title can create up to 10,000 leaderboards, and each leaderboard can be retrieved immediately after a player's score has been uploaded.
 
 There is no limit on the number of players a leaderboard supports. Each leaderboard entry contains a score (as an int) and optionally up to 64 ints of detail data stored as a simple array on the entry. The detailed data can be used to store game-specific information about the play session that resulted in the user's leaderboard entry. This data is not sorted or parsed by Steam and is replaced when a new leaderboard entry is created for the user. Attachments can be linked with the leaderboard via the UGC (User Generated Content) feature of Steam.
@@ -26,7 +28,7 @@ Use the Steam Web API to set trusted leaderboard scores
 [https://partner.steamgames.com/doc/webapi/ISteamLeaderboards#SetLeaderboardScore](https://partner.steamgames.com/doc/webapi/ISteamLeaderboards#SetLeaderboardScore)
 {% endhint %}
 
-## Create
+## Quick Start
 
 First, you need to create your achievements on the Steam Developer portal. [https://partner.steamgames.com/](https://partner.steamgames.com/)
 
@@ -81,9 +83,182 @@ If for some reason you find your board still acts like it's sorted the other way
 
 To work around the issue make a new board (with a new name) and set it up with the sort of direction you desire; do not delete the broken board … please … so Valve can review it.
 
-## Unity Examples
+## Examples
 
-{% embed url="https://youtu.be/6WQBal2brKI" %}
+### Get Leaderboard
+
+{% tabs %}
+{% tab title="Toolkit for Unity" %}
+Assumes targetBoard is a [LeaderboardObject ](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-object.md)or [LeaderboardData](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-data.md)
+
+## C\#
+
+```csharp
+//Leaderboard Object will be "got" for you by the initialization process
+//For Leaderboard Data we need as its a struct and not a reference we need
+//To get its ID before we can use it
+
+//Before we can use a leaderboard we need to get its ID ... not its API Name ... its ID
+//The static function takes in the api name and a delegate to be called when the process is completed
+//This is an asynchronous method ... a delegate is simply a pointer to a function
+//You could give it a named function you defined in your class but far more commonly you use an anonymous function as we have here
+LeaderboardData.Get(apiName, (data, ioError) =>
+{
+    if (!ioError)
+    {
+        targetBoard = data;
+        Debug.Log($"Found {apiName} with ID {targetBoard.id.m_SteamLeaderboard}");
+
+        //At this point you now have the board and do things with it .... see the functions below that give examples of working with the board such as reading and writing data
+    }
+    else
+    {
+        Debug.LogError($"An IO error occurred while attempting to read {apiName}");
+    }
+});
+```
+
+## PlayMaker
+
+Not Applicable
+
+## Visual Scripting
+
+Not Applicable
+{% endtab %}
+
+{% tab title="Toolkit for Unreal" %}
+## Blueprint
+
+## C++
+{% endtab %}
+
+{% tab title="Steamworks.NET" %}
+
+{% endtab %}
+{% endtabs %}
+
+### Upload Score
+
+{% tabs %}
+{% tab title="Toolkit for Unity" %}
+Assumes targetBoard is a [LeaderboardObject ](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-object.md)or [LeaderboardData](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-data.md)
+
+## C\#
+
+## PlayMaker
+
+## Visual Scripting
+{% endtab %}
+
+{% tab title="Toolkit for Unreal" %}
+## Blueprint
+
+## C++
+{% endtab %}
+
+{% tab title="Steamworks.NET" %}
+
+{% endtab %}
+{% endtabs %}
+
+### Get User's Entry
+
+{% tabs %}
+{% tab title="Toolkit for Unity" %}
+Assumes targetBoard is a [LeaderboardObject ](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-object.md)or [LeaderboardData](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-data.md)
+
+## C\#
+
+## PlayMaker
+
+## Visual Scripting
+{% endtab %}
+
+{% tab title="Toolkit for Unreal" %}
+## Blueprint
+
+## C++
+{% endtab %}
+
+{% tab title="Steamworks.NET" %}
+
+{% endtab %}
+{% endtabs %}
+
+### Get Entries
+
+{% tabs %}
+{% tab title="Toolkit for Unity" %}
+Assumes targetBoard is a [LeaderboardObject ](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-object.md)or [LeaderboardData](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-data.md)
+
+## C\#
+
+## PlayMaker
+
+## Visual Scripting
+{% endtab %}
+
+{% tab title="Toolkit for Unreal" %}
+## Blueprint
+
+## C++
+{% endtab %}
+
+{% tab title="Steamworks.NET" %}
+
+{% endtab %}
+{% endtabs %}
+
+### Attach File
+
+{% tabs %}
+{% tab title="Toolkit for Unity" %}
+Assumes targetBoard is a [LeaderboardObject ](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-object.md)or [LeaderboardData](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-data.md)
+
+## C\#
+
+## PlayMaker
+
+## Visual Scripting
+{% endtab %}
+
+{% tab title="Toolkit for Unreal" %}
+## Blueprint
+
+## C++
+{% endtab %}
+
+{% tab title="Steamworks.NET" %}
+
+{% endtab %}
+{% endtabs %}
+
+### Get Attached File
+
+{% tabs %}
+{% tab title="Toolkit for Unity" %}
+Assumes targetBoard is a [LeaderboardObject ](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-object.md)or [LeaderboardData](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-data.md)
+
+## C\#
+
+## PlayMaker
+
+## Visual Scripting
+{% endtab %}
+
+{% tab title="Toolkit for Unreal" %}
+## Blueprint
+
+## C++
+{% endtab %}
+
+{% tab title="Steamworks.NET" %}
+
+{% endtab %}
+{% endtabs %}
+
+## Unity Examples
 
 As with all features in the Unity version of Steamworks Complete, there are multiple ways to work with Leaderboards.
 
