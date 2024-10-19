@@ -137,10 +137,6 @@ Valve's documentation on the [Stats and Achievement](https://partner.steamgames.
 
 {% tabs %}
 {% tab title="Toolkit for Unity" %}
-## Visual Scripting
-
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-
 ## C\#
 
 This assumes myAch is an [AchievementObject ](../toolkit-for-steamworks/unity/classes-and-structs/achievement-object.md)or [AchievementData](../toolkit-for-steamworks/unity/classes-and-structs/achievement-data.md)
@@ -157,6 +153,14 @@ using Achievements = HeathenEngineering.SteamworksIntegration.API.StatsAndAchiev
 //Then
 Achievements.SetAchievement("The Achievement API Name");
 ```
+
+## PlayMaker
+
+<figure><img src="../.gitbook/assets/image (464).png" alt=""><figcaption></figcaption></figure>
+
+## Visual Scripting
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Tookit for Unreal" %}
@@ -182,10 +186,6 @@ SteamUserStats.SetAchievement(achievementApiName, achieved);
 
 {% tabs %}
 {% tab title="Toolkit for Unity" %}
-## Visual Scripting
-
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-
 ## C\#
 
 This assumes myAch is an [AchievementObject ](../toolkit-for-steamworks/unity/classes-and-structs/achievement-object.md)or [AchievementData](../toolkit-for-steamworks/unity/classes-and-structs/achievement-data.md)
@@ -223,6 +223,14 @@ using Achievements = HeathenEngineering.SteamworksIntegration.API.StatsAndAchiev
 //Then
 Achievements.GetAchievement(id, out bool status);
 </code></pre>
+
+## PlayMaker
+
+<figure><img src="../.gitbook/assets/image (466).png" alt=""><figcaption></figcaption></figure>
+
+## Visual Scripting
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Toolkit for Unreal" %}
@@ -337,10 +345,6 @@ else
 
 {% tabs %}
 {% tab title="Toolkit for Unity" %}
-## Visual Scripting
-
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
-
 ## C\#
 
 This assumes myAch is an [AchievementObject ](../toolkit-for-steamworks/unity/classes-and-structs/achievement-object.md)or [AchievementData](../toolkit-for-steamworks/unity/classes-and-structs/achievement-data.md)
@@ -355,6 +359,14 @@ using Achievements = HeathenEngineering.SteamworksIntegration.API.StatsAndAchiev
 //Then
 Achievements.ClearAchievement(id);
 ```
+
+## PlayMaker
+
+<figure><img src="../.gitbook/assets/image (465).png" alt=""><figcaption></figcaption></figure>
+
+## Visual Scripting
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Toolkit for Unreal" %}
@@ -380,10 +392,6 @@ SteamUserStats.ClearAchievement(achievementApiName);
 
 {% tabs %}
 {% tab title="Toolkit for Unity" %}
-## Visual Scripting
-
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
-
 ## C\#
 
 This assumes myAch is an [AchievementObject ](../toolkit-for-steamworks/unity/classes-and-structs/achievement-object.md)or [AchievementData](../toolkit-for-steamworks/unity/classes-and-structs/achievement-data.md)
@@ -398,6 +406,14 @@ using Achievements = HeathenEngineering.SteamworksIntegration.API.StatsAndAchiev
 //Then
 Achievements.StoreStats();
 ```
+
+## PlayMaker
+
+<figure><img src="../.gitbook/assets/image (467).png" alt=""><figcaption></figcaption></figure>
+
+## Visual Scripting
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Toolkit for Unreal" %}
