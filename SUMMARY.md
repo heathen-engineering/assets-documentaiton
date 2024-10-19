@@ -149,7 +149,7 @@
 ## Toolkit for Steamworks
 
 * [Introduction](toolkit-for-steamworks/steamworks.md)
-* [Store Upgrades](toolkit-for-steamworks/store-upgrades.md)
+* [Maintenance Cycle](toolkit-for-steamworks/maintenance-cycle.md)
 * [F.A.Q](toolkit-for-steamworks/f.a.q.md)
 * [Unity](toolkit-for-steamworks/unity/README.md)
   * [⚠️ Known Issues](toolkit-for-steamworks/unity/known-issues.md)
