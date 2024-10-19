@@ -16,22 +16,23 @@ layout:
 
 ## Major Update
 
-{% hint style="info" %}
-We are in the process of releasing Toolkit for Steamworks 2025, The Unity Asset Store page for it will be live in the next few days. In the meantime, links to that page will result in an Error 404.\
-\
-Toolkit for Steamworks 2025 is available to GitHub Sponsors and Patreon right now and will be available on the Unity Asset Store and FAB #Soon™️
-{% endhint %}
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><h3><strong>Toolkit for Steamworks Legacy</strong></h3></td><td>Unity 2021 - 2023</td><td></td><td><a href="../../.gitbook/assets/Heathen Engineering Card (2).png">Heathen Engineering Card (2).png</a></td></tr><tr><td><h3><strong>Toolkit for Steamworks 2025</strong></h3></td><td>Unity 6+</td><td></td><td><a href="../../.gitbook/assets/Steamworks 2025 Card.png">Steamworks 2025 Card.png</a></td></tr></tbody></table>
 
 Heathen's [Toolkit for Steamworks Legacy](https://assetstore.unity.com/packages/slug/246652) is a fully supported and reliable solution for developers using Unity 2021 LTS through 2023 LTS. Legacy will continue to receive regular updates and support as long as Unity maintains 2023 in LTS. If you own Heathen’s [Toolkit for Steamworks 2025](https://assetstore.unity.com/packages/slug/299310), you automatically get access to Legacy at no extra cost.&#x20;
 
-[Toolkit for Steamworks 2025](https://assetstore.unity.com/packages/slug/299310) is designed for Unity 6 & later. Starting with [Toolkit for Steamworks 2025](https://assetstore.unity.com/packages/slug/299310), we are moving to a scheduled annual major update, released every 1st of November. This predictable upgrade cycle ensures ongoing development and live end-user support, which we’ve provided for over a decade.
+[Toolkit for Steamworks 2025](https://assetstore.unity.com/packages/slug/299310) is designed for Unity 6 & later. Starting with [Toolkit for Steamworks 2025](https://assetstore.unity.com/packages/slug/299310), we are moving to a scheduled annual maintenance cycle, released every 1st of November. This predictable cycle ensures we can continue to deliver quality ongoing development, top notched live support and foster the friendly and helpful community we have had for the past decade.
 
-* Major Updates get an 80% discount on the base price of the next version. This means when 2026 releases if you own 2025 you can upgrade for 20% of the base price of 2026.
-* Depreciation: Each 1st of November the prior year's version will be deprecated. Depreciation simply means it will not receive any further updates and that new users cannot purchase it.
-* Legacy support: [Toolkit for Steamworks Legacy](https://assetstore.unity.com/packages/slug/246652) will continue receiving updates and support until Unity ends LTS for its last year-named version (currently 2023) this date is not advertised by Unity but is expected to be sometime in 2025 or 2026.&#x20;
-* Legacy to 2025 Upgrade: $20, the difference in the price of Legacy and 2025. There is no additional fee beyond that price difference adjustment.
-
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><h3><strong>Toolkit for Steamworks Legacy</strong></h3></td><td>Unity 2021 - 2023</td><td></td><td><a href="../../.gitbook/assets/Heathen Engineering Card (2).png">Heathen Engineering Card (2).png</a></td></tr><tr><td><h3><strong>Toolkit for Steamworks 2025</strong></h3></td><td>Unity 6+</td><td></td><td><a href="../../.gitbook/assets/Steamworks 2025 Card.png">Steamworks 2025 Card.png</a></td></tr></tbody></table>
+* Maintenance Cycle:\
+  Each year, the prior version is removed from sale to new users. Existing users retain access and DO NOT -have- to move to the next version. Prior versions will not receive any new patches but will continue to operate as they had. Neither we nore Unity removes your access to anything you own.
+* **Existing Users:**\
+  Get an **80% discount** on the base price of the next version. This _**maintenance cycle**_ enables us to continue ongoing development, deliver frequent updates, provide top-notch live support and foster a friendly community.
+* **Close to 1st Nov?** \
+  Purchase with confidence where permitted we extend a grace period making the update free if you purchased recently. For questions reach out on our [Discord](https://discord.gg/heathen-group-463483739612381204). How long is the grace period? that isn't entirely under our control so we don't "assure" a range but usually longer than 30 days up to 90 days.
+* **Legacy support:**\
+  [Toolkit for Steamworks Legacy](https://assetstore.unity.com/packages/slug/246652) will continue receiving updates and support until Unity ends LTS for its last year-named version (currently 2023).
+* Legacy to 2025 Update:\
+  If you own 2025 you have access to Legacy for free\
+  If you own Legacy you can update it to 2025 for the difference in price ($20)
 
 ## Comparison
 
