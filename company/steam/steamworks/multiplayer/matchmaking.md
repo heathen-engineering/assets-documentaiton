@@ -85,8 +85,8 @@ Once you have a server build you need to decide how you going to host it.
 
     Do it yourself, if your a glutton for pain or just really like data operations you could of course host your servers your self.
 
-Doing this will let you browse for and display all available (and publicly visible) stem game servers via a [Steam Game Server Browser](../../../../toolkit-for-steamworks/unity/components/game-server-browser-manager.md).
+Doing this will let you browse for and display all available (and publicly visible) stem game servers via a [Steam Game Server Browser](../../../../toolkit-for-steamworks/unity/objects/components/game-server-browser-manager.md).
 
 ## Steam Game Server
 
-[Steam Game Server Game Data](../../../../toolkit-for-steamworks/unity/classes-and-structs/steam-settings/game-server.md#gamedata) configurations can be used to establish a similar set of "metadata" as used by the Lobby Matchmaking system. The [Steam Game Server Browser](../../../../toolkit-for-steamworks/unity/components/game-server-browser-manager.md) can be used to query for specific game servers again like searching for a Steam Lobby. The principle difference between the Steam Game Server system and the Lobby system is that Steam Game Servers are relatively permanent and can be browsed as a full list, in contrast, a Lobby is effectively a chat room and highly temporary.&#x20;
+[Steam Game Server Game Data](../../../../toolkit-for-steamworks/unity/objects/classes/steam-settings/game-server.md#gamedata) configurations can be used to establish a similar set of "metadata" as used by the Lobby Matchmaking system. The [Steam Game Server Browser](../../../../toolkit-for-steamworks/unity/objects/components/game-server-browser-manager.md) can be used to query for specific game servers again like searching for a Steam Lobby. The principle difference between the Steam Game Server system and the Lobby system is that Steam Game Servers are relatively permanent and can be browsed as a full list, in contrast, a Lobby is effectively a chat room and highly temporary.&#x20;

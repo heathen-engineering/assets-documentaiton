@@ -29,7 +29,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-This article outlines the testing methodology and processes to validate the good working order of Steamworks Complete. The [sample scenes](../../samples.md) serve as the core tests and are designed to be ran on a clean project configured for a Steam compatible platform (Windows, Mac or Linux) and for the Steam App 480 aka “Spacewars”.
+This article outlines the testing methodology and processes to validate the good working order of Steamworks Complete. The [sample scenes](../../learning.md) serve as the core tests and are designed to be ran on a clean project configured for a Steam compatible platform (Windows, Mac or Linux) and for the Steam App 480 aka “Spacewars”.
 
 The function of these tests are to insure the good working order of the asset independent of the unique conditions of a given project and to demonstrate the basic use of the core Steam API features.&#x20;
 
@@ -55,9 +55,9 @@ These expectations allow the developer to review and compare the clean operation
 
 In addition, Heathen provides an in-editor window “[Steamworks Inspector](./)” available in the \[Windows > Steamworks > Inspector] menu that can be used to inspect and exercise all major Steamworks features. For more information on the Steamworks Inspectors please read the [Knowledge Base article](./). The Steamworks Inspector works with any App as long as Steamworks API is initialized (you are running the app in the editor).
 
-### [Sample Scene](../../samples.md)
+### [Sample Scene](../../learning.md)
 
-Note for GitHub Sponsors installing the asset from Unity Package Manager you will need to import the samples from the Sample dropdown in the Package Manager. Please read [this article](../../samples.md) for more information.
+Note for GitHub Sponsors installing the asset from Unity Package Manager you will need to import the samples from the Sample dropdown in the Package Manager. Please read [this article](../../learning.md) for more information.
 
 Each sample scene describes the objects in the scene, their use and the expected results. The Unity Editor Console log will provide details as to each step of the operation along with highlighting any errors or warnings in such a manner that they can be easily reported.
 

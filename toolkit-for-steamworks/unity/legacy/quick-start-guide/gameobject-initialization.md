@@ -29,7 +29,7 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-Initialize Steam API with a simple component script attached to a GameObject of your choice. You can use the [Steamworks Behaviour](../components/steamworks-behaviour.md) or the [Steamworks Creator](../components/steamworks-creator.md) to handle initialization for you. In both cases however you do need to first create and configure a [Steam Settings](../../classes-and-structs/steam-settings/) object. Once you have your Steam Settings object defined and configured you can apply it to the [Steamworks Behaviour](../components/steamworks-behaviour.md) or [Steamworks Creator](../components/steamworks-creator.md) depending on which you choose to use.
+Initialize Steam API with a simple component script attached to a GameObject of your choice. You can use the [Steamworks Behaviour](../components/steamworks-behaviour.md) or the [Steamworks Creator](../components/steamworks-creator.md) to handle initialization for you. In both cases however you do need to first create and configure a [Steam Settings](../../objects/classes/steam-settings/) object. Once you have your Steam Settings object defined and configured you can apply it to the [Steamworks Behaviour](../components/steamworks-behaviour.md) or [Steamworks Creator](../components/steamworks-creator.md) depending on which you choose to use.
 
 ## Steamworks Behaviour
 
@@ -57,7 +57,7 @@ We very strongly encourage you to create a [bootstrap process](../../../../compa
 
 ## Steam Settings
 
-[Learn more about the Steam Settings object here](../../classes-and-structs/steam-settings/).
+[Learn more about the Steam Settings object here](../../objects/classes/steam-settings/).
 
 Create a new Steam Settings object in your project folder by right clicking in your project tab and selecting\
 **Create > Steamworks > Settings**
@@ -105,8 +105,8 @@ Valve limits what information on Inventory Items can be imported. For example bu
 
 The Steam Game Server Configuration lets you configure the details of your game server as it will be seen by Steam. This is only relevant for server builds that will be initializing and logging on as a "[Steam Game Server](../../../../company/steam/steamworks/multiplayer/game-server-browser/)"
 
-If you set the "Auto Logon" feature to false you will need to call LogOn for the server when your ready for it to log on which is done via the [API.App.Server.LogOn()](../../api/app.server.md#logon) method.
+If you set the "Auto Logon" feature to false you will need to call LogOn for the server when your ready for it to log on which is done via the [API.App.Server.LogOn()](../../api-extensions/app.server.md#logon) method.
 
 This is most commonly done when you want to prevent the server from registering itself on the Steam Game Server browser until after you have made it ready such as after you have "StartServer" called on your HLAPI of choice and have configured the server making it ready for connections.
 
-[You can learn more about the configuration fields here](../../classes-and-structs/steam-game-server-configuration.md).
+[You can learn more about the configuration fields here](../../objects/classes/steam-game-server-configuration.md).

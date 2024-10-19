@@ -6,6 +6,10 @@ description: Known issue and how to sort them
 
 ## Steamworks.NET for Steamworks SDK v1.60
 
+{% hint style="info" %}
+This does affect the version that is installed by default e.g. the latest version of Steamworks.NET
+{% endhint %}
+
 ### Issues
 
 * Steam Deck won't Initialize Steamworks SDK\
@@ -22,7 +26,7 @@ description: Known issue and how to sort them
 
 Use Steamworks.NET for Steamworks SDK version 1.59
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 DO NOT USE STEAMWORKS.NET 20.0 OR SIMILAR THAT IS FAR TO OLD&#x20;
 {% endhint %}
 

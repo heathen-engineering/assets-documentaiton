@@ -185,7 +185,7 @@ You can "consume" items as well, this is simply deleting the item and would be u
 
 How do I generate or grant an item to a player at run time?
 
-For testing a developer account can generate any item at runtime by simply calling the [GenerateItem](../../../../toolkit-for-steamworks/unity/classes-and-structs/item-definition.md#generate-item) method on the item definition or the corresponding command on the [Inventory API](../../../../toolkit-for-steamworks/unity/api/inventory.client.md#generateitems).
+For testing a developer account can generate any item at runtime by simply calling the [GenerateItem](../../../../toolkit-for-steamworks/unity/objects/classes/item-definition.md#generate-item) method on the item definition or the corresponding command on the [Inventory API](../../../../toolkit-for-steamworks/unity/api-extensions/inventory.client.md#generateitems).
 
 This however will not work for players
 
@@ -196,9 +196,9 @@ Generate Items can only be used by developers for testing purposes.
 For security reasons, there is no straightforward way to generate a specific item for the user from the Steam Client API. To give players items you need to do one of the following
 
 * Promo Items\
-  You can grant players items as part of a promotion. These are 1-time grants of free items and require the item to be configured as a "promo" item if done correctly you can use [AddPromoItem](../../../../toolkit-for-steamworks/unity/classes-and-structs/item-definition.md#add-promo-item) on the item definition or the corresponding command in the [Inventory API](../../../../toolkit-for-steamworks/unity/api/inventory.client.md#addpromoitem) to grant the item.
+  You can grant players items as part of a promotion. These are 1-time grants of free items and require the item to be configured as a "promo" item if done correctly you can use [AddPromoItem](../../../../toolkit-for-steamworks/unity/objects/classes/item-definition.md#add-promo-item) on the item definition or the corresponding command in the [Inventory API](../../../../toolkit-for-steamworks/unity/api-extensions/inventory.client.md#addpromoitem) to grant the item.
 * Drop Items\
-  You can define play time generators that can be used to grant players items based on client-side rules ... mainly play time and or ownership of specific apps. This method requires you to configure a "Play Time Generator" with the required rules to drop the item and then to call [TriggerDrop](../../../../toolkit-for-steamworks/unity/classes-and-structs/item-definition.md#trigger-drop) on the item or the corresponding [Inventory API](../../../../toolkit-for-steamworks/unity/api/inventory.client.md#triggeritemdrop) call.&#x20;
+  You can define play time generators that can be used to grant players items based on client-side rules ... mainly play time and or ownership of specific apps. This method requires you to configure a "Play Time Generator" with the required rules to drop the item and then to call [TriggerDrop](../../../../toolkit-for-steamworks/unity/objects/classes/item-definition.md#trigger-drop) on the item or the corresponding [Inventory API](../../../../toolkit-for-steamworks/unity/api-extensions/inventory.client.md#triggeritemdrop) call.&#x20;
 * Web API\
   You can use the Web API on a trusted web server to perform more direct actions like simply adding an item to a target player's inventory. This requires you to have a trusted web server using a publisher token on the Steam Web API. The Web API is out of scope for Unity assets as it's not part of Unity. You can learn more [here](https://partner.steamgames.com/doc/webapi/IInventoryService).
 
@@ -208,9 +208,9 @@ How do you create an in-game store for your items?
 
 In the same way, you create any Unity UI, the visual and UI aspects of your store are wholly up to you. That is you being the developer know what items you have and should create a UI to present those to the player.
 
-As to starting a purchase from your UI, you can use the [Start Purchase](../../../../toolkit-for-steamworks/unity/classes-and-structs/item-definition.md#start-purchase) command on the item definition or the corresponding [Inventory API](../../../../toolkit-for-steamworks/unity/api/inventory.client.md#startpurchase) call.
+As to starting a purchase from your UI, you can use the [Start Purchase](../../../../toolkit-for-steamworks/unity/objects/classes/item-definition.md#start-purchase) command on the item definition or the corresponding [Inventory API](../../../../toolkit-for-steamworks/unity/api-extensions/inventory.client.md#startpurchase) call.
 
-If you're exchanging an item or group of items for another item e.g. in-game currency for an in-game item. then use the [Exchange](../../../../toolkit-for-steamworks/unity/classes-and-structs/item-definition.md#exchange) feature on the item definition or its corresponding [Inventory API](../../../../toolkit-for-steamworks/unity/api/inventory.client.md#exchangeitems) call.
+If you're exchanging an item or group of items for another item e.g. in-game currency for an in-game item. then use the [Exchange](../../../../toolkit-for-steamworks/unity/objects/classes/item-definition.md#exchange) feature on the item definition or its corresponding [Inventory API](../../../../toolkit-for-steamworks/unity/api-extensions/inventory.client.md#exchangeitems) call.
 
 For more details see the [learning article here](./#item-store).
 
@@ -232,7 +232,7 @@ The above quote is from a Valve support case on this topic. It is not a bug nor 
 
 ## Unity Examples
 
-Once you have created your Steam Inventory Items in the Steam Developer Portal you can access them in your project via code, through the [Item Data](../../../../toolkit-for-steamworks/unity/classes-and-structs/item-data.md) struct or the [Inventory API](../../../../toolkit-for-steamworks/unity/api/inventory.client.md). You can also access your item definitions via Scriptable Objects using the Steam Settings object.
+Once you have created your Steam Inventory Items in the Steam Developer Portal you can access them in your project via code, through the [Item Data](../../../../toolkit-for-steamworks/unity/objects/classes/item-data.md) struct or the [Inventory API](../../../../toolkit-for-steamworks/unity/api-extensions/inventory.client.md). You can also access your item definitions via Scriptable Objects using the Steam Settings object.
 
 In all cases using your Item Definition you will be able to
 
@@ -256,15 +256,15 @@ To import you Steam Inventory Item Definition into your project as Scriptable Ob
 
 <figure><img src="../../../../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
 
-This may take a few seconds to complete but it will import all [item definitions](../../../../toolkit-for-steamworks/unity/classes-and-structs/item-definition.md) and create a Scriptable Object representation for each one stored under the Steam Settings object similar to Stas, Achievements and other Steam artifacts.
+This may take a few seconds to complete but it will import all [item definitions](../../../../toolkit-for-steamworks/unity/objects/classes/item-definition.md) and create a Scriptable Object representation for each one stored under the Steam Settings object similar to Stas, Achievements and other Steam artifacts.
 
 ### Data Layer
 
-In cases where you prefer to work in purse code or simply wish to avoid reference type objects such as Scriptable Objects, you can use the Data Layer struct [Item Data](../../../../toolkit-for-steamworks/unity/classes-and-structs/item-data.md) to access your Item Definitions. As is always the case with the Data Layer you do not need to initialize or configure objects ahead of time. The Data Layer works on data without reference so you only need to know the uint ID of the item you wish to work with.
+In cases where you prefer to work in purse code or simply wish to avoid reference type objects such as Scriptable Objects, you can use the Data Layer struct [Item Data](../../../../toolkit-for-steamworks/unity/objects/classes/item-data.md) to access your Item Definitions. As is always the case with the Data Layer you do not need to initialize or configure objects ahead of time. The Data Layer works on data without reference so you only need to know the uint ID of the item you wish to work with.
 
 ### API
 
-The Data Layer as noted above is simply a struct that wraps around the underlying Inventory API. Some programmer-centric developers may be more comfortable working with API endpoints than with structs and so you can access everything you need via the [Inventory.Client](../../../../toolkit-for-steamworks/unity/api/inventory.client.md) API
+The Data Layer as noted above is simply a struct that wraps around the underlying Inventory API. Some programmer-centric developers may be more comfortable working with API endpoints than with structs and so you can access everything you need via the [Inventory.Client](../../../../toolkit-for-steamworks/unity/api-extensions/inventory.client.md) API
 
 ### Related Objects
 
@@ -272,7 +272,7 @@ The following are objects and tools in Steamworks Complete that can help you wor
 
 #### Inventory API
 
-Learn more in our [Inventory API](../../../../toolkit-for-steamworks/unity/api/inventory.client.md) documentation.
+Learn more in our [Inventory API](../../../../toolkit-for-steamworks/unity/api-extensions/inventory.client.md) documentation.
 
 #### Item Definition
 
@@ -280,7 +280,7 @@ Defines a Steam Inventory Item and provides access to commonly used features as 
 
 #### Item Detail
 
-An object is used to detail an instance of an item in the player's inventory. Learn more [here](../../../../toolkit-for-steamworks/unity/classes-and-structs/item-detail.md).
+An object is used to detail an instance of an item in the player's inventory. Learn more [here](../../../../toolkit-for-steamworks/unity/objects/classes/item-detail.md).
 
 ## Unreal Examples
 

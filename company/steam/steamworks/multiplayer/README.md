@@ -69,7 +69,7 @@ A Session Lobby is simply the lobby you use for matchmaking and preparing the se
 
 ### Set Game Server
 
-A feature of Steam's Lobby system. SetGameServer is a method available to you on the [Lobby](../../../../toolkit-for-steamworks/unity/classes-and-structs/lobby-data.md) and through the [Matchmaking ](../../../../toolkit-for-steamworks/unity/api/matchmaking.client.md)API. Only the owner of the lobby can call this method.
+A feature of Steam's Lobby system. SetGameServer is a method available to you on the [Lobby](../../../../toolkit-for-steamworks/unity/objects/classes/lobby-data.md) and through the [Matchmaking ](../../../../toolkit-for-steamworks/unity/api-extensions/matchmaking.client.md)API. Only the owner of the lobby can call this method.
 
 What it does is when this is called it will cause an event to be raised on all the members of the lobby to notify them that the server's connection information has been set and they can now join it.
 

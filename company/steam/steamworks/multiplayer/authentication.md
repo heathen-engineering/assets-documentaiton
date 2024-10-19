@@ -29,8 +29,8 @@ Is highly important, that you should fully read Valve's own documentation around
 
 Heathen's Authentication API handles both Client and Server authentication and manages the ticket and session data generated for you.
 
-{% content-ref url="../../../../toolkit-for-steamworks/unity/api/authentication.md" %}
-[authentication.md](../../../../toolkit-for-steamworks/unity/api/authentication.md)
+{% content-ref url="../../../../toolkit-for-steamworks/unity/api-extensions/authentication.md" %}
+[authentication.md](../../../../toolkit-for-steamworks/unity/api-extensions/authentication.md)
 {% endcontent-ref %}
 
 You will notice that unlike other APIs there is no Client or Server or Web version. Because the Steam API endpoints have the same requirements and signatures for all targets we can select the correct endpoint for you based on the build type.
@@ -39,7 +39,7 @@ That is for a client or "normal" build we will use the Client endpoints and for 
 
 ### Generate Ticket
 
-[Get Auth Session Ticket](../../../../toolkit-for-steamworks/unity/api/authentication.md#getauthsessionticket)
+[Get Auth Session Ticket](../../../../toolkit-for-steamworks/unity/api-extensions/authentication.md#getauthsessionticket)
 
 ```csharp
 Authentication.GetAuthSessionTicket(identity, (ticket, IOError) =>
@@ -74,7 +74,7 @@ Each ticket can be used exactly once and does expire after some time. So for exa
 
 ### Begin Auth Session
 
-[Begin Auth Session](../../../../toolkit-for-steamworks/unity/api/authentication.md#beginauthsession)
+[Begin Auth Session](../../../../toolkit-for-steamworks/unity/api-extensions/authentication.md#beginauthsession)
 
 ```csharp
 void AuthenticatUser(byte[] ticket, UserData user)
@@ -148,7 +148,7 @@ Having authenticated a user allows for a few additional features. For example, a
 
 ### End Auth Session
 
-[End Auth Session](../../../../toolkit-for-steamworks/unity/api/authentication.md#endauthsession)
+[End Auth Session](../../../../toolkit-for-steamworks/unity/api-extensions/authentication.md#endauthsession)
 
 ```csharp
 void UserLoggedOff(UserData user)
@@ -165,11 +165,11 @@ A common use for authentication sessions is to validate that a given user owns s
 
 You can either serialize the local user's whole inventory (rare)
 
-[Serialize All Item Results](../../../../toolkit-for-steamworks/unity/api/inventory.client.md#serializeallitemresults)
+[Serialize All Item Results](../../../../toolkit-for-steamworks/unity/api-extensions/inventory.client.md#serializeallitemresults)
 
 or you can serialize specific items (more common)
 
-[Serialize Item Results By ID](../../../../toolkit-for-steamworks/unity/api/inventory.client.md#serializeitemresultsbyid)
+[Serialize Item Results By ID](../../../../toolkit-for-steamworks/unity/api-extensions/inventory.client.md#serializeitemresultsbyid)
 
 In either case, the result is a byte\[] of data that represents the inventory state at the time of serialization, who that inventory was read from and when it was read.
 
@@ -192,7 +192,7 @@ The specifics of sending the data are between you and your networking tools, the
 
 When your peer or server receives this data they can read its details
 
-[Deserialize Result](../../../../toolkit-for-steamworks/unity/api/inventory.client.md#destroyresult)
+[Deserialize Result](../../../../toolkit-for-steamworks/unity/api-extensions/inventory.client.md#destroyresult)
 
 ```csharp
 void ValidateInventory(UserData user, byte[] data)
