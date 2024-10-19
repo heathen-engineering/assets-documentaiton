@@ -152,6 +152,7 @@
 * [Store Upgrades](toolkit-for-steamworks/store-upgrades.md)
 * [F.A.Q](toolkit-for-steamworks/f.a.q.md)
 * [Unity](toolkit-for-steamworks/unity/README.md)
+  * [⚠️ Known Issues](toolkit-for-steamworks/unity/known-issues.md)
   * [Unity Asset Refund Policy](toolkit-for-steamworks/unity/extended-refund-policy.md)
   * [Installation](toolkit-for-steamworks/unity/installation/README.md)
     * [Networking Integrations](toolkit-for-steamworks/unity/installation/networking-integrations.md)
