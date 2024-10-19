@@ -88,7 +88,7 @@ A Unity session that is being connected to other Unity sessions is a game server
 
 Unity builds can be both servers and clients and most NM's have a concept of "Host" which is exactly that, it is where your NM is acting as both a client and a server. That is it is asking for content (From itself and serving that content (to itself and others).
 
-A lobby however is not a server, browsing for lobbies is not a way to make a server list. Server discovery is a concept that Steam handles please see the [Steam Game Server](game-server-browser/) and [Game Server Browser](../../../../toolkit-for-steamworks/unity/objects/components/game-server-browser-manager.md) for more information.
+A lobby however is not a server, browsing for lobbies is not a way to make a server list. Server discovery is a concept that Steam handles please see the [Steam Game Server](game-server-browser/) and [Game Server Browser](../../../../toolkit-for-steamworks/unity/components/game-server-browser-manager.md) for more information.
 
 ### Listen Server
 

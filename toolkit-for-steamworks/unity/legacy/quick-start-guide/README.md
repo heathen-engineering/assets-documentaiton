@@ -50,15 +50,15 @@ Heathen's Steamworks is built in layers, each layer offers another step of abstr
 
 Follows is a quick break down of each layer and what it was meant for. Note you can mix and match without any issue. Our design expects that you will leverage our "high" level objects like prefabs to handle boilerplate, common or low importance items for you code free while you may prefer to go 100% bespoke with other features to achieve that perfect fit for your game.
 
-* [Prefabs](../../objects/prefabs/)\
+* [Prefabs](../../prefabs/)\
   We have a number of ready to use prefabs that can be dragged and dropped into your game and will just work with no additional code required.
-* [Components](../../objects/components/)\
+* [Components](../../components/)\
   We have created a set of component scripts (aka MonoBehaviours) to cover virtually every aspect of Steam API letting you work in Editor and with visual code editors like Bolt with ease
 * [Scriptable Objects](broken-reference)\
   We have created scriptable objects for all Steam artifacts (stats, achievements, inventory items, etc.) making it easy to reference them and work with them via ours or your own component scripts as well as in code editors like Bolt.
-* [Data Layer](../../objects/)\
+* [Data Layer](../../classes-and-structs/)\
   We have created highly efficient and easy to use C# structs for all Steam artifacts (stats, achievements, inventory items, etc.). These allow programmers to work against these objects more efficiently and with significantly less coding required on there part. All of our structs are implicitly convertible between the primitive type, Steam API native type and our more abstracted structs and classes.&#x20;
-* [API Layer](../../api-extensions/)\
+* [API Layer](../../api/)\
   We have wrapped all core Steam API interfaces with our own C# and Unity centric API wrapper. These API wrappers match 1 to 1 with the raw wrappers but do greatly simplify use such as replacing "Callback" and "CallResult" with UnityEvents and Action parameters. In addition we have created a number of "quality of life" features such as a queue system allowing you to queue multiple calls to the API for features that require 1 call be processed at a time such as Leaderboard queries.
 * Steamworks.NET\
   The raw Steam API as defined by Valve simply wrapped in C#. This is not our work but the work of [Riley Labrecque](https://github.com/rlabrecque/Steamworks.NET). We are work with Riley wherever possible to support his efforts and help the wider Steam Developer community. Heathen's Steamworks is built on top of [Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET) and thus it and the full raw API are available to you and interoperable with our wider toolset.

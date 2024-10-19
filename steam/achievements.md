@@ -39,7 +39,7 @@ From there select the Stats & Achievements > Achievements option and create your
 
 Make note of the value you use in the API Name field. You will use it when working with achievements in code.&#x20;
 
-In Unity, if you prefer to work with Achievements via an object reference then you can use our [AchievementObject ](../toolkit-for-steamworks/unity/objects/classes/achievement-object.md)which is a Unity ScriptableObject that can be referenced and accessed like any other Unity Object.
+In Unity, if you prefer to work with Achievements via an object reference then you can use our [AchievementObject ](../toolkit-for-steamworks/unity/classes-and-structs/achievement-object.md)which is a Unity ScriptableObject that can be referenced and accessed like any other Unity Object.
 
 <figure><img src="../.gitbook/assets/image (1) (6).png" alt="Achievement test"><figcaption></figcaption></figure>
 
@@ -123,7 +123,7 @@ There are many types of players and a common one across all game genres is the "
 >
 > Steam Stats and Achievements provides an easy way for your game to provide persistent, roaming achievement and statistics tracking for your users. The user's data is associated with their Steam account, and each user's achievements and statistics can be formatted and displayed in their Steam Community Profile.
 
-Achievements like stats are created in your [Steam Developer Portal](https://partner.steamgames.com/), once created there you can access them via their ID, if you're use Heathen's Steamworks ... why aren't you it has a free version. Then you can import your Stats and Achievements into Unity or use our [AchievementData ](../toolkit-for-steamworks/unity/objects/classes/achievement-data.md)structure to easily work with your achievements in code.
+Achievements like stats are created in your [Steam Developer Portal](https://partner.steamgames.com/), once created there you can access them via their ID, if you're use Heathen's Steamworks ... why aren't you it has a free version. Then you can import your Stats and Achievements into Unity or use our [AchievementData ](../toolkit-for-steamworks/unity/classes-and-structs/achievement-data.md)structure to easily work with your achievements in code.
 
 Valve's documentation on the [Stats and Achievement](https://partner.steamgames.com/doc/features/achievements) features is a good place to get started.
 
@@ -134,7 +134,7 @@ The first thing to understand is that with stats and achievements, the process o
 1. You assign the value such as `myAch.IsAchieved = true;`
 2. You store the changes to the backend such as `myAch.Store()`
 
-The notification popup will not trigger until the achievement is "stored". In the above examples "myAch" would be either an [AchievementObject ](../toolkit-for-steamworks/unity/objects/classes/achievement-object.md)or [AchievementData](../toolkit-for-steamworks/unity/objects/classes/achievement-data.md), both do the same thing, "Object" is a reference type based on ScriptableObject so can be easily referenced in Unity Editor while "Data" is a value type e.g. a C# struct and more suitable for DOTS and related structures.
+The notification popup will not trigger until the achievement is "stored". In the above examples "myAch" would be either an [AchievementObject ](../toolkit-for-steamworks/unity/classes-and-structs/achievement-object.md)or [AchievementData](../toolkit-for-steamworks/unity/classes-and-structs/achievement-data.md), both do the same thing, "Object" is a reference type based on ScriptableObject so can be easily referenced in Unity Editor while "Data" is a value type e.g. a C# struct and more suitable for DOTS and related structures.
 
 ### Storing
 
@@ -164,7 +164,7 @@ API.StatsAndAchievements.Client.StoreStats();
 
 ### Using Value Types
 
-[Achievement Data](../toolkit-for-steamworks/unity/objects/classes/achievement-data.md)
+[Achievement Data](../toolkit-for-steamworks/unity/classes-and-structs/achievement-data.md)
 
 Heathen's Steamworks' Achievement Data simplifies working with Steam achievements exposing common features to a simple struct.
 
@@ -185,7 +185,7 @@ myAch.IsAchieved = true;
 
 ### Using Object References
 
-[Achievement Object](../toolkit-for-steamworks/unity/objects/classes/achievement-object.md)
+[Achievement Object](../toolkit-for-steamworks/unity/classes-and-structs/achievement-object.md)
 
 Heathen's Steamworks can "import" your achievements from Steam API directly and construct Scriptable Objects that make it possible to work with achievements with zero coding required.
 
@@ -201,7 +201,7 @@ Once done you can find Scriptable Objects for each of the identified achievement
 
 ![](<../.gitbook/assets/image (167) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
-You can learn more about the [Achievement Object](../toolkit-for-steamworks/unity/objects/classes/achievement-object.md) in our documentation. Using this object you can reference this achievement in any of your logic and easily test for unlock and unlock the achievement.
+You can learn more about the [Achievement Object](../toolkit-for-steamworks/unity/classes-and-structs/achievement-object.md) in our documentation. Using this object you can reference this achievement in any of your logic and easily test for unlock and unlock the achievement.
 
 ```csharp
 using UnityEngine;
@@ -223,9 +223,9 @@ public class ExampleScript : MonoBehaviour
 
 ### Using APIs
 
-[API](../toolkit-for-steamworks/unity/api-extensions/statsandachievements.client.md)
+[API](../toolkit-for-steamworks/unity/api/statsandachievements.client.md)
 
-Heathen's Steamworks wraps Valve's Steam API with a C# and Unity-friendly tool kit. All features related to stats and achievements can be found in the [StatsAndAchievements.Client](../toolkit-for-steamworks/unity/api-extensions/statsandachievements.client.md) class. In most cases, you won't need to use this low-level tool but it is available to you and works very similar to the raw Steam API.
+Heathen's Steamworks wraps Valve's Steam API with a C# and Unity-friendly tool kit. All features related to stats and achievements can be found in the [StatsAndAchievements.Client](../toolkit-for-steamworks/unity/api/statsandachievements.client.md) class. In most cases, you won't need to use this low-level tool but it is available to you and works very similar to the raw Steam API.
 
 ```csharp
 using UnityEngine;
