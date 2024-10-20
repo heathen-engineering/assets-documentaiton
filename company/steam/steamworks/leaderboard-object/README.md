@@ -117,24 +117,88 @@ LeaderboardData.Get(apiName, (data, ioError) =>
     }
 });
 ```
-
-## PlayMaker
-
-Not Applicable
-
-## Visual Scripting
-
-Not Applicable
 {% endtab %}
 
 {% tab title="Toolkit for Unreal" %}
 ## Blueprint
 
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 ## C++
+
+```cpp
+// You will need to create a variable to store the CallResult
+// This must be maintained until the CallResult is returned and complete
+CCallResult<YourClass, LeaderboardFindResult_t> m_LeaderboardFindResult_t;
+
+// Next call FindLeaderboard storing the handle
+SteamAPICall_t handle = SteamUserStats()->FindLeaderboard(StringCast<ANSICHAR>(*board).Get());
+// Use the handle with the CallResult created earlier
+// Provide a pointer a suitable function to be called when the result
+// Completes Valve will invoke the function passing the requested data
+m_LeaderboardFindResult_t.Set(handle, this, &YourClass::Callback);
+
+// Example Function to be called by the CallResult delegate
+// Note that Unreal runs the Callback loop on a background thread
+// This means you will need to create a GameThreadTask to bring the 
+// Result forwarded to the GameThread
+void YourClass::Callback(LeaderboardFindResult_t* Response, bool bIOError)
+{
+	if (!bIOError)
+	{
+		int64 boardId = static_cast<int64>(Response->m_hSteamLeaderboard);
+		bool found = Response->m_bLeaderboardFound > 0 ? true : false;
+
+		// Execute the delegate on the game thread asynchronously
+		FGraphEventRef GameThreadTask = FFunctionGraphTask::CreateAndDispatchWhenReady([this, boardId, found]()
+		{
+			if (Callback.IsBound())
+			{
+				UE_LOG(LogTemp, Log, TEXT("Board found and callback invoked"));
+				Callback.Execute(boardId, found);
+			}
+			else
+			{
+				UE_LOG(LogTemp, Log, TEXT("Board found, no callback to invoke"));
+			}
+		}, TStatId(), nullptr, ENamedThreads::GameThread);
+		GameThreadTask->Wait();
+	}
+	else
+	{
+		// Execute the delegate on the game thread asynchronously
+		FGraphEventRef GameThreadTask = FFunctionGraphTask::CreateAndDispatchWhenReady([this]()
+		{
+			if (Callback.IsBound())
+				Callback.Execute(0, false);
+		}, TStatId(), nullptr, ENamedThreads::GameThread);
+		GameThreadTask->Wait();
+	}
+}
+```
 {% endtab %}
 
 {% tab title="Steamworks.NET" %}
+```csharp
+// First create a CallResult of type LeaderboardFindResult_t
+// This can be used with both Find and Find or Create
+// This must be held in memory until the process is returned
+// So you will want to create it as a private variable on some object
+// That will not be destroyed.
+CallResult<LeaderboardFindResult_t> m_LeaderboardFindResult_t = CallResult<LeaderboardFindResult_t>.Create();
 
+// Call Find or FindOrCreate storing the handle
+var handle = SteamUserStats.FindLeaderboard(apiName);
+// or
+var handle = SteamUserStats.FindOrCreateLeaderboard(apiName, sortMethod, displayType);
+
+// Once you have the handle you can set the CallResult
+m_LeaderboardFindResult_t.Set(handle, (results, error) =>
+{
+    // Handle the result if the error is false
+    // You want to store the results.m_hSteamLeaderboard for later use
+});
+```
 {% endtab %}
 {% endtabs %}
 
@@ -144,21 +208,78 @@ Not Applicable
 {% tab title="Toolkit for Unity" %}
 Assumes targetBoard is a [LeaderboardObject ](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-object.md)or [LeaderboardData](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-data.md)
 
+There are multiple overloads to Upload Scores to a leaderboard, see the class description for a full list.
+
 ## C\#
 
-## PlayMaker
-
-## Visual Scripting
+```csharp
+// Call Upload Score passing in any details and indicating an upload Method
+// This is an asynchronous function so the last parameter is a delegate
+// That will be run when the process completes
+targetBoard.UploadScore(score, details, uploadMethod, (callbackResult, ioError) =>
+{
+    // Handle the result if ioError is false
+});
+```
 {% endtab %}
 
 {% tab title="Toolkit for Unreal" %}
 ## Blueprint
 
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
 ## C++
+
+```cpp
+// You will need to create a variable to store the CallResult
+// This must be maintained until the CallResult is returned and complete
+CCallResult<YourClass, LeaderboardScoreUploaded_t> m_LeaderboardFindResult_t;
+
+SteamAPICall_t handle = SteamUserStats()->UploadLeaderboardScore(board, method, score, data.GetData(), data.Num());
+// Use the handle with the CallResult created earlier
+// Provide a pointer a suitable function to be called when the result
+// Completes Valve will invoke the function passing the requested data
+m_LeaderboardScoreUploaded_t.Set(handle, this, &YourClass::Callback);
+
+// Example Function to be called by the CallResult delegate
+// Note that Unreal runs the Callback loop on a background thread
+// This means you will need to create a GameThreadTask to bring the 
+// Result forwarded to the GameThread
+void YourClass::Callback(LeaderboardScoreUploaded_t* Response, bool bIOError)
+{
+	// Execute the delegate on the game thread asynchronously
+	FGraphEventRef GameThreadTask = FFunctionGraphTask::CreateAndDispatchWhenReady([this, bIOError, Response]()
+	{
+		if (!bIOError)
+		{
+			if (Callback.IsBound())
+				Callback.Execute(Response->m_bSuccess == 1, Response->m_bScoreChanged == 1, Response->m_nGlobalRankNew, Response->m_nGlobalRankPrevious);
+		}
+		else if (Callback.IsBound())
+			Callback.Execute(false, false, 0, 0);
+	}, TStatId(), nullptr, ENamedThreads::GameThread);
+	GameThreadTask->Wait();
+}
+```
 {% endtab %}
 
 {% tab title="Steamworks.NET" %}
+```csharp
+// First create a CallResult of type LeaderboardScoreUploaded_t
+// This must be held in memory until the process is returned
+// So you will want to create it as a private variable on some object
+// That will not be destroyed.
+CallResult<LeaderboardScoreUploaded_t> m_LeaderboardScoreUploaded_t = CallResult<LeaderboardScoreUploaded_t>.Create();
 
+// Call upload leaderboard score
+var handle = SteamUserStats.UploadLeaderboardScore(boardId, method, score, details, details == null ? 0 : details.Length);
+
+// Once you have the handle you can set the CallResult
+m_LeaderboardScoreUploaded_t.Set(handle, (result, error) =>
+{
+    // Handle the result if the error is false
+});
+```
 {% endtab %}
 {% endtabs %}
 
@@ -170,19 +291,66 @@ Assumes targetBoard is a [LeaderboardObject ](../../../../toolkit-for-steamworks
 
 ## C\#
 
-## PlayMaker
-
-## Visual Scripting
+```csharp
+targetBoard.GetUserEntry(detailEntriesCount, (foundEntry, ioError) =>
+{
+    // Handle the found entry if ioError is false
+});
+```
 {% endtab %}
 
 {% tab title="Toolkit for Unreal" %}
 ## Blueprint
 
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
 ## C++
+
+```cpp
+// You will need to create a variable to store the CallResult
+// This must be maintained until the CallResult is returned and complete
+CCallResult<YourClass, LeaderboardScoresDownloaded_t> m_LeaderboardScoresDownloaded_t;
+
+SteamAPICall_t handle = SteamUserStats()->DownloadLeaderboardEntriesForUsers(leaderboard, targetUsers, numUsers);
+// Use the handle with the CallResult created earlier
+// Provide a pointer a suitable function to be called when the result
+// Completes Valve will invoke the function passing the requested data
+m_LeaderboardScoresDownloaded_t.Set(handle, this, &YourClass::Callback);
+
+// Example Function to be called by the CallResult delegate
+// Note that Unreal runs the Callback loop on a background thread
+// This means you will need to create a GameThreadTask to bring the 
+// Result forwarded to the GameThread
+void YourClass::Callback(LeaderboardScoresDownloaded_t* Response, bool bIOError)
+{
+    	// Execute the delegate on the game thread asynchronously
+	FGraphEventRef GameThreadTask = FFunctionGraphTask::CreateAndDispatchWhenReady([this, bIOError, Response]()
+	{
+		// Handle the results
+	}, TStatId(), nullptr, ENamedThreads::GameThread);
+	GameThreadTask->Wait();			
+}
+```
 {% endtab %}
 
 {% tab title="Steamworks.NET" %}
+```csharp
+// First create a CallResult of type LeaderboardScoresDownloaded_t
+// This must be held in memory until the process is returned
+// So you will want to create it as a private variable on some object
+// That will not be destroyed.
+CallResult<LeaderboardScoresDownloaded_t> m_LeaderboardScoresDownloaded_t = CallResult<LeaderboardScoresDownloaded_t>.Create()
 
+// Call upload leaderboard score
+var handle = SteamUserStats.DownloadLeaderboardEntriesForUsers(boardId, new CSteamID[]{ SteamUser.GetSteamID() }, 1);
+
+// Once you have the handle you can set the CallResult
+m_LeaderboardScoresDownloaded_t.Set(handle, (results, error) =>
+{
+    request.callback.Invoke(ProcessScoresDownloaded(results, error, request.maxDetailsPerEntry), error);
+    waiting = false;
+});
+```
 {% endtab %}
 {% endtabs %}
 
@@ -194,9 +362,7 @@ Assumes targetBoard is a [LeaderboardObject ](../../../../toolkit-for-steamworks
 
 ## C\#
 
-## PlayMaker
 
-## Visual Scripting
 {% endtab %}
 
 {% tab title="Toolkit for Unreal" %}
@@ -218,9 +384,7 @@ Assumes targetBoard is a [LeaderboardObject ](../../../../toolkit-for-steamworks
 
 ## C\#
 
-## PlayMaker
 
-## Visual Scripting
 {% endtab %}
 
 {% tab title="Toolkit for Unreal" %}
@@ -242,9 +406,7 @@ Assumes targetBoard is a [LeaderboardObject ](../../../../toolkit-for-steamworks
 
 ## C\#
 
-## PlayMaker
 
-## Visual Scripting
 {% endtab %}
 
 {% tab title="Toolkit for Unreal" %}
@@ -257,215 +419,3 @@ Assumes targetBoard is a [LeaderboardObject ](../../../../toolkit-for-steamworks
 
 {% endtab %}
 {% endtabs %}
-
-## Unity Examples
-
-As with all features in the Unity version of Steamworks Complete, there are multiple ways to work with Leaderboards.
-
-* [Leaderboard Object](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-object.md)\
-  Scriptable Object that can be referenced by GameObejcts in your component scripts
-* [Leaderboard Data](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-data.md)\
-  A simple C# struct suitable for DOTS or other situations where you want to avoid the use of object references
-* [Leaderboard API](../../../../toolkit-for-steamworks/unity/api/leaderboards.client.md)\
-  A static API system is similar to the raw Steamworks APIs using modern C# features and handling all the boilerplate for you while maintaining the native Steam API structure.&#x20;
-
-### Object Setup
-
-To reference a Leaderboard in your Steam Settings press the "<mark style="color:green;">+ New</mark>" button on the Steam Settings object next to the Leaderboard entry
-
-{% hint style="info" %}
-Unfortunately, we cannot import existing leaderboards from Steam directly.
-
-
-
-Why?
-
-Valve has not provided an official means to do so through the Steam API.
-{% endhint %}
-
-![](<../../../../.gitbook/assets/image (182) (1) (1) (1).png>)
-
-A few key features to know about when you create your Leaderboard.
-
-From the Steam Settings, you can mark the leaderboard as created if missing by ticking the toggle to the left of the name. If ticked, the system will search for the board by name, if it is not found it will create the board for you.
-
-![](<../../../../.gitbook/assets/image (152) (1) (1).png>)
-
-![](<../../../../.gitbook/assets/image (165) (1) (1) (1) (1).png>)
-
-You can also specify the number of `Details` entries the board should handle by entering a number in the Details field
-
-{% hint style="warning" %}
-Each board can handle up to 64 details and no more than that
-{% endhint %}
-
-Details are a way of storing additional data on a board, you must specify how many the board will hold so that our system can know how many to read from Steam.
-
-If your marking your board as Create if Missing e.g. you have ticked the box as indicated above then you should also set the display type and sorting order by selecting the leaderboard in your Steam Settings and editing its values.
-
-![](<../../../../.gitbook/assets/image (153) (1) (1) (1).png>)
-
-{% hint style="danger" %}
-None is an available but invalid option for both settings
-
-
-
-Why even show it if it's invalid, ask Valve, it's part of the enums they provide so we expose it.
-{% endhint %}
-
-#### Details
-
-Understanding the detail array.
-
-A leaderboard is simply a score recorded for a user, Steam will sort these scores according to the sorting method you configured for the board.
-
-In many cases however you need or want additional data linked with that score, rather this is info about the player's build, stats during the session that earned them the score or something else.
-
-You can upload an array of int values along with the player's score, Steam takes up to 64 values e.g. `int[64]` These can be anything you would like as long as they are int and there are less than 64 of them.
-
-To read this data make sure you have set the `Details` field as seen in the inspector for your Leaderboard Object. This tells our system how many details it should read from Steam when reading a user's data. If you leave it at 0 we will not try to read detail values, if you enter a value larger than 64 errors will occur.
-
-The details themselves will be provided in the [LeaderboardEntry ](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-entry.md)record returned by leaderboard queries.
-
-#### Attachments
-
-Understanding leaderboard attachments.
-
-As with the `Details` You can add additional data to the leaderboard entry in the form of an attachment. This is simply a single file stored in the user's remote storage and linked to the leaderboard entry.
-
-{% hint style="info" %}
-Steam copies this item over to the board directly so it will remain even if the user later deletes it from their storage.
-{% endhint %}
-
-{% hint style="warning" %}
-Because this file is initially uploaded to the remote storage it is subject to the max file size you configured in the app for Steam Cloud aka Steam Remote Storage.
-{% endhint %}
-
-Our tools make the process of uploading and attaching files extremely simple. you can use the LeaderboardObject's AttachUGC method to upload and attach any object that is JSON serializable via the Unity JSON utility. e.g.&#x20;
-
-```csharp
-leaderboard.AttachUGC("attachmentName", myData, Encoding.UTF8, callback);
-```
-
-The above example assumes that `myData` is a JSON serializable object and that callback is a suitable method or delegate with a signature like `void Callback(LeaderbaordUGCSet_t result, bool IOError);` This will create a new file named attachmentName in the user's remote storage and then attach it to the user's entry on this leaderboard.
-
-### Leaderboard Manager
-
-The leaderboard manager is a simple component that greatly simplifies reading and writing data to and from a given leaderboard and exposes helpful events to the Unity Inspector.
-
-![](<../../../../.gitbook/assets/image (181) (1).png>)
-
-You can learn more about the [Leaderboard Manager](../../../../toolkit-for-steamworks/unity/components/leaderboard-manager.md) in its documentation article and by reviewing the [4 Leaderboards](broken-reference) sample scene.
-
-### Upload Score
-
-When uploading scores you have several options,&#x20;
-
-{% hint style="info" %}
-Upload Method or simply Method
-
-This is a concept you will see in various places when uploading&#x20;
-{% endhint %}
-
-#### [Leaderboard Object](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-object.md)
-
-The most common is to use the LeaderboardObject itself to upload scores. The LeaderboardObject is a ScriptableObject so you can reference it in any script you like and use it as such:
-
-```csharp
-leaderboard.UploadScore(42, method, callback);
-```
-
-This method requires you to pass in the score, and method of upload and provide a callback in the form of `void Callback(LeaderboardScoreUploaded_t result, bool IOError)` that will be invoked when the process is complete.
-
-{% hint style="info" %}
-Callbacks are a common feature of many multi-process systems including Unity itself.  You can [learn more about them here](../../../development/callbacks.md).
-{% endhint %}
-
-or
-
-```csharp
-leaderboard.UploadScore(42, detailArray, method, callback);
-```
-
-This method works the same as the above but can take a detailed array. This would be an array of int values and must not be longer than 64 e.g. `int[64] detailArray` This is commonly used to store additional data about the user's entry.
-
-#### [Leaderboard Manager](../../../../toolkit-for-steamworks/unity/components/leaderboard-manager.md)
-
-You can use the [Leaderboard Manager](../../../../toolkit-for-steamworks/unity/components/leaderboard-manager.md) component;\
-This component can be attached to a GameObject to manage a specific leaderboard. It is meant to be used with UI elements or for users who are not comfortable working with Scriptable Objects or the API directly. It serves to simplify the methods and features of the leaderboard system and expose common events to the Unity inspector.
-
-While it's not typical you can interact with the Leaderboard Manager from code such as.
-
-```csharp
-leaderboardManager.UploadScore(42);
-```
-
-This method takes only a score value and will upload the score with the "Keep Best" upload option.
-
-or
-
-```csharp
-leaderboardManager.UploadScore(42, detailArray);
-```
-
-This method takes a score and an array of ints, note you can only upload up to 64 ints, to read these ints you must have configured the Details value in the Leaderboard Object on the Steam Settings as shown above.
-
-or
-
-```csharp
-leaderboardManager.ForceScore(42);
-```
-
-and
-
-```csharp
-leaderboardManager.ForceScore(42, detailAray)
-```
-
-are available, these do the same as the `UploadScore` version only they do so with the "Force Update" option meaning that even if the score provided is not as good as the current score Steam will still apply it.
-
-#### Leaderboard API
-
-The leaderboard API is what does all the work no matter what method or tool you choose to use. The APIs are all static classes which make no assumptions so you need to provide more information.
-
-```csharp
-Leaderboard.API.UploadScore(leaderboard,
-                            method,
-                            score,
-                            detailArray,
-                            callback);
-```
-
-Because this is a static class we must indicate what leaderboard we want to upload to, this is done by passing in the LeaderboardObject.
-
-Next, we must indicate the upload method; [methods are defined by Steam here](https://partner.steamgames.com/doc/api/ISteamUserStats#ELeaderboardUploadScoreMethod). Typically you would upload with `ELeaderboardUploadScoreMethod.k_ELeaderboardUploadScoreMethodKeepBest` this will cause the system to keep the best score. You would never upload with `ELeaderboardUploadScoreMethod.k_ELeaderboardUploadScoreMethodNone` the 3rd option is to Force Update, forcing the board to take whatever you give it; `ELeaderboardUploadScoreMethod.k_ELeaderboardUploadScoreMethodForceUpdate` this is generally only used to "reset" aboard.
-
-## Unreal Examples
-
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-### Find Leaderboards
-
-Working with leaderboards requires you to find the Leaderboard ID first, the ID will be used with all other leaderboard functions and won't change during the execution of the app so can be cashed to save a step in future calls.
-
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-### Upload Score
-
-Uploading a score is a matter of providing a score and optionally details.
-
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-### Attach Files
-
-You can attach a file to the leaderboard for the user, this is often useful to store replays or can be used to store rich information about the user's entry. The attached file will always be related to the local user.
-
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-To attach a file you first need to upload the file to Steam's Remote Storage, once the file is uploaded you need to mark it for sharing. This will provide you with a UGC Handle that can be assigned to the board.
-
-### Reading Entries
-
-[Download Leaderboard Entries](../../../../toolkit-for-steamworks/unreal/blueprint-nodes/functions/download-leaderboard-entries.md) and [Download Leaderboard Entries for Users](../../../../toolkit-for-steamworks/unreal/blueprint-nodes/functions/download-leaderboard-entries-for-users.md) can be used to read the entries on a leaderboard.
-
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

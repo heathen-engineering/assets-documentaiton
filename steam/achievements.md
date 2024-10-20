@@ -117,7 +117,7 @@ There are many types of players and a common one across all game genres is the "
 
 Did you know you can view the global stats for games that have achievements seeing what % of the player base has achieved each achievement?
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Well now you do, this means you can use achievements to understand (vaguely) what parts of your game are used and what are not, used well and you can track where players "fall off".
 
@@ -153,20 +153,12 @@ using Achievements = HeathenEngineering.SteamworksIntegration.API.StatsAndAchiev
 //Then
 Achievements.SetAchievement("The Achievement API Name");
 ```
-
-## PlayMaker
-
-<figure><img src="../.gitbook/assets/image (464).png" alt=""><figcaption></figcaption></figure>
-
-## Visual Scripting
-
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Tookit for Unreal" %}
 ## Blueprint
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## C++
 
@@ -223,14 +215,6 @@ using Achievements = HeathenEngineering.SteamworksIntegration.API.StatsAndAchiev
 //Then
 Achievements.GetAchievement(id, out bool status);
 </code></pre>
-
-## PlayMaker
-
-<figure><img src="../.gitbook/assets/image (466).png" alt=""><figcaption></figcaption></figure>
-
-## Visual Scripting
-
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Toolkit for Unreal" %}
@@ -359,14 +343,6 @@ using Achievements = HeathenEngineering.SteamworksIntegration.API.StatsAndAchiev
 //Then
 Achievements.ClearAchievement(id);
 ```
-
-## PlayMaker
-
-<figure><img src="../.gitbook/assets/image (465).png" alt=""><figcaption></figcaption></figure>
-
-## Visual Scripting
-
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Toolkit for Unreal" %}
@@ -406,14 +382,6 @@ using Achievements = HeathenEngineering.SteamworksIntegration.API.StatsAndAchiev
 //Then
 Achievements.StoreStats();
 ```
-
-## PlayMaker
-
-<figure><img src="../.gitbook/assets/image (467).png" alt=""><figcaption></figcaption></figure>
-
-## Visual Scripting
-
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Toolkit for Unreal" %}

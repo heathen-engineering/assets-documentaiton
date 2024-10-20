@@ -84,7 +84,7 @@ If you need a code-free solution we provide you with a component script `Initial
 
 
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This component should be put on your first scene, you should make sure Steamworks has initiated before you make any use of it and ideally, before you load it into your main menu.
 

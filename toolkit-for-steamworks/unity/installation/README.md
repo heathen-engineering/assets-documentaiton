@@ -15,6 +15,6 @@ layout:
 
 # Installation
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 No matter where you license Toolkit for Steamworks from it will install via the Unity Package Manager. Once installed you can select the Samples tab to import Prefabs and Example Scenes.

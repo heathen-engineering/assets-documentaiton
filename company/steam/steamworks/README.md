@@ -61,7 +61,7 @@ With Toolkit for Steamworks, you can access and leverage every aspect of Steamwo
 
 You will need to include the Steam Shared Module. This is Unreal's built-in Third Party Engine Plugin that makes the Steamworks SDK available to your project. Sadly Unreal's built-in tools for Steamworks are very lacking so you will be using this from C++ as a raw API ... or you will want to use [Heathen's Toolkit for Steamworks](../../../toolkit-for-steamworks/unreal/) as talked about above.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Initialize
 

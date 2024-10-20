@@ -70,7 +70,7 @@ New Work In Progress Feature
 
 These are component scripts located in the Example Scene folder. Each covers a single topic and is meant to be opened and read like a book. They are functional C# code demonstrating features and use cases for the topics they cover such as LeaderboardData, UserData, etc.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The components themselves are wrapped such that they will not compile in a build and are marked as deprecated to discourage blind copy and paste. You can however take snips of the code (copy small sections) to jump-start whatever it is you are doing rewriting as needed for your own logic.
 
@@ -84,7 +84,7 @@ As of v3.4 the asset will install as a Unity Package ... this means it has an en
 
 To find the package, open Unity Package Manager, be sure you're looking in the "In Project" collection and be sure you're looking under the `Packages - Heathen Group` heading, not the `Pacakages - Asset Store` heading. There you will find the Samples tab with options to import the Example Scene and Prefabs.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Layout
 

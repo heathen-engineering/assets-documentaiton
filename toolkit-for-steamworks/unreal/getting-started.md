@@ -153,7 +153,7 @@ In some cases, however, you may wish to bind to the global event
 
 To help you do this we defined all of the global events as delegates on the Steam Game Instance and created a simple Get Steam Game Instance method that will fetch the current instance for you. You can then browse and bind on any events you like, be sure to unbind before the object in question leaves scope as these are global events that remain in scope themselves for the life of your game.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>An example of binding an event</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>An example of binding an event</p></figcaption></figure>
 
 ## Callbacks
 
@@ -169,13 +169,13 @@ You can bind to global events via the Steam Game Instance ... we provide a simpl
 
 You can then browse and bind on any events you like, be sure to unbind before the object in question leaves scope as these are global events that remain in scope themselves for the life of your game.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>An example of binding an event</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>An example of binding an event</p></figcaption></figure>
 
 ### Function Callbacks
 
 These take the place of Valve's "CallResult" delegate and are scoped to a specific method call for these you will see there is a delegate parameter on the function call where you can create an event that will be invoked when the request is complete.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## [Steam Developer](../../company/steam/quick-start.md#sign-up-to-steamworks)
 
@@ -238,7 +238,7 @@ The Center Bottom text boxes are used to test lobby and multiplayer features.&#x
 
 Everything in the example scene is done with Blueprint Nodes requiring no C++ work at all. The UI WIdgets used are all created using Blueprint Nodes only again no C++ work required at all.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Features
 
