@@ -674,7 +674,7 @@ void YourClass::DownloadComplete(RemoteStorageDownloadUGCResult_t* result, bool 
     TArray<uint8> fileData;
     fileData.SetNumUninitialized(result->m_nSizeInBytes);
     // this will populate the fileData with the data read
-    int dataRead = SteamRemoteStorage()->UGCRead(ugcHandle, fileData.GetData(), result->m_nSizeInBytes, 0, 0);
+    int dataRead = SteamRemoteStorage()->UGCRead(ugcHandle, fileData.GetData(), result->m_nSizeInBytes, 0, EUGCReadAction::k_EUGCRead_ContinueReadingUntilFinished);
 }
 ```
 {% endtab %}
