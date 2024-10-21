@@ -33,7 +33,7 @@ First, you need to create your achievements on the Steam Developer portal. [http
 
 Log into your Steam Developer Portal and access your app's admin page. Look for the Technical Tools section and select the Edit Steamworks Settings option.
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Techincal Tools"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Techincal Tools"><figcaption></figcaption></figure>
 
 From there select the Stats & Achievements > Achievements option and create your new achievements.&#x20;
 
@@ -117,7 +117,7 @@ There are many types of players and a common one across all game genres is the "
 
 Did you know you can view the global stats for games that have achievements seeing what % of the player base has achieved each achievement?
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Well now you do, this means you can use achievements to understand (vaguely) what parts of your game are used and what are not, used well and you can track where players "fall off".
 
@@ -158,7 +158,7 @@ Achievements.SetAchievement("The Achievement API Name");
 {% tab title="Tookit for Unreal" %}
 ## Blueprint
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## C++
 
@@ -220,11 +220,11 @@ Achievements.GetAchievement(id, out bool status);
 {% tab title="Toolkit for Unreal" %}
 ## Blueprint
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Achievement Data Asset
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## C++
 
@@ -348,7 +348,7 @@ Achievements.ClearAchievement(id);
 {% tab title="Toolkit for Unreal" %}
 ## Blueprint
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## C++
 
@@ -387,7 +387,7 @@ Achievements.StoreStats();
 {% tab title="Toolkit for Unreal" %}
 ## Blueprint
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## C++
 

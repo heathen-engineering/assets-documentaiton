@@ -34,7 +34,7 @@ First, you need to create your achievements on the Steam Developer portal. [http
 
 Log into your Steam Developer Portal and access your app's admin page. Look for the Technical Tools section and select the Edit Steamworks Settings option.
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Techincal Tools"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Techincal Tools"><figcaption></figcaption></figure>
 
 From there select the Stats & Achievements > Leaderboards option and create your new boards.&#x20;
 
@@ -122,7 +122,7 @@ LeaderboardData.Get(apiName, (data, ioError) =>
 {% tab title="Toolkit for Unreal" %}
 ## Blueprint
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 ## C++
 
@@ -226,7 +226,7 @@ targetBoard.UploadScore(score, details, uploadMethod, (callbackResult, ioError) 
 {% tab title="Toolkit for Unreal" %}
 ## Blueprint
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## C++
 
@@ -302,7 +302,13 @@ targetBoard.GetUserEntry(detailEntriesCount, (foundEntry, ioError) =>
 {% tab title="Toolkit for Unreal" %}
 ## Blueprint
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+We have Task
+
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+And classic callback style options
+
+<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## C++
 
@@ -414,6 +420,12 @@ targetBoard.GetTopEntries(ELeaderboardDataRequest.k_ELeaderboardDataRequestFrien
 
 {% tab title="Toolkit for Unreal" %}
 ## Blueprint
+
+We have both Tasks
+
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+And classic Callback style options
 
 <figure><img src="../../../../.gitbook/assets/image (468).png" alt=""><figcaption></figcaption></figure>
 
@@ -646,7 +658,13 @@ This assumes you already have a LeaderboardEntry you want to read the attachment
 {% tab title="Toolkit for Unreal" %}
 ## Blueprint
 
-Coming Soon ... for now this is C++ only
+You will need the UGC Handle for the entry you want to read ... you can get this from the results of a Download Leaderboard Entries
+
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+With that, you can then download and then read the data
+
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ## C++
 

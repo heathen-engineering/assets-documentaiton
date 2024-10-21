@@ -57,11 +57,11 @@ You can ignore the "Details" property for now, Details are set at run time as da
 
 In your Steam Game Instance Blueprint, you will want to add each of your items to the Inventory Items array.
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Doing so allows our systems to update the Inventory Item Details of this data asset for you any time you use the "Simple" versions of inventory requests such as Get All Items - Simple
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Manual Detail Updates
 
@@ -75,7 +75,7 @@ We have you covered, the Steam Game Instance includes methods for clearing detai
 
 To use an Item in your Blueprints you can simply create a variable of type InventoryItemDataAsset and set its default value to be the desired instance.
 
-<figure><img src="../../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can now use the variable to work with this item type however you choose.
 

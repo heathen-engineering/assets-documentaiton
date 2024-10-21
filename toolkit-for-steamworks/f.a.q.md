@@ -91,7 +91,7 @@ For Unreal, we are working on an equivalent to "Foundation" but don't have anyth
 
 Of course, have a look at some of the [great games that already use this](https://store.steampowered.com/curator/42461073-Made-with-Heathen).
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% embed url="https://store.steampowered.com/curator/42461073-Made-with-Heathen" %}
 Some of the games that have been Made with Heathen technology.

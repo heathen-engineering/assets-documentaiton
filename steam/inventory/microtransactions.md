@@ -211,7 +211,7 @@ The [Inventory Results Ready event](../../toolkit-for-steamworks/unreal/blueprin
 
 The Start Purchase function asks Steam to load a shopping cart with given items and present it to the user for payment processing. Only items that have a defined price can be purchased, only items available to this user can be purchased. Steam will process the payment from that point forward and you are not assured of getting a response. For example, a player may simply leave the cart open and never process the transaction, they may cancel the transaction, modify items in the cart, etc.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 If a transaction is processed and authorized you will see a [Micro Txn Authorization Response](../../toolkit-for-steamworks/unreal/blueprint-nodes/events/micro-txn-authorization-response.md) event be executed. That event will carry the Order ID which can be matched to the Order ID created with the Start Purchase request.
 
@@ -231,13 +231,13 @@ The following image is an example of creating the "recipe" array needed by the E
 
 In the example, we are using all of stack 123 and 5 from stack 124.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### [Get Item Price](../../toolkit-for-steamworks/unreal/blueprint-nodes/functions/get-item-price.md)
 
 If you are setting up an in-game store or some similar microtransaction system you will likely want to know what the price of the item is for this user.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Notice that the event tells you the currency code and currency symbol seen for the user and that prices are returned as a whole number e.g. int64
 
@@ -245,6 +245,6 @@ In the case of say USD you would want to convert the price to a float and divide
 \
 
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The above are the relevant nodes to yield a string formatted for the user's currency assuming a cent-based currency like USD, GBP, etc. The resulting string here would look like this \`$1.99" assuming a base price of 199 and a currency symbol of $
