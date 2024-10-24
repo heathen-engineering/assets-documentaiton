@@ -16,17 +16,17 @@ These articles are made possible by our [GitHub Sponsors](../../../../become-a-s
 
 ## Introduction
 
-The Command System works with System Core's [GameEvents ](../../../system-core/game-events.md)to enable an easy to use and flexible command system for your next project. Commands can be parsed from string input and used to invoke game events on demand with or without arguments. This can be used for simply player commands such as emotes, chat whisper, help commands, etc. or used to drive more complex systems such as macros and end user scripting.
+The Command System works with System Core's [GameEvents ](../../../../assets/system-core/game-events.md)to enable an easy to use and flexible command system for your next project. Commands can be parsed from string input and used to invoke game events on demand with or without arguments. This can be used for simply player commands such as emotes, chat whisper, help commands, etc. or used to drive more complex systems such as macros and end user scripting.
 
 ### How does it work?
 
-Create your commands as [GameEvents ](../../../system-core/game-events.md)in your asset database, the name of the event will be used as its command text. You can use String Game Event to pass the arguments of a command along with it or you can use the Command Director to parse arguments ahead of time and use more complex or even custom Game Events with detailed parameters.
+Create your commands as [GameEvents ](../../../../assets/system-core/game-events.md)in your asset database, the name of the event will be used as its command text. You can use String Game Event to pass the arguments of a command along with it or you can use the Command Director to parse arguments ahead of time and use more complex or even custom Game Events with detailed parameters.
 
-Once you have your [GameEvents ](../../../system-core/game-events.md)defined you link them to a Command Library this represents the set of commands the system will listen for and defines how the commands will be identified. The Command Library can be used to parse through any text searching for matching commands and optionally invoke any command found. You can also use tools such as the Command Director to pass command data into your own systems where you can perform additional logic such as parsing arguments for more complex commands.
+Once you have your [GameEvents ](../../../../assets/system-core/game-events.md)defined you link them to a Command Library this represents the set of commands the system will listen for and defines how the commands will be identified. The Command Library can be used to parse through any text searching for matching commands and optionally invoke any command found. You can also use tools such as the Command Director to pass command data into your own systems where you can perform additional logic such as parsing arguments for more complex commands.
 
 ## Configuration
 
-Step 1 is always to define your commands. A command is simply a [GameEvent](../../../system-core/game-events.md) and you can use any type of [GameEvent](../../../system-core/game-events.md) you want even custom [GameEvents](../../../system-core/game-events.md). To learn more about what a [GameEvent ](../../../system-core/game-events.md)is please read the [Knowedge Base articles on System Core's GameEvents](../../../system-core/game-events.md).
+Step 1 is always to define your commands. A command is simply a [GameEvent](../../../../assets/system-core/game-events.md) and you can use any type of [GameEvent](../../../../assets/system-core/game-events.md) you want even custom [GameEvents](../../../../assets/system-core/game-events.md). To learn more about what a [GameEvent ](../../../../assets/system-core/game-events.md)is please read the [Knowedge Base articles on System Core's GameEvents](../../../../assets/system-core/game-events.md).
 
 Once you have defined your commands your next step is to reference them in your Command Library. A command library is Scriptable Object that lists all the valid commands and how they should be parsed. You can create a new Command Library in your asset folders by right clicking and selecting **Create > UX > Commands > Library.**
 
@@ -82,7 +82,7 @@ Command names **can** contain spaces e.g. a GameEvent named "My Command" is a va
 
 ### Developer Commands
 
-A list of [GameEvents ](../../../system-core/game-events.md)representing privileged commands.&#x20;
+A list of [GameEvents ](../../../../assets/system-core/game-events.md)representing privileged commands.&#x20;
 
 {% hint style="info" %}
 Note this is not a security features its more akin to splitting out the commands you might use in a developer console such as seen in Skyrim or similar vs commands that work everywhere or in common places such as in a MMO's chat box.
@@ -92,7 +92,7 @@ The command system can be useful for developers, moders and other cases where pe
 
 ### User Commands
 
-A list of [GameEvents](../../../system-core/game-events.md) representing regular commands.
+A list of [GameEvents](../../../../assets/system-core/game-events.md) representing regular commands.
 
 ## Command Director
 

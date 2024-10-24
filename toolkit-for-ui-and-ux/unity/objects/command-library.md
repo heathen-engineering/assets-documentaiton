@@ -6,7 +6,7 @@
 Part of the [Command System](../learning/core-concepts/command-system.md) of the UX Foundation and UX Compelete assets
 {% endhint %}
 
-A scriptable object referencing a set of commands and details about how those commands are to be parsed. A command is simply a [GameEvent](../../system-core/game-events.md) that can be looked up by name. Your game can then listen for these game events to know when a command was ran. This system also handles paramiterizezd commands, that is the arguments following a command can be parsed and sent along with it.
+A scriptable object referencing a set of commands and details about how those commands are to be parsed. A command is simply a [GameEvent](../../../assets/system-core/game-events.md) that can be looked up by name. Your game can then listen for these game events to know when a command was ran. This system also handles paramiterizezd commands, that is the arguments following a command can be parsed and sent along with it.
 
 ```csharp
 /emote wave

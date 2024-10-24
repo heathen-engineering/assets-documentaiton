@@ -56,7 +56,7 @@ A typical requirement is that a window not be aloud to move or resize outside th
 
 ### Tags
 
-This system makes use of the [System Core Tags](../../system-core/scriptable-tags.md) concept which can be used to search for a given window.
+This system makes use of the [System Core Tags](../../../assets/system-core/scriptable-tags.md) concept which can be used to search for a given window.
 
 ## How To
 

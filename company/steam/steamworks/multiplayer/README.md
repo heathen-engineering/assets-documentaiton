@@ -57,7 +57,7 @@ We find it best to have the client handle the load and unload of scenes as makes
 
 [See this article for more](../../../design/multi-scene-architecture.md)
 
-See [UX Complete](../../../../assets/ux/components/scenes-manager.md) for tools that can help you leverage the power of Unity's scene system
+See [UX Complete](../../../../toolkit-for-ui-and-ux/unity/components/scenes-manager.md) for tools that can help you leverage the power of Unity's scene system
 
 ### Session Lobby
 

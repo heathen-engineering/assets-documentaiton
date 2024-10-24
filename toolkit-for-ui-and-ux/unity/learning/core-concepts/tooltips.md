@@ -29,9 +29,9 @@ By combining this simple concept with existing tools you can create any sort of 
 Triggers are available in 3 types but they all serve the same function. They determine when tooltip events should be raised e.g. when should a tip be activated and when should it cancel. They also express the activation state.
 
 {% hint style="info" %}
-Notice the ellipsis button to the left of each fields value. These are all [Scriptable Variables](../../../system-core/scriptable-variables.md) and can be set once in your project and shared everywhere or set per game object.
+Notice the ellipsis button to the left of each fields value. These are all [Scriptable Variables](../../../../assets/system-core/scriptable-variables.md) and can be set once in your project and shared everywhere or set per game object.
 
-To learn more read up on [System Core's Scriptable Variables](../../../system-core/scriptable-variables.md)
+To learn more read up on [System Core's Scriptable Variables](../../../../assets/system-core/scriptable-variables.md)
 {% endhint %}
 
 #### Game Object Trigger
@@ -40,7 +40,7 @@ This is the simplest approach and simply toggles a GameObject's SetActive method
 
 #### Game Event Trigger
 
-This trigger invokes [Game Events](../../../system-core/game-events.md) when trigger states are changed
+This trigger invokes [Game Events](../../../../assets/system-core/game-events.md) when trigger states are changed
 
 #### Unity Event Trigger
 
@@ -92,7 +92,7 @@ The result is that the tip will be shown when the user has hovered over the trig
 Not applicable to the **Tooltip Game Object Trigger**
 {% endhint %}
 
-The invoked event will be invoked when the tip is activated. For the **Tooltip Game Event Trigger** this is a [System Core Game Event](../../../system-core/game-events.md) where the **Tooltip Unity Event Trigger** uses standard Unity Events.
+The invoked event will be invoked when the tip is activated. For the **Tooltip Game Event Trigger** this is a [System Core Game Event](../../../../assets/system-core/game-events.md) where the **Tooltip Unity Event Trigger** uses standard Unity Events.
 
 {% hint style="info" %}
 If your using the Window Controller feature you should use either the Tooltip Game Event Trigger or the Tooltip Unity Event Trigger and you should set the events to invoke the Window Controller's Trigger Invoked and Trigger Cancelled methods

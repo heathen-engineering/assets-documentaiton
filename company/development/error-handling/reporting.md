@@ -26,7 +26,7 @@ PS even if your region has no such laws, you are subject to the laws of the cons
 The safe option is to simply do the right thing and ask before you do.
 {% endhint %}
 
-Rather you choose to go with an automatic or manual reporting solution Heathen's [UX Complete](../../../assets/ux/learning/core-concepts/feedback-tools.md) has tools that can greatly simplify and enrich all of this for you. If your a [GitHub Sponsor](../../../become-a-sponsor/) you already own UX Complete, if your not you can become one for just $10.
+Rather you choose to go with an automatic or manual reporting solution Heathen's [UX Complete](../../../toolkit-for-ui-and-ux/unity/learning/core-concepts/feedback-tools.md) has tools that can greatly simplify and enrich all of this for you. If your a [GitHub Sponsor](../../../become-a-sponsor/) you already own UX Complete, if your not you can become one for just $10.
 
 ### Unity User Reporting
 
@@ -34,4 +34,4 @@ Did you know Unity cloud services includes a flexible and easy to use User Repor
 
 {% embed url="https://unitytech.github.io/clouddiagnostics/userreporting/UnityCloudDiagnosticsUserReports.html" %}
 
-Even if you use Unity's reporting services as your backend solution Heathen's [UX Complete](../../../assets/ux/learning/core-concepts/feedback-tools.md) has a rich log feature with JSON based formatting and superior data collection when compared to Unity's default logging capabilities and can work with Unity's User Reporting.
+Even if you use Unity's reporting services as your backend solution Heathen's [UX Complete](../../../toolkit-for-ui-and-ux/unity/learning/core-concepts/feedback-tools.md) has a rich log feature with JSON based formatting and superior data collection when compared to Unity's default logging capabilities and can work with Unity's User Reporting.

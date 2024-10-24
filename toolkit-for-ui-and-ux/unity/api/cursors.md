@@ -30,7 +30,7 @@ The cursors interface manages the default and current cursor state for your appl
 
 ## Events
 
-Each cursor state is a [Game Event ](../../system-core/game-events.md)as such each state can be listened to and will invoke when it is enabled or disabled e.g. when the state becomes active or is replaced by another state.
+Each cursor state is a [Game Event ](../../../assets/system-core/game-events.md)as such each state can be listened to and will invoke when it is enabled or disabled e.g. when the state becomes active or is replaced by another state.
 
 ## Concepts
 
@@ -38,7 +38,7 @@ Each cursor state is a [Game Event ](../../system-core/game-events.md)as such ea
 
 A cursor state is a simple Scriptable Object which difines the details of a particular pointer. You can specify the image or an array of images to use, an animation speed if relivent as well as the hot point of the pointer.
 
-Cursor States are [Game Events](../../system-core/game-events.md) of type bool which invoke when activated or deactivated.&#x20;
+Cursor States are [Game Events](../../../assets/system-core/game-events.md) of type bool which invoke when activated or deactivated.&#x20;
 
 #### Members
 

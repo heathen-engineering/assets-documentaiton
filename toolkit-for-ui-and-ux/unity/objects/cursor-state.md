@@ -6,7 +6,7 @@
 Part of the [Cursor System](../learning/core-concepts/cursor-tools.md) of the UX Foundation and UX Compelete assets
 {% endhint %}
 
-A specialized [GameEvent](../../system-core/game-events.md) object which represents the state of a cursor.
+A specialized [GameEvent](../../../assets/system-core/game-events.md) object which represents the state of a cursor.
 
 ## Definition
 

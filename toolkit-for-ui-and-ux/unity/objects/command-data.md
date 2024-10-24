@@ -16,7 +16,7 @@ Indicates the command is valid, if false other fields will be null and this comm
 
 ### command
 
-A reference to the related [GameEvent](../../system-core/game-events.md) if valid.
+A reference to the related [GameEvent](../../../assets/system-core/game-events.md) if valid.
 
 ### sourceText
 

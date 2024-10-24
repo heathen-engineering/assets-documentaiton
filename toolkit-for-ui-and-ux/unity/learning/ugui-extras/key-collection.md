@@ -71,7 +71,7 @@ If Use Key Hold is true how frequently should the key repeat while held
 
 #### Keyboard Game Event
 
-A reference to a [Game Event](../../../system-core/game-events.md) to be invoked when the user presses a key
+A reference to a [Game Event](../../../../assets/system-core/game-events.md) to be invoked when the user presses a key
 
 #### Keyboard Key Pressed
 

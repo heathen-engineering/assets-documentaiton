@@ -30,10 +30,10 @@ With an active Cursor System you can effect the state of the pointer by attachin
 
 ## Cursor State
 
-A cursor state is a scriptable object derived from [GameEvent](../../../system-core/game-events.md)\<bool> which represents a state that the game's pointer can be in.
+A cursor state is a scriptable object derived from [GameEvent](../../../../assets/system-core/game-events.md)\<bool> which represents a state that the game's pointer can be in.
 
 {% hint style="info" %}
-Cursor States are [GameEvents](../../../system-core/game-events.md) of type bool, meaning that when the state is set or removed it is "invoked" raising the game event and indicating its state. As such you can create an event driven system that responds to states being activated or deactivated by simply adding a listener to the state.
+Cursor States are [GameEvents](../../../../assets/system-core/game-events.md) of type bool, meaning that when the state is set or removed it is "invoked" raising the game event and indicating its state. As such you can create an event driven system that responds to states being activated or deactivated by simply adding a listener to the state.
 
 ```csharp
 cursorState.AddListener(HandleThisStateChanged);
@@ -173,7 +173,7 @@ var activeState = CursorSystem.CurrentState;
 
 ### Cursor State Event
 
-The Cursor State object is derived from [GameEvent\<bool>](../../../system-core/game-events.md) and so you can define an event driven structure with changes in pointer state.&#x20;
+The Cursor State object is derived from [GameEvent\<bool>](../../../../assets/system-core/game-events.md) and so you can define an event driven structure with changes in pointer state.&#x20;
 
 ```csharp
 cursorState.AddListener(HandlerFunction);

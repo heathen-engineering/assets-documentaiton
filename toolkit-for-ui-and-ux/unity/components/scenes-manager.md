@@ -14,7 +14,7 @@ You can use as many Scenes Manager componenets as you like in as many scenes as 
 
 ### Events
 
-All events are available as Unity Events and Heathen [Game Events](../../system-core/game-events.md)
+All events are available as Unity Events and Heathen [Game Events](../../../assets/system-core/game-events.md)
 
 #### Started
 

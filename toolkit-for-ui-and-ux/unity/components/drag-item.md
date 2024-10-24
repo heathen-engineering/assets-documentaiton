@@ -30,7 +30,7 @@ public static DragItem dragObject;
 
 ### Types
 
-You will notice the Drag Item has a `Types` field which takes any kind of scriptable object you would like to place in it. This operates much like a "tag" system and in fact we provide a scriptable object `ScriptableTag` that contains no data and is meant for exsactly this sort of use. You can read more about [ScriptableTag here](../../system-core/scriptable-tags.md).
+You will notice the Drag Item has a `Types` field which takes any kind of scriptable object you would like to place in it. This operates much like a "tag" system and in fact we provide a scriptable object `ScriptableTag` that contains no data and is meant for exsactly this sort of use. You can read more about [ScriptableTag here](../../../assets/system-core/scriptable-tags.md).
 
 #### Example
 

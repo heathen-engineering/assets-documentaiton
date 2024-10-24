@@ -2,7 +2,7 @@
 description: Understanding the importance of error handling
 ---
 
-# ⁉ Error Handling
+# ⁉️ Error Handling
 
 <figure><img src="../../../.gitbook/assets/512x128 Sponsor Banner.png" alt="Become a sponsor and Do More"><figcaption></figcaption></figure>
 
@@ -35,7 +35,7 @@ Unity Learn is a site provided by Unity that helps teach various skills around U
 Properly handling errors in your app or game requires you to create a few things.
 
 {% hint style="info" %}
-our [UX Complete](../../../assets/ux/learning/core-concepts/feedback-tools.md) asset can help you with all of these concepts
+our [UX Complete](../../../toolkit-for-ui-and-ux/unity/learning/core-concepts/feedback-tools.md) asset can help you with all of these concepts
 {% endhint %}
 
 ### Dialog

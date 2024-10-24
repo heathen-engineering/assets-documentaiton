@@ -24,7 +24,7 @@ UX provides an easy to use, flexible, searchable multi-select system. Read more 
 
 ### [Selectable Object](../../components/selectable-object.md)
 
-A selectable object is simply any game object which includes the [Selectable Object](../../components/selectable-object.md) component. This component exposes the [Scriptable Tag](../../../system-core/scriptable-tags.md) system, a selection changed event and provides easy access to check for and change the selection state of the object its attached to.
+A selectable object is simply any game object which includes the [Selectable Object](../../components/selectable-object.md) component. This component exposes the [Scriptable Tag](../../../../assets/system-core/scriptable-tags.md) system, a selection changed event and provides easy access to check for and change the selection state of the object its attached to.
 
 [Selectable Objects](../../components/selectable-object.md) at start will register them selves with the [API.Selection](../../api/selection.md) interface and deregister them selves on destroy. This means you can search for selectable objects in a more efficient manner than simply searching all game objects. The API.Selection interface also stores a collection of the currently selected Selectable Objects. You can use the API.Selection interface to search all Selectable Objects or limit your search to only those that are selected.
 

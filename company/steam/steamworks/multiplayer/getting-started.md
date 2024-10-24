@@ -44,7 +44,7 @@ Steamworks.NET
 
 Heathen’s Steamworks (I suggest Complete, but Foundation might do you)
 
-[UX Complete](../../../../assets/ux/) can be a big help as well if you want to manage[ your scenes directly](../../../../assets/ux/components/scenes-manager.md) though some HLAPI NMs do some crude scene management.
+[UX Complete](../../../../toolkit-for-ui-and-ux/ux.md) can be a big help as well if you want to manage[ your scenes directly](../../../../toolkit-for-ui-and-ux/unity/components/scenes-manager.md) though some HLAPI NMs do some crude scene management.
 
 ### Configuring Steam
 

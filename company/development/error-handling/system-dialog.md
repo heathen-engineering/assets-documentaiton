@@ -43,8 +43,8 @@ The rest is up to you and would depend on what it is you want and need. For exam
 Follows are some things to consider when setting up your System Message Dialog
 
 * A means to capture screen\
-  This should probably hide the System Dialog while taking the screen cap. Our [UX Complete asset](../../../assets/ux/api/screenshot.md) has tools that can help with all of this.
+  This should probably hide the System Dialog while taking the screen cap. Our [UX Complete asset](../../../toolkit-for-ui-and-ux/unity/api/screenshot.md) has tools that can help with all of this.
 * A means to send you a report\
-  This should gather system data and formulate it in a meaningful way and then help them send that data to you either by email, Unity reporting or some other feedback tools like Zendesk ... and you guessed it Heathen has [a tool to help you with that](../../../assets/ux/learning/core-concepts/feedback-tools.md).
+  This should gather system data and formulate it in a meaningful way and then help them send that data to you either by email, Unity reporting or some other feedback tools like Zendesk ... and you guessed it Heathen has [a tool to help you with that](../../../toolkit-for-ui-and-ux/unity/learning/core-concepts/feedback-tools.md).
 * A means to recover\
   Some events will be fatal, others less so. You should give your user a means to return to menu if that is an option or close the app nicely. This can be a simple set of buttons for them to choose from.

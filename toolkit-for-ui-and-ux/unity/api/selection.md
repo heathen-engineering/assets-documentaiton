@@ -73,7 +73,7 @@ This concept can be used with any gameobject including world objects and UI, any
 ## How To
 
 {% hint style="info" %}
-An object must have the Selectable Object component in order to be selectable. Search features require the use of [Heathen's Tag](../../system-core/scriptable-tags.md) system.
+An object must have the Selectable Object component in order to be selectable. Search features require the use of [Heathen's Tag](../../../assets/system-core/scriptable-tags.md) system.
 {% endhint %}
 
 ### Select Objects

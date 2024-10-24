@@ -104,19 +104,19 @@ You will see the term Bootstrap or Bootstrap Scene used in this and other docume
 
 _**System Core and thus Game Events are included with UX**_
 
-A [Game Event](../../../system-core/game-events.md) is a special type of Scriptable Object that works much like a Unity Event but is defined as part of your game (in your asset folder) and thus always available. In contrast a Unity Event is defined as part of a component on a Game Object and is only available while that object exists in memory.
+A [Game Event](../../../../assets/system-core/game-events.md) is a special type of Scriptable Object that works much like a Unity Event but is defined as part of your game (in your asset folder) and thus always available. In contrast a Unity Event is defined as part of a component on a Game Object and is only available while that object exists in memory.
 
-To learn more see [Heathen Engineering's System Core documentation](../../../system-core/).
+To learn more see [Heathen Engineering's System Core documentation](../../../../assets/system-core/).
 {% endhint %}
 
 The Scenes Manager has three (3) optional references being the&#x20;
 
 * Started\
-  This is a [Game Event](../../../system-core/game-events.md) that will be invoked when a scene process has started
+  This is a [Game Event](../../../../assets/system-core/game-events.md) that will be invoked when a scene process has started
 * Updated\
-  This is a [Game Event](../../../system-core/game-events.md) that will be invoked when a scene process has updated
+  This is a [Game Event](../../../../assets/system-core/game-events.md) that will be invoked when a scene process has updated
 * Completed\
-  This is a [Game Event](../../../system-core/game-events.md) that will be invoked when a scene process has completed
+  This is a [Game Event](../../../../assets/system-core/game-events.md) that will be invoked when a scene process has completed
 
 #### Events
 
