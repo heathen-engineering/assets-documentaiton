@@ -43,7 +43,7 @@ Create a new Data Asset Instance of type AchievementDataAsset
 
 Set the API Name to the same value you defined in your Steamworks Developer Portal for this achievement.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Set the API Name to match the name you set in Steamworks Developer Portal</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Set the API Name to match the name you set in Steamworks Developer Portal</p></figcaption></figure>
 
 ## Use
 

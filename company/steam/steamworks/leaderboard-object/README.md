@@ -226,7 +226,7 @@ targetBoard.UploadScore(score, details, uploadMethod, (callbackResult, ioError) 
 {% tab title="Toolkit for Unreal" %}
 ## Blueprint
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## C++
 

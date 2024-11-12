@@ -200,11 +200,11 @@ You can read the Is Achieved value from the Scriptable Object in the same manner
 
 You can also get the icon, name and description of an achievement without writing any code.
 
-<figure><img src="../.gitbook/assets/image (481).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (481).png" alt=""><figcaption><p><a href="https://kb.heathen.group/toolkit-for-steamworks/unity/objects/ui-components/set-achievement-icon">Set Achievement Icon</a></p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (482).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (482).png" alt=""><figcaption><p><a href="https://kb.heathen.group/toolkit-for-steamworks/unity/objects/ui-components/set-achievement-name">Set Achievement Name</a></p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (483).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (483).png" alt=""><figcaption><p><a href="https://kb.heathen.group/toolkit-for-steamworks/unity/objects/ui-components/set-achievement-description">Set Achievement Description</a></p></figcaption></figure>
 
 ## C\#
 
@@ -357,6 +357,10 @@ else
 
 {% tabs %}
 {% tab title="Toolkit for Unity" %}
+## Code Free
+
+This is just setting the IsAchieved field to false, see the Set Achievement example.
+
 ## C\#
 
 This assumes myAch is an [AchievementObject ](../toolkit-for-steamworks/unity/classes-and-structs/achievement-object.md)or [AchievementData](../toolkit-for-steamworks/unity/classes-and-structs/achievement-data.md)
@@ -396,6 +400,12 @@ SteamUserStats.ClearAchievement(achievementApiName);
 
 {% tabs %}
 {% tab title="Toolkit for Unity" %}
+## Code Free
+
+You can drag and drop your achievement from the Steam Setting object to anything that can call a function such as a Unity Event, and then select Store as the function of the field to be invoked.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 ## C\#
 
 This assumes myAch is an [AchievementObject ](../toolkit-for-steamworks/unity/classes-and-structs/achievement-object.md)or [AchievementData](../toolkit-for-steamworks/unity/classes-and-structs/achievement-data.md)

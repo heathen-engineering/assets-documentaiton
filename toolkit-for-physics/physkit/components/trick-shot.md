@@ -12,7 +12,7 @@ These articles are made possible by our [GitHub Sponsors](../../../where-to-buy/
 
 ## Introduction
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This tool's primary purpose is to plan the flight of a projectile including bounces given the settings you define on it and ensure the projectile follows that path in a physically accurate way.
 

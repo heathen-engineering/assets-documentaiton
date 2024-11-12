@@ -70,7 +70,7 @@ New Work In Progress Feature
 
 These are component scripts located in the Example Scene folder. Each covers a single topic and is meant to be opened and read like a book. They are functional C# code demonstrating features and use cases for the topics they cover such as LeaderboardData, UserData, etc.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The components themselves are wrapped such that they will not compile in a build and are marked as deprecated to discourage blind copy and paste. You can however take snips of the code (copy small sections) to jump-start whatever it is you are doing rewriting as needed for your own logic.
 

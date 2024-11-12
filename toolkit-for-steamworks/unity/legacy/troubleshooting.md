@@ -114,7 +114,7 @@ Click okay and now the Unity Package Manager will install that package properly.
 
 the main issue with downloading a zip and using it is version control and update. Even if you insist on installing from a local disk you should still do so via Git Desktop or a similar Git install.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Unlike a zip this will be a version-managed repository so updating is a single button click, it will also show you change history and compare files on the local disk with the repo making it easy to understand what changed, when and by whom.
 

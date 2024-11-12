@@ -340,7 +340,7 @@ In the above example, we used the "Simple" version of the Get All Items, this ta
 
 <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Here we request Steam to fetch all items, Steam will give us a result handle identifying this particular request</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Here we are listening on the global event for Inventory Result Ready when we get that we compare it to our handle to see if its from our request.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Here we are listening on the global event for Inventory Result Ready when we get that we compare it to our handle to see if its from our request.</p></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Assuming it is from our request we can ask Steam to read us back the results based on that result handle</p></figcaption></figure>
 

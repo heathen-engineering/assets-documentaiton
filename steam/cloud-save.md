@@ -194,7 +194,7 @@ else
 {% tab title="Toolkit for Unreal" %}
 ## Blueprint
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Steamworks.NET" %}
@@ -220,7 +220,7 @@ CloudAPI.GetQuota(out ulong total, out ulong remaining);
 {% tab title="Toolkit for Unreal" %}
 ## Blueprint
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Steamworks.NET" %}
