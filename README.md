@@ -19,23 +19,23 @@ layout:
 
 To the Heathen Knowledge Base.&#x20;
 
-Here you will find guides, articles, and samples on all matters game developer related as well as complete documentation and guidance on all of Heathen's assets!&#x20;
+Here, you will find guides, articles, and samples on all game developer matters, as well as complete documentation and guidance on all of Heathen's assets!&#x20;
 
-This guide is made possible and supported by the [GitHub Sponsor program](become-a-sponsor/).
+This guide is made possible and supported by the [GitHub Sponsor program](where-to-buy/become-a-sponsor.md).
 
 ## Navigation
 
 :eyes: Look to your left!
 
-On the left side of the page, you will see the navigation column which has a few groups of articles.&#x20;
+On the left side of the page, you will see the navigation column with a few article groups.&#x20;
 
 ### Top
 
-The top most being the group you are in now contains general information about Heathen and this Knowledge Base like info on becoming a [GitHub Sponsor](become-a-sponsor/) :relaxed:
+The topmost being the group you are in now contains general information about Heathen and this Knowledge Base-like info on becoming a [GitHub Sponsor](where-to-buy/become-a-sponsor.md) :relaxed:
 
 ### General Guides
 
-The general guides section contains a wide variety of topics around becoming and being a game developer. From the first steps and our, [Indie Check List](company/getting-started/indie-check-list.md) to tips on [Design ](company/design/)and [Development ](company/development/)through to the [Live ](company/live.md)operation of your game (coming soon).
+The general guides section contains a wide variety of topics about becoming and being a game developer. From the first steps and our, [Indie Check List](company/getting-started/indie-check-list.md) to tips on [Design ](company/design/)and [Development ](company/development/)through to the [Live ](company/live.md)operation of your game (coming soon).
 
 ### Steam
 
@@ -46,7 +46,7 @@ We have been supporting Steam game developers for a decade and have a ton of gui
 The Heathen assets section contains full and detailed documentation on all of Heathen's assets and goes beyond simple "what and how" and into guides on common use cases and recommended practices. Each asset family has its sub-section and is divided into further sections according to the nature of the asset itself.
 
 {% hint style="success" %}
-[GitHub Sponsors](become-a-sponsor/) get instant source code access to all of our assets for $15
+[GitHub Sponsors](where-to-buy/become-a-sponsor.md) get instant source code access to all of our assets for $15
 
 Many are also available on the [Unity Asset Store](https://assetstore.unity.com/publishers/5836).
 {% endhint %}

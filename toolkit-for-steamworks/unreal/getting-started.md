@@ -22,9 +22,9 @@ layout:
 {% hint style="success" %}
 #### Like what you're seeing?
 
-Support us as a [GitHub Sponsor](../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../where-to-buy/become-a-sponsor.md) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../where-to-buy/become-a-sponsor.md) ... become a sponsor today!
 {% endhint %}
 
 ## [Installation](installation.md)
@@ -35,7 +35,7 @@ Be sure to read the [Installation ](installation.md)article, it contains informa
 
 Import the Toolkit for Steamworks plugin to your project. Whether you purchased the plugin from Unreal Marketplace or are a GitHub Sponsor you will need access to the Toolkit for Steamworks plugin to get started using it.
 
-The plugin is not free and is only available from Heathen via the [GitHub Sponsor](../../become-a-sponsor/) program, [Patreon ](https://www.patreon.com/HeathenEngineering)and on the [Unreal Marketplace](https://www.unrealengine.com/marketplace/en-US/product/ad658ddf5c434478acb95f9091ea279c). If you acquired the plugin anywhere else we suggest you remove it immediately as it's not a legit copy and likely contains malware.&#x20;
+The plugin is not free and is only available from Heathen via the [GitHub Sponsor](../../where-to-buy/become-a-sponsor.md) program, [Patreon ](https://www.patreon.com/HeathenEngineering)and on the [Unreal Marketplace](https://www.unrealengine.com/marketplace/en-US/product/ad658ddf5c434478acb95f9091ea279c). If you acquired the plugin anywhere else we suggest you remove it immediately as it's not a legit copy and likely contains malware.&#x20;
 
 ## Configuration
 

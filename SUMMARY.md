@@ -3,9 +3,8 @@
 * [Knowledge Base](README.md)
   * [Getting to know us](knowledge-base/getting-to-know-us.md)
 * [Where to Buy](where-to-buy/README.md)
+  * [Become a Sponsor](where-to-buy/become-a-sponsor.md)
   * [Heathen License Agreement](where-to-buy/heathen-license-agreement.md)
-* [Become a Sponsor](become-a-sponsor/README.md)
-  * [Licensing](become-a-sponsor/licensing.md)
 
 ## General <a href="#guides" id="guides"></a>
 

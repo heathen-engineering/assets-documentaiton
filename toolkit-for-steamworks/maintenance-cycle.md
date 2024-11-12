@@ -18,7 +18,7 @@ Or as close as is possible given Unity's tendency to shadow drop events and laun
 
 Put plainly it costs us time and money to maintain the toolkits and react to changes in the applicable platforms and technology, thus we have to charge for the service.
 
-The only channel Unity Asset Store or FAB Marketplace offers to do that is via paid updates. If you are a [GitHub Sponsor or Patreon](../become-a-sponsor/) this doesn't apply to you because you are paying for a month of upgrades with each month that you are subscribed.
+The only channel Unity Asset Store or FAB Marketplace offers to do that is via paid updates. If you are a [GitHub Sponsor or Patreon](../where-to-buy/become-a-sponsor.md) this doesn't apply to you because you are paying for a month of upgrades with each month that you are subscribed.
 
 There is no free updates for life option from any legitimate source.
 

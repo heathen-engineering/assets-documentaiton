@@ -14,7 +14,7 @@ coverY: 91.6635
 Sponsoring Heathen on GitHub for $15 a month gets you access to the source repository for Steamworks, PhysKit and UX Complete.
 
 \
-See why GitHub sponsor is the hands-down best way to Do More with Heathen in our [Licensing Article](../become-a-sponsor/licensing.md).
+See why GitHub sponsor is the hands-down best way to Do More with Heathen in our [Licensing Article](broken-reference).
 {% endhint %}
 
 ## Introduction

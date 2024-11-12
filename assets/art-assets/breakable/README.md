@@ -7,9 +7,9 @@ description: Breakable props for your destruction!
 {% hint style="success" %}
 #### Like what your seeing?
 
-Support us as a [GitHub Sponsor](../../../become-a-sponsor/) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
+Support us as a [GitHub Sponsor](../../../where-to-buy/become-a-sponsor.md) and get instant access to all our assets, exclusive tools and assets, escalated support and issue tracking and our gratitude.\
 \
-These articles are made possible by our [GitHub Sponsors](../../../become-a-sponsor/) ... become a sponsor today!
+These articles are made possible by our [GitHub Sponsors](../../../where-to-buy/become-a-sponsor.md) ... become a sponsor today!
 {% endhint %}
 
 ## Introduction
@@ -30,7 +30,7 @@ Better for us and better for you!
 Sponsoring Heathen on GitHub for $10 a month gets you access to the source repository for Steamworks, PhysKit and UX Complete; as well as our growing library of art assets.
 
 \
-See why GitHub sponsor is the hands down best way to Do More with Heathen in our [Licensing Article](../../../become-a-sponsor/licensing.md).
+See why GitHub sponsor is the hands down best way to Do More with Heathen in our [Licensing Article](broken-reference).
 {% endhint %}
 
 You can get all of Heathen's "breakable" assets as a GitHub sponsor along with all our other major assets!
