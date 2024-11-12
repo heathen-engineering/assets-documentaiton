@@ -135,8 +135,22 @@ Valve's documentation on the [Stats and Achievement](https://partner.steamgames.
 
 ### Set Achievement
 
+Setting an achievement is a 2 step process, you first "set" the achievement that is you mark it to be "unlocked". This step can be done in real-time as your game plays and even calls multiple times a frame with no adverse impact on performance as this is NOT calling the backend at all, it simply records locally that this achievement should be set.
+
+Then at an appropriate time for your game such as at the end of a boss fight, on player death, end of a mission, before or after a cut scene, etc. you would call "Store" aka "Store Stats". This will cause Steam to commit the changes for all stats and achievements to the backend. It is at this time that notifications are poped up. This should NOT be called rapidly such as with every frame, it should only be called at key points in your game.
+
 {% tabs %}
 {% tab title="Toolkit for Unity" %}
+## Code Free
+
+You can drag and drop your achievements from the Steam Settings object you wish to use to anything able to set a field or call a method. For example the On Value Changed event of a Unity UI toggle
+
+<figure><img src="../.gitbook/assets/image (477).png" alt=""><figcaption></figcaption></figure>
+
+You could optionally also have it call Store committing the change to the backend at the same time.
+
+<figure><img src="../.gitbook/assets/image (478).png" alt=""><figcaption></figcaption></figure>
+
 ## C\#
 
 This assumes myAch is an [AchievementObject ](../toolkit-for-steamworks/unity/classes-and-structs/achievement-object.md)or [AchievementData](../toolkit-for-steamworks/unity/classes-and-structs/achievement-data.md)
@@ -176,8 +190,22 @@ SteamUserStats.SetAchievement(achievementApiName, achieved);
 
 ### Read Achievement
 
+Typically when "reading" an achievement you are simply checking if the achievement is "achieved" aka "unlocked" for the user and this is a simple boolean value. You can however read additional information such as when it was unlocked, you can also get the current "icon" for the achievement which will be either the locked or unlocked version depending on if the user has achieved this achievement.
+
 {% tabs %}
 {% tab title="Toolkit for Unity" %}
+## Code Free
+
+You can read the Is Achieved value from the Scriptable Object in the same manner as setting it (see the Set Achievement above)
+
+You can also get the icon, name and description of an achievement without writing any code.
+
+<figure><img src="../.gitbook/assets/image (481).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (482).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (483).png" alt=""><figcaption></figcaption></figure>
+
 ## C\#
 
 This assumes myAch is an [AchievementObject ](../toolkit-for-steamworks/unity/classes-and-structs/achievement-object.md)or [AchievementData](../toolkit-for-steamworks/unity/classes-and-structs/achievement-data.md)

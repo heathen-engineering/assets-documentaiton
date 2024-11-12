@@ -82,6 +82,17 @@ Each Snipit contains "Example" functions demonstrating common and key features o
 
 As of v3.4 the asset will install as a Unity Package ... this means it has an entry in your Unity Package Manager and extras such as sample scenes and prefabs can be imported from there and do not automatically import.
 
+***
+
+Before you can use the example scene you need to connect some objects to the settings in your project. You can locate the SteamMain settings object in your Settings folder. This will have been created when the asset was installed, if it is missing you can cause it to be created by opening your Project Settings.
+
+In each Tab section below we will outline what objects if any need to be connected. This can not be done at the time we created the sample scene because the Settings were created in your project when you installed it.
+
+![](<../../.gitbook/assets/image (472).png>)\
+
+
+***
+
 To find the package, open Unity Package Manager, be sure you're looking in the "In Project" collection and be sure you're looking under the `Packages - Heathen Group` heading, not the `Pacakages - Asset Store` heading. There you will find the Samples tab with options to import the Example Scene and Prefabs.
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -115,6 +126,26 @@ This lets you go as "deep" or work as "lite" as suits you, your project and your
 ### Achievements
 
 This is a code-free scene, meaning all the functional aspects such as unlocking achievements is done without writing any custom code. You can examine the GameObjects to see which components were used for each aspect of the system.
+
+***
+
+You will need to connect the achievements generated for app 480 to the related objects in the scene. Expand the `[Achievements]` GameObject and the `Center` GameObject within. There you will find a GameObject for each achievement composed of standard Unity UI objects such as Toogle.
+
+<figure><img src="../../.gitbook/assets/image (475).png" alt=""><figcaption></figcaption></figure>
+
+For each achievement, there are 4 places we need to set the reference. 1st let us set the Toggle so that when the button is clicked it will set the achievement as achieved or not. Note this doesn't call "store" so you won't see the popups but it is setting the value and when the App is shut down (When Unity and Visual Studio are closed) the last value set will be committed.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (473).png" alt=""><figcaption></figcaption></figure>
+
+Connect the `Toggle` of each object to the corresponding Achievement Object
+
+Within each Achievement object (Winner Button, Champion Button, etc.) you will find 3 UI components for the Icon, Name and Description, on each is a simple Component Script that uses an Achievement object ... set each
+
+<figure><img src="../../.gitbook/assets/image (474).png" alt=""><figcaption></figcaption></figure>
+
+
+
+***
 
 The `Knowledge Base` button will link you to the [Achievements ](../../steam/achievements.md)article in this Knowledge Base.
 
@@ -198,6 +229,16 @@ Steam is capable of saving anything you can write to a file to its "cloud" and o
 ### Input
 
 This sample demonstrates the use of Steam Input with controllers, it does require that you have a controller active before you press play on the sample. It will display the correct button icons and the result of inputs read from the controller via Steam Input API. Its `Knowledge Base` button will open the [Input](../../steam/input.md) article.
+
+***
+
+To get Input connected we need to select the `[Input]` game object that can connect it to the Input-Action, Input-Set and Input-Layers in the generated Settings.
+
+<figure><img src="../../.gitbook/assets/image (476).png" alt=""><figcaption></figcaption></figure>
+
+The names should make it obvious where each goes, click the field and select the desired object.
+
+***
 
 <figure><img src="../../.gitbook/assets/image (406).png" alt=""><figcaption></figcaption></figure>
 

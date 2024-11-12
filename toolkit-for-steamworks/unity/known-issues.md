@@ -24,6 +24,15 @@ This does affect the version that is installed by default e.g. the latest versio
 
 ### Workaround
 
+{% hint style="info" %}
+This workaround doesn't always work, we are thus adding a more forceful way to get around the import issue with 2025 and later. You can select the Steam Settings object in your Settings folder and manually add Achievement objects to it
+
+You will see a new text field beside the Import button, you can enter a name and when you do an Add button will appear clicking that will add the Scriptable Object.\
+![](<../../.gitbook/assets/image (479).png>)
+
+Ideally, you would avoid doing this, in this manner as it is not as easily maintained as imported values or using the AchievmentData struct in C# directly. It can however help you work around this issue until Valve or Steamworks.NET corrects the problem.
+{% endhint %}
+
 Use Steamworks.NET for Steamworks SDK version 1.59
 
 {% hint style="danger" %}
