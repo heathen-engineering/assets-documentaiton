@@ -70,7 +70,7 @@ New Work In Progress Feature
 
 These are component scripts located in the Example Scene folder. Each covers a single topic and is meant to be opened and read like a book. They are functional C# code demonstrating features and use cases for the topics they cover such as LeaderboardData, UserData, etc.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The components themselves are wrapped such that they will not compile in a build and are marked as deprecated to discourage blind copy and paste. You can however take snips of the code (copy small sections) to jump-start whatever it is you are doing rewriting as needed for your own logic.
 
@@ -95,7 +95,7 @@ In each Tab section below we will outline what objects if any need to be connect
 
 To find the package, open Unity Package Manager, be sure you're looking in the "In Project" collection and be sure you're looking under the `Packages - Heathen Group` heading, not the `Pacakages - Asset Store` heading. There you will find the Samples tab with options to import the Example Scene and Prefabs.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Layout
 
@@ -245,6 +245,18 @@ The names should make it obvious where each goes, click the field and select the
 ### Leaderboards
 
 This sample demonstrates the use of leaderboards, displaying the local user's entry and the 10 nearest entries as well as providing a simple way to type in a value to upload to the board. The `Knowledge Base` the button will open the [Leaderboard ](../../company/steam/steamworks/leaderboard-object/)article.
+
+***
+
+The Leaderboard tab has 2 locations that need to be connected to the desired leaderboard, first drag the desired leaderboard from your Steam Settings to the LeaderboardList, Leaderboard field.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+Next select the InputField (TMP) and drag the board to the On Edn Edit event, selecting the Dynamic Force Update Score option, this should be at the top of the list of options.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+***
 
 <figure><img src="../../.gitbook/assets/image (407).png" alt=""><figcaption></figcaption></figure>
 

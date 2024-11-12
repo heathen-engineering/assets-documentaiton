@@ -117,7 +117,7 @@ There are many types of players and a common one across all game genres is the "
 
 Did you know you can view the global stats for games that have achievements seeing what % of the player base has achieved each achievement?
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Well now you do, this means you can use achievements to understand (vaguely) what parts of your game are used and what are not, used well and you can track where players "fall off".
 
@@ -404,7 +404,7 @@ SteamUserStats.ClearAchievement(achievementApiName);
 
 You can drag and drop your achievement from the Steam Setting object to anything that can call a function such as a Unity Event, and then select Store as the function of the field to be invoked.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ## C\#
 

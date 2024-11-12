@@ -16,7 +16,7 @@ These articles are made possible by our [GitHub Sponsors](../../../where-to-buy/
 
 ## &#x20;Introduction
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The Steamworks Event Triggers component works similarly to Unity's Event Trigger component letting you easily connect to any Steamworks SDK static event quickly and easily. There is no reason to use this component in C# code as all of these events are available on their respective API extensions. This component exists only to expose those events to the Unity Inspector.
 

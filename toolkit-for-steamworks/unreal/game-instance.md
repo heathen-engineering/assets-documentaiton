@@ -65,11 +65,11 @@ The Bootstrap Your Game Here is the ideal place to warm up your game systems and
 
 The Steam Game Instance has all of Steam's global events and you can register to them easily by adding a Steam Game Instance (or your derived class) as a variable to whatever blueprint you want to leverage the events from. In the constructor for that blueprint set the variable to Steam Game Instance casting to whatever specific type you might need.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 Every blueprint you make will have a construction function ready for you to set up. \
-This is where you should set the Game Instance variable as this happens before anything else so you will know that this will always be set when this object is in scope.![](<../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png>)
+This is where you should set the Game Instance variable as this happens before anything else so you will know that this will always be set when this object is in scope.![](<../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png>)
 {% endhint %}
 
 Once we have our Game Instance variable created and the logic to set it in the Construction Script we can then leverage the events from the instance as you would any other Blueprint event

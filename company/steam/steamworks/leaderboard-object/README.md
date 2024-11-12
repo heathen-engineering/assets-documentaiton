@@ -226,7 +226,7 @@ targetBoard.UploadScore(score, details, uploadMethod, (callbackResult, ioError) 
 {% tab title="Toolkit for Unreal" %}
 ## Blueprint
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## C++
 
@@ -308,7 +308,7 @@ We have Task
 
 And classic callback style options
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## C++
 
@@ -660,7 +660,7 @@ This assumes you already have a LeaderboardEntry you want to read the attachment
 
 You will need the UGC Handle for the entry you want to read ... you can get this from the results of a Download Leaderboard Entries
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 With that, you can then download and then read the data
 
