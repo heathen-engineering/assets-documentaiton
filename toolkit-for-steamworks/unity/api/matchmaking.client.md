@@ -200,7 +200,7 @@ private void HandleEvent(LobbyChatMsg result)
 Then you would register the event such as:
 
 ```csharp
-API.Matchmaking.Client.LobbyChatMsgEvent.AddListener(HandleEvent);
+API.Matchmaking.Client.EventLobbyChatMsg.AddListener(HandleEvent);
 ```
 
 When you no longer need this handler you should remove it for example when the behavior using it is destroyed
@@ -208,7 +208,7 @@ When you no longer need this handler you should remove it for example when the b
 ```csharp
 void OnDestroy()
 {
-    API.Matchmaking.Client.LobbyChatMsgEvent.RemoveListener(HandleEvent);
+    API.Matchmaking.Client.EventLobbyChatMsg.RemoveListener(HandleEvent);
 }
 ```
 
