@@ -6,15 +6,21 @@ description: Known issue and how to sort them
 
 ## 'NamedBuildTarget' does not exist
 
-Identified on Unity v6000.0.25f1 and later this appears to be a change on Unity's side that causes a script in Steamworks.NET to not compile correctly. You can work around this by double-clicking the error and adding&#x20;
+### Issue
+
+* Identified on Unity v6000.0.25f1 and later this appears to be a change on Unity's side that causes a script in Steamworks.NET to not compile correctly.&#x20;
+
+{% embed url="https://github.com/rlabrecque/Steamworks.NET/issues/654" %}
+
+### Workaround
+
+You can work around this by double-clicking the error and adding&#x20;
 
 ```csharp
 using UnityEditor.Build;
 ```
 
-To the using statements, this will update your cache copy of Steamworks.NET so you will need to do this again if you Update that plugin assuming its author hasn't fixed it yet. The issue is noted to the author of Steamworks.NET you can find a link here.
-
-{% embed url="https://github.com/rlabrecque/Steamworks.NET/issues/654" %}
+To the using statements, this will update your cache copy of Steamworks.NET so you will need to do this again if you Update that plugin assuming its author hasn't fixed it yet.&#x20;
 
 ## Steamworks.NET for Steamworks SDK v1.60
 
