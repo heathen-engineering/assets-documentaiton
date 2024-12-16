@@ -57,9 +57,9 @@ The steps of exchange are as follows
 
 You define recipes on the item that will be crafted. A recipe will specify what items or tags are required and in what quantity. Recipes can consume a specific item or any item with a given tag.
 
-The item that is crafted may be a regular [item](../../company/steam/steamworks/inventory/#items), [bundle](../../company/steam/steamworks/inventory/#bundles) or [generator](../../company/steam/steamworks/inventory/#item-generators). That means you can have the user craft a specific sword for example, or they "salvage" a sword to craft a bundle of iron, leather, etc. or you could exchange a resource for a random reward such as a loot box by having the "craft" an item generator.
+The item that is crafted may be a regular [bundle](../../company/steam/steamworks/inventory/#bundles) or [generator](../../company/steam/steamworks/inventory/#item-generators). That means you can have the user craft a specific sword for example, or they "salvage" a sword to craft a bundle of iron, leather, etc. or you could exchange a resource for a random reward such as a loot box by having the "craft" an item generator.
 
-The [Item Definition Tools](item-definition-tools.md) provided by Setamworks Complete can assist you in creating properly formatted recipes for your items.
+The [Item Definition Tools](item-definition-tools.md) provided by Steamworks Complete can assist you in creating properly formatted recipes for your items.
 
 The JSON format for an exchange is as follows:
 
@@ -159,7 +159,7 @@ To use the feature you first need to know what item ID you want to "craft" i.e. 
 
 Next, you need to know the instance ID and count of each item you will be exchanging. You typically get the Instance IDs from the Get All Items request but you can for example cascade crafting requests.
 
-An example of a cascaded crafting request would be to craft Iron Ore into Iron Bars and then craft the Iron Bars into an Iron Sword. That is your exchanging 1 or more Ore items for Bars and 1 or more Bars for Sword.
+An example of a cascaded crafting request would be to craft Iron Ore into Iron Bars and then craft the Iron Bars into an Iron Sword. That is, you are exchanging 1 or more Ore items for Bars and 1 or more Bars for Sword.
 
 The following image is an example of creating the "recipe" array needed by the Exchange Items node. In this example, we assumed we needed 15 of some item and if we had 2 stacks of 10 each with IDs of 123 and 124 respectively then the below "Make Array" node would be the correct recipe.
 
