@@ -3,7 +3,7 @@
 {% hint style="success" %}
 #### Like what you're seeing?
 
-Support us as a [GitHub Sponsor](become-a-sponsor.md) and get instant access to all our assets, exclusive tools, and assets, escalated support and issue tracking, and our gratitude.\
+Support us as a [GitHub Sponsor](become-a-sponsor.md) and get instant access to all our assets, exclusive tools, and assets, as well as escalated support and issue tracking, and we are grateful.\
 \
 These articles are made possible by our [GitHub Sponsors](become-a-sponsor.md) ... become a sponsor today!
 {% endhint %}
@@ -12,7 +12,7 @@ These articles are made possible by our [GitHub Sponsors](become-a-sponsor.md) .
 
 This license agreement is used as the foundation for bespoke license agreements with clients and applied to assets acquired through GitHub sponsorship, Patreon subscription, and similar distribution channels.
 
-This license does not conflict with or modify in any way any license you acquired through affiliates or partners such as Unity Asset Store.
+This license does not conflict with or modify in any way any license you acquired through affiliates or partners such as Unity Asset Store and Fab.
 
 The spirit of the license is that (When legitimately acquired) you have a license that allows you to use Heathen technology and content without restriction and that mitigates our legal liability\
 \
@@ -25,7 +25,7 @@ If you have any questions or concerns don't hesitate to contact us.
 
 ## License
 
-License Agreement Copyright © 2014-2024 Heathen Engineering Limited, an Irish registered corporation #556277 identified in this agreement as (“Heathen”).
+License Agreement Copyright © 2014-2025 Heathen Engineering Limited, an Irish registered corporation #556277 identified in this agreement as (“Heathen”).
 
 1. Parties to the Agreement and Subject Matter of the Agreement
 
@@ -58,7 +58,7 @@ License Agreement Copyright © 2014-2024 Heathen Engineering Limited, an Irish r
 
 &#x20;  5\. Disclaimer of Warranties
 
-5.1 You expressly understand and agree that your use of the Licensed Technology and/or any content copyright held by Heathen or otherwise obtained through Heathen is at your sole risk and that Heathen provides its Licensed Technology and other copyright held content “AS IS” and “AS AVAILABLE” without warranty of any kind, to the maximum extent permitted by applicable law. In particular, Heathen, its subsidiaries, holding companies, affiliates, licensors, and partners do not represent or warrant to you that:
+5.1 You expressly understand and agree that your use of the Licensed Technology and/or any content copyright held by Heathen or otherwise obtained through Heathen is at your sole risk and that Heathen provides its Licensed Technology and other copyright-held content “AS IS” and “AS AVAILABLE” without warranty of any kind, to the maximum extent permitted by applicable law. In particular, Heathen, its subsidiaries, holding companies, affiliates, licensors, and partners do not represent or warrant to you that:
 
 A. Your use of the Licensed Technology or Content will meet your requirements,&#x20;
 
