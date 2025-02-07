@@ -92,19 +92,21 @@ We know from experience that attempting to set a lobby in this way will fail res
 unAccountInstance = 393216u;
 ```
 
-## Unity Examples
+## Examples
 
+{% tabs %}
+{% tab title="Toolkit for Unity" %}
 Heathen has created wrap-around structures like [UserData ](../toolkit-for-steamworks/unity/classes-and-structs/user-data.md)and [Lobby ](../toolkit-for-steamworks/unity/classes-and-structs/lobby-data.md)that are interchangeable with CSteamID and ulong and provide helpful features unique to each use case of the ID. In most cases, you should be using [UserData](../toolkit-for-steamworks/unity/classes-and-structs/user-data.md), [Lobby](../toolkit-for-steamworks/unity/classes-and-structs/lobby-data.md), [Clan](../toolkit-for-steamworks/unity/classes-and-structs/clan-data.md), etc. and not need to bother with the raw CSteamID or its ulong value.
 
 Steam IDs are used for a lot of different things and each has its own set of features and functions. For example, a CSteamID can represent a user and users have additional features like name, nickname, rich presence, etc. Alternatively, a CSteamID could represent a lobby which has features like metadata, members, etc.
 
 Heathen has created a set of wrappers that let you treat each ID as a unique type and simplify working with the features of each unique type. Note each of these is implicitly convertible ... that is you can use them as if they are CSteamID\_t or ulong and you can assign them from CSteamID\_t or ulong. These also have additional handlers to help you work with them as AccountID\_t
 
-### [Clan](../toolkit-for-steamworks/unity/classes-and-structs/clan-data.md)
+### [ClanData](../toolkit-for-steamworks/unity/classes-and-structs/clan-data.md)
 
 This is for IDs that represent a "clan" or "group"
 
-### [Lobby](../toolkit-for-steamworks/unity/classes-and-structs/lobby-data.md)
+### [LobbyData](../toolkit-for-steamworks/unity/classes-and-structs/lobby-data.md)
 
 This is for IDs that represent lobbies aka chats
 
@@ -114,7 +116,7 @@ This is for IDs that represent users
 
 ### Creating Steam Ids
 
-While the full CSteamID is a 64-bit long ... not very human-friendly number the actual "unique" part is just 32-bits long and much more manageable by a human. If you know the "type" of the ID then you can reconstruct it providing only the 32-bit "account Id" part.
+While the full CSteamID is a 64-bit long, its a not very human-friendly number the actual "unique" part is just 32-bits long and much more manageable by a human. If you know the "type" of the ID then you can reconstruct it providing only the 32-bit "Account ID" part also known as a "Friend ID".
 
 #### Adding Friends
 
@@ -184,9 +186,9 @@ else
     //Invalid input text, no action taken
 }
 ```
+{% endtab %}
 
-## Unreal Examples
-
+{% tab title="Toolkit for Unreal" %}
 All Steam IDs can be expressed as simple value types such as int64 for Steam ID. Heathen provides a number of Blueprint nodes that help translate the IDs into and out of various data types such as Hex strings.
 
 See the [Steam ID Tools article](../toolkit-for-steamworks/unreal/blueprint-nodes/functions/steam-id-tools.md) for more information.
@@ -217,4 +219,9 @@ if (Result == 0 && HexValue != TEXT("0"))
 
 CSteamID steamId(Result, EUniverse::k_EUniversePublic, EAccountType::k_EAccountTypeIndividual);
 ```
+{% endtab %}
 
+{% tab title="Steamworks.NET" %}
+Details Coming Soon
+{% endtab %}
+{% endtabs %}
