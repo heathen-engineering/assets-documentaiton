@@ -115,7 +115,7 @@ And the tag descriptor using the standard tag array e.g. \<tag:value>\*\<quantit
 "exchange" : "quality:common*4"
 ```
 
-### Examples
+### Recipe Examples
 
 The following recipe would require one of the following to be true
 
@@ -133,7 +133,7 @@ You can also use [tags](../../company/steam/steamworks/inventory/#tags) in a rec
 "exchange":"handed:left,handed:right"
 ```
 
-You can require a quantity of tags as well though we don't use x in this case rather \* for example the following requires 3 `type:tree` tags and 1 `quality:fancy` tag.
+You can require a number of tags as well though we don't use x in this case but rather \* for example the following requires 3 `type:tree` tags and 1 `quality:fancy` tag.
 
 ```json
 "exchange":"type:tree*3,quality:fancy"
