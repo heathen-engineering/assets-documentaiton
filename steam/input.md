@@ -34,21 +34,25 @@ Steam Input cannot be used for Keyboard and Mouse bindings in that it was design
 <summary>Useful Links</summary>
 
 * Valve's Documentation\
-  [https://partner.steamgames.com/doc/features/steam\_controller](https://partner.steamgames.com/doc/features/steam\_controller)
+  [https://partner.steamgames.com/doc/features/steam\_controller](https://partner.steamgames.com/doc/features/steam_controller)
 * In-Game Action File Documentation\
-  [https://partner.steamgames.com/doc/features/steam\_controller/iga\_file](https://partner.steamgames.com/doc/features/steam\_controller/iga\_file)
+  [https://partner.steamgames.com/doc/features/steam\_controller/iga\_file](https://partner.steamgames.com/doc/features/steam_controller/iga_file)
 
 </details>
 
 ## Quick Start
 
-First you will need to define the actions your game has, this is done via an In-Game Action file which is a JSON-style file located at the root of the project. See [https://partner.steamgames.com/doc/features/steam\_controller/iga\_file](https://partner.steamgames.com/doc/features/steam\_controller/iga\_file) for more information.
+First you will need to define the actions your game has, this is done via an In-Game Action file which is a JSON-style file located at the root of the project. See [https://partner.steamgames.com/doc/features/steam\_controller/iga\_file](https://partner.steamgames.com/doc/features/steam_controller/iga_file) for more information.
 
 ## In-Game Action file
 
 This is how you define what action sets, layers and actions your game has and how they are used (loosely). Using this Steam's controller binding system can be used to map various controls to your actions and your game can thus be blissfully unaware of what IO device is driving the game.
 
-## Unity Examples
+## Examples
+
+{% tabs %}
+{% tab title="Toolkit for Unity" %}
+
 
 ### [Action Set](../toolkit-for-steamworks/unity/classes-and-structs/input-action-set.md)
 
@@ -64,7 +68,7 @@ An action is ... well the action the player has requested such as jump, walk, sh
 
 ### Use
 
-Once you have created your In-Game Action file; For more information on that read here [https://partner.steamgames.com/doc/features/steam\_controller/iga\_file](https://partner.steamgames.com/doc/features/steam\_controller/iga\_file)
+Once you have created your In-Game Action file; For more information on that read here [https://partner.steamgames.com/doc/features/steam\_controller/iga\_file](https://partner.steamgames.com/doc/features/steam_controller/iga_file)
 
 Steam Input actions, sets and layers can be referenced in your [Steam Settings](../toolkit-for-steamworks/unity/classes-and-structs/steam-settings/) object. Simply expand the Artifacts section and add each action, layer and set, this will create Scriptable Object representations for each under your Steam Settings object in your Asset folder. You can then reference these objects in your other scripts to detect when the action has been triggered and with what values.
 
@@ -119,7 +123,7 @@ This of course assumes you want to read data from the first controller and that 
 
 ### [Input Action Events](../toolkit-for-steamworks/unity/components/input-action-event.md)
 
-We created [InputAction ](../toolkit-for-steamworks/unity/classes-and-structs/input-action.md)as a type of [Game Event](../assets/system-core/game-events.md). So this means you can register to and listen for changes on each input action from anywhere. We have tools like the [Input Action Event](../toolkit-for-steamworks/unity/components/input-action-event.md) that let you set this up easily in Unity Editor's Inspector.
+We created [InputAction ](../toolkit-for-steamworks/unity/classes-and-structs/input-action.md)as a type of [Game Event](../assets/system-core/game-events.md). So this means you can register and listen for changes on each input action from anywhere. We have tools like the [Input Action Event](../toolkit-for-steamworks/unity/components/input-action-event.md) that let you set this up easily in Unity Editor's Inspector.
 
 You can also register for events in the script just as easily
 
@@ -137,9 +141,15 @@ private void HandleActionEvent(EventData<InputActionUpdate> data)
         ;//This action happened
 }
 ```
+{% endtab %}
 
-## Unreal Examples
-
+{% tab title="Toolkit for Unreal" %}
 Unreal already provides a very robust input mapping system in the editor which is likely the preferred option for this topic as such we haven't exposed Steam's Input API to blueprints as we have with other interfaces because we feel it's redundant compared to the native Unreal input system.
 
-Heathen's Steamworks Complete includes the complete Steamworks SDK you can use SteamInput interface in C++ now and if you have a need for Steam Input in Blueprints let us know in Discord, we expand and enhance our tools and assets based on our community's needs.
+Heathen's Steamworks Complete includes the complete Steamworks SDK you can use the SteamInput interface in C++ now and if you have a need for Steam Input in Blueprints let us know in Discord, we expand and enhance our tools and assets based on our community's needs.
+{% endtab %}
+
+{% tab title="Steamworks.NET" %}
+Coming Soon
+{% endtab %}
+{% endtabs %}

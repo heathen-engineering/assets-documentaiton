@@ -216,7 +216,7 @@ For more details see the [learning article here](./#item-store).
 
 ### Importing Generator Items
 
-You will notice when importing Generator type items that Valve for some reason chose to hide the bundle aka "items" from the import. As such when importing Generator Items the content of the item will be blanked and you will need to manually redefine its content.
+You will notice when importing Generator-type items that Valve for some reason chose to hide the bundle aka "items" from the import. As such when importing Generator Items the content of the item will be blanked and you will need to manually redefine its content.
 
 This is a limitation from Valve confirmed with Valve engineers as a deliberate limitation.
 
@@ -230,8 +230,10 @@ This is a limitation from Valve confirmed with Valve engineers as a deliberate l
 
 The above quote is from a Valve support case on this topic. It is not a bug nor a limitation we can effect. If you would like to see this changed you will need to raise it with Valve.
 
-## Unity Examples
+## Examples
 
+{% tabs %}
+{% tab title="Toolkit for Unity" %}
 Once you have created your Steam Inventory Items in the Steam Developer Portal you can access them in your project via code, through the [Item Data](../../../../toolkit-for-steamworks/unity/classes-and-structs/item-data.md) struct or the [Inventory API](../../../../toolkit-for-steamworks/unity/api/inventory.client.md). You can also access your item definitions via Scriptable Objects using the Steam Settings object.
 
 In all cases using your Item Definition you will be able to
@@ -281,8 +283,10 @@ Defines a Steam Inventory Item and provides access to commonly used features as 
 #### Item Detail
 
 An object is used to detail an instance of an item in the player's inventory. Learn more [here](../../../../toolkit-for-steamworks/unity/classes-and-structs/item-detail.md).
+{% endtab %}
 
-## Unreal Examples
+{% tab title="Toolkit for Unreal" %}
+
 
 ### Game Instance & Data Assets
 
@@ -294,7 +298,7 @@ Once created you can set the Item Definition ID ... this is the ID you created w
 
 <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-With the inventory Item defines as a Data Asset you can then reference the item in you Steam Game Settings blueprint.
+With the inventory, Item is defined as a Data Asset you can then reference the item in you Steam Game Settings blueprint.
 
 <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -373,3 +377,5 @@ As noted this "starts" the process but does not mean the transaction is complete
 Note that a transaction can fail or be cancelled... so its the "Authorized = True" that indicates this order is complete. Also, be aware the user may have changed the state of the shopping cart before completing the transaction so items may have been added or removed. It would be advisable to check the state of the inventory again or to listen to the Inventory Results Ready event and listen for changes to the player's inventory
 
 <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+{% endtab %}
+{% endtabs %}
