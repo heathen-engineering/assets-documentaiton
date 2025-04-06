@@ -72,5 +72,5 @@ If you're still here, wonderful! The game industry, like any creative industry, 
 {% hint style="success" %}
 Choose a job you love, and you will never have to work a day in your life\
 \
-_Probably **not** said by Confucius, at least not in so many words ... still true_
+&#xNAN;_&#x50;robably **not** said by Confucius, at least not in so many words ... still true_
 {% endhint %}

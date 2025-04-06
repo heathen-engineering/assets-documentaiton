@@ -20,7 +20,7 @@ These articles are made possible by our [GitHub Sponsors](https://github.com/spo
 #### Definition
 
 _**Bootstrap**_\
-_Noun_\
+&#xNAN;_&#x4E;oun_\
 **COMPUTING** a technique of loading a program into a computer by means of a few initial instructions which enable the introduction of the rest of the program from an input device.
 
 _Verb_\

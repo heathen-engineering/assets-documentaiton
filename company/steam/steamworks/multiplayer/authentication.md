@@ -29,8 +29,8 @@ Is highly important, that you should fully read Valve's own documentation around
 
 Heathen's Authentication API handles both Client and Server authentication and manages the ticket and session data generated for you.
 
-{% content-ref url="../../../../toolkit-for-steamworks/unity/api/authentication.md" %}
-[authentication.md](../../../../toolkit-for-steamworks/unity/api/authentication.md)
+{% content-ref url="../../../../old-toolkit-for-steamworks/unity/api-extensions/authentication.md" %}
+[authentication.md](../../../../old-toolkit-for-steamworks/unity/api-extensions/authentication.md)
 {% endcontent-ref %}
 
 You will notice that unlike other APIs there is no Client or Server or Web version. Because the Steam API endpoints have the same requirements and signatures for all targets we can select the correct endpoint for you based on the build type.
@@ -39,7 +39,7 @@ That is for a client or "normal" build we will use the Client endpoints and for 
 
 ### Generate Ticket
 
-[Get Auth Session Ticket](../../../../toolkit-for-steamworks/unity/api/authentication.md#getauthsessionticket)
+[Get Auth Session Ticket](../../../../old-toolkit-for-steamworks/unity/api-extensions/authentication.md#getauthsessionticket)
 
 ```csharp
 Authentication.GetAuthSessionTicket(identity, (ticket, IOError) =>
@@ -74,7 +74,7 @@ Each ticket can be used exactly once and does expire after some time. So for exa
 
 ### Begin Auth Session
 
-[Begin Auth Session](../../../../toolkit-for-steamworks/unity/api/authentication.md#beginauthsession)
+[Begin Auth Session](../../../../old-toolkit-for-steamworks/unity/api-extensions/authentication.md#beginauthsession)
 
 ```csharp
 void AuthenticatUser(byte[] ticket, UserData user)
@@ -148,7 +148,7 @@ Having authenticated a user allows for a few additional features. For example, a
 
 ### End Auth Session
 
-[End Auth Session](../../../../toolkit-for-steamworks/unity/api/authentication.md#endauthsession)
+[End Auth Session](../../../../old-toolkit-for-steamworks/unity/api-extensions/authentication.md#endauthsession)
 
 ```csharp
 void UserLoggedOff(UserData user)
@@ -165,11 +165,11 @@ A common use for authentication sessions is to validate that a given user owns s
 
 You can either serialize the local user's whole inventory (rare)
 
-[Serialize All Item Results](../../../../toolkit-for-steamworks/unity/api/inventory.client.md#serializeallitemresults)
+[Serialize All Item Results](../../../../old-toolkit-for-steamworks/unity/api-extensions/inventory.client.md#serializeallitemresults)
 
 or you can serialize specific items (more common)
 
-[Serialize Item Results By ID](../../../../toolkit-for-steamworks/unity/api/inventory.client.md#serializeitemresultsbyid)
+[Serialize Item Results By ID](../../../../old-toolkit-for-steamworks/unity/api-extensions/inventory.client.md#serializeitemresultsbyid)
 
 In either case, the result is a byte\[] of data that represents the inventory state at the time of serialization, who that inventory was read from and when it was read.
 
@@ -192,7 +192,7 @@ The specifics of sending the data are between you and your networking tools, the
 
 When your peer or server receives this data they can read its details
 
-[Deserialize Result](../../../../toolkit-for-steamworks/unity/api/inventory.client.md#destroyresult)
+[Deserialize Result](../../../../old-toolkit-for-steamworks/unity/api-extensions/inventory.client.md#destroyresult)
 
 ```csharp
 void ValidateInventory(UserData user, byte[] data)
@@ -215,11 +215,11 @@ void ValidateInventory(UserData user, byte[] data)
 
 ### Generate Ticket
 
-The [Get Auth Session Ticket](../../../../toolkit-for-steamworks/unreal/blueprint-nodes/functions/get-auth-session-ticket.md) node will return an [Auth Ticket Data](../../../../toolkit-for-steamworks/unreal/blueprint-nodes/types/auth-ticket-data.md) object containing the handle and byte array of the ticket. The "For Steam ID" value should be set to the Steam ID of the User or Server that will be using the ticket in the Begin Auth Session process.
+The [Get Auth Session Ticket](../../../../old-toolkit-for-steamworks/unreal/blueprint-nodes/functions/get-auth-session-ticket.md) node will return an [Auth Ticket Data](../../../../old-toolkit-for-steamworks/unreal/blueprint-nodes/types/auth-ticket-data.md) object containing the handle and byte array of the ticket. The "For Steam ID" value should be set to the Steam ID of the User or Server that will be using the ticket in the Begin Auth Session process.
 
 <figure><img src="../../../../.gitbook/assets/image (24).png" alt=""><figcaption><p>Client version of the node</p></figcaption></figure>
 
-If you are sending the ticket to a system using Steam Web API then you need to use the [Get Web Auth Session Ticket](../../../../toolkit-for-steamworks/unreal/blueprint-nodes/functions/get-auth-ticket-for-web-api.md) in its place and the identity you pass in should match the identity used by that web app.
+If you are sending the ticket to a system using Steam Web API then you need to use the [Get Web Auth Session Ticket](../../../../old-toolkit-for-steamworks/unreal/blueprint-nodes/functions/get-auth-ticket-for-web-api.md) in its place and the identity you pass in should match the identity used by that web app.
 
 ### Send Ticket
 
@@ -227,7 +227,7 @@ How you send the ticket to the user, server or web API using it is up to you. Yo
 
 ### Begin Auth Session
 
-Note the Client and Server variants of the [Begin Auth Session](../../../../toolkit-for-steamworks/unreal/blueprint-nodes/functions/begin-auth-session.md) node, only a[ Steam Game Server](game-server-browser/) should use the Server version and only a Client should use the Client version.
+Note the Client and Server variants of the [Begin Auth Session](../../../../old-toolkit-for-steamworks/unreal/blueprint-nodes/functions/begin-auth-session.md) node, only a[ Steam Game Server](game-server-browser/) should use the Server version and only a Client should use the Client version.
 
 The Steam ID field is the ID of the entity this ticket is believed to be from
 
@@ -237,7 +237,7 @@ The Steam ID field is the ID of the entity this ticket is believed to be from
 
 ### End Auth Session
 
-Note the Client and Server variants of the [End Auth Session](../../../../toolkit-for-steamworks/unreal/blueprint-nodes/functions/end-auth-session.md) node, only a[ Steam Game Server](game-server-browser/) should use the Server version and only a Client should use the Client version.
+Note the Client and Server variants of the [End Auth Session](../../../../old-toolkit-for-steamworks/unreal/blueprint-nodes/functions/end-auth-session.md) node, only a[ Steam Game Server](game-server-browser/) should use the Server version and only a Client should use the Client version.
 
 The Steam ID field is the ID of the entity to end the session relationship with.
 
@@ -247,4 +247,4 @@ The Steam ID field is the ID of the entity to end the session relationship with.
 
 ### Verify Inventory
 
-See the [Serialize Result](../../../../toolkit-for-steamworks/unreal/blueprint-nodes/functions/serialize-result.md) and [Deserialize Result](../../../../toolkit-for-steamworks/unreal/blueprint-nodes/functions/deserialize-result.md) articles for details on the nodes and usage for verifying inventory ownership via the Steam Authentication system.
+See the [Serialize Result](../../../../old-toolkit-for-steamworks/unreal/blueprint-nodes/functions/serialize-result.md) and [Deserialize Result](../../../../old-toolkit-for-steamworks/unreal/blueprint-nodes/functions/deserialize-result.md) articles for details on the nodes and usage for verifying inventory ownership via the Steam Authentication system.

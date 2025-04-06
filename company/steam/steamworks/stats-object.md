@@ -38,7 +38,7 @@ Once you add a sate you need to provide its API name exactly as you created it i
 
 ### Using Stats
 
-See the [Int Stat Object](../../../toolkit-for-steamworks/unity/classes-and-structs/int-stat.md), [Float Stat Object](../../../toolkit-for-steamworks/unity/classes-and-structs/float-stat.md) and [Avg Rate Stat Object](../../../toolkit-for-steamworks/unity/classes-and-structs/avg-rate-stat.md) for details on how to use each. In general though the process is that you will create a reference to the stat in question in one of your game's scripts such as
+See the [Int Stat Object](../../../old-toolkit-for-steamworks/unity/objects/classes/int-stat.md), [Float Stat Object](../../../old-toolkit-for-steamworks/unity/objects/classes/float-stat.md) and [Avg Rate Stat Object](../../../old-toolkit-for-steamworks/unity/objects/classes/avg-rate-stat.md) for details on how to use each. In general though the process is that you will create a reference to the stat in question in one of your game's scripts such as
 
 ```csharp
 public IntStatObject myIntStat;
@@ -75,7 +75,7 @@ myIntStat.StorStats();
 
 To read global stats you need to first request them, this will read the current state of the global stats for the app optionally with a date range for the number of "day by day" values to read for.
 
-#### [Request Global Stats](../../../toolkit-for-steamworks/unity/api/statsandachievements.client.md#requestglobalstats)
+#### [Request Global Stats](../../../old-toolkit-for-steamworks/unity/api-extensions/statsandachievements.client.md#requestglobalstats)
 
 > How many days of day-by-day history to retrieve in addition to the overall totals. The limit is 60.
 
@@ -85,7 +85,7 @@ StatsAndAchievements.Client.RequestGlobalStats(60, callback);
 
 The callback will notify you when the stats are ready to be read.
 
-#### [Get Global Stat](../../../toolkit-for-steamworks/unity/api/statsandachievements.client.md#getglobalstat)
+#### [Get Global Stat](../../../old-toolkit-for-steamworks/unity/api-extensions/statsandachievements.client.md#getglobalstat)
 
 you can read global stats as a long or a double, below is an example of reading a long value.
 

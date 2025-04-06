@@ -39,7 +39,7 @@ From there select the Stats & Achievements > Achievements option and create your
 
 Make note of the value you use in the API Name field. You will use it when working with achievements in code.&#x20;
 
-In Unity, if you prefer to work with Achievements via an object reference then you can use our [AchievementObject ](../toolkit-for-steamworks/unity/classes-and-structs/achievement-object.md)which is a Unity ScriptableObject that can be referenced and accessed like any other Unity Object.
+In Unity, if you prefer to work with Achievements via an object reference then you can use our [AchievementObject ](../old-toolkit-for-steamworks/unity/objects/classes/achievement-object.md)which is a Unity ScriptableObject that can be referenced and accessed like any other Unity Object.
 
 <figure><img src="../.gitbook/assets/image (1) (6).png" alt="Achievement test"><figcaption></figcaption></figure>
 
@@ -127,7 +127,7 @@ Well now you do, this means you can use achievements to understand (vaguely) wha
 >
 > Steam Stats and Achievements provides an easy way for your game to provide persistent, roaming achievement and statistics tracking for your users. The user's data is associated with their Steam account, and each user's achievements and statistics can be formatted and displayed in their Steam Community Profile.
 
-Achievements like stats are created in your [Steam Developer Portal](https://partner.steamgames.com/), once created there you can access them via their ID, if you are not using Heathen's Steamworks ... why aren't you, it has a free version. Then you can import your Stats and Achievements into Unity or use our [AchievementData ](../toolkit-for-steamworks/unity/classes-and-structs/achievement-data.md)structure to easily work with your achievements in code.
+Achievements like stats are created in your [Steam Developer Portal](https://partner.steamgames.com/), once created there you can access them via their ID, if you are not using Heathen's Steamworks ... why aren't you, it has a free version. Then you can import your Stats and Achievements into Unity or use our [AchievementData ](../old-toolkit-for-steamworks/unity/objects/classes/achievement-data.md)structure to easily work with your achievements in code.
 
 Valve's documentation on the [Stats and Achievement](https://partner.steamgames.com/doc/features/achievements) features is a good place to get started.
 
@@ -153,7 +153,7 @@ You could optionally also have it call Store committing the change to the backen
 
 ## C\#
 
-This assumes myAch is an [AchievementObject ](../toolkit-for-steamworks/unity/classes-and-structs/achievement-object.md)or [AchievementData](../toolkit-for-steamworks/unity/classes-and-structs/achievement-data.md)
+This assumes myAch is an [AchievementObject ](../old-toolkit-for-steamworks/unity/objects/classes/achievement-object.md)or [AchievementData](../old-toolkit-for-steamworks/unity/objects/classes/achievement-data.md)
 
 ```csharp
 myAch.IsAchieved = true;
@@ -208,7 +208,7 @@ You can also get the icon, name and description of an achievement without writin
 
 ## C\#
 
-This assumes myAch is an [AchievementObject ](../toolkit-for-steamworks/unity/classes-and-structs/achievement-object.md)or [AchievementData](../toolkit-for-steamworks/unity/classes-and-structs/achievement-data.md)
+This assumes myAch is an [AchievementObject ](../old-toolkit-for-steamworks/unity/objects/classes/achievement-object.md)or [AchievementData](../old-toolkit-for-steamworks/unity/objects/classes/achievement-data.md)
 
 <pre class="language-csharp" data-full-width="true"><code class="lang-csharp">//Is this achievement achieved?
 var isAchieved = myAch.IsAchieved;
@@ -363,7 +363,7 @@ This is just setting the IsAchieved field to false, see the Set Achievement exam
 
 ## C\#
 
-This assumes myAch is an [AchievementObject ](../toolkit-for-steamworks/unity/classes-and-structs/achievement-object.md)or [AchievementData](../toolkit-for-steamworks/unity/classes-and-structs/achievement-data.md)
+This assumes myAch is an [AchievementObject ](../old-toolkit-for-steamworks/unity/objects/classes/achievement-object.md)or [AchievementData](../old-toolkit-for-steamworks/unity/objects/classes/achievement-data.md)
 
 ```csharp
 myAch.IsAchieved = false;
@@ -408,7 +408,7 @@ You can drag and drop your achievement from the Steam Setting object to anything
 
 ## C\#
 
-This assumes myAch is an [AchievementObject ](../toolkit-for-steamworks/unity/classes-and-structs/achievement-object.md)or [AchievementData](../toolkit-for-steamworks/unity/classes-and-structs/achievement-data.md)
+This assumes myAch is an [AchievementObject ](../old-toolkit-for-steamworks/unity/objects/classes/achievement-object.md)or [AchievementData](../old-toolkit-for-steamworks/unity/objects/classes/achievement-data.md)
 
 ```csharp
 myAch.Store();

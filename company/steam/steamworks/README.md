@@ -8,9 +8,9 @@ description: How to .... everything!
 
 <figure><img src="../../../.gitbook/assets/Short Banner@2x.png" alt="Steamworks Complete"><figcaption></figcaption></figure>
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Complete</td><td><a href="https://github.com/sponsors/heathen-engineering">GitHub | Patreon</a></td><td><a href="https://www.unrealengine.com/marketplace/en-US/product/ad658ddf5c434478acb95f9091ea279c">Marketplace</a></td><td><a href="../../../.gitbook/assets/UnrealCardCover.png">UnrealCardCover.png</a></td><td><a href="../../../toolkit-for-steamworks/unreal/">unreal</a></td></tr><tr><td>Complete | Foundation</td><td><a href="https://github.com/sponsors/heathen-engineering">Gitub | Patreon</a></td><td><a href="https://assetstore.unity.com/packages/tools/integration/steam-api-steamworks-complete-246652">Asset Store</a></td><td><a href="../../../.gitbook/assets/UnityCardCover.png">UnityCardCover.png</a></td><td><a href="../../../toolkit-for-steamworks/unity/">unity</a></td></tr><tr><td>Foundation</td><td><a href="https://github.com/heathen-engineering/SteamworksFoundation">GitHub</a></td><td></td><td><a href="../../../.gitbook/assets/GodotCardCover.png">GodotCardCover.png</a></td><td><a href="broken-reference">Broken link</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Complete</td><td><a href="https://github.com/sponsors/heathen-engineering">GitHub | Patreon</a></td><td><a href="https://www.unrealengine.com/marketplace/en-US/product/ad658ddf5c434478acb95f9091ea279c">Marketplace</a></td><td><a href="../../../.gitbook/assets/UnrealCardCover.png">UnrealCardCover.png</a></td><td><a href="../../../old-toolkit-for-steamworks/unreal/">unreal</a></td></tr><tr><td>Complete | Foundation</td><td><a href="https://github.com/sponsors/heathen-engineering">Gitub | Patreon</a></td><td><a href="https://assetstore.unity.com/packages/tools/integration/steam-api-steamworks-complete-246652">Asset Store</a></td><td><a href="../../../.gitbook/assets/UnityCardCover.png">UnityCardCover.png</a></td><td><a href="../../../old-toolkit-for-steamworks/unity/">unity</a></td></tr><tr><td>Foundation</td><td><a href="https://github.com/heathen-engineering/SteamworksFoundation">GitHub</a></td><td></td><td><a href="../../../.gitbook/assets/GodotCardCover.png">GodotCardCover.png</a></td><td><a href="broken-reference">Broken link</a></td></tr></tbody></table>
 
-Heathen creates the top Steamworks integration for Unreal, Unity and is porting it to Godot! Want to do more with Valve's Steamworks SDK? Then check out [Heathen's Toolkit for Steamworks SDK](../../../toolkit-for-steamworks/steamworks.md)!
+Heathen creates the top Steamworks integration for Unreal, Unity and is porting it to Godot! Want to do more with Valve's Steamworks SDK? Then check out [Heathen's Toolkit for Steamworks SDK](../../../old-toolkit-for-steamworks/steamworks.md)!
 
 ## Integrate
 
@@ -18,9 +18,9 @@ You will need to bring the Steamworks SDK assemblies into your project so you ca
 
 ### Unity
 
-#### [Toolkit for Steamworks SDK](../../../toolkit-for-steamworks/unity/)
+#### [Toolkit for Steamworks SDK](../../../old-toolkit-for-steamworks/unity/)
 
-The best way to get started quickly and Do More is with [Heathen's Toolkit for Steamworks SDK](../../../toolkit-for-steamworks/steamworks.md#feature-comparison) or if you are not quite sure yet you can start with the free "lite" version [Foundation](../../../toolkit-for-steamworks/steamworks.md#feature-comparison).
+The best way to get started quickly and Do More is with [Heathen's Toolkit for Steamworks SDK](../../../old-toolkit-for-steamworks/steamworks.md#feature-comparison) or if you are not quite sure yet you can start with the free "lite" version [Foundation](../../../old-toolkit-for-steamworks/steamworks.md#feature-comparison).
 
 With Toolkit for Steamworks you can handle initialization and most features of Steamworks completely code-free. We also provide a robust set of tools for programmers greatly speeding up the process of integrating Steamworks with your project by providing robust and battle-tested systems and tools.&#x20;
 
@@ -51,15 +51,15 @@ First, you will need to Install Steamworks.NET, we recommend you do this via the
 
 ### Unreal
 
-#### [Toolkit for Steamworks SDK](../../../toolkit-for-steamworks/unreal/)
+#### [Toolkit for Steamworks SDK](../../../old-toolkit-for-steamworks/unreal/)
 
-The best way to get started quickly and Do More is with [Heathen's Toolkit for Steamworks SDK](../../../toolkit-for-steamworks/unreal/).
+The best way to get started quickly and Do More is with [Heathen's Toolkit for Steamworks SDK](../../../old-toolkit-for-steamworks/unreal/).
 
 With Toolkit for Steamworks, you can access and leverage every aspect of Steamworks from Blueprint or C++ and we have created a number of Unreal-specific tools to simplify common use cases such as the Steam Save Game which is a classic Unreal Save Game that can leverage Steam's Cloud Storage as you would any normal Unreal Save Game.
 
 #### Manual Install
 
-You will need to include the Steam Shared Module. This is Unreal's built-in Third Party Engine Plugin that makes the Steamworks SDK available to your project. Sadly Unreal's built-in tools for Steamworks are very lacking so you will be using this from C++ as a raw API ... or you will want to use [Heathen's Toolkit for Steamworks](../../../toolkit-for-steamworks/unreal/) as talked about above.
+You will need to include the Steam Shared Module. This is Unreal's built-in Third Party Engine Plugin that makes the Steamworks SDK available to your project. Sadly Unreal's built-in tools for Steamworks are very lacking so you will be using this from C++ as a raw API ... or you will want to use [Heathen's Toolkit for Steamworks](../../../old-toolkit-for-steamworks/unreal/) as talked about above.
 
 <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -67,11 +67,11 @@ You will need to include the Steam Shared Module. This is Unreal's built-in Thir
 
 ### Unity
 
-#### [Toolkit for Steamworks SDK](../../../toolkit-for-steamworks/unity/legacy/quick-start-guide/)
+#### [Toolkit for Steamworks SDK](../../../old-toolkit-for-steamworks/unity/legacy/quick-start-guide/)
 
 Our tools are built to support everyone, hobbyists, amateurs, pros, veteran engineers with decades of experience... and everything in between.
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3>Component</h3></td><td><ul><li>Zero Code</li></ul></td><td><a href="../../../.gitbook/assets/Screenshot 2023-01-30 111452.png">Screenshot 2023-01-30 111452.png</a></td><td><a href="../../../toolkit-for-steamworks/unity/legacy/quick-start-guide/gameobject-initialization.md">gameobject-initialization.md</a></td></tr><tr><td><h3>Object</h3></td><td><ul><li>Doesn't require a GameObject</li><li>Single line of code</li></ul></td><td><a href="../../../.gitbook/assets/Screenshot 2023-01-30 111537.png">Screenshot 2023-01-30 111537.png</a></td><td><a href="../../../toolkit-for-steamworks/unity/legacy/quick-start-guide/scriptableobject-initialization.md">scriptableobject-initialization.md</a></td></tr><tr><td><h3>API</h3></td><td><ul><li>Doesn't require a GameObject</li><li>No ScriptableObject</li><li>Pure C#</li></ul></td><td><a href="../../../.gitbook/assets/Screenshot 2023-01-30 111633.png">Screenshot 2023-01-30 111633.png</a></td><td><a href="../../../toolkit-for-steamworks/unity/legacy/quick-start-guide/api-initialization.md">api-initialization.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3>Component</h3></td><td><ul><li>Zero Code</li></ul></td><td><a href="../../../.gitbook/assets/Screenshot 2023-01-30 111452.png">Screenshot 2023-01-30 111452.png</a></td><td><a href="../../../old-toolkit-for-steamworks/unity/legacy/quick-start-guide/gameobject-initialization.md">gameobject-initialization.md</a></td></tr><tr><td><h3>Object</h3></td><td><ul><li>Doesn't require a GameObject</li><li>Single line of code</li></ul></td><td><a href="../../../.gitbook/assets/Screenshot 2023-01-30 111537.png">Screenshot 2023-01-30 111537.png</a></td><td><a href="../../../old-toolkit-for-steamworks/unity/legacy/quick-start-guide/scriptableobject-initialization.md">scriptableobject-initialization.md</a></td></tr><tr><td><h3>API</h3></td><td><ul><li>Doesn't require a GameObject</li><li>No ScriptableObject</li><li>Pure C#</li></ul></td><td><a href="../../../.gitbook/assets/Screenshot 2023-01-30 111633.png">Screenshot 2023-01-30 111633.png</a></td><td><a href="../../../old-toolkit-for-steamworks/unity/legacy/quick-start-guide/api-initialization.md">api-initialization.md</a></td></tr></tbody></table>
 
 #### Manual
 
@@ -99,7 +99,7 @@ If you are handling Steam Input you will probably want to update it as well with
 
 ### Unreal
 
-#### [Toolkit for Steamworks SDK](../../../toolkit-for-steamworks/unreal/getting-started.md)
+#### [Toolkit for Steamworks SDK](../../../old-toolkit-for-steamworks/unreal/getting-started.md)
 
 Create a new Game Instance derived from our Steam Game Instance ... or use the example BP\_SteamGameInstance as a jumping-off point.
 
@@ -109,7 +109,7 @@ Be sure to read over our Getting Started article for detailed instructions.
 
 #### Manual
 
-Keep in mind when working manually you are limited to Epic's assumptions ... which assumes you are only using Steam as part of an Online Subsystem. e.g. Online Subsystem Steam. Its configuration and initialization are part of the engine load process and are not available in PIE. [Hethen's Toolkit for Steamworks](../../../toolkit-for-steamworks/unreal/) does initialize Steam in PIE though of course some features do require you to run in standalone mode such as Overlay, Networking, etc.
+Keep in mind when working manually you are limited to Epic's assumptions ... which assumes you are only using Steam as part of an Online Subsystem. e.g. Online Subsystem Steam. Its configuration and initialization are part of the engine load process and are not available in PIE. [Hethen's Toolkit for Steamworks](../../../old-toolkit-for-steamworks/unreal/) does initialize Steam in PIE though of course some features do require you to run in standalone mode such as Overlay, Networking, etc.
 
 Setting your App ID has two places in manual Unreal Steam config, In development, the OnlineSubsystemSteam SteamDevAppId value is used
 
@@ -199,7 +199,7 @@ The only exception to this is when using the [Steam Game Server](multiplayer/gam
 
 When running a build that was not deployed to Steam and ran from the Steam client you will notice that the game fails to initialize the crashes to the desktop possibly attempting to re-launch from Steam client.
 
-This is by design, you must hint to Steam API what the app is, read the [article on steam\_appid.txt](steam\_appid.txt.md) it will explain, why this happens, how to work with it, and when you should and when you should not use the feature described.
+This is by design, you must hint to Steam API what the app is, read the [article on steam\_appid.txt](steam_appid.txt.md) it will explain, why this happens, how to work with it, and when you should and when you should not use the feature described.
 
 ### Publish Your Changes
 
@@ -285,6 +285,6 @@ Tools from Valve
 
 > Steam has grown into a large application over the years and provides many separate modules and multiple different ways to debug. This page outlines as many of them as possible to help you get the most out of Steam and Steamworks while keeping headaches to a minimum.\
 > \
-> Steam automatically outputs a number of debug to the `logs` folder, for others you may need to use [Steam Command Line Parameters](https://partner.steamgames.com/doc/sdk/api/debugging#command\_line\_parameters) or [Steam Console Commands](https://partner.steamgames.com/doc/sdk/api/debugging#console\_commands) to enable them.\
+> Steam automatically outputs a number of debug to the `logs` folder, for others you may need to use [Steam Command Line Parameters](https://partner.steamgames.com/doc/sdk/api/debugging#command_line_parameters) or [Steam Console Commands](https://partner.steamgames.com/doc/sdk/api/debugging#console_commands) to enable them.\
 > \
 > Using [ISteamUtils::SetWarningMessageHook](https://partner.steamgames.com/doc/api/ISteamUtils#SetWarningMessageHook) allows a Steamworks application to register a function that allows the Steamworks API to provide human-readable error messages to the application when something goes wrong. Most Steam APIs use it, so be sure to hook it up and look at it any time something goes wrong.

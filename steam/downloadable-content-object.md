@@ -51,7 +51,7 @@ You \*\***MUST**\*\* publish your changes in the Steam Developer Portal before t
 
 {% tabs %}
 {% tab title="Toolkit for Unity" %}
-The [Downloadable Content Object](../toolkit-for-steamworks/unity/classes-and-structs/downloadable-content-object.md) helps you track the status of DLC. You can import the DLC you have defined in the Steam Developer Portal for this application by running the simulation such that Steam API can initialize and then clicking the Import button on the Steam Settings Downloadable Content list
+The [Downloadable Content Object](../old-toolkit-for-steamworks/unity/objects/classes/downloadable-content-object.md) helps you track the status of DLC. You can import the DLC you have defined in the Steam Developer Portal for this application by running the simulation such that Steam API can initialize and then clicking the Import button on the Steam Settings Downloadable Content list
 
 ![](<../.gitbook/assets/image (157) (1) (1) (1).png>)
 
@@ -59,7 +59,7 @@ Once completed all of the DLC registered to your application will be listed unde
 
 ![](<../.gitbook/assets/image (178) (1) (1) (1) (1).png>)
 
-And can be used to test ownership of the indicated DLC. Please see the [Downloadable Content Object](../toolkit-for-steamworks/unity/classes-and-structs/downloadable-content-object.md) for details on the use of the object.
+And can be used to test ownership of the indicated DLC. Please see the [Downloadable Content Object](../old-toolkit-for-steamworks/unity/objects/classes/downloadable-content-object.md) for details on the use of the object.
 {% endtab %}
 
 {% tab title="Toolkit for Unreal" %}

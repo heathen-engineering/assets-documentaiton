@@ -67,12 +67,12 @@ Examples of Trusted Platforms, non-exhaustive (means there are other options)
   Each has its official store
 {% endhint %}
 
-For "PC" games (that is Windows, Mac and Linux games) the Steam platform is the largest and most dominant by a very long shot. If you plan to release a game on PC then you should plan to release that game on Steam. [Steamworks ](../steam/steamworks/)is a feature available freely to all Steam games and can add a lot of value to your game for your players. Heathen of course provides great tooling around [Steamworks](../../toolkit-for-steamworks/steamworks.md).
+For "PC" games (that is Windows, Mac and Linux games) the Steam platform is the largest and most dominant by a very long shot. If you plan to release a game on PC then you should plan to release that game on Steam. [Steamworks ](../steam/steamworks/)is a feature available freely to all Steam games and can add a lot of value to your game for your players. Heathen of course provides great tooling around [Steamworks](../../old-toolkit-for-steamworks/steamworks.md).
 
 Do be careful of the platforms you choose, especially if you're considering exclusivity.
 
 {% hint style="success" %}
-Our [biased opinion](../../toolkit-for-steamworks/steamworks.md) is that you should treat Steam as your primary platform and then add additional platforms to your supported list as your bandwidth (skill and resource availability) allows.\
+Our [biased opinion](../../old-toolkit-for-steamworks/steamworks.md) is that you should treat Steam as your primary platform and then add additional platforms to your supported list as your bandwidth (skill and resource availability) allows.\
 \
 This recommendation applies to console games and "major" mobile games as well. PC is the most "native" platform to any bit of software and Steam is king on PC. There is little to no reason to not release on Steam and in general, your Steam release should be the easiest to accomplish.
 {% endhint %}

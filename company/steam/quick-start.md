@@ -35,7 +35,7 @@ If you read the [getting started article](https://partner.steamgames.com/doc/get
 Technically ... for the very first step ... no.\
 In reality absolutely yes, you can't do anything meaningful without your App ID.
 
-You can test some features of Steam API using the test application "Spacewars" whose app ID is 480. This is the app ID we use in all of our [Steamworks](../../toolkit-for-steamworks/steamworks.md) sample scenes and doesn't require you to be signed up to use it.
+You can test some features of Steam API using the test application "Spacewars" whose app ID is 480. This is the app ID we use in all of our [Steamworks](../../old-toolkit-for-steamworks/steamworks.md) sample scenes and doesn't require you to be signed up to use it.
 
 Having said that you can't do anything meaningful with the test app, it exists as a teaching tool. To create the stats, achievements, leaderboard, workshop, etc. for your game you will require an App ID and we do recommend you do this as soon as you are sure you want to release your game on Steam ... no reason to wait.
 
@@ -54,7 +54,7 @@ Heathen's Toolkit for Steamworks SDK is the best tool for Valve's Steamworks SDK
 
 <figure><img src="../../.gitbook/assets/Short Banner@2x.png" alt="Steamworks Complete"><figcaption></figcaption></figure>
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Complete</td><td><a href="https://github.com/sponsors/heathen-engineering">GitHub | Patreon</a></td><td><a href="https://www.unrealengine.com/marketplace/en-US/product/ad658ddf5c434478acb95f9091ea279c">Marketplace</a></td><td><a href="../../.gitbook/assets/UnrealCardCover.png">UnrealCardCover.png</a></td><td><a href="../../toolkit-for-steamworks/unreal/">unreal</a></td></tr><tr><td>Complete | Foundation</td><td><a href="https://github.com/sponsors/heathen-engineering">Gitub | Patreon</a></td><td><a href="https://assetstore.unity.com/packages/tools/integration/steam-api-steamworks-complete-246652">Asset Store</a></td><td><a href="../../.gitbook/assets/UnityCardCover.png">UnityCardCover.png</a></td><td><a href="../../toolkit-for-steamworks/unity/">unity</a></td></tr><tr><td>Foundation</td><td><a href="https://github.com/heathen-engineering/SteamworksFoundation">GitHub</a></td><td></td><td><a href="../../.gitbook/assets/GodotCardCover.png">GodotCardCover.png</a></td><td><a href="broken-reference">Broken link</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Complete</td><td><a href="https://github.com/sponsors/heathen-engineering">GitHub | Patreon</a></td><td><a href="https://www.unrealengine.com/marketplace/en-US/product/ad658ddf5c434478acb95f9091ea279c">Marketplace</a></td><td><a href="../../.gitbook/assets/UnrealCardCover.png">UnrealCardCover.png</a></td><td><a href="../../old-toolkit-for-steamworks/unreal/">unreal</a></td></tr><tr><td>Complete | Foundation</td><td><a href="https://github.com/sponsors/heathen-engineering">Gitub | Patreon</a></td><td><a href="https://assetstore.unity.com/packages/tools/integration/steam-api-steamworks-complete-246652">Asset Store</a></td><td><a href="../../.gitbook/assets/UnityCardCover.png">UnityCardCover.png</a></td><td><a href="../../old-toolkit-for-steamworks/unity/">unity</a></td></tr><tr><td>Foundation</td><td><a href="https://github.com/heathen-engineering/SteamworksFoundation">GitHub</a></td><td></td><td><a href="../../.gitbook/assets/GodotCardCover.png">GodotCardCover.png</a></td><td><a href="broken-reference">Broken link</a></td></tr></tbody></table>
 
 ### Unlearning Bad Habits
 
@@ -106,7 +106,7 @@ Sadly a great many Unity Asset developers do what Unity Asset developers often d
 SteamManager should not be present much less used in any project. It's a learning tool, not production code.
 {% endhint %}
 
-The functionality that SteamManager provided in its original context is handled by Heathen's systems. We provide both a free lite version and a paid full-featured version [for Unity](../../toolkit-for-steamworks/unity/).
+The functionality that SteamManager provided in its original context is handled by Heathen's systems. We provide both a free lite version and a paid full-featured version [for Unity](../../old-toolkit-for-steamworks/unity/).
 
 ## Comming Soon
 

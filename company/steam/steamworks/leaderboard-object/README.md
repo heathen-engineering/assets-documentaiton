@@ -89,7 +89,7 @@ To work around the issue make a new board (with a new name) and set it up with t
 
 {% tabs %}
 {% tab title="Toolkit for Unity" %}
-Assumes targetBoard is a [LeaderboardObject ](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-object.md)or [LeaderboardData](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-data.md)
+Assumes targetBoard is a [LeaderboardObject ](../../../../old-toolkit-for-steamworks/unity/objects/classes/leaderboard-object.md)or [LeaderboardData](../../../../old-toolkit-for-steamworks/unity/objects/classes/leaderboard-data.md)
 
 ## C\#
 
@@ -206,7 +206,7 @@ m_LeaderboardFindResult_t.Set(handle, (results, error) =>
 
 {% tabs %}
 {% tab title="Toolkit for Unity" %}
-Assumes targetBoard is a [LeaderboardObject ](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-object.md)or [LeaderboardData](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-data.md)
+Assumes targetBoard is a [LeaderboardObject ](../../../../old-toolkit-for-steamworks/unity/objects/classes/leaderboard-object.md)or [LeaderboardData](../../../../old-toolkit-for-steamworks/unity/objects/classes/leaderboard-data.md)
 
 There are multiple overloads to Upload Scores to a leaderboard, see the class description for a full list.
 
@@ -287,7 +287,7 @@ m_LeaderboardScoreUploaded_t.Set(handle, (result, error) =>
 
 {% tabs %}
 {% tab title="Toolkit for Unity" %}
-Assumes targetBoard is a [LeaderboardObject ](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-object.md)or [LeaderboardData](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-data.md)
+Assumes targetBoard is a [LeaderboardObject ](../../../../old-toolkit-for-steamworks/unity/objects/classes/leaderboard-object.md)or [LeaderboardData](../../../../old-toolkit-for-steamworks/unity/objects/classes/leaderboard-data.md)
 
 ## C\#
 
@@ -363,7 +363,7 @@ m_LeaderboardScoresDownloaded_t.Set(handle, (results, error) =>
 
 {% tabs %}
 {% tab title="Toolkit for Unity" %}
-Assumes targetBoard is a [LeaderboardObject ](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-object.md)or [LeaderboardData](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-data.md)
+Assumes targetBoard is a [LeaderboardObject ](../../../../old-toolkit-for-steamworks/unity/objects/classes/leaderboard-object.md)or [LeaderboardData](../../../../old-toolkit-for-steamworks/unity/objects/classes/leaderboard-data.md)
 
 ## C\#
 
@@ -496,7 +496,7 @@ m_LeaderboardScoresDownloaded_t.Set(handle, (results, error) =>
 
 {% tabs %}
 {% tab title="Toolkit for Unity" %}
-Assumes targetBoard is a [LeaderboardObject ](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-object.md)or [LeaderboardData](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-data.md)
+Assumes targetBoard is a [LeaderboardObject ](../../../../old-toolkit-for-steamworks/unity/objects/classes/leaderboard-object.md)or [LeaderboardData](../../../../old-toolkit-for-steamworks/unity/objects/classes/leaderboard-data.md)
 
 ## C\#
 
@@ -635,7 +635,7 @@ void ShareComplete(RemoteStorageFileShareResult_t result, bool ioError)
 
 {% tabs %}
 {% tab title="Toolkit for Unity" %}
-Assumes targetBoard is a [LeaderboardObject ](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-object.md)or [LeaderboardData](../../../../toolkit-for-steamworks/unity/classes-and-structs/leaderboard-data.md)
+Assumes targetBoard is a [LeaderboardObject ](../../../../old-toolkit-for-steamworks/unity/objects/classes/leaderboard-object.md)or [LeaderboardData](../../../../old-toolkit-for-steamworks/unity/objects/classes/leaderboard-data.md)
 
 This assumes you already have a LeaderboardEntry you want to read the attachment for. and it assumes the data you are reading is serialized from a serializable object named "SomeObject"
 

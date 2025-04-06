@@ -81,7 +81,7 @@ Why?
 
 If you take the time to understand the basics everything else will come faster and easier. The fastest way to reach your goal is to do it the right way, the first time.\
 \
-_Just a little quote form James that I find I use a lot._
+&#xNAN;_&#x4A;ust a little quote form James that I find I use a lot._
 {% endhint %}
 
 So start scripting now. The time you spent reading this far in this document, you could have gotten through your first script in the Junior Programmer course I linked above. Assuming you skipped the how to install Unity. I assume you already know how to install Unity.

@@ -48,7 +48,7 @@ Heathen’s Steamworks (I suggest Complete, but Foundation might do you)
 
 ### Configuring Steam
 
-Setting up your Steam project. If you going with a P2P model nothing special to be done here but if you're going with a Client-Server setup and intend to build a [Steam Game Server](game-server-browser/) then you also need to configure your Steam App for that. You can read more in Valve's documentation for Steam Game Server [here](https://partner.steamgames.com/doc/features/multiplayer/game\_servers).
+Setting up your Steam project. If you going with a P2P model nothing special to be done here but if you're going with a Client-Server setup and intend to build a [Steam Game Server](game-server-browser/) then you also need to configure your Steam App for that. You can read more in Valve's documentation for Steam Game Server [here](https://partner.steamgames.com/doc/features/multiplayer/game_servers).
 
 For a general understanding of what [P2P ](../../../design/multiplayer/#peer-to-peer-p2p)vs[ Client/Server](../../../design/multiplayer/#client-server) is please read our [design article](../../../design/multiplayer/). Interestingly a lot of people have a misconception as to what P2P and Client/Server mean ... it is wise to click those links and check the terminology.
 
@@ -69,19 +69,19 @@ bUseSteamNetworking=False
 
 You can learn more about Unreal Online Subsystem and in particular why it is not great when working with Steam and Steamworks SDK.
 
-{% content-ref url="../../../../toolkit-for-steamworks/unreal/online-subsystem.md" %}
-[online-subsystem.md](../../../../toolkit-for-steamworks/unreal/online-subsystem.md)
+{% content-ref url="../../../../old-toolkit-for-steamworks/unreal/online-subsystem.md" %}
+[online-subsystem.md](../../../../old-toolkit-for-steamworks/unreal/online-subsystem.md)
 {% endcontent-ref %}
 
 The Net Driver you choose defines how you will connect, Unreal's built-in Steam Sockets Net Driver is unfortunately out of date and dependent on the incompatible Online Subsystem Steam.&#x20;
 
-### [Sockets NetDriver](../../../../toolkit-for-steamworks/unreal/sockets-net-driver.md)
+### [Sockets NetDriver](../../../../old-toolkit-for-steamworks/unreal/sockets-net-driver.md)
 
 You are not required to use a Steam Networking Sockets-based NetDriver just because your game is shipping on Steam. You can use any NetDriver you like. Each NetDriver should have its own documentation and instructions on how you should configure the engine for its use and how it should be addressed.
 
-[Learn more about the Sockets NetDriver for Steam in the Unreal section of the Knowledge Base](../../../../toolkit-for-steamworks/unreal/sockets-net-driver.md).
+[Learn more about the Sockets NetDriver for Steam in the Unreal section of the Knowledge Base](../../../../old-toolkit-for-steamworks/unreal/sockets-net-driver.md).
 
-If you configure your project to use [Heathen's Steam Networking Sockets-based NetDriver](../../../../toolkit-for-steamworks/unreal/sockets-net-driver.md) (or any compatible Steam Networking Sockets-based driver) then the sample scene can be used to host (start a listen server) and connect to a session.
+If you configure your project to use [Heathen's Steam Networking Sockets-based NetDriver](../../../../old-toolkit-for-steamworks/unreal/sockets-net-driver.md) (or any compatible Steam Networking Sockets-based driver) then the sample scene can be used to host (start a listen server) and connect to a session.
 
 <figure><img src="../../../../.gitbook/assets/image (392).png" alt=""><figcaption></figcaption></figure>
 

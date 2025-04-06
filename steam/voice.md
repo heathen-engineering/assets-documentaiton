@@ -22,9 +22,9 @@ Heathen's Steamworks Complete includes two tools to simplify the process of capt
 
 {% embed url="https://www.youtube.com/watch?v=hscKkzfAoyI" %}
 
-### [Voice Recorder](../toolkit-for-steamworks/unity/components/voice-recorder.md)
+### [Voice Recorder](../old-toolkit-for-steamworks/unity/objects/components/voice-recorder.md)
 
-The [voice recorder component](../toolkit-for-steamworks/unity/components/voice-recorder.md) can be used to capture the local user's voice data and prepare it for transmission over your network connection. It provides the data via a [simple event](../toolkit-for-steamworks/unity/components/voice-recorder.md#evtvoicestream) feeding a byte\[] of data that should be easily handled by any networking solution.
+The [voice recorder component](../old-toolkit-for-steamworks/unity/objects/components/voice-recorder.md) can be used to capture the local user's voice data and prepare it for transmission over your network connection. It provides the data via a [simple event](../old-toolkit-for-steamworks/unity/objects/components/voice-recorder.md#evtvoicestream) feeding a byte\[] of data that should be easily handled by any networking solution.
 
 The idea is that you connect the Voice Stream event to a method that can send that data over your network.
 
@@ -34,15 +34,15 @@ The idea is that you connect the Voice Stream event to a method that can send th
 voiceRecorded.evtVoiceStream.AddListener(SendVoiceData);
 ```
 
-The [Voice Stream](../toolkit-for-steamworks/unity/components/voice-recorder.md#evtvoicestream) event gets invoked when the buffer is full and ready for transmission.
+The [Voice Stream](../old-toolkit-for-steamworks/unity/objects/components/voice-recorder.md#evtvoicestream) event gets invoked when the buffer is full and ready for transmission.
 
-### [Voice Stream](../toolkit-for-steamworks/unity/components/voice-stream.md)
+### [Voice Stream](../old-toolkit-for-steamworks/unity/objects/components/voice-stream.md)
 
 ![](<../.gitbook/assets/image (187) (1) (1) (1).png>)
 
-The [voice stream component](../toolkit-for-steamworks/unity/components/voice-stream.md) can be used to play back voice data produced by the voice-recorded component. The intent is that your network system receiving voice data from a Voice Recorded would call the [Play Voice Data method](../toolkit-for-steamworks/unity/components/voice-stream.md#play-voice-data) on this component.
+The [voice stream component](../old-toolkit-for-steamworks/unity/objects/components/voice-stream.md) can be used to play back voice data produced by the voice-recorded component. The intent is that your network system receiving voice data from a Voice Recorded would call the [Play Voice Data method](../old-toolkit-for-steamworks/unity/objects/components/voice-stream.md#play-voice-data) on this component.
 
-Typically you would have one [voice stream component](../toolkit-for-steamworks/unity/components/voice-stream.md) per connected player (excluding the local player) you can attach these voice stream components to the player's character or controller such that voice audio can (optionally) be accurately represented as 3D audio.
+Typically you would have one [voice stream component](../old-toolkit-for-steamworks/unity/objects/components/voice-stream.md) per connected player (excluding the local player) you can attach these voice stream components to the player's character or controller such that voice audio can (optionally) be accurately represented as 3D audio.
 
 ## Unreal
 
@@ -52,7 +52,7 @@ Heathen's Steamworks Complete exposes all the necessary features to get and play
 
 Before you try to get and use voice data you would want to know if there is any data available, this would depend on you starting and stopping voice recording as well.
 
-[Stop](../toolkit-for-steamworks/unreal/blueprint-nodes/functions/stop-voice-recording.md), [Start](../toolkit-for-steamworks/unreal/blueprint-nodes/functions/start-voice-recording.md) and [Get Available Voice](../toolkit-for-steamworks/unreal/blueprint-nodes/functions/get-available-voice.md) can be used for this purpose.
+[Stop](../old-toolkit-for-steamworks/unreal/blueprint-nodes/functions/stop-voice-recording.md), [Start](../old-toolkit-for-steamworks/unreal/blueprint-nodes/functions/start-voice-recording.md) and [Get Available Voice](../old-toolkit-for-steamworks/unreal/blueprint-nodes/functions/get-available-voice.md) can be used for this purpose.
 
 <figure><img src="../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -60,7 +60,7 @@ Before you try to get and use voice data you would want to know if there is any 
 
 Steam API provides the necessary tools to get compressed voice audio from the player's active audio input device if any.
 
-#### [Steam Get Voice](../toolkit-for-steamworks/unreal/blueprint-nodes/functions/get-voice.md)
+#### [Steam Get Voice](../old-toolkit-for-steamworks/unreal/blueprint-nodes/functions/get-voice.md)
 
 The Steam Get Voice node will return a result indicating the state of the data and the data as a compressed array of bytes.
 
@@ -70,6 +70,6 @@ It up to you how you send this data to those that might want to play it back. In
 
 To Stream voice data it's up to you to receive the compressed data from whatever source you wish to playback from, typically this would be a server sending you the data.
 
-### [Decompress Voice](../toolkit-for-steamworks/unreal/blueprint-nodes/functions/decompress-voice.md)
+### [Decompress Voice](../old-toolkit-for-steamworks/unreal/blueprint-nodes/functions/decompress-voice.md)
 
 The Steam Decompress Voice node takes in the compressed data and is a reference to a Procedural Sound Wave. It will then load the received data and indicate the state of that process. Once completed you can simply play the Procedural Sound Wave as either 2D or 3D, this system will continue to queue new audio onto the sound wave as it is received.

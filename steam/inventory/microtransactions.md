@@ -49,37 +49,37 @@ In short in-game currency is simply exchanging X items for Y items. See the [Cra
 
 So you have set up your inventory items, You are going to use full Client API so you can't simulate an end-to-end purchase. You're asking yourself ... How do I test my game logic to make sure it's handling inventory change correctly?
 
-Use the [Steamworks Inspector](../../company/steam/steamworks/#inventory) and click the "Grant" button beside any of the items, this will cause it to grant you an item which will raise the [EventChanged](../../toolkit-for-steamworks/unity/classes-and-structs/steam-settings/game-client/inventory-settings.md) ... you can now observe your game logic and ensure it's performing as you expected.
+Use the [Steamworks Inspector](../../company/steam/steamworks/#inventory) and click the "Grant" button beside any of the items, this will cause it to grant you an item which will raise the [EventChanged](../../old-toolkit-for-steamworks/unity/objects/classes/steam-settings/game-client/inventory-settings.md) ... you can now observe your game logic and ensure it's performing as you expected.
 
 ### Start Purchase
 
 This is done when you want to send the user to the Steam Store page so they can "check out" spending real money on some item. Note you can call Start Purchase on a single item or you can set up a shopping cart building up a collection of items and call Start Purchase on all of them.
 
-#### [Item Shopping Cart Manager](../../toolkit-for-steamworks/unity/components/item-shopping-cart-manager.md)
+#### [Item Shopping Cart Manager](../../old-toolkit-for-steamworks/unity/objects/components/item-shopping-cart-manager.md)
 
 We have constructed a tool to help you manage a shopping cart in the game. This tool is capable of adding, removing and editing the quantities of items in it, it can report the estimated total of the cart and can manage and track the purchase operation through authorization reporting issues and or successes through simple Unity events.
 
-You would add this script to your Store/Shop UI and use its members to add, remove and edit the items in the cart. Once you have populated the cart and are ready to "check out" you can call StartPurchase in the manager to kick off the process and track the results. To learn more about the use of [Item Shopping Cart Manager see this article](../../toolkit-for-steamworks/unity/components/item-shopping-cart-manager.md).
+You would add this script to your Store/Shop UI and use its members to add, remove and edit the items in the cart. Once you have populated the cart and are ready to "check out" you can call StartPurchase in the manager to kick off the process and track the results. To learn more about the use of [Item Shopping Cart Manager see this article](../../old-toolkit-for-steamworks/unity/objects/components/item-shopping-cart-manager.md).
 
 #### Manual
 
 On your Item Definition, you will see a Start Purchase option. A similar method is available on the Data Layer, Scriptable Object and of course in the Inventory API. You simply call this method indicating the number of items you wish to start a purchase with.
 
-* [Item Definition Object Start Purchase](../../toolkit-for-steamworks/unity/classes-and-structs/item-definition.md#start-purchase)
-* [Item Data Start Purchase](../../toolkit-for-steamworks/unity/classes-and-structs/item-data.md#start-purchase)
-* [Inventory API Start Purchase](../../toolkit-for-steamworks/unity/api/inventory.client.md#startpurchase)
-* [Item Shopping Cart Start Purchase](../../toolkit-for-steamworks/unity/components/item-shopping-cart-manager.md#startpurchase)
+* [Item Definition Object Start Purchase](../../old-toolkit-for-steamworks/unity/objects/classes/item-definition.md#start-purchase)
+* [Item Data Start Purchase](../../old-toolkit-for-steamworks/unity/objects/classes/item-data.md#start-purchase)
+* [Inventory API Start Purchase](../../old-toolkit-for-steamworks/unity/api-extensions/inventory.client.md#startpurchase)
+* [Item Shopping Cart Start Purchase](../../old-toolkit-for-steamworks/unity/objects/components/item-shopping-cart-manager.md#startpurchase)
 
 If the item has a properly formatted price or price category (it cannot have both) then the item will be added to the user's Steam Store cart ready for purchase. The Steam Overlay will open showing the user this cart.
 
 When the user completes the transaction you will be notified in two ways.
 
 1. Transaction Complete Event\
-   [On the Inventory Manager](../../toolkit-for-steamworks/unity/components/inventory-manager.md#evttransactionresponce)\
-   [On the Inventory API](../../toolkit-for-steamworks/unity/api/inventory.client.md#event-steam-micro-transaction-authorization-responce)
+   [On the Inventory Manager](../../old-toolkit-for-steamworks/unity/objects/components/inventory-manager.md#evttransactionresponce)\
+   [On the Inventory API](../../old-toolkit-for-steamworks/unity/api-extensions/inventory.client.md#event-steam-micro-transaction-authorization-responce)
 2. Inventory Change Event\
-   [On the Inventory Manager](../../toolkit-for-steamworks/unity/components/inventory-manager.md#evtchanged)\
-   [On the Inventory API](../../toolkit-for-steamworks/unity/api/inventory.client.md#event-steam-inventory-result-ready)
+   [On the Inventory Manager](../../old-toolkit-for-steamworks/unity/objects/components/inventory-manager.md#evtchanged)\
+   [On the Inventory API](../../old-toolkit-for-steamworks/unity/api-extensions/inventory.client.md#event-steam-inventory-result-ready)
 
 ```csharp
 public void StartPurchase()
@@ -152,11 +152,11 @@ API.Inventory.Client.StartPurchase(itemDefs, itemQuan, (result, error) =>
 });
 ```
 
-Assuming you want to track the completion of the order you should listen on the Micro Transaction Authorization Response. You can find this on the [Inventory Manager](../../toolkit-for-steamworks/unity/components/inventory-manager.md#evttransactionresponce) component or directly in the [Inventory API](../../toolkit-for-steamworks/unity/api/inventory.client.md#eventsteammicrotransactionauthorizationresponce). In either case, this is an event that is raised when the Steam client informs your game of a completed e.g. authorization on a transaction. The event will indicate the app the transaction is for, the order ID of the transaction and rather or not the transaction was authorized.
+Assuming you want to track the completion of the order you should listen on the Micro Transaction Authorization Response. You can find this on the [Inventory Manager](../../old-toolkit-for-steamworks/unity/objects/components/inventory-manager.md#evttransactionresponce) component or directly in the [Inventory API](../../old-toolkit-for-steamworks/unity/api-extensions/inventory.client.md#eventsteammicrotransactionauthorizationresponce). In either case, this is an event that is raised when the Steam client informs your game of a completed e.g. authorization on a transaction. The event will indicate the app the transaction is for, the order ID of the transaction and rather or not the transaction was authorized.
 
 ### Exchange
 
-It's fairly common to have users "purchase" items with an in-game currency. In reality, this is not a purchase it is an exchange. That is it is similar to crafting where some reagents are exchanged for some other item. Exchanges must be done one item at a time and the following code snippet shows how you would go about doing that for a given [itemDefinition](../../toolkit-for-steamworks/unity/classes-and-structs/item-definition.md).
+It's fairly common to have users "purchase" items with an in-game currency. In reality, this is not a purchase it is an exchange. That is it is similar to crafting where some reagents are exchanged for some other item. Exchanges must be done one item at a time and the following code snippet shows how you would go about doing that for a given [itemDefinition](../../old-toolkit-for-steamworks/unity/objects/classes/item-definition.md).
 
 ```csharp
 public void Exchange()
@@ -193,19 +193,19 @@ if (itemDefinition.CanExchange(itemDefinition.item_exchange.recipe[0],
                                out List<ExchangeEntry> recipe))
 ```
 
-[CanExchange ](../../toolkit-for-steamworks/unity/classes-and-structs/item-definition.md#can-exchange)is a method on the [Item Definition](../../toolkit-for-steamworks/unity/classes-and-structs/item-definition.md) that takes a given recipe as an input and has an output that collects the required items to complete the recipe.
+[CanExchange ](../../old-toolkit-for-steamworks/unity/objects/classes/item-definition.md#can-exchange)is a method on the [Item Definition](../../old-toolkit-for-steamworks/unity/objects/classes/item-definition.md) that takes a given recipe as an input and has an output that collects the required items to complete the recipe.
 
-Assuming this returns true then we can complete an exchange for this item on this recipe, so the next step is to request that using the output the [CanExchange](../../toolkit-for-steamworks/unity/classes-and-structs/item-definition.md#can-exchange) method provided us. Unlike StartPurchase we will know in a single step whether or not this was a success and the items will already be updated.
+Assuming this returns true then we can complete an exchange for this item on this recipe, so the next step is to request that using the output the [CanExchange](../../old-toolkit-for-steamworks/unity/objects/classes/item-definition.md#can-exchange) method provided us. Unlike StartPurchase we will know in a single step whether or not this was a success and the items will already be updated.
 
 ### Get Item Price
 
-If you want to fetch the price in the user's currency see: [Current Price](../../toolkit-for-steamworks/unity/classes-and-structs/item-definition.md#currentprice) and [Base Price](../../toolkit-for-steamworks/unity/classes-and-structs/item-definition.md#baseprice). You can check if there is a price at all via [Has Price](../../toolkit-for-steamworks/unity/classes-and-structs/item-definition.md#hasprice).
+If you want to fetch the price in the user's currency see: [Current Price](../../old-toolkit-for-steamworks/unity/objects/classes/item-definition.md#currentprice) and [Base Price](../../old-toolkit-for-steamworks/unity/objects/classes/item-definition.md#baseprice). You can check if there is a price at all via [Has Price](../../old-toolkit-for-steamworks/unity/objects/classes/item-definition.md#hasprice).
 
 ## Unreal Examples
 
 ### Testing Inventory Change
 
-The [Inventory Results Ready event](../../toolkit-for-steamworks/unreal/blueprint-nodes/events/inventory-results-ready.md) can be used to know when the player's inventory has changed. This will be raised by Steam for any change caused by the game but may not be raised in response to changes that start outside the game so it's important to not use this as an alternative to [Get All Items](../../toolkit-for-steamworks/unreal/blueprint-nodes/functions/get-all-items.md) for keeping your view of the player's inventory up to date.
+The [Inventory Results Ready event](../../old-toolkit-for-steamworks/unreal/blueprint-nodes/events/inventory-results-ready.md) can be used to know when the player's inventory has changed. This will be raised by Steam for any change caused by the game but may not be raised in response to changes that start outside the game so it's important to not use this as an alternative to [Get All Items](../../old-toolkit-for-steamworks/unreal/blueprint-nodes/functions/get-all-items.md) for keeping your view of the player's inventory up to date.
 
 ### Start Purchase
 
@@ -213,13 +213,13 @@ The Start Purchase function asks Steam to load a shopping cart with given items 
 
 <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-If a transaction is processed and authorized you will see a [Micro Txn Authorization Response](../../toolkit-for-steamworks/unreal/blueprint-nodes/events/micro-txn-authorization-response.md) event be executed. That event will carry the Order ID which can be matched to the Order ID created with the Start Purchase request.
+If a transaction is processed and authorized you will see a [Micro Txn Authorization Response](../../old-toolkit-for-steamworks/unreal/blueprint-nodes/events/micro-txn-authorization-response.md) event be executed. That event will carry the Order ID which can be matched to the Order ID created with the Start Purchase request.
 
 <figure><img src="../../.gitbook/assets/image (373).png" alt=""><figcaption></figcaption></figure>
 
 ### Exchange
 
-[Exchange Items](../../toolkit-for-steamworks/unreal/blueprint-nodes/functions/exchange-items.md) lets you pass in an array of [Item Count](../../toolkit-for-steamworks/unreal/blueprint-nodes/types/item-count.md) to exchange for a given item. The callback works much like the [Get All Items](../../toolkit-for-steamworks/unreal/blueprint-nodes/functions/get-all-items.md) discussed in the [Inventory](../../company/steam/steamworks/inventory/) article.
+[Exchange Items](../../old-toolkit-for-steamworks/unreal/blueprint-nodes/functions/exchange-items.md) lets you pass in an array of [Item Count](../../old-toolkit-for-steamworks/unreal/blueprint-nodes/types/item-count.md) to exchange for a given item. The callback works much like the [Get All Items](../../old-toolkit-for-steamworks/unreal/blueprint-nodes/functions/get-all-items.md) discussed in the [Inventory](../../company/steam/steamworks/inventory/) article.
 
 To use the feature you first need to know what item ID you want to "craft" i.e. exchange other items for.&#x20;
 
@@ -233,7 +233,7 @@ In the example, we are using all of stack 123 and 5 from stack 124.
 
 <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### [Get Item Price](../../toolkit-for-steamworks/unreal/blueprint-nodes/functions/get-item-price.md)
+### [Get Item Price](../../old-toolkit-for-steamworks/unreal/blueprint-nodes/functions/get-item-price.md)
 
 If you are setting up an in-game store or some similar microtransaction system you will likely want to know what the price of the item is for this user.
 
