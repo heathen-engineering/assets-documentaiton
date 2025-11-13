@@ -118,40 +118,108 @@ This approach guarantees that:
 
 ### 3. **DataView (Engine-Specific, Designer-Facing)**
 
-**Purpose:** the designer’s bridge to runtime data, allowing **queries, outputs, and input** for game logic systems.
+**Purpose:**\
+The designer’s bridge to runtime data, providing filtered, row-major slices of world data for game logic, with read and write access to drive gameplay systems.
 
 **Characteristics:**
 
-* Fully engine-native and designer-accessible (Blueprints in UE, ScriptableObjects or MonoBehaviours in Unity).
-* Can query **rows** from the DataStore via the API layer.
-* Outputs to engine runtime systems:
-  * AI Behaviour Trees
-  * Senses such as vision or hearing
-  * Environmental systems such as weather, triggers, or dynamic world effects
-* Accepts inputs to stage updates back into the DataStore seamlessly.
-* Flexible. The same DataView can drive multiple systems without hard-coded assumptions.
+* **Scoped Row-Major Slice:** Focused on manageable subsets of the world (e.g., region-based MOBs) rather than the entire dataset. Supports calculated columns derived from one or more DataStores.
+* **Buffered Updates:** Uses a double-buffering system to stage updates via the DataLensSubsystem, ensuring thread safety and high performance.
+* **Engine-Native & Designer-Accessible:** Exposed to Blueprints in Unreal or ScriptableObjects/MonoBehaviours in Unity.
+* **Supports Queries & Updates:** Can filter, join, and transform data. Read access populates rows for gameplay systems; staged writes update the underlying DataStores.
+* **Dynamic/Calculated Columns:** Columns can be derived, read-only, or bidirectional (allowing gameplay logic to write back to the DataStore in a controlled way).
+* **Configurable Update Frequency:** Views can be static (once at load) or updated at defined frequencies (e.g., 10 Hz, 60 Hz) depending on gameplay needs.
+* **Multiple Consumers:** The same DataView can feed multiple systems without hard-coded assumptions.
 
-**Example in UE (conceptual Blueprint class):**
+**Outputs to Engine Runtime Systems:**
+
+* AI Behaviour Trees
+* Senses such as vision or hearing
+* Environmental systems such as weather, triggers, or dynamic world effects
+
+**Accepts Inputs:**
+
+* Stage updates to modify underlying DataStores via the DataLensSubsystem command buffers.
+
+**Example in Unreal Engine (conceptual Blueprint class):**
 
 ```cpp
-UCLASS(BlueprintType)
-class UDataView : public UObject {
-    UFUNCTION(BlueprintCallable)
-    FDataRow GetRow(FGuid RecordID);
+// Define a row schema struct, fully BlueprintType so it can be exposed to Blueprints
+USTRUCT(BlueprintType)
+struct FMySchema
+{
+    GENERATED_BODY()
 
-    UFUNCTION(BlueprintCallable)
-    void StageAttributeChange(FGuid RecordID, FName Attribute, int32 Value);
+    UPROPERTY(BlueprintReadWrite)
+    int32 Level;
+
+    UPROPERTY(BlueprintReadWrite)
+    int32 Xp;
+
+    UPROPERTY(BlueprintReadWrite)
+    int32 RequiredXp;
+
+    UPROPERTY(BlueprintReadWrite)
+    bool bIsAlive;
+};
+
+// Define a concrete DataView class using the schema
+UCLASS(BlueprintType)
+class UExampleDataView : public UDataView<FMySchema>
+{
+    GENERATED_BODY()
 };
 ```
 
 **Example in Unity (conceptual MonoBehaviour):**
 
 ```csharp
-public class DataView : MonoBehaviour {
-    public DataRow GetRow(Guid recordID);
-    public void StageAttributeChange(Guid recordID, string attribute, object value);
+// Define a schema class for the rows
+[System.Serializable]
+public class MySchema
+{
+    public int Level;
+    public int Xp;
+    public int RequiredXp;
+    public bool IsAlive;
+}
+
+// Define a concrete DataView class using the schema
+public class MyDataView : DataView<MySchema>
+{
+    // Base DataView<T> provides core functionality:
+    // - GetRow(Guid recordID)
+    // - StageAttributeChange(Guid recordID, string attribute, object value)
+    // - ToArray() to get all rows for iteration
 }
 ```
+
+**Notes:**
+
+* DataView is **row-major** for optimal random access by gameplay systems.
+* **DataSystems**, in contrast, are bufferless, column-major, and used for broad system-level updates like hunger or fatigue. They run within the DataLensSubsystem frame after DataView command buffers are applied but before the next DataView read occurs.
+
+***
+
+### 4. DataSystem (Engine-Specific, Designer-Facing)
+
+**Purpose:**\
+DataSystems provide a framework for broad, system-level data updates across a subset of the world. Unlike DataViews, which are row-major slices designed for specific gameplay logic, DataSystems operate in a column-oriented, bufferless way to drive recurring computations, aggregations, or status updates at a specified frequency.
+
+**Characteristics:**
+
+* **Engine-native:** Fully compatible with the game engine (Blueprints in UE, C# in Unity), allowing designers to define, monitor, and tune systems without deep programming knowledge.
+* **Column-oriented:** Optimized for batch updates of multiple entities at once, suitable for large-scale simulation tasks that don’t require per-record derived data.
+* **Frequency-driven:** Each system defines its update interval (e.g., every frame, 10 Hz, 1 Hz) to control computational load and timing of effects.
+* **Bufferless operation:** Runs immediately on the DataLensSubsystem’s simulation “frame” after DataView command buffers are applied, updating the underlying DataStore directly.
+* **Simple configuration:** Defined by a formula or function and a frequency, enabling predictable, repeatable updates without complex per-record logic.
+
+**Example Usage:**
+
+* Hunger, thirst, fatigue, or energy decay over time.
+* Health or mana regeneration.
+* Environmental effects or automated resource production across a region.
+* Crowd or faction-level adjustments that do not need per-entity derived states.
 
 ***
 
@@ -160,7 +228,7 @@ public class DataView : MonoBehaviour {
 ```
 [ Designer / Blueprints or ScriptableObjects ] 
         <--> 
-[ DataView (Designer-Facing) ] 
+[ DataView & DataSystem (Designer-Facing) ] 
         <--> 
 [ DataLens API Layer (Engineer-Facing) ] 
         <--> 
@@ -169,7 +237,7 @@ public class DataView : MonoBehaviour {
 
 * **Native DataStore:** single source of truth, fully engine-independent.
 * **DataLens API:** engine-specific, manages threading, ticks, buffers, and engine integration.
-* **DataView:** designer-facing, flexible interface to query and update data, feeding multiple runtime systems.
+* **DataView & DataSystem:** designer-facing, flexible interface to query and update data, feeding multiple runtime systems.
 
 ***
 
