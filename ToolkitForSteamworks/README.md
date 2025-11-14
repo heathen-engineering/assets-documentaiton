@@ -33,7 +33,7 @@ _Purchases through the Unity Asset Store or FAB follow their standard licensing 
 
 ### More than just another API wrapper!
 
-Heathen's Toolkit is a robust kit of editor tools and extensions, proven game systems and extensive guides and articles that cover not just every function & feature of the plugin but go beyond into guides & articles on every facet of being a Steam Developer and Game Developer in general. This is all supported by our team of passionate engineers & our community of thousands of game developers who have shipped hundreds of games on Steam.
+Heathen's Toolkit is a robust kit of editor tools and extensions, proven game systems and extensive guides and articles. It covers not just every function & feature of the plugin, but goes beyond into guides & articles on every facet of being a Steam Developer and game developer in general. This is all supported by our team of passionate engineers & our community of thousands of game developers who have shipped hundreds of games on Steam.
 
 ## Key Features
 
@@ -41,13 +41,13 @@ Heathen's Toolkit is a robust kit of editor tools and extensions, proven game sy
 
 Even if you never use our tools, this Knowledge Base is the best resource for any game developer planning to ship on Steam.
 
-We cover every aspect, not just of the Steamworks SDK but the Steam platform itself, including but not limited to setting up your store page, working with the community hub, understanding the discovery queue and of course a full breakdown of every feature of the Steamworks SDK.
+We cover every aspect, not just of the Steamworks SDK but the Steam platform itself, including but not limited to: setting up your store page, working with the community hub, understanding the discovery queue as well as a full breakdown of every feature of the Steamworks SDK.
 
 ### Full Coverage
 
-No half measures, no black magic, every feature of the Steam API is available as defined by Valve with no shortcuts or skipped features, and they are all fully supported by our easy-to-use and robust tools with full source code included.
+No half measures, no black magic, every feature of the Steam API is available as defined by Valve with no shortcuts or skipped features. They are all fully supported by our easy-to-use and robust tools with full source code included.
 
-Whether you are a veteran Steam developer looking to save time and reduce maintenance costs or a hobbyist hoping to demystify the powerful but often cryptic Steamworks SDK, Heathen has you fully covered on Unreal and Unity, with Godot support a work in progress.
+Whether you are a veteran Steam developer looking to save time and reduce maintenance costs, or a hobbyist hoping to demystify the powerful but often cryptic Steamworks SDK, Heathen has you fully covered on Unreal and Unity, with Godot support a work in progress.
 
 ### Engine Native
 
@@ -57,7 +57,7 @@ We, of course, do expose every endpoint, enumerator and interface in code (C#, B
 
 Then we build on top of that low-level one-to-one engine-specific wrap, making it trivial to connect Steam-centric concepts to your Engine's native concepts, e.g. textures, event systems, data type limitations, etc.
 
-Then we build on top of that with systems, widgets, prefabs and templates that work with your engine's concepts to address common use cases and boilerplate needs in a manner appropriate for the engine you are working on. Initialisation, Save Game, Data Management, etc., and we enable networking solutions common to your engine of choice to do the same, e.g. NetCode, FishNet, Mirror, NetDrivers, etc.
+Then we build on top of that with systems, widgets, prefabs and templates that work with your engine's concepts to address common use cases and boilerplate needs in a manner appropriate for the engine you are working on. Initialisation, Save Game, Data Management, etc. We also enable networking solutions common to your engine of choice to do the same, e.g. NetCode, FishNet, Mirror, NetDrivers, etc.
 
 ## Battle Tested
 
@@ -69,15 +69,15 @@ The Toolkit for Steamworks SDK is a reliable, proven solution to help you Do Mor
 
 ## Built for You
 
-Our tools are built in layers from powerful APIs and Frameworks up to code-free solutions. No matter your need, skill level or discipline, our tools can help you Do More!
+Our tools are built in layers, from powerful APIs and Frameworks up to code-free solutions. No matter your need, skill level or discipline, our tools can help you Do More!
 
 {% hint style="success" %}
-Whether you're new to Steam or game development in general or maybe a seasoned veteran well capable with the Steam APIs, Heathen’s Steamworks can greatly accelerate your project and help you produce a more robust product that better leverages the services offered by Valve.&#x20;
+Whether you're new to Steam or game development in general, or maybe a seasoned veteran well capable with the Steam APIs, Heathen’s Steamworks can greatly accelerate your project and help you produce a more robust product that better leverages the services offered by Valve.&#x20;
 {% endhint %}
 
 ## Heathen vs Steamworks.NET
 
-Unity Healthen's Toolkit for Steamworks SDK is built on top of [Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET). The [Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET) project is designed to be a direct 1 to 1 wrapper around Valve's Steam API, wrapping the native C and C++ interfaces up in a C# plugin.
+Unity Heathen's Toolkit for Steamworks SDK is built on top of [Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET). The [Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET) project is designed to be a direct 1 to 1 wrapper around Valve's Steam API, wrapping the native C and C++ interfaces up in a C# plugin.
 
 {% hint style="success" %}
 [Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET) is authored by [**Riley Labrecque**](https://github.com/sponsors/rlabrecque). Be sure to check out and support his great work! You can pop over to his [sponsor page](https://github.com/sponsors/rlabrecque) if you are interested.
@@ -93,7 +93,7 @@ Heathen's Steamworks does not replace [Steamworks.NET](https://github.com/rlabre
 
 ## Heathen vs Facepunch
 
-Facepunch is another C# wrapper just like Steamworks.NET; however, unlike Steamworks.NET, it does not attempt to remain true to the original API As a result, the existing community and documentation around Steamworks are less applicable. &#x20;
+Facepunch is another C# wrapper just like Steamworks.NET; however, unlike Steamworks.NET, it does not attempt to remain true to the original API. As a result, the existing community and documentation around Steamworks are less applicable. &#x20;
 
 Facepunch's stated goal is to make a C#-focused wrapper that exploits/leverages the benefits of C#. This makes most of the code you would need to write shorter / more C# programmer-friendly. It, however, also makes it alien to Valve's documents and its wider community, and while Unity uses C# as its main scripting language, it does so in a "Unity" way; for example, C# would use event delegates; in Unity, we use UnityEvents.
 
