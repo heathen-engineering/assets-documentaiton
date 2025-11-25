@@ -2,135 +2,146 @@
 
 ## Our Philosophy
 
-At Heathen Engineering, we approach development as a **living, iterative system**. We treat each project as a structured progression from concept to end-of-life, ensuring clarity, traceability, and quality at every stage. This lifecycle also allows our B2B clients to understand how we approach planning, production, and support for both games and tools.
+At Heathen Engineering, development is treated as a **living, iterative system**. Each project follows a structured progression from concept to end-of-life, providing clarity, traceability, and quality at every stage. This lifecycle also gives our B2B clients insight into how we plan, produce, and support both games and tools.
 
-We separate **design and iteration** from **production**, enabling teams to experiment and refine without affecting the final deliverable. This ensures that when production begins, all content is release-ready and consistent with the project’s goals.
+We deliberately separate **design and iteration** from **production**, allowing teams to experiment and refine ideas without impacting the final deliverable. When production begins, all content is fully release-ready and aligned with the project’s objectives.
 
-### Why should you care?
+### Why Should You Care?
 
-If you plan on doing this professionally, having a "rigour" around your engineering practice is not just critical but required if you hope to avail of supports, financing, etc.
+If you plan on developing professionally, having a structured **rigour** around your engineering practice is not just recommended—it’s essential for accessing supports, financing, and other programs.
 
 {% hint style="success" %}
-We are Irish, so we use Irish examples, \
-Do note that many regions offer some sort of program; while our examples are Irish, the concepts we talk about here will apply to most areas.
+We are Irish, so we use Irish examples.\
+Do note that many regions offer some form of support; while our examples are Irish, the concepts here apply broadly.
 {% endhint %}
 
-For example, here in Ireland, there is a "Digital Games Relief" where up to 32% of qualifying expenditure can be recovered as a tax credit. To avail of this or any similar program from any government, region, organisation, etc., you will be required to document your project's life cycle and, in particular, the phases of it as the "qualifying exercise" clause usually only applies to specific activities, typically "production" only ... so what is "production"
+For instance, in Ireland, there is the "Digital Games Relief," where up to 32% of qualifying expenditure can be recovered as a tax credit. To access this or similar programs, you must document your project's lifecycle, particularly the phases considered "qualifying exercises." Typically, this applies to **production** activities—but what counts as production?
 
 ## Incubation
 
-The start of everything and the least "rigid" phase. Here, we concept and prove ideas, but nothing is committed or "set in stone". This is where most solo projects spend most of their time and may even "ship" form. It is important to define when this phase "ends" more so than when it starts, as the end of this phase marks the start of production, or the death of the project, as the case may be.
+The start of everything and the least "rigid" phase. During incubation, we **conceptualise and prove ideas**, but nothing is committed or "set in stone." Many solo projects spend most of their time in this phase, and in some cases, projects may even ship directly from here.
+
+The critical part of incubation is defining **when it ends**, as this marks the transition either to production or to project termination.
 
 ### Concept
 
-This is the typical term we use in Game Dev, though we all have a different meaning for it. In general, however, it is the "brainstorming" or "theorising" or "ideation" about what you could do and want to do.
+This term is widely used in game development, though interpretations vary. In general, it refers to **brainstorming, theorising, or ideation** about what could be done and what you want to do.
 
-Generally, there are no supports or credits for this phase. Thus, you want to minimise the time and money spent here while still ensuring only viable concepts move on. To help with that, we use the following sub-phase
+There are typically **no supports or credits** for this phase. The goal is to **minimise time and expense** while ensuring only viable concepts progress. To aid in this, we introduce a structured sub-phase: **Pre-Production**.
 
-### Pre-production
+### Pre-Production
 
-This is a slightly more "rigorous" version of concepting. It's still ideation, so most supports won't apply to this process, but it's structured enough to help "early out" ideas that just won't work or modify them so they can work.
+Pre-production is a more **rigorous extension of concepting**. While it still involves ideation and typically **does not qualify for most supports**, it is structured enough to allow early filtering of ideas—either modifying them to be viable or discarding them entirely.
 
-Note that in pre-production, we will effectively "build" the game in theory, that is, with paper and pencil. We may go as far as to do a few "MVP" or "Minimal Viable Product" so we can test if something is possible, and if it's even fun. And we could do some "Proofs" where we create a system or a mini-game to test a theory. But we aren't "creating" anything, we haven't even created the code/engine project yet that will be used to build the game ... it's all just "theory" at this point, and maybe a few messy sandbox engine projects that we will NEVER ship and will definitely throw away when we are done with them.
+During pre-production, we effectively **"build" the game in theory**—using paper, pencil, and planning tools. This may include creating a few **Minimal Viable Products (MVPs)** to test feasibility and fun, or conducting small **proof-of-concept exercises** like systems or mini-games.
 
-The most important "output" from this phase has nothing at all to do with code, game engine projects, artwork, etc. ... it's as shown below.
+Importantly, **no production-ready code or engine projects have been created yet**. Any sandbox engine projects used are experimental and **will never be shipped**; they are temporary tools for testing ideas.
 
-#### Market Analysis
+The most critical output of pre-production is **not code, artwork, or game engine assets**, but structured documentation and planning, as detailed in the following sections.
 
-This is the process of researching the current market relative to your idea/concept to get a feel for how many possible customers you could reach ... take into account limits on your marketing capacity, platform reach, etc. This should also express how much per user you might get for your product. This will be useful later when determining the price you should set for your product.
+### Market Analysis
 
-How do you do this?\
-For game dev, you can use tools like Steam Spy, Steam DB, etc., review similar games and get an idea for how they performed. If you have the budget, there are professional firms usually associated with marketing firms that can help you with this process.
+Market Analysis involves researching the current market in relation to your idea or concept to understand potential reach, audience size, and revenue expectations. Consider factors like **marketing capacity**, **platform reach**, and **user monetisation potential**. This analysis is crucial later for setting realistic pricing and assessing overall project viability.
 
-Why do this?\
-The result is basically a monetary range telling you how much you're likely to make from this project, given your limitations and the market limitations.&#x20;
+#### How to Do This
 
-#### Bill of Materials
+For game development, you can use tools such as **Steam Spy**, **SteamDB**, and review similar games to understand their performance. If your budget allows, professional market research firms can provide deeper insights, often in collaboration with marketing agencies.
 
-Aka the BOM: This outlines everything you think will be required to deliver this project. For a game, this would be a list of every NPC, every item, every environment, and ideally every thing in every environment.&#x20;
+#### Why Do This
 
-The point of a BOM is to enable you to do a "real" estimate on how long and how much this project will cost. It's required for the next output, which is the most important output of pre-production.\
-How "granular" you get with your BOM depends on you; the more granular, the more detailed your budget, but also the higher chance of error.
+The outcome provides a **monetary range** estimating how much the project could realistically earn, given your resources and market conditions. This helps in decision-making and planning during pre-production.
 
-The general rule of thumb to use is to go as detailed as you need to fit within the "range" of the budget you can afford. For example, if you can afford 100-200k ... then get your BOM's level of detail down to 10s of thousands in costings.
+### Bill of Materials
 
-#### Return on Investment
+Also known as the **BOM**, this is a comprehensive list of everything required to deliver your project. For a game, this includes every **NPC**, **item**, **environment**, and ideally, every element within those environments.
 
-Aka the ROI: Simply put, this tells you if you should or should not pursue this project further. It can also be used to compare 2 viable projects to see which would be better to do now. How you create the ROI is fairly straightforward: you compare the market analysis to the bill of materials. If the result is negative ... you shouldn't continue with this project ... or you should adjust the project such that the BOM is smaller ... or the Market Analysis is bigger.
+The purpose of the BOM is to provide a **realistic estimate** of time and cost, forming the foundation for budgeting, scheduling, and resource planning. It is also a prerequisite for producing your **Return on Investment (ROI)** analysis.
 
-Considerations:\
-Remember, it's not always about money ... if your company exists to make money, you will fail. Your company exists to ... well, that is up to you, but probably something like "make fun games people want to play" ... as a result, you may "value" building a reputation, and this is correct, with a positive reputation, you can reach a wider market, and future games will have a more positive monetary ROI. The point is, don't just compare € to € ... consider non-monetary values as well... how much is experience, reputation, etc, worth to your company/team/venture.
+#### Granularity
 
-How to use it!\
-An ROI should boil your project down to a single scalar value, e.g. a whole number.&#x20;
+The level of detail in your BOM is up to you. Greater granularity offers more accurate budgeting but increases the chance of error. The general guideline is to detail the BOM enough to fit within the **budget range you can afford**. For example, if your budget is €100–200k, structure your BOM to reflect **tens of thousands in costings** for each component.
 
-If that number is negative ... you simply should not do this. Either go back and adjust the design to lower the BOM or increase the Market Assessment ... or shelve this project for later.
+### Return on Investment
 
-Next, compare the ROI of this project with other ideas you have... the one with the "bigger" ROI is usually the better idea, e.g. it will result in the most gain for your company monetarily or otherwise ... remember your ROI assessment should "value" non-monetary gain as well, such as reputation, experience or other "gains"
+Also known as **ROI**, this metric helps determine whether to pursue a project further. It can also be used to compare two viable projects to see which is more advantageous to undertake.
+
+ROI is calculated by comparing your **Market Analysis** against your **Bill of Materials (BOM)**. A negative result indicates that the project should either be **adjusted** by reducing the BOM or increasing the Market Analysis—or **shelved** for later.
+
+#### Considerations
+
+ROI is not solely about monetary gain. If your company exists only to make money, you may fail to achieve other valuable goals. Projects can also provide **reputation**, **experience**, and other strategic advantages. Incorporating these non-monetary factors can improve long-term ROI and help guide your decision-making.
+
+#### How to use it
+
+Condense your ROI into a **single scalar value**.
+
+* If the value is negative, do not proceed with the project as-is. Adjust the design or budget, or defer the project.
+* Compare this ROI with other ideas. The project with the higher ROI—monetary or otherwise—is typically the better choice.
+* Ensure non-monetary gains, such as **reputation** or **experience**, are factored into your assessment.
 
 ## Production
 
-This phase is generally "eligible expenses" for tax credits, culture programs, etc., validating that this phase isn't just smoke and mirrors and does meet the requirements of your government, sponsor, etc., means you do need to have completed the Pre-Production phase described above.
+The **Production** phase is generally where expenses become **eligible for tax credits, cultural programs, and other supports**. To validate that this phase meets government or sponsor requirements, you must have completed the **Pre-Production** phase.
 
-{% hint style="warning" %}
-This next part is VERY important, read it carefully.
-{% endhint %}
+This is also when you establish your official **project repository**—GitHub, Perforce, or similar—and set up the **codebase and game engine** for production work.
 
-This is also the point at which you create your "Project", e.g. you GitHub, Perforce, etc., the code base, game engine, and so on.&#x20;
+> **Important:** Never use sandbox projects for production. A production project should contain **only production-ready content**. Do not import demos, store assets, or unapproved content directly. Always pull assets into sandboxes first, clean, fix, and approve them before adding to the production project.
 
-You ABSOLUTELY DO NOT use one of your sandboxes. A production project should never have anything in it that is not production-ready. So you NEVER import demos, store assets, etc. directly ... you pull those into sandboxes, clean them, fix them, approve them and only then do you pull that into the production project.
+Once this is done, you now have:
 
-As a result, the idea that "O that AI art just slipped in" is a blatant lie or gross incompatibility...  ( looking at you, EA )
+* **Market Analysis**
+* **Bill of Materials (BOM)**
+* **Return on Investment (ROI)**
 
-{% hint style="success" %}
-If you strictly follow the above, you will ensure
-
-* Your project is fully auditable and thus eligible for Tax Credits, Culture grants, etc.
-* Your project is pure and isolated, and thus an auditable proof against DMCA / IP infringement take-downs
-* Your project is lean and efficient, with no bloat from unused code, placeholder assets, or unoptimized resources.
-* Maintainable, this project is 100% self-contained, meaning any 3rd parties are copied into it, not simply referenced. This ensures that in 5 years, when you need to rebuild and release a patch because Unity has a critical security flaw (as happened in 2025), you can do so without needing to update 5 years of updates from all your 3rd-party tools.
-{% endhint %}
-
-Okay, so you now have a valid
-
-* Market Analysis
-* Bill of Materials
-* Return on Investment statement.
-
-You can use these contract artists, programmers, etc., providing them with a clear, preformatted list of exactly what you need and when you need it. You will also have a clear understanding of how much each part of your game should cost in time and money, and so you will clearly see your % progress, helping you more effectively estimate release date ... a critical step for go-live and operations planning.
+With these, you can efficiently brief **contractors, artists, programmers**, and other team members, providing a clear, preformatted list of exactly what is needed and when. This also enables accurate budgeting, time allocation, and progress tracking—essential for estimating **release dates** and planning **Go-Live** and **Operations** phases.
 
 {% hint style="danger" %}
-Pro-tip
+**Pro-tip:** Keep your mouth shut.
 
-Keep your mouth shut.&#x20;
+Unless you are a seasoned veteran who knows with high reliability exactly what the output of production will be, avoid marketing your game until it is near complete or fully complete.
 
-Unless you're a seasoned veteran who knows with a high degree of reliability precisely what the output of production will be, you should keep your mouth shut and not start marketing your game until it's near complete ... or complete.\
-\
-You get exactly one 1st impression with each potential user of your project. Do not spoil it by showing an incomplete project or worse, just an idea ... and make very sure what you do show them, you deliver on or exceed. Even AAA get this wrong and hype up something they can't deliver ... you, however, do not have millions you can spend in marketing to fix that mistake ... so just don't make it.\
-\
-Shut your mouth until your project is set in stone, nearly complete and about to deliver... we do this via the "Post-production" subphase.
+You get **exactly one first impression** with each potential user. Do not spoil it by showing an incomplete project—or worse, just an idea. Make sure anything you reveal is something you can deliver on or exceed. Even AAA studios get this wrong, overhyping projects they cannot deliver. You, however, do not have millions to spend on correcting hype mistakes—so just don’t.
+
+Wait until your project is set in stone, nearly complete, and ready to deliver. This is achieved through the **Post-Production** subphase.
 {% endhint %}
 
 ### Post-production
 
 Sometimes called "content complete" or "Gold" as in "the project has gone Gold".
 
-This means you have completed all the content needed to ship the game, you have base testing and optimisation done, and thus you have everything you need to start validation testing and packaging in preparation for operations.
+This phase indicates that all content required to ship the game is complete, and base testing and optimisation have been performed. You now have everything necessary to begin validation testing and packaging in preparation for operations.
 
-This is when you gather screenshots for marketing, when you start running ads, and when you release your demo, join in on Steam Next Fest, etc. You make sure you do this only once you KNOW when your game will -( CAN )- go live.
+Post-production is also when you start preparing marketing assets: gather screenshots, plan ad campaigns, release demos, or participate in events such as Steam Next Fest.
 
-If you're releasing on Steam, this is when you start building Wishlists ... you DO NOT want to go live until you hit your wishlist targets or if you can't hit that target when you have gathered as many wishlists as you can. For more advice on launching a game on Steam, see our [Launch article in the Steamworks Knowledge Base](https://app.gitbook.com/s/kfE3ZAs6TeNW5sBM2C3i/launch).
+It is critical to perform these activities only once you are confident of your game’s go-live date. For Steam releases, this is also when you begin building wishlists. You should aim to meet your wishlist targets before launching, or gather as many wishlists as possible if hitting the target is unlikely. For more advice on launching a game on Steam, see our [Launch article in the Steamworks Knowledge Base](https://app.gitbook.com/s/kfE3ZAs6TeNW5sBM2C3i/launch).
 
 ## Operations
 
-So you have your game complete, tested, validated, you have a pile of wishlists, and your marketing team has whipped your target market into a mild fury, hungry for your game ... great ... press the big green "Launch" button (a Steam thing) and start operations.
+Once your game is complete, tested, and validated, and your marketing efforts have built anticipation, it’s time to press the big green "Launch" button (a Steam feature) and begin operations.
 
-Your work is not "done" when you launch your game. It has only just started. Creating the game was the easy part, and if you did a good job in testing and validation, you should have a smooth launch ... most games do not have a smooth launch though, so be prepared for bugs, critical issues, refunds and more.
+Launching does not mark the end of your work—it has only just begun. Game creation is the easy part compared to managing live operations. Even with thorough testing and validation, expect potential issues such as bugs, critical errors, and refund requests.
 
-Have a support plan ready, set up Zendesk or some similar tool to help you manage incoming support cases. If you can set up a community site and enable community managers to help manage your players. If you're on [Steam, the Community Hub](https://app.gitbook.com/s/kfE3ZAs6TeNW5sBM2C3i/features/community-hub) can help here.
+Have a support plan in place: tools like Zendesk can help manage incoming cases, and if possible, establish a community site with managers to engage your players. For Steam releases, the [Community Hub](https://app.gitbook.com/s/kfE3ZAs6TeNW5sBM2C3i/features/community-hub) is an invaluable resource.
 
-Understand that this will be an ongoing line of work for as long as you offer this product for sale and for some period of time after you delist the product. You have launched a game and established a legal obligation between you and your customers.
+Operations are ongoing for as long as your product is available and may continue for a period after delisting. Launching establishes a legal obligation between you and your customers, so maintain your responsibilities diligently.
 
 ## Archival
 
-At some point, every product ends, and you have an ethical and increasingly a legal obligation to plan for the end of life and archival. Exactly what this means for your project depends on your product and the regions it has operated in. Simply be aware that you can't just release it and walk away; you do have obligations under the law in most regions.
+Every product reaches the end of its lifecycle, and at that point, you have both ethical and, increasingly, legal obligations to manage its end-of-life and archival. This process ensures that your product is properly retired while protecting your company, your users, and any sensitive data associated with the project.
+
+Archival planning should consider several key areas:
+
+1. **Data Retention and Deletion**\
+   Any user data collected during the game’s operation—accounts, progress, purchases, analytics—must be handled according to relevant privacy laws (e.g., GDPR in Europe, CCPA in California). Decide what data you will retain for historical, legal, or support purposes, and what must be securely deleted.
+2. **Code and Asset Preservation**\
+   Maintain a full archive of the final codebase, assets, and project files. Even if the game is no longer live, retaining these files ensures that patches, legacy support, or future re-releases remain possible. Include version history, dependencies, and build instructions to prevent future teams from losing context.
+3. **Licensing and Third-Party Dependencies**\
+   Document and store all third-party licenses, assets, and tools used in the project. Some licenses may have expiry dates or restrictions that affect your ability to maintain or republish the game. Ensuring this documentation is complete avoids legal complications later.
+4. **Documentation**\
+   Archive all design documents, BOMs, ROI analyses, QA reports, and operational notes. This provides historical context for your team, supports compliance requirements, and enables auditing if needed. A thorough archive can also inform future projects, preventing repeated mistakes and guiding improved workflows.
+5. **Server and Online Services Decommissioning**\
+   For live services, plan a structured shutdown: notify users in advance, provide options to export or save data where possible, and ensure online services are turned off securely. Retire backend servers responsibly to avoid security vulnerabilities.
+6. **Financial and Legal Closure**\
+   Ensure that any remaining financial obligations, royalties, or contractual agreements are completed. File final reports for government or funding bodies if applicable, and confirm that all legal and contractual responsibilities have been fulfilled.
+
+Archival is not just a formality—it protects your company, maintains your reputation, and ensures that your obligations to players and regulators are met. Properly planned archival allows you to close a product responsibly, giving your team clarity to focus on new projects without leaving unresolved risks behind.
