@@ -1,6 +1,6 @@
 # Theory Craft
 
-When building a game data system, it helps to think in **layers**, from engine-agnostic core logic to designer-facing tools. Our current musings focus on the architecture that could support **DataLens / DataStore**, flexible enough to work in UE, Unity, or even other frameworks like O3DE, MonoGame, or MonoDevelop.
+When building a game data system, it helps to think in layers, from engine-agnostic core logic to designer-facing tools. DataLens is designed to support large-scale emergent simulations across engines (UE, Unity, etc.), while maintaining high memory and CPU efficiency.
 
 ## Layers
 
@@ -12,41 +12,25 @@ When building a game data system, it helps to think in **layers**, from engine-a
 
 **Characteristics:**
 
-* Written in **pure C++** as a **column-oriented, in-memory store**.
-* Supports **dynamic per-column stride**, raw byte storage, and flexible typed access.
-* Provides both **unchecked raw access** for maximum performance and **safe, bounds-checked operations**.
+* Written in pure C++ as a column-oriented, in-memory store.
+* Supports dynamic per-column stride, raw byte storage, and flexible typed access.
+* Provides both unchecked raw access for maximum performance and safe, bounds-checked operations.
 * Stores arbitrary types, relationships, and traits through column metadata.
-* Handles **serialisation** to and from row-major byte layouts efficiently.
+* Handles serialisation to and from row-major layouts efficiently.
 * No dependencies on Unreal, Unity, or other engines.
-* Acts as a **low-level API** for engineers to manipulate rows, columns, and values safely or directly.
+* Acts as a low-level API for engineers to manipulate rows, columns, and values safely or directly.
+
+**Why it exists:** All systems reference a dense, engine-agnostic “truth” that maximises storage efficiency. This allows other layers to build engine-specific APIs and designer-facing tools without duplicating the data.
 
 **Core API Concepts (conceptual):**
 
 ```cpp
-// Create an empty table with column metadata
 DataStore store({ {4}, {8}, {16} }, 1024); // 3 columns, preallocate 1024 rows
-
-// Raw access
 store.SetRaw<int32_t>(row, col, value);
 int32_t val = store.GetRaw<int32_t>(row, col);
-
-// Safe access
-bool ok = store.TrySet<float>(row, col, value);
-float result;
-ok = store.TryGet<float>(row, col, result);
-
-// Serialization
-std::vector<uint8_t> data = store.Dump();
-store.LoadRaw(data);
-
-// Column info
-size_t rowStride = store.GetRowStride();
-size_t rows = store.GetRowCount();
-size_t cols = store.GetColumnCount();
-size_t colStride = store.GetColumnStride(0);
 ```
 
-**Why it exists:** all game logic and systems reference a single, high-performance “truth” without being tied to any engine. It allows other layers to build engine-specific APIs, DataViews, and designer tools while keeping the core logic fully portable and efficient.
+Serialization, column info, and safe access remain fully supported.
 
 ***
 
@@ -56,170 +40,51 @@ size_t colStride = store.GetColumnStride(0);
 
 **Characteristics:**
 
-* Engine-specific (C++ in UE, C# in Unity, etc.) but **not designer-facing**.
-* Handles:
-  * Tick updates and payload buffers.
-  * Threading and asynchronous updates.
-  * Registering “tables” or “Actor Types.”
-* Exposes an engineer-idiomatic API for interacting with the DataStore.
-* Ensures **safe, performant engine integration**.
-* Can feed data to engine-native systems such as AI, sensing, environment, or pathing without assuming specific designer workflows.
+* Engine-specific (C++ in UE, C# in Unity) but engineer-facing, not designer-facing.
+* Handles tick updates, staged updates, threading, and asynchronous orchestration.
+* Manages registration of “tables” or actor types and provides idiomatic APIs for safe DataStore interaction.
 
-**Example in UE (conceptual):**
-
-```cpp
-class FDataLensEngineAPI {
-public:
-    void RegisterActorType(FName TypeName);
-    void StageAttributeUpdate(FGuid RecordID, FName Attribute, int32 Value);
-    void ProcessPayloads(); // Called by subsystem tick
-};
-```
-
-**Example in Unity (conceptual):**
-
-```csharp
-public class DataLensAPI {
-    public void RegisterActorType(string typeName);
-    public void StageAttributeUpdate(Guid recordID, string attribute, object value);
-    public void ProcessPayloads(); // Called via coroutine / Update loop
-}
-```
-
-#### Double-Buffered Data Flow
-
-The **DataLens layer** employs a **double-buffer system**, inspired by modern rendering pipelines, to maintain continuous real-time performance while avoiding thread contention or blocking reads.
-
-Each **DataView** maintains two buffer pairs:
-
-* **Data Buffers** — `ViewBuffer` (active) and `BackBuffer` (in preparation).\
-  The `ViewBuffer` represents the most recent stable “frame” of view data, while the `BackBuffer` is asynchronously populated from `DataStores` based on the view’s _select_ expression.
-* **Command Buffers** — `FrontCommandBuffer` (accepting new writes) and `BackCommandBuffer` (being processed).\
-  Commands staged by the runtime or designer systems (writes, mutations, updates) are accumulated into the `FrontCommandBuffer` while the `BackCommandBuffer` is processed and applied to the underlying `DataStores`.
-
-The **DataLens update cycle** runs independently from the engine’s render or tick rate and proceeds as follows:
-
-1. **Select Phase:**\
-   Each DataView executes its _select_ expression, reading from its mapped `DataStores` and writing results into its `BackBuffer`.
-2. **Buffer Swap:**\
-   When all views complete selection, `Data` and `Command` buffers are atomically swapped — the `BackBuffer` becomes the new active `ViewBuffer`, and the current `FrontCommandBuffer` becomes the new processing target.
-3. **Command Phase:**\
-   The DataLens layer aggregates and applies all staged updates from the swapped `CommandBuffers` to the relevant `DataStores`, resolving any conflicts or coalescing redundant updates.
-4. **Repeat:**\
-   The cycle repeats continuously at a configurable frequency (e.g. 30–60 Hz or adaptive), maintaining a consistent, up-to-date frame of world data for both C++ and Blueprint consumers.
-
-This approach guarantees that:
-
-* Designers and engineers always read from a **stable snapshot** of world data.
-* Writers never block readers, ensuring deterministic read performance.
-* The subsystem’s update rate can be tuned independently of the game frame rate for optimal scaling across hardware platforms (PC, console, cloud).
+**Updated Note:** Double-buffering for DataViews was explored but found unfeasible under Phase 1 constraints. Each DataView is now treated as a cached, independent row-major representation. DataLens orchestrates these views per tick, leaving overlapping or conflicting caches as a developer-managed concern.
 
 ***
 
 ### 3. **DataView (Engine-Specific, Designer-Facing)**
 
 **Purpose:**\
-The designer’s bridge to runtime data, providing filtered, row-major slices of world data for game logic, with read and write access to drive gameplay systems.
+Provides filtered, row-major slices of data for game logic, with read/write access to support gameplay systems.
 
 **Characteristics:**
 
-* **Scoped Row-Major Slice:** Focused on manageable subsets of the world (e.g., region-based MOBs) rather than the entire dataset. Supports calculated columns derived from one or more DataStores.
-* **Buffered Updates:** Uses a double-buffering system to stage updates via the DataLensSubsystem, ensuring thread safety and high performance.
-* **Engine-Native & Designer-Accessible:** Exposed to Blueprints in Unreal or ScriptableObjects/MonoBehaviours in Unity.
-* **Supports Queries & Updates:** Can filter, join, and transform data. Read access populates rows for gameplay systems; staged writes update the underlying DataStores.
-* **Dynamic/Calculated Columns:** Columns can be derived, read-only, or bidirectional (allowing gameplay logic to write back to the DataStore in a controlled way).
-* **Configurable Update Frequency:** Views can be static (once at load) or updated at defined frequencies (e.g., 10 Hz, 60 Hz) depending on gameplay needs.
-* **Multiple Consumers:** The same DataView can feed multiple systems without hard-coded assumptions.
+* Scoped, ephemeral cache: Each DataView is a materialised row-major representation derived from one or more DataStores.
+* Context-sensitive: Only aggregates data when needed by game systems; not precomputed for all actors.
+* Orchestration: DataLens updates registered views per tick; developers manage conflicts between overlapping views.
+* Supports queries, joins, and calculated columns.
 
-**Outputs to Engine Runtime Systems:**
+**New Actor Knowledge Model (Experimental):**
 
-* AI Behaviour Trees
-* Senses such as vision or hearing
-* Environmental systems such as weather, triggers, or dynamic world effects
-
-**Accepts Inputs:**
-
-* Stage updates to modify underlying DataStores via the DataLensSubsystem command buffers.
-
-**Example in Unreal Engine (conceptual Blueprint class):**
-
-```cpp
-// Define a row schema struct, fully BlueprintType so it can be exposed to Blueprints
-USTRUCT(BlueprintType)
-struct FMySchema
-{
-    GENERATED_BODY()
-
-    UPROPERTY(BlueprintReadWrite)
-    int32 Level;
-
-    UPROPERTY(BlueprintReadWrite)
-    int32 Xp;
-
-    UPROPERTY(BlueprintReadWrite)
-    int32 RequiredXp;
-
-    UPROPERTY(BlueprintReadWrite)
-    bool bIsAlive;
-};
-
-// Define a concrete DataView class using the schema
-UCLASS(BlueprintType)
-class UExampleDataView : public UDataView<FMySchema>
-{
-    GENERATED_BODY()
-};
-```
-
-**Example in Unity (conceptual MonoBehaviour):**
-
-```csharp
-// Define a schema class for the rows
-[System.Serializable]
-public class MySchema
-{
-    public int Level;
-    public int Xp;
-    public int RequiredXp;
-    public bool IsAlive;
-}
-
-// Define a concrete DataView class using the schema
-public class MyDataView : DataView<MySchema>
-{
-    // Base DataView<T> provides core functionality:
-    // - GetRow(Guid recordID)
-    // - StageAttributeChange(Guid recordID, string attribute, object value)
-    // - ToArray() to get all rows for iteration
-}
-```
-
-**Notes:**
-
-* DataView is **row-major** for optimal random access by gameplay systems.
-* **DataSystems**, in contrast, are bufferless, column-major, and used for broad system-level updates like hunger or fatigue. They run within the DataLensSubsystem frame after DataView command buffers are applied but before the next DataView read occurs.
+* Each actor may have a scoped, imperfect “view” of the simulation state.
+* Actor knowledge stores reference canonical DataStores and store metadata such as confidence, belief strength, acquisition method (observed/derived/rumour), and temporal decay.
+* DataViews aggregate relevant actor- or topic-specific data for gameplay systems without materialising every possible state.
 
 ***
 
 ### 4. DataSystem (Engine-Specific, Designer-Facing)
 
 **Purpose:**\
-DataSystems provide a framework for broad, system-level data updates across a subset of the world. Unlike DataViews, which are row-major slices designed for specific gameplay logic, DataSystems operate in a column-oriented, bufferless way to drive recurring computations, aggregations, or status updates at a specified frequency.
+Provides column-oriented, system-level updates across subsets of the world.
 
 **Characteristics:**
 
-* **Engine-native:** Fully compatible with the game engine (Blueprints in UE, C# in Unity), allowing designers to define, monitor, and tune systems without deep programming knowledge.
-* **Column-oriented:** Optimized for batch updates of multiple entities at once, suitable for large-scale simulation tasks that don’t require per-record derived data.
-* **Frequency-driven:** Each system defines its update interval (e.g., every frame, 10 Hz, 1 Hz) to control computational load and timing of effects.
-* **Bufferless operation:** Runs immediately on the DataLensSubsystem’s simulation “frame” after DataView command buffers are applied, updating the underlying DataStore directly.
-* **Simple configuration:** Defined by a formula or function and a frequency, enabling predictable, repeatable updates without complex per-record logic.
+* Engine-native and designer-friendly.
+* Bufferless, operating immediately after DataView updates.
+* Suitable for recurring computations, aggregations, or status updates that do not require per-record derived data.
+* Frequency-driven: Updates run at configurable intervals (frame, 10 Hz, 1 Hz).
 
 **Example Usage:**
 
-* Hunger, thirst, fatigue, or energy decay over time.
+* Hunger, fatigue, or energy decay.
 * Health or mana regeneration.
-* Environmental effects or automated resource production across a region.
-* Crowd or faction-level adjustments that do not need per-entity derived states.
+* Environmental effects, automated resource production, crowd or faction adjustments.
 
 ***
 
@@ -247,3 +112,48 @@ DataSystems provide a framework for broad, system-level data updates across a su
 * Makes it possible to reuse the **same DataStore** across multiple engines.
 * Enables complex, real-time systems such as AI, Senses, and environmental effects without engine lock-in.
 * Keeps designer tooling simple and intuitive while giving engineers full control under the hood.
+
+## Speculative Game System Design
+
+This section explores how a massive-world RPG might leverage the DataLens system to solve real design challenges. It draws on Heathen’s own game designs and serves as a practical “dog food” proof of concept for DataLens. Here we demonstrate **how DataLens could support both small-scale narrative experiments and large-scale, multi-system RPGs**, validating the system’s ability to manage scoped knowledge, actor autonomy, and emergent events in real-time.
+
+***
+
+### [Túatha Echoes: The Barrow](https://app.gitbook.com/o/NeMTNjC4USdRjoSZy6E7/s/gzmKuI14tHw48YsinkIN/)
+
+A small, linear narrative visual novel-style game introducing players to the world’s concepts of life, death, and cyclical existence. The player assumes the role of a fatally wounded hunter transitioning from life to death.
+
+**Gameplay Context:**
+
+* The Barrow functions as a hospital, hospice, temple, school, and burial space.
+* As the player transitions, their perception changes: actors, events, and interactions become contextually dependent on their state.
+* The player chooses an “afterlife” path through interaction with necromancers, spirits, artefacts, and unfolding events.
+
+**DataLens Application:**
+
+* Emergent dialogues and interactions are driven by DataLens-defined scopes of knowledge.
+* “World Data” is defined for each potential path:
+  * Marvir Child (reborn as a spirit)
+  * Lich Adherent (sacred calling)
+  * Apprentice (linger to aid the Barrow)
+  * Spirit Lantern (bound to the world differently)
+  * Go Beyond (unknown fate)
+* Player observations (e.g., a birth, a funeral, ancestral spirits) feed into DataLens, dynamically shaping what knowledge, actors, and dialogue options are accessible.
+* DataLens effectively manages the scope of the player’s knowledge, informing which interactions are valid, which events can be perceived, and which conversational options are presented.
+
+***
+
+### [Túatha: The Oirirc Saga – Shattered](https://app.gitbook.com/o/NeMTNjC4USdRjoSZy6E7/s/xmAptAznllHoOMbGHvvQ/)
+
+The first entry in a planned trilogy, a primarily linear narrative RPG following the player through the death of innocence via trauma, discovery of the wider world, and the selection and commitment to a life path (becoming a Heathen / Gallowglass).
+
+**Gameplay Context:**
+
+* Player interactions with NPCs, events, and environments have a minor but meaningful influence on the world’s evolution.
+* Emergent variability is achieved while maintaining narrative structure.
+
+**DataLens Application:**
+
+* DataLens defines the environment, events, and actor states.
+* Actors simulate semi-autonomously, allowing player influence and randomness while generally converging on the intended story beats.
+* DataLens supports subsystems including economy, factions, and villages, maintaining simulation state consistency and performance.

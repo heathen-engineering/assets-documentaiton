@@ -10,3 +10,4 @@
   * [20251113](journal/phase-0/20251113.md)
 * [Phase 1](journal/phase-1/README.md)
   * [20251114](journal/phase-1/20251114.md)
+  * [20251125](journal/phase-1/20251125.md)
