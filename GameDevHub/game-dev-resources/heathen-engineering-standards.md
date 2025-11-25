@@ -19,7 +19,7 @@ For instance, in Ireland, there is the "Digital Games Relief," where up to 32% o
 
 ## Incubation
 
-The start of everything and the least "rigid" phase. During incubation, we **conceptualise and prove ideas**, but nothing is committed or "set in stone." Many solo projects spend most of their time in this phase, and in some cases, projects may even ship directly from here.
+The start of everything and the least "rigid" phase. During incubation, we **conceptualise and prove ideas**, but nothing is committed or "set in stone." Many solo projects spend most of their time in this phase, and in some cases, projects may even ship directly from here (experiments, previews, etc.).
 
 The critical part of incubation is defining **when it ends**, as this marks the transition either to production or to project termination.
 
