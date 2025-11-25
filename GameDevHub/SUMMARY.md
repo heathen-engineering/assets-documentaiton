@@ -23,6 +23,7 @@
   * [Namespace and Using](game-dev-resources/game-programming/namespace-and-using.md)
 * [Game Publishing](game-dev-resources/game-publishing.md)
 * [Game Testing](game-dev-resources/game-testing.md)
+* [Heathen Engineering Standards](game-dev-resources/heathen-engineering-standards.md)
 
 ## Toolkits
 
