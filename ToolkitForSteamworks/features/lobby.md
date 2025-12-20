@@ -447,7 +447,82 @@ Note that it is not possible to return "all" lobbies; Steam Lobby is meant for m
 
 ## C++
 
-Coming Soon
+```cpp
+// Lobby Filter features
+// Distance
+ELobbyDistanceFilter filter = ELobbyDistanceFilter::k_ELobbyDistanceFilterDefault;
+SteamMatchmaking()->AddRequestLobbyListDistanceFilter(filter);
+
+// Slots Available
+int32 slotsAvailable = 4;
+SteamMatchmaking()->AddRequestLobbyListFilterSlotsAvailable(slotsAvailable);
+
+// Near Value
+const ANSICHAR* Key = "SomeKey";
+int32 ValueToBeCloseTo = 42;
+
+SteamMatchmaking()->AddRequestLobbyListNearValueFilter(Key, ValueToBeCloseTo);
+
+// Numerical 
+const ANSICHAR* Key = "PlayerCount";
+int32 ValueToMatch = 4;
+
+// Assume "greater than or equal"
+ELobbyComparison Comparison = ELobbyComparison::k_ELobbyComparisonEqualToOrGreaterThan;
+
+SteamMatchmaking()->AddRequestLobbyListNumericalFilter(
+    Key,
+    ValueToMatch,
+    Comparison
+);
+
+// Result Count
+int32 maxResults = 50;
+SteamMatchmaking()->AddRequestLobbyListResultCountFilter(maxResults);
+
+// String 
+const ANSICHAR* Key   = "GameMode";
+const ANSICHAR* Value = "Hardcore";
+
+ELobbyComparison Comparison = ELobbyComparison::k_ELobbyComparisonEqual;
+
+SteamMatchmaking()->AddRequestLobbyListStringFilter(
+    Key,
+    Value,
+    Comparison
+);
+
+// As with any Callback you first need to have declared the callback, usually as a
+// property of your class
+CCallResult<UQuickMatchLobbyAsyncTask, LobbyMatchList_t> m_LobbyMatchList_t;
+
+// When you're ready to request the list 
+SteamAPICall_t handle = SteamMatchmaking()->RequestLobbyList();
+m_LobbyMatchList_t.Set(handle, this, &SteamCallback);
+
+// The callback handler
+void FLobbyMatchListLinker::SteamCallback(LobbyMatchList_t* Response, bool bIOError)
+{
+	// Unreal runs callbacks on a thread, so if needed, invoke to GameThread
+	// Callback in this case is assumed to be a delegate on your game thread
+	FGraphEventRef GameThreadTask = FFunctionGraphTask::CreateAndDispatchWhenReady([this, bIOError, Response]()
+		{
+			if (!bIOError)
+			{
+				if (Callback.IsBound())
+					Callback.Execute(Response->m_nLobbiesMatching);
+			}
+			else
+			{
+				if (Callback.IsBound())
+					Callback.Execute(0);
+			}
+		}, TStatId(), nullptr, ENamedThreads::GameThread);
+	GameThreadTask->Wait();
+
+	delete this;
+}
+```
 {% endtab %}
 
 {% tab title="Steamworks.NET" %}
