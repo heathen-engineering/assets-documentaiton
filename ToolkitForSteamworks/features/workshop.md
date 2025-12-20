@@ -14,8 +14,7 @@ The following is a snip-it from the above-linked document. Be sure you do read t
 
 Before workshop items can be uploaded to the Steamworks backend, two configuration settings must be made: Configuring Steam Cloud Quotas and Enabling the UGC API.\
 \
-The Steam Cloud feature is used to store the preview images associated with workshop items. The Steam Cloud Quota can be configured with the following steps:\
-
+The Steam Cloud feature is used to store the preview images associated with workshop items. The Steam Cloud Quota can be configured with the following steps:<br>
 
 1. Navigate to the [Steam Cloud Settings](https://partner.steamgames.com/apps/cloud/) page in the App Admin panel.
 2. Set the **Byte quota per user** and the **Number of files allowed per user** to appropriate values for preview image storage
@@ -24,8 +23,7 @@ The Steam Cloud feature is used to store the preview images associated with work
 5. Click **Publish to Steam** and complete the process to publish the change.
 
 \
-Enabling the UGC API can be accomplished with the following steps:\
-
+Enabling the UGC API can be accomplished with the following steps:<br>
 
 1. You can just navigate to the [Steam Workshop Configuration](https://partner.steamgames.com/apps/workshop/) page in the App Admin panel.
 2. Find the **Additional Configuration Options** section.

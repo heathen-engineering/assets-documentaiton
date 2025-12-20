@@ -292,15 +292,15 @@ void HandleLobbyCreate(EResult result, LobbyData lobby, bool ioError)
 
 ```cpp
 // You will need to declare your callback such as 
-CCallResult<UCreateLobbyAsyncTask, LobbyCreated_t> m_LobbyCreate_t;
+CCallResult<YourClassName, LobbyCreated_t> m_LobbyCreate_t;
 
 // Then call create lobby which will return a SteamAPICall_t handle that can be used
 // to set the m_LobbyCreate_t callback.
 SteamAPICall_t handle = SteamMatchmaking()->CreateLobby(static_cast<ELobbyType>(type), maxMembers);
-m_LobbyCreate_t.Set(handle, this, &SteamCallback);
+m_LobbyCreate_t.Set(handle, this, &YourClassName::SteamCallback);
 
 // The SteamCallback is a function that will be invoked by the callback
-SteamCallback(LobbyCreated_t* Response, bool bIOError)
+YourClassName::SteamCallback(LobbyCreated_t* Response, bool bIOError)
 {
 	// Unreal runs callbacks on a seperate thread so you may need to dispatch the result
 	// to your game thread 
@@ -494,14 +494,14 @@ SteamMatchmaking()->AddRequestLobbyListStringFilter(
 
 // As with any Callback you first need to have declared the callback, usually as a
 // property of your class
-CCallResult<UQuickMatchLobbyAsyncTask, LobbyMatchList_t> m_LobbyMatchList_t;
+CCallResult<YourClassName, LobbyMatchList_t> m_LobbyMatchList_t;
 
 // When you're ready to request the list 
 SteamAPICall_t handle = SteamMatchmaking()->RequestLobbyList();
-m_LobbyMatchList_t.Set(handle, this, &SteamCallback);
+m_LobbyMatchList_t.Set(handle, this, &YourClassName::SteamCallback);
 
 // The callback handler
-void FLobbyMatchListLinker::SteamCallback(LobbyMatchList_t* Response, bool bIOError)
+void YourClassName::SteamCallback(LobbyMatchList_t* Response, bool bIOError)
 {
 	// Unreal runs callbacks on a thread, so if needed, invoke to GameThread
 	// Callback in this case is assumed to be a delegate on your game thread
@@ -596,7 +596,39 @@ You can join a lobby given its ID as either a Hex String or the int64 ID of the 
 
 ## C++
 
-Coming Soon
+```cpp
+// Have a property to hold your callback
+CCallResult<YourClassName, LobbyEnter_t> m_LobbyEnter_t;
+
+// When you call JoinLobby use the handle on your callback
+CSteamID lobbyId;
+SteamAPICall_t handle = SteamMatchmaking()->JoinLobby(lobbyId);
+m_LobbyEnter_t.Set(handle, this, &YourClassName::SteamCallback);
+
+// The callback will be invoked when complete
+void YourClassName::SteamCallback(LobbyEnter_t* Response, bool bIOError)
+{
+	// Unreal runs callbacks on its own thread so, you may need to dispatch to 
+	// game thread.
+	// This assumes Callback is a delegate on your game thread.
+	FGraphEventRef GameThreadTask = FFunctionGraphTask::CreateAndDispatchWhenReady([this, bIOError, Response]()
+		{
+			if (!bIOError)
+			{
+				if (Callback.IsBound())
+					Callback.Execute(static_cast<int64>(Response->m_ulSteamIDLobby), Response->m_bLocked, static_cast<UEChatRoomEnterResponse>(Response->m_EChatRoomEnterResponse));
+			}
+			else
+			{
+				if (Callback.IsBound())
+					Callback.Execute(0, true, UEChatRoomEnterResponse::EPC_Error);
+			}
+		}, TStatId(), nullptr, ENamedThreads::GameThread);
+	GameThreadTask->Wait();
+
+	delete this;
+}
+```
 {% endtab %}
 
 {% tab title="Steamworks.NET" %}
@@ -639,7 +671,24 @@ public void LeaveLobby(LobbyData lobby)
 
 ## C++
 
-Coming Soon
+```cpp
+// When manually leaving a lobby, update the Steam Tools Subsystem
+// to keep local lobby membership state accurate.
+USteamToolsSubsystem* SteamToolsSubsystem = USteamToolsSubsystem::GetSteamToolsSubsystem();
+if (!SteamToolsSubsystem)
+{
+    UE_LOG(LogTemp, Warning, TEXT("SteamToolsSubsystem not initialized"));
+    return;
+}
+
+const uint64 LobbyIdValue = LobbyId.ConvertToUint64();
+
+// Remove from locally tracked lobbies
+SteamToolsSubsystem->MemberOfLobbies.Remove(LobbyIdValue);
+
+// Leave the Steam lobby
+SteamMatchmaking()->LeaveLobby(LobbyId);
+```
 {% endtab %}
 
 {% tab title="Steamworks.NET" %}
@@ -721,11 +770,15 @@ They can also receive and accept invites when they are not in-game via the frien
 
 <figure><img src="../.gitbook/assets/image (341).png" alt=""><figcaption></figcaption></figure>
 
-If this returns 0 then no invite lobby was on the command, if it is not 0 then that indicates the user accepted an invite and that is what launched the game, so logically, you should load the game in to the proper state and then join the indicated lobby.
+If this returns 0 then no invite lobby was on the command; if it is not 0 then that indicates the user accepted an invite and that is what launched the game, so logically, you should load the game in to the proper state and then join the indicated lobby.
 
 ## C++
 
-Coming Soon
+```cpp
+CSteamID lobbyId;
+CSteamID userID;
+SteamMatchmaking()->InviteUserToLobby(lobbyId, userId);
+```
 {% endtab %}
 
 {% tab title="Steamworks.NET" %}
@@ -840,7 +893,35 @@ private void HandleLobbyJoinRequest(LobbyData Lobby, UserData User)
 {% endtab %}
 
 {% tab title="Toolkit for Unreal" %}
+## Blueprint
 
+Use the Steam Tools Subsystem to bind an event on the Lobby Join Requested
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+The Lobby ID is the lobby that the player indicated they wish to join.
+
+The User ID is the user who sent the invite that the player accepted.
+
+## C++
+
+```cpp
+// In some function of YourClassName
+USteamToolsSubsystem* SteamToolsSubsystem = USteamToolsSubsystem::GetSteamToolsSubsystem();
+if (!SteamToolsSubsystem)
+{
+    UE_LOG(LogTemp, Warning, TEXT("SteamToolsSubsystem not initialized"));
+    return;
+}
+
+// Bind YourClassName::FunctionName to the SteamLobbyJoinRequested delegate
+// Make sure FunctionName has the correct signature matching FGameLobbyJoinRequestedCallback
+SteamToolsSubsystem->SteamLobbyJoinRequested.AddDynamic(this, &YourClassName::FunctionName);
+
+// This assumes FuncitonName has a signature such as
+UFUNCTION()
+void FunctionName(int64 LobbyId, int64 UserId); // example
+```
 {% endtab %}
 
 {% tab title="Steamworks.NET" %}

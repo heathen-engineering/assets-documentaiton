@@ -31,7 +31,7 @@ Has become
 
 ### Configuration
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 We have made some subtle but important changes to how configuration is handled in Toolkit for Steamworks. You will use Player > Steamworks settings as you have before; now, however, we track what the current app is and update a scripting define when you change this value. Please note this will cause a recompile when changed.
 
@@ -192,7 +192,7 @@ private void OnSessionCallback(
 
 ### SteamTools.Game
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>See <a href="configuration/unity-configuration.md">Unity Configuration</a> for more details.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption><p>See <a href="configuration/unity-configuration.md">Unity Configuration</a> for more details.</p></figcaption></figure>
 
 Generated from your configuration, SteamTools.Game is a static class that contains hardcoded values for each of your Steam artefacts. This greatly simplifies mult-app development, removes the need for any kind of object reference, making it far more data-oriented and memory-oriented friendly, and of course enables our "Modular Components" to understand your game at dev time.
 
