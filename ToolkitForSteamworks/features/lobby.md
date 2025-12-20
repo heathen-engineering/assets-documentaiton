@@ -290,7 +290,40 @@ void HandleLobbyCreate(EResult result, LobbyData lobby, bool ioError)
 
 ## C++
 
-Coming Soon
+```cpp
+// You will need to declare your callback such as 
+CCallResult<UCreateLobbyAsyncTask, LobbyCreated_t> m_LobbyCreate_t;
+
+// Then call create lobby which will return a SteamAPICall_t handle that can be used
+// to set the m_LobbyCreate_t callback.
+SteamAPICall_t handle = SteamMatchmaking()->CreateLobby(static_cast<ELobbyType>(type), maxMembers);
+m_LobbyCreate_t.Set(handle, this, &SteamCallback);
+
+// The SteamCallback is a function that will be invoked by the callback
+SteamCallback(LobbyCreated_t* Response, bool bIOError)
+{
+	// Unreal runs callbacks on a seperate thread so you may need to dispatch the result
+	// to your game thread 
+	FGraphEventRef GameThreadTask = FFunctionGraphTask::CreateAndDispatchWhenReady([this, bIOError, Response]()
+		{
+			if (!bIOError)
+			{
+			
+				// Callback in this context would simply be a delegate on your game thread
+				if (Callback.IsBound())
+					Callback.Execute(static_cast<UEResult>(Response->m_eResult), static_cast<int64>(Response->m_ulSteamIDLobby));
+			}
+			else
+			{
+				if (Callback.IsBound())
+					Callback.Execute(UEResult::EPC_IOFailure, 0);
+			}
+		}, TStatId(), nullptr, ENamedThreads::GameThread);
+	GameThreadTask->Wait();
+
+	delete this;
+}
+```
 {% endtab %}
 
 {% tab title="Steamworks.NET" %}
