@@ -861,7 +861,7 @@ This will happen before joining the target lobby and can be used to first leave 
 If you want to handle the invite process entirely within the game, then you will want to react to the Lobby Invite event.
 
 ```csharp
-Matchmaking.Client.EventLobbyInvite.AddListener(HandleLobbyInvite);
+SteamTools.Events.OnLobbyInvite += HandleLobbyInvite;
 ```
 
 The handler for this takes the form of:
@@ -878,7 +878,7 @@ private void HandleLobbyInvite(LobbyInvite Response)
 Register a handler to listen on the Game Lobby Join Requested event. This event is raised when the user clicks the "Accept" button in the Steam Friend chat after receiving an invite to join a lobby.
 
 ```csharp
-Overlay.Client.EventGameLobbyJoinRequested.AddListener(HandleLobbyJoinRequest);
+SteamTools.Events.OnLobbyJoinRequested += HandleLobbyJoinRequest;
 ```
 
 The handler for this event would look like this:
@@ -945,7 +945,7 @@ You can then add settings:
 
 <figure><img src="../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
 
-The Command Line option will test the launch paramiters from the command line and will invoke the Lobby Join Rquested event if the rule is met. You can use this to call [Join](lobby.md#join) or perform similar actions.
+The Command Line option will test the launch parameters from the command line and will invoke the Lobby Join Requested event if the rule is met. You can use this to call [Join](lobby.md#join) or perform similar actions.
 
 <figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
@@ -1024,7 +1024,7 @@ Use General Events and the On User Left and On User Joined events to know when o
 ## C\#
 
 ```csharp
-Matchmaking.Client.EventLobbyChatUpdate.AddListener(HandleChatUpdate);
+SteamTools.Events.OnLobbyChatUpdate += HandleChatUpdate;
 ```
 
 The handler takes the form of
@@ -1311,26 +1311,14 @@ You can and should also use the event system for example, you can listen when ga
 
 ```csharp
 // How to know when this was done?
-Matchmaking.Client.EventLobbyGameCreated.AddListener(HandleGameServerSet);
+SteamTools.Events.OnLobbyGameServer += HandleGameServerSet;
 ```
 
 The handler for this would look like this
 
 ```csharp
-private void HandleGameServerSet(LobbyGameCreated_t callback)
+private void HandleGameServerSet(LobbyData lobby, CSteamID server, string ip, ushort port)
 {
-    // Check this against your lobbies to see which one is needed
-    LobbyData theLobbyThatWasSet = callback.m_ulSteamIDLobby;
-
-    // You can read the current game server
-    if (theLobbyThatWasSet.HasServer)
-    {
-        LobbyGameServer server = theLobbyThatWasSet.GameServer;
-
-        CSteamID serverId = server.id;
-        string ipAddress = server.IpAddress;
-        ushort port = server.port;
-    }
 }
 ```
 {% endtab %}
@@ -1451,7 +1439,7 @@ Lobby.SendChatMessage("Hello World");
 Lobby.SendChatMessage(SomeObjectIHave);
 
 // In order to "listen" for chat messages, you should use
-Matchmaking.Client.EventLobbyChatMsg.AddListener(HandleChatMessage);
+SteamTools.Events.OnLobbyChatMsg += HandleChatMessage;
 ```
 
 The handler will take the form of
