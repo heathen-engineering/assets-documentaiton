@@ -32,7 +32,7 @@ Add the Overlay component to a GameObject and add the Overlay Activated event
 
 ```csharp
 // Register the event On Game Overlay Activated
-Overlay.Client.OnGameOverlayActivated.AddListener(HandleActivated);
+SteamTools.Events.OnGameOverlayActivated += HandleActivated;
 
 // The handler will take the form
 void HandleActrivated(bool IsShowing)
