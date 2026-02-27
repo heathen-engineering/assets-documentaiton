@@ -897,7 +897,7 @@ private void HandleLobbyJoinRequest(LobbyData Lobby, UserData User)
 
 Use the Steam Tools Subsystem to bind an event on the Lobby Join Requested
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 The Lobby ID is the lobby that the player indicated they wish to join.
 

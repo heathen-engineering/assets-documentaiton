@@ -11,6 +11,34 @@ If you're looking for the Unreal Engine version of our toolkits, sponsor us on [
 
 ## Unity
 
+### Events
+
+In previous versions you would have accessed global events for each API end point in its respective static class for example<br>
+
+```csharp
+API.Matchmaking.Client.EventGameLobbyJoinRequest
+```
+
+These have been moved to a new unified static class
+
+```csharp
+SteamTools.Events
+```
+
+The events in this static class are traditional C# events and replace all "global" events you would have previously accessed via API.\<Interface>.\<Target>.&#x20;
+
+> Note the naming of events was updated \
+> \
+> EventGameLobbyJoinRequest\
+> \
+> now takes the form of\
+> \
+> OnLobbyJoinRequest
+
+The Steamworks Event Trigger component is still available and still exposes all of these events as Unity Events to the Unity Inspector.
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 ### Name Changes
 
 There are a number of name changes between 2025 and 2026. Most of these are a matter of normalising our naming convention, for example
@@ -31,7 +59,7 @@ Has become
 
 ### Configuration
 
-<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 We have made some subtle but important changes to how configuration is handled in Toolkit for Steamworks. You will use Player > Steamworks settings as you have before; now, however, we track what the current app is and update a scripting define when you change this value. Please note this will cause a recompile when changed.
 
@@ -192,7 +220,7 @@ private void OnSessionCallback(
 
 ### SteamTools.Game
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption><p>See <a href="configuration/unity-configuration.md">Unity Configuration</a> for more details.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption><p>See <a href="configuration/unity-configuration.md">Unity Configuration</a> for more details.</p></figcaption></figure>
 
 Generated from your configuration, SteamTools.Game is a static class that contains hardcoded values for each of your Steam artefacts. This greatly simplifies mult-app development, removes the need for any kind of object reference, making it far more data-oriented and memory-oriented friendly, and of course enables our "Modular Components" to understand your game at dev time.
 
