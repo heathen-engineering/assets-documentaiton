@@ -19,7 +19,7 @@ That script should not be used at all; it is not part of Heathen's Toolkit, and 
 You do NOT require any GameObjects to make Steamworks run. You can simply call the [generated wrapper](../configuration/unity-configuration.md#generate-wrapper).
 
 ```csharp
-SteamTools.Game.Initialize();
+SteamTools.Interface.Initialise();
 ```
 
 ### Ready Check
@@ -79,5 +79,5 @@ If you need a code-free solution, we provide you with a component script which w
 There are no settings needed; that is all handled by your [configuration](../configuration/unity-configuration.md). You do not need to mark this object Do Not Destroy, It exists to do nothing more than call
 
 ```csharp
-SteamTools.Game.Initialize();
+SteamTools.Interface.Initialise();
 ```
